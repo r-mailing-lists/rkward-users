@@ -1,0 +1,187 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-04",
+  "messages": [
+    {
+      "id": "msg-e657e33d9e06",
+      "message_id": "<4877239.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-04-01T12:53:37Z",
+      "subject": "[rkward-users] [rkward - Help] Package problems under Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] Package problems under Gutsy",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877239\nBy: leczar\n\nWhenever I try to install new packages, I end up with an error. I am using the\nSettings>Configure Packages>Install path, end I am trying to install to\n/usr/lib/R/library. I am being asked for my root password and log in as such.\nI am getting several error messages like this (in this case, it is the \"Hmisc\"\npackage)\n\n* Installing *source* package 'maps' ...\n** libs\n** arch - \ngcc-4.2 -std=gnu99 -g -O2    Gmake.c   -o Gmake\n/bin/bash: gcc-4.2: command not found\nmake: *** [Gmake] Error 127\nERROR: compilation failed for package 'maps'\n** Removing '/usr/lib/R/library/maps'\n\nand in the end\n\nThe downloaded packages are in\n\t/tmp/Rtmp0PhefW/downloaded_packages\nThere were 17 warnings (use warnings() to see them)\n>\nsystem (\"chown username /home/username/.rkward/package_archive/*\")\nchown: cannot access `/home/username/.rkward/package_archive/*': No such file\nor directory\n> q ()\n\nAny idea what I do wrong?\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877239\nBy: leczar\n\nWhenever I try to install new packages, I end up with an error. I am using the\nSettings>Confi",
+      "thread_id": "thread-e657e33d9e06",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-33832f6086bd",
+      "message_id": "<4877280.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-04-01T13:08:36Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Package problems under Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Package problems under Gutsy",
+      "in_reply_to": "<4877239.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877280\nBy: hazzy\n\nYou need to install the r-base-dev package. This pulls gcc as a dependency,\nwhich you need to compile packages.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877280\nBy: hazzy\n\nYou need to install the r-base-dev package. This pulls gcc as a dependency,\nwhich you need to ",
+      "thread_id": "thread-e657e33d9e06",
+      "thread_depth": 1,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-15f37b62febd",
+      "message_id": "<4877596.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-04-01T15:02:55Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Package problems under Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Package problems under Gutsy",
+      "in_reply_to": "<4877239.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877596\nBy: leczar\n\nThanks a lot, that did the trick!! :)\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4877596\nBy: leczar\n\nThanks a lot, that did the trick!! :)\n\n______________________________________________________",
+      "thread_id": "thread-e657e33d9e06",
+      "thread_depth": 1,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-eeab06d4737c",
+      "message_id": "<1208682545.6988.16.camel@localhost>",
+      "from_name": "Albert Greinoecker",
+      "from_email_hash": "063c3a28d28bba1fe2c0a230b17240104bc34098fc1736fbbb2c29a855b3c9a5",
+      "date": "2008-04-20T09:09:05Z",
+      "subject": "[rkward-users] editor window loses focus after execution (with autocompletion)",
+      "subject_clean": "[rkward-users] editor window loses focus after execution (with autocompletion)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I\nthink it's really great software, there's just one annoying thing which\nI'm struggling with:\nWhen running a statement created by autocompletion (and the tooltip is\nstill visible), the editor window loses focus after completion of the\nstatement, which has the consequences that copy/paste goes to the\nconsole window and no scripts can be executed anymore. My unsatisfying\nworkaround is klicking a few times between console and editor window. Is\nthere a way get rid of this problem?\n\nthx,\nAlbert",
+      "body_snippet": "Hi,\n\nI'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I\nthink it's really great software, there's just one annoying thing which\nI'm struggling with:\nWhen running a statement create",
+      "thread_id": "thread-eeab06d4737c",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-74fe588e0e51",
+      "message_id": "<200804202336.12574.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2008-04-20T21:36:06Z",
+      "subject": "[rkward-users] RKWard 0.4.9a and 0.5.0b",
+      "subject_clean": "[rkward-users] RKWard 0.4.9a and 0.5.0b",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nMaintenance releases of RKWard 0.4.9 (for KDE 3) and 0.5.0 (for KDE 4) have \nbeen released today. Most importantly, these should work with the upcoming R \n2.7.0. Other than that, only few things have changed, but read for yourself \nat http://rkward.sf.net .\n\nMany thanks to all testers / translators / contributors!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080420/02345733/attachment.sig>",
+      "body_snippet": "Hi!\n\nMaintenance releases of RKWard 0.4.9 (for KDE 3) and 0.5.0 (for KDE 4) have \nbeen released today. Most importantly, these should work with the upcoming R \n2.7.0. Other than that, only few things ",
+      "thread_id": "thread-74fe588e0e51",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-4a1a4af018e0",
+      "message_id": "<200804251718.29417.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2008-04-25T15:18:29Z",
+      "subject": "[rkward-users] editor window loses focus after execution (with autocompletion)",
+      "subject_clean": "[rkward-users] editor window loses focus after execution (with autocompletion)",
+      "in_reply_to": "<1208682545.6988.16.camel@localhost>",
+      "references": [
+        "<1208682545.6988.16.camel@localhost>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 20 April 2008, Albert Greinoecker wrote:\n> I'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I\n> think it's really great software, there's just one annoying thing which\n> I'm struggling with:\n> When running a statement created by autocompletion (and the tooltip is\n> still visible), the editor window loses focus after completion of the\n> statement, which has the consequences that copy/paste goes to the\n> console window and no scripts can be executed anymore. My unsatisfying\n> workaround is klicking a few times between console and editor window. Is\n> there a way get rid of this problem?\n\nvarious focus problems have been around for quite some time. Some have been \nfixed at one time or another (so you might try 0.4.9a to see if there is any \nimprovement), but it's never been quite perfect.\n\nThings seem to have improved considerably in the KDE 4 port (versions 0.5.0 \nand above), so if you can install that, this will probably solve the issue \n(you can run rkward 0.5.0 in a KDE 3.5.x session, you only need to have the \nKDE 4 libraries installed).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080425/cb77369e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 20 April 2008, Albert Greinoecker wrote:\n> I'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I\n> think it's really great software, there's just one annoying thing whi",
+      "thread_id": "thread-eeab06d4737c",
+      "thread_depth": 1,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-32fc9da87c5d",
+      "message_id": "<200804252021.13015.dgvirtual@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2008-04-25T17:21:12Z",
+      "subject": "[rkward-users] debian sources?",
+      "subject_clean": "[rkward-users] debian sources?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "It seems that debian source *.dsc file is missing from the repositories for \nthe newest 0.4.9a release. Could someone provide it?\n-- \nDonatas Glodenis\nhttp://dg.lapas.info",
+      "body_snippet": "It seems that debian source *.dsc file is missing from the repositories for \nthe newest 0.4.9a release. Could someone provide it?\n-- \nDonatas Glodenis\nhttp://dg.lapas.info",
+      "thread_id": "thread-32fc9da87c5d",
+      "thread_depth": 0,
+      "month": "2008-04"
+    },
+    {
+      "id": "msg-805b972806c6",
+      "message_id": "<200804281347.13934.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2008-04-28T11:47:09Z",
+      "subject": "[rkward-users] debian sources?",
+      "subject_clean": "[rkward-users] debian sources?",
+      "in_reply_to": "<200804252021.13015.dgvirtual@akl.lt>",
+      "references": [
+        "<200804252021.13015.dgvirtual@akl.lt>"
+      ],
+      "body_plain": "On Friday 25 April 2008, Donatas G. wrote:\n> It seems that debian source *.dsc file is missing from the repositories for\n> the newest 0.4.9a release. Could someone provide it?\n\nSorry, forgot the file in the upload. It's now online at \nhttp://rkward.sf.net/debian (and also in the official debian/unstable \narchive).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080428/e4a4f389/attachment.sig>",
+      "body_snippet": "On Friday 25 April 2008, Donatas G. wrote:\n> It seems that debian source *.dsc file is missing from the repositories for\n> the newest 0.4.9a release. Could someone provide it?\n\nSorry, forgot the file ",
+      "thread_id": "thread-32fc9da87c5d",
+      "thread_depth": 1,
+      "month": "2008-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e657e33d9e06",
+      "subject": "[rkward-users] [rkward - Help] Package problems under Gutsy",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-04-01T12:53:37Z",
+      "last_reply": "2008-04-01T15:02:55Z",
+      "root_message_id": "msg-e657e33d9e06"
+    },
+    {
+      "id": "thread-eeab06d4737c",
+      "subject": "[rkward-users] editor window loses focus after execution (with autocompletion)",
+      "message_count": 2,
+      "participants": [
+        "Albert Greinoecker",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2008-04-20T09:09:05Z",
+      "last_reply": "2008-04-25T15:18:29Z",
+      "root_message_id": "msg-eeab06d4737c"
+    },
+    {
+      "id": "thread-74fe588e0e51",
+      "subject": "[rkward-users] RKWard 0.4.9a and 0.5.0b",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2008-04-20T21:36:06Z",
+      "last_reply": "2008-04-20T21:36:06Z",
+      "root_message_id": "msg-74fe588e0e51"
+    },
+    {
+      "id": "thread-32fc9da87c5d",
+      "subject": "[rkward-users] debian sources?",
+      "message_count": 2,
+      "participants": [
+        "Donatas G.",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2008-04-25T17:21:12Z",
+      "last_reply": "2008-04-28T11:47:09Z",
+      "root_message_id": "msg-32fc9da87c5d"
+    }
+  ]
+}

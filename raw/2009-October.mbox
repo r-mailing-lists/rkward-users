@@ -1,0 +1,953 @@
+From hmhxmu at gmail.com  Sat Oct  3 01:18:20 2009
+From: hmhxmu at gmail.com (Malcolm Hudson)
+Date: Sat, 3 Oct 2009 11:18:20 +1000
+Subject: [rkward-users] Quick survey: Still using RKWard for KDE 3
+Message-ID: <81931eee0910021818v3ed0e8f1w77f9e9fb57c17129@mail.gmail.com>
+
+[rkward-users] Quick survey: Still using RKWard for KDE 3
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at ru...> - 2009-09-30 20:00
+
+Attachments: Message as HTML
+Hi!
+
+I'd like to conduct a quick informal survey to determine whether/when further
+backports to KDE 3 are needed.
+
+
+1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+
+YES. RKWard 0.4.9 (KDE 3.4.9)
+
+2) If so, which version of R do you use with that?
+
+R version 2.6.2 (2008-02-08)
+
+3) Are there any specific reasons that keep you from upgrading?
+
+Haven't yet upgraded to Mandriva 2009.1 (currently using Mandriva
+2008.1 which uses KDE 3).
+Will need some time to plan how to upgrade smoothly.
+
+Thanks!
+
+Regards
+Thomas
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Oct  6 20:44:50 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 6 Oct 2009 22:44:50 +0200
+Subject: [rkward-users] [rkward-devel] Quick survey: Still using RKWard
+	for KDE 3
+In-Reply-To: <de8c7cb40909301322v277acc5cp3a6665082361c3f3@mail.gmail.com>
+References: <200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<de8c7cb40909301322v277acc5cp3a6665082361c3f3@mail.gmail.com>
+Message-ID: <200910062244.54048.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+thanks for your feedback (also to Michael and Malcolm).
+
+On Wednesday 30 September 2009, Prasenjit Kapat wrote:
+> > 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+> 
+> YES. (rkward 0.4.9b, OR the relevant svn branch - depending on
+>  developments)
+> 
+> > (No need to respond if the answer is "no").
+> 
+> Statistically, it is important to get the "no" responses too ;)
+
+True. But mostly I was interested in the follow-up questions. To explain: As 
+far as new developments are concerned, the KDE 3 branch is closed. Probably 
+we'll copy the latest changes in plugins to the KDE 3 branch, since plugins 
+are still (but not for very much longer) compatible. But other than that it's 
+only important bugfixes. And since the KDE 3 branch been around for this long, 
+any new "important" bugs are mostly going to be incompatibilities with new 
+versions of R.
+
+> > 2) If so, which version of R do you use with that?
+> 
+> Currently, R 2.8.2, but this updates from time to time....
+
+Ok, but that means the installation is typically some months behind, so we 
+probably don't have to release 0.4.9c on time with R 2.10.0. I guess, we 
+should soon after, but it's just more comfortable to do only one release at a 
+time. So 0.5.2 will go first.
+
+> > 3) Are there any specific reasons that keep you from upgrading?
+> 
+> Yes: no control over the department's servers. They use RedHat EL,
+> currently at 5.3.
+
+Ok. To explain a bit about this one, I was poking for barriers that we might 
+be able to address inside RKWard. I'm afraid your department's servers are not 
+something I can do anything about, though ;-).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091006/3e1c6531/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Oct  7 17:06:25 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 7 Oct 2009 19:06:25 +0200
+Subject: [rkward-users] Call for testing: RKWard 0.5.2-pre1 / Release
+	schedule
+Message-ID: <200910071906.29470.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+R 2.10.0 (scheduled to be released October, 26) will have a new dynamic help 
+system, and unfortunately the current released versions of RKWard do no handle 
+that well. Therefore I'd like to provide a new official release of RKWard in 
+time.
+
+I've drafted a tentative timeline at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+. The targetted release date is October 20. That's fairly soon, but I feel the 
+sources are in relatively good shape. Of course we still need a lot of 
+testing, and that's the main point of this mail:
+
+--- Testing ---
+
+Please download the 0.5.2-pre1 release (also linked to from 
+http://p.sf.net/rkward/download) and give it a try. If you have an alpha 
+version of R 2.10.0 installed, or are willing to install one, testing with 
+that will be particularily valuable. Please try to browse a few help pages, 
+and produce some output. Also, if compiling from sources, please run
+   make plugintests
+after make install, and report any failed tests.
+
+Please try to provide feedback by October 14, i.e. a week from now.
+
+--- Translators ---
+
+.po and .pot files are located in the po-subdirectory, as usual. Please provide 
+your updates by October 14.
+
+--- Plugin authors ---
+
+If you plan to add features to existing plugins before the release, please 
+post to the mailing list, first. @Michael: I did not forget about you, and will 
+provide feedback as soon as I can. I'm confident that the Stata-import plugin 
+will be part of the official release. Please remember to prepare a small sample 
+file that we can add to the sources for automated testing.
+
+You may be wondering what's up with the promised new scripting solution. Well, 
+the first part of it is ready for evaluation/discussion/feedback, and I'll 
+write a separate mail on this in the coming days. However, this will not be 
+finished in time for the release, so plugins continue to be PHP-based in RKWard 
+0.5.2.
+
+--- Closing words ---
+
+Remeber: There's always many ways you can help, with or without programming 
+skills. Testing is one important way to contribute, but for instance our wiki 
+/ website is always in need of love as well. If you have time to spare, your 
+help will be very welcome.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091007/80a60472/attachment.sig>
+
+From xplaner801 at comcast.net  Tue Oct 13 23:27:11 2009
+From: xplaner801 at comcast.net (Patrick Richardson)
+Date: Tue, 13 Oct 2009 19:27:11 -0400
+Subject: [rkward-users] Scripts being saved in binary
+Message-ID: <1255476431.12476.2.camel@patrick-desktop>
+
+I'm running rkward-0.5.1 on Ubuntu 9.04. Although I love this program, I
+can't seem to get my scripts to save properly. When I click "Save" I get
+a warning message that the file will be saved as binary. Has anyone else
+had this problem or know how to get rid of it?
+
+Thanks,
+
+Patrick
+
+
+
+
+From alexandre.villers at cebc.cnrs.fr  Thu Oct 22 20:45:40 2009
+From: alexandre.villers at cebc.cnrs.fr (alexandre villers)
+Date: Thu, 22 Oct 2009 22:45:40 +0200
+Subject: [rkward-users] rkward on ubuntu 9.04 (again)...
+Message-ID: <1256244340.82390acalexandre.villers@cebc.cnrs.fr>
+
+Good evening,
+
+I had trouble a couple of months ago when installing Rkward and Thomas provided me with some command lines to get an unbroken version of Rkward
+
+"sudo echo "deb http://reaktanz.de/deb/rkward jaunty main" > 
+/etc/apt/sources.list.d/rkward.list
+   sudo apt-get update
+   sudo apt-get install rkward "
+
+Unfortunately, I had to reinstall Ubuntu and those lines don't work anymore. I get 
+
+A Fatal Error Occurred
+The application RKWard (rkward) crashed and caused the signal 6 (SIGABRT).
+Please help us improve the software you use by filing a report at http://bugs.kde.org. Useful details include how to reproduce the error, documents that were loaded, etc.
+
+Any idea ?
+
+Best regards
+
+Alex, Ubuntu beginner
+Alexandre Villers
+PhD. Student
+Team Biodiversity
+CEBC CNRS
+79360 Beauvoir sur Niort
+
+
+__________ Information from ESET Mail Security, version of virus signature database 4534 (20091022) __________
+
+The message was checked by ESET Mail Security.
+http://www.eset.com
+
+
+
+
+
+From meik.michalke at uni-duesseldorf.de  Thu Oct 22 22:34:24 2009
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 23 Oct 2009 00:34:24 +0200
+Subject: [rkward-users] rkward on ubuntu 9.04 (again)...
+In-Reply-To: <1256244340.82390acalexandre.villers@cebc.cnrs.fr>
+References: <1256244340.82390acalexandre.villers@cebc.cnrs.fr>
+	(sfid-20091022_230231_302942_196D6A45)
+Message-ID: <200910230034.29035.meik.michalke@uni-duesseldorf.de>
+
+hi alex,
+
+am Donnerstag, 22. Oktober 2009 (22:45) schrieb alexandre villers:
+> Unfortunately, I had to reinstall Ubuntu and those lines don't work
+> anymore.
+
+please explain what you mean by "don't work anymore" (i'm the one behind the 
+reaktanz.de repository). did anything produce an error during the process?
+
+what ist the outcome of the following commands:
+ cat /etc/apt/sources.list.d/rkward.list
+ R --version
+ rkward --version
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091023/e35bdfbf/attachment.sig>
+
+From ejjunju at gmail.com  Fri Oct 23 07:55:34 2009
+From: ejjunju at gmail.com (Emmanuel Jjunju)
+Date: Fri, 23 Oct 2009 09:55:34 +0200
+Subject: [rkward-users] RKWard-users Digest, Vol 25, Issue 1
+In-Reply-To: <mailman.67672.1256250885.5856.rkward-users@lists.sourceforge.net>
+References: <mailman.67672.1256250885.5856.rkward-users@lists.sourceforge.net>
+Message-ID: <1a393e3a0910230055lc0708dex9255c1d6b8af2345@mail.gmail.com>
+
+I am for the moment using rkward in linux after a series of frustrations in
+Vista. I am waiting for windows-7
+
+On Fri, Oct 23, 2009 at 12:34 AM, <
+rkward-users-request at lists.sourceforge.net> wrote:
+
+> Send RKWard-users mailing list submissions to
+>        rkward-users at lists.sourceforge.net
+>
+> To subscribe or unsubscribe via the World Wide Web, visit
+>        https://lists.sourceforge.net/lists/listinfo/rkward-users
+> or, via email, send a message with subject or body 'help' to
+>        rkward-users-request at lists.sourceforge.net
+>
+> You can reach the person managing the list at
+>        rkward-users-owner at lists.sourceforge.net
+>
+> When replying, please edit your Subject line so it is more specific
+> than "Re: Contents of RKWard-users digest..."
+>
+>
+> Today's Topics:
+>
+>   1. Quick survey: Still using RKWard for KDE 3
+>      (Thomas Friedrichsmeier)
+>   2. Re: Quick survey: Still using RKWard for KDE 3 (Prasenjit Kapat)
+>   3. Re: Quick survey: Still using RKWard for KDE 3 (Malcolm Hudson)
+>   4. Re: [rkward-devel] Quick survey: Still using RKWard       for KDE 3
+>      (Thomas Friedrichsmeier)
+>   5. Call for testing: RKWard 0.5.2-pre1 / Release     schedule
+>      (Thomas Friedrichsmeier)
+>   6. Scripts being saved in binary (Patrick Richardson)
+>   7. rkward on ubuntu 9.04 (again)... (alexandre villers)
+>   8. Re: rkward on ubuntu 9.04 (again)... (meik michalke)
+>
+>
+> ----------------------------------------------------------------------
+>
+> Message: 1
+> Date: 30 Sep 2009 21:59:53 +0200
+> From: "Thomas Friedrichsmeier"
+>        <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Subject: [rkward-users] Quick survey: Still using RKWard for KDE 3
+> To: rkward-devel at lists.sourceforge.net,
+>        rkward-users at lists.sourceforge.net
+> Message-ID:
+>        <200909302159.53388.thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Content-Type: text/plain; charset="us-ascii"
+>
+> Hi!
+>
+> I'd like to conduct a quick informal survey to determine whether/when
+> further
+> backports to KDE 3 are needed.
+>
+> 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+>
+> (No need to respond if the answer is "no").
+>
+> 2) If so, which version of R do you use with that?
+>
+> 3) Are there any specific reasons that keep you from upgrading?
+>
+> Thanks!
+>
+> Regards
+> Thomas
+> -------------- next part --------------
+> A non-text attachment was scrubbed...
+> Name: not available
+> Type: application/pgp-signature
+> Size: 198 bytes
+> Desc: This is a digitally signed message part.
+>
+> ------------------------------
+>
+> Message: 2
+> Date: Wed, 30 Sep 2009 16:22:29 -0400
+> From: Prasenjit Kapat <kapatp at gmail.com>
+> Subject: Re: [rkward-users] Quick survey: Still using RKWard for KDE 3
+> To: Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Cc: rkward-users at lists.sourceforge.net,
+>        rkward-devel at lists.sourceforge.net
+> Message-ID:
+>        <de8c7cb40909301322v277acc5cp3a6665082361c3f3 at mail.gmail.com>
+> Content-Type: text/plain; charset=UTF-8
+>
+> Hi,
+>
+> On 9/30/09, Thomas Friedrichsmeier
+> <thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> > Hi!
+> >
+> > I'd like to conduct a quick informal survey to determine whether/when
+> > further
+> > backports to KDE 3 are needed.
+> >
+> > 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+>
+> YES. (rkward 0.4.9b, OR the relevant svn branch - depending on
+> developments)
+>
+> > (No need to respond if the answer is "no").
+>
+> Statistically, it is important to get the "no" responses too ;)
+>
+> > 2) If so, which version of R do you use with that?
+>
+> Currently, R 2.8.2, but this updates from time to time....
+>
+> > 3) Are there any specific reasons that keep you from upgrading?
+>
+> Yes: no control over the department's servers. They use RedHat EL,
+> currently at 5.3.
+>
+> [Aside:
+> I am not sure if RedHat EL 6 will include KDE 4, though SLE 11.0
+> already has KDE 4.1.3. Do any universities in US (or anywhere else for
+> that matter) use Canonical for their enterprise Linux solutions?]
+>
+> > Thanks!
+> >
+> > Regards
+> > Thomas
+>
+> Thanks for keeping KDE3 port alive. I can totally understand if you
+> decide not to in future (if yes/(no+yes) << 1).
+>
+> Regards
+> --
+> Prasenjit
+>
+>
+>
+> ------------------------------
+>
+> Message: 3
+> Date: Sat, 3 Oct 2009 11:18:20 +1000
+> From: Malcolm Hudson <hmhxmu at gmail.com>
+> Subject: Re: [rkward-users] Quick survey: Still using RKWard for KDE 3
+> To: rkward-users at lists.sourceforge.net
+> Message-ID:
+>        <81931eee0910021818v3ed0e8f1w77f9e9fb57c17129 at mail.gmail.com>
+> Content-Type: text/plain; charset=ISO-8859-1
+>
+> [rkward-users] Quick survey: Still using RKWard for KDE 3
+> From: Thomas Friedrichsmeier <thomas.friedrichsmeier at ru...> - 2009-09-30
+> 20:00
+>
+> Attachments: Message as HTML
+> Hi!
+>
+> I'd like to conduct a quick informal survey to determine whether/when
+> further
+> backports to KDE 3 are needed.
+>
+>
+> 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+>
+> YES. RKWard 0.4.9 (KDE 3.4.9)
+>
+> 2) If so, which version of R do you use with that?
+>
+> R version 2.6.2 (2008-02-08)
+>
+> 3) Are there any specific reasons that keep you from upgrading?
+>
+> Haven't yet upgraded to Mandriva 2009.1 (currently using Mandriva
+> 2008.1 which uses KDE 3).
+> Will need some time to plan how to upgrade smoothly.
+>
+> Thanks!
+>
+> Regards
+> Thomas
+>
+>
+>
+> ------------------------------
+>
+> Message: 4
+> Date: 6 Oct 2009 22:44:50 +0200
+> From: "Thomas Friedrichsmeier"
+>        <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Subject: Re: [rkward-users] [rkward-devel] Quick survey: Still using
+>        RKWard  for KDE 3
+> To: rkward-devel at lists.sourceforge.net,
+>        rkward-users at lists.sourceforge.net
+> Message-ID:
+>        <200910062244.54048.thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Content-Type: text/plain; charset="iso-8859-1"
+>
+> Hi,
+>
+> thanks for your feedback (also to Michael and Malcolm).
+>
+> On Wednesday 30 September 2009, Prasenjit Kapat wrote:
+> > > 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+> >
+> > YES. (rkward 0.4.9b, OR the relevant svn branch - depending on
+> >  developments)
+> >
+> > > (No need to respond if the answer is "no").
+> >
+> > Statistically, it is important to get the "no" responses too ;)
+>
+> True. But mostly I was interested in the follow-up questions. To explain:
+> As
+> far as new developments are concerned, the KDE 3 branch is closed. Probably
+> we'll copy the latest changes in plugins to the KDE 3 branch, since plugins
+> are still (but not for very much longer) compatible. But other than that
+> it's
+> only important bugfixes. And since the KDE 3 branch been around for this
+> long,
+> any new "important" bugs are mostly going to be incompatibilities with new
+> versions of R.
+>
+> > > 2) If so, which version of R do you use with that?
+> >
+> > Currently, R 2.8.2, but this updates from time to time....
+>
+> Ok, but that means the installation is typically some months behind, so we
+> probably don't have to release 0.4.9c on time with R 2.10.0. I guess, we
+> should soon after, but it's just more comfortable to do only one release at
+> a
+> time. So 0.5.2 will go first.
+>
+> > > 3) Are there any specific reasons that keep you from upgrading?
+> >
+> > Yes: no control over the department's servers. They use RedHat EL,
+> > currently at 5.3.
+>
+> Ok. To explain a bit about this one, I was poking for barriers that we
+> might
+> be able to address inside RKWard. I'm afraid your department's servers are
+> not
+> something I can do anything about, though ;-).
+>
+> Regards
+> Thomas
+> -------------- next part --------------
+> A non-text attachment was scrubbed...
+> Name: not available
+> Type: application/pgp-signature
+> Size: 198 bytes
+> Desc: This is a digitally signed message part.
+>
+> ------------------------------
+>
+> Message: 5
+> Date: 7 Oct 2009 19:06:25 +0200
+> From: "Thomas Friedrichsmeier"
+>        <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Subject: [rkward-users] Call for testing: RKWard 0.5.2-pre1 / Release
+>        schedule
+> To: rkward-devel at lists.sourceforge.net
+> Cc: rkward-users at lists.sourceforge.net
+> Message-ID:
+>        <200910071906.29470.thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> Content-Type: text/plain; charset="us-ascii"
+>
+> Hi!
+>
+> R 2.10.0 (scheduled to be released October, 26) will have a new dynamic
+> help
+> system, and unfortunately the current released versions of RKWard do no
+> handle
+> that well. Therefore I'd like to provide a new official release of RKWard
+> in
+> time.
+>
+> I've drafted a tentative timeline at
+>
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule
+> . The targetted release date is October 20. That's fairly soon, but I feel
+> the
+> sources are in relatively good shape. Of course we still need a lot of
+> testing, and that's the main point of this mail:
+>
+> --- Testing ---
+>
+> Please download the 0.5.2-pre1 release (also linked to from
+> http://p.sf.net/rkward/download) and give it a try. If you have an alpha
+> version of R 2.10.0 installed, or are willing to install one, testing with
+> that will be particularily valuable. Please try to browse a few help pages,
+> and produce some output. Also, if compiling from sources, please run
+>   make plugintests
+> after make install, and report any failed tests.
+>
+> Please try to provide feedback by October 14, i.e. a week from now.
+>
+> --- Translators ---
+>
+> .po and .pot files are located in the po-subdirectory, as usual. Please
+> provide
+> your updates by October 14.
+>
+> --- Plugin authors ---
+>
+> If you plan to add features to existing plugins before the release, please
+> post to the mailing list, first. @Michael: I did not forget about you, and
+> will
+> provide feedback as soon as I can. I'm confident that the Stata-import
+> plugin
+> will be part of the official release. Please remember to prepare a small
+> sample
+> file that we can add to the sources for automated testing.
+>
+> You may be wondering what's up with the promised new scripting solution.
+> Well,
+> the first part of it is ready for evaluation/discussion/feedback, and I'll
+> write a separate mail on this in the coming days. However, this will not be
+> finished in time for the release, so plugins continue to be PHP-based in
+> RKWard
+> 0.5.2.
+>
+> --- Closing words ---
+>
+> Remeber: There's always many ways you can help, with or without programming
+> skills. Testing is one important way to contribute, but for instance our
+> wiki
+> / website is always in need of love as well. If you have time to spare,
+> your
+> help will be very welcome.
+>
+> Thanks!
+> Thomas
+> -------------- next part --------------
+> A non-text attachment was scrubbed...
+> Name: not available
+> Type: application/pgp-signature
+> Size: 198 bytes
+> Desc: This is a digitally signed message part.
+>
+> ------------------------------
+>
+> Message: 6
+> Date: Tue, 13 Oct 2009 19:27:11 -0400
+> From: Patrick Richardson <xplaner801 at comcast.net>
+> Subject: [rkward-users] Scripts being saved in binary
+> To: rkward-users at lists.sourceforge.net
+> Message-ID: <1255476431.12476.2.camel at patrick-desktop>
+> Content-Type: text/plain
+>
+> I'm running rkward-0.5.1 on Ubuntu 9.04. Although I love this program, I
+> can't seem to get my scripts to save properly. When I click "Save" I get
+> a warning message that the file will be saved as binary. Has anyone else
+> had this problem or know how to get rid of it?
+>
+> Thanks,
+>
+> Patrick
+>
+>
+>
+>
+> ------------------------------
+>
+> Message: 7
+> Date: Thu, 22 Oct 2009 22:45:40 +0200
+> From: "alexandre villers" <alexandre.villers at cebc.cnrs.fr>
+> Subject: [rkward-users] rkward on ubuntu 9.04 (again)...
+> To: rkward-users at lists.sourceforge.net
+> Message-ID: <1256244340.82390acalexandre.villers at cebc.cnrs.fr>
+> Content-Type: text/plain; charset="UTF-8"
+>
+> Good evening,
+>
+> I had trouble a couple of months ago when installing Rkward and Thomas
+> provided me with some command lines to get an unbroken version of Rkward
+>
+> "sudo echo "deb http://reaktanz.de/deb/rkward jaunty main" >
+> /etc/apt/sources.list.d/rkward.list
+>   sudo apt-get update
+>   sudo apt-get install rkward "
+>
+> Unfortunately, I had to reinstall Ubuntu and those lines don't work
+> anymore. I get
+>
+> A Fatal Error Occurred
+> The application RKWard (rkward) crashed and caused the signal 6 (SIGABRT).
+> Please help us improve the software you use by filing a report at
+> http://bugs.kde.org. Useful details include how to reproduce the error,
+> documents that were loaded, etc.
+>
+> Any idea ?
+>
+> Best regards
+>
+> Alex, Ubuntu beginner
+> Alexandre Villers
+> PhD. Student
+> Team Biodiversity
+> CEBC CNRS
+> 79360 Beauvoir sur Niort
+>
+>
+> __________ Information from ESET Mail Security, version of virus signature
+> database 4534 (20091022) __________
+>
+> The message was checked by ESET Mail Security.
+> http://www.eset.com
+>
+>
+>
+>
+>
+> ------------------------------
+>
+> Message: 8
+> Date: Fri, 23 Oct 2009 00:34:24 +0200
+> From: meik michalke <meik.michalke at uni-duesseldorf.de>
+> Subject: Re: [rkward-users] rkward on ubuntu 9.04 (again)...
+> To: rkward-users at lists.sourceforge.net
+> Message-ID: <200910230034.29035.meik.michalke at uni-duesseldorf.de>
+> Content-Type: text/plain; charset="iso-8859-1"
+>
+> hi alex,
+>
+> am Donnerstag, 22. Oktober 2009 (22:45) schrieb alexandre villers:
+> > Unfortunately, I had to reinstall Ubuntu and those lines don't work
+> > anymore.
+>
+> please explain what you mean by "don't work anymore" (i'm the one behind
+> the
+> reaktanz.de repository). did anything produce an error during the process?
+>
+> what ist the outcome of the following commands:
+>  cat /etc/apt/sources.list.d/rkward.list
+>  R --version
+>  rkward --version
+>
+>
+> viele gr??e :: m.eik
+>
+> --
+> dipl. psych. meik michalke
+> institut f"ur experimentelle psychologie
+> abt. f"ur diagnostik und differentielle psychologie
+> heinrich-heine-universit"at
+> -------------- next part --------------
+> A non-text attachment was scrubbed...
+> Name: not available
+> Type: application/pgp-signature
+> Size: 197 bytes
+> Desc: This is a digitally signed message part.
+>
+> ------------------------------
+>
+>
+> ------------------------------------------------------------------------------
+> Come build with us! The BlackBerry(R) Developer Conference in SF, CA
+> is the only developer event you need to attend this year. Jumpstart your
+> developing skills, take BlackBerry mobile applications to market and stay
+> ahead of the curve. Join us from November 9 - 12, 2009. Register now!
+> http://p.sf.net/sfu/devconference
+>
+> ------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+> End of RKWard-users Digest, Vol 25, Issue 1
+> *******************************************
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091023/49e3288c/attachment.html>
+
+From alexandre.villers at cebc.cnrs.fr  Fri Oct 23 11:28:11 2009
+From: alexandre.villers at cebc.cnrs.fr (Alexandre VILLERS)
+Date: Fri, 23 Oct 2009 13:28:11 +0200
+Subject: [rkward-users] rkward on unbuntu 9.04
+Message-ID: <4AE1934B.7030103@cebc.cnrs.fr>
+
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091023/62bcffaa/attachment.html>
+
+From Meik.Michalke at uni-duesseldorf.de  Fri Oct 23 12:59:33 2009
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 23 Oct 2009 14:59:33 +0200
+Subject: [rkward-users] rkward on unbuntu 9.04
+In-Reply-To: <4AE1934B.7030103@cebc.cnrs.fr>
+References: <4AE1934B.7030103@cebc.cnrs.fr>
+Message-ID: <200910231459.36800.meik.michalke@uni-duesseldorf.de>
+
+hi alex,
+
+ok, this seems to make the problem obvious:
+
+On Friday 23 October 2009 13:28:11 Alexandre VILLERS wrote:
+> cat /etc/apt/sources.list.d/rkward.list --> no file or folder
+
+this means that the file "rkward.list" doesn't exist, hence the echo command 
+you posted before didn't produce the desired result. please create this file, 
+e.g. by typing
+  sudo nano /etc/apt/sources.list.d/rkward.list
+which will open the nano text editor. into that file just write/copy
+
+deb http://reaktanz.de/deb/rkward jaunty main
+
+and close nano by hitting <ctrl>+<x> and save the file. then type
+   sudo aptitude update
+   sudo aptitude safe-upgrade
+which should upgrade rkward to 0.5.1.
+
+*but* 
+
+>  R --version 2.9.2
+
+can it be you have sucessfully upgraded R using the CRAN repository? i believe 
+2.9.2 is not the official ubuntu version. in that case, you need to use a 
+slightly different line in rkward.list file:
+
+deb http://reaktanz.de/deb/rkward-cran jaunty main
+
+>  rkward --version Qt 4.5.0   KDE 4.2.2    RKWard 0.5.0b
+
+this is not the latest version you'd get from the reaktanz repository. if all 
+went well it should read:
+
+Qt: 4.5.0
+KDE: 4.2.2 (KDE 4.2.2)
+RKWard: 0.5.1
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091023/3ade8a1c/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 26 15:30:28 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 26 Oct 2009 16:30:28 +0100
+Subject: [rkward-users] Scripts being saved in binary
+In-Reply-To: <1255476431.12476.2.camel@patrick-desktop>
+References: <1255476431.12476.2.camel@patrick-desktop>
+Message-ID: <200910261630.28421.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+sorry that it took me so long to reply. I'm terribly busy ATM.
+
+On Wednesday 14 October 2009, Patrick Richardson wrote:
+> I'm running rkward-0.5.1 on Ubuntu 9.04. Although I love this program, I
+> can't seem to get my scripts to save properly. When I click "Save" I get
+> a warning message that the file will be saved as binary. Has anyone else
+> had this problem or know how to get rid of it?
+
+This means you have some characters in your file which cannot be represented in 
+your current encoding. Often times those are typographic quotes or long 
+dashes. Either find those characters and replace them, or switch to UTF-8 
+encoding (Edit->Tools Move->Encoding).
+
+Note that the warning message comes from the katepart that we use for the 
+editor in RKWard. And yes, this warning could really be more helpful (see also 
+https://bugs.kde.org/show_bug.cgi?id=89866).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091026/61df608e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 26 16:49:05 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 26 Oct 2009 17:49:05 +0100
+Subject: [rkward-users] RKWard 0.5.2 is released
+Message-ID: <200910261749.05272.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+RKWard version 0.5.2 is officially available, now. An announcement and list of 
+changes can be found at http://rkward.sf.net .
+
+Many thanks to all contributors, and sorry for not sticking to the time 
+schedule (next time will be better, I hope)!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091026/14103ec7/attachment.sig>
+
+From jtatria at gmail.com  Mon Oct 26 18:51:53 2009
+From: jtatria at gmail.com (=?UTF-8?B?Sm9zw6kgVG9tw6FzIEF0cmlh?=)
+Date: Mon, 26 Oct 2009 14:51:53 -0400
+Subject: [rkward-users] rkward as a scripting ide
+Message-ID: <8325369e0910261151t372524bawa53b768ed789c6d5@mail.gmail.com>
+
+Hello, i'using rkward mainly as a scripting ide, and i have some questions.
+
+first, i have experienced some weird behaviour when it comes to
+changing focus from script editor to console to graphics device, etc,
+where the cursor would be blinking on the script editor, but rkward
+would not be in editor mode, so some shortcuts don't work. long stroy
+short, sometimes i expect to be able to ctrl-c, alt-tab, ctrl-v,
+shift-f7 and have a block of code pasted and ran from another window,
+but instead rkward gets all confused, and starts complaining that
+ctrl-v is ambigous or what not, and i have to dismiss the warning,
+force the program to unfocus the editor and then refocus it in order
+for it to get into editor mode and be able to use kate's shortcuts.
+
+is this normal?
+
+second, every time i start rkward, i rearrange the gui in order to
+have file and env explorer on the left side, script/help/output/nav in
+the main window, and console and log on the right side. having to
+rearrange by hand everytime is getting old rather quickly. is there
+any form to save this configuration as default layout?
+
+Thanks a lot for your help.
+jta
+
+-- 
+entia non sunt multiplicanda praeter necessitatem
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Oct 27 14:52:00 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 27 Oct 2009 15:52:00 +0100
+Subject: [rkward-users] rkward as a scripting ide
+In-Reply-To: <8325369e0910261151t372524bawa53b768ed789c6d5@mail.gmail.com>
+References: <8325369e0910261151t372524bawa53b768ed789c6d5@mail.gmail.com>
+Message-ID: <200910271552.04714.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hello,
+
+On Monday 26 October 2009, Jos? Tom?s Atria wrote:
+> first, i have experienced some weird behaviour when it comes to
+> changing focus from script editor to console to graphics device, etc,
+
+various versions of RKWard had various problems with focus handling. Your first 
+attempt should be to upgrade to 0.5.2, which had at least one related bug 
+fixed. If this is not an option, or the problem persists, please post the 
+version number of rkward you are using. Also, if you can find a way to 
+reproduce the problem reliably, that would really be helpful in tracking down 
+the problem.
+
+> second, every time i start rkward, i rearrange the gui in order to
+> have file and env explorer on the left side, script/help/output/nav in
+> the main window, and console and log on the right side. having to
+> rearrange by hand everytime is getting old rather quickly. is there
+> any form to save this configuration as default layout?
+
+Unfortunately, not yet, no. If you'd like to dig into the sources and provide 
+a patch, we'd be happy to accept that. Otherwise, this will be implemented 
+some day, but that may take an unknown amount of time.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091027/1c555f98/attachment.sig>
+

@@ -1,0 +1,490 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Nov  2 12:32:10 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 2 Nov 2010 13:32:10 +0100
+Subject: [rkward-users] Anybody using the --disable-stack-check command line
+	option?
+Message-ID: <201011021332.14034.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+The subject line already has the question: Does anybody on this list use the 
+"--disable-stack-check" command line parameter when starting RKWard?
+
+I believe that this option is no longer needed, and I intend to remove it, 
+soon. Thus, if you *do* use this option, please speak up, now.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101102/c403cb7d/attachment.sig>
+
+From gilles.sanmartin at gmail.com  Mon Nov  8 11:50:51 2010
+From: gilles.sanmartin at gmail.com (Gilles San Martin)
+Date: Mon, 08 Nov 2010 12:50:51 +0100
+Subject: [rkward-users] Console printing behavior
+Message-ID: <4CD7E41B.9000700@gmail.com>
+
+Hello
+
+I would like to use Rkward as IDE for R under GNU/Linux. Until now I 
+have been using Kate + embedded Konsole, a solution that have some 
+similarities with Rkward of course. The implementation of graphics 
+history in the last Rkward  version is a very good point along with 
+several other facilities relative to the simple use of Kate. So, many 
+thanks for all the job realized until now.
+
+There is however a behavior of the console that I really find annoying : 
+when you run a block of code from a script the console displays first 
+the block of code and then all the prints. Is it possible to change this 
+behavior so that the prints follow immediately the code that have 
+generated it (as if you had executed the code line by line - I hope this 
+explanation is explicit enough...) ?
+
+Thanks for any help
+Gilles
+
+PS : I'm using Rkward 0.5.4 from the CRAN repositories under Ubuntu 10.04
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov  8 14:12:37 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 Nov 2010 15:12:37 +0100
+Subject: [rkward-users] Console printing behavior
+In-Reply-To: <4CD7E41B.9000700@gmail.com>
+References: <4CD7E41B.9000700@gmail.com>
+Message-ID: <201011081512.43486.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 08 November 2010, Gilles San Martin wrote:
+> There is however a behavior of the console that I really find annoying :
+> when you run a block of code from a script the console displays first
+> the block of code and then all the prints. Is it possible to change this
+> behavior so that the prints follow immediately the code that have
+> generated it (as if you had executed the code line by line - I hope this
+> explanation is explicit enough...) ?
+
+I know what you mean. You cannot currently configure RKWard to work this way.
+
+What you can do is either press and hold Shift+F7, or copy the code and paste 
+it into the console. However, when you do, you will also notice the reason why 
+this is not the default behavior: For long statements (e.g.:
+  x <- function {
+    # dozens of lines inside
+  }
+) this is quite slow (pasting this is somewhat slow in a plain R session, too, 
+but not quite as pronounced).
+
+It can think of several approaches to improve on this, but each would take 
+some time to implement. If you know a bit of C++, and you are willing to help, 
+I'll be happy to give you some details on what I have in mind (on the rkward-
+devel list). 
+
+Otherwise, you could add this to our feature request tracker 
+(http://sourceforge.net/tracker/?atid=459010&group_id=50231) to make sure 
+we'll remember to look into it, later. But currently other issues are higher 
+up on my TODO list, and so I will not promise any time frame.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101108/524fe7ab/attachment.sig>
+
+From gilles.sanmartin at gmail.com  Tue Nov  9 21:17:21 2010
+From: gilles.sanmartin at gmail.com (Gilles San Martin)
+Date: Tue, 09 Nov 2010 22:17:21 +0100
+Subject: [rkward-users] Console printing behavior
+In-Reply-To: <201011081512.43486.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4CD7E41B.9000700@gmail.com>
+	<201011081512.43486.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4CD9BA61.3000308@gmail.com>
+
+Thanks for your reply
+
+Sadly I don't know anything about C++ (just a little bit of R)
+I will add it to the feature request tracker.
+
+I don't find the copy paste to the console so slow relative to a normal 
+R console (but the rkward "run" commands are effectively extremely rapid).
+I was using this with kate (with the command : tools/redirect to the 
+console when Konsole is embedded in Kate).
+It could maybe be an easy temporary solution to add a button/command 
+that do the whole stuf : copy from the script, paste in the console and 
+add a "carriage return" to be sure that the last line of code is executed.
+
+I tried to hold the shift+F7 approach. It works more or less fine but it 
+seems to have a small bug.
+When the execution of one line (command) is long, rkward print the 
+following command(s) in green and without the prompt as if it was an R 
+print/error message etc... instead of the normal syntaxic coloration 
+with the prompt. But these "green" commands seems to be nevertheless 
+executed. Some times each of these commands is executed 2 times (but I 
+was not able to reproduce this artificially).
+I had this problem with a series of "pairs" graphs.
+
+Here is an example that reproduce the bug (but not  the double 
+execution) if you hold shift + F6.
+
+data <- matrix (rnorm(3000), 100, 30)
+
+pairs(data[,1:10])
+pairs(data[,11:20])
+pairs(data[,21:30])
+
+Best regards
+Gilles
+
+
+
+Le 08/11/10 15:12, Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Monday 08 November 2010, Gilles San Martin wrote:
+>    
+>> There is however a behavior of the console that I really find annoying :
+>> when you run a block of code from a script the console displays first
+>> the block of code and then all the prints. Is it possible to change this
+>> behavior so that the prints follow immediately the code that have
+>> generated it (as if you had executed the code line by line - I hope this
+>> explanation is explicit enough...) ?
+>>      
+> I know what you mean. You cannot currently configure RKWard to work this way.
+>
+> What you can do is either press and hold Shift+F7, or copy the code and paste
+> it into the console. However, when you do, you will also notice the reason why
+> this is not the default behavior: For long statements (e.g.:
+>    x<- function {
+>      # dozens of lines inside
+>    }
+> ) this is quite slow (pasting this is somewhat slow in a plain R session, too,
+> but not quite as pronounced).
+>
+> It can think of several approaches to improve on this, but each would take
+> some time to implement. If you know a bit of C++, and you are willing to help,
+> I'll be happy to give you some details on what I have in mind (on the rkward-
+> devel list).
+>
+> Otherwise, you could add this to our feature request tracker
+> (http://sourceforge.net/tracker/?atid=459010&group_id=50231) to make sure
+> we'll remember to look into it, later. But currently other issues are higher
+> up on my TODO list, and so I will not promise any time frame.
+>
+> Regards
+> Thomas
+>    
+>
+>
+> ------------------------------------------------------------------------------
+> The Next 800 Companies to Lead America's Growth: New Video Whitepaper
+> David G. Thomson, author of the best-selling book "Blueprint to a
+> Billion" shares his insights and actions to help propel your
+> business during the next growth cycle. Listen Now!
+> http://p.sf.net/sfu/SAP-dev2dev
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>    
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Nov 10 08:40:44 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 Nov 2010 09:40:44 +0100
+Subject: [rkward-users] Console printing behavior
+In-Reply-To: <4CD9BA61.3000308@gmail.com>
+References: <4CD7E41B.9000700@gmail.com>
+	<201011081512.43486.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4CD9BA61.3000308@gmail.com>
+Message-ID: <201011100940.47779.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 09 November 2010, Gilles San Martin wrote:
+> It could maybe be an easy temporary solution to add a button/command
+> that do the whole stuf : copy from the script, paste in the console and
+> add a "carriage return" to be sure that the last line of code is executed.
+
+yes, this might be a short-term option. I'll try to remember to have another 
+look, soon, and see, whether it can find a way to fix this, properly.
+ 
+> When the execution of one line (command) is long, rkward print the
+> following command(s) in green and without the prompt as if it was an R
+> print/error message etc... instead of the normal syntaxic coloration
+> with the prompt. But these "green" commands seems to be nevertheless
+> executed. Some times each of these commands is executed 2 times (but I
+> was not able to reproduce this artificially).
+
+Yes, indeed. This will need some reworking.
+
+About the commands being executed several times: It happens when submitting a 
+construct like this in a line-by-line fashion:
+	{
+		print (1);
+	}; print (2); {
+		print (3);
+	}
+What throws us off is the third line: When submitting the command up to this 
+point, the parser tells us the statement is still incomplete, but actually, 
+some of it was a complete statement, and has already been executed. It's a bit 
+embarassing, but fortunately this is not triggered all too often (and it's 
+another reason why Shift + F8 and Shift + F9 run the command a bit 
+differently).
+
+I am in the middle of a large rework of the internals of the interface to R. 
+This should also make it possible to fix this (but don't hold your breath).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101110/a88da2a6/attachment.sig>
+
+From noreply at sourceforge.net  Fri Nov 19 05:36:13 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 19 Nov 2010 05:36:13 +0000
+Subject: [rkward-users] [Help] Install problem with Ubuntu
+Message-ID: <forum-165574-8787857@sourceforge.net>
+
+
+The following forum message was posted by ericstrom at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3952446:
+
+Just installed Rkward through the Ubuntu Software Center. The install seemed
+to go well with no errors reported. I was able to open Rkward also with no problems.
+I waited until the box in the lower right corner was green indicating R was
+running. Then I click on the button on the bottom to open up the console. It
+open well and I got the prompt as expected. Then I typed in a simple expression
+to test things out > 3+5 and I got all sorts of errors as follows:
+
+Error: unprotect(): only 1 protected items
+
+ *** caught segfault ***
+address (nil), cause 'memory not mapped'
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+
+So my question: What is this error and how do I fix it ? 
+
+
+
+From noreply at sourceforge.net  Fri Nov 19 08:22:48 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 19 Nov 2010 08:22:48 +0000
+Subject: [rkward-users] [Help] RE: Install problem with Ubuntu
+In-Reply-To: <forum-165574-8787857@sourceforge.net>
+Message-ID: <forum-165574-8788408@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3952446:
+
+Most likely you are trying to use R 2.12.x with RKWard 0.5.3 (or earlier). For
+R 2.12.x you will need at least RKWard 0.5.4.
+
+Solution: Upgrade RKWard or downgrade R.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sat Nov 20 03:32:06 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 20 Nov 2010 03:32:06 +0000
+Subject: [rkward-users] [Help] RE: Install problem with Ubuntu
+In-Reply-To: <forum-165574-8788408@sourceforge.net>
+Message-ID: <forum-165574-8792190@sourceforge.net>
+
+
+The following forum message was posted by ericstrom at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3952446:
+
+I checked and you are correct. I am running R 2.12.0 and RKward 0.5.3. I loaded
+RKward through the Ubuntu software center. I would like to upgrade to RKward
+0.5.4 but I'm not sure how. It looks like 0.5.3 is the highest version available
+through the Ubuntu software center. How would I go about upgrading to RKward
+0.5.4 ?
+
+
+
+From noreply at sourceforge.net  Sun Nov 21 14:12:08 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Nov 2010 14:12:08 +0000
+Subject: [rkward-users] [Help] RE: Install problem with Ubuntu
+In-Reply-To: <forum-165574-8792190@sourceforge.net>
+Message-ID: <forum-165574-8798115@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3952446:
+
+Hm, so where did you install R 2.12.0 from?
+
+Anyway, you can use this PPA:
+https://launchpad.net/~rkward-devel/+archive/rkward-stable . This should work
+in the current case.
+
+(However, at times it is necessary to use a version of RKWard that was *compiled*
+against the latest version of R. This is not currently covered by our PPA).
+
+
+
+From m.d.vreeburg at gmail.com  Wed Nov 24 22:39:56 2010
+From: m.d.vreeburg at gmail.com (Mischa Vreeburg)
+Date: Wed, 24 Nov 2010 23:39:56 +0100
+Subject: [rkward-users] network proxy
+Message-ID: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+
+Hi,
+
+I have a problem. At work I'm behind a proxy.
+When this is configured so that I can download and install the packages,
+I can't use the help browser, because it ignores the NO_PROXY setting.
+
+This wasn't in the builds of the end of october.
+
+Could you plz tell me how to fix this?
+
+Regards
+M. D. Vreeburg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101124/a4041fd1/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Nov 25 08:50:32 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 25 Nov 2010 09:50:32 +0100
+Subject: [rkward-users] network proxy
+In-Reply-To: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+References: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+Message-ID: <201011250950.35824.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 24 November 2010, Mischa Vreeburg wrote:
+> I have a problem. At work I'm behind a proxy.
+> When this is configured so that I can download and install the packages,
+> I can't use the help browser, because it ignores the NO_PROXY setting.
+> 
+> This wasn't in the builds of the end of october.
+
+if I read you correctly, you are using our daily builds (or the SVN version), 
+and you see this problem after updating, recently?
+
+The most prominent change in the development version is that GUI frontend and 
+R backend now run in two separate processes (which fixes the rJava-issue, you 
+reported, among other things). So one possible cause I can think of is that 
+the NO_PROXY environment variable is set for one, but not for the other 
+process. Environment variables set before starting RKWard should be available 
+to both processes, but environment variables set from R, afterwards, will only 
+affect the backend side. How / where do you set NO_PROXY? Does it work, if you 
+start RKWard as 
+  NO_PROXY="127.0.0.1" rkward
+
+If it doesn't, what is the output of
+  .rk.getHelpBaseUrl()
+run in the R Console of rkward? If you enter that url in a separate browser, 
+can you connect (you'll only see a message that this path is not allowed, but 
+still)?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101125/d40aca0a/attachment.sig>
+
+From m.d.vreeburg at gmail.com  Mon Nov 29 22:23:31 2010
+From: m.d.vreeburg at gmail.com (Mischa Vreeburg)
+Date: Mon, 29 Nov 2010 23:23:31 +0100
+Subject: [rkward-users] network proxy
+In-Reply-To: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+References: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+Message-ID: <AANLkTikR4ssrNr0E4c65af1jiga_v8NugSMu-7iCbNzv@mail.gmail.com>
+
+I tried the NO_PROXY="127.0.0.1" rkward line. It didn't work.
+I set the proxy in both gnome-network-properties and in /etc/profile.d/proxy.sh.
+
+
+The output of .rk.getHelpBaseUrl() is in rkward :
+Error in tools::startDynamicHelp() : server already running
+[1] "http://127.0.0.1:24203"
+
+The error I get when running any help command
+
+The requested operation could not be completed
+Connection to server refused
+
+Details of the Request:
+URL: http://127.0.0.1:24203/doc/html/index.html
+Protocol:http
+Date and time:
+Additional information :XXX.XXX.XXX.XXX: Timeout for socket operation
+
+Description
+
+The server 127.0.0.1 refused to allow this computer to make a connection.
+
+Using firefox with the setting use system settings for proxy
+I get "Only NEWS and URLs under /doc and /library are allowed"
+With konquerer I get the same error.
+
+It seems KDE is only picking up the setting in /etc/profile.d.
+when I start konquerer with the no_proxy line I get
+also the same error. I think it is an error with kde
+
+
+I indeed use your daily builds.
+
+Regards,
+
+Mischa
+
+
+2010/11/24 Mischa Vreeburg <m.d.vreeburg at gmail.com>
+
+> Hi,
+>
+> I have a problem. At work I'm behind a proxy.
+> When this is configured so that I can download and install the packages,
+> I can't use the help browser, because it ignores the NO_PROXY setting.
+>
+> This wasn't in the builds of the end of october.
+>
+> Could you plz tell me how to fix this?
+>
+> Regards
+> M. D. Vreeburg
+>
+
+
+
+-- 
+M. D. Vreeburg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101129/461b04c6/attachment.html>
+

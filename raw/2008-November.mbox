@@ -1,0 +1,588 @@
+From noreply at sourceforge.net  Sat Nov  1 18:19:43 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 01 Nov 2008 18:19:43 +0000
+Subject: [rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex
+	?
+Message-ID: <5555495.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5555495
+By: bgilm
+
+Hello, 
+
+I have recently updated my Ubuntu version fom Hardy Heron to Intrepid Ibex.
+Rkward worked fine before I upgraded but now, I meet some problems...
+It seems that within Ibex, the Rkward toolbar menu is not complete, the run
+menu and the settings menu are especially missing...
+Am I the only one facing the problem ?
+
+Thank you for your help  
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Nov  1 22:51:11 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 01 Nov 2008 22:51:11 +0000
+Subject: [rkward-users] [rkward - Help] RE: Rkward compatible with Intrepid
+	Ibex ?
+In-Reply-To: <5555495.165574@sourceforge.net>
+Message-ID: <5556563.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5556563
+By: fsando
+
+Take a look here to see if it helps you
+
+https://bugs.launchpad.net/ubuntu/+source/rkward/+bug/272527
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From dgvirtual at akl.lt  Tue Nov  4 19:39:35 2008
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Tue, 04 Nov 2008 21:39:35 +0200
+Subject: [rkward-users] [rkward - Help] Rkward compatible with Intrepid
+ Ibex	?
+In-Reply-To: <5555495.165574@sourceforge.net>
+References: <5555495.165574@sourceforge.net>
+Message-ID: <4910A4F7.80605@akl.lt>
+
+Hi, I wrote about this in this list a bit earlier.
+
+The solution proposed in the single responce you have received before
+mine is a solution to a different problem.
+
+What I had to do was - recompile the package without using the rules for
+building package in ubuntu.
+
+That is dirty, I know, but that was the best I could do...
+
+Here is what you have to do:
+
+# install the rkward build dependencies
+sudo apt-get build-dep rkward
+# remove the damaged rkward
+sudo apt-get remove rkward
+## do not remove the packages that apt-get will suggest to remove after this
+# get the sources of rkward - regular download, or the debian way:
+apt-get source rkward
+#now, go into rkward-* directory, find the INSTALL or README file and
+follow the prescribed procedure to build and install the package..
+
+After that you might still have to deal with the missing plugins
+problem: see the thread proposed to you earlier.
+
+Donatas
+
+
+SourceForge.net ra??:
+> Read and respond to this message at: 
+> https://sourceforge.net/forum/message.php?msg_id=5555495
+> By: bgilm
+>
+> Hello, 
+>
+> I have recently updated my Ubuntu version fom Hardy Heron to Intrepid Ibex.
+> Rkward worked fine before I upgraded but now, I meet some problems...
+> It seems that within Ibex, the Rkward toolbar menu is not complete, the run
+> menu and the settings menu are especially missing...
+> Am I the only one facing the problem ?
+>
+> Thank you for your help  
+>
+> ______________________________________________________________________
+> You are receiving this email because you elected to monitor this forum.
+> To stop monitoring this forum, login to SourceForge.net and visit: 
+> https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+>
+> -------------------------------------------------------------------------
+> This SF.Net email is sponsored by the Moblin Your Move Developer's challenge
+> Build the coolest Linux based applications with Moblin SDK & win great prizes
+> Grand prize is a trip for two to an Open Source event anywhere in the world
+> http://moblin-contest.org/redirect.php?banner_id=100&url=/
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+
+
+From noreply at sourceforge.net  Wed Nov  5 03:02:59 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 05 Nov 2008 03:02:59 +0000
+Subject: [rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu
+	problem?
+In-Reply-To: <5548415.165574@sourceforge.net>
+Message-ID: <5578049.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5578049
+By: enliteme
+
+PK,
+
+Thanks for the info. The use of shortcut keys helps a lot. Though requires some
+time to get used to it.
+
+
+On Suse (KDE3) rkward (0.4.9)  is I confirmed the same focus problem, so Xubuntu
+is not to be blamed.
+
+Somewhat OFF but after upgrading Ubuntu 8.10 rkward (0.5.0b) is broken (icons
+and some of the menus are missing). My default window manager is gnome, so there
+can be some problem with KDE 4 I guess. After fixing it, I can tell if it has
+this focus problem or not.
+
+In either ways, this is really a great app, I hope that the developers won't
+give up on it
+(e.g. I read somewhere about plans to extend it to Windows - seemingly with
+no tangible results).
+
+btw, 
+http://rkward.sourceforge.net/
+says:
+"R?ponse serveur SQL : Can't connect to local MySQL server through socket
+'/var/lib/mysql/mysql.sock' (2)"
+which is not promising either...
+
+
+once again, thanks for the replies.
+
+gbr
+
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Nov  7 16:26:00 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 07 Nov 2008 16:26:00 +0000
+Subject: [rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0
+	obsolete Rdevices.h
+In-Reply-To: <5506946.165574@sourceforge.net>
+Message-ID: <5596777.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5596777
+By: earlycj5
+
+Hhmmm, this was posted a couple weeks ago, I'm having this same issue.  I get
+75% built then it stops and complains about Rdevices.h not existing, yes I grabbed
+SVN code.  So this still hasn't been addressed I'm guessing?
+
+I was trying to compile since I don't have a fully functional toolbar in Intrepid.
+I can't create new script file tabs among other irritations with the version
+in the repositories.
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From Meik.Michalke at uni-duesseldorf.de  Mon Nov 17 13:46:02 2008
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 17 Nov 2008 14:46:02 +0100
+Subject: [rkward-users] rules fixed (almost) [was: Rkward compatible with
+	Intrepid Ibex?]
+In-Reply-To: <4910A4F7.80605@akl.lt>
+References: <5555495.165574@sourceforge.net> <4910A4F7.80605@akl.lt>
+Message-ID: <200811171446.06283.meik.michalke@uni-duesseldorf.de>
+
+Am Dienstag 04 November 2008 20:39:35 schrieb Donatas G.:
+> What I had to do was - recompile the package without using the rules for
+> building package in ubuntu.
+>
+> That is dirty, I know, but that was the best I could do...
+
+i've managed to find the showstopper in the debian/rules -- two lines have to 
+be altered. change line 37 from
+    -DDATA_INSTALL_DIR=/usr/share/apps/ \
+to
+    -DDATA_INSTALL_DIR=/usr/share/kde4/apps \
+
+and line 80 from
+    rm -vf $(CURDIR)/debian/rkward/usr/share/apps/katepart/syntax/r.xml
+to
+    rm -vf $(CURDIR)/debian/rkward/usr/share/kde4/apps/katepart/syntax/r.xml
+
+if needed, apply the Rdevices.h patch (i.e. remove its inclusion as described 
+by thomas). afterwards, building a functional debian package with
+   fakeroot dpkg-buildpackage -uc -us
+   sudo dpkg -i ../rkward_0.5.0b-2_i386.deb
+worked for me.
+
+you may have to correct the path to all.pluginmap (rkward configuration -> 
+plug-ins) as well, which is now to be found in /usr/share/kde4/apps/rkward/, 
+of course.
+
+most icons still seem to be out of path, though. but apart from that, rkward 
+is fully functional.
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081117/5c64f1d6/attachment.sig>
+
+From kapatp at gmail.com  Mon Nov 17 19:48:50 2008
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Mon, 17 Nov 2008 14:48:50 -0500
+Subject: [rkward-users] rules fixed (almost) [was: Rkward compatible
+	with Intrepid Ibex?]
+In-Reply-To: <200811171446.06283.meik.michalke@uni-duesseldorf.de>
+References: <5555495.165574@sourceforge.net> <4910A4F7.80605@akl.lt>
+	<200811171446.06283.meik.michalke@uni-duesseldorf.de>
+Message-ID: <de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>
+
+A quick question here:
+
+On Mon, Nov 17, 2008 at 8:46 AM, meik michalke
+<Meik.Michalke at uni-duesseldorf.de> wrote:
+>
+> i've managed to find the showstopper in the debian/rules -- two lines have to
+> be altered. change line 37 from
+>    -DDATA_INSTALL_DIR=/usr/share/apps/ \
+> to
+>    -DDATA_INSTALL_DIR=/usr/share/kde4/apps \
+>
+> and line 80 from
+>    rm -vf $(CURDIR)/debian/rkward/usr/share/apps/katepart/syntax/r.xml
+> to
+>    rm -vf $(CURDIR)/debian/rkward/usr/share/kde4/apps/katepart/syntax/r.xml
+
+Is this only for Hardy or Intrepid or both?
+
+Regards,
+--
+PK
+
+
+
+From meik.michalke at uni-duesseldorf.de  Mon Nov 17 20:19:56 2008
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 17 Nov 2008 21:19:56 +0100
+Subject: [rkward-users]
+	=?iso-8859-1?q?rules_fixed_=28almost=29_=5Bwas=3A_?=
+	=?iso-8859-1?q?Rkward_compatible=09with_Intrepid_Ibex=3F=5D?=
+In-Reply-To: <de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>
+References: <5555495.165574@sourceforge.net>
+	<200811171446.06283.meik.michalke@uni-duesseldorf.de>
+	<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>
+	(sfid-20081117_204955_131150_4F1B6570)
+Message-ID: <200811172120.00847.meik.michalke@uni-duesseldorf.de>
+
+hallo ,
+
+am Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:
+> Is this only for Hardy or Intrepid or both?
+
+that's for intrepid.
+
+i've built a package from the same sources on a hardy system as well. but 
+intrepid installs kde4 as default (prefix is /usr), whereas hardy comes with 
+kde3 and the ability to install kde4 as well. all kde4 stuff in hardy is 
+therefor installed (aka prefix) to /usr/lib/kde4, with e.g. the 
+data_install_dir then being /usr/lib/kde4/share/kde4/apps. [i'm serious...]
+
+so, just alter the paths in the rules file depending on your kubuntu version 
+and you should be fine. on hardy, you might have to "export 
+PATH=$PATH:/usr/lib/kde4/bin" before calling dpkg-buildpackage, otherwise 
+kde4 won't be found.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081117/99fe185c/attachment.sig>
+
+From kapatp at gmail.com  Mon Nov 17 23:06:29 2008
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Mon, 17 Nov 2008 18:06:29 -0500
+Subject: [rkward-users] rules fixed (almost) [was: Rkward compatible
+	with Intrepid Ibex?]
+In-Reply-To: <200811172120.00847.meik.michalke@uni-duesseldorf.de>
+References: <5555495.165574@sourceforge.net>
+	<200811171446.06283.meik.michalke@uni-duesseldorf.de>
+	<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>
+	<200811172120.00847.meik.michalke@uni-duesseldorf.de>
+Message-ID: <de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>
+
+Hi,
+
+On Mon, Nov 17, 2008 at 3:19 PM, meik michalke
+<meik.michalke at uni-duesseldorf.de> wrote:
+> hallo ,
+>
+> am Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:
+>> Is this only for Hardy or Intrepid or both?
+>
+> that's for intrepid.
+>
+> i've built a package from the same sources on a hardy system as well. but
+> intrepid installs kde4 as default (prefix is /usr), whereas hardy comes with
+> kde3 and the ability to install kde4 as well. all kde4 stuff in hardy is
+> therefor installed (aka prefix) to /usr/lib/kde4, with e.g. the
+> data_install_dir then being /usr/lib/kde4/share/kde4/apps. [i'm serious...]
+
+:)) Hmmm...  But, why is intrepid using /usr/share/kde4/apps instead
+of /usr/share/apps? After all, this was the default for kde3, so if
+KDE4 is the default for intrepid, shouldn't it use
+/usr/share/apps ? Anyway, it is good to know this non-trivial convention!!
+
+> so, just alter the paths in the rules file depending on your kubuntu version
+> and you should be fine. on hardy, you might have to "export
+> PATH=$PATH:/usr/lib/kde4/bin" before calling dpkg-buildpackage, otherwise
+> kde4 won't be found.
+
+Thanks, I'll try that sometime. I am still using Hardy and I've pinned
+R at 2.7.2... I just didn't want to break the current (working!)
+setup...
+
+Regards,
+--
+PK
+
+
+
+From Meik.Michalke at uni-duesseldorf.de  Tue Nov 18 12:35:22 2008
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 18 Nov 2008 13:35:22 +0100
+Subject: [rkward-users] rules fixed (almost) [was: Rkward compatible
+ with Intrepid Ibex?]
+In-Reply-To: <de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>
+References: <5555495.165574@sourceforge.net>
+	<200811172120.00847.meik.michalke@uni-duesseldorf.de>
+	<de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>
+Message-ID: <200811181335.26075.meik.michalke@uni-duesseldorf.de>
+
+hi,
+
+Am Dienstag 18 November 2008 00:06:29 schrieb Prasenjit Kapat:
+> :)) Hmmm... ?But, why is intrepid using /usr/share/kde4/apps instead
+> of /usr/share/apps? After all, this was the default for kde3, so if
+> KDE4 is the default for intrepid, shouldn't it use
+> /usr/share/apps ?
+
+i agree. in fact, it does use /usr/share/apps as well. but perhaps its a 
+transitional state, and they're trying to clean up the directory tree... i'm 
+not an kubuntu developer, so i have no insight in that.
+
+you can use the kde4-config command to get information about verious expected 
+paths. for instance, to find the path for the data_install_dir:
+ kde4-config --path data
+
+("kde4-config --types" will list all available types).
+
+> Anyway, it is good to know this non-trivial convention!!
+
+to me it seemed the obvious place to look: if cmake/make/make install works, 
+but debian/rules doesn't, i guessed that the cmake call in the rules file with 
+its list of options was to blame. i removed all options, as expected the 
+package worked, after that i just rebuild the package with more and more 
+options until the errors reoccurred: gotcha ;-)
+
+> Thanks, I'll try that sometime. I am still using Hardy and I've pinned
+> R at 2.7.2... I just didn't want to break the current (working!)
+> setup...
+
+wisely so... however, this path issues are unrelated to the Rdevices.h issue 
+with R 2.8. you could try to compile against 2.7 first, and if it doesn't work 
+for you, simply re-install the official package.
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081118/47029aa9/attachment.sig>
+
+From noreply at sourceforge.net  Thu Nov 20 16:53:21 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 20 Nov 2008 16:53:21 +0000
+Subject: [rkward-users] [rkward - Help] Saving a graph
+Message-ID: <5682906.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5682906
+By: er317
+
+Hello,
+
+I used to have no problem saving graphs before (can't remember the exact way
+but using print to file)
+upgrading to RKWARD 0.5.0b (KDE 4.0.3). but now i have yet to figure how. Say
+i do:
+
+> contour(x,y,z)
+
+this shows in Graphics Device 2... how do i it in RKWARD's ouput window?
+
+Alternatively,
+
+> plot(rnorm(10),rnorm(10))
++ dev.copy2eps(file="test.eps") 
+X11cairo 
+       2
+The resulting file home/test seems to have the required properties:
+Type:    EPS image
+Size:    3.5KB
+MIME:   image/x-eps
+ 
+but if I open it with Document Viewer it shows Loading... There's also a little
+Watch in the bottom right of the file icon. This usually happens in the process
+of saving or downloading a file.
+
+thanks!
+
+x86_64-pc/Ubuntu 8.04/Genome 2.22.3/R2.8.0
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Nov 21 09:54:48 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 21 Nov 2008 09:54:48 +0000
+Subject: [rkward-users] [rkward - Help] RE: Saving a graph
+In-Reply-To: <5682906.165574@sourceforge.net>
+Message-ID: <5688330.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5688330
+By: fsando
+
+Hi
+What I'm going to suggest is more of a hack but I think it points the way to
+a long term solution.
+In rkward graphs are made through a call to the function 
+
+rk.graph.on()
+
+This function creates graph images in the ~/.rkward folder.
+It automatically names graph.01.png, graph.02.png etc. (or something very
+similar)
+
+When I make graphs now I always write code like this
+
+rk.graph.on()
+plot(x,y....)
+rk.grahp.off()
+
+The image is not actually created until rk.graph.off() is run.
+
+I made a my own version of this command to control the size and name of the
+image file I didn't go into the automatic the enumeration so it always appends
+a number to the filename but it could probably be changed with some more code
+digging.
+
+
+a3q_rk.graph.on <- function (width = 480, height = 480,prefix="graph", ...) 
+{
+    filename <- rk.get.tempfile.name(prefix = prefix, extension = ".png")
+    png(filename = file.path(filename), width = width, height = height, 
+        ...)
+    cat(paste("<img src=\"", filename, "\" width=\"", width, 
+        "\" height=\"", height, "\"><br>", sep = ""), file =
+rk.get.output.html.file(),
+        append = TRUE)
+}
+
+It is called like this
+a3q_rk.graph.on(width,height,graph_name)
+plot(x,y....)
+rk.grahp.off()
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Nov 27 16:58:31 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 27 Nov 2008 16:58:31 +0000
+Subject: [rkward-users] [rkward - Help] RE: Saving a graph
+In-Reply-To: <5682906.165574@sourceforge.net>
+Message-ID: <5724552.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5724552
+By: er317
+
+Thanks!
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

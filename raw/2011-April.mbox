@@ -1,0 +1,650 @@
+From yayopoint at gmail.com  Fri Apr  1 21:19:42 2011
+From: yayopoint at gmail.com (=?ISO-8859-1?Q?Andr=E9s_Necochea?=)
+Date: Fri, 1 Apr 2011 17:19:42 -0400
+Subject: [rkward-users] Fwd: [rkward-devel] Proposition of changes on
+ crosstabulation plugin
+In-Reply-To: <AANLkTinYDLAJA3b6NOMdTSOV3iUBCQ-LXJGWyV8sVNqq@mail.gmail.com>
+References: <AANLkTim1nGkgU=2dcUe1x=6BrFCkjJR0DXySOVnpVJbm@mail.gmail.com>
+	<201103312200.43531.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<AANLkTinhNjfcADZpwTUbhHJ+0iJpqkNbYHm5XsDfPkya@mail.gmail.com>
+	<AANLkTinYDLAJA3b6NOMdTSOV3iUBCQ-LXJGWyV8sVNqq@mail.gmail.com>
+Message-ID: <AANLkTiny4eV=jLJEfMWzeROpou+-8VU3Yivb3DESUshJ@mail.gmail.com>
+
+I still working in the mod of crosstabulation plugin.
+
+I have checked the function proposed by thomas, and I is ready for the use,
+it can bind contingency tables with its statistic with more than two
+dimensions. I don't want to be pompous, but I think that a function like
+this should be part of the base packages in R ;)
+
+I, don't make significative changes. I add the arguments row.vars and
+col.vars, thats are pased to ftable function.
+beside if you don't indicate the row.vars argument, it take the last level
+in the table for the column. I also think that the user could decide if he
+or she wants the statistics in rows or in colums
+
+bind.tables <- function (row.vars=NULL, col.vars=NULL, ...) {
+tables <- list (...)
+output <- unlist (tables)
+ dim (output) <- c (dim (tables[[1]]), length (tables))
+dimnames (output) <- c (dimnames (tables[[1]]), list
+(statistic=names(tables)))
+ if (is.null(col.vars))
+col.vars <- length(dim(tables[[1]]))
+ftable (output, row.vars=row.vars, col.vars=col.vars)
+}
+
+I attached the plugin as a simple tar.gz file, I will read the manual for
+make plugins to make a better plugin.
+
+At now it can calculate the percents, and add sums at margins, I think that
+it could calculate the cumsum, but I don't know how to put cumsum with
+addmargins function.
+
+I hope that you like this mod of crosstabulation plugin.
+
+-- 
+Amor y Paz
+ _    _
+ \\  //
+_ \\//
+\\   ^^>
+ \____/
+
+CHAU
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110401/f4033e7b/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: crosstab1.tar.gz
+Type: application/x-gzip
+Size: 2992 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110401/f4033e7b/attachment.gz>
+
+From noreply at sourceforge.net  Wed Apr  6 12:00:49 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 06 Apr 2011 12:00:49 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9752571@sourceforge.net>
+Message-ID: <forum-165574-9852907@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+[quote]The script windows are "trembling" for a while, in particular the upper
+bar of the window with the path and file name. [/quote]
+
+Can probably be improved a bit. I'll try to remember to look into it.
+
+[quote]The welcome window closes automatically when the others are opened. Not
+sure if this is intentional. [/quote]
+
+Basically it is treated just like any other window, when it comes to restoring
+the workplace. That is intentional, if perhaps debatable.
+
+[quote]Question: why the command window is not setwd()d to the directory of
+the .RData file? [/quote]
+
+Well, I simply did not get around to implement your corresponding feature request,
+so far.
+
+However, are you aware of "Run->CD to script directory"? (Available for any
+script window. This is not quite what you're asking for, but it's close).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri Apr  8 13:13:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 08 Apr 2011 13:13:09 +0000
+Subject: [rkward-users] [Help] Basic stats on alpha field
+Message-ID: <forum-165574-9873016@sourceforge.net>
+
+
+The following forum message was posted by glepore70 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4475040:
+
+Maybe I'm missing something, but I'm trying to get the minimum and maximum of
+a character column in the Basic Statistics Analysis and I can't seem to select
+any Type other than Number.  Shouldn't I be able to sort a column (say, of State's
+names) and get the Minimum and Maximum names?  Thanks.
+
+
+
+From noreply at sourceforge.net  Wed Apr 20 08:15:02 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 20 Apr 2011 08:15:02 +0000
+Subject: [rkward-users] [Help] RE: Basic stats on alpha field
+In-Reply-To: <forum-165574-9873016@sourceforge.net>
+Message-ID: <forum-165574-9980512@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4475040:
+
+Hi!
+
+Sorry for the late reply.
+
+You do have a point. At least some of these statistics are certainly valid for
+character data, as well. Other statistics cannot be computed, and we would need
+to add code to make sure that computation can continue in case of errors.
+
+Note that the "Descriptive Statistics" plugin shows considerable overlap with
+"Basic Statistics", and will accept character data. Ideally, the two plugins
+should be merged into one, which supports all features. That will happen, eventually,
+but it will probably take time, before a developer gets around to look at it.
+In case you are interested in helping with this, yourself: see
+http://rkward.sourceforge.net/documents/devel/plugins/index.html for a reference
+on plugin development.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Apr 20 19:51:06 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 20 Apr 2011 19:51:06 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8935245@sourceforge.net>
+Message-ID: <forum-165574-9986603@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi, 
+
+I seem to have the same problem. I am running ubuntu 10.04 and RKWard. It was
+working fine some couple of days ago.
+
+[code]rkward --version
+
+Qt: 4.6.2
+
+KDE Development Platform: 4.4.5 (KDE 4.4.5)
+
+RKWard: 0.5.5.z+0.5.6+test2
+
+
+
+R on the command prompt
+
+R version 2.13.0 (2011-04-13)
+
+Copyright (C) 2011 The R Foundation for Statistical Computing
+
+ISBN 3-900051-07-0
+
+Platform: i486-pc-linux-gnu (32-bit)
+
+
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+
+You are welcome to redistribute it under certain conditions.
+
+Type 'license()' or 'licence()' for distribution details.
+
+
+
+  Natural language support but running in an English locale
+
+
+
+R is a collaborative project with many contributors.
+
+Type 'contributors()' for more information and
+
+'citation()' on how to cite R or R packages in publications.
+
+
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+
+'help.start()' for an HTML browser interface to help.
+
+Type 'q()' to quit R.
+
+
+
+> q()
+
+Save workspace image? [y/n/c]: n
+/code]
+
+Advance thanks for any help.
+
+
+
+From noreply at sourceforge.net  Wed Apr 20 20:02:03 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 20 Apr 2011 20:02:03 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-9986603@sourceforge.net>
+Message-ID: <forum-165574-9986731@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Here is the screenshot.
+[url=http://img59.imageshack.us/i/rkward.png/][img=http://img59.imageshack.us/im
+g59/5271/rkward.th.png][/url]
+As an additional thought I would also like to say that I had Rcmdr installed
+at the same time. I am not sure whether it is a conflict between two softwares.
+Thanks.
+
+
+
+
+From noreply at sourceforge.net  Wed Apr 20 21:49:34 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 20 Apr 2011 21:49:34 +0000
+Subject: [rkward-users] [Help] Error Starting R- RKward
+Message-ID: <forum-165574-9987592@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi,
+I have started using R (noob) and RKWard recently in ubuntu 10.04. I have installed
+it from synaptic without a problem and it was running fine. At that stage I
+decided to give Rcmdr a try too. So I installed them side by side. Both of them
+were working. i updated the package file recently and after that I am seeing
+error messages and problems.
+The version of R I am using is 
+[code]R version 2.13.0 (2011-04-13)
+
+Copyright (C) 2011 The R Foundation for Statistical Computing
+
+ISBN 3-900051-07-0
+
+Platform: i486-pc-linux-gnu (32-bit)
+
+
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+
+You are welcome to redistribute it under certain conditions.
+
+Type 'license()' or 'licence()' for distribution details.
+
+
+
+  Natural language support but running in an English locale
+
+
+
+R is a collaborative project with many contributors.
+
+Type 'contributors()' for more information and
+
+'citation()' on how to cite R or R packages in publications.
+
+
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+
+'help.start()' for an HTML browser interface to help.
+
+Type 'q()' to quit R.[/code]
+
+
+
+The version of RKWard installed into my computer is:
+
+[code]rkward --version
+
+Qt: 4.6.2
+
+KDE Development Platform: 4.4.5 (KDE 4.4.5)
+
+RKWard: 0.5.5.z+0.5.6+test2
+
+[/code]
+Here is a screen shot of the error message.
+
+[URL=http://img59.imageshack.us/i/rkward.png/][IMG]http://img59.imageshack.us/im
+g59/5271/rkward.th.png[/IMG][/URL]
+
+
+Any help is appreciated.
+
+Best,
+Sourav 
+
+
+
+From noreply at sourceforge.net  Thu Apr 21 06:11:01 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 21 Apr 2011 06:11:01 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-9987592@sourceforge.net>
+Message-ID: <forum-165574-9991434@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi!
+
+[quote]RKWard: 0.5.5.z+0.5.6+test2[/quote]
+
+This is the development version of RKWard (daily builds). We try to keep it
+in a "sane" state at all times, but you should note that this version is always
+fresh from the lab, and has only seen very limited testing. Do you recall, when
+you last updated rkward [i]before[/i] this time?
+
+[quote]Here is a screen shot of the error message.[/quote]
+
+Could you please click on the "Details" button, and copy that text to the
+forum?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Apr 21 15:43:59 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 21 Apr 2011 15:43:59 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-9991434@sourceforge.net>
+Message-ID: <forum-165574-9996909@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Thank you Thomas. That is a very prompt reply.
+[quote]but you should note that this version is always fresh from the lab, and
+has only seen very limited testing[/quote]
+I do understand that it might be unstable to certain extent but as I said it
+was working absolutely fine for a week or two.
+[quote]Do you recall, when you last updated rkward before this time? [/quote]
+Unfortunately I don't. However, after the problem appeared I have uninstalled
+and reinstalled all r-cran- related packages and rkward too.
+[quote]Could you please click on the "Details" button, and copy that text to
+the forum? [/quote]
+I have clicked on the details button. But it does not give any details.
+Thanks.
+Sourav
+
+
+
+From noreply at sourceforge.net  Thu Apr 21 20:06:22 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 21 Apr 2011 20:06:22 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-9996909@sourceforge.net>
+Message-ID: <forum-165574-9999614@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+[quote]I have clicked on the details button. But it does not give
+any details.[/quote]
+
+Alright. Too bad.
+
+What happens, if you simply ignore the error message? Does RKWard continue to
+run? Any obvious deficiencies?
+
+Also, please locate /tmp/kde-USERNAME/ in a file manager. You will find several
+files called rkwardXXXXX.tmp and rkward.rbackendXXXXX.tmp (one each for every
+time that you started RKWard in the current session). Could you post the contents
+of the most recent pair of these?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri Apr 22 02:03:23 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 22 Apr 2011 02:03:23 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-9999614@sourceforge.net>
+Message-ID: <forum-165574-10002542@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi Thomas,
+Thanks again for a quick reply.
+[quote]What happens, if you simply ignore the error message?[/quote]
+The interface starts. But I can't load my previously saved Rdata fles.
+I have tried couple of things like importing data and stuf. Nothing happens.
+However, I could finally load .txt file. I, myself was curious about the error
+codes. Therefore I copied the "command log" of my last session to pastebin.com
+and attached the url here
+[url=null]http://pastebin.com/ztN8PBnG[/url]
+[quote]Any obvious deficiencies? [/quote]
+I must admit here that I did not muster "rkward" before. However, after loading
+the table I can't generate a box plot or a regular scatter plot from the rkward
+interface. Here is the command log:
+[url=http://]pastebin.com/Ab0uf0pA[/url]
+I could be able to process the data from Rconsole in RKward. Here is the R syntax
+I used.
+[url=http://]pastebin.com/kNf9eadg[/url]
+And here is the output.
+[IMG]http://img853.imageshack.us/img853/8871/rplot.png[/IMG]
+By [URL=http://profile.imageshack.us/user/chak8870]chak8870[/URL] at 2011-04-21
+[quote]Also, please locate /tmp/kde-USERNAME/ in a file manager. You will find
+several files called rkwardXXXXX.tmp and rkward.rbackendXXXXX.tmp (one each
+for every time that you started RKWard in the current session). Could you post
+the contents of the most recent pair of these? [/quote]
+Here it is. 
+[url=http://]pastebin.com/JiqqnvYU[/url]
+And rkward.rbackend temp file
+[code]QObject::connect: Cannot queue arguments of type
+'QAbstractSocket::SocketState'
+(Make sure 'QAbstractSocket::SocketState' is registered using
+qRegisterMetaType().)[/code]
+I hope this will help understand the issue better and troubleshoot.
+
+Thanks again for all your help.
+Sourav
+
+
+
+From noreply at sourceforge.net  Fri Apr 22 02:15:45 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 22 Apr 2011 02:15:45 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-10002542@sourceforge.net>
+Message-ID: <forum-165574-10002668@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi Thomas,
+My apology. I am not a avid forum user therefore the links were not working.
+Also sorry about the graphics, just wanted to paste a link.
+Anyway,
+I am posting the links in the chronological order again.
+
+http://pastebin.com/ztN8PBnG
+
+http://pastebin.com/Ab0uf0pA
+
+http://pastebin.com/kNf9eadg
+
+http://pastebin.com/JiqqnvYU
+
+Thanks and sorry about duplicate posting.
+
+Best,
+Sourav
+
+
+
+From noreply at sourceforge.net  Fri Apr 22 08:17:48 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 22 Apr 2011 08:17:48 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-10002668@sourceforge.net>
+Message-ID: <forum-165574-10005123@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi Sourav,
+
+note that you can also post to the rkward-users mailing-list, instead (but let's
+keep this thread on the forum, so anybody running into the same problem will
+be able to find all posts).
+
+Somehow it looks like the directory where rkward can store files is configured
+as "/". Go to Settings->Configure RKWard->General, and change the top-most setting
+to something valid (default is /home/USERNAME/.rkward/). Then restart RKWard.
+I think that should solve most (if not all) issues you are seeing.
+
+I can't think of any way that recent changes in the development version could
+have caused the setting to be broken. Do you think it's possible that you changed
+this setting, yourself, accidentally? (Obviously we should have some better
+error-handling at this point, though).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sun Apr 24 02:35:33 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 24 Apr 2011 02:35:33 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-10005123@sourceforge.net>
+Message-ID: <forum-165574-10019061@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi Thomas,
+Thanks again for prompt reply. 
+[quote]Somehow it looks like the directory where rkward can store files is configured
+as "/". Go to Settings->Configure RKWard->General, and change the top-most setting
+to something valid (default is /home/USERNAME/.rkward/). Then restart RKWard.
+I think that should solve most (if not all) issues you are seeing. [/quote]
+This indeed solve most of the problem. The initial error is gone.
+[quote]Do you think it's possible that you changed this setting, yourself,
+accidentally?[/quote]
+Honestly, I don't know. However, the fix that you gave me, I have never changed
+anything on that page.
+[b]Will it be an issue if I run rkward and rcommander in the same
+ubuntubox?[/b]
+I am not sure whether this is the right place to ask the next question. I am
+asking anyway though. I posted my table and my graph in the previous post. I
+could not be able to generate the boxplot graph from the rkward-plot-boxplot
+(instead I had to use the Rconsole in the rkward). There is no options to plot
+by a group variable (which in my case is Treatment in M). Should I do boxplot
+from a different package?
+http://img222.imageshack.us/i/boxplotnocategory.png/
+This option is available in the rcommander interface. Also is there a way to
+save the graphs as eps image from the output (rkout.html does generate a very
+nice report, however the default graphics quality is low)?
+Also, I was working on the scatter plot the other day and I could not be able
+to put a regression line through the points. Do I have to use any specific package
+to draw a regression line? What am I missing?
+http://img845.imageshack.us/i/scatterplotnoregression.png/
+
+Thanks for sticking around and helping me out with this.
+Best,
+Sourav
+
+
+
+From noreply at sourceforge.net  Sun Apr 24 11:49:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 24 Apr 2011 11:49:09 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-10019189@sourceforge.net>
+Message-ID: <forum-165574-10021697@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+[quote]Will it be an issue if I run rkward and rcommander in the same
+ubuntubox?[/quote]
+
+No. Co-installing Rcmdr and rkward on one box has never been a problem to the
+best of my knowledge.
+
+There have been problems in the past with running Rcmdr inside an RKWard session.
+And in fact, as I just found out, the problem came back with RKWard 0.5.5. I
+have just fixed this in the development version, so with the next daily build,
+you can even run [code]library(Rcmdr)[/code] inside an RKWard session.
+
+[quote]I could not be able to generate the boxplot graph from the rkward-plot-boxplot
+(instead I had to use the Rconsole in the rkward)[/quote]
+
+This part of the problem is fixed, though, isn't it? I.e. you can create [b]some[/b]
+boxplots?
+
+[quote]There is no options to plot by a group variable (which in my case is
+Treatment in M).[/quote]
+[quote]Also, I was working on the scatter plot the other day and I could not
+be able to put a regression line through the points.[/quote]
+
+Yes, unfortunately, some of our features are still terribly rudimentary. You
+will have to look into the underlying R code, or use other packages, in these
+cases (or, in the case of the box plot: re-organize your data). And of course
+help with improving our dialogs is always welcome.
+See http://rkward.sourceforge.net/documents/devel/plugins/index.html for information
+on how to do that.
+
+[quote]Also is there a way to save the graphs as eps image from the output
+(rkout.html does generate a very nice report, however the default graphics quality
+is low)?[/quote]
+
+You can change the file format and quality used for rkout.html in Settings->Configure
+RKWard->Output. EPS is not a supported option, here, but SVG is. To get at EPS
+images (and a variety of other formates), typically the fastest way is this:
+In the plot dialog, check the "Preview" box. Once satisfied with the preview,
+in the preview window, select Device->Export... from the menu.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon Apr 25 04:44:27 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 25 Apr 2011 04:44:27 +0000
+Subject: [rkward-users] [Help] RE: Error Starting R- RKward
+In-Reply-To: <forum-165574-10021697@sourceforge.net>
+Message-ID: <forum-165574-10026576@sourceforge.net>
+
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4497074:
+
+Hi Thomas,
+
+Once again I appreciate your prompt reply.
+[quote]No. Co-installing Rcmdr and rkward on one box has never been a problem
+to the best of my knowledge[/quote]
+Thanks for the info. I have installed them side by side and will use them according
+to the need.
+[quote]you can create some boxplots?[/quote]
+Yes. I must admit I can create box plots. Now I am going to look into the plugins
+to tweak it to my need.
+[quote]You can change the file format and quality used for rkout.html in
+Settings->Configure RKWard->Output. EPS is not a supported option, here, but
+SVG is. To get at EPS images (and a variety of other formates), typically the
+fastest way is this: In the plot dialog, check the "Preview" box. Once satisfied
+with the preview, in the preview window, select Device->Export... from
+the menu.[/quote]
+Thanks for this. I found it and it is very handy. SVG works as great as eps.
+Besides, I found the eps option according to your suggestion which [u]solved
+my issue.[/u]
+[quote]Yes, unfortunately, some of our features are still terribly
+rudimentary.[/quote]
+May be some of it is rudimentary but the program you gave us is customizable.
+The current issues are all resolved with your help. Thanks for giving us such
+a powerful nice interface as well as prompt support.
+Best,
+Sourav
+
+
+
+

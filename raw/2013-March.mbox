@@ -1,0 +1,105 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Mar  1 08:50:39 2013
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 1 Mar 2013 09:50:39 +0100
+Subject: [rkward-users] Graphics window stores only one plot
+In-Reply-To: <CAEeP31uY0+jY19Wo18ovC3TpG-RVDc248iau=cC40jYC2pGUOQ@mail.gmail.com>
+References: <CAEeP31uY0+jY19Wo18ovC3TpG-RVDc248iau=cC40jYC2pGUOQ@mail.gmail.com>
+Message-ID: <201303010950.44927.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+On Thursday 28 February 2013, Alejo C.S. wrote:
+> Dear list, I'm using RKward 0.5.7 in Debian Wheezy amd64 and R  version
+> 2.15.1. When I make several plots, only the last one is stored in Graphics
+> Windows. In preferences, the maximum number of stored graphics is 20 and
+> the maximum size per graphic is 5120 (Kb). Any idea?
+
+Short answer: Plot history is somewhat broken in the combination R 2.15.x and 
+RKWard 0.5.7. You should update RKWard to version 0.6.0.
+
+I have not actually tried this, but you can _probably_ use the binary version 
+from Debian sid: http://packages.debian.org/sid/amd64/rkward/download . A 
+somewhat safer bet is to add the following line to /etc/apt/sources.list:
+   deb-src http://rkward.sourceforge.net/debian ./
+then build the package from source:
+   # update package cache
+   sudo apt-get update
+   # fetch build dependencies
+   sudo apt-get build-dep rkward
+   # fetch and build sources
+   apt-get source -b rkward
+   # install the package
+   sudo dpkg -i rkward-0.6.0-1-amd64.deb
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130301/51325c75/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Mar 17 15:21:19 2013
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 Mar 2013 16:21:19 +0100
+Subject: [rkward-users] [rkward-announce] Upcoming release,
+	call for testing RKWard 0.6.1
+Message-ID: <201303171621.24868.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+R 3.0.0 is scheduled for release on April 3, and it will bring some changes 
+that will break RKWard 0.6.0. So it's time to get a new release of RKWard out 
+of the door, and I would like to ask you for help in testing, packaging and 
+translating. Details on available downloads, and a tentative release schedule 
+can be found at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+as usual. The targetted release date is April 2. and I would like to ask 
+you to provide feedback by March 24.
+
+RKWard 0.6.1 will also include a nice number of new features, but most of 
+these concern additions to the plugin infrastructure, that are not yet 
+utilized by too many plugins. Visible changes include an improvde Data->Sort 
+plugin, a new Data->Subset plugin (not entirely finished, yet, please take a 
+look!), and better handling of pluginmaps (Settings->Configure RKWard-
+>Plugins).
+
+Well, please test as much as possible, and report any issues that you find.
+
+See the release schedule, above, for all relevant instructions and 
+downloads. So far there is only a source package, and binary installers for 
+Windows (one for use with R 2.15.x, one for use with R 3.0.0alpha). Some more 
+binaries will hopefully trickle in during the next few days.
+
+--- Translators ---
+
+Now is a good time to start updating your translations. As usual, the deadline 
+to send your updates ends with the testing phase on March 24, as we will be 
+finalizing the soruces, shortly after. As a reminder, RKWard is now registered 
+for translations on launchpad: https://translations.launchpad.net/rkward , and 
+it is recommended to upload your translations, there. Sending translations by 
+mail is also ok, of course.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130317/4fafcfd7/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Everyone hates slow websites. So do we.
+Make your web apps faster with AppDynamics
+Download AppDynamics Lite for free today:
+http://p.sf.net/sfu/appdyn_d2d_mar
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+

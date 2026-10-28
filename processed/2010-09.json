@@ -1,0 +1,304 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2010-09",
+  "messages": [
+    {
+      "id": "msg-1848cb3f622c",
+      "message_id": "<20100901091606.20890@gmx.net>",
+      "from_name": "\"Stefan Rödiger\"",
+      "from_email_hash": "ee14850aed347571dd15caa853abd1374ccdf2a755d200b270ead2c688df10fc",
+      "date": "2010-09-01T09:16:06Z",
+      "subject": "[rkward-users] [rkward-devel] anyone using KDE 3 version of rkward?",
+      "subject_clean": "[rkward-users] [rkward-devel] anyone using KDE 3 version of rkward?",
+      "in_reply_to": "<AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>",
+      "references": [
+        "<AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>"
+      ],
+      "body_plain": "KDE4 only here\n\nRegards\nStefan\n-------- Original-Nachricht --------\n> Datum: Tue, 31 Aug 2010 20:36:50 -0400\n> Von: Prasenjit Kapat <kapatp at gmail.com>\n> An: RKWard-devel at lists.sourceforge.net, rkward-users at lists.sourceforge.net\n> Betreff: [rkward-devel] anyone using KDE 3 version of rkward?\n\n> Hi,\n> \n> I would like to know how many folks still use the KDE3 version of\n> rkward (0.4.9x).\n> \n> The reason I ask is this:\n> I've, partially, ported some of the recent \"plot history\" features to\n> it. It is not \"clean\" but satisfies my day-to-day needs (Yes, I have\n> to use the KDE3 version in the department!). If there is a demand, we\n> can try to release another version of it: 0.4.9d (?) (If Thomas\n> agrees!) The KDE4 version and its bug fixes will be the top priority,\n> of course. So, the 0.4.9d release, if done, will be at least a few\n> weeks after the upcoming 0.5.x release.\n> \n> I just wanted to get a heads up!\n> \n> For those wondering about the \"plot history\" feature, it is a\n> browse-able history of plots that the user creates. A screen shot is\n> here:\n> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Graphics_history_actions_.28from_trunk.29\n> \n> The screen shot does not represent the final version, it is subject to\n> change.\n> \n> Regards,\n> -- \n> Prasenjit\n> \n> ------------------------------------------------------------------------------\n> This SF.net Dev2Dev email is sponsored by:\n> \n> Show off your parallel programming skills.\n> Enter the Intel(R) Threading Challenge 2010.\n> http://p.sf.net/sfu/intel-thread-sfd\n> _______________________________________________\n> RKWard-devel mailing list\n> RKWard-devel at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-devel\n\n-- \nGMX DSL SOMMER-SPECIAL: Surf & Phone Flat 16.000 f?r nur 19,99 &euro;/mtl.!*\nhttp://portal.gmx.net/de/go/dsl",
+      "body_snippet": "KDE4 only here\n\nRegards\nStefan\n-------- Original-Nachricht --------\n> Datum: Tue, 31 Aug 2010 20:36:50 -0400\n> Von: Prasenjit Kapat <kapatp at gmail.com>\n> An: RKWard-devel at lists.sourceforge.net, r",
+      "thread_id": "thread-1848cb3f622c",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-59f33a5a8621",
+      "message_id": "<201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-09-01T13:06:31Z",
+      "subject": "[rkward-users] R backend requests information",
+      "subject_clean": "[rkward-users] R backend requests information",
+      "in_reply_to": "<13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>",
+      "references": [
+        "<13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>"
+      ],
+      "body_plain": "Hi,\n\nsorry for the long delay!\n\nOn Friday 06 August 2010, Gregory Ryslik wrote:\n> However, once it gets to them, I get a popup window saying \"R backend\n> requires information\". This is pretty annoying as I want to continue using\n> the console rather than this pop up window!\n\nWe have this on our TODO list, but in fact it's not quite trivial, so it will \ntake some time.\n\nSee also this thread for a bit of background information:\nhttp://sourceforge.net/mailarchive/message.php?msg_name=4BFD7136.8080105%40dms.umontreal.ca\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100901/d311192d/attachment.sig>",
+      "body_snippet": "Hi,\n\nsorry for the long delay!\n\nOn Friday 06 August 2010, Gregory Ryslik wrote:\n> However, once it gets to them, I get a popup window saying \"R backend\n> requires information\". This is pretty annoying",
+      "thread_id": "thread-59f33a5a8621",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-6740137029bf",
+      "message_id": "<201009011509.57617.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-09-01T13:09:57Z",
+      "subject": "[rkward-users] disable tooltips?",
+      "subject_clean": "[rkward-users] disable tooltips?",
+      "in_reply_to": "<1282524542.6340.15.camel@matt-laptop>",
+      "references": [
+        "<1282524542.6340.15.camel@matt-laptop>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 23 August 2010, Matt Shotwell wrote:\n> In the RKWard (0.5.2, KDE 4.4.2) script editor, when I start to type an\n> R command, for example\n> \n> x <- rnorm(\n> \n> at the moment I type the opening parentheses, a tooltip pops up giving\n> the formals of the rnorm function. I thought at first this was `code\n> completion', or `word completion', but after disabling these features in\n> the configuration, the tooltip persists.\n> \n> Is there a way to disable the tooltip?\n\nsorry, there is no way to disable the tooltips, yet. I'll make a note to make \nthis configurable in a future release.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100901/9491fe50/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 23 August 2010, Matt Shotwell wrote:\n> In the RKWard (0.5.2, KDE 4.4.2) script editor, when I start to type an\n> R command, for example\n> \n> x <- rnorm(\n> \n> at the moment I type the op",
+      "thread_id": "thread-6740137029bf",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-864a70595589",
+      "message_id": "<DC233208-EC42-4E06-AEBF-7E58FEA60929@comcast.net>",
+      "from_name": "Gregory Ryslik",
+      "from_email_hash": "c2fcb66f4ffc4e43709226758e30841699ff775156888d704c666320d9caa03d",
+      "date": "2010-09-01T14:00:42Z",
+      "subject": "[rkward-users] R backend requests information",
+      "subject_clean": "[rkward-users] R backend requests information",
+      "in_reply_to": "<201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>",
+        "<201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi,\n\nNo worries. I appreciate the response!\n\nUnfortunately, being that most of my time is spent debugging/developing new R code, this makes RKward not very suitable for my needs at the moment. The project definitely looks promising though!\n\nThanks,\nGreg\nOn Sep 1, 2010, at 9:06 AM, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> sorry for the long delay!\n> \n> On Friday 06 August 2010, Gregory Ryslik wrote:\n>> However, once it gets to them, I get a popup window saying \"R backend\n>> requires information\". This is pretty annoying as I want to continue using\n>> the console rather than this pop up window!\n> \n> We have this on our TODO list, but in fact it's not quite trivial, so it will \n> take some time.\n> \n> See also this thread for a bit of background information:\n> http://sourceforge.net/mailarchive/message.php?msg_name=4BFD7136.8080105%40dms.umontreal.ca\n> \n> Regards\n> Thomas\n> ------------------------------------------------------------------------------\n> This SF.net Dev2Dev email is sponsored by:\n> \n> Show off your parallel programming skills.\n> Enter the Intel(R) Threading Challenge 2010.\n> http://p.sf.net/sfu/intel-thread-sfd_______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi,\n\nNo worries. I appreciate the response!\n\nUnfortunately, being that most of my time is spent debugging/developing new R code, this makes RKward not very suitable for my needs at the moment. The pro",
+      "thread_id": "thread-59f33a5a8621",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-b836c2594f6d",
+      "message_id": "<forum-165574-8625031@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-08T15:38:33Z",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "subject_clean": "[rkward-users] [Help] RE: RKward for Mac",
+      "in_reply_to": "<forum-165574-8023187@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nHiThomas... i did try but i am getting stuck at cmake already... somehow cmake\ncomplains that it can't locate the R_HOME resources. if you like i send you\ndetailed debug traces ... also if you like i would be more then happy to debug\nthe build process on Mac's . if you can give me some help and hints to crawl\nof some of the hurdles .... ?\n\nthx bernd",
+      "body_snippet": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nHiThomas... i did try but i am getting stuck at cmake already... somehow cmake\n",
+      "thread_id": "thread-b836c2594f6d",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-208c3a425a04",
+      "message_id": "<forum-165574-8625173@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-08T16:58:50Z",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "subject_clean": "[rkward-users] [Help] RE: RKward for Mac",
+      "in_reply_to": "<forum-165574-8625031@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nHi!\n\nSome more details (which exact steps did you take, how did you install R, last\n~20 lines of cmake  output, anything suspicious before) might be helpful,\nindeed.\n\nAre you aware of\n[url]http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac[\n/url]? These instructions worked for me on a borrowed Mac.\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nHi!\n\nSome more details (which exact steps did you take, how did you install",
+      "thread_id": "thread-b836c2594f6d",
+      "thread_depth": 1,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-46e10f280d1b",
+      "message_id": "<forum-165574-8625335@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-08T18:42:58Z",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "subject_clean": "[rkward-users] [Help] RE: RKward for Mac",
+      "in_reply_to": "<forum-165574-8625173@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nyes i looked at those, as i said i am getting stuck at the cmake step....",
+      "body_snippet": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nyes i looked at those, as i said i am getting stuck at the cmake step....",
+      "thread_id": "thread-b836c2594f6d",
+      "thread_depth": 2,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-77794d3cb6fb",
+      "message_id": "<forum-165574-8625370@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-08T19:04:33Z",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "subject_clean": "[rkward-users] [Help] RE: RKward for Mac",
+      "in_reply_to": "<forum-165574-8625335@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\njust as additional infos.. i realize so far i didn't give a lot ...\nwhen i start cmake it goes through all of the initialization, looks reasonably\nok , when it arrives at the R_HOME check it does seem to start R ok , but then\nit does hang ... is there any way you know that i can make it a bit more verbose\n(i did add the debug option to cmake, but that didn't change a lot ?",
+      "body_snippet": "The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\njust as additional infos.. i realize so far i didn't give a lot ...\nwhen i star",
+      "thread_id": "thread-b836c2594f6d",
+      "thread_depth": 3,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-aa48d46d7ec8",
+      "message_id": "<forum-165574-8626163@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-09T05:55:54Z",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "subject_clean": "[rkward-users] [Help] RE: RKward for Mac",
+      "in_reply_to": "<forum-165574-8625370@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nBasically the R_HOME check tries to run\n[code][i]/your/path/to/R[/i] \"--slave\" \"--no-save\" \"-e\" \"cat(R.home())\"[/code]\nand expects a non-empty result.\n\nWhich version of R is that? Did you use the installer from www.r-project.org,\nor something else? Note that [i]/your/path/to/R[/i] should be the command-line\nversion of R, not R.app. IIRC it was located at /usr/bin/R by default. So, if\nthe \"Looking for R executable\" step picks up R.app or anything else, try adding\n[code]-DR_EXECUTABLE=[i]/your/path/to/R[/i][/code]\nto your cmake command line.",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:\n\nBasically the R_HOME check tries to run\n[code][i]/your/path/to/R[/i] \"--sla",
+      "thread_id": "thread-b836c2594f6d",
+      "thread_depth": 4,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-82902f2d471c",
+      "message_id": "<AANLkTikf6W2zms4-_eyNj8BM-Eoe-Np2eZ0gwfYvYQbL@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2010-09-14T06:59:11Z",
+      "subject": "[rkward-users] OT: future of R",
+      "subject_clean": "[rkward-users] OT: future of R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nApologies for this off topic message.\n\nI was just browsing the r-help list today and came across and\ninteresting discussion.\nhttp://thread.gmane.org/gmane.comp.lang.r.general/203812\n\nWell the main discussion is on the first blog link there. Thought, it\nmight be an interesting read, especially some of the comments.\n\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nApologies for this off topic message.\n\nI was just browsing the r-help list today and came across and\ninteresting discussion.\nhttp://thread.gmane.org/gmane.comp.lang.r.general/203812\n\nWell the mai",
+      "thread_id": "thread-82902f2d471c",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-759944d5bcab",
+      "message_id": "<201009231802.03122.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-09-23T16:01:54Z",
+      "subject": "[rkward-users] Call for testing: RKWard 0.5.4-pre1 / Release schedule",
+      "subject_clean": "[rkward-users] Call for testing: RKWard 0.5.4-pre1 / Release schedule",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nOnce again, a nice number of fixes and improvements has accumulated in the \ndevelopment version of RKWard, and I would like to make those available in an \nofficial release, soon. As usual, before doing so, we need to do some more \ntesting, and I would like to invite you all to participate in that.\n\nA tentative timeline for the release / the testing is at \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule \n. The targetted release date is October 4, with the testing phase open until \nSeptember 30. Of course the deadlines will extended, as needed, if needed.\n\n--- Testing ---\n\nPlease download the 0.5.4-pre1 release and give it a try (both the source \nrelease, and packages for openSuSE and Ubuntu are linked from \nhttp://p.sf.net/rkward/download ; binaries may need a few hours to be built; a \nwindows installer package will follow, shortly). Here are some things to watch \nout for in particular:\n- The data-editor now supports editing row.names. Use Edit->Show/Edit row \nnames to give this a try.\n- Prasenjit Kapat has implemented a very nice plot history feature for \nonscreen graphics. Please give this a good round of testing, so we can iron \nout any remaining quirks.\n- R 2.12.0 is scheduled for release on October 15. If you have the chance to \ntest with one of the prerelease versions of R 2.12.0, that would be very \nhelpful.\n\nPlease try to provide feedback by September 30.\n\n--- Translators ---\n\n.po and .pot files are located in the po-subdirectory of the source tar.gz, as \nusual. Please provide your updates by September 30.\n\n--- Contributors ---\n\nThe following changes are currently allowed in SVN:\n- Bug fixes\n- Documentation updates\n- Trivial additions\n\nIf you would like to make any other change before the release, please post to \nthe mailing list, first.\n\nSVN will be branched and unfrozen shortly after the end of the testing period.\n\n--- Packagers ---\n\nNote that RKWard no longer requires PHP at runtime since version 0.5.3 (the \nPHP-backend is still functional, but not used by any of the plugins), so if \nyour packages still depend on PHP, you should drop that dependency.\n\nWe will prepare a release candidate shortly after the end of the testing \nphase, and then give you a few days to perpare your packages. Details will \nfollow.\n\n--- Windows users ---\n\nA windows binary will follow, shortly. Probably we will not find the time to \ncreate a \"complete installation bundle\" during the testing phase. However, you \ncan simply make a copy of your existing installation of KDE, and then update \nthis copy using the RKWard on Windows installer.\n\n--- Mac users ---\n\nMac users are always encouraged to give these instructions a try:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac .\n\nThese instructions have worked at least once, but other users have reported \nproblems. We continue to be in need of your feedback about this.\n\n--- Closing words ---\n\nRemember: There's always many ways you can help, with or without programming \nskills. Testing is one important way to contribute, but for instance our wiki \n/ website is always in need of love as well. If you have time to spare, your \nhelp will be very welcome.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100923/b6c874af/attachment.sig>",
+      "body_snippet": "Hi!\n\nOnce again, a nice number of fixes and improvements has accumulated in the \ndevelopment version of RKWard, and I would like to make those available in an \nofficial release, soon. As usual, before",
+      "thread_id": "thread-759944d5bcab",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-b64f23c3c69d",
+      "message_id": "<forum-165574-8656187@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-24T13:23:29Z",
+      "subject": "[rkward-users] [Help] Save Loaded Packages configuration",
+      "subject_clean": "[rkward-users] [Help] Save Loaded Packages configuration",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by andrelevy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:\n\nHi\nThis is probably something very basic, but I am new to RKWard. I have a number\nof packages that I routinely need for different projects. How can I configure\nRKWard to always have these packages loaded, when I open it, rather than having\nto configure the loaded packages each time? I tried using Settings>Configure\nPackages but that didn't seem to work. Also did Workspace>Load/Unload Packages\nthen saved the workspace, but when I open the workspace again the packages aren't\nloaded.\nThanks",
+      "body_snippet": "The following forum message was posted by andrelevy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:\n\nHi\nThis is probably something very basic, but I am new to RKWard. I ha",
+      "thread_id": "thread-b64f23c3c69d",
+      "thread_depth": 0,
+      "month": "2010-09"
+    },
+    {
+      "id": "msg-e70eacbc3678",
+      "message_id": "<forum-165574-8656349@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-09-24T14:31:59Z",
+      "subject": "[rkward-users] [Help] RE: Save Loaded Packages configuration",
+      "subject_clean": "[rkward-users] [Help] RE: Save Loaded Packages configuration",
+      "in_reply_to": "<forum-165574-8656187@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:\n\nHi Andre,\n\nAs far as I know there is no such feature in RKWard, but would be nice to have\nin future. You may want to use options (defaultpackage = c(....)) and put it\nin your .Rprofile. See ?Startup.",
+      "body_snippet": "The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:\n\nHi Andre,\n\nAs far as I know there is no such feature in RKWard, but would",
+      "thread_id": "thread-b64f23c3c69d",
+      "thread_depth": 1,
+      "month": "2010-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1848cb3f622c",
+      "subject": "[rkward-users] [rkward-devel] anyone using KDE 3 version of rkward?",
+      "message_count": 1,
+      "participants": [
+        "\"Stefan Rödiger\""
+      ],
+      "started": "2010-09-01T09:16:06Z",
+      "last_reply": "2010-09-01T09:16:06Z",
+      "root_message_id": "msg-1848cb3f622c"
+    },
+    {
+      "id": "thread-59f33a5a8621",
+      "subject": "[rkward-users] R backend requests information",
+      "message_count": 2,
+      "participants": [
+        "Gregory Ryslik",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-09-01T13:06:31Z",
+      "last_reply": "2010-09-01T14:00:42Z",
+      "root_message_id": "msg-59f33a5a8621"
+    },
+    {
+      "id": "thread-6740137029bf",
+      "subject": "[rkward-users] disable tooltips?",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-09-01T13:09:57Z",
+      "last_reply": "2010-09-01T13:09:57Z",
+      "root_message_id": "msg-6740137029bf"
+    },
+    {
+      "id": "thread-b836c2594f6d",
+      "subject": "[rkward-users] [Help] RE: RKward for Mac",
+      "message_count": 5,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-09-08T15:38:33Z",
+      "last_reply": "2010-09-09T05:55:54Z",
+      "root_message_id": "msg-b836c2594f6d"
+    },
+    {
+      "id": "thread-82902f2d471c",
+      "subject": "[rkward-users] OT: future of R",
+      "message_count": 1,
+      "participants": [
+        "Prasenjit Kapat"
+      ],
+      "started": "2010-09-14T06:59:11Z",
+      "last_reply": "2010-09-14T06:59:11Z",
+      "root_message_id": "msg-82902f2d471c"
+    },
+    {
+      "id": "thread-759944d5bcab",
+      "subject": "[rkward-users] Call for testing: RKWard 0.5.4-pre1 / Release schedule",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-09-23T16:01:54Z",
+      "last_reply": "2010-09-23T16:01:54Z",
+      "root_message_id": "msg-759944d5bcab"
+    },
+    {
+      "id": "thread-b64f23c3c69d",
+      "subject": "[rkward-users] [Help] Save Loaded Packages configuration",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-09-24T13:23:29Z",
+      "last_reply": "2010-09-24T14:31:59Z",
+      "root_message_id": "msg-b64f23c3c69d"
+    }
+  ]
+}

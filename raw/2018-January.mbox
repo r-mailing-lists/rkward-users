@@ -1,0 +1,101 @@
+From kenjisato1996 at yahoo.co.jp  Thu Jan 11 05:26:51 2018
+From: kenjisato1996 at yahoo.co.jp (kenjisato1996 at yahoo.co.jp)
+Date: Thu, 11 Jan 2018 14:26:51 +0900 (JST)
+Subject: RKWard 0.7.0 Crashing
+Message-ID: <517129.1722.qm@web102519.mail.kks.yahoo.co.jp>
+
+Hi there,
+
+I have recently installed RKWard due to a need in my institution, and I am coming across a problem with the application, RKWard crashes as soon as it opens.
+
+Upon installation, I realized that the version of R used was much earlier than what I needed (which is ver 3.4.3) and when I did install and change the directory to it via the rkward.ini file this problem occured.
+
+This was the same on the earlier version of RKWard.
+
+Is this a common issue and would you have a solution to this?
+
+Kind Regards,
+Kenji
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/dc4720fc/attachment.html>
+
+From dg at lapas.info  Thu Jan 11 10:35:28 2018
+From: dg at lapas.info (Donatas Glodenis)
+Date: Thu, 11 Jan 2018 12:35:28 +0200
+Subject: RKWard 0.7.0 Crashing
+In-Reply-To: <517129.1722.qm@web102519.mail.kks.yahoo.co.jp>
+References: <517129.1722.qm@web102519.mail.kks.yahoo.co.jp>
+Message-ID: <CAFQDPR1KYfTsymr5URgP0VcmvvamwakP7SV6B8AQuP7KMQQjCQ@mail.gmail.com>
+
+Crashes are only to be expected in such an early build 0.7.0 has not been
+released yet. For any practical purpose use 0.6.5 version.
+
+Donatas G.
+
+Siųsta iš „Sony Xperia“ išmaniojo telefono
+
+2018 saus. 11 07:27 <kenjisato1996 at yahoo.co.jp> rašė:
+
+> Hi there,
+>
+> I have recently installed RKWard due to a need in my institution, and I am
+> coming across a problem with the application, RKWard crashes as soon as
+> it opens.
+>
+> Upon installation, I realized that the version of R used was much earlier
+> than what I needed (which is ver 3.4.3) and when I did install and change
+> the directory to it via the rkward.ini file this problem occured.
+>
+> This was the same on the earlier version of RKWard.
+>
+> Is this a common issue and would you have a solution to this?
+>
+> Kind Regards,
+> Kenji
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/e25bc468/attachment.html>
+
+From meik.michalke at uni-duesseldorf.de  Thu Jan 11 14:26:04 2018
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Thu, 11 Jan 2018 15:26:04 +0100
+Subject: RKWard 0.7.0 Crashing
+In-Reply-To: <517129.1722.qm@web102519.mail.kks.yahoo.co.jp>
+References: <517129.1722.qm@web102519.mail.kks.yahoo.co.jp>
+Message-ID: <72201208.jJXM3eXULC@yrla>
+
+dear kenji,
+
+Am Donnerstag, 11. Januar 2018, 14:26:51 CET schrieb 
+kenjisato1996 at yahoo.co.jp:
+> Upon installation, I realized that the version of R used was much earlier
+> than what I needed (which is ver 3.4.3) and when I did install and change
+> the directory to it via the rkward.ini file this problem occured.
+
+i take it you're running RKWard on windows. RKWard needs the R version it was 
+compiled with to work correctly. it is usually possible to do point release 
+upgrades of R (like using 3.4.3 instead of 3.4.2), but since R sometimes 
+changes fundamentally between even minor (3.3 vs. 3.4) upgrades, you need to 
+use the version that RKWard expects.
+
+i think the latest 0.7.0 windows build was done with R 3.3. if you're lucky 
+thomas could possibly build a more recent snapshot.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/058339a8/attachment.sig>
+

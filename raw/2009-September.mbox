@@ -1,0 +1,230 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Sep  1 10:50:33 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 1 Sep 2009 12:50:33 +0200
+Subject: [rkward-users] Compatibility between RKWard and RGtk2
+In-Reply-To: <6fdf6d430908310731r2692d0ffo86280471ee7f0b2d@mail.gmail.com>
+References: <6fdf6d430908310731r2692d0ffo86280471ee7f0b2d@mail.gmail.com>
+Message-ID: <200909011250.37077.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 31 August 2009, Nicolas Chapados wrote:
+> I'm a new RKWard user and so far I've been quite pleased with the
+> environment it provides for R development.
+
+thanks!
+
+> However, I'm wondering if
+> the compatibility with RGtk2 has been tested.
+
+Well, tested, yes. We are aware of this issue, but it is not easy to fix. I do 
+have an idea on how to approach - and hopefully fix - this problem and a few 
+related ones. But this will need a good deal of work, and other things are 
+higher up in priority ATM.
+
+Last time I checked, version 0.4.9b of RKWard (based on KDE/Qt 3) was not 
+affected. While this version does not have some of the most recent features, 
+perhaps this is an option for you.
+
+See also 
+https://sourceforge.net/tracker/?func=detail&aid=1878594&group_id=50231&atid=459007 
+. This describes slightly different symptoms, but I'm fairly sure that it's the 
+same underlying issue.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090901/aab169ed/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Sep  3 17:53:03 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 3 Sep 2009 19:53:03 +0200
+Subject: [rkward-users] Rkward for windows: Error on trying to setwd
+	using menus
+In-Reply-To: <1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>
+References: <1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>
+Message-ID: <200909031953.06895.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 31 August 2009, Emmanuel Jjunju wrote:
+> Error Message:
+> The PHP backend could not be started. Check whether you have correctly
+> configured the location of the PHP-binary (Settings->Configure
+> Settings->PHP backend)
+> also rkward.bin.exe stops working when i try to browse to the directory
+> when trying to configure PHP.
+
+could you try again with the following version?
+http://sourceforge.net/projects/rkward/files/Under_Development/install_rkward_0.5.2-
+windows_pre1.exe/download
+
+Please let me know, whether or not this fixes the problems.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090903/ac2dc93b/attachment.sig>
+
+From ct529 at york.ac.uk  Fri Sep  4 07:38:00 2009
+From: ct529 at york.ac.uk (Corrado)
+Date: Fri, 4 Sep 2009 08:38:00 +0100
+Subject: [rkward-users] rkward and plugins
+Message-ID: <200909040838.00448.ct529@york.ac.uk>
+
+Dear friend,
+
+I have difficulties installing any plugin. What is the procedure, exactly???? My 
+lists are all empty!
+
+kubuntu 904 64 bit + kde 424 + rkward 050d.
+
+Regards
+-- 
+Corrado Topi
+
+Global Climate Change & Biodiversity Indicators
+Area 18,Department of Biology
+University of York, York, YO10 5YW, UK
+Phone: + 44 (0) 1904 328645, E-mail: ct529 at york.ac.uk
+
+
+
+
+From meik.michalke at uni-duesseldorf.de  Fri Sep  4 08:04:19 2009
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 4 Sep 2009 10:04:19 +0200
+Subject: [rkward-users] rkward and plugins
+In-Reply-To: <200909040838.00448.ct529@york.ac.uk>
+References: <200909040838.00448.ct529@york.ac.uk>
+	(sfid-20090904_095440_261288_054A4247)
+Message-ID: <200909041004.23889.meik.michalke@uni-duesseldorf.de>
+
+hi corrado,
+
+am Freitag, 4. September 2009 (09:38) schrieb Corrado:
+> I have difficulties installing any plugin. What is the procedure,
+> exactly???? My lists are all empty!
+
+out of the blue i'd say the path to all.pluginmap is not configured correctly:
+  preferences -> configure rkward -> plugins
+check the .pluginmap files, on my kubuntu 9.04 it reads
+
+  /usr/share/kde4/apps/rkward/all.pluginmap
+
+> kubuntu 904 64 bit + kde 424 + rkward 050d.
+
+you could add this repo and upgrade to 0.5.1:
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090904/1ba849e4/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Sep 30 19:59:53 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 30 Sep 2009 21:59:53 +0200
+Subject: [rkward-users] Quick survey: Still using RKWard for KDE 3
+Message-ID: <200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+I'd like to conduct a quick informal survey to determine whether/when further 
+backports to KDE 3 are needed.
+
+1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+
+(No need to respond if the answer is "no").
+
+2) If so, which version of R do you use with that?
+
+3) Are there any specific reasons that keep you from upgrading?
+
+Thanks!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090930/a2dad258/attachment.sig>
+
+From kapatp at gmail.com  Wed Sep 30 20:22:29 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Wed, 30 Sep 2009 16:22:29 -0400
+Subject: [rkward-users] Quick survey: Still using RKWard for KDE 3
+In-Reply-To: <200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <de8c7cb40909301322v277acc5cp3a6665082361c3f3@mail.gmail.com>
+
+Hi,
+
+On 9/30/09, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi!
+>
+> I'd like to conduct a quick informal survey to determine whether/when
+> further
+> backports to KDE 3 are needed.
+>
+> 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?
+
+YES. (rkward 0.4.9b, OR the relevant svn branch - depending on developments)
+
+> (No need to respond if the answer is "no").
+
+Statistically, it is important to get the "no" responses too ;)
+
+> 2) If so, which version of R do you use with that?
+
+Currently, R 2.8.2, but this updates from time to time....
+
+> 3) Are there any specific reasons that keep you from upgrading?
+
+Yes: no control over the department's servers. They use RedHat EL,
+currently at 5.3.
+
+[Aside:
+I am not sure if RedHat EL 6 will include KDE 4, though SLE 11.0
+already has KDE 4.1.3. Do any universities in US (or anywhere else for
+that matter) use Canonical for their enterprise Linux solutions?]
+
+> Thanks!
+>
+> Regards
+> Thomas
+
+Thanks for keeping KDE3 port alive. I can totally understand if you
+decide not to in future (if yes/(no+yes) << 1).
+
+Regards
+-- 
+Prasenjit
+
+
+

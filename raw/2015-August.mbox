@@ -1,0 +1,137 @@
+From david.stevens at usu.edu  Mon Aug  3 15:28:21 2015
+From: david.stevens at usu.edu (David Stevens)
+Date: Mon, 3 Aug 2015 09:28:21 -0600
+Subject: [rkward-users]  rkward installation
+Message-ID: <55BF8895.3090602@usu.edu>
+
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150803/ab6d94ea/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: affdbeca.png
+Type: image/png
+Size: 11802 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150803/ab6d94ea/attachment.png>
+-------------- next part --------------
+------------------------------------------------------------------------------
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+From djjansz at gmail.com  Tue Aug  4 05:39:03 2015
+From: djjansz at gmail.com (David Januszewski)
+Date: Tue, 4 Aug 2015 01:39:03 -0400
+Subject: [rkward-users] Remove from Email List
+Message-ID: <CALnwk=R2AhGMHPH38i264L8L2-fq6Pg3tgn39RMdYxBuUFc3mw@mail.gmail.com>
+
+Hello,
+
+Please remove me from the distribution list.
+
+Thanks,
+Dave
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150804/024f0ea8/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Aug  5 07:34:32 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 5 Aug 2015 09:34:32 +0200
+Subject: [rkward-users] rkward installation
+In-Reply-To: <55BF8895.3090602@usu.edu>
+References: <55BF8895.3090602@usu.edu>
+Message-ID: <20150805093432.1e285b24@late>
+
+Hi,
+
+On Mon, 3 Aug 2015 09:28:21 -0600
+David Stevens <david.stevens at usu.edu> wrote:
+> All - just today I went through installation of KDE and rkward on a
+> Lenovo Windows 7 laptop and when I try to start rkward, I crash with
+> the message
+
+[_ZN7QString16fromAscii_helperEPKci could not be located]
+
+> Where do I go next?
+
+My best guess at this point is that you used the "custom installation"
+procedure, and somehow the version of KDE you installed is not
+compatible with the one required by RKWard (there could be several
+causes of this). Before anything else, please
+
+- Reboot your system
+- Remove/Rename your existing RKWard installation
+- Install RKWard using the "Installation bundle"
+- Start RKWard.exe inside that installation
+
+Verify that this works.
+
+From this point, you can actually use the "custom installer" to point
+RKWard to a more recent (installed) version of R on your computer. To
+do so, simply run the installer, and point it to the KDE folder inside
+your bundled installation, and the installed version of R, whereever it
+is.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150805/724d5ddf/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+From Meik.Michalke at uni-duesseldorf.de  Tue Aug 25 12:22:36 2015
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 25 Aug 2015 14:22:36 +0200
+Subject: [rkward-users] feedback needed: future OS X releases of RKWard
+Message-ID: <1477407.pSXkT2TGQB@chiana>
+
+hi,
+
+until now, we were able to offer RKWard package bundles for OS X >= 10.7. this 
+OS X release is no longer supported by apple and we have to upgrade our build 
+environment. in theory, an upgrade to 10.8 would be possible, but in practice, 
+apple's app store doesn't offer upgrades to 10.8 or 10.9 any longer. 
+
+upgrading to 10.10 (yosemite) would be possible, which would also make the 
+development easier, since we wouldn't have to care for compatibility with 
+several old releases for the time being. but it would also mean that the 
+resulting bundles would require the same OS X version (or higher) as a minimum 
+requirement. 
+
+according to this source, the market share of yosemite already reached 62% of 
+all OS X installations (10.9: 17%; 10.8: 5%):
+http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0&qpsp=198&qpnp=1&qptimeframe=M
+
+we would like to find out if it would mean too much of a drawback for RKWard 
+if future releases would only be available for OS X >= 10.10, which seems like 
+our preferred alternative -- what's your opinion on this?
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150825/0fdecc94/attachment.sig>
+

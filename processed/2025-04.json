@@ -1,0 +1,82 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2025-04",
+  "messages": [
+    {
+      "id": "msg-7ebbb7089e04",
+      "message_id": "<20250423144746.3ee9c3a0@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-04-23T12:47:46Z",
+      "subject": "RKWard 0.8.1 is released!",
+      "subject_clean": "RKWard 0.8.1 is released!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.8.1 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all testers and\ncontributors!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250423/9855bb62/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.8.1 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all tester",
+      "thread_id": "thread-7ebbb7089e04",
+      "thread_depth": 0,
+      "month": "2025-04"
+    },
+    {
+      "id": "msg-4b3f18af5fe5",
+      "message_id": "<M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>",
+      "from_name": "Micha Silver",
+      "from_email_hash": "1e771ad166ce1564b263135b180a56c1a7e32cf563bf0a0bb31cf696fcf35241",
+      "date": "2025-04-24T11:26:02Z",
+      "subject": "First time user",
+      "subject_clean": "First time user",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Is there a keyboard shortcut in RKWard to enter the R equals character '<-' and the pipe '|>' ?\nThanks\n\n--\nMicha Silver\ntel: +972-523665918\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250424/d9e2a781/attachment.htm>",
+      "body_snippet": "Is there a keyboard shortcut in RKWard to enter the R equals character '<-' and the pipe '|>' ?\nThanks\n\n--\nMicha Silver\ntel: +972-523665918\n-------------- next part --------------\nAn HTML attachment w",
+      "thread_id": "thread-4b3f18af5fe5",
+      "thread_depth": 0,
+      "month": "2025-04"
+    },
+    {
+      "id": "msg-d444f0efbf18",
+      "message_id": "<20250426101144.77c09e54@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-04-26T08:11:44Z",
+      "subject": "First time user",
+      "subject_clean": "First time user",
+      "in_reply_to": "<M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>",
+      "references": [
+        "<M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>"
+      ],
+      "body_plain": "Hi,\n\nOn Thu, 24 Apr 2025 11:26:02 +0000\nMicha Silver <tsvibar at proton.me> wrote:\n> Is there a keyboard shortcut in RKWard to enter the R equals\n> character '<-' and the pipe '|>' ? Thanks\n\nno, there is not, but you can easily add this, yourself:\n\n1. On the right-hand-side of the main window, click on \"Snippets\"\n2. You may want to create a new \"repository\" to contain you custom\nsnippets (right-click).\n3. Create a new snippet (right-click on the desired repository, then\nselect \"Add snippet\". I hope the dialog is self-explanatory. Otherwise,\njust ask. To assign a keyboard shortcut, click on the button next to the\n\"name\" field.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250426/0e617ff4/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thu, 24 Apr 2025 11:26:02 +0000\nMicha Silver <tsvibar at proton.me> wrote:\n> Is there a keyboard shortcut in RKWard to enter the R equals\n> character '<-' and the pipe '|>' ? Thanks\n\nno, there",
+      "thread_id": "thread-4b3f18af5fe5",
+      "thread_depth": 1,
+      "month": "2025-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7ebbb7089e04",
+      "subject": "RKWard 0.8.1 is released!",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-04-23T12:47:46Z",
+      "last_reply": "2025-04-23T12:47:46Z",
+      "root_message_id": "msg-7ebbb7089e04"
+    },
+    {
+      "id": "thread-4b3f18af5fe5",
+      "subject": "First time user",
+      "message_count": 2,
+      "participants": [
+        "Micha Silver",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-04-24T11:26:02Z",
+      "last_reply": "2025-04-26T08:11:44Z",
+      "root_message_id": "msg-4b3f18af5fe5"
+    }
+  ]
+}

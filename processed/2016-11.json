@@ -1,0 +1,244 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2016-11",
+  "messages": [
+    {
+      "id": "msg-3159925bb4a2",
+      "message_id": "<1478631724.29030.3.camel@gmail.com>",
+      "from_name": "Daniel P.",
+      "from_email_hash": "4c80d2a1931971927b6ded63a8f3ecf8428812f46da2a3ee5d2631d0bff39a6a",
+      "date": "2016-11-08T19:02:04Z",
+      "subject": "Output in console is a mess",
+      "subject_clean": "Output in console is a mess",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI have been working with R for a while, and recently I moved to\nUbuntu10.10 and installed Rkward. \n\nI am more or less satisfied with it, except for a few things:\n\n- The output is a mess. In the terminal / macos R gui the output always\ncame out neatly in the form of a table. Bu not in rkward, making it a\nnightmare to try to read out the output without first pasting it and\nformatting it. It appears that each cell in the table is centered and\nmisaligned. \n\n- Output tables only occupy half of the console space, and making the\noutput unnecessarily long and impossible to work out for dataframes\nwith more than 5 - 6 columns. \n\n- Tweaking the color scheme of the editor, I made the huge mistake of\ninadvertedly pressing the \" use KDE colors\", and now all color schemas\nare exactly the same. There was no way to re-set the color schemas.\nRemoving and re-installing rkward didn't do anything, nor removing\nconfiguration files or editing them to re=set the colors. The only\nalternative was to completely reinstall KDE. This is a pretty annoying\nbehaviour, especially because pressing that button should not have any\neffect on the pre-existing color schemes, nor should it change them\n\nLooking forward to any comments and solutions\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161108/c0f8bf10/attachment.html>",
+      "body_snippet": "Hello,\n\nI have been working with R for a while, and recently I moved to\nUbuntu10.10 and installed Rkward. \n\nI am more or less satisfied with it, except for a few things:\n\n- The output is a mess. In th",
+      "thread_id": "thread-3159925bb4a2",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-8b6e7a669484",
+      "message_id": "<1857982.1kzmQm2PkH@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-11-08T19:20:59Z",
+      "subject": "Output in console is a mess",
+      "subject_clean": "Output in console is a mess",
+      "in_reply_to": "<1478631724.29030.3.camel@gmail.com>",
+      "references": [
+        "<1478631724.29030.3.camel@gmail.com>"
+      ],
+      "body_plain": "hi daniel,\n\nthanks for your interest in using RKWard! first things first: it appears you \nare not subscribed to this list -- you might lose replies because they usually \nonly go to the list. you might like to subscribe for the time being.\n\nAm Dienstag, 8. November 2016, 20:02:04 CET schrieb Daniel P.:\n> I have been working with R for a while, and recently I moved to\n> Ubuntu10.10 and installed Rkward.\n\nis that a typo? do you mean ubuntu 16.10? there is no more support for 10.10 \nfor many years now.\n\ncould you please give us some more info on your system (ideally the output of \nrk.sessionInfo(), at least version numbers of KDE, R and RKWard)?\n\n> - The output is a mess.\n\ncan you give a specific example (R code)? i've never had any issues with the \nconsle output, it looks just like any other R console, except for extra syntax \nhighlighting etc.\n\n> - Output tables only occupy half of the console space, and making the\n> output unnecessarily long and impossible to work out for dataframes\n> with more than 5 - 6 columns.\n\nyou can customize the width of the output in settings -> configure RKWard -> R \nbackend.\n\n> - Tweaking the color scheme of the editor, I made the huge mistake of\n> inadvertedly pressing the \" use KDE colors\", and now all color schemas\n> are exactly the same.\n\nif that is the case, this is more likely a bug in kate (katepart), the editor \nwe're using in RKWard.\n\n> There was no way to re-set the color schemas.\n> Removing and re-installing rkward didn't do anything, nor removing\n> configuration files or editing them to re=set the colors. The only\n> alternative was to completely reinstall KDE.\n\nare you suggesting that a user specific configuration changed settings system \nwide for all users? that would be a major flaw. but like i said, we didn't \ninvent an editor ourselves but are embedding katepart, so there's not too much \nwe can tell you about this.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161108/f41d3a48/attachment.sig>",
+      "body_snippet": "hi daniel,\n\nthanks for your interest in using RKWard! first things first: it appears you \nare not subscribed to this list -- you might lose replies because they usually \nonly go to the list. you might",
+      "thread_id": "thread-3159925bb4a2",
+      "thread_depth": 1,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-fb61e9f9d581",
+      "message_id": "<1478680993.5902.1.camel@gmail.com>",
+      "from_name": "Daniel P.",
+      "from_email_hash": "4c80d2a1931971927b6ded63a8f3ecf8428812f46da2a3ee5d2631d0bff39a6a",
+      "date": "2016-11-09T08:43:13Z",
+      "subject": "Output in console is a mess",
+      "subject_clean": "Output in console is a mess",
+      "in_reply_to": "<1857982.1kzmQm2PkH@yrla>",
+      "references": [
+        "<1478631724.29030.3.camel@gmail.com>",
+        "<1857982.1kzmQm2PkH@yrla>"
+      ],
+      "body_plain": "Hi, \nThanks for your comments and suggestions, and sorry for the typos /\nambiguities of the original email, it was written a bit hastily.Now, to\nyour comments:\n> is that a typo? do you mean ubuntu 16.10? there is no more support\n> for 10.10 \n> for many years now.\n\nYes, indeed I'm on Ubuntu 16.10 (on a macbookpro 11.1, 64bit platform),\nusing RKward version 0.6.S with KDE development platform version\n4.14.22 and R version 3.3.1. here the output of rk.sessionInfo():\n-- Frontend --RKWard version: 0.6.5KDE version (runtime): 4.14.22KDE\nversion (compile time): 4.14.16Qt build key: x86_64 linux g++-4 full-\nconfigLocal KDE directory: /home/dp/.kde/RKWard storage directory:\n/home/dp/.rkward/Backend version (as known to the frontend): 3.3.1\nDebug message file (this may contain relevant diagnostic output in case\nof trouble):/tmp/rkward.frontend.n14793\n-- Backend --Debug message file (this may contain relevant diagnostic\noutput in case of trouble):/tmp/rkward.rbackend.J14803\nR version (compile time): 3.2.5  (2016-04-14 r70478)R runtime session\ninfo:R version 3.3.1 (2016-06-21)Platform: x86_64-pc-linux-gnu (64-\nbit)Running under: Ubuntu 16.10\n> can you give a specific example (R code)? i've never had any issues\n> with the \n> consle output, it looks just like any other R console, except for\n> extra syntax \n> highlighting etc.\n\nThis is how it looks, as you can see, all cells in the table appeared\nto be centered, and the headers don't align with the content:\n\n$ANOVA\n                       Effect DFn\nDFd          SSn       SSd            F            p p<.05          ges\n1                 (Intercept)   1  37 1.129608e+03 52.509349\n795.96312517 1.271775e-26     * 8.976219e-01\n2                         Factor1   1  37 5.761039e-\n01  6.389868   3.33588203 7.586116e-02       4.451656e-03\n3                  Factor2   2  74 8.392979e+00 22.912678  13.55320464\n9.655221e-06     * 6.115982e-02\n4                Factor3   1  37 4.515638e-01  8.675797   1.92580116\n1.735198e-01       3.492674e-03\n5              Factor1:Factor2   2  74 1.406914e+00\n10.762772   4.83665417 1.061346e-02     * 1.080212e-02\n6            Factor1:Factor3   1  37 2.873569e-\n02  5.083440   0.20915372 6.501056e-01       2.229888e-04\n7     Factor2:Factor2   2  74 5.290215e-03 13.770043   0.01421477\n9.858885e-01       4.105953e-05\n8 Factor1:Factor2:Factor3   2  74 7.797428e-02  8.733342   0.33034873\n7.197274e-01       6.048491e-04\n\n> > - Output tables only occupy half of the console space, and making\n> > the\n> > output unnecessarily long and impossible to work out for dataframes\n> > with more than 5 - 6 columns.\n\nThat indeed fixed that problem.\n> > - Tweaking the color scheme of the editor, I made the huge mistake\n> > of\n> > inadvertedly pressing the \" use KDE colors\", and now all color\n> > schemas\n> > are exactly the same.\n> \n> if that is the case, this is more likely a bug in kate (katepart),\n> the editor \n> we're using in RKWard.\n> \n> > There was no way to re-set the color schemas.\n> > Removing and re-installing rkward didn't do anything, nor removing\n> > configuration files or editing them to re=set the colors. The only\n> > alternative was to completely reinstall KDE.\n> \n> are you suggesting that a user specific configuration changed\n> settings system \n> wide for all users? that would be a major flaw. but like i said, we\n> didn't \n> invent an editor ourselves but are embedding katepart, so there's not\n> too much \n> we can tell you about this.\n\nI don't know how far the change went, or if it affect other users\n(there aren't any, I'm the only one using this computer, and is an\nlocal installation). And since finally got it working again, I'm, not\ngoing to fiddle with it anymore.\nThanks!Daniel\n\nOn Tue, 2016-11-08 at 20:20 +0100, meik michalke wrote:\n> hi daniel,\n> \n> thanks for your interest in using RKWard! first things first: it\n> appears you \n> are not subscribed to this list -- you might lose replies because\n> they usually \n> only go to the list. you might like to subscribe for the time being.\n> \n> Am Dienstag, 8. November 2016, 20:02:04 CET schrieb Daniel P.:\n> > I have been working with R for a while, and recently I moved to\n> > Ubuntu10.10 and installed Rkward.\n> \n> is that a typo? do you mean ubuntu 16.10? there is no more support\n> for 10.10 \n> for many years now.\n> \n> could you please give us some more info on your system (ideally the\n> output of \n> rk.sessionInfo(), at least version numbers of KDE, R and RKWard)?\n> \n> > - The output is a mess.\n> \n> can you give a specific example (R code)? i've never had any issues\n> with the \n> consle output, it looks just like any other R console, except for\n> extra syntax \n> highlighting etc.\n> \n> > - Output tables only occupy half of the console space, and making\n> > the\n> > output unnecessarily long and impossible to work out for dataframes\n> > with more than 5 - 6 columns.\n> \n> you can customize the width of the output in settings -> configure\n> RKWard -> R \n> backend.\n> \n> > - Tweaking the color scheme of the editor, I made the huge mistake\n> > of\n> > inadvertedly pressing the \" use KDE colors\", and now all color\n> > schemas\n> > are exactly the same.\n> \n> if that is the case, this is more likely a bug in kate (katepart),\n> the editor \n> we're using in RKWard.\n> \n> > There was no way to re-set the color schemas.\n> > Removing and re-installing rkward didn't do anything, nor removing\n> > configuration files or editing them to re=set the colors. The only\n> > alternative was to completely reinstall KDE.\n> \n> are you suggesting that a user specific configuration changed\n> settings system \n> wide for all users? that would be a major flaw. but like i said, we\n> didn't \n> invent an editor ourselves but are embedding katepart, so there's not\n> too much \n> we can tell you about this.\n> \n> \n> viele grüße :: m.eik\n> \n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161109/33550e47/attachment.html>",
+      "body_snippet": "Hi, \nThanks for your comments and suggestions, and sorry for the typos /\nambiguities of the original email, it was written a bit hastily.Now, to\nyour comments:\n> is that a typo? do you mean ubuntu 16.",
+      "thread_id": "thread-3159925bb4a2",
+      "thread_depth": 2,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-08c9e8e999e6",
+      "message_id": "<CACw1gO_d1Fb0028HnYtipw-e-ALT-RTysdJNrYvuoqykjXrSJA@mail.gmail.com>",
+      "from_name": "Julian Highley",
+      "from_email_hash": "edcd2bca9f51c3898eb24bac173eb63b2a9c62dceec6c45ce414df998d3dcd93",
+      "date": "2016-11-23T21:52:13Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nFirstly apologies if this is the wrong place for this post, but I after a\nfair amount of google searching I have got stuck.\n\nI have been using RKWard for a considerable time with no issue, but in the\nlast day or so have got an error (Error in RK() : Graphics API version\nmismatch) when ever I try and plot / chart anything. Previously running\nscripts now fail. I am not sure what has caused the issue. I know that my\nbase R installation is fine - I can chart no problem from the terminal\nusing R, but as soon as I use RKWard I get this error - Error in RK() :\nGraphics API version mismatch.\n\nI am using Ubuntu 16.10\nR.Version() ouput:\n\n$platform \"i686-pc-linux-gnu\"\n$arch \"i686\"\n$status \"\"\n$major \"3\"\n$minor \"3.1\"\n$year \"2016\"\n$month \"06\"\n$day \"21\"\n$`svn rev` \"70800\"\n$language \"R\"\n$version.string \"R version 3.3.1 (2016-06-21)\"\n$nickname \"Bug in Your Hair\"\n\nAny pointers would be gratefully appreciated!\n\nThanks,\n\nJulian.\n-- \nRegards,\n\nJulian\n\ne: julian.highley at gmail.com | m: +44(0)7795638029\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161123/72fc96b4/attachment.html>",
+      "body_snippet": "Hi,\n\nFirstly apologies if this is the wrong place for this post, but I after a\nfair amount of google searching I have got stuck.\n\nI have been using RKWard for a considerable time with no issue, but in",
+      "thread_id": "thread-08c9e8e999e6",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-d007d299ce41",
+      "message_id": "<2810955.9llLvNx8fL@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-11-24T01:13:35Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<CACw1gO_d1Fb0028HnYtipw-e-ALT-RTysdJNrYvuoqykjXrSJA@mail.gmail.com>",
+      "references": [
+        "<CACw1gO_d1Fb0028HnYtipw-e-ALT-RTysdJNrYvuoqykjXrSJA@mail.gmail.com>"
+      ],
+      "body_plain": "hi julian,\n\nAm Mittwoch, 23. November 2016, 21:52:13 CET schrieb Julian Highley:\n> Firstly apologies if this is the wrong place for this post, but I after a\n> fair amount of google searching I have got stuck.\n\nthis is the right place ;-)\n\n> I have been using RKWard for a considerable time with no issue, but in the\n> last day or so have got an error (Error in RK() : Graphics API version\n> mismatch) when ever I try and plot / chart anything.\n\nthis could be caused by RKWard being compiled for a different version of R \nthan what you are using. could you post the full results of rk.sessionInfo() ? \nthis should -- among other things -- list the compile time version of R for \nyour RKWard build.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161124/0eed454f/attachment.sig>",
+      "body_snippet": "hi julian,\n\nAm Mittwoch, 23. November 2016, 21:52:13 CET schrieb Julian Highley:\n> Firstly apologies if this is the wrong place for this post, but I after a\n> fair amount of google searching I have go",
+      "thread_id": "thread-08c9e8e999e6",
+      "thread_depth": 1,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-919945826559",
+      "message_id": "<CACw1gO_-V0ZAKqp1c5y_a+54RKKsoHTQ3YkQTJLdryZXVrRT=g@mail.gmail.com>",
+      "from_name": "Julian Highley",
+      "from_email_hash": "edcd2bca9f51c3898eb24bac173eb63b2a9c62dceec6c45ce414df998d3dcd93",
+      "date": "2016-11-24T20:56:20Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<2810955.9llLvNx8fL@yrla>",
+      "references": [
+        "<CACw1gO_d1Fb0028HnYtipw-e-ALT-RTysdJNrYvuoqykjXrSJA@mail.gmail.com>",
+        "<2810955.9llLvNx8fL@yrla>"
+      ],
+      "body_plain": "Hi Meik,\n\nAs you suggest the front end seems to be compiled for 3.2.5 and my version\nof R is 3.3.1. Do I need to compile RKWard from source to resolve or is\nthere an easier way?\n\nThank you for your help. I really appreciate it.\n\nJulian.\n\n- Frontend --\nRKWard version: 0.6.5\nKDE version (runtime): 4.14.22\nKDE version (compile time): 4.14.16\nQt build key: i386 linux g++-4 full-config\nLocal KDE directory: /home/julian/.kde/\nRKWard storage directory: /home/julian/.rkward/\nBackend version (as known to the frontend): 3.3.1\n\nDebug message file (this may contain relevant diagnostic output in case of\ntrouble):\n/tmp/rkward.frontend.kn3874\n\n-- Backend --\nDebug message file (this may contain relevant diagnostic output in case of\ntrouble):\n/tmp/rkward.rbackend.TJ4630\n\nR version (compile time): 3.2.5  (2016-04-14 r70478)\nR runtime session info:\nR version 3.3.1 (2016-06-21)\nPlatform: i686-pc-linux-gnu (32-bit)\nRunning under: Ubuntu 16.10\n\nlocale:\n [1] LC_CTYPE=en_GB.UTF-8          LC_NUMERIC=C\n [3] LC_TIME=en_GB.UTF-8           LC_COLLATE=en_GB.UTF-8\n [5] LC_MONETARY=en_GB.UTF-8       LC_MESSAGES=en_GB.UTF-8\n [7] LC_PAPER=en_GB.UTF-8          LC_NAME=en_GB.UTF-8\n [9] LC_ADDRESS=en_GB.UTF-8        LC_TELEPHONE=en_GB.UTF-8\n[11] LC_MEASUREMENT=en_GB.UTF-8    LC_IDENTIFICATION=en_GB.UTF-8\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base\n\nother attached packages:\n[1] rkward_0.6.5\n\nloaded via a namespace (and not attached):\n[1] tools_3.3.1\n>\n\nOn Thu, 24 Nov 2016 at 01:13 meik michalke <meik.michalke at uni-duesseldorf.de>\nwrote:\n\nhi julian,\n\nAm Mittwoch, 23. November 2016, 21:52:13 CET schrieb Julian Highley:\n> Firstly apologies if this is the wrong place for this post, but I after a\n> fair amount of google searching I have got stuck.\n\nthis is the right place ;-)\n\n> I have been using RKWard for a considerable time with no issue, but in the\n> last day or so have got an error (Error in RK() : Graphics API version\n> mismatch) when ever I try and plot / chart anything.\n\nthis could be caused by RKWard being compiled for a different version of R\nthan what you are using. could you post the full results of\nrk.sessionInfo() ?\nthis should -- among other things -- list the compile time version of R for\nyour RKWard build.\n\n\nviele grüße :: m.eik\n\n--\n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n\n-- \nRegards,\n\nJulian\n\ne: julian.highley at gmail.com | m: +44(0)7795638029\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161124/bfb35ebd/attachment.html>",
+      "body_snippet": "Hi Meik,\n\nAs you suggest the front end seems to be compiled for 3.2.5 and my version\nof R is 3.3.1. Do I need to compile RKWard from source to resolve or is\nthere an easier way?\n\nThank you for your he",
+      "thread_id": "thread-08c9e8e999e6",
+      "thread_depth": 2,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-b27f000ed6fb",
+      "message_id": "<77898727.yuTo4SRO5j@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-11-24T21:38:02Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<CACw1gO_-V0ZAKqp1c5y_a+54RKKsoHTQ3YkQTJLdryZXVrRT=g@mail.gmail.com>",
+      "references": [
+        "<CACw1gO_d1Fb0028HnYtipw-e-ALT-RTysdJNrYvuoqykjXrSJA@mail.gmail.com>",
+        "<2810955.9llLvNx8fL@yrla>",
+        "<CACw1gO_-V0ZAKqp1c5y_a+54RKKsoHTQ3YkQTJLdryZXVrRT=g@mail.gmail.com>"
+      ],
+      "body_plain": "hi julian,\n\nAm Donnerstag, 24. November 2016, 20:56:20 CET schrieb Julian Highley:\n> As you suggest the front end seems to be compiled for 3.2.5 and my version\n> of R is 3.3.1.\n\nok, that explains it.\n\n> Do I need to compile RKWard from source to resolve or is there an easier\n> way?\n\nit's a bit curious how the distribution packages could become so mixed up. are \nyou using standard distribution packages for both R and RKWard? if so, you \nshould probably file a bug report (to the ubuntu deveolpers) because this \ncombination simply can't work for ubuntu users. they'd need to recompile the \npackage.\n\nanyway, i'd recommend to switch to a) CRAN packages of R:\n https://cran.r-project.org/bin/linux/ubuntu/README.html\nand b) our PPA package of RKWard:\n https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran\nthis makes sure you always get the latest stable release of both R and RKWard \nand they're both in sync, dependency-wise.\n\nthere's also some alternative PPAs, if you're feeling lucky ;-)\n https://launchpad.net/~rkward-devel\nyou'd always need one for CRAN R if you're using its packages, obviously.\n\nin addition to that (and not related to your problem), i personally am very \nhappy with the C2D4U (CRAN to deb for ubuntu) packages and prefer them over \ninstalling R packages from source:\n https://launchpad.net/~marutter/+archive/ubuntu/c2d4u\nmost packages that are available on CRAN are also available as a debian \npackage here. they're usually called \"r-cran-<package name>\" then.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161124/930db969/attachment.sig>",
+      "body_snippet": "hi julian,\n\nAm Donnerstag, 24. November 2016, 20:56:20 CET schrieb Julian Highley:\n> As you suggest the front end seems to be compiled for 3.2.5 and my version\n> of R is 3.3.1.\n\nok, that explains it.\n",
+      "thread_id": "thread-08c9e8e999e6",
+      "thread_depth": 3,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-c85744f657d4",
+      "message_id": "<CAC3z3ujU05KR+_mgY2SVFfMoZzUQAZsHFb27XnC2tYpnjeKMzg@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2016-11-26T21:34:33Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nfirst of all, thanks for creating RKward!\n\nI recently did a fresh install of my system (Linux Mint 18 MATE),\ninstalled R 3.3.2 and RKward 0.6.5 (from\nhttps://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran).\nWhenever I try to plot something, I get an API mismatch error:\n\nError in RK() : Graphics API version mismatch\n\nI presume these mail in rkward-devel (\nhttps://mail.kde.org/pipermail/rkward-devel/2016-May/004605.html ) is\nrelating to the same issue, but I don't really see how to solve this\nhaving used the latest ppa packages. Can you please help?\n\nAll the best,\nRob\n\n\n-- \n[work] Wageningen Marine Research, Haringkade 1 - 1976 CP  IJmuiden -\nThe Netherlands - rob.vanbemmelen at wur.nl\n[home] Volendammerweg 7 - 1023 BE  Amsterdam - The Netherlands -\nrvanbemmelen at gmail.com\n[tel] +31 612 394 805 or +31 317 483 092 or + 31 640 968 054\n[blog] http://overthetreeline.wordpress.com/",
+      "body_snippet": "Hi,\nfirst of all, thanks for creating RKward!\n\nI recently did a fresh install of my system (Linux Mint 18 MATE),\ninstalled R 3.3.2 and RKward 0.6.5 (from\nhttps://launchpad.net/~rkward-devel/+archive/u",
+      "thread_id": "thread-c85744f657d4",
+      "thread_depth": 0,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-7827ad8dab46",
+      "message_id": "<14660155.tUd0NzDkMe@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-11-27T11:02:25Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<CAC3z3ujU05KR+_mgY2SVFfMoZzUQAZsHFb27XnC2tYpnjeKMzg@mail.gmail.com>",
+      "references": [
+        "<CAC3z3ujU05KR+_mgY2SVFfMoZzUQAZsHFb27XnC2tYpnjeKMzg@mail.gmail.com>"
+      ],
+      "body_plain": "hi rob,\n\nAm Samstag, 26. November 2016, 22:34:33 CET schrieb Rob van Bemmelen:\n> R 3.3.2 and RKward 0.6.5 (from\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran).\n> Whenever I try to plot something, I get an API mismatch error:\n> \n> Error in RK() : Graphics API version mismatch\n\nwe've had something like this just recently:\nhttps://mail.kde.org/pipermail/rkward-users/2016-November/001194.html\nbut your R version seems to match CRAN stable.\n\ncould you post the full output of rk.sessionInfo() ?\n\nhow did you install R?\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161127/34f8d100/attachment.sig>",
+      "body_snippet": "hi rob,\n\nAm Samstag, 26. November 2016, 22:34:33 CET schrieb Rob van Bemmelen:\n> R 3.3.2 and RKward 0.6.5 (from\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran).\n> Whenever I ",
+      "thread_id": "thread-c85744f657d4",
+      "thread_depth": 1,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-d590deed2e6a",
+      "message_id": "<CAC3z3ug-7db7Y3z1h-hJuhw_PSs3BfBEWdPG7h1OBR7S2obsOw@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2016-11-27T13:20:25Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<14660155.tUd0NzDkMe@yrla>",
+      "references": [
+        "<CAC3z3ujU05KR+_mgY2SVFfMoZzUQAZsHFb27XnC2tYpnjeKMzg@mail.gmail.com>",
+        "<14660155.tUd0NzDkMe@yrla>"
+      ],
+      "body_plain": "Dear Meik, thanks for your quick response. See below for the\nrk.sessionInfo() output.\n\nI installed r-base adding this CRAN mirror to my sources list: deb\nhttps://mirrors.cicku.me/CRAN/bin/linux/ubuntu xenial/\n\nLooks like the same issue as in the thread you are linking to: I now\nsee that Rkward has been compiled against 3.2.3 (right?)....\n\nall the best, Rob\n\n\n-- Frontend --\nRKWard version: 0.6.5\nKDE version (runtime): 4.14.16\nKDE version (compile time): 4.14.16\nQt build key: x86_64 linux g++-4 full-config\nLocal KDE directory: /home/rob/.kde/\nRKWard storage directory: /home/rob/.rkward/\nBackend version (as known to the frontend): 3.3.2\n\nDebug message file (this may contain relevant diagnostic output in\ncase of trouble):\n/tmp/rkward.frontend.kn2273\n\n-- Backend --\nDebug message file (this may contain relevant diagnostic output in\ncase of trouble):\n/tmp/rkward.rbackend.TJ2289\n\nR version (compile time): 3.2.3  (2015-12-10 r69752)\nR runtime session info:\nR version 3.3.2 (2016-10-31)\nPlatform: x86_64-pc-linux-gnu (64-bit)\nRunning under: Ubuntu 16.04 LTS\n\nlocale:\n [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C\n [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8\n [5] LC_MONETARY=nl_NL.UTF-8       LC_MESSAGES=en_US.UTF-8\n [7] LC_PAPER=nl_NL.UTF-8          LC_NAME=nl_NL.UTF-8\n [9] LC_ADDRESS=nl_NL.UTF-8        LC_TELEPHONE=nl_NL.UTF-8\n[11] LC_MEASUREMENT=nl_NL.UTF-8    LC_IDENTIFICATION=nl_NL.UTF-8\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base\n\nother attached packages:\n[1] rkward_0.6.5\n\nloaded via a namespace (and not attached):\n[1] tools_3.3.2\n\nOn 27 November 2016 at 12:02, meik michalke\n<meik.michalke at uni-duesseldorf.de> wrote:\n> hi rob,\n>\n> Am Samstag, 26. November 2016, 22:34:33 CET schrieb Rob van Bemmelen:\n>> R 3.3.2 and RKward 0.6.5 (from\n>> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran).\n>> Whenever I try to plot something, I get an API mismatch error:\n>>\n>> Error in RK() : Graphics API version mismatch\n>\n> we've had something like this just recently:\n> https://mail.kde.org/pipermail/rkward-users/2016-November/001194.html\n> but your R version seems to match CRAN stable.\n>\n> could you post the full output of rk.sessionInfo() ?\n>\n> how did you install R?\n>\n>\n> viele grüße :: m.eik\n>\n> --\n>   dipl. psych. meik michalke\n>   institut f\"ur experimentelle psychologie\n>   abt. f\"ur diagnostik und differentielle psychologie\n>   heinrich-heine-universit\"at d-40204 d\"usseldorf",
+      "body_snippet": "Dear Meik, thanks for your quick response. See below for the\nrk.sessionInfo() output.\n\nI installed r-base adding this CRAN mirror to my sources list: deb\nhttps://mirrors.cicku.me/CRAN/bin/linux/ubuntu",
+      "thread_id": "thread-c85744f657d4",
+      "thread_depth": 2,
+      "month": "2016-11"
+    },
+    {
+      "id": "msg-b8665d30ff17",
+      "message_id": "<CAC3z3ug9JuUNbskzY-SSKpbdM6HtZt+uviqjm4uMsKhLFrPbow@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2016-11-27T19:05:46Z",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "subject_clean": "Error in RK() : Graphics API version mismatch",
+      "in_reply_to": "<CAC3z3ug-7db7Y3z1h-hJuhw_PSs3BfBEWdPG7h1OBR7S2obsOw@mail.gmail.com>",
+      "references": [
+        "<CAC3z3ujU05KR+_mgY2SVFfMoZzUQAZsHFb27XnC2tYpnjeKMzg@mail.gmail.com>",
+        "<14660155.tUd0NzDkMe@yrla>",
+        "<CAC3z3ug-7db7Y3z1h-hJuhw_PSs3BfBEWdPG7h1OBR7S2obsOw@mail.gmail.com>"
+      ],
+      "body_plain": "Sorry, I just made a mistake in my first mail; I had used the\nrkward-stable ppa, not the rkward-stable-cran... #$*#@#$%*\nAnyway, I fixed it now and everything works like a charm again! Thanks\nagain, and sorry for my mistake...\nregards, Rob\n\n\nOn 27 November 2016 at 14:20, Rob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> Dear Meik, thanks for your quick response. See below for the\n> rk.sessionInfo() output.\n>\n> I installed r-base adding this CRAN mirror to my sources list: deb\n> https://mirrors.cicku.me/CRAN/bin/linux/ubuntu xenial/\n>\n> Looks like the same issue as in the thread you are linking to: I now\n> see that Rkward has been compiled against 3.2.3 (right?)....\n>\n> all the best, Rob\n>\n>\n> -- Frontend --\n> RKWard version: 0.6.5\n> KDE version (runtime): 4.14.16\n> KDE version (compile time): 4.14.16\n> Qt build key: x86_64 linux g++-4 full-config\n> Local KDE directory: /home/rob/.kde/\n> RKWard storage directory: /home/rob/.rkward/\n> Backend version (as known to the frontend): 3.3.2\n>\n> Debug message file (this may contain relevant diagnostic output in\n> case of trouble):\n> /tmp/rkward.frontend.kn2273\n>\n> -- Backend --\n> Debug message file (this may contain relevant diagnostic output in\n> case of trouble):\n> /tmp/rkward.rbackend.TJ2289\n>\n> R version (compile time): 3.2.3  (2015-12-10 r69752)\n> R runtime session info:\n> R version 3.3.2 (2016-10-31)\n> Platform: x86_64-pc-linux-gnu (64-bit)\n> Running under: Ubuntu 16.04 LTS\n>\n> locale:\n>  [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C\n>  [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8\n>  [5] LC_MONETARY=nl_NL.UTF-8       LC_MESSAGES=en_US.UTF-8\n>  [7] LC_PAPER=nl_NL.UTF-8          LC_NAME=nl_NL.UTF-8\n>  [9] LC_ADDRESS=nl_NL.UTF-8        LC_TELEPHONE=nl_NL.UTF-8\n> [11] LC_MEASUREMENT=nl_NL.UTF-8    LC_IDENTIFICATION=nl_NL.UTF-8\n>\n> attached base packages:\n> [1] stats     graphics  grDevices utils     datasets  methods   base\n>\n> other attached packages:\n> [1] rkward_0.6.5\n>\n> loaded via a namespace (and not attached):\n> [1] tools_3.3.2\n>\n> On 27 November 2016 at 12:02, meik michalke\n> <meik.michalke at uni-duesseldorf.de> wrote:\n>> hi rob,\n>>\n>> Am Samstag, 26. November 2016, 22:34:33 CET schrieb Rob van Bemmelen:\n>>> R 3.3.2 and RKward 0.6.5 (from\n>>> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran).\n>>> Whenever I try to plot something, I get an API mismatch error:\n>>>\n>>> Error in RK() : Graphics API version mismatch\n>>\n>> we've had something like this just recently:\n>> https://mail.kde.org/pipermail/rkward-users/2016-November/001194.html\n>> but your R version seems to match CRAN stable.\n>>\n>> could you post the full output of rk.sessionInfo() ?\n>>\n>> how did you install R?\n>>\n>>\n>> viele grüße :: m.eik\n>>\n>> --\n>>   dipl. psych. meik michalke\n>>   institut f\"ur experimentelle psychologie\n>>   abt. f\"ur diagnostik und differentielle psychologie\n>>   heinrich-heine-universit\"at d-40204 d\"usseldorf\n\n\n\n-- \n[work] Wageningen Marine Research, Haringkade 1 - 1976 CP  IJmuiden -\nThe Netherlands - rob.vanbemmelen at wur.nl\n[home] Volendammerweg 7 - 1023 BE  Amsterdam - The Netherlands -\nrvanbemmelen at gmail.com\n[tel] +31 612 394 805 or +31 317 483 092 or + 31 640 968 054\n[blog] http://overthetreeline.wordpress.com/",
+      "body_snippet": "Sorry, I just made a mistake in my first mail; I had used the\nrkward-stable ppa, not the rkward-stable-cran... #$*#@#$%*\nAnyway, I fixed it now and everything works like a charm again! Thanks\nagain, a",
+      "thread_id": "thread-c85744f657d4",
+      "thread_depth": 3,
+      "month": "2016-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3159925bb4a2",
+      "subject": "Output in console is a mess",
+      "message_count": 3,
+      "participants": [
+        "Daniel P.",
+        "meik michalke"
+      ],
+      "started": "2016-11-08T19:02:04Z",
+      "last_reply": "2016-11-09T08:43:13Z",
+      "root_message_id": "msg-3159925bb4a2"
+    },
+    {
+      "id": "thread-08c9e8e999e6",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "message_count": 4,
+      "participants": [
+        "Julian Highley",
+        "meik michalke"
+      ],
+      "started": "2016-11-23T21:52:13Z",
+      "last_reply": "2016-11-24T21:38:02Z",
+      "root_message_id": "msg-08c9e8e999e6"
+    },
+    {
+      "id": "thread-c85744f657d4",
+      "subject": "Error in RK() : Graphics API version mismatch",
+      "message_count": 4,
+      "participants": [
+        "Rob van Bemmelen",
+        "meik michalke"
+      ],
+      "started": "2016-11-26T21:34:33Z",
+      "last_reply": "2016-11-27T19:05:46Z",
+      "root_message_id": "msg-c85744f657d4"
+    }
+  ]
+}

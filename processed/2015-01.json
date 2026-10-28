@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2015-01",
+  "messages": [
+    {
+      "id": "msg-af59764adbed",
+      "message_id": "<20150118093058.43cf8b2c@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2015-01-18T08:30:58Z",
+      "subject": "[rkward-users]  Some mails apparently lost",
+      "subject_clean": "[rkward-users]  Some mails apparently lost",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThis is to let you know that mailing lists on SF.net are apparently\nsuffering from silent loss of some mails since approximately one week.\nI know of at least one post that is missing from rkward-devel, but\nthere is no way of telling how many messages got lost. Other projects\nare affected, too.\n\nIf you have recently posted to rkward-devel or rkward-users, please\ncheck the list archives to make sure your mail arrived. If it did not,\nconsider re-posting. Links to the list archives:\n\nhttp://sourceforge.net/p/rkward/mailman/rkward-devel/\nhttp://sourceforge.net/p/rkward/mailman/rkward-users/\n\nIn somewhat related news, our lists will migrate to kde.org, shortly.\nI'll let you know the details, then. In most cases no action will be\nneeded on our part. Given the timing of these two events I just want\nto point out that the upcoming migration is neither a cause, nor a\nconsequence of the mail loss - although this new issue, and the\ndisturbing lack of support response from SF.net is certainly another\nreason not to regret the move...\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150118/e259936c/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nNew Year. New Location. New Benefits. New Data Center in Ashburn, VA.\nGigeNET is offering a free month of service with a new server in Ashburn.\nChoose from 2 high performing configs, both with 100TB of bandwidth.\nHigher redundancy.Lower latency.Increased capacity.Completely compliant.\nhttp://p.sf.net/sfu/gigenet\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi!\n\nThis is to let you know that mailing lists on SF.net are apparently\nsuffering from silent loss of some mails since approximately one week.\nI know of at least one post that is missing from rkward-",
+      "thread_id": "thread-af59764adbed",
+      "thread_depth": 0,
+      "month": "2015-01"
+    },
+    {
+      "id": "msg-1de07fcfbbeb",
+      "message_id": "<20150118195757.1b8bbbf0@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2015-01-18T18:57:57Z",
+      "subject": "[rkward-users]  Mailing list about to migrate",
+      "subject_clean": "[rkward-users]  Mailing list about to migrate",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear subscriber of rkward-users,\n\nas part of our migration from SF.net to KDE.org, we're also moving our\nmailing lists. rkward-users at lists.sf.net will become\nrkward-users at kde.org .\n\nI will move your subscription to the new list, then deactivate the old\nlist. Note that individual settings such as receiving mails in daily\ndigests will be lost in the transition, and you will have to re-set\nthese. Sorry about the inconvenience. You should receive a mail\ncontaining a new mailing list password, and a link to the subscription\nconfiguration page shortly after this mail.\n\nIf you do not receive a notice of subscription to the new mailing\nlist, or if you need any other assistance, just let me know.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150118/d3fb930b/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nNew Year. New Location. New Benefits. New Data Center in Ashburn, VA.\nGigeNET is offering a free month of service with a new server in Ashburn.\nChoose from 2 high performing configs, both with 100TB of bandwidth.\nHigher redundancy.Lower latency.Increased capacity.Completely compliant.\nhttp://p.sf.net/sfu/gigenet\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Dear subscriber of rkward-users,\n\nas part of our migration from SF.net to KDE.org, we're also moving our\nmailing lists. rkward-users at lists.sf.net will become\nrkward-users at kde.org .\n\nI will move ",
+      "thread_id": "thread-1de07fcfbbeb",
+      "thread_depth": 0,
+      "month": "2015-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-af59764adbed",
+      "subject": "[rkward-users]  Some mails apparently lost",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2015-01-18T08:30:58Z",
+      "last_reply": "2015-01-18T08:30:58Z",
+      "root_message_id": "msg-af59764adbed"
+    },
+    {
+      "id": "thread-1de07fcfbbeb",
+      "subject": "[rkward-users]  Mailing list about to migrate",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2015-01-18T18:57:57Z",
+      "last_reply": "2015-01-18T18:57:57Z",
+      "root_message_id": "msg-1de07fcfbbeb"
+    }
+  ]
+}

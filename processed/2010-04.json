@@ -1,0 +1,422 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2010-04",
+  "messages": [
+    {
+      "id": "msg-79c25dde6906",
+      "message_id": "<forum-165574-8323140@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-04-15T11:51:50Z",
+      "subject": "[rkward-users] [Help] Two rkward installations",
+      "subject_clean": "[rkward-users] [Help] Two rkward installations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by chil14r at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3677349:\n\nHi,\nI compiled and installed rkward -0.5.2 but there seem to be still problems in coping with the new R help system. I hoped the older rkward 0.4.9.c would do better, but now I have two versions of rkward on my SuSe system.\n\nMy question refers to problem of how to uninstall rkward when it was installed via \\\"make install\\\" ?\n\nThanks for your comments!",
+      "body_snippet": "The following forum message was posted by chil14r at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3677349:\n\nHi,\nI compiled and installed rkward -0.5.2 but there seem to be still pr",
+      "thread_id": "thread-79c25dde6906",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-95213f99525d",
+      "message_id": "<forum-165574-8324138@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-04-15T13:50:47Z",
+      "subject": "[rkward-users] [Help] RE: Two rkward installations",
+      "subject_clean": "[rkward-users] [Help] RE: Two rkward installations",
+      "in_reply_to": "<forum-165574-8323140@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3677349:\n\nHi,\n\n[quote]I compiled and installed rkward -0.5.2 but there seem to be still problems in coping with the new R help system.[/quote]\n\ncould you elaborate on that? I am not currently aware of issues with the new help system.\n\n[code]My question refers to problem of how to uninstall rkward when it was installed via \\\"make install\\\" ?[/code]\n\nWell, [code]make uninstall[/code] exists, but this is completely untested, and may or may not work correctly.\n\nRKWard installs data to the following places (use kde-config for KDE3-paths, kde4-config for KDE 4 paths):\n[code]kde[4]-config --path data[/code]   (The entire \\\"rkward\\\" directory)\n[code]kde[4]-config --path xdgdata-apps[/code]   (The file rkward.desktop)\nFurther files are installed to the R library, and unfortunately, this may be in several places. In general\n[code]sudo R CMD REMOVE rkward[/code]\nwill get you rid of that. You may need to use\n[code]sudo R CMD REMOVE -l/usr/lib/R/librarypath rkward[/code]\nto get rid of it in non-default places (run .libPaths() in R to get a list of the paths in question).\n\nAs a final step, re-install RKWard 0.5.2. The KDE3 and KDE4 versions of RKWard are not designed to be co-installable, so you will probably have deleted some files from 0.5.2, too.\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3677349:\n\nHi,\n\n[quote]I compiled and installed rkward -0.5.2 but there seem to be sti",
+      "thread_id": "thread-79c25dde6906",
+      "thread_depth": 1,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-5cd7355904eb",
+      "message_id": "<201004151714.38618.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-15T15:14:33Z",
+      "subject": "[rkward-users] Call for testing: RKWard 0.5.3-pre1 / Release schedule",
+      "subject_clean": "[rkward-users] Call for testing: RKWard 0.5.3-pre1 / Release schedule",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThe current development version of RKWard has a nice number of changes, and I \nthink it's about time to release those, officially. Before doing so, of course, \nwe need to do some more testing, and I would like to invite you all to \nparticipate in that.\n\nA tentative timeline for the release / the testing is at \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule \n. The targetted release date is April 30, with the testing phase open until \nApril 25. Of course the deadlines will extended, if necessary.\n\n--- Testing ---\n\nPlease download the 0.5.3-pre1 release (also linked to from \nhttp://p.sf.net/rkward/download) and give it a try. Here are some things to \nwatch out for in particular:\n- All plugins were converted to use JS instead of PHP. This change will allow \nus to provide more flexibility in plugins in the future, but for now this \nchange should be mostly invisible to end-users. This transition was quite a \nlot of work, and while we proceeded with care, it is quite likely that we \nintroduced a few new bugs in some plugins. Therefore, please test the plugins \nyou use, very carefully.\nAlso, if compiling from sources, please run\n   make plugintests\nafter make install, and report any failed tests.\n\n- R 2.11.0 is scheduled for release on April 22. If you have the chance to use \nR 2.11.0 (or a recent beta) in your testing, that would be very helpful.\n\nPlease try to provide feedback by April 25.\n\n--- Translators ---\n\n.po and .pot files are located in the po-subdirectory, as usual. Please provide \nyour updates by April 25.\n\n--- Plugin authors ---\n\nIf you plan to add features to existing plugins before the release, please \npost to the mailing list, first. \n\n--- Packagers ---\n\nNote that RKWard no longer required PHP at runtime (the PHP-backend is still \nfunctional, but not used by any of the plugins), so you may drop that \ndependency.\n\n--- Windows users ---\n\nA windows binary will follow, shortly. You may want to check the updated \ninstallation instructions for correctness: \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Windows \n.\n\nNote that you can now install RKWard from source using emerge (instructions \nprovided on the same page). I'd like to encourage you to give this a try, as \nit provides a fairly convenient way to follow the current development on \nwindows.\n\n--- Mac users ---\n\nIf there are any Mac users on the list: Please give these instructions a try:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac .\n\nProbably this does not quite work, yet (I cannot try, myself), but the only \nway to get the remaining problems fixed is by testing, and reporting. I'm \nconfident that RKWard on Mac is only a few steps away, with your help.\n\n--- Closing words ---\n\nRemember: There's always many ways you can help, with or without programming \nskills. Testing is one important way to contribute, but for instance our wiki \n/ website is always in need of love as well. If you have time to spare, your \nhelp will be very welcome.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100415/4fea264a/attachment.sig>",
+      "body_snippet": "Hi!\n\nThe current development version of RKWard has a nice number of changes, and I \nthink it's about time to release those, officially. Before doing so, of course, \nwe need to do some more testing, an",
+      "thread_id": "thread-5cd7355904eb",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-afca3e0c251f",
+      "message_id": "<4BCB0492.7050707@gmail.com>",
+      "from_name": "Ronaldo Reis Junior",
+      "from_email_hash": "96cd6b9cef02695211fb14fe516d20d0114d999eb612009d6d2b1e1b0cde3b14",
+      "date": "2010-04-18T13:09:38Z",
+      "subject": "[rkward-users] Help on rKward",
+      "subject_clean": "[rkward-users] Help on rKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI'm testing rKward and it's become a great GUI for R on linux, mainly \nfor new linux users. I'm not a new linux user and I use Emacs for my own \nR's script. But I always try new GUIs or IDEs for to recommend to my \nstudents. The most dificult for new R and Linux users is: I have \ninstalled R on my linux but I dont found the R icon. This happen because \nR on linux have only the R-Console in your basic installation. After \nthis barrier, users can install JGR, Rcmdr, etc. Anyway rKward is the \nbest way to new Linux users start to use R. Lets go to my specific problem.\n\nThe problem is the use of rKward for the heavy R user but new Linux \nuser. Heavy R user dont use menus (they use rKward most like a script \nIDE than R GUI) and normally dont need to use the rKward output, made \nautomatically by using rKward menus or manually using rk.print() and \nrk.header() function. They normally use sweave or a ascii output with \ncomments. That is my problem? Exist anyway to save my ascii output from \nrKward to a file without need to use the copy and paste function?\n\nThanks a lot.\nInte\nRonaldo\n\n-- \n14? lei - Geralmente, s? quando voc? puder publicar seus resultados,\n           eles s?o bons o suficiente para fazer parte de sua disserta??o.\n\n       --Herman, I. P. 2007. Following the law. NATURE, Vol 445, p. 228.\n>  Prof. Ronaldo Reis J?nior\n|  .''`. UNIMONTES/DBG/Lab. Ecologia Comportamental e Computacional\n| : :'  : Campus Universit?rio Prof. Darcy Ribeiro, Vila Mauric?ia\n| `. `'` CP: 126, CEP: 39401-089, Montes Claros - MG - Brasil\n|   `- Fone: (38) 3229-8192 |ronaldo.reis at unimontes.br\n|http://www.ppgcb.unimontes.br/lecc  | LinuxUser#: 205366\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100418/389a6e48/attachment.html>",
+      "body_snippet": "Hi,\n\nI'm testing rKward and it's become a great GUI for R on linux, mainly \nfor new linux users. I'm not a new linux user and I use Emacs for my own \nR's script. But I always try new GUIs or IDEs for ",
+      "thread_id": "thread-afca3e0c251f",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-f3e955be7187",
+      "message_id": "<4BCB04A9.2090708@gmail.com>",
+      "from_name": "Ronaldo Reis Junior",
+      "from_email_hash": "96cd6b9cef02695211fb14fe516d20d0114d999eb612009d6d2b1e1b0cde3b14",
+      "date": "2010-04-18T13:10:01Z",
+      "subject": "[rkward-users] Yet Testing rKward",
+      "subject_clean": "[rkward-users] Yet Testing rKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI continue testing rKward. I dont know how to save the results from a \nscript execution without use copy and paste or using a rkward output system.\n\nNow I try to understand how adapt my script do use the rKward output system.\n\nExample:\n\nI have this script:\n----------------------\n## Carregar a tabela de riqueza e equitabilidade\nlibrary(gdata)\ndadosriq <- read.xls(\"Panalise.xls\",h=T,sheet=2)\n\n## Resumo dos dados\nsummary(dadosriq)\n----------------------\n\nUsing rkward output system I try:\n----------------------\nrk.header(\"Carregar a tabela de riqueza e equitabilidade\")\nlibrary(gdata)\n\ndadosriq <- read.xls(\"Panalise.xls\",h=T,sheet=2)\n\nrk.header(\"Resumo dos dados\")\nrk.print(summary(dadosriq))\n----------------------\n\nOk. The problems:\n\n1) my script become rkward specific and it is not a good idea.\n\n2) I cant print the command in output unless I repeat the command like a \nstring:\nrk.header(\"dadosriq <- read.xls(\"Panalise.xls\",h=T,sheet=2)\"), but it is \nalso not a good idea.\n\nAnyone know if exist a global rkward command to send all (commands e \nresults) to the output? In this way if I'm a rkward user I use this \nglobal command, if I'm not a rkward user I comment this command and my \nscript work.\n\nThis is possible or I need to forget rkward as a linux R script IDE?\n\nThanks\nRonaldo\n\n-- \n8? lei - Colete seus dados hoje como se voc? soubesse que seu equipamento vai quebrar amanh?.\n\n       --Herman, I. P. 2007. Following the law. NATURE, Vol 445, p. 228.\n>  Prof. Ronaldo Reis J?nior\n|  .''`. UNIMONTES/DBG/Lab. Ecologia Comportamental e Computacional\n| : :'  : Campus Universit?rio Prof. Darcy Ribeiro, Vila Mauric?ia\n| `. `'` CP: 126, CEP: 39401-089, Montes Claros - MG - Brasil\n|   `- Fone: (38) 3229-8192 |ronaldo.reis at unimontes.br\n|http://www.ppgcb.unimontes.br/lecc  | LinuxUser#: 205366\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100418/0bf09392/attachment.html>",
+      "body_snippet": "Hi,\n\nI continue testing rKward. I dont know how to save the results from a \nscript execution without use copy and paste or using a rkward output system.\n\nNow I try to understand how adapt my script do",
+      "thread_id": "thread-f3e955be7187",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-eedd6c40d92a",
+      "message_id": "<201004182123.48630.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-18T19:23:48Z",
+      "subject": "[rkward-users] Help on rKward",
+      "subject_clean": "[rkward-users] Help on rKward",
+      "in_reply_to": "<4BCB0492.7050707@gmail.com>",
+      "references": [
+        "<4BCB0492.7050707@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 18 April 2010, Ronaldo Reis Junior wrote:\n> I'm testing rKward and it's become a great GUI for R on linux, mainly\n> for new linux users. I'm not a new linux user and I use Emacs for my own\n> R's script. But I always try new GUIs or IDEs for to recommend to my\n> students. The most dificult for new R and Linux users is: I have\n> installed R on my linux but I dont found the R icon. This happen because\n> R on linux have only the R-Console in your basic installation. After\n> this barrier, users can install JGR, Rcmdr, etc. Anyway rKward is the\n> best way to new Linux users start to use R. Lets go to my specific problem.\n\nthanks!\n\n> The problem is the use of rKward for the heavy R user but new Linux\n> user. Heavy R user dont use menus (they use rKward most like a script\n> IDE than R GUI) and normally dont need to use the rKward output, made\n> automatically by using rKward menus or manually using rk.print() and\n> rk.header() function. They normally use sweave or a ascii output with\n> comments. That is my problem? Exist anyway to save my ascii output from\n> rKward to a file without need to use the copy and paste function?\n\nOne possibility is to simply use\n  sink (\"filename.txt\", split=TRUE)\n(see ?sink).\n\nAs another option, RKWard 0.5.3 will also have the option to export the \ncontents of the R Console as HTML, including syntax highlighting of the input \n(you may want to try the 0.5.3-pre1 preview release that I created a few days \nago; File->Export as HTML).\n\nAnother option that I plan to add, soon, is to \"carbon-copy\" the console \ninput/output into RKWard's output window. This will not be part of 0.5.3, \nhowever.\n\nAre any of these, what you are looking for?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100418/c1bc3134/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 18 April 2010, Ronaldo Reis Junior wrote:\n> I'm testing rKward and it's become a great GUI for R on linux, mainly\n> for new linux users. I'm not a new linux user and I use Emacs for my ",
+      "thread_id": "thread-afca3e0c251f",
+      "thread_depth": 1,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-5d15703287bf",
+      "message_id": "<4BCB752F.1030704@gmail.com>",
+      "from_name": "Ronaldo Reis Junior",
+      "from_email_hash": "96cd6b9cef02695211fb14fe516d20d0114d999eb612009d6d2b1e1b0cde3b14",
+      "date": "2010-04-18T21:10:07Z",
+      "subject": "[rkward-users] Help on rKward",
+      "subject_clean": "[rkward-users] Help on rKward",
+      "in_reply_to": "<201004182123.48630.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<4BCB0492.7050707@gmail.com>",
+        "<201004182123.48630.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nyes, this is the feature that I looking for. I try to install and test.\n\nThanks very much and congratulation by rKward.\n\nInte\nRonaldo\n\nEm 18-04-2010 16:23, Thomas Friedrichsmeier escreveu:\n> Hi,\n>\n> On Sunday 18 April 2010, Ronaldo Reis Junior wrote:\n>    \n>> I'm testing rKward and it's become a great GUI for R on linux, mainly\n>> for new linux users. I'm not a new linux user and I use Emacs for my own\n>> R's script. But I always try new GUIs or IDEs for to recommend to my\n>> students. The most dificult for new R and Linux users is: I have\n>> installed R on my linux but I dont found the R icon. This happen because\n>> R on linux have only the R-Console in your basic installation. After\n>> this barrier, users can install JGR, Rcmdr, etc. Anyway rKward is the\n>> best way to new Linux users start to use R. Lets go to my specific problem.\n>>      \n> thanks!\n>\n>    \n>> The problem is the use of rKward for the heavy R user but new Linux\n>> user. Heavy R user dont use menus (they use rKward most like a script\n>> IDE than R GUI) and normally dont need to use the rKward output, made\n>> automatically by using rKward menus or manually using rk.print() and\n>> rk.header() function. They normally use sweave or a ascii output with\n>> comments. That is my problem? Exist anyway to save my ascii output from\n>> rKward to a file without need to use the copy and paste function?\n>>      \n> One possibility is to simply use\n>    sink (\"filename.txt\", split=TRUE)\n> (see ?sink).\n>\n> As another option, RKWard 0.5.3 will also have the option to export the\n> contents of the R Console as HTML, including syntax highlighting of the input\n> (you may want to try the 0.5.3-pre1 preview release that I created a few days\n> ago; File->Export as HTML).\n>\n> Another option that I plan to add, soon, is to \"carbon-copy\" the console\n> input/output into RKWard's output window. This will not be part of 0.5.3,\n> however.\n>\n> Are any of these, what you are looking for?\n>\n> Regards\n> Thomas\n>    \n>\n>\n> ------------------------------------------------------------------------------\n> Download Intel&#174; Parallel Studio Eval\n> Try the new software tools for yourself. Speed compiling, find bugs\n> proactively, and fine-tune applications for parallel performance.\n> See why Intel Parallel Studio got high marks during beta.\n> http://p.sf.net/sfu/intel-sw-dev\n>\n>\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>    \n\n-- \n17? lei - Seu orientador quer que voc? se torne famoso,\n           de modo que ele possa, finalmente, se tornar famoso.\n\n       --Herman, I. P. 2007. Following the law. NATURE, Vol 445, p. 228.\n>  Prof. Ronaldo Reis J?nior\n|  .''`. UNIMONTES/DBG/Lab. Ecologia Comportamental e Computacional\n| : :'  : Campus Universit?rio Prof. Darcy Ribeiro, Vila Mauric?ia\n| `. `'` CP: 126, CEP: 39401-089, Montes Claros - MG - Brasil\n|   `- Fone: (38) 3229-8192 | ronaldo.reis at unimontes.br\n| http://www.ppgcb.unimontes.br/lecc | LinuxUser#: 205366\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100418/efce01e8/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nyes, this is the feature that I looking for. I try to install and test.\n\nThanks very much and congratulation by rKward.\n\nInte\nRonaldo\n\nEm 18-04-2010 16:23, Thomas Friedrichsmeier escreveu:",
+      "thread_id": "thread-afca3e0c251f",
+      "thread_depth": 2,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-60d6abaa0748",
+      "message_id": "<201004201140.24551.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-20T09:40:16Z",
+      "subject": "[rkward-users] Second call for testing: RKWard 0.5.3-pre2",
+      "subject_clean": "[rkward-users] Second call for testing: RKWard 0.5.3-pre2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThanks everybody for your feedback, so far. I have just uploaded a second \npreview release (http://p.sf.net/rkward/download - a windows binary will \nfollow in a few hours) which addresses a number of the issues you reported. If \nyou have any time for further testing, please download and try the pre-2 \nversion.\n\nThe timeline remains as announced here: http://www.mail-archive.com/rkward-\ndevel at lists.sourceforge.net/msg00649.html . In short: Please provide feedback \nuntil this Sunday, April 25th. The targetted official release date is April 30.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100420/e40c6346/attachment.sig>",
+      "body_snippet": "Hi!\n\nThanks everybody for your feedback, so far. I have just uploaded a second \npreview release (http://p.sf.net/rkward/download - a windows binary will \nfollow in a few hours) which addresses a numbe",
+      "thread_id": "thread-60d6abaa0748",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-bfa3332cfc9f",
+      "message_id": "<201004211931.51911.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-21T17:31:48Z",
+      "subject": "[rkward-users] One more preview release: RKWard 0.5.3-pre3",
+      "subject_clean": "[rkward-users] One more preview release: RKWard 0.5.3-pre3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi again,\n\nthis is just a quick note to let you know, that a third (hopefully final) \npreview release is available for download, now. If you can find the time to do \nsome (more) testing, please use 0.5.3-pre3. As usual, a windows binary \ninstaller will follow, but probably not before tomorrow.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100421/cea55a7f/attachment.sig>",
+      "body_snippet": "Hi again,\n\nthis is just a quick note to let you know, that a third (hopefully final) \npreview release is available for download, now. If you can find the time to do \nsome (more) testing, please use 0.",
+      "thread_id": "thread-bfa3332cfc9f",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-a8dd51aa1554",
+      "message_id": "<4BD1A3FC.8030709@gmail.com>",
+      "from_name": "Ronaldo Reis Junior",
+      "from_email_hash": "96cd6b9cef02695211fb14fe516d20d0114d999eb612009d6d2b1e1b0cde3b14",
+      "date": "2010-04-23T13:43:24Z",
+      "subject": "[rkward-users] Autosave",
+      "subject_clean": "[rkward-users] Autosave",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nexist any option in rkward to autosave scripts?\n\nThanks\nRonaldo\n\n-- \n3? lei - Na investiga??o e outros assuntos, o seu orientador est? sempre\n          certo, na maior parte do tempo.\n\n       --Herman, I. P. 2007. Following the law. NATURE, Vol 445, p. 228.\n>  Prof. Ronaldo Reis J?nior\n|  .''`. UNIMONTES/DBG/Lab. Ecologia Comportamental e Computacional\n| : :'  : Campus Universit?rio Prof. Darcy Ribeiro, Vila Mauric?ia\n| `. `'` CP: 126, CEP: 39401-089, Montes Claros - MG - Brasil\n|   `- Fone: (38) 3229-8192 | ronaldo.reis at unimontes.br\n| http://www.ppgcb.unimontes.br/lecc | LinuxUser#: 205366\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100423/8f279d85/attachment.html>",
+      "body_snippet": "Hi,\n\nexist any option in rkward to autosave scripts?\n\nThanks\nRonaldo\n\n-- \n3? lei - Na investiga??o e outros assuntos, o seu orientador est? sempre\n          certo, na maior parte do tempo.\n\n       --H",
+      "thread_id": "thread-a8dd51aa1554",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-7b326dea45f6",
+      "message_id": "<201004232007.25547.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-23T18:07:22Z",
+      "subject": "[rkward-users] Autosave",
+      "subject_clean": "[rkward-users] Autosave",
+      "in_reply_to": "<4BD1A3FC.8030709@gmail.com>",
+      "references": [
+        "<4BD1A3FC.8030709@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 23 April 2010, Ronaldo Reis Junior wrote:\n> exist any option in rkward to autosave scripts?\n\nnot yet, no. Ideally this would be implemented in the \"kate part\" that forms \nthe core of the script editor in RKWard. See \nhttps://bugs.kde.org/show_bug.cgi?id=103234 . On the other hand, perhaps we \nshould look for a solution in RKWard instead of waiting for much longer...\n\nCould you add that to our feature tracker, for now \n(http://sourceforge.net/tracker/?group_id=50231&atid=459010)? Some of the \nitems in there are pretty old, too, but I do look at the list regularly, so \nthis is a good way to make sure it will be implemented sooner or later.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100423/c6251254/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 23 April 2010, Ronaldo Reis Junior wrote:\n> exist any option in rkward to autosave scripts?\n\nnot yet, no. Ideally this would be implemented in the \"kate part\" that forms \nthe core of th",
+      "thread_id": "thread-a8dd51aa1554",
+      "thread_depth": 1,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-b6f30e4ff489",
+      "message_id": "<forum-165574-8355240@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-04-29T17:06:17Z",
+      "subject": "[rkward-users] [Help] Rkward for windows on usb drive",
+      "subject_clean": "[rkward-users] [Help] Rkward for windows on usb drive",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHello, \n\nI have simple question, is it possible to install Rkward for windows on a usb key? I am asking that because I do not have the rights on my computer in my office and IT where I am are not so friendly so I was thinking of installing Rkward on a usb so that I can enjoy the same software at home (from ubuntu) and at work.\n\nThank you for your answers",
+      "body_snippet": "The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHello, \n\nI have simple question, is it possible to install Rkward",
+      "thread_id": "thread-b6f30e4ff489",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-9e2b2d6631c3",
+      "message_id": "<4BDA9C3D.4090004@unil.ch>",
+      "from_name": "Roel Verberne",
+      "from_email_hash": "e90ca727d7ff7e438a82b27437521663055127246a2bb134e2dc9d72c154e86d",
+      "date": "2010-04-30T09:00:45Z",
+      "subject": "[rkward-users] problem installing on Mac",
+      "subject_clean": "[rkward-users] problem installing on Mac",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I followed the instructions on the website, no problems up until the \nbuild. Following the instructions, the /build folder is put directly \ninto the /rkward_trunk folder, which leads to an error using the cmake \ncommand:\n> CMake Error: The source directory \"/Users/Home/rkward_trunk\" does not \n> appear to contain CMakeLists.txt.\n> Specify --help for usage, or press the help button on the CMake GUI.\nmoving the /build folder into the /rkward_trunk/rkward folder solves \nthis problem.\n\nRunning the cmake command again completes the build, however I still get \nan error message:\n> CMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):\n>   ERROR: Could not find KDE4 kde4-config\n> Call Stack (most recent call first):\n>   CMakeLists.txt:10 (FIND_PACKAGE)\n>\n>\n> -- Configuring incomplete, errors occurred!\nI checked whether kde4-config file was installed properly and it is \ninstalled under: Macintosh HD/opt/local/bin (the default location \ninstalling kde4 using fink, I guess). The install file said the command \nis used to set the install base directory, so I tried setting it to \n/opt/local/bin, but I keep getting the same error, which seems to be \ncaused by the\n> FIND_PACKAGE(KDE4 REQUIRED)\nline in the CMakeLists.txt file. Itried to see if I could simply \ncontinue the installation by running the make command, but I get the \nfollowing error:\n> make: *** No targets specified and no makefile found.  Stop.\nThat's about all I can come up with, any help would be appreciated.\n\nCheers, Roel\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100430/c7062104/attachment.html>",
+      "body_snippet": "I followed the instructions on the website, no problems up until the \nbuild. Following the instructions, the /build folder is put directly \ninto the /rkward_trunk folder, which leads to an error using",
+      "thread_id": "thread-9e2b2d6631c3",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-97a1a43b9a29",
+      "message_id": "<forum-165574-8357810@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-04-30T12:07:20Z",
+      "subject": "[rkward-users] [Help] RE: Rkward for windows on usb drive",
+      "subject_clean": "[rkward-users] [Help] RE: Rkward for windows on usb drive",
+      "in_reply_to": "<forum-165574-8355240@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHi,\n\nyes, this should be possible. In fact, one of my RKWard installations on Windows rests on an external harddrive. I have just tried it on a different machine (with rather lax permissions, though), and that appears to work just fine.\n\nThere are a few small gotchas:\n- RKWard expects to be in the same place as KDE, so the usb key will need to contain a KDE installation, as well. My installation of KDE, including rkward, is roughly 900MB in size. That comprises a number of development-related packages that you do not need to install to run RKWard, but I would guess, you will need roughly half of that space (does anybody have a figure on that?).\n- KDE tries to create menu-entries during installaiton, RKWard tries to put an icon on the desktop. I\\'m not sure whether that is possible with your permissions, and how the installers will react, if the permissions are lacking. Possibly you will have to use a different windows-machine (with more liberal permission) to complete the installation on the usb stick. The executables get installed to <KDEDIR>/bin; for starting RKWard, use <KDEDIR>/bin/rkward.bat (*not* rkward.bin.exe).\n- I don\\'t know, whether R is installed on your office-machine, or whether you would have to install that on the usb as well. In either case, the RKWard installation needs to point to the correct location of R, which may be an issue, if the key gets assigned different drive-letters on different occasions. If RKWard does not start at all, you may need to edit rkward.bat with a text-editor, and adjust the path to R.\n\nIf there are any problems, please ask. Also, if it just works, a note would be nice as well. This might be of interest to other, too (and based on this, perhaps we can provide a live CD-image for people to play with).\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHi,\n\nyes, this should be possible. In fact, one of my RKWard installations ",
+      "thread_id": "thread-b6f30e4ff489",
+      "thread_depth": 1,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-12c45e98750e",
+      "message_id": "<201004301415.20420.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-30T12:15:17Z",
+      "subject": "[rkward-users] RKWard 0.5.3 is released",
+      "subject_clean": "[rkward-users] RKWard 0.5.3 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.5.3 is officially released, now. As usual, you can find a more elaborate \nannouncement at http://rkward.sf.net, and links to the downloads at \nhttp://p.sf.net/rkward/download .\n\nMany thanks to all who contributed to this release, and especially for your \nthorough feedback on the preview releases.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100430/b5a79d22/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.5.3 is officially released, now. As usual, you can find a more elaborate \nannouncement at http://rkward.sf.net, and links to the downloads at \nhttp://p.sf.net/rkward/download .\n\nMany tha",
+      "thread_id": "thread-12c45e98750e",
+      "thread_depth": 0,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-9660794158fc",
+      "message_id": "<forum-165574-8357877@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-04-30T12:36:42Z",
+      "subject": "[rkward-users] [Help] RE: Rkward for windows on usb drive",
+      "subject_clean": "[rkward-users] [Help] RE: Rkward for windows on usb drive",
+      "in_reply_to": "<forum-165574-8357810@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHello, \n\nThank you for your reply, I am currently in the process of installing, R is installed on the USB key also (it is actually a partition of a usb external hard drive). I am doing the install under a machine I have all the rights. I will tell you what is happening and give you all the details. \n\nThank you",
+      "body_snippet": "The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:\n\nHello, \n\nThank you for your reply, I am currently in the process ",
+      "thread_id": "thread-b6f30e4ff489",
+      "thread_depth": 2,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-daf715bb6971",
+      "message_id": "<4BDAE369.5070409@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-04-30T14:04:25Z",
+      "subject": "[rkward-users] problem installing on Mac",
+      "subject_clean": "[rkward-users] problem installing on Mac",
+      "in_reply_to": "<4BDA9C3D.4090004@unil.ch>",
+      "references": [
+        "<4BDA9C3D.4090004@unil.ch>"
+      ],
+      "body_plain": "Hi Roel,\n\nthanks for providing your feedback. Let's see what we can do:\n\nRoel Verberne schrieb:\n>> CMake Error: The source directory \"/Users/Home/rkward_trunk\" does not \n>> appear to contain CMakeLists.txt.\n>> Specify --help for usage, or press the help button on the CMake GUI.\n> moving the /build folder into the /rkward_trunk/rkward folder solves \n> this problem.\n\nIndeed. I'll update the instructions in a minute.\n\n> Running the cmake command again completes the build, however I still get \n> an error message:\n>> CMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):\n>>   ERROR: Could not find KDE4 kde4-config\n>> Call Stack (most recent call first):\n>>   CMakeLists.txt:10 (FIND_PACKAGE)\n>>\n>>\n>> -- Configuring incomplete, errors occurred!\n> I checked whether kde4-config file was installed properly and it is \n> installed under: Macintosh HD/opt/local/bin (the default location \n> installing kde4 using fink, I guess). The install file said the command \n> is used to set the install base directory, so I tried setting it to \n> /opt/local/bin, but I keep getting the same error, which seems to be \n> caused by the\n>> FIND_PACKAGE(KDE4 REQUIRED)\n> line in the CMakeLists.txt file.\n\nOk, try /opt/local without the \"bin\":\n   cmake .. -DCMAKE_INSTALL_PREFIX=/opt/local -DR_EXECUTABLE=...\n.\n\nI am not quite sure, whether the build might need to have KDE in the\npath. So - if the above does not help - try\n   export PATH=/opt/local/bin:/opt/local/lib:$PATH\nbefore running cmake.\n\nOnce again, thanks for your feedback, and keep us posted on your success\nor failure. I'm really eager to get things to work on the Mac.\n\nRegards\nThomas",
+      "body_snippet": "Hi Roel,\n\nthanks for providing your feedback. Let's see what we can do:\n\nRoel Verberne schrieb:\n>> CMake Error: The source directory \"/Users/Home/rkward_trunk\" does not \n>> appear to contain CMakeList",
+      "thread_id": "thread-9e2b2d6631c3",
+      "thread_depth": 1,
+      "month": "2010-04"
+    },
+    {
+      "id": "msg-1e2ab6104988",
+      "message_id": "<20100430175134.37373cf7.griera@gmail.com>",
+      "from_name": "GRiera",
+      "from_email_hash": "46ddaf20e50a78ed092c7cf1771883abf91989f49c2c0d7035755c352543fb6a",
+      "date": "2010-04-30T15:51:34Z",
+      "subject": "[rkward-users] RKWard 0.5.3 is released",
+      "subject_clean": "[rkward-users] RKWard 0.5.3 is released",
+      "in_reply_to": "<201004301415.20420.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<201004301415.20420.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Thanks a lot!!!\n\nOn 30 Apr 2010 14:15:17 +0200\n\"Thomas Friedrichsmeier\" <thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> Hi!\n> \n> RKWard 0.5.3 is officially released, now. As usual, you can find a more elaborate \n> announcement at http://rkward.sf.net, and links to the downloads at \n> http://p.sf.net/rkward/download .\n> \n> Many thanks to all who contributed to this release, and especially for your \n> thorough feedback on the preview releases.\n> \n> Regards\n> Thomas\n>",
+      "body_snippet": "Thanks a lot!!!\n\nOn 30 Apr 2010 14:15:17 +0200\n\"Thomas Friedrichsmeier\" <thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> Hi!\n> \n> RKWard 0.5.3 is officially released, now. As usual, you can fi",
+      "thread_id": "thread-12c45e98750e",
+      "thread_depth": 1,
+      "month": "2010-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-79c25dde6906",
+      "subject": "[rkward-users] [Help] Two rkward installations",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-04-15T11:51:50Z",
+      "last_reply": "2010-04-15T13:50:47Z",
+      "root_message_id": "msg-79c25dde6906"
+    },
+    {
+      "id": "thread-5cd7355904eb",
+      "subject": "[rkward-users] Call for testing: RKWard 0.5.3-pre1 / Release schedule",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-15T15:14:33Z",
+      "last_reply": "2010-04-15T15:14:33Z",
+      "root_message_id": "msg-5cd7355904eb"
+    },
+    {
+      "id": "thread-afca3e0c251f",
+      "subject": "[rkward-users] Help on rKward",
+      "message_count": 3,
+      "participants": [
+        "Ronaldo Reis Junior",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-18T13:09:38Z",
+      "last_reply": "2010-04-18T21:10:07Z",
+      "root_message_id": "msg-afca3e0c251f"
+    },
+    {
+      "id": "thread-f3e955be7187",
+      "subject": "[rkward-users] Yet Testing rKward",
+      "message_count": 1,
+      "participants": [
+        "Ronaldo Reis Junior"
+      ],
+      "started": "2010-04-18T13:10:01Z",
+      "last_reply": "2010-04-18T13:10:01Z",
+      "root_message_id": "msg-f3e955be7187"
+    },
+    {
+      "id": "thread-60d6abaa0748",
+      "subject": "[rkward-users] Second call for testing: RKWard 0.5.3-pre2",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-20T09:40:16Z",
+      "last_reply": "2010-04-20T09:40:16Z",
+      "root_message_id": "msg-60d6abaa0748"
+    },
+    {
+      "id": "thread-bfa3332cfc9f",
+      "subject": "[rkward-users] One more preview release: RKWard 0.5.3-pre3",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-21T17:31:48Z",
+      "last_reply": "2010-04-21T17:31:48Z",
+      "root_message_id": "msg-bfa3332cfc9f"
+    },
+    {
+      "id": "thread-a8dd51aa1554",
+      "subject": "[rkward-users] Autosave",
+      "message_count": 2,
+      "participants": [
+        "Ronaldo Reis Junior",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-23T13:43:24Z",
+      "last_reply": "2010-04-23T18:07:22Z",
+      "root_message_id": "msg-a8dd51aa1554"
+    },
+    {
+      "id": "thread-b6f30e4ff489",
+      "subject": "[rkward-users] [Help] Rkward for windows on usb drive",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-04-29T17:06:17Z",
+      "last_reply": "2010-04-30T12:36:42Z",
+      "root_message_id": "msg-b6f30e4ff489"
+    },
+    {
+      "id": "thread-9e2b2d6631c3",
+      "subject": "[rkward-users] problem installing on Mac",
+      "message_count": 2,
+      "participants": [
+        "Roel Verberne",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-30T09:00:45Z",
+      "last_reply": "2010-04-30T14:04:25Z",
+      "root_message_id": "msg-9e2b2d6631c3"
+    },
+    {
+      "id": "thread-12c45e98750e",
+      "subject": "[rkward-users] RKWard 0.5.3 is released",
+      "message_count": 2,
+      "participants": [
+        "GRiera",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-04-30T12:15:17Z",
+      "last_reply": "2010-04-30T15:51:34Z",
+      "root_message_id": "msg-12c45e98750e"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2020-06",
+  "messages": [
+    {
+      "id": "msg-a7f45af2568e",
+      "message_id": "<12084657.yRFjqy8unV@meadow>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2020-06-25T22:15:35Z",
+      "subject": "plugin packages for R 4.0",
+      "subject_clean": "plugin packages for R 4.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\ni'm happy to announce that all plugin packages for RKWard have finally been \nrebuilt for R 4.0. windows and mac users should find these extra packages now \nin RKWard's package management dialog:\n\n  rk.ANOVA\n  rk.ClusterAnalysis\n  rk.CohenKappa\n  rk.FactorAnalysis\n  rk.gitInstall\n  rk.MultidimensionalScaling\n\nGNU/linux users of debian/ubuntu based distributions can use the new \nrepository:\n\n  deb https://distribute.kde.org/rkward/debR40 unstable main\n\nyou should perhaps first install the PGP key used for signing manually:\nhttps://distribute.kde.org/rkward/debR40/dists/unstable/main/all/rkward-keyring_0.01-1_all.deb\n\nafter \"apt update\" you should be able to install these plugin packages:\n\n  r-other-rkward-rk.anova\n  r-other-rkward-rk.clusteranalysis\n  r-other-rkward-rk.cohenkappa\n  r-other-rkward-rk.factoranalysis\n  r-other-rkward-rk.gitinstall\n  r-other-rkward-rk.multidimensionalscaling\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200626/a1a3daa1/attachment.sig>",
+      "body_snippet": "hi,\n\ni'm happy to announce that all plugin packages for RKWard have finally been \nrebuilt for R 4.0. windows and mac users should find these extra packages now \nin RKWard's package management dialog:\n",
+      "thread_id": "thread-a7f45af2568e",
+      "thread_depth": 0,
+      "month": "2020-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a7f45af2568e",
+      "subject": "plugin packages for R 4.0",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2020-06-25T22:15:35Z",
+      "last_reply": "2020-06-25T22:15:35Z",
+      "root_message_id": "msg-a7f45af2568e"
+    }
+  ]
+}

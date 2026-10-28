@@ -1,0 +1,233 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2018-04",
+  "messages": [
+    {
+      "id": "msg-fda1d5f29ea8",
+      "message_id": "<20180407085218.15be4d16@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-07T06:52:18Z",
+      "subject": "Upcoming release 0.7.0 - Call for testing",
+      "subject_clean": "Upcoming release 0.7.0 - Call for testing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nAfter a long silence, we're finally getting ready to release RKWard\n0.7.0. As this is the first release to be based on the KF5 / Qt5\nlibraries, rather than KDE4 / Qt4, it would be highly appreciated, if\nyou could help with testing to make sure we are not overseeing any\nimportant issues. As for new features, the most prominent thing to look\nout for is the new \"split views\" feature, which allows to view R\nscripts (or data) side-by-side in the main window.\n\nAs a complication, the upcoming R 3.5.0 will break RKWard in two ways:\nRKWard 0.6.5 will not work with R 3.5.0 at all (if there is a need for\nthis, we could consider also releasing a patched 0.6.5-release to\nsupport KDE4 installations; right now the focus in on 0.7.0, only).\nFurther, RKWard 0.7.0 _compiled_ with R >= 3.5.0 will not run with R\n3.4.x and vice-versa.\n\nTo make sure we avoid breakage as much as possible, we'll try to make\ndo with a rather short testing period, and release on April 16th, i.e.\nroughly a week before the scheduled release of R 3.5.0. In order to\nmake this work, ***I'd like to ask you to provide feedback by April\n13*** (the earlier the better). Naturally, if anything important comes\nup, the testing period will be extended as necessary. More details at\nhttps://rkward.kde.org/Release_Schedule .\n\nDownloads are also linked from the release schedule page, above, but\nas a lot of things have changed under the hood (corresponding to a lot\nof hard work by Meik and others). I'll point out the main downloads,\nhere, too:\n\n---- Source: ----\nhttps://files.kde.org/rkward/testing/rkward-0.6.9z+0.7.0+pre1.tar.gz\n\n---- MacOS X installer: ----\nhttps://files.kde.org/rkward/testing/bundles/MacOSX/RKWard-binary-0.7.0pre1_OSX10.11_KF5-5.42.0_needs_CRAN_R-3.4.4.pkg\n\nFor OSX 10.11 or higher. You have to install R 3.4.4, separately.\n\n---- Windows installer: ----\n\nhttps://files.kde.org/rkward/testing/bundles/Windows/rkward-0.7.0-pre1-mingw_64-gcc.exe\n\nThis comes bundled with R 3.4.4.\n\n---- Ubuntu binaries: ----\n\nFor regular Ubuntu installs:\nhttps://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-daily\n\nFor Ubuntu installs with the CRAN version of R:\nhttps://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-daily-cran\n\nFor Ubuntu installs with the CRAN version of R and KF5 backports:\nhttps://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-backports-daily-cran\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180407/afe52e35/attachment.sig>",
+      "body_snippet": "Hi!\n\nAfter a long silence, we're finally getting ready to release RKWard\n0.7.0. As this is the first release to be based on the KF5 / Qt5\nlibraries, rather than KDE4 / Qt4, it would be highly apprecia",
+      "thread_id": "thread-fda1d5f29ea8",
+      "thread_depth": 0,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-ed193f38a87e",
+      "message_id": "<1671290.dOBOrLqnJH@tilia>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2018-04-08T10:47:54Z",
+      "subject": "Upcoming release 0.7.0 - Call for testing",
+      "subject_clean": "Upcoming release 0.7.0 - Call for testing",
+      "in_reply_to": "<20180407085218.15be4d16@edge>",
+      "references": [
+        "<20180407085218.15be4d16@edge>"
+      ],
+      "body_plain": "Hi\n\nDne sobota 7. dubna 2018 8:52:18 CEST, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> \n> After a long silence, we're finally getting ready to release RKWard\n> 0.7.0. As this is the first release to be based on the KF5 / Qt5\n> libraries, rather than KDE4 / Qt4, it would be highly appreciated, if\n> you could help with testing to make sure we are not overseeing any\n> important issues. As for new features, the most prominent thing to look\n> out for is the new \"split views\" feature, which allows to view R\n> scripts (or data) side-by-side in the main window.\n> \n> As a complication, the upcoming R 3.5.0 will break RKWard in two ways:\n> RKWard 0.6.5 will not work with R 3.5.0 at all (if there is a need for\n> this, we could consider also releasing a patched 0.6.5-release to\n> support KDE4 installations; right now the focus in on 0.7.0, only).\n> Further, RKWard 0.7.0 _compiled_ with R >= 3.5.0 will not run with R\n> 3.4.x and vice-versa.\n> \n> To make sure we avoid breakage as much as possible, we'll try to make\n> do with a rather short testing period, and release on April 16th, i.e.\n> roughly a week before the scheduled release of R 3.5.0. In order to\n> make this work, ***I'd like to ask you to provide feedback by April\n> 13*** (the earlier the better). Naturally, if anything important comes\n> up, the testing period will be extended as necessary. More details at\n> https://rkward.kde.org/Release_Schedule .\n\nI have been using KF5 RKWard since December 2017 [1] on openSUSE Tumbleweed. \nBinaries of latest Git snapshots are currently packaged for Tumbleweed and \nupcoming openSUSE 15.0 [2]. So far it has been working very well.\n\n> Downloads are also linked from the release schedule page, above, but\n> as a lot of things have changed under the hood (corresponding to a lot\n> of hard work by Meik and others). I'll point out the main downloads,\n> here, too:\n> \n> ---- Source: ----\n> https://files.kde.org/rkward/testing/rkward-0.6.9z+0.7.0+pre1.tar.gz\n> \n> ---- MacOS X installer: ----\n> https://files.kde.org/rkward/testing/bundles/MacOSX/RKWard-binary-0.7.0pre1_\n> OSX10.11_KF5-5.42.0_needs_CRAN_R-3.4.4.pkg\n> \n> For OSX 10.11 or higher. You have to install R 3.4.4, separately.\n> \n> ---- Windows installer: ----\n> \n> https://files.kde.org/rkward/testing/bundles/Windows/rkward-0.7.0-pre1-mingw\n> _64-gcc.exe\n> \n> This comes bundled with R 3.4.4.\n> \n> ---- Ubuntu binaries: ----\n> \n> For regular Ubuntu installs:\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-daily\n> \n> For Ubuntu installs with the CRAN version of R:\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-daily-cran\n> \n> For Ubuntu installs with the CRAN version of R and KF5 backports:\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-kf5-backports-dai\n> ly-cran\n> \n> Thanks!\n> Thomas\n\nThank You,\nV.\n\n[1] https://mail.kde.org/pipermail/rkward-users/2017-December/001208.html\n[2] https://software.opensuse.org/package/rkward\n\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180408/48826a85/attachment.sig>",
+      "body_snippet": "Hi\n\nDne sobota 7. dubna 2018 8:52:18 CEST, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> \n> After a long silence, we're finally getting ready to release RKWard\n> 0.7.0. As this is the first release to be ",
+      "thread_id": "thread-fda1d5f29ea8",
+      "thread_depth": 1,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-41285e8a4cbe",
+      "message_id": "<20180416121223.0ab8601b@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-16T10:12:23Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThis is to let you know that RKWard 0.7.0 is now available, officially.\nRead more on new features and fixes on https://rkward.kde.org .\n\nThanks to all who provided feedback, testing, translations,\ndocumentation, and code!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180416/bcb3b8af/attachment.sig>",
+      "body_snippet": "Hi!\n\nThis is to let you know that RKWard 0.7.0 is now available, officially.\nRead more on new features and fixes on https://rkward.kde.org .\n\nThanks to all who provided feedback, testing, translations",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 0,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-7fe3c191debc",
+      "message_id": "<20180417121031.49c37714@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-17T10:10:31Z",
+      "subject": "RKWard 0.7.0b adds missing translations",
+      "subject_clean": "RKWard 0.7.0b adds missing translations",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nUnfortunately, we discovered a bit too late that the RKWard 0.7.0\npackages did not install any translation files. This has been addressed\nin RKWard 0.7.0b, available, immediately.\n\nIf you are running RKWard untranslated, there is no need to update, as\nthere have been no further changes. Otherwise, and especially, if you\nare packaging RKWard for further distribution, please get RKWard 0.7.0b\nfrom https://rkward.kde.org .\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/f1d48c74/attachment.sig>",
+      "body_snippet": "Hi!\n\nUnfortunately, we discovered a bit too late that the RKWard 0.7.0\npackages did not install any translation files. This has been addressed\nin RKWard 0.7.0b, available, immediately.\n\nIf you are run",
+      "thread_id": "thread-7fe3c191debc",
+      "thread_depth": 0,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-4d1a0817dbaa",
+      "message_id": "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2018-04-17T13:54:05Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<20180416121223.0ab8601b@edge>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>"
+      ],
+      "body_plain": "Today I upgraded RKWard to 0.7.0, considering it safe as to upgrade as it\nis in the cran-stable PPA. However, after upgrading I get this error (and\nam not able to run RKWard:\n\n'The KDE installation could not be found (kreadconfig5). When moving /\ncopying RKWard, make sure to copy the whole application folder, or create a\nshorcut / link, instead.'\n\nI am on Linux Mint 18.3 MATE and use the CRAN version of R (3.4.4). I\nuninstalled/re-installed RKWARD several launchpad PPAs, including the kf5\ndaily builds, but all give the same error.\nAm I missing something? Any ideas how to fix this? Any dependencies I need\nto install?\n\n\n\n\n\nOn 16 April 2018 at 12:12, Thomas Friedrichsmeier <\nthomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> Hi!\n>\n> This is to let you know that RKWard 0.7.0 is now available, officially.\n> Read more on new features and fixes on https://rkward.kde.org .\n>\n> Thanks to all who provided feedback, testing, translations,\n> documentation, and code!\n>\n> Regards\n> Thomas\n>\n\n\n\n-- \n[work] Wageningen Marine Research, Haringkade 1 - 1976 CP  IJmuiden - The\nNetherlands - rob.vanbemmelen at wur.nl\n[home] Asserlaan 22, 1902 DS  Castricum - The Netherlands -\nrvanbemmelen at gmail.com\n[tel] +31 612 394 805 or +31 317 483 092 or + 31 640 968 054\n[blog] http://overthetreeline.wordpress.com/  &\nhttps://longicaudus.wordpress.com/\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/5330ced2/attachment.html>",
+      "body_snippet": "Today I upgraded RKWard to 0.7.0, considering it safe as to upgrade as it\nis in the cran-stable PPA. However, after upgrading I get this error (and\nam not able to run RKWard:\n\n'The KDE installation co",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 1,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-5a3bf608aab6",
+      "message_id": "<20180417160332.03d39d20@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-17T14:03:32Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>",
+        "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, 17 Apr 2018 15:54:05 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> Today I upgraded RKWard to 0.7.0, considering it safe as to upgrade\n> as it is in the cran-stable PPA. However, after upgrading I get this\n> error (and am not able to run RKWard:\n> \n> 'The KDE installation could not be found (kreadconfig5). When moving /\n> copying RKWard, make sure to copy the whole application folder, or\n> create a shorcut / link, instead.'\n> \n> I am on Linux Mint 18.3 MATE and use the CRAN version of R (3.4.4). I\n> uninstalled/re-installed RKWARD several launchpad PPAs, including the\n> kf5 daily builds, but all give the same error.\n> Am I missing something? Any ideas how to fix this? Any dependencies I\n> need to install?\n\nkreadconfig5 should be in libkf5config-bin . Is that installed? Does\ninstalling it fix the issue?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/50944e9e/attachment.sig>",
+      "body_snippet": "On Tue, 17 Apr 2018 15:54:05 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> Today I upgraded RKWard to 0.7.0, considering it safe as to upgrade\n> as it is in the cran-stable PPA. However,",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 2,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-cfeb4d4b1a97",
+      "message_id": "<CAC3z3uhhsFtQUHk23VCzF5NLXS2yefpgmmcW9Y_SK9GTuVuBdQ@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2018-04-17T14:19:48Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<20180417160332.03d39d20@edge>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>",
+        "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+        "<20180417160332.03d39d20@edge>"
+      ],
+      "body_plain": "Dear Thomas,\nThanks for your rapid response! Yes, this solved the issue! Great, thanks a\nlot!\n\nHowever, a new issue popped up: I the 'open script file' window, I can't\nsee any folders or files (just blank space). They do show up when saving a\nscript file or opening a workspace...\nAny idea?\n(Installing libkf5config-bin also changed the appearance of my desktop...)\n\nAll the best,\nRob\n\n\n\nOn 17 April 2018 at 16:03, Thomas Friedrichsmeier <\nthomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> On Tue, 17 Apr 2018 15:54:05 +0200\n> Rob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> > Today I upgraded RKWard to 0.7.0, considering it safe as to upgrade\n> > as it is in the cran-stable PPA. However, after upgrading I get this\n> > error (and am not able to run RKWard:\n> >\n> > 'The KDE installation could not be found (kreadconfig5). When moving /\n> > copying RKWard, make sure to copy the whole application folder, or\n> > create a shorcut / link, instead.'\n> >\n> > I am on Linux Mint 18.3 MATE and use the CRAN version of R (3.4.4). I\n> > uninstalled/re-installed RKWARD several launchpad PPAs, including the\n> > kf5 daily builds, but all give the same error.\n> > Am I missing something? Any ideas how to fix this? Any dependencies I\n> > need to install?\n>\n> kreadconfig5 should be in libkf5config-bin . Is that installed? Does\n> installing it fix the issue?\n>\n> Regards\n> Thomas\n>\n\n\n\n-- \n[work] Wageningen Marine Research, Haringkade 1 - 1976 CP  IJmuiden - The\nNetherlands - rob.vanbemmelen at wur.nl\n[home] Asserlaan 22, 1902 DS  Castricum - The Netherlands -\nrvanbemmelen at gmail.com\n[tel] +31 612 394 805 or +31 317 483 092 or + 31 640 968 054\n[blog] http://overthetreeline.wordpress.com/  &\nhttps://longicaudus.wordpress.com/\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/6c006451/attachment.html>",
+      "body_snippet": "Dear Thomas,\nThanks for your rapid response! Yes, this solved the issue! Great, thanks a\nlot!\n\nHowever, a new issue popped up: I the 'open script file' window, I can't\nsee any folders or files (just b",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 3,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-a942ef4f12b4",
+      "message_id": "<20180417163507.7e33e375@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-17T14:35:07Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<CAC3z3uhhsFtQUHk23VCzF5NLXS2yefpgmmcW9Y_SK9GTuVuBdQ@mail.gmail.com>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>",
+        "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+        "<20180417160332.03d39d20@edge>",
+        "<CAC3z3uhhsFtQUHk23VCzF5NLXS2yefpgmmcW9Y_SK9GTuVuBdQ@mail.gmail.com>"
+      ],
+      "body_plain": "On Tue, 17 Apr 2018 16:19:48 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> Dear Thomas,\n> Thanks for your rapid response! Yes, this solved the issue! Great,\n> thanks a lot!\n> \n> However, a new issue popped up: I the 'open script file' window, I\n> can't see any folders or files (just blank space). They do show up\n> when saving a script file or opening a workspace...\n> Any idea?\n\nNot immediately, no. This should be just a regular file selection\ndialog. Can you see anything in the \"Files\" tool window on the right\nside of the main window? If you have installed kate or kwrite, do you\nsee the same issue in File->Open, there?\n\n> (Installing libkf5config-bin also changed the appearance of my\n> desktop...)\n\nHm. Probably it pulled in some additional dependencies. I'll look into\ndoing without this for future versions. (Actually it's just a\nrandom binary that I _thought_ could be assumed to be present in any\nKF5 installation...)\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/e1cd0514/attachment.sig>",
+      "body_snippet": "On Tue, 17 Apr 2018 16:19:48 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> Dear Thomas,\n> Thanks for your rapid response! Yes, this solved the issue! Great,\n> thanks a lot!\n> \n> However,",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 4,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-5216f2351bee",
+      "message_id": "<CAC3z3ugvM9nYou5JZjpGKBQZbHtXWPo0V46o=5VfrB_WiV1E4Q@mail.gmail.com>",
+      "from_name": "Rob van Bemmelen",
+      "from_email_hash": "71a352d315ef7c7e1ca073db633b833d49aa052e7708d9e02279aca77d0fcc40",
+      "date": "2018-04-17T14:43:29Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<20180417163507.7e33e375@edge>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>",
+        "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+        "<20180417160332.03d39d20@edge>",
+        "<CAC3z3uhhsFtQUHk23VCzF5NLXS2yefpgmmcW9Y_SK9GTuVuBdQ@mail.gmail.com>",
+        "<20180417163507.7e33e375@edge>"
+      ],
+      "body_plain": "Hi again,\nI hadn't installed kate or kwrite, but after installing the former (which\ncame with a whole bunch of kf5 packages), the file selection window in\nrkward worked!\nThanks again,\nRob\n\n\n\nOn 17 April 2018 at 16:35, Thomas Friedrichsmeier <\nthomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> On Tue, 17 Apr 2018 16:19:48 +0200\n> Rob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> > Dear Thomas,\n> > Thanks for your rapid response! Yes, this solved the issue! Great,\n> > thanks a lot!\n> >\n> > However, a new issue popped up: I the 'open script file' window, I\n> > can't see any folders or files (just blank space). They do show up\n> > when saving a script file or opening a workspace...\n> > Any idea?\n>\n> Not immediately, no. This should be just a regular file selection\n> dialog. Can you see anything in the \"Files\" tool window on the right\n> side of the main window? If you have installed kate or kwrite, do you\n> see the same issue in File->Open, there?\n>\n> > (Installing libkf5config-bin also changed the appearance of my\n> > desktop...)\n>\n> Hm. Probably it pulled in some additional dependencies. I'll look into\n> doing without this for future versions. (Actually it's just a\n> random binary that I _thought_ could be assumed to be present in any\n> KF5 installation...)\n>\n> Regards\n> Thomas\n>\n\n\n\n-- \n[work] Wageningen Marine Research, Haringkade 1 - 1976 CP  IJmuiden - The\nNetherlands - rob.vanbemmelen at wur.nl\n[home] Asserlaan 22, 1902 DS  Castricum - The Netherlands -\nrvanbemmelen at gmail.com\n[tel] +31 612 394 805 or +31 317 483 092 or + 31 640 968 054\n[blog] http://overthetreeline.wordpress.com/  &\nhttps://longicaudus.wordpress.com/\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/dabb0cae/attachment-0001.html>",
+      "body_snippet": "Hi again,\nI hadn't installed kate or kwrite, but after installing the former (which\ncame with a whole bunch of kf5 packages), the file selection window in\nrkward worked!\nThanks again,\nRob\n\n\n\nOn 17 Apr",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 5,
+      "month": "2018-04"
+    },
+    {
+      "id": "msg-a354d6ec6e16",
+      "message_id": "<20180417165203.24e626d1@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2018-04-17T14:52:03Z",
+      "subject": "RKWard 0.7.0 is available",
+      "subject_clean": "RKWard 0.7.0 is available",
+      "in_reply_to": "<CAC3z3ugvM9nYou5JZjpGKBQZbHtXWPo0V46o=5VfrB_WiV1E4Q@mail.gmail.com>",
+      "references": [
+        "<20180416121223.0ab8601b@edge>",
+        "<CAC3z3uhA6EbMyH_vQL_cLjjp6s4emQmBDs4ud45vLQAveokmgQ@mail.gmail.com>",
+        "<20180417160332.03d39d20@edge>",
+        "<CAC3z3uhhsFtQUHk23VCzF5NLXS2yefpgmmcW9Y_SK9GTuVuBdQ@mail.gmail.com>",
+        "<20180417163507.7e33e375@edge>",
+        "<CAC3z3ugvM9nYou5JZjpGKBQZbHtXWPo0V46o=5VfrB_WiV1E4Q@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Tue, 17 Apr 2018 16:43:29 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> I hadn't installed kate or kwrite, but after installing the former\n> (which came with a whole bunch of kf5 packages), the file selection\n> window in rkward worked!\n\nI'm glad things are working for you, now.\n\nThis probably means we're still missing at least one runtime dependency\n- now pulled in by kate -, but I'm not sure which one that may be.\n\nAm I correct in assuming that you set up your system not to install\n\"recommended\" packages, automatically? (Which is no excuse for\nbreakage, of course, but may give a hint on where to look)\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180417/511e460b/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tue, 17 Apr 2018 16:43:29 +0200\nRob van Bemmelen <rvanbemmelen at gmail.com> wrote:\n> I hadn't installed kate or kwrite, but after installing the former\n> (which came with a whole bunch of kf5",
+      "thread_id": "thread-41285e8a4cbe",
+      "thread_depth": 6,
+      "month": "2018-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fda1d5f29ea8",
+      "subject": "Upcoming release 0.7.0 - Call for testing",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "Vojtěch Zeisek"
+      ],
+      "started": "2018-04-07T06:52:18Z",
+      "last_reply": "2018-04-08T10:47:54Z",
+      "root_message_id": "msg-fda1d5f29ea8"
+    },
+    {
+      "id": "thread-41285e8a4cbe",
+      "subject": "RKWard 0.7.0 is available",
+      "message_count": 7,
+      "participants": [
+        "Rob van Bemmelen",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2018-04-16T10:12:23Z",
+      "last_reply": "2018-04-17T14:52:03Z",
+      "root_message_id": "msg-41285e8a4cbe"
+    },
+    {
+      "id": "thread-7fe3c191debc",
+      "subject": "RKWard 0.7.0b adds missing translations",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2018-04-17T10:10:31Z",
+      "last_reply": "2018-04-17T10:10:31Z",
+      "root_message_id": "msg-7fe3c191debc"
+    }
+  ]
+}

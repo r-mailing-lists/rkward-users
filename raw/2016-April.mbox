@@ -1,0 +1,442 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Apr  2 18:15:12 2016
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sat, 2 Apr 2016 20:15:12 +0200
+Subject: RKWard 0.6.5 is available
+Message-ID: <20160402201512.41f275d4@edge>
+
+Hi!
+
+This is to let you know that RKWard 0.6.5 is now available, officially.
+Read more on new features and fixes on http://rkward.kde.org .
+
+Thanks to all who provided feedback, testing, translations,
+documentation, donations, and code!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160402/077e8dff/attachment.sig>
+
+From Martin.Papenberg at uni-duesseldorf.de  Tue Apr 19 07:41:14 2016
+From: Martin.Papenberg at uni-duesseldorf.de (Martin Papenberg)
+Date: Tue, 19 Apr 2016 09:41:14 +0200
+Subject: Installing rkward 0.6.5
+Message-ID: <5715E11A.5080402@uni-duesseldorf.de>
+
+Hello,
+
+I am writing concerning my attempts to install the latest version of 
+rkward (0.6.5) - I am currently using Xubuntu 14.04.
+
+First I tried to just follow the instructions that are given to extract 
+and install the tar-ball, but cmake failed with this message:
+
+CMake Error at /usr/share/cmake-2.8/Modules/FindKDE4.cmake:98 (message):
+   ERROR: cmake/modules/FindKDE4Internal.cmake not found in
+   /home/martin/.kde/share/apps;/usr/share/kde4/apps
+Call Stack (most recent call first):
+   CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+-- Configuring incomplete, errors occurred!
+See also 
+"/home/martin/Downloads/rkward-0.6.5/build/CMakeFiles/CMakeOutput.log".
+
+
+So I tried to install all required dependencies that are described on 
+the "Building RKWard From Source" page. On the homepage it says:
+
+"On Debian based systems (such as Ubuntu) the following will get all the 
+dependencies installed (and hopefully the package names will be similar 
+on other distributions):
+
+$ apt-get install kdelibs5 kdelibs5-dev libx11-dev r-base-core 
+r-base-dev cmake"
+
+However, this does not work. I get this error: "Paket kdelibs5 kann 
+nicht gefunden werden." (Package kdelibs5 cannot be found.). Apparently 
+this package does not exist?
+
+So instead of trying to build rkward from source, I wanted to include 
+the repository that you name on the homepage in my sources.list to get 
+the latest version:
+deb-src https://files.kde.org/rkward/debian
+However, if when I did "sudo apt-get update", my system tells me that 
+this is a broken line:
+
+E: Missgestaltete Zeile 62 in Quellliste /etc/apt/sources.list (»dist«)
+E: Die Liste der Quellen konnte nicht gelesen werden.
+
+I simply cannot call apt-get update (using the Ubuntu distro name 
+instead of debian does not work either).
+
+It seems to be rather difficult to install the latest version of rkward. 
+I think it would help me to know how to load the package kdelibs5, is 
+there some repository that I need to add? Or does the package have 
+another name?
+
+And another point: I often tried to get the sources from your git 
+repository, but this never works: "git clone 
+git://anongit.kde.org/rkward.git"; I always get a timeout on my request. 
+Are you sure that you are listing the correct git repository on your 
+homepage?
+
+Thanks in advance!
+
+Martin
+
+
+From meik.michalke at uni-duesseldorf.de  Tue Apr 19 08:51:44 2016
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 19 Apr 2016 10:51:44 +0200
+Subject: Installing rkward 0.6.5
+In-Reply-To: <5715E11A.5080402@uni-duesseldorf.de>
+References: <5715E11A.5080402@uni-duesseldorf.de>
+Message-ID: <1567917.Qu7bQ5HSFR@yrla>
+
+hi martin ;-)
+
+Am Dienstag, 19. April 2016, 09:41:14 schrieb Martin Papenberg:
+> CMake Error at /usr/share/cmake-2.8/Modules/FindKDE4.cmake:98 (message):
+>    ERROR: cmake/modules/FindKDE4Internal.cmake not found in
+>    /home/martin/.kde/share/apps;/usr/share/kde4/apps
+> Call Stack (most recent call first):
+>    CMakeLists.txt:10 (FIND_PACKAGE)
+> 
+> 
+> -- Configuring incomplete, errors occurred!
+> See also
+> "/home/martin/Downloads/rkward-0.6.5/build/CMakeFiles/CMakeOutput.log".
+
+i called "dpkg -S cmake/modules/FindKDE4Internal.cmake" on my kubuntu 14.04 
+machine to search for packages including this file. it returns:
+
+ kdelibs5-dev: /usr/share/kde4/apps/cmake/modules/FindKDE4Internal.cmake
+
+in general, calling
+
+ apt-get build-dep rkward
+
+should install everything that's needed.
+
+> However, this does not work. I get this error: "Paket kdelibs5 kann
+> nicht gefunden werden." (Package kdelibs5 cannot be found.). Apparently
+> this package does not exist?
+
+it seems the package is called "kdelibs-bin" in *buntu systems.
+
+> So instead of trying to build rkward from source, I wanted to include
+> the repository that you name on the homepage in my sources.list to get
+> the latest version:
+> deb-src https://files.kde.org/rkward/debian
+> However, if when I did "sudo apt-get update", my system tells me that
+> this is a broken line:
+> 
+> E: Missgestaltete Zeile 62 in Quellliste /etc/apt/sources.list (»dist«)
+> E: Die Liste der Quellen konnte nicht gelesen werden.
+
+this means that the entry in line 62 /etc/apt/sources.list is buggy because 
+you seem to have omitted the "./" at the end.
+
+however, "deb-src" will not give you precompiled binaries, but source 
+packages. for *buntu systems, it is highly recommended to pick one of PPA 
+repositories that fits your needs:
+ https://rkward.kde.org/Binaries_and_Build_Scripts#Inofficial_Ubuntu_repositories
+
+> It seems to be rather difficult to install the latest version of rkward.
+
+well, it's a bit difficult to configure apt ;-)
+
+> And another point: I often tried to get the sources from your git
+> repository, but this never works: "git clone
+> git://anongit.kde.org/rkward.git"; I always get a timeout on my request.
+> Are you sure that you are listing the correct git repository on your
+> homepage?
+
+that is only because the git:// protocol uses a port that is blocked by the 
+HHU by default (9418).
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160419/7cf3d51e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Apr 19 09:02:40 2016
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 19 Apr 2016 11:02:40 +0200
+Subject: Installing rkward 0.6.5
+In-Reply-To: <5715E11A.5080402@uni-duesseldorf.de>
+References: <5715E11A.5080402@uni-duesseldorf.de>
+Message-ID: <20160419110240.18c2d119@edge>
+
+Hi,
+
+On Tue, 19 Apr 2016 09:41:14 +0200
+Martin Papenberg <Martin.Papenberg at uni-duesseldorf.de> wrote:
+> I am writing concerning my attempts to install the latest version of 
+> rkward (0.6.5) - I am currently using Xubuntu 14.04.
+
+[...]
+
+> So I tried to install all required dependencies that are described on 
+> the "Building RKWard From Source" page. On the homepage it says:
+> 
+> "On Debian based systems (such as Ubuntu) the following will get all
+> the dependencies installed (and hopefully the package names will be
+> similar on other distributions):
+> 
+> $ apt-get install kdelibs5 kdelibs5-dev libx11-dev r-base-core 
+> r-base-dev cmake"
+> 
+> However, this does not work. I get this error: "Paket kdelibs5 kann 
+> nicht gefunden werden." (Package kdelibs5 cannot be found.).
+> Apparently this package does not exist?
+
+Indeed. Seems to have been removed one day. Just omit it, the relevant
+package(s) should be pulled via kdelibs5-dev at any rate. Also
+libqtwebkit-dev was still missing from the documentation.
+I have updated this, now.
+
+> So instead of trying to build rkward from source, I wanted to include 
+> the repository that you name on the homepage in my sources.list to
+> get the latest version:
+> deb-src https://files.kde.org/rkward/debian
+> However, if when I did "sudo apt-get update", my system tells me that 
+> this is a broken line:
+> 
+> E: Missgestaltete Zeile 62 in Quellliste /etc/apt/sources.list
+> (»dist«) E: Die Liste der Quellen konnte nicht gelesen werden.
+
+I will have to look into fixing this.
+
+> It seems to be rather difficult to install the latest version of
+> rkward.
+
+Not really, but you have been looking in the wrong places (which has
+the useful side-effect of letting us know about outdated bit of
+documentation, of course. Thanks for that!)
+
+- The absolutely easiest way to install on Ubuntu is by adding one of
+  our PPAs: https://launchpad.net/~rkward-devel .
+- For building from source, get the git sources (see below), and type
+    sudo apt-get build-dep rkward
+    cd rkward
+    dpkg-buildpackage -rfakeroot
+
+[...]
+
+> And another point: I often tried to get the sources from your git 
+> repository, but this never works: "git clone 
+> git://anongit.kde.org/rkward.git"; I always get a timeout on my
+> request. Are you sure that you are listing the correct git repository
+> on your homepage?
+
+Yes, and I tested just now, without problems. Either this was simply
+bad luck / bad timing, or you are behind a firewall blocking git://. In
+the latter case, try 
+  git clone http://anongit.kde.org/rkward.git
+instead.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160419/18b05e92/attachment.sig>
+
+From Martin.Papenberg at uni-duesseldorf.de  Tue Apr 19 10:03:44 2016
+From: Martin.Papenberg at uni-duesseldorf.de (Martin Papenberg)
+Date: Tue, 19 Apr 2016 12:03:44 +0200
+Subject: Installing rkward 0.6.5
+In-Reply-To: <1567917.Qu7bQ5HSFR@yrla>
+References: <5715E11A.5080402@uni-duesseldorf.de> <1567917.Qu7bQ5HSFR@yrla>
+Message-ID: <57160280.4090204@uni-duesseldorf.de>
+
+hi Thomas, hi meik,
+
+thanks for your responses! I was able to install the most recent version.
+
+> Not really, but you have been looking in the wrong places (which has
+> the useful side-effect of letting us know about outdated bit of
+> documentation, of course. Thanks for that!)
+
+I thought so, too. I wanted to write about my experience installing 
+rkward as a user. My intention was to install the advertised new version 
+of rkward. As a user, however, it is not immediately obvious how to get 
+this latest version when I visit the rkward homepage. The link on the 
+front page that leads to the installation of rkward 0.6.5 on GNU/LINUX 
+directs to this page: https://rkward.kde.org/Binaries_and_Build_Scripts
+
+Here, it seems that using "deb-src for all systems" is the most common 
+way to install rkward because it is the first section. I am not a 
+pro-user, and I thought that "debian distributions" already included Ubuntu.
+
+> this means that the entry in line 62 /etc/apt/sources.list is buggy because
+> you seem to have omitted the "./" at the end.
+
+This happened because there is some strange symbol in between the source 
+package link "https://files.kde.org/rkward/debian" and "./". To me, it 
+was not obvious that "./" must be included in the line in souces.list.
+
+The next section is "official repositories". If I install rkward as 
+described here, I end up installing rkward 0.6.1, because that is the 
+version that Ubuntu is currently offering (remember: I got here by 
+clicking the link to downloading the *new* rkward version on the front 
+page).
+
+> - The absolutely easiest way to install on Ubuntu is by adding one of
+>   our PPAs: https://launchpad.net/~rkward-devel .
+
+This I find in the third section "Inofficial Ubuntu repositories"; as a 
+user I did not know that this is actually the best way to install the 
+most recent version on Ubuntu. I think this might be more prominent, 
+maybe this section could be moved above the section "official 
+repositories" (including some clue that following this installation 
+guide will actually not install the new version of rkward).
+
+I do think that you could just write on the Linux installation page what 
+you wrote in your e-mail to me:
+"The absolutely easiest way to install the latest stable version (0.6.5) 
+of rkward on Ubuntu is by adding one of our PPAs: 
+https://launchpad.net/~rkward-devel ." If you don't think that is too 
+much of a privilege to Ubuntu as a distro ;-)
+
+Well, as I said, this is just a description of my experience as a user.
+
+> that is only because the git:// protocol uses a port that is blocked by the
+> HHU by default (9418).
+
+ah, I remember that you told me that already, sorry ;-)
+
+=========
+
+I also have a feature request for future releases :-) Yesterday I 
+already told meik that I found an xml file offering syntax highlighting 
+functionality for both R code and markdown in one Kate file, for the 
+rmarkdown - .rmd - format (see: 
+https://forum.ubuntuusers.de/topic/kate-und-kombiniertes-markdown-zum-schreiben-v/ 
+- one guy wrote this xml file, its available with a GPL 2 license). I 
+think it might be a nice feature if I could open both *r-scripts* and 
+*rmarkdown* files in rkward (actually I am already doing this). This 
+could simply be implemented in "File -> open rmarkdown file" and then 
+rmarkdown syntax highlighting is used.
+
+This suits your mission statement: In the first section it states: 
+"Practical statistics is not just about calculating, after all, but also 
+about documenting and ultimately publishing the results." In this case, 
+adding rmarkdown functionality would be very appropriate, because I 
+think it is widely used already and it can be used to document analysis 
+and write reports at the same time. See for example: 
+http://nicercode.github.io/guides/reports/
+
+Best regards,
+
+Martin
+
+
+
+
+
+
+Am 19.04.2016 um 10:51 schrieb meik michalke:
+> hi martin ;-)
+>
+> Am Dienstag, 19. April 2016, 09:41:14 schrieb Martin Papenberg:
+>> CMake Error at /usr/share/cmake-2.8/Modules/FindKDE4.cmake:98 (message):
+>>     ERROR: cmake/modules/FindKDE4Internal.cmake not found in
+>>     /home/martin/.kde/share/apps;/usr/share/kde4/apps
+>> Call Stack (most recent call first):
+>>     CMakeLists.txt:10 (FIND_PACKAGE)
+>>
+>>
+>> -- Configuring incomplete, errors occurred!
+>> See also
+>> "/home/martin/Downloads/rkward-0.6.5/build/CMakeFiles/CMakeOutput.log".
+> i called "dpkg -S cmake/modules/FindKDE4Internal.cmake" on my kubuntu 14.04
+> machine to search for packages including this file. it returns:
+>
+>   kdelibs5-dev: /usr/share/kde4/apps/cmake/modules/FindKDE4Internal.cmake
+>
+> in general, calling
+>
+>   apt-get build-dep rkward
+>
+> should install everything that's needed.
+>
+>> However, this does not work. I get this error: "Paket kdelibs5 kann
+>> nicht gefunden werden." (Package kdelibs5 cannot be found.). Apparently
+>> this package does not exist?
+> it seems the package is called "kdelibs-bin" in *buntu systems.
+>
+>> So instead of trying to build rkward from source, I wanted to include
+>> the repository that you name on the homepage in my sources.list to get
+>> the latest version:
+>> deb-src https://files.kde.org/rkward/debian
+>> However, if when I did "sudo apt-get update", my system tells me that
+>> this is a broken line:
+>>
+>> E: Missgestaltete Zeile 62 in Quellliste /etc/apt/sources.list (»dist«)
+>> E: Die Liste der Quellen konnte nicht gelesen werden.
+> this means that the entry in line 62 /etc/apt/sources.list is buggy because
+> you seem to have omitted the "./" at the end.
+>
+> however, "deb-src" will not give you precompiled binaries, but source
+> packages. for *buntu systems, it is highly recommended to pick one of PPA
+> repositories that fits your needs:
+>   https://rkward.kde.org/Binaries_and_Build_Scripts#Inofficial_Ubuntu_repositories
+>
+>> It seems to be rather difficult to install the latest version of rkward.
+> well, it's a bit difficult to configure apt ;-)
+>
+>> And another point: I often tried to get the sources from your git
+>> repository, but this never works: "git clone
+>> git://anongit.kde.org/rkward.git"; I always get a timeout on my request.
+>> Are you sure that you are listing the correct git repository on your
+>> homepage?
+> that is only because the git:// protocol uses a port that is blocked by the
+> HHU by default (9418).
+>
+>
+> viele grüße :: m.eik
+>
+>
+>
+> _______________________________________________
+> rkward-users mailing list
+> rkward-users at kde.org
+> https://mail.kde.org/mailman/listinfo/rkward-users
+
+-- 
+M.Sc. Martin Papenberg
+Abt. für Diagnostik & Differentielle Psychologie
+Institut für Experimentelle Psychologie
+Heinrich-Heine-Universität Düsseldorf
+Gebäude 23.03, Ebene 00, Raum 26
+Universitätsstr. 1, 40225 Düsseldorf
+
+Tel.: +49 211 81-15014
+martin.papenberg at uni-duesseldorf.de
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160419/f3583bdd/attachment-0001.html>
+

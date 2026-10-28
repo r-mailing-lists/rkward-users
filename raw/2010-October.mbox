@@ -1,0 +1,222 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct  4 12:26:24 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 4 Oct 2010 14:26:24 +0200
+Subject: [rkward-users] RKWard 0.5.4 is released
+Message-ID: <201010041426.30292.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Just a quick note to let you know that RKWard 0.5.4 is now released, officially. 
+As usual, you can find a more elaborate announcement at http://rkward.sf.net, 
+and links to the downloads at http://p.sf.net/rkward/download .
+
+Many thanks to all who contributed to this release!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101004/6fcbab05/attachment.sig>
+
+From terjej at imr.no  Thu Oct 14 11:18:11 2010
+From: terjej at imr.no (Joergensen Terje)
+Date: Thu, 14 Oct 2010 13:18:11 +0200
+Subject: [rkward-users] Shortcut key to switch between R console and script
+	window
+Message-ID: <1287055091.1840.52.camel@fang6825>
+
+HI,
+
+I am running RKWard version 0.5.2 under Linux (Ubuntu 10.04).
+
+It works great, but I miss a shortcut key to easily switch between the
+script window and the R console without having to use the mouse.
+
+Any help on how to sort out this would be greatly appreciated.
+
+
+Best regards,
+Terje 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101014/34aa343d/attachment.html>
+
+From matthieu.stigler at gmail.com  Thu Oct 14 11:25:49 2010
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Thu, 14 Oct 2010 13:25:49 +0200
+Subject: [rkward-users] Shortcut key to switch between R console and
+ script window
+In-Reply-To: <1287055091.1840.52.camel@fang6825>
+References: <1287055091.1840.52.camel@fang6825>
+Message-ID: <4CB6E8BD.806@gmail.com>
+
+Dear Terje
+
+There is no direct shortcut to switch from one to another and back, but 
+there are shortcuts to go to the console (alt 5) and to go to the script 
+(alt 0)
+
+those can be changed in settings-> configure shortcuts
+
+hope this helps
+
+Matthieu
+
+Le 14. 10. 10 13:18, Joergensen Terje a ?crit :
+> HI,
+>
+> I am running RKWard version 0.5.2 under Linux (Ubuntu 10.04).
+>
+> It works great, but I miss a shortcut key to easily switch between the 
+> script window and the R console without having to use the mouse.
+>
+> Any help on how to sort out this would be greatly appreciated.
+>
+>
+> Best regards,
+> Terje
+>
+>
+> ------------------------------------------------------------------------------
+> Beautiful is writing same markup. Internet Explorer 9 supports
+> standards for HTML5, CSS3, SVG 1.1,  ECMAScript5, and DOM L2&  L3.
+> Spend less time writing and  rewriting code and more time creating great
+> experiences on the web. Be a part of the beta today.
+> http://p.sf.net/sfu/beautyoftheweb
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>    
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101014/80ac1344/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Oct 14 12:58:57 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 14 Oct 2010 14:58:57 +0200
+Subject: [rkward-users] Shortcut key to switch between R console and
+	script window
+In-Reply-To: <1287055091.1840.52.camel@fang6825>
+References: <1287055091.1840.52.camel@fang6825>
+Message-ID: <201010141459.01915.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 14 October 2010, Joergensen Terje wrote:
+> It works great, but I miss a shortcut key to easily switch between the
+> script window and the R console without having to use the mouse.
+
+it's on our TODO list, but it will probably be a while before a developer finds 
+the time to look into this (it's not as trivial as it may seem).
+
+Besides using Alt+5 and Alt+0, as Matthieu suggests, here are two more interim 
+solutions:
+- Use Alt+5 repeatedly (has the side-effect of showing/hiding the console).
+- Detach the console window (Windows->Detach) and use Alt+Tab.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101014/b652d266/attachment.sig>
+
+From Meik.Michalke at uni-duesseldorf.de  Fri Oct 15 13:52:22 2010
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 15 Oct 2010 15:52:22 +0200
+Subject: [rkward-users] ubuntu repo still useful?
+Message-ID: <201010151552.23314.meik.michalke@uni-duesseldorf.de>
+
+hi,
+
+a short question: does anyone still have use for the unoffial ubuntu 
+repository i've maintained so far? since we have different launchpad PPA repos 
+now, the only real use case i can think of would be support for rather old 
+releases of (k)ubuntu with CRAN packages of R, but i can't say how many 
+inconsistencies there are, actually.
+
+if there are no complaints, there will be no further releases through that 
+repository. otherwise, just let me know if the launchpad releases don't work 
+for you, of course i'll keep what's still of use.
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101015/e18384f9/attachment.sig>
+
+From xplaner800 at comcast.net  Sun Oct 31 17:26:10 2010
+From: xplaner800 at comcast.net (Patrick Richardson)
+Date: Sun, 31 Oct 2010 13:26:10 -0400
+Subject: [rkward-users] unprotect() error in Rkward 0.5.3
+Message-ID: <201010311326.10087.xplaner800@comcast.net>
+
+I just recently installed rkward 0.5.3 and whenever I try to process any code 
+I get,
+
+"Error: unprotect(): only 1 protected items"
+
+the R engine seems to initalize ok but I get no output. Could someone shed 
+some light on this for me or suggest what setting(s) I may need to change to 
+get rkward to function properly.
+
+Thanks in advance,
+
+Patrick
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Oct 31 20:03:08 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 31 Oct 2010 21:03:08 +0100
+Subject: [rkward-users] unprotect() error in Rkward 0.5.3
+In-Reply-To: <201010311326.10087.xplaner800@comcast.net>
+References: <201010311326.10087.xplaner800@comcast.net>
+Message-ID: <201010312103.12674.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 31 October 2010, Patrick Richardson wrote:
+> I just recently installed rkward 0.5.3 and whenever I try to process any
+> code I get,
+> 
+> "Error: unprotect(): only 1 protected items"
+> 
+> the R engine seems to initalize ok but I get no output. Could someone shed
+> some light on this for me or suggest what setting(s) I may need to change
+> to get rkward to function properly.
+
+RKWard 0.5.3 does not work properly with R 2.12.0. Either downgrade R to 
+2.11.1, or upgrade RKWard to 0.5.4.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101031/0d17d502/attachment.sig>
+

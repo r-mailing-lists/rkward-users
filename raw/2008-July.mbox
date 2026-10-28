@@ -1,0 +1,27 @@
+From matthieu.stigler at gmail.com  Sun Jul  6 17:48:38 2008
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Sun, 06 Jul 2008 19:48:38 +0200
+Subject: [rkward-users] Update 0.5: how to get the old shortcuts?
+Message-ID: <48710576.3060807@gmail.com>
+
+Hello
+
+Last week, the KDE version in the repository for Ubuntu 8.04 came from 
+3.4 to 4.0.5, so RKward was updated to 0.5. The change made some minor 
+problems:
+
+-the shortcuts are differents... if I remember well,  could use F8, F9 
+and F10 for run line/selection/all and now it changed, one needs Shift + 
+F8, F9 and F10... Am I right? And there was also the shortcut Shift + L 
+for run line... I did not find a way to configure it in the old 
+fashion... is there a possibility?
+
+-the icons in the toolbar for th are too large to be all displayed (this 
+may come from the french version where "run all" becomes "lancer la 
+ligne courante") so I can't see them all. Can I configure how they are 
+displayed?
+
+Thank you!!
+
+
+

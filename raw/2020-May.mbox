@@ -1,0 +1,112 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun May 24 09:14:17 2020
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 24 May 2020 10:14:17 +0200
+Subject: RKWard and R 4.0.0 - Important bug and workaround
+Message-ID: <20200524101417.1c3d296a@booklife>
+
+Hi!
+
+This is a note of caution about using RKWard with R 4.0.0:
+
+-- Problem --
+
+There is a bug in R 4.0.0 with respect to active bindings, which RKWard
+is relatively likely to trigger. Running the following code *twice*
+will render your RKWard session unusable, and **could result in
+loss of data**:
+
+  for (i in 1:2) { print (i) }
+
+Note that this affects top-level statements, only, i.e. in general code
+that you enter in the console of run from a script, directly. Not code
+in packages or RKWard plugins.
+
+-- Workaround --
+
+If you have the choice, please delay upgrading R until R 4.0.1 is
+released.
+
+If you have already installed R 4.0.0, you should set the option
+
+  compiler::enableJIT(2)  # or a lower value
+
+in each session. This can also be made permanent by copying it into
+the field "Futher option commands to run in each session" in
+Settings->Configure RKWard->R-Backend.
+
+-- Outlook --
+
+The bug has been fixed in R devel, but no release date has been set to
+R 4.0.1, yet. I will probably create a "bugfix"-release that enables
+the above workaround by default in the coming day. Meanwhile I have
+started working on a new approach to object modification detection that
+does not rely on active bindings.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200524/765d0155/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon May 25 21:18:26 2020
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 25 May 2020 22:18:26 +0200
+Subject: RKWard 0.7.1b is available
+Message-ID: <20200525221826.2bd5da6d@booklife>
+
+Hi!
+
+As announced, I have prepared a hotfix release to work around the
+active binding bug in R 4.0.0. Users of R 4.0.0 are strongly
+encouraged to upgrade to RKWard 0.7.1b.
+
+The release also addresses two further issues. More details and
+download links to be found at https://www.kde.org .
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200525/ec5f7dca/attachment.sig>
+
+From johannes.ranke at jrwb.de  Tue May 26 10:23:17 2020
+From: johannes.ranke at jrwb.de (Johannes Ranke)
+Date: Tue, 26 May 2020 11:23:17 +0200
+Subject: RKWard 0.7.1b is available
+In-Reply-To: <20200525221826.2bd5da6d@booklife>
+References: <20200525221826.2bd5da6d@booklife>
+Message-ID: <2722341.OnoKAujVRl@ryz>
+
+Hi Thomas,
+
+ich habe den backport auf CRAN aktualisiert. Der wird ja dann vermutlich auch 
+weiterhin funktionieren, wenn R 4.0.1 am 6. Juni veröffentlicht wird, stimmt's?
+
+Viele Grüße,
+
+Johannes
+
+Am Montag, 25. Mai 2020, 22:18:26 CEST schrieb Thomas Friedrichsmeier:
+> Hi!
+> 
+> As announced, I have prepared a hotfix release to work around the
+> active binding bug in R 4.0.0. Users of R 4.0.0 are strongly
+> encouraged to upgrade to RKWard 0.7.1b.
+> 
+> The release also addresses two further issues. More details and
+> download links to be found at https://www.kde.org .
+> 
+> Regards
+> Thomas
+
+
+
+

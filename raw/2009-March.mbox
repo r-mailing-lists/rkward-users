@@ -1,0 +1,184 @@
+From noreply at sourceforge.net  Thu Mar 19 20:47:53 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 19 Mar 2009 20:47:53 +0000
+Subject: [rkward-users] [rkward - Help] rkward on windows
+Message-ID: <6876704.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6876704
+By: balduin2
+
+Hi,
+
+as KDE 4.1 is now also available for Windows, I asked myself whether it's possible
+to compile rkward for win32.
+
+I'm not a developer nor do I know what it takes to produce a fully working port
+but as many kde-applications are already ported to windows I'd like to know
+when we can expect to use rkward on the windows plattform.
+
+Any thoughts and ideas?
+
+Thanks in advance
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Mar 20 09:55:59 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 20 Mar 2009 09:55:59 +0000
+Subject: [rkward-users] [rkward - Help] RE: rkward on windows
+In-Reply-To: <6876704.165574@sourceforge.net>
+Message-ID: <6885827.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6885827
+By: xavidp
+
+That would be lovely! 
+(for all our students in our university, which are still using Windows in their
+computer rooms in all the campuses... whereas they are taught to use R in many
+university degrees... )
+Very good idea.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Mar 24 22:32:46 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 24 Mar 2009 22:32:46 +0000
+Subject: [rkward-users] [rkward - Help] RE: .rk.get.structure() strange
+	behaviour
+In-Reply-To: <4956278.165574@sourceforge.net>
+Message-ID: <6944068.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6944068
+By: fsando
+
+> Hello, 
+> on 2009-01-25 I posted a message in sourceforge, related to
+> a problem with .rk.get.structure() in Rkward. I posted that
+> message because I saw that you have had exactly the same
+> problem that me, i.e., that after reading (or generating)
+> some data, the message "R engine busy" appears and lasts for
+> 15-25 seconds, while the message .rk.get.structure(....
+> appears in the pending jobs window. Could you finally found
+> a solution to this problem? I have googled the web and
+> nobody else seems to have experienced something similar.
+> I would be very grateful if you could help me in this
+> question, because I think that R/Rkward is great for
+> statistics, but these long waiting times are very disappointing.
+>   
+> Thanks in advance,
+> Angelo Santana
+
+Sorry for not seeing your question before.
+
+Basically the problem has largely gone away, I am not sure what exactly caused
+it though I have some ideas.
+
+It was solved by updating to the newest version which I usually do via svn rather
+than the package manager. Sometimes, though, I have to first install the official
+package (to get all the dependencies) then I just install from source on top
+of the existing installation and things tend to work.
+
+In short: upgrade to newest version. It may seem a bit awkward to have to do
+it that way but it is my impression that rkward is in a transitional phase right
+now. Hopefully that will change in the not-too-distant future.
+
+
+I believe the reason for the lag may be due to some kind of bug in the way rkward
+adds to R data objects to suits its own structures. This becomes worse when
+the workspace contains a lot of large objects with many children (like lists
+and data frames).
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Mar 30 20:11:52 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 30 Mar 2009 22:11:52 +0200
+Subject: [rkward-users] RKWard 0.5.0c is released
+Message-ID: <200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+I have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see 
+http://rkward.sourceforge.net/ .
+
+Many thanks to all testers and contributors. The amount of testing and 
+feedback in the few days since my first call for testing has been truly 
+amazing.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090330/71bb83a8/attachment.sig>
+
+From nono.231 at gmail.com  Tue Mar 31 12:11:20 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 31 Mar 2009 13:11:20 +0100
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.0c is released
+In-Reply-To: <200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550903310511y5e519d66kb0e3a12cc22758f6@mail.gmail.com>
+
+Hi,
+
+I am a little bit confused with the ubuntu distro. Is it needed a special
+deb file?
+
+I have 2 machines a i386 and a x86_64 with ubuntu 8.10. I think I can make
+deb files for both architectures.
+
+Regards,
+ilias
+
+2009/3/30 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> Hi!
+>
+> I have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see
+> http://rkward.sourceforge.net/ .
+>
+> Many thanks to all testers and contributors. The amount of testing and
+> feedback in the few days since my first call for testing has been truly
+> amazing.
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-devel mailing list
+> RKWard-devel at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-devel
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090331/0461dc5a/attachment.html>
+

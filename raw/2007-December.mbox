@@ -1,0 +1,488 @@
+From noreply at sourceforge.net  Sun Dec  2 11:54:26 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 02 Dec 2007 03:54:26 -0800
+Subject: [rkward-users] [rkward - Help] Compiling Rkward on Kubuntu Gutsy
+Message-ID: <4654327.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4654327
+By: f_bresson
+
+Please, I need some help to compile the version 0.4.8a for Kubuntu Gutsy. Everything
+seems ok when I launch the ./configure command. But  with the make command,
+the process stop with the following lines :
+
+/usr/bin/ld: cannot find -lgfortran
+collect2: ld returned 1 exit status
+
+How can I solve the problem please ?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Dec  2 17:49:23 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 02 Dec 2007 09:49:23 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy
+In-Reply-To: <4654327.165574@sourceforge.net>
+Message-ID: <4654638.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4654638
+By: kapatp
+
+Hi f_bresson,
+
+> /usr/bin/ld: cannot find -lgfortran 
+> collect2: ld returned 1 exit status
+
+This is the classic issue with gcc and g++. Try 'gcc -v'. This should show 4.1.3
+as the version. If so, then we can fix it easily. Install gcc 4.2 by 'aptitude
+install gcc-4.2'.
+Then before configuring do the following..
+
+$ export CC=/usr/bin/gcc-4.2; export C++=/usr/bin/g++-4.2
+$ ./configure # add your usual options, if any
+
+HTH,
+Regards
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Dec  2 19:39:39 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 02 Dec 2007 11:39:39 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy
+In-Reply-To: <4654638.165574@sourceforge.net>
+Message-ID: <4654751.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4654751
+By: johanvdw
+
+You need to add:
+export LDFLAGS="-L/usr/lib/gcc/i486-linux-gnu/4.2/"
+
+before configuring. The gfortran lib is not in the standard /usr/lib location,
+which causes the mentioned problem.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Dec  3 09:16:44 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 03 Dec 2007 01:16:44 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy
+In-Reply-To: <4654327.165574@sourceforge.net>
+Message-ID: <4655378.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4655378
+By: f_bresson
+
+I solved the problem. The package gfortran-4.2 was already installed, but
+gfortran-4.1 was required. Thanks for your advices.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Dec 13 12:32:41 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 13 Dec 2007 04:32:41 -0800
+Subject: [rkward-users] [rkward - Help] Import spss bugfixes
+Message-ID: <4673678.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4673678
+By: fsando
+
+Hi 
+I am now using rkward regularly and I have found a couple of bugs in the import
+dialog regarding SPSS datasets. I have gone through the code and have made some
+code that should correct it. I am not sure what is the best way to about this
+process.
+The bugs:
+1. unchecking "Use value labels" causes read.spss to use default values which
+happens to be TRUE instead of false
+2. unchecking "Edit" cause the data to not be imported at all
+
+There is also an issue with value labels not shown in rkward editor rather the
+editor appears to be using the "levels" attribute instead. i am working on a
+fix that will convert labels to levels though there are some snags.
+Regards
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Dec 17 15:19:04 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Dec 2007 07:19:04 -0800
+Subject: [rkward-users] [rkward - Help] RE: Import spss bugfixes
+In-Reply-To: <4673678.165574@sourceforge.net>
+Message-ID: <4678933.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4678933
+By: tfry
+
+Hi,
+
+the best way to get these changes into RKWard is to write a message to rkward-devel
+at lists dot sf dot net. This makes it easier to follow up in replies.
+For representing the changes you made, use
+# diff -u oldfile newfile
+This allows us to see easily what the relevant changes are. If you're using
+an SVN version, "svn diff" will do the trick, nicely (see
+http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN).
+
+The issue of value labels / levels is a bit difficult, since R only supports
+labels / levels for factors, out-of-the-box. RKWard uses the levels attribute
+to be compatible with R in this respect, but does not insist on assigning levels
+only to factors. But let us know about your approach!
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Dec 17 20:27:40 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Dec 2007 12:27:40 -0800
+Subject: [rkward-users] [rkward - Help] RE: Import spss bugfixes
+In-Reply-To: <4673678.165574@sourceforge.net>
+Message-ID: <4679550.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4679550
+By: fsando
+
+I tried to post to rkward-devel but received this error 
+
+550-Postmaster verification failed 
+[...] 
+50-Several RFCs state that you are required to have
+a postmaster 550-mailbox for each mail domain. This host does not accept
+mail 550-from domains whose servers reject the postmaster address. 550
+Sender verify failed (in reply to RCPT TO command)
+
+I don't know if it's just because I'm posting to soon after joining or it's
+a setting on my mail server. If it persists I may post here until it is solved.
+Anyway this is the what I tried to post:
+the diff-file is pasted at the end
+==================================================================
+I believe there are a couple of errors in the code generated by the
+
+"Import SPSS file" dialog. I have created a patch that should correct this.
+
+I have attached the diff-file (svn diff)
+
+The two errors are:
+1) When the "Use value labels" is deselected the "use.value.labels" argument
+is removed (i.e. set to default) but default=TRUE it should be
+"use.value.label=FALSE".
+I made an else clause for when getRK_val ("use_labels") is FALSE.
+
+Perhaps it would be better to use default arguments and only act when getRK_val
+("use_labels") is FALSE but I cannot easily determine the consequences of that,
+thus this approach.
+
+2) When "Edit" is deselected the assignment to globalenv is removed along with
+the "edit" statement. I moved the assignment outside the "doedit" condition.
+
+I considered the problem with value labels and they way the enter into rkward
+via the levels attribute. I thought it would be relatively easy but to do something
+about it, not so. Problem now is that you can't assign labels to non-positive
+values in rkward editor.
+
+I have this idea but don't know if it is at all doable: what about having an
+extra field for value labels (like the current one that refers to levels). This
+field should have two columns the first for the values, the second for their
+corresponding labels. A third column could be added that indicate missing values.
+I know there would be issues related to the way R handles data.frame etc. not
+easily solved.
+I am not a c-programmer so, of course, it's easy to dream up all kinds of "brilliant"
+ideas, but anyway.
+Kind
+Regards
+Finn 
+===================================================================
+
+diff-file
+
+Index: rkward/plugins/00saveload/import/import_spss.php
+===================================================================
+--- rkward/plugins/00saveload/import/import_spss.php	(revision 2280)
++++ rkward/plugins/00saveload/import/import_spss.php	(working copy)
+@@ -17,17 +17,22 @@
+ }
+ <?	}
+ }
+-
++// when "Use value labels" is deselected, "use.value.labels" is removed - i.e.
+set to default but default=TRUE - should be FALSE
+ function calculate () {
+ 	if (getRK_val ("data_frame")) {
+ 		$data_frame = true;
+ 		$data_frame_opt = ", to.data.frame=TRUE";
+ 	}
+-
+-	if (getRK_val ("use_labels")) {
++//"Use value labels" selected, use.value.label=TRUE
++	if (getRK_val ("use_labels")) { 
+ 		$labels_opt = ", use.value.labels=TRUE";
+ 		$labels_opt .= ", max.value.labels=" . getRK_val ("labels_limit");
+ 		if (getRK_val ("trim_labels")) $labels_opt .= ", trim.factor.names=TRUE";
++	} else 
++//"Use value labels" deselected, use.value.label=FALSE
++	{
++		$labels_opt = ", use.value.labels=FALSE";
++		if (getRK_val ("trim_labels")) $labels_opt .= ", trim.factor.names=TRUE";
+ 	}
+ 
+ 	$object = getRK_val ("saveto");
+@@ -54,10 +59,11 @@
+ 		}
+ 	}
+ }
++<? //assign imported data to globalenv moved outside the doedit condition,
+will always be executed ?>
++<? echo ($object); ?> <<- <? echo ($object); ?>		# assign to globalenv()
+ <?	}
+ 	if (getRK_val ("doedit") && $data_frame) { ?>
+ 
+-<? echo ($object); ?> <<- <? echo ($object); ?>		# assign to globalenv()
+ rk.edit (<? echo ($object); ?>)
+ <?	}
+ }
+@@ -65,3 +71,7 @@
+ function printout () {
+ }
+ ?>
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Dec 17 20:58:34 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Dec 2007 12:58:34 -0800
+Subject: [rkward-users] [rkward - Help] RE: Import spss bugfixes
+In-Reply-To: <4679550.165574@sourceforge.net>
+Message-ID: <4679577.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4679577
+By: tfry
+
+Hi,
+
+about the mail problem: Perhaps you should open a ticket in the main sourceforge
+request tracker about this. This does not appear to be a restriction of the
+mailing list software, but an earlier filter while accepting (or rather rejecting)
+the mail. (Though perhaps SF will tell you it's your mail provider's fault.
+If it really does not conform to such RFCs, that might potentially cause problems
+with other mail servers as well).
+
+Regarding the issues:
+1) Omitting the argument, when it is at its default value is slightly nicer,
+in general. I'll need to check whether the default of use.value.labels has changed
+(I certainly hope, not!), or whether it was a plain bug from the start.
+
+2) Ouch. Yes of course, you're right.
+
+I'll commit these changes as soon as I got around to checking 1).
+
+Regarding value labels vs. levels:
+I can see the problem. However, changing this would add complexity, some potential
+for confusion (*), and move us further away from "the R way" of handling data.
+So I'm not sure it's really worth it. Ideally, R itself would support value
+labels for arbitrary values, but I don't think this is likely to happen
+mid-term.
+
+(*): Basically those "arbitrary value" labels would only work as expected inside
+the data editor in RKWard. Making them work in all other contexts where you'd
+expect value labels to be printed (or missing values to be treated) would be
+next to impossible. So - at least until a convincing solution is found - I'd
+like to rather enforce the limitation of labelling only consequtive positive
+integers early on and consistently, instead of dealing with all the follow up
+issues of trying to support "arbitrary value" labels. Keep the suggestions coming,
+though.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Dec 18 00:16:14 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Dec 2007 16:16:14 -0800
+Subject: [rkward-users] [rkward - Help] RE: Import spss bugfixes
+In-Reply-To: <4673678.165574@sourceforge.net>
+Message-ID: <4680137.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4680137
+By: fsando
+
+Hi Thomas
+Thanks for your answer.
+I expect the mail problem will go away or I'll have to do something about it.
+
+On the value label conundrum I absolutely agree with you. No obvious solution.
+A solid solution would indeed have to involve R-devel. But such things do happen
+I think. The data.frame format has evolved somewhat I believe and methods have
+been adapted. So if the changes are well thought out they may make it into the
+central methods. I really would like to see the data.frame improved/extended
+in the the way of spss and even improved on what spss does. I think rkward with
+its ease of use and intuitive interface has tremendous potential for being the
+standard statistical package of Linux.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Dec 30 14:46:56 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 30 Dec 2007 15:46:56 +0100
+Subject: [rkward-users] SVN trunk is now KDE 4
+Message-ID: <200712301547.00686.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+an important note to all users of SVN versions: I have now finally moved the 
+KDE 4 version of rkward to "trunk". The previous trunk is now located at 
+https://rkward.svn.sourceforge.net/svnroot/rkward/branches/release_branch_0.4.9 .
+
+If you have been following the trunk, and want to do the switch to the KDE 4 
+versions now, all you need to do is
+
+# svn up
+
+If you have been following the trunk, and want to stick with the KDE 3 version 
+of rkward for the time being, run (in the top directory of your working 
+copy):
+
+# svn switch 
+https://rkward.svn.sourceforge.net/svnroot/rkward/branches/release_branch_0.4.9
+# svn up
+
+If you have already been following the KDE 4 branch, you will now want to 
+switch to trunk, using (in the top directory of your working copy):
+
+# svn switch https://rkward.svn.sourceforge.net/svnroot/rkward/trunk/rkward
+# svn up
+
+Regards
+Thomas
+
+P.S.: I'll try to prepare a preview release of 0.4.9 today, and will give some 
+information on the expected timeline, then.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071230/e6433163/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Dec 30 15:30:12 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 30 Dec 2007 16:30:12 +0100
+Subject: [rkward-users] First preview of rkward 0.4.9 / release timeline
+Message-ID: <200712301630.17324.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+a first preview release of RKWard 0.4.9 (for KDE 3) can be found at 
+http://rkward.sourceforge.net/temp/rkward-0.4.9pre1.tar.gz . If you have some 
+time, please download this and do some testing.
+
+-- Relase timeline --
+
+I think the 0.4.9 release is in fairly good shape already, and probably no 
+second preview release will be needed (unless serious issues turn up). Still, 
+since we're in the middle of the year-end holiday season, we should go 
+slowly, and target a release on or around Monday, January 14 2008.
+
+Until then:
+
+-- Translators --
+
+No changes in translatable strings are expected until the release, so you can 
+go ahead and start working on your translations, now. As usual the .po 
+and .pot files can be found in the subdirectory "po" of the preview release. 
+Please try to submit your translations no later than Friday, January 11 2008.
+
+-- Developers --
+
+There will be no strict ban on plugin changes, but please commit only trivial 
+changes, or post the diff to the development mailing list before comitting. 
+Please also review the ChangeLog and 
+http://rkward.sourceforge.net/wiki/index.php?title=Development_Status_of_Plugins , 
+and add any missing information that you are aware of. Commit your changes 
+either to trunk (which is the KDE 4 version, now), or directly to the 0.4.9 
+release branch (see the previous mail).
+
+-- 0.5.0 release --
+
+I'll prepare a preview release of 0.5.0 (for KDE 4) in a few days (i.e. first 
+week of January). I think a release one week after 0.4.9 (i.e. on or around 
+January 21) will be realistic. More specific instructions will follow, then. 
+It would be nice, if developers could give me an estimate (in private mail) 
+on when they will be able to switch to KDE 4, so we can work out a reasonable 
+way to coordinate development during the transition phase.
+
+Regards, and a happy new year!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071230/b88166f5/attachment.sig>
+

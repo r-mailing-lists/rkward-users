@@ -1,0 +1,166 @@
+From thomas.friedrichsmeier at kdemail.net  Thu Oct  2 19:03:39 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 2 Oct 2025 20:03:39 +0200
+Subject: RKWard 0.8.2 is released!
+Message-ID: <20251002200339.71dad90b@booklife>
+
+Hi!
+
+RKWard 0.8.2 is officially available for download, today. You can read
+up on the details, and pick the correct download for your platform on
+https://rkward.kde.org, as usual. Thanks to all testers and
+contributors!
+
+(You may note that the official release day was yesterday, but some of
+the binary builds took longer than expected.)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251002/3051065c/attachment.sig>
+
+From alfonsociologo at gmail.com  Sun Oct  5 03:22:35 2025
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sat, 4 Oct 2025 20:22:35 -0600
+Subject: RKWard 0.8.2 not working on a Windows 10 VM
+Message-ID: <CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>
+
+I just tried out to install RKWard 0.8.2, on a Windows 10 VM.
+Every thing went well through the installation process,
+but when I tried to run it I kept receiving the message that the file
+"kdesigleapplicaition-qt6.dll" was missing, that reinstalling it would
+solve the problem, but it did not. I even redownloaded the file and even
+tried out the daily build with no success.
+I ended up reinstalling the 0.8.1 version which was a success, it ran
+smoothly.
+Any thoughts?
+Regards
+
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251004/fcf377db/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Sun Oct  5 15:12:03 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 5 Oct 2025 16:12:03 +0200
+Subject: RKWard 0.8.2 not working on a Windows 10 VM
+In-Reply-To: <CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>
+References: <CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>
+Message-ID: <20251005161203.3f6db5e5@booklife>
+
+Am Sat, 4 Oct 2025 20:22:35 -0600
+schrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:
+> I just tried out to install RKWard 0.8.2, on a Windows 10 VM.
+> Every thing went well through the installation process,
+> but when I tried to run it I kept receiving the message that the file
+> "kdesigleapplicaition-qt6.dll" was missing, that reinstalling it would
+> solve the problem, but it did not.
+
+Confirmed, thanks for reporting. This should be fixed in the lastest
+build:
+
+https://cdn.kde.org/ci-builds/education/rkward/releases-0.8.2/windows/
+
+Updating the release file on download.kde.org may take some more hours.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/b177c9aa/attachment.sig>
+
+From alfonsociologo at gmail.com  Sun Oct  5 16:10:52 2025
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sun, 5 Oct 2025 09:10:52 -0600
+Subject: rk.dplyr
+Message-ID: <CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>
+
+Here is another plug-in,
+
+https://github.com/AlfCano/rk.dplyr
+
+a user-friendly graphical interface for the powerful data combination and
+manipulation functions in the R package dplyr. It simplifies common data
+wrangling tasks by providing clear dialogs for four categories of
+operations, each requiring two data frames as input: Combine by
+Binding, Mutating Joins, Filtering Joins, Set Operations.
+
+Regards
+Alfonso
+
+PD: I just have tried out the rkward at kde.org, but I think it is not active
+yet.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/df83d1c3/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Sun Oct  5 17:35:36 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 5 Oct 2025 18:35:36 +0200
+Subject: rk.dplyr
+In-Reply-To: <CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>
+References: <CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>
+Message-ID: <20251005183536.07e192cb@booklife>
+
+Am Sun, 5 Oct 2025 09:10:52 -0600
+schrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:
+> Here is another plug-in,
+
+Great! I'm having trouble keeping up!
+
+[...]
+
+> PD: I just have tried out the rkward at kde.org, but I think it is not
+> active yet.
+
+Correct, I did not find the time to move forward with this, yet. I'll
+send a another update, when this has happened.
+
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/4fb40e2f/attachment.sig>
+
+From griera at yandex.com  Wed Oct  8 09:25:53 2025
+From: griera at yandex.com (Griera)
+Date: Wed, 8 Oct 2025 10:25:53 +0200
+Subject: rk.dplyr
+In-Reply-To: <CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>
+References: <CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>
+Message-ID: <20251008102553.7b69239b@debian-dde-tosh>
+
+Thanks a lot!!!
+
+On Sun, 5 Oct 2025 09:10:52 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+
+> Here is another plug-in,
+> 
+> https://github.com/AlfCano/rk.dplyr
+> 
+> a user-friendly graphical interface for the powerful data combination and
+> manipulation functions in the R package dplyr. It simplifies common data
+> wrangling tasks by providing clear dialogs for four categories of
+> operations, each requiring two data frames as input: Combine by
+> Binding, Mutating Joins, Filtering Joins, Set Operations.
+> 
+> Regards
+> Alfonso
+> 
+> PD: I just have tried out the rkward at kde.org, but I think it is not active
+> yet.
+

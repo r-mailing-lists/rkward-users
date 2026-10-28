@@ -1,0 +1,143 @@
+From noreply at sourceforge.net  Thu Feb  2 15:53:50 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 02 Feb 2012 07:53:50 -0800
+Subject: [rkward-users] [Help] RE: Use R console on a via SSH con. Remote PC
+In-Reply-To: <forum-165574-11109370@sourceforge.net>
+Message-ID: <forum-165574-11118915@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:
+
+Hi!
+
+This is not currently possible, but we do intend to support this, eventually.
+However this does mean a good bit of development effort, and we're always short
+on time. Thus, please don't hold your breath.
+
+As an interim solution, you may want to consider running RKWard on the remote
+server, using a VNC or remote X11 connection tunnelled through SSH.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon Feb 27 13:56:10 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 27 Feb 2012 05:56:10 -0800
+Subject: [rkward-users] [Open Discussion] Error on Startup
+Message-ID: <forum-165573-11217082@sourceforge.net>
+
+The following forum message was posted by stimpy-ch at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:
+
+Hi,
+
+I have installed rkward from Ubuntu repository. 
+My specs:
+OS: Kubuntu 11.10, 64bit
+R: v2.14.1
+rkward: 0.5.6
+
+When I run rkward an error message comes up reporting about a communication
+problem with R. Later it says this error is not further specified.
+
+In details you can see
+[i]R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R ist freie Software und kommt OHNE JEGLICHE GARANTIE.
+Sie sind eingeladen, es unter bestimmten Bedingungen weiter zu verbreiten.
+Tippen Sie 'license()' or 'licence()' f?r Details dazu.
+
+R ist ein Gemeinschaftsprojekt mit vielen Beitragenden.
+Tippen Sie 'contributors()' f?r mehr Information und 'citation()',
+um zu erfahren, wie R oder R packages in Publikationen zitiert werden k?nnen.
+
+Tippen Sie 'demo()' f?r einige Demos, 'help()' f?r on-line Hilfe, oder
+'help.start()' f?r eine HTML Browserschnittstelle zur Hilfe.
+Tippen Sie 'q()', um R zu verlassen.
+
+
+[b]Attache Paket: ?rkward?
+
+The following object(s) are masked from ?package:grDevices?:
+
+x11, X11
+
+The following object(s) are masked from ?package:base?:
+
+makeActiveBinding, q, quit, require, setwd, Sys.setlocale
+
+Fehler in assign(backupname, original, envir = as.environment("package:rkward"))
+:
+kann keine Bindungen zu einer abgeschlossenen Umgebung hinzuf?gen
+Calls: .rk.fix.assignments -> rk.replace.function -> assign
+starting httpd help server ... done
+Fehler in assign(".rk.output.html.file", x, as.environment("package:rkward"))
+:
+kann den Wert einer festgestellten Bindung f?r '.rk.output.html.file' nicht
+?ndern
+Calls: rk.set.output.html.file -> assign[/b][/i]
+
+If I try to run a script file like downloading sme file (file <- "http://.....
+) im getting a message like (freely translated)
+Error in .rk.set.reply(NULL) : 
+  unable to change value of a given bounding for '.rk.rkreply' 
+Calls: <Anonymous> -> .rk.do.call -> .rk.set.reply
+
+What is there going wrong?
+
+King regards 
+stimpy-ch
+
+
+
+From noreply at sourceforge.net  Tue Feb 28 13:19:49 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 28 Feb 2012 05:19:49 -0800
+Subject: [rkward-users] [Open Discussion] RE: Error on Startup
+In-Reply-To: <forum-165573-11217082@sourceforge.net>
+Message-ID: <forum-165573-11221043@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:
+
+Hi!
+
+You are using R from CRAN or from a PPA. Often this will work with the version
+of RKWard in the main Ubuntu archive. In the case of R 2.14.x it does not. Please
+install rkward (version 0.5.7) from this PPA, instead:
+[url]https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran[/url] .
+
+Regards
+Thomas
+
+
+
+From maurice.francois at ymail.com  Tue Feb 28 19:31:46 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Tue, 28 Feb 2012 11:31:46 -0800 (PST)
+Subject: [rkward-users] Error when trying to load an .R file in clicking on
+	it
+Message-ID: <1330457506.47711.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+
+Hi,
+?
+I'd like to be able to load a script file directly when I clic on it but the following error message appears :
+?
+Error loading workspace - RKWard
+There has been an error opening file
+?'J:/dossiers/Francois/Cours/COURS.E10/SOL6021/Programmation/R/Analyse.R':
+?
+Is there a way to do that ?
+?
+Thanks,
+
+Fran?ois Maurice, B. Sc., A. Stat.
+Candidat ? la ma?trise
+D?partement de sociologie
+Universit? de Montr?al
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120228/0d972d9f/attachment.html>
+

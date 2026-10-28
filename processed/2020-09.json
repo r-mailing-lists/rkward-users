@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2020-09",
+  "messages": [
+    {
+      "id": "msg-ab17432c2dd9",
+      "message_id": "<2332295.irdbgypaU6@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2020-09-07T15:34:10Z",
+      "subject": "updated signing keys for RKward debian repo",
+      "subject_clean": "updated signing keys for RKward debian repo",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nsince our current package signing key is about to expire soon, i've added a \nnew key on the server (debR40 repo only), installable as a package called \n\"rkward-keyring\".\n\nthe package installs the key(s) to /usr/share/keyrings/rkward-keyring.gpg and \nno longer adds them to the global trust.db, so you can be sure it can only be \nused to verify our packages. you'll have to manually adjust your sources list \nfile enable apt to find the right key:\n\ndeb [signed-by=/usr/share/keyrings/rkward-keyring.gpg] https://\ndistribute.kde.org/rkward/debR40 unstable main\n\nolder versions of the keyring package used the ASCI format (rkward-\nkeyring.asc), which is deprecated and was now also corrected.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200907/1d758e8e/attachment.sig>",
+      "body_snippet": "hi,\n\nsince our current package signing key is about to expire soon, i've added a \nnew key on the server (debR40 repo only), installable as a package called \n\"rkward-keyring\".\n\nthe package installs the",
+      "thread_id": "thread-ab17432c2dd9",
+      "thread_depth": 0,
+      "month": "2020-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-ab17432c2dd9",
+      "subject": "updated signing keys for RKward debian repo",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2020-09-07T15:34:10Z",
+      "last_reply": "2020-09-07T15:34:10Z",
+      "root_message_id": "msg-ab17432c2dd9"
+    }
+  ]
+}

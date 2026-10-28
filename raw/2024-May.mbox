@@ -1,0 +1,218 @@
+From aces.cos at gmail.com  Sat May  4 22:24:59 2024
+From: aces.cos at gmail.com (=?UTF-8?Q?Alejandro_C=C3=A9sar_Cosentino?=)
+Date: Sat, 4 May 2024 18:24:59 -0300
+Subject: Kate addons not working on Fedora 40 KDE
+Message-ID: <CAPQxSbvbWeBQdvdE6pnt5O4rz9QP9Y4Gcte=E3BvZ6KLJizCqg@mail.gmail.com>
+
+Hi!
+I've attempted to integrate Kate addons into RKWard. Although I've
+installed the text editor on my system, each time I relaunch the software,
+I encounter the same warning message at startup. RKWard shows a message
+saying I need to incorporate the Kate addons.
+Below, my system characteristics
+
+Operating System: Fedora Linux 40
+KDE Plasma Version: 6.0.4
+KDE Frameworks Version: 6.1.0
+Qt Version: 6.7.0
+Kernel Version: 6.8.8-300.fc40.x86_64 (64-bit)
+Graphics Platform: X11
+
+Could you please assist me?
+Cheers,
+Alejandro
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240504/97643bb9/attachment.htm>
+
+From rkward-users at oijn.uk  Wed May  8 01:08:03 2024
+From: rkward-users at oijn.uk (rkward @ oijn)
+Date: Wed, 08 May 2024 01:08:03 +0100
+Subject: Kate addons not working on Fedora 40 KDE
+Message-ID: <47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>
+
+Regarding the issue of Kate addons not working/integrating into RKWard.
+
+I have noticed the same thing.  For me seems to be recent - probably 
+related to the KDE6 upgrade.  I delayed upgrading to the latest KDE6 for 
+as long as possible as I knew it would break things.  However, other 
+essential software I use forced an upgrade to fix a problem.
+
+Looking at: 
+https://mail.kde.org/pipermail/rkward-tracker/2024-April/010660.html
+
+Seems Kate plugin path may have changed?
+
+I can still use RKWard as I normally do - so apart from the annoyance - 
+it doesn't seem to be a show-stopper?
+
+We might just have to wait for an updated version of RKWard.
+
+From thomas.friedrichsmeier at kdemail.net  Thu May  9 10:09:22 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 9 May 2024 11:09:22 +0200
+Subject: Kate addons not working on Fedora 40 KDE
+In-Reply-To: <47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>
+References: <47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>
+Message-ID: <20240509110922.268c27aa@booklife>
+
+Hi,
+
+On Wed, 08 May 2024 01:08:03 +0100
+"rkward @ oijn" <rkward-users at oijn.uk> wrote:
+> Seems Kate plugin path may have changed?
+
+yes, but more importantly kate is now based on KF6/Qt6, and so the
+kate plugins will not work with a KF5/Qt5 version of RKWard. I'm working
+on a KF6 version, but it will be some more time before a release.
+
+If you are willing to compile from source, you can use a KF6 RKWard,
+today, and this should indeed be pretty stable, already (on Linux).
+
+For this you'll need the master git branch from
+https://invent.kde.org/education/rkward
+
+Generic instructions for building from source can be found at
+https://rkward.kde.org/Building_RKWard_From_Source.html
+although the package names and versions to install will no longer be
+correct. Don't hesitate to ask for assistance with that!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240509/7de56f7f/attachment.sig>
+
+From rkward-users at oijn.uk  Sun May 12 01:35:46 2024
+From: rkward-users at oijn.uk (rkward @ oijn)
+Date: Sun, 12 May 2024 01:35:46 +0100
+Subject: Kate addons not working on Fedora 40 KDE
+In-Reply-To: <20240509110922.268c27aa@booklife>
+References: <47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>
+ <20240509110922.268c27aa@booklife>
+Message-ID: <33083ffd1e2e702f3ea807f3078f1dfc@oijn.uk>
+
+Thomas,
+
+thanks for the tip - it is what I suspected.
+I would also like to thank you for your efforts.
+
+On 2024-05-09 10:09, Thomas Friedrichsmeier wrote:
+> Hi,
+> 
+> On Wed, 08 May 2024 01:08:03 +0100
+> "rkward @ oijn" <rkward-users at oijn.uk> wrote:
+>> Seems Kate plugin path may have changed?
+> 
+> yes, but more importantly kate is now based on KF6/Qt6, and so the
+> kate plugins will not work with a KF5/Qt5 version of RKWard. I'm 
+> working
+> on a KF6 version, but it will be some more time before a release.
+> 
+> ... Don't hesitate to ask for assistance with that!
+> 
+> Regards
+> Thomas
+
+From alfonsociologo at gmail.com  Sun May 12 04:58:47 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sat, 11 May 2024 21:58:47 -0600
+Subject: Reset Kate addons to origianl config
+Message-ID: <CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>
+
+Hello and thank you in advance,
+
+This might be related with "Kate addons not working on Fedora 40 KDE", but
+I still need help with resetting kate's plugins to original selection since
+I cant open RKWard, it crashes on startup since I selected git blame plugin.
+>From terminal:
+$ rkward
+QCommandLineParser: already having an option named "h"
+QCommandLineParser: already having an option named "help-all"
+QCommandLineParser: already having an option named "v"
+Violación de segmento (`core' generado)
+$
+
+I´m on RKward daily for cran...
+
+0.7.5+0.7.6+devel1-0daily+202405090317~ubuntu22.04.1
+
+How can I reset the selection?
+
+Regards
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240511/b1736c42/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Sun May 12 10:35:23 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 12 May 2024 11:35:23 +0200
+Subject: Reset Kate addons to origianl config
+In-Reply-To: <CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>
+References: <CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>
+Message-ID: <20240512113523.1b1670d4@booklife>
+
+On Sat, 11 May 2024 21:58:47 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+> How can I reset the selection?
+
+The easiest will be to edit ~/.config/rkwardrc . There is a section
+[Kate Plugins] (you can edit or remove this).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240512/c6e3cab5/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Sun May 12 10:44:00 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 12 May 2024 11:44:00 +0200
+Subject: Kate addons not working on Fedora 40 KDE
+In-Reply-To: <20240509110922.268c27aa@booklife>
+References: <47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>
+ <20240509110922.268c27aa@booklife>
+Message-ID: <20240512114400.12aaee0a@booklife>
+
+On Thu, 9 May 2024 11:09:22 +0200
+Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:
+> If you are willing to compile from source, you can use a KF6 RKWard,
+> today, and this should indeed be pretty stable, already (on Linux).
+
+I will add, there are now (development snapshot) AppImages of RKWard KF6
+that are expected to work on a wide range of distributions:
+
+https://cdn.kde.org/ci-builds/education/rkward/master/linux/
+
+After downloading, you'll have to chmod u+x the downloaded file.
+
+IMPORTANT: While the AppImage embeds an installation of R, this is
+quite limited in functionality, for technical reasons. Importantly, you
+will not be able to install most R packages. However, you can run the
+AppImage as:
+
+./rkward-xyz-AppImage --r-executable /usr/bin/R
+
+to use your system installed full-featured R. (This is still
+fairly fresh, and admittedly still somewhat experimental, therefore no
+UI support for selecting the R version, so far).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240512/626b8ebe/attachment.sig>
+

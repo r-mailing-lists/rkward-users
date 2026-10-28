@@ -1,0 +1,122 @@
+From rkward-users at lists.sourceforge.net  Tue Aug  7 02:29:51 2018
+From: rkward-users at lists.sourceforge.net (Francisco Cribari via RKWard-users)
+Date: Tue, 07 Aug 2018 01:29:51 -0000
+Subject: [rkward-users] [rkward:discussion] RKWard and dark theme
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/9b1eb819d95c0bb1230cb69ab2485af3930958f1.discussion@rkward.p.sourceforge.net>
+
+I am running RKWard under Arch Linux + KDE Plasma with the Breeze dark theme. The rkward_welcome text is unreadable. Is there a way to change the font color for that tab? Thank you. 
+
+
+---
+
+[RKWard and dark theme](https://sourceforge.net/p/rkward/discussion/165574/thread/12142122/?limit=25#a9a2)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180807/8af8b79d/attachment.html>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Check out the vibrant tech community on one of the world's most
+engaging tech sites, Slashdot.org! http://sdm.link/slashdot
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+From rkward-users at lists.sourceforge.net  Thu Aug 16 11:56:22 2018
+From: rkward-users at lists.sourceforge.net (Kate Rogers via RKWard-users)
+Date: Thu, 16 Aug 2018 10:56:22 -0000
+Subject: [rkward-users] [rkward:discussion] Open Script File / Workspace Saving
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/fdf26ac49498d54df7f8b261fe9426a42542c5fe.discussion@rkward.p.sourceforge.net>
+
+Hi,
+
+I've been having some issues with Rkward since this morning:
+
+The Open Script File(s) dialog window appears empty, there are no directories or files shown. Trying to navigate somewhat via the Places panel shows the same issues for any of the directories that I can choose there. This issue does not occur when I choose the Open Workspace dialog window.
+
+At the same time I'm having issues with saving workspaces. When I choose a recently open script, I can work on that and run it, but I can' t save it in a new workspace. I can load old workspaces though (but the open script issue occurs there again too). 
+
+I have tried to reboot my OS, and reinstalling rkward; neither worked. Here is my session info:
+
+> rk.sessionInfo()
+-- Frontend --
+RKWard version: 0.7.0b
+KDE Frameworks version (compile time): 5.18.0
+Qt version (runtime): 5.5.1
+Local config directory: /home/kate/.config
+RKWard storage directory: /home/kate/.rkward/
+Backend version (as known to the frontend): 3.4.4
+
+Debug message file (this may contain relevant diagnostic output in case of trouble):
+/tmp/rkward.frontend
+
+-- Backend --
+Debug message file (this may contain relevant diagnostic output in case of trouble):
+/tmp/rkward.rbackend
+
+R version (compile time): 3.4.4  (2018-03-15 r74408)
+R runtime session info:
+R version 3.4.4 (2018-03-15)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 16.04.5 LTS
+
+Matrix products: default
+BLAS: /usr/lib/libblas/libblas.so.3.6.0
+LAPACK: /usr/lib/lapack/liblapack.so.3.6.0
+
+locale:
+ [1] LC_CTYPE=en_CA.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=en_CA.UTF-8           LC_COLLATE=en_CA.UTF-8       
+ [5] LC_MONETARY=en_CA.UTF-8       LC_MESSAGES=en_CA.UTF-8      
+ [7] LC_PAPER=en_CA.UTF-8          LC_NAME=en_CA.UTF-8          
+ [9] LC_ADDRESS=en_CA.UTF-8        LC_TELEPHONE=en_CA.UTF-8     
+[11] LC_MEASUREMENT=en_CA.UTF-8    LC_IDENTIFICATION=en_CA.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] hash_2.2.6   rkward_0.7.0
+
+loaded via a namespace (and not attached):
+[1] compiler_3.4.4 tools_3.4.4   
+
+Any help is greatly appreciated :)
+
+
+
+---
+
+[Open Script File / Workspace Saving](https://sourceforge.net/p/rkward/discussion/165574/thread/16f3aa3d/?limit=25#6e94)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180816/bbad2ec3/attachment.html>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Check out the vibrant tech community on one of the world's most
+engaging tech sites, Slashdot.org! http://sdm.link/slashdot
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+

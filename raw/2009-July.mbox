@@ -1,0 +1,227 @@
+From nono.231 at gmail.com  Sun Jul 12 08:26:31 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Sun, 12 Jul 2009 11:26:31 +0300
+Subject: [rkward-users] Call for testing: RKWard 0.5.1-pre3 / release
+	schedule
+In-Reply-To: <200906302220.44417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906302220.44417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550907120126r3a4fe4deme7cb23af41ba5e4e@mail.gmail.com>
+
+Hi Thomas,
+
+A small bug in the windows version, now that I had the time to play. The CD
+to script directory does not work because of the slash before C:, See the
+example below.
+
+setwd ("/C:/PHD-11-07-09/Python_R/scientific_R/rs")
+Error in eval(expr, envir, enclos) : cannot change working directory
+
+setwd ("C:/PHD-11-07-09/Python_R/scientific_R/rs")
+this works.
+
+The same problem applies when somebody tries to load a workspace. However
+the problem does not exist in loading script files.
+
+BTW, I got a netbook with windows XP and 1MB RAM, and RKWard runs fine (with
+the exception of PHP and the above issue).
+
+Regards,
+Ilias
+
+2009/6/30 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> Hi all,
+>
+> I've prepared new preview release of the upcoming RKWard 0.5.1, and would
+> like
+> to ask you to do some testing:
+> http://rkward.sf.net/temp/rkward-0.5.1-pre3.tar.gz
+>
+> A windows .exe will probably follow tomorrow. It will be linked on the
+> download page:
+>
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Download_RKWard.
+>
+> The release schedule is available in the wiki, this time, at
+>
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule
+> .
+>
+> As you can see the period for testing / translations is quite long, with
+> the
+> deadline at July, 20th for both. I will be away from E-Mail during much of
+> that time, but I'll make sure to look at everything that you report.
+>
+> The targetted date for the final release is July, 28th.
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090712/dabe635d/attachment.html>
+
+From nono.231 at gmail.com  Sun Jul 12 08:34:52 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Sun, 12 Jul 2009 11:34:52 +0300
+Subject: [rkward-users] Call for testing: RKWard 0.5.1-pre3 / release
+	schedule
+In-Reply-To: <3ff92a550907120126r3a4fe4deme7cb23af41ba5e4e@mail.gmail.com>
+References: <200906302220.44417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550907120126r3a4fe4deme7cb23af41ba5e4e@mail.gmail.com>
+Message-ID: <3ff92a550907120134o5354b241o4127976b287a996e@mail.gmail.com>
+
+2009/7/12 I. Soumpasis <nono.231 at gmail.com>
+
+>
+> BTW, I got a netbook with windows XP and 1MB RAM, and RKWard runs fine
+> (with the exception of PHP and the above issue).
+>
+>
+Well, actually about the PHP issue, it loads faster, but when I click
+submit, it takes me to the output, but the output is empty. If e.g you
+select a histogram, you can preview it right, but when you submit the
+histogram is not in the output. Does anybody else has the same problem?
+
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090712/d25f6e6d/attachment.html>
+
+From nono.231 at gmail.com  Wed Jul 15 05:58:01 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Wed, 15 Jul 2009 08:58:01 +0300
+Subject: [rkward-users] Call for testing: RKWard 0.5.1-pre3 / release
+	schedule
+In-Reply-To: <3ff92a550907120134o5354b241o4127976b287a996e@mail.gmail.com>
+References: <200906302220.44417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550907120126r3a4fe4deme7cb23af41ba5e4e@mail.gmail.com>
+	<3ff92a550907120134o5354b241o4127976b287a996e@mail.gmail.com>
+Message-ID: <3ff92a550907142258j6a548ea1t415e6036f2e3db64@mail.gmail.com>
+
+As an update I tried through the R console to send a graph at the output and
+failed.
+rk.graph.on()
+x<-rnorm(1000)
+hist(x)
+rk.graph.off()
+null device
+
+The same with printing
+
+rk.print(mean(x))
+
+Could it be the same issue as above with the extra slash?
+
+Ilias
+
+2009/7/12 I. Soumpasis <nono.231 at gmail.com>
+
+>
+>
+> 2009/7/12 I. Soumpasis <nono.231 at gmail.com>
+>
+>>
+>> BTW, I got a netbook with windows XP and 1MB RAM, and RKWard runs fine
+>> (with the exception of PHP and the above issue).
+>>
+>>
+> Well, actually about the PHP issue, it loads faster, but when I click
+> submit, it takes me to the output, but the output is empty. If e.g you
+> select a histogram, you can preview it right, but when you submit the
+> histogram is not in the output. Does anybody else has the same problem?
+>
+> Ilias
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090715/4df0f50f/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jul 24 12:10:24 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 24 Jul 2009 14:10:24 +0200
+Subject: [rkward-users] Call for testing: RKWard 0.5.1-pre4 / updated
+	release schedule
+Message-ID: <200907241410.28528.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+I have extended the release timeline for RKWard 0.5.1, slightly, and prepared 
+another preview release (0.5.1-pre4). If you can find the time, please do some 
+testing, and provide your feedback, if possible, until Monday, July 27.
+
+The deadline for translations is also extended to July 27.
+
+Downloads for windows and linux/unix are linked from the download page: 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Download_RKWard .
+
+The updated release schedule can be found in the wiki at:
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090724/a613bc6f/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jul 31 20:01:14 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 31 Jul 2009 22:01:14 +0200
+Subject: [rkward-users] RKWard 0.5.1-rc1
+Message-ID: <200907312201.19469.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+With another small delay, the first release candidate of RKWard 0.5.1 is now 
+available:
+http://sourceforge.net/projects/rkward/files/Under_Development/rkward-0.5.1-
+rc1.tar.gz/download
+
+If nothing grave turns up, this will be turned into the official 0.5.1 release 
+without further changes on Tuesday, August 4. If you have some time to spare, 
+please give this version another round of testing, and report anything that 
+you find. In particular, I am somewhat worried about this bug report:
+http://sourceforge.net/tracker/?func=detail&atid=459007&aid=2828002&group_id=50231
+
+If you encounter any crashes with -rc1, particularily after switching between 
+windows, please post a short notice, including your version of kdelibs.
+
+--- Packagers ---
+
+If you want to start preparing packages for 0.5.1, there is a .tar.gz with the 
+version number already set to 0.5.1 at 
+http://rkward.sourceforge.net/temp/0.5.1-rc1/ . Please do not put any packages 
+with version number 0.5.1 (and no suffix) into the wild before the official 0.5.1 
+release. Also, in case of grave problems, this .tar.gz may still need to be 
+changed.
+
+--- Everybody with SVN write access ---
+
+The 0.5.1 release is now in a separate branch. Therefore SVN trunk is open to 
+all commits, including feature additions, again. If you make any changes that 
+you think should become part of the 0.5.1 release, write to rkward-devel.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090731/07b0e601/attachment.sig>
+

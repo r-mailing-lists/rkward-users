@@ -1,0 +1,333 @@
+From p.leo at uq.edu.au  Mon Jan 19 03:40:36 2009
+From: p.leo at uq.edu.au (Paul Leo)
+Date: Mon, 19 Jan 2009 13:40:36 +1000
+Subject: [rkward-users] How to save a figure?
+Message-ID: <DE3D1F203DAF7A4CB259560D2801DF8B03BE6109@UQEXMB2.soe.uq.edu.au>
+
+This is probably a pretty simple question, but what is the rkward
+procedure/philosophy  for saving a figure generated from the console (as
+a jpeg say)?
+
+ 
+
+R under windows (using RGUI) allows you to save a figure by selecting
+the window and doing file->save as. In Rkward, as in Linux R, I can
+change the output device and "replot" . Is there another way ,  akin to
+the RGUI   , to save figures in Rkward that I have overlooked?
+
+ 
+
+Thanks in advance
+
+Paul
+
+ 
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090119/af0fa799/attachment.html>
+
+From noreply at sourceforge.net  Sun Jan 25 14:44:51 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 Jan 2009 14:44:51 +0000
+Subject: [rkward-users] [rkward - Help] Trouble Installing OpenSUSE 11.1
+Message-ID: <6245823.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6245823
+By: pregression
+
+Hello,
+
+I am relatively new to linux, forgive my ignorance. I am trying to install rkward
+from the command line and having considerable trouble. I have opensuse 11.1
+with KDE4. I have installed the dependencies for this package. I have tried
+several different approaches to getting it installed with the error message
+below being displayed. Can someone walk me through the syntax for installation.
+
+@linux-74qy:~/Documents/rkward-0.5.0b/rkward> cmake . -DCMAKE_INST         
+ALL_PREFIX=$KDEDIR -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_TYPE=debugfu   
+ll
+-- The C compiler identification is unknown                                
+-- The CXX compiler identification is unknown                              
+CMake Error: your C compiler: "CMAKE_C_COMPILER-NOTFOUND" was not found.   
+Please set CMAKE_C_COMPILER to a valid compiler path or name.
+CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not fo   
+und.   Please set CMAKE_CXX_COMPILER to a valid compiler path or name.
+CMake Error at dataeditor/CMakeLists.txt:19 (QT4_AUTOMOC):                 
+  Unknown CMake command "QT4_AUTOMOC".                                     
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 2.6)
+
+  should be added at the top of the file.  The version specified may belower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan 25 18:07:21 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 Jan 2009 18:07:21 +0000
+Subject: [rkward-users] [rkward - Help] RE: .rk.get.structure() strange
+	behaviour
+In-Reply-To: <4956278.165574@sourceforge.net>
+Message-ID: <6247285.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6247285
+By: angelosantana
+
+Hello,
+
+I'm experiencing exactly the same problem. For several years I have used Tinn-R
+under Windows, but now I have decided to turn to Linux, and I've been using
+Ubuntu for the first time three weeks ago. Rkward seems to me a very good GUI
+for R, but having to wait 15-25 seconds each time I change data makes it
+dissapointing. Have your found any solution to this problem since your post?
+
+Thanks
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan 25 20:10:14 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 Jan 2009 20:10:14 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6248411.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6248411
+By: pregression
+
+Are there any known problems with installing rkward in OpenSUSE 11.1; or is
+this most likely a user (me) error with regards to syntax or cmake options?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan 25 23:58:21 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 Jan 2009 23:58:21 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6248411.165574@sourceforge.net>
+Message-ID: <6250190.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6250190
+By: enliteme
+
+Hi there,
+
+Do you have some specific reason to compile rkward from source?
+Because you can install it through YaST.
+
+I had some problems with rkward using KDE 4 (icons disappeared) both in Suse
+and in Ubuntu.
+I think OpenSUSE 11 comes with KDE 4 by default. (but you can switch back to
+KDE3 or to Gnome).
+I had no problem installing/using rkward with KDE 3 though...
+So, it can be a problem with KDE4... 
+
+By the way, reading your error message, I would start by checking if I have
+the correct compiler installed.
+
+> which c++
+or
+> which gcc
+
+or whatever it is specified in the docs.
+
+Good luck,
+
+gabor
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jan 26 17:11:34 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Jan 2009 17:11:34 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6258670.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6258670
+By: pregression
+
+Gabor,
+
+Thank you for your response. I searched YasT install software and did not find
+the installer? Do you know term I should search for ? Thank you,
+
+PR
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jan 26 22:39:19 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Jan 2009 22:39:19 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6261592.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6261592
+By: ldmaze
+
+I would be interested to hear how this goes for you.  I also wanted to install
+on OS 11.1, but I found that the repository is lacking the rkward RPM for 11.1
+(it has the two r-base rpms, one called wyrd..., and one other).
+
+I was thinking of using Yast software manager to install r-base, then downloading
+the rkward rpm from the 11.0 repository and using rpm -Ivh at the command line.
+
+Does that sensible?
+
+Cheers. 
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jan 26 22:20:16 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Jan 2009 22:20:16 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6261437.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6261437
+By: pregression
+
+Just an update-- I found out how to install. I needed to add the 11.0 repository,
+as the 11.1 has not been updated. Hopefully this wont cause trouble. Thank you
+for your help.
+
+PR
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Jan 28 14:48:57 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 28 Jan 2009 14:48:57 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6280603.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6280603
+By: pregression
+
+This worked well for me. As I am in KDE4 using the repo from 11.0. I wonder
+when the rkward repo for 11.1 will be added? Any contact with the person that
+updates these packages would be very helpful.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Jan 29 18:18:11 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 29 Jan 2009 18:18:11 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6245823.165574@sourceforge.net>
+Message-ID: <6291498.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6291498
+By: pregression
+
+Just a quick note: The version downloaded from the 11.0 repo is version .49,
+instead of the most recent version .5. Any idea when the newer version will
+be updated to the repo?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Jan 31 08:51:13 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 31 Jan 2009 08:51:13 +0000
+Subject: [rkward-users] [rkward - Help] RE: Trouble Installing OpenSUSE 11.1
+In-Reply-To: <6250190.165574@sourceforge.net>
+Message-ID: <6308718.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6308718
+By: kapatp
+
+Did you get around the compiling issue? The debian/ubuntu type of instructions
+are here:
+http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN
+
+See if you can follow it. Try to find the corresponding packages for OpenSUSE.
+Get the code from svn, it has some recent bug fixes. Let us know how things
+work out. If you are having trouble with these instructions we can go step by
+step and try to fix it.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

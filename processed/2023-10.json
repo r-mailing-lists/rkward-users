@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2023-10",
+  "messages": [
+    {
+      "id": "msg-f5bd3b8cf436",
+      "message_id": "<CAMqnA+jJXkRxi5Y5QdUOKxcqmbqYQr9Zir+v524PfjqTPWVBKA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2023-10-13T17:00:52Z",
+      "subject": "Problems with knitr and rmarkdown",
+      "subject_clean": "Problems with knitr and rmarkdown",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello to all, once again thanking you all for all the hard work that you\nhave been putting into RKWard.\n\nI've been using RKWard\n\n   - R. Version 0.7.5z+0.7.6+devel1. https://rkward.kde.org\n   - With R cran base v4.3.1\n   - System:\n     Kernel: 5.15.0-86-generic x86_64 bits: 64 compiler: gcc v: 11.4.0\n   Desktop: Cinnamon 5.8.4\n       tk: GTK 3.24.33 wm: muffin dm: LightDM Distro: Linux Mint 21.2\n   Victoria base: Ubuntu 22.04 jammy\n\nSince I've updated to linux mint 21, I have tried to execute the next code\nfrom the export markdown menu:\n\nlocal({\n> ## Preparar\n> require(knitr)\n> require(rmarkdown)\n> rk.check.for.pandoc(\n>   stop_if_missing=TRUE,\n>   output_format=\"latex\"\n> )\n\n## Computar\n> render(\n>   input=\"/home/cano/Escritorio/ENOE/Importclean/proyecto.Rmd\",\n>   output_format=\"pdf_document\",\n>   output_file=\"/home/cano/Escritorio/ENOE/Importclean/proyecto.pdf\",\n>   quiet=TRUE\n> )\n> ## Imprimir el resultado\n> rk.header (\"Exportar archivo RMarkdown\", parameters=list(\"Archivo\n> RMarkdown\"=\"/home/user//proyecto.Rmd\",\n> \"Formato de destino\"=\"PDF\",\n> \"Guardar como\"=\"/home/user/proyecto.pdf\"))\n> })\n\n\nBut when starting to evaluate R code from lines 51-54, I have got:\n\nLoading required package: knitr\nLoading required package: rmarkdown\n\nQuitting from lines 51-54 [unnamed-chunk-1] (proyecto.Rmd)\nError in `.rk.do.call()`:\n! no se pudo encontrar la función \".rk.do.call\"\nBacktrace:\n  1. rmarkdown::render(...)\n  2. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)\n  3. knitr:::process_file(text, output)\n  7. knitr:::process_group.block(group)\n  8. knitr:::call_block(x)\n     ...\n 16. knitr:::sew.recordedplot(X[[i]], ...)\n 17. base::mapply(...)\n 18. knitr (local) `<fn>`(...)\n 21. knitr:::plot2dev(...)\n 22. grDevices::dev.off()\n\nQuitting from lines 51-54 [unnamed-chunk-1] (proyecto.Rmd)\nError in `.rk.do.call()`:\n! no se pudo encontrar la función \".rk.do.call\"\nBacktrace:\n  1. rmarkdown::render(...)\n  2. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)\n  3. knitr:::process_file(text, output)\n  7. knitr:::process_group.block(group)\n  8. knitr:::call_block(x)\n  9. knitr:::block_exec(params)\n 10. knitr:::eng_r(options)\n 11. grDevices::dev.off(dv)\n\n\nStates  that the function \".rk.do.call\" has not been found.\nI didn't have this problem on the previous version of mint.  Is it possible\nto fix this?\nThanks to all.\nBest regards\nAlfonso.\n______________________\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231013/c5bb1c60/attachment.htm>",
+      "body_snippet": "Hello to all, once again thanking you all for all the hard work that you\nhave been putting into RKWard.\n\nI've been using RKWard\n\n   - R. Version 0.7.5z+0.7.6+devel1. https://rkward.kde.org\n   - With R",
+      "thread_id": "thread-f5bd3b8cf436",
+      "thread_depth": 0,
+      "month": "2023-10"
+    },
+    {
+      "id": "msg-f932fa93e0c0",
+      "message_id": "<CAMqnA+i-oNd6GniBUQ5d_ArbYByqF=LmYGFZm9s4Vfdjcr4dQg@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2023-10-25T01:20:41Z",
+      "subject": "Problems with knitr and rmarkdown SOLVED!!!",
+      "subject_clean": "Problems with knitr and rmarkdown SOLVED!!!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello to all, once again thanking you all for all the hard work that you\nhave been putting into RKWard.\nThe issue with the function: \".rk.do.call\"\nHas been solved at least on Versión \"0.7.5z+0.7.6+devel3\"\nTHANKS!!!!\nBest regards.\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231024/c87526f6/attachment.htm>",
+      "body_snippet": "Hello to all, once again thanking you all for all the hard work that you\nhave been putting into RKWard.\nThe issue with the function: \".rk.do.call\"\nHas been solved at least on Versión \"0.7.5z+0.7.6+dev",
+      "thread_id": "thread-f932fa93e0c0",
+      "thread_depth": 0,
+      "month": "2023-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f5bd3b8cf436",
+      "subject": "Problems with knitr and rmarkdown",
+      "message_count": 1,
+      "participants": [
+        "DES Alfonso Cano Robles"
+      ],
+      "started": "2023-10-13T17:00:52Z",
+      "last_reply": "2023-10-13T17:00:52Z",
+      "root_message_id": "msg-f5bd3b8cf436"
+    },
+    {
+      "id": "thread-f932fa93e0c0",
+      "subject": "Problems with knitr and rmarkdown SOLVED!!!",
+      "message_count": 1,
+      "participants": [
+        "DES Alfonso Cano Robles"
+      ],
+      "started": "2023-10-25T01:20:41Z",
+      "last_reply": "2023-10-25T01:20:41Z",
+      "root_message_id": "msg-f932fa93e0c0"
+    }
+  ]
+}

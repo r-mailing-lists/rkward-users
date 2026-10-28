@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2021-07",
+  "messages": [
+    {
+      "id": "msg-0d84cf872e2e",
+      "message_id": "<CACqvVumaLZJ5r4BxbPqHKhGOC42JZ3t+a-tBPUCQhtd=QohL2w@mail.gmail.com>",
+      "from_name": "Juan Nachon",
+      "from_email_hash": "95387f94db064b198ed917fb85f8276a67e2c6cd8ac09859a17115fbfa417619",
+      "date": "2021-07-26T21:23:36Z",
+      "subject": "Thanks!",
+      "subject_clean": "Thanks!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Today I spent the whole day trying to figure out how to get an R interface\nto run on my mobile, because I want to do some work during a road trip but\ncan't take a bulky pc with me. I ended up installing RkWard through a\nDebian environment app for android and was pleasantly surprised by its\nsmoothness. It runs as good as Rstudio does on my desktop. I feel really\nglad to have come across it.\n\nKind regards.\nJuan\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20210726/c1d191c8/attachment.htm>",
+      "body_snippet": "Today I spent the whole day trying to figure out how to get an R interface\nto run on my mobile, because I want to do some work during a road trip but\ncan't take a bulky pc with me. I ended up installi",
+      "thread_id": "thread-0d84cf872e2e",
+      "thread_depth": 0,
+      "month": "2021-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0d84cf872e2e",
+      "subject": "Thanks!",
+      "message_count": 1,
+      "participants": [
+        "Juan Nachon"
+      ],
+      "started": "2021-07-26T21:23:36Z",
+      "last_reply": "2021-07-26T21:23:36Z",
+      "root_message_id": "msg-0d84cf872e2e"
+    }
+  ]
+}

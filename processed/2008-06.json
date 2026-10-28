@@ -1,0 +1,251 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-06",
+  "messages": [
+    {
+      "id": "msg-cebd0773fd29",
+      "message_id": "<5005367.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-03T17:04:33Z",
+      "subject": "[rkward-users] [rkward - Help] Changing Work Directory Crashes X",
+      "subject_clean": "[rkward-users] [rkward - Help] Changing Work Directory Crashes X",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5005367\nBy: drakegis\n\nEvery time I want to change from one project to another, and I try a (second)\nchange in the working directory, (using the menu options ,haven't try with the\nconsole), RKward crashes and so X. I'm using version 0.49 in Ubuntu (with Gnome)\nhardy heron 86x64. I'm open to suggestions.\nThanks\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5005367\nBy: drakegis\n\nEvery time I want to change from one project to another, and I try a (second)\nchange in the",
+      "thread_id": "thread-cebd0773fd29",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-81eaec2afda4",
+      "message_id": "<5005466.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-03T17:55:35Z",
+      "subject": "[rkward-users] [rkward - Help] nice RKward",
+      "subject_clean": "[rkward-users] [rkward - Help] nice RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5005466\nBy: drakegis\n\nIs it possible to run\n>>> nice -19 RKward \nwill it \"nice\" R too ?\nThanks\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5005466\nBy: drakegis\n\nIs it possible to run\n>>> nice -19 RKward \nwill it \"nice\" R too ?\nThanks\n\n\n\n_______________",
+      "thread_id": "thread-81eaec2afda4",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-5717b7da9d8f",
+      "message_id": "<5006155.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-03T23:56:25Z",
+      "subject": "[rkward-users] [rkward - Help] Changing Work Directory Crashes X (Update)",
+      "subject_clean": "[rkward-users] [rkward - Help] Changing Work Directory Crashes X (Update)",
+      "in_reply_to": "<5005367.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5006155\nBy: drakegis\n\nI found out that when I run rkward from a console the problem disapear. It seems\nthat only opcurrs when I use the menu access in Ubuntu.\n\nI also found that the console inform me about this:\n\nkdecore (KAction): WARNING: KAction::insertKAccel( kaccel = 0x85dc10 ): KAccel\nobject already contains an action name \"window_close\"\n\nI'm guessing that there is a KDE library missing or conflicting... any ideas ?\nThanks\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5006155\nBy: drakegis\n\nI found out that when I run rkward from a console the problem disapear. It seems\nthat only ",
+      "thread_id": "thread-cebd0773fd29",
+      "thread_depth": 1,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-9354dfb4dc8a",
+      "message_id": "<5013700.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-07T07:12:03Z",
+      "subject": "[rkward-users] [rkward - Help] Single Quotes in Output View",
+      "subject_clean": "[rkward-users] [rkward - Help] Single Quotes in Output View",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5013700\nBy: bcgreen\n\nThis is what I get for three asterisks surrounded by single quotess in the output\npane:\n\n???***???\n\nAnyone have a solution for this?\n\nThanks!\nBryan\n\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5013700\nBy: bcgreen\n\nThis is what I get for three asterisks surrounded by single quotess in the output\npane:\n\n???",
+      "thread_id": "thread-9354dfb4dc8a",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-844e41e9c533",
+      "message_id": "<5019176.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-09T22:10:41Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Single Quotes in Output View",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Single Quotes in Output View",
+      "in_reply_to": "<5013700.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5019176\nBy: fsando\n\nHi bryan\nI have the same problem. I don't have a ready solution but maybe a pointer.\n\nThe output comes from a html ; ~/.rkward/rk_out.html (it's in a hidden folder\nnamed '.rkward' in your home folder). This file is updated as more output is\ngenerated.\nThe problem is clearly an encoding problem which probably comes from rkward\ngenerating output in one encoding while the output rendering uses another\nencoding.\nI started looking into this last November but haven't had the time to do anything\nuseful since.\n\nI believe the solution consists of two parts. \n\nOne is changing the function that generates the output so that encoding can\nbe controlled (as I recall this function is called something to the tune of\nrk.out() ).\n\nSecond part should be to put encoding code in the html file like this: meta\nhttp-equiv=\"content-type\" content=\"text/html; charset=utf-8\"\n\nI'm not sure how the final content of the output window is generated but it\ncould be that some html code is wrapped around the output file then the second\nstep could be to control this code via some settings.\n\nThis should lead to content being rendered in the same encoding as it was\ngenerated.\n\nI'm also not sure which browser is used for rendering but my guess is that it's\nkonqueror as rkward is a kde app. Perhaps a solution could be to change some\nsettings related to konqueror?\n\n- if you find a solution I would like to hear.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5019176\nBy: fsando\n\nHi bryan\nI have the same problem. I don't have a ready solution but maybe a pointer.\n\nThe out",
+      "thread_id": "thread-9354dfb4dc8a",
+      "thread_depth": 1,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-a22c44328776",
+      "message_id": "<5020844.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-10T14:52:08Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] Procedures for Likert Scales",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] Procedures for Likert Scales",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5020844\nBy: yayopoint\n\nSorry for the english, I speak in spanish\n\nIn social psycology and sociology is usual the use of attitude scales, an example\nis the Likert type, which is the most common.\n\nhttp://en.wikipedia.org/wiki/Likert_Scales\n\nThis scales must be procesed whith relliability tests, R includes the cronbach\nalpha in the packages psy and psychometric. And I thing that this procedures\nwill be useful in the RKWard package.\n\nI don't know programation (I'm a sociologist), but if someone want help, I belive\nthat I could be useful.\n\n\n\nThank you for RKWard\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5020844\nBy: yayopoint\n\nSorry for the english, I speak in spanish\n\nIn social psycology and sociology is usual the ",
+      "thread_id": "thread-a22c44328776",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-7f47445221ca",
+      "message_id": "<5029909.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-13T18:52:05Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] assoc stats in contingency tables",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] assoc stats in contingency tables",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5029909\nBy: yayopoint\n\nThe package VCD includes a function that computes some assoc stats for contingency\ntables, I belive that could be a good idea to include it in the section crosstabs\n> Crosstabs N to 1.\n\nThere is a link to the package:\nhttp://cran.r-project.org/web/packages/vcd/\n\nand the function is assocstats. Ther is the example in the documentation:\n\ndata(\"Arthritis\")\ntab <- xtabs(~Improved + Treatment, data = Arthritis)\nsummary(assocstats(tab))\n\nAlso, I want to suggest the inclusion of prop.table, for the percentage of the\ncells in the table, respecto for the row, the column and the total\n\nCongratulations for the program, is very good, I don't want to be demanding\nwith you, I only want to help making suggestions.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5029909\nBy: yayopoint\n\nThe package VCD includes a function that computes some assoc stats for contingency\ntables,",
+      "thread_id": "thread-7f47445221ca",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-31380ff9f250",
+      "message_id": "<5029996.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-13T19:48:26Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] RE: assoc stats in contingency tables",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] RE: assoc stats in contingency tables",
+      "in_reply_to": "<5029909.165573@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5029996\nBy: nono_231\n\nDear yayopoint,\n\nI would like to thank you for your suggestions. Unfortunately, most of the people\ncontributing to RKWard (including myself) are a little busy, so don't expect\nmiracles.\n\nOn the plugin: The main idea in developing RKWard is to use as less libraries\nas possible (memory and speed issues). This plugin N to 1 is based on table\nand chisq.test functions and also contains a barplot option with sufficient\nlevel parametrization. The vcd package will load itself and more three packages\n(MASS, grid and colorspace) and will give as return the likelihood ratio,\nPhi-Coefficient, Contingency Coeff. and Cramer's V. I really don't know where\nis the break-even point there and how useful it would be for the users.\n\nKind Regards,\nIlias\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5029996\nBy: nono_231\n\nDear yayopoint,\n\nI would like to thank you for your suggestions. Unfortunately, most of the",
+      "thread_id": "thread-7f47445221ca",
+      "thread_depth": 1,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-f9f4b856b0fd",
+      "message_id": "<5032024.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-14T21:34:55Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] RE: assoc stats in contingency tables",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] RE: assoc stats in contingency tables",
+      "in_reply_to": "<5029909.165573@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5032024\nBy: yayopoint\n\nI'm working in some changes for the plugin, the next link is for download my\nversion:\n\nhttp://rapidshare.com/files/122477126/crosstabplugin.tar.bz2.html\n\nThere have many errors, but it work\n\nIf you want i can mantain this plugins an make all the fixes, but I want that\nyou test it and tell me if it good to you or not...\n\n\nPlease give me an answer to my mail\n\nyayopoint at gmail.com\n\nthanks...\n\nAhh, I'm starting to work in the relliability plug in, I submit it in a few days\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5032024\nBy: yayopoint\n\nI'm working in some changes for the plugin, the next link is for download my\nversion:\n\nhtt",
+      "thread_id": "thread-7f47445221ca",
+      "thread_depth": 1,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-ca39e4dc7c12",
+      "message_id": "<5049221.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-23T12:42:49Z",
+      "subject": "[rkward-users] [rkward - Help] Help - Installation",
+      "subject_clean": "[rkward-users] [rkward - Help] Help - Installation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5049221\nBy: cs_cabrio\n\nHello,\n\nI have installed R 2.0.7 for statistical usage on MS Windows XP Professional\nsystem.\n\nI would like to use the grafic GUI of rkward so that the usage of R is easier.\nI don't have much understanding of programming language and I am not very \"computer\nliterate\".\n\nSo my questions are:\n* Is it correct that rkward will provide a grafic user interface for the usage\nof R?\n* How do I install rkward so that I can use R with grafic GUI? I don't understand\nthe instructions given on the Website.\n\nI would appreciate any help on this issue!\n\nThank you very much for your efforts in advance!\n\nChristian\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5049221\nBy: cs_cabrio\n\nHello,\n\nI have installed R 2.0.7 for statistical usage on MS Windows XP Professional\nsyste",
+      "thread_id": "thread-ca39e4dc7c12",
+      "thread_depth": 0,
+      "month": "2008-06"
+    },
+    {
+      "id": "msg-6807191a4f41",
+      "message_id": "<5049247.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-06-23T12:56:10Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Help - Installation",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Help - Installation",
+      "in_reply_to": "<5049221.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5049247\nBy: matifou\n\nDear Christian\n\nI think you made the right choice tu use R, even if it is a little bit harder\nto writing the code. RKward would be also the right choiche IF you were on Linux...\nunfortunately, Rkward is currently not running on Windows, so you have the following\npossibilities:\n-use another GUI for Windows, like Rcmdr, rattle or JGR\n-install Linux!!! For example now the distribution Ubuntu 8.04 is really easy\nto install from Windows and does not take much time, even if you are not \"computer\nliterate\".\n-run linux on windows with cygwin. I don't use it personnaly and don't even\nwkno if it is possible...\n\nMat\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5049247\nBy: matifou\n\nDear Christian\n\nI think you made the right choice tu use R, even if it is a little bit harde",
+      "thread_id": "thread-ca39e4dc7c12",
+      "thread_depth": 1,
+      "month": "2008-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cebd0773fd29",
+      "subject": "[rkward-users] [rkward - Help] Changing Work Directory Crashes X",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-03T17:04:33Z",
+      "last_reply": "2008-06-03T23:56:25Z",
+      "root_message_id": "msg-cebd0773fd29"
+    },
+    {
+      "id": "thread-81eaec2afda4",
+      "subject": "[rkward-users] [rkward - Help] nice RKward",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-03T17:55:35Z",
+      "last_reply": "2008-06-03T17:55:35Z",
+      "root_message_id": "msg-81eaec2afda4"
+    },
+    {
+      "id": "thread-9354dfb4dc8a",
+      "subject": "[rkward-users] [rkward - Help] Single Quotes in Output View",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-07T07:12:03Z",
+      "last_reply": "2008-06-09T22:10:41Z",
+      "root_message_id": "msg-9354dfb4dc8a"
+    },
+    {
+      "id": "thread-a22c44328776",
+      "subject": "[rkward-users] [rkward - Open Discussion] Procedures for Likert Scales",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-10T14:52:08Z",
+      "last_reply": "2008-06-10T14:52:08Z",
+      "root_message_id": "msg-a22c44328776"
+    },
+    {
+      "id": "thread-7f47445221ca",
+      "subject": "[rkward-users] [rkward - Open Discussion] assoc stats in contingency tables",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-13T18:52:05Z",
+      "last_reply": "2008-06-14T21:34:55Z",
+      "root_message_id": "msg-7f47445221ca"
+    },
+    {
+      "id": "thread-ca39e4dc7c12",
+      "subject": "[rkward-users] [rkward - Help] Help - Installation",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-06-23T12:42:49Z",
+      "last_reply": "2008-06-23T12:56:10Z",
+      "root_message_id": "msg-ca39e4dc7c12"
+    }
+  ]
+}

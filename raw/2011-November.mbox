@@ -1,0 +1,398 @@
+From noreply at sourceforge.net  Wed Nov  2 09:10:57 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 02 Nov 2011 10:10:57 +0100
+Subject: [rkward-users] [Help] Error with NAMESPACE
+Message-ID: <forum-165574-10772189@sourceforge.net>
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4789779:
+
+Hi!
+I'm having this error at startup, just upgraded R today
+(R version 2.14.0 (2011-10-31)
+Platform: x86_64-pc-linux-gnu (64-bit) )
+and reinstalled rkward from synaptic
+(0.5.7z+0.5.8daily+3457+2011100251202~lucid1
+
+Error in library("rkward") : 
+package ?rkward? does not have a NAMESPACE and should be re-installed
+Error in stopifnot(.rk.app.version == "0.5.7z+0.5.8+devel1") : 
+object '.rk.app.version' not found
+Error: could not find function ".rk.fix.assignments"
+...
+should I just wait for a newer version?
+Thanks
+Agus
+
+
+
+From noreply at sourceforge.net  Wed Nov  2 19:04:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 02 Nov 2011 20:04:09 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <forum-165574-10772189@sourceforge.net>
+Message-ID: <forum-165574-10773415@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4789779:
+
+[quote]should I just wait for a newer version?[/quote]
+
+no, 0.5.7 should be fine. However it has to be compiled against R 2.14 in order
+to work with R 2.14.0. I believe the problem is that you are using our daily
+builds, and we do not currently offer those in a variant that is built against
+the CRAN version of R (I'll have to check, whether it would be possible to add
+this), but you have installed R 2.14 from CRAN. For the moment, your options
+are:
+
+- upgrade to a series of Ubuntu that already ships R 2.14.0 by default
+- compile RKWard from sources instead of using the daily builds. On Ubuntu it's
+not too hard: http://p.sf.net/rkward/svn
+- use our "official stable" PPA. We offer this in a variant for the CRAN version
+of R (https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran).
+
+Regards
+Thomas
+
+
+
+From alobolistas at gmail.com  Thu Nov  3 08:11:11 2011
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Thu, 3 Nov 2011 09:11:11 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <forum-165574-10773415@sourceforge.net>
+References: <forum-165574-10772189@sourceforge.net>
+	<forum-165574-10773415@sourceforge.net>
+Message-ID: <CAG4NReLmhq2rXcbj0M0SUjUPohxUdORBxr43z0X+AtgZNYvJ+A@mail.gmail.com>
+
+The 3rd option works fine, thanks. Having the option of the daily builds was
+nice though.
+
+Agus
+
+2011/11/2 SourceForge.net <noreply at sourceforge.net>:
+> The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4789779:
+>
+> [quote]should I just wait for a newer version?[/quote]
+>
+> no, 0.5.7 should be fine. However it has to be compiled against R 2.14 in order
+> to work with R 2.14.0. I believe the problem is that you are using our daily
+> builds, and we do not currently offer those in a variant that is built against
+> the CRAN version of R (I'll have to check, whether it would be possible to add
+> this), but you have installed R 2.14 from CRAN. For the moment, your options
+> are:
+>
+> - upgrade to a series of Ubuntu that already ships R 2.14.0 by default
+> - compile RKWard from sources instead of using the daily builds. On Ubuntu it's
+> not too hard: http://p.sf.net/rkward/svn
+> - use our "official stable" PPA. We offer this in a variant for the CRAN version
+> of R (https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran).
+>
+> Regards
+> Thomas
+>
+> ------------------------------------------------------------------------------
+> RSA(R) Conference 2012
+> Save $700 by Nov 18
+> Register now
+> http://p.sf.net/sfu/rsa-sfdev2dev1
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Nov  3 08:23:27 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 3 Nov 2011 09:23:27 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <CAG4NReLmhq2rXcbj0M0SUjUPohxUdORBxr43z0X+AtgZNYvJ+A@mail.gmail.com>
+References: <forum-165574-10772189@sourceforge.net>
+	<forum-165574-10773415@sourceforge.net>
+	<CAG4NReLmhq2rXcbj0M0SUjUPohxUdORBxr43z0X+AtgZNYvJ+A@mail.gmail.com>
+Message-ID: <201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 03 November 2011, Agustin Lobo wrote:
+> The 3rd option works fine, thanks. Having the option of the daily builds
+> was nice though.
+
+well, it turned out to be fairly easy to add a CRAN variant of the daily 
+builds. So give this a try:
+https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran .
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111103/bcca5c9f/attachment.sig>
+
+From matthieu.stigler at gmail.com  Thu Nov  3 09:37:39 2011
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Thu, 03 Nov 2011 10:37:39 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <forum-165574-10772189@sourceforge.net>	<forum-165574-10773415@sourceforge.net>	<CAG4NReLmhq2rXcbj0M0SUjUPohxUdORBxr43z0X+AtgZNYvJ+A@mail.gmail.com>
+	<201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4EB260E3.6000506@gmail.com>
+
+Lieber Thomas
+
+short question: having already the other PPA, I guess I need to remove it?
+
+I saw there are two possibilities, remove just ppa or package also?
+-just ppa:
+
+sudo apt-add-repository --remove  ppa:<nom_du_d?p?t>
+
+-also packages:
+
+sudoppa-purgeppa:<nom_du_d?p?t>
+
+do you know whether should be done, and which one?
+
+Thanks!!
+
+Mat
+
+
+Le 03/11/2011 09:23, Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Thursday 03 November 2011, Agustin Lobo wrote:
+>> The 3rd option works fine, thanks. Having the option of the daily builds
+>> was nice though.
+> well, it turned out to be fairly easy to add a CRAN variant of the daily
+> builds. So give this a try:
+> https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran .
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> RSA(R) Conference 2012
+> Save $700 by Nov 18
+> Register now
+> http://p.sf.net/sfu/rsa-sfdev2dev1
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111103/80bde205/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Nov  3 15:35:47 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 3 Nov 2011 16:35:47 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <4EB260E3.6000506@gmail.com>
+References: <forum-165574-10772189@sourceforge.net>
+	<201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4EB260E3.6000506@gmail.com>
+Message-ID: <201111031635.52180.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 03 November 2011, Matthieu Stigler wrote:
+> short question: having already the other PPA, I guess I need to remove it?
+> I saw there are two possibilities, remove just ppa or package also?
+
+I'm not sure, how apt will handle this situation, i.e. whether it will install 
+the package from the new PPA, automatically. To make sure it does, 
+
+> sudoppa-purgeppa:<nom_du_d?p?t>
+
+is probably a good idea. Alternatively,
+
+  sudo apt-get remove rkward
+  sudo apt-add-repository --remove  ppa:<old repo>
+  sudo apt-add-repository ppa:<new repo>
+  sudo apt-get update
+  sudo apt-get install rkward
+
+(rkward is the only package in our PPA, though, so this should not make a 
+difference).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111103/0b7fc17e/attachment.sig>
+
+From alobolistas at gmail.com  Mon Nov  7 12:36:23 2011
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Mon, 7 Nov 2011 13:36:23 +0100
+Subject: [rkward-users] [Help] RE: Error with NAMESPACE
+In-Reply-To: <201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <forum-165574-10772189@sourceforge.net>
+	<forum-165574-10773415@sourceforge.net>
+	<CAG4NReLmhq2rXcbj0M0SUjUPohxUdORBxr43z0X+AtgZNYvJ+A@mail.gmail.com>
+	<201111030923.34067.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAG4NReJwnW=3ffLG3b4EdjogQA+ZifubExbyjAeCTcSqK9f13g@mail.gmail.com>
+
+Works fine from this repo.
+Thanks,
+Agus
+
+2011/11/3 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+> Hi,
+>
+> On Thursday 03 November 2011, Agustin Lobo wrote:
+>> The 3rd option works fine, thanks. Having the option of the daily builds
+>> was nice though.
+>
+> well, it turned out to be fairly easy to add a CRAN variant of the daily
+> builds. So give this a try:
+> https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran .
+>
+> Regards
+> Thomas
+>
+> ------------------------------------------------------------------------------
+> RSA(R) Conference 2012
+> Save $700 by Nov 18
+> Register now
+> http://p.sf.net/sfu/rsa-sfdev2dev1
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+
+
+
+From noreply at sourceforge.net  Tue Nov  8 18:55:19 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Nov 2011 10:55:19 -0800
+Subject: [rkward-users] [Help] Inserting TAB in RKward
+Message-ID: <forum-165574-10787967@sourceforge.net>
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4800433:
+
+Hi, 
+
+Apologies for the straightforward question, but I can't find an answer in the
+documentation.
+
+How do insert a TAB character at the start of a line? The TAB key (and ctrl-I)
+insert 2 spaces rather than a tab when at the beginning of a line, but a TAB
+in the middle or at the end. Is there any way of making the TAB key behave like
+this at the start?
+
+Also, can I change the formatting view, so the tab identifier (>>) is more
+obvious?
+
+Thanks
+
+
+
+From noreply at sourceforge.net  Thu Nov 10 09:39:06 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 10 Nov 2011 01:39:06 -0800
+Subject: [rkward-users] [Help] RE: Inserting TAB in RKward
+In-Reply-To: <forum-165574-10787967@sourceforge.net>
+Message-ID: <forum-165574-10793553@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4800433:
+
+Hi,
+
+[quote]How do insert a TAB character at the start of a line? The TAB key (and
+ctrl-I) insert 2 spaces rather than a tab when at the beginning of a line, but
+a TAB in the middle or at the end. Is there any way of making the TAB key behave
+like this at the start?[/quote]
+
+I agree the configuration options on this are pretty confusing. Do this: Open
+a script window, go to Settings->Configure Editor->Editing->Indentation. You
+will want to set your indentation mode to either "Tabulators" (recommended)
+or "Tabulators and Spaces". For the latter option, make sure that your setting
+for indentation width equals the tab width (e.g. set both to 8 characters).
+
+[quote]Also, can I change the formatting view, so the tab identifier (>>) is
+more obvious?[/quote]
+
+In the configuration dialog, go to "Fonts & Colors". You can adjust the color
+of the "Tab and space markers", there.
+
+Regards
+Thomas
+
+
+
+From irenealabia at gmail.com  Fri Nov 11 02:47:23 2011
+From: irenealabia at gmail.com (irene alabia)
+Date: Fri, 11 Nov 2011 11:47:23 +0900
+Subject: [rkward-users] request permission to post on this list
+Message-ID: <CA+awA3cdKsuebiqsUkgvRZKy=tW7xWTDfWkuXFdab2RVFZqLmw@mail.gmail.com>
+
+Hi, I am a new user of rkward and I would like to explore this package and
+wish to be added to the post list. thanks.
+irene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111111/73e8668e/attachment.html>
+
+From meik.michalke at uni-duesseldorf.de  Fri Nov 11 09:33:54 2011
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 11 Nov 2011 10:33:54 +0100
+Subject: [rkward-users] request permission to post on this list
+In-Reply-To: <CA+awA3cdKsuebiqsUkgvRZKy=tW7xWTDfWkuXFdab2RVFZqLmw@mail.gmail.com>
+References: <CA+awA3cdKsuebiqsUkgvRZKy=tW7xWTDfWkuXFdab2RVFZqLmw@mail.gmail.com>
+Message-ID: <4707944.DLqOECh2QX@yrla>
+
+hi irene,
+
+Am Freitag 11 November 2011, 11:47:23 schrieb irene alabia:
+> I am a new user of rkward and I would like to explore this package
+
+well, wellcome ;-)
+
+> and wish to be added to the post list.
+
+it seems you were successfully added to the list already, so just go ahead.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111111/6d2053b4/attachment.sig>
+
+From noreply at sourceforge.net  Fri Nov 11 16:17:34 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 11 Nov 2011 08:17:34 -0800
+Subject: [rkward-users] [Help] RE: Inserting TAB in RKward
+In-Reply-To: <forum-165574-10793553@sourceforge.net>
+Message-ID: <forum-165574-10797973@sourceforge.net>
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4800433:
+
+Hi, thanks for that- really helpful. 
+:)
+
+
+

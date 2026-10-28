@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2019-11",
+  "messages": [
+    {
+      "id": "msg-7787baac79a4",
+      "message_id": "<9Ll.2M2AP.3a{{ouJnkll.1TmVjn@seznam.cz>",
+      "from_name": "krchova.zdenka at seznam.cz",
+      "from_email_hash": "a7c7bc35f317091a80e583f806982f934bf23cf07b8eeac8879a19f7618f069f",
+      "date": "2019-11-05T22:45:05Z",
+      "subject": "help",
+      "subject_clean": "help",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Good day,\n\n\n\n\nI need help. I downloaded RKWard 0.7.0.b R 3.4.4. KF5 5.43. and I need to \ninstall probability models. Please, where can I find it? Please explain. Now\nI dragged the program and I don't understand.\n\n\n\n\nThank you\n\n\n\n\nZdenka Krchová\n\nCzech republic\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191105/d1f7b888/attachment.html>",
+      "body_snippet": "Good day,\n\n\n\n\nI need help. I downloaded RKWard 0.7.0.b R 3.4.4. KF5 5.43. and I need to \ninstall probability models. Please, where can I find it? Please explain. Now\nI dragged the program and I don't ",
+      "thread_id": "thread-7787baac79a4",
+      "thread_depth": 0,
+      "month": "2019-11"
+    },
+    {
+      "id": "msg-a76fe2870e60",
+      "message_id": "<1947666.gV9IBE4RBj@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2019-11-22T14:43:56Z",
+      "subject": "there's merch",
+      "subject_clean": "there's merch",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nwhile our homepage received a face-lift (see https://rkward.kde.org ) and \nwe're thinking about what needs to be done for a next release, we've managed \nto set up a merch store. that is, if you were among the people interested in a \nt-shirt, bag or coffee mug with the RKWard logo, christmas comes early:\n\n  https://shop.spreadshirt.de/rkward/\n\nlet me know if you're missing something ;)\n\n\nviele grüße :: m.eik\n\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191122/1bc6d6fe/attachment.sig>",
+      "body_snippet": "hi,\n\nwhile our homepage received a face-lift (see https://rkward.kde.org ) and \nwe're thinking about what needs to be done for a next release, we've managed \nto set up a merch store. that is, if you w",
+      "thread_id": "thread-a76fe2870e60",
+      "thread_depth": 0,
+      "month": "2019-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7787baac79a4",
+      "subject": "help",
+      "message_count": 1,
+      "participants": [
+        "krchova.zdenka at seznam.cz"
+      ],
+      "started": "2019-11-05T22:45:05Z",
+      "last_reply": "2019-11-05T22:45:05Z",
+      "root_message_id": "msg-7787baac79a4"
+    },
+    {
+      "id": "thread-a76fe2870e60",
+      "subject": "there's merch",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2019-11-22T14:43:56Z",
+      "last_reply": "2019-11-22T14:43:56Z",
+      "root_message_id": "msg-a76fe2870e60"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+From noreply at sourceforge.net  Thu Mar 13 19:57:54 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 13 Mar 2008 12:57:54 -0700
+Subject: [rkward-users] [rkward - Open Discussion] I have same error
+In-Reply-To: <4757480.165573@sourceforge.net>
+Message-ID: <4835596.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4835596
+By: keizie
+
+I tried to put a line of X11/Xlib.h include but failed with conflicting declaration
+?typedef void Display? error.
+I can't tell rkward is wrong or kde is wrong.
+Does anybody know that? How can I bypass this error?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Mar 17 14:49:44 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Mar 2008 07:49:44 -0700
+Subject: [rkward-users] [rkward - Open Discussion] RE: I have same error
+In-Reply-To: <4835596.165573@sourceforge.net>
+Message-ID: <4843046.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4843046
+By: tfry
+
+Hi,
+
+sorry for not responding earlier. Right now RKWard does not support MacOS X.
+Besides the troubles you already ran into, there are some more lingering in
+rembedinternal.cpp, and potentially a few other files.
+
+While we certainly hope to support MacOS in the future, we'd really need some
+help in the port. If you have some development knowledge, your help will be
+much appreciated. You can best contact us on rkward-devel at lists dot sourceforge
+dot net about this, and we'll try to help out, where we can. But if you're just
+looking for an easy solution to compile RKWard on MacOS, we just can't provide
+that, yet.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+

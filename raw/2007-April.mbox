@@ -1,0 +1,518 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Apr  4 20:28:03 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 4 Apr 2007 22:28:03 +0200
+Subject: [rkward-users] Welcome to rkward-users
+Message-ID: <200704042228.09662.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Questions about using RKWard? Suggestions on what to improve? Assorted 
+feedback? Feel free to post to this list, and subscribe 
+(https://lists.sourceforge.net/lists/listinfo/rkward-users), if you like.
+
+Looking forward to your mails
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070404/5b140c79/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Apr 11 12:30:43 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 11 Apr 2007 14:30:43 +0200
+Subject: [rkward-users] RKWard 0.4.7 is released
+Message-ID: <200704111430.48129.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all!
+
+Version 0.4.7 of RKWard is now officially released. As usual, an annoucement 
+is available on the homepage at http://rkward.sourceforge.net .
+
+Many thanks go to all who contributed testing, feeback, translations, 
+documentation, and of course plugins! We'd be nowhere near as far in RKWard 
+development without all your work.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070411/476c98bf/attachment.sig>
+
+From noreply at sourceforge.net  Wed Apr 11 12:53:33 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 Apr 2007 05:53:33 -0700
+Subject: [rkward-users] [rkward - Help] RE: R_Visible error
+In-Reply-To: <4255064.165574@sourceforge.net>
+Message-ID: <4255100.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4255100
+By: j_graumann
+
+Thanks for the hint. Got the thing from sourceforge and it installed with dpkg
+-i without a hitch, calling it, however yields an error box on rkward needing
+the rkward R library which couldn't be loaded. The console output follows.
+
+Joh
+
+rkward
+kdecore (KAction): WARNING: KAction::insertKAccel( kaccel = 0x81f9f70 ): KAccel
+object already contains an action name "window_close"
+*** attempt to put segment in horiz list twice
+*** attempt to put segment in horiz list twice
+
+R version 2.5.0 alpha (2007-04-07 r41087)
+Copyright (C) 2007 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Command failed (other)
+failed command was: '.rk.set.reply (NULL)'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment (".GlobalEnv"), ".GlobalEnv",
+envlevel=-1, namespacename="")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:stats"),
+"package:stats", namespacename="stats")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:graphics"),
+"package:graphics", namespacename="graphics")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:grDevices"),
+"package:grDevices", namespacename="grDevices")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:utils"),
+"package:utils", namespacename="utils")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:datasets"),
+"package:datasets", namespacename="datasets")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:methods"),
+"package:methods", namespacename="methods")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("Autoloads"), "Autoloads",
+namespacename="")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment ("package:base"),
+"package:base", namespacename="base")'
+- error message was: '(null)'
+Assert failed at robjectlist.cpp - function getGlobalEnv line 296
+Assert failed at rkobjectlistview.cpp - function initialize line 150
+Command failed (other)
+failed command was: '.rk.get.structure (as.environment (".GlobalEnv"), ".GlobalEnv",
+envlevel=-1, namespacename="")'
+- error message was: '(null)'
+Command failed (other)
+failed command was: '.rk.get.installed.packages ()[[1]]'
+- error message was: '(null)'
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 11 14:04:23 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 Apr 2007 07:04:23 -0700
+Subject: [rkward-users] [rkward - Help] RE: R_Visible error
+In-Reply-To: <4255100.165574@sourceforge.net>
+Message-ID: <4255212.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4255212
+By: tfry
+
+Sorry, my bad. Should be fixed in 0.4.7-2 (just uploaded).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 11 14:14:40 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 Apr 2007 07:14:40 -0700
+Subject: [rkward-users] [rkward - Help] RE: R_Visible error
+In-Reply-To: <4255212.165574@sourceforge.net>
+Message-ID: <4255226.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4255226
+By: j_graumann
+
+Bingo! Thanks for your fast answers!
+
+Joh
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 18 18:49:36 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 18 Apr 2007 11:49:36 -0700
+Subject: [rkward-users] [rkward - Help] RE: rkward can't load R-library
+In-Reply-To: <3786315.165574@sourceforge.net>
+Message-ID: <4268442.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4268442
+By: rnatella
+
+I got the same error with rkward-0.4.7 . I downloaded rkward-0.4.7.tar.gz and
+patched successfully with rkward_0.4.7-2.diff.gz; then I built a debian package
+using "dpkg-buildpackage -rfakeroot" (I didn't noticed any error), and I installed
+it using "dpkg --install". I use debian unstable on a powerpc machine, kde 3.5.5
+and R packages shipped with debian. On the terminal rkward outputs these
+messages:
+
+$ rkward
+kdecore (KAction): WARNING: KAction::insertKAccel( kaccel = 0x102086e8 ): KAccel
+object already
+ contains an action name "window_close"
+Errore: C stack usage is too close to the limit
+Errore: C stack usage is too close to the limit
+
+R version 2.5.0 beta (2007-04-12 r41139)
+Copyright (C) 2007 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R ? un software libero ed ? rilasciato SENZA ALCUNA GARANZIA.
+Siamo ben lieti se potrai redistribuirlo, ma sotto certe condizioni.
+Scrivi 'license()' o 'licence()' per dettagli su come distribuirlo.
+
+R ? un progetto di collaborazione con molti contributi esterni.
+Scrivi 'contributors()' per maggiori informazioni e 'citation()'
+per sapere come citare R o i pacchetti di R nelle pubblicazioni.
+
+Scrivi 'demo()' per una dimostrazione, 'help()' per la guida in linea, o
+'help.start()' per l'help navigabile con browser HTML.
+Scrivi 'q()' per uscire da R.
+
+error in initialization call 'options (OutDec=".")
+'
+error in initialization call 'options (width=80)
+'
+error in initialization call 'options (warn=0)
+'
+error in initialization call 'options (warnings.length=1000)
+'
+error in initialization call 'options (keep.source=TRUE)
+'
+error in initialization call 'options (keep.source.pkgs=FALSE)
+'
+error in initialization call 'options (expressions=5000)
+'
+error in initialization call 'options (digits=7)
+'
+error in initialization call 'options (checkbounds=FALSE)
+'
+error in initialization call 'options (printcmd="kprinter")
+'
+error in initialization call 'options (repos=c (CRAN="@CRAN@"))
+'
+error in initialization call '.libPaths (unique (c ()))'
+
+
+the output I get from executing "library (rkward)" in R through the console is:
+
+> library (rkward)
+
+Carico il pacchetto richiesto: 'rkward'
+
+
+        The following object(s) are masked from package:grDevices :
+
+         x11,
+         X11
+
+
+        The following object(s) are masked from package:base :
+
+         makeActiveBinding,
+         q,
+         quit,
+         require,
+         setwd,
+         Sys.setlocale
+
+I also tried default rkward package shipped with debian (0.4.2) so I think all
+dependencies were automatically installed during that try (it didn't work too:
+/usr/bin/rkward.bin: symbol lookup error: /usr/bin/rkward.bin: undefined symbol:
+R_Visible).
+
+Thank you in advance for any hint
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 18 21:03:29 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 18 Apr 2007 14:03:29 -0700
+Subject: [rkward-users] [rkward - Help] RE: rkward can't load R-library
+In-Reply-To: <4268442.165574@sourceforge.net>
+Message-ID: <4268619.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4268619
+By: tfry
+
+Hi,
+
+the error you are getting may look similar, but is most certainly unrelated.
+
+I'll reply on the mailing list (and have you CC:ed), as I'll need to attach
+a file for your to try.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 25 19:40:45 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 Apr 2007 12:40:45 -0700
+Subject: [rkward-users] [rkward - Help] ./compile does not complete
+Message-ID: <4280284.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4280284
+By: brentor
+
+Hi
+
+I have a problem specifically with version 4.7.  When I enter:
+
+./configure --prefix=/usr --with-qt-dir=/usr/lib/qt3
+
+I get back:
+
+checking for X... configure: error: Can't find X libraries. Please check your
+installation and add the correct paths!
+
+I can install (and I am currently using) version 4.6 normally.  I run Ubuntu
+Feisty Fawn 7.04.   Did the dependencies change since version 4.6?
+
+Any thoughts? Thanks,
+
+Brent
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Apr 25 21:08:12 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 Apr 2007 14:08:12 -0700
+Subject: [rkward-users] [rkward - Help] RE: ./compile does not complete
+In-Reply-To: <4280284.165574@sourceforge.net>
+Message-ID: <4280400.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4280400
+By: tfry
+
+Note that in order to compile rkward yourself you need several more packages
+than to just run it. On a debian based system (and hence on ubuntu),
+
+# apt-get build-dep rkward
+
+should fetch everything that's needed. Let me know, if you run into any further
+trouble.
+
+Regards
+Thomas
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Apr 26 03:34:48 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 Apr 2007 20:34:48 -0700
+Subject: [rkward-users] [rkward - Help] RE: ./compile does not complete
+In-Reply-To: <4280284.165574@sourceforge.net>
+Message-ID: <4280885.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4280885
+By: brentor
+
+That worked perfectly.
+
+Thanks for helping a newcomer to linux Thomas.
+
+Brent
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Apr 26 08:45:28 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 26 Apr 2007 01:45:28 -0700
+Subject: [rkward-users] [rkward - Help] php-Problem in 0.4.7
+Message-ID: <4281162.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4281162
+By: rtet
+
+Hi,
+I just updated to version 0.4.7 and suddenly get problems with the php-Backend
+(error message when choosing any test from the menu, asking to check pgp-settings).
+When checking the php-configuration, I noticed that in 0.4.6 I could specify
+the location of the php-support-files while this textfield does not exist in
+0.4.7. As 0.4.6 worked fine, I guess that the problem might come from this?
+
+Thanks,
+Ralf
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Apr 26 10:03:21 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 26 Apr 2007 03:03:21 -0700
+Subject: [rkward-users] [rkward - Help] RE: php-Problem in 0.4.7
+In-Reply-To: <4281162.165574@sourceforge.net>
+Message-ID: <4281280.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4281280
+By: tfry
+
+Hi Ralf,
+
+I don't think this is due to the missing option, but might be caused by a related
+small bug (which does not cause the failure, here, though). Could you try locating
+the installation directory of rkward (something like /usr/share/apps/rkward/,
+where the exact path is distribution specific), then cd to phpfiles/, there,
+copy "php.ini" to "php_ini". Does this help any?
+
+If not, did you check that the path to the PHP binary is correct under
+Settings->Configure RKWard->PHP backend?
+
+Which version of PHP are you using?
+
+Which exact error message do you get? "The support file XYZ could not be found..."
+or "The PHP backend could not be started..."?
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Apr 26 10:18:58 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 26 Apr 2007 03:18:58 -0700
+Subject: [rkward-users] [rkward - Help] RE: php-Problem in 0.4.7
+In-Reply-To: <4281162.165574@sourceforge.net>
+Message-ID: <4281298.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4281298
+By: tfry
+
+Update:
+
+I just found that it is likely a third kind of error: "There has been an error
+XYZ while starting up the PHP backend...". With the current version of PHP4
+in debian unstable, I can see this error, too. It's due to PHP producing some
+warnings at startup that it should not. See
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=419802
+and http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=361789 . (Not sure, whether
+other distributions besides debian are affected).
+
+It works fine with php5-cli, here, so if you have that option, try installing
+php5-cli, and changing the setting for the PHP binary to /usr/bin/PHP5
+(or similar).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

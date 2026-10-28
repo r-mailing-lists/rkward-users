@@ -1,0 +1,348 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2010-08",
+  "messages": [
+    {
+      "id": "msg-aee532141f39",
+      "message_id": "<201008021139.31792.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-08-02T09:39:31Z",
+      "subject": "[rkward-users] opening graphik window with predefined size in Rkward",
+      "subject_clean": "[rkward-users] opening graphik window with predefined size in Rkward",
+      "in_reply_to": "<849943.12328.qm@web28207.mail.ukl.yahoo.com>",
+      "references": [
+        "<849943.12328.qm@web28207.mail.ukl.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 25 July 2010, Jannis wrote:\n> does anybody of you know how to open a graphics window (under windows) with\n> a predefined size?\n> \n> Running:\n> \n> \n> windows(width=3,height=3)\n> \n> opens a window under Rkward, but the size settings only seem to have an\n> influence above a certain threshhold. With very small settings, always\n> some default sized window is opened (though it is shifted out of the\n> visible screen area). There are some settings for the graphics output in\n> Rkward, but they do not seem to have any effect on my problem.\n> \n> \n> Any suggestions? Is this a bug?\n\nwell, yes, this is a bug, but it will be rather hard to fix. What happens is \nthat the window is sized up to make the menu bar fit.\n\nIf it's essential to have a window of that specific small size, then you could \nuse\n    grDevices::windows(...)\ninstead. RKWard will not touch the window in this case (but also, the window \nwill not get the RKWard menu).\n\nYou may also want to report this as a bug in our tracker \n(https://sourceforge.net/tracker/?group_id=50231&atid=459007), but again, this \nwill be hard or even impossible to fix.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100802/6e00cb9c/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 25 July 2010, Jannis wrote:\n> does anybody of you know how to open a graphics window (under windows) with\n> a predefined size?\n> \n> Running:\n> \n> \n> windows(width=3,height=3)\n> \n> opens",
+      "thread_id": "thread-aee532141f39",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-24f13674cba5",
+      "message_id": "<201008021147.44437.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-08-02T09:47:44Z",
+      "subject": "[rkward-users] start with empty workspace",
+      "subject_clean": "[rkward-users] start with empty workspace",
+      "in_reply_to": "<AANLkTinfjFvpGAHFGMIJ-Oqr0gypKGtuIiczG6JEy4BB@mail.gmail.com>",
+      "references": [
+        "<AANLkTinfjFvpGAHFGMIJ-Oqr0gypKGtuIiczG6JEy4BB@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nsorry for the long delay.\n\nOn Thursday 22 July 2010, Agustin Lobo wrote:\n> At least in my ubuntu version, if I select start with empty workspace\n> I actually find that the .RData file of the default directory has\n> actually been loaded.\n> Is this intentional or a bug that I should report?\n\nit is a bug, indeed. While I am aware of it, it may in fact be a good idea to \nreport it. Having those reports in the tracker is a good reminder.\n\n> BTW, when are you planning a new release?\n\nGood question. Currently some features are not-quite-finished in the \ndevelopment version, and I'd like to address this before proposing a release \ntimeline. Also it appears that most developers are in holiday mode, more or \nless. This means that a release in August seems unlikely, but some time in \nSeptember should be realistic, IMO.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100802/c6063ce9/attachment.sig>",
+      "body_snippet": "Hi,\n\nsorry for the long delay.\n\nOn Thursday 22 July 2010, Agustin Lobo wrote:\n> At least in my ubuntu version, if I select start with empty workspace\n> I actually find that the .RData file of the defa",
+      "thread_id": "thread-24f13674cba5",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-ff76c248383e",
+      "message_id": "<361EED0B-3348-4F82-ABF2-0EC292EC893E@comcast.net>",
+      "from_name": "Gregory Ryslik",
+      "from_email_hash": "c2fcb66f4ffc4e43709226758e30841699ff775156888d704c666320d9caa03d",
+      "date": "2010-08-02T18:51:46Z",
+      "subject": "[rkward-users] uninstall rkward in linux",
+      "subject_clean": "[rkward-users] uninstall rkward in linux",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI was wondering where I can find directions to completely uninstall rkward? Besides removing the build directory, I'm assuming it puts things in /usr/local/share etc (as is visible from when I compiled).\n\nThanks for your help!",
+      "body_snippet": "Hi,\n\nI was wondering where I can find directions to completely uninstall rkward? Besides removing the build directory, I'm assuming it puts things in /usr/local/share etc (as is visible from when I co",
+      "thread_id": "thread-ff76c248383e",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-37b55ea90695",
+      "message_id": "<AANLkTink1=jS9cBN+N7X7+utGLBqidKesa=yierYu1me@mail.gmail.com>",
+      "from_name": "Adam Sparks",
+      "from_email_hash": "fe7e4d1610ea183b727bf6c662e25c722fb037598b38b0c2710ecafba1972f88",
+      "date": "2010-08-02T19:20:49Z",
+      "subject": "[rkward-users] uninstall rkward in linux",
+      "subject_clean": "[rkward-users] uninstall rkward in linux",
+      "in_reply_to": "<361EED0B-3348-4F82-ABF2-0EC292EC893E@comcast.net>",
+      "references": [
+        "<361EED0B-3348-4F82-ABF2-0EC292EC893E@comcast.net>"
+      ],
+      "body_plain": "Sorry, I just hit \"reply\" not reply to all the first time.\n\n\n\"make uninstall\" is the opposite of \"make install\" so you need to be root to\nexecute the command.\n\nIt will not remove the build directory.\n\nJust delete the build directory AFTER running \"make uninstall\".\n\nBest,\nAdam\n\nOn Mon, Aug 2, 2010 at 1:51 PM, Gregory Ryslik <rsaber at comcast.net> wrote:\n\n> Hi,\n>\n> I was wondering where I can find directions to completely uninstall rkward?\n> Besides removing the build directory, I'm assuming it puts things in\n> /usr/local/share etc (as is visible from when I compiled).\n>\n> Thanks for your help!\n>\n> ------------------------------------------------------------------------------\n> The Palm PDK Hot Apps Program offers developers who use the\n> Plug-In Development Kit to bring their C/C++ apps to Palm for a share\n> of $1 Million in cash or HP Products. Visit us here for more details:\n> http://p.sf.net/sfu/dev2dev-palm\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>\n\n\n\n-- \nregards,\nAdam Sparks\nPh.D. Candidate\nDepartment of Plant Pathology\nKansas State University\nhttp://www-personal.ksu.edu/~asparks/\n\n785.532.1341\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100802/372c4e6a/attachment.html>",
+      "body_snippet": "Sorry, I just hit \"reply\" not reply to all the first time.\n\n\n\"make uninstall\" is the opposite of \"make install\" so you need to be root to\nexecute the command.\n\nIt will not remove the build directory.\n",
+      "thread_id": "thread-ff76c248383e",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-806c9d0e8d0e",
+      "message_id": "<5E7944E9-D143-4759-8F25-9D5366A88552@comcast.net>",
+      "from_name": "Gregory Ryslik",
+      "from_email_hash": "c2fcb66f4ffc4e43709226758e30841699ff775156888d704c666320d9caa03d",
+      "date": "2010-08-02T19:30:46Z",
+      "subject": "[rkward-users] uninstall rkward in linux",
+      "subject_clean": "[rkward-users] uninstall rkward in linux",
+      "in_reply_to": "<AANLkTink1=jS9cBN+N7X7+utGLBqidKesa=yierYu1me@mail.gmail.com>",
+      "references": [
+        "<361EED0B-3348-4F82-ABF2-0EC292EC893E@comcast.net>",
+        "<AANLkTink1=jS9cBN+N7X7+utGLBqidKesa=yierYu1me@mail.gmail.com>"
+      ],
+      "body_plain": "Great, thus a I see it:\n\n1) Become root\n2) type \"make uninstall\" from the bash shell within the build directory.\n3) delete the entire folder created by the tar.gz file initially.\n\nThat should remove all the settings created over the entire system.  Deleting the rkward directory will delete the actual program files. \n\nThanks for your help! \n\nKind regards,\nGreg R.\n\nso become root, make uninstall, and then I can delete the entire directory created by the tar.gz file\nOn Aug 2, 2010, at 3:20 PM, Adam Sparks wrote:\n\n> Sorry, I just hit \"reply\" not reply to all the first time.\n> \n> \n> \"make uninstall\" is the opposite of \"make install\" so you need to be root to execute the command.\n> \n> It will not remove the build directory.\n> \n> Just delete the build directory AFTER running \"make uninstall\".\n> \n> Best,\n> Adam\n> \n> On Mon, Aug 2, 2010 at 1:51 PM, Gregory Ryslik <rsaber at comcast.net> wrote:\n> Hi,\n> \n> I was wondering where I can find directions to completely uninstall rkward? Besides removing the build directory, I'm assuming it puts things in /usr/local/share etc (as is visible from when I compiled).\n> \n> Thanks for your help!\n> ------------------------------------------------------------------------------\n> The Palm PDK Hot Apps Program offers developers who use the\n> Plug-In Development Kit to bring their C/C++ apps to Palm for a share\n> of $1 Million in cash or HP Products. Visit us here for more details:\n> http://p.sf.net/sfu/dev2dev-palm\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n> \n> \n> \n> -- \n> regards,\n> Adam Sparks\n> Ph.D. Candidate\n> Department of Plant Pathology\n> Kansas State University\n> http://www-personal.ksu.edu/~asparks/\n> \n> 785.532.1341\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100802/b7bd8154/attachment.html>",
+      "body_snippet": "Great, thus a I see it:\n\n1) Become root\n2) type \"make uninstall\" from the bash shell within the build directory.\n3) delete the entire folder created by the tar.gz file initially.\n\nThat should remove a",
+      "thread_id": "thread-ff76c248383e",
+      "thread_depth": 2,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-c75a29d8a810",
+      "message_id": "<13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>",
+      "from_name": "Gregory Ryslik",
+      "from_email_hash": "c2fcb66f4ffc4e43709226758e30841699ff775156888d704c666320d9caa03d",
+      "date": "2010-08-06T00:54:18Z",
+      "subject": "[rkward-users] R backend requests information",
+      "subject_clean": "[rkward-users] R backend requests information",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI am a new user to rkward and have started using it to debug some code in my research. Thus, I've set up a few debug(foo) commands where foo are some of my functions. \n\nHowever, once it gets to them, I get a popup window saying \"R backend requires information\". This is pretty annoying as I want to continue using the console rather than this pop up window!\n\nAny help would be appreciated! Thanks!\n\nCheers,\nGreg",
+      "body_snippet": "Hi,\n\nI am a new user to rkward and have started using it to debug some code in my research. Thus, I've set up a few debug(foo) commands where foo are some of my functions. \n\nHowever, once it gets to t",
+      "thread_id": "thread-c75a29d8a810",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-78012d40bdbb",
+      "message_id": "<forum-165574-8578063@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-08-15T10:03:14Z",
+      "subject": "[rkward-users] [Help] openSUSE 11.3: Building fails against KDE 4.5",
+      "subject_clean": "[rkward-users] [Help] openSUSE 11.3: Building fails against KDE 4.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by dabossdachef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3811294:\n\nHi,\n\nI\\'m trying to build 0.5.3 against KDE 4.5 for openSUSE 11.3. But building fails. Building against KDE 4.4.4 worked fine, but now I get an error:\nYou can see the Log here: [url]https://build.opensuse.org/package/rawlog?arch=i586&package=rkward&project=home%3AHerbster0815&repository=openSUSE_11.3[/url]\nAnd the whole Project here: [url]https://build.opensuse.org/package/show?package=rkward&project=home%3AHerbster0815[/url]",
+      "body_snippet": "The following forum message was posted by dabossdachef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3811294:\n\nHi,\n\nI\\'m trying to build 0.5.3 against KDE 4.5 for openSUSE 11.3. ",
+      "thread_id": "thread-78012d40bdbb",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-f4333887a9dc",
+      "message_id": "<forum-165574-8584850@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-08-18T12:48:59Z",
+      "subject": "[rkward-users] [Help] RE: openSUSE 11.3: Building fails against KDE 4.5",
+      "subject_clean": "[rkward-users] [Help] RE: openSUSE 11.3: Building fails against KDE 4.5",
+      "in_reply_to": "<forum-165574-8578063@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by dabossdachef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3811294:\n\nI finally got it work. I used the doc-files from svn, and now it works. Thanks to the guys at #opensuse-kde.",
+      "body_snippet": "The following forum message was posted by dabossdachef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3811294:\n\nI finally got it work. I used the doc-files from svn, and now it wo",
+      "thread_id": "thread-78012d40bdbb",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-b13f5305c9cb",
+      "message_id": "<AANLkTikde_v-DY6Oi-dunaFTA9vrfppN-kRkwJnAkXF5@mail.gmail.com>",
+      "from_name": "zool____",
+      "from_email_hash": "50cc7b6f20425ba5ed562c48ebcf17d4824e1019e69a4c12198b794fc9ceaafb",
+      "date": "2010-08-18T17:37:43Z",
+      "subject": "[rkward-users] Installation fails at build-dep",
+      "subject_clean": "[rkward-users] Installation fails at build-dep",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\ni successfully installed both R and RKWard a few months ago on my\nmachine running Jolicloud (an Ubuntu-based distro). But then I've got\nto format and reinstall the OS, and now i can't complete the\ninstallation.\n\nFollowing the instructions in the wiki, I first added the apt-line to\nmy repositories list, then ran apt-get update. But then, at sudo\napt-get build-dep rkward, I get stuck. The output line is in italian:\n\nE: Non ? stato possibile soddisfare le dipendenze di costruzione per rkward.\n\nIt says \"It was impossible to satisfy the build dependencies for\nrkward\". Nothing more.\n\nI absolutely need the GUI asap to write an academic paper. It's a real\nemergency for me.\n\nPlease, anyone can help?\n\nThanks.\n\nZool",
+      "body_snippet": "Hi all,\n\ni successfully installed both R and RKWard a few months ago on my\nmachine running Jolicloud (an Ubuntu-based distro). But then I've got\nto format and reinstall the OS, and now i can't complet",
+      "thread_id": "thread-b13f5305c9cb",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-9e2e62107c03",
+      "message_id": "<201008190133.23212.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2010-08-18T23:33:15Z",
+      "subject": "[rkward-users] Installation fails at build-dep",
+      "subject_clean": "[rkward-users] Installation fails at build-dep",
+      "in_reply_to": "<AANLkTikde_v-DY6Oi-dunaFTA9vrfppN-kRkwJnAkXF5@mail.gmail.com>",
+      "references": [
+        "<AANLkTikde_v-DY6Oi-dunaFTA9vrfppN-kRkwJnAkXF5@mail.gmail.com>"
+      ],
+      "body_plain": "hi zool,\n\nam Mittwoch 18 August 2010 (19:37) schrieb zool____:\n> But then, at sudo apt-get build-dep rkward, I get stuck. [...] I absolutely\n> need the GUI asap to write an academic paper. It's a real emergency for me.\n\nif it's that urgent, do you really need to compile it yourself? couldn't you \njust use a pre-built ubuntu binary instead? check the wiki for either my semi-\nofficial repository or the PPA.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at 40225 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100819/458de7bf/attachment.sig>",
+      "body_snippet": "hi zool,\n\nam Mittwoch 18 August 2010 (19:37) schrieb zool____:\n> But then, at sudo apt-get build-dep rkward, I get stuck. [...] I absolutely\n> need the GUI asap to write an academic paper. It's a real",
+      "thread_id": "thread-b13f5305c9cb",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-135abcba5651",
+      "message_id": "<AANLkTik-BQ0KfUgc71n0nOuSi+HR-0OJHOVfyUHut1xh@mail.gmail.com>",
+      "from_name": "Oscar Ponce Gonzalez",
+      "from_email_hash": "602ed14d69def40e74239cf60f4f3213f37299816624c71243b450ee8bb45d79",
+      "date": "2010-08-19T19:37:35Z",
+      "subject": "[rkward-users] how to use rkward 0.5.3",
+      "subject_clean": "[rkward-users] how to use rkward 0.5.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi good day, Im new using this aplication and I need information about how\nto use it. I dont know how to visit the list for look inside and found\nsomethin about this. Thanks for your attention and support!!!!\n\n-- \n?Los que sue?an las mismas cosas,\nacaban caminando juntos?.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100819/26bf4b25/attachment.html>",
+      "body_snippet": "Hi good day, Im new using this aplication and I need information about how\nto use it. I dont know how to visit the list for look inside and found\nsomethin about this. Thanks for your attention and sup",
+      "thread_id": "thread-135abcba5651",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-b36108886f2d",
+      "message_id": "<4C6D964B.80605@gmail.com>",
+      "from_name": "mat",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2010-08-19T20:38:35Z",
+      "subject": "[rkward-users] how to use rkward 0.5.3",
+      "subject_clean": "[rkward-users] how to use rkward 0.5.3",
+      "in_reply_to": "<AANLkTik-BQ0KfUgc71n0nOuSi+HR-0OJHOVfyUHut1xh@mail.gmail.com>",
+      "references": [
+        "<AANLkTik-BQ0KfUgc71n0nOuSi+HR-0OJHOVfyUHut1xh@mail.gmail.com>"
+      ],
+      "body_plain": "Hi\n\nIs your question wether there is a searchable archive of help mailing \nlist? If yes, have a look at:\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users\n\nand the forum:\nhttps://sourceforge.net/projects/rkward/forums/forum/165574\n\nDoes this helps?\n\nMatthieu\n\n\nLe 19. 08. 10 21:37, Oscar Ponce Gonzalez a ?crit :\n> Hi good day, Im new using this aplication and I need information about \n> how to use it. I dont know how to visit the list for look inside and \n> found somethin about this. Thanks for your attention and support!!!!\n>\n> -- \n> ?Los que sue?an las mismas cosas,\n> acaban caminando juntos?.\n>\n>\n> ------------------------------------------------------------------------------\n> This SF.net email is sponsored by\n>\n> Make an app they can't live without\n> Enter the BlackBerry Developer Challenge\n> http://p.sf.net/sfu/RIM-dev2dev\n>\n>\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>    \n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100819/9e071feb/attachment.html>",
+      "body_snippet": "Hi\n\nIs your question wether there is a searchable archive of help mailing \nlist? If yes, have a look at:\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users\n\nand the forum:\nhttps://sourceforge.n",
+      "thread_id": "thread-135abcba5651",
+      "thread_depth": 1,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-5f5d8ca503d3",
+      "message_id": "<1282524542.6340.15.camel@matt-laptop>",
+      "from_name": "Matt Shotwell",
+      "from_email_hash": "836ccb88ae8e0cb8c477dac662aa2ac0cf861fe7cd10553c7b37402d584ee91c",
+      "date": "2010-08-23T00:49:02Z",
+      "subject": "[rkward-users] disable tooltips?",
+      "subject_clean": "[rkward-users] disable tooltips?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "rkward-users,\n\nIn the RKWard (0.5.2, KDE 4.4.2) script editor, when I start to type an\nR command, for example\n\nx <- rnorm(\n\nat the moment I type the opening parentheses, a tooltip pops up giving\nthe formals of the rnorm function. I thought at first this was `code\ncompletion', or `word completion', but after disabling these features in\nthe configuration, the tooltip persists.\n\nIs there a way to disable the tooltip?\n\n-Matt",
+      "body_snippet": "rkward-users,\n\nIn the RKWard (0.5.2, KDE 4.4.2) script editor, when I start to type an\nR command, for example\n\nx <- rnorm(\n\nat the moment I type the opening parentheses, a tooltip pops up giving\nthe f",
+      "thread_id": "thread-5f5d8ca503d3",
+      "thread_depth": 0,
+      "month": "2010-08"
+    },
+    {
+      "id": "msg-b3c6f618edd5",
+      "message_id": "<AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2010-09-01T00:36:50Z",
+      "subject": "[rkward-users] anyone using KDE 3 version of rkward?",
+      "subject_clean": "[rkward-users] anyone using KDE 3 version of rkward?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI would like to know how many folks still use the KDE3 version of\nrkward (0.4.9x).\n\nThe reason I ask is this:\nI've, partially, ported some of the recent \"plot history\" features to\nit. It is not \"clean\" but satisfies my day-to-day needs (Yes, I have\nto use the KDE3 version in the department!). If there is a demand, we\ncan try to release another version of it: 0.4.9d (?) (If Thomas\nagrees!) The KDE4 version and its bug fixes will be the top priority,\nof course. So, the 0.4.9d release, if done, will be at least a few\nweeks after the upcoming 0.5.x release.\n\nI just wanted to get a heads up!\n\nFor those wondering about the \"plot history\" feature, it is a\nbrowse-able history of plots that the user creates. A screen shot is\nhere:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Graphics_history_actions_.28from_trunk.29\n\nThe screen shot does not represent the final version, it is subject to change.\n\nRegards,\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nI would like to know how many folks still use the KDE3 version of\nrkward (0.4.9x).\n\nThe reason I ask is this:\nI've, partially, ported some of the recent \"plot history\" features to\nit. It is not \"",
+      "thread_id": "thread-b3c6f618edd5",
+      "thread_depth": 0,
+      "month": "2010-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-aee532141f39",
+      "subject": "[rkward-users] opening graphik window with predefined size in Rkward",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-08-02T09:39:31Z",
+      "last_reply": "2010-08-02T09:39:31Z",
+      "root_message_id": "msg-aee532141f39"
+    },
+    {
+      "id": "thread-24f13674cba5",
+      "subject": "[rkward-users] start with empty workspace",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-08-02T09:47:44Z",
+      "last_reply": "2010-08-02T09:47:44Z",
+      "root_message_id": "msg-24f13674cba5"
+    },
+    {
+      "id": "thread-ff76c248383e",
+      "subject": "[rkward-users] uninstall rkward in linux",
+      "message_count": 3,
+      "participants": [
+        "Adam Sparks",
+        "Gregory Ryslik"
+      ],
+      "started": "2010-08-02T18:51:46Z",
+      "last_reply": "2010-08-02T19:30:46Z",
+      "root_message_id": "msg-ff76c248383e"
+    },
+    {
+      "id": "thread-c75a29d8a810",
+      "subject": "[rkward-users] R backend requests information",
+      "message_count": 1,
+      "participants": [
+        "Gregory Ryslik"
+      ],
+      "started": "2010-08-06T00:54:18Z",
+      "last_reply": "2010-08-06T00:54:18Z",
+      "root_message_id": "msg-c75a29d8a810"
+    },
+    {
+      "id": "thread-78012d40bdbb",
+      "subject": "[rkward-users] [Help] openSUSE 11.3: Building fails against KDE 4.5",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-08-15T10:03:14Z",
+      "last_reply": "2010-08-18T12:48:59Z",
+      "root_message_id": "msg-78012d40bdbb"
+    },
+    {
+      "id": "thread-b13f5305c9cb",
+      "subject": "[rkward-users] Installation fails at build-dep",
+      "message_count": 2,
+      "participants": [
+        "meik michalke",
+        "zool____"
+      ],
+      "started": "2010-08-18T17:37:43Z",
+      "last_reply": "2010-08-18T23:33:15Z",
+      "root_message_id": "msg-b13f5305c9cb"
+    },
+    {
+      "id": "thread-135abcba5651",
+      "subject": "[rkward-users] how to use rkward 0.5.3",
+      "message_count": 2,
+      "participants": [
+        "Oscar Ponce Gonzalez",
+        "mat"
+      ],
+      "started": "2010-08-19T19:37:35Z",
+      "last_reply": "2010-08-19T20:38:35Z",
+      "root_message_id": "msg-135abcba5651"
+    },
+    {
+      "id": "thread-5f5d8ca503d3",
+      "subject": "[rkward-users] disable tooltips?",
+      "message_count": 1,
+      "participants": [
+        "Matt Shotwell"
+      ],
+      "started": "2010-08-23T00:49:02Z",
+      "last_reply": "2010-08-23T00:49:02Z",
+      "root_message_id": "msg-5f5d8ca503d3"
+    },
+    {
+      "id": "thread-b3c6f618edd5",
+      "subject": "[rkward-users] anyone using KDE 3 version of rkward?",
+      "message_count": 1,
+      "participants": [
+        "Prasenjit Kapat"
+      ],
+      "started": "2010-09-01T00:36:50Z",
+      "last_reply": "2010-09-01T00:36:50Z",
+      "root_message_id": "msg-b3c6f618edd5"
+    }
+  ]
+}

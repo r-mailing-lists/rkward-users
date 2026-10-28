@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2014-05",
+  "messages": [
+    {
+      "id": "msg-963da3adaaea",
+      "message_id": "<536A40F6.3050907@univ-lyon1.fr>",
+      "from_name": "Ghislain Durif",
+      "from_email_hash": "e4b08b64f1a989404b0ec5a6c10163b20a41f95f4cd367b64e7be348b34c6880",
+      "date": "2014-05-07T14:19:34Z",
+      "subject": "[rkward-users] Rkward listening to port 22299",
+      "subject_clean": "[rkward-users] Rkward listening to port 22299",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Rkward community,\n\nI am new in this list and I am very sorry if that question has already \nbeen asked. I encountered an interesting problem while I was doing some \nadministration on my computer (Ubuntu 12.04). I am currently working \nwith Rkward 0.6.1 (and KDE 4.8.5), installed from the debian ppa \nrepository. It appears from a port scan with the netstat command that \nthe process rkward.rbacken is listening to the port 22299 while running. \nI wonder whether it is a normal behaviour or not?\n\nThank you in advance for your help\n\n-- \nGhislain DURIF\n\nUMR 5558 Biom?trie et Biologie ?volutive\nUniversit? Claude Bernard Lyon 1",
+      "body_snippet": "Dear Rkward community,\n\nI am new in this list and I am very sorry if that question has already \nbeen asked. I encountered an interesting problem while I was doing some \nadministration on my computer (",
+      "thread_id": "thread-963da3adaaea",
+      "thread_depth": 0,
+      "month": "2014-05"
+    },
+    {
+      "id": "msg-766916fb201a",
+      "message_id": "<6522515.HLEfRxakWk@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2014-05-07T18:25:36Z",
+      "subject": "[rkward-users] Rkward listening to port 22299",
+      "subject_clean": "[rkward-users] Rkward listening to port 22299",
+      "in_reply_to": "<536A40F6.3050907@univ-lyon1.fr>",
+      "references": [
+        "<536A40F6.3050907@univ-lyon1.fr>"
+      ],
+      "body_plain": "Hi!\n\nOn Wednesday 07 May 2014 16:19:34 Ghislain Durif wrote:\n> I am new in this list and I am very sorry if that question has already\n> been asked. I encountered an interesting problem while I was doing some\n> administration on my computer (Ubuntu 12.04). I am currently working\n> with Rkward 0.6.1 (and KDE 4.8.5), installed from the debian ppa\n> repository. It appears from a port scan with the netstat command that\n> the process rkward.rbacken is listening to the port 22299 while running.\n> I wonder whether it is a normal behaviour or not?\n\nIt is normal behavior for the RKWard R backend (as for any R session) to \nlisten on one unprivileged port. The exact number will vary. This is the R \nhelp server. Try pointing a browser to\n\n  http://127.0.0.1:XXXXXX/library/base/html/print.html\n\n(substituting XXXXXX for the port number).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140507/45843b08/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Wednesday 07 May 2014 16:19:34 Ghislain Durif wrote:\n> I am new in this list and I am very sorry if that question has already\n> been asked. I encountered an interesting problem while I was doi",
+      "thread_id": "thread-963da3adaaea",
+      "thread_depth": 1,
+      "month": "2014-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-963da3adaaea",
+      "subject": "[rkward-users] Rkward listening to port 22299",
+      "message_count": 2,
+      "participants": [
+        "Ghislain Durif",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2014-05-07T14:19:34Z",
+      "last_reply": "2014-05-07T18:25:36Z",
+      "root_message_id": "msg-963da3adaaea"
+    }
+  ]
+}

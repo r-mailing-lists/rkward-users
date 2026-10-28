@@ -1,0 +1,39 @@
+From meik.michalke at uni-duesseldorf.de  Mon Sep  7 16:34:10 2020
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 07 Sep 2020 17:34:10 +0200
+Subject: updated signing keys for RKward debian repo
+Message-ID: <2332295.irdbgypaU6@yrla>
+
+hi,
+
+since our current package signing key is about to expire soon, i've added a 
+new key on the server (debR40 repo only), installable as a package called 
+"rkward-keyring".
+
+the package installs the key(s) to /usr/share/keyrings/rkward-keyring.gpg and 
+no longer adds them to the global trust.db, so you can be sure it can only be 
+used to verify our packages. you'll have to manually adjust your sources list 
+file enable apt to find the right key:
+
+deb [signed-by=/usr/share/keyrings/rkward-keyring.gpg] https://
+distribute.kde.org/rkward/debR40 unstable main
+
+older versions of the keyring package used the ASCI format (rkward-
+keyring.asc), which is deprecated and was now also corrected.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200907/1d758e8e/attachment.sig>
+

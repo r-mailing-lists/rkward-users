@@ -1,0 +1,52 @@
+From meik.michalke at uni-duesseldorf.de  Thu Jun 25 23:15:35 2020
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 26 Jun 2020 00:15:35 +0200
+Subject: plugin packages for R 4.0
+Message-ID: <12084657.yRFjqy8unV@meadow>
+
+hi,
+
+i'm happy to announce that all plugin packages for RKWard have finally been 
+rebuilt for R 4.0. windows and mac users should find these extra packages now 
+in RKWard's package management dialog:
+
+  rk.ANOVA
+  rk.ClusterAnalysis
+  rk.CohenKappa
+  rk.FactorAnalysis
+  rk.gitInstall
+  rk.MultidimensionalScaling
+
+GNU/linux users of debian/ubuntu based distributions can use the new 
+repository:
+
+  deb https://distribute.kde.org/rkward/debR40 unstable main
+
+you should perhaps first install the PGP key used for signing manually:
+https://distribute.kde.org/rkward/debR40/dists/unstable/main/all/rkward-keyring_0.01-1_all.deb
+
+after "apt update" you should be able to install these plugin packages:
+
+  r-other-rkward-rk.anova
+  r-other-rkward-rk.clusteranalysis
+  r-other-rkward-rk.cohenkappa
+  r-other-rkward-rk.factoranalysis
+  r-other-rkward-rk.gitinstall
+  r-other-rkward-rk.multidimensionalscaling
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200626/a1a3daa1/attachment.sig>
+

@@ -1,0 +1,109 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2015-08",
+  "messages": [
+    {
+      "id": "msg-194cde492bfa",
+      "message_id": "<55BF8895.3090602@usu.edu>",
+      "from_name": "David Stevens",
+      "from_email_hash": "47fe5d585902da0217ef2293204ef805d8f9bc3642e105017f3c9b5ca2b2d2c3",
+      "date": "2015-08-03T15:28:21Z",
+      "subject": "[rkward-users]  rkward installation",
+      "subject_clean": "[rkward-users]  rkward installation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150803/ab6d94ea/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: affdbeca.png\nType: image/png\nSize: 11802 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150803/ab6d94ea/attachment.png>\n-------------- next part --------------\n------------------------------------------------------------------------------\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150803/ab6d94ea/attachment.html>\n-------------- next part --------------\nA non-text attachment was scr",
+      "thread_id": "thread-194cde492bfa",
+      "thread_depth": 0,
+      "month": "2015-08"
+    },
+    {
+      "id": "msg-a4ee692fc91d",
+      "message_id": "<CALnwk=R2AhGMHPH38i264L8L2-fq6Pg3tgn39RMdYxBuUFc3mw@mail.gmail.com>",
+      "from_name": "David Januszewski",
+      "from_email_hash": "7d681b44f2d6ae28a2774b8c6e42b121bdf7a52f56df601a7997a61c23a9554f",
+      "date": "2015-08-04T05:39:03Z",
+      "subject": "[rkward-users] Remove from Email List",
+      "subject_clean": "[rkward-users] Remove from Email List",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nPlease remove me from the distribution list.\n\nThanks,\nDave\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150804/024f0ea8/attachment.html>",
+      "body_snippet": "Hello,\n\nPlease remove me from the distribution list.\n\nThanks,\nDave\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachmen",
+      "thread_id": "thread-a4ee692fc91d",
+      "thread_depth": 0,
+      "month": "2015-08"
+    },
+    {
+      "id": "msg-4714f2ad9348",
+      "message_id": "<20150805093432.1e285b24@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2015-08-05T07:34:32Z",
+      "subject": "[rkward-users] rkward installation",
+      "subject_clean": "[rkward-users] rkward installation",
+      "in_reply_to": "<55BF8895.3090602@usu.edu>",
+      "references": [
+        "<55BF8895.3090602@usu.edu>"
+      ],
+      "body_plain": "Hi,\n\nOn Mon, 3 Aug 2015 09:28:21 -0600\nDavid Stevens <david.stevens at usu.edu> wrote:\n> All - just today I went through installation of KDE and rkward on a\n> Lenovo Windows 7 laptop and when I try to start rkward, I crash with\n> the message\n\n[_ZN7QString16fromAscii_helperEPKci could not be located]\n\n> Where do I go next?\n\nMy best guess at this point is that you used the \"custom installation\"\nprocedure, and somehow the version of KDE you installed is not\ncompatible with the one required by RKWard (there could be several\ncauses of this). Before anything else, please\n\n- Reboot your system\n- Remove/Rename your existing RKWard installation\n- Install RKWard using the \"Installation bundle\"\n- Start RKWard.exe inside that installation\n\nVerify that this works.",
+      "body_snippet": "Hi,\n\nOn Mon, 3 Aug 2015 09:28:21 -0600\nDavid Stevens <david.stevens at usu.edu> wrote:\n> All - just today I went through installation of KDE and rkward on a\n> Lenovo Windows 7 laptop and when I try to",
+      "thread_id": "thread-194cde492bfa",
+      "thread_depth": 1,
+      "month": "2015-08"
+    },
+    {
+      "id": "msg-5e9933c3b0cc",
+      "message_id": "<1477407.pSXkT2TGQB@chiana>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2015-08-25T12:22:36Z",
+      "subject": "[rkward-users] feedback needed: future OS X releases of RKWard",
+      "subject_clean": "[rkward-users] feedback needed: future OS X releases of RKWard",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nuntil now, we were able to offer RKWard package bundles for OS X >= 10.7. this \nOS X release is no longer supported by apple and we have to upgrade our build \nenvironment. in theory, an upgrade to 10.8 would be possible, but in practice, \napple's app store doesn't offer upgrades to 10.8 or 10.9 any longer. \n\nupgrading to 10.10 (yosemite) would be possible, which would also make the \ndevelopment easier, since we wouldn't have to care for compatibility with \nseveral old releases for the time being. but it would also mean that the \nresulting bundles would require the same OS X version (or higher) as a minimum \nrequirement. \n\naccording to this source, the market share of yosemite already reached 62% of \nall OS X installations (10.9: 17%; 10.8: 5%):\nhttp://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0&qpsp=198&qpnp=1&qptimeframe=M\n\nwe would like to find out if it would mean too much of a drawback for RKWard \nif future releases would only be available for OS X >= 10.10, which seems like \nour preferred alternative -- what's your opinion on this?\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 836 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150825/0fdecc94/attachment.sig>",
+      "body_snippet": "hi,\n\nuntil now, we were able to offer RKWard package bundles for OS X >= 10.7. this \nOS X release is no longer supported by apple and we have to upgrade our build \nenvironment. in theory, an upgrade t",
+      "thread_id": "thread-5e9933c3b0cc",
+      "thread_depth": 0,
+      "month": "2015-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-194cde492bfa",
+      "subject": "[rkward-users]  rkward installation",
+      "message_count": 2,
+      "participants": [
+        "David Stevens",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2015-08-03T15:28:21Z",
+      "last_reply": "2015-08-05T07:34:32Z",
+      "root_message_id": "msg-194cde492bfa"
+    },
+    {
+      "id": "thread-a4ee692fc91d",
+      "subject": "[rkward-users] Remove from Email List",
+      "message_count": 1,
+      "participants": [
+        "David Januszewski"
+      ],
+      "started": "2015-08-04T05:39:03Z",
+      "last_reply": "2015-08-04T05:39:03Z",
+      "root_message_id": "msg-a4ee692fc91d"
+    },
+    {
+      "id": "thread-5e9933c3b0cc",
+      "subject": "[rkward-users] feedback needed: future OS X releases of RKWard",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2015-08-25T12:22:36Z",
+      "last_reply": "2015-08-25T12:22:36Z",
+      "root_message_id": "msg-5e9933c3b0cc"
+    }
+  ]
+}

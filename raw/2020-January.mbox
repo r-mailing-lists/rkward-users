@@ -1,0 +1,274 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jan  3 09:37:56 2020
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 3 Jan 2020 10:37:56 +0100
+Subject: Call for testing
+Message-ID: <20200103103756.5936d193@edge>
+
+Hi!
+
+A new year, a new release. We certainly wanted to do this, a lot
+earlier, but we are about to release a new version of RKWard, and we
+need your help for testing. Many of you have probably been using
+development snapshots later than version 0.7.0, already. For those who
+have not, the most prominent new feature to look out for is the
+live-previews that were added to the script editor window, including a
+preview for R Markdown (.Rmd) scripts.
+
+Beyond this, for this round of testing I am particularly interested in
+the startup procedure on the various platforms (some more specific
+instructions at the end of this mail). Ideally you will not even see a
+difference in regular use, but internally I had to change a few things,
+and I hope things work reliably across the different platforms and
+configurations. In this area, reports of success are just as important
+as reports of failure!
+
+No release timeline has been set, yet. But depending on the outcome of
+your testing, a release in January should be realistic.
+
+Thanks!
+Thomas
+
+-- Mac users (and anybody with access to a Mac) --
+- Get the latest DMG from
+  https://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/
+
+- You will have to install R, separately (if you don't already have it).
+  In theory, any version between 3.4 and 3.6 should work.
+
+- No further configuration should be needed. RKWard should detect the
+  newest version of R installed.
+
+- I *believe* that all versions of MacOS from El Capitain (10.11)
+  should work, however, the only version I could test was Mojave.
+
+-- Windows users --
+- Get the latest installer from
+  https://binary-factory.kde.org/view/Windows%20MingW/job/RKWard_Nightly_mingw64/
+
+- R 3.6.1 is included in the bundle. You should be able to start RKWard
+  right away.
+
+- If you have a separate version of R installed on this machine, please
+  also try the following: Edit the rkward.ini file (inside the
+  "bin" folder of your RKWard installation), changing the content to "R
+  executable=auto". In theory this should detect your external R
+  installation and use that.
+
+-- Linux / BSD users --
+- Compile the lastest git master version from source, or install one of
+  the nightly builds, if we provide one for your distribution
+  (https://rkward.kde.org/RKWard_Source_Repository.html).
+
+- Should you have several versions of R installed, try
+  switching between versions using the --r-executable commandline
+  parameter.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200103/02ae34c3/attachment.sig>
+
+From romanini_2010 at hotmail.com  Sat Jan 18 01:51:59 2020
+From: romanini_2010 at hotmail.com (D Romanini)
+Date: Sat, 18 Jan 2020 01:51:59 +0000
+Subject: Academic Research about Software for Qualitative Research
+Message-ID: <CP2PR80MB39723D7C1025402959D6436182300@CP2PR80MB3972.lamprd80.prod.outlook.com>
+
+Hello, my name is Daniel and i'm a undergraduate student at the Federal Rural University of Rio de Janeiro. I am working on a research project with my professor to select a software that best fits our academic and scientific research needs, considering infrastructure limitations, software installation and configuration requirements, and budget conditions. If you can please answer this form as it will be of great help to my research: https://forms.gle/uNPn7TY5ZxLGbEVM7
+
+Thank you so much, i appreciate any kind of help!
+
+Best regards,
+Daniel.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200118/c61ace33/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jan 23 16:49:29 2020
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 23 Jan 2020 17:49:29 +0100
+Subject: RKWard 0.7.1 is released!
+Message-ID: <20200123174929.45b694c3@edge>
+
+Hi!
+
+I'm happy to announce that RKWard 0.7.1 is finally available for
+download, today. You can read up on the details, and pick the correct
+download for your platform on https://rkward.kde.org, as usual. All
+feedback welcome!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200123/7f4b1523/attachment.sig>
+
+From pierre.de.villemereuil at mailoo.org  Mon Jan 27 13:51:11 2020
+From: pierre.de.villemereuil at mailoo.org (Pierre de Villemereuil)
+Date: Mon, 27 Jan 2020 14:51:11 +0100
+Subject: RKWard 0.7.1 is released!
+In-Reply-To: <20200123174929.45b694c3@edge>
+References: <20200123174929.45b694c3@edge>
+Message-ID: <2558909.n6Ub1B55rq@dse601ep.mnhn.fr>
+
+Hi all,
+
+Before opening a bug report and to best address it either to RKWard or openSUSE, could someone confirm to be this behaviour outside of openSUSE's package (0.7.1)?
+
+1. When the menu bar is set to be exported in the title bar (adding the "App Menu" button to the buttons of the title bar is enough nowadays).
+2. Open RKWard directly, the app menu button is shown, and the menu is accessible.
+3. Now open a script within RKWard, the app menu button disappears and the menu is not accessible anymore. Closing the script leave the app menu inaccessible, it doesn't come back.
+
+I have reproduced this on two computers, both on openSUSE Tumbleweed and RKWard 0.7.1 installed from here:
+https://build.opensuse.org/package/show/openSUSE:Factory/rkward
+
+Of course, it doesn't happen when the appmenu is shown, as it is by default.
+
+If it can be reproduced on another distribution, I'll open a true bug report against RKWard, otherwise, I'll contact the openSUSE's maintainers of RKWard.
+
+Cheers,
+Pierre.
+
+Le jeudi 23 janvier 2020, 17:49:29 CET Thomas Friedrichsmeier a écrit :
+> Hi!
+> 
+> I'm happy to announce that RKWard 0.7.1 is finally available for
+> download, today. You can read up on the details, and pick the correct
+> download for your platform on https://rkward.kde.org, as usual. All
+> feedback welcome!
+> 
+> Regards
+> Thomas
+> 
+
+
+
+
+
+From martin.papenberg at uni-duesseldorf.de  Fri Jan 31 09:46:37 2020
+From: martin.papenberg at uni-duesseldorf.de (Martin Papenberg)
+Date: Fri, 31 Jan 2020 10:46:37 +0100
+Subject: RKWard 0.7.1 is released!
+In-Reply-To: <20200123174929.45b694c3@edge>
+References: <20200123174929.45b694c3@edge>
+Message-ID: <12956803.DP8UOXX5jc@martin-system-product-name>
+
+Hello all,
+
+Thanks for the work! I really like the new R Markdown preview that I already tested via the 
+daily snapshots recently. However, I am currently running into trouble installing the latest 
+stable version for rkward (stable / devel / daily, does not matter). I am using Ubuntu 19.10, 
+but the problem should also occur on the LTS version of Ubuntu. Here is what I tried:
+
+- I added the "Inofficial Ubuntu Repository" via launch pad for "R shipped with Ubuntu by 
+default" (https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable). 
+
+- I used `sudo apt update` and `sudo apt install rkward` and get the following error: 
+
+The following packages have unmet dependencies: 
+rkward : Depends: r-base-core (>= 3.6.2-1eoan) but 3.6.1-4 is to be installed
+
+Apparently, rkward 0.7.1 requires R >= 3.6.2. Unfortunately, this is not shipped with the 
+Ubuntu repository for Ubuntu 19.10 (see here https://packages.ubuntu.com/search?
+keywords=r-base&searchon=names&suite=eoan&section=all), also not for the LTS (see 
+here https://packages.ubuntu.com/search?keywords=r-base&searchon=names&suite=bionic&section=all)
+
+It is also not (easily) possible for me to update to R 3.6.2 because there is no CRAN-R 
+release file for Ubuntu 19.10 (https://cran.r-project.org/bin/linux/ubuntu/).
+
+If it is possible not to require R 3.6.2 for the newer rkward versions, that would be great. 
+Any advice on how to solve the problem otherwise is also appreciated.
+
+Best, 
+
+Martin
+
+
+On Donnerstag, 23. Januar 2020 17:49:29 CET Thomas Friedrichsmeier wrote:
+> Hi!
+> 
+> I'm happy to announce that RKWard 0.7.1 is finally available for
+> download, today. You can read up on the details, and pick the correct
+> download for your platform on https://rkward.kde.org, as usual. All
+> feedback welcome!
+> 
+> Regards
+> Thomas
+
+
+-- 
+Dr. Martin Papenberg
+
+Department of Experimental Psychology
+Building 23.03, Room 00.29
+Heinrich Heine University Duesseldorf
+Universitaetsstrasse 1
+40225 Duesseldorf, Germany
+
++49 211 81-15014
+Martin.Papenberg at hhu.de
+https://m-py.github.io/about
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200131/c9c474e7/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200131/c9c474e7/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jan 31 18:10:32 2020
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 31 Jan 2020 19:10:32 +0100
+Subject: RKWard 0.7.1 is released!
+In-Reply-To: <12956803.DP8UOXX5jc@martin-system-product-name>
+References: <20200123174929.45b694c3@edge>
+ <12956803.DP8UOXX5jc@martin-system-product-name>
+Message-ID: <20200131191032.629f306f@edge>
+
+Hi,
+
+On Fri, 31 Jan 2020 10:46:37 +0100
+Martin Papenberg <martin.papenberg at uni-duesseldorf.de> wrote:
+> - I added the "Inofficial Ubuntu Repository" via launch pad for "R
+> shipped with Ubuntu by
+> default" (https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable). 
+> 
+> - I used `sudo apt update` and `sudo apt install rkward` and get the
+> following error: 
+> 
+> The following packages have unmet dependencies: 
+> rkward : Depends: r-base-core (>= 3.6.2-1eoan) but 3.6.1-4 is to be
+> installed
+
+please second-check your /etc/apt/sources.list. My guess is that you
+have one of our PPAs marked "CRAN version of R" in your sources.list
+(possibly in addition to the "plain" version; grep for "cran".
+
+The dependency information is not hard-coded, anywhere, but generated,
+automatically, at build-time, depending on the version of R on the
+build-system. So, in this case, rkward has been built in a PPA that has
+r-base-core 3.6.2-1eoan installed.
+
+(RKWard itself is very modest in its requirements. When compiling from
+source, you can go back all the way to R 3.0.0.)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200131/a545f243/attachment.sig>
+

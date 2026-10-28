@@ -1,0 +1,53 @@
+From alfonsociologo at gmail.com  Sun Dec  3 15:32:04 2023
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sun, 3 Dec 2023 09:32:04 -0600
+Subject: RKWard Site Configuration
+In-Reply-To: <20231129231100.52d6bf7a@booklife>
+References: <CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>
+ <20231129231100.52d6bf7a@booklife>
+Message-ID: <CAMqnA+jih7AJ2GSSYnuTVStc_wr9ZfSN7-4gmSatHnUOWJMSJg@mail.gmail.com>
+
+Thanks for the fix!!
+Regards
+Alfonso
+
+
+El jue, 30 nov 2023 a la(s) 00:16, Thomas Friedrichsmeier (
+thomas.friedrichsmeier at kdemail.net) escribió:
+
+> On Mon, 27 Nov 2023 09:43:07 -0600
+> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+>
+> > Hi,
+> > Just to note that https://rkward.kde.org/ , does not
+> > appear correctly displayed.
+> > Can you have a look?
+> > Best Regards!
+> > Alfonso
+>
+> Thanks for reporting, not sure, why this broke.
+>
+> I fixed the worst symptoms, but there may be some rough edges left. I
+> also had to flatten the navigation bar, as nested menus did not seem to
+> work any longer.
+>
+> Should anybody wish to help, the repository governing this website is
+> at: https://invent.kde.org/websites/rkward-kde-org
+>
+> (README.md for basic instructions).
+>
+> Regards
+> Thomas
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231203/e846ab58/attachment.htm>
+

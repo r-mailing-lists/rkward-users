@@ -1,0 +1,58 @@
+From Alexandre.Delalieu at ulb.be  Fri Oct 11 15:12:03 2019
+From: Alexandre.Delalieu at ulb.be (DELALIEU  Alexandre)
+Date: Fri, 11 Oct 2019 14:12:03 +0000
+Subject: How to change the language of the RKWard GUI under Windows 10 ?
+Message-ID: <AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>
+
+Hello,
+
+I installed RKWard 0.7.0b on Windows 10.
+
+The RKWard GUI is displayed in the default language of my operating system.
+
+Is there a way to change it and to specify another language ?
+
+Thank you in advance
+Alex
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191011/15e019fe/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Oct 13 08:14:05 2019
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 13 Oct 2019 09:14:05 +0200
+Subject: How to change the language of the RKWard GUI under Windows 10 ?
+In-Reply-To: <AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>
+References: <AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>
+Message-ID: <20191013091405.24f0b255@edge>
+
+Hi,
+
+On Fri, 11 Oct 2019 14:12:03 +0000
+"DELALIEU  Alexandre" <Alexandre.Delalieu at ulb.be> wrote:
+> I installed RKWard 0.7.0b on Windows 10.
+> 
+> The RKWard GUI is displayed in the default language of my operating
+> system.
+> 
+> Is there a way to change it and to specify another language ?
+
+In a command shell, run
+  set LANG=DE
+then
+  (PATH\TO\)rkward
+
+Where you'll replace "DE" with your language, of course, or "C" for no
+translation (English).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191013/92139de5/attachment.sig>
+

@@ -1,0 +1,45 @@
+From dubov13 at users.sf.net  Tue Oct 15 10:24:16 2013
+From: dubov13 at users.sf.net (Black Wizard)
+Date: Tue, 15 Oct 2013 10:24:16 +0000
+Subject: [rkward-users] [rkward:discussion] RkWard: rkward.frontend.exe error
+Message-ID: </p/rkward/discussion/165574/c1600cd52e49c1d9db67c44c39fb922862780d88.discussion@rkward.p.sourceforge.net>
+
+Good time of a day!
+
+I use Windows 7 x64 and downloaded RkWard bundle RKWard-0.6.1_R-3.0.0rc-KDE-4.8.0.exe
+
+But RkWard don't run and give out error message: 
+
+Problem Event Name: APPCRASH
+   Application Name: rkward.frontend.exe
+   Application Version: 0.0.0.0
+   Application Timestamp: 51585642
+   Fault Module Name: QtCore4.dll
+   Fault Module Version: 4.7.4.0
+   The time stamp module with the error: 4f271d81
+   Exception Code: 40000015
+   Exception Offset: 00012861
+   OS Version: 6.1.7601.2.1.0.768.3
+   Language Code: 1049
+   Additional Information 1: 83bb
+   Additional Information 2: 83bb82d8d0d076ec21046cac27615354
+   Additional Information 3: 0aa2
+   Additional Information 4: 0aa2e6386a167f90de7acdedd373fd9a
+
+   How I may run this program? Thank you for your help for me.
+
+
+---
+
+[RkWard: rkward.frontend.exe error](https://sourceforge.net/p/rkward/discussion/165574/thread/aea2301d/?limit=50#990e)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20131015/280f3db9/attachment.html>
+

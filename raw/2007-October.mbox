@@ -1,0 +1,1145 @@
+From noreply at sourceforge.net  Mon Oct  1 04:25:36 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 30 Sep 2007 21:25:36 -0700
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4412949.165574@sourceforge.net>
+Message-ID: <4545257.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4545257
+By: kapatp
+
+I am writing this mail to keep a record of certain information. Most of you
+can ignore this. The issue was:
+
+in short: RkWard couldn't be compiled on 64bit architecture (Red Hat EL4 and
+amd64)
+in details: see the thread here:
+http://sourceforge.net/forum/message.php?msg_id=4392952
+
+It has been about 2.5 months since I did the following to make rkward compile:
+
+$ cd /usr/lib
+$ sudo ln -s libgfortran.so.2 libgfortran.so 
+
+Finally, today I removed this soft link (sudo rm /usr/lib/libgfortran.so) and
+compiled rkward (both the current svn version and 0.4.8pre2). Surprisingly the
+'make' process went fine :) Which means RkWard can be compiled on a 64bit machine
+without any tinkering. The machine in my case is a Debian/Sid amd64. I do not
+know if the earlier issue was due to the linker (ld) or R or RkWard.
+
+Cheers,
+PK
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  1 10:13:11 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 01 Oct 2007 03:13:11 -0700
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4545257.165574@sourceforge.net>
+Message-ID: <4545594.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4545594
+By: tfry
+
+Thanks for the update. I must admit, I forgot all about this thread. I think
+it was due to RKWard being compiled with a different version of GCC / G77 than
+R. R apparently had some trouble with G77 4.1, so (on debian), they started
+forcing version 4.2, instead. Likely the same was done on RH EL4. The "clean"
+solution is to make sure to compile RKWard with the same version of GCC / G77.
+
+I guess you now have G77 4.2 installed by default, so there no longer is a version
+mismatch.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  1 16:33:08 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 01 Oct 2007 09:33:08 -0700
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4545594.165574@sourceforge.net>
+Message-ID: <4546118.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4546118
+By: kapatp
+
+> I guess you now have G77 4.2 installed by default, so there no longer is a
+version mismatch.
+
+Yes I do have the latest versions now:
+$ dpkg -l | grep -E "fortran|g77|r-base"
+ii  g77                      4:3.4.6-30    The GNU Fortran 77 compiler
+ii  g77-3.4                  3.4.6-6       The GNU Fortran 77 compiler
+ii  gfortran                 4:4.2.1-6     The GNU Fortran 95 compiler
+ii  gfortran-4.2             4.2.1-5       The GNU Fortran 95 compiler
+ii  gfortran-4.2-multilib    4.2.1-5       The GNU Fortran 95 compiler (multilib
+files)
+ii  gfortran-multilib        4:4.2.1-6     The GNU Fortran 95 compiler (multilib
+files)
+ii  lib32gfortran2           4.2.1-5       Runtime library for GNU Fortran
+applications
+ii  libgfortran1             4.1.2-16      Runtime library for GNU Fortran
+applications
+ii  libgfortran2             4.2.1-5       Runtime library for GNU Fortran
+applications
+ii  r-base-core              2.6.0~20070925-1      GNU R core of statistical
+computing language
+ii  r-base-dev               2.6.0~20070925-1      GNU R installation of auxiliary
+GNU R packag
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Oct  3 16:33:58 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 3 Oct 2007 18:33:58 +0200
+Subject: [rkward-users] Version 0.4.8 is released
+Message-ID: <200710031834.01954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+version 0.4.8 of RKWard has been released a few minutes ago. A more detailed 
+announcement is available on http://rkward.sourceforge.net . Many thanks to 
+all who helped with this release in various ways!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071003/95bb0da1/attachment.sig>
+
+From noreply at sourceforge.net  Sat Oct  6 20:32:32 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 06 Oct 2007 13:32:32 -0700
+Subject: [rkward-users] [rkward - Help] manipulating data.frame labels via
+	script
+Message-ID: <4555823.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4555823
+By: fsando
+
+Hi
+First off - I am really impressed with what you are doing with rkward - thanks!
+
+I am on 
+ubuntu 7.04 
+rkward 0.4.2 (kde 3.5.6)
+R 2.4.1. 
+I breifly tried rkward 0.4.8 but reverted to 0.4.2.
+
+My question regards adding labels to a data.frame via R-script.
+I am in the process of moving a large project from SPSS to R/rkward for testing
+out rkward in a real setting.
+I have imported data as data.frame and the labels as a character vector. It
+has more than 1400 variables so I need to be able to add labels to data.frames
+via scripts.
+
+I looked into how rkward stores labels and made this loop which apparently works
+fine in 0.4.2: Labels are added, and recognized by the editor.
+
+for(i in 1:length(ghdata)){
+	attr(ghdata[[i]],".rk.meta") <- list(label = ghlabels[i])
+}
+
+For one variable it would look something like this (adding a label to the first
+variable in the data.frame):
+attr(ghdata[[1]],".rk.meta") <- list(label = "This is a label")
+
+In 0.4.8 I can only add labels in the editor but they disappear when I run this
+code.
+So my question is whether this is the intended behavior in 0.4.8, if so how
+should I change my code so it will also work in the future.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Oct  6 21:13:54 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 06 Oct 2007 14:13:54 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4555823.165574@sourceforge.net>
+Message-ID: <4555854.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4555854
+By: kapatp
+
+Hi, fsando,
+
+Thanks for the words of encouragement!
+
+> My question regards adding labels to a data.frame via R-script. 
+
+I am a bit confused here! What is intended difference between "labels"
+and "columnames" for a data.frame? If what you want is variable names/ column-names
+then, the standard R function
+
+colnames(ghdata) <- c("Variable1", "Variable2")
+
+should do the job! I am sorry, if I am misunderstanding your question!
+
+Regards
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct  7 07:57:11 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 07 Oct 2007 00:57:11 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4555823.165574@sourceforge.net>
+Message-ID: <4556197.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4556197
+By: fsando
+
+Hi Kapatp
+Thanks for your quick reply.
+
+The point of labels in general is to indicate the real meaning of a variable
+which can not be contained in the name.
+In particular in rkward there is a field in the editor that shows labels.
+You can see this if you open a data.frame in the editor (right click the object
+and chose 'edit'). Write a label in the label field of one of the variabels,
+then try this in the console:
+attributes(data[["varname"]])
+
+If you import an spss dataset with read.spss from the foreign package you get
+the labels as an attribute:
+attr(data,"variable.labels")
+Which means that there is an attribute vector for the whole dataset for each
+extra attribute.
+
+It appears that rkward has created their own attribute which is like this: 
+attr(data[["varname"]],".rk.meta")
+That is, rkward adds an 'attribute-tree' to each individual variable
+
+I have been digging a little deeper.
+First: My initial code is wrong, it should probably be:
+attr(data,".rk.meta")["label"] <- "This is a label"
+
+Second: I reinstalled 0.4.8 and tested again, and I believe there may be a bug
+in 0.4.8 regarding labels.
+When I add labels the 'official' way writing it in the label field it disappears
+when I reload the data.
+Another thing is that 0.4.8 is _much_ slower than 0.4.2 (from 15 to 20 times
+slower ie. from 2 sek to over 30 sek for one operation)
+This could of course all be because 0.4.8 is not suitable for ubuntu 7.04
+
+So my question still is: is the code above correct in relation to 0.4.8 (even
+if it does not work on my machine at the moment) or should I change it to make
+sure it will work in the future?
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct  7 12:31:06 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 07 Oct 2007 05:31:06 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4556197.165574@sourceforge.net>
+Message-ID: <4556337.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4556337
+By: tfry
+
+Hi,
+
+the best way to read and write labels is using rk.get.label() and rk.set.label().
+The internal format for storing the meta-information might change in the future,
+but these functions will likely remain unchanged. However, rk.set.label() was
+not added until version 0.4.5.
+
+Viewing labels is broken in rkward 0.4.8, indeed. Thanks for pointing this out.
+This is now fixed in the current development sources (see
+http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN, if you would
+like to give it a try). Alternatively, you could use version 0.4.7a for now,
+which does not have this particular bug.
+
+You write that 0.4.8 is very slow on your system. Is this for all operations,
+or only for some? Could you perhaps provide some example code?
+
+Thanks!
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct  7 16:03:11 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 07 Oct 2007 09:03:11 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4555823.165574@sourceforge.net>
+Message-ID: <4556509.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4556509
+By: fsando
+
+Hi thanks for the answer
+> Viewing labels is broken in rkward 0.4.8, indeed.
+Ok, good to know that it wasn't me :)
+
+I will look into those functions rk.set.label()/rk.get.label() as soon
+as possible.
+
+> You write that 0.4.8 is very slow on your system. Is this for all operations,
+or only for some? Could you perhaps provide some example code?
+
+It is slow for absolutely everything, opening, loading workspace, opening an
+object for editing. running even the most simple code, the R engine is busy
+for a long time (ie. red) and the yellow is also often visible for several seconds
+before it turns green. The package I installed is the one for Debian Etch downloaded
+from sourceforge. I don't know if this is the correct package for ubuntu 7.04.
+I tried to add the rkward repository but got a "size mismatch" error. If no
+one else has such problems it is most likely to do with some kind of package/version
+mismatch. The version in the ubuntu repository is 0.4.2.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct  7 16:46:27 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 07 Oct 2007 09:46:27 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4555823.165574@sourceforge.net>
+Message-ID: <4556544.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4556544
+By: fsando
+
+UPDATE
+> This is now fixed in the current development sources...
+
+I just compiled and are now running 0.4.9pre1. It was surprisingly easy, took
+only a few minutes following the instructions from your link:
+http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN
+It appears to be running fine. No obvious problems.
+So thanks a lot for the answer.
+
+I am simply amazed that this is possible.
+
+I am now looking into making plugins. I have previously made packages for R
+for windows, and among other things made menus using the winMenu functions,
+so I am looking forward to working in this environment.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 02:24:35 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 07 Oct 2007 19:24:35 -0700
+Subject: [rkward-users] [rkward - Help] MDS of data in rkward
+Message-ID: <4557013.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4557013
+By: elevel
+
+I have data representing the similarity between ten different databases in a
+matrix format. Now I like to create a similarity map using multi dimensional
+scaling (MDS). Can somebody tell me if I can do such a thing using rkward? I
+could not find a self expanatory entry in the menues and searching through the
+formum, wiki and even the whole net for rkward and mds was unsuccesful. Appreciate
+any help.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 17:32:42 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 10:32:42 -0700
+Subject: [rkward-users] [rkward - Help] RE: MDS of data in rkward
+In-Reply-To: <4557013.165574@sourceforge.net>
+Message-ID: <4558042.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4558042
+By: kapatp
+
+Hi elevel,
+
+My understanding is that we do not have any existing plugins for your purpose.
+But, you could always use the Rconsole from RKWard, if you know the right functions
+in R.
+
+Sorry, not being "objectively" helpful!
+Regards,
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 18:22:00 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 11:22:00 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4556544.165574@sourceforge.net>
+Message-ID: <4558116.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4558116
+By: tfry
+
+Thanks for all the kind words.
+
+If you want to give plugin development a try, that would be great! I suppose
+you've already found the documentation at
+http://rkward.sourceforge.net/documents/devel/plugins/index.html . If you have
+questions (or results), just send us a mail to the rkward-devel mailing list
+(moderated list due to SPAM problems, but you can still post without being
+subscribed).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 19:35:41 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 12:35:41 -0700
+Subject: [rkward-users] [rkward - Help] RE: manipulating data.frame labels
+	via script
+In-Reply-To: <4555823.165574@sourceforge.net>
+Message-ID: <4558241.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4558241
+By: fsando
+
+I will develop plugins, that's my nature ;) but I am a bit busy the next month
+or so. I have already created a new menu but no content yet. So I will definitely
+be back. I have a some experience with php so I am really looking forward to
+start.
+
+Regards 
+Finn
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 20:27:00 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 13:27:00 -0700
+Subject: [rkward-users] [rkward - Help] RE: MDS of data in rkward
+In-Reply-To: <4557013.165574@sourceforge.net>
+Message-ID: <4558306.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4558306
+By: tfry
+
+Hi,
+
+as PK has pointed out, RKWard does not have a GUI for MDS, yet. And it's not
+the only thing you'll find missing in the menus. But RKWard is based on a very
+powerful statisticas system (R) and you can access all that functionality using
+the RConsole. A useful starting point is the "Help Search" (at the bottom).
+Searching for MDS, there, will point you to functions cmdscale() in package
+stats, and isoMDS() in package MASS.
+
+Juding by your name, you are likely German, so this more hands-on instruction
+may be of interest to you:
+http://www.wiwi.uni-bielefeld.de/~frohn/Mitarbeiter/Handl/mvamdsr.html .
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Oct  8 22:23:56 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 15:23:56 -0700
+Subject: [rkward-users] [rkward - Help] trouble with crosstabs and
+	regression output
+Message-ID: <4558578.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4558578
+By: edoviak
+
+Just installed the latest version of RKWard on Debian Etch/Lenny (architecture:
+i686). Once again, I'm very impressed by the progress the developers have made.
+Thank you for all of your hard work on this project.
+
+As I was looking at some of the new features -- Crosstabs and Linear Regression
+-- I ran into some trouble and I'm wondering if there's a simple remedy that
+I missed.
+
+Specifically, when I try to run Crosstabs, I load the "xtable" and "R2HTML"
+packages (as instructed). After I load those packages and try again, I get the
+following error message:
+
+Error in eval.with.vis(expr, pf, baseenv()) : 
+        could not find function "print.xtable"
+In addition: Warning message:
+Chi-squared approximation may be incorrect in: chisq.test(results[[i]],
+simulate.p.value = FALSE)
+
+Is there another package I need to load in order to view the output? Linear
+regression runs much better, but the significance codes look funny (at least
+on my computer):
+
+--- Signif. codes: 0 ???***??? 0.001 ???**??? 0.01 ???*???
+0.05 ???.??? 0.1 ??? ??? 1
+
+Is there a font that I need to install or something?
+
+Thanks,
+- Eric
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Oct  9 05:42:33 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Oct 2007 22:42:33 -0700
+Subject: [rkward-users] [rkward - Help] RE: trouble with crosstabs and
+	regression out
+In-Reply-To: <4558578.165574@sourceforge.net>
+Message-ID: <4559382.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4559382
+By: nono_231
+
+Hi edoviak!
+
+Thanx for the good words!
+
+The crosstabs N to 1 plugin:
+The problem already discovered just a few days after the release unfortunately.
+It is a problem that came up from the combination of rk.print and xtable, which
+for an undefined reason does not work anymore. We searched all the plugins (but
+we missed this one - hopefully the only one) to fix it using rk.results instead
+of rk.print before the release. Unfortunately there is not much that you can
+do. A next bug fix release can solve the problem.
+
+The linear regression plugin:
+It is a problem of encoding. I wrote a much more elaborate version of lr plugin
+in order to avoid this problem, but did not pass. I suggest to the main developer
+to go back to this version (and solve any problems that may come up).
+This is something you can do for this for now. When you are at the results tab
+you can cange manually to utf-8 (from the view menu). That will solve the problem
+temporarily.
+
+Thanx for the reports.
+
+Kind Regards,
+Ilias
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Oct  9 10:00:20 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Oct 2007 03:00:20 -0700
+Subject: [rkward-users] [rkward - Help] RE: trouble with crosstabs and
+	regression out
+In-Reply-To: <4558578.165574@sourceforge.net>
+Message-ID: <4559695.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4559695
+By: edoviak
+
+Thanks for the quick response.
+
+The linear regression output is perfect with the UTF-8 encoding.
+
+As regards crosstabs ... Your suggestion to replace "rk.print" with "rk.results"
+works ... well, sort of. The output table is very confusing if you're using
+dummy variables. For example, create a fictional dataset with two dummy variables:
+RKWard_user (1 if uses RKWard, 0 otherwise) and female (1 if female, 0 otherwise).
+Then run the N to 1 crosstab and look at the output.
+
+>From another test, I know that the independent variable is in the columns and
+the dependent variable is in the rows, but there are no labels beside the rows
+and above the columns, so it's very confusing when you're working with two dummy
+variables. I know this is easier said than done, but ... would it be possible
+to add labels in the next version of RKWard?
+
+If it helps you, I'll fiddle with the R script to create the labels. (Sorry.
+I don't know PHP).
+
+On a positive note ... You gave me a Chi-Square statistic and a p-value. That
+makes me happy!
+
+Thanks again,
+- Eric
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Oct 10 05:41:09 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Oct 2007 22:41:09 -0700
+Subject: [rkward-users] [rkward - Help] RE: MDS of data in rkward
+In-Reply-To: <4557013.165574@sourceforge.net>
+Message-ID: <4561337.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4561337
+By: elevel
+
+Hi PK and Thomas,
+
+thank you both very much for your replies in that matter. It is good to know
+that R supports MDS and therefore that there is a potential to include this
+capability into the GUI of RKward in future. Unfortunately I am a newbee to
+both R and MDS therefore I decided to deal with one at the time, which will
+be MDS at this stage.
+
+Also very much for the link to the description on how to do MDS in R, and yes
+I am German. Thank you very much again for your replies.
+
+Regards
+Sebastian
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct 14 13:58:25 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 14 Oct 2007 06:58:25 -0700
+Subject: [rkward-users] [rkward - Help] segfault on startup
+Message-ID: <4567915.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4567915
+By: cervino
+
+hello,
+After compilation of rkward version 0.4.8 on debian I get the following error
+when I launch the application:
+
+Error: cannot coerce type externalptr to character vector
+
+ *** caught segfault ***
+address 0x650018, cause 'memory not mapped'
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+
+I had previously installed the application from the debian repository however
+there was a problem when sending a script from the editor to the console which
+got frozen.
+
+Thank you for your help
+cervino
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct 14 15:30:22 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 14 Oct 2007 08:30:22 -0700
+Subject: [rkward-users] [rkward - Help] RE: segfault on startup
+In-Reply-To: <4567915.165574@sourceforge.net>
+Message-ID: <4567995.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4567995
+By: tfry
+
+Hi cervino,
+
+I believe the problem you report is likely to be caused by some parts of the
+earlier installation being picked up by rkward. So, first of all, you should
+try to clean up all potential leftovers of previous installtions.
+
+1. Uninstall the debian package
+2. Run
+# sudo R CMD REMOVE rkward
+repeat this step until you get a message that no "rkward" library could
+be found
+3. Reinstall rkward and try again
+
+> I had previously installed the application from the debian repository however
+there was a problem when sending a script from the editor to the console which
+got frozen.
+
+Which version of rkward was this?
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Oct 14 19:46:48 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 14 Oct 2007 12:46:48 -0700
+Subject: [rkward-users] [rkward - Help] RE: segfault on startup
+In-Reply-To: <4567915.165574@sourceforge.net>
+Message-ID: <4568222.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4568222
+By: cervino
+
+Thank you Thomas for your prompt response.
+I did what you suggested but it did not solve the problem. May be there is something
+in my configuration which affects the compilation.
+So I removed every trace of rkward again and downloaded the deb file for rkward
+0.4.8 from the Debian repository and installed it. The installation was ok and
+everything went fine no more freezing of the console.
+Thank you for this very useful application.
+Cervino
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Oct 24 09:41:41 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 24 Oct 2007 02:41:41 -0700
+Subject: [rkward-users] [rkward - Help] emacs bindings?
+Message-ID: <4585724.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4585724
+By: mgrachten
+
+Hi,
+
+Does anybody know if there is another way to get emacs key bindings in the rkward
+editor, other than changing every key binding individually in the preferences?
+Many thanks in advance!
+
+Cheers,
+
+Maarten
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Oct 24 16:29:47 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 24 Oct 2007 09:29:47 -0700
+Subject: [rkward-users] [rkward - Help] crash when creating dataset
+Message-ID: <4586313.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4586313
+By: ladex
+
+I just compiled rkward 0.4.8 on my machine running PCLinuxOS2007. After installing
+and updating several packages everything seemed to work fine. I were able to
+start rkward via the kde-menu and I could create an new empty workspace. But
+when I try to create a new Dataset, the program hangs. I am able to enter the
+name of the new dataset and I can see the new empty Table in the background
+afterwords. But immediately a new window pops up saying "R backend requests
+information" and on the lower right it says "R engine busy", before it said
+"R engine idle". Now the program hangs. I expirienced the same problem, when
+I tried to "start with an empty table", by the way.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Oct 24 17:48:44 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 24 Oct 2007 10:48:44 -0700
+Subject: [rkward-users] [rkward - Help] RE: crash when creating dataset
+In-Reply-To: <4586313.165574@sourceforge.net>
+Message-ID: <4586470.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4586470
+By: tfry
+
+Hi,
+
+thanks for your report. Another user reported grave problems on PCLinuxOS2007
+some time ago, but I did not get back to him immediately, and he was no longer
+available, later. https://sourceforge.net/forum/message.php?msg_id=4395350
+
+Since this crash does not occur on other systems, I need some further info.
+First, please try the following: Enter some simple commands in the R Console,
+e.g.
+> a=5
+> print (a)
+> plot (1, 1)
+Does this work, or does this crash as well?
+
+If you open the "Workspace" browser (on the left), and check the "Show
+all Environments" option, does anything show up?
+
+After the crash, are there any messages on the (kde) console?
+
+Could you run rkward from a terminal using
+# rkward --debug-level 5
+
+This will generate a whole lot of output. Could you post this somewhere (if
+you have the option, place it on a web-server, somewhere, else zip it up, and
+post to rkward-devel at lists dot sourceforget dot net)?
+
+Which version of R is this? If I looked in the correct place, it is R 2.3.1.,
+which is rather old, and probably not well tested with current versions of RKWard.
+If you have the option to upgrade your installation of R, could you try this
+(afterwards you will need to repeat the make and make install steps in your
+RKWard sources).
+
+Thanks!
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Oct 24 18:20:40 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 24 Oct 2007 11:20:40 -0700
+Subject: [rkward-users] [rkward - Help] RE: emacs bindings?
+In-Reply-To: <4585724.165574@sourceforge.net>
+Message-ID: <4586537.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4586537
+By: tfry
+
+Hi Maarten,
+
+I know of no such way. However when you're done, you can save others the same
+effort by looking for the section "[Katepart Shortcuts]" in the file
+~/.kde/share/config/rkwardrc and posting the contents somewhere (e.g. in the
+project wiki http://rkward.sourceforge.net/wiki). Then others can simply copy
+and paste that section to get the same keybindings. Note, however, that in KDE
+4 several of the actions in kate will have a different name, so most likely
+you will need to reconfigure the shortcuts again, then.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Oct 25 13:17:33 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 25 Oct 2007 06:17:33 -0700
+Subject: [rkward-users] [rkward - Help] RE: emacs bindings?
+In-Reply-To: <4585724.165574@sourceforge.net>
+Message-ID: <4587789.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4587789
+By: mgrachten
+
+Hmm, too bad... But thanks anyway for the response. From the hints you give
+it looks like an emacs-bindings fragment from a Kate configuration file would
+also do. Couldn't find any such fragment on the web however. Well, when I finish
+this rkward job of defining keybindings I'll post the configuration. Cheers,
+Maarten
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Oct 25 15:47:00 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 25 Oct 2007 08:47:00 -0700
+Subject: [rkward-users] [rkward - Help] RE: crash when creating dataset
+In-Reply-To: <4586313.165574@sourceforge.net>
+Message-ID: <4588017.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4588017
+By: ladex
+
+Dear Thomas,
+
+you are right, it's version R 2.3.1, I'll ask for an precompiled update, maybe
+I'll try to compile it myself as well.
+
+When opening the "Workspace" browser, I can see a list of eight packages, Autoloads
+and .GlobalEnv in "Options".
+
+There are no additional messages on the kde-console after the crash when not
+run in debug-mode.
+
+plot (1,1) works fine, the following output is displayed on the kde-console:
+rkward: *** Embed 48234497 into 39847661. window=0
+rkward: > before reparent: parent=0x40
+rkward: > Loop 0: > reparent of 0x2e00001 into 0x26006ed successful
+QInputContext: cannot create input context for non-toplevel widgets
+QInputContext: cannot create input context for non-toplevel widgets
+
+print (5) works fine as well
+
+rkward crashes when entering a=5 without any additional messages being displayed
+(but "R engine busy" on the lower right), when entering print (a) I get "Error
+in print(a): object "a" not found" on the R console and on the kde-console as
+well and the program crashes again (R engine busy).
+
+I started rkward in debug-mode and I (only) sent you what I received after I
+tried to create a new dataset and after entering a=5 on the R console. Please
+let me now if you need more information.
+
+Thanks for your immediate response
+Andreas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Oct 25 16:02:06 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 25 Oct 2007 09:02:06 -0700
+Subject: [rkward-users] [rkward - Help] RE: crash when creating dataset
+In-Reply-To: <4588017.165574@sourceforge.net>
+Message-ID: <4588041.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4588041
+By: tfry
+
+Hi Andreas,
+
+thanks for the additonal info, and the debug output. I think I now have a pretty
+good idea what's going wrong, and will look into a fix tonight. After that I
+would like to ask you test the fix (I'll contact you by mail, then). Therefore,
+while the problem seems to be related to R 2.3, indeed, I would be nice, if
+you could hold off on updating R for a little while longer, so we will know,
+whether the fix actually works for R 2.3.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Oct 26 06:07:05 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 25 Oct 2007 23:07:05 -0700
+Subject: [rkward-users] [rkward - Help] RE: emacs bindings?
+In-Reply-To: <4587789.165574@sourceforge.net>
+Message-ID: <4589318.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4589318
+By: kapatp
+
+Hi Maarten, if you happen to do these keybindings, that will be a great contribution.
+Good luck, I am looking forward to it. Regards, PK.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Oct 26 14:44:05 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 26 Oct 2007 07:44:05 -0700
+Subject: [rkward-users] [rkward - Help] RE: trouble with crosstabs and
+	regression out
+In-Reply-To: <4559695.165574@sourceforge.net>
+Message-ID: <4589983.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4589983
+By: tfry
+
+Hi Eric,
+
+> If it helps you, I'll fiddle with the R script to create the labels. (Sorry.
+I don't know PHP).
+
+sorry, I got a bit distracted by the KDE 4 porting efforts, but certainly not
+turning down an offer for help.
+
+If you could look into the R code in this respect, that would be great. Probably
+the most useful way would be to extend rk.results() so that it can generally
+handle tables and matrices in a sensible way, as this sort of results will probably
+come up in several plugins.
+
+If you come up with anything, please post to the rkward-devel mailing list (postings
+by non-members are moderated due to problems with SPAM, not to actually restrict
+who can post).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

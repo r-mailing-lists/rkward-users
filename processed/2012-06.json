@@ -1,0 +1,109 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-06",
+  "messages": [
+    {
+      "id": "msg-8c09d4323131",
+      "message_id": "<3438920.V5IJNn9yIh@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-06-05T18:10:38Z",
+      "subject": "[rkward-users] OS X build updated",
+      "subject_clean": "[rkward-users] OS X build updated",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\ni've updated the pre-built OS X bundle to the current development snapshot \n(RKWard 0.5.7+svn4267, R 2.15.0, KDE 4.8.3):\n o http://sourceforge.net/projects/rkwardextras/files/MacOSX/\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120605/b5eaef5a/attachment.sig>",
+      "body_snippet": "hi,\n\ni've updated the pre-built OS X bundle to the current development snapshot \n(RKWard 0.5.7+svn4267, R 2.15.0, KDE 4.8.3):\n o http://sourceforge.net/projects/rkwardextras/files/MacOSX/\n\n\nviele gr??",
+      "thread_id": "thread-8c09d4323131",
+      "thread_depth": 0,
+      "month": "2012-06"
+    },
+    {
+      "id": "msg-6e456cfd984d",
+      "message_id": "<forum-165574-11579301@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-06-19T07:20:18Z",
+      "subject": "[rkward-users] [Help] MD5 Request.",
+      "subject_clean": "[rkward-users] [Help] MD5 Request.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by mcertini at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5363673:\n\nI am trying to find the MD5 for the file rkward.frontend.exe which resides in\nthe KDE subdirectory.  When I look at the MD5 in the subdirectory R I could\nnot find this file's hash.  An MD5 file does not exist in the KDE subdirectory.",
+      "body_snippet": "The following forum message was posted by mcertini at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5363673:\n\nI am trying to find the MD5 for the file rkward.frontend.exe which resi",
+      "thread_id": "thread-6e456cfd984d",
+      "thread_depth": 0,
+      "month": "2012-06"
+    },
+    {
+      "id": "msg-04fd7d05b126",
+      "message_id": "<CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>",
+      "from_name": "james pruett",
+      "from_email_hash": "48d3521f1fab97249723fe8454ccba98fa82392f6199b29d05e5bf79ec1db164",
+      "date": "2012-06-27T01:42:11Z",
+      "subject": "[rkward-users] (no subject)",
+      "subject_clean": "[rkward-users] (no subject)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "newbie here.\n\nI installed rkward on Ubuntu.\nIt installed aok.\n\n----------------------I get this error:---------------------\n> install.packages(\"devtools\")\nInstalling package(s) into ?/home/jim/R/i686-pc-linux-gnu-library/2.12?\n(as ?lib? is unspecified)\n--- Please select a CRAN mirror for use in this session ---\nWarning message:\nIn getDependencies(pkgs, dependencies, available, lib) :\n  package ?devtools? is not available\n----------------------------------------------------------\n\nThanks for creating this. It looks good!\n-cellurl",
+      "body_snippet": "newbie here.\n\nI installed rkward on Ubuntu.\nIt installed aok.\n\n----------------------I get this error:---------------------\n> install.packages(\"devtools\")\nInstalling package(s) into ?/home/jim/R/i686-",
+      "thread_id": "thread-04fd7d05b126",
+      "thread_depth": 0,
+      "month": "2012-06"
+    },
+    {
+      "id": "msg-d450017c4313",
+      "message_id": "<4FEABE1A.3020703@ugent.be>",
+      "from_name": "Jan Lammertyn",
+      "from_email_hash": "8e2bd69911da006cb94cd0f46b307f5e312792dcbedf43fea2c8943841676511",
+      "date": "2012-06-27T08:02:34Z",
+      "subject": "[rkward-users] (no subject)",
+      "subject_clean": "[rkward-users] (no subject)",
+      "in_reply_to": "<CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>",
+      "references": [
+        "<CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi James,\n\nNo experience with devtools, but apparently you run R version 2.12 and \ndevtools needs at least 2.13. Therefore it's not available for your \nversion. See also http://cran.r-project.org/web/packages/devtools/index.html\n\n\nOn 27/06/2012 03:42 AM, james pruett wrote:\n> newbie here.\n>\n> I installed rkward on Ubuntu.\n> It installed aok.\n>\n> ----------------------I get this error:---------------------\n>> install.packages(\"devtools\")\n> Installing package(s) into ?/home/jim/R/i686-pc-linux-gnu-library/2.12?\n> (as ?lib? is unspecified)\n> --- Please select a CRAN mirror for use in this session ---\n> Warning message:\n> In getDependencies(pkgs, dependencies, available, lib) :\n>    package ?devtools? is not available\n> ----------------------------------------------------------\n>\n> Thanks for creating this. It looks good!\n> -cellurl\n>\n> ------------------------------------------------------------------------------\n> Live Security Virtual Conference\n> Exclusive live event will cover all the ways today's security and\n> threat landscape has changed and how IT managers can respond. Discussions\n> will include endpoint security, mobile security and the latest in malware\n> threats. http://www.accelacomm.com/jaw/sfrnl04242012/114/50122263/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>",
+      "body_snippet": "Hi James,\n\nNo experience with devtools, but apparently you run R version 2.12 and \ndevtools needs at least 2.13. Therefore it's not available for your \nversion. See also http://cran.r-project.org/web/",
+      "thread_id": "thread-04fd7d05b126",
+      "thread_depth": 1,
+      "month": "2012-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8c09d4323131",
+      "subject": "[rkward-users] OS X build updated",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2012-06-05T18:10:38Z",
+      "last_reply": "2012-06-05T18:10:38Z",
+      "root_message_id": "msg-8c09d4323131"
+    },
+    {
+      "id": "thread-6e456cfd984d",
+      "subject": "[rkward-users] [Help] MD5 Request.",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2012-06-19T07:20:18Z",
+      "last_reply": "2012-06-19T07:20:18Z",
+      "root_message_id": "msg-6e456cfd984d"
+    },
+    {
+      "id": "thread-04fd7d05b126",
+      "subject": "[rkward-users] (no subject)",
+      "message_count": 2,
+      "participants": [
+        "Jan Lammertyn",
+        "james pruett"
+      ],
+      "started": "2012-06-27T01:42:11Z",
+      "last_reply": "2012-06-27T08:02:34Z",
+      "root_message_id": "msg-04fd7d05b126"
+    }
+  ]
+}

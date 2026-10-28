@@ -1,0 +1,131 @@
+From thedoctor81877 at gmail.com  Mon Dec 19 14:26:09 2016
+From: thedoctor81877 at gmail.com (Philip (Michael) Dykes)
+Date: Mon, 19 Dec 2016 09:26:09 -0500
+Subject: Graphing a piece-wise defined function in RKward
+Message-ID: <91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>
+
+I am very new to both R and Rkward and am trying to plot the following:
+
+f(x)=    x^2, if x <= 2,
+             6-x, if x > 2.
+
+How can I do this in Rkward? Also, I would like the graph (plot) to look 
+as much as possible like the graph I was in this book (attached).
+
+Thanks so much.
+
+-MD
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: piecewise1.jpg
+Type: image/jpeg
+Size: 76908 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/4faee62a/attachment-0001.jpg>
+
+From meik.michalke at uni-duesseldorf.de  Mon Dec 19 14:58:48 2016
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 19 Dec 2016 15:58:48 +0100
+Subject: Graphing a piece-wise defined function in RKward
+In-Reply-To: <91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>
+References: <91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>
+Message-ID: <1599805.yIKGi5RSgC@chiana>
+
+hi michael,
+
+Am Montag, 19. Dezember 2016, 09:26:09 CET schrieb Philip (Michael) Dykes:
+> I am very new to both R and Rkward and am trying to plot the following:
+> 
+> f(x)=    x^2, if x <= 2,
+>              6-x, if x > 2.
+> 
+> How can I do this in Rkward? Also, I would like the graph (plot) to look
+> as much as possible like the graph I was in this book (attached).
+
+this is a very basic R question, and general R support is far beyond the scope 
+if this mailing list (and, well, you should not send attachments to mailing 
+lists).
+
+but FWIW, here's a hint to get you a little closer to what you want to 
+achieve:
+
+  piecewise <- function(x){
+    if(x <= 2){
+      y <- x^2
+    } else {
+      y <- 6-x
+    }
+    return(y)
+  }
+
+  plot(sapply(-3:6, piecewise))
+
+
+you should try to work yourself through some basic R tutorials, there's a lot 
+of them out there on the web ;-)
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/70bc8b82/attachment.sig>
+
+From vojtech.zeisek at opensuse.org  Mon Dec 19 15:06:34 2016
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Mon, 19 Dec 2016 16:06:34 +0100
+Subject: Graphing a piece-wise defined function in RKward
+In-Reply-To: <91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>
+References: <91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>
+Message-ID: <20587605.IlVgTOixNW@veles.site>
+
+Dne pondělí 19. prosince 2016 9:26:09 CET, Philip (Michael) Dykes napsal(a):
+> I am very new to both R and Rkward and am trying to plot the following:
+> 
+> f(x)=    x^2, if x <= 2,
+>              6-x, if x > 2.
+> 
+> How can I do this in Rkward? Also, I would like the graph (plot) to look
+> as much as possible like the graph I was in this book (attached).
+
+I'd start with something like
+
+x <- seq(from=-3, to=6.5, by=0.1)
+
+for (i in 1:length(x)) {
+  if(x[i] <= 2) {
+    y[i] <- x[i]^2
+    } else if(x[i] > 2) {
+      y[i] <- 6-x[i]
+      }
+  }
+
+plot(x, y)
+
+There are plenty of possibilities to tune plot look and feel.
+
+-- 
+Vojtěch Zeisek
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+
+https://www.opensuse.org/
+https://trapa.cz/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/173bac1b/attachment.sig>
+

@@ -1,0 +1,235 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2011-12",
+  "messages": [
+    {
+      "id": "msg-7e635f128172",
+      "message_id": "<forum-165574-10871560@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-02T10:27:52Z",
+      "subject": "[rkward-users] [Help] workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] workspace doesn't save layout (scripts)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHello,\n\nReloading a previously saved workspace fails to open the associated script\nfiles.\nAny tips to solve that ?\n\nThanks.\n\nConfig:\nUbuntu 11.04 (Natty) 64B\nrkward 0.5.7 (KDE 4.6.2)\nR version 2.13.1",
+      "body_snippet": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHello,\n\nReloading a previously saved workspace fails to open the associated ",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-e5b0c9e019ca",
+      "message_id": "<forum-165574-10871773@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-02T11:26:29Z",
+      "subject": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "in_reply_to": "<forum-165574-10871560@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHi!\n\nFirst, please check Settings->Configure RKWard->General. There are several options\non how to save the workplace layout. Make sure, this is set to \"Save/restore\nwith R workspace, when saving/loading R workspace\".\n\nIf that does not help, look out for a file in the same directory as your saved\nworkspace, with the same file name, but an appended \".rkworkplace\". Does this\nfile exist (if the above option is set, it should be created when you save the\nworkspace)? Open it in a text editor. Does it appear to contain the relevant\nscript files?\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHi!\n\nFirst, please check Settings->Configure RKWard->General. There are sev",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 1,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-9b5317d9830e",
+      "message_id": "<forum-165574-10871931@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-02T12:37:04Z",
+      "subject": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "in_reply_to": "<forum-165574-10871773@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHi Thomas,\n\nThank you for your quick answer.\n\n1) The setting in Settings->Configure RKWard->General was OK\n2)  I found no file nor with the same name nor appended \".rkworkplace\"\n\nI'm storing several workspaces in a same directory. Could it be the source of\nthat issue ?\n\nRegards",
+      "body_snippet": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHi Thomas,\n\nThank you for your quick answer.\n\n1) The setting in Settings->Co",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 2,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-7f172a94d33f",
+      "message_id": "<forum-165574-10872726@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-02T17:08:01Z",
+      "subject": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "in_reply_to": "<forum-165574-10871931@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nSeveral workspaces in the same directory should not be a problem. But please\ntest, whether it works, when saving to a different directory. Perhaps there\nis a problem with the permissions to create files in that dir?\n\nPlease take a look at the \"Command log\" window. When saving, you should see\na call to rk.save.workplace() before the call to save(). Is that present? Are\nthere any errors attached to that? What if you copy and paste the call\nto rk.save.workplace() to the R Console window?\n\nDoes rk.get.workspace.url() yield the correct result?\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nSeveral workspaces in the same directory should not be a problem. But pleas",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 3,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-37612cd4c203",
+      "message_id": "<forum-165574-10873755@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-02T23:28:05Z",
+      "subject": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "in_reply_to": "<forum-165574-10872726@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nYou were right: saving to a different directory worked.\nThe Command log reported the absence of rworkplace file.\nThere were \"[ ]\" characters in the path to the directory. Replacing them with\n\"_\" apparently solved my problem. However, this was never a problem before...\nstrange.\n\nthanks !",
+      "body_snippet": "The following forum message was posted by cc6 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nYou were right: saving to a different directory worked.\nThe Command log repo",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 4,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-0a7be41c2242",
+      "message_id": "<forum-165574-10875775@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-12-03T14:39:33Z",
+      "subject": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "subject_clean": "[rkward-users] [Help] RE: workspace doesn't save layout (scripts)",
+      "in_reply_to": "<forum-165574-10873755@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHI!\n\nI don't know why it used to work. Possibly file names like this were handled\nslightly differently in a previous version of R.\n\nI have committed a change to the development version of RKWard, which should\nfix the problem. Please consider testing the fix. For Ubuntu we have daily builds\nof the development version, here:\nhttps://launchpad.net/~rkward-devel/+archive/rkward-dailys (NOTE: It will take\nup to 24 hours until the fix is actually available in the daily builds, so please\ntry [i]tomorrow[/i]).\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4857688:\n\nHI!\n\nI don't know why it used to work. Possibly file names like this were h",
+      "thread_id": "thread-7e635f128172",
+      "thread_depth": 5,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-5a43917a2869",
+      "message_id": "<4626928.HTnpDZPFyd@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2011-12-03T22:04:20Z",
+      "subject": "[rkward-users] new external plugin: cluster analysis",
+      "subject_clean": "[rkward-users] new external plugin: cluster analysis",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\ni've been on some trains again... as suggested by burfee earlier, i tried to \nwrite GUI dialogs for most of\n o http://statmethods.net/advstats/cluster.html\nit's not complete (only used base and mclust functions), but still the most \nimportant features should be available now:\n o http://rkward.sourceforge.net/R/pckg/rk.ClusterAnalysis/index.html\n\nyou need RKWard 0.5.7, where you can easily install the plugin via the R \npackage management dialog (\"rk.ClusterAnalysis\"). after installation, you \nshould find \"Cluster analysis\" sub menus in \"Analysis\" and \"Plots\". note that \ni put the usual plot functions in the \"Analysis\" dialogs at the moment, as \nthis seemed to me to be the most comfortable workflow (especially using the \npreview feature). in the \"Plots\" menu is a graphical tool to determine the \nnumber of clusters to extract. adding to the k-means WSS method described on \nthe Quick-R page, i also tried to implement a quite configurable inverse Scree \nplot -- i hope i got that one right!\n\nso, please check it out! (see e.g. ?kmeans for sample data in the examples)\n\nbeing that this is the result of two train rides, there's surely need for \nimprovements and bug-fixing. btw., the plugin was (of course ;-)) developed \nwith the rkwarddev package, and as usual you can find the very build script in \nthe installed plugin location, if you want to change things:\n $YOUR_R_PACKAGES/rk.ClusterAnalysis/rkward/rkwarddev_CA_plugin_script.R\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111203/733a7cac/attachment.sig>",
+      "body_snippet": "hi,\n\ni've been on some trains again... as suggested by burfee earlier, i tried to \nwrite GUI dialogs for most of\n o http://statmethods.net/advstats/cluster.html\nit's not complete (only used base and m",
+      "thread_id": "thread-5a43917a2869",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-b3e3d621af15",
+      "message_id": "<1323798020.93588.YahooMailNeo@web114620.mail.gq1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2011-12-13T17:40:20Z",
+      "subject": "[rkward-users] Rkward 0.57 on Windows and compatibility with R 2.14.0",
+      "subject_clean": "[rkward-users] Rkward 0.57 on Windows and compatibility with R 2.14.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\n?Since the? binary installation bundle?comes with R 2.13.2, is Rkward 0.57-3 on Windows compatible with R 2.14.0 ?\n?\nIf so, I'll do a custom installation !\n?\nThanks\n\nFran?ois Maurice, B. Sc., A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111213/40285a04/attachment.html>",
+      "body_snippet": "Hi,\n?\n?Since the? binary installation bundle?comes with R 2.13.2, is Rkward 0.57-3 on Windows compatible with R 2.14.0 ?\n?\nIf so, I'll do a custom installation !\n?\nThanks\n\nFran?ois Maurice, B. Sc., A.",
+      "thread_id": "thread-b3e3d621af15",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-8cb159d43c30",
+      "message_id": "<1323798488.71483.YahooMailNeo@web114607.mail.gq1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2011-12-13T17:48:08Z",
+      "subject": "[rkward-users] Intalling multiple versions of Rkward and KDEwin",
+      "subject_clean": "[rkward-users] Intalling multiple versions of Rkward and KDEwin",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\nIs it possible to install multiple vsersions of Rkward and KDE for Windows?\n?\nThanks,\n\nFran?ois Maurice, B. Sc., A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111213/b1c91f95/attachment.html>",
+      "body_snippet": "Hi,\n?\nIs it possible to install multiple vsersions of Rkward and KDE for Windows?\n?\nThanks,\n\nFran?ois Maurice, B. Sc., A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n",
+      "thread_id": "thread-8cb159d43c30",
+      "thread_depth": 0,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-826b42f25e02",
+      "message_id": "<201112131912.08993.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-12-13T18:12:02Z",
+      "subject": "[rkward-users] Rkward 0.57 on Windows and compatibility with R 2.14.0",
+      "subject_clean": "[rkward-users] Rkward 0.57 on Windows and compatibility with R 2.14.0",
+      "in_reply_to": "<1323798020.93588.YahooMailNeo@web114620.mail.gq1.yahoo.com>",
+      "references": [
+        "<1323798020.93588.YahooMailNeo@web114620.mail.gq1.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 13 December 2011, Francois Maurice wrote:\n>  Since the  binary installation bundle comes with R 2.13.2, is Rkward\n> 0.57-3 on Windows compatible with R 2.14.0 ? \n\nyes it is.\n\nWe only update the installation bundle every once in a while, because that is  \na whole lot of work. Last time we did, R 2.14.0 had not been officially \nreleased, yet.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111213/2de55e57/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 13 December 2011, Francois Maurice wrote:\n>  Since the  binary installation bundle comes with R 2.13.2, is Rkward\n> 0.57-3 on Windows compatible with R 2.14.0 ? \n\nyes it is.\n\nWe only u",
+      "thread_id": "thread-b3e3d621af15",
+      "thread_depth": 1,
+      "month": "2011-12"
+    },
+    {
+      "id": "msg-1ab7d4afd367",
+      "message_id": "<201112131918.40121.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-12-13T18:18:39Z",
+      "subject": "[rkward-users] Intalling multiple versions of Rkward and KDEwin",
+      "subject_clean": "[rkward-users] Intalling multiple versions of Rkward and KDEwin",
+      "in_reply_to": "<1323798488.71483.YahooMailNeo@web114607.mail.gq1.yahoo.com>",
+      "references": [
+        "<1323798488.71483.YahooMailNeo@web114607.mail.gq1.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 13 December 2011, Francois Maurice wrote:\n> Is it possible to install multiple vsersions of Rkward and KDE for Windows?\n\nyes. However, if different versions of KDE are involved, after running one \ninstallation, and before starting a different one, you will have to kill all \nKDE-processes, or reboot the system. If you see the message \"Could not start \nprocess Cannot talk to klauncher: The name org.kde.klauncher was not provided \nby any .service files.\", you know you have run into the problem.\n\nThis should not be a problem, if all installations use the same version of \nKDE.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111213/ba4ae55f/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 13 December 2011, Francois Maurice wrote:\n> Is it possible to install multiple vsersions of Rkward and KDE for Windows?\n\nyes. However, if different versions of KDE are involved, after ",
+      "thread_id": "thread-8cb159d43c30",
+      "thread_depth": 1,
+      "month": "2011-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7e635f128172",
+      "subject": "[rkward-users] [Help] workspace doesn't save layout (scripts)",
+      "message_count": 6,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2011-12-02T10:27:52Z",
+      "last_reply": "2011-12-03T14:39:33Z",
+      "root_message_id": "msg-7e635f128172"
+    },
+    {
+      "id": "thread-5a43917a2869",
+      "subject": "[rkward-users] new external plugin: cluster analysis",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2011-12-03T22:04:20Z",
+      "last_reply": "2011-12-03T22:04:20Z",
+      "root_message_id": "msg-5a43917a2869"
+    },
+    {
+      "id": "thread-b3e3d621af15",
+      "subject": "[rkward-users] Rkward 0.57 on Windows and compatibility with R 2.14.0",
+      "message_count": 2,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-12-13T17:40:20Z",
+      "last_reply": "2011-12-13T18:12:02Z",
+      "root_message_id": "msg-b3e3d621af15"
+    },
+    {
+      "id": "thread-8cb159d43c30",
+      "subject": "[rkward-users] Intalling multiple versions of Rkward and KDEwin",
+      "message_count": 2,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-12-13T17:48:08Z",
+      "last_reply": "2011-12-13T18:18:39Z",
+      "root_message_id": "msg-8cb159d43c30"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+From noreply at sourceforge.net  Wed Jan  4 03:21:14 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 03 Jan 2012 19:21:14 -0800
+Subject: [rkward-users] [Help] rkward start and crash error
+Message-ID: <forum-165574-11007017@sourceforge.net>
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:
+
+Hi,
+I am facing some serious issues with RKward 0.5.7z-dailybuilds. It is crashing
+as soon as it starts. I am worried that a backend R problem is some how associated,
+at least that is what the error message is indicating.
+
+Here is my system info:
+OS: Linux mint11 (Katya)
+Kernel: Linux 2.6.38-12
+Platform: X86_64
+CPU: Intel core i7-2620 M CPU 2.70 GHz
+Ram: 5.8 GB
+I manage to take some screenshots:
+[URL=http://imageshack.us/photo/my-images/502/error2i.png/][IMG]http://img502.im
+ageshack.us/img502/8653/error2i.th.png[/IMG][/URL]
+[URL=http://imageshack.us/photo/my-images/6/rkwardstartingerror.png/][IMG]http:/
+/img6.imageshack.us/img6/258/rkwardstartingerror.th.png[/IMG][/URL]
+Here are some pastebin results:
+http://pastebin.com/rmy7PtWc
+and
+http://pastebin.com/HJRAcLLn - although this one might not be too helpful.
+If I try to reinstall rkward, I get dependency error:
+[URL=http://imageshack.us/photo/my-images/171/rkwardreinstallationiss.png/][IMG]
+http://img171.imageshack.us/img171/5997/rkwardreinstallationiss.th.png[/IMG][/UR
+L]
+
+One other thing, exactly same problem is observed in a different system where
+Ubuntu 10.04 64 bit installed. Unfortunately, I do not have the details error
+code for that system now. However, both of them were running fine two months
+ago. Any suggestions to resolve this issue is much appreciated.
+Best,
+Sourav
+
+
+
+
+From noreply at sourceforge.net  Wed Jan  4 09:11:59 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 04 Jan 2012 01:11:59 -0800
+Subject: [rkward-users] [Help] RE: rkward start and crash error
+In-Reply-To: <forum-165574-11007017@sourceforge.net>
+Message-ID: <forum-165574-11008215@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:
+
+Hi!
+
+You are trying to use a version of RKWard compiled against R < 2.14.0 with R
+>= 2.14.0. This is not going to work, and essentially that is what that dependency
+error is about.
+
+Use this PPA, instead, which provided binaries of RKWard built against R 2.14.x:
+https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran .
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Jan  5 20:51:07 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 05 Jan 2012 12:51:07 -0800
+Subject: [rkward-users] [Help] RE: rkward start and crash error
+In-Reply-To: <forum-165574-11008215@sourceforge.net>
+Message-ID: <forum-165574-11015824@sourceforge.net>
+
+The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:
+
+Hi Thomas,
+
+[quote]You are trying to use a version of RKWard compiled against R < 2.14.0
+with R >= 2.14.0. This is not going to work, and essentially that is what that
+dependency error is about.[/quote]
+
+Thanks for explaining.
+
+[quote]Use this PPA, instead, which provided binaries of RKWard built against
+R 2.14.x: https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran
+[/quote]
+
+Resolved the problem without further issues.
+
+Thanks.
+Best,
+Sourav
+
+
+
+From Meik.Michalke at uni-duesseldorf.de  Wed Jan 11 15:27:36 2012
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 11 Jan 2012 16:27:36 +0100
+Subject: [rkward-users] first public beta for RKWard on MacOSX
+Message-ID: <201201111627.40705.meik.michalke@uni-duesseldorf.de>
+
+dear all,
+
+we are proud to announce the first public beta test version or RKWard on 
+MacOSX. if you have access to a Mac -- or know people who are anxious to use 
+RKWard on their's --, please consider testing this release, and give us 
+feedback:
+ o https://sourceforge.net/projects/rkwardextras/files/MacOSX
+
+you should find all neccessary installation notes in the README.MacOSX file.
+
+known issues:
+=============
+
+1. the bundle is still huge (2,7 GB unpacked on your harddrive), as it comes 
+with a full KDE base environment. hopefully we'll find ways to change that in 
+future releases, but for the moment we're focussing on possible problems with 
+RKWard itself.
+
+2. RKWard's ususal graphics device features are still missing. graphics 
+devices are therefore what you get from R directly, without the nice add-ons 
+RKWard offers on GNU/linux and Windows.
+
+apart from that, so far RKWard seems to work fine -- see for yourselves :-) 
+your comments and suggestions are most welcome!
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120111/1884f1d4/attachment.sig>
+
+From noreply at sourceforge.net  Tue Jan 31 08:51:31 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 31 Jan 2012 00:51:31 -0800
+Subject: [rkward-users] [Help] Use R console on a via SSH con. Remote PC
+Message-ID: <forum-165574-11109370@sourceforge.net>
+
+The following forum message was posted by fischuu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:
+
+Hello,
+I try to start with my local installation of RKWard an R console on a server,
+to which I am connected via SSh tunnel.
+Is there any way to make RKWard using this console instead of the locally installed
+one? I couldn't find any related posts, even if I would assume that many people
+have the same problem, that RKWard would be perfect to control R on a distant
+server.
+
+Thanks for any help, best wishes!
+
+
+

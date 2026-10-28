@@ -1,0 +1,55 @@
+From reinelt.rudolf.my at ehime-u.ac.jp  Sun Dec 16 18:37:57 2012
+From: reinelt.rudolf.my at ehime-u.ac.jp (Rudolf Reinelt)
+Date: Mon, 17 Dec 2012 03:37:57 +0900
+Subject: [rkward-users] [rkward-devel] ggplot2 error no solution yet
+In-Reply-To: <50CDF13B.5010608@ehime-u.ac.jp>
+References: <201212011925.23691.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<50CDF13B.5010608@ehime-u.ac.jp>
+Message-ID: <50CE1505.90408@ehime-u.ac.jp>
+
+(17.12.2012 01:05), Rudolf Reinelt wrote:
+> Hi,
+>
+> It's
+>   install.packages ("ggplot2")
+>
+> That did it!!! Thank you very much for this excellent service
+> RR
+>
+> (02.12.2012 03:25), Thomas Friedrichsmeier wrote:
+>> Hi,
+>>
+>> On Saturday 01 December 2012, Rudolf Reinelt wrote:
+>>> try re-installing ggplot2 (either using
+>>> the install.packages() command,
+>>>
+>>> results in
+>>>
+>>>> install.ggplot
+>>> Error: object 'install.ggplot' not found
+>> It's
+>>    install.packages ("ggplot2")
+>>
+>>> RKWard using Settings->Manage R
+>>> packages...->Install / Update / Remove)  leads to
+>>>
+>>> Warning: unable to access index for repository 
+>>> /bin/windows/contrib/2.15
+>> [...]
+>>
+>> Looks like you're having connectivity problems. Besides generic 
+>> advice (check
+>> firewall, proxy settings, try different mirror, ...), in some setups, 
+>> you may
+>> have to call
+>>    setInternet2(TRUE)
+>> before accessing the net from R (RKWard 0.6.1 will have a UI option 
+>> for this).
+>>
+>> Regards
+>> Thomas
+>
+
+
+
+

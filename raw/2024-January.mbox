@@ -1,0 +1,90 @@
+From my-shopping-email at posteo.net  Sun Jan 14 20:35:36 2024
+From: my-shopping-email at posteo.net (my-shopping-email at posteo.net)
+Date: Sun, 14 Jan 2024 20:35:36 +0000
+Subject: RKWard and importing Excel files
+Message-ID: <7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>
+
+I am currently running 0.7.5 RKWard on KDE Neon (based on Ubuntu 22.04). 
+I am trying to import a simple .xlsx (or .xls) file with 3 sheets and 
+only 1 to 2 dozen rows with a few columns....something very basic. I 
+have loaded the gdata package (as well as others that I have seen 
+recommended). But whenever I import data and select Excel (Perl), it 
+produces the error shown in the screenshot below. I assure you that I 
+have the gdata package both installed and loaded. I have even tried two 
+different versions of this package. Any help would be greatly appreciated.
+
+Thanks!
+
+Mark
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240114/3224a0f7/attachment-0001.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: MMh7cHyqRTUB5Kwv.png
+Type: image/png
+Size: 106703 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240114/3224a0f7/attachment-0001.png>
+
+From alfonsociologo at gmail.com  Wed Jan 17 14:51:31 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Wed, 17 Jan 2024 08:51:31 -0600
+Subject: RKWard and importing Excel files
+In-Reply-To: <7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>
+References: <7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>
+Message-ID: <CAMqnA+gRM6sMFtYz-uBjtLFGwNatq1VJ_ygEQ-TzETvZtv-X5w@mail.gmail.com>
+
+A work around could be to using package `rio`,
+>From menu "file -> import" -> "format of importation" -> "Generic
+importation (based on rio)"
+(This names may not be the exactly right, I'ḿ using the spanish translated
+version).
+Just tick the option "import a list with all data sets" to get the three
+sheets.
+This is what I use to import Excel files.
+I've used Java with the package "XLConnect" but some versions of Java won't
+work. It has nice features though.
+Regards.
+Alfonso
+
+
+El mié, 17 ene 2024 a la(s) 6:26 a.m., <my-shopping-email at posteo.net>
+escribió:
+
+> I am currently running 0.7.5 RKWard on KDE Neon (based on Ubuntu 22.04). I
+> am trying to import a simple .xlsx (or .xls) file with 3 sheets and only 1
+> to 2 dozen rows with a few columns....something very basic. I have loaded
+> the gdata package (as well as others that I have seen recommended). But
+> whenever I import data and select Excel (Perl), it produces the error shown
+> in the screenshot below. I assure you that I have the gdata package both
+> installed and loaded. I have even tried two different versions of this
+> package. Any help would be greatly appreciated.
+>
+> Thanks!
+>
+> Mark
+>
+>
+>
+>
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240117/944bde25/attachment-0001.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: MMh7cHyqRTUB5Kwv.png
+Type: image/png
+Size: 106703 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240117/944bde25/attachment-0001.png>
+

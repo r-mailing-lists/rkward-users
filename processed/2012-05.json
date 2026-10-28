@@ -1,0 +1,482 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-05",
+  "messages": [
+    {
+      "id": "msg-aeb72a632c29",
+      "message_id": "<1336580459.41541.YahooMailNeo@web122304.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2012-05-09T16:20:59Z",
+      "subject": "[rkward-users] Unable to access RKWard website",
+      "subject_clean": "[rkward-users] Unable to access RKWard website",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\nI'm not able to access RKWard websit at this adress :\n?\nhttp://rkward.sourceforge.net/\n?\nIs there any problem with SourceForge or RKWard website ?\n?\nThanks,\n\nFran?ois Maurice\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120509/3f66224d/attachment.html>",
+      "body_snippet": "Hi,\n?\nI'm not able to access RKWard websit at this adress :\n?\nhttp://rkward.sourceforge.net/\n?\nIs there any problem with SourceForge or RKWard website ?\n?\nThanks,\n\nFran?ois Maurice\n-------------- next",
+      "thread_id": "thread-aeb72a632c29",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-583a85adc07d",
+      "message_id": "<201205091827.12539.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2012-05-09T16:27:08Z",
+      "subject": "[rkward-users] Unable to access RKWard website",
+      "subject_clean": "[rkward-users] Unable to access RKWard website",
+      "in_reply_to": "<1336580459.41541.YahooMailNeo@web122304.mail.ne1.yahoo.com>",
+      "references": [
+        "<1336580459.41541.YahooMailNeo@web122304.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Am Mittwoch, 9. Mai 2012 18:20:59 schrieb Francois Maurice:\n> Is there any problem with SourceForge or RKWard website ?\n\nwell, it reads:\n\n\"the Hosted Apps platform on the SourceForge site is offline. Will provide \nmore updates as we have them.\"\n\n;-)\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 190 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120509/d956c5ef/attachment.sig>",
+      "body_snippet": "Am Mittwoch, 9. Mai 2012 18:20:59 schrieb Francois Maurice:\n> Is there any problem with SourceForge or RKWard website ?\n\nwell, it reads:\n\n\"the Hosted Apps platform on the SourceForge site is offline. ",
+      "thread_id": "thread-aeb72a632c29",
+      "thread_depth": 1,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-f3f67453e55b",
+      "message_id": "<201205091954.07957.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-05-09T17:54:01Z",
+      "subject": "[rkward-users] Unable to access RKWard website",
+      "subject_clean": "[rkward-users] Unable to access RKWard website",
+      "in_reply_to": "<201205091827.12539.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<1336580459.41541.YahooMailNeo@web122304.mail.ne1.yahoo.com>",
+        "<201205091827.12539.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 09 May 2012, meik michalke wrote:\n> Am Mittwoch, 9. Mai 2012 18:20:59 schrieb Francois Maurice:\n> > Is there any problem with SourceForge or RKWard website ?\n\nthe problem is with (certain parts of) SourceForge in general.\n\nYou can still access some parts of the RKWard project web (importantly, \ndownloads and forums) via http://sourceforge.net/projects/rkward .\n\n> well, it reads:\n> \n> \"the Hosted Apps platform on the SourceForge site is offline. Will provide\n> more updates as we have them.\"\n\n...\n\nBut in fact, I would sort of like to get some more info on this, too...\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120509/db73630b/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 09 May 2012, meik michalke wrote:\n> Am Mittwoch, 9. Mai 2012 18:20:59 schrieb Francois Maurice:\n> > Is there any problem with SourceForge or RKWard website ?\n\nthe problem is with (ce",
+      "thread_id": "thread-aeb72a632c29",
+      "thread_depth": 2,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-f7645917ab7e",
+      "message_id": "<forum-165574-11468201@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-11T13:50:24Z",
+      "subject": "[rkward-users] [Help] problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] problem with the function highlight",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nHi,\n\nI just installed rkward on ubuntu 12.04 x64 in a virtualbox machine.\nI have a problem with the function highlight (is that how it-s called?- the\npopup that shows you the functions parameters): I think the text is white on\nyellow and it cannot be read. See image:\n\n[img]http://dl.dropbox.com/u/10451412/rkward.png[/img]\n\nAny suggestion?",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nHi,\n\nI just installed rkward on ubuntu 12.04 x64 in a virtualbox machine.",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-25f6a9f2b555",
+      "message_id": "<1337018081.72523.YahooMailNeo@web122306.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2012-05-14T17:54:41Z",
+      "subject": "[rkward-users] MinGW4 32 or MinGW4 64",
+      "subject_clean": "[rkward-users] MinGW4 32 or MinGW4 64",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\nMy computer runs Windows 64 bit. Which KDE compiler do I install ? MinGW4 32 or MinGW4 64 ?\n\nFran?ois Maurice\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120514/679b240e/attachment.html>",
+      "body_snippet": "Hi,\n?\nMy computer runs Windows 64 bit. Which KDE compiler do I install ? MinGW4 32 or MinGW4 64 ?\n\nFran?ois Maurice\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <htt",
+      "thread_id": "thread-25f6a9f2b555",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-51f919b888f0",
+      "message_id": "<201205151026.12538.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-05-15T08:26:08Z",
+      "subject": "[rkward-users] MinGW4 32 or MinGW4 64",
+      "subject_clean": "[rkward-users] MinGW4 32 or MinGW4 64",
+      "in_reply_to": "<1337018081.72523.YahooMailNeo@web122306.mail.ne1.yahoo.com>",
+      "references": [
+        "<1337018081.72523.YahooMailNeo@web122306.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 14 May 2012, Francois Maurice wrote:\n> My computer runs Windows 64 bit. Which KDE compiler do I install ? MinGW4\n> 32 or MinGW4 64 ?\n\nwhat exactly do you want to do? Do you mean, which compiler version of KDE \nshould you install, if you want to install RKWard using the \"Custom \ninstallation\"-procedure? It's MinGW4 32bit, then. I have made this explicit on \nour web instructions, now.\n\nSame answer, if you are looking for the compiler to match the Windows binaries \nwe provide (e.g. for custom-compilation of R add-on packages). It's MinGW4 \n32bit.\n\nOr do you want to compile RKWard from source? In this case either should be \nfine. For general information on this, see http://p.sf.net/rkward/windows \n(last section of the page).\n\nWe don't have the resources to compile a 64bit Windows version of RKWard, and \nthus compilation with MinGW4 64bit is untested. However, RKWard is built for \nother 64bit systems, regularly, and I don't expect any fundamental problems, \nhere (if you run into anything, let us know on rkward-devel).\n\nNote that the advantages of running a 64bit version of R are probably less \npronounced than you may expect. See http://cran.r-\nproject.org/bin/windows/base/rw-FAQ.html , questions 2.27-2.29.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120515/7f031f87/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 14 May 2012, Francois Maurice wrote:\n> My computer runs Windows 64 bit. Which KDE compiler do I install ? MinGW4\n> 32 or MinGW4 64 ?\n\nwhat exactly do you want to do? Do you mean, which ",
+      "thread_id": "thread-25f6a9f2b555",
+      "thread_depth": 1,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-ede1d1388e76",
+      "message_id": "<1337084057.90755.YahooMailNeo@web122302.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2012-05-15T12:14:17Z",
+      "subject": "[rkward-users] Re :  MinGW4 32 or MinGW4 64",
+      "subject_clean": "[rkward-users] Re :  MinGW4 32 or MinGW4 64",
+      "in_reply_to": "<201205151026.12538.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1337018081.72523.YahooMailNeo@web122306.mail.ne1.yahoo.com>",
+        "<201205151026.12538.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Thanks. I installed KDE for Windows with MinGW4 64 bit compiler and it works fine until now. I'll let you know if something weird appears.\n?\nBy the way, I installed RKWard on my machine at my job and many people over there are interested to install it on there machine. I'm trying also to convince my thesis supervisor to use RKWard instead of RStudio. I'll let you know about it.\n\nFran?ois Maurice\n\n________________________________\nDe?: Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>\n??: rkward-users at lists.sourceforge.net \nEnvoy? le : mardi 15 mai 2012 4h26\nObjet?: Re: [rkward-users] MinGW4 32 or MinGW4 64\n\nHi,\n\nOn Monday 14 May 2012, Francois Maurice wrote:\n> My computer runs Windows 64 bit. Which KDE compiler do I install ? MinGW4\n> 32 or MinGW4 64 ?\n\nwhat exactly do you want to do? Do you mean, which compiler version of KDE \nshould you install, if you want to install RKWard using the \"Custom \ninstallation\"-procedure? It's MinGW4 32bit, then. I have made this explicit on \nour web instructions, now.\n\nSame answer, if you are looking for the compiler to match the Windows binaries \nwe provide (e.g. for custom-compilation of R add-on packages). It's MinGW4 \n32bit.\n\nOr do you want to compile RKWard from source? In this case either should be \nfine. For general information on this, see http://p.sf.net/rkward/windows \n(last section of the page).\n\nWe don't have the resources to compile a 64bit Windows version of RKWard, and \nthus compilation with MinGW4 64bit is untested. However, RKWard is built for \nother 64bit systems, regularly, and I don't expect any fundamental problems, \nhere (if you run into anything, let us know on rkward-devel).\n\nNote that the advantages of running a 64bit version of R are probably less \npronounced than you may expect. See http://cran.r-\nproject.org/bin/windows/base/rw-FAQ.html , questions 2.27-2.29.\n\nRegards\nThomas\n\n------------------------------------------------------------------------------\nLive Security Virtual Conference\nExclusive live event will cover all the ways today's security and \nthreat landscape has changed and how IT managers can respond. Discussions \nwill include endpoint security, mobile security and the latest in malware \nthreats. http://www.accelacomm.com/jaw/sfrnl04242012/114/50122263/\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120515/6ec0d248/attachment.html>",
+      "body_snippet": "Thanks. I installed KDE for Windows with MinGW4 64 bit compiler and it works fine until now. I'll let you know if something weird appears.\n?\nBy the way, I installed RKWard on my machine at my job and ",
+      "thread_id": "thread-25f6a9f2b555",
+      "thread_depth": 2,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-094cf9543016",
+      "message_id": "<forum-165574-11484162@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T09:36:45Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11468201@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nHi!\n\nProbably a problem with your color scheme. Please open the KDE System Settings,\ngo to \"Application Appearance\"->\"Colors\", click the \"Colors\" tab, and try adjusting\nthe color settings for tooltip background and tooltip text. You may have to\nrestart RKWard to see an effect.\n\nSome versions of RKWard also had bugs with respect to this. One such bug was\nfixed in version 0.5.7. If you are using an earlier version, consider upgrading\n(see https://launchpad.net/~rkward-devel for a list of available PPAs for\nUbuntu).\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nHi!\n\nProbably a problem with your color scheme. Please open the KDE System ",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 1,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-2810f8ffa54e",
+      "message_id": "<forum-165574-11484283@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T10:09:48Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11484162@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\ni'm using rkward version 0.5.7. just checked the kde settings and set tooltip\ntext color to black, but the problem persists.\n\ni also have the same problem on another ubuntu 12.04 x64 system installed on\na physical machine, so i think this is a bug.",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\ni'm using rkward version 0.5.7. just checked the kde settings and set too",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 2,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-f26252b330c0",
+      "message_id": "<1790377.mZdoVilRL5@falter>",
+      "from_name": "dirk",
+      "from_email_hash": "0f836a9634453226af58d17012b97843e2b17312765ea33bcd94e7b9229d74a2",
+      "date": "2012-05-16T10:28:20Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11484283@sourceforge.net>",
+      "references": [
+        "<forum-165574-11484283@sourceforge.net>"
+      ],
+      "body_plain": "On Wednesday 16 May 2012 03:09:48 SourceForge. net wrote:\n> The following forum message was posted by burfee at\n> http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n> \n> i'm using rkward version 0.5.7. just checked the kde settings and set\n> tooltip text color to black, but the problem persists.\n> \n> i also have the same problem on another ubuntu 12.04 x64 system installed on\n> a physical machine, so i think this is a bug.\n\nWorks for me (Kubuntu 12.04x64, rkward package  0.5.7-2build1):\n\nhttp://wstaw.org/m/2012/05/16/plasma-desktopvj2152.png",
+      "body_snippet": "On Wednesday 16 May 2012 03:09:48 SourceForge. net wrote:\n> The following forum message was posted by burfee at\n> http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n> \n> i'm usi",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 3,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-7e9500241b91",
+      "message_id": "<forum-165574-11484971@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T14:32:50Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11484283@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nGrr. These tooltip colors keep causing trouble, somehow. Could you try some\nmore things?\n\n1. Does the \"Tooltip Background\" setting have any effect?\n2. Do the \"Window Background/Text\" settings have any effect?\n3. Can you look for simillar colors (light yellow, white) anywhere in the color\nsettings? Does it help any to change those settings?\n\nAlso, please double check that you have actually applied the new color configuration\n(on this system, the color config dialog is a bit unresponsive at times), and\nthat the colors remain unchanged after a restart of RKWard.\n\nThanks!",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nGrr. These tooltip colors keep causing trouble, somehow. Could you try some",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 3,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-d910d0f5ba67",
+      "message_id": "<forum-165574-11485027@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T14:52:51Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11484971@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\n1. The \"Tooltip Background\" change has no effect (tried with different colors).\nI restarted RKWard after i changed the color.\n2. The \"Window Background\" settings do have effect inside the KDE System Settings\nwindow (small because my windows decorator is GTK,), but didn't see any change\ninside RKWard window;\n3. Couldn't find that yellow color anywhere else, inside KDE System Settings\nor RKWard Fonts&Colors",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\n1. The \"Tooltip Background\" change has no effect (tried with different co",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 4,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-22097f58e934",
+      "message_id": "<forum-165574-11485040@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T14:57:00Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11485027@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nif you have time, you can easily reproduce the error by installing ubuntu 12.04\nx64 on a virtualbox machine and then install RKWard... the bugcomes out of the\nbox to put it this way :P",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nif you have time, you can easily reproduce the error by installing ubuntu",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 5,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-48cd3f352aca",
+      "message_id": "<668994994.492080.1337186561267.JavaMail.open-xchange@ox.hosteurope.de>",
+      "from_name": "Birk Diedenhofen",
+      "from_email_hash": "aab9a63cad1f69ab64bff49195c1896b8a60286edf468fb1e96a81478193c082",
+      "date": "2012-05-16T16:42:41Z",
+      "subject": "[rkward-users] Dialog too small to show all elements",
+      "subject_clean": "[rkward-users] Dialog too small to show all elements",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI have some troubles with dialog sizes.\nThe following example dialog is too small to show all elements properly.\nIf rk.XML.text(\"Lorem ipsum\") is used instead of the complete sentences,\neverything looks fine.\n\nrequire(rkwarddev)\nlocal({\n  groups <- rk.XML.radio(\"foobar?\", options=list(\"foo\"=c(val=\"foo\"),\n\"bar\"=c(val=\"bar\")))\n\n  wizard <- rk.XML.wizard(\n    rk.XML.page(rk.XML.text(\"Lorem ipsum dolor sit amet, consectetur adipiscing\nelit. Donec eu risus massa, sit amet aliquam dolor. Cras eu leo augue, eget\nfaucibus elit. Vestibulum lacus eros, elementum ut auctor eget, gravida sit amet\nlibero.\"), groups)\n  )\n\n  plugin.dir <<- rk.plugin.skeleton(\n    \"test\", provides=c(\"wizard\"),\n    xml=list(wizard=wizard),\n    pluginmap=list(name=\"test\", hierarchy=list(\"test foo\")),\n    load=TRUE, edit=TRUE, show=TRUE, overwrite=TRUE\n  )\n})\n\nRegards\nBirk",
+      "body_snippet": "Hi!\n\nI have some troubles with dialog sizes.\nThe following example dialog is too small to show all elements properly.\nIf rk.XML.text(\"Lorem ipsum\") is used instead of the complete sentences,\neverythin",
+      "thread_id": "thread-48cd3f352aca",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-7a09ca23745e",
+      "message_id": "<forum-165574-11485304@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T17:19:04Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11485040@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nCould you take a look at this bug report for libreoffice in Ubuntu\n[url]https://bugs.launchpad.net/ubuntu/+source/openoffice.org/+bug/702451[/url]?\nThe bug description contains this bit:\n\n[code]This is because the Ambiance theme (which is standard in Lucid) has white\ntext as standard.\n\nThe solution is to add the following code to\n\n.gtkrc-2.0\n\nstyle \"tooltips\" {\n        fg[NORMAL] = { 0.0, 0.0, 0.0 }\n        text[NORMAL] = { 0.0, 0.0, 0.0 }\n}\n\nwidget \"gtk-tooltips*\" style \"tooltips\"\n[/code]\n\nDoes this work?",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nCould you take a look at this bug report for libreoffice in Ubuntu\n[url]htt",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 6,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-9cd902970039",
+      "message_id": "<forum-165574-11485334@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T17:35:26Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11485304@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\ni do not use Ambience theme, i use this theme\nhttps://mbossg.deviantart.com/art/MAC-OS-X-Lion-Theme-For-Ubuntu-12-4-LTS-300229\n538\n\nI added the code you mentioned, but didn't fix the problem",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\ni do not use Ambience theme, i use this theme\nhttps://mbossg.deviantart.c",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 7,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-4782ac21e5b3",
+      "message_id": "<forum-165574-11485341@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T17:37:00Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11485334@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nayway, if it's ubuntu bug, thank you for your effort and have a nice day.",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nayway, if it's ubuntu bug, thank you for your effort and have a nice day.",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 8,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-d611c0c2d255",
+      "message_id": "<forum-165574-11485356@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-05-16T17:40:38Z",
+      "subject": "[rkward-users] [Help] RE: problem with the function highlight",
+      "subject_clean": "[rkward-users] [Help] RE: problem with the function highlight",
+      "in_reply_to": "<forum-165574-11485341@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nsorry for triple post... i don't encounter the same problem in libre office...",
+      "body_snippet": "The following forum message was posted by burfee at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5265994:\n\nsorry for triple post... i don't encounter the same problem in libre offi",
+      "thread_id": "thread-f7645917ab7e",
+      "thread_depth": 9,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-3021ec99e7b3",
+      "message_id": "<201205162027.16149.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-05-16T18:27:10Z",
+      "subject": "[rkward-users] Dialog too small to show all elements",
+      "subject_clean": "[rkward-users] Dialog too small to show all elements",
+      "in_reply_to": "<668994994.492080.1337186561267.JavaMail.open-xchange@ox.hosteurope.de>",
+      "references": [
+        "<668994994.492080.1337186561267.JavaMail.open-xchange@ox.hosteurope.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 16 May 2012, Birk Diedenhofen wrote:\n> I have some troubles with dialog sizes.\n> The following example dialog is too small to show all elements properly.\n> If rk.XML.text(\"Lorem ipsum\") is used instead of the complete sentences,\n> everything looks fine.\n\nThis is a known issue. Ultimately it's an instance of this Qt bug: \nhttps://bugreports.qt-project.org/browse/QTBUG-8740\n\nIn essence, whenever automatic word wrap occurs, Qt's layout mechanism goes \nawry. Whether or not the bug becomes visible, depends on the window manager to \nsome degree. We already have a workaround for an even worse symptom of the \nsame bug, where the dialog would not show up at all, under some circumstances. \nI'm afraid there is not much more we can do, except for waiting for the Qt bug \nto be fixed.\n\nAs a plugin author you can work around this by making sure no automatic word \nwrap occurs. E.g. by inserting adding manual line breaks (\"\\n\\n\") into the \ntext.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120516/5fbe821e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 16 May 2012, Birk Diedenhofen wrote:\n> I have some troubles with dialog sizes.\n> The following example dialog is too small to show all elements properly.\n> If rk.XML.text(\"Lorem ipsu",
+      "thread_id": "thread-48cd3f352aca",
+      "thread_depth": 1,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-dd3681c269bd",
+      "message_id": "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>",
+      "from_name": "Birk Diedenhofen",
+      "from_email_hash": "aab9a63cad1f69ab64bff49195c1896b8a60286edf468fb1e96a81478193c082",
+      "date": "2012-05-21T15:17:47Z",
+      "subject": "[rkward-users] Command line limit",
+      "subject_clean": "[rkward-users] Command line limit",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI just found out that the length of a command line entered into the R console is\nlimited to 4096 characters. In fact, the 4096th character is replaced by a line\nbreak. Thus, one character is missing in your code, which can cause a lot of\nstrange errors!\n\nI think it would be great if rkward could avoid such problems. This could be\nachieved, for example, by automatically adding a line break before the 4096th\ncharacter (instead of replacing it) whenever the command line limit is exceeded.\n\nThe problem was also addressed here with a request to GUI developers:\nhttp://r.789695.n4.nabble.com/Command-line-length-limits-in-R-td912367.html\n\nRegards\nBirk",
+      "body_snippet": "Hi!\n\nI just found out that the length of a command line entered into the R console is\nlimited to 4096 characters. In fact, the 4096th character is replaced by a line\nbreak. Thus, one character is miss",
+      "thread_id": "thread-dd3681c269bd",
+      "thread_depth": 0,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-a46d1df11d4e",
+      "message_id": "<201205221012.07348.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-05-22T08:12:02Z",
+      "subject": "[rkward-users] Command line limit",
+      "subject_clean": "[rkward-users] Command line limit",
+      "in_reply_to": "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>",
+      "references": [
+        "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 21 May 2012, Birk Diedenhofen wrote:\n>  Hi!\n> \n> I just found out that the length of a command line entered into the R\n> console is limited to 4096 characters. In fact, the 4096th character is\n> replaced by a line break. Thus, one character is missing in your code,\n> which can cause a lot of strange errors!\n> \n> I think it would be great if rkward could avoid such problems. This could\n> be achieved, for example, by automatically adding a line break before the\n> 4096th character (instead of replacing it) whenever the command line limit\n> is exceeded.\n\nhave you actually tried this in RKWard? Because to the best of my knowledge, \nwe do not have this bug.\n\nI ran into this bug in \"plain\" R, before. And in fact, IIRC, it does not only \naffect long lines, but any long top-level statement(*). I believe the problem \nis that when R's console exceeds the buffer, it will try to read another \n_line_, even if the last thing in the buffer was not a line end. However, I \nnever bothered to actually track this down, esp. since - again - this does not \naffect RKWard, as far as I am aware.\n\nRegards\nThomas\n\n---\n\n(*) E.g., try pasting the following into an R session on the console:\n\n{\nx <- \"This statement is without a point\"\nx <- \"This statement is without a point\"\nx <- \"This statement is without a point\"\n[...] # repeat this line ~100 times\nx <- \"This statement is without a point\"\nx <- \"This statement is without a point\"\n}\n\nThe same without curly braces will not trigger the bug.\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120522/4c870d61/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 21 May 2012, Birk Diedenhofen wrote:\n>  Hi!\n> \n> I just found out that the length of a command line entered into the R\n> console is limited to 4096 characters. In fact, the 4096th chara",
+      "thread_id": "thread-dd3681c269bd",
+      "thread_depth": 1,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-0267d3337bce",
+      "message_id": "<1163768220.34431.1337685957829.JavaMail.open-xchange@ox.hosteurope.de>",
+      "from_name": "Birk Diedenhofen",
+      "from_email_hash": "aab9a63cad1f69ab64bff49195c1896b8a60286edf468fb1e96a81478193c082",
+      "date": "2012-05-22T11:25:57Z",
+      "subject": "[rkward-users] Command line limit",
+      "subject_clean": "[rkward-users] Command line limit",
+      "in_reply_to": "<201205221012.07348.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>",
+        "<201205221012.07348.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "> have you actually tried this in RKWard? Because to the best of my knowledge,\n> we do not have this bug.\n\nYes, simply run the code generated by this command\n\n   paste(\"x<-'\", paste(rep(\"|_\", 2048), collapse=\"\"), \"'\", sep=\"\")\n\nand print(x). At the end of the output you should see that one underscore (the\n4096th character of the line generated above) is missing: \"..._|_|_||_|_|_...\".\nIf you add a line break behind \"x<-\", rerun the code and print(x) again, the\nmissing character moves further down the string.\n\n\nI tried your example and pasted more than 100 times\n  x <- \"This statement is without a point\"\ninto the console, with and without surrounding curly brackets.\n\nBoth times I get this error:\n\n  ...\n  > x <- \"This statement is without a point\"\n  > x <- \"This statement is without a po\n  + x <- \"This statement is without a point\"\n  Error: Unexpected symbol in:\n  \"x <- \"This statement is without a po\n  x <- \"This\"\n  > x <- \"This statement is without a point\"\n  > x <- \"This statement is without a point\"\n  > x <- \"This statement is without a point\"\n  ...\n\nHowever with curly brackets, I additionally get this one at the end:\n\n  ...\n  > x <- \"This statement is without a point\"\n  > }\n  Error: Unexpected '}' in \"}\"\n\n\nI guess that your and my example expose two different problems.\n\n\nRegards\nBirk\n\n\n\n\nThomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de> hat am 22.\nMai 2012 um 10:12 geschrieben:\n\n> Hi,\n>\n> On Monday 21 May 2012, Birk Diedenhofen wrote:\n> >  Hi!\n> >\n> > I just found out that the length of a command line entered into the R\n> > console is limited to 4096 characters. In fact, the 4096th character is\n> > replaced by a line break. Thus, one character is missing in your code,\n> > which can cause a lot of strange errors!\n> >\n> > I think it would be great if rkward could avoid such problems. This could\n> > be achieved, for example, by automatically adding a line break before the\n> > 4096th character (instead of replacing it) whenever the command line limit\n> > is exceeded.\n>\n> have you actually tried this in RKWard? Because to the best of my knowledge,\n> we do not have this bug.\n>\n> I ran into this bug in \"plain\" R, before. And in fact, IIRC, it does not only\n> affect long lines, but any long top-level statement(*). I believe the problem\n> is that when R's console exceeds the buffer, it will try to read another\n> _line_, even if the last thing in the buffer was not a line end. However, I\n> never bothered to actually track this down, esp. since - again - this does not\n> affect RKWard, as far as I am aware.\n>\n> Regards\n> Thomas\n>\n> ---\n>\n> (*) E.g., try pasting the following into an R session on the console:\n>\n> {\n> x <- \"This statement is without a point\"\n> x <- \"This statement is without a point\"\n> x <- \"This statement is without a point\"\n> [...] # repeat this line ~100 times\n> x <- \"This statement is without a point\"\n> x <- \"This statement is without a point\"\n> }\n>\n> The same without curly braces will not trigger the bug.",
+      "body_snippet": "> have you actually tried this in RKWard? Because to the best of my knowledge,\n> we do not have this bug.\n\nYes, simply run the code generated by this command\n\n   paste(\"x<-'\", paste(rep(\"|_\", 2048), c",
+      "thread_id": "thread-dd3681c269bd",
+      "thread_depth": 2,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-27d07bd657d8",
+      "message_id": "<201205222012.54551.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-05-22T18:12:50Z",
+      "subject": "[rkward-users] Command line limit",
+      "subject_clean": "[rkward-users] Command line limit",
+      "in_reply_to": "<1163768220.34431.1337685957829.JavaMail.open-xchange@ox.hosteurope.de>",
+      "references": [
+        "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>",
+        "<201205221012.07348.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1163768220.34431.1337685957829.JavaMail.open-xchange@ox.hosteurope.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 22 May 2012, Birk Diedenhofen wrote:\n> > have you actually tried this in RKWard? Because to the best of my\n> > knowledge, we do not have this bug.\n> \n> Yes, simply run the code generated by this command\n> \n>    paste(\"x<-'\", paste(rep(\"|_\", 2048), collapse=\"\"), \"'\", sep=\"\")\n> \n> and print(x). At the end of the output you should see that one underscore\n> (the 4096th character of the line generated above) is missing:\n> \"..._|_|_||_|_|_...\". If you add a line break behind \"x<-\", rerun the code\n> and print(x) again, the missing character moves further down the string.\n\nah, indeed. I did not do enough testing (the R variant of the bug is more \nlikely to produce a syntax error, and therefore to show immediate symptoms). \n\nThis should now be fixed in our SVN version (http://p.sf.net/rkward/svn). It \nwould be nice, if you could do some testing, too. Let us know, if you find any \nfurther issues.\n\n> I tried your example and pasted more than 100 times\n>   x <- \"This statement is without a point\"\n> into the console, with and without surrounding curly brackets.\n> \n> Both times I get this error:\n\nHm, I could have sworn the bug shows only with the curly brackets, but you are \nright, it also shows without. No idea what might be the cause, here. Anyway, \nthe take-home-message is:\n* Pasting any larger pieces of code into a plain R console is buggy.\n* RKWard is not (any longer) affected by this bug / these bugs.\n\n> I guess that your and my example expose two different problems.\n\nYes, probably.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120522/76b0d23a/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 22 May 2012, Birk Diedenhofen wrote:\n> > have you actually tried this in RKWard? Because to the best of my\n> > knowledge, we do not have this bug.\n> \n> Yes, simply run the code generat",
+      "thread_id": "thread-dd3681c269bd",
+      "thread_depth": 3,
+      "month": "2012-05"
+    },
+    {
+      "id": "msg-1253008b7b55",
+      "message_id": "<2143554452.345542.1337864972275.JavaMail.open-xchange@ox.hosteurope.de>",
+      "from_name": "Birk Diedenhofen",
+      "from_email_hash": "aab9a63cad1f69ab64bff49195c1896b8a60286edf468fb1e96a81478193c082",
+      "date": "2012-05-24T13:09:32Z",
+      "subject": "[rkward-users] Command line limit",
+      "subject_clean": "[rkward-users] Command line limit",
+      "in_reply_to": "<201205222012.54551.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1099365343.836593.1337613467719.JavaMail.open-xchange@ox.hosteurope.de>",
+        "<201205221012.07348.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1163768220.34431.1337685957829.JavaMail.open-xchange@ox.hosteurope.de>",
+        "<201205222012.54551.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi!\n\n> This should now be fixed in our SVN version (http://p.sf.net/rkward/svn). It\n> would be nice, if you could do some testing, too. Let us know, if you find any\n> further issues.\n\nThat was quick! I've done some testing and now it works without any problems.\nThanks!\n\n\n\n\nRegards\nBirk\n\n\nThomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de> hat am 22.\nMai 2012 um 20:12 geschrieben:\n\n> Hi,\n>\n> On Tuesday 22 May 2012, Birk Diedenhofen wrote:\n> > > have you actually tried this in RKWard? Because to the best of my\n> > > knowledge, we do not have this bug.\n> >\n> > Yes, simply run the code generated by this command\n> >\n> >    paste(\"x<-'\", paste(rep(\"|_\", 2048), collapse=\"\"), \"'\", sep=\"\")\n> >\n> > and print(x). At the end of the output you should see that one underscore\n> > (the 4096th character of the line generated above) is missing:\n> > \"..._|_|_||_|_|_...\". If you add a line break behind \"x<-\", rerun the code\n> > and print(x) again, the missing character moves further down the string.\n>\n> ah, indeed. I did not do enough testing (the R variant of the bug is more\n> likely to produce a syntax error, and therefore to show immediate symptoms).\n>\n> This should now be fixed in our SVN version (http://p.sf.net/rkward/svn). It\n> would be nice, if you could do some testing, too. Let us know, if you find any\n> further issues.\n>\n> > I tried your example and pasted more than 100 times\n> >   x <- \"This statement is without a point\"\n> > into the console, with and without surrounding curly brackets.\n> >\n> > Both times I get this error:\n>\n> Hm, I could have sworn the bug shows only with the curly brackets, but you are\n> right, it also shows without. No idea what might be the cause, here. Anyway,\n> the take-home-message is:\n> * Pasting any larger pieces of code into a plain R console is buggy.\n> * RKWard is not (any longer) affected by this bug / these bugs.\n>\n> > I guess that your and my example expose two different problems.\n>\n> Yes, probably.\n>\n> Regards\n> Thomas",
+      "body_snippet": "Hi!\n\n> This should now be fixed in our SVN version (http://p.sf.net/rkward/svn). It\n> would be nice, if you could do some testing, too. Let us know, if you find any\n> further issues.\n\nThat was quick! ",
+      "thread_id": "thread-dd3681c269bd",
+      "thread_depth": 4,
+      "month": "2012-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-aeb72a632c29",
+      "subject": "[rkward-users] Unable to access RKWard website",
+      "message_count": 3,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2012-05-09T16:20:59Z",
+      "last_reply": "2012-05-09T17:54:01Z",
+      "root_message_id": "msg-aeb72a632c29"
+    },
+    {
+      "id": "thread-f7645917ab7e",
+      "subject": "[rkward-users] [Help] problem with the function highlight",
+      "message_count": 11,
+      "participants": [
+        "SourceForge.net",
+        "dirk"
+      ],
+      "started": "2012-05-11T13:50:24Z",
+      "last_reply": "2012-05-16T17:40:38Z",
+      "root_message_id": "msg-f7645917ab7e"
+    },
+    {
+      "id": "thread-25f6a9f2b555",
+      "subject": "[rkward-users] MinGW4 32 or MinGW4 64",
+      "message_count": 3,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-05-14T17:54:41Z",
+      "last_reply": "2012-05-15T12:14:17Z",
+      "root_message_id": "msg-25f6a9f2b555"
+    },
+    {
+      "id": "thread-48cd3f352aca",
+      "subject": "[rkward-users] Dialog too small to show all elements",
+      "message_count": 2,
+      "participants": [
+        "Birk Diedenhofen",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-05-16T16:42:41Z",
+      "last_reply": "2012-05-16T18:27:10Z",
+      "root_message_id": "msg-48cd3f352aca"
+    },
+    {
+      "id": "thread-dd3681c269bd",
+      "subject": "[rkward-users] Command line limit",
+      "message_count": 5,
+      "participants": [
+        "Birk Diedenhofen",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-05-21T15:17:47Z",
+      "last_reply": "2012-05-24T13:09:32Z",
+      "root_message_id": "msg-dd3681c269bd"
+    }
+  ]
+}

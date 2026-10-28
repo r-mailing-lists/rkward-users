@@ -1,0 +1,138 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-02",
+  "messages": [
+    {
+      "id": "msg-d7e9fef48fcb",
+      "message_id": "<de8c7cb40902080024s271fc84fp8c8c2229f9f75840@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-02-08T08:24:21Z",
+      "subject": "[rkward-users] rkward on planetkde",
+      "subject_clean": "[rkward-users] rkward on planetkde",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Now, I don't know anything about this author, but came across this on\nplanetkde.org, which was a pleasant surprise.\n\nhttp://www.dennogumi.org/2009/02/science-and-kde-rkward\n\n-- \nPrasenjit",
+      "body_snippet": "Now, I don't know anything about this author, but came across this on\nplanetkde.org, which was a pleasant surprise.\n\nhttp://www.dennogumi.org/2009/02/science-and-kde-rkward\n\n-- \nPrasenjit",
+      "thread_id": "thread-d7e9fef48fcb",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-dea906e7ca12",
+      "message_id": "<6412450.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-02-12T21:39:50Z",
+      "subject": "[rkward-users] [rkward - Help] Doesn't save workspace layout",
+      "subject_clean": "[rkward-users] [rkward - Help] Doesn't save workspace layout",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6412450\nBy: derc\n\nHey,\nmy RKWard doesn't save the workspace layout I set up.\nFor example the height and adjustment of the R Console Window is set to default\nafter every restart. I already tried the options \"save/restore with R workspace\"\nand \"save/restore independet of R workspace\". Both options didn't work.\n\nI hope somebody can help me.\nBest regards\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6412450\nBy: derc\n\nHey,\nmy RKWard doesn't save the workspace layout I set up.\nFor example the height and adjustmen",
+      "thread_id": "thread-dea906e7ca12",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-b87c9dd19ff6",
+      "message_id": "<6426318.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-02-14T19:14:44Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Doesn't save workspace layout",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Doesn't save workspace layout",
+      "in_reply_to": "<6412450.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6426318\nBy: kapatp\n\nHi,\n\nI am guessing that you are using the 0.4.9* version (KDE3's version). It is\na known issue which has been fixed in the 0.5 (KDE4's) version. And if IRC,\nit was difficult to backport this \"fix\" under KDE3. Unfortunately the released\n0.5.0 version has a lot of other issues with new KDE 4 APIs and new R. But the\ntrunk from svn, which many of us are using, is pretty stable.\n\nSo, if you have the luxury to opt for a KDE4 environment try it out. If not,\nwell, as I have to on a RedHat machine, live with the 0.4.9 version. Even in\nthat case, the svn release branch of 0.4.9 has some welcome updates on top of\nthe actual released version.\n\nIf you need help in trying out either of the svn versions, feel free to ask.\n\nBest\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6426318\nBy: kapatp\n\nHi,\n\nI am guessing that you are using the 0.4.9* version (KDE3's version). It is\na known issu",
+      "thread_id": "thread-dea906e7ca12",
+      "thread_depth": 1,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-e9e79270a29b",
+      "message_id": "<6472835.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-02-20T08:51:47Z",
+      "subject": "[rkward-users] [rkward - Help] Location of R Binary",
+      "subject_clean": "[rkward-users] [rkward - Help] Location of R Binary",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6472835\nBy: edden84\n\nHello everybody,\n\nI am actually using R 2.81 and R 2.7 in parallel. I installed rkward after I\ninstalled R 2.7. Now I would like to use the 2.8.1 binary with rkward. Is there\nany way to do this without recompiling? I can change the path for the libraries\nbut I haven't found the path to the binary.\nThanks a lot for you help.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6472835\nBy: edden84\n\nHello everybody,\n\nI am actually using R 2.81 and R 2.7 in parallel. I installed rkward after",
+      "thread_id": "thread-e9e79270a29b",
+      "thread_depth": 0,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-4f6e6c7e31e0",
+      "message_id": "<6490701.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-02-22T13:57:05Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Doesn't save workspace layout",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Doesn't save workspace layout",
+      "in_reply_to": "<6412450.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6490701\nBy: derc\n\nHi,\n\nI finally installed the 0.5.0 version and it works fine, including the restoration\nof workspace.\nThank you for your advice.\n\nBest regards\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6490701\nBy: derc\n\nHi,\n\nI finally installed the 0.5.0 version and it works fine, including the restoration\nof work",
+      "thread_id": "thread-dea906e7ca12",
+      "thread_depth": 1,
+      "month": "2009-02"
+    },
+    {
+      "id": "msg-46be416c2917",
+      "message_id": "<6493696.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-02-22T20:08:41Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Location of R Binary",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Location of R Binary",
+      "in_reply_to": "<6472835.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6493696\nBy: kapatp\n\nI am not sure how rkward searches for R binary, still there are some things\nyou could try out:\n\nIf you are using the 0.5.0 version (ie for KDE4) then there are these cmake\nvariables,\n-DR_EXECUTABLE:   \n   path to the R executable. You may want to set this, if you have multiple\nversions of R installed, or R is not in your path. Example\n-DR_EXECUTABLE=/usr/bin/R\n-DR_HOME\n    R home directory. Almost certainly this option is not needed.\n-DR_INCLUDE\n    path to R include files. Almost certainly this option is not needed.\n\nIf you are using 0.4.9 version (ie for KDE3) then try setting these configure\nvariables:\n  --with-r-home=DIR       specify location of R_HOME directory            \n  --with-r-includes=DIR   specify location of R include files             \n\nAs you must've already seen, there is no \"--with-r-executable\" here. If r-home\ndoes not work, then you may need to try and play around by switching the actual\nR binaries in /usr/bin or /usr/local/bin  to their names (eg R2.7, R2.8) and\nthen keep the default as a symlink to R2.8 and then compile rkward.\n\nWarning: the 'released\" versions of rkward do not play well with R 2.8.x, so\nyou'll need to get the rkward from svn, which can be either for the KDE3/KDE4.\nSee here:\nhttp://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN\n\nLet us know if you need more help.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6493696\nBy: kapatp\n\nI am not sure how rkward searches for R binary, still there are some things\nyou could try out",
+      "thread_id": "thread-e9e79270a29b",
+      "thread_depth": 1,
+      "month": "2009-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d7e9fef48fcb",
+      "subject": "[rkward-users] rkward on planetkde",
+      "message_count": 1,
+      "participants": [
+        "Prasenjit Kapat"
+      ],
+      "started": "2009-02-08T08:24:21Z",
+      "last_reply": "2009-02-08T08:24:21Z",
+      "root_message_id": "msg-d7e9fef48fcb"
+    },
+    {
+      "id": "thread-dea906e7ca12",
+      "subject": "[rkward-users] [rkward - Help] Doesn't save workspace layout",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-02-12T21:39:50Z",
+      "last_reply": "2009-02-22T13:57:05Z",
+      "root_message_id": "msg-dea906e7ca12"
+    },
+    {
+      "id": "thread-e9e79270a29b",
+      "subject": "[rkward-users] [rkward - Help] Location of R Binary",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-02-20T08:51:47Z",
+      "last_reply": "2009-02-22T20:08:41Z",
+      "root_message_id": "msg-e9e79270a29b"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2017-03",
+  "messages": [
+    {
+      "id": "msg-bdf351a6f65a",
+      "message_id": "<4053435.1vLpWKsrxr@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2017-03-11T16:51:53Z",
+      "subject": "new location for debian packages of RKWard plugins",
+      "subject_clean": "new location for debian packages of RKWard plugins",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi there,\n\nwe'd like to inform all of you that we have moved our debian repository for \nplugin packages (and related R packages) from files.kde.org to \ndistribute.kde.org. this is (only) of relevance for you if you are running a \ndebian-based operating system and have configured apt to use that repository. \n\nwell, in that case you already should have noticed that the repo isn't \nfunctioning any longer. please replace your current configuration with the new \naddresses:\n\n # for binary packages:\n deb https://distribute.kde.org/rkward/deb unstable main\n # for source packages:\n deb-src https://distribute.kde.org/rkward/deb unstable main\n\nyou can then install all additional RKWard plugins through your systems's \npackage management (note that you need to install the package \"rkward-keyring\" \nfirst, to import the repo's PGP key). currently, that includes the following \npackages:\n\n r-other-rkward-rk.anova\n r-other-rkward-rk.clusteranalysis\n r-other-rkward-rk.cohenkappa\n r-other-rkward-rk.factoranalysis\n r-other-rkward-rk.gitinstall\n r-other-rkward-rk.multidimensionalscaling\n\nas well as:\n r-other-rkward-rkwarddev (plugin development)\n r-other-rkward-ximple    (XML package, dependency for rkwarddev)\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 473 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170311/929a0018/attachment.sig>",
+      "body_snippet": "hi there,\n\nwe'd like to inform all of you that we have moved our debian repository for \nplugin packages (and related R packages) from files.kde.org to \ndistribute.kde.org. this is (only) of relevance ",
+      "thread_id": "thread-bdf351a6f65a",
+      "thread_depth": 0,
+      "month": "2017-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-bdf351a6f65a",
+      "subject": "new location for debian packages of RKWard plugins",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2017-03-11T16:51:53Z",
+      "last_reply": "2017-03-11T16:51:53Z",
+      "root_message_id": "msg-bdf351a6f65a"
+    }
+  ]
+}

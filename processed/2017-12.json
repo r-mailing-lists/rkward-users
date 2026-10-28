@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2017-12",
+  "messages": [
+    {
+      "id": "msg-0c4fbf7d3237",
+      "message_id": "<1858500.SvoJyqWHI3@veles.suse>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2017-12-06T09:17:25Z",
+      "subject": "[rkward-users] KF5 based RKWard",
+      "subject_clean": "[rkward-users] KF5 based RKWard",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nas upcoming KDE applications 17.12 is going to completely drop KDE4/Qt4 \nsupport, which will cause removal of RKWard 0.6.5 (depending on KDE4/Qt4), as \nuser of openSUSE Tumbleweed (running the newest applications), I gave a try to \nthe latest developmental version of RKWard 0.6.9git.20171022T093... kindly \npackaged in home:wolfi323, https://software.opensuse.org/package/rkward I was \nvery happy with its state. UI is old good the same and so far I did not notice \nany major issues. So I hope version 0.7 will be officially available soon.\nThank You!\nV.\n\n-- \nVojtěch Zeisek\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\n\nhttps://www.opensuse.org/\nhttps://trapa.cz/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20171206/5d297b58/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nCheck out the vibrant tech community on one of the world's most\nengaging tech sites, Slashdot.org! http://sdm.link/slashdot\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi,\nas upcoming KDE applications 17.12 is going to completely drop KDE4/Qt4 \nsupport, which will cause removal of RKWard 0.6.5 (depending on KDE4/Qt4), as \nuser of openSUSE Tumbleweed (running the new",
+      "thread_id": "thread-0c4fbf7d3237",
+      "thread_depth": 0,
+      "month": "2017-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0c4fbf7d3237",
+      "subject": "[rkward-users] KF5 based RKWard",
+      "message_count": 1,
+      "participants": [
+        "Vojtěch Zeisek"
+      ],
+      "started": "2017-12-06T09:17:25Z",
+      "last_reply": "2017-12-06T09:17:25Z",
+      "root_message_id": "msg-0c4fbf7d3237"
+    }
+  ]
+}

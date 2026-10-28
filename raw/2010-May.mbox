@@ -1,0 +1,2376 @@
+From noreply at sourceforge.net  Sat May  1 18:26:34 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 01 May 2010 18:26:34 +0000
+Subject: [rkward-users] [Open Discussion] RE: A suggestion
+In-Reply-To: <forum-165573-4528460@sourceforge.net>
+Message-ID: <forum-165573-8361372@sourceforge.net>
+
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/1822409:
+
+Here\'s an open rant to the developers.  Rkward has got to be the most unstable, unreliable package I\'ve ever wrestled with.  It crashes.  It crashes for fun.  It crashes in the sun.  It crashes on Wednesdays.  It crashes on all days.  It crashes when I blink.  It crashes when I think.  I understand that it\'s *free*, and it looks like it could be an amazing tool.  But it crashes so frequently that you really should call it \"Awkward,\" or maybe the jokes on me. . . 
+
+
+
+From noreply at sourceforge.net  Sat May  1 19:19:48 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 01 May 2010 19:19:48 +0000
+Subject: [rkward-users] [Open Discussion] RE: A suggestion
+In-Reply-To: <forum-165573-8361372@sourceforge.net>
+Message-ID: <forum-165573-8361459@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/1822409:
+
+[quote]Here\'s an open rant to the developers.[/quote]
+
+We take all feedback serious, even if it\'s in the form of a rant. Also, RKWard is known to crash once on each Wednesday.
+
+However, the kind of crashing you claim to see is very likely a problem with a broken setup or a highly unusual use-pattern. If you give us some details, including information on your installed versions of R and RKWard, some more specific information on what you did just before your blinking caused RKWard to crash, possibly even a backtrace, or actually any useful information at all, we can almost certainly help you to a better user-experience.
+
+In other words, please try to include at least a grain of information in your next rant, here or elsewhere.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon May  3 13:46:44 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 03 May 2010 13:46:44 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8357877@sourceforge.net>
+Message-ID: <forum-165574-8365521@sourceforge.net>
+
+
+The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+Hello, 
+
+I went through the installation over the WE. 
+I installed everything on an external hard drive from a computer (windows XP) for which I have all the rights. 
+I installed R under \"F:\\Applications\\R-2.11.0\" which is quite usual for an R installation. 
+
+Then I installed KDE under \"F:\\Applications\\KDE\" and downloaded the files in \"F:\\Temp\\KDE files download\" in order not mix me up. I had to install KDE three times as each time I got some connection problems (KDE is big). 
+
+Then I ran Rkward quite easily providing it with the places where I had installed everything. 
+
+As I did that under a computer for which I have all the rights I got a shortcut on the desktop. 
+
+I came to my office and launch Rkward from F:\\Applications\\KDE\\bin using the file rkward.bat as tfry says above. The computer I am using here at work is also under XP and I cannot install softwares under C.
+
+So far everything is going ok which is awesome! Thank you so much for providing such a nice GUI.
+
+Thanks again
+
+
+
+From roel.verberne at unil.ch  Mon May  3 13:49:45 2010
+From: roel.verberne at unil.ch (Roel Verberne)
+Date: Mon, 03 May 2010 15:49:45 +0200
+Subject: [rkward-users] problem installing on Mac
+In-Reply-To: <4BDAE369.5070409@ruhr-uni-bochum.de>
+References: <4BDA9C3D.4090004@unil.ch> <4BDAE369.5070409@ruhr-uni-bochum.de>
+Message-ID: <4BDED479.2060005@unil.ch>
+
+OK, I tried both but had no succes, here's the result of tip number 1:
+
+    |gse-103-10:rkward Home$ cmake .. -DCMAKE_INSTALL_PREFIX=/opt/local
+    -DR_EXECUTABLE=/applications/r
+    CMake Error at
+    /opt/local/share/apps/cmake/modules/FindQt4.cmake:1458 (MESSAGE):
+       Qt qmake not found!
+    Call Stack (most recent call first):
+       /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake:267
+    (find_package)
+       /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95 (FIND_PACKAGE)
+       CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+    CMake Warning (dev) at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95
+    (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    Call Stack (most recent call first):
+       CMakeLists.txt:10 (FIND_PACKAGE)
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    CMake Warning (dev) at CMakeLists.txt:10 (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /sw/share/cmake-2.8/Modules/FindKDE4.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    -- Configuring incomplete, errors occurred!
+
+    |
+
+So I tried tip number two:||
+||
+
+    |
+    gse-103-10:rkward Home$ export PATH=/opt/local/bin:/opt/local/lib:$PATH
+    gse-103-10:rkward Home$ cmake .. -DCMAKE_INSTALL_PREFIX=/opt/local
+    -DR_EXECUTABLE=/applications/r
+    -- Looking for Q_WS_X11
+    -- Looking for Q_WS_X11 - not found.
+    -- Looking for Q_WS_WIN
+    -- Looking for Q_WS_WIN - not found.
+    -- Looking for Q_WS_QWS
+    -- Looking for Q_WS_QWS - not found.
+    -- Looking for Q_WS_MAC
+    -- Looking for Q_WS_MAC - not found.
+    -- Found Qt-Version 4.4.3 (using /opt/local/bin/qmake)
+    -- Looking for include files CMAKE_HAVE_PTHREAD_H
+    -- Looking for include files CMAKE_HAVE_PTHREAD_H - found
+    -- Looking for pthread_create in pthreads
+    -- Looking for pthread_create in pthreads - not found
+    -- Looking for pthread_create in pthread
+    -- Looking for pthread_create in pthread - found
+    -- Found Threads: TRUE
+    CMake Error at
+    /opt/local/share/apps/cmake/modules/FindAutomoc4.cmake:56 (message):
+       Did not find Automoc4Config.cmake (part of kdesupport).  Searched in
+      
+    /usr/local;/usr;/;/sw;/opt/local;/sw;/usr/lib/w32api;/usr/X11R6/lib;/usr/lib/X11;/opt/local/lib;/usr/pkg/lib;/opt/csw/lib;/opt/lib;/usr/openwin/lib;/opt/local
+       using suffixes automoc4 lib/automoc4 lib64/automoc4.
+    Call Stack (most recent call first):
+       /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake:270
+    (find_package)
+       /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95 (FIND_PACKAGE)
+       CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+    CMake Warning (dev) at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95
+    (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    Call Stack (most recent call first):
+       CMakeLists.txt:10 (FIND_PACKAGE)
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    CMake Warning (dev) at CMakeLists.txt:10 (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /sw/share/cmake-2.8/Modules/FindKDE4.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    -- Configuring incomplete, errors occurred!
+
+    |
+
+So I tried again with the original prefix setting:||
+||
+
+    |
+    gse-103-10:rkward Home$ export PATH=/opt/local/bin:/opt/local/lib:$PATH
+    gse-103-10:rkward Home$ cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config
+    --prefix` -DR_EXECUTABLE=/applications/r
+    -- Found Qt-Version 4.4.3 (using /opt/local/bin/qmake)
+    -- Found Threads: TRUE
+    CMake Error at
+    /opt/local/share/apps/cmake/modules/FindAutomoc4.cmake:56 (message):
+       Did not find Automoc4Config.cmake (part of kdesupport).  Searched in
+      
+    /usr/local;/usr;/;/sw;/opt/local;/sw;/usr/lib/w32api;/usr/X11R6/lib;/usr/lib/X11;/opt/local/lib;/usr/pkg/lib;/opt/csw/lib;/opt/lib;/usr/openwin/lib;/opt/local
+       using suffixes automoc4 lib/automoc4 lib64/automoc4.
+    Call Stack (most recent call first):
+       /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake:270
+    (find_package)
+       /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95 (FIND_PACKAGE)
+       CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+    CMake Warning (dev) at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95
+    (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    Call Stack (most recent call first):
+       CMakeLists.txt:10 (FIND_PACKAGE)
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    CMake Warning (dev) at CMakeLists.txt:10 (FIND_PACKAGE):
+       Policy CMP0011 is not set: Included scripts do automatic
+    cmake_policy PUSH
+       and POP.  Run "cmake --help-policy CMP0011" for policy details. 
+    Use the
+       cmake_policy command to set the policy and suppress this warning.
+
+       The included script
+
+         /sw/share/cmake-2.8/Modules/FindKDE4.cmake
+
+       affects policy settings.  CMake is implying the NO_POLICY_SCOPE
+    option for
+       compatibility, so the effects are applied to the including context.
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+
+    -- Configuring incomplete, errors occurred!|
+
+Looks like I need to 'set the policy', but I have no idea how to go 
+about this... Anymore ideas?
+
+Thanks for the help!
+
+Roel
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100503/e96e54d1/attachment.html>
+
+From alobolistas at gmail.com  Tue May  4 07:15:15 2010
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Tue, 04 May 2010 09:15:15 +0200
+Subject: [rkward-users] .Rhistory
+Message-ID: <4BDFC983.5020502@gmail.com>
+
+Is it possible to define the settings so that the .Rhistory file be automatically
+saved to the current working directory instead to a globally defined
+directory (i.e. /home/username/.rkward) ?
+
+Thanks
+
+Agus
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May  4 10:20:09 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 4 May 2010 12:20:09 +0200
+Subject: [rkward-users] problem installing on Mac
+In-Reply-To: <4BDED479.2060005@unil.ch>
+References: <4BDA9C3D.4090004@unil.ch> <4BDAE369.5070409@ruhr-uni-bochum.de>
+	<4BDED479.2060005@unil.ch>
+Message-ID: <201005041220.13377.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 03 May 2010, Roel Verberne wrote:
+> OK, I tried both but had no succes, here's the result of tip number 1:
+>     |gse-103-10:rkward Home$ cmake .. -DCMAKE_INSTALL_PREFIX=/opt/local
+> 
+>     -DR_EXECUTABLE=/applications/r
+>     CMake Error at
+>     /opt/local/share/apps/cmake/modules/FindQt4.cmake:1458 (MESSAGE):
+>        Qt qmake not found!
+
+ok, that's not good. The second approach (with setting the PATH) appears more 
+promising.
+
+[...]
+
+>     gse-103-10:rkward Home$ export PATH=/opt/local/bin:/opt/local/lib:$PATH
+>     gse-103-10:rkward Home$ cmake .. -DCMAKE_INSTALL_PREFIX=/opt/local
+>     -DR_EXECUTABLE=/applications/r
+>     -- Looking for Q_WS_X11
+>     -- Looking for Q_WS_X11 - not found.
+>     -- Looking for Q_WS_WIN
+>     -- Looking for Q_WS_WIN - not found.
+>     -- Looking for Q_WS_QWS
+>     -- Looking for Q_WS_QWS - not found.
+>     -- Looking for Q_WS_MAC
+>     -- Looking for Q_WS_MAC - not found.
+>     -- Found Qt-Version 4.4.3 (using /opt/local/bin/qmake)
+>     -- Looking for include files CMAKE_HAVE_PTHREAD_H
+>     -- Looking for include files CMAKE_HAVE_PTHREAD_H - found
+>     -- Looking for pthread_create in pthreads
+>     -- Looking for pthread_create in pthreads - not found
+>     -- Looking for pthread_create in pthread
+>     -- Looking for pthread_create in pthread - found
+>     -- Found Threads: TRUE
+>     CMake Error at
+>     /opt/local/share/apps/cmake/modules/FindAutomoc4.cmake:56 (message):
+>        Did not find Automoc4Config.cmake (part of kdesupport).  Searched in
+> 
+>    
+>  /usr/local;/usr;/;/sw;/opt/local;/sw;/usr/lib/w32api;/usr/X11R6/lib;/usr/l
+> ib/X11;/opt/local/lib;/usr/pkg/lib;/opt/csw/lib;/opt/lib;/usr/openwin/lib;/
+> opt/local using suffixes automoc4 lib/automoc4 lib64/automoc4.
+>     Call Stack (most recent call first):
+>        /opt/local/share/apps/cmake/modules/FindKDE4Internal.cmake:270
+>     (find_package)
+>        /sw/share/cmake-2.8/Modules/FindKDE4.cmake:95 (FIND_PACKAGE)
+>        CMakeLists.txt:10 (FIND_PACKAGE)
+
+I think we can safely ignore all the "policy" warnings that come after that 
+for now. The point where it really fails is the above, i.e. 
+"Automoc4Config.cmake" is not found.
+
+This looks like the "automoc-x11" package is missing. I wonder why this did 
+not get installed with kdelibs4-x11-dev, since it is rather essential for 
+building any KDE4 applications, but apparently it was not. Let's hope there 
+are not many more omissions like this. Possibly, you will also need to install 
+"kde4-buildenv".
+
+(In case this does not get you any further, please check, whether 
+Automoc4Config.cmake is installed anywhere in /opt/local/).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100504/7dfbbac9/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May  4 13:42:54 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 4 May 2010 15:42:54 +0200
+Subject: [rkward-users] problem installing on Mac
+In-Reply-To: <4BDED479.2060005@unil.ch>
+References: <4BDA9C3D.4090004@unil.ch> <4BDAE369.5070409@ruhr-uni-bochum.de>
+	<4BDED479.2060005@unil.ch>
+Message-ID: <201005041542.58590.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+sorry about the noise. After some more googling, I think, the following is the 
+recommended way to build KDE4 software on the mac:
+
+
+fink install kde4-buildenv
+export KDE4_TYPE=x11
+# you may need to use "/opt/local" instead of "/sw" in one or both of the
+# following two lines. Depends on where KDE itself was installed.
+export KDE4_PREFIX=/sw	
+/sw/sbin/kde4-buildenv.sh
+
+cd rkward_trunk/rkward/build
+cmake .. $KDE4_CMAKE_ARGS -DR_EXECUTABLE=/your/path/to/R
+make
+sudo make install
+
+
+The package kde4-buildenv.sh-script is supposed to take care of setting up 
+$KDE4_CMAKE_ARGS and some further environment variables, appropriately.
+
+I hope you haven't given up, yet, and this will finally do the trick.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100504/365efb6f/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May  4 14:09:02 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 4 May 2010 16:09:02 +0200
+Subject: [rkward-users] .Rhistory
+In-Reply-To: <4BDFC983.5020502@gmail.com>
+References: <4BDFC983.5020502@gmail.com>
+Message-ID: <201005041609.06035.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 04 May 2010, Agustin Lobo wrote:
+> Is it possible to define the settings so that the .Rhistory file be
+>  automatically saved to the current working directory instead to a globally
+>  defined directory (i.e. /home/username/.rkward) ?
+
+actually, rkward does not use R's history mechanism at all, ATM. The console 
+history is saved in ~/.kde/share/config/rkwardrc, and in fact that means there 
+is only one global history.
+
+I think, supporting .Rhistory is a good idea, and this should be possible (as 
+well as loadhistory(), savehistory(), and history()), but like so many things 
+this will need some work. I've added it to our feature request tracker, for 
+now: 
+http://sourceforge.net/tracker/?func=detail&aid=2996587&group_id=50231&atid=459010 
+.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100504/ddc764d1/attachment.sig>
+
+From Agustin.Lobo at ija.csic.es  Tue May  4 14:31:01 2010
+From: Agustin.Lobo at ija.csic.es (Agustin Lobo)
+Date: Tue, 4 May 2010 16:31:01 +0200
+Subject: [rkward-users] .Rhistory
+In-Reply-To: <201005041609.06035.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BDFC983.5020502@gmail.com>
+	<201005041609.06035.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <z2p27de757d1005040731qf928245fzcd41ec142c9e72cf@mail.gmail.com>
+
+Thanks Thomas!
+Then, what are the logfiles mentioned in Settings/General "Directory
+where the logfiles should be kept (*)" ?
+Agus
+
+2010/5/4 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+> Hi,
+>
+> On Tuesday 04 May 2010, Agustin Lobo wrote:
+>> Is it possible to define the settings so that the .Rhistory file be
+>> ?automatically saved to the current working directory instead to a globally
+>> ?defined directory (i.e. /home/username/.rkward) ?
+>
+> actually, rkward does not use R's history mechanism at all, ATM. The console
+> history is saved in ~/.kde/share/config/rkwardrc, and in fact that means there
+> is only one global history.
+>
+> I think, supporting .Rhistory is a good idea, and this should be possible (as
+> well as loadhistory(), savehistory(), and history()), but like so many things
+> this will need some work. I've added it to our feature request tracker, for
+> now:
+> http://sourceforge.net/tracker/?func=detail&aid=2996587&group_id=50231&atid=459010
+> .
+>
+> Regards
+> Thomas
+>
+
+
+
+-- 
+Dr. Agustin Lobo
+Institut de Ciencies de la Terra "Jaume Almera" (CSIC)
+Lluis Sole Sabaris s/n
+08028 Barcelona
+Spain
+Tel. 34 934095410
+Fax. 34 934110012
+e-mail Agustin.Lobo at ija.csic.es
+http://www.ija.csic.es/gt/obster
+
+
+
+From noreply at sourceforge.net  Wed May  5 13:50:34 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 05 May 2010 13:50:34 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8365521@sourceforge.net>
+Message-ID: <forum-165574-8370459@sourceforge.net>
+
+
+The following forum message was posted by m-eik at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+hi,
+
+i successfully pushed this a little further:
+
+i downloaded all windows installers to a linux machine, installed everything to a certrain folder (using \"wine\") and burnt that folder on a DVD. the only thing i didn\'t leave untouched was rkward.bat, because i noticed it had \"SET R_BINARY\" set to an absolute path. i just changed that to a relative path (say, SET R_BINARY=\"..\\..\\R-2.11.0\\bin\\R.exe\").
+
+rkward.bat started on another windows machine as it should directly from that DVD :-) it took ages (that is several minutes) to read everything from the medium but once rkward was up, it behaved quite responsive.
+
+now we know that a) you can prepare a functional windows-setup of rkward without access to windows itself, and b) rkward for windows can be started directly from read-only media as well.
+
+one scenario a can imagine is distributing rkward via a read-only samba share throughout an institution -- map the network share and you\'re ready to go. i\'ll give that a try.
+
+
+
+From roel.verberne at unil.ch  Wed May  5 15:42:27 2010
+From: roel.verberne at unil.ch (Roel Verberne)
+Date: Wed, 05 May 2010 17:42:27 +0200
+Subject: [rkward-users] problem installing on Mac
+In-Reply-To: <201005041542.58590.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BDA9C3D.4090004@unil.ch>
+	<4BDAE369.5070409@ruhr-uni-bochum.de>	<4BDED479.2060005@unil.ch>
+	<201005041542.58590.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4BE191E3.30603@unil.ch>
+
+Hi,
+
+I had a bigger problem with the KDE installation, a lot of files were 
+missing due to a problem compiling redland. As such the KDE build was 
+incomplete. Some kind developer had some .deb files for me though, so 
+that problem is fixed now. I retried the build every way we discussed 
+before but none of it worked. Below is the log from using the method you 
+described in the previous post.
+
+    gse-103-10:build Home$ export KDE4_TYPE=x11
+    gse-103-10:build Home$ export KDE4_PREFIX=/sw
+    gse-103-10:build Home$ /sw/sbin/kde4-buildenv.sh
+    ---------------------------------
+    KDE4 Build Environment Configured
+    ---------------------------------
+
+       Fink Prefix:        /sw
+       Type:               x11
+       Install Prefix:     /sw/opt/kde4/x11
+
+    Environment Variables:
+
+       PATH:              
+    /sw/opt/kde4/x11/bin:/sw/lib/freetype219/bin:/sw/lib/fontconfig2/bin:/sw/lib/qt4-x11/bin:/sw/opt/strigi/x11/bin:/sw/opt/soprano/x11/bin:/sw/opt/akonadi/x11/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin
+       CMAKE_INCLUDE_PATH:
+    /sw/opt/kde4/x11/include:/sw/lib/system-openssl/include:/sw/lib/freetype219/include:/sw/lib/fontconfig2/include:/sw/lib/qt4-x11/include:/sw/opt/strigi/x11/include:/sw/opt/soprano/x11/include:/sw/opt/attica/x11/include:/sw/opt/akonadi/x11/include::/sw/include
+       CMAKE_LIBRARY_PATH:
+    /sw/opt/kde4/x11/lib:/sw/lib/system-openssl/lib:/sw/lib/freetype219/lib:/sw/lib/fontconfig2/lib:/sw/lib/qt4-x11/lib:/sw/opt/strigi/x11/lib:/sw/opt/soprano/x11/lib:/sw/opt/attica/x11/lib:/sw/opt/akonadi/x11/lib::/sw/lib
+       CMAKE_MODULE_PATH: 
+    /sw/opt/kde4/x11/share/apps/cmake/modules::/sw/share/apps/cmake/modules
+       PKG_CONFIG_PATH:   
+    /sw/opt/kde4/x11/lib/pkgconfig:/sw/lib/system-openssl/lib/pkgconfig:/sw/lib/freetype219/lib/pkgconfig:/sw/lib/fontconfig2/lib/pkgconfig:/sw/lib/qt4-x11/lib/pkgconfig:/sw/opt/soprano/x11/lib/pkgconfig:/sw/opt/attica/x11/lib/pkgconfig:/sw/opt/akonadi/x11/lib/pkgconfig:
+       CPPFLAGS:           -I/sw/opt/kde4/x11/include
+    -I/sw/lib/system-openssl/include -I/sw/lib/freetype219/include
+    -I/sw/lib/fontconfig2/include -I/sw/lib/qt4-x11/include
+    -I/sw/opt/strigi/x11/include -I/sw/opt/soprano/x11/include
+    -I/sw/opt/attica/x11/include -I/sw/opt/akonadi/x11/include
+       LDFLAGS:            -L/rkward_trunk/rkward/build/build/lib
+    -L/sw/opt/kde4/x11/lib -L/sw/lib/system-openssl/lib
+    -L/sw/lib/freetype219/lib -L/sw/lib/fontconfig2/lib
+    -L/sw/lib/qt4-x11/lib -L/sw/opt/strigi/x11/lib
+    -L/sw/opt/soprano/x11/lib -L/sw/opt/attica/x11/lib
+    -L/sw/opt/akonadi/x11/lib 
+    -Wl,-dylib_file,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+    -Wl,-dead_strip_dylibs
+       KDE4_CMAKE_ARGS:   
+    -DBUNDLE_INSTALL_DIR:PATH='/sw/opt/kde4/x11/bin'
+    -DCMAKE_INSTALL_PREFIX='/sw/opt/kde4/x11'
+    -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    -DSTRIGI_STRIGIQTDBUSCLIENT_LIBRARY_RELEASE:FILEPATH='/sw/opt/strigi/x11/lib/libstrigiqtdbusclient.dylib'
+    -DSOPRANO_PLUGIN_DIR:PATH='/sw/opt/soprano/x11/share'
+    -DOPENGL_INCLUDE_DIR:PATH=/usr/X11/include
+    -DOPENGL_gl_LIBRARY:FILEPATH=/usr/X11/lib/libGL.dylib
+    -DOPENGL_glu_LIBRARY:FILEPATH=/usr/X11/lib/libGLU.dylib
+    -DBoost_ADDITIONAL_VERSIONS=1.41;1.41.0 -DBOOST_ROOT=/sw
+    -DBOOST_INCLUDEDIR=/sw/include/boost-1_41 -DBOOST_LIBRARYDIR=/sw/lib
+    -DPYTHON_EXECUTABLE=/usr/bin/python2.5 -D_KDE_DEFAULT_HOME_POSTFIX=4
+    -DSYSCONF_INSTALL_DIR='/sw/opt/kde4/x11/etc'
+
+    gse-103-10:build Home$ cmake .. $KDE4_CMAKE_ARGS
+    -DR_EXECUTABLE=/Application/R
+    CMake Error at /opt/local/share/cmake-2.8/Modules/FindKDE4.cmake:95
+    (FIND_PACKAGE):
+       Could not find module FindKDE4Internal.cmake or a configuration
+    file for
+       package KDE4Internal.
+
+       Adjust CMAKE_MODULE_PATH to find FindKDE4Internal.cmake or set
+       KDE4Internal_DIR to the directory containing a CMake
+    configuration file for
+       KDE4Internal.  The file will have one of the following names:
+
+         KDE4InternalConfig.cmake
+         kde4internal-config.cmake
+
+    Call Stack (most recent call first):
+       CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+    CMake Error at rkward/dataeditor/CMakeLists.txt:19 (QT4_AUTOMOC):
+       Unknown CMake command "QT4_AUTOMOC".
+
+
+    -- Configuring incomplete, errors occurred!
+    CMake Error: Unable to open cache file for save.
+    /rkward_trunk/rkward/build/CMakeCache.txt
+    CMake Error: : System Error: Permission denied
+    gse-103-10:build Home$
+
+
+As you asked, I checked whether Automoc4Config.cmake is installed, which 
+it is, under: /sw/opt/kde4/x11/lid/, not /opt/local/ as you wrote. Might 
+be important as automoc also shows up in this error message.
+
+I located FindKDE4internal.cmake in /sw/share/cmake-2.8/modules/ , I 
+think the problem might actually be that I can't find a 
+KDE4InternalConfig.cmake or kde4internal-config.cmake file on my system.
+
+So, I haven't given up yet, would really like to get this to work, I'm 
+just not familiar with most of this though..
+
+Hope you can help me a bit more, regards,
+
+Roel
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100505/6acffe2a/attachment.html>
+
+From noreply at sourceforge.net  Thu May  6 15:13:47 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 06 May 2010 15:13:47 +0000
+Subject: [rkward-users] [Help] 'rkward' R-lib not loaded/log file dir...
+Message-ID: <forum-165574-8373105@sourceforge.net>
+
+
+The following forum message was posted by singinaflatinef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3700146:
+
+Hi folks, 
+
+sorry for bothering you with what is probably a silly question, but I did try to find a solution on the net beforehand. Also, I de- and re-installed both rkward and R over again, even compiling rkward myself, in the hopes of the programs configuring themselves automatically. My problem is that each time I open rkward, it tells me the following things:
+
+-  The \'rkward\' R-library either could not be loaded at all, or not in the correct version.
+-  There was a problem opening the files needed for communication with R. Most likely this is due to an incorrect setting for the location of these files. Check whether you have correctly configured the location of the log-files (Settings->Configure Settings->Logfiles) and restart RKWard.
+
+Now, this probably sounds like an utterly dumb question to you, but I don\'t have a clue of what the correct location of the log-files would be! Can anybody help me on this one? Would that also solve the first problem rkward reports, or is that something more serious?
+
+Sorry for bothering you with such newbie questions!
+All the best, 
+irenaeus
+
+
+
+From noreply at sourceforge.net  Sat May  8 07:19:26 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 08 May 2010 07:19:26 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8370459@sourceforge.net>
+Message-ID: <forum-165574-8376387@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+@m-eik: As I mentioned in the other thread on \'static windows binary\' thread (http://thread.gmane.org/gmane.comp.statistics.rkward.devel/735) this is an really useful idea.
+
+For clarification, wouldn\'t the settings file (rkwardrc : ~/.kde/share/config/rkwardrc) and the output directory (~/.rkward/) be readonly then?
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat May  8 12:28:05 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 May 2010 14:28:05 +0200
+Subject: [rkward-users] problem installing on Mac
+In-Reply-To: <4BE191E3.30603@unil.ch>
+References: <4BDA9C3D.4090004@unil.ch>
+	<201005041542.58590.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4BE191E3.30603@unil.ch>
+Message-ID: <201005081428.08138.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 05 May 2010, Roel Verberne wrote:
+> [...]
+> So, I haven't given up yet, would really like to get this to work, I'm
+> just not familiar with most of this though..
+> 
+> Hope you can help me a bit more, regards,
+
+I think it's about time to call in the experts: I'm CCing this to the KDE-mac 
+mailing list. A short summary of the problem for those on the list:
+
+*In theory* RKWard should compile and run on the Mac, but as none of the 
+developers owns a Mac, we have serious problems figuring out accurate 
+installation instructions. We provide guesswork instructions at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac . 
+Now a user is trying to get things to work, but we can't even get the 
+configuration (i.e. cmake) to complete. I tried to support this effort as much 
+as I could, but for me it's all just guesswork, and so far all my guesses 
+turned out to be wrong. So I'd really appreciate help on this.
+
+Some background information:
+- RKWard is based on KDE4, but is not developed in KDE's SVN (see the above 
+wiki page)
+- Our sources contain some X11-specific code, that is not yet ported to the 
+Mac. Thus I suppose we will need to use an x11-flavored KDE-installation. As 
+far as I can see, macports does not provide that, but fink does.
+- Successful compilation will also require an installation of R (http://www.r-
+project.org). I do fear that the cmake-code checking for R may also need 
+adjustments, but at the moment we do not even get to this point.
+
+If you are interested to read about our failed efforts so far, see this mail-
+thread: 
+http://sourceforge.net/mailarchive/forum.php?thread_name=4BE191E3.30603%40unil.ch&forum_name=rkward-
+users . But in short, the question is: Could you please tell us what we need 
+to correct in our instructions?
+
+Thanks!
+Thomas
+
+P.S.: Please CC rkward-users at lists.sourceforge.net in your replies. Non-
+subscriber posts will be held for moderation (the old spam problem), but of 
+course we will let the pass, manually.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100508/ffb77856/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat May  8 12:32:09 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 May 2010 14:32:09 +0200
+Subject: [rkward-users] .Rhistory
+In-Reply-To: <z2p27de757d1005040731qf928245fzcd41ec142c9e72cf@mail.gmail.com>
+References: <4BDFC983.5020502@gmail.com>
+	<201005041609.06035.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<z2p27de757d1005040731qf928245fzcd41ec142c9e72cf@mail.gmail.com>
+Message-ID: <201005081432.09077.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 04 May 2010, Agustin Lobo wrote:
+> Then, what are the logfiles mentioned in Settings/General "Directory
+> where the logfiles should be kept (*)" ?
+
+well, I guess that label is a bit misleading...
+
+Back in the very early days of RKWard, the communication with the R backend 
+was file-based, and those files did resemble logfiles to some degree. That was a 
+long time ago, but I've never updated the description.
+
+In reality it's a sort of general purpose storage diretory. The output file is 
+kept, there (+ output graphs), and it also serves as a temporary directory for 
+downloading R packages, etc.
+
+I'll need to change the label...
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100508/7c7dc1e3/attachment.sig>
+
+From noreply at sourceforge.net  Sat May  8 14:31:36 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 08 May 2010 14:31:36 +0000
+Subject: [rkward-users] [Help] RE: 'rkward' R-lib not loaded/log file dir...
+In-Reply-To: <forum-165574-8373105@sourceforge.net>
+Message-ID: <forum-165574-8376901@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3700146:
+
+Hi,
+
+the second part of the message is a bit misleading. The actual problem appears to be, that in fact the rkward \'R\'-library could not be loaded at all, and the second is just a consequence of the first, and should be ignored in this case. I\'ll need to work on the wording, of this message...
+
+Before anything else, you will probably want to clean your system from any leftovers of the various methods that you installed rkward. This thread has instructions on how to do that: https://sourceforge.net/projects/rkward/forums/forum/165574/topic/3677349 .
+
+It sounds like you are using a linux-distribution which does provide packages of rkward, and generally, installing those is the easiest way to get RKWard working. If RKWard still does not work after cleaning your system, and then installing afresh, you should report this to your distribution-provider. If you post some details on your distribution, perhaps we have more detailed advice for you.
+
+Alternatively, for your self-compiled rkward, perhaps these tips help:
+- When trying again, remove CMakeLists.txt from your build-directory. Run cmake again. Most likely you will need to provide the -DR_EXECUTABLE=/your/path/to/R option, but no other option besides that. Especially, please do [b]not[/b] specify -DR_LIBDIR=... unless you know what you\'re doing.
+- Make sure to run \"sudo make install\". RKWard will not work unless properly installed.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sat May  8 17:47:57 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 08 May 2010 17:47:57 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8376387@sourceforge.net>
+Message-ID: <forum-165574-8377103@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+@m-eik: Good idea to simply use the relative path. One note for the record, regarding the network share: This will also make the R library directory read-only, so users cannot install packages, there. On the other hand, users can simply add a local library using Settings->Configure RKWard->R packages->R Library locations.
+
+@kapatp: On windows, KDE (and rkward) stores its settings in the user\'s \"Application Data\" folder. the \".rkward\"-directory is placed in the user\'s \"Documents and Settings\"-folder by default. Thus, both should be read-write even in this setup. (As a side note: This also means that if there are several installations of KDE or RKWard on the machine, they will share one set of configuration flles).
+
+
+
+From wade.wall at gmail.com  Sun May  9 19:36:26 2010
+From: wade.wall at gmail.com (Wade Wall)
+Date: Sun, 9 May 2010 15:36:26 -0400
+Subject: [rkward-users] how to toggle between console and script
+Message-ID: <k2le23082be1005091236g207fa1d8sb4ffc7d5ae23897d@mail.gmail.com>
+
+Hi all,
+
+I am trying to make the switch to rkward, but can't find out if there
+is a way to toggle between a script file and the console.  Is it
+possible to do this?
+
+Thanks for any information.
+
+Wade
+
+
+
+From kapatp at gmail.com  Sun May  9 21:22:28 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sun, 9 May 2010 17:22:28 -0400
+Subject: [rkward-users] how to toggle between console and script
+In-Reply-To: <k2le23082be1005091236g207fa1d8sb4ffc7d5ae23897d@mail.gmail.com>
+References: <k2le23082be1005091236g207fa1d8sb4ffc7d5ae23897d@mail.gmail.com>
+Message-ID: <j2pde8c7cb41005091422jd9108c38yd68d980e05288cca@mail.gmail.com>
+
+On Sun, May 9, 2010 at 3:36 PM, Wade Wall <wade.wall at gmail.com> wrote:
+> Hi all,
+>
+> I am trying to make the switch to rkward, but can't find out if there
+> is a way to toggle between a script file and the console. ?Is it
+> possible to do this?
+
+Welcome to RKward.
+
+The shortcut is Alt+0 for script window and Alt+5 for Console. See
+Windows > Activate > ....
+
+Feel free to ask any question you have.
+-- 
+Prasenjit
+
+
+
+From mike at mikearthur.co.uk  Mon May 10 14:02:05 2010
+From: mike at mikearthur.co.uk (Mike Arthur)
+Date: Mon, 10 May 2010 15:02:05 +0100
+Subject: [rkward-users] [KDE/Mac]  problem installing on Mac
+In-Reply-To: <201005081428.08138.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BDA9C3D.4090004@unil.ch>
+	<201005041542.58590.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4BE191E3.30603@unil.ch>
+	<201005081428.08138.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <A3626351-D823-4A15-B5E7-44D57D0296CD@mikearthur.co.uk>
+
+
+On 8 May 2010, at 13:28, Thomas Friedrichsmeier wrote:
+
+> Some background information:
+> - RKWard is based on KDE4, but is not developed in KDE's SVN (see the above 
+> wiki page)
+
+That's going to make it pretty hard for KDE people to be able to contribute fixes. It's SVN as well, right?
+
+> - Our sources contain some X11-specific code, that is not yet ported to the 
+> Mac. Thus I suppose we will need to use an x11-flavored KDE-installation. As 
+> far as I can see, macports does not provide that, but fink does.
+
+KDE/X11 on Mac is truly horrible to use. I'd be surprised if anyone using KDE on Mac will use it. The X11 environment is just unpleasant to use, it breaks a lot of the window management stuff that Mac users expect to work. I wouldn't say it's ported to Mac until it will compile with Qt4/Cocoa rather than Qt4/X11.
+
+> - Successful compilation will also require an installation of R (http://www.r-
+> project.org). I do fear that the cmake-code checking for R may also need 
+> adjustments, but at the moment we do not even get to this point.
+
+Yeh, the CMake might need fixed but it can be manually pointed to R fairly easily.
+
+> If you are interested to read about our failed efforts so far, see this mail-
+> thread: 
+> http://sourceforge.net/mailarchive/forum.php?thread_name=4BE191E3.30603%40unil.ch&forum_name=rkward-
+> users . But in short, the question is: Could you please tell us what we need 
+> to correct in our instructions?
+
+1) Port out the X11 code
+2) Fix the CMake code with the needed paths
+3) Make a Fink and Macports package rather than getting users to compile manually.
+
+To be honest, I wouldn't try and support Mac until one of your developers has access to one or one of your community volunteers to fix the above.
+
+Hope this helps!
+
+--
+Cheers,
+Mike Arthur
+http://mikearthur.co.uk
+
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon May 10 14:39:31 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 May 2010 16:39:31 +0200
+Subject: [rkward-users] [KDE/Mac]  problem installing on Mac
+In-Reply-To: <A3626351-D823-4A15-B5E7-44D57D0296CD@mikearthur.co.uk>
+References: <4BDA9C3D.4090004@unil.ch>
+	<201005081428.08138.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<A3626351-D823-4A15-B5E7-44D57D0296CD@mikearthur.co.uk>
+Message-ID: <201005101639.40302.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 10 May 2010, Mike Arthur wrote:
+> That's going to make it pretty hard for KDE people to be able to contribute
+>  fixes. It's SVN as well, right?
+
+I continue to be positively amazed by the inclusiveness of KDE. However, there 
+*are* reasons to keep RKWard as an external project. If you really wish to 
+discuss those, feel free to post to rkward-devel AT lists.sourceforge.net .
+
+> 1) Port out the X11 code
+> 2) Fix the CMake code with the needed paths
+> 3) Make a Fink and Macports package rather than getting users to compile
+>  manually.
+> 
+> To be honest, I wouldn't try and support Mac until one of your developers
+>  has access to one or one of your community volunteers to fix the above.
+> 
+> Hope this helps!
+
+Well, not quite what I had hoped for, but thanks for your assessment!
+
+Could you still provide some generic instructions on how KDE4/cmake-based 
+software can be compiled on the mac? After all, properly setting up a build-
+environment is the very first step, either way.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100510/330ac317/attachment.sig>
+
+From noreply at sourceforge.net  Tue May 11 03:13:19 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 03:13:19 +0000
+Subject: [rkward-users] [Help] How do I create matrix error bars?
+Message-ID: <forum-165574-8381248@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+THis is what I used to do.. example.. doing a time course.. the columns were like exel spreadsheet but this was not excel.  It was called SigmaPlot but it is very expensive.  I have acquiesced to the reality that I am going to have to figure out data import.. I have to create files instead of a spreadsheet.  But this is how I would do my time couse data:
+
+
+  Time points (minutes)     1 mi (moles)  2 m (moles) 5 m (moles) 10 m (moles) 20m  50m
+      1                                    23                  40                    59               112          156      198
+      2                                    25                  44                    55               118          153      201
+      5                                    26                  41                    56               115          159      205
+     10                                   22                  42                    54               111          160      200
+     20
+     50
+
+The plot is created like a vector and a matrix, for lack of a better explanation.. the x axis follows the \"time points\" column, and then error bars are computed by averaging the subsequent columns.  The data in the column \"1 mi (moles)\" i.e. 23, 25, 26, 22 are averaged and plotted on the 1 minute time point and so on.  That is how I always did the data.  Is this a scatter plot?  I started doing the regressions sometimes, or there was a function that drew a line that was \"bezier\" I guess or just \"connect the dots\" That is the sort of plot I like to do.  I don\'t like to calculate the averages and make error bars. does this application do this?  I am talking about taking empirical data, not creating a theoretical curve here, unless it is a regression line that tries to fit the data.
+
+
+
+From noreply at sourceforge.net  Tue May 11 03:18:57 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 03:18:57 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8381248@sourceforge.net>
+Message-ID: <forum-165574-8381256@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+oh that formatting turned out terrible.   The way SigmaPlot would do it, the first column was the x axis, and then it would pair up each entry with another column.  So above, the first column is time points.. so this is a hypothetical experiment where 1 minute of whatever I am doing I repeat this trial 4 times.. 1 minute gave 23, 25, 26, and 22 moles.  2 minutes gave 40, 44, 41, and 42 moles.  Five minutes gave 59, 55,56, and 54 moles.. get the picture?  So I would want to create a graph from this where time is the x axis, and moles are the y axis.  I want RKWard to take data like this and create a plot with error bars in the moles axis.  
+
+
+
+
+
+From papanikn at gmail.com  Tue May 11 06:21:32 2010
+From: papanikn at gmail.com (Nicolas Papanicolaou)
+Date: Tue, 11 May 2010 09:21:32 +0300
+Subject: [rkward-users] rkward installation on windows server 2003
+Message-ID: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+
+hi all
+I installed R and RKward on windows server 2003 (through administrator
+account).
+R is available for all users on that server but RKward is not. I tried the
+same shortcut that starts RKward, through some other account (i.e. running
+"C:\Program Files\KDE\bin\rkward.bat") but it did not start it
+
+how do i make RKward available for other users on the same machine ?
+
+    Thanks and Regards
+_______Nikolas Papanikolaou_______
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/18466cce/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 11 07:37:01 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 May 2010 09:37:01 +0200
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+Message-ID: <201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 11 May 2010, Nicolas Papanicolaou wrote:
+> I installed R and RKward on windows server 2003 (through administrator
+> account).
+> R is available for all users on that server but RKward is not. I tried the
+> same shortcut that starts RKward, through some other account (i.e. running
+> "C:\Program Files\KDE\bin\rkward.bat") but it did not start it
+
+interesting. In theory this should work (see also 
+http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612). 
+Could you try running this on the command line (cmd.exe)? That might show an 
+error message to help us track this down.
+
+> how do i make RKward available for other users on the same machine ?
+
+The installer is not smart enough to figure out, whether it has administrator 
+privileges, and therefore it just installs a shortcut on the current user's 
+desktop. You could simply copy RKWard.lnk from the Administrator's desktop to 
+the desktop-folder below "All Users".
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/ea9aa146/attachment.sig>
+
+From papanikn at gmail.com  Tue May 11 10:19:11 2010
+From: papanikn at gmail.com (Nicolas Papanicolaou)
+Date: Tue, 11 May 2010 13:19:11 +0300
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+
+hi Thomas
+I run it from a user's account and do not get any error message. it justs
+hungs:
+
+C:\Program Files\KDE\bin>rkward.bat
+create process "C:\PROGRA~1\KDE\bin\dbus-daemon.exe"
+"C:\PROGRA~1\KDE\bin\dbus-daemon.exe"  --session
+
+.....and does not start anything.
+
+Copying and running the shortcut to "all users\desktop" has the same result
+
+    Thanks and Regards
+_______Nikolas Papanikolaou_______
+
+
+On Tue, May 11, 2010 at 10:37 AM, Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+
+> Hi,
+>
+> On Tuesday 11 May 2010, Nicolas Papanicolaou wrote:
+> > I installed R and RKward on windows server 2003 (through administrator
+> > account).
+> > R is available for all users on that server but RKward is not. I tried
+> the
+> > same shortcut that starts RKward, through some other account (i.e.
+> running
+> > "C:\Program Files\KDE\bin\rkward.bat") but it did not start it
+>
+> interesting. In theory this should work (see also
+> http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612).
+> Could you try running this on the command line (cmd.exe)? That might show
+> an
+> error message to help us track this down.
+>
+> > how do i make RKward available for other users on the same machine ?
+>
+> The installer is not smart enough to figure out, whether it has
+> administrator
+> privileges, and therefore it just installs a shortcut on the current user's
+> desktop. You could simply copy RKWard.lnk from the Administrator's desktop
+> to
+> the desktop-folder below "All Users".
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/cc6528ad/attachment.html>
+
+From noreply at sourceforge.net  Tue May 11 10:35:56 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 10:35:56 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8381256@sourceforge.net>
+Message-ID: <forum-165574-8382124@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+[quote]I don\'t like to calculate the averages and make error bars. does this application do this?[/quote]
+
+Well, yes and no. As you may be aware, RKWard is a graphical frontend to R. R can do pretty much any plot that you could dream of, but we only provide point-and-click dialogs for some very few plots, so far. Eventually we will have a point-and-click dialog for this sort of plot. At the moment we don\'t.
+
+Here\'s one approach, which I think is close to what you\'re looking for. Re-arrange your data to long format:
+[code]
+  time measure
+       1             2.1
+       1             3.3
+       2             1.7
+       2             1.6
+[/code]
+
+Then, in the R Console enter
+[code]boxplot (measure ~ time, data=my.data)[/code]
+
+Feel free to ask further questions, here. However, the best place to ask for advice on R code is \"R-help\": http://www.r-project.org/mail.html .
+
+Regards
+Thomas
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 11 10:46:39 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 May 2010 12:46:39 +0200
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+Message-ID: <201005111246.44653.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 11 May 2010, Nicolas Papanicolaou wrote:
+> I run it from a user's account and do not get any error message. it justs
+> hungs:
+> 
+> C:\Program Files\KDE\bin>rkward.bat
+> create process "C:\PROGRA~1\KDE\bin\dbus-daemon.exe"
+> "C:\PROGRA~1\KDE\bin\dbus-daemon.exe"  --session
+> 
+> .....and does not start anything.
+
+ok. I can think of two potential causes:
+1) Some half-crashed dbus-daemon is already running, and a second one cannot 
+be started. Before anything else, try whether it works after rebooting, or 
+after clearing out any dbus-daemon processes.
+2) Users just cannot start a dbus-daemon at all due to permission problems. 
+Hmm. Not sure, where to look, as I'm not too familiar with windows 
+administration, but perhaps you have an idea, yourself. You could ask for 
+ideas on kde-windows at kde.org , as this problem will almost certainly affect all 
+KDE applications, not only RKWard (you could also try kwrite.exe, for 
+example).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/9c4fe1dd/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 11 10:51:28 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 May 2010 12:51:28 +0200
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+Message-ID: <201005111251.28607.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+One more thing after googling some more:
+
+Could check, whether this appears to be the same issue:
+
+https://bugs.kde.org/show_bug.cgi?id=200548
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/2e0214c0/attachment.sig>
+
+From papanikn at gmail.com  Tue May 11 11:52:54 2010
+From: papanikn at gmail.com (Nicolas Papanicolaou)
+Date: Tue, 11 May 2010 14:52:54 +0300
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <201005111251.28607.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+	<201005111251.28607.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <k2o17ea48f11005110452o1645611bndda15364e3eac44f@mail.gmail.com>
+
+The problem seems to be the dbus-daemon process. if you start KWard in user1
+and you quit the program, the dbus-daemon keeps running. so user2 cannot
+start KWard. you must terminate the process from user1 to start the program
+in user2
+
+    Thanks and Regards
+_______Nikolas Papanikolaou_______
+
+
+On Tue, May 11, 2010 at 1:51 PM, Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+
+> One more thing after googling some more:
+>
+> Could check, whether this appears to be the same issue:
+>
+> https://bugs.kde.org/show_bug.cgi?id=200548
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100511/4b97e887/attachment.html>
+
+From noreply at sourceforge.net  Tue May 11 12:41:08 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 12:41:08 +0000
+Subject: [rkward-users] [Help] RE: 'rkward' R-lib not loaded/log file dir...
+In-Reply-To: <forum-165574-8376901@sourceforge.net>
+Message-ID: <forum-165574-8382353@sourceforge.net>
+
+
+The following forum message was posted by singinaflatinef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3700146:
+
+Hi, there, 
+
+first of all, I am running Kubuntu 10.4 (but the problem was already there under 9.4, which I was using since a week ago).
+
+I tried to follow your suggestions, but to no avail: first of all, I ran [code]sudo R CMD REMOVE rkward[/code]; then, I tried [code]sudo R CMD REMOVE -l/usr/lib/R/library rkward[/code] (and the other directories that [code].libPaths()[/code] gave back). Answer: there are no packages under that name.
+Next step was to remove rkward also using synaptic. Then, I re-installed rkward using synaptic. That gave me the old error message. So, I uninstalled it again, using synaptic, to try your hint on the self-compiled version. The problem I ran into there was that, after removing CMakeLists.txt, the [code]cmake[/code] command would lead to 
+[quote]CMake Error: The source directory \"/home/irex/rkward-0.5.3\" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.[/quote]
+..., whether or not I specify the DR_EXECUTABLE option or not. Finally, I put CMakeLists.txt back, compiled rkward from source (including \"sudo make install\", of course) - and ran into the old error message when trying to run \"rkward\". 
+
+Here\'s a little more information of what happens in the terminal when running \"rkward\": the command would start R (2.11.0) nicely, but then give 
+[quote]Calling appendChild() on a null node does nothing.
+error in initialization call \'options (device=rk.screen.device)
+\'
+rkward(7302)/kparts KParts::PartManager::addPart: Part \' \"\" \' has a widget  \"khtml_part_widget\"  with a focus policy of NoFocus. It should have at least a ClickFocus policy, for part activation to work well. 
+
+rkward(7302)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  \"/usr/share/mime/magic\"
+rkward(7302)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing  \"/home/irex/.local/share/mime/magic\"
+Command failed (other)
+failed command was: \'.rk.set.reply (NULL)\'
+- error message was: \'\'[/quote]
+followed by similar \'rk.get.structure...\' errors.
+
+Does any of the above make any sense to you? Did I skip any important step when either doing the \"clean-up\" or the re-install? I really did my best to follow the steps meticulously...
+
+I\'m very grateful for any further help that brings me closer (back) to a running rkward!
+Best regards, 
+irenaeus
+
+
+
+From mike at mikearthur.co.uk  Tue May 11 13:02:13 2010
+From: mike at mikearthur.co.uk (Mike Arthur)
+Date: Tue, 11 May 2010 14:02:13 +0100
+Subject: [rkward-users] [KDE/Mac]    problem installing on Mac
+In-Reply-To: <201005101639.40302.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BDA9C3D.4090004@unil.ch>
+	<201005081428.08138.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<A3626351-D823-4A15-B5E7-44D57D0296CD@mikearthur.co.uk>
+	<201005101639.40302.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <69DD0C09-8134-422F-85FB-CDCF14AAEAAD@mikearthur.co.uk>
+
+
+On 10 May 2010, at 15:39, Thomas Friedrichsmeier wrote:
+
+> I continue to be positively amazed by the inclusiveness of KDE. However, there 
+> *are* reasons to keep RKWard as an external project. If you really wish to 
+> discuss those, feel free to post to rkward-devel AT lists.sourceforge.net .
+
+Fair enough, I'm not going to critique your reasoning, I'm just saying that it's something to consider.
+
+> Well, not quite what I had hoped for, but thanks for your assessment!
+
+Apologies and thanks :)
+
+> Could you still provide some generic instructions on how KDE4/cmake-based 
+> software can be compiled on the mac? After all, properly setting up a build-
+> environment is the very first step, either way.
+
+
+The generic instructions are: it's the same as compiling on Linux. CMake does all the hard work for you, you might just need to specify some path hints to CMake using, for example, "-DCMAKE_PREFIX_PATH=/usr/3rdpartysoftware" or something similar on the command-line.
+
+There's not really a single reason why things don't "Just Work", there will be a selection ranging from bugs in KDE's Mac support to differing library versions to CMake bugs to path hints being required.
+
+Hope this helps!
+
+--
+Cheers,
+Mike Arthur
+http://mikearthur.co.uk
+
+
+
+
+
+
+From noreply at sourceforge.net  Tue May 11 13:52:48 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 13:52:48 +0000
+Subject: [rkward-users] [Help] RE: 'rkward' R-lib not loaded/log file dir...
+In-Reply-To: <forum-165574-8382353@sourceforge.net>
+Message-ID: <forum-165574-8382517@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3700146:
+
+[quote]after removing CMakeLists.txt[/quote]
+
+Oops, did I write CMake[b]Lists[/b].txt? Sorry about that. I meant CMake[b]Cache[/b].txt in the build directory, which is the file that contains (among others) the settings you made when you first ran cmake. I suspect that there is something wrong in there. Specifically, I suspect you may have specified a bad directory for -DR_LIBDIR (again, just omit this setting, when running cmake again).
+
+In case this still does not work, could you capture the output of make install?
+[code]  sudo make install > intall_log.txt[/code]
+
+Perhaps post that to rkward-devel AT lists DOT sourceforge.net, if problems remain.
+
+Which version of RKWard gets installed via synaptic?
+
+Which version of R are you using (run [code]sessionInfo()[/code] in R)? Do you have more than one version of R installed?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 11 14:51:16 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 14:51:16 +0000
+Subject: [rkward-users] [Help] RE: 'rkward' R-lib not loaded/log file dir...
+In-Reply-To: <forum-165574-8382517@sourceforge.net>
+Message-ID: <forum-165574-8382638@sourceforge.net>
+
+
+The following forum message was posted by singinaflatinef at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3700146:
+
+Phew! That did the job, it seems. I\'ve just started rkward successfully, performed a few lines from some old script - and haven\'t had any error messages so far. I didn\'t have to specify any cmake option, by the way. After deleting CMakeCache.txt, everything ran smoothly.
+
+Thanks a lot!!!
+Irenaeus
+
+
+
+From kapatp at gmail.com  Tue May 11 15:20:11 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Tue, 11 May 2010 11:20:11 -0400
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <k2o17ea48f11005110452o1645611bndda15364e3eac44f@mail.gmail.com>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com> 
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com> 
+	<201005111251.28607.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<k2o17ea48f11005110452o1645611bndda15364e3eac44f@mail.gmail.com>
+Message-ID: <AANLkTikOgOe6kCHvFFgBa8q3YsF2W81BVKm0pif9iR14@mail.gmail.com>
+
+On Tue, May 11, 2010 at 7:52 AM, Nicolas Papanicolaou
+<papanikn at gmail.com> wrote:
+> The problem seems to be the dbus-daemon process. if you start?KWard in user1
+> and you quit the program, the dbus-daemon?keeps running. so user2 cannot
+> start KWard. you must terminate the process from user1 to start the program
+> in user2
+
+Then this should hold for any other KDE application (such as
+kwrite.exe), right? In other words, more than one user can not use KDE
+applications simultaneously? That would be a serious drawback to KDE
+on Windows server platforms. (rant: Then again, KDE on windows / mac
+is barely a half hearted attempt. Not to blame anyone but thats just
+the nature of "free software"!)
+
+
+
+-- 
+Prasenjit
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 11 15:38:22 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 May 2010 17:38:22 +0200
+Subject: [rkward-users] rkward installation on windows server 2003
+In-Reply-To: <AANLkTikOgOe6kCHvFFgBa8q3YsF2W81BVKm0pif9iR14@mail.gmail.com>
+References: <n2m17ea48f11005102321o3eeafa00z3061b27b59a4bac2@mail.gmail.com>
+	<201005110937.06055.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<u2x17ea48f11005110319m48104059ydcbacf7b607a0c18@mail.gmail.com>
+	<201005111251.28607.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<k2o17ea48f11005110452o1645611bndda15364e3eac44f@mail.gmail.com>
+	<AANLkTikOgOe6kCHvFFgBa8q3YsF2W81BVKm0pif9iR14@mail.gmail.com>
+Message-ID: <4BE979EE.1090005@ruhr-uni-bochum.de>
+
+Hi,
+
+Prasenjit Kapat schrieb:
+> On Tue, May 11, 2010 at 7:52 AM, Nicolas Papanicolaou
+> <papanikn at gmail.com> wrote:
+>> The problem seems to be the dbus-daemon process. if you start KWard in user1
+>> and you quit the program, the dbus-daemon keeps running. so user2 cannot
+>> start KWard. you must terminate the process from user1 to start the program
+>> in user2
+> 
+> Then this should hold for any other KDE application (such as
+> kwrite.exe), right?
+
+yes, and in fact I can reproduce it on Windows XP, too. I've forwarded 
+the issue to kde-windows at kde.org (without this mailing list in CC). 
+Let's see, whether they have a solution for that.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 11 17:58:49 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 17:58:49 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8382124@sourceforge.net>
+Message-ID: <forum-165574-8382999@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+You don\'t understand.  That doesn\'t solve my problem. You can\'t \"rearrange\" a matrix into a vector. I am likely to do many of these plots.  I don\'t want to have to deal with the \"rearrangements\" every time. I want it to accept vector values that get transformed to scalars.  I want to provide a matrix for the dependent variable, not a vector.  Plus, your suggestion loses the data about variation of the values.  
+
+
+
+From noreply at sourceforge.net  Tue May 11 18:34:25 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 18:34:25 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8382999@sourceforge.net>
+Message-ID: <forum-165574-8383063@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+[quote]You can\'t \"rearrange\" a matrix into a vector[/quote]
+[quote]Plus, your suggestion loses the data about variation of the values.[/quote]
+
+It\'s not a vector, it\'s a matrix in \"long\" format. And it does not loose information about the variation. Note that there are several [b]rows[/b] for each point of time, each row corresponding to one measurement.
+
+[quote] I don\'t want to have to deal with the \"rearrangements\" every time.[/quote]
+
+Then read the help page for \"reshape\". This converts your wide example matrix to long format:
+[code]reshape (data, direction=\"long\", varying=2:7)[/code]
+
+I suppose some statistics programs may support \"wide\" data format in this particular place. But converting between wide and long is a rather common exercise in any tool.
+
+
+
+From noreply at sourceforge.net  Tue May 11 18:45:03 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 18:45:03 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8383063@sourceforge.net>
+Message-ID: <forum-165574-8383092@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+Ok, so perhaps I did get you wrong. If you want one box per column, it\'s dead simple:
+[code]boxplot (my.data)[/code]
+
+And we even have a dialog for that, so just use Plots->Boxplot, and select your columns.
+
+
+
+From noreply at sourceforge.net  Tue May 11 20:01:22 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 20:01:22 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8383092@sourceforge.net>
+Message-ID: <forum-165574-8383232@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+I\'m not really sure you do.  From the data I originally gave, well.. I wasn\'t careful about magnitudes.. but I want a plot that looks like this:
+
+http://kayve.net/plot.jpg
+
+
+
+From noreply at sourceforge.net  Tue May 11 20:01:48 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 20:01:48 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8383232@sourceforge.net>
+Message-ID: <forum-165574-8383233@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+I\'m hoping for the line
+
+
+
+From noreply at sourceforge.net  Tue May 11 22:41:09 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 11 May 2010 22:41:09 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8383233@sourceforge.net>
+Message-ID: <forum-165574-8383502@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+Ok, here is a working example. Replace x by your dataset name.
+
+[code]x <- data.frame (id=1:10, X1=runif(10), X2=2*runif(10), X3=5*runif(10), X4=10*runif(10), X5=20*runif(10), X6=50*runif(10))
+U <- reshape(x, varying=2:7, v.names=\'moles\', direction=\'long\')
+U$time <- factor(U$time); levels(U$time) <- c(1,2,5,10,20,50);
+library(lattice)
+
+# aggregate() in R >= 2.11.0 has a method for formula objects
+if (getRversion() <= \"2.10.1\") {
+	S <- data.frame (moles=apply(x[,2:7],2,median), time=1:6)
+} else S <- aggregate (moles~time, data=U, median)
+
+trellis.par.set(box.rectangle = list(lty = 0))
+bwplot(moles~time, data=U, horizontal=FALSE, xlab=\'time\',
+	stats = function (...) {
+		bstats <- boxplot.stats (...)
+		bstats$stats[c(2,4)] <- bstats$stats[3]
+		return(bstats)
+	},
+	panel = function (x,y,...) {
+		panel.bwplot (x,y,...)
+		panel.xyplot(x=S$time, y=S$moles,type=\'l\')
+	}
+)[/code]
+
+If this much of coding puts you off then [b]R[/b] is not the right software for you!
+
+Now, here is a bit of illuminating rant:
+As Thomas pointed out earlier,  Rkward is merely a GUI; [b]R[/b] is the main statistical engine behind [b]Rkward[/b]. The minimally available menu driven (statistical) functions in Rkward is ofcourse driven by appropriate R functions/code underneath. [b]Again, Rkward is not a statistical software.[/b] So, if you are used to menu driven softwares, such as, SPSS, SigmaPlot (as you mentioned), Minitab, StatXact, STATISTICA (even SAS and Splus to a good extent), then I am sorry to spoil your surprise, [b]with R[/b] you are in for a rude shock (of course, depends on how much of data handling you do): 
+* R is completely comandline driven. 
+* You could use R from a just a terminal (xterm, aterm, uterm, konsole, gnome-terminal, ...). 
+* If you have used the emacs editor then you could run R (or Splus) from withing emacs (using ESS)
+* You could use kate (the KDE editor) and link with an R session w/o using RKward (it is a pain though)
+* There is a similar plugin for gedit as well..
+* http://en.wikipedia.org/wiki/R_%28programming_language%29
+
+To repeat: RKward will not hold your hand through your statistical analysis! As you can see from the code above, it has nothing to do with RKward!!
+
+Good luck.
+
+
+
+From noreply at sourceforge.net  Wed May 12 18:19:55 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 12 May 2010 18:19:55 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8383502@sourceforge.net>
+Message-ID: <forum-165574-8385392@sourceforge.net>
+
+
+The following forum message was posted by kayve at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+how about vi?
+
+so I create some flatfile \"dataset?\"  I guess I will get on figuring that out.
+
+If I write this program once ... can I make it more generalized so I can do a lot of things fast in the long run then?
+
+
+
+From edugarpor at gmail.com  Wed May 12 19:18:33 2010
+From: edugarpor at gmail.com (=?ISO-8859-1?Q?Eduardo_Garc=EDa?=)
+Date: Wed, 12 May 2010 21:18:33 +0200
+Subject: [rkward-users] How I can stop execution?
+Message-ID: <AANLkTinMbMeB5KzDbNj5gfiIhRfLTPG52_6QYXOX90A1@mail.gmail.com>
+
+Hello, i'm a newbie in Rkward.
+
+Many times I want to interrupt some job wich is running: I tried with
+Control + C on the R console, Escaping, but nothing. Control + C only works
+when it is specting some bracket or parenthesis. I also looked for a buttom
+like in the Windows GUI, but i couldn't find it.
+Someone knows the way? It is very boring and unproductive to exit Rkward
+every time i want to finish a job.
+
+Thank you!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100512/e468d857/attachment.html>
+
+From kapatp at gmail.com  Wed May 12 20:33:06 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Wed, 12 May 2010 16:33:06 -0400
+Subject: [rkward-users] How I can stop execution?
+In-Reply-To: <AANLkTinMbMeB5KzDbNj5gfiIhRfLTPG52_6QYXOX90A1@mail.gmail.com>
+References: <AANLkTinMbMeB5KzDbNj5gfiIhRfLTPG52_6QYXOX90A1@mail.gmail.com>
+Message-ID: <AANLkTint4TKzpVFWBxoCOdgNLoKk5Nna9nMXgXrkaZ_j@mail.gmail.com>
+
+2010/5/12 Eduardo Garc?a <edugarpor at gmail.com>:
+> Hello, i'm a newbie in Rkward.
+
+Welcome!
+
+> Many times I want to interrupt some job wich is running: I tried with
+> Control + C on the R console, Escaping, but nothing. Control + C only works
+> when it is specting some bracket or parenthesis. I also looked for a buttom
+> like in the Windows GUI, but i couldn't find it.
+> Someone knows the way? It is very boring and unproductive to exit Rkward
+> every time i want to finish a job.
+
+Look for the "Pending Jobs" tab near the bottom of the window.. Click
+on the the "command stack" that you want to cancel, and click "Cancel
+selected commands"...
+
+May be we should have a "Red Cross" button, to stop the running job.
+If there is only job running then it would be easy. Otherwise??
+
+-- 
+Prasenjit
+
+
+
+From noreply at sourceforge.net  Wed May 12 23:06:08 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 12 May 2010 23:06:08 +0000
+Subject: [rkward-users] [Open Discussion] RE: A suggestion
+In-Reply-To: <forum-165573-8361459@sourceforge.net>
+Message-ID: <forum-165573-8386067@sourceforge.net>
+
+
+The following forum message was posted by fsando at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/1822409:
+
+@6: I\'m sure your problem is specific to your setup. Or perhaps you\'re running a very old version of RKWard? I\'ve been running rkward for several years and I find it to be just as stable and reliable as any other (commercial or not) statistical program. Actually some commercial apps I work with are of remarkably low quality compared to rkward.
+
+I can fully understand the frustration when things crash left and right, especially if the app looks as \"sexy\" as rkward and you really want it to work. But I would ask you to always treat the developers with respect. They are working hard and doing an awesome job from which the rest of us benefit so much.
+
+
+
+From wade.wall at gmail.com  Thu May 13 01:24:15 2010
+From: wade.wall at gmail.com (Wade Wall)
+Date: Wed, 12 May 2010 21:24:15 -0400
+Subject: [rkward-users] set working directory where script file is located
+Message-ID: <AANLkTimZnAr0gnAIDqxXCTMj-9QlmwRgIg_UDpyUeOO0@mail.gmail.com>
+
+Hi all,
+
+I am using rkward 0.5.2 and have a question.  How does one indicate
+that the working directory should be located where the script file is
+located?  Is it possible to set the directory that contains a
+particular script file as the default directory.
+
+Thanks for any information,
+
+Wade
+
+
+
+From kapatp at gmail.com  Thu May 13 02:03:25 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Wed, 12 May 2010 22:03:25 -0400
+Subject: [rkward-users] set working directory where script file is
+	located
+In-Reply-To: <AANLkTimZnAr0gnAIDqxXCTMj-9QlmwRgIg_UDpyUeOO0@mail.gmail.com>
+References: <AANLkTimZnAr0gnAIDqxXCTMj-9QlmwRgIg_UDpyUeOO0@mail.gmail.com>
+Message-ID: <AANLkTilVTo2b-Si-_BZqy6zMO4k1q1Z952DvS10GYa_I@mail.gmail.com>
+
+On Wed, May 12, 2010 at 9:24 PM, Wade Wall <wade.wall at gmail.com> wrote:
+> Hi all,
+>
+> I am using rkward 0.5.2 and have a question. ?How does one indicate
+> that the working directory should be located where the script file is
+> located? ?Is it possible to set the directory that contains a
+> particular script file as the default directory.
+
+I don't remember if this was available in 0.5.2, but if you could
+upgrade to 0.5.3 (the latest released version) then there is a toolbar
+button "CD to script directory," visible when editing a script file,
+which does exactly this job.
+
+-- 
+Prasenjit
+
+
+
+From kapatp at gmail.com  Thu May 13 14:08:51 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Thu, 13 May 2010 10:08:51 -0400
+Subject: [rkward-users] set working directory where script file is
+	located
+In-Reply-To: <AANLkTilsFRjuquFDDZGX3EPy_kcXz9ZoJxwDxfArs72G@mail.gmail.com>
+References: <AANLkTimZnAr0gnAIDqxXCTMj-9QlmwRgIg_UDpyUeOO0@mail.gmail.com> 
+	<AANLkTilVTo2b-Si-_BZqy6zMO4k1q1Z952DvS10GYa_I@mail.gmail.com> 
+	<AANLkTilsFRjuquFDDZGX3EPy_kcXz9ZoJxwDxfArs72G@mail.gmail.com>
+Message-ID: <AANLkTilcmOhAs1oWkCFHx9mUPXH7qBpE4mSKNuSfCDaO@mail.gmail.com>
+
+On Thu, May 13, 2010 at 6:39 AM, Wade Wall <wade.wall at gmail.com> wrote:
+> Thanks a lot. ?I will upgrade to 0.5.3
+
+That would be good... If you have any problems with that, do let us know.
+
+And just a small thing: do Cc (or To) the list so that the
+communications are accessible to all.
+
+-- 
+Prasenjit
+
+
+
+From noreply at sourceforge.net  Thu May 13 19:19:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 13 May 2010 19:19:38 +0000
+Subject: [rkward-users] [Help] RE: How do I create matrix error bars?
+In-Reply-To: <forum-165574-8385392@sourceforge.net>
+Message-ID: <forum-165574-8387990@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3704541:
+
+[quote]If I write this program once ... can I make it more generalized so I can do a lot of things fast in the long run then?[/quote]
+
+Yes. Great flexibility and programmability are definitely strong points of R.
+
+But, as kapatp has hinted: We cannot hold your hand through all that. You will need to get to learn some R yourself (the overview in Wikipedia is probably not the worst starting point).
+
+
+
+From matthieu.stigler at gmail.com  Tue May 18 07:12:13 2010
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Tue, 18 May 2010 09:12:13 +0200
+Subject: [rkward-users] off topic: using rkward syntax highlighting in gedit?
+Message-ID: <4BF23DCD.8060205@gmail.com>
+
+Hi
+
+It is a little bit off topic, but I saw that the kate syntax 
+highlighting had been created by rkward team so maybe you have any idea:
+
+I wonder whether it would be possible to use the nice rkward R syntax 
+coloration in gedit? The problem is the file for kate
+usr/share/kde4/apps/katepart/syntax/r.xml
+
+seemed to be diferent than those used by gedit:
+/usr/share/gtksourceview-2.0/language-specs/R.lang
+
+Is there nevertheless a conversion possiblity?
+
+Thanks a lot!!
+
+Matthieu
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 18 08:48:24 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 18 May 2010 10:48:24 +0200
+Subject: [rkward-users] off topic: using rkward syntax highlighting in
+	gedit?
+In-Reply-To: <4BF23DCD.8060205@gmail.com>
+References: <4BF23DCD.8060205@gmail.com>
+Message-ID: <201005181048.29529.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 18 May 2010, Matthieu Stigler wrote:
+> I wonder whether it would be possible to use the nice rkward R syntax
+> coloration in gedit? The problem is the file for kate
+> usr/share/kde4/apps/katepart/syntax/r.xml
+> 
+> seemed to be diferent than those used by gedit:
+> /usr/share/gtksourceview-2.0/language-specs/R.lang
+
+unfortunately, these are simply incompatible highlighting systems.
+
+> Is there nevertheless a conversion possiblity?
+
+I am not aware of an automated conversion tool. The systems do use similar 
+concepts, as far as I can see, so perhaps it is reasonably possible to convert 
+manually. But it is not going to be trivial. In case you want to give this a 
+try, I'll be happy to answer questions about the r.xml.
+
+For reference, here's a tutorial for gedit highlighting definitions:
+http://library.gnome.org/devel/gtksourceview-2.0/stable/lang-tutorial.html
+
+And here's the one for kate:
+http://www.kate-editor.org/article/writing_a_kate_highlighting_xml_file
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100518/0ba909d9/attachment.sig>
+
+From matthieu.stigler at gmail.com  Tue May 18 12:29:11 2010
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Tue, 18 May 2010 14:29:11 +0200
+Subject: [rkward-users] off topic: using rkward syntax highlighting in
+ gedit?
+In-Reply-To: <201005181048.29529.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BF23DCD.8060205@gmail.com>
+	<201005181048.29529.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4BF28817.306@gmail.com>
+
+thanks a lot Thomas for your answer! It seems indeed not so trivial so 
+won't try it...
+
+Thanks
+
+Matthieu
+
+
+Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Tuesday 18 May 2010, Matthieu Stigler wrote:
+>   
+>> I wonder whether it would be possible to use the nice rkward R syntax
+>> coloration in gedit? The problem is the file for kate
+>> usr/share/kde4/apps/katepart/syntax/r.xml
+>>
+>> seemed to be diferent than those used by gedit:
+>> /usr/share/gtksourceview-2.0/language-specs/R.lang
+>>     
+>
+> unfortunately, these are simply incompatible highlighting systems.
+>
+>   
+>> Is there nevertheless a conversion possiblity?
+>>     
+>
+> I am not aware of an automated conversion tool. The systems do use similar 
+> concepts, as far as I can see, so perhaps it is reasonably possible to convert 
+> manually. But it is not going to be trivial. In case you want to give this a 
+> try, I'll be happy to answer questions about the r.xml.
+>
+> For reference, here's a tutorial for gedit highlighting definitions:
+> http://library.gnome.org/devel/gtksourceview-2.0/stable/lang-tutorial.html
+>
+> And here's the one for kate:
+> http://www.kate-editor.org/article/writing_a_kate_highlighting_xml_file
+>
+> Regards
+> Thomas
+>   
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------------
+>
+>   
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+
+From noreply at sourceforge.net  Fri May 21 04:22:28 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 21 May 2010 04:22:28 +0000
+Subject: [rkward-users] [Help] R Indentation
+Message-ID: <forum-165574-8405816@sourceforge.net>
+
+
+The following forum message was posted by harrelfe at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+I have not been able to make rkward do automatic R-style indentation in the script editor.  I would like to have this perform as with ESS under Emacs with auto-indenting when entering {, further indenting on the line after the opening {, revert to previous indent level with closing }, etc.  Thanks for any assistance.
+Frank
+
+
+
+From noreply at sourceforge.net  Fri May 21 10:17:35 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 21 May 2010 10:17:35 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8405816@sourceforge.net>
+Message-ID: <forum-165574-8406429@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+Hi,
+
+Personally, I am not a fan of automatic indentation, so maybe I\'m missing something. However, you can select an indentation mode using Edit->Tools Move->Indentation (probably C-style comes closest). You can set the default indentation mode using (open a script window, first) Settings->Configure Editor->Editing->Indentation.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri May 21 12:30:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 21 May 2010 12:30:38 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8406429@sourceforge.net>
+Message-ID: <forum-165574-8406592@sourceforge.net>
+
+
+The following forum message was posted by harrelfe at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+Thanks for your reply Thomas.  C style goes part of the way, but it does not further indent the next line after a line containing {.
+I find that the ESS indenting style makes for more readable R code.
+Frank
+
+
+
+From noreply at sourceforge.net  Fri May 21 13:57:56 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 21 May 2010 13:57:56 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8406592@sourceforge.net>
+Message-ID: <forum-165574-8406690@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+I\'m not sure I understand what you mean. When I type
+
+[code]f <- function () { [/code]
+
+using C style indentation, the next line will be (further) indented automatically. Something that does not work is this example:
+
+[code]f <- function () { something [/code]
+
+Is this what you mean? (But then, this coding style does not really make for readable code at all in my opinion).
+
+
+
+From matthieu.stigler at gmail.com  Fri May 21 14:09:26 2010
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Fri, 21 May 2010 16:09:26 +0200
+Subject: [rkward-users] search tool: conflict between shortcuts... in french
+	version
+Message-ID: <4BF69416.9010805@gmail.com>
+
+Hi
+
+It seems there is a conflicft for shortcuts in the search tool... "Next" 
+has _N as well as "Fenetres" (windows). It is a really minor issue 
+but... any solution?
+
+Thanks!
+
+Matthieu
+
+
+
+From noreply at sourceforge.net  Sat May 22 00:23:05 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 22 May 2010 00:23:05 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8406690@sourceforge.net>
+Message-ID: <forum-165574-8407632@sourceforge.net>
+
+
+The following forum message was posted by harrelfe at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+Here\'s an example:
+
+if(1==2)
+{
+    y <- 1
+}
+
+is what appears.  I would like the { indented as per a popular R formatting style:
+
+if(1==2)
+    {
+        y <- 1
+    }
+
+Having function arguments automatically indented in continuation lines would also be nice:
+
+lm(y ~ x,
+     data=d)
+
+Frank
+
+
+
+From noreply at sourceforge.net  Sat May 22 12:04:33 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 22 May 2010 12:04:33 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8407632@sourceforge.net>
+Message-ID: <forum-165574-8408353@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+Hi again,
+
+first, for clarification, here are your examples in \"code\"-tags, to make them display correctly in this forum:
+
+[code]
+if(1==2)
+{
+    y <- 1
+}
+[/code]
+
+[code]
+if(1==2)
+    {
+        y <- 1
+    }
+[/code]
+
+[code]
+lm(y ~ x,
+     data=d)
+[/code]
+
+Now, I guess tastes differ. Personally, I find that style rather appalling ;-). But if this matters to you, and you are willing to invest a bit of time, you can write an indentation script yourself. See http://dhaumann.blogspot.com/2007/07/kate-scripting-indentation.html and http://dhaumann.blogspot.com/2007/07/kate-more-on-indentation-scripting.html . Consider posting your results to this forum or to rkward-devel at lists.sourceforge.net, then we can include this in a future release.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sat May 22 12:33:35 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 22 May 2010 12:33:35 +0000
+Subject: [rkward-users] [Help] RE: R Indentation
+In-Reply-To: <forum-165574-8408353@sourceforge.net>
+Message-ID: <forum-165574-8408379@sourceforge.net>
+
+
+The following forum message was posted by harrelfe at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3716805:
+
+Thanks Thomas - I will look into this in the future.  This default style in ESS is quite nice in the view of many R programmers.  
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat May 22 18:01:44 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 22 May 2010 20:01:44 +0200
+Subject: [rkward-users] search tool: conflict between shortcuts... in
+	french version
+In-Reply-To: <4BF69416.9010805@gmail.com>
+References: <4BF69416.9010805@gmail.com>
+Message-ID: <201005222001.51957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 21 May 2010, Matthieu Stigler wrote:
+> It seems there is a conflicft for shortcuts in the search tool... "Next"
+> has _N as well as "Fenetres" (windows). It is a really minor issue
+> but... any solution?
+
+hm. Alt+Letter conflicts are a common problem in translations, unfortunately. I 
+don't think there is an easy solution to this. But you could modify the french 
+translation (po/fr.po) to use a different accelerator for "Fenetres". E.g. to 
+set the shortcut to Alt+T, translate "&Windows" as "Fene&tres".
+
+I believe that you cannot change the accelerator for "Next", as it comes from 
+katepart. Also, if the accelerator you assign conflicts with any other menu-
+accelerator, KDE will pick some other key for you (but it is not always smart 
+about that).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100522/be0772e3/attachment.sig>
+
+From noreply at sourceforge.net  Mon May 24 11:18:33 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 24 May 2010 11:18:33 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8377103@sourceforge.net>
+Message-ID: <forum-165574-8411351@sourceforge.net>
+
+
+The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+Hello,
+
+Just to let you know, each time I am starting Rkward on a different computer, I have to reinstall Rkward. That is all, it could put off some people, I am fine as it is just a matter of 2 minutes. As long as I do not have to reinstall KDE and R. 
+
+
+
+
+
+From noreply at sourceforge.net  Mon May 24 11:24:14 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 24 May 2010 11:24:14 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8411351@sourceforge.net>
+Message-ID: <forum-165574-8411364@sourceforge.net>
+
+
+The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+Yes sorry I am not a good forum guy as I post multiple posts and I do not think I was clear. 
+
+I have two offices in each there is a different computer which have some restrictions in rights, and if I start Rkward on one computer on one day and then I use it in the other office the other day, then I need to relaunch the Rkward installer. First I thought it would be just a one time thing, but then when I came back to the first computer I needed to do that again.
+
+Well it is not too much a hassle as the Rkward installation is the simplest and is quite fast so it is not a problem for me but I thought it would be good to let you know that it happens so you could fix that one day.
+
+Cheers
+
+
+
+From noreply at sourceforge.net  Mon May 24 11:55:46 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 24 May 2010 11:55:46 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8411364@sourceforge.net>
+Message-ID: <forum-165574-8411431@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+Hi again,
+
+could you give some more detail? My first guess is that your USB disk is assigned a different drive letter on the two machines (e.g. E: on the first, F: on the second). Either that, or R is installed separately on these machines, but in a different path.
+
+You may want to try the new \"installation bundle\" (linked from http://p.sf.net/rkward/windows), which we created after you brought up this topic. This is designed to be fully portable across different installation paths. (The key difference is that the path to R is stored as a relative, not absolute path in KDE\\bin\\rkward.bat; see comment #5).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon May 24 12:45:45 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 24 May 2010 12:45:45 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8411431@sourceforge.net>
+Message-ID: <forum-165574-8411499@sourceforge.net>
+
+
+The following forum message was posted by jeanbaptiste13 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+Yes that is true, I had not thought of this but mys usb drive is divided in two (one for R and other applications) and one for data, and on one computer the data partition is assigned a E letter and the applications one is on F and then on the other computer it is the opposite. Of course it makes sense that then rkward cannot work as during the installation we specify the full path of both KDE and R. 
+
+Sometimes I feel a bit stupid. 
+
+Can I try the new installation bundle without removing my precedent installation (in case I get into troubles I could go back to my previous install)?
+
+
+
+From matthieu.stigler at gmail.com  Mon May 24 17:30:53 2010
+From: matthieu.stigler at gmail.com (mat)
+Date: Mon, 24 May 2010 19:30:53 +0200
+Subject: [rkward-users] search tool: conflict between shortcuts... in
+ french version
+In-Reply-To: <201005222001.51957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BF69416.9010805@gmail.com>
+	<201005222001.51957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4BFAB7CD.4070000@gmail.com>
+
+thanks a lot for explanations, I will have a look on that!
+
+Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Friday 21 May 2010, Matthieu Stigler wrote:
+>   
+>> It seems there is a conflicft for shortcuts in the search tool... "Next"
+>> has _N as well as "Fenetres" (windows). It is a really minor issue
+>> but... any solution?
+>>     
+>
+> hm. Alt+Letter conflicts are a common problem in translations, unfortunately. I 
+> don't think there is an easy solution to this. But you could modify the french 
+> translation (po/fr.po) to use a different accelerator for "Fenetres". E.g. to 
+> set the shortcut to Alt+T, translate "&Windows" as "Fene&tres".
+>
+> I believe that you cannot change the accelerator for "Next", as it comes from 
+> katepart. Also, if the accelerator you assign conflicts with any other menu-
+> accelerator, KDE will pick some other key for you (but it is not always smart 
+> about that).
+>
+> Regards
+> Thomas
+>   
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------------
+>
+>   
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+
+From noreply at sourceforge.net  Tue May 25 10:30:31 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 25 May 2010 10:30:31 +0000
+Subject: [rkward-users] [Help] RE: Rkward for windows on usb drive
+In-Reply-To: <forum-165574-8411499@sourceforge.net>
+Message-ID: <forum-165574-8413177@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3692612:
+
+[quote]Can I try the new installation bundle without removing my precedent installation (in case I get into troubles I could go back to my previous install)?[/quote]
+
+Yes. As long as you install to a different directory, your previous installation will remain unaffected. But note: Any settings you make in RKWard or another KDE application will hold for both KDE installations, but only on the same machine (these settings are stored in your windows home directory).
+
+
+
+From villandl at dms.umontreal.ca  Wed May 26 19:06:30 2010
+From: villandl at dms.umontreal.ca (Luc Villandre)
+Date: Wed, 26 May 2010 15:06:30 -0400
+Subject: [rkward-users] Debugging
+Message-ID: <4BFD7136.8080105@dms.umontreal.ca>
+
+Dear Rkward users,
+
+I have begun using Rkward very recently and thus, I am still very 
+unfamiliar with it. I have been trying to debug one of my functions and 
+I haven't been exactly very satisfied with the debugger. I find it 
+frustrating how, at least for now, it would seem that when the debugging 
+window pops up, the rest of the program freezes until the debugging 
+phase is over. Also, the type of display used by the debugger doesn't 
+allow for color coding and for an increase in the font size. Would there 
+be a way to change that?
+
+Is there a way to tell the program to run the debugger in the R-terminal 
+window? What I would like in fact is for the program to allow me to 
+access the browser just as if I was running R in a regular terminal 
+window (outside Rkward).
+
+I am running Rkward 0.5.3 on Ubuntu Lucid Lynx 10.04.
+
+Thanks for your help,
+
+Luc
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat May 29 08:46:53 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 29 May 2010 10:46:53 +0200
+Subject: [rkward-users] Debugging
+In-Reply-To: <4BFD7136.8080105@dms.umontreal.ca>
+References: <4BFD7136.8080105@dms.umontreal.ca>
+Message-ID: <201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 26 May 2010, Luc Villandre wrote:
+> I have been trying to debug one of my functions and
+> I haven't been exactly very satisfied with the debugger. I find it
+> frustrating how, at least for now, it would seem that when the debugging
+> window pops up, the rest of the program freezes until the debugging
+> phase is over. Also, the type of display used by the debugger doesn't
+> allow for color coding and for an increase in the font size. Would there
+> be a way to change that?
+
+no, unfortunately, there are no hidden features like this. This area simply 
+hasn't received too much love so far. We do plan to turn this into a "real" 
+debugger, eventually, including syntax highlighting, inspection of the call 
+stack, local objects, etc. But don't hold your breath, currently some other 
+issues have higher priority.
+
+> Is there a way to tell the program to run the debugger in the R-terminal
+> window? What I would like in fact is for the program to allow me to
+> access the browser just as if I was running R in a regular terminal
+> window (outside Rkward).
+
+No, there is not. The R console in RKWard is just an emulation, and that 
+feature would need to be programmed into it. Besides, this is not quite 
+trivial, conceptually: In a GUI like RKWard, the console does not play the 
+central role that it has in a standalone R terminal. Not all commands get 
+entered through the console, but they may also come from plugins, the 
+data.frame editor, help search, etc. This could create the situation, that R 
+is waiting for user input on the R console, but the user just isn't aware of 
+that, and all other commands will just wait forever. Thus we need to make sure 
+that requests for user input from the backend are always highly visible.
+
+So, while I can see your point, I am not sure this is a good way to handle 
+interactive user input situations.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100529/93711a3a/attachment.sig>
+

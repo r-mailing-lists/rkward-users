@@ -1,0 +1,476 @@
+From guillejcopello at users.sf.net  Sat Jun 14 20:28:36 2014
+From: guillejcopello at users.sf.net (Guillermo Copello)
+Date: Sat, 14 Jun 2014 20:28:36 +0000
+Subject: [rkward-users] [rkward:discussion] Problem compiling RKward from
+	source - Ubuntu - Precise
+In-Reply-To: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+References: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165573/587059c2340045dd3c3335892f11819c6710177a.discussion@rkward.p.sourceforge.net>
+
+Hello,
+
+I am trying to compile the Rkward-0.6.1 in Ubuntu 12-04 (precise). My version of R is 3.1.0 and KDE4.8.
+It seems there is no proble when I do `cmake`, but when I do `make` 2 erros appear.
+I post below this two commands. 
+Any suggestion?
+
+This appears when I do cmake:
+olivia at Olivia:/usr/local/bin/rkward-0.6.1/build$ cmake .. -DCMAKE_INSTALL_PREFIX="kde4-config --localprefix" -DCMAKE_BUILD_TYPE=Release -DCMAKE_BUILD_TYPE=debugfull -DR_EXECUTABLE=/usr/bin/R -DR_LIBDIR=$HOME/R/i686-pc-linux-gnu-library/3.1 -DR_HOME="/usr/lib/R"
+-- Found Qt-Version 4.8.1 (using /usr/bin/qmake)
+-- Found X11: /usr/lib/i386-linux-gnu/libX11.so
+-- Found KDE 4.8 include dir: /usr/include
+-- Found KDE 4.8 library dir: /usr/lib
+-- Found the KDE4 kconfig_compiler preprocessor: /usr/bin/kconfig_compiler
+-- Found automoc4: /usr/bin/automoc4
+-- Looking for R executable
+-- Specified by user
+-- Using R at /usr/bin/R
+-- R architecture is i686
+-- Looking for R_HOME
+-- Specified by user
+-- R_HOME is /usr/lib/R
+-- Looking for R include files
+-- Include files should be at /usr/share/R/include. Checking for R.h
+-- Found at /usr/share/R/include/R.h
+-- Checking for existence of R shared library
+-- Exists at /usr/lib/R/lib/libR.so
+-- Checking whether we should link against Rlapack library
+-- No, it does not exist in /usr/lib/R/lib
+-- Checking whether we should link against Rblas library
+-- No, it does not exist in /usr/lib/R/lib
+-- Checking for R package library location to use
+-- Location specified by user
+-- Will use /home/olivia/R/i686-pc-linux-gnu-library/3.1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/local/bin/rkward-0.6.1/build
+
+This when I do make:
+olivia at Olivia:/usr/local/bin/rkward-0.6.1/build$ make
+[  0%] Built target rkward.frontend_automoc
+[  0%] Built target dataeditor
+[  0%] Built target settings
+[  0%] Building CXX object rkward/plugin/CMakeFiles/plugin.dir/rkcomponent.o
+In file included from /usr/local/bin/rkward-0.6.1/rkward/plugin/rkcomponent.cpp:416:0:
+/usr/local/bin/rkward-0.6.1/rkward/plugin/rkcomponent.cpp: En la funci?n miembro ?QVariant RKComponentBase::fetchValue(const QString&, int)?:
+/usr/local/bin/rkward-0.6.1/rkward/plugin/rkcomponent.cpp:218:1: error: el control alcanza el final de una funci?n que no es void [-Werror=return-type]
+cc1plus: some warnings being treated as errors
+make[2]: *** [rkward/plugin/CMakeFiles/plugin.dir/rkcomponent.o] Error 1
+make[1]: *** [rkward/plugin/CMakeFiles/plugin.dir/all] Error 2
+make: *** [all] Error 2
+
+
+Thanks 
+Guillermo
+
+
+
+---
+
+[Problem compiling RKward from source - Ubuntu - Precise](https://sourceforge.net/p/rkward/discussion/165573/thread/9391cdb0/?limit=25#cdd5)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140614/474e3aa2/attachment.html>
+
+From tfry at users.sf.net  Mon Jun 16 08:39:41 2014
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Mon, 16 Jun 2014 08:39:41 +0000
+Subject: [rkward-users] [rkward:discussion] Problem compiling RKward from
+	source - Ubuntu - Precise
+In-Reply-To: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+References: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165573/84b7f8914563bdd76ee2bb7ce456f08718dadfb6.discussion@rkward.p.sourceforge.net>
+
+Hi!
+
+Arguably, that is an instance of bad style in the code, but I wonder why it causes an error with your compiler. (In essence, the compiler seems to think there is some way to end the function without "returning" a value. But clearly, there is not. Which compiler/version is this?).
+
+Anyway, you can probably help your compiler along by replacing the file rkward/plugin/rkcomponent.cpp with this version, here: https://sourceforge.net/p/rkward/code/HEAD/tree/trunk/rkward/rkward/plugin/rkcomponent.cpp?format=raw
+
+Regards
+Thomas
+
+
+---
+
+[Problem compiling RKward from source - Ubuntu - Precise](https://sourceforge.net/p/rkward/discussion/165573/thread/9391cdb0/?limit=25#cf56)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140616/23c1c4b4/attachment.html>
+
+From guillejcopello at users.sf.net  Tue Jun 17 03:22:54 2014
+From: guillejcopello at users.sf.net (Guillermo Copello)
+Date: Tue, 17 Jun 2014 03:22:54 +0000
+Subject: [rkward-users] [rkward:discussion] Problem compiling RKward from
+	source - Ubuntu - Precise
+In-Reply-To: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+References: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165573/7c2fa768be99dc56a697637c0a3a22df71d36526.discussion@rkward.p.sourceforge.net>
+
+Thomas,
+Thanks for the tip.
+I have replaced the file with the version you posted. Now there is another error, different from the first.
+The version of my complier from "cc -v" is: gcc versi?n 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5)
+I'm posting below the output of "make".
+According to some forums this could be solved by changing pgkbuild, but the question are where and how: https://bugs.launchpad.net/ubuntu/+source/kdesudo/+bug/600202
+If there is any other solution let me know.
+Thanks
+
+olivia at Olivia:/usr/local/bin/rkward-0.6.1/build$ make
+[100%] Built target rkward.frontend_automoc
+[100%] Built target dataeditor
+[100%] Built target plugin
+[100%] Built target dialogs
+[100%] Built target agents
+[100%] Built target settings
+[100%] Built target rbackend
+[100%] Built target scriptbackends
+[100%] Built target misc
+[100%] Built target core
+[100%] Built target windows
+Linking CXX executable rkward.frontend
+[100%] Built target rkward.frontend
+Linking CXX executable rkward.rbackend
+[100%] Built target rkward.rbackend
+[100%] Built target translations
+[100%] Generating index.cache.bz2
+index.docbook:11: warning: failed to load external entity "dtd/kdex.dtd"
+]>
+  ^
+index.docbook:38: parser error : Entity 'language' not defined
+<book lang="&language;">
+                      ^
+index.docbook:38: element book: validity error : No declaration for attribute lang of element book
+<book lang="&language;">
+                       ^
+index.docbook:42: element title: validity error : No declaration for element title
+<title>The RKWard Handbook</title>
+                                  ^
+index.docbook:47: element firstname: validity error : No declaration for element firstname
+<firstname>Thomas</firstname>
+                             ^
+index.docbook:48: element surname: validity error : No declaration for element surname
+<surname>Friedrichsmeier</surname>
+                                  ^
+index.docbook:50: element email: validity error : No declaration for element email
+<address><email>rkward-devel at lists.sourceforge.net</email></address>
+                                                          ^
+index.docbook:50: element address: validity error : No declaration for element address
+<address><email>rkward-devel at lists.sourceforge.net</email></address>
+                                                                    ^
+index.docbook:51: element affiliation: validity error : No declaration for element affiliation
+</affiliation>
+              ^
+index.docbook:52: element author: validity error : No declaration for element author
+</author>
+         ^
+index.docbook:53: element authorgroup: validity error : No declaration for element authorgroup
+</authorgroup>
+              ^
+index.docbook:58: element year: validity error : No declaration for element year
+<year>2006</year>
+                 ^
+index.docbook:59: element year: validity error : No declaration for element year
+<year>2007</year>
+                 ^
+index.docbook:60: element holder: validity error : No declaration for element holder
+<holder>Thomas Friedrichsmeier & the RKWard Team</holder>
+                                                             ^
+index.docbook:61: element copyright: validity error : No declaration for element copyright
+</copyright>
+            ^
+index.docbook:65: parser error : Entity 'FDLNotice' not defined
+<legalnotice>&FDLNotice;</legalnotice>
+                        ^
+index.docbook:65: element legalnotice: validity error : No declaration for element legalnotice
+<legalnotice>&FDLNotice;</legalnotice>
+                                      ^
+index.docbook:74: element date: validity error : No declaration for element date
+<date>04/02/2007</date>
+                       ^
+index.docbook:75: element releaseinfo: validity error : No declaration for element releaseinfo
+<releaseinfo>0.4.6</releaseinfo>
+                                ^
+index.docbook:81: element application: validity error : No declaration for element application
+&rkward; is a GUI frontend to the powerful R language for statistical computing.
+        ^
+index.docbook:82: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:83: element abstract: validity error : No declaration for element abstract
+</abstract>
+           ^
+index.docbook:90: element keyword: validity error : No declaration for element keyword
+<keyword>KDE</keyword>
+                      ^
+index.docbook:91: element keyword: validity error : No declaration for element keyword
+<keyword>R</keyword>
+                    ^
+index.docbook:92: element keyword: validity error : No declaration for element keyword
+<keyword>rkward</keyword>
+                         ^
+index.docbook:93: element keyword: validity error : No declaration for element keyword
+<keyword>science</keyword>
+                          ^
+index.docbook:94: element keywordset: validity error : No declaration for element keywordset
+</keywordset>
+             ^
+index.docbook:96: element bookinfo: validity error : No declaration for element bookinfo
+</bookinfo>
+           ^
+index.docbook:99: element chapter: validity error : No declaration for attribute id of element chapter
+<chapter id="introduction">
+                          ^
+index.docbook:100: element title: validity error : No declaration for element title
+<title>Introduction</title>
+                           ^
+index.docbook:103: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:104: element chapter: validity error : No declaration for element chapter
+</chapter>
+          ^
+index.docbook:106: element chapter: validity error : No declaration for attribute id of element chapter
+<chapter id="using-kapp">
+                        ^
+index.docbook:107: element title: validity error : No declaration for element title
+<title>Using &kapp;</title>
+                           ^
+index.docbook:111: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:113: element ulink: validity error : No declaration for attribute url of element ulink
+http://rkward.sourceforge.net/wiki/index.php?title=Getting_Started_Using_RKWard"
+                                                                               ^
+index.docbook:113: element ulink: validity error : No declaration for element ulink
+Getting_Started_Using_RKWard">Getting Started Section in the &kapp; wiki</ulink>
+                                                                               ^
+index.docbook:114: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:117: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:119: element chapter: validity error : No declaration for element chapter
+</chapter>
+          ^
+index.docbook:121: element chapter: validity error : No declaration for attribute id of element chapter
+<chapter id="developers">
+                        ^
+index.docbook:122: element title: validity error : No declaration for element title
+<title>Developer's Guide to &kapp;</title>
+                                          ^
+index.docbook:125: element ulink: validity error : No declaration for attribute url of element ulink
+at <ulink url="http://rkward.sourceforge.net/documents/devel/plugins/index.html"
+                                                                               ^
+index.docbook:125: element ulink: validity error : No declaration for element ulink
+="http://rkward.sourceforge.net/documents/devel/plugins/index.html">here</ulink>
+                                                                               ^
+index.docbook:126: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:132: element chapter: validity error : No declaration for element chapter
+</chapter>
+          ^
+index.docbook:135: element chapter: validity error : No declaration for attribute id of element chapter
+<chapter id="credits">
+                     ^
+index.docbook:142: element title: validity error : No declaration for element title
+<title>License</title>
+                      ^
+index.docbook:146: element para: validity error : No declaration for element para
+</para>
+       ^
+index.docbook:150: parser error : Entity 'underFDL' not defined
+&underFDL;               <!-- FDL: do not remove. Commercial development should 
+          ^
+index.docbook:159: parser error : Entity 'underGPL' not defined
+&underGPL;        	 <!-- GPL License -->
+          ^
+index.docbook:161: element chapter: validity error : No declaration for element chapter
+</chapter>
+          ^
+index.docbook:164: parser error : Entity 'documentation.index' not defined
+&documentation.index;
+                     ^
+index.docbook:165: element book: validity error : No declaration for element book
+</book>
+       ^
+make[2]: *** [doc/rkward/index.cache.bz2] Error 1
+make[1]: *** [doc/rkward/CMakeFiles/rkward-handbook.dir/all] Error 2
+make: *** [all] Error 2
+
+Thanks
+
+Guillermo
+
+
+---
+
+[Problem compiling RKward from source - Ubuntu - Precise](https://sourceforge.net/p/rkward/discussion/165573/thread/9391cdb0/?limit=50#ff92)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140617/2159dff3/attachment.html>
+
+From tfry at users.sf.net  Tue Jun 17 07:20:34 2014
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Tue, 17 Jun 2014 07:20:34 +0000
+Subject: [rkward-users] [rkward:discussion] Problem compiling RKward from
+	source - Ubuntu - Precise
+In-Reply-To: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+References: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165573/2dc518bfd4792c2a1cad008e54758af8a715e287.discussion@rkward.p.sourceforge.net>
+
+Hi!
+
+> index.docbook:11: warning: failed to load external entity "dtd/kdex.dtd"
+
+For some reason, the main docbook declaration can't be found. I _guess_ this problem may be due to trying to install to a local path, which is not well tested. As a very quick and dirty workaround, edit CMakeLists.txt in the top source directory, and remove the line
+
+> ADD_SUBDIRECTORY(doc)
+
+Most parts of the documentation will still be available (as it does not rely on KDE's help system), and the "writing plugins" documentation is also available online (<http://rkward.sourceforge.net/documents/devel/plugins/index.html>)
+
+But just to make sure: You are aware that a) binaries are available for Ubuntu (<https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran> is the one you'll need for RKWard 0.6.1 and R >= 3.0.0), and b) you can also use this to build from source (apt-get build)?
+
+Using .debs has the advantage that you can install to the system path (which is much more reliable for many KDE apps), and still be able to remove the software, cleanly, if needed.
+
+Regards
+Thomas
+
+
+---
+
+[Problem compiling RKward from source - Ubuntu - Precise](https://sourceforge.net/p/rkward/discussion/165573/thread/9391cdb0/?limit=25#8cc3)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140617/ea595d9d/attachment.html>
+
+From guillejcopello at users.sf.net  Wed Jun 18 02:41:10 2014
+From: guillejcopello at users.sf.net (Guillermo Copello)
+Date: Wed, 18 Jun 2014 02:41:10 +0000
+Subject: [rkward-users] [rkward:discussion] Problem compiling RKward from
+	source - Ubuntu - Precise
+In-Reply-To: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+References: <50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165573/39b98e2ec1c06bccccc8e592f961334ca9eab0d8.discussion@rkward.p.sourceforge.net>
+
+Thomas,
+Thank you for the advise. I was not aware that the binaries were available at launchpad.net.
+I added the repository and then install rkward through Synaptic.
+As much as I have tested RKWard now is working OK.
+Thank you again.
+Best regards
+
+Guillermo
+
+
+
+
+---
+
+[Problem compiling RKward from source - Ubuntu - Precise](https://sourceforge.net/p/rkward/discussion/165573/thread/9391cdb0/?limit=50#12db)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140618/a3c53a52/attachment.html>
+
+From zerr.paul at googlemail.com  Tue Jun 24 15:45:13 2014
+From: zerr.paul at googlemail.com (Paul Zerr)
+Date: Tue, 24 Jun 2014 17:45:13 +0200
+Subject: [rkward-users] rkward script editor popups
+Message-ID: <CAHtsa4VvSusmAjYqiCtwtGd_aqLhVd6Fs6WabfvPAv91fvYOBA@mail.gmail.com>
+
+Greetings,
+
+I love the program so far, really great, thank you, developers!
+
+One thing is really annoying and I can't find a way to turn it off:
+anywhere I click in the script editor a blue popup opens that seems to
+provide information about the libraries in use. There must be a way to turn
+that off, I couldn't find it, nor did search turn up anything.
+
+Help much appreciated,
+Thanks,
+Paul
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140624/f2d15e08/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jun 26 08:05:55 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 26 Jun 2014 10:05:55 +0200
+Subject: [rkward-users] rkward script editor popups
+In-Reply-To: <CAHtsa4VvSusmAjYqiCtwtGd_aqLhVd6Fs6WabfvPAv91fvYOBA@mail.gmail.com>
+References: <CAHtsa4VvSusmAjYqiCtwtGd_aqLhVd6Fs6WabfvPAv91fvYOBA@mail.gmail.com>
+Message-ID: <1554866.zF36Ftvebk@late>
+
+Hi!
+
+On Tuesday 24 June 2014 17:45:13 Paul Zerr wrote:
+> I love the program so far, really great, thank you, developers!
+
+Thanks. We like to hear that!
+ 
+> One thing is really annoying and I can't find a way to turn it off:
+> anywhere I click in the script editor a blue popup opens that seems to
+> provide information about the libraries in use.
+
+Hm, either there is a bit of exaggeration in that "anywhere", or it is a bug. 
+Two types of popups are to be expected inside the script editor: code 
+completion and function argument hinting. You can these turn off, separately, 
+at Settings->Configure RKWard->Script Editor.
+
+>From your description, it sounds like it's something entirely different, 
+though, which really does not belong there. Please provide:
+
+a) The output of rk.sessionInfo()
+b) A small screenshot or text copy of the content of the popup.
+c) Could it be this is the tooltip from the workspace browser, somehow? Click 
+on the "Workspace" tool button to toggle the workspace browser on or off. See 
+if that affects anything.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140626/9d731b98/attachment.sig>
+

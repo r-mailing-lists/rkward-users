@@ -1,0 +1,476 @@
+From kapatp at gmail.com  Wed Sep  1 00:36:50 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Tue, 31 Aug 2010 20:36:50 -0400
+Subject: [rkward-users] anyone using KDE 3 version of rkward?
+Message-ID: <AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>
+
+Hi,
+
+I would like to know how many folks still use the KDE3 version of
+rkward (0.4.9x).
+
+The reason I ask is this:
+I've, partially, ported some of the recent "plot history" features to
+it. It is not "clean" but satisfies my day-to-day needs (Yes, I have
+to use the KDE3 version in the department!). If there is a demand, we
+can try to release another version of it: 0.4.9d (?) (If Thomas
+agrees!) The KDE4 version and its bug fixes will be the top priority,
+of course. So, the 0.4.9d release, if done, will be at least a few
+weeks after the upcoming 0.5.x release.
+
+I just wanted to get a heads up!
+
+For those wondering about the "plot history" feature, it is a
+browse-able history of plots that the user creates. A screen shot is
+here:
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Graphics_history_actions_.28from_trunk.29
+
+The screen shot does not represent the final version, it is subject to change.
+
+Regards,
+-- 
+Prasenjit
+
+
+
+From stefan_roediger at gmx.de  Wed Sep  1 09:16:06 2010
+From: stefan_roediger at gmx.de (=?iso-8859-1?Q?=22Stefan_R=F6diger=22?=)
+Date: Wed, 01 Sep 2010 11:16:06 +0200
+Subject: [rkward-users] [rkward-devel] anyone using KDE 3 version of
+	rkward?
+In-Reply-To: <AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>
+References: <AANLkTim26y-S1PsxquLJUhos1-S_osvcBj2eRR-LZ0xs@mail.gmail.com>
+Message-ID: <20100901091606.20890@gmx.net>
+
+KDE4 only here
+
+Regards
+Stefan
+-------- Original-Nachricht --------
+> Datum: Tue, 31 Aug 2010 20:36:50 -0400
+> Von: Prasenjit Kapat <kapatp at gmail.com>
+> An: RKWard-devel at lists.sourceforge.net, rkward-users at lists.sourceforge.net
+> Betreff: [rkward-devel] anyone using KDE 3 version of rkward?
+
+> Hi,
+> 
+> I would like to know how many folks still use the KDE3 version of
+> rkward (0.4.9x).
+> 
+> The reason I ask is this:
+> I've, partially, ported some of the recent "plot history" features to
+> it. It is not "clean" but satisfies my day-to-day needs (Yes, I have
+> to use the KDE3 version in the department!). If there is a demand, we
+> can try to release another version of it: 0.4.9d (?) (If Thomas
+> agrees!) The KDE4 version and its bug fixes will be the top priority,
+> of course. So, the 0.4.9d release, if done, will be at least a few
+> weeks after the upcoming 0.5.x release.
+> 
+> I just wanted to get a heads up!
+> 
+> For those wondering about the "plot history" feature, it is a
+> browse-able history of plots that the user creates. A screen shot is
+> here:
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Graphics_history_actions_.28from_trunk.29
+> 
+> The screen shot does not represent the final version, it is subject to
+> change.
+> 
+> Regards,
+> -- 
+> Prasenjit
+> 
+> ------------------------------------------------------------------------------
+> This SF.net Dev2Dev email is sponsored by:
+> 
+> Show off your parallel programming skills.
+> Enter the Intel(R) Threading Challenge 2010.
+> http://p.sf.net/sfu/intel-thread-sfd
+> _______________________________________________
+> RKWard-devel mailing list
+> RKWard-devel at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-devel
+
+-- 
+GMX DSL SOMMER-SPECIAL: Surf & Phone Flat 16.000 f?r nur 19,99 &euro;/mtl.!*
+http://portal.gmx.net/de/go/dsl
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Sep  1 13:06:31 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 1 Sep 2010 15:06:31 +0200
+Subject: [rkward-users] R backend requests information
+In-Reply-To: <13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>
+References: <13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>
+Message-ID: <201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+sorry for the long delay!
+
+On Friday 06 August 2010, Gregory Ryslik wrote:
+> However, once it gets to them, I get a popup window saying "R backend
+> requires information". This is pretty annoying as I want to continue using
+> the console rather than this pop up window!
+
+We have this on our TODO list, but in fact it's not quite trivial, so it will 
+take some time.
+
+See also this thread for a bit of background information:
+http://sourceforge.net/mailarchive/message.php?msg_name=4BFD7136.8080105%40dms.umontreal.ca
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100901/d311192d/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Sep  1 13:09:57 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 1 Sep 2010 15:09:57 +0200
+Subject: [rkward-users] disable tooltips?
+In-Reply-To: <1282524542.6340.15.camel@matt-laptop>
+References: <1282524542.6340.15.camel@matt-laptop>
+Message-ID: <201009011509.57617.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 23 August 2010, Matt Shotwell wrote:
+> In the RKWard (0.5.2, KDE 4.4.2) script editor, when I start to type an
+> R command, for example
+> 
+> x <- rnorm(
+> 
+> at the moment I type the opening parentheses, a tooltip pops up giving
+> the formals of the rnorm function. I thought at first this was `code
+> completion', or `word completion', but after disabling these features in
+> the configuration, the tooltip persists.
+> 
+> Is there a way to disable the tooltip?
+
+sorry, there is no way to disable the tooltips, yet. I'll make a note to make 
+this configurable in a future release.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100901/9491fe50/attachment.sig>
+
+From rsaber at comcast.net  Wed Sep  1 14:00:42 2010
+From: rsaber at comcast.net (Gregory Ryslik)
+Date: Wed, 1 Sep 2010 10:00:42 -0400
+Subject: [rkward-users] R backend requests information
+In-Reply-To: <201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <13BB158F-48F7-4781-8900-3D271349DA9F@comcast.net>
+	<201009011506.36828.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <DC233208-EC42-4E06-AEBF-7E58FEA60929@comcast.net>
+
+Hi,
+
+No worries. I appreciate the response!
+
+Unfortunately, being that most of my time is spent debugging/developing new R code, this makes RKward not very suitable for my needs at the moment. The project definitely looks promising though!
+
+Thanks,
+Greg
+On Sep 1, 2010, at 9:06 AM, Thomas Friedrichsmeier wrote:
+
+> Hi,
+> 
+> sorry for the long delay!
+> 
+> On Friday 06 August 2010, Gregory Ryslik wrote:
+>> However, once it gets to them, I get a popup window saying "R backend
+>> requires information". This is pretty annoying as I want to continue using
+>> the console rather than this pop up window!
+> 
+> We have this on our TODO list, but in fact it's not quite trivial, so it will 
+> take some time.
+> 
+> See also this thread for a bit of background information:
+> http://sourceforge.net/mailarchive/message.php?msg_name=4BFD7136.8080105%40dms.umontreal.ca
+> 
+> Regards
+> Thomas
+> ------------------------------------------------------------------------------
+> This SF.net Dev2Dev email is sponsored by:
+> 
+> Show off your parallel programming skills.
+> Enter the Intel(R) Threading Challenge 2010.
+> http://p.sf.net/sfu/intel-thread-sfd_______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+
+
+From noreply at sourceforge.net  Wed Sep  8 15:38:33 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 08 Sep 2010 15:38:33 +0000
+Subject: [rkward-users] [Help] RE: RKward for Mac
+In-Reply-To: <forum-165574-8023187@sourceforge.net>
+Message-ID: <forum-165574-8625031@sourceforge.net>
+
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:
+
+HiThomas... i did try but i am getting stuck at cmake already... somehow cmake
+complains that it can't locate the R_HOME resources. if you like i send you
+detailed debug traces ... also if you like i would be more then happy to debug
+the build process on Mac's . if you can give me some help and hints to crawl
+of some of the hurdles .... ?
+
+thx bernd
+
+
+
+From noreply at sourceforge.net  Wed Sep  8 16:58:50 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 08 Sep 2010 16:58:50 +0000
+Subject: [rkward-users] [Help] RE: RKward for Mac
+In-Reply-To: <forum-165574-8625031@sourceforge.net>
+Message-ID: <forum-165574-8625173@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:
+
+Hi!
+
+Some more details (which exact steps did you take, how did you install R, last
+~20 lines of cmake  output, anything suspicious before) might be helpful,
+indeed.
+
+Are you aware of
+[url]http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac[
+/url]? These instructions worked for me on a borrowed Mac.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Sep  8 18:42:58 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 08 Sep 2010 18:42:58 +0000
+Subject: [rkward-users] [Help] RE: RKward for Mac
+In-Reply-To: <forum-165574-8625173@sourceforge.net>
+Message-ID: <forum-165574-8625335@sourceforge.net>
+
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:
+
+yes i looked at those, as i said i am getting stuck at the cmake step.... 
+
+
+
+From noreply at sourceforge.net  Wed Sep  8 19:04:33 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 08 Sep 2010 19:04:33 +0000
+Subject: [rkward-users] [Help] RE: RKward for Mac
+In-Reply-To: <forum-165574-8625335@sourceforge.net>
+Message-ID: <forum-165574-8625370@sourceforge.net>
+
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:
+
+just as additional infos.. i realize so far i didn't give a lot ...
+when i start cmake it goes through all of the initialization, looks reasonably
+ok , when it arrives at the R_HOME check it does seem to start R ok , but then
+it does hang ... is there any way you know that i can make it a bit more verbose
+(i did add the debug option to cmake, but that didn't change a lot ?
+
+
+
+
+
+From noreply at sourceforge.net  Thu Sep  9 05:55:54 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 09 Sep 2010 05:55:54 +0000
+Subject: [rkward-users] [Help] RE: RKward for Mac
+In-Reply-To: <forum-165574-8625370@sourceforge.net>
+Message-ID: <forum-165574-8626163@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3528988:
+
+Basically the R_HOME check tries to run
+[code][i]/your/path/to/R[/i] "--slave" "--no-save" "-e" "cat(R.home())"[/code]
+and expects a non-empty result.
+
+Which version of R is that? Did you use the installer from www.r-project.org,
+or something else? Note that [i]/your/path/to/R[/i] should be the command-line
+version of R, not R.app. IIRC it was located at /usr/bin/R by default. So, if
+the "Looking for R executable" step picks up R.app or anything else, try adding
+[code]-DR_EXECUTABLE=[i]/your/path/to/R[/i][/code]
+to your cmake command line.
+
+
+
+From kapatp at gmail.com  Tue Sep 14 06:59:11 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Tue, 14 Sep 2010 02:59:11 -0400
+Subject: [rkward-users] OT: future of R
+Message-ID: <AANLkTikf6W2zms4-_eyNj8BM-Eoe-Np2eZ0gwfYvYQbL@mail.gmail.com>
+
+Hi,
+
+Apologies for this off topic message.
+
+I was just browsing the r-help list today and came across and
+interesting discussion.
+http://thread.gmane.org/gmane.comp.lang.r.general/203812
+
+Well the main discussion is on the first blog link there. Thought, it
+might be an interesting read, especially some of the comments.
+
+-- 
+Prasenjit
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Sep 23 16:01:54 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 23 Sep 2010 18:01:54 +0200
+Subject: [rkward-users] Call for testing: RKWard 0.5.4-pre1 / Release
+	schedule
+Message-ID: <201009231802.03122.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Once again, a nice number of fixes and improvements has accumulated in the 
+development version of RKWard, and I would like to make those available in an 
+official release, soon. As usual, before doing so, we need to do some more 
+testing, and I would like to invite you all to participate in that.
+
+A tentative timeline for the release / the testing is at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+. The targetted release date is October 4, with the testing phase open until 
+September 30. Of course the deadlines will extended, as needed, if needed.
+
+--- Testing ---
+
+Please download the 0.5.4-pre1 release and give it a try (both the source 
+release, and packages for openSuSE and Ubuntu are linked from 
+http://p.sf.net/rkward/download ; binaries may need a few hours to be built; a 
+windows installer package will follow, shortly). Here are some things to watch 
+out for in particular:
+- The data-editor now supports editing row.names. Use Edit->Show/Edit row 
+names to give this a try.
+- Prasenjit Kapat has implemented a very nice plot history feature for 
+onscreen graphics. Please give this a good round of testing, so we can iron 
+out any remaining quirks.
+- R 2.12.0 is scheduled for release on October 15. If you have the chance to 
+test with one of the prerelease versions of R 2.12.0, that would be very 
+helpful.
+
+Please try to provide feedback by September 30.
+
+--- Translators ---
+
+.po and .pot files are located in the po-subdirectory of the source tar.gz, as 
+usual. Please provide your updates by September 30.
+
+--- Contributors ---
+
+The following changes are currently allowed in SVN:
+- Bug fixes
+- Documentation updates
+- Trivial additions
+
+If you would like to make any other change before the release, please post to 
+the mailing list, first.
+
+SVN will be branched and unfrozen shortly after the end of the testing period.
+
+--- Packagers ---
+
+Note that RKWard no longer requires PHP at runtime since version 0.5.3 (the 
+PHP-backend is still functional, but not used by any of the plugins), so if 
+your packages still depend on PHP, you should drop that dependency.
+
+We will prepare a release candidate shortly after the end of the testing 
+phase, and then give you a few days to perpare your packages. Details will 
+follow.
+
+--- Windows users ---
+
+A windows binary will follow, shortly. Probably we will not find the time to 
+create a "complete installation bundle" during the testing phase. However, you 
+can simply make a copy of your existing installation of KDE, and then update 
+this copy using the RKWard on Windows installer.
+
+--- Mac users ---
+
+Mac users are always encouraged to give these instructions a try:
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac .
+
+These instructions have worked at least once, but other users have reported 
+problems. We continue to be in need of your feedback about this.
+
+--- Closing words ---
+
+Remember: There's always many ways you can help, with or without programming 
+skills. Testing is one important way to contribute, but for instance our wiki 
+/ website is always in need of love as well. If you have time to spare, your 
+help will be very welcome.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100923/b6c874af/attachment.sig>
+
+From noreply at sourceforge.net  Fri Sep 24 13:23:29 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 24 Sep 2010 13:23:29 +0000
+Subject: [rkward-users] [Help] Save Loaded Packages configuration
+Message-ID: <forum-165574-8656187@sourceforge.net>
+
+
+The following forum message was posted by andrelevy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:
+
+Hi
+This is probably something very basic, but I am new to RKWard. I have a number
+of packages that I routinely need for different projects. How can I configure
+RKWard to always have these packages loaded, when I open it, rather than having
+to configure the loaded packages each time? I tried using Settings>Configure
+Packages but that didn't seem to work. Also did Workspace>Load/Unload Packages
+then saved the workspace, but when I open the workspace again the packages aren't
+loaded.
+Thanks
+
+
+
+From noreply at sourceforge.net  Fri Sep 24 14:31:59 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 24 Sep 2010 14:31:59 +0000
+Subject: [rkward-users] [Help] RE: Save Loaded Packages configuration
+In-Reply-To: <forum-165574-8656187@sourceforge.net>
+Message-ID: <forum-165574-8656349@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3864887:
+
+Hi Andre,
+
+As far as I know there is no such feature in RKWard, but would be nice to have
+in future. You may want to use options (defaultpackage = c(....)) and put it
+in your .Rprofile. See ?Startup.
+
+
+

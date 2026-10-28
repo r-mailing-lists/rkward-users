@@ -1,0 +1,147 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2025-10",
+  "messages": [
+    {
+      "id": "msg-2667ceb370c3",
+      "message_id": "<20251002200339.71dad90b@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-10-02T18:03:39Z",
+      "subject": "RKWard 0.8.2 is released!",
+      "subject_clean": "RKWard 0.8.2 is released!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.8.2 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all testers and\ncontributors!\n\n(You may note that the official release day was yesterday, but some of\nthe binary builds took longer than expected.)\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251002/3051065c/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.8.2 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all tester",
+      "thread_id": "thread-2667ceb370c3",
+      "thread_depth": 0,
+      "month": "2025-10"
+    },
+    {
+      "id": "msg-c2b687129f5d",
+      "message_id": "<CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2025-10-05T02:22:35Z",
+      "subject": "RKWard 0.8.2 not working on a Windows 10 VM",
+      "subject_clean": "RKWard 0.8.2 not working on a Windows 10 VM",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I just tried out to install RKWard 0.8.2, on a Windows 10 VM.\nEvery thing went well through the installation process,\nbut when I tried to run it I kept receiving the message that the file\n\"kdesigleapplicaition-qt6.dll\" was missing, that reinstalling it would\nsolve the problem, but it did not. I even redownloaded the file and even\ntried out the daily build with no success.\nI ended up reinstalling the 0.8.1 version which was a success, it ran\nsmoothly.\nAny thoughts?\nRegards\n\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251004/fcf377db/attachment.htm>",
+      "body_snippet": "I just tried out to install RKWard 0.8.2, on a Windows 10 VM.\nEvery thing went well through the installation process,\nbut when I tried to run it I kept receiving the message that the file\n\"kdesigleapp",
+      "thread_id": "thread-c2b687129f5d",
+      "thread_depth": 0,
+      "month": "2025-10"
+    },
+    {
+      "id": "msg-edbaee449c07",
+      "message_id": "<20251005161203.3f6db5e5@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-10-05T14:12:03Z",
+      "subject": "RKWard 0.8.2 not working on a Windows 10 VM",
+      "subject_clean": "RKWard 0.8.2 not working on a Windows 10 VM",
+      "in_reply_to": "<CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+i3XYaCZxh67tvhYxLXJjZZ+p-v=4R27fPvL7n580jG6w@mail.gmail.com>"
+      ],
+      "body_plain": "Am Sat, 4 Oct 2025 20:22:35 -0600\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> I just tried out to install RKWard 0.8.2, on a Windows 10 VM.\n> Every thing went well through the installation process,\n> but when I tried to run it I kept receiving the message that the file\n> \"kdesigleapplicaition-qt6.dll\" was missing, that reinstalling it would\n> solve the problem, but it did not.\n\nConfirmed, thanks for reporting. This should be fixed in the lastest\nbuild:\n\nhttps://cdn.kde.org/ci-builds/education/rkward/releases-0.8.2/windows/\n\nUpdating the release file on download.kde.org may take some more hours.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/b177c9aa/attachment.sig>",
+      "body_snippet": "Am Sat, 4 Oct 2025 20:22:35 -0600\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> I just tried out to install RKWard 0.8.2, on a Windows 10 VM.\n> Every thing went well through the ins",
+      "thread_id": "thread-c2b687129f5d",
+      "thread_depth": 1,
+      "month": "2025-10"
+    },
+    {
+      "id": "msg-6e75280819af",
+      "message_id": "<CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2025-10-05T15:10:52Z",
+      "subject": "rk.dplyr",
+      "subject_clean": "rk.dplyr",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Here is another plug-in,\n\nhttps://github.com/AlfCano/rk.dplyr\n\na user-friendly graphical interface for the powerful data combination and\nmanipulation functions in the R package dplyr. It simplifies common data\nwrangling tasks by providing clear dialogs for four categories of\noperations, each requiring two data frames as input: Combine by\nBinding, Mutating Joins, Filtering Joins, Set Operations.\n\nRegards\nAlfonso\n\nPD: I just have tried out the rkward at kde.org, but I think it is not active\nyet.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/df83d1c3/attachment.htm>",
+      "body_snippet": "Here is another plug-in,\n\nhttps://github.com/AlfCano/rk.dplyr\n\na user-friendly graphical interface for the powerful data combination and\nmanipulation functions in the R package dplyr. It simplifies co",
+      "thread_id": "thread-6e75280819af",
+      "thread_depth": 0,
+      "month": "2025-10"
+    },
+    {
+      "id": "msg-ef450241e881",
+      "message_id": "<20251005183536.07e192cb@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-10-05T16:35:36Z",
+      "subject": "rk.dplyr",
+      "subject_clean": "rk.dplyr",
+      "in_reply_to": "<CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>"
+      ],
+      "body_plain": "Am Sun, 5 Oct 2025 09:10:52 -0600\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> Here is another plug-in,\n\nGreat! I'm having trouble keeping up!\n\n[...]\n\n> PD: I just have tried out the rkward at kde.org, but I think it is not\n> active yet.\n\nCorrect, I did not find the time to move forward with this, yet. I'll\nsend a another update, when this has happened.\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20251005/4fb40e2f/attachment.sig>",
+      "body_snippet": "Am Sun, 5 Oct 2025 09:10:52 -0600\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> Here is another plug-in,\n\nGreat! I'm having trouble keeping up!\n\n[...]\n\n> PD: I just have tried out t",
+      "thread_id": "thread-6e75280819af",
+      "thread_depth": 1,
+      "month": "2025-10"
+    },
+    {
+      "id": "msg-7a402a07e3b6",
+      "message_id": "<20251008102553.7b69239b@debian-dde-tosh>",
+      "from_name": "Griera",
+      "from_email_hash": "e454a05e3b08ce91e785191e1e9eee7059b7f611685184b3e7c8bff528bd4392",
+      "date": "2025-10-08T08:25:53Z",
+      "subject": "rk.dplyr",
+      "subject_clean": "rk.dplyr",
+      "in_reply_to": "<CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+gvDns7iuyBDDnhd0Zj8PPjR-u-+Pzg6fqzer+A6KWafA@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks a lot!!!\n\nOn Sun, 5 Oct 2025 09:10:52 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Here is another plug-in,\n> \n> https://github.com/AlfCano/rk.dplyr\n> \n> a user-friendly graphical interface for the powerful data combination and\n> manipulation functions in the R package dplyr. It simplifies common data\n> wrangling tasks by providing clear dialogs for four categories of\n> operations, each requiring two data frames as input: Combine by\n> Binding, Mutating Joins, Filtering Joins, Set Operations.\n> \n> Regards\n> Alfonso\n> \n> PD: I just have tried out the rkward at kde.org, but I think it is not active\n> yet.",
+      "body_snippet": "Thanks a lot!!!\n\nOn Sun, 5 Oct 2025 09:10:52 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Here is another plug-in,\n> \n> https://github.com/AlfCano/rk.dplyr\n> \n> a user-friendl",
+      "thread_id": "thread-6e75280819af",
+      "thread_depth": 1,
+      "month": "2025-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2667ceb370c3",
+      "subject": "RKWard 0.8.2 is released!",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-10-02T18:03:39Z",
+      "last_reply": "2025-10-02T18:03:39Z",
+      "root_message_id": "msg-2667ceb370c3"
+    },
+    {
+      "id": "thread-c2b687129f5d",
+      "subject": "RKWard 0.8.2 not working on a Windows 10 VM",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-10-05T02:22:35Z",
+      "last_reply": "2025-10-05T14:12:03Z",
+      "root_message_id": "msg-c2b687129f5d"
+    },
+    {
+      "id": "thread-6e75280819af",
+      "subject": "rk.dplyr",
+      "message_count": 3,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Griera",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-10-05T15:10:52Z",
+      "last_reply": "2025-10-08T08:25:53Z",
+      "root_message_id": "msg-6e75280819af"
+    }
+  ]
+}

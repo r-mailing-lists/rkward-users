@@ -1,0 +1,347 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2011-07",
+  "messages": [
+    {
+      "id": "msg-41755debf714",
+      "message_id": "<1309501362.22004.YahooMailRC@web29004.mail.ird.yahoo.com>",
+      "from_name": "LILINGTON Lord",
+      "from_email_hash": "ab4c303c5ed453159c8438388571da56b4bf93b1ec7833a6f8b0d6a1fe80f757",
+      "date": "2011-07-01T06:22:42Z",
+      "subject": "[rkward-users] wiki request editor",
+      "subject_clean": "[rkward-users] wiki request editor",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi i would like to be added in the editor group, my current project is \nlibwebdoc.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110701/f1ccce7c/attachment.html>",
+      "body_snippet": "Hi i would like to be added in the editor group, my current project is \nlibwebdoc.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward",
+      "thread_id": "thread-41755debf714",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-dbc519288c3a",
+      "message_id": "<201107011242.15530.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-07-01T10:42:10Z",
+      "subject": "[rkward-users] wiki request editor",
+      "subject_clean": "[rkward-users] wiki request editor",
+      "in_reply_to": "<1309501362.22004.YahooMailRC@web29004.mail.ird.yahoo.com>",
+      "references": [
+        "<1309501362.22004.YahooMailRC@web29004.mail.ird.yahoo.com>"
+      ],
+      "body_plain": "On Friday 01 July 2011, LILINGTON Lord wrote:\n> Hi i would like to be added in the editor group, my current project is\n> libwebdoc.\n\nHi,\n\nI would gladly give you edit permissions to the RKWard wiki. However, I have a \nfeeling that probably isn't really what you are looking for. In case you want \nto add a wiki to *your* Sourceforge project, log in to SF, and select Project \nAdmin->Features->Available Features->MediaWiki. IIRC, you will be given \nAdministrator rights in that wiki, automatically.\n\nAny chance, this is what you were looking for?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110701/1bc1021d/attachment.sig>",
+      "body_snippet": "On Friday 01 July 2011, LILINGTON Lord wrote:\n> Hi i would like to be added in the editor group, my current project is\n> libwebdoc.\n\nHi,\n\nI would gladly give you edit permissions to the RKWard wiki. H",
+      "thread_id": "thread-41755debf714",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-3da4223d12a3",
+      "message_id": "<forum-165574-10433753@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-07-07T07:51:56Z",
+      "subject": "[rkward-users] [Help] Cannot save rkward configuration",
+      "subject_clean": "[rkward-users] [Help] Cannot save rkward configuration",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by mullenkamp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4598380:\n\nI just installed rkward. The first thing I do, of course, is modify the program\nsettings (e.g. \"Settings\" tab then \"Configure rkward\"). I modify them, I hit\n\"apply,\" then \"ok.\" Finally, I closed the application and reopened it and\nunfortunately none of the settings were saved. I've tried several times, but\nit never saves. Is there some trick to saving the settings?\n\nI'm running Ubuntu by the way.\n\nThanks.",
+      "body_snippet": "The following forum message was posted by mullenkamp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4598380:\n\nI just installed rkward. The first thing I do, of course, is modify t",
+      "thread_id": "thread-3da4223d12a3",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-efe72fc78f97",
+      "message_id": "<4E16EF08020000FD0002D843@gwia.niwa.co.nz>",
+      "from_name": "Sandy Elliott",
+      "from_email_hash": "84f859c28888ec1be172e564e1a88ff68540685023533e7246f47662f63a8568",
+      "date": "2011-07-07T23:50:32Z",
+      "subject": "[rkward-users] rkward.frontend.exe stops working Windows installation",
+      "subject_clean": "[rkward-users] rkward.frontend.exe stops working Windows installation",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have installed the bundled Windows binary RKWard-0.5.6_KDE-4.5.4_R-2.13.0_bundle on a Windows 7 machine but the interface is not working properly. Rkward opens fine, I can edit a new table, but I get rkward.frontend.exe stopped working error message when trying to save a new script. Similar messages or freezing when opening a previous workspace or setting the workspace. I have not installed R, Rkward, or KDE on this computer before. I have admin privileges. What should I try next?\n\n\n\nPlease consider the environment before printing this email.\n\nNIWA is the trading name of the National Institute of Water & Atmospheric Research Ltd.",
+      "body_snippet": "I have installed the bundled Windows binary RKWard-0.5.6_KDE-4.5.4_R-2.13.0_bundle on a Windows 7 machine but the interface is not working properly. Rkward opens fine, I can edit a new table, but I ge",
+      "thread_id": "thread-efe72fc78f97",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-6f910ef2f1c2",
+      "message_id": "<forum-165574-10445075@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-07-09T10:21:03Z",
+      "subject": "[rkward-users] [Help] RE: Cannot save rkward configuration",
+      "subject_clean": "[rkward-users] [Help] RE: Cannot save rkward configuration",
+      "in_reply_to": "<forum-165574-10433753@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4598380:\n\nHi!\n\nSettings should always be saved automatically on exit (unless RKWard crashes).\nI suspect the problem might be that you do not have write permission to the\nKDE settings folder inside your home directory. This can happen under some\ncircumstances, e.g. if you run KDE applications as root (esp. when using the\n--preserve-environment option of su). Try running\n[code]chown --recursive USERNAME:USERNAME ~/.kde[/code]\nand then try again.\n\nLet us know, if the problem persists after that.\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4598380:\n\nHi!\n\nSettings should always be saved automatically on exit (unless RKWard c",
+      "thread_id": "thread-3da4223d12a3",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-4a2871f0dc33",
+      "message_id": "<201107091235.04642.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-07-09T10:35:00Z",
+      "subject": "[rkward-users] rkward.frontend.exe stops working Windows installation",
+      "subject_clean": "[rkward-users] rkward.frontend.exe stops working Windows installation",
+      "in_reply_to": "<4E16EF08020000FD0002D843@gwia.niwa.co.nz>",
+      "references": [
+        "<4E16EF08020000FD0002D843@gwia.niwa.co.nz>"
+      ],
+      "body_plain": "Hi!\n\nOn Friday 08 July 2011, Sandy Elliott wrote:\n> I have installed the bundled Windows binary\n> RKWard-0.5.6_KDE-4.5.4_R-2.13.0_bundle on a Windows 7 machine but the\n> interface is not working properly. Rkward opens fine, I can edit a new\n> table, but I get rkward.frontend.exe stopped working error message when\n> trying to save a new script. Similar messages or freezing when opening a\n> previous workspace or setting the workspace. I have not installed R,\n> Rkward, or KDE on this computer before. I have admin privileges. What\n> should I try next?\n\nhm, it looks like the common aspect of these freezes is that a file-selection \ndialog is (about to be) shown. So probably the problem is related to that.\n\nOn startup, RKWard prompts you about disabling \"native file dialogs\", unless \nyou have already done so. Have you answered \"Yes\" to this question? *If* you \nhave not, please do so the next time you start RKWard, and try again.\n\nSo far I have only heard of problems with \"native file dialogs\", but perhaps \nthe \"non-native\" variant has problems on other systems. Thus, if you see this \nproblem after you have disabled the native file dialogs, try the following:\n\n1) Enter\n    rk.sessionInfo()\nin the R Console. Find the line that reads \"Local KDE directory\" and open the \ngiven folder in the Windows file browser. Exit RKWard.\n\n2) Navigate to the sub-folder \"share\\config\", and remove / rename \"rkwardrc\" \n(this resets all RKWard settings).\n\n3) Start RKWard again. Answer \"No\", when prompted to disable native file \ndialogs. Try any of the problematic actions you listed.\n\nDoes that fix the problem for you?\n\nDo you have any connected tape storage drives (this was know to cause problems \nin KDE on Windows in the past, although, I thought those were fixed in KDE \n4.5.4)? Are you aware of anything else that might be \"unusual\" about your \nsetup?\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110709/e3a8dc76/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Friday 08 July 2011, Sandy Elliott wrote:\n> I have installed the bundled Windows binary\n> RKWard-0.5.6_KDE-4.5.4_R-2.13.0_bundle on a Windows 7 machine but the\n> interface is not working prope",
+      "thread_id": "thread-efe72fc78f97",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-51461b87dccc",
+      "message_id": "<CAFu15-GV41ZRMDbfx8F+JUtOCddhZSf6WP=8hO876FPryozmDQ@mail.gmail.com>",
+      "from_name": "Mihai Terente",
+      "from_email_hash": "ec65b5559dc7a042f6b388ec9c467cad4c8678a8ab654592304262fa84663782",
+      "date": "2011-07-10T20:15:54Z",
+      "subject": "[rkward-users] command to open script file from Krusader",
+      "subject_clean": "[rkward-users] command to open script file from Krusader",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Rkward users,\n\nI'm trying to find a way to open a script file with Rkward from Krusader.\nIf I give the default command, e.g. open with... it runs rkward\n-caption \"%c\" %i. This seems a command for opening workspaces and I\nthink that's why I get this message into the Rward command log:\n\nload (\"/home/lucian/Documents/R/cap_1_4.r\")\nError: bad restore file magic number (file may be corrupted) -- no data loaded\nIn addition: Warning message:\nfile 'cap_1_4.r' has magic number 'setwd'\n   Use of save versions prior to 2 is deprecated\nAn unspecified error occurred while running the command.\n\nDo you know a way to deal with this? I tried to find a flag for the\ncommand to open scripts with rkward from Krusader.\n\nMihai Terente",
+      "body_snippet": "Dear Rkward users,\n\nI'm trying to find a way to open a script file with Rkward from Krusader.\nIf I give the default command, e.g. open with... it runs rkward\n-caption \"%c\" %i. This seems a command for",
+      "thread_id": "thread-51461b87dccc",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-11a4850fe7d7",
+      "message_id": "<201107121808.02787.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-07-12T16:07:59Z",
+      "subject": "[rkward-users] command to open script file from Krusader",
+      "subject_clean": "[rkward-users] command to open script file from Krusader",
+      "in_reply_to": "<CAFu15-GV41ZRMDbfx8F+JUtOCddhZSf6WP=8hO876FPryozmDQ@mail.gmail.com>",
+      "references": [
+        "<CAFu15-GV41ZRMDbfx8F+JUtOCddhZSf6WP=8hO876FPryozmDQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 10 July 2011, Mihai Terente wrote:\n> I'm trying to find a way to open a script file with Rkward from Krusader.\n> If I give the default command, e.g. open with... it runs rkward\n> -caption \"%c\" %i. This seems a command for opening workspaces and I\n> think that's why I get this message into the Rward command log:\n\nyes, in fact, RKWard will try to load this as a workspace (and fail). There \nsimply is no command line option to open a script file, so far. Consider \nopening a wishlist item in our tracker \n(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse).\n\nHere is a workaround of sorts:\n  rkward --evaluate \"file.edit (\\\"filename.r\\\")\"\nwill open the script file (and bug you with a dialog).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110712/2d0fa090/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 10 July 2011, Mihai Terente wrote:\n> I'm trying to find a way to open a script file with Rkward from Krusader.\n> If I give the default command, e.g. open with... it runs rkward\n> -capti",
+      "thread_id": "thread-51461b87dccc",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-088880394c87",
+      "message_id": "<1310658079.2346.10.camel@pandoras-box>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "b21a48e14b7bc717db676409a5ee550f4faaf63f5caaad9bf7043c2365c429e3",
+      "date": "2011-07-14T15:41:19Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Thomas, \n\nI am going through some interesting issues. I am not sure if it is\nRKward or something else. I could not be able to install some of the\npackages such as \"ggplot2\" in RKward.\n\nIt is giving me dependency error. I tried to install the dependencies\none by one. But it did not work. The error codes were coming back in\nloop. I have attached the error codes here. Hope this will help explain\nthe problem better.\n\nHere are the pastebin files:\n      * http://paste.ubuntu.com/644178/\n      * http://paste.ubuntu.com/644189/\n      * http://paste.ubuntu.com/644190/\n      * http://paste.ubuntu.com/644191/\n\nOn a second note, I have observed some libraries were present in\nmultiple locations. Was there any default location where they should be\npresent (such as /usr/lib/R/library)? I have read/write access through\nkdesudo. So installing it should not be a problem. Please see attached\nimage for details. Also, is there an easy to way to uninstall packages\nbeside remove.packages () function in R?\n\nHere is a screenshot:\nhttp://img638.imageshack.us/i/samepkgmultiplefoldersr.png/\n\nThank you again for developing RKWard constantly for the scientific\ncommunity.\n\nBest regards,\nSourav Chakraborty, Ph.D.\nThe Ohio State University\n\nP.S. I am using Ubuntu 10.04 with kernel-2.6.38-10-generic, 2 GB RAM and\nintel 2.00 GHz processor.",
+      "body_snippet": "Hi Thomas, \n\nI am going through some interesting issues. I am not sure if it is\nRKward or something else. I could not be able to install some of the\npackages such as \"ggplot2\" in RKward.\n\nIt is giving",
+      "thread_id": "thread-088880394c87",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-79cbc786cab4",
+      "message_id": "<201107141953.05554.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2011-07-14T17:53:00Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": "<1310658079.2346.10.camel@pandoras-box>",
+      "references": [
+        "<1310658079.2346.10.camel@pandoras-box>"
+      ],
+      "body_plain": "hi sourav,\n\nam Donnerstag 14 Juli 2011 (17:41) schrieb Sourav Chakraborty:\n> It is giving me dependency error. I tried to install the dependencies\n> one by one. But it did not work. The error codes were coming back in\n> loop. I have attached the error codes here. Hope this will help explain\n> the problem better.\n> \n> Here are the pastebin files:\n>       * http://paste.ubuntu.com/644178/\n\nthe important part:\n\n<snip>\ngcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c Hmisc.c -o \nHmisc.o\nIn file included from /usr/include/bits/errno.h:25,\n                 from /usr/include/errno.h:36,\n                 from Hmisc.h:5,\n                 from Hmisc.c:1:\n/usr/include/linux/errno.h:4:23: error: asm/errno.h: No such file or directory\n</snip>\n\nso the header file \"asm/errno.h\" cannot be found on your system, but is needed \nto compile the Hmisc package sources. it's not a file from an R package, so \nyou can't fix it by installing other R packages. you need to find out which \nubuntu package provides it. run this on a console:\n\n dpkg -S asm/errno.h\n\nit will search for \"asm/errno.h\" in all available packages, and show you that \nit's found in the package linux-libc-dev and linux header packages. once \nyou've installed what you need (e.g. \"sudo aptitude install <package name>\", \ni'd go for the linux-libc-dev package first), try the R installation again.\n\n> On a second note, I have observed some libraries were present in\n> multiple locations. Was there any default location where they should be\n> present (such as /usr/lib/R/library)?\n\nR can handle several library locations. this allows you to have your own \npackage collection in your home directory so you don't need sudo. on a \ndistribution like ubuntu with an advanced package management system i would \nalways prefer to keep it this way, so you don't accidently overwrite files \nfrom an ubuntu package, or revert manual changes with the next package update \nwithout notice.\n\n> Also, is there an easy to way to uninstall packages beside remove.packages\n> () function in R?\n\nyou can manage most official/common packages by the debian/ubuntu package \ntools, i.e. (un)install them as .deb packages. try this on a console:\n\n aptitude search r- | grep \"GNU R\"\n\nas for packages in your home folder, you can simply delete the folder with the \npackage name and the package is gone, too...\n\n> P.S. I am using Ubuntu 10.04 with kernel-2.6.38-10-generic, 2 GB RAM and\n> intel 2.00 GHz processor.\n\nfor problems like this one, it's always helpful to know the R and RKWard \nversion numbers as well. there's actually a special function for this, called \n\"rk.sessionInfo()\". you can call it in RKWard to generate all information the \ndevelopers desire to know ;-)\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110714/946058de/attachment.sig>",
+      "body_snippet": "hi sourav,\n\nam Donnerstag 14 Juli 2011 (17:41) schrieb Sourav Chakraborty:\n> It is giving me dependency error. I tried to install the dependencies\n> one by one. But it did not work. The error codes we",
+      "thread_id": "thread-088880394c87",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-15fc65a31920",
+      "message_id": "<1310677850.2606.10.camel@pandoras-box>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "b21a48e14b7bc717db676409a5ee550f4faaf63f5caaad9bf7043c2365c429e3",
+      "date": "2011-07-14T21:10:50Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Meik,\n\nThanks for your quick response. \n\n\"so the header file \"asm/errno.h\" cannot be found on your system, but is\nneeded \n\nto compile the Hmisc package sources. it's not a file from an R package, so \nyou can't fix it by installing other R packages. you need to find out which \nubuntu package provides it. run this on a console:\n\n dpkg -S asm/errno.h\n\nit will search for \"asm/errno.h\" in all available packages, and show you that \nit's found in the package linux-libc-dev and linux header packages. once \nyou've installed what you need (e.g. \"sudo aptitude install <package name>\", \ni'd go for the linux-libc-dev package first), try the R installation again.\"\n\nHere is the code output:\nhttp://paste.ubuntu.com/644356/\n\nI can't install or reinstall linux-libc-dev package.\noutput:\nhttp://paste.ubuntu.com/644371/\n\nI was going through this website: https://bbs.archlinux.org/viewtopic.php?id=94591\nIt did not help me.\n\n\"R can handle several library locations. this allows you to have your own \npackage collection in your home directory so you don't need sudo. on a \ndistribution like ubuntu with an advanced package management system i would \nalways prefer to keep it this way, so you don't accidently overwrite files \nfrom an ubuntu package, or revert manual changes with the next package update \nwithout notice.\"\n\nThanks for the tips and explanation.\n\n\"you can manage most official/common packages by the debian/ubuntu package \ntools, i.e. (un)install them as .deb packages. try this on a console:\n\n aptitude search r- | grep \"GNU R\"\"\n\nThis is neat.\n\n\"for problems like this one, it's always helpful to know the R and RKWard \nversion numbers as well. there's actually a special function for this, called \n\"rk.sessionInfo()\". you can call it in RKWard to generate all information the \ndevelopers desire to know ;-)\"\nNifty and very useful indeed. :-)\nHere is the info for the developer then.\nhttp://paste.ubuntu.com/644373/\n\nThanks.\nBest,\nSourav\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110714/73ec43e0/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: face-smile.png\nType: image/png\nSize: 873 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110714/73ec43e0/attachment.png>",
+      "body_snippet": "Hi Meik,\n\nThanks for your quick response. \n\n\"so the header file \"asm/errno.h\" cannot be found on your system, but is\nneeded \n\nto compile the Hmisc package sources. it's not a file from an R package, s",
+      "thread_id": "thread-15fc65a31920",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-7de53ef32706",
+      "message_id": "<201107142329.46289.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2011-07-14T21:29:41Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": "<1310677850.2606.10.camel@pandoras-box>",
+      "references": [
+        "<1310677850.2606.10.camel@pandoras-box>"
+      ],
+      "body_plain": "hi sourav,\n\nam Donnerstag 14 Juli 2011 (23:10) schrieb Sourav Chakraborty:\n> Here is the code output:\n> http://paste.ubuntu.com/644356/\n> \n> I can't install or reinstall linux-libc-dev package.\n> output:\n> http://paste.ubuntu.com/644371/\n\nthis just reads like it's already installed, so it's probably not the one \nmissing. have you looked whether you've installed the appropriate headers for \nyour kernel? since you're running kernel-2.6.38-10-generic, try\n\n  aptitude install linux-headers-2.6.38-10\n\nthen.\n\n[or apt-get, doesn't matter much, aptitude is just the default tool since some \ndebian releases...]\n\n> I was going through this website:\n> https://bbs.archlinux.org/viewtopic.php?id=94591 It did not help me.\n\nit's for another distribution (arch), they have a different packaging \nphilosophy, so i guess it doesn't help much here ;-)\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110714/2f220c02/attachment.sig>",
+      "body_snippet": "hi sourav,\n\nam Donnerstag 14 Juli 2011 (23:10) schrieb Sourav Chakraborty:\n> Here is the code output:\n> http://paste.ubuntu.com/644356/\n> \n> I can't install or reinstall linux-libc-dev package.\n> outp",
+      "thread_id": "thread-15fc65a31920",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-9e79ced8bf75",
+      "message_id": "<1310735921.3379.5.camel@pandoras-box>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "b21a48e14b7bc717db676409a5ee550f4faaf63f5caaad9bf7043c2365c429e3",
+      "date": "2011-07-15T13:18:41Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Meik,\n\nThanks again for quick response.\n\n\"have you looked whether you've installed the appropriate headers for \n\nyour kernel? since you're running kernel-2.6.38-10-generic, try\n\n  aptitude install linux-headers-2.6.38-10\"\n\nIt is already installed. \n\noutput from console:\n\nsc at pandoras-box:~$ sudo apt-get install linux-headers-2.6.38-10\n[sudo] password for sc: \nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nlinux-headers-2.6.38-10 is already the newest version.\n0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.\n\nQuick question:\nIs there a way that I can add new info as a forum thread instead of emailing? (I have an account in SF and I have posted info before in the rkward-devel list without any problem)\n\nThanks for your help.\n\nBest,\nSourav\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110715/d1f075a8/attachment.html>",
+      "body_snippet": "Dear Meik,\n\nThanks again for quick response.\n\n\"have you looked whether you've installed the appropriate headers for \n\nyour kernel? since you're running kernel-2.6.38-10-generic, try\n\n  aptitude instal",
+      "thread_id": "thread-9e79ced8bf75",
+      "thread_depth": 0,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-dbdba7e1ccc9",
+      "message_id": "<201107171128.14251.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-07-17T09:28:10Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": "<1310735921.3379.5.camel@pandoras-box>",
+      "references": [
+        "<1310735921.3379.5.camel@pandoras-box>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 15 July 2011, Sourav Chakraborty wrote:\n> It is already installed.\n\non Debian / Ubuntu, the easiest way to install everything that is needed to \ninstall source R packages is using \n  sudo apt-get install r-base-dev\nIf that isn't enough, consider reporting a bug against r-base-dev.\n\n> Quick question:\n> Is there a way that I can add new info as a forum thread instead of\n> emailing? (I have an account in SF and I have posted info before in the\n> rkward-devel list without any problem)\n\nWe have a forum at http://sourceforge.net/projects/rkward/forums/forum/165574 \n. Note that, for the time being, all forum posts are also forwarded to this \nmailing list.\n \nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110717/ebdad37e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 15 July 2011, Sourav Chakraborty wrote:\n> It is already installed.\n\non Debian / Ubuntu, the easiest way to install everything that is needed to \ninstall source R packages is using \n  su",
+      "thread_id": "thread-9e79ced8bf75",
+      "thread_depth": 1,
+      "month": "2011-07"
+    },
+    {
+      "id": "msg-ad8b1b9fdf2e",
+      "message_id": "<1311075858.2734.1.camel@pandoras-box>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "b21a48e14b7bc717db676409a5ee550f4faaf63f5caaad9bf7043c2365c429e3",
+      "date": "2011-07-19T11:44:18Z",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "subject_clean": "[rkward-users] ggplot2 - package installation error",
+      "in_reply_to": "<201107171128.14251.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1310735921.3379.5.camel@pandoras-box>",
+        "<201107171128.14251.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nThanks for the reply.\n\nI was doing a little research before filing a bug. Apparently, people\nhave filed bugs on this before.\n\nCould you please tell me if this is my problem?\n\nhttp://software.intel.com/en-us/forums/showthread.php?t=82449\n\nThanks.\nBest,\nSourav\n\nOn Sun, 2011-07-17 at 11:28 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Friday 15 July 2011, Sourav Chakraborty wrote:\n> > It is already installed.\n> \n> on Debian / Ubuntu, the easiest way to install everything that is needed to \n> install source R packages is using \n>   sudo apt-get install r-base-dev\n> If that isn't enough, consider reporting a bug against r-base-dev.\n> \n> > Quick question:\n> > Is there a way that I can add new info as a forum thread instead of\n> > emailing? (I have an account in SF and I have posted info before in the\n> > rkward-devel list without any problem)\n> \n> We have a forum at http://sourceforge.net/projects/rkward/forums/forum/165574 \n> . Note that, for the time being, all forum posts are also forwarded to this \n> mailing list.\n>  \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110719/a3fb7fe5/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nThanks for the reply.\n\nI was doing a little research before filing a bug. Apparently, people\nhave filed bugs on this before.\n\nCould you please tell me if this is my problem?\n\nhttp://softwa",
+      "thread_id": "thread-9e79ced8bf75",
+      "thread_depth": 2,
+      "month": "2011-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-41755debf714",
+      "subject": "[rkward-users] wiki request editor",
+      "message_count": 2,
+      "participants": [
+        "LILINGTON Lord",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-07-01T06:22:42Z",
+      "last_reply": "2011-07-01T10:42:10Z",
+      "root_message_id": "msg-41755debf714"
+    },
+    {
+      "id": "thread-3da4223d12a3",
+      "subject": "[rkward-users] [Help] Cannot save rkward configuration",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2011-07-07T07:51:56Z",
+      "last_reply": "2011-07-09T10:21:03Z",
+      "root_message_id": "msg-3da4223d12a3"
+    },
+    {
+      "id": "thread-efe72fc78f97",
+      "subject": "[rkward-users] rkward.frontend.exe stops working Windows installation",
+      "message_count": 2,
+      "participants": [
+        "Sandy Elliott",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-07-07T23:50:32Z",
+      "last_reply": "2011-07-09T10:35:00Z",
+      "root_message_id": "msg-efe72fc78f97"
+    },
+    {
+      "id": "thread-51461b87dccc",
+      "subject": "[rkward-users] command to open script file from Krusader",
+      "message_count": 2,
+      "participants": [
+        "Mihai Terente",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-07-10T20:15:54Z",
+      "last_reply": "2011-07-12T16:07:59Z",
+      "root_message_id": "msg-51461b87dccc"
+    },
+    {
+      "id": "thread-088880394c87",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "message_count": 2,
+      "participants": [
+        "Sourav Chakraborty",
+        "meik michalke"
+      ],
+      "started": "2011-07-14T15:41:19Z",
+      "last_reply": "2011-07-14T17:53:00Z",
+      "root_message_id": "msg-088880394c87"
+    },
+    {
+      "id": "thread-15fc65a31920",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "message_count": 2,
+      "participants": [
+        "Sourav Chakraborty",
+        "meik michalke"
+      ],
+      "started": "2011-07-14T21:10:50Z",
+      "last_reply": "2011-07-14T21:29:41Z",
+      "root_message_id": "msg-15fc65a31920"
+    },
+    {
+      "id": "thread-9e79ced8bf75",
+      "subject": "[rkward-users] ggplot2 - package installation error",
+      "message_count": 3,
+      "participants": [
+        "Sourav Chakraborty",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-07-15T13:18:41Z",
+      "last_reply": "2011-07-19T11:44:18Z",
+      "root_message_id": "msg-9e79ced8bf75"
+    }
+  ]
+}

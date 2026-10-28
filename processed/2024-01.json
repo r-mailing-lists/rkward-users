@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2024-01",
+  "messages": [
+    {
+      "id": "msg-7dd3240d25bc",
+      "message_id": "<7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>",
+      "from_name": "my-shopping-email at posteo.net",
+      "from_email_hash": "bf5676bd28323e528b674b25411aa58e0f394d43241d76b138fa6beccd7844ca",
+      "date": "2024-01-14T20:35:36Z",
+      "subject": "RKWard and importing Excel files",
+      "subject_clean": "RKWard and importing Excel files",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am currently running 0.7.5 RKWard on KDE Neon (based on Ubuntu 22.04). \nI am trying to import a simple .xlsx (or .xls) file with 3 sheets and \nonly 1 to 2 dozen rows with a few columns....something very basic. I \nhave loaded the gdata package (as well as others that I have seen \nrecommended). But whenever I import data and select Excel (Perl), it \nproduces the error shown in the screenshot below. I assure you that I \nhave the gdata package both installed and loaded. I have even tried two \ndifferent versions of this package. Any help would be greatly appreciated.\n\nThanks!\n\nMark\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240114/3224a0f7/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: MMh7cHyqRTUB5Kwv.png\nType: image/png\nSize: 106703 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240114/3224a0f7/attachment-0001.png>",
+      "body_snippet": "I am currently running 0.7.5 RKWard on KDE Neon (based on Ubuntu 22.04). \nI am trying to import a simple .xlsx (or .xls) file with 3 sheets and \nonly 1 to 2 dozen rows with a few columns....something ",
+      "thread_id": "thread-7dd3240d25bc",
+      "thread_depth": 0,
+      "month": "2024-01"
+    },
+    {
+      "id": "msg-2437dfca1a9f",
+      "message_id": "<CAMqnA+gRM6sMFtYz-uBjtLFGwNatq1VJ_ygEQ-TzETvZtv-X5w@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-01-17T14:51:31Z",
+      "subject": "RKWard and importing Excel files",
+      "subject_clean": "RKWard and importing Excel files",
+      "in_reply_to": "<7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>",
+      "references": [
+        "<7c0a8121-dd7f-4dd3-af82-2620f63e65af@posteo.net>"
+      ],
+      "body_plain": "A work around could be to using package `rio`,\n>From menu \"file -> import\" -> \"format of importation\" -> \"Generic\nimportation (based on rio)\"\n(This names may not be the exactly right, I'ḿ using the spanish translated\nversion).\nJust tick the option \"import a list with all data sets\" to get the three\nsheets.\nThis is what I use to import Excel files.\nI've used Java with the package \"XLConnect\" but some versions of Java won't\nwork. It has nice features though.\nRegards.\nAlfonso\n\n\nEl mié, 17 ene 2024 a la(s) 6:26 a.m., <my-shopping-email at posteo.net>\nescribió:\n\n> I am currently running 0.7.5 RKWard on KDE Neon (based on Ubuntu 22.04). I\n> am trying to import a simple .xlsx (or .xls) file with 3 sheets and only 1\n> to 2 dozen rows with a few columns....something very basic. I have loaded\n> the gdata package (as well as others that I have seen recommended). But\n> whenever I import data and select Excel (Perl), it produces the error shown\n> in the screenshot below. I assure you that I have the gdata package both\n> installed and loaded. I have even tried two different versions of this\n> package. Any help would be greatly appreciated.\n>\n> Thanks!\n>\n> Mark\n>\n>\n>\n>\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240117/944bde25/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: MMh7cHyqRTUB5Kwv.png\nType: image/png\nSize: 106703 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240117/944bde25/attachment-0001.png>",
+      "body_snippet": "A work around could be to using package `rio`,\n>From menu \"file -> import\" -> \"format of importation\" -> \"Generic\nimportation (based on rio)\"\n(This names may not be the exactly right, I'ḿ using the sp",
+      "thread_id": "thread-7dd3240d25bc",
+      "thread_depth": 1,
+      "month": "2024-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7dd3240d25bc",
+      "subject": "RKWard and importing Excel files",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "my-shopping-email at posteo.net"
+      ],
+      "started": "2024-01-14T20:35:36Z",
+      "last_reply": "2024-01-17T14:51:31Z",
+      "root_message_id": "msg-7dd3240d25bc"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2025-07",
+  "messages": [
+    {
+      "id": "msg-b2962fe0cb11",
+      "message_id": "<CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2025-07-18T05:56:33Z",
+      "subject": "No subject",
+      "subject_clean": "No subject",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nI hope you are well,\nThis is just to note that I was not able to install rkwarddev weather from\nCRAN nor from GitHub:\n\n> devtools::install_github(\"rkward-community/rkwarddev\")\nDownloading GitHub repo rkward-community/rkwarddev at HEAD\nSkipping 1 packages not available: rkward\n── R CMD build\n─────────────────────────────────────────────────────────────────\n✔  checking for file\n‘/tmp/RtmpqHyJjp/remotes2fb074bc28983/rkward-community-rkwarddev-cbc0c57/DESCRIPTION’\n...\n─  preparing ‘rkwarddev’:\n✔  checking DESCRIPTION meta-information ...\n─  installing the package to process help pages\n         -----------------------------------\n─  installing *source* package ‘rkwarddev’ ...\n   ** this is package ‘rkwarddev’ version ‘0.10-2’\n   ** using staged installation\n   ** R\n   ** demo\n   ** inst\n   ** byte-compile and prepare package for lazy loading\n   Aviso:\n   You've loaded the package 'rkward', but RKWard doesn't appear to be\nrunning. If this causes trouble, try detach(\"package:rkward\").\n   Error in .make_numeric_version(x, strict,\n.standard_regexps()$valid_R_system_version,  :\n     invalid non-character version specification 'x' (type: list)\n   Error: unable to load R code in package ‘rkwarddev’\n   Ejecución interrumpida\n   ERROR: lazy loading failed for package ‘rkwarddev’\n─  removing ‘/tmp/RtmpTwYlS8/Rinst3100d147e3070/rkwarddev’\n         -----------------------------------\n   ERROR: package installation failed\nError: Failed to install 'rkwarddev' from GitHub:\n  ! System command 'R' failed\n\nI was able to install the develop version, though, but I wasn't able to do\nmuch with it. Which would you recommend?\nThanks for everything.\nRegards\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250717/e98d8d69/attachment.htm>",
+      "body_snippet": "Hi,\nI hope you are well,\nThis is just to note that I was not able to install rkwarddev weather from\nCRAN nor from GitHub:\n\n> devtools::install_github(\"rkward-community/rkwarddev\")\nDownloading GitHub r",
+      "thread_id": "thread-b2962fe0cb11",
+      "thread_depth": 0,
+      "month": "2025-07"
+    },
+    {
+      "id": "msg-4fc852b5802a",
+      "message_id": "<3728960.VcsEVMUYb5@meadow>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2025-07-18T08:36:35Z",
+      "subject": "[Extern]",
+      "subject_clean": "[Extern]",
+      "in_reply_to": "<CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>"
+      ],
+      "body_plain": "hi,\n\nAm Freitag, 18. Juli 2025, 07:56:33 CEST schrieb DES Alfonso Cano Robles:\n> You've loaded the package 'rkward', but RKWard doesn't appear to be\n> running.\n\ndid you try this outside of a running RKWard session? rkwarddev is supposed to \nbe running in RKWard.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at 40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250718/7f60c1f2/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Freitag, 18. Juli 2025, 07:56:33 CEST schrieb DES Alfonso Cano Robles:\n> You've loaded the package 'rkward', but RKWard doesn't appear to be\n> running.\n\ndid you try this outside of a running R",
+      "thread_id": "thread-b2962fe0cb11",
+      "thread_depth": 1,
+      "month": "2025-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b2962fe0cb11",
+      "subject": "No subject",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "meik michalke"
+      ],
+      "started": "2025-07-18T05:56:33Z",
+      "last_reply": "2025-07-18T08:36:35Z",
+      "root_message_id": "msg-b2962fe0cb11"
+    }
+  ]
+}

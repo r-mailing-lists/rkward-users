@@ -1,0 +1,413 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2007-05",
+  "messages": [
+    {
+      "id": "msg-b8cae4801343",
+      "message_id": "<200705071409.51365.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-07T12:09:45Z",
+      "subject": "[rkward-users] Bugfix release 0.4.7a",
+      "subject_clean": "[rkward-users] Bugfix release 0.4.7a",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\ndue to some grave problems on at least some systems (see \nhttp://bugs.debian.org/cgi-bin/bugreport.cgi?bug=422541), I've prepared and \nuploaded a bugfix release to 0.4.7. Some further small issues are fixed as \nwell, where the fixes were simple enough to release without much testing. \nNote that no significant new features have been added in this release.\n\nFor a detailed list of the (few) changes, see http://rkward.sourceforge.net .\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070507/9ab986a8/attachment.sig>",
+      "body_snippet": "Hi all,\n\ndue to some grave problems on at least some systems (see \nhttp://bugs.debian.org/cgi-bin/bugreport.cgi?bug=422541), I've prepared and \nuploaded a bugfix release to 0.4.7. Some further small i",
+      "thread_id": "thread-b8cae4801343",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-f3355e645336",
+      "message_id": "<200705071750.21118.ertugrulerata@gmail.com>",
+      "from_name": "ertugrulerata",
+      "from_email_hash": "4a90ec559fe3e405d669604eae8c225218310d86e2391a9b590f5000a214e11d",
+      "date": "2007-05-07T14:50:20Z",
+      "subject": "[rkward-users] Bugfix release 0.4.7a",
+      "subject_clean": "[rkward-users] Bugfix release 0.4.7a",
+      "in_reply_to": "<200705071409.51365.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200705071409.51365.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Monday 07 May 2007 15:09:45 Thomas Friedrichsmeier wrote:\n> Hi all,\n>\n> due to some grave problems on at least some systems (see\n> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=422541), I've prepared and\n> uploaded a bugfix release to 0.4.7. Some further small issues are fixed as\n> well, where the fixes were simple enough to release without much testing.\n> Note that no significant new features have been added in this release.\n>\n> For a detailed list of the (few) changes, see http://rkward.sourceforge.net\n> .\n>\n> Regards\n> Thomas\n\nthanks \n\ni update release, rkward-0.47_p1 for pardus",
+      "body_snippet": "On Monday 07 May 2007 15:09:45 Thomas Friedrichsmeier wrote:\n> Hi all,\n>\n> due to some grave problems on at least some systems (see\n> http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=422541), I've pre",
+      "thread_id": "thread-b8cae4801343",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-753f5e15d7b5",
+      "message_id": "<200705081452.08828.griera@gmail.com>",
+      "from_name": "pep.roca at gmail.com",
+      "from_email_hash": "924c8b9d080f2a26957e146073a448ad99588be6d25107afb11e34e29e58e4a3",
+      "date": "2007-05-08T12:52:08Z",
+      "subject": "[rkward-users] Compile problems on Debian sarge",
+      "subject_clean": "[rkward-users] Compile problems on Debian sarge",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello:\n\nI am trying to compile rkward-0.4.7a in a debian sarge. When I run ./configure \nI get the error:\n\n\tchecking for Qt... configure: error: Qt (>= Qt 3.1 (20021021) and < 4.0) \t\t\t\n(headers and libraries) not found. Please check your installation!\n\nBut in debian sarge I found three Qt3-dev packages. \n\n\tqt3-dev-tools\n\tqt3-dev-tools-compat \n\tqt3-dev-tools-embedded\n\nWhich one is the right? Also the INSTALL file say:\n\nRKWard requires:\n\n\t- KDE-libraries and headers (>= 3.x) (http://www.kde.org) \n\t- Qt-libraries and headers (>= 3.x) (http://www.trolltech.com) \n\t- R and headers (http://www.r-project.org) \n\t- PHP with commandline-interface (http://www.php.net) \n\nI assume that I need to instal the following packages:\n\n\tkde-devel (and kde-devel-extras?)\n\tphp4-dev\n\tbuild-essential (in Sarge, I can't find build-dep)\n\nBut I can't find the r-cran-dev or the R-headers in debian sarge.\n\nThanks a lot.",
+      "body_snippet": "Hello:\n\nI am trying to compile rkward-0.4.7a in a debian sarge. When I run ./configure \nI get the error:\n\n\tchecking for Qt... configure: error: Qt (>= Qt 3.1 (20021021) and < 4.0) \t\t\t\n(headers and lib",
+      "thread_id": "thread-753f5e15d7b5",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-1934c0101d21",
+      "message_id": "<200705081515.35356.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-08T13:15:31Z",
+      "subject": "[rkward-users] Compile problems on Debian sarge",
+      "subject_clean": "[rkward-users] Compile problems on Debian sarge",
+      "in_reply_to": "<200705081452.08828.griera@gmail.com>",
+      "references": [
+        "<200705081452.08828.griera@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\n> But in debian sarge I found three Qt3-dev packages.\n\nthe correct one is libqt3-mt-dev.\n\nHowever, the easiest way to install all build dependencies (and the \ndependencies those have in turn) on a debian based system is:\n\n# apt-get build-dep rkward\n\nFor completeness, though:\n\n> \tkde-devel (and kde-devel-extras?)\n\nkdelibs4-dev\n\n> \tphp4-dev\n\nNo, you just need php4-cli (or php5-cli), no -dev needed in this case.\n\n> \tbuild-essential (in Sarge, I can't find build-dep)\n\nYes, you'll need that.\n\n> But I can't find the r-cran-dev or the R-headers in debian sarge.\n\nr-base-dev\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070508/a6e3a17d/attachment.sig>",
+      "body_snippet": "Hi,\n\n> But in debian sarge I found three Qt3-dev packages.\n\nthe correct one is libqt3-mt-dev.\n\nHowever, the easiest way to install all build dependencies (and the \ndependencies those have in turn) on ",
+      "thread_id": "thread-753f5e15d7b5",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-caf57300e5c8",
+      "message_id": "<200705081647.34975.griera@gmail.com>",
+      "from_name": "pep.roca at gmail.com",
+      "from_email_hash": "924c8b9d080f2a26957e146073a448ad99588be6d25107afb11e34e29e58e4a3",
+      "date": "2007-05-08T14:47:34Z",
+      "subject": "[rkward-users] Compile problems on Debian sarge",
+      "subject_clean": "[rkward-users] Compile problems on Debian sarge",
+      "in_reply_to": "<200705081515.35356.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200705081452.08828.griera@gmail.com>",
+        "<200705081515.35356.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Tanks a lot, Thomas. I have followed all the instructions, and all seems to go \nwell, except an error at the end of process:\n\n\nrkcomponentmap.cpp: En member function \n\"QString RKComponentMap::getComponentIdLocal(RKComponentHandle*)\":\nrkcomponentmap.cpp:218: error: error d'analitza before `;' token\nmake[2]: *** [rkcomponentmap.o] Error 1\nmake[2]: Leaving directory \n`/home/totxo/sys/utils/apps/rkward/rkward-0.4.7a/rkward/plugin' make[1]: *** \n[install-recursive] Error 1\nmake[1]: Leaving directory \n`/home/totxo/sys/utils/apps/rkward/rkward-0.4.7a/rkward'\nmake: *** [install-recursive] Error 1\n\n\nThis is serious?\n\nOn the other hand, where the exec is installed? The /usr/bin/rkward is the \nversion 0.4.2 and not the 0.4.7a.\n\nThanks. Regards.\n\nA Dimarts 08 Maig 2007 15:15, Thomas Friedrichsmeier va escriure:\n> Hi,\n>\n> > But in debian sarge I found three Qt3-dev packages.\n>\n> the correct one is libqt3-mt-dev.\n>\n> However, the easiest way to install all build dependencies (and the\n> dependencies those have in turn) on a debian based system is:\n>\n> # apt-get build-dep rkward\n>\n> For completeness, though:\n> > \tkde-devel (and kde-devel-extras?)\n>\n> kdelibs4-dev\n>\n> > \tphp4-dev\n>\n> No, you just need php4-cli (or php5-cli), no -dev needed in this case.\n>\n> > \tbuild-essential (in Sarge, I can't find build-dep)\n>\n> Yes, you'll need that.\n>\n> > But I can't find the r-cran-dev or the R-headers in debian sarge.\n>\n> r-base-dev\n>\n> Regards\n> Thomas",
+      "body_snippet": "Tanks a lot, Thomas. I have followed all the instructions, and all seems to go \nwell, except an error at the end of process:\n\n\nrkcomponentmap.cpp: En member function \n\"QString RKComponentMap::getCompo",
+      "thread_id": "thread-753f5e15d7b5",
+      "thread_depth": 2,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-7737f72cfc6f",
+      "message_id": "<200705081721.38787.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-08T15:21:34Z",
+      "subject": "[rkward-users] Compile problems on Debian sarge",
+      "subject_clean": "[rkward-users] Compile problems on Debian sarge",
+      "in_reply_to": "<200705081647.34975.griera@gmail.com>",
+      "references": [
+        "<200705081452.08828.griera@gmail.com>",
+        "<200705081515.35356.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<200705081647.34975.griera@gmail.com>"
+      ],
+      "body_plain": "On Tuesday 08 May 2007, pep.roca at gmail.com wrote:\n> Tanks a lot, Thomas. I have followed all the instructions, and all seems to\n> go well, except an error at the end of process:\n>\n>\n> rkcomponentmap.cpp: En member function\n> \"QString RKComponentMap::getComponentIdLocal(RKComponentHandle*)\":\n> rkcomponentmap.cpp:218: error: error d'analitza before `;' token\n\nHm, now I recall that I tried some time ago, and saw some problems like this \non sarge. This is a GCC problem. I don't remember which was the default gcc \non sarge. You could try upgrading to gcc-3.4 (appears to be the latest gcc \navailable in sarge), and with a bit of luck that will work.\n\nIn this particular case, chaning \"QString ()\" to \"QString::null\" on line 218 \nof that file should do the trick, but you're likely going to see a number of \nfurther problems.\n\nThe compilation was aborted at this point, so there's more to come.\n\n> This is serious?\n>\n> On the other hand, where the exec is installed? The /usr/bin/rkward is the\n> version 0.4.2 and not the 0.4.7a.\n\nYes, it did not finish compiling, and hence \"make install\" did not install \nanything, either.\n\nOn etch, compilation works smoothly (and in fact, there is a precompiled \npackage at http://rkward.sourceforge.net/debian/stable/), so if you have that \noption, you could upgrade your system to etch.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070508/fb187e78/attachment.sig>",
+      "body_snippet": "On Tuesday 08 May 2007, pep.roca at gmail.com wrote:\n> Tanks a lot, Thomas. I have followed all the instructions, and all seems to\n> go well, except an error at the end of process:\n>\n>\n> rkcomponentma",
+      "thread_id": "thread-753f5e15d7b5",
+      "thread_depth": 3,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-c72af772f35e",
+      "message_id": "<4306679.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-05-10T20:17:53Z",
+      "subject": "[rkward-users] [rkward - Help] can't run or upgrade",
+      "subject_clean": "[rkward-users] [rkward - Help] can't run or upgrade",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306679\nBy: okekarito\n\nI have rkward 0.4.2-2 installed, but when trying to open it I get the message \n\nsymbol lookup error: /usr/bin/rkward.bin: undefined symbol: R_Visible\n\nI have tried to upgrade to 0.4.7a-1 and then I et the message \n\nERROR: dependency not satisfiable: kdelibs4c2a\n\nAny idea?\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306679\nBy: okekarito\n\nI have rkward 0.4.2-2 installed, but when trying to open it I get the message \n\nsymbol loo",
+      "thread_id": "thread-c72af772f35e",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-257ebb7d55f2",
+      "message_id": "<4306686.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-05-10T20:21:57Z",
+      "subject": "[rkward-users] [rkward - Help] it works!!",
+      "subject_clean": "[rkward-users] [rkward - Help] it works!!",
+      "in_reply_to": "<4306679.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306686\nBy: okekarito\n\nI have installed the 0.4.7-2 and it works!  \n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306686\nBy: okekarito\n\nI have installed the 0.4.7-2 and it works!  \n\n____________________________________________",
+      "thread_id": "thread-c72af772f35e",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-f56f4add452b",
+      "message_id": "<4306778.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-05-10T21:29:46Z",
+      "subject": "[rkward-users] [rkward - Help] RE: it works!!",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: it works!!",
+      "in_reply_to": "<4306686.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306778\nBy: tfry\n\nThere is a (potential) problem with 0.4.7-2 in debian unstable, though:\n\nhttp://bugs.debian.org/cgi-bin/bugreport.cgi?bug=422541\n\nIf you get crashes with something like\n\nrkward: symbol lookup error: /usr/lib/R/lib/libRlapack.so: undefined symbol:\n_gfortran_copy_string\n\nin the console, then you will need to upgrade to 0.4.7a (the kdelibs dependency\nproblem should be temporary, I hope). On the other hand, if you are not affected\nby this, then 0.4.7-2 should be good enough.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4306778\nBy: tfry\n\nThere is a (potential) problem with 0.4.7-2 in debian unstable, though:\n\nhttp://bugs.debian.org",
+      "thread_id": "thread-c72af772f35e",
+      "thread_depth": 2,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-06388956676a",
+      "message_id": "<4315096.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-05-16T07:15:45Z",
+      "subject": "[rkward-users] [rkward - Help] how to exit kde without terminating rkward?",
+      "subject_clean": "[rkward-users] [rkward - Help] how to exit kde without terminating rkward?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4315096\nBy: marto1980\n\nHEllo! I am running Slackware Linux 11.0 with kernel test26.s. I have\nrkward-0.4.7-i486-1 installed and currently it is performing a time consuming\ncalculation.\nI want to know if there is some way to exit KDE without stopping the calculations\nperformed by rkward? If there is no such an option, I would be thankful to receive\nsome advice on how to optimise the calculation time. I have already reniced\nthe process to -20. Here is the output of top:\n \n \n COMMAND PID USER PR NI VIRT RES SHR SWAP CODE DATA S %CPU %MEM TIME+\n rkward.bin 26108 marto 0 -20 114m 86m 24m 28m 1084 71m S 92.9 6.9 1048:57\n X 2818 root 15 0 176m 41m 3540 134m 1592 38m S 4.3 3.3 18:23.54\n konsole 2234 marto 15 0 29804 13m 11m 15m 40 1380 S 1.3 1.1 0:01.00\n \nAs you can see the process in question is rkward.bin. I wonder if it is possible\nto exit kde, without killing rkward.bin? Or is there an option the calculations\nto be transmitted to R itself and then exit KDE? R can run without KDE...\n \n Any suggestions will be appreciated.\n Regards,\n Martin\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4315096\nBy: marto1980\n\nHEllo! I am running Slackware Linux 11.0 with kernel test26.s. I have\nrkward-0.4.7-i486-1 ",
+      "thread_id": "thread-06388956676a",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-4dc86025eaf2",
+      "message_id": "<4315456.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-05-16T11:56:39Z",
+      "subject": "[rkward-users] [rkward - Help] RE: how to exit kde without terminating rkward?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: how to exit kde without terminating rkward?",
+      "in_reply_to": "<4315096.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4315456\nBy: tfry\n\nHi Martin,\n\nI'm afraid, there is no good solution to this. The key problem is that the R\nengine is running in the same process as the rest of RKWard, so you can not\njust \"detach\" the GUI from the engine. In the future, perhaps there will be\nthis option, but it's not going to help you much, right now.\n\nAlso, there are not too many options for optimizing the calculation after it\nhas been started. Apart from reniceing, you could kill some unneeded other processes,\nbut chances are this will not have a noticeably impact. You should be able to\nkill most of the KDE-session manually, such as kdesktop, kicker, and even kwin\n(don't trust me on this, though, I have not done any testing!), but I don't\nthink it's worth risking, since the savings should be minimal, and there is\nthe risk of killing something essential, after all. Switching to a console\n(Ctrl+Alt+F1) may save at least some graphics operations (though I suspect,\nthe 4.3% CPU you get for X is mostly caused by running top).\n\nIf starting over with the calculation is an option, you should note that *some*\ntypes of calculations may run considerably faster, if you run in a plain R,\ncompiled without the --enable-shlib option. Also, of course, if it's possible\nto break up the calculation into chunks, that would generally be advisable.\nIf you could post the R code in question, we may (or may not) have some further\nsuggestions, on how the calculation itself could be made more efficient.\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4315456\nBy: tfry\n\nHi Martin,\n\nI'm afraid, there is no good solution to this. The key problem is that the R\nengine",
+      "thread_id": "thread-06388956676a",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-e2626ec4e5f1",
+      "message_id": "<465A66BC.7080208@gmail.com>",
+      "from_name": "Germán Márquez Mejía",
+      "from_email_hash": "2abdd9c11625495c6ab8698c80882b0fc5f890a835447ec191c8fd8173081466",
+      "date": "2007-05-28T05:21:00Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello:\n\nI'm trying to compile RKWard 0.4.7a on Slackware 11.0.  The ./configure\nis fine, but make gives the following:\n\n/bin/sh ../libtool --silent --tag=CXX --mode=link g++  -Wno-long-long\n-Wundef -ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align\n-Wconversion -Wchar-subscripts -Wall -W -Wpointer-arith -O2\n-march=athlon-xp -mfpmath=sse -mfancy-math-387 -O3 -pipe -m3dnow -msse\n-fomit-frame-pointer -Wformat-security -Wmissing-format-attribute\n-Wno-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common    -o\nrkward.bin -L/opt/kde/lib -L/usr/lib/qt/lib -L/usr/X11R6/lib    -R\n/opt/kde/lib -R /opt/kde/lib -R /usr/lib/qt/lib -R /usr/X11R6/lib\nrkward.o main.o rkglobals.o robjectbrowser.o robjectviewer.o rkconsole.o\nrkwardapplication.o rkward_skel.o ../rkward/windows/libwindows.a\n../rkward/agents/libagents.a ../rkward/dialogs/libdialogs.a\n../rkward/plugin/libplugin.a ../rkward/settings/libsettings.a\n../rkward/dataeditor/libdataeditor.a ../rkward/core/libcore.a\n../rkward/rbackend/librbackend.a\n../rkward/scriptbackends/libscriptbackends.a ../rkward/misc/libmisc.a\n-lkhtml -lkmdi -lkio -lkdeui -lkdecore -lqt-mt  -lz -lpng -lz -lm -lXext\n-lX11  -lSM -lICE -lpthread  -L/usr/local/lib/R/lib -lR -lRlapack\n-lgfortran -lRblas -lkatepartinterfaces\n/usr/lib/gcc/i486-slackware-linux/3.4.6/../../../../i486-slackware-linux/bin/ld:\ncannot find -lgfortran\ncollect2: ld returned 1 exit status\nmake[3]: *** [rkward.bin] Error 1\nmake[3]: se sale del directorio `/home/mancho/rkward-0.4.7a/rkward'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: se sale del directorio `/home/mancho/rkward-0.4.7a/rkward'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: se sale del directorio `/home/mancho/rkward-0.4.7a'\nmake: *** [all] Error 2\n\nI've read that this version is a bugfix for some issues with fortran\nsymbols.  I'm not an expert, but I think my problem is related with it.\n\nAnyone can help?  I also attach the ./configure output.\n\nThanks for advance.\n-------------- next part --------------\nAn embedded and charset-unspecified text was scrubbed...\nName: configure.txt\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070528/8b2ad9c4/attachment.txt>",
+      "body_snippet": "Hello:\n\nI'm trying to compile RKWard 0.4.7a on Slackware 11.0.  The ./configure\nis fine, but make gives the following:\n\n/bin/sh ../libtool --silent --tag=CXX --mode=link g++  -Wno-long-long\n-Wundef -a",
+      "thread_id": "thread-e2626ec4e5f1",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-2b341a1695df",
+      "message_id": "<200705281323.42121.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-28T11:23:36Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<465A66BC.7080208@gmail.com>",
+      "references": [
+        "<465A66BC.7080208@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 28 May 2007, Germ?n M?rquez Mej?a wrote:\n> /usr/lib/gcc/i486-slackware-linux/3.4.6/../../../../i486-slackware-linux/bi\n>n/ld: cannot find -lgfortran\n\n[...]\n\n> I've read that this version is a bugfix for some issues with fortran\n> symbols.  I'm not an expert, but I think my problem is related with it.\n\nYes, we now explicitely link against the fortran runtime libraries. These are \nactually needed by R, but somehow do not always get resolved properly at \nruntime. I'm not sure, why this library is not found on your system, as \nusually, it should be a requirement of R, and hence already installed.\n\nThe solution should be to install the package containing libgfortran. \nUnfortunately, I can't tell you the exact name for slackware. On debian \nit's \"libgfortran1\".\n\n> Anyone can help?  I also attach the ./configure output.\n\nI hope this did the trick?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070528/73e96601/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 28 May 2007, Germ?n M?rquez Mej?a wrote:\n> /usr/lib/gcc/i486-slackware-linux/3.4.6/../../../../i486-slackware-linux/bi\n>n/ld: cannot find -lgfortran\n\n[...]\n\n> I've read that this versio",
+      "thread_id": "thread-e2626ec4e5f1",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-40c065af4496",
+      "message_id": "<465CEF98.50407@gmail.com>",
+      "from_name": "Germán Márquez Mejía",
+      "from_email_hash": "2abdd9c11625495c6ab8698c80882b0fc5f890a835447ec191c8fd8173081466",
+      "date": "2007-05-30T03:29:28Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Thank you very, very much.  That was the problem!\n\nThe package in question is gcc-gfortran, but it's only in the\nSlackware-current repositories, not in the Slackware-11.0 ones.\n\nNow, I'm facing another problem: when runing rkward it gives a message\nabout not finding the R library and then hangs.\n\nThis is the output:\n\nkdecore (KAction): WARNING: KAction::insertKAccel( kaccel = 0x8237348 ):\nKAccel object already contains an action name \"window_close\"\n*** attempt to put segment in horiz list twice\n*** attempt to put segment in horiz list twice\n\nR version 2.5.0 (2007-04-23)\nCopyright (C) 2007 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR es un software libre y viene sin GARANTIA ALGUNA.\nUsted puede redistribuirlo bajo ciertas circunstancias.\nEscriba 'license()' o 'licence()' para detalles de distribucion.\n\nR es un proyecto colaborativo con muchos contribuyentes.\nEscriba 'contributors()' para obtener m?s informaci?n y\n'citation()' para saber c?mo citar R o paquetes de R en publicaciones.\n\nEscriba 'demo()' para demostraciones, 'help()' para el sistema on-line\nde ayuda,\no 'help.start()' para abrir el sistema de ayuda HTML con su navegador.\nEscriba 'q()' para salir de R.\n\n[Previously saved workspace restored]\n\nCommand failed (other)\nfailed command was: '.rk.set.reply (NULL)'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment (\".GlobalEnv\"),\n\".GlobalEnv\", envlevel=-1, namespacename=\"\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:stats\"), \"package:stats\", namespacename=\"stats\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:graphics\"), \"package:graphics\", namespacename=\"graphics\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:grDevices\"), \"package:grDevices\", namespacename=\"grDevices\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:utils\"), \"package:utils\", namespacename=\"utils\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:datasets\"), \"package:datasets\", namespacename=\"datasets\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment\n(\"package:methods\"), \"package:methods\", namespacename=\"methods\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment (\"Autoloads\"),\n\"Autoloads\", namespacename=\"\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment (\"package:base\"),\n\"package:base\", namespacename=\"base\")'\n- error message was: '(null)'\nAssert failed at robjectlist.cpp - function getGlobalEnv line 296\nAssert failed at rkobjectlistview.cpp - function initialize line 150\nCommand failed (other)\nfailed command was: '.rk.get.structure (as.environment (\".GlobalEnv\"),\n\".GlobalEnv\", envlevel=-1, namespacename=\"\")'\n- error message was: '(null)'\nCommand failed (other)\nfailed command was: '.rk.get.installed.packages ()[[1]]'\n- error message was: '(null)'\nTerminado (killed)\n\nAny suggestions?",
+      "body_snippet": "Thank you very, very much.  That was the problem!\n\nThe package in question is gcc-gfortran, but it's only in the\nSlackware-current repositories, not in the Slackware-11.0 ones.\n\nNow, I'm facing anothe",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 0,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-9230a9eea520",
+      "message_id": "<200705301104.00752.ertugrulerata@gmail.com>",
+      "from_name": "ertugrulerata",
+      "from_email_hash": "4a90ec559fe3e405d669604eae8c225218310d86e2391a9b590f5000a214e11d",
+      "date": "2007-05-30T08:04:00Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<465CEF98.50407@gmail.com>",
+      "references": [
+        "<465CEF98.50407@gmail.com>"
+      ],
+      "body_plain": "On Wednesday 30 May 2007 06:29:28 Germ?n M?rquez Mej?a wrote:\n> Thank you very, very much.  That was the problem!\n>\n> The package in question is gcc-gfortran, but it's only in the\n> Slackware-current repositories, not in the Slackware-11.0 ones.\n>\n> Now, I'm facing another problem: when runing rkward it gives a message\n> about not finding the R library and then hangs.\n>\n> This is the output:\n>\n> kdecore (KAction): WARNING: KAction::insertKAccel( kaccel = 0x8237348 ):\n> KAccel object already contains an action name \"window_close\"\n> *** attempt to put segment in horiz list twice\n> *** attempt to put segment in horiz list twice\n>\n> R version 2.5.0 (2007-04-23)\n> Copyright (C) 2007 The R Foundation for Statistical Computing\n> ISBN 3-900051-07-0\n>\n> R es un software libre y viene sin GARANTIA ALGUNA.\n> Usted puede redistribuirlo bajo ciertas circunstancias.\n> Escriba 'license()' o 'licence()' para detalles de distribucion.\n>\n> R es un proyecto colaborativo con muchos contribuyentes.\n> Escriba 'contributors()' para obtener m?s informaci?n y\n> 'citation()' para saber c?mo citar R o paquetes de R en publicaciones.\n>\n> Escriba 'demo()' para demostraciones, 'help()' para el sistema on-line\n> de ayuda,\n> o 'help.start()' para abrir el sistema de ayuda HTML con su navegador.\n> Escriba 'q()' para salir de R.\n>\n> [Previously saved workspace restored]\n>\n> Command failed (other)\n> failed command was: '.rk.set.reply (NULL)'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment (\".GlobalEnv\"),\n> \".GlobalEnv\", envlevel=-1, namespacename=\"\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:stats\"), \"package:stats\", namespacename=\"stats\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:graphics\"), \"package:graphics\", namespacename=\"graphics\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:grDevices\"), \"package:grDevices\", namespacename=\"grDevices\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:utils\"), \"package:utils\", namespacename=\"utils\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:datasets\"), \"package:datasets\", namespacename=\"datasets\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment\n> (\"package:methods\"), \"package:methods\", namespacename=\"methods\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment (\"Autoloads\"),\n> \"Autoloads\", namespacename=\"\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment (\"package:base\"),\n> \"package:base\", namespacename=\"base\")'\n> - error message was: '(null)'\n> Assert failed at robjectlist.cpp - function getGlobalEnv line 296\n> Assert failed at rkobjectlistview.cpp - function initialize line 150\n> Command failed (other)\n> failed command was: '.rk.get.structure (as.environment (\".GlobalEnv\"),\n> \".GlobalEnv\", envlevel=-1, namespacename=\"\")'\n> - error message was: '(null)'\n> Command failed (other)\n> failed command was: '.rk.get.installed.packages ()[[1]]'\n> - error message was: '(null)'\n> Terminado (killed)\n>\n> Any suggestions?\n>\n> -------------------------------------------------------------------------\n> This SF.net email is sponsored by DB2 Express\n> Download DB2 Express C - the FREE version of DB2 express and take\n> control of your XML. No limits. Just data. Click to get it now.\n> http://sourceforge.net/powerbar/db2/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n\nsalut\n\nman system pardus a meme probleme ; ici mon patch :\n\n\ndiff -Nuar rkward-0.4.7a.orig/configure rkward-0.4.7a/configure\n--- rkward-0.4.7a.orig/configure        2007-05-07 14:10:22.000000000 +0300\n+++ rkward-0.4.7a/configure     2007-05-07 17:02:04.000000000 +0300\n@@ -31217,7 +31217,7 @@\n if test -f \"$R_HOMEDIR/lib/libRlapack.so\"; then\n    { echo \"$as_me:$LINENO: result: yes $R_HOMEDIR/lib/libRlapack.so exists\" \n>&5\n echo \"${ECHO_T}yes $R_HOMEDIR/lib/libRlapack.so exists\" >&6; }\n-   R_LAPACK_FLAG=\"-lRlapack -lgfortran\"\n+   R_LAPACK_FLAG=\"-lRlapack\"\n else\n    { echo \"$as_me:$LINENO: result: no $R_HOMEDIR/lib/libRlapack.so does not \nexist\" >&5\n echo \"${ECHO_T}no $R_HOMEDIR/lib/libRlapack.so does not exist\" >&6; }",
+      "body_snippet": "On Wednesday 30 May 2007 06:29:28 Germ?n M?rquez Mej?a wrote:\n> Thank you very, very much.  That was the problem!\n>\n> The package in question is gcc-gfortran, but it's only in the\n> Slackware-current ",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-cf9c72222e9c",
+      "message_id": "<200705301147.17904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-30T09:47:12Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<465CEF98.50407@gmail.com>",
+      "references": [
+        "<465CEF98.50407@gmail.com>"
+      ],
+      "body_plain": "On Wednesday 30 May 2007, Germ?n M?rquez Mej?a wrote:\n> Now, I'm facing another problem: when runing rkward it gives a message\n> about not finding the R library and then hangs.\n\n[...]\n\n> Any suggestions?\n\nDid you do\n\tsudo make install\n? What do you get, if you start a plain R session (outside of rkward) and then \ndo\n\tlibrary (rkward)\n\t.rk.set.reply (NULL)\n\tbase::q()\n?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070530/36d769dc/attachment.sig>",
+      "body_snippet": "On Wednesday 30 May 2007, Germ?n M?rquez Mej?a wrote:\n> Now, I'm facing another problem: when runing rkward it gives a message\n> about not finding the R library and then hangs.\n\n[...]\n\n> Any suggestio",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 1,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-2f01a3266c81",
+      "message_id": "<465D9166.5080009@gmail.com>",
+      "from_name": "Germán Márquez Mejía",
+      "from_email_hash": "2abdd9c11625495c6ab8698c80882b0fc5f890a835447ec191c8fd8173081466",
+      "date": "2007-05-30T14:59:50Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<200705301147.17904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<465CEF98.50407@gmail.com>",
+        "<200705301147.17904.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070530/649b0cb5/attachment.html>",
+      "body_snippet": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070530/649b0cb5/attachment.html>",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 2,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-f6bac811a5ce",
+      "message_id": "<200705311200.14114.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-05-31T10:00:09Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<465D9166.5080009@gmail.com>",
+      "references": [
+        "<465CEF98.50407@gmail.com>",
+        "<200705301147.17904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<465D9166.5080009@gmail.com>"
+      ],
+      "body_plain": "On Wednesday 30 May 2007, Germ?n M?rquez Mej?a wrote:\n>  Now I'm figuring it out: I ran make install with \nDESTDIR=/home/user/rkwardrkward-0.4.7a/BUILD to create a Slackware package.? \nThe difference is that, when I do so, it doesn't link/install the R package \ncorrectly (I asume).? This is what I get with the \"package\" installation:\n\n[...]\n\n>  I'm pretty sure that that the permissions of the package contents are\n> correct.? The fact is that you'd expect not to find any differences between\n> the \"package\" installation (with DESTDIR) and the \"direct\" one (make\n> install alone).? For now, I have no problem with \"direct\" installation\n> since it works well, but this does represent a problem to the distribution\n> of binaries in Slackware. Although, perhaps it's not a generalised problem\n> but a mistake of my own in the package creation process.\n\nHm. This is supposed to work (of course you still need to install the \npackage/the DESTDIR contents in a second step). In fact, the debian packages \n(and probably most others) are created in just the same way. Perhaps you can \ntake a look there, to see if there are any obvious differences: \nhttp://rkward.svn.sourceforge.net/viewvc/rkward/trunk/rkward/debian/rules?revision=1835&view=markup .\n\nOf course an updated slackware package would be very nice to have, so don't \nhestitate to ask for help (probably rather on rkward-devel than \nrkward-users).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 189 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070531/c7ad32a7/attachment.sig>",
+      "body_snippet": "On Wednesday 30 May 2007, Germ?n M?rquez Mej?a wrote:\n>  Now I'm figuring it out: I ran make install with \nDESTDIR=/home/user/rkwardrkward-0.4.7a/BUILD to create a Slackware package.? \nThe difference ",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 3,
+      "month": "2007-05"
+    },
+    {
+      "id": "msg-dcdd50538a3b",
+      "message_id": "<465F671B.2070707@gmail.com>",
+      "from_name": "Germán Márquez Mejía",
+      "from_email_hash": "2abdd9c11625495c6ab8698c80882b0fc5f890a835447ec191c8fd8173081466",
+      "date": "2007-06-01T00:23:55Z",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "subject_clean": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "in_reply_to": "<200705311200.14114.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<465CEF98.50407@gmail.com>",
+        "<200705301147.17904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<465D9166.5080009@gmail.com>",
+        "<200705311200.14114.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070531/ca4dac33/attachment.html>",
+      "body_snippet": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070531/ca4dac33/attachment.html>",
+      "thread_id": "thread-40c065af4496",
+      "thread_depth": 4,
+      "month": "2007-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b8cae4801343",
+      "subject": "[rkward-users] Bugfix release 0.4.7a",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "ertugrulerata"
+      ],
+      "started": "2007-05-07T12:09:45Z",
+      "last_reply": "2007-05-07T14:50:20Z",
+      "root_message_id": "msg-b8cae4801343"
+    },
+    {
+      "id": "thread-753f5e15d7b5",
+      "subject": "[rkward-users] Compile problems on Debian sarge",
+      "message_count": 4,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "pep.roca at gmail.com"
+      ],
+      "started": "2007-05-08T12:52:08Z",
+      "last_reply": "2007-05-08T15:21:34Z",
+      "root_message_id": "msg-753f5e15d7b5"
+    },
+    {
+      "id": "thread-c72af772f35e",
+      "subject": "[rkward-users] [rkward - Help] can't run or upgrade",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-05-10T20:17:53Z",
+      "last_reply": "2007-05-10T21:29:46Z",
+      "root_message_id": "msg-c72af772f35e"
+    },
+    {
+      "id": "thread-06388956676a",
+      "subject": "[rkward-users] [rkward - Help] how to exit kde without terminating rkward?",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-05-16T07:15:45Z",
+      "last_reply": "2007-05-16T11:56:39Z",
+      "root_message_id": "msg-06388956676a"
+    },
+    {
+      "id": "thread-e2626ec4e5f1",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "message_count": 2,
+      "participants": [
+        "Germán Márquez Mejía",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2007-05-28T05:21:00Z",
+      "last_reply": "2007-05-28T11:23:36Z",
+      "root_message_id": "msg-e2626ec4e5f1"
+    },
+    {
+      "id": "thread-40c065af4496",
+      "subject": "[rkward-users] Problem compiling: cannot find -lgfortran",
+      "message_count": 6,
+      "participants": [
+        "Germán Márquez Mejía",
+        "Thomas Friedrichsmeier",
+        "ertugrulerata"
+      ],
+      "started": "2007-05-30T03:29:28Z",
+      "last_reply": "2007-06-01T00:23:55Z",
+      "root_message_id": "msg-40c065af4496"
+    }
+  ]
+}

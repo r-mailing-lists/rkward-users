@@ -1,0 +1,224 @@
+From robertssf at franciscans.org.uk  Thu Feb 13 14:33:08 2014
+From: robertssf at franciscans.org.uk (robertssf at franciscans.org.uk)
+Date: Thu, 13 Feb 2014 14:33:08 +0000
+Subject: [rkward-users] Problems installing the latest version of RKWARD
+Message-ID: <69476d9bd2e52a97dcb5dc32231f0f58@franciscans.org.uk>
+
+Hi,
+
+I would be very grateful, if somebody could help me with this problem.
+
+I would like to install RKWARD in the latest version on my computer 
+(Ubuntu 12.04 LTS), as Ubuntu only offers RKWARD 0.5.7. So I followed 
+the instructions on the website in the Terminal.
+
+I've added this to my sources list
+# the latest source packages for all debian distributions
+deb-src http://rkward.sourceforge.net/debian ./
+
+# update package cache
+sudo apt-get update
+# fetch build dependencies
+sudo apt-get build-dep rkward
+# fetch and build sources
+apt-get source -b rkward
+
+I've done everything up to this point. However when I went on to
+
+# finally, install the resulting package
+# its name should look something like "rkward_[VERSION]_[ARCH].deb", 
+e.g.:
+sudo dpkg -i rkward_0.6.1-1_amd64.deb
+
+the Terminal said: Error, no such file or directory.
+
+Then I tried to install the programme via PPA. As I had already 
+installed R from the CRAN website, I've added 
+ppa:rkward-devel/rkward-stable-cran  to my sources.list went to
+
+sudo apt-get update
+
+and finally
+
+sudo apt-get install software rkward.
+
+The feedback from the Terminal was "Unable to locate package software".
+
+Finally, I installed the version of RKWARD that Ubuntu offers in its 
+Software Centre and tried to upgrade it. I've added 
+ppa:rkward-devel/rkward-stable to my PPA's, updated and typed
+
+sudo apt-get dist-upgrade
+
+into the Terminal.
+
+When I've started RKWARD afterwards, the programme informed me
+
+"There was a problem starting the R backend. The following error(s) 
+occurred:
+- The 'rkward' R-library either could not be loaded at all, or not in 
+the correct version. This may lead to all sorts of errors, from single 
+missing features to complete failure to function. The most likely cause 
+is that the last installation did not place all files in the correct 
+place. However, in some cases, left-overs from a previous installation 
+that was not cleanly removed may be the cause.
+You should quit RKWard, now, and fix your installation. For help with 
+that, see http://p.sf.net/rkward/compiling.
+-There was a problem setting up the communication with R. Most likely 
+this indicates a broken installation.
+
+Is there any way for me to upgrade to the latest version of RKWARD? I 
+would really appreciate your help. Thank you very much, Robert.
+You should quit RKWard, now, and fix your installation. For help with 
+that, see http://p.sf.net/rkward/compiling.
+-An unspecified error occurred that is not yet handled by RKWard. Likely 
+RKWard will not function properly. Please check your setup. "
+
+
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Feb 14 11:17:05 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 14 Feb 2014 12:17:05 +0100
+Subject: [rkward-users] Problems installing the latest version of RKWARD
+In-Reply-To: <69476d9bd2e52a97dcb5dc32231f0f58@franciscans.org.uk>
+References: <69476d9bd2e52a97dcb5dc32231f0f58@franciscans.org.uk>
+Message-ID: <5973117.kXZbh8T35t@late>
+
+Hi!
+
+On Wednesday 12 February 2014 21:00:33 you wrote:
+> I've done everything up to this point. However when I went on to
+> 
+> # finally, install the resulting package
+> # its name should look something like "rkward_[VERSION]_[ARCH].deb",
+> e.g.:
+> sudo dpkg -i rkward_0.6.1-1_amd64.deb
+
+Try locating that file in your file browser. If your architecture is not 
+amd64, you will have to substitute that.
+
+> Then I tried to install the programme via PPA. As I had already
+> installed R from the CRAN website, I've added
+> ppa:rkward-devel/rkward-stable-cran  to my sources.list went to
+> 
+> sudo apt-get update
+> 
+> and finally
+> 
+> sudo apt-get install software rkward.
+> 
+> The feedback from the Terminal was "Unable to locate package software".
+
+It's
+  sudo apt-get install rkward
+not
+  sudo apt-get install software rkward
+.
+ 
+> Finally, I installed the version of RKWARD that Ubuntu offers in its
+> Software Centre and tried to upgrade it. I've added
+> ppa:rkward-devel/rkward-stable to my PPA's, updated and typed
+
+Please check your list of PPAs. You should have exactly _one_ rkward PPA. 
+Typically rkward-stable (if you are using the version of R that came with 
+Ubuntu 12.04) or rkward-stable-cran (if you are using R 3.0.0 or later).
+
+Then repeat
+  sudo apt-get update
+clean up using
+  sudo apt-get remove rkward
+then finally
+  sudo apt-get install rkward
+
+If that does not work for some reason, just ask again, including 
+the output of
+  aptitude show rkward
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140214/ab93ad23/attachment.sig>
+
+From thethunderchimp at users.sf.net  Sun Feb 23 23:36:11 2014
+From: thethunderchimp at users.sf.net (The Thunder Chimp)
+Date: Sun, 23 Feb 2014 23:36:11 +0000
+Subject: [rkward-users] [rkward:discussion] Using the RKward console
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/530A7EB5.2060106@gmail.com>
+
+Hi,
+
+I'm new to RKward. I can't seem to manage to use the console correctly. 
+When I type in 2+2, 4 isn't output.
+When I press Shift+F7, so as to run the selected line, nothing happens. 
+How can I get output out of the console at the bottom of the screen.
+
+
+---
+
+[Using the RKward console](http://sourceforge.net/p/rkward/discussion/165574/thread/acbb4427/?limit=25#080a)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to http://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at http://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140223/4a8e5d12/attachment.html>
+
+From tfry at users.sf.net  Mon Feb 24 09:42:22 2014
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Mon, 24 Feb 2014 09:42:22 +0000
+Subject: [rkward-users] [rkward:discussion] Using the RKward console
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/accabfb5d665823c0293d94c2723f87adf7dce4e.discussion@rkward.p.sourceforge.net>
+
+Hi!
+
+You are talking about the tool window labelled "R Console", right?
+
+> When I type in 2+2, 4 isn't output.
+
+Then what is the output you get?
+
+> When I press Shift+F7, so as to run the selected line, nothing happens. 
+
+That shortcut is not available inside the console. Use Shift+F8 to run the selection (not necessarily exactly one line). Use Up-Arrow to review / reuse commands that you entered, before.
+
+> How can I get output out of the console at the bottom of the screen.
+
+You mean, how to send output to the "Output Window"? There are special commands for that, most importantly rk.print(). Alternatively, if you simply want to log your work, use "Run->CC commands to output".
+
+Hope this helps. Keep asking, if problems persist (but make sure to include your RKWard version number, next time).
+
+Regards
+Thomas
+
+
+---
+
+[Using the RKward console](https://sourceforge.net/p/rkward/discussion/165574/thread/acbb4427/?limit=25#6457)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140224/882b6d45/attachment.html>
+

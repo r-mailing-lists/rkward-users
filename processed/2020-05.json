@@ -1,0 +1,82 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2020-05",
+  "messages": [
+    {
+      "id": "msg-d18400a3bb95",
+      "message_id": "<20200524101417.1c3d296a@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2020-05-24T08:14:17Z",
+      "subject": "RKWard and R 4.0.0 - Important bug and workaround",
+      "subject_clean": "RKWard and R 4.0.0 - Important bug and workaround",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThis is a note of caution about using RKWard with R 4.0.0:\n\n-- Problem --\n\nThere is a bug in R 4.0.0 with respect to active bindings, which RKWard\nis relatively likely to trigger. Running the following code *twice*\nwill render your RKWard session unusable, and **could result in\nloss of data**:\n\n  for (i in 1:2) { print (i) }\n\nNote that this affects top-level statements, only, i.e. in general code\nthat you enter in the console of run from a script, directly. Not code\nin packages or RKWard plugins.\n\n-- Workaround --\n\nIf you have the choice, please delay upgrading R until R 4.0.1 is\nreleased.\n\nIf you have already installed R 4.0.0, you should set the option\n\n  compiler::enableJIT(2)  # or a lower value\n\nin each session. This can also be made permanent by copying it into\nthe field \"Futher option commands to run in each session\" in\nSettings->Configure RKWard->R-Backend.\n\n-- Outlook --\n\nThe bug has been fixed in R devel, but no release date has been set to\nR 4.0.1, yet. I will probably create a \"bugfix\"-release that enables\nthe above workaround by default in the coming day. Meanwhile I have\nstarted working on a new approach to object modification detection that\ndoes not rely on active bindings.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200524/765d0155/attachment.sig>",
+      "body_snippet": "Hi!\n\nThis is a note of caution about using RKWard with R 4.0.0:\n\n-- Problem --\n\nThere is a bug in R 4.0.0 with respect to active bindings, which RKWard\nis relatively likely to trigger. Running the fol",
+      "thread_id": "thread-d18400a3bb95",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-cd05aa27d56d",
+      "message_id": "<20200525221826.2bd5da6d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2020-05-25T20:18:26Z",
+      "subject": "RKWard 0.7.1b is available",
+      "subject_clean": "RKWard 0.7.1b is available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nAs announced, I have prepared a hotfix release to work around the\nactive binding bug in R 4.0.0. Users of R 4.0.0 are strongly\nencouraged to upgrade to RKWard 0.7.1b.\n\nThe release also addresses two further issues. More details and\ndownload links to be found at https://www.kde.org .\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200525/ec5f7dca/attachment.sig>",
+      "body_snippet": "Hi!\n\nAs announced, I have prepared a hotfix release to work around the\nactive binding bug in R 4.0.0. Users of R 4.0.0 are strongly\nencouraged to upgrade to RKWard 0.7.1b.\n\nThe release also addresses ",
+      "thread_id": "thread-cd05aa27d56d",
+      "thread_depth": 0,
+      "month": "2020-05"
+    },
+    {
+      "id": "msg-a34e10c4d812",
+      "message_id": "<2722341.OnoKAujVRl@ryz>",
+      "from_name": "Johannes Ranke",
+      "from_email_hash": "70f405e66820344ddf650838db2a676ed8d926ceb30aa8cf158ab94fa0d64f43",
+      "date": "2020-05-26T09:23:17Z",
+      "subject": "RKWard 0.7.1b is available",
+      "subject_clean": "RKWard 0.7.1b is available",
+      "in_reply_to": "<20200525221826.2bd5da6d@booklife>",
+      "references": [
+        "<20200525221826.2bd5da6d@booklife>"
+      ],
+      "body_plain": "Hi Thomas,\n\nich habe den backport auf CRAN aktualisiert. Der wird ja dann vermutlich auch \nweiterhin funktionieren, wenn R 4.0.1 am 6. Juni veröffentlicht wird, stimmt's?\n\nViele Grüße,\n\nJohannes\n\nAm Montag, 25. Mai 2020, 22:18:26 CEST schrieb Thomas Friedrichsmeier:\n> Hi!\n> \n> As announced, I have prepared a hotfix release to work around the\n> active binding bug in R 4.0.0. Users of R 4.0.0 are strongly\n> encouraged to upgrade to RKWard 0.7.1b.\n> \n> The release also addresses two further issues. More details and\n> download links to be found at https://www.kde.org .\n> \n> Regards\n> Thomas",
+      "body_snippet": "Hi Thomas,\n\nich habe den backport auf CRAN aktualisiert. Der wird ja dann vermutlich auch \nweiterhin funktionieren, wenn R 4.0.1 am 6. Juni veröffentlicht wird, stimmt's?\n\nViele Grüße,\n\nJohannes\n\nAm M",
+      "thread_id": "thread-cd05aa27d56d",
+      "thread_depth": 1,
+      "month": "2020-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d18400a3bb95",
+      "subject": "RKWard and R 4.0.0 - Important bug and workaround",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2020-05-24T08:14:17Z",
+      "last_reply": "2020-05-24T08:14:17Z",
+      "root_message_id": "msg-d18400a3bb95"
+    },
+    {
+      "id": "thread-cd05aa27d56d",
+      "subject": "RKWard 0.7.1b is available",
+      "message_count": 2,
+      "participants": [
+        "Johannes Ranke",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2020-05-25T20:18:26Z",
+      "last_reply": "2020-05-26T09:23:17Z",
+      "root_message_id": "msg-cd05aa27d56d"
+    }
+  ]
+}

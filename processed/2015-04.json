@@ -1,0 +1,87 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2015-04",
+  "messages": [
+    {
+      "id": "msg-dd32ea937d26",
+      "message_id": "</p/rkward/discussion/165574/42ed9ba3d43e86f705f3a188579329333ee5ec98.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Juan F",
+      "from_email_hash": "9f3471746ab6f0d8715f72543dafe64e645e0070fc477bc5a29b6e994159f2a7",
+      "date": "2015-04-11T02:42:58Z",
+      "subject": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "subject_clean": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Hi Everybody,\n\nI need to use Non Linear Regression Tools in R, like \"nstools\" or \"nls\". How Can I use these or others Non linear Regression packages in Rkward? I have installed Rkward 0.6.3 on Linux Mint 17.1.\n\nThanks for your help!\n\n\n---\n\n[Non Linear Tools in Rkward](https://sourceforge.net/p/rkward/discussion/165574/thread/e7910cd9/?limit=25#5a49)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150411/c2c49cce/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nBPM Camp - Free Virtual Workshop May 6th at 10am PDT/1PM EDT\nDevelop your own process in accordance with the BPMN 2 standard\nLearn Process modeling best practices with Bonita BPM through live exercises\nhttp://www.bonitasoft.com/be-part-of-it/events/bpm-camp-virtual- event?utm_\nsource=Sourceforge_BPM_Camp_5_6_15&utm_medium=email&utm_campaign=VA_SF\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi Everybody,\n\nI need to use Non Linear Regression Tools in R, like \"nstools\" or \"nls\". How Can I use these or others Non linear Regression packages in Rkward? I have installed Rkward 0.6.3 on Linux M",
+      "thread_id": "thread-dd32ea937d26",
+      "thread_depth": 0,
+      "month": "2015-04"
+    },
+    {
+      "id": "msg-80c87dd2a208",
+      "message_id": "</p/rkward/discussion/165574/3bcf27af3b0f722f9e6c10c3305279fc244d0315.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2015-04-12T08:07:51Z",
+      "subject": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "subject_clean": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Hi!\n\nThe functionality covered by graphical dialogs in RKWard is still somewhat limited, and does not include non-linear regression - in the official distribution.\n\nThe separately available package rk.Teaching provides some support for non-linear regression. As far as I am aware, it is only available in Spanish, ATM, and you'll have to check for yourself, whether it covers the functionality you need. You can install this using \"Settings->Manage R packages and plugins...\"\n\nApart from this, RKWard provides full access to R, and thus you can do simply use R inside RKWard, interactively (using the \"R Console\"-window), or by writing a script. You will still be able to profit from graphical functionality e.g. for importing/editing data, etc.\n\nIf your question is about installing R packages, specifically, the answer is simple: Either use\n\n     install.packages()\n\nas in regular R, or the RKWards graphical package management dialog (\"Settings->Manage R packages and plugins...\").\n\nRegards\nThomas\n\n\n---\n\n[Non Linear Tools in Rkward](https://sourceforge.net/p/rkward/discussion/165574/thread/e7910cd9/?limit=25#219b)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150412/43a1b7e0/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nBPM Camp - Free Virtual Workshop May 6th at 10am PDT/1PM EDT\nDevelop your own process in accordance with the BPMN 2 standard\nLearn Process modeling best practices with Bonita BPM through live exercises\nhttp://www.bonitasoft.com/be-part-of-it/events/bpm-camp-virtual- event?utm_\nsource=Sourceforge_BPM_Camp_5_6_15&utm_medium=email&utm_campaign=VA_SF\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi!\n\nThe functionality covered by graphical dialogs in RKWard is still somewhat limited, and does not include non-linear regression - in the official distribution.\n\nThe separately available package rk",
+      "thread_id": "thread-80c87dd2a208",
+      "thread_depth": 0,
+      "month": "2015-04"
+    },
+    {
+      "id": "msg-c6cce6cd8a41",
+      "message_id": "</p/rkward/discussion/165574/ee6120f20a995d6e4d1b571437ba519b591b8116.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Juan F",
+      "from_email_hash": "9f3471746ab6f0d8715f72543dafe64e645e0070fc477bc5a29b6e994159f2a7",
+      "date": "2015-04-14T13:01:57Z",
+      "subject": "[rkward-users] [rkward:discussion] Re: Non Linear Tools in Rkward",
+      "subject_clean": "[rkward-users] [rkward:discussion] Re: Non Linear Tools in Rkward",
+      "in_reply_to": "</p/rkward/discussion/165574/3bcf27af3b0f722f9e6c10c3305279fc244d0315.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+        "</p/rkward/discussion/165574/3bcf27af3b0f722f9e6c10c3305279fc244d0315.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Thanks Thomas for your answer and your time. I will check rk package. I am a begginer in R and I am still learning about the use of the console.\n\nRegards,\n\nJuan.\n\n\n---\n\n[Non Linear Tools in Rkward](https://sourceforge.net/p/rkward/discussion/165574/thread/e7910cd9/?limit=25#219b/9885)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150414/e8bf222d/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nBPM Camp - Free Virtual Workshop May 6th at 10am PDT/1PM EDT\nDevelop your own process in accordance with the BPMN 2 standard\nLearn Process modeling best practices with Bonita BPM through live exercises\nhttp://www.bonitasoft.com/be-part-of-it/events/bpm-camp-virtual- event?utm_\nsource=Sourceforge_BPM_Camp_5_6_15&utm_medium=email&utm_campaign=VA_SF\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Thanks Thomas for your answer and your time. I will check rk package. I am a begginer in R and I am still learning about the use of the console.\n\nRegards,\n\nJuan.\n\n\n---\n\n[Non Linear Tools in Rkward](ht",
+      "thread_id": "thread-80c87dd2a208",
+      "thread_depth": 1,
+      "month": "2015-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-dd32ea937d26",
+      "subject": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "message_count": 1,
+      "participants": [
+        "Juan F"
+      ],
+      "started": "2015-04-11T02:42:58Z",
+      "last_reply": "2015-04-11T02:42:58Z",
+      "root_message_id": "msg-dd32ea937d26"
+    },
+    {
+      "id": "thread-80c87dd2a208",
+      "subject": "[rkward-users]  [rkward:discussion] Non Linear Tools in Rkward",
+      "message_count": 2,
+      "participants": [
+        "Juan F",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2015-04-12T08:07:51Z",
+      "last_reply": "2015-04-14T13:01:57Z",
+      "root_message_id": "msg-80c87dd2a208"
+    }
+  ]
+}

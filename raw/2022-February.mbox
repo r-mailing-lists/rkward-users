@@ -1,0 +1,94 @@
+From vojtech.zeisek at opensuse.org  Sat Feb  5 18:52:17 2022
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Sat, 05 Feb 2022 19:52:17 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <4982409.TVDpdRerln@veles>
+References: <2154560.aLCPS8EEhN@tilia> <20220124194000.7d8f24fe@booklife>
+ <4982409.TVDpdRerln@veles>
+Message-ID: <8844125.GMFoALFxkl@tilia>
+
+Hello,
+sorry for late reply. I compiled Git snapshot (I kept version number) at 
+<https://build.opensuse.org/package/show/home:vojtaeus/rkward> and I still get 
+the "'rk.show.question' is deprecated." warning... :-( I hope I haven't done 
+anything wrong, I just cloned <https://invent.kde.org/education/rkward>
+Few notes from compilation:
+1) README.translations references for fetching translations usage of "scripts/
+import_translations.py" or "git://anongit.kde.org/scratch/tfry/rkward-po-
+export", but as they are at <https://invent.kde.org/tfry/rkward-po-export>, 
+both ways fail.
+2) openSUSE Rpmlint complains about:
+W: gzipped-svg-icon /usr/share/icons/hicolor/scalable/apps/rkward.svgz
+Not all desktop environments that support SVG icons support them gzipped 
+(.svgz). Install the icon as plain uncompressed SVG.
+W: files-duplicate /usr/share/rkward/data/multi_input.js /usr/share/rkward/
+data/level_select.js (the files are indeed identical)
+I also removed patch <https://build.opensuse.org/package/view_file/
+devel:languages:R:released/rkward/patch-fix-crash-ggplot2.diff?expand=1> as it 
+should be already unneeded.
+
+Dne úterý 25. ledna 2022 18:58:55 CET jste napsal(a):
+> Dne pondělí 24. ledna 2022 19:40:00 CET, Thomas Friedrichsmeier napsal(a):
+> > On Sun, 23 Jan 2022 23:32:20 +0100 wrote:
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220205/e07f8d7a/attachment.sig>
+
+From vojtech.zeisek at opensuse.org  Sat Feb  5 19:34:49 2022
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Sat, 05 Feb 2022 20:34:49 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <8844125.GMFoALFxkl@tilia>
+References: <2154560.aLCPS8EEhN@tilia> <4982409.TVDpdRerln@veles>
+ <8844125.GMFoALFxkl@tilia>
+Message-ID: <9241405.Y5MKg7Ryj6@tilia>
+
+Dne sobota 5. února 2022 19:52:17 CET jste napsal(a):
+> Hello,
+> sorry for late reply. I compiled Git snapshot (I kept version number) at
+> <https://build.opensuse.org/package/show/home:vojtaeus/rkward> and I still
+> get the "'rk.show.question' is deprecated." warning... :-( I hope I haven't
+> done anything wrong, I just cloned <https://invent.kde.org/education/rkward>
+
+This was my fault, caching problem in the repository. It's fine, of course.
+
+> Few notes from compilation:
+> 1) README.translations references for fetching translations usage of
+> "scripts/ import_translations.py" or
+> "git://anongit.kde.org/scratch/tfry/rkward-po- export", but as they
+> are at <https://invent.kde.org/tfry/rkward-po-export>, both ways fail.
+> 2) openSUSE Rpmlint complains about:
+> W: gzipped-svg-icon /usr/share/icons/hicolor/scalable/apps/rkward.svgz
+> Not all desktop environments that support SVG icons support them gzipped
+> (.svgz). Install the icon as plain uncompressed SVG.
+> W: files-duplicate /usr/share/rkward/data/multi_input.js /usr/share/
+> rkward/data/level_select.js (the files are indeed identical)
+> I also removed patch <https://build.opensuse.org/package/view_file/
+> devel:languages:R:released/rkward/patch-fix-crash-ggplot2.diff?expand=1>
+> as it should be already unneeded.
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220205/cb40b8c3/attachment.sig>
+

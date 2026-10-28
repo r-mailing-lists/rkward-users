@@ -1,0 +1,146 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2010-03",
+  "messages": [
+    {
+      "id": "msg-fd48fada1ecf",
+      "message_id": "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-03-06T13:56:35Z",
+      "subject": "[rkward-users] Preview release of RKWard 0.4.9c for KDE 3",
+      "subject_clean": "[rkward-users] Preview release of RKWard 0.4.9c for KDE 3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nFor those who are still using KDE 3 based systems: Please download and test \nrkward-0.4.9c-pre1 (http://p.sf.net/rkward/download). This finally brings \nsupport for the dynamic help system in R 2.10.x, and has a number of further \nfixes backported from the main development line.\n\n-- Release Schedule --\n\nI am unsure, how many of you still have an active interest in these \ncompatibility releases, therefore I do not propose any specific timeline. If \nyou are going to participate testing, please let me know, how much time you \nwill need. I'd like to get this off my TODO list, soon, but of course it should \nget a decent amount of testing (esp. since this will hopefully be the last KDE \n3 compatibilty release we need).\n\n-- Things to look out for in testing --\n\n- Most importanty, of course, please give the help system (help browsing, \nfollowing links, help search) a decent round of testing.\n- If could test with different versions of R (if possible, including \nprereleases of R 2.11.x), that would be really helpful.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100306/b9a5d92d/attachment.sig>",
+      "body_snippet": "Hi!\n\nFor those who are still using KDE 3 based systems: Please download and test \nrkward-0.4.9c-pre1 (http://p.sf.net/rkward/download). This finally brings \nsupport for the dynamic help system in R 2.",
+      "thread_id": "thread-fd48fada1ecf",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-89562eb78cc7",
+      "message_id": "<de8c7cb41003060824o348bd615l9abf07344e3788e0@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2010-03-06T16:24:37Z",
+      "subject": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "subject_clean": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "in_reply_to": "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Sat, Mar 6, 2010 at 8:56 AM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> For those who are still using KDE 3 based systems: Please download and test\n> rkward-0.4.9c-pre1 (http://p.sf.net/rkward/download). This finally brings\n> support for the dynamic help system in R 2.10.x, and has a number of further\n> fixes backported from the main development line.\n>\n> -- Release Schedule --\n>\n> I am unsure, how many of you still have an active interest in these\n> compatibility releases, therefore I do not propose any specific timeline. If\n> you are going to participate testing, please let me know, how much time you\n> will need. I'd like to get this off my TODO list, soon, but of course it should\n> get a decent amount of testing (esp. since this will hopefully be the last KDE\n> 3 compatibilty release we need).\n>\n> -- Things to look out for in testing --\n>\n> - Most importanty, of course, please give the help system (help browsing,\n> following links, help search) a decent round of testing.\n> - If could test with different versions of R (if possible, including\n> prereleases of R 2.11.x), that would be really helpful.\n>\n\nAh, this is sweet. I'll certainly be testing this against R 2.10.0\n(today itself). And I'll try to see if 2.11 prereleases can be tested\nas well. Great Thomas, you are the man.\n\nThanks.\n-- \nPrasenjit",
+      "body_snippet": "On Sat, Mar 6, 2010 at 8:56 AM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> For those who are still using KDE 3 based systems: Please download and test\n> rkw",
+      "thread_id": "thread-fd48fada1ecf",
+      "thread_depth": 1,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-bae4010ef0f6",
+      "message_id": "<de8c7cb41003071855n3df94765m91d7a1b6c6de4025@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2010-03-08T02:55:25Z",
+      "subject": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "subject_clean": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "in_reply_to": "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Sat, Mar 6, 2010 at 8:56 AM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> For those who are still using KDE 3 based systems: Please download and test\n> rkward-0.4.9c-pre1 (http://p.sf.net/rkward/download). This finally brings\n> support for the dynamic help system in R 2.10.x, and has a number of further\n> fixes backported from the main development line.\n>\n> -- Release Schedule --\n>\n> I am unsure, how many of you still have an active interest in these\n> compatibility releases, therefore I do not propose any specific timeline. If\n> you are going to participate testing, please let me know, how much time you\n> will need. I'd like to get this off my TODO list, soon, but of course it should\n> get a decent amount of testing (esp. since this will hopefully be the last KDE\n> 3 compatibilty release we need).\n\nAs long as R folks don't do anything drastic (like the current help\nsystem) I think this should be the last KDE3 related release.\nOtherwise, depending on when RedHat 6 is released (may be later this\nyr) and on what it is based on (may be Fedora 11/12 -- hopefully KDE\n4.3), we may need one more :(\n\n> -- Things to look out for in testing --\n>\n> - Most importanty, of course, please give the help system (help browsing,\n> following links, help search) a decent round of testing.\n\nR: 2.10.1\nIn the past two days, the new help system has been working fine. I'll\nkeep the devel list updated if I see any errors.\n\n> - If could test with different versions of R (if possible, including\n> prereleases of R 2.11.x), that would be really helpful.\n\nR: 2.11 (unstable)\nEven with a slightly broken installation of 2.11 [*], rkward is doing\nfine with the new help system. Now, I won't be able to spend much time\nw/ the pre-release version of 2.11, so testing will be minimal. But if\nneeded, I have a \"working setup,\" so I can quickly run some tests.\n\nBTW, once rkward is installed (in ~/.kde) is it possible to check\nwhich R version it was compiled against, without starting an instance\nof rkward? Sys.getenv(\"R_VERSION\") works but I have to start rkward\nfirst!\n\n\nOnce again, a BIG thanks to Thomas.\n-- \nPrasenjit\n\n* The test installation of R 2.11 is not perfect (it does not seem to\nadd ~/R/.../2.11 to the .libPaths() on startup). But setting the\nR_LIBS env variable before calling rkward seems to remedy the\nsituation.",
+      "body_snippet": "On Sat, Mar 6, 2010 at 8:56 AM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> For those who are still using KDE 3 based systems: Please download and test\n> rkw",
+      "thread_id": "thread-fd48fada1ecf",
+      "thread_depth": 1,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-5878575418ea",
+      "message_id": "<201003092209.15721.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-03-09T21:09:12Z",
+      "subject": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "subject_clean": "[rkward-users] [rkward-devel] Preview release of RKWard 0.4.9c for KDE 3",
+      "in_reply_to": "<de8c7cb41003071855n3df94765m91d7a1b6c6de4025@mail.gmail.com>",
+      "references": [
+        "<201003061456.39981.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<de8c7cb41003071855n3df94765m91d7a1b6c6de4025@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 08 March 2010, Prasenjit Kapat wrote:\n> R: 2.10.1\n> In the past two days, the new help system has been working fine. I'll\n> keep the devel list updated if I see any errors.\n> \n> > - If could test with different versions of R (if possible, including\n> > prereleases of R 2.11.x), that would be really helpful.\n> \n> R: 2.11 (unstable)\n> Even with a slightly broken installation of 2.11 [*], rkward is doing\n> fine with the new help system. Now, I won't be able to spend much time\n> w/ the pre-release version of 2.11, so testing will be minimal. But if\n> needed, I have a \"working setup,\" so I can quickly run some tests.\n\nok, thanks. That's encouraging. Unless you - or anybody else - finds an issue \nuntil then, I think it's ok to create an official release at the end of the \nweek, then.\n\nI anybody else would like to do some testing, but you need more time, please \nspeak up, and we'll wait a little while longer.\n\n> BTW, once rkward is installed (in ~/.kde) is it possible to check\n> which R version it was compiled against, without starting an instance\n> of rkward? Sys.getenv(\"R_VERSION\") works but I have to start rkward\n> first!\n\nNot really, I'm afraid. You can find out the path to the R installation in use, \nthough:\n    head /usr/bin/rkward\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100309/4fd80fdb/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 08 March 2010, Prasenjit Kapat wrote:\n> R: 2.10.1\n> In the past two days, the new help system has been working fine. I'll\n> keep the devel list updated if I see any errors.\n> \n> > - If ",
+      "thread_id": "thread-fd48fada1ecf",
+      "thread_depth": 2,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-9d87d7e5f935",
+      "message_id": "<201003181351.29491.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-03-18T12:51:24Z",
+      "subject": "[rkward-users] RKWard 0.4.9c is available",
+      "subject_clean": "[rkward-users] RKWard 0.4.9c is available",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.4.9c is available on our download page, now. See \nhttp://rkward.sourceforge.net/ for details.\n\n***Most users will not want to use this!***\nThis is a backport release targetted at systems which are still limited to KDE \n3. For systems with KDE 4 libraries available, the 0.5.x-series of RKWard has \na lot more features.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100318/db404c30/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.4.9c is available on our download page, now. See \nhttp://rkward.sourceforge.net/ for details.\n\n***Most users will not want to use this!***\nThis is a backport release targetted at systems",
+      "thread_id": "thread-9d87d7e5f935",
+      "thread_depth": 0,
+      "month": "2010-03"
+    },
+    {
+      "id": "msg-ce5dbf79d478",
+      "message_id": "<4BA33866.6030206@gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2010-03-19T08:40:06Z",
+      "subject": "[rkward-users] [R] using RKWard for a function plot",
+      "subject_clean": "[rkward-users] [R] using RKWard for a function plot",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Not that I know, you should write the function yourself:\ng<-1\nf<-2\nbeta<-1\ncurve((-2*g*x*exp(-(x^ 2)/beta)/f))\n\nBut yes the idea to add such functionality within rkward is good :-)\n\nHope this helps\n\nMat\n\n\n\n> Is it possible to use the RKWard GUI to just plot a function?  I will have \n> some exponential function, I need to plot u as a function of y where\n>\n>\n>       u    =   -2yg  exp(-y2/beta)\n>                 -----------------\n>                     f\n>\n>    where everything else other than u and y are various constants.\n>",
+      "body_snippet": "Not that I know, you should write the function yourself:\ng<-1\nf<-2\nbeta<-1\ncurve((-2*g*x*exp(-(x^ 2)/beta)/f))\n\nBut yes the idea to add such functionality within rkward is good :-)\n\nHope this helps\n\nM",
+      "thread_id": "thread-ce5dbf79d478",
+      "thread_depth": 0,
+      "month": "2010-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-fd48fada1ecf",
+      "subject": "[rkward-users] Preview release of RKWard 0.4.9c for KDE 3",
+      "message_count": 4,
+      "participants": [
+        "Prasenjit Kapat",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-03-06T13:56:35Z",
+      "last_reply": "2010-03-09T21:09:12Z",
+      "root_message_id": "msg-fd48fada1ecf"
+    },
+    {
+      "id": "thread-9d87d7e5f935",
+      "subject": "[rkward-users] RKWard 0.4.9c is available",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-03-18T12:51:24Z",
+      "last_reply": "2010-03-18T12:51:24Z",
+      "root_message_id": "msg-9d87d7e5f935"
+    },
+    {
+      "id": "thread-ce5dbf79d478",
+      "subject": "[rkward-users] [R] using RKWard for a function plot",
+      "message_count": 1,
+      "participants": [
+        "Matthieu Stigler"
+      ],
+      "started": "2010-03-19T08:40:06Z",
+      "last_reply": "2010-03-19T08:40:06Z",
+      "root_message_id": "msg-ce5dbf79d478"
+    }
+  ]
+}

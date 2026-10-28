@@ -1,0 +1,177 @@
+From maurice.francois at ymail.com  Thu Aug  1 10:11:01 2019
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Thu, 1 Aug 2019 09:11:01 +0000 (UTC)
+Subject: Help info does not display
+References: <21290062.739975.1564650661539.ref@mail.yahoo.com>
+Message-ID: <21290062.739975.1564650661539@mail.yahoo.com>
+
+Hi,
+I just installed RkWard for Windows. 
+
+ Help does not want to appear neither from a script file (Function reference) nor from the Help Search window at the bottom of RKWard and nor from Help on R in the Help menu.
+
+For example, I tried to get help for persp() function, but no help is displayed.
+
+I used the Windows installer to install RKWard:
+   
+   - RKWard Version 0.7.0b
+   - R 3.4.4
+   - Windows 10
+
+Thanks,
+
+François
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190801/4d80352e/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Aug  1 11:51:34 2019
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 1 Aug 2019 12:51:34 +0200
+Subject: Help info does not display
+In-Reply-To: <21290062.739975.1564650661539@mail.yahoo.com>
+References: <21290062.739975.1564650661539.ref@mail.yahoo.com>
+ <21290062.739975.1564650661539@mail.yahoo.com>
+Message-ID: <20190801125134.23133f71@edge>
+
+Hi,
+
+On Thu, 1 Aug 2019 09:11:01 +0000 (UTC)
+Francois Maurice <maurice.francois at ymail.com> wrote:
+> I just installed RkWard for Windows. 
+> 
+>  Help does not want to appear neither from a script file (Function
+> reference) nor from the Help Search window at the bottom of RKWard
+> and nor from Help on R in the Help menu.
+> 
+> For example, I tried to get help for persp() function, but no help is
+> displayed.
+
+could you try running
+  rk.show.html("some_local_file.html")
+? Does this work?
+
+What is the output of
+  options("browser")
+? (Try setting it to
+  options(browser=rk.show.html)
+)
+
+Does the "Help on RKWard" from the Help menu display, correctly?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190801/6983edc1/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Aug  3 13:36:45 2019
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sat, 3 Aug 2019 14:36:45 +0200
+Subject: Help info does not display
+In-Reply-To: <1254576781.119937.1564741871945@mail.yahoo.com>
+References: <21290062.739975.1564650661539.ref@mail.yahoo.com>
+ <21290062.739975.1564650661539@mail.yahoo.com>
+ <20190801125134.23133f71@edge>
+ <1254576781.119937.1564741871945@mail.yahoo.com>
+Message-ID: <20190803143645.45e2f75b@edge>
+
+Hi!
+
+On Fri, 2 Aug 2019 10:31:11 +0000 (UTC)
+Francois Maurice <maurice.francois at ymail.com> wrote:
+>  This one works perfectly :  rk.show.html("some_local_file.html")
+
+Good. Does the following work, too:
+  browseURL("some_local_file.html")
+
+> Here is the ouput of options("browser"):
+[...]
+
+Looks good. My next guess is that it might be options("help_type").
+Could you make sure this is set to "html"?
+
+Thanks
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190803/b5b8d31e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Aug  4 08:59:10 2019
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 4 Aug 2019 09:59:10 +0200
+Subject: Help info does not display
+In-Reply-To: <694679726.686775.1564861778358@mail.yahoo.com>
+References: <21290062.739975.1564650661539.ref@mail.yahoo.com>
+ <21290062.739975.1564650661539@mail.yahoo.com>
+ <20190801125134.23133f71@edge>
+ <1254576781.119937.1564741871945@mail.yahoo.com>
+ <20190803143645.45e2f75b@edge>
+ <694679726.686775.1564861778358@mail.yahoo.com>
+Message-ID: <20190804095910.23b02b58@edge>
+
+Hi!
+
+On Sat, 3 Aug 2019 19:49:38 +0000 (UTC)
+Francois Maurice <maurice.francois at ymail.com> wrote:
+> Hi Thomas,
+> OK, browseURL("some_local_file.html") works perfectly.
+> And options("help_type") is set to "html"
+
+Strange. I cannot see what might possibly be wrong, then.
+
+> Another guess ?
+
+Just in case, please try a recent nightly build:
+https://binary-factory.kde.org/job/RKWard_Nightly_mingw64/
+
+If that does not change anything, please check rk.sessionInfo() for the
+location of debug message files, and post them both (frontend /
+backend).
+
+Regards
+Thomas
+
+> Thanks,
+> 
+> François
+> 
+> 
+>  
+> 
+>     Le samedi 3 août 2019 08 h 36 min 56 s UTC−4, Thomas
+> Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de> a écrit : 
+>  Hi!
+> 
+> On Fri, 2 Aug 2019 10:31:11 +0000 (UTC)
+> Francois Maurice <maurice.francois at ymail.com> wrote:
+> >  This one works perfectly :  rk.show.html("some_local_file.html")  
+> 
+> Good. Does the following work, too:
+>   browseURL("some_local_file.html")
+> 
+> > Here is the ouput of options("browser"):  
+> [...]
+> 
+> Looks good. My next guess is that it might be options("help_type").
+> Could you make sure this is set to "html"?
+> 
+> Thanks
+> Thomas  
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190804/ad7e1f9f/attachment.sig>
+

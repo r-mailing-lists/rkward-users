@@ -1,0 +1,2094 @@
+From newsletter at fichtinger.org  Mon Oct  3 12:41:48 2011
+From: newsletter at fichtinger.org (Johannes Fichtinger)
+Date: Mon, 3 Oct 2011 13:41:48 +0100
+Subject: [rkward-users] Detect running in rkward
+Message-ID: <201110031341.48370.newsletter@fichtinger.org>
+
+Hi,
+
+is there a way to understand during runtime of R if the script is running 
+through rkward GUI or on the console? The reason is that I want to use the 
+multicore package, in particular the mclapply function, which reliably 
+produces errors within rkward.
+
+So I want to do in my .r file something like
+
+if (RUNNING_WITHIN_R) {
+	lapply(?)
+} else {
+	mclapply(?)
+}
+
+The reason that I want to have both options is that I am continuously 
+extending and testing my script withing rkward, but for doing the actual 
+calculations I would prefer to use all cpu?s.
+
+Any idea?
+
+Johannes
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct  3 14:03:51 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 3 Oct 2011 16:03:51 +0200
+Subject: [rkward-users] Detect running in rkward
+In-Reply-To: <201110031341.48370.newsletter@fichtinger.org>
+References: <201110031341.48370.newsletter@fichtinger.org>
+Message-ID: <201110031603.56763.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 03 October 2011, Johannes Fichtinger wrote:
+> is there a way to understand during runtime of R if the script is running
+> through rkward GUI or on the console? The reason is that I want to use the
+> multicore package, in particular the mclapply function, which reliably
+> produces errors within rkward.
+
+I think the easiest way should be something like
+    if ("package:rkward" %in% search ()) ...
+
+Regarding the problem with the multicore package: Yes, that's a known issue 
+(http://sourceforge.net/tracker/?func=detail&aid=2866476&group_id=50231&atid=459007), 
+and a very annoying one, too. Unfortunately, I do not see any direct solution 
+for this in the mid term.
+
+However, alternatives exist, which work reliably in RKWard. Noteably, the 
+upcoming R release (2.14) is set to include a package "parallel" for parallel 
+computation inside the official base release. As far as I understand, this is a 
+more or less unmodified copy of packages "snow" and "multicore". The "snow" 
+portion (functions make[PSOCK]Cluster(), parLapply() and friends) works well 
+in RKWard (to the best of my testing). parLapply() even allows spreading 
+calculations to several computers across the network, and is also portable to 
+windows.
+
+> So I want to do in my .r file something like
+> 
+> if (RUNNING_WITHIN_R) {
+> 	lapply(?)
+> } else {
+> 	mclapply(?)
+> }
+
+If you want to stick with multicore / mclapply, I think
+    options(cores=1)
+should do the trick, without the need to wrap all uses of mclapply() into an 
+if() statement.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111003/64ff3693/attachment.sig>
+
+From newsletter at fichtinger.org  Mon Oct  3 15:43:42 2011
+From: newsletter at fichtinger.org (Johannes Fichtinger)
+Date: Mon, 3 Oct 2011 16:43:42 +0100
+Subject: [rkward-users] Detect running in rkward
+In-Reply-To: <201110031603.56763.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <201110031341.48370.newsletter@fichtinger.org>
+	<201110031603.56763.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <201110031643.42754.newsletter@fichtinger.org>
+
+Hi
+
+Am Montag, 3. Oktober 2011 schrieb Thomas Friedrichsmeier:
+
+> I think the easiest way should be something like
+>     if ("package:rkward" %in% search ()) ...
+
+thanks, this helps a lot?
+
+> If you want to stick with multicore / mclapply, I think
+>     options(cores=1)
+
+and this even more!!
+
+Best regards
+Johannes
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Oct  5 05:31:59 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 5 Oct 2011 07:31:59 +0200
+Subject: [rkward-users] Detect running in rkward
+In-Reply-To: <201110031643.42754.newsletter@fichtinger.org>
+References: <201110031341.48370.newsletter@fichtinger.org>
+	<201110031603.56763.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<201110031643.42754.newsletter@fichtinger.org>
+Message-ID: <201110050732.03945.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+actually, I think, I have finally solved the mclapply() issue in RKWard, after 
+all. Perhaps you would like to do some testing with the current development 
+version (http://p.sf.net/rkward/svn)? 
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111005/3b47605a/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Oct  6 16:44:07 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 6 Oct 2011 18:44:07 +0200
+Subject: [rkward-users] [rkward-announce] Upcoming release,
+	call for testing RKWard 0.5.7
+Message-ID: <201110061844.17744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Once again, it's time to prepare a new release, and once again, I would like 
+to ask you for help in testing, packaging and translating. Details on 
+available downloads, and a tentative release schedule can be found at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+as usual. The targetted release date is October 23. and I would like to ask 
+you to provide feedback by October 15.
+
+Features to look out for are the reworked package installation / update dialog 
+(Settings->Configure Packages). Further, there are new tabulation options in 
+box plot, pareto chart, bar plot, and pie chart. Also, it should finally be 
+safe to use RKWard with mclapply() and other parallelization techniques. So 
+you may want to give that a try as well.
+
+While looking at the package installation dialog, you may also want to install 
+and take a look at package "rkwarddev". In it, Meik has implemented a whole 
+set of functions to ease the creation of plugins for rkward (technically, this 
+is not part of the upcoming release, however).
+
+--- Translators ---
+
+Now is a good time to start updating your translations. As usual, the deadline 
+to send your updates ends with the testing phase on October 15. RKWard is now 
+registered for translations on launchpad: 
+https://translations.launchpad.net/rkward , and it is recommended to upload 
+your translations, there. Sending translations by mail is also ok, of course.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111006/4bcb9cc2/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+All the data continuously generated in your IT infrastructure contains a
+definitive record of customers, application performance, security
+threats, fraudulent activity and more. Splunk takes this data and makes
+sense of it. Business sense. IT sense. Common sense.
+http://p.sf.net/sfu/splunk-d2dcopy1
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From m.d.vreeburg at gmail.com  Fri Oct  7 07:46:02 2011
+From: m.d.vreeburg at gmail.com (Mischa Vreeburg)
+Date: Fri, 7 Oct 2011 09:46:02 +0200
+Subject: [rkward-users] RCurl and Rkward on windows
+Message-ID: <CANh495GHgDNKXjxpfe-FT5DKEYET32M-7d3g3dB4nzeDiBpwmw@mail.gmail.com>
+
+Hi,
+
+Do you know what is wrong with the dll loading of RCurl in the current
+version of Rkward on windows?
+I get this result
+> library('RCurl')
+Loading required package: bitops
+Error in inDL(x, as.logical(local), as.logical(now), ...) :
+  unable to load shared object
+'C:/Users/Public/Programs/RKWard/R/library/RCurl/libs/i386/RCurl.dll':
+  LoadLibrary failure:  The specified procedure could not be found.
+In addition: Warning messages:
+1: package 'RCurl' was built under R version 2.13.1
+2: package 'bitops' was built under R version 2.13.1
+Error: package/namespace load failed for 'RCurl'
+Error: package/namespace load failed for 'RCurl'
+
+When I do the same in the normal R windows Gui I get the following
+> library('RCurl')
+Loading required package: bitops
+Warning messages:
+1: package 'RCurl' was built under R version 2.13.1
+2: package 'bitops' was built under R version 2.13.1
+>
+
+It loads normally
+
+Session info for Rkward:
+> sessionInfo()
+R version 2.13.0 (2011-04-13)
+Platform: i386-pc-mingw32/i386 (32-bit)
+locale:
+[1] LC_COLLATE=Dutch_Netherlands.1252  LC_CTYPE=Dutch_Netherlands.1252
+[3] LC_MONETARY=Dutch_Netherlands.1252 LC_NUMERIC=C
+[5] LC_TIME=Dutch_Netherlands.1252
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+other attached packages:
+[1] bitops_1.0-4.1 rkward_0.5.6
+loaded via a namespace (and not attached):
+[1] tools_2.13.0
+
+Session info for normal R session:
+R version 2.13.0 (2011-04-13)
+Platform: i386-pc-mingw32/i386 (32-bit)
+locale:
+[1] LC_COLLATE=Dutch_Netherlands.1252  LC_CTYPE=Dutch_Netherlands.1252
+[3] LC_MONETARY=Dutch_Netherlands.1252 LC_NUMERIC=C
+[5] LC_TIME=Dutch_Netherlands.1252
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+other attached packages:
+[1] RCurl_1.6-10.1 bitops_1.0-4.1
+
+greetings
+M. D. Vreeburg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111007/d9c06693/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Oct  7 13:25:45 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 7 Oct 2011 15:25:45 +0200
+Subject: [rkward-users] RCurl and Rkward on windows
+In-Reply-To: <CANh495GHgDNKXjxpfe-FT5DKEYET32M-7d3g3dB4nzeDiBpwmw@mail.gmail.com>
+References: <CANh495GHgDNKXjxpfe-FT5DKEYET32M-7d3g3dB4nzeDiBpwmw@mail.gmail.com>
+Message-ID: <201110071525.48860.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 07 October 2011, Mischa Vreeburg wrote:
+> Do you know what is wrong with the dll loading of RCurl in the current
+> version of Rkward on windows?
+> I get this result
+> 
+> > library('RCurl')
+> 
+> Loading required package: bitops
+> Error in inDL(x, as.logical(local), as.logical(now), ...) :
+>   unable to load shared object
+> 'C:/Users/Public/Programs/RKWard/R/library/RCurl/libs/i386/RCurl.dll':
+>   LoadLibrary failure:  The specified procedure could not be found.
+
+confirmed. Did this work for you any time in the past? If so, do you have an 
+idea, which versions of KDE, RKWard and R you were using?
+
+The issue appears to be that both RKWard, and RCurl link against different 
+versions of libeay32.dll. Unfortunately, the two versions appear to be 
+incompatible.
+
+The issue would _probably_ go away, if RCurl was built against (and shipped 
+with) a more recent libeay32.dll. On the RKWard side, I'm not really sure, 
+where the library comes in (this is a split-out from libssl, as far as I 
+understand). Perhaps we might be able to avoid the problem by further trimming 
+down the libraries that the rkward.rbackend.exe is linked against. Currently, 
+this includes kdecore, mostly in order to provide a few translatable strings. 
+It probably makes sense to try to trim that down to just QtNetwork and QtCore.
+
+Will not be fixed for the upcoming 0.5.7 release, I fear.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111007/6b8040a9/attachment.sig>
+
+From matthieu.stigler at gmail.com  Fri Oct  7 13:47:06 2011
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Fri, 07 Oct 2011 15:47:06 +0200
+Subject: [rkward-users] RCurl and Rkward on windows
+In-Reply-To: <201110071525.48860.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CANh495GHgDNKXjxpfe-FT5DKEYET32M-7d3g3dB4nzeDiBpwmw@mail.gmail.com>
+	<201110071525.48860.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4E8F02DA.1060006@gmail.com>
+
+Hi
+
+I gave a quick try and do NOT get the error:
+
+ > library('RCurl')
+Le chargement a n?cessit? le package : bitops
+ >
+
+
+
+  sessionInfo()
+R version 2.13.2 (2011-09-30)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+  [1] LC_CTYPE=fr_FR.UTF-8          LC_NUMERIC=C
+  [3] LC_TIME=fr_FR.UTF-8           LC_COLLATE=fr_FR.UTF-8
+  [5] LC_MONETARY=fr_FR.UTF-8       LC_MESSAGES=en_US.utf8
+  [7] LC_PAPER=fr_FR.UTF-8          LC_NAME=fr_FR.UTF-8
+  [9] LC_ADDRESS=fr_FR.UTF-8        LC_TELEPHONE=fr_FR.UTF-8
+[11] LC_MEASUREMENT=fr_FR.UTF-8    LC_IDENTIFICATION=fr_FR.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] RCurl_1.6-7    bitops_1.0-4.1 rkward_0.5.6
+
+loaded via a namespace (and not attached):
+[1] tools_2.13.2
+ >
+
+
+Le 07/10/2011 15:25, Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Friday 07 October 2011, Mischa Vreeburg wrote:
+>> Do you know what is wrong with the dll loading of RCurl in the current
+>> version of Rkward on windows?
+>> I get this result
+>>
+>>> library('RCurl')
+>> Loading required package: bitops
+>> Error in inDL(x, as.logical(local), as.logical(now), ...) :
+>>    unable to load shared object
+>> 'C:/Users/Public/Programs/RKWard/R/library/RCurl/libs/i386/RCurl.dll':
+>>    LoadLibrary failure:  The specified procedure could not be found.
+> confirmed. Did this work for you any time in the past? If so, do you have an
+> idea, which versions of KDE, RKWard and R you were using?
+>
+> The issue appears to be that both RKWard, and RCurl link against different
+> versions of libeay32.dll. Unfortunately, the two versions appear to be
+> incompatible.
+>
+> The issue would _probably_ go away, if RCurl was built against (and shipped
+> with) a more recent libeay32.dll. On the RKWard side, I'm not really sure,
+> where the library comes in (this is a split-out from libssl, as far as I
+> understand). Perhaps we might be able to avoid the problem by further trimming
+> down the libraries that the rkward.rbackend.exe is linked against. Currently,
+> this includes kdecore, mostly in order to provide a few translatable strings.
+> It probably makes sense to try to trim that down to just QtNetwork and QtCore.
+>
+> Will not be fixed for the upcoming 0.5.7 release, I fear.
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> All of the data generated in your IT infrastructure is seriously valuable.
+> Why? It contains a definitive record of application performance, security
+> threats, fraudulent activity, and more. Splunk takes this data and makes
+> sense of it. IT sense. And common sense.
+> http://p.sf.net/sfu/splunk-d2dcopy2
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111007/ed217c8d/attachment.html>
+
+From dns_hmpf at web.de  Sat Oct  8 15:30:52 2011
+From: dns_hmpf at web.de (dirk)
+Date: Sat, 08 Oct 2011 17:30:52 +0200
+Subject: [rkward-users] colors of suggested function arguments
+Message-ID: <1877660.ARsuibuifu@falter>
+
+Hi,
+
+When entering a function in the script editor, rkward lists possible arguments 
+to that function. However for me the widget gets a black background and grey 
+text, which makes those suggestions nearly impossible to see. Please have a 
+look at the linked screenshot[1].
+
+I thought it might be a wrong colour setting for the editor, but I tried 
+around a bit and could not find an option which changed it. Neither did 
+disabling compositing and the behaviour persisted with a fresh user.
+
+Since the behaviour is very obvious I guess it is some configuration issue on 
+my or my distributions end instead of a  bug in rkward. Any pointers how to fix 
+it?
+
+Best,
+Dirk
+
+1: http://wstaw.org/m/2011/10/08/rkward-suggest.png
+
+rkward version 0.5.6z+0.5.7+pre1 from https://launchpad.net/~rkward-
+devel/+archive/rkward-devel-cran
+(but also with 0.5.6 from regular oneiric archives)
+
+R version 2.13.2-1natty0 from cran (oneiric repo is not yet available from 
+cran) 
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111008/de51001e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Oct  9 10:00:38 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 9 Oct 2011 12:00:38 +0200
+Subject: [rkward-users] RCurl and Rkward on windows
+In-Reply-To: <4E8F02DA.1060006@gmail.com>
+References: <CANh495GHgDNKXjxpfe-FT5DKEYET32M-7d3g3dB4nzeDiBpwmw@mail.gmail.com>
+	<201110071525.48860.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4E8F02DA.1060006@gmail.com>
+Message-ID: <201110091200.43650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 07 October 2011, Matthieu Stigler wrote:
+> I gave a quick try and do NOT get the error:
+>  > library('RCurl')
+[...]
+> Platform: x86_64-pc-linux-gnu (64-bit)
+
+yes, it's a windows specific issue, semi-officiall called "DLL hell" 
+(http://en.wikipedia.org/wiki/DLL_Hell).
+
+> Le 07/10/2011 15:25, Thomas Friedrichsmeier a ?crit :
+> On the RKWard side, I'm not
+> > really sure, where the library comes in (this is a split-out from
+> > libssl, as far as I understand). Perhaps we might be able to avoid the
+> > problem by further trimming down the libraries that the
+> > rkward.rbackend.exe is linked against. Currently, this includes kdecore,
+> > mostly in order to provide a few translatable strings. It probably makes
+> > sense to try to trim that down to just QtNetwork and QtCore.
+
+Well, I gave that a try, only to find out that it is QtNetwork which brings in 
+the conflicting library. So that did not help in this case.
+
+However, I have found a solution of sorts, although it's not a convenient one. 
+It would be nice, if you could give it a try. If it works, at least we can 
+document it as a workaround:
+
+1) Get the latest testing version of the windows installer: 
+http://sourceforge.net/projects/rkward/files/Under_Development/
+
+2) Install RKWard from that. (NOTE: KDE 4.7.0 is required, so you may need to 
+udpate that, too. Sorry, no installation bundle, yet).
+
+3) Download "OpenSSL for Windows" version 0.9.8k:
+http://code.google.com/p/openssl-for-
+windows/downloads/detail?name=openssl-0.9.8k_WIN32.zip&can=2&q=
+
+4) Unzip to a temporary folder, and copy the files "libeay32.dll" and 
+"ssleay32.dll" from the "bin" sub-folder to YOUR_KDE_DIR\bin\rbackend\ .
+
+5) Start RKWard as usual, and library(RCurl) should work.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111009/757755ed/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Oct  9 10:09:24 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 9 Oct 2011 12:09:24 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <1877660.ARsuibuifu@falter>
+References: <1877660.ARsuibuifu@falter>
+Message-ID: <201110091209.25089.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Saturday 08 October 2011, dirk wrote:
+> When entering a function in the script editor, rkward lists possible
+> arguments to that function. However for me the widget gets a black
+> background and grey text, which makes those suggestions nearly impossible
+> to see. Please have a look at the linked screenshot[1].
+
+Any chance that you are running RKWard in a Gnome session? Could this be
+the same issue:
+http://ubuntuforums.org/showthread.php?p=9879841&posted=1#post9879841 ?
+
+If so, please try the workaround from post #3 of the forum.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111009/8a68d2cf/attachment.sig>
+
+From dns_hmpf at web.de  Sun Oct  9 22:37:55 2011
+From: dns_hmpf at web.de (dirk)
+Date: Mon, 10 Oct 2011 00:37:55 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <1877660.ARsuibuifu@falter>
+References: <1877660.ARsuibuifu@falter>
+Message-ID: <3745765.YF06jMHa6M@falter>
+
+Am Sonntag 09 Oktober 2011, schrieb Thomas Friedrichsmeier:
+> Any chance that you are running RKWard in a Gnome session? Could this be
+> the same issue:
+> http://ubuntuforums.org/showthread.php?p=9879841&posted=1#post9879841 
+> ?
+> 
+> If so, please try the workaround from post #3 of the forum.
+No, this is on KDE 4.7.1. But the described workaround mentioned the term 
+tooltip and that helped me to narrow this down a bit.
+
+I tried the general different color settings in KDE (?Systemsettings -> 
+Application Appearance -> Colors?) and found that using a different scheme has 
+an impact on the tooltip. With Oxygen I get the problem as described, but 
+using a light on dark theme like Obsidian Coast shows white text in the black 
+box.
+
+In fact changing ?Color set: Window -> Normal Text? changed the text color of 
+this tooltip. The background however does not change when changing between 
+schemes (tried 10 different ones) and I also could not find any specific color 
+setting which changed the background.
+
+Since changing anything in the ?Colors -> Color set: Tooltip? part did not 
+change anything for this tooltip, but for regular tooltips, I had a look at 
+the source. RKFunctionArgHinter in rkcommandeditorwindow.cpp has a hack, 
+which changes the colors for this tooltip.
+
+I have no clue of C++, but when reading it and looking at
+-----------
+void QPalette::setColor ( ColorGroup group, ColorRole role, const QColor & 
+color )
+
+Sets the color in the specified color group, used for the given color role, to 
+the specified solid color.
+-----------
+I had the impression it tries to assign the colors ToolTipBase and ToolTipText 
+to Window and Text, but is it not already a tooltip, which should have 
+ToolTipBase and ToolTipText set?
+
+Well whatever,  I commented the hack out (ll 810-813) and while the colors do 
+not respond to color changes in tooltip they respond to changes in window. I 
+have no clue why the tooltip colors are not used (this is probably the 
+reason for the hack?), but black on light gray is at least well readable.
+
+This is really strange, especially since I am pretty sure to have seen the 
+tooltips in the kde tooltip style already.
+
+Best,
+Dirk
+
+p.s. I was not subscribed so the message might not be placed in the right 
+thread, sorry for that.
+
+
+
+From mingtianni at gmail.com  Sun Oct  9 23:08:46 2011
+From: mingtianni at gmail.com (Mingtian Ni)
+Date: Sun, 9 Oct 2011 16:08:46 -0700
+Subject: [rkward-users] Need help on install rkward on Mac
+Message-ID: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+
+Hi folks,
+I was following the steps here
+(http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac)
+to install rkward on my macbook (Mac OS X 10.6.8). And got stuck at
+the step of "fink install kdebase4-x11".  There are error messages
+starting from 86% of the install (see below). Can anybody give some
+advice here?
+
+Thanks,
+Mingtian
+
+[ 86%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/basic_text_woprimitive.cpp.o
+Linking CXX shared library ../../../lib/libboost_python-mt.dylib
+Undefined symbols:
+  "_PyErr_WarnEx", referenced from:
+      boost::python::converter::registry::insert(_object* (*)(void
+const*), boost::python::type_info, _typeobject const* (*)())in
+registry.cpp.o
+ld: symbol(s) not found
+collect2: ld returned 1 exit status
+make[2]: *** [lib/libboost_python-mt.1.41.0.dylib] Error 1
+make[1]: *** [libs/python/src/CMakeFiles/boost_python-mt-shared.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 86%] Building CXX object
+libs/test/src/CMakeFiles/boost_unit_test_framework-mt-shared.dir/xml_log_formatter.cpp.o
+[ 86%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/text_wiarchive.cpp.o
+[ 87%] Building CXX object
+libs/test/src/CMakeFiles/boost_unit_test_framework-mt-shared.dir/xml_report_formatter.cpp.o
+[ 87%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_cpp_grammar.cpp.o
+[ 88%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/text_woarchive.cpp.o
+Linking CXX shared library ../../../lib/libboost_unit_test_framework-mt.dylib
+[ 88%] Built target boost_unit_test_framework-mt-shared
+[ 89%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/utf8_codecvt_facet.cpp.o
+[ 89%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/xml_wgrammar.cpp.o
+In file included from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/archive/impl/basic_xml_grammar.hpp:59,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/xml_wgrammar.cpp:18:
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/spirit/core/non_terminal/rule.hpp:18:4:
+warning: #warning "This header is deprecated. Please use:
+boost/spirit/include/classic_rule.hpp"
+In file included from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/basic_xml_grammar.ipp:20,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/xml_wgrammar.cpp:146:
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/spirit/core/composite/operators.hpp:18:4:
+warning: #warning "This header is deprecated. Please use:
+boost/spirit/include/classic_operators.hpp"
+In file included from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/basic_xml_grammar.ipp:21,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/xml_wgrammar.cpp:146:
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/spirit/core/composite/actions.hpp:18:4:
+warning: #warning "This header is deprecated. Please use:
+boost/spirit/include/classic_actions.hpp"
+In file included from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/basic_xml_grammar.ipp:22,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/xml_wgrammar.cpp:146:
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/spirit/core/primitives/numerics.hpp:18:4:
+warning: #warning "This header is deprecated. Please use:
+boost/spirit/include/classic_numerics.hpp"
+[ 90%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/xml_wiarchive.cpp.o
+[ 91%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/xml_woarchive.cpp.o
+In file included from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/archive/impl/basic_xml_grammar.hpp:59,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/archive/impl/xml_wiarchive_impl.ipp:45,
+                 from
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/libs/serialization/src/xml_wiarchive.cpp:37:
+/sw/src/fink.build/boost1.41.cmake-1.41.0-12/boost-1.41.0.cmake0/boost/spirit/core/non_terminal/rule.hpp:18:4:
+warning: #warning "This header is deprecated. Please use:
+boost/spirit/include/classic_rule.hpp"
+[ 92%] Building CXX object
+libs/serialization/src/CMakeFiles/boost_wserialization-mt-shared.dir/codecvt_null.cpp.o
+[ 93%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_cpp_literalgrs.cpp.o
+[ 94%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_defined_grammar.cpp.o
+[ 94%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_predef_macros.cpp.o
+Linking CXX shared library ../../../lib/libboost_wserialization-mt.dylib
+[ 94%] Built target boost_wserialization-mt-shared
+[ 95%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_re2c_lexer.cpp.o
+[ 96%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/instantiate_re2c_lexer_str.cpp.o
+[ 96%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/token_ids.cpp.o
+[ 97%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/wave_config_constant.cpp.o
+[ 98%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/cpplexer/re2clex/aq.cpp.o
+[ 98%] Building CXX object
+libs/wave/src/CMakeFiles/boost_wave-mt-shared.dir/cpplexer/re2clex/cpp_re.cpp.o
+Linking CXX shared library ../../../lib/libboost_wave-mt.dylib
+[ 98%] Built target boost_wave-mt-shared
+make: *** [all] Error 2
+### execution of /var/tmp/tmp.1.iyQvnu failed, exit code 2
+Removing runtime build-lock...
+Removing build-lock package...
+/sw/bin/dpkg-lockwait -r fink-buildlock-boost1.41.cmake-1.41.0-12
+(Reading database ... 104904 files and directories currently installed.)
+Removing fink-buildlock-boost1.41.cmake-1.41.0-12 ...
+Failed: phase compiling: boost1.41.cmake-1.41.0-12 failed
+
+Before reporting any errors, please run "fink selfupdate" and try again.
+If you continue to have issues, please check to see if the FAQ on Fink's
+website solves the problem.  If not, ask on one of these mailing lists:
+
+	The Fink Users List <fink-users at lists.sourceforge.net>
+	The Fink Beginners List <fink-beginners at lists.sourceforge.net>,
+
+with a carbon copy to the maintainer:
+
+	Abdulla Kamar <abdulla.kamar+fink at gmail.com>
+
+Note that this is preferable to emailing just the maintainer directly,
+since most fink package maintainers do not have access to all possible
+hardware and software configurations.
+
+Please try to include the complete error message in your report.  This
+generally consists of a compiler line starting with e.g. "gcc" or "g++"
+followed by the actual error output from the compiler.
+
+Also include the following system information:
+Package manager version: 0.31.2
+Distribution version: selfupdate-rsync Sun Oct  2 14:07:32 2011, 10.6, i386
+Trees: local/main stable/main unstable/main
+Xcode: 3.2.6
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 10 15:38:12 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 Oct 2011 17:38:12 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <3745765.YF06jMHa6M@falter>
+References: <1877660.ARsuibuifu@falter> <3745765.YF06jMHa6M@falter>
+Message-ID: <201110101738.16648.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 10 October 2011, dirk wrote:
+> I have no clue of C++, but when reading it and looking at
+> -----------
+> void QPalette::setColor ( ColorGroup group, ColorRole role, const QColor &
+> color )
+> 
+> Sets the color in the specified color group, used for the given color role,
+> to the specified solid color.
+> -----------
+> I had the impression it tries to assign the colors ToolTipBase and
+> ToolTipText to Window and Text, but is it not already a tooltip, which
+> should have ToolTipBase and ToolTipText set?
+
+well, it's designed to look like a tooltip, but unfortunately, it isn't one, 
+technically.
+
+> Well whatever,  I commented the hack out (ll 810-813) and while the colors
+> do not respond to color changes in tooltip they respond to changes in
+> window. I have no clue why the tooltip colors are not used (this is
+> probably the reason for the hack?), but black on light gray is at least
+> well readable.
+
+Could you try what happens, if you *add* two lines, instead:
+
+	p.setColor (QPalette::Active, QPalette::Window, p.color 
+(QPalette::Active, QPalette::ToolTipBase));
+	p.setColor (QPalette::Active, QPalette::Text, p.color (QPalette::Active, 
+QPalette::ToolTipText));
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111010/d9028ac6/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 10 15:46:56 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 Oct 2011 17:46:56 +0200
+Subject: [rkward-users] Need help on install rkward on Mac
+In-Reply-To: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+References: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+Message-ID: <201110101746.56849.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 10 October 2011, Mingtian Ni wrote:
+> I was following the steps here
+> (http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac
+> ) to install rkward on my macbook (Mac OS X 10.6.8). And got stuck at the
+> step of "fink install kdebase4-x11".  There are error messages starting
+> from 86% of the install (see below). Can anybody give some advice here?
+
+not much, unfortunately. This is a problem in one of the libraries that KDE 
+depends on. I would assume that this is probably a temporary problem, and will 
+go away after a
+   fink selfupdate
+sooner or later. If the problem persists, I guess your best bet is to follow 
+the advice you quoted near the bottom of your mail.
+
+Once again, sorry, that we can't help you better, ATM. With a bit of luck we 
+will get our hands on a Mac, soon, and hopefully after that we can provide 
+much better support.
+
+Regards
+Thomas
+
+---------------
+
+> Before reporting any errors, please run "fink selfupdate" and try again.
+> If you continue to have issues, please check to see if the FAQ on Fink's
+> website solves the problem.  If not, ask on one of these mailing lists:
+> 
+> 	The Fink Users List <fink-users at lists.sourceforge.net>
+> 	The Fink Beginners List <fink-beginners at lists.sourceforge.net>,
+> 
+> with a carbon copy to the maintainer:
+> 
+> 	Abdulla Kamar <abdulla.kamar+fink at gmail.com>
+> 
+> Note that this is preferable to emailing just the maintainer directly,
+> since most fink package maintainers do not have access to all possible
+> hardware and software configurations.
+> 
+> Please try to include the complete error message in your report.  This
+> generally consists of a compiler line starting with e.g. "gcc" or "g++"
+> followed by the actual error output from the compiler.
+> 
+> Also include the following system information:
+> Package manager version: 0.31.2
+> Distribution version: selfupdate-rsync Sun Oct  2 14:07:32 2011, 10.6, i386
+> Trees: local/main stable/main unstable/main
+> Xcode: 3.2.6
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111010/7d891410/attachment.sig>
+
+From mingtianni at gmail.com  Mon Oct 10 17:51:57 2011
+From: mingtianni at gmail.com (Mingtian Ni)
+Date: Mon, 10 Oct 2011 10:51:57 -0700
+Subject: [rkward-users] Need help on install rkward on Mac
+In-Reply-To: <201110101746.56849.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+	<201110101746.56849.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAEGcZDmOmEes128JrRM7o+n0qoboTia+TdLRf1zvBArwEfivpQ@mail.gmail.com>
+
+Thanks.
+Some other thread mentioned that pre-existing old version MacPython
+(V2.4 in my case) could be the problem. So, I removed MacPytho
+(instruction here:
+http://mac.downloadatoz.com/tutorial/3498,macpython.html). The install
+managed to go a little bit further. Now the error messages are:
+
+[ 58%] Built target knewstuff2
+make: *** [all] Error 2
+### execution of /var/tmp/tmp.1.ftF0fY failed, exit code 2
+Removing runtime build-lock...
+Removing build-lock package...
+/sw/bin/dpkg-lockwait -r fink-buildlock-kdelibs4-x11-4.4.1-2
+(Reading database ... 138763 files and directories currently installed.)
+Removing fink-buildlock-kdelibs4-x11-4.4.1-2 ...
+Reading buildlock packages...
+/sw/bin/dpkg-lockwait -i /sw/fink/debs/openexr-dev_1.4.0-1023_darwin-i386.deb
+Selecting previously deselected package openexr-dev.
+(Reading database ... 138762 files and directories currently installed.)
+Unpacking openexr-dev (from .../openexr-dev_1.4.0-1023_darwin-i386.deb) ...
+Setting up openexr-dev (1.4.0-1023) ...
+Clearing dependency_libs of .la files being installed
+
+Failed: phase compiling: kdelibs4-x11-4.4.1-2 failed
+
+Before reporting any errors, please run "fink selfupdate" and try again.
+If you continue to have issues, please check to see if the FAQ on Fink's
+website solves the problem.  If not, ask on one of these mailing lists:
+
+
+On Mon, Oct 10, 2011 at 8:46 AM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> On Monday 10 October 2011, Mingtian Ni wrote:
+>> I was following the steps here
+>> (http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac
+>> ) to install rkward on my macbook (Mac OS X 10.6.8). And got stuck at the
+>> step of "fink install kdebase4-x11". ?There are error messages starting
+>> from 86% of the install (see below). Can anybody give some advice here?
+>
+> not much, unfortunately. This is a problem in one of the libraries that KDE
+> depends on. I would assume that this is probably a temporary problem, and will
+> go away after a
+> ? fink selfupdate
+> sooner or later. If the problem persists, I guess your best bet is to follow
+> the advice you quoted near the bottom of your mail.
+>
+> Once again, sorry, that we can't help you better, ATM. With a bit of luck we
+> will get our hands on a Mac, soon, and hopefully after that we can provide
+> much better support.
+>
+> Regards
+> Thomas
+>
+> ---------------
+>
+>> Before reporting any errors, please run "fink selfupdate" and try again.
+>> If you continue to have issues, please check to see if the FAQ on Fink's
+>> website solves the problem. ?If not, ask on one of these mailing lists:
+>>
+>> ? ? ? The Fink Users List <fink-users at lists.sourceforge.net>
+>> ? ? ? The Fink Beginners List <fink-beginners at lists.sourceforge.net>,
+>>
+>> with a carbon copy to the maintainer:
+>>
+>> ? ? ? Abdulla Kamar <abdulla.kamar+fink at gmail.com>
+>>
+>> Note that this is preferable to emailing just the maintainer directly,
+>> since most fink package maintainers do not have access to all possible
+>> hardware and software configurations.
+>>
+>> Please try to include the complete error message in your report. ?This
+>> generally consists of a compiler line starting with e.g. "gcc" or "g++"
+>> followed by the actual error output from the compiler.
+>>
+>> Also include the following system information:
+>> Package manager version: 0.31.2
+>> Distribution version: selfupdate-rsync Sun Oct ?2 14:07:32 2011, 10.6, i386
+>> Trees: local/main stable/main unstable/main
+>> Xcode: 3.2.6
+>
+> ------------------------------------------------------------------------------
+> All the data continuously generated in your IT infrastructure contains a
+> definitive record of customers, application performance, security
+> threats, fraudulent activity and more. Splunk takes this data and makes
+> sense of it. Business sense. IT sense. Common sense.
+> http://p.sf.net/sfu/splunk-d2dcopy1
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+
+
+
+From dns_hmpf at web.de  Mon Oct 10 17:56:02 2011
+From: dns_hmpf at web.de (dirk)
+Date: Mon, 10 Oct 2011 19:56:02 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <201110101738.16648.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <1877660.ARsuibuifu@falter> <3745765.YF06jMHa6M@falter>
+	<201110101738.16648.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <2023869.KOaDNGPDjr@falter>
+
+> Could you try what happens, if you *add* two lines, instead:
+> 
+> 	p.setColor (QPalette::Active, QPalette::Window, p.color
+> (QPalette::Active, QPalette::ToolTipBase));
+> 	p.setColor (QPalette::Active, QPalette::Text, p.color (QPalette::Active,
+> QPalette::ToolTipText));
+> 
+It takes the settings from window background and window text. This might not 
+look as fancy as the kde tooltip, but since the hints pop up quite frequently 
+in rkward, maybe that is not such a bad idea if their style is a bit more 
+plain?
+
+Yesterday I wrote:
+> > The background however does not change when changing between 
+> > schemes (tried 10 different ones) and I also could not find any specific 
+color 
+> > setting which changed the background.
+But today I came to realize that this is not really true. Apparently the 
+background color of this specific tooltip is only updated when restarting 
+rkward, furthermore it is the background of a tooltip that is used here. Since 
+regular tooltips and the text were updated right away, I did not notice that 
+before.
+
+Well the good news is, this clears some of the confusion and it seems that 
+only the text color is not working as expected.
+
+p.setColor (QPalette::Inactive, QPalette::Text, p.color (QPalette::Inactive, 
+QPalette::ToolTipText));
+
+By the way Is this just me or a general error?
+
+Best,
+Dirk
+
+Am Montag 10 Oktober 2011, 17:38:12 schrieb Thomas Friedrichsmeier:
+> Hi,
+> 
+> On Monday 10 October 2011, dirk wrote:
+> > I have no clue of C++, but when reading it and looking at
+> > -----------
+> > void QPalette::setColor ( ColorGroup group, ColorRole role, const QColor
+> > & color )
+> > 
+> > Sets the color in the specified color group, used for the given color
+> > role, to the specified solid color.
+> > -----------
+> > I had the impression it tries to assign the colors ToolTipBase and
+> > ToolTipText to Window and Text, but is it not already a tooltip, which
+> > should have ToolTipBase and ToolTipText set?
+> 
+> well, it's designed to look like a tooltip, but unfortunately, it isn't one,
+> technically.
+> 
+> > Well whatever,  I commented the hack out (ll 810-813) and while the
+> > colors do not respond to color changes in tooltip they respond to
+> > changes in window. I have no clue why the tooltip colors are not used
+> > (this is probably the reason for the hack?), but black on light gray is
+> > at least well readable.
+> 
+> Could you try what happens, if you *add* two lines, instead:
+> 
+> 	p.setColor (QPalette::Active, QPalette::Window, p.color
+> (QPalette::Active, QPalette::ToolTipBase));
+> 	p.setColor (QPalette::Active, QPalette::Text, p.color (QPalette::Active,
+> QPalette::ToolTipText));
+> 
+> Regards
+> Thomas
+
+
+
+From m.d.vreeburg at gmail.com  Tue Oct 11 13:35:44 2011
+From: m.d.vreeburg at gmail.com (Mischa Vreeburg)
+Date: Tue, 11 Oct 2011 15:35:44 +0200
+Subject: [rkward-users] rkward on emerge win7 64
+Message-ID: <CANh495HH4Kh3NtKkEZKcZWnhxMQf6-Zfe=ieFqhrO9fOEcLuNQ@mail.gmail.com>
+
+Hello,
+
+I'm trying to build rkward on windows using emerge.
+My system is a 64 bit windows 7 system. The bundle doesn't work on this.
+I've  updated to kde 4.7 using emerge
+The build fails with the rkpthreadsupport.cpp file.
+
+Can you help me?
+
+Here is the last output of the emerge build:
+
+[ 92%] Built target rkward.frontend
+gmake -f rkward\rbackend\CMakeFiles\rkward.rbackend.dir\build.make
+rkward/rbackend/CMakeFiles/rkward.rbackend.dir/depend
+
+gmake[2]: Entering directory
+`c:/kderoot4/build/kdeapps/rkward-0.5.2/work/mingw4-RelWithDebInfo-svnHEAD'
+c:\kderoot4\dev-utils\bin\cmake.exe -E cmake_depends "MinGW Makefiles"
+c:\kderoot4\download\svn-src\rkward c:\kderoot4\d
+ownload\svn-src\rkward\rkward\rbackend
+C:\kderoot4\build\kdeapps\rkward-0.5.2\work\mingw4-RelWithDebInfo-svnHEAD
+C:\kder
+oot4\build\kdeapps\rkward-0.5.2\work\mingw4-RelWithDebInfo-svnHEAD\rkward\rbackend
+C:\kderoot4\build\kdeapps\rkward-0.5.
+2\work\mingw4-RelWithDebInfo-svnHEAD\rkward\rbackend\CMakeFiles\rkward.rbackend.dir\DependInfo.cmake
+--color=
+gmake[2]: Leaving directory
+`c:/kderoot4/build/kdeapps/rkward-0.5.2/work/mingw4-RelWithDebInfo-svnHEAD'
+gmake -f rkward\rbackend\CMakeFiles\rkward.rbackend.dir\build.make
+rkward/rbackend/CMakeFiles/rkward.rbackend.dir/build
+gmake[2]: Entering directory
+`c:/kderoot4/build/kdeapps/rkward-0.5.2/work/mingw4-RelWithDebInfo-svnHEAD'
+c:\kderoot4\dev-utils\bin\cmake.exe -E cmake_progress_report
+C:\kderoot4\build\kdeapps\rkward-0.5.2\work\mingw4-RelWithD
+ebInfo-svnHEAD\CMakeFiles
+[ 92%] Building CXX object
+rkward/rbackend/CMakeFiles/rkward.rbackend.dir/rkpthreadsupport.obj
+cd
+C:\kderoot4\build\kdeapps\rkward-0.5.2\work\mingw4-RelWithDebInfo-svnHEAD\rkward\rbackend
+&& c:\kderoot4\mingw64\bin\
+g++.exe   -DQT_DLL -DQT_NO_STL -DQT_NO_CAST_TO_ASCII -D_REENTRANT
+-DKDE_DEPRECATED_WARNINGS -DKDE4_CMAKE_TOPLEVEL_DIR_LE
+NGTH=28 -DQT_NO_CAST_TO_ASCII -DRKWARD_SPLIT_PROCESS -D_WIN32_WINNT=0x0501
+-DWINVER=0x0501 -D_WIN32_IE=0x0501 -DUNICODE
+-Woverloaded-virtual -fno-threadsafe-statics -O2 -g -DNDEBUG -DQT_NO_DEBUG
+-Ic:\kderoot4\lib\R\include -IC:\kderoot4\bui
+ld\kdeapps\rkward-0.5.2\work\mingw4-RelWithDebInfo-svnHEAD\rkward\rbackend
+-Ic:\kderoot4\include -IC:\kderoot4\include\Q
+tXmlPatterns -IC:\kderoot4\include\QtXml -IC:\kderoot4\include\QtWebKit
+-IC:\kderoot4\include\QtUiTools -IC:\kderoot4\in
+clude\QtTest -IC:\kderoot4\include\QtSvg -IC:\kderoot4\include\QtSql
+-IC:\kderoot4\include\QtScriptTools -IC:\kderoot4\i
+nclude\QtScript -IC:\kderoot4\include\QtOpenGL
+-IC:\kderoot4\include\QtNetwork -IC:\kderoot4\include\QtMultimedia -IC:\k
+deroot4\include\QtHelp -IC:\kderoot4\include\QtDesigner
+-IC:\kderoot4\include\QtDeclarative -IC:\kderoot4\include\QtDBus
+ -IC:\kderoot4\include\Qt3Support -IC:\kderoot4\include\QtGui
+-IC:\kderoot4\include\QtCore -IC:\kderoot4\include\Qt -IC:
+\kderoot4\mkspecs\default -IC:\kderoot4\include   -o
+CMakeFiles\rkward.rbackend.dir\rkpthreadsupport.obj -c c:\kderoot4\
+download\svn-src\rkward\rkward\rbackend\rkpthreadsupport.cpp
+c:\kderoot4\download\svn-src\rkward\rkward\rbackend\rkpthreadsupport.cpp: In
+function 'void RKGetCurrentThreadStackLimit
+s(size_t*, void**, char*)':
+c:\kderoot4\download\svn-src\rkward\rkward\rbackend\rkpthreadsupport.cpp:92:
+error: cast from 'void*' to 'long unsigned
+int' loses precision
+c:\kderoot4\download\svn-src\rkward\rkward\rbackend\rkpthreadsupport.cpp:92:
+error: cast from 'char*' to 'long unsigned
+int' loses precision
+gmake[2]: ***
+[rkward/rbackend/CMakeFiles/rkward.rbackend.dir/rkpthreadsupport.obj] Error
+1
+gmake[2]: Leaving directory
+`c:/kderoot4/build/kdeapps/rkward-0.5.2/work/mingw4-RelWithDebInfo-svnHEAD'
+gmake[1]: *** [rkward/rbackend/CMakeFiles/rkward.rbackend.dir/all] Error 2
+gmake[1]: Leaving directory
+`c:/kderoot4/build/kdeapps/rkward-0.5.2/work/mingw4-RelWithDebInfo-svnHEAD'
+gmake: *** [all] Error 2
+emerge fatal error: while running make cmd: gmake  VERBOSE=1
+emerge fatal error: running python
+c:\kderoot4\emerge\portage\kdeapps\rkward\rkward-0.5.2.py make
+emerge debug: Task: make for rkward stopped after: 0:00:23.018000
+emerge debug: Task: Emerge stopped after: 0:00:25.343000
+
+-- 
+M. D. Vreeburg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111011/f67f3cc4/attachment.html>
+
+From asifwazir01 at gmail.com  Tue Oct 11 13:58:47 2011
+From: asifwazir01 at gmail.com (Asif Wazir)
+Date: Tue, 11 Oct 2011 15:58:47 +0200
+Subject: [rkward-users] setwd in RKward and load csv files
+Message-ID: <CAJtLt=SbO1ojCQT3+Z4Safi+w-tr_2Na_ywOD6dBzDOnVjj=LA@mail.gmail.com>
+
+Dear RKward user
+
+I have new to RKward user in ubuntu. I am facing difficulty, how to set the
+path in RKward..In windows, the setwd() command works that you put your path
+e.g. c\aba\.....
+
+How i set the path in RKward in ubuntu..(setwd..) and how i load and save
+the csv files.
+
+Best regards
+-- 
+Muhammad Asif Wazir
+Ph.D student
+Institut f?r Statistik und Operations Research <http://isor.univie.ac.at/>.
+University of Vienna, Austria
+cell: 00436509092298
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111011/f6e5eea5/attachment.html>
+
+From dns_hmpf at web.de  Tue Oct 11 14:13:43 2011
+From: dns_hmpf at web.de (dirk)
+Date: Tue, 11 Oct 2011 16:13:43 +0200
+Subject: [rkward-users] setwd in RKward and load csv files
+In-Reply-To: <CAJtLt=SbO1ojCQT3+Z4Safi+w-tr_2Na_ywOD6dBzDOnVjj=LA@mail.gmail.com>
+References: <CAJtLt=SbO1ojCQT3+Z4Safi+w-tr_2Na_ywOD6dBzDOnVjj=LA@mail.gmail.com>
+Message-ID: <32991086.VWPWJX2iel@falter>
+
+Am Dienstag 11 Oktober 2011, 15:58:47 schrieb Asif Wazir:
+> How i set the path in RKward in ubuntu..(setwd..) and how i load and save
+> the csv files.
+Both you can do with normal R commands, which you either have in your script 
+and run from there or enter in the interactive console.
+
+You already mentioned the setwd('/path/to/your/workspace/') function. For 
+loading csv files there is the read.csv('/path/to/your/file.csv/') or the more 
+flexible read.table() command.  Normally you assign the output of this function 
+to a variable, i.e. my.data, so that you can access it via the variable. 
+Alternatively you might want to use the graphical dialog for data import (I 
+guess it was 'File -> Import').
+
+In both cases you will find your data in your current workspace, which you can 
+explore with ls() or when you open the workspace panel with the button on the 
+left side.
+
+Best,
+Dirk
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Oct 11 15:32:38 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 Oct 2011 17:32:38 +0200
+Subject: [rkward-users] rkward on emerge win7 64
+In-Reply-To: <CANh495HH4Kh3NtKkEZKcZWnhxMQf6-Zfe=ieFqhrO9fOEcLuNQ@mail.gmail.com>
+References: <CANh495HH4Kh3NtKkEZKcZWnhxMQf6-Zfe=ieFqhrO9fOEcLuNQ@mail.gmail.com>
+Message-ID: <201110111732.41650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 11 October 2011, Mischa Vreeburg wrote:
+> I'm trying to build rkward on windows using emerge.
+> My system is a 64 bit windows 7 system. The bundle doesn't work on this.
+
+in theory, the bundle should work (but you'll get 32 bits, only, of course). 
+If it does not, let us know the symptoms. Perhaps we can provide you with 
+troubleshooting instructions.
+
+(As a first guess: An often cause of trouble is if some executable from a 
+previous installation of KDE are still running. So, in general, if you run 
+into trouble, it is a good idea to try after a reboot.)
+
+> I've  updated to kde 4.7 using emerge
+> The build fails with the rkpthreadsupport.cpp file.
+> 
+> Can you help me?
+> In function 'void RKGetCurrentThreadStackLimit
+> s(size_t*, void**, char*)':
+> c:\kderoot4\download\svn-src\rkward\rkward\rbackend\rkpthreadsupport.cpp:92
+> : error: cast from 'void*' to 'long unsigned
+> int' loses precision
+
+Hm, there is no such cast on line 92 of the current sources. Probably, the 
+emerge script fails to update the sources, somehow. Try
+    cd c:\kderoot4\download\svn-src\rkward
+    svn up
+then try again. Probably this will not fix the issue, but at least it should 
+tell us the line number where the problem is really at.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111011/40b7fa1e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Oct 11 15:40:27 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 Oct 2011 17:40:27 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <2023869.KOaDNGPDjr@falter>
+References: <1877660.ARsuibuifu@falter>
+	<201110101738.16648.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<2023869.KOaDNGPDjr@falter>
+Message-ID: <201110111740.27271.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 10 October 2011, dirk wrote:
+> > Could you try what happens, if you *add* two lines, instead:
+> > 	p.setColor (QPalette::Active, QPalette::Window, p.color
+> > 
+> > (QPalette::Active, QPalette::ToolTipBase));
+> > 
+> > 	p.setColor (QPalette::Active, QPalette::Text, p.color (QPalette::Active,
+> > 
+> > QPalette::ToolTipText));
+> 
+> It takes the settings from window background and window text.
+
+Could you do one more experiment for me? Use the following four lines instead 
+of the original ones (also removing the two lines added above):
+
+	p.setColor (QPalette::Inactive, QPalette::Window, p.color 
+(QPalette::Inactive, QPalette::ToolTipBase));
+	p.setColor (QPalette::Inactive, QPalette::Text, p.color 
+(QPalette::Inactive, QPalette::ToolTipText));
+	p.setColor (QPalette::Active, QPalette::Window, p.color 
+(QPalette::Inactive, QPalette::ToolTipBase));
+	p.setColor (QPalette::Active, QPalette::Text, p.color 
+(QPalette::Inactive, QPalette::ToolTipText));
+
+Does that achieve tooltip colors?
+
+> This might
+> not look as fancy as the kde tooltip, but since the hints pop up quite
+> frequently in rkward, maybe that is not such a bad idea if their style is
+> a bit more plain?
+
+Well, the nice thing about the tooltip style (as long as it works) is that it 
+is already optimized for display on top of other widgets. I.e. in most styles 
+it contrasts with both the generic window background (e.g. the background of 
+the tool bar), and the background of text areas.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111011/f580b0e5/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Oct 11 15:47:35 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 11 Oct 2011 17:47:35 +0200
+Subject: [rkward-users] Need help on install rkward on Mac
+In-Reply-To: <CAEGcZDmOmEes128JrRM7o+n0qoboTia+TdLRf1zvBArwEfivpQ@mail.gmail.com>
+References: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+	<201110101746.56849.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAEGcZDmOmEes128JrRM7o+n0qoboTia+TdLRf1zvBArwEfivpQ@mail.gmail.com>
+Message-ID: <201110111747.35983.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 10 October 2011, Mingtian Ni wrote:
+> Some other thread mentioned that pre-existing old version MacPython
+> (V2.4 in my case) could be the problem. So, I removed MacPytho
+> (instruction here:
+> http://mac.downloadatoz.com/tutorial/3498,macpython.html). The install
+> managed to go a little bit further. Now the error messages are:
+> 
+> [ 58%] Built target knewstuff2
+> make: *** [all] Error 2
+> ### execution of /var/tmp/tmp.1.ftF0fY failed, exit code 2
+
+could you post a couple of lines above that? There should be another error 
+message before this one.
+
+Anyway, however, posting to kde-mac at kde.org may give you better help on this 
+particular problem. Until the build process reaches rkward itself (should not 
+be too much longer from this point), we probably won't have too much insight.
+
+(Again, I'm sorry that we can't provide better support for Mac at the moment, 
+but again, we hope that this will improve considerably in a few weeks.)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111011/fca66307/attachment.sig>
+
+From dns_hmpf at web.de  Tue Oct 11 17:23:33 2011
+From: dns_hmpf at web.de (dirk)
+Date: Tue, 11 Oct 2011 19:23:33 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <201110111740.27271.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <1877660.ARsuibuifu@falter> <2023869.KOaDNGPDjr@falter>
+	<201110111740.27271.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <2197310.8Es3GdHadW@falter>
+
+Am Dienstag 11 Oktober 2011, 17:40:27 schrieb Thomas Friedrichsmeier:
+> Could you do one more experiment for me? Use the following four lines
+> instead of the original ones (also removing the two lines added above):
+> 
+> 	p.setColor (QPalette::Inactive, QPalette::Window, p.color
+> (QPalette::Inactive, QPalette::ToolTipBase));
+> 	p.setColor (QPalette::Inactive, QPalette::Text, p.color
+> (QPalette::Inactive, QPalette::ToolTipText));
+> 	p.setColor (QPalette::Active, QPalette::Window, p.color
+> (QPalette::Inactive, QPalette::ToolTipBase));
+> 	p.setColor (QPalette::Active, QPalette::Text, p.color
+> (QPalette::Inactive, QPalette::ToolTipText));
+> 
+Tried it, but it behaves like the original setting. I tried hardcoding the 
+color for QPalette::Text here but it still does not change,  so I concluded 
+there is no QPalette::Text and I changed it to QPalette::WindowText. That 
+finally did it:
+
+	p.setColor (QPalette::Inactive, QPalette::Window, p.color 
+(QPalette::Inactive, QPalette::ToolTipBase));
+        p.setColor (QPalette::Inactive, QPalette::WindowText, p.color 
+(QPalette::Inactive, QPalette::ToolTipText));
+
+Now the  color set under ?Tooltip -> Text? is shown in the tooltip.
+
+Two issues remain:
+When changing the color of the text rkward needs to be restarted to get the 
+text, as it was the case for the background already.
+
+The rkward tooltip still does not really look like the normal KDE tooltip. 
+http://wstaw.org/m/2011/10/11/plasma-desktopE21063.jpg
+http://wstaw.org/m/2011/10/11/plasma-desktopt21063.jpg
+
+Best,
+Dirk
+
+
+
+From mingtianni at gmail.com  Wed Oct 12 03:57:28 2011
+From: mingtianni at gmail.com (Mingtian Ni)
+Date: Tue, 11 Oct 2011 20:57:28 -0700
+Subject: [rkward-users] Need help on install rkward on Mac
+In-Reply-To: <201110111747.35983.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+	<201110101746.56849.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAEGcZDmOmEes128JrRM7o+n0qoboTia+TdLRf1zvBArwEfivpQ@mail.gmail.com>
+	<201110111747.35983.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAEGcZDkx0d=6WxH8nUZH=XZcm+m2kXAQE3zcj5S2=6Dtiue=Sw@mail.gmail.com>
+
+Thank you Thomas! I'll try kde-mac later on.
+I re-ran the install command a few times more and now got the
+following error message:
+
+[ 37%] Built target kdeui
+make: *** [all] Error 2
+### execution of /var/tmp/tmp.1.I0o0T8 failed, exit code 2
+Removing runtime build-lock...
+Removing build-lock package...
+/sw/bin/dpkg-lockwait -r fink-buildlock-kdelibs4-x11-4.4.1-2
+(Reading database ... 138763 files and directories currently installed.)
+Removing fink-buildlock-kdelibs4-x11-4.4.1-2 ...
+Reading buildlock packages...
+/sw/bin/dpkg-lockwait -i /sw/fink/debs/openexr-dev_1.4.0-1023_darwin-i386.deb
+Selecting previously deselected package openexr-dev.
+(Reading database ... 138762 files and directories currently installed.)
+Unpacking openexr-dev (from .../openexr-dev_1.4.0-1023_darwin-i386.deb) ...
+Setting up openexr-dev (1.4.0-1023) ...
+Clearing dependency_libs of .la files being installed
+
+Failed: phase compiling: kdelibs4-x11-4.4.1-2 failed
+
+
+On Tue, Oct 11, 2011 at 8:47 AM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> On Monday 10 October 2011, Mingtian Ni wrote:
+>> Some other thread mentioned that pre-existing old version MacPython
+>> (V2.4 in my case) could be the problem. So, I removed MacPytho
+>> (instruction here:
+>> http://mac.downloadatoz.com/tutorial/3498,macpython.html). The install
+>> managed to go a little bit further. Now the error messages are:
+>>
+>> [ 58%] Built target knewstuff2
+>> make: *** [all] Error 2
+>> ### execution of /var/tmp/tmp.1.ftF0fY failed, exit code 2
+>
+> could you post a couple of lines above that? There should be another error
+> message before this one.
+>
+> Anyway, however, posting to kde-mac at kde.org may give you better help on this
+> particular problem. Until the build process reaches rkward itself (should not
+> be too much longer from this point), we probably won't have too much insight.
+>
+> (Again, I'm sorry that we can't provide better support for Mac at the moment,
+> but again, we hope that this will improve considerably in a few weeks.)
+>
+> Regards
+> Thomas
+>
+> ------------------------------------------------------------------------------
+> All the data continuously generated in your IT infrastructure contains a
+> definitive record of customers, application performance, security
+> threats, fraudulent activity and more. Splunk takes this data and makes
+> sense of it. Business sense. IT sense. Common sense.
+> http://p.sf.net/sfu/splunk-d2d-oct
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Oct 12 09:56:56 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 12 Oct 2011 11:56:56 +0200
+Subject: [rkward-users] Need help on install rkward on Mac
+In-Reply-To: <CAEGcZDkx0d=6WxH8nUZH=XZcm+m2kXAQE3zcj5S2=6Dtiue=Sw@mail.gmail.com>
+References: <CAEGcZDmfYOCVr_ryPC1u-aPuTQuAm9VmueD_enH1FopPKkJd1A@mail.gmail.com>
+	<201110111747.35983.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAEGcZDkx0d=6WxH8nUZH=XZcm+m2kXAQE3zcj5S2=6Dtiue=Sw@mail.gmail.com>
+Message-ID: <201110121156.56585.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 12 October 2011, Mingtian Ni wrote:
+> Thank you Thomas! I'll try kde-mac later on.
+> I re-ran the install command a few times more and now got the
+> following error message:
+> 
+> [ 37%] Built target kdeui
+> make: *** [all] Error 2
+
+once again, the "real" error message should be a bit further up in the build 
+log (sometimes up to 30 lines or so above).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111012/4c5a35bf/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Oct 12 10:22:51 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 12 Oct 2011 12:22:51 +0200
+Subject: [rkward-users] colors of suggested function arguments
+In-Reply-To: <2197310.8Es3GdHadW@falter>
+References: <1877660.ARsuibuifu@falter>
+	<201110111740.27271.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<2197310.8Es3GdHadW@falter>
+Message-ID: <201110121222.54711.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 11 October 2011, dirk wrote:
+> Tried it, but it behaves like the original setting. I tried hardcoding the
+> color for QPalette::Text here but it still does not change,  so I concluded
+> there is no QPalette::Text and I changed it to QPalette::WindowText. That
+> finally did it:
+
+good catch. I've applied the fix in our repository. Thanks!
+
+> Two issues remain:
+> When changing the color of the text rkward needs to be restarted to get the
+> text, as it was the case for the background already.
+> 
+> The rkward tooltip still does not really look like the normal KDE tooltip.
+> http://wstaw.org/m/2011/10/11/plasma-desktopE21063.jpg
+> http://wstaw.org/m/2011/10/11/plasma-desktopt21063.jpg
+
+True, but fixing that looks like more trouble than it is worth. So it will 
+probably stay that way (unless somebody provides a patch...).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111012/97f35a5f/attachment.sig>
+
+From noreply at sourceforge.net  Sat Oct 15 13:24:31 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 15 Oct 2011 21:24:31 +0800
+Subject: [rkward-users] [Help] configure syntax highlighting for r script
+Message-ID: <forum-165574-10732259@sourceforge.net>
+
+The following forum message was posted by easttiger at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4760536:
+
+Hi,
+
+I'm new to RKward and I'd like to use it as my main R IDE under linux because
+it has a debugger.
+
+I'm configuring syntax colors from menu Settings > Editor.
+
+My question is :
+I'm not able to set colors for R control keywords such as "for", "in" "while",
+etc,
+while I am able to set colors for many others.
+
+Could some expert help me on this issue?
+Also I notice the word "Schema" is used for color template, I wonder if an xml
+is use as the color configuration file.
+
+Thanks!
+Joseph
+
+
+
+
+
+From goro44 at inbox.com  Sun Oct 16 09:22:46 2011
+From: goro44 at inbox.com (=?UTF-8?B?VXJiw6FuIEfDoWJvcg==?=)
+Date: Sun, 16 Oct 2011 01:22:46 -0800
+Subject: [rkward-users] Repeated measures
+Message-ID: <9B93EDBEE62.00000608goro44@inbox.com>
+
+Dear RKWard users,
+
+
+I would like to make a Repeated measures ANOVA statistics. Is it possible in RKWard? Which menu can I find it in?
+If you know any specific documentation what descibes the method, I would appreciate it.
+
+Thank you in advance,
+
+
+G?bor
+beginner user
+
+____________________________________________________________
+Share photos & screenshots in seconds...
+TRY FREE IM TOOLPACK at http://www.imtoolpack.com/default.aspx?rc=if1
+Works in all emails, instant messengers, blogs, forums and social networks.
+
+
+
+
+
+From noreply at sourceforge.net  Sun Oct 16 17:29:44 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 16 Oct 2011 19:29:44 +0200
+Subject: [rkward-users] [Help] RE: configure syntax highlighting for r script
+In-Reply-To: <forum-165574-10732259@sourceforge.net>
+Message-ID: <forum-165574-10734250@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4760536:
+
+Hi!
+
+[quote]My question is : I'm not able to set colors for R control keywords such
+as "for", "in" "while", etc, while I am able to set colors for many others.
+[/quote]
+
+Admittedly, I had to search hard to find this, myself: When a script window
+is opened, go to "Settings->Configure Editor...->Fonts & Colors". There, open
+the tab that reads "Highlighting Text Styles" (not "Normal Text Styles"), and
+select "Scripts/R Script" in the dropdown box. Now you can customize all colors
+used in the R syntax highlighting, while the "Normal Text Styles" allows you
+to control generic styles used for all types of highlighting.
+
+[quote]Also I notice the word "Schema" is used for color template, I wonder
+if an xml is use as the color configuration file.[/quote]
+
+Different applications which use "katepart" for text editing can use different
+color schemes. The configuration for these is stored in
+~/.kde/share/config/kateschemarc . In addition to this, the highlighting definition
+itself is written in xml. You should find it in this directory: [code]cd `kde4-config
+--install data`/katepart/[/code]
+More info on these katepart internals can be found at http://kate-editor.org .
+
+Regards
+Thomas
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Oct 16 17:38:31 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Oct 2011 19:38:31 +0200
+Subject: [rkward-users] Repeated measures
+In-Reply-To: <9B93EDBEE62.00000608goro44@inbox.com>
+References: <9B93EDBEE62.00000608goro44@inbox.com>
+Message-ID: <201110161938.34917.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 16 October 2011, Urb?n G?bor wrote:
+> I would like to make a Repeated measures ANOVA statistics. Is it possible
+> in RKWard? Which menu can I find it in? If you know any specific
+> documentation what descibes the method, I would appreciate it.
+
+unfortunately, we do not have a graphical dialog for this (and many other 
+types of analysis), yet. We will have this, eventually, but not at the moment.
+
+However, RKWard is based on R language, and using the "R Console", you can do 
+all sorts of computations. Here's a link to a tutorial about various repeated 
+measures analyzes in R:
+  http://www.ats.ucla.edu/stat/R/seminars/Repeated_Measures/repeated_measures.htm
+Note that the essence of each example is just the bottom two lines, so don't 
+be scared.
+
+Many more tutorials exist on the net.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111016/6d77f212/attachment.sig>
+
+From noreply at sourceforge.net  Mon Oct 17 14:52:13 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Oct 2011 22:52:13 +0800
+Subject: [rkward-users] [Help] RE: configure syntax highlighting for r script
+In-Reply-To: <forum-165574-10734250@sourceforge.net>
+Message-ID: <forum-165574-10736015@sourceforge.net>
+
+The following forum message was posted by easttiger at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4760536:
+
+Thx a lot for the clear explanation!
+
+
+
+From newsletter at fichtinger.org  Sat Oct 22 11:28:15 2011
+From: newsletter at fichtinger.org (Johannes Fichtinger)
+Date: Sat, 22 Oct 2011 12:28:15 +0100
+Subject: [rkward-users] ERROR: package 'rkward' does not have a NAMESPACE
+	and should be re-installed
+Message-ID: <201110221228.15619.newsletter@fichtinger.org>
+
+Hi 
+
+I cannot use rkward on my Debian SID installation with latest R packages 
+anymore. When starting rkward, the following error messages are shown:
+
+library("rkward")
+Error in library("rkward") : 
+  package 'rkward' does not have a NAMESPACE and should be re-installed
+
+I believe this is related to the most recent update of the R packages. 
+
+Any quick workaround to get rkward running?
+
+Best Regards
+Johannes
+
+############################################
+The full error messages is:
+
+R version 2.14.0 beta (2011-10-20 r57355)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+Error in library("rkward") : 
+package 'rkward' does not have a NAMESPACE and should be re-installed
+Error in stopifnot(.rk.app.version == "0.5.6") : 
+object '.rk.app.version' not found
+Error: could not find function ".rk.fix.assignments"
+Error: could not find function ".rk.getHelpBaseUrl"
+Error during wrapup: could not find function ".rk.do.error"
+Error in options(editor = rk.edit.files) : 
+object 'rk.edit.files' not found
+Error during wrapup: could not find function ".rk.do.error"
+Error in options(pager = rk.show.files) : 
+object 'rk.show.files' not found
+Error during wrapup: could not find function ".rk.do.error"
+Error in options(browser = rk.show.html) : 
+object 'rk.show.html' not found
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function "rk.toggle.plot.history"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function "rk.verify.plot.hist.limits"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function "rk.set.output.html.file"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.get.structure"
+Error during wrapup: could not find function ".rk.do.error"
+Error: could not find function ".rk.watch.globalenv"
+Error during wrapup: could not find function ".rk.do.error"
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Oct 22 18:08:02 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 22 Oct 2011 20:08:02 +0200
+Subject: [rkward-users] ERROR: package 'rkward' does not have a
+	NAMESPACE and should be re-installed
+In-Reply-To: <201110221228.15619.newsletter@fichtinger.org>
+References: <201110221228.15619.newsletter@fichtinger.org>
+Message-ID: <201110222008.06651.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Saturday 22 October 2011, Johannes Fichtinger wrote:
+> I cannot use rkward on my Debian SID installation with latest R packages
+> anymore. When starting rkward, the following error messages are shown:
+> 
+> library("rkward")
+> Error in library("rkward") :
+>   package 'rkward' does not have a NAMESPACE and should be re-installed
+> 
+> I believe this is related to the most recent update of the R packages.
+
+yes, unfortunately, sid already has a beta of R 2.14.0, and this breaks RKWard 
+0.5.6.
+ 
+> Any quick workaround to get rkward running?
+
+I intend to release RKWard 0.5.7 tomorrow, although I won't promise an exact 
+time, and if there are problems with the packaging, it could take another 
+while, until a Debian package is available. You can always compile the SVN 
+version (http://p.sf.net/rkward/svn). Also, the candidate for the Debian 
+package is already available at http://rkward.sf.net/temp/0.5.7-rc1 .
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111022/9178384c/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 24 08:02:46 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 24 Oct 2011 10:02:46 +0200
+Subject: [rkward-users] [rkward-announce] RKWard 0.5.7 is released
+Message-ID: <201110241002.51908.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Just a quick note to let you know, that RKWard 0.5.7 has been released, 
+yesterday (but I did not find the time to write an announcement, then). As 
+usual, links to downloads, as well as a summary of new and changed features is 
+available on our website at http://rkward.sf.net .
+
+Thanks a lot to all contributors!
+
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111024/10711450/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+The demand for IT networking professionals continues to grow, and the
+demand for specialized networking skills is growing even more rapidly.
+Take a complimentary Learning at Cisco Self-Assessment and learn 
+about Cisco certifications, training, and career opportunities. 
+http://p.sf.net/sfu/cisco-dev2dev
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From meik.michalke at uni-duesseldorf.de  Wed Oct 26 09:23:47 2011
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 26 Oct 2011 11:23:47 +0200
+Subject: [rkward-users] Repeated measures
+In-Reply-To: <9B93EDBEE62.00000608goro44@inbox.com>
+References: <9B93EDBEE62.00000608goro44@inbox.com>
+Message-ID: <25885468.e6v27nRLo2@yrla>
+
+hi g?bor,
+
+Am Sonntag 16 Oktober 2011, 01:22:46 schrieb Urb?n G?bor:
+> I would like to make a Repeated measures ANOVA statistics. Is it possible in
+> RKWard? Which menu can I find it in?
+
+the just released version 0.5.7 supports a new method to enhance RKWard with 
+external plugins, as well as a new way of generating those plugins. i took the 
+liberty of writing one for ANOVAs. it's not perfect, but can easily be 
+improved. if you'd like to have look, here's how you get it:
+
+ - make sure you have RKWard >= 0.5.7 installed
+ - "settings" -> "configure packages" -> "install/update/remove" tab
+   -> look for the package "rk.ANOVA" amongst "new packages"
+
+this package is the ANOVA plugin (that is, external RKWard plugins are now 
+simple R packages). once you've installed it, you should find three additional 
+dialogs in the menus:
+ - "analysis" -> "ANOVA"
+ - "analysis" -> "means" -> "t-tests" -> "pairwise t-tests"
+ - "plots" -> "interaction plot"
+   ("generic plot options" don't work yet)
+
+note however, that the plugin depends on ezANOVA() (package "ez") for the 
+ANOVAs, which might take some time to install as it has in turn some 
+dependencies (and currently also a bug causing it to fail for pure between 
+designs...).
+
+for those interested, the plugin sources also include the R script that 
+created the whole plugin (using the new rkwarddev package).
+
+comments and suggestions welcome!
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111026/22cbb34d/attachment.sig>
+
+From m.d.vreeburg at gmail.com  Thu Oct 27 12:55:30 2011
+From: m.d.vreeburg at gmail.com (Mischa Vreeburg)
+Date: Thu, 27 Oct 2011 14:55:30 +0200
+Subject: [rkward-users] version of rkward package in windows bundle is still
+	0.5.6
+Message-ID: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+
+The version of the rkward package in the windows bundle is still 0.5.6 in
+the DESCRIPTION file.
+Is it still the 0.5.6 version or is the version nr not updated due to an
+oversite?
+
+regards,
+
+M. D. Vreeburg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111027/504b8054/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Oct 27 15:48:18 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 27 Oct 2011 17:48:18 +0200
+Subject: [rkward-users] version of rkward package in windows bundle is
+	still 0.5.6
+In-Reply-To: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+References: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+Message-ID: <201110271748.23882.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 27 October 2011, Mischa Vreeburg wrote:
+> The version of the rkward package in the windows bundle is still 0.5.6 in
+> the DESCRIPTION file.
+> Is it still the 0.5.6 version or is the version nr not updated due to an
+> oversite?
+
+Yes, I simply forgot to bump the version number in the rkward R package.
+Help->About RKWard should 0.5.7, correctly, and also the first line of 
+rk.sessionInfo(). 
+
+RKWard also checks the version of the rkward R package on each startup, so it 
+will always load the package version that corresponds to the frontend (or show 
+an error message). However, that check is not based on the version in the 
+DESCRIPTION file for technical reasons (the "Version" field, there, does not 
+permit some of the version names we use for testing releases).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111027/18c1037f/attachment.sig>
+
+From Meik.Michalke at uni-duesseldorf.de  Fri Oct 28 10:42:26 2011
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 28 Oct 2011 12:42:26 +0200
+Subject: [rkward-users] version of rkward package in windows bundle is
+ still 0.5.6
+In-Reply-To: <201110271748.23882.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+	<201110271748.23882.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <201110281242.26639.meik.michalke@uni-duesseldorf.de>
+
+Am Donnerstag, 27. Oktober 2011, 17:48:18 schrieb Thomas Friedrichsmeier:
+> On Thursday 27 October 2011, Mischa Vreeburg wrote:
+> > The version of the rkward package in the windows bundle is still 0.5.6 in
+> > the DESCRIPTION file.
+[...]
+> RKWard also checks the version of the rkward R package on each startup, so
+> it  will always load the package version that corresponds to the frontend
+> (or show an error message). However, that check is not based on the
+> version in the DESCRIPTION file for technical reasons
+
+fwiw, if that's where R checks version numbers internally, i'm afraid this 
+might prevent windows users from loading the rkwarddev package, which depends 
+on rkward >= 0.5.7 (but i didn't check).
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 190 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111028/ba9ffc07/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Oct 28 11:41:24 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 28 Oct 2011 13:41:24 +0200
+Subject: [rkward-users] version of rkward package in windows bundle is
+	still 0.5.6
+In-Reply-To: <201110281242.26639.meik.michalke@uni-duesseldorf.de>
+References: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+	<201110271748.23882.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<201110281242.26639.meik.michalke@uni-duesseldorf.de>
+Message-ID: <201110281341.28597.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 28 October 2011, meik michalke wrote:
+> fwiw, if that's where R checks version numbers internally, i'm afraid this
+> might prevent windows users from loading the rkwarddev package, which
+> depends on rkward >= 0.5.7 (but i didn't check).
+
+this is a problem on all platforms. And I just checked, it does prevent users 
+from loading the rkwarddev package.  Perhaps it's best to turn the dependency 
+back to 0.5.6. While that's not accurate, users of the "real" rkward 0.5.6 or 
+earlier are currently unlikely to discover the rkwarddev package, currently. 
+Sorry 'bout the trouble.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111028/a461db9d/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Sun Oct 30 20:18:19 2011
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sun, 30 Oct 2011 21:18:19 +0100
+Subject: [rkward-users] version of rkward package in windows bundle is
+	still 0.5.6
+In-Reply-To: <201110281341.28597.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CANh495E6V3JNntcZf2CRO-uLs1xTTWzjOHB7n6OcbsMC4un_Rw@mail.gmail.com>
+	<201110281242.26639.meik.michalke@uni-duesseldorf.de>
+	<201110281341.28597.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <2128754.xbq78hHmYT@yrla>
+
+hi,
+
+Am Freitag 28 Oktober 2011, 13:41:24 schrieb Thomas Friedrichsmeier:
+> On Friday 28 October 2011, meik michalke wrote:
+> > fwiw, if that's where R checks version numbers internally, i'm afraid
+> > this might prevent windows users from loading the rkwarddev package,
+> > which depends on rkward >= 0.5.7 (but i didn't check).
+> 
+> this is a problem on all platforms. And I just checked, it does prevent
+> users  from loading the rkwarddev package.  Perhaps it's best to turn the
+> dependency back to 0.5.6.
+
+i just figured the same was true for the rk.ANOVA plugin package. version 
+0.01-6 should solve that. it also has a new dialog to prepare a data.frame for 
+within subject analysis ("Data" -> "ANOVA"), and the pairwise t-test dialog 
+now also takes data from separate objects.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20111030/92ba7f76/attachment.sig>
+

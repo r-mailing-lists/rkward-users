@@ -1,0 +1,292 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec  3 19:19:42 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 3 Dec 2015 20:19:42 +0100
+Subject: [rkward-users] Upcoming release 0.6.4 - Call for testing
+Message-ID: <20151203201942.00593761@late>
+
+Hi!
+
+We are getting ready to release RKWard 0.6.4 to the public, and as
+usual, I would like to ask your help in finding the last few rough
+edges that we should take care of.
+
+Once again, we'll try to make do with a rather short testing period,
+and so I'd like to ask you to provide feedback by December 14 (the
+earlier the better). Naturally, if anything important comes up, the
+testing period will be extended as necessary. More details and download
+links at https://rkward.kde.org/Release_Schedule .
+
+Key new features to look out for, are:
+- The integrated HTML window (also used for the "Output Window") has
+  been changed to be based on the Qt webkit engine. This is partly in
+  preparation for the port to "KDE 5", but should hopefully also
+  address some issues with drag-and-drop of images or text from the
+  output window to e.g. a word processor.
+- With the help of usability expert Jan Dittrich, we addressed some of
+  the more important points of confusion: The "Worksapce browser" has
+  been re-designed (and also gained search-functionality), the
+  "optionset" element used in some plugins has been reworked to be much
+  more intuitive, but also the CVS import plugin has seen further
+  improvements in usability, and many small problems have been fixed
+  across the board. 
+
+--- Translators ---
+
+As a last reminder: We are hosted on KDE.org since version 0.6.3, and
+translations are managed, there. Your existing translations files
+should have been imported. If you have not done so, yet, get in touch
+with your KDE language team (http://l10n.kde.org/teams-list.php).
+
+This also means that calls for translations are no longer sent to this
+list! https://mail.kde.org/mailman/listinfo/kde-i18n-doc is the list
+for this, now.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151203/b6847e06/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Dec  8 09:18:17 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 8 Dec 2015 10:18:17 +0100
+Subject: Small changes to mailing lists
+Message-ID: <20151208101817.404bb2ee@late>
+
+Hi!
+
+We recently started being affected by the problem that the "DMARC"
+policy of Yahoo (and some other providers) breaks traditional mailing
+list setups. Most subscribers on rkward-devel and rkward-users will not
+have noticed anything, some will have been missing out on certain
+mails, and - worse - have had their subscription suspended,
+automatically, due to their mail providers rejecting too many mails from
+the list.
+
+Apologies for that. I have re-enabled your subscriptions, and I have
+made the following changes to the mailing lists, hoping these will be
+enough to keep the problem from happening in the future:
+
+- Mailing list mails are no longer prefixed with [rkward-devel] or
+  [rkward-users]. If you were basing filtering rules on this, please
+  switch to using the "List-ID" header field, instead.
+- The Reply-To:-address is no longer explicitly pointed to the mailing
+  list. Whether or not this changes anything for you, depends on your
+  email / webmail software. When replying to mailing list posts, please
+  do give the "To:"-field a quick glance. In most cases it is
+  appropriate to direct your replies to the mailing list (other people
+  will be interested in seeing your answers / follow-ups, too). If in
+  doubt, use the "Reply to all" function of your email software.
+- Mailing list mails no longer contain a footer message with links to
+  the list info pages. For reference, these are
+  https://mail.kde.org/mailman/listinfo/rkward-devel and
+  https://mail.kde.org/mailman/listinfo/rkward-users , respectively.
+
+Background info: http://wiki.list.org/DEV/DMARC .
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151208/d0e45b94/attachment.sig>
+
+From mark.allyn at verizon.net  Sun Dec 13 16:09:20 2015
+From: mark.allyn at verizon.net (mark allyn)
+Date: Sun, 13 Dec 2015 11:09:20 -0500
+Subject: How to change RKWard's search path to R backend
+Message-ID: <566D9830.3090805@verizon.net>
+
+Hello,
+
+I've looked all over the internet for an answer to the Subject query 
+without success.  Hopefully, you experts can set me straight.
+
+I'm running ubuntu 14.04 32 bit machine with ARKward 0.6.1 version. When 
+I invoke RKWard it searches and finds R version 3.0.2 installed at 
+/usr/bin.  This is an old version of the backend.  I have a 3.2.2 R 
+version installed at /usr/local/bin.  It functions superbly in console mode.
+
+How can I set RKWard's search path so that it finds the version at 
+/usr/local/bin?
+
+Thanks,
+Mark Allyn
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Dec 13 19:24:48 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 13 Dec 2015 20:24:48 +0100
+Subject: How to change RKWard's search path to R backend
+In-Reply-To: <566D9830.3090805@verizon.net>
+References: <566D9830.3090805@verizon.net>
+Message-ID: <20151213202448.24954dca@late>
+
+Hi,
+
+On Sun, 13 Dec 2015 11:09:20 -0500
+mark allyn <mark.allyn at verizon.net> wrote:
+> I've looked all over the internet for an answer to the Subject query 
+> without success.  Hopefully, you experts can set me straight.
+> 
+> I'm running ubuntu 14.04 32 bit machine with ARKward 0.6.1 version.
+> When I invoke RKWard it searches and finds R version 3.0.2 installed
+> at /usr/bin.  This is an old version of the backend.  I have a 3.2.2
+> R version installed at /usr/local/bin.  It functions superbly in
+> console mode.
+> 
+> How can I set RKWard's search path so that it finds the version at 
+> /usr/local/bin?
+
+Several parts to this answer:
+1. RKWard 0.6.1 is pretty old. 0.6.3 is current, 0.6.4 to be released
+soon. We provide backports for various Ubuntu series at
+https://launchpad.net/~rkward-devel .
+2. Starting with RKWard version 0.6.2, there is a command-line option
+--r-executable to change the R version to be used at runtime. However,
+3. RKWard _should_ be compiled against the version of R you want to be
+using, and _must_ install some files into the library location of that
+version of R. Neither is the case on your installation. Therefore, what
+you are trying to achieve will not work, this way. You can either:
+4. Compile and install RKWard from source, as I described on
+rkward-devel, the other day. Be sure to specify the correct R
+installation in the cmake command line, of course. If you want to keep
+the version of R in /usr/local/bin/R, this is the way to go for you.
+5. Alternatively, again, use one of our "CRAN version of R"-PPAs. This
+will give you an RKWard compiled for a recent version of R, *with R
+installed in /usr/bin/R*
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151213/f48024d3/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Fri Dec 18 00:08:52 2015
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 18 Dec 2015 01:08:52 +0100
+Subject: rkwarddev 0.08-1 released
+Message-ID: <1468864.h5sTq526xd@yrla>
+
+hi,
+
+in preparation of the forthcoming RKWard release, here's rkwarddev 0.08-1:
+ https://files.kde.org/rkward/R/pckg/rkwarddev/index.html
+
+you can find the comprehensive ChangeLog here:
+ https://files.kde.org/rkward/R/pckg/rkwarddev/NEWS.html
+
+amongst a lot of fixes and minor improvements, there are some major steps 
+forward in this release:
+
+ - JavaScript code generation is much more straight forward with the new js() 
+   wrapper. it preserves "if(...){...}else{...}" conditions as well as common 
+   operators like "==", ">" or "!", making your code easier to read/compare
+
+ - existing plugin XML code can be translated into rkwarddev code (and its
+   validity checked) by the new method plugin2script()
+
+ - there are new getter/setter functions to define output characteristics, 
+   like the character used for indentation globally just once
+
+if you are interested in RKWard plugin development, check it out!
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151218/052d97c0/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Fri Dec 18 19:33:02 2015
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 18 Dec 2015 20:33:02 +0100
+Subject: updated plugin packages released
+Message-ID: <2504603.WXBfZETEMF@yrla>
+
+hi,
+
+some of our external plugins have been released in updated versions, you might 
+want to update your packages:
+
+ https://files.kde.org/rkward/R/pckg/rk.ANOVA/
+ source: https://github.com/rkward-community/rk.ANOVA
+
+ https://files.kde.org/rkward/R/pckg/rk.ClusterAnalysis/
+ source: https://github.com/rkward-community/rk.ClusterAnalysis
+
+ https://files.kde.org/rkward/R/pckg/rk.CohenKappa/
+ source: https://github.com/rkward-community/rk.CohenKappa
+
+ https://files.kde.org/rkward/R/pckg/rk.FactorAnalysis/
+ source: https://github.com/rkward-community/rk.FactorAnalysis
+
+ https://files.kde.org/rkward/R/pckg/rk.MultidimensionalScaling/
+ source: https://github.com/rkward-community/rk.MultidimensionalScaling
+
+
+there is also a new plugin called rk.gitInstall in our repo. like the name 
+suggests, it helps you to install R packages directly from git repositories:
+
+ https://files.kde.org/rkward/R/pckg/rk.gitInstall/
+ source: https://github.com/rkward-community/rk.gitInstall
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151218/88ff85b7/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Dec 21 11:20:46 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 21 Dec 2015 12:20:46 +0100
+Subject: RKWard 0.6.4 is available
+Message-ID: <20151221122046.03b579ca@late>
+
+Hi!
+
+This is to let you know that RKWard 0.6.4 is now available, officially.
+Read more on new features and fixes on http://rkward.kde.org .
+
+Thanks to all who provided feedback, testing, translations,
+documentation, donations, and code!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20151221/61e0f292/attachment.sig>
+

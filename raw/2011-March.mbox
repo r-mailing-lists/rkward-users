@@ -1,0 +1,1216 @@
+From noreply at sourceforge.net  Thu Mar  3 15:35:29 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 03 Mar 2011 15:35:29 +0000
+Subject: [rkward-users] [Help] Problems with ggplot2 in RKwad
+Message-ID: <forum-165574-9510096@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4394509:
+
+Hi!
+I've just found that while
+p <- ggplot(mtcars, aes(factor(cyl), mpg))
+
+works fine in a raw R console, I get the following error in the Rkward console:
+
+> p <- ggplot(mtcars, aes(factor(cyl), mpg))
+Error: object 'mpg' not found
+Warning message:
+failure to get object y 
+> mpg[1,]
+  manufacturer model displ year cyl    trans drv cty hwy fl   class
+1         audi    a4   1.8 1999   4 auto(l5)   f  18  29  p compact
+
+> sessionInfo()
+R version 2.12.2 (2011-02-25)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.utf8          LC_NUMERIC=C                
+ [3] LC_TIME=en_US.utf8           LC_COLLATE=en_US.utf8       
+ [5] LC_MONETARY=en_US.utf8       LC_MESSAGES=en_US.utf8      
+ [7] LC_PAPER=en_US.utf8          LC_NAME=en_US.utf8          
+ [9] LC_ADDRESS=en_US.utf8        LC_TELEPHONE=en_US.utf8     
+[11] LC_MEASUREMENT=en_US.utf8    LC_IDENTIFICATION=en_US.utf8
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+[1] ggplot2_0.8.9 proto_0.3-8   reshape_0.8.4 plyr_1.4      rkward_0.5.5 
+
+loaded via a namespace (and not attached):
+[1] tools_2.12.2
+
+Any fix to this?
+
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Mar  3 17:24:33 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 03 Mar 2011 17:24:33 +0000
+Subject: [rkward-users] [Help] RE: Problems with ggplot2 in RKwad
+In-Reply-To: <forum-165574-9510096@sourceforge.net>
+Message-ID: <forum-165574-9510894@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4394509:
+
+Hi!
+
+Coincidentally, I had just fixed this in the development version, yesterday
+(to be precise: in "trunk", only, i.e. this fix will not be included in the
+upcoming version 0.5.5). So you could try the next daily build (if you like,
+and if you have updated your Ubuntu, yet ;-) ).
+
+Either way, despite the looks, this error message is harmless. The error does
+not actually occur while evaluating your code, but rather while RKWard tries
+to get some info about the object "p" that was created. In effect, the representation
+of "p" in the workspace browser will be incomplete, but everything else should
+be fine.
+
+However, while toying with ggplot2, I found that these plots do not currently
+get added to the plot history. This should be fixed in tomorrow's daily build
+(but will not be fixed for 0.5.5, either).
+
+Regards
+Thomas
+
+
+
+From matthieu.stigler at gmail.com  Sun Mar  6 10:05:54 2011
+From: matthieu.stigler at gmail.com (mat)
+Date: Sun, 06 Mar 2011 11:05:54 +0100
+Subject: [rkward-users] Console and editor writes from right to left?
+Message-ID: <4D735C82.5020608@gmail.com>
+
+Hi
+
+I observed a very strange behaviour last time: when in the console or 
+editor, I would write from right to left, meaning each new letter would 
+come at the left of the word! This was not induced by the insert 
+button... Is this a feature of kate/rkward that I possibly switched on 
+without noticing? How can one disable it then? Only solution was to quit 
+rkward...
+
+Thanks!!
+
+Mat
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Mar  6 10:40:23 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 6 Mar 2011 11:40:23 +0100
+Subject: [rkward-users] Console and editor writes from right to left?
+In-Reply-To: <4D735C82.5020608@gmail.com>
+References: <4D735C82.5020608@gmail.com>
+Message-ID: <201103061140.27021.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 06 March 2011, mat wrote:
+> I observed a very strange behaviour last time: when in the console or
+> editor, I would write from right to left, meaning each new letter would
+> come at the left of the word! This was not induced by the insert
+> button... Is this a feature of kate/rkward that I possibly switched on
+> without noticing? How can one disable it then? Only solution was to quit
+> rkward...
+
+it's an annoying bug in the kate part: 
+https://bugs.kde.org/show_bug.cgi?id=246162 . A slightly better solution to 
+get out of this is to use "Clear" from the context menu.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110306/a1d51161/attachment.sig>
+
+From matthieu.stigler at gmail.com  Sun Mar  6 17:37:12 2011
+From: matthieu.stigler at gmail.com (mat)
+Date: Sun, 06 Mar 2011 18:37:12 +0100
+Subject: [rkward-users] Console and editor writes from right to left?
+In-Reply-To: <201103061140.27021.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4D735C82.5020608@gmail.com>
+	<201103061140.27021.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4D73C648.1070307@gmail.com>
+
+Hi!
+
+Le 06. 03. 11 11:40, Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Sunday 06 March 2011, mat wrote:
+>> I observed a very strange behaviour last time: when in the console or
+>> editor, I would write from right to left, meaning each new letter would
+>> come at the left of the word! This was not induced by the insert
+>> button... Is this a feature of kate/rkward that I possibly switched on
+>> without noticing? How can one disable it then? Only solution was to quit
+>> rkward...
+> it's an annoying bug in the kate part:
+> https://bugs.kde.org/show_bug.cgi?id=246162 . A slightly better solution to
+> get out of this is to use "Clear" from the context menu.
+>
+oh, that's it! Thanks for the hint!!
+
+Mat
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> What You Don't Know About Data Connectivity CAN Hurt You
+> This paper provides an overview of data connectivity, details
+> its effect on application quality, and explores various alternative
+> solutions. http://p.sf.net/sfu/progress-d2d
+>
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110306/e3a02328/attachment.html>
+
+From noreply at sourceforge.net  Wed Mar  9 12:27:44 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 09 Mar 2011 12:27:44 +0000
+Subject: [rkward-users] [Help] RE: Problems with ggplot2 in RKwad
+In-Reply-To: <forum-165574-9510894@sourceforge.net>
+Message-ID: <forum-165574-9563572@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4394509:
+
+Works fine, thanks!
+Agus
+
+
+
+From jyoti.shankar at gmail.com  Wed Mar  9 19:17:53 2011
+From: jyoti.shankar at gmail.com (Jyoti Shankar)
+Date: Wed, 9 Mar 2011 14:17:53 -0500
+Subject: [rkward-users] Turn sounds off in RKward
+Message-ID: <AANLkTinSpuJt7sjnozCjTo3BbGPP-ZYQAp3d6kZ+fJ0+@mail.gmail.com>
+
+Hi, I have two questions about RKward.
+
+a) How do I turn off all sound notifications in RKward?
+
+b) How do I search for topics in the RKward-users archive here:
+http://sourceforge.net/mailarchive/forum.php?forum_name=rkward-users  I am
+not seeing any "search this archive" link or button. Could you please let me
+if I have overlooked any search link?
+
+Thanks for your time!
+JS
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110309/0d28a248/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Mar 10 20:53:34 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 Mar 2011 21:53:34 +0100
+Subject: [rkward-users] Turn sounds off in RKward
+In-Reply-To: <AANLkTinSpuJt7sjnozCjTo3BbGPP-ZYQAp3d6kZ+fJ0+@mail.gmail.com>
+References: <AANLkTinSpuJt7sjnozCjTo3BbGPP-ZYQAp3d6kZ+fJ0+@mail.gmail.com>
+Message-ID: <201103102153.38816.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 09 March 2011, Jyoti Shankar wrote:
+> a) How do I turn off all sound notifications in RKward?
+
+currently it is not possible to turn of sounds for RKWard, selectively. 
+However, there is only one sound that is played directly in RKWard: the system 
+bell (for certain key presses in the R Console). You can change or silence 
+this for all KDE applications at systemsettings->Look & Feel->Notifications-
+>System Bell.
+
+Some systems are also pre-configured to play sounds whenever certain types of 
+windows are shown (esp. errors and warning messages). You can configure those 
+at systemsettings->Look & Feel->Notifications->System Notifications->KDE System 
+Notifications.
+
+> b) How do I search for topics in the RKward-users archive here:
+> http://sourceforge.net/mailarchive/forum.php?forum_name=rkward-users  I am
+> not seeing any "search this archive" link or button. Could you please let
+> me if I have overlooked any search link?
+
+You can search all project mailing lists, here: 
+http://sourceforge.net/search/?group_id=50231&type_of_search=mlists 
+(admittedly, the link is somewhat hidden).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110310/d8c4ffbe/attachment.sig>
+
+From noreply at sourceforge.net  Mon Mar 14 11:43:00 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 14 Mar 2011 11:43:00 +0000
+Subject: [rkward-users] [Help] Print button does not work on graphic window
+Message-ID: <forum-165574-9617517@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4410891:
+
+Hi!
+
+When I click on the Print button of the graphic window, nothing happens.
+(rkward from 
+http://ppa.launchpad.net/rkward-devel/rkward-dailys/ubuntu  )
+
+Agus
+
+alobo at delia:~$ uname -a
+Linux delia 2.6.32-29-generic #58-Ubuntu SMP Fri Feb 11 20:52:10 UTC 2011 x86_64
+GNU/Linux
+> sessionInfo()
+R version 2.12.2 (2011-02-25)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=en_US.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8          
+ [9] LC_ADDRESS=en_US.UTF-8        LC_TELEPHONE=en_US.UTF-8     
+[11] LC_MEASUREMENT=en_US.UTF-8    LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+[1] ggplot2_0.8.9 reshape_0.8.4 plyr_1.4      proto_0.3-8   rkward_0.5.5 
+
+loaded via a namespace (and not attached):
+[1] tools_2.12.2
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Mar 19 17:52:26 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 19 Mar 2011 18:52:26 +0100
+Subject: [rkward-users] [rkward-announce] RKWard 0.5.5 is released
+Message-ID: <201103191852.31177.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+With a few days delay, I have uploaded RKWard 0.5.5, today. A short summary of 
+the changes, as well as a link to the download page, can be found at 
+http://rkward.sf.net , as usual.
+
+Many thanks to all who have helped with this release in various ways!
+
+---
+
+A note to users of the Ubuntu daily builds:
+Daily builds of the development sources are created on launchpad as usual 
+(https://launchpad.net/~rkward-devel/+archive/rkward-dailys). Due to a problem 
+with the version naming scheme, there could be a problem with apt / synaptic 
+not recognizing the latest dailys as newer than those from a few weeks ago. 
+The latest daily packages are versioned "-0.5.5z-0.5.6-0daily...". Check your 
+package manager to see whether you may need to update the package, manually.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110319/232a0acf/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Colocation vs. Managed Hosting
+A question and answer guide to determining the best fit
+for your organization - today and in the future.
+http://p.sf.net/sfu/internap-sfd2d
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From noreply at sourceforge.net  Thu Mar 24 08:50:44 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Mar 2011 08:50:44 +0000
+Subject: [rkward-users] [Help] RE: Print button does not work on graphic
+	window
+In-Reply-To: <forum-165574-9669217@sourceforge.net>
+Message-ID: <forum-165574-9702420@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4410891:
+
+Thanks
+It prints with xpp. The problem is that the "Options" button of the xpp menu
+that opens does not work well: if I select A4 the menu just closes with no action
+(cannot even save the changed option). The next time that I select "print" in
+the rkward graphic window, the xpp menu shows that the option remains unchanged
+(Letter). But I can print.
+
+I've also tried with okular, which works fine. It's probably the option I'm
+going to keep.
+
+Regarding the appropriate default, xpp seems the logical option because its
+simpler, but if it crashes at selecting options...
+
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Mar 24 08:57:23 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Mar 2011 08:57:23 +0000
+Subject: [rkward-users] [Help] Rkward does not open previous session
+Message-ID: <forum-165574-9702438@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+Hi!
+
+I've found that since some releases ago (I'm using the daily builds for ubuntu
+10.04)  when I start Rkward and select
+the saved .RData, the scripts and help windows I had open in the previous session
+are not automatically opened.
+Is there any new option I should click somewhere?
+
+> sessionInfo()
+R version 2.12.2 (2011-02-25)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=en_US.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8          
+ [9] LC_ADDRESS=en_US.UTF-8        LC_TELEPHONE=en_US.UTF-8     
+[11] LC_MEASUREMENT=en_US.UTF-8    LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+[1] reshape_0.8.4 plyr_1.4      proto_0.3-8   rkward_0.5.5 
+
+loaded via a namespace (and not attached):
+[1] ggplot2_0.8.9   lattice_0.19-17 tools_2.12.2   
+> 
+alobo at delia:~$ uname -a
+Linux delia 2.6.32-30-generic #59-Ubuntu SMP Tue Mar 1 21:30:46 UTC 2011 x86_64
+GNU/Linux
+
+Agus
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Mar 24 12:13:13 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Mar 2011 12:13:13 +0000
+Subject: [rkward-users] [Help] Shortcut for <-
+Message-ID: <forum-165574-9703668@sourceforge.net>
+
+
+The following forum message was posted by olipalli at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426696:
+
+Hi all
+
+I was wondering if rkward has any shortcut for the symbol <- . If not, is it
+possible to assign one?
+
+Best regards, olipalli
+
+
+
+From noreply at sourceforge.net  Thu Mar 24 17:17:19 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Mar 2011 17:17:19 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9702438@sourceforge.net>
+Message-ID: <forum-165574-9705435@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+Hi!
+
+Works for me. Check the "workspace layout" option at Settings->Configure
+RKWard->General. This should be set to "Save/restore with R workspace, when
+saving/loading R workspace" (the default).
+
+If that does not change anything: Could you try whether
+  rk.save.workplace()
+then close your windows, then
+  rk.restore.workplace()
+has any effect? Does a file a text-file called
+"whatever_you_saved_your_workspace_as.RData.rkworkplace" exist?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Mar 24 17:37:10 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Mar 2011 17:37:10 +0000
+Subject: [rkward-users] [Help] RE: Shortcut for <-
+In-Reply-To: <forum-165574-9703668@sourceforge.net>
+Message-ID: <forum-165574-9705575@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426696:
+
+Hi!
+
+RKWard does not currently have such a shortcut. Assigning one is not trivial.
+Basically, I know of two options, ATM:
+
+1) Use the vi input mode of the embedded editor: http://kate-editor.org/kate-vi-mode/
+. In Settings->Configure Editor->Editing->Vi Input mode you can set up custom
+command sequences, in this case something list "<f2> -> i<-<esc>".
+2) If you already have KDE 4.6, you can script an action to insert "<-" at the
+current cursor position: http://kate-editor.org/2010/07/09/kate-scripted-actions/
+. Such a script can also be assigned a shortcut.
+
+Regards
+Thomas
+
+
+
+From alobolistas at gmail.com  Thu Mar 24 18:07:29 2011
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Thu, 24 Mar 2011 19:07:29 +0100
+Subject: [rkward-users] [Help] RE: Shortcut for <-
+In-Reply-To: <forum-165574-9705575@sourceforge.net>
+References: <forum-165574-9703668@sourceforge.net>
+	<forum-165574-9705575@sourceforge.net>
+Message-ID: <AANLkTin=psRTD8TuwCHuOKek=pg9UiraBEqDMXmrhz5D@mail.gmail.com>
+
+A very good one is "=". Actually "=" was introduced in R because
+for "<-" you need to type 2 keys. In the older days "_" was also valid, but it
+was confusing
+
+Agus
+
+
+---------- Forwarded message ----------
+From: SourceForge.net <noreply at sourceforge.net>
+Date: 2011/3/24
+Subject: [rkward-users] [Help] RE: Shortcut for <-
+To: rkward-users at lists.sourceforge.net
+
+
+
+The following forum message was posted by tfry at
+http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426696:
+
+Hi!
+
+RKWard does not currently have such a shortcut. Assigning one is not trivial.
+Basically, I know of two options, ATM:
+
+1) Use the vi input mode of the embedded editor:
+http://kate-editor.org/kate-vi-mode/
+. In Settings->Configure Editor->Editing->Vi Input mode you can set up custom
+command sequences, in this case something list "<f2> -> i<-<esc>".
+2) If you already have KDE 4.6, you can script an action to insert "<-" at the
+current cursor position:
+http://kate-editor.org/2010/07/09/kate-scripted-actions/
+. Such a script can also be assigned a shortcut.
+
+Regards
+Thomas
+
+------------------------------------------------------------------------------
+Enable your software for Intel(R) Active Management Technology to meet the
+growing manageability and security demands of your customers. Businesses
+are taking advantage of Intel(R) vPro (TM) technology - will your software
+be a part of the solution? Download the Intel(R) Manageability Checker
+today! http://p.sf.net/sfu/intel-dev2devmar
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+
+From noreply at sourceforge.net  Fri Mar 25 08:54:36 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 25 Mar 2011 08:54:36 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9705435@sourceforge.net>
+Message-ID: <forum-165574-9710475@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+I do have the settings as you say, but the windows are not automatically
+opened.
+I do have a file named .RData.rkworkplace in the same directory as my .RData.
+The file is just:
+base::::file:///media/Iomega_HDD/JLFdzT/FLAVIA
+
+I do as you say:
+
+open some scripts
+> rk.save.workplace() 
+close scripts
+> rk.restore.workplace() 
+NULL
+
+Some scripts are reopened sometimes, nut not all of them and not always. The
+same script is opened some times and not
+other times, very weird.
+
+> sessionInfo()
+R version 2.12.2 (2011-02-25)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=en_US.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8          
+ [9] LC_ADDRESS=en_US.UTF-8        LC_TELEPHONE=en_US.UTF-8     
+[11] LC_MEASUREMENT=en_US.UTF-8    LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+[1] reshape_0.8.4 plyr_1.4      proto_0.3-8   rkward_0.5.5 
+
+loaded via a namespace (and not attached):
+[1] ggplot2_0.8.9   lattice_0.19-17 tools_2.12.2   
+> 
+
+
+
+
+From noreply at sourceforge.net  Fri Mar 25 13:12:05 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 25 Mar 2011 13:12:05 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9710475@sourceforge.net>
+Message-ID: <forum-165574-9711887@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+[quote]I do have a file named .RData.rkworkplace in the same directory as my
+.RData. The file is just: base::::file:///media/Iomega_HDD/JLFdzT/FLAVIA
+[/quote]
+
+Well, that means the list of windows associated with this .RData-file is empty.
+So, in fact, when you load this .RData file, the expected behavior is that any
+open windows will be closed, and no new windows will be opened. Probably, at
+some point you saved the workspace (or called rk.save.workplace()), while no
+windows were open.
+Use
+  [quote]rk.save.workplace()[/quote]
+or use Workspace->Save Workspace, while the associated scripts/windows
+are opened.
+
+[quote]Some scripts are reopened sometimes, nut not all of them and not always.
+The same script is opened some times and not other times, very weird. [/quote]
+
+Please give this another try with the upcoming daily build. I fixed one related
+problem in SVN. With a bit of luck that was the cause of the strange behavior
+you're seeing.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon Mar 28 09:13:17 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Mar 2011 09:13:17 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9711887@sourceforge.net>
+Message-ID: <forum-165574-9738533@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+No, it does not work. Actually, I realize that the usual welcome page is not
+opened either.
+Now scripts are never opened.
+I've tried used Save Workspace before actually quiting.
+
+> sessionInfo()
+R version 2.12.2 (2011-02-25)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                 
+ [3] LC_TIME=en_US.UTF-8           LC_COLLATE=en_US.UTF-8       
+ [5] LC_MONETARY=en_US.UTF-8       LC_MESSAGES=en_US.UTF-8      
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8          
+ [9] LC_ADDRESS=en_US.UTF-8        LC_TELEPHONE=en_US.UTF-8     
+[11] LC_MEASUREMENT=en_US.UTF-8    LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] rkward_0.5.5
+
+loaded via a namespace (and not attached):
+[1] tools_2.12.2
+> 
+
+
+
+From noreply at sourceforge.net  Mon Mar 28 10:34:42 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Mar 2011 10:34:42 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9738533@sourceforge.net>
+Message-ID: <forum-165574-9739462@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+The welcome page actually opens briefly (while the workspace is being read,
+red symbol at the bottom left corner) and then
+closes and that windows is just the grey background.
+Agus
+
+
+
+From noreply at sourceforge.net  Mon Mar 28 10:52:31 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Mar 2011 10:52:31 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9739462@sourceforge.net>
+Message-ID: <forum-165574-9739663@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+Hi!
+
+The problem could either occur while saving the workplace representation or
+while restoring it. Let's see, which is the case:
+
+Could you check the .rkworkplace file again? Does it contain anything besides
+the "base::::..."-line? Try "rk.save.workplace()" again, after opening a few
+windows. Now, check the .rkworkplace file again (without closing RKWard). Does
+it appear to contain appropriate lines for each window? Now check again, after
+saving / closing RKWard.
+
+Do you see any error messages in the "Command log" window?
+
+Visit Settings->Configure RKWard->Debug. At the bottom, you should see a line
+"Debug output is written to SOMEWHERE". Could you send me that file (after loading
+the .RData-file)?
+
+I don't think this is related (both cases work for me), but is your workspace
+saved as ".RData", or as "SOMETHING.RData"? If the former, is RKWard configured
+to load the .RData file automatically, on start-up, or are you loading the workspace,
+manually? If it is being loaded automatically: Does it make any difference,
+if you load the workspace using Workspace->Open Workspace..., instead?
+
+Thanks!
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon Mar 28 11:56:40 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Mar 2011 11:56:40 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9739663@sourceforge.net>
+Message-ID: <forum-165574-9740396@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+1. I check the file .RData.rkworkplace : it is just
+base::::file:///media/Iomega_HDD/JLFdzT/FLAVIA
+2. I start rkward and select the .RData in the working directory of the project
+(/media/Iomega_HDD/JLFdzT/FLAVIA)
+and check the name of the debug file, which is /tmp/kde-alobo/rkwardTi4763.tmp
+3. I open 2 scripts
+4. 
+> setwd ("/media/Iomega_HDD/JLFdzT/FLAVIA")
+> rk.save.workplace()
+5. I check .RData.rkworkplace again. It is now:
+base::::file:///media/Iomega_HDD/JLFdzT/FLAVIA
+script::::file:///media/Iomega_HDD/JLFdzT/FLAVIA/flavia_log.txt
+script::::file:///media/Iomega_HDD/JLFdzT/FLAVIA/prcompLog_log.txt
+6. I quit saving the workspace (with the menu). .RData.rkworkplace is now back
+to
+.RData.rkworkplace
+
+7. I start rkward again but now load the .RData with Workspace->Open Workspace:
+same behavior
+8, alobo at delia:/tmp/kde-alobo$ more rkwardTi4763.tmp
+rkward(4763)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "" 
+rkward(4763)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+QLayout: Attempting to add QLayout "" to QGroupBox "", which already has
+a layout
+QLayout: Attempting to add QLayout "" to QGroupBox "", which already has
+a layout
+Object::connect: No such signal QGroupBox::toggled ()
+QLayout: Attempting to add QLayout "" to QGroupBox "", which already has
+a layout
+QLayout: Attempting to add QLayout "" to QGroupBox "", which already has
+a layout
+rkward(4763)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing
+"/usr/share/mime/magic"
+rkward(4763)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing
+"/home/alobo/.local/share/mime/magic"
+
+Hope this helps!
+Agus
+
+
+
+From noreply at sourceforge.net  Mon Mar 28 12:34:54 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Mar 2011 12:34:54 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9740396@sourceforge.net>
+Message-ID: <forum-165574-9740882@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+Hi!
+
+Ok, so the problem comes up while saving. More specifically, when saving the
+workplace while exiting the session, the workplace would often be saved as empty.
+The problem should now be fixed in SVN / the next daily build.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue Mar 29 08:14:04 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 29 Mar 2011 08:14:04 +0000
+Subject: [rkward-users] [Help] RE: Rkward does not open previous session
+In-Reply-To: <forum-165574-9740882@sourceforge.net>
+Message-ID: <forum-165574-9752571@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426474:
+
+It works now, with two notes:
+1. The script windows are "trembling" for a while, in particular the upper bar
+of the window with the path and file name.
+2. The welcome window closes automatically when the others are opened. Not sure
+if this is intentional.
+
+Question: why the command window is not setwd()d to the directory of the .RData
+file?
+This is always the first line of my scripts since I use rkward.
+(i.e. setwd ("/media/Iomega_HDD/JLFdzT/FLAVIA") )
+Thanks
+
+Agus
+
+
+
+
+From rruizeuler at ucsd.edu  Thu Mar 31 01:24:35 2011
+From: rruizeuler at ucsd.edu (Alex Ruiz Euler)
+Date: Wed, 30 Mar 2011 18:24:35 -0700
+Subject: [rkward-users] Donate to Rkward
+Message-ID: <1301534675.2696.11.camel@X>
+
+
+Is there a way to donate that is not via PayPal? I would love to give
+something to the extent that my overstretched grad student paycheck
+allows, but I don't want to do it with PP.
+
+Also, some friends and I have had some hypothesis about how you
+pronounce Rkward. Most of them are pretty weird. For example, one claims
+that it is supposed to go with an Australian accent playing on the word
+awkward because most of us users are probably, well, awkward. Another
+has the incredible hypothesis that you actually pronounce it Rkward, but
+that is really awkward too. So... how to pronounce it?
+
+Alex 
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Mar 31 14:08:34 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 31 Mar 2011 16:08:34 +0200
+Subject: [rkward-users] Donate to Rkward
+In-Reply-To: <1301534675.2696.11.camel@X>
+References: <1301534675.2696.11.camel@X>
+Message-ID: <201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 31 March 2011, Alex Ruiz Euler wrote:
+> Is there a way to donate that is not via PayPal? I would love to give
+> something to the extent that my overstretched grad student paycheck
+> allows, but I don't want to do it with PP.
+
+I can totally understand your reluctance to use PayPal. However, at the 
+moment, it's the only option that our host (sourceforge) supports. Perhaps it 
+will make sense to provide one more option in the future, but in fact, I 
+wouldn't know which one to pick. Any recommendations on a payment service that 
+is
+- international / cross currency
+- mostly fair
+- widely in use?
+
+> Also, some friends and I have had some hypothesis about how you
+> pronounce Rkward. Most of them are pretty weird. For example, one claims
+> that it is supposed to go with an Australian accent playing on the word
+> awkward because most of us users are probably, well, awkward.
+
+Well, as far as the pronounciation goes, that is the "correct" interpretation. 
+But you shouldn't go looking for any deeper meaning. When I first registered 
+the project, way back then, I simply did not spend a whole lot of time 
+thinking about a good name. I stuck to the constraint that the name should 
+contain the letters R and K. "Ark" and "Kross" were taken, already, and I 
+didn't think much beyond that. So that's how RKWard ended up with its awkward 
+name. I guess it's not the name that I would pick today, but I still sort of 
+like the self-referential aspect of it...
+
+> Another
+> has the incredible hypothesis that you actually pronounce it Rkward, but
+> that is really awkward too. So... how to pronounce it?
+
+Actually, that pronounciation is totally fine with me, as well. Whatever you 
+feel is least (or most) awkward.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110331/080eb007/attachment.sig>
+
+From noreply at sourceforge.net  Thu Mar 31 15:46:05 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 31 Mar 2011 15:46:05 +0000
+Subject: [rkward-users] [Help] RE: Shortcut for <-
+In-Reply-To: <forum-165574-9705575@sourceforge.net>
+Message-ID: <forum-165574-9779081@sourceforge.net>
+
+
+The following forum message was posted by olipalli at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4426696:
+
+Thank you so much for your reply Thomas, it was indeed helpful :)
+
+olipalli
+
+
+
+From yayopoint at gmail.com  Thu Mar 31 18:51:28 2011
+From: yayopoint at gmail.com (=?ISO-8859-1?Q?Andr=E9s_Necochea?=)
+Date: Thu, 31 Mar 2011 14:51:28 -0400
+Subject: [rkward-users] Proposition of changes on crosstabulation plugin
+Message-ID: <AANLkTim1nGkgU=2dcUe1x=6BrFCkjJR0DXySOVnpVJbm@mail.gmail.com>
+
+Hi everyone:
+
+Some weeks ago I sent a message to the developement list with a proposition
+of changes on the crosstabulation plugin of rkward. In a conversation winth
+Thomas, I propose a function that use ftable to add statistic to an R
+contingency table. Thomas make some fixes to this function.
+
+I attached the file containing the plugin. At now, doesn't have many
+features, only uses the bind.tables function to include the statistics in
+the main table. It will include % of row, % of column, % of total, an chisq
+expected.
+
+I tryng to make some changes on the dialog of the plugin to include a tab
+with the table options.
+
+I'm working in the bind.tables function to work on a matrix with more than
+two dimensions.
+
+Beside, I'm planing to change the rk.results function to include a method to
+print a ftable class object.
+
+If some one have a suggestion, or a correction to this plug in, please tell
+me.
+
+I think that we could make a repository of user contribuited plugins, or
+forks to the existing plugins.
+
+PD: I only use python for make scripts, I'm only a sociologyst, is very
+difficult to me use javascript :(
+PD2: I sent this message to the users list not to the developers list,
+because some one could test the plugin with this changes and make
+suggestions, and I have see that many people want to get contingency tables
+with more information, well there is a method :)
+
+-- 
+Amor y Paz
+ _    _
+ \\  //
+_ \\//
+\\   ^^>
+ \____/
+
+CHAU
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110331/f64cf57a/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: crosstab1.tar.gz
+Type: application/x-gzip
+Size: 2713 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110331/f64cf57a/attachment.gz>
+
+From rruizeuler at ucsd.edu  Thu Mar 31 19:48:57 2011
+From: rruizeuler at ucsd.edu (Alex Ruiz Euler)
+Date: Thu, 31 Mar 2011 12:48:57 -0700
+Subject: [rkward-users] Donate to Rkward
+In-Reply-To: <201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <1301534675.2696.11.camel@X>
+	<201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <1301600937.2819.41.camel@X>
+
+
+I know Amazon opened a recent checkout service; I've used it to donate
+and it's pretty painless. I've never had an issue with Amazon, which I
+use quite often for books and the like.
+
+Google also has its own checkout, but I've never used it.
+
+I don't know how cross-currency they are, but at least they are
+reputable when it comes to using your financial info.
+
+Might be worth looking into some of these big boys for Sourceforge.
+Adding more donation options --as long as they are reputable in some
+relevant dimension-- will only benefit the developers hosted here.
+
+Best,
+Alex
+
+
+
+On Thu, 2011-03-31 at 16:08 +0200, Thomas Friedrichsmeier wrote:
+> Hi,
+> 
+> On Thursday 31 March 2011, Alex Ruiz Euler wrote:
+> > Is there a way to donate that is not via PayPal? I would love to give
+> > something to the extent that my overstretched grad student paycheck
+> > allows, but I don't want to do it with PP.
+> 
+> I can totally understand your reluctance to use PayPal. However, at the 
+> moment, it's the only option that our host (sourceforge) supports. Perhaps it 
+> will make sense to provide one more option in the future, but in fact, I 
+> wouldn't know which one to pick. Any recommendations on a payment service that 
+> is
+> - international / cross currency
+> - mostly fair
+> - widely in use?
+> 
+> > Also, some friends and I have had some hypothesis about how you
+> > pronounce Rkward. Most of them are pretty weird. For example, one claims
+> > that it is supposed to go with an Australian accent playing on the word
+> > awkward because most of us users are probably, well, awkward.
+> 
+> Well, as far as the pronounciation goes, that is the "correct" interpretation. 
+> But you shouldn't go looking for any deeper meaning. When I first registered 
+> the project, way back then, I simply did not spend a whole lot of time 
+> thinking about a good name. I stuck to the constraint that the name should 
+> contain the letters R and K. "Ark" and "Kross" were taken, already, and I 
+> didn't think much beyond that. So that's how RKWard ended up with its awkward 
+> name. I guess it's not the name that I would pick today, but I still sort of 
+> like the self-referential aspect of it...
+> 
+> > Another
+> > has the incredible hypothesis that you actually pronounce it Rkward, but
+> > that is really awkward too. So... how to pronounce it?
+> 
+> Actually, that pronounciation is totally fine with me, as well. Whatever you 
+> feel is least (or most) awkward.
+> 
+> Regards
+> Thomas
+> ------------------------------------------------------------------------------
+> Create and publish websites with WebMatrix
+> Use the most popular FREE web apps or write code yourself; 
+> WebMatrix provides all the features you need to develop and 
+> publish your website. http://p.sf.net/sfu/ms-webmatrix-sf
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Mar 31 20:00:38 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 31 Mar 2011 22:00:38 +0200
+Subject: [rkward-users] Proposition of changes on crosstabulation plugin
+In-Reply-To: <AANLkTim1nGkgU=2dcUe1x=6BrFCkjJR0DXySOVnpVJbm@mail.gmail.com>
+References: <AANLkTim1nGkgU=2dcUe1x=6BrFCkjJR0DXySOVnpVJbm@mail.gmail.com>
+Message-ID: <201103312200.43531.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+I'll reply to your points in a different order of writing. 
+
+> PD2: I sent this message to the users list not to the developers list,
+> because some one could test the plugin with this changes and make
+> suggestions, and I have see that many people want to get contingency tables
+> with more information, well there is a method :)
+
+I'll take this to rkward-devel, instead. While of course this is correct, the 
+main point of having separate lists for users and developers is to avoid 
+flooding all users' inboxes with the details of the development (which often 
+generates a lot of noise). We do regularly invite subscribers of rkward-users 
+for testing, before new releases are made.
+
+*This* mail still has rkward-users in CC, so nobody will be left wondering 
+about the reply, but please send further follow-ups to rkward-devel.
+
+> I think that we could make a repository of user contribuited plugins, or
+> forks to the existing plugins.
+
+We have the beginnings of that since RKWard 0.5.5. See Settings->Configure 
+RKWard->Plugins->Install or uninstall add-on plugin packs. 
+http://rkward.sourceforge.net/documents/devel/plugins/external_plugins.html 
+for documentation on how to create such "plugin packs". Currently, this 
+repository is hosted on Meik's server, so you will need to get in touch with 
+Meik for details on uploading.
+
+On Thursday 31 March 2011, Andr?s Necochea wrote:
+> Some weeks ago I sent a message to the developement list with a proposition
+> of changes on the crosstabulation plugin of rkward. In a conversation winth
+> Thomas, I propose a function that use ftable to add statistic to an R
+> contingency table. Thomas make some fixes to this function.
+> 
+> I attached the file containing the plugin. At now, doesn't have many
+> features, only uses the bind.tables function to include the statistics in
+> the main table. It will include % of row, % of column, % of total, an chisq
+> expected.
+
+I only had a cursory look so far. I have some changes in mind. Will try to 
+give you detailed feedback within a few days. As a first detail, here's another 
+slight simplification I made to the bind.tables() function, shortly after our 
+discussion about it. I believe it does all that we want, but test for 
+yourself:
+
+  bind.tables <- function (...) {
+     tables <- list (...)
+     output <- unlist (tables)
+     dim (output) <- c (dim (tables[[1]]), length (tables))
+     dimnames (output) <- c (dimnames (tables[[1]]), list (statistic=names 
+(tables)))
+     ftable (output, col.vars=2)
+  }
+
+> I'm working in the bind.tables function to work on a matrix with more than
+> two dimensions.
+
+Perhaps the above version of bind.tables() can be extended to more dimensions 
+more easily, too.
+
+> I tryng to make some changes on the dialog of the plugin to include a tab
+> with the table options.
+
+Alternatively, consider adding those options to the first tab (which already 
+has the chisquare option). But of course this is just a detail, and can be 
+changed, easily, at any time.
+
+> Beside, I'm planing to change the rk.results function to include a method
+> to print a ftable class object.
+
+Out of curiosity: What will be the main difference(s) with respect to
+  rk.print(some_ftable_object)
+?
+
+> If some one have a suggestion, or a correction to this plug in, please tell
+> me.
+
+Again, I'll try to give you more detailed feedback within a few days.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110331/600ea113/attachment.sig>
+
+From yayopoint at gmail.com  Thu Mar 31 20:34:31 2011
+From: yayopoint at gmail.com (=?ISO-8859-1?Q?Andr=E9s_Necochea?=)
+Date: Thu, 31 Mar 2011 16:34:31 -0400
+Subject: [rkward-users] [rkward-devel] Proposition of changes on
+ crosstabulation plugin
+In-Reply-To: <201103312200.43531.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <AANLkTim1nGkgU=2dcUe1x=6BrFCkjJR0DXySOVnpVJbm@mail.gmail.com>
+	<201103312200.43531.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <AANLkTinhNjfcADZpwTUbhHJ+0iJpqkNbYHm5XsDfPkya@mail.gmail.com>
+
+I don't know how, but you do it, this function reduces many of code lines of
+my function. Thanks.
+
+Sorry, I'm no good making scripts. I repeat, I'm sociologyst.
+
+About some things that you comented:
+>Out of curiosity: What will be the main difference(s) with respect to
+>rk.print(some_ftable_object)
+>?
+
+rk.print requires R2HTML, this mean include a library for use only one
+function, thats very common on social science research. Besides, the table
+printed has no borders, and it looks ugly, maybe could be solved with a css
+style, I don't know.
+
+-- 
+Amor y Paz
+ _    _
+ \\  //
+_ \\//
+\\   ^^>
+ \____/
+
+CHAU
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110331/85871a26/attachment.html>
+

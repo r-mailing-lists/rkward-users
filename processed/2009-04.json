@@ -1,0 +1,350 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-04",
+  "messages": [
+    {
+      "id": "msg-f43a08d8c831",
+      "message_id": "<1238587942.4587.27.camel@localhost.localdomain>",
+      "from_name": "Pierre-Yves",
+      "from_email_hash": "47e30c199d3131f08c959f22c4f67ea9e57a1a82a5b6363bb242a1766ac73fe5",
+      "date": "2009-04-01T12:12:22Z",
+      "subject": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "subject_clean": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "in_reply_to": "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Mon, 2009-03-30 at 22:11 +0200, Thomas Friedrichsmeier wrote:\n> Hi!\n> \n> I have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see \n> http://rkward.sourceforge.net/ .\n> \n> Many thanks to all testers and contributors. The amount of testing and \n> feedback in the few days since my first call for testing has been truly \n> amazing.\n\nI just updated the RPMs for Fedora (rawhide (Fedora 11) will be update\nto date from tomorrow, Fedora 9 and 10 will be after a week in the\ntesting repository)\n\nSorry for not having be able to participate to the testing of this\nrelease earlier, everything went fine for me (build and first testing).\n\nThanks for the new release,\n\nRegards,\n\nPierre",
+      "body_snippet": "On Mon, 2009-03-30 at 22:11 +0200, Thomas Friedrichsmeier wrote:\n> Hi!\n> \n> I have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see \n> http://rkward.sourceforge.net/ .\n> \n> Many tha",
+      "thread_id": "thread-f43a08d8c831",
+      "thread_depth": 0,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-6e9666c1c279",
+      "message_id": "<441a8bc70904020059m3a4045cbm4b898f67faac4f0f@mail.gmail.com>",
+      "from_name": "michel lang",
+      "from_email_hash": "dd4808dc8dd36510d9d86fb4984c2cd2eb6437e9cd98916e0b1cf1bb873ed834",
+      "date": "2009-04-02T07:59:46Z",
+      "subject": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "subject_clean": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "in_reply_to": "<1238587942.4587.27.camel@localhost.localdomain>",
+      "references": [
+        "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1238587942.4587.27.camel@localhost.localdomain>"
+      ],
+      "body_plain": "RKWard 0.5.0c hit the official gentoo portage tree yesterday: :)\n\nhttp://packages.larrythecow.org/?v=search&s=rkward\n\nI'll fill a bug report to request this version marked stable.",
+      "body_snippet": "RKWard 0.5.0c hit the official gentoo portage tree yesterday: :)\n\nhttp://packages.larrythecow.org/?v=search&s=rkward\n\nI'll fill a bug report to request this version marked stable.",
+      "thread_id": "thread-f43a08d8c831",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-af032dbe5909",
+      "message_id": "<34f2770f0904100411u34bef5dfg83e941f848e3584@mail.gmail.com>",
+      "from_name": "Vince Fulco",
+      "from_email_hash": "e03b2fb12d9cd81407e8725942fdbaa6f7b97e59ee8f9fab76ea47884b30a975",
+      "date": "2009-04-10T11:11:50Z",
+      "subject": "[rkward-users] newest version crashes on FC10 almost immediately...",
+      "subject_clean": "[rkward-users] newest version crashes on FC10 almost immediately...",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Developers--\n\nA recent update to V. 0.5.0c on Fedora while using R-2.8.1 is unstable\nfrom the earliest usage attempt.  A simple 'update.packages()' attempt\ncauses rkward to crash with the following error: rkward: symbol lookup\nerror: rkward: undefined symbol: _ZNK7QString11lastIndexOfER7QRegExpi.\n Other commands also cause a similar immediate app failure.\n\nTIA,\n\n-- \nVince Fulco, CFA, CAIA\n612.424.5477 (universal)\nvfulco1 at gmail.com",
+      "body_snippet": "Dear Developers--\n\nA recent update to V. 0.5.0c on Fedora while using R-2.8.1 is unstable\nfrom the earliest usage attempt.  A simple 'update.packages()' attempt\ncauses rkward to crash with the followi",
+      "thread_id": "thread-af032dbe5909",
+      "thread_depth": 0,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-160cc6546cf0",
+      "message_id": "<200904101458.45359.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-04-10T12:58:42Z",
+      "subject": "[rkward-users] newest version crashes on FC10 almost immediately...",
+      "subject_clean": "[rkward-users] newest version crashes on FC10 almost immediately...",
+      "in_reply_to": "<34f2770f0904100411u34bef5dfg83e941f848e3584@mail.gmail.com>",
+      "references": [
+        "<34f2770f0904100411u34bef5dfg83e941f848e3584@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 10 April 2009, Vince Fulco wrote:\n> A recent update to V. 0.5.0c on Fedora while using R-2.8.1 is unstable\n> from the earliest usage attempt.  A simple 'update.packages()' attempt\n> causes rkward to crash with the following error: rkward: symbol lookup\n> error: rkward: undefined symbol: _ZNK7QString11lastIndexOfER7QRegExpi.\n>  Other commands also cause a similar immediate app failure.\n\nthanks for your report. This sounds like a packaging problem, therefore some \nquestions: Have you compiled rkward from sources, or are you using a \nprecompiled package? If the latter, where did you download that package? \nWhich version of RKWard did you use before?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090410/f0e80cc9/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 10 April 2009, Vince Fulco wrote:\n> A recent update to V. 0.5.0c on Fedora while using R-2.8.1 is unstable\n> from the earliest usage attempt.  A simple 'update.packages()' attempt\n> cau",
+      "thread_id": "thread-af032dbe5909",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-716cbdfe6e94",
+      "message_id": "<200904232106.53148.bairs5@charter.net>",
+      "from_name": "Richard Bair",
+      "from_email_hash": "12c486a880b0212d4e37cc0bf747ab602aead5d7653a3de70610e6d2be88a869",
+      "date": "2009-04-24T01:06:52Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello and thanks for reading.\n\nI have successfully compiled and installed R-2.9.0 on Slackware current using \nthe --enable-R-shlib configure option .  I run KDE3 so I am trying to install \nrkward-0.4.9a.\n\nI'm configuring rkward with...\n   /configure --with-extra-libs=/usr/local/lib/R/lib --with-extra-includes=/data/download/src/R-2.9.0/src/include/ \n\n...and the configuration appears successful.  The above seems necessary to \nlocate Rdevices.h and point to the libR.so file.\n\nThe make error I receive follows:\n\nmake[4]: Leaving directory \n`/data/download/src/rkward-0.4.9a/rkward/rbackend/rpackages'\nmake[4]: Entering directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\nif \ng++ -DHAVE_CONFIG_H -I. -I. -I../.. -I/usr/lib/qt/include -I.  -I/data/download/src/R-2.9.0/src/include/ -I/usr/local/lib/R/include -DQT_THREAD_SUPPORT  -D_REENTRANT -DQT_NO_ASCII_CAST  -Wno-long-long -Wundef -ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts -Wall -W -Wpointer-arith -O2 -Wformat-security -Wmissing-format-attribute -Wno-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common  -MT \nrembedinternal.o -MD -MP -MF \".deps/rembedinternal.Tpo\" -c -o \nrembedinternal.o rembedinternal.cpp; \\\n        then mv -f \".deps/rembedinternal.Tpo\" \".deps/rembedinternal.Po\"; else \nrm -f \".deps/rembedinternal.Tpo\"; exit 1; fi\nIn file included from /data/download/src/R-2.9.0/src/include/Rdevices.h:36,\n                 from rembedinternal.cpp:90:\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:124: error: variable or \nfield 'Rf_GRestore' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:124: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:126: error: variable or \nfield 'Rf_GSavePars' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:126: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:128: error: variable or \nfield 'Rf_GRestorePars' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:128: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:140: error: variable or \nfield 'Rf_GCheckState' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:140: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:143: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:163: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:166: error: variable or \nfield 'Rf_GClip' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:166: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:169: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:171: error: variable or \nfield 'Rf_GForceClip' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:171: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:173: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:175: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:178: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:181: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:183: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:185: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:187: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:189: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:191: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:195: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:198: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:199: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:213: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:216: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:222: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:224: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:227: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:228: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:243: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:244: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:245: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:247: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:248: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:255: error: variable or \nfield 'Rf_GReset' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:255: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:258: error: variable or \nfield 'Rf_GMapWin2Fig' declared void\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:258: error: 'pGEDevDesc' \nwas not declared in this scope\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:261: error: 'pGEDevDesc' \ndoes not name a type\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:263: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:265: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:267: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:270: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:271: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:272: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:273: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:274: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:275: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:276: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:277: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:278: error: 'pGEDevDesc' \nhas not been declared\n/data/download/src/R-2.9.0/src/include/Rgraphics.h:279: error: 'pGEDevDesc' \nhas not been declared\nmake[4]: *** [rembedinternal.o] Error 1\nmake[4]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/data/download/src/rkward-0.4.9a'\nmake: *** [all] Error 2\n\nAny ideas would be much appreciated.\n\nThanks,\nRich",
+      "body_snippet": "Hello and thanks for reading.\n\nI have successfully compiled and installed R-2.9.0 on Slackware current using \nthe --enable-R-shlib configure option .  I run KDE3 so I am trying to install \nrkward-0.4.",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 0,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-c772308d1b1f",
+      "message_id": "<20090425124455.GB9834@localdomain>",
+      "from_name": "Johannes Ranke",
+      "from_email_hash": "8d7dc9cf8d248719dcd9a94c124dab5545d72861321d11f36ce7fddb3c609524",
+      "date": "2009-04-25T12:44:55Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": "<200904232106.53148.bairs5@charter.net>",
+      "references": [
+        "<200904232106.53148.bairs5@charter.net>"
+      ],
+      "body_plain": "Hello Richard,\n\nin the past I have used another approach for building rkward 0.4.9a\nagainst newer versions of R that lack Rdevices.h:\n\n    sed -i '/^#include \"Rdevices.h\"/d' rkward/rbackend/rembedinternal.cpp\n\ni.e. I just removed the inclusion of Rdevices.h, with no known (to me) side effects.\n\nJohannes\n\n\n* Richard Bair <bairs5 at charter.net> [090424 06:00]:\n> Hello and thanks for reading.\n> \n> I have successfully compiled and installed R-2.9.0 on Slackware current using \n> the --enable-R-shlib configure option .  I run KDE3 so I am trying to install \n> rkward-0.4.9a.\n> \n> I'm configuring rkward with...\n>    /configure --with-extra-libs=/usr/local/lib/R/lib --with-extra-includes=/data/download/src/R-2.9.0/src/include/ \n> \n> ...and the configuration appears successful.  The above seems necessary to \n> locate Rdevices.h and point to the libR.so file.\n> \n> The make error I receive follows:\n> \n> make[4]: Leaving directory \n> `/data/download/src/rkward-0.4.9a/rkward/rbackend/rpackages'\n> make[4]: Entering directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\n> if \n> g++ -DHAVE_CONFIG_H -I. -I. -I../.. -I/usr/lib/qt/include -I.  -I/data/download/src/R-2.9.0/src/include/ -I/usr/local/lib/R/include -DQT_THREAD_SUPPORT  -D_REENTRANT -DQT_NO_ASCII_CAST  -Wno-long-long -Wundef -ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts -Wall -W -Wpointer-arith -O2 -Wformat-security -Wmissing-format-attribute -Wno-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common  -MT \n> rembedinternal.o -MD -MP -MF \".deps/rembedinternal.Tpo\" -c -o \n> rembedinternal.o rembedinternal.cpp; \\\n>         then mv -f \".deps/rembedinternal.Tpo\" \".deps/rembedinternal.Po\"; else \n> rm -f \".deps/rembedinternal.Tpo\"; exit 1; fi\n> In file included from /data/download/src/R-2.9.0/src/include/Rdevices.h:36,\n>                  from rembedinternal.cpp:90:\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:124: error: variable or \n> field 'Rf_GRestore' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:124: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:126: error: variable or \n> field 'Rf_GSavePars' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:126: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:128: error: variable or \n> field 'Rf_GRestorePars' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:128: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:140: error: variable or \n> field 'Rf_GCheckState' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:140: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:143: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:163: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:166: error: variable or \n> field 'Rf_GClip' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:166: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:169: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:171: error: variable or \n> field 'Rf_GForceClip' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:171: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:173: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:175: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:178: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:181: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:183: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:185: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:187: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:189: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:191: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:195: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:198: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:199: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:213: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:216: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:222: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:224: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:227: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:228: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:243: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:244: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:245: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:247: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:248: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:255: error: variable or \n> field 'Rf_GReset' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:255: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:258: error: variable or \n> field 'Rf_GMapWin2Fig' declared void\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:258: error: 'pGEDevDesc' \n> was not declared in this scope\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:261: error: 'pGEDevDesc' \n> does not name a type\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:263: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:265: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:267: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:270: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:271: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:272: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:273: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:274: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:275: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:276: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:277: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:278: error: 'pGEDevDesc' \n> has not been declared\n> /data/download/src/R-2.9.0/src/include/Rgraphics.h:279: error: 'pGEDevDesc' \n> has not been declared\n> make[4]: *** [rembedinternal.o] Error 1\n> make[4]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\n> make[3]: *** [all-recursive] Error 1\n> make[3]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\n> make[2]: *** [all-recursive] Error 1\n> make[2]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward'\n> make[1]: *** [all-recursive] Error 1\n> make[1]: Leaving directory `/data/download/src/rkward-0.4.9a'\n> make: *** [all] Error 2\n> \n> Any ideas would be much appreciated.\n> \n> Thanks,\n> Rich\n> \n> ------------------------------------------------------------------------------\n> Crystal Reports &#45; New Free Runtime and 30 Day Trial\n> Check out the new simplified licensign option that enables unlimited\n> royalty&#45;free distribution of the report engine for externally facing \n> server and web deployment.\n> http://p.sf.net/sfu/businessobjects\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n\n-- \nDr. Johannes Ranke                 jranke at uni-bremen.de",
+      "body_snippet": "Hello Richard,\n\nin the past I have used another approach for building rkward 0.4.9a\nagainst newer versions of R that lack Rdevices.h:\n\n    sed -i '/^#include \"Rdevices.h\"/d' rkward/rbackend/rembedinte",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-5ce8b53af790",
+      "message_id": "<200904252228.00939.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-04-25T20:27:57Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": "<200904232106.53148.bairs5@charter.net>",
+      "references": [
+        "<200904232106.53148.bairs5@charter.net>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 24 April 2009, Richard Bair wrote:\n> I'm configuring rkward with...\n>    /configure --with-extra-libs=/usr/local/lib/R/lib\n> --with-extra-includes=/data/download/src/R-2.9.0/src/include/\n\nthat line got you a mix of two (or possibly more) different versions of R, and \nthat is the cause of the trouble. I agree the configuration is not quite \nself-explaining, when you have more than one version of R installed.\n\nMost of the time, the --with-r-home is all you need in those cases. Probably\n\t./configure --with-r-home=/usr/local/lib/R\nin your case.\n\nTry that first, and write back, if it does not work for you.\n\nJohannes' suggestion may also work, but in your case will likely leave you \nwith other problems. That trick is no longer needed in RKWard 0.4.9a.\n\n(Configuration is - slightly - less obscure in the KDE 4 branch of RKWard).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090425/f1a68ecb/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 24 April 2009, Richard Bair wrote:\n> I'm configuring rkward with...\n>    /configure --with-extra-libs=/usr/local/lib/R/lib\n> --with-extra-includes=/data/download/src/R-2.9.0/src/include",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-c387f19bb403",
+      "message_id": "<200904251652.32413.bairs5@charter.net>",
+      "from_name": "Richard Bair",
+      "from_email_hash": "12c486a880b0212d4e37cc0bf747ab602aead5d7653a3de70610e6d2be88a869",
+      "date": "2009-04-25T20:52:32Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": "<200904252228.00939.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200904232106.53148.bairs5@charter.net>",
+        "<200904252228.00939.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Saturday 25 April 2009 04:27:57 pm Thomas Friedrichsmeier wrote:\n> ./configure --with-r-home=/usr/local/lib/R\n\n\nOk, when I put #include Rdevices.h back in and use...\n\n./configure --with-r-home=/usr/local/lib/R\n\nthe make fails giving...\n\nrembedinternal.cpp:90:22: error: Rdevices.h: No such file or directory\nmake[4]: *** [rembedinternal.o] Error 1\nmake[4]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward/rbackend'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/data/download/src/rkward-0.4.9a/rkward'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/data/download/src/rkward-0.4.9a'\nmake: *** [all] Error 2\n\nNote.  I'm now going to try and re-comment out the Rdevices.h and then use \nyour configure statement.  This had partially worked before with my previous \nconfigure statement giving me a popup about a rbackend request and then a \nsegmentation fault.  \n\n....still fails.  Either config gives me the attached prompt at startup...\n\n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: example.png\nType: image/png\nSize: 104608 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090425/eb6b4406/attachment.png>",
+      "body_snippet": "On Saturday 25 April 2009 04:27:57 pm Thomas Friedrichsmeier wrote:\n> ./configure --with-r-home=/usr/local/lib/R\n\n\nOk, when I put #include Rdevices.h back in and use...\n\n./configure --with-r-home=/usr",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 2,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-c800295b300f",
+      "message_id": "<200904261934.43664.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-04-26T17:34:39Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": "<200904251652.32413.bairs5@charter.net>",
+      "references": [
+        "<200904232106.53148.bairs5@charter.net>",
+        "<200904252228.00939.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<200904251652.32413.bairs5@charter.net>"
+      ],
+      "body_plain": "Hi,\n\nOn Saturday 25 April 2009, Richard Bair wrote:\n> On Saturday 25 April 2009 04:27:57 pm Thomas Friedrichsmeier wrote:\n> > ./configure --with-r-home=/usr/local/lib/R\n>\n> Ok, when I put #include Rdevices.h back in and use...\n>\n> ./configure --with-r-home=/usr/local/lib/R\n>\n> the make fails giving...\n>\n> rembedinternal.cpp:90:22: error: Rdevices.h: No such file or directory\n\nstrange. What does\n\t/usr/local/lib/R/bin/R --version\nprint? Also, in the output of the ./configure run, could you watch out for the \nline \"checking for R include files\", and the result, i.e. where configure \nthinks your R includes are located at?\n\n> Note.  I'm now going to try and re-comment out the Rdevices.h and then use\n> your configure statement.  This had partially worked before with my\n> previous configure statement giving me a popup about a rbackend request and\n> then a segmentation fault.\n>\n> ....still fails.  Either config gives me the attached prompt at startup...\n\nOh, dear, yes of course. I could have told you, but did not think of it. We \nhave not yet released a KDE 3 version that is fixed to work with R 2.9. \nWell - about time we do. I've created a .tar.gz that should work, and placed \nit at http://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz . You can \ngive that a try, if you like. The ./configure is unchanged, but this one \nshould not segfault with R 2.9.\n\nEverybody else: Yes, that means we'll create a new release, soon, and as \nusual, we want all the testing we can get. So go ahead and test, if you like, \nbut I'll also write a more elaborate call for testing with time schedule in a \nfew days.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090426/cabb6544/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Saturday 25 April 2009, Richard Bair wrote:\n> On Saturday 25 April 2009 04:27:57 pm Thomas Friedrichsmeier wrote:\n> > ./configure --with-r-home=/usr/local/lib/R\n>\n> Ok, when I put #include Rde",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 3,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-ad866a29aa22",
+      "message_id": "<200904261426.24168.bairs5@charter.net>",
+      "from_name": "Richard Bair",
+      "from_email_hash": "12c486a880b0212d4e37cc0bf747ab602aead5d7653a3de70610e6d2be88a869",
+      "date": "2009-04-26T18:26:24Z",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "subject_clean": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "in_reply_to": "<200904261934.43664.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200904232106.53148.bairs5@charter.net>",
+        "<200904251652.32413.bairs5@charter.net>",
+        "<200904261934.43664.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Sunday 26 April 2009 01:34:39 pm Thomas Friedrichsmeier wrote:\n> \n> strange. What does\n> \t/usr/local/lib/R/bin/R --version\n> print? Also, in the output of the ./configure run, could you watch out for\n> the line \"checking for R include files\", and the result, i.e. where\n> configure thinks your R includes are located at?\n>\n1) /usr/local/lib/R/bin/R --version yields...   \nR version 2.9.0 (2009-04-17)\nCopyright (C) 2009 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under the terms of the\nGNU General Public License version 2.\nFor more information about these matters see\nhttp://www.gnu.org/licenses/.\n\n2) ./configure --with-r-home=/usr/local/lib/R ...here's the line\nchecking for R include files... /usr/local/lib/R/include\n\n>\n> Oh, dear, yes of course. I could have told you, but did not think of it. We\n> have not yet released a KDE 3 version that is fixed to work with R 2.9.\n> Well - about time we do. I've created a .tar.gz that should work, and\n> placed it at http://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz\n> . You can give that a try, if you like. The ./configure is unchanged, but\n> this one should not segfault with R 2.9.\n>\n3) Thanks!!!  This appears to be working...  I read the warning for KDE4 in \nthe 0.5.0x series but I though 0.4.9a was KDE3 based.\n\n> Everybody else: Yes, that means we'll create a new release, soon, and as\n> usual, we want all the testing we can get. So go ahead and test, if you\n> like, but I'll also write a more elaborate call for testing with time\n> schedule in a few days.\n>\n> Regards\n> Thomas",
+      "body_snippet": "On Sunday 26 April 2009 01:34:39 pm Thomas Friedrichsmeier wrote:\n> \n> strange. What does\n> \t/usr/local/lib/R/bin/R --version\n> print? Also, in the output of the ./configure run, could you watch out f",
+      "thread_id": "thread-716cbdfe6e94",
+      "thread_depth": 4,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-8c5643e5b8aa",
+      "message_id": "<de8c7cb40904270840j77ba905bkd2bc98567740ee5d@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-04-27T15:40:04Z",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] Backport of R 2.9.0 to lenny",
+      "subject_clean": "[rkward-users] Fwd: [R-sig-Debian] Backport of R 2.9.0 to lenny",
+      "in_reply_to": "<de8c7cb40904270831g1ef72781mdd6ead91e9e97c12@mail.gmail.com>",
+      "references": [
+        "<20090424172137.GA5024@localdomain>",
+        "<20090424202716.ab41727c.griera@gmail.com>",
+        "<20090425122752.GB7594@localdomain>",
+        "<20090427092302.1bf5a14d.griera@gmail.com>",
+        "<de8c7cb40904270831g1ef72781mdd6ead91e9e97c12@mail.gmail.com>"
+      ],
+      "body_plain": "[sorry, I had wrongly selected the devel-request list earlier. slow\njavascript of my browser is to blame.]\n\n---------- Forwarded message ----------\nFrom: Prasenjit Kapat <kapatp at gmail.com>\nDate: Mon, Apr 27, 2009 at 11:31 AM\nSubject: Re: [R-sig-Debian] Backport of R 2.9.0 to lenny\nTo: griera at gmail.com\nCc: Johannes Ranke <jranke at uni-bremen.de>, r-sig-debian at r-project.org,\nrkward-devel-request at lists.sourceforge.net\n\n\nHi,\n\nI am Ccing the rkward-users.\n\nOn Mon, Apr 27, 2009 at 3:23 AM, A Griera <griera at gmail.com> wrote:\n> Hi:\n>\n> I have installed packages from:\n>\n> deb lenny http://cran.r-project.org/bin/linux/debian-Crane /\n\n[updated]\n> Sorry: My source is:\n>\n> deb http://cran.r-project.org/bin/linux/debian lenny-cran/\n\n>\n> But it does not work. When you start RKward, I get the error \"R backend requests information. Selection:\" and shows a white box without any opcci?n to select.\n>\n> Any suggestions? I am very interested in the use of RKWard with lenny backport.\n\n\nrkward needs to be recompiled for R 2.9, also the fix for Rdevices.h\nhas to be made. Can you compile it from source? If so, kindly find a\nrecent (test) version for KDE3 (assuming you are running KDE3) here:\n\nhttp://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz\n\nFor this you'll need r-base-dev, kdelibs4-dev, automake1.9, and\nautotools-dev. Then the usual steps of ./configure, make, make\ninstall. You may need to use --with-r-home=/path/to/R/home with\nconfigure, if the backports' installation is not at the usual\nlocation.\n\nI would suggest using the rkward-users list for further discussion on\nthis instead of r-sig-debian.\n\nJohannes is also part of the rkward list, so I guess he is aware of\nthe recent thread on this issue. He might just be able to provide a\ndeb file for this source :)\n\n\n> Thank you very much for supporting the backports for lenny\n\nFor lenny backports, depending on whether, KDE4 or KDE3 is being\ntargeted, may be two versions of rkward are needed - rkward (0.4.9x)\nand rkward0.5.\n\n> Regards. GRiera.\n>\n> On Sat, 25 Apr 2009 14:27:52 +0200\n> Johannes Ranke <jranke at uni-bremen.de> wrote:\n>\n>> Hi,\n>>\n>> Frankly, I don't. If you try this, I would be interested to know. It\n>> should be easy to go back to R from lenny, in case you encounter\n>> problems. So it appears you have an interest in the rkward backport for\n>> lenny-cran?\n>>\n>> Best regards,\n>>\n>> Johannes\n>>\n>> * A Griera <griera at gmail.com> [090424 20:40]:\n>> > Hello:\n>> >\n>> >\n>> > Thank you very much for the work.\n>> >\n>> > Do you know if this version of R is compatible with RKWArd for lenny? Regards. GRiera.\n>> >\n>> > On Fri, 24 Apr 2009 19:21:37 +0200\n>> > Johannes Ranke <jranke at uni-bremen.de> wrote:\n>> >\n>> > > Dear all,\n>> > >\n>> > > I am happy to announce the availability of the current R version to\n>> > > Debian lenny (stable) and etch (oldstable) on CRAN.\n>> > >\n>> > > I am happy to announce Piet Plomb who has taken responsibility for the\n>> > > amd64 packages for lenny this time.\n>> > >\n>> > > This time around, we have not done rpy and rkward. It would be\n>> > > interesting to know if there is any interest in these backports, as I\n>> > > personally don't use them.\n>> > >\n>> > > For details, please refer to the Debian README on CRAN, accessible via\n>> > > the links \"R Binaries\", \"Linux\".\n>> > >\n>> > > Kind regards,\n>> > >\n>> > > Johannes Ranke\n>> > >\n>> > > _______________________________________________\n>> > > R-SIG-Debian mailing list\n>> > > R-SIG-Debian at r-project.org\n>> > > https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n>> >\n>> > _______________________________________________\n>> > R-SIG-Debian mailing list\n>> > R-SIG-Debian at r-project.org\n>> > https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n>>\n>> --\n>> Dr. Johannes Ranke                 jranke at uni-bremen.de\n>\n> _______________________________________________\n> R-SIG-Debian mailing list\n> R-SIG-Debian at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n>\n\n\n\n--\nPrasenjit\n\n\n\n-- \nPrasenjit",
+      "body_snippet": "[sorry, I had wrongly selected the devel-request list earlier. slow\njavascript of my browser is to blame.]\n\n---------- Forwarded message ----------\nFrom: Prasenjit Kapat <kapatp at gmail.com>\nDate: Mo",
+      "thread_id": "thread-8c5643e5b8aa",
+      "thread_depth": 0,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-90d52ef0a13d",
+      "message_id": "<20090428183915.bd16103e.griera@gmail.com>",
+      "from_name": "A Griera",
+      "from_email_hash": "46ddaf20e50a78ed092c7cf1771883abf91989f49c2c0d7035755c352543fb6a",
+      "date": "2009-04-28T16:39:15Z",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] Backport of R 2.9.0 to lenny",
+      "subject_clean": "[rkward-users] Fwd: [R-sig-Debian] Backport of R 2.9.0 to lenny",
+      "in_reply_to": "<de8c7cb40904270840j77ba905bkd2bc98567740ee5d@mail.gmail.com>",
+      "references": [
+        "<20090424172137.GA5024@localdomain>",
+        "<20090424202716.ab41727c.griera@gmail.com>",
+        "<20090425122752.GB7594@localdomain>",
+        "<20090427092302.1bf5a14d.griera@gmail.com>",
+        "<de8c7cb40904270831g1ef72781mdd6ead91e9e97c12@mail.gmail.com>",
+        "<de8c7cb40904270840j77ba905bkd2bc98567740ee5d@mail.gmail.com>"
+      ],
+      "body_plain": "Great!!! It's works. Now, I have rkward 0.4.9b-test1 runing in debian lenny with R version 2.9.0 (2009-04-17). Thanks a lot. Regards. Griera\n\n\nOn Mon, 27 Apr 2009 11:40:04 -0400\nPrasenjit Kapat <kapatp at gmail.com> wrote:\n\n> [sorry, I had wrongly selected the devel-request list earlier. slow\n> javascript of my browser is to blame.]\n> \n> ---------- Forwarded message ----------\n> From: Prasenjit Kapat <kapatp at gmail.com>\n> Date: Mon, Apr 27, 2009 at 11:31 AM\n> Subject: Re: [R-sig-Debian] Backport of R 2.9.0 to lenny\n> To: griera at gmail.com\n> Cc: Johannes Ranke <jranke at uni-bremen.de>, r-sig-debian at r-project.org,\n> rkward-devel-request at lists.sourceforge.net\n> \n> \n> Hi,\n> \n> I am Ccing the rkward-users.\n> \n> On Mon, Apr 27, 2009 at 3:23 AM, A Griera <griera at gmail.com> wrote:\n> > Hi:\n> >\n> > I have installed packages from:\n> >\n> > deb lenny http://cran.r-project.org/bin/linux/debian-Crane /\n> \n> [updated]\n> > Sorry: My source is:\n> >\n> > deb http://cran.r-project.org/bin/linux/debian lenny-cran/\n> \n> >\n> > But it does not work. When you start RKward, I get the error \"R backend requests information. Selection:\" and shows a white box without any opcci?n to select.\n> >\n> > Any suggestions? I am very interested in the use of RKWard with lenny backport.\n> \n> \n> rkward needs to be recompiled for R 2.9, also the fix for Rdevices.h\n> has to be made. Can you compile it from source? If so, kindly find a\n> recent (test) version for KDE3 (assuming you are running KDE3) here:\n> \n> http://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz\n> \n> For this you'll need r-base-dev, kdelibs4-dev, automake1.9, and\n> autotools-dev. Then the usual steps of ./configure, make, make\n> install. You may need to use --with-r-home=/path/to/R/home with\n> configure, if the backports' installation is not at the usual\n> location.\n> \n> I would suggest using the rkward-users list for further discussion on\n> this instead of r-sig-debian.\n> \n> Johannes is also part of the rkward list, so I guess he is aware of\n> the recent thread on this issue. He might just be able to provide a\n> deb file for this source :)\n> \n> \n> > Thank you very much for supporting the backports for lenny\n> \n> For lenny backports, depending on whether, KDE4 or KDE3 is being\n> targeted, may be two versions of rkward are needed - rkward (0.4.9x)\n> and rkward0.5.\n> \n> > Regards. GRiera.\n> >\n> > On Sat, 25 Apr 2009 14:27:52 +0200\n> > Johannes Ranke <jranke at uni-bremen.de> wrote:\n> >\n> >> Hi,\n> >>\n> >> Frankly, I don't. If you try this, I would be interested to know. It\n> >> should be easy to go back to R from lenny, in case you encounter\n> >> problems. So it appears you have an interest in the rkward backport for\n> >> lenny-cran?\n> >>\n> >> Best regards,\n> >>\n> >> Johannes\n> >>\n> >> * A Griera <griera at gmail.com> [090424 20:40]:\n> >> > Hello:\n> >> >\n> >> >\n> >> > Thank you very much for the work.\n> >> >\n> >> > Do you know if this version of R is compatible with RKWArd for lenny? Regards. GRiera.\n> >> >\n> >> > On Fri, 24 Apr 2009 19:21:37 +0200\n> >> > Johannes Ranke <jranke at uni-bremen.de> wrote:\n> >> >\n> >> > > Dear all,\n> >> > >\n> >> > > I am happy to announce the availability of the current R version to\n> >> > > Debian lenny (stable) and etch (oldstable) on CRAN.\n> >> > >\n> >> > > I am happy to announce Piet Plomb who has taken responsibility for the\n> >> > > amd64 packages for lenny this time.\n> >> > >\n> >> > > This time around, we have not done rpy and rkward. It would be\n> >> > > interesting to know if there is any interest in these backports, as I\n> >> > > personally don't use them.\n> >> > >\n> >> > > For details, please refer to the Debian README on CRAN, accessible via\n> >> > > the links \"R Binaries\", \"Linux\".\n> >> > >\n> >> > > Kind regards,\n> >> > >\n> >> > > Johannes Ranke\n> >> > >\n> >> > > _______________________________________________\n> >> > > R-SIG-Debian mailing list\n> >> > > R-SIG-Debian at r-project.org\n> >> > > https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n> >> >\n> >> > _______________________________________________\n> >> > R-SIG-Debian mailing list\n> >> > R-SIG-Debian at r-project.org\n> >> > https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n> >>\n> >> --\n> >> Dr. Johannes Ranke                 jranke at uni-bremen.de\n> >\n> > _______________________________________________\n> > R-SIG-Debian mailing list\n> > R-SIG-Debian at r-project.org\n> > https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n> >\n> \n> \n> \n> --\n> Prasenjit\n> \n> \n> \n> -- \n> Prasenjit\n> \n> ------------------------------------------------------------------------------\n> Crystal Reports &#45; New Free Runtime and 30 Day Trial\n> Check out the new simplified licensign option that enables unlimited\n> royalty&#45;free distribution of the report engine for externally facing \n> server and web deployment.\n> http://p.sf.net/sfu/businessobjects\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Great!!! It's works. Now, I have rkward 0.4.9b-test1 runing in debian lenny with R version 2.9.0 (2009-04-17). Thanks a lot. Regards. Griera\n\n\nOn Mon, 27 Apr 2009 11:40:04 -0400\nPrasenjit Kapat <kapat",
+      "thread_id": "thread-8c5643e5b8aa",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-b1a84f38e02a",
+      "message_id": "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-04-29T16:33:15Z",
+      "subject": "[rkward-users] Preview releases of RKWard 0.4.9b and 0.5.0d",
+      "subject_clean": "[rkward-users] Preview releases of RKWard 0.4.9b and 0.5.0d",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nA month ago, we've released of RKWard 0.5.0c to address some of the more \nimportant bugs. We were in a bit of a hurry, then, as we hoped to get \nincluded in a feature of a large German computer magazine (unfortunately that \ndid not work out). Due to that hurry, a number of further known bugs were not \naddressed in 0.5.0c, and we did not release a KDE 3 version at that time.\n\nTime to address that: I've uploaded initial test releases of both RKWard \n0.4.9b for KDE 3 and 0.5.0d for KDE 4 at \nhttp://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz and \nhttp://rkward.sourceforge.net/temp/rkward-0.5.0d-test1.tar.gz respectively. \nThe focus in both releases is on bugfixing (which is why I'm still not \nincreasing the version number), but for the KDE 3 branch this is also the \nfirst time that Meik's set of plugins on item response theory is made \navailable in a release.\n\nTo make sure the upcoming official releases are as solid as possible, I'd like \nto ask you to download and test either version (or of course both, if you can \ntest on both KDE 3 and KDE 4).\n\n-- Testing --\nThe first round of testing will be open for one week, until Wednesday, May 3. \nPlease try to provide your feedback until that day. Please mention each and \nevery issue that you find, even if it might have previously been mentionend \non this list or elsewhere.\n\nDepending on the outcome of your testing, we will then decide how to proceed.\n\n-- Translations --\nSince these are bug-fix releases, existing translations should not need any \n(substantial) updates. Of course you may want to use this opportunity to make \nsome adjustments, or even to start a translation for a new language.\n\n-- (Plugin) developers --\nPlease don't add any new features until the releases are done, or only after \nprior discussion on the -devel list. SVN will be open to feature additions \nonce the releases are out, officially.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090429/b9c503aa/attachment.sig>",
+      "body_snippet": "Hi!\n\nA month ago, we've released of RKWard 0.5.0c to address some of the more \nimportant bugs. We were in a bit of a hurry, then, as we hoped to get \nincluded in a feature of a large German computer m",
+      "thread_id": "thread-b1a84f38e02a",
+      "thread_depth": 0,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-de4896905330",
+      "message_id": "<3ff92a550904291010n5b26e03cj209571264e122bf7@mail.gmail.com>",
+      "from_name": "I. Soumpasis",
+      "from_email_hash": "a94678a1f84caf75ec69c1589fd4aed1043a851856c73c70d75d592af82476bc",
+      "date": "2009-04-29T17:10:35Z",
+      "subject": "[rkward-users] [rkward-devel] Preview releases of RKWard 0.4.9b and 0.5.0d",
+      "subject_clean": "[rkward-users] [rkward-devel] Preview releases of RKWard 0.4.9b and 0.5.0d",
+      "in_reply_to": "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "2009/4/29 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>\n\n> Hi!\n>\n>\nHi Thomas,\n\nThanks for the new releases. I fixed some fuzzy problems and a few new\nstrings on the greek translation. I uploaded it on svn.\n\nRegarding the problems that I have noticed earlier.\n\nThe autoscroll when installing packages is working again. :)\n\nThe Ctrl+V shortcut on the terminal does not work. The message is\nQAction::eventFilter: Ambiguous shortcut overload: Ctrl+V\nI don't know if it helps and if it can be fixed.\n\nFinally, the floating toolbars sometimes they go too right (out of rkward).\nI was thinking that maybe a re-organisation (2 lines toolbars) can solve the\nproblem. I 'll take a look again later.\n\nRegards,\nIlias\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090429/77972e84/attachment.html>",
+      "body_snippet": "2009/4/29 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>\n\n> Hi!\n>\n>\nHi Thomas,\n\nThanks for the new releases. I fixed some fuzzy problems and a few new\nstrings on the greek trans",
+      "thread_id": "thread-b1a84f38e02a",
+      "thread_depth": 1,
+      "month": "2009-04"
+    },
+    {
+      "id": "msg-108825ec9af2",
+      "message_id": "<200904301819.51973.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-04-30T16:19:47Z",
+      "subject": "[rkward-users] ubuntu packages [was: Preview releases of RKWard 0.4.9b and 0.5.0d]",
+      "subject_clean": "[rkward-users] ubuntu packages [was: Preview releases of RKWard 0.4.9b and 0.5.0d]",
+      "in_reply_to": "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "hi,\n\nOn Wednesday 29 April 2009 18:33:15 Thomas Friedrichsmeier wrote:\n> Time to address that: I've uploaded initial test releases of both RKWard\n> 0.4.9b for KDE 3 and 0.5.0d for KDE 4 at\n> http://rkward.sourceforge.net/temp/rkward-0.4.9b-test1.tar.gz and\n> http://rkward.sourceforge.net/temp/rkward-0.5.0d-test1.tar.gz respectively.\n\nto let more people participate in testing, i have compield some ubuntu \npackages. please be warned: these will most probably *only* work if you are \nrunning the R version from the ubuntu servers! that is, if you added the cran \nrepos to have a more recent version of R, these packages won't work. i'm sorry \ni don't have the time to compile versions against R 2.8 and 2.9 as well ;-)\n\nbut if you stick to what ubuntu provides you with, it should be as simple as \nadding one of these repositories, depending on your installation. i've skipped \n8.10, sorry for that, too...\n\n# rkward-0.5.0d-test1 (kde4) for 9.04:\n deb http://reaktanz.de/deb/rkward jaunty main\n\n# rkward-0.5.0d-test1 (kde4) for 8.04:\n deb http://reaktanz.de/deb/rkward hardy main\n\n# rkward-0.4.9b-test1 (kde3) for 8.04:\n deb http://reaktanz.de/deb/rkward-kde3 hardy main\n\nhope this helps.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090430/0ec08dde/attachment.sig>",
+      "body_snippet": "hi,\n\nOn Wednesday 29 April 2009 18:33:15 Thomas Friedrichsmeier wrote:\n> Time to address that: I've uploaded initial test releases of both RKWard\n> 0.4.9b for KDE 3 and 0.5.0d for KDE 4 at\n> http://rk",
+      "thread_id": "thread-b1a84f38e02a",
+      "thread_depth": 1,
+      "month": "2009-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f43a08d8c831",
+      "subject": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "message_count": 2,
+      "participants": [
+        "Pierre-Yves",
+        "michel lang"
+      ],
+      "started": "2009-04-01T12:12:22Z",
+      "last_reply": "2009-04-02T07:59:46Z",
+      "root_message_id": "msg-f43a08d8c831"
+    },
+    {
+      "id": "thread-af032dbe5909",
+      "subject": "[rkward-users] newest version crashes on FC10 almost immediately...",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "Vince Fulco"
+      ],
+      "started": "2009-04-10T11:11:50Z",
+      "last_reply": "2009-04-10T12:58:42Z",
+      "root_message_id": "msg-af032dbe5909"
+    },
+    {
+      "id": "thread-716cbdfe6e94",
+      "subject": "[rkward-users] make fails for R-2.9.0 and 0.4.9a with KDE3",
+      "message_count": 6,
+      "participants": [
+        "Johannes Ranke",
+        "Richard Bair",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-04-24T01:06:52Z",
+      "last_reply": "2009-04-26T18:26:24Z",
+      "root_message_id": "msg-716cbdfe6e94"
+    },
+    {
+      "id": "thread-8c5643e5b8aa",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] Backport of R 2.9.0 to lenny",
+      "message_count": 2,
+      "participants": [
+        "A Griera",
+        "Prasenjit Kapat"
+      ],
+      "started": "2009-04-27T15:40:04Z",
+      "last_reply": "2009-04-28T16:39:15Z",
+      "root_message_id": "msg-8c5643e5b8aa"
+    },
+    {
+      "id": "thread-b1a84f38e02a",
+      "subject": "[rkward-users] Preview releases of RKWard 0.4.9b and 0.5.0d",
+      "message_count": 3,
+      "participants": [
+        "I. Soumpasis",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2009-04-29T16:33:15Z",
+      "last_reply": "2009-04-30T16:19:47Z",
+      "root_message_id": "msg-b1a84f38e02a"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Mar  7 15:37:32 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 7 Mar 2012 16:37:32 +0100
+Subject: [rkward-users] Error when trying to load an .R file in clicking
+	on it
+In-Reply-To: <1330457506.47711.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+References: <1330457506.47711.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+Message-ID: <201203071637.38296.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+sorry for the long delay.
+
+On Tuesday 28 February 2012, Francois Maurice wrote:
+> I'd like to be able to load a script file directly when I clic on it but
+> the following error message appears : 
+> Error loading workspace - RKWard
+> There has been an error opening file
+>  'J:/dossiers/Francois/Cours/COURS.E10/SOL6021/Programmation/R/Analyse.R':
+>  
+> Is there a way to do that ?
+
+RKWard tries to open a file passed on the command line as a workspace, not as a 
+script file. This may be improved in the future, but currently that's the way 
+it is. It is possible to work around this, although on Windows that's quite 
+cumbersome:
+
+1. Create a .bat file with the following content:
+
+REM opens command line argument as a script file in RKWard
+SET file=%1
+SET file=%file:\=/%
+C:\RKWard\KDE\bin\rkward.bat --evaluate rk.edit.files('%file%')
+
+(NOTE: Replace c:\RKWard\KDE\bin\rkward.bat with the correct path to 
+rkward.bat on your system).
+
+2. Change the file type association of .R files from rkward to the .bat file you 
+created.
+
+Now, clicking a .R file should start an RKWard session, and run the command
+  rk.edit.files('FILENAME')
+in it, automatically. Note that each .R file will open in a separate rkward 
+session.
+
+I hope that helps a bit.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120307/0bda25dd/attachment.sig>
+
+From maurice.francois at ymail.com  Thu Mar  8 05:09:03 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Wed, 7 Mar 2012 21:09:03 -0800 (PST)
+Subject: [rkward-users] Bravo
+Message-ID: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+
+Hi,
+?
+RKWard is the best R GUI available. Really nice job and it is a lot of job. It is also serious job. I'll try to participate to the development of RKWard in a near future. The biggest?drawback is the dependence of RKWard on KDE. KDE is heavy and not so easy to install. But hey, I guess KDE has advantages. Perhaps we are due for a simple and elegant website to better promote RKWard, something like the?Web site?of RStudio. 
+?
+? bient?t,
+?
+Fran?ois Maurice, B. Sc., A. Stat.
+Candidat ? la ma?trise
+D?partement de sociologie
+Universit? de Montr?al
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120307/ee11dae8/attachment.html>
+
+From faustina-essing at gmx.net  Thu Mar  8 10:24:37 2012
+From: faustina-essing at gmx.net (Faustina Essing)
+Date: Thu, 08 Mar 2012 11:24:37 +0100
+Subject: [rkward-users] Bravo
+In-Reply-To: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+References: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+Message-ID: <20120308102437.243890@gmx.net>
+
+Hello good day, 
+
+I do'nt think that RKWard only runs on KDE-Desktop Environment. I have heard that RKWard also runs with GNOME and I have installed it with GNOME.
+But still I have not so much practical experience with RKWard.
+
+Kind Regards
+
+Faustina Essing
+
+
+-------- Original-Nachricht --------
+> Datum: Wed, 7 Mar 2012 21:09:03 -0800 (PST)
+> Von: Francois Maurice <maurice.francois at ymail.com>
+> An: RKWard Users Mailing List <rkward-users at lists.sourceforge.net>
+> Betreff: [rkward-users] Bravo
+
+> Hi,
+> ?
+> RKWard is the best R GUI available. Really nice job and it is a lot of
+> job. It is also serious job. I'll try to participate to the development of
+> RKWard in a near future. The biggest?drawback is the dependence of RKWard on
+> KDE. KDE is heavy and not so easy to install. But hey, I guess KDE has
+> advantages. Perhaps we are due for a simple and elegant website to better
+> promote RKWard, something like the?Web site?of RStudio. 
+> ?
+> ? bient?t,
+> ?
+> Fran?ois Maurice, B. Sc., A. Stat.
+> Candidat ? la ma?trise
+> D?partement de sociologie
+> Universit? de Montr?al
+
+-- 
+Empfehlen Sie GMX DSL Ihren Freunden und Bekannten und wir
+belohnen Sie mit bis zu 50,- Euro! https://freundschaftswerbung.gmx.de
+
+
+
+From meik.michalke at uni-duesseldorf.de  Thu Mar  8 10:31:36 2012
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Thu, 08 Mar 2012 11:31:36 +0100
+Subject: [rkward-users] Bravo
+In-Reply-To: <20120308102437.243890@gmx.net>
+References: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+	<20120308102437.243890@gmx.net>
+Message-ID: <2879312.6Q8iWhZPJo@yrla>
+
+hi,
+
+am Donnerstag 08 M?rz 2012, 11:24:37 schrieb Faustina Essing:
+> I do'nt think that RKWard only runs on KDE-Desktop Environment. I have heard
+> that RKWard also runs with GNOME and I have installed it with GNOME.
+
+the actual desktop is not so important, RKWard also runs on Windows and Mac OS 
+X. but francois is right, it needs the KDE libraries (e.g., the code editor 
+uses Kate).
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120308/5a1053cd/attachment.sig>
+
+From maurice.francois at ymail.com  Thu Mar  8 14:29:33 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Thu, 8 Mar 2012 06:29:33 -0800 (PST)
+Subject: [rkward-users] =?iso-8859-1?q?Re=A0=3A__Bravo?=
+In-Reply-To: <20120308102437.243890@gmx.net>
+References: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+	<20120308102437.243890@gmx.net>
+Message-ID: <1331216973.28124.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+
+Hi Faustina,
+?
+What is your operating system ? I'm working on Windows and it seems that RKWard only runs with KDE on Windows. Anyway, it's not a big problem. It was only an innocent comment. I am not a programmer and I imagine that KDE provides tools for application development.
+?
+Cordialement,
+
+Fran?ois Maurice, B. Sc., A. Stat.
+Candidat ? la ma?trise
+D?partement de sociologie
+Universit? de Montr?al
+
+
+________________________________
+De?: Faustina Essing <faustina-essing at gmx.net>
+??: Francois Maurice <maurice.francois at ymail.com>; rkward-users at lists.sourceforge.net 
+Envoy? le : jeudi 8 mars 2012 5h24
+Objet?: Re: [rkward-users] Bravo
+
+Hello good day, 
+
+I do'nt think that RKWard only runs on KDE-Desktop Environment. I have heard that RKWard also runs with GNOME and I have installed it with GNOME.
+But still I have not so much practical experience with RKWard.
+
+Kind Regards
+
+Faustina Essing
+
+
+-------- Original-Nachricht --------
+> Datum: Wed, 7 Mar 2012 21:09:03 -0800 (PST)
+> Von: Francois Maurice <maurice.francois at ymail.com>
+> An: RKWard Users Mailing List <rkward-users at lists.sourceforge.net>
+> Betreff: [rkward-users] Bravo
+
+> Hi,
+> ?
+> RKWard is the best R GUI available. Really nice job and it is a lot of
+> job. It is also serious job. I'll try to participate to the development of
+> RKWard in a near future. The biggest?drawback is the dependence of RKWard on
+> KDE. KDE is heavy and not so easy to install. But hey, I guess KDE has
+> advantages. Perhaps we are due for a simple and elegant website to better
+> promote RKWard, something like the?Web site?of RStudio. 
+> ?
+> ? bient?t,
+> ?
+> Fran?ois Maurice, B. Sc., A. Stat.
+> Candidat ? la ma?trise
+> D?partement de sociologie
+> Universit? de Montr?al
+
+-- 
+Empfehlen Sie GMX DSL Ihren Freunden und Bekannten und wir
+belohnen Sie mit bis zu 50,- Euro! https://freundschaftswerbung.gmx.de
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120308/4ff1a428/attachment.html>
+
+From maurice.francois at ymail.com  Thu Mar  8 18:03:56 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Thu, 8 Mar 2012 10:03:56 -0800 (PST)
+Subject: [rkward-users] Donation
+Message-ID: <1331229836.56798.YahooMailNeo@web114606.mail.gq1.yahoo.com>
+
+Hi,
+?
+I made a donation to RKWard but the electronic Paypal receipe don't mention RKWard as the beneficiary ! Only SourceForge is mentionned. Is it a normal situation?
+
+Fran?ois Maurice
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120308/27c7fd68/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Mar  8 19:37:16 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 Mar 2012 20:37:16 +0100
+Subject: [rkward-users] Donation
+In-Reply-To: <1331229836.56798.YahooMailNeo@web114606.mail.gq1.yahoo.com>
+References: <1331229836.56798.YahooMailNeo@web114606.mail.gq1.yahoo.com>
+Message-ID: <201203082037.20994.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 08 March 2012, Francois Maurice wrote:
+> I made a donation to RKWard but the electronic Paypal receipe don't mention
+> RKWard as the beneficiary ! Only SourceForge is mentionned. Is it a normal
+> situation?
+
+I don't really know, what the donor's side looks like, but I see you are 
+listed among the donors to the project. So I think this is normal, indeed. 
+I'll let you know in case your donation does not arrive in due time.
+
+And thanks a lot!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120308/75d2dfa5/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Mar  8 20:47:21 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 Mar 2012 21:47:21 +0100
+Subject: [rkward-users] Bravo
+Message-ID: <201203082147.25415.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 08 March 2012, Francois Maurice wrote:
+> RKWard is the best R GUI available. Really nice job and it is a lot of job.
+> It is also serious job. I'll try to participate to the development of
+> RKWard in a near future.
+
+thanks for the flattery, and I'm very much looking forward to your 
+participiation. Please note that I do not have a whole lot of time for the 
+project at the moment (I hope that will improve again, soon). Just so you know 
+that if you don't get feedback immediately, that's not for a lack of interest.
+
+> The biggest drawback is the dependence of RKWard
+> on KDE. KDE is heavy and not so easy to install. But hey, I guess KDE has
+> advantages.
+
+Yes, one of the key advantages is the text editor component. Also KDE is 
+currently working on becoming more modular, so the KDE dependency will 
+hopefully become less heavy in the not-too-distant future.
+
+> Perhaps we are due for a simple and elegant website to better
+> promote RKWard, something like the Web site of RStudio. 
+
+The website is definitely in need of some love. As you can see this is 
+currently based on a wiki, to reduce the maintenance effort. But even within 
+this framework, a lot can certainly be done both about content and design. I 
+have just given you editor rights in the wiki, so you can start working on 
+improvements. Of course, for larger changes, and esp. for changes to central 
+pages, please do your work on a temporary page, first, and ask for feedback on 
+the rkward-devel mailing list, if in any doubt.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120308/ca99815d/attachment.sig>
+
+From faustina-essing at gmx.net  Fri Mar  9 09:21:33 2012
+From: faustina-essing at gmx.net (Faustina Essing)
+Date: Fri, 09 Mar 2012 10:21:33 +0100
+Subject: [rkward-users] =?iso-8859-1?q?Re=A0=3A__Bravo?=
+In-Reply-To: <1331216973.28124.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+References: <1331183343.42058.YahooMailNeo@web114616.mail.gq1.yahoo.com>
+	<20120308102437.243890@gmx.net>
+	<1331216973.28124.YahooMailNeo@web114613.mail.gq1.yahoo.com>
+Message-ID: <20120309092133.282050@gmx.net>
+
+Hello good day Francois Maurice and hello list,
+
+my operatingsystem is linux ubuntu and I have installed RKWard. 
+But as I wrote I am not very experienced and I think that Meik is right.
+
+Francois, so I understand you work with Windows. I have heard that the desktop environment KDE also is available for Windows. Here is a nice weblink: 
+
+http://windows.kde.org/
+
+Kind regards
+
+Faustina Essing
+
+-------- Original-Nachricht --------
+> Datum: Thu, 8 Mar 2012 06:29:33 -0800 (PST)
+> Von: Francois Maurice <maurice.francois at ymail.com>
+> An: Faustina Essing <faustina-essing at gmx.net>, Rkawar Users Mailing List <rkward-users at lists.sourceforge.net>
+> Betreff: Re?: [rkward-users] Bravo
+
+> Hi Faustina,
+> ?
+> What is your operating system ? I'm working on Windows and it seems that
+> RKWard only runs with KDE on Windows. Anyway, it's not a big problem. It was
+> only an innocent comment. I am not a programmer and I imagine that KDE
+> provides tools for application development.
+> ?
+> Cordialement,
+> 
+> Fran?ois Maurice, B. Sc., A. Stat.
+> Candidat ? la ma?trise
+> D?partement de sociologie
+> Universit? de Montr?al
+> 
+> 
+> ________________________________
+> De?: Faustina Essing <faustina-essing at gmx.net>
+> ??: Francois Maurice <maurice.francois at ymail.com>;
+> rkward-users at lists.sourceforge.net 
+> Envoy? le : jeudi 8 mars 2012 5h24
+> Objet?: Re: [rkward-users] Bravo
+> 
+> Hello good day, 
+> 
+> I do'nt think that RKWard only runs on KDE-Desktop Environment. I have
+> heard that RKWard also runs with GNOME and I have installed it with GNOME.
+> But still I have not so much practical experience with RKWard.
+> 
+> Kind Regards
+> 
+> Faustina Essing
+> 
+> 
+> -------- Original-Nachricht --------
+> > Datum: Wed, 7 Mar 2012 21:09:03 -0800 (PST)
+> > Von: Francois Maurice <maurice.francois at ymail.com>
+> > An: RKWard Users Mailing List <rkward-users at lists.sourceforge.net>
+> > Betreff: [rkward-users] Bravo
+> 
+> > Hi,
+> > ?
+> > RKWard is the best R GUI available. Really nice job and it is a lot of
+> > job. It is also serious job. I'll try to participate to the development
+> of
+> > RKWard in a near future. The biggest?drawback is the dependence of
+> RKWard on
+> > KDE. KDE is heavy and not so easy to install. But hey, I guess KDE has
+> > advantages. Perhaps we are due for a simple and elegant website to
+> better
+> > promote RKWard, something like the?Web site?of RStudio. 
+> > ?
+> > ? bient?t,
+> > ?
+> > Fran?ois Maurice, B. Sc., A. Stat.
+> > Candidat ? la ma?trise
+> > D?partement de sociologie
+> > Universit? de Montr?al
+> 
+> -- 
+> Empfehlen Sie GMX DSL Ihren Freunden und Bekannten und wir
+> belohnen Sie mit bis zu 50,- Euro! https://freundschaftswerbung.gmx.de
+
+-- 
+NEU: FreePhone 3-fach-Flat mit kostenlosem Smartphone!                                  
+Jetzt informieren: http://mobile.1und1.de/?ac=OM.PW.PW003K20328T7073a
+
+
+
+From maurice.francois at ymail.com  Fri Mar  9 14:21:20 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Fri, 9 Mar 2012 06:21:20 -0800 (PST)
+Subject: [rkward-users] Cosmetic question
+Message-ID: <1331302880.36203.YahooMailNeo@web114606.mail.gq1.yahoo.com>
+
+Hi,
+?
+Is there a way to change the appearance, "skin", of RKWard ? Maybe via KDE ? If so, which KDE package I have to instal : kde-baseapps or kde-workspace ?
+?
+Tanks,
+
+Fran?ois 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120309/69d21d84/attachment.html>
+

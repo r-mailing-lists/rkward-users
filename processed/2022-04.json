@@ -1,0 +1,974 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2022-04",
+  "messages": [
+    {
+      "id": "msg-37f0ae3f341c",
+      "message_id": "<20220403222243.7e092ea6@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-03T20:22:43Z",
+      "subject": "Call for testing upcoming RKWard 0.7.3",
+      "subject_clean": "Call for testing upcoming RKWard 0.7.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI finally found some time to get things moving again, in RKWard\ndevelopment, and by now a number of improvements are just waiting to be\nreleased. Not for the first time, the timeline for this is being\nconstrained by an upcoming release of R (4.2.0, scheduled for April\n22) that will not work with our latest official release (0.7.2) out of\nthe box.",
+      "body_snippet": "Hi!\n\nI finally found some time to get things moving again, in RKWard\ndevelopment, and by now a number of improvements are just waiting to be\nreleased. Not for the first time, the timeline for this is ",
+      "thread_id": "thread-37f0ae3f341c",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-36913ace4ce0",
+      "message_id": "<6F6D9B62-B0A4-43C3-BEC6-E58349144013@web.de>",
+      "from_name": "Sahar Khamenei",
+      "from_email_hash": "407d76b93329190cf545c1303f9774c2a49cc37a7ed167db4d9b9ffa6963b67c",
+      "date": "2022-04-04T13:33:30Z",
+      "subject": "Fwd: confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c",
+      "subject_clean": "confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c",
+      "in_reply_to": null,
+      "references": [
+        "<43D3458B-1AAD-43FF-850A-68A327F147A9@web.de>"
+      ],
+      "body_plain": "Not sure which Mailadress is correct\n\n\n> Von: Sahar Khamenei <sahar.khamenei at web.de>\n> Datum: 4. April 2022 um 15:18:17 MESZ\n> An: rkward-users-request at kde.org\n> Betreff: Aw: confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c\n> \n> ﻿I need support following this question, thanks in advance!\n> \n> I installed R 4.1.3 for Uni on my MacBook Pro because I have OS 12.0.1.  But I don't really know which RKWard version I should download for this.\n> \n>   Can you tell me what version I need and where to get it?\n> \n>   I've already googled, but didn't get any clear answers in the limited time I have.\n> \n>   Do I just install the RKWard after R installation?\n> \n> Greetz\n> Sahar\n> \n>>> Am 04.04.2022 um 15:13 schrieb rkward-users-request at kde.org:\n>>> \n>> ﻿Mailing list subscription confirmation notice for mailing list\n>> rkward-users\n>> \n>> We have received a request from 2003:e3:b70d:b072:e4c6:5485:bedd:881\n>> for subscription of your email address, \"sahar.khamenei at web.de\", to\n>> the rkward-users at kde.org mailing list.  To confirm that you want to be\n>> added to this mailing list, simply reply to this message, keeping the\n>> Subject: header intact.  Or visit this web page:\n>> \n>>    https://mail.kde.org/mailman/confirm/rkward-users/1668b6b1f9811876d30a12fb6c1d932b5ab1c44c\n>> \n>> \n>> Or include the following line -- and only the following line -- in a\n>> message to rkward-users-request at kde.org:\n>> \n>>    confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c\n>> \n>> Note that simply sending a `reply' to this message should work from\n>> most mail readers, since that usually leaves the Subject: line in the\n>> right form (additional \"Re:\" text in the Subject: is okay).\n>> \n>> If you do not wish to be subscribed to this list, please simply\n>> disregard this message.  If you think you are being maliciously\n>> subscribed to the list, or have any other questions, send them to\n>> rkward-users-owner at kde.org.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220404/e74311e5/attachment.htm>",
+      "body_snippet": "Not sure which Mailadress is correct\n\n\n> Von: Sahar Khamenei <sahar.khamenei at web.de>\n> Datum: 4. April 2022 um 15:18:17 MESZ\n> An: rkward-users-request at kde.org\n> Betreff: Aw: confirm 1668b6b1f98",
+      "thread_id": "thread-36913ace4ce0",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-2e11a886d8fd",
+      "message_id": "<20220404180859.23c1a085@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-04T16:08:59Z",
+      "subject": "confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c",
+      "subject_clean": "confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c",
+      "in_reply_to": "<6F6D9B62-B0A4-43C3-BEC6-E58349144013@web.de>",
+      "references": [
+        "<43D3458B-1AAD-43FF-850A-68A327F147A9@web.de>",
+        "<6F6D9B62-B0A4-43C3-BEC6-E58349144013@web.de>"
+      ],
+      "body_plain": "Hi!\n\nAm Mon, 4 Apr 2022 15:33:30 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n> Not sure which Mailadress is correct\n\nYou can post to the list using rkward-users at kde.org .\n\n[...]\n\n> > ﻿I need support following this question, thanks in advance!\n> > \n> > I installed R 4.1.3 for Uni on my MacBook Pro because I have OS\n> > 12.0.1.  But I don't really know which RKWard version I should\n> > download for this.\n> > \n> >   Can you tell me what version I need and where to get it?\n\nAdmittedly, the situation *is* confusing, ATM. Our latest \"official\"\nbinary for Mac (0.7.2) will not work correctly with R 4.1.3, and the\nnightly build (which usually does) is currently broken. I'm actively\nworking on fixing both, but for the time being, the best option is to\ninstall a snapshot taken last month:\n\n https://files.kde.org/rkward/snapshots/rkward-master-993-macos-64-clang.dmg\n\nI'll write back, once the more official builds are back online\n(tomorrow, I hope).\n\nNote that the binary is signed but not notarized by Apple, which means\nyou will have to:\n1. Ctrl+click while opening the DMG, and select \"Open\" after the\n   warning, that Apple cannot check for malicious contents\n2. Ctrl+click RKWard in Finder when starting it the first time, *again*.\n   Again select \"Open\" after the warning.\nAfter that RKWard can be started, normally.\n\n> >   I've already googled, but didn't get any clear answers in the\n> > limited time I have.\n> > \n> >   Do I just install the RKWard after R installation?\n\nYes (or the other way around).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220404/93c48501/attachment.sig>",
+      "body_snippet": "Hi!\n\nAm Mon, 4 Apr 2022 15:33:30 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n> Not sure which Mailadress is correct\n\nYou can post to the list using rkward-users at kde.org .\n\n[...]\n\n> > ﻿",
+      "thread_id": "thread-36913ace4ce0",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-d530e163bd78",
+      "message_id": "<AA332F89-A5BE-4ACB-A12E-6AB836189286@web.de>",
+      "from_name": "Sahar Khamenei",
+      "from_email_hash": "407d76b93329190cf545c1303f9774c2a49cc37a7ed167db4d9b9ffa6963b67c",
+      "date": "2022-04-05T10:50:30Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": ">> ﻿I need support following this question, thanks in advance!\n>> \n>> I installed R 4.1.3 for University on my MacBook Pro because I have OS\n>> 12.0.1.  But I don't really know which RKWard version I should\n>> download for this.\n>> \n>>  Can you tell me what version I need and where to get it?\n\nThanx in advance",
+      "body_snippet": ">> ﻿I need support following this question, thanks in advance!\n>> \n>> I installed R 4.1.3 for University on my MacBook Pro because I have OS\n>> 12.0.1.  But I don't really know which RKWard version I ",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-07898fcae513",
+      "message_id": "<20220405150845.1c59e5f5@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-05T13:08:45Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<AA332F89-A5BE-4ACB-A12E-6AB836189286@web.de>",
+      "references": [
+        "<AA332F89-A5BE-4ACB-A12E-6AB836189286@web.de>"
+      ],
+      "body_plain": "Hi!\n\nDid you receive my reply to your other mail?\n\nAgain (with some updates):\n\nAdmittedly, the situation *is* confusing, ATM. Our latest \"official\"\nbinary for Mac (0.7.2) will not work correctly with R 4.1.3, thus the\nbest option is to install the nightly development snapshot:\n\nhttps://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/\n\nThis is currently suffering from a number of Mac-specific problems.\nImportantly, there is a crash when selecting any statistics GUI features\nfrom the menu. I'm looking into a solution, and will get back to you.\nMeanwhile the package is not recommendable, unless you plan to use the\nIDE features, only.\n\nAlso, note that the binary is signed but not notarized by Apple, which\nmeans you will have to:\n1. Ctrl+click while opening the DMG, and select \"Open\" after the\n   warning, that Apple cannot check for malicious contents\n2. Ctrl+click RKWard in Finder when starting it the first time, *again*.\n   Again select \"Open\" after the warning.\nAfter that RKWard can be started, normally.\n\nRegards\nThomas\n\nAm Tue, 5 Apr 2022 12:50:30 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n\n> >> ﻿I need support following this question, thanks in advance!\n> >> \n> >> I installed R 4.1.3 for University on my MacBook Pro because I\n> >> have OS 12.0.1.  But I don't really know which RKWard version I\n> >> should download for this.\n> >> \n> >>  Can you tell me what version I need and where to get it?  \n> \n> Thanx in advance\n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220405/39f18ea6/attachment.sig>",
+      "body_snippet": "Hi!\n\nDid you receive my reply to your other mail?\n\nAgain (with some updates):\n\nAdmittedly, the situation *is* confusing, ATM. Our latest \"official\"\nbinary for Mac (0.7.2) will not work correctly with ",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-d4fe082cc4f4",
+      "message_id": "<7494512.EvYhyI6sBW@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2022-04-05T17:45:41Z",
+      "subject": "Call for testing upcoming RKWard 0.7.3",
+      "subject_clean": "Call for testing upcoming RKWard 0.7.3",
+      "in_reply_to": "<20220403222243.7e092ea6@booklife>",
+      "references": [
+        "<20220403222243.7e092ea6@booklife>"
+      ],
+      "body_plain": "hi,\n\nAm Sonntag, 3. April 2022, 22:22:43 CEST schrieb Thomas Friedrichsmeier:\n> I finally found some time to get things moving again, in RKWard\n> development, and by now a number of improvements are just waiting to be\n> released.\n\n\\o/\n\n> In other words, we're looking at a release in around two weeks, and I'm\n> hoping for your help in testing, to make sure we it will provide a\n> smooth user experience. A few hints what to look out for:\n\nlooks very good so far!\n\n> Features:\n> The development tree has many small fixes all over the place, not all\n> of which are even documented in the ChangeLog. Some features which may\n> be more noticeable:\n> - The RKWard output has been reworked to behave more like a regular\n>   document. You can save your changes or discard them. It is also stored\n>   as a single file, now (which, internally, is a zip archive, that\n>   gets unpacked, when you work with it).\n\nmight seem like a small change, but i like this very much!\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220405/bd2b1dad/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Sonntag, 3. April 2022, 22:22:43 CEST schrieb Thomas Friedrichsmeier:\n> I finally found some time to get things moving again, in RKWard\n> development, and by now a number of improvements are j",
+      "thread_id": "thread-37f0ae3f341c",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-9926205a8f00",
+      "message_id": "<20220406143213.0414a705@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-06T12:32:13Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<20220405150845.1c59e5f5@booklife>",
+      "references": [
+        "<AA332F89-A5BE-4ACB-A12E-6AB836189286@web.de>",
+        "<20220405150845.1c59e5f5@booklife>"
+      ],
+      "body_plain": "Am Tue, 5 Apr 2022 15:08:45 +0200\nschrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n> This is currently suffering from a number of Mac-specific problems.\n> Importantly, there is a crash when selecting any statistics GUI\n> features from the menu. I'm looking into a solution, and will get\n> back to you. Meanwhile the package is not recommendable, unless you\n> plan to use the IDE features, only.\n\nThe new build fixes this issue:\n\nhttps://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/lastSuccessfulBuild/artifact/rkward-master-1024-macos-64-clang.dmg\n\nAn official build based on this is scheduled to be released on April,\n21st.\n\nNonetheless, as you have noted, we are definitely in need of more\ntesting on Mac. Please report any problems you find!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/fca1ef7b/attachment.sig>",
+      "body_snippet": "Am Tue, 5 Apr 2022 15:08:45 +0200\nschrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n> This is currently suffering from a number of Mac-specific problems.\n> Importantly, there is ",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 2,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-a492e5487956",
+      "message_id": "<70E1B0C7-8B95-449F-BAAF-08F7AA98CCF7@web.de>",
+      "from_name": "Sahar Khamenei",
+      "from_email_hash": "407d76b93329190cf545c1303f9774c2a49cc37a7ed167db4d9b9ffa6963b67c",
+      "date": "2022-04-06T13:30:45Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<20220406143213.0414a705@booklife>",
+      "references": [
+        "<20220406143213.0414a705@booklife>"
+      ],
+      "body_plain": "Thx in advance, I will see if I can use it.\n\n how can I deinstall RWward ?\n\nVon meinem iPad gesendet\n\n> Am 06.04.2022 um 14:32 schrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n> \n> ﻿Am Tue, 5 Apr 2022 15:08:45 +0200\n> schrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n>> This is currently suffering from a number of Mac-specific problems.\n>> Importantly, there is a crash when selecting any statistics GUI\n>> features from the menu. I'm looking into a solution, and will get\n>> back to you. Meanwhile the package is not recommendable, unless you\n>> plan to use the IDE features, only.\n> \n> The new build fixes this issue:\n> \n> https://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/lastSuccessfulBuild/artifact/rkward-master-1024-macos-64-clang.dmg\n> \n> An official build based on this is scheduled to be released on April,\n> 21st.\n> \n> Nonetheless, as you have noted, we are definitely in need of more\n> testing on Mac. Please report any problems you find!\n> \n> Regards\n> Thomas",
+      "body_snippet": "Thx in advance, I will see if I can use it.\n\n how can I deinstall RWward ?\n\nVon meinem iPad gesendet\n\n> Am 06.04.2022 um 14:32 schrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n>",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 3,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-eb496f0f756a",
+      "message_id": "<20220406162302.6b8f7753@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-06T14:23:02Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<70E1B0C7-8B95-449F-BAAF-08F7AA98CCF7@web.de>",
+      "references": [
+        "<20220406143213.0414a705@booklife>",
+        "<70E1B0C7-8B95-449F-BAAF-08F7AA98CCF7@web.de>"
+      ],
+      "body_plain": "Am Wed, 6 Apr 2022 15:30:45 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n\n> Thx in advance, I will see if I can use it.\n> \n>  how can I deinstall RWward ?\n\nLocate it in Finder (Applications folder), and drag to Trash.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/ec120b79/attachment.sig>",
+      "body_snippet": "Am Wed, 6 Apr 2022 15:30:45 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n\n> Thx in advance, I will see if I can use it.\n> \n>  how can I deinstall RWward ?\n\nLocate it in Finder (Application",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 4,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-7712b4769146",
+      "message_id": "<E0A310C0-3C76-4DFA-9A55-AC052DA1C632@web.de>",
+      "from_name": "Sahar Khamenei",
+      "from_email_hash": "407d76b93329190cf545c1303f9774c2a49cc37a7ed167db4d9b9ffa6963b67c",
+      "date": "2022-04-06T16:14:38Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Ok, thank you very much!\nI will try working with this version you sent me and report if something‘s not working!\n\nThe new build fixes this issue:\n\nhttps://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/lastSuccessfulBuild/artifact/rkward-master-1024-macos-64-clang.dmg\n\nAn official build based on this is scheduled to be released on April,\n21st.\n\nNonetheless, as you have noted, we are definitely in need of more\ntesting on Mac. Please report any problems you find!\n\n\nGreetz\nSahar\n\n> Am 06.04.2022 um 16:23 schrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n> ﻿Am Wed, 6 Apr 2022 15:30:45 +0200\n> schrieb Sahar Khamenei <sahar.khamenei at web.de>:\n> \n>> Thx in advance, I will see if I can use it.\n>> \n>> how can I deinstall RWward ?\n> \n> Locate it in Finder (Applications folder), and drag to Trash.\n> \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/3645380e/attachment.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: mime-attachment\nType: application/octet-stream\nSize: 833 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/3645380e/attachment.obj>",
+      "body_snippet": "Ok, thank you very much!\nI will try working with this version you sent me and report if something‘s not working!\n\nThe new build fixes this issue:\n\nhttps://binary-factory.kde.org/view/MacOS/job/RKWard_",
+      "thread_id": "thread-7712b4769146",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-98ad9fd866e9",
+      "message_id": "<84398A5F-95CD-46BE-94B0-21DEF47CD205@web.de>",
+      "from_name": "Sahar Khamenei",
+      "from_email_hash": "407d76b93329190cf545c1303f9774c2a49cc37a7ed167db4d9b9ffa6963b67c",
+      "date": "2022-04-06T19:38:43Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<20220406162302.6b8f7753@booklife>",
+      "references": [
+        "<20220406162302.6b8f7753@booklife>"
+      ],
+      "body_plain": "Unfortunately I could not install it although I followed the rules…see screenshot\n\n„Also, note that the binary is signed but not notarized by Apple, which\nmeans you will have to:\n1. Ctrl+click while opening the DMG, and select \"Open\" after the\n  warning, that Apple cannot check for malicious contents\n2. Ctrl+click RKWard in Finder when starting it the first time, *again*.\n  Again select \"Open\" after the warning.\nAfter that RKWard can be started, normally.“\n\n\n\nGreetz Sahar\n\n> Am 06.04.2022 um 16:23 schrieb Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>:\n> \n> ﻿Am Wed, 6 Apr 2022 15:30:45 +0200\n> schrieb Sahar Khamenei <sahar.khamenei at web.de>:\n> \n>> Thx in advance, I will see if I can use it.\n>> \n>> how can I deinstall RWward ?\n> \n> Locate it in Finder (Applications folder), and drag to Trash.\n> \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/c46a49ca/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: image.png\nType: image/png\nSize: 185181 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/c46a49ca/attachment-0001.png>",
+      "body_snippet": "Unfortunately I could not install it although I followed the rules…see screenshot\n\n„Also, note that the binary is signed but not notarized by Apple, which\nmeans you will have to:\n1. Ctrl+click while o",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 5,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-269f7acea20f",
+      "message_id": "<20220406220017.661a3f85@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-06T20:00:17Z",
+      "subject": "Need help for RKward",
+      "subject_clean": "Need help for RKward",
+      "in_reply_to": "<84398A5F-95CD-46BE-94B0-21DEF47CD205@web.de>",
+      "references": [
+        "<20220406162302.6b8f7753@booklife>",
+        "<84398A5F-95CD-46BE-94B0-21DEF47CD205@web.de>"
+      ],
+      "body_plain": "Am Wed, 6 Apr 2022 21:38:43 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n\n> Unfortunately I could not install it although I followed the\n> rules…see screenshot\n\nAt which step exactly is this? (BTW, I forgot to mention step 1b): Drag\nthe RKWard icon to the Applications icon, and close the installer\nwindow.)\n\nThe procedure works for me on both Mojave and Big Sur, although\noccasionally, the Mac does seem to ignore that I help Ctrl while\nclicking. Did you try again?\n\nSee also: https://support.apple.com/en-in/guide/mac-help/mh40616/mac\n\nRegards\n\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220406/6340b031/attachment.sig>",
+      "body_snippet": "Am Wed, 6 Apr 2022 21:38:43 +0200\nschrieb Sahar Khamenei <sahar.khamenei at web.de>:\n\n> Unfortunately I could not install it although I followed the\n> rules…see screenshot\n\nAt which step exactly is th",
+      "thread_id": "thread-d530e163bd78",
+      "thread_depth": 6,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-16c697c9aad0",
+      "message_id": "<968562909.300964.1649810573430@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-13T00:42:53Z",
+      "subject": "standardized regression coefficients",
+      "subject_clean": "standardized regression coefficients",
+      "in_reply_to": null,
+      "references": [
+        "<968562909.300964.1649810573430.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi all\nCan rkward do standardized regression coefficients for linear regression?\nI went to the analysis menu, and dropped down to linear regression. It doesn't seem to have any options for calculating or displaying standardized regression coefficients. \nI have a data set, \"shortdataset.csv\" herehttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n\nthanks\nGene\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220413/1adf467d/attachment.htm>",
+      "body_snippet": "Hi all\nCan rkward do standardized regression coefficients for linear regression?\nI went to the analysis menu, and dropped down to linear regression. It doesn't seem to have any options for calculating",
+      "thread_id": "thread-16c697c9aad0",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-6d9dc01daf98",
+      "message_id": "<20220413101210.1611b0f0@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-13T08:12:10Z",
+      "subject": "standardized regression coefficients",
+      "subject_clean": "standardized regression coefficients",
+      "in_reply_to": "<968562909.300964.1649810573430@mail.yahoo.com>",
+      "references": [
+        "<968562909.300964.1649810573430.ref@mail.yahoo.com>",
+        "<968562909.300964.1649810573430@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi!\n\nAm Wed, 13 Apr 2022 00:42:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Can rkward do standardized regression coefficients for linear\n> regression? I went to the analysis menu, and dropped down to linear\n> regression. It doesn't seem to have any options for calculating or\n> displaying standardized regression coefficients.\n\nThis option did not exist. I've added it just now (to be part of RKWard\n0.7.3, expected in about two weeks). To get the feature earlier\n(usually next day), see the links to development snapshots, here:\nhttps://rkward.kde.org/Release_Schedule.html\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220413/4df6d6d8/attachment.sig>",
+      "body_snippet": "Hi!\n\nAm Wed, 13 Apr 2022 00:42:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Can rkward do standardized regression coefficients for linear\n> regression? I went to the analysis menu, and dro",
+      "thread_id": "thread-16c697c9aad0",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-791d9d330c42",
+      "message_id": "<6048049.lOV4Wx5bFT@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2022-04-13T09:08:14Z",
+      "subject": "rkward",
+      "subject_clean": "rkward",
+      "in_reply_to": "<774105697.301705.1649811349345@mail.yahoo.com>",
+      "references": [
+        "<774105697.301705.1649811349345.ref@mail.yahoo.com>",
+        "<774105697.301705.1649811349345@mail.yahoo.com>"
+      ],
+      "body_plain": "hi gene,\n\nAm Mittwoch, 13. April 2022, 02:55:49 CEST schrieb someone:\n> I subscribed to the user list\n> here https://mail.kde.org/mailman/listinfo/rkward-users So I have my user\n> name (my email address) and I have a password, and i got an email\n> confirming that I subscribed. How do I log onto the user list, so i can\n> respond?\n\ntechnically, this is a mailing list, not a forum. this means, you don't log \nonto something, but simply send e-mails/replies to <rkward-users at kde.org> to \nbe part of the public discussion. your mails will be distributed to everyone \nwho is also subscribed, including yourself.\n\n> I also posted a note about standardized regression coefficients, but there\n> seems to be an error in the url i listed. I want to be able to post a\n> correction, or respond to people if they respond.\n\nthis also means there is no editing of sent messages. in case you would like \nto update some information, you'll have to send another mail.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220413/d2ce30f9/attachment.sig>",
+      "body_snippet": "hi gene,\n\nAm Mittwoch, 13. April 2022, 02:55:49 CEST schrieb someone:\n> I subscribed to the user list\n> here https://mail.kde.org/mailman/listinfo/rkward-users So I have my user\n> name (my email addre",
+      "thread_id": "thread-791d9d330c42",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-ea791758d318",
+      "message_id": "<1958856500.554656.1649884486348@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-13T21:14:46Z",
+      "subject": "rkward",
+      "subject_clean": "rkward",
+      "in_reply_to": "<6048049.lOV4Wx5bFT@yrla>",
+      "references": [
+        "<774105697.301705.1649811349345.ref@mail.yahoo.com>",
+        "<774105697.301705.1649811349345@mail.yahoo.com>",
+        "<6048049.lOV4Wx5bFT@yrla>"
+      ],
+      "body_plain": "Thanks very much for explaining!\nGene\n\n\n-----Original Message-----\nFrom: meik michalke <meik.michalke at uni-duesseldorf.de>\nTo: someone <maffydoit at aol.com>\nCc: rkward-users at kde.org\nSent: Wed, Apr 13, 2022 5:08 am\nSubject: Re: rkward\n\nhi gene,\n\nAm Mittwoch, 13. April 2022, 02:55:49 CEST schrieb someone:\n> I subscribed to the user list\n> here https://mail.kde.org/mailman/listinfo/rkward-users So I have my user\n> name (my email address) and I have a password, and i got an email\n> confirming that I subscribed. How do I log onto the user list, so i can\n> respond?\n\ntechnically, this is a mailing list, not a forum. this means, you don't log \nonto something, but simply send e-mails/replies to <rkward-users at kde.org> to \nbe part of the public discussion. your mails will be distributed to everyone \nwho is also subscribed, including yourself.\n\n> I also posted a note about standardized regression coefficients, but there\n> seems to be an error in the url i listed. I want to be able to post a\n> correction, or respond to people if they respond.\n\nthis also means there is no editing of sent messages. in case you would like \nto update some information, you'll have to send another mail.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220413/c9a2d98c/attachment.htm>",
+      "body_snippet": "Thanks very much for explaining!\nGene\n\n\n-----Original Message-----\nFrom: meik michalke <meik.michalke at uni-duesseldorf.de>\nTo: someone <maffydoit at aol.com>\nCc: rkward-users at kde.org\nSent: Wed, A",
+      "thread_id": "thread-791d9d330c42",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-afc02136967e",
+      "message_id": "<2062752796.557470.1649884671896@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-13T21:17:51Z",
+      "subject": "standardized regression coefficients",
+      "subject_clean": "standardized regression coefficients",
+      "in_reply_to": "<20220413101210.1611b0f0@booklife>",
+      "references": [
+        "<968562909.300964.1649810573430.ref@mail.yahoo.com>",
+        "<968562909.300964.1649810573430@mail.yahoo.com>",
+        "<20220413101210.1611b0f0@booklife>"
+      ],
+      "body_plain": "Thanks very much!\nBy the way, for my link to my data set, I meant the link to be this:\nhttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nIt got connected to some text previously.\nthanks\ngene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Wed, Apr 13, 2022 4:12 am\nSubject: Re: standardized regression coefficients\n\nHi!\n\nAm Wed, 13 Apr 2022 00:42:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Can rkward do standardized regression coefficients for linear regression? I went to the analysis menu, and dropped down to linear regression. It doesn't seem to have any options for calculating or displaying standardized regression coefficients.\n\nThis option did not exist. I've added it just now (to be part of RKWard 0.7.3, expected in about two weeks). To get the feature earlier (usually next day), see the links to development snapshots, here: https://rkward.kde.org/Release_Schedule.html\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220413/f5bb7dac/attachment.htm>",
+      "body_snippet": "Thanks very much!\nBy the way, for my link to my data set, I meant the link to be this:\nhttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nIt got connected to some text ",
+      "thread_id": "thread-16c697c9aad0",
+      "thread_depth": 2,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-c1917333a09e",
+      "message_id": "<1666222888.52375.1649987044407@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-15T01:44:04Z",
+      "subject": "standardized regression coefficients",
+      "subject_clean": "standardized regression coefficients",
+      "in_reply_to": "<2062752796.557470.1649884671896@mail.yahoo.com>",
+      "references": [
+        "<968562909.300964.1649810573430.ref@mail.yahoo.com>",
+        "<968562909.300964.1649810573430@mail.yahoo.com>",
+        "<20220413101210.1611b0f0@booklife>",
+        "<2062752796.557470.1649884671896@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi\nI just wanted to mention I downloaded the recent development version, and ran on a regression, clicking for standardized coefficients. The results, including the standardized coefficients, were -very- close to SAS. Well done.\nThanks\nGene\n\n\n-----Original Message-----\nFrom: someone <maffydoit at aol.com>\nTo: thomas.friedrichsmeier at kdemail.net <thomas.friedrichsmeier at kdemail.net>; rkward-users at kde.org <rkward-users at kde.org>\nSent: Wed, Apr 13, 2022 5:17 pm\nSubject: standardized regression coefficients\n\nThanks very much!\nBy the way, for my link to my data set, I meant the link to be this:\nhttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nIt got connected to some text previously.\nthanks\ngene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Wed, Apr 13, 2022 4:12 am\nSubject: Re: standardized regression coefficients\n\nHi!\n\nAm Wed, 13 Apr 2022 00:42:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Can rkward do standardized regression coefficients for linear regression? I went to the analysis menu, and dropped down to linear regression. It doesn't seem to have any options for calculating or displaying standardized regression coefficients.\n\nThis option did not exist. I've added it just now (to be part of RKWard 0.7.3, expected in about two weeks). To get the feature earlier (usually next day), see the links to development snapshots, here: https://rkward.kde.org/Release_Schedule.html\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220415/f6b7f58f/attachment.htm>",
+      "body_snippet": "Hi\nI just wanted to mention I downloaded the recent development version, and ran on a regression, clicking for standardized coefficients. The results, including the standardized coefficients, were -ve",
+      "thread_id": "thread-16c697c9aad0",
+      "thread_depth": 3,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-c160c6f3a060",
+      "message_id": "<20220421135759.4c04943d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-21T11:57:59Z",
+      "subject": "RKWard 0.7.3 is released!",
+      "subject_clean": "RKWard 0.7.3 is released!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.7.3 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all contributors!\n\nNote: The RKWard 0.7.3 sources are compatible with a wide range of R\nreleases, including (but not limited to) R 4.1.x and R 4.2.x. However,\nan RKWard binary compiled against R 4.1.x is not going to work with R\n4.2.x, and vice versa. Windows and MacOS binaries compiled for R 4.2.x\nare expected to be available, soon. Linux users upgrading to R 4.2.0,\nplease contact your distribution maintainers, if needed.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/ed3d579a/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.7.3 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all contri",
+      "thread_id": "thread-c160c6f3a060",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-6b51508dc265",
+      "message_id": "<649547968.393498.1650547974599@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-21T13:32:54Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": null,
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi all\nI hope everyone is healthy and safe.\nI hope I'm missing something, but I don't see how to get frequencies of variables. For example, this data set\nhttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nis a list of countries with various characteristics: population, infant mortality rate, GDP per Capita and so on.\nThere is also a column for area/region, e.g., North America, Europe, Africa and so on.\nI want to get a frequency of countries by area/region. How do I do that? Is there a simple way and I just don't see it? I looked in Analysis / Basic Statistics and Analysis / Descriptive Statistics. Is there somewhere else?\n\nThanks\nGene\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/9dc30dde/attachment.htm>",
+      "body_snippet": "Hi all\nI hope everyone is healthy and safe.\nI hope I'm missing something, but I don't see how to get frequencies of variables. For example, this data set\nhttps://drive.google.com/file/d/11WIET3s4eMHsB",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-897e08d298a5",
+      "message_id": "<CAMqnA+ggtPiJRzJawyShhOdVZETMfNSmvf8f6CmU4WVvRRuKrw@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-21T14:03:55Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<649547968.393498.1650547974599@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>"
+      ],
+      "body_plain": "You could have a look at: https://aprendeconalf.es/proyecto/rkteaching/\nA plugin with various functions for RKWard.\nFrequencies included.\nHope it helps.\n\nEl jue, 21 abr 2022 a la(s) 08:29, someone (maffydoit at aol.com) escribió:\n\n> Hi all\n>\n> I hope everyone is healthy and safe.\n>\n> I hope I'm missing something, but I don't see how to get frequencies of\n> variables. For example, this data set\n>\n>\n> https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n>\n> is a list of countries with various characteristics: population, infant\n> mortality rate, GDP per Capita and so on.\n>\n> There is also a column for area/region, e.g., North America, Europe,\n> Africa and so on.\n>\n> I want to get a frequency of countries by area/region. How do I do that?\n> Is there a simple way and I just don't see it? I looked in Analysis / Basic\n> Statistics and Analysis / Descriptive Statistics. Is there somewhere else?\n>\n> Thanks\n>\n> Gene\n>\n>\n>\n>\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/c6c6e5c3/attachment.htm>",
+      "body_snippet": "You could have a look at: https://aprendeconalf.es/proyecto/rkteaching/\nA plugin with various functions for RKWard.\nFrequencies included.\nHope it helps.\n\nEl jue, 21 abr 2022 a la(s) 08:29, someone (ma",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-37839f5521cf",
+      "message_id": "<20220421165553.348ecec1@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-21T14:55:53Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<649547968.393498.1650547974599@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nAm Thu, 21 Apr 2022 13:32:54 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> I hope I'm missing something, but I don't see how to get frequencies\n> of variables. \n\nI assume by frequencies you mean summary statistics (importantly\naverage by group)?\n\nI was going to recommend the rk.ANOVA package for that purpose, but it\nseems there may be a problem installing that, ATM.\n\nMeanwhile I have added grouping capability to Analysis->Descripive\nStatistics, so, again, you should find that in tomorrow's nightly build.\n\nFor actual frequencies of category by category, see Analysis->Crosstabs.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/1a1488d6/attachment.sig>",
+      "body_snippet": "Hi,\n\nAm Thu, 21 Apr 2022 13:32:54 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> I hope I'm missing something, but I don't see how to get frequencies\n> of variables. \n\nI assume by frequencies y",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-ecdc5589d8f1",
+      "message_id": "<765666162.60422.1650575836769@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-21T21:17:16Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<20220421165553.348ecec1@booklife>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>"
+      ],
+      "body_plain": "Thanks, that was it!\n\"For actual frequencies of category by category, see Analysis->Crosstabs.\"\n\nThanks\nGene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: someone <maffydoit at aol.com>\nCc: rkward-users at kde.org <rkward-users at kde.org>\nSent: Thu, Apr 21, 2022 10:55 am\nSubject: Re: frequencies of categorical variables\n\nHi,\n\nAm Thu, 21 Apr 2022 13:32:54 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> I hope I'm missing something, but I don't see how to get frequencies of variables. \n\nI assume by frequencies you mean summary statistics (importantly average by group)?\n\nI was going to recommend the rk.ANOVA package for that purpose, but it seems there may be a problem installing that, ATM.\n\nMeanwhile I have added grouping capability to Analysis->Descripive Statistics, so, again, you should find that in tomorrow's nightly build.\n\nFor actual frequencies of category by category, see Analysis->Crosstabs. \nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/3d1f4049/attachment-0001.htm>",
+      "body_snippet": "Thanks, that was it!\n\"For actual frequencies of category by category, see Analysis->Crosstabs.\"\n\nThanks\nGene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemai",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 2,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-a0836252641d",
+      "message_id": "<461630867.89708.1650582473921@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-21T23:07:53Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<20220421165553.348ecec1@booklife>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>"
+      ],
+      "body_plain": "That sounds great!\n\"Meanwhile I have added grouping capability to Analysis->Descripive Statistics\"\n\nThat would be in the official release version in a week or so?\n\nThanks\nGene\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: someone <maffydoit at aol.com>\nCc: rkward-users at kde.org <rkward-users at kde.org>\nSent: Thu, Apr 21, 2022 10:55 am\nSubject: Re: frequencies of categorical variables\n\nHi,\n\nAm Thu, 21 Apr 2022 13:32:54 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> I hope I'm missing something, but I don't see how to get frequencies\n> of variables. \n\nI assume by frequencies you mean summary statistics (importantly\naverage by group)?\n\nI was going to recommend the rk.ANOVA package for that purpose, but it\nseems there may be a problem installing that, ATM.\n\nMeanwhile I have added grouping capability to Analysis->Descripive\nStatistics, so, again, you should find that in tomorrow's nightly build.\n\nFor actual frequencies of category by category, see Analysis->Crosstabs.\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220421/b08c1590/attachment.htm>",
+      "body_snippet": "That sounds great!\n\"Meanwhile I have added grouping capability to Analysis->Descripive Statistics\"\n\nThat would be in the official release version in a week or so?\n\nThanks\nGene\n\n-----Original Message--",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 2,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-e28c709e1170",
+      "message_id": "<20220422210728.4db0f19d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-22T19:07:28Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<461630867.89708.1650582473921@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>"
+      ],
+      "body_plain": "Am Thu, 21 Apr 2022 23:07:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> That sounds great!\n> \"Meanwhile I have added grouping capability to Analysis->Descripive\n> Statistics\"\n> \n> That would be in the official release version in a week or so?\n\nNo, 0.7.3 was released, yesterday, but this feature was too late for\nthe release.\n\nI hope the next release won't take all that long, but it will certainly\nbe more than a week.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220422/4e648eba/attachment.sig>",
+      "body_snippet": "Am Thu, 21 Apr 2022 23:07:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> That sounds great!\n> \"Meanwhile I have added grouping capability to Analysis->Descripive\n> Statistics\"\n> \n> That wou",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 3,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-a50003be2231",
+      "message_id": "<640808287.334237.1650660497574@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-22T20:48:17Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<20220422210728.4db0f19d@booklife>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>"
+      ],
+      "body_plain": "Thomas, \nVery good. \nSo for grouping, for example, using this data sethttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nI could get mean population by arearegion?\nThanks so much for the time you are putting into this.\nGene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Fri, Apr 22, 2022 3:07 pm\nSubject: Re: frequencies of categorical variables\n\nAm Thu, 21 Apr 2022 23:07:53 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> That sounds great!\n> \"Meanwhile I have added grouping capability to Analysis->Descripive Statistics\"\n> \n> That would be in the official release version in a week or so?\n\nNo, 0.7.3 was released, yesterday, but this feature was too late for the release.\n\nI hope the next release won't take all that long, but it will certainly be more than a week.\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220422/bd20a28e/attachment.htm>",
+      "body_snippet": "Thomas, \nVery good. \nSo for grouping, for example, using this data sethttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\nI could get mean population by arearegion?\nThan",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 4,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-bdbec81ae0b3",
+      "message_id": "<20220423002111.789fbd0c@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-22T22:21:11Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<640808287.334237.1650660497574@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>"
+      ],
+      "body_plain": "Am Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Thomas, \n> Very good. \n> So for grouping, for example, using this data\n> sethttps://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n> I could get mean population by arearegion? Thanks so much for the\n> time you are putting into this. Gene\n\nExactly.\n\nI'd actually like to encourage you to keep testing the daily builds, in\nparticularly, while talking about new features, i.e.\n\nhttps://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n\n. These may have some rough edges, work in progress, and it's always a\ngood idea to save your data, often, but we do try to keep them in a\nuseful state at all times.\n\nShould you encounter a truly unusable build, once in a while, you can\nstill go back to the official release.\n\nRegards\nThomas\n\n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220423/8c03c70a/attachment.sig>",
+      "body_snippet": "Am Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n> Thomas, \n> Very good. \n> So for grouping, for example, using this data\n> sethttps://drive.google.com/file/d/11WIET3s4",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 5,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-d58366f702e2",
+      "message_id": "<368419623.494674.1650743901270@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-23T19:58:21Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<20220423002111.789fbd0c@booklife>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>"
+      ],
+      "body_plain": "Thanks again. \nOne comment about the grouping. The table I get looks like this (showing the first part)\n\n| \n | mean | sum |\n| population.Africa | 25,007,234 | 1,375,397,882 |\n| population.Australia - Oceania | 1,557,590 | 34,266,986 |\n| population.Central America | 2,841,993 | 90,943,762 |\n\n\nWould it be possible to have the outcome table without the \"population.\" in front?\nThanks\nGene\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Fri, Apr 22, 2022 6:21 pm\nSubject: Re: frequencies of categorical variables\n\nAm Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n Thomas, \n\n>Very good. \n>So for grouping, for example, using this data set >https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n>I could get mean population by arearegion? >Thanks so much for the time you are putting into this. Gene\n\nExactly.\n\nI'd actually like to encourage you to keep testing the daily builds, in particularly, while talking about new features, i.e.\n\nhttps://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n\nThese may have some rough edges, work in progress, and it's always a good idea to save your data, often, but we do try to keep them in a useful state at all times.\n\nShould you encounter a truly unusable build, once in a while, you can still go back to the official release.\n\nRegards\nThomas\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220423/29727e22/attachment.htm>",
+      "body_snippet": "Thanks again. \nOne comment about the grouping. The table I get looks like this (showing the first part)\n\n| \n | mean | sum |\n| population.Africa | 25,007,234 | 1,375,397,882 |\n| population.Australia - ",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 6,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-5bb0ee36e2a3",
+      "message_id": "<1361357357.495599.1650745090224@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-23T20:18:10Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<368419623.494674.1650743901270@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>"
+      ],
+      "body_plain": "One other question. For the output, is there a way to clear the output other than using an R command? Some way from within rkward, like a \"clear output\" button?\nThanks\nGene\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220423/1fae15b3/attachment.htm>",
+      "body_snippet": "One other question. For the output, is there a way to clear the output other than using an R command? Some way from within rkward, like a \"clear output\" button?\nThanks\nGene\n\n-------------- next part -",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 7,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-29eacb5954af",
+      "message_id": "<20220423224440.3dde46b6@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-23T20:44:40Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<1361357357.495599.1650745090224@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>",
+        "<1361357357.495599.1650745090224@mail.yahoo.com>"
+      ],
+      "body_plain": "Am Sat, 23 Apr 2022 20:18:10 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> One other question. For the output, is there a way to clear the\n> output other than using an R command? Some way from within rkward,\n> like a \"clear output\" button? Thanks Gene\n\nEdit->Clear Output\n\n\"Revert to last saved state\" will typically have the same effect, as\nlong as you did not explicitly save anything.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220423/0bb13a90/attachment.sig>",
+      "body_snippet": "Am Sat, 23 Apr 2022 20:18:10 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> One other question. For the output, is there a way to clear the\n> output other than using an R command? Some way fro",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 8,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-40c81c1552ff",
+      "message_id": "<1330385852.526304.1650756630069@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-23T23:30:30Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<20220423224440.3dde46b6@booklife>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>",
+        "<1361357357.495599.1650745090224@mail.yahoo.com>",
+        "<20220423224440.3dde46b6@booklife>"
+      ],
+      "body_plain": "Got it, thanks!\nGene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Sat, Apr 23, 2022 4:44 pm\nSubject: Re: frequencies of categorical variables\n\nAm Sat, 23 Apr 2022 20:18:10 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n\n> One other question. For the output, is there a way to clear the output other than using an R command? Some way from within rkward, like a \"clear output\" button? Thanks Gene\n\nEdit->Clear Output\n\n\"Revert to last saved state\" will typically have the same effect, as long as you did not explicitly save anything.\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220423/7b7bd295/attachment-0001.htm>",
+      "body_snippet": "Got it, thanks!\nGene\n\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Sat, Apr 23,",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 9,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-77c632d2908a",
+      "message_id": "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-25T00:05:20Z",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "subject_clean": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "First of all I want to say \"thank you!!!!!\" for all the time and effort\nthat you have invested in RKWard 0.7.3 and all the preceding releases.\nI *noted* that the news page has a \"Note\", saying that  \"Windows and MacOS\nbinaries compiled for R 4.2.x are expected to be available, soon.\" How soon\nis soon?? weeks or months? I've been using RKWard quite extensively in\nUniversity Statistics Courses, I just want to update the contents to\ninclude the new features and aim for a specific R version would be very\nhelpful.\nThanks one more time.\n--\nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220424/6e3e3d63/attachment.htm>",
+      "body_snippet": "First of all I want to say \"thank you!!!!!\" for all the time and effort\nthat you have invested in RKWard 0.7.3 and all the preceding releases.\nI *noted* that the news page has a \"Note\", saying that  \"",
+      "thread_id": "thread-77c632d2908a",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-f2857309d92c",
+      "message_id": "<CAMqnA+iJp9vDRqofXqzdOzqOEwPqgVW+eZpDEr9Gn+nTWeEgKQ@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-25T00:18:06Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<368419623.494674.1650743901270@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>"
+      ],
+      "body_plain": "You might have this already solved,\nI would suggest to check out: https://youtu.be/g1EZOOPIPKM?t=734 (in\nenglish)\nAlfredo's booklet (in english):\nhttps://github.com/asalber/statistics_practice_rkteaching\n\nRegards\n\nAlfonso\n\nEl sáb, 23 abr 2022 a la(s) 14:58, someone (maffydoit at aol.com) escribió:\n\n> Thanks again.\n>\n> One comment about the grouping. The table I get looks like this (showing\n> the first part)\n>\n>\n> mean sum\n> population.Africa 25,007,234 1,375,397,882\n> population.Australia - Oceania 1,557,590 34,266,986\n> population.Central America 2,841,993 90,943,762\n> Would it be possible to have the outcome table without the \"population.\"\n> in front?\n>\n> Thanks\n>\n> Gene\n>\n>\n> -----Original Message-----\n> From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\n> To: rkward-users at kde.org\n> Cc: someone <maffydoit at aol.com>\n> Sent: Fri, Apr 22, 2022 6:21 pm\n> Subject: Re: frequencies of categorical variables\n>\n> Am Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\n> schrieb someone <maffydoit at aol.com>:\n>  Thomas,\n>\n> >Very good.\n> >So for grouping, for example, using this data set\n> >\n> https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n> >I could get mean population by arearegion?\n> >Thanks so much for the time you are putting into this. Gene\n>\n> Exactly.\n>\n> I'd actually like to encourage you to keep testing the daily builds,\n> in particularly, while talking about new features, i.e.\n>\n>\n> https://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n>\n> These may have some rough edges, work in progress, and it's always a good\n> idea to save your data, often, but we do try to keep them in a useful state\n> at all times.\n>\n> Should you encounter a truly unusable build, once in a while, you\n> can still go back to the official release.\n>\n>\n> Regards\n> Thomas\n>\n>\n>\n\n--\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220424/d201d191/attachment.htm>",
+      "body_snippet": "You might have this already solved,\nI would suggest to check out: https://youtu.be/g1EZOOPIPKM?t=734 (in\nenglish)\nAlfredo's booklet (in english):\nhttps://github.com/asalber/statistics_practice_rkteach",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 7,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-ed26069e748b",
+      "message_id": "<2023686094.693617.1650852057356@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-25T02:00:57Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<CAMqnA+iJp9vDRqofXqzdOzqOEwPqgVW+eZpDEr9Gn+nTWeEgKQ@mail.gmail.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>",
+        "<CAMqnA+iJp9vDRqofXqzdOzqOEwPqgVW+eZpDEr9Gn+nTWeEgKQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi Alfonso\nLooks like the features changed a little. The descriptive statistics box looks a little different now. \nThanks though.\ngene\n\n\n-----Original Message-----\nFrom: DES Alfonso Cano Robles <alfonsociologo at gmail.com>\nTo: someone <maffydoit at aol.com>; rkward-users at kde.org\nSent: Sun, Apr 24, 2022 8:18 pm\nSubject: Re: frequencies of categorical variables\n\nYou might have this already solved,I would suggest to check out: https://youtu.be/g1EZOOPIPKM?t=734 (in english)Alfredo's booklet (in english): https://github.com/asalber/statistics_practice_rkteaching \nRegards\nAlfonso\nEl sáb, 23 abr 2022 a la(s) 14:58, someone (maffydoit at aol.com) escribió:\n\nThanks again. \nOne comment about the grouping. The table I get looks like this (showing the first part)\n\n| \n | mean | sum |\n| population.Africa | 25,007,234 | 1,375,397,882 |\n| population.Australia - Oceania | 1,557,590 | 34,266,986 |\n| population.Central America | 2,841,993 | 90,943,762 |\n\n\nWould it be possible to have the outcome table without the \"population.\" in front?\nThanks\nGene\n\n-----Original Message-----\nFrom: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\nTo: rkward-users at kde.org\nCc: someone <maffydoit at aol.com>\nSent: Fri, Apr 22, 2022 6:21 pm\nSubject: Re: frequencies of categorical variables\n\nAm Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\nschrieb someone <maffydoit at aol.com>:\n Thomas, \n\n>Very good. \n>So for grouping, for example, using this data set >https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n>I could get mean population by arearegion? >Thanks so much for the time you are putting into this. Gene\n\nExactly.\n\nI'd actually like to encourage you to keep testing the daily builds, in particularly, while talking about new features, i.e.\n\nhttps://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n\nThese may have some rough edges, work in progress, and it's always a good idea to save your data, often, but we do try to keep them in a useful state at all times.\n\nShould you encounter a truly unusable build, once in a while, you can still go back to the official release.\n\nRegards\nThomas\n\n\n\n\n\n-- \n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220425/21c687a5/attachment-0001.htm>",
+      "body_snippet": "Hi Alfonso\nLooks like the features changed a little. The descriptive statistics box looks a little different now. \nThanks though.\ngene\n\n\n-----Original Message-----\nFrom: DES Alfonso Cano Robles <alfon",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 8,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-ac9721c9f7f8",
+      "message_id": "<CAMqnA+h=w4FWy4Gzp+4O2citeBprbY-3_RsXYwAwX7gvGAPZMg@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-25T03:43:26Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<2023686094.693617.1650852057356@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>",
+        "<CAMqnA+iJp9vDRqofXqzdOzqOEwPqgVW+eZpDEr9Gn+nTWeEgKQ@mail.gmail.com>",
+        "<2023686094.693617.1650852057356@mail.yahoo.com>"
+      ],
+      "body_plain": "Have you installed the rkTeaching plugin yet?\n\nEl dom, 24 abr 2022 a la(s) 21:00, someone (maffydoit at aol.com) escribió:\n\n> Hi Alfonso\n>\n> Looks like the features changed a little. The descriptive statistics box\n> looks a little different now.\n>\n> Thanks though.\n>\n> gene\n>\n>\n>\n> -----Original Message-----\n> From: DES Alfonso Cano Robles <alfonsociologo at gmail.com>\n> To: someone <maffydoit at aol.com>; rkward-users at kde.org\n> Sent: Sun, Apr 24, 2022 8:18 pm\n> Subject: Re: frequencies of categorical variables\n>\n> You might have this already solved,\n> I would suggest to check out: https://youtu.be/g1EZOOPIPKM?t=734 (in\n> english)\n> Alfredo's booklet (in english):\n> https://github.com/asalber/statistics_practice_rkteaching\n>\n> Regards\n>\n> Alfonso\n>\n> El sáb, 23 abr 2022 a la(s) 14:58, someone (maffydoit at aol.com) escribió:\n>\n> Thanks again.\n>\n> One comment about the grouping. The table I get looks like this (showing\n> the first part)\n>\n>\n> mean sum\n> population.Africa 25,007,234 1,375,397,882\n> population.Australia - Oceania 1,557,590 34,266,986\n> population.Central America 2,841,993 90,943,762\n> Would it be possible to have the outcome table without the \"population.\"\n> in front?\n>\n> Thanks\n>\n> Gene\n>\n>\n> -----Original Message-----\n> From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\n> To: rkward-users at kde.org\n> Cc: someone <maffydoit at aol.com>\n> Sent: Fri, Apr 22, 2022 6:21 pm\n> Subject: Re: frequencies of categorical variables\n>\n> Am Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\n> schrieb someone <maffydoit at aol.com>:\n>  Thomas,\n>\n> >Very good.\n> >So for grouping, for example, using this data set\n> >\n> https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n> >I could get mean population by arearegion?\n> >Thanks so much for the time you are putting into this. Gene\n>\n> Exactly.\n>\n> I'd actually like to encourage you to keep testing the daily builds,\n> in particularly, while talking about new features, i.e.\n>\n>\n> https://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n>\n> These may have some rough edges, work in progress, and it's always a good\n> idea to save your data, often, but we do try to keep them in a useful state\n> at all times.\n>\n> Should you encounter a truly unusable build, once in a while, you\n> can still go back to the official release.\n>\n>\n> Regards\n> Thomas\n>\n>\n>\n>\n> --\n>\n>\n>\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220424/c8fd0057/attachment.htm>",
+      "body_snippet": "Have you installed the rkTeaching plugin yet?\n\nEl dom, 24 abr 2022 a la(s) 21:00, someone (maffydoit at aol.com) escribió:\n\n> Hi Alfonso\n>\n> Looks like the features changed a little. The descriptive s",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 9,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-b20613a64b5f",
+      "message_id": "<CAMqnA+iSbTjYXW9eXjpHSP_Js4aMhqY4b=_yuEgpKTfHK-nc+g@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-25T03:50:05Z",
+      "subject": "frequencies of categorical variables",
+      "subject_clean": "frequencies of categorical variables",
+      "in_reply_to": "<2023686094.693617.1650852057356@mail.yahoo.com>",
+      "references": [
+        "<649547968.393498.1650547974599.ref@mail.yahoo.com>",
+        "<649547968.393498.1650547974599@mail.yahoo.com>",
+        "<20220421165553.348ecec1@booklife>",
+        "<461630867.89708.1650582473921@mail.yahoo.com>",
+        "<20220422210728.4db0f19d@booklife>",
+        "<640808287.334237.1650660497574@mail.yahoo.com>",
+        "<20220423002111.789fbd0c@booklife>",
+        "<368419623.494674.1650743901270@mail.yahoo.com>",
+        "<CAMqnA+iJp9vDRqofXqzdOzqOEwPqgVW+eZpDEr9Gn+nTWeEgKQ@mail.gmail.com>",
+        "<2023686094.693617.1650852057356@mail.yahoo.com>"
+      ],
+      "body_plain": "A few resources that could be useful:\n\nInstalling rkTeching for RKWard (english): https://youtu.be/jsX4MaqWA4g\n\nPlugin page (english): https://aprendeconalf.es/en/project/rkteaching/\n\nRegards.\nAlfonso\n\nEl dom, 24 abr 2022 a la(s) 21:00, someone (maffydoit at aol.com) escribió:\n\n> Hi Alfonso\n>\n> Looks like the features changed a little. The descriptive statistics box\n> looks a little different now.\n>\n> Thanks though.\n>\n> gene\n>\n>\n>\n> -----Original Message-----\n> From: DES Alfonso Cano Robles <alfonsociologo at gmail.com>\n> To: someone <maffydoit at aol.com>; rkward-users at kde.org\n> Sent: Sun, Apr 24, 2022 8:18 pm\n> Subject: Re: frequencies of categorical variables\n>\n> You might have this already solved,\n> I would suggest to check out: https://youtu.be/g1EZOOPIPKM?t=734 (in\n> english)\n> Alfredo's booklet (in english):\n> https://github.com/asalber/statistics_practice_rkteaching\n>\n> Regards\n>\n> Alfonso\n>\n> El sáb, 23 abr 2022 a la(s) 14:58, someone (maffydoit at aol.com) escribió:\n>\n> Thanks again.\n>\n> One comment about the grouping. The table I get looks like this (showing\n> the first part)\n>\n>\n> mean sum\n> population.Africa 25,007,234 1,375,397,882\n> population.Australia - Oceania 1,557,590 34,266,986\n> population.Central America 2,841,993 90,943,762\n> Would it be possible to have the outcome table without the \"population.\"\n> in front?\n>\n> Thanks\n>\n> Gene\n>\n>\n> -----Original Message-----\n> From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>\n> To: rkward-users at kde.org\n> Cc: someone <maffydoit at aol.com>\n> Sent: Fri, Apr 22, 2022 6:21 pm\n> Subject: Re: frequencies of categorical variables\n>\n> Am Fri, 22 Apr 2022 20:48:17 +0000 (UTC)\n> schrieb someone <maffydoit at aol.com>:\n>  Thomas,\n>\n> >Very good.\n> >So for grouping, for example, using this data set\n> >\n> https://drive.google.com/file/d/11WIET3s4eMHsB6JQ6hOQBx0SKquGRKKw/view?usp=sharing\n> >I could get mean population by arearegion?\n> >Thanks so much for the time you are putting into this. Gene\n>\n> Exactly.\n>\n> I'd actually like to encourage you to keep testing the daily builds,\n> in particularly, while talking about new features, i.e.\n>\n>\n> https://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/\n>\n> These may have some rough edges, work in progress, and it's always a good\n> idea to save your data, often, but we do try to keep them in a useful state\n> at all times.\n>\n> Should you encounter a truly unusable build, once in a while, you\n> can still go back to the official release.\n>\n>\n> Regards\n> Thomas\n>\n>\n>\n>\n> --\n>\n>\n>\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220424/e03c0ebf/attachment-0001.htm>",
+      "body_snippet": "A few resources that could be useful:\n\nInstalling rkTeching for RKWard (english): https://youtu.be/jsX4MaqWA4g\n\nPlugin page (english): https://aprendeconalf.es/en/project/rkteaching/\n\nRegards.\nAlfonso",
+      "thread_id": "thread-6b51508dc265",
+      "thread_depth": 9,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-590ba78ad8ec",
+      "message_id": "<20220425204740.2e504d36@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-25T18:47:40Z",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "subject_clean": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "in_reply_to": "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nAm Sun, 24 Apr 2022 19:05:20 -0500\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> First of all I want to say \"thank you!!!!!\" for all the time and\n> effort that you have invested in RKWard 0.7.3 and all the preceding\n> releases. I *noted* that the news page has a \"Note\", saying that\n> \"Windows and MacOS binaries compiled for R 4.2.x are expected to be\n> available, soon.\" How soon is soon?? weeks or months? I've been using\n> RKWard quite extensively in University Statistics Courses, I just\n> want to update the contents to include the new features and aim for a\n> specific R version would be very helpful.\n\nmy plan was to wait for roughly one week, before switching the builds\nto R 4.2, to see, if there is any urgent need to fix something in the\nrelease. So that would be end of this week. Add a day or three until\nthe binaries are built, tested, and uploaded.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220425/c0bfc69b/attachment.sig>",
+      "body_snippet": "Hi,\n\nAm Sun, 24 Apr 2022 19:05:20 -0500\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> First of all I want to say \"thank you!!!!!\" for all the time and\n> effort that you have investe",
+      "thread_id": "thread-77c632d2908a",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-774b8f89d9ab",
+      "message_id": "<20220430094125.64be858c@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-30T07:41:25Z",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "subject_clean": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "in_reply_to": "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>"
+      ],
+      "body_plain": "On Sun, 24 Apr 2022 19:05:20 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I *noted* that the news page has a \"Note\", saying that\n> \"Windows and MacOS binaries compiled for R 4.2.x are expected to be\n> available, soon.\" How soon is soon??\n\nWindows and Mac binaries for R 4.2.x are available, now. As mentioned\nin the note, Linux binaries, too, need to re-compiled to work with R\n4.2.x. For any help with that, this list is an appropriate place to ask.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220430/5e7a14bb/attachment.sig>",
+      "body_snippet": "On Sun, 24 Apr 2022 19:05:20 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I *noted* that the news page has a \"Note\", saying that\n> \"Windows and MacOS binaries compiled for R 4.",
+      "thread_id": "thread-77c632d2908a",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-85c3fe6c0bdc",
+      "message_id": "<CAMqnA+ifyayKy9s4GFybtNa27h6pCjE2vqSMA1mhzckke8jW=g@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-04-30T14:15:34Z",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "subject_clean": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "in_reply_to": "<20220430094125.64be858c@booklife>",
+      "references": [
+        "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>",
+        "<20220430094125.64be858c@booklife>"
+      ],
+      "body_plain": "Thank you!!! for everything!!\nI'll start updating courses with R 4.2.x and RKWard 0.7.3 info.\nAnd will recompile RKWard for my linux distro.\nCurrently I'm using the daily builds  repo for Ubuntu,\"\nhttp://ppa.launchpad.net/rkward-devel/rkward-kf5-daily-r40/ubuntu/pool/main/r/rkward/\"\n.\nSince I'm using the CRAN version of R,\nIs there any chance the daily builds or \"\nhttps://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran\"\nbinaries will be (or are) updated against the R 4.2.x CRAN version.\nI was waiting for mac and windows binaries to update the linux box as well.\n\nRegards\nAlfonso\n\n\n\nEl sáb, 30 abr 2022 a la(s) 02:41, Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> On Sun, 24 Apr 2022 19:05:20 -0500\n> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> > I *noted* that the news page has a \"Note\", saying that\n> > \"Windows and MacOS binaries compiled for R 4.2.x are expected to be\n> > available, soon.\" How soon is soon??\n>\n> Windows and Mac binaries for R 4.2.x are available, now. As mentioned\n> in the note, Linux binaries, too, need to re-compiled to work with R\n> 4.2.x. For any help with that, this list is an appropriate place to ask.\n>\n> Regards\n> Thomas\n>\n\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220430/c9220518/attachment.htm>",
+      "body_snippet": "Thank you!!! for everything!!\nI'll start updating courses with R 4.2.x and RKWard 0.7.3 info.\nAnd will recompile RKWard for my linux distro.\nCurrently I'm using the daily builds  repo for Ubuntu,\"\nhtt",
+      "thread_id": "thread-77c632d2908a",
+      "thread_depth": 2,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-e9f02c7fa35d",
+      "message_id": "<1780865767.2390840.1651343104933@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-04-30T18:25:04Z",
+      "subject": "nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression",
+      "subject_clean": "nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression",
+      "in_reply_to": "<1902229017.2379704.1651337404916@mail.yahoo.com>",
+      "references": [
+        "<1902229017.2379704.1651337404916.ref@mail.yahoo.com>",
+        "<1902229017.2379704.1651337404916@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi all\nI downloaded the nightly release a few moments ago, for windows, listed in the subject line. I wanted to run linear regression. \nit went okay the first time i downloaded and opened the program, well, it opened okay. I had some trouble closing it. I think i might have opened two versions by accident. I eventually closed them. Now when i open rkward, I got a box that says, r engine has died. Error during handshake with backend process. Expected token, received token (bunch of numbers)\nThe first time i had opened rkward, i wanted to do regression, i started, then the program said i needed a component, and asked me to chose a location. I chose MI, and got some error, i was going to try again to see if i could get the same error so i could copy and post to this list.\nAh, sorry, I didn't describe the whole process completely .\n\nI ran regression again, without any problem. It didn't ask to install another component.\nAh, it's regression with standardized coefficients that asks for the component. I got a box that says \"The r backend has indicated that in order to carry out the current task it needs the package lm.beta which is not currently installed.\nI asked again for USA: MI and got a box saying there are errors or warnings. Warning, unable to access index for repository, http://files.kde.org/rkward/R/bin/windows/contrib/4.2\n\nIs this enough information?\nGene\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220430/b281a1d4/attachment.htm>",
+      "body_snippet": "Hi all\nI downloaded the nightly release a few moments ago, for windows, listed in the subject line. I wanted to run linear regression. \nit went okay the first time i downloaded and opened the program,",
+      "thread_id": "thread-e9f02c7fa35d",
+      "thread_depth": 0,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-555183cdd800",
+      "message_id": "<20220430213047.2101c356@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-30T19:30:47Z",
+      "subject": "nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression",
+      "subject_clean": "nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression",
+      "in_reply_to": "<1780865767.2390840.1651343104933@mail.yahoo.com>",
+      "references": [
+        "<1902229017.2379704.1651337404916.ref@mail.yahoo.com>",
+        "<1902229017.2379704.1651337404916@mail.yahoo.com>",
+        "<1780865767.2390840.1651343104933@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sat, 30 Apr 2022 18:25:04 +0000 (UTC)\nsomeone <maffydoit at aol.com> wrote:\n> [...] Now when i open rkward, I got a box that says, r engine has\n> died. Error during handshake with backend process. Expected token,\n> received token (bunch of numbers)\n\nthis only only some of the time, not every time, right? I am aware this\npops up on Windows, sometimes (only when starting), and I recently had\nan idea what might be causing it.\n\nSo this is a good opportunity to test my theory: I hope you will not\nsee that message again, with tomorrow's build (otherwise, please let me\nknow).\n\n> The first time i had opened rkward,\n> i wanted to do regression, i started, then the program said i needed\n> a component, and asked me to chose a location.\n\nThe builds started using R 4.2.0 (instead of R 4.1.2), yesterday, and so\nit is an expected side-effect, that you will be prompted to install any\nadd-ons, again, when they are needed. \n\n[...]\n\n> I asked again for\n> USA: MI and got a box saying there are errors or warnings. Warning,\n> unable to access index for repository,\n> http://files.kde.org/rkward/R/bin/windows/contrib/4.2\n\nThis is a bug on our end, indeed (we still need to set up a repository\nfor R 4.2), but the warning is harmless in itself.\n\n> Is this enough information?\n\nYes, thanks for reporting.\n\nRegards\nThomas\n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220430/d76b0821/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sat, 30 Apr 2022 18:25:04 +0000 (UTC)\nsomeone <maffydoit at aol.com> wrote:\n> [...] Now when i open rkward, I got a box that says, r engine has\n> died. Error during handshake with backend proc",
+      "thread_id": "thread-e9f02c7fa35d",
+      "thread_depth": 1,
+      "month": "2022-04"
+    },
+    {
+      "id": "msg-71168789bd1d",
+      "message_id": "<20220430220054.16d8a1de@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-04-30T20:00:54Z",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "subject_clean": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "in_reply_to": "<CAMqnA+ifyayKy9s4GFybtNa27h6pCjE2vqSMA1mhzckke8jW=g@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+jk1oH+e6CyOCRyuXF4z5gKcSkRpuyNfGPauBLLqDbvaw@mail.gmail.com>",
+        "<20220430094125.64be858c@booklife>",
+        "<CAMqnA+ifyayKy9s4GFybtNa27h6pCjE2vqSMA1mhzckke8jW=g@mail.gmail.com>"
+      ],
+      "body_plain": "On Sat, 30 Apr 2022 09:15:34 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> Since I'm using the CRAN version of R,\n> Is there any chance the daily builds or \"\n> https://launchpad.net/~rkward-devel/+archive/ubuntu/rkward-stable-cran\"\n> binaries will be (or are) updated against the R 4.2.x CRAN version.\n\nTechnically, \"CRAN\" in these builds is Michael Rutter's PPA, and as far\nas I can see, it only updated to R 4.2, yesterday. At any rate, the\ndaily builds are updated, automatically. For stable-cran, I triggered a\nre-build just now.\n\nAs to why the packages appear to be missing dependency information,\nindeed, I'll have to look into that...\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220430/18e70494/attachment.sig>",
+      "body_snippet": "On Sat, 30 Apr 2022 09:15:34 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> Since I'm using the CRAN version of R,\n> Is there any chance the daily builds or \"\n> https://launchpad",
+      "thread_id": "thread-77c632d2908a",
+      "thread_depth": 3,
+      "month": "2022-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-37f0ae3f341c",
+      "subject": "Call for testing upcoming RKWard 0.7.3",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2022-04-03T20:22:43Z",
+      "last_reply": "2022-04-05T17:45:41Z",
+      "root_message_id": "msg-37f0ae3f341c"
+    },
+    {
+      "id": "thread-36913ace4ce0",
+      "subject": "confirm 1668b6b1f9811876d30a12fb6c1d932b5ab1c44c",
+      "message_count": 2,
+      "participants": [
+        "Sahar Khamenei",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-04-04T13:33:30Z",
+      "last_reply": "2022-04-04T16:08:59Z",
+      "root_message_id": "msg-36913ace4ce0"
+    },
+    {
+      "id": "thread-d530e163bd78",
+      "subject": "Need help for RKward",
+      "message_count": 7,
+      "participants": [
+        "Sahar Khamenei",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-04-05T10:50:30Z",
+      "last_reply": "2022-04-06T20:00:17Z",
+      "root_message_id": "msg-d530e163bd78"
+    },
+    {
+      "id": "thread-7712b4769146",
+      "subject": "Need help for RKward",
+      "message_count": 1,
+      "participants": [
+        "Sahar Khamenei"
+      ],
+      "started": "2022-04-06T16:14:38Z",
+      "last_reply": "2022-04-06T16:14:38Z",
+      "root_message_id": "msg-7712b4769146"
+    },
+    {
+      "id": "thread-16c697c9aad0",
+      "subject": "standardized regression coefficients",
+      "message_count": 4,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "someone"
+      ],
+      "started": "2022-04-13T00:42:53Z",
+      "last_reply": "2022-04-15T01:44:04Z",
+      "root_message_id": "msg-16c697c9aad0"
+    },
+    {
+      "id": "thread-791d9d330c42",
+      "subject": "rkward",
+      "message_count": 2,
+      "participants": [
+        "meik michalke",
+        "someone"
+      ],
+      "started": "2022-04-13T09:08:14Z",
+      "last_reply": "2022-04-13T21:14:46Z",
+      "root_message_id": "msg-791d9d330c42"
+    },
+    {
+      "id": "thread-c160c6f3a060",
+      "subject": "RKWard 0.7.3 is released!",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-04-21T11:57:59Z",
+      "last_reply": "2022-04-21T11:57:59Z",
+      "root_message_id": "msg-c160c6f3a060"
+    },
+    {
+      "id": "thread-6b51508dc265",
+      "subject": "frequencies of categorical variables",
+      "message_count": 16,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier",
+        "someone"
+      ],
+      "started": "2022-04-21T13:32:54Z",
+      "last_reply": "2022-04-25T03:50:05Z",
+      "root_message_id": "msg-6b51508dc265"
+    },
+    {
+      "id": "thread-77c632d2908a",
+      "subject": "Thanks for all the hard work! and how soon would the binaries for R 4.2.X be available?",
+      "message_count": 5,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-04-25T00:05:20Z",
+      "last_reply": "2022-04-30T20:00:54Z",
+      "root_message_id": "msg-77c632d2908a"
+    },
+    {
+      "id": "thread-e9f02c7fa35d",
+      "subject": "nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "someone"
+      ],
+      "started": "2022-04-30T18:25:04Z",
+      "last_reply": "2022-04-30T19:30:47Z",
+      "root_message_id": "msg-e9f02c7fa35d"
+    }
+  ]
+}

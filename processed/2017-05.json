@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2017-05",
+  "messages": [
+    {
+      "id": "msg-424ef031d196",
+      "message_id": "<DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>",
+      "from_name": "Georgios x",
+      "from_email_hash": "6b18f9ee12c145f8a1c959e237976937ff70eb7c99e2a6af8e3f7c3096aee41c",
+      "date": "2017-05-17T17:04:17Z",
+      "subject": "Workspace in right sidebar by default",
+      "subject_clean": "Workspace in right sidebar by default",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\n\n\nI am switching from RStudio to using RKward. I want to move the workspace to the right sidebar, but when I do so and I close the program, when I open it the workspace is back in the left sidebar. Is there a way to make it permanent in the right sidebar ?\n\n\nUsing RKward 0.6.4\n\n\nThank you.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170517/cb1e65ce/attachment.html>",
+      "body_snippet": "Hi everyone,\n\n\nI am switching from RStudio to using RKward. I want to move the workspace to the right sidebar, but when I do so and I close the program, when I open it the workspace is back in the lef",
+      "thread_id": "thread-424ef031d196",
+      "thread_depth": 0,
+      "month": "2017-05"
+    },
+    {
+      "id": "msg-b151174fec11",
+      "message_id": "<20170520223053.052ba926@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2017-05-20T20:30:53Z",
+      "subject": "Workspace in right sidebar by default",
+      "subject_clean": "Workspace in right sidebar by default",
+      "in_reply_to": "<DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>",
+      "references": [
+        "<DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>"
+      ],
+      "body_plain": "Hi,\n\nOn Wed, 17 May 2017 17:04:17 +0000\nGeorgios x <br_shadow at msn.com> wrote:\n> I am switching from RStudio to using RKward. I want to move the\n> workspace to the right sidebar, but when I do so and I close the\n> program, when I open it the workspace is back in the left sidebar. Is\n> there a way to make it permanent in the right sidebar ?\n\nseems like a reasonable expectatiion, and in fact I had to check,\nmyself, whether the feature was just well-hidden, broken, or\nnon-existent. Turns out it was the latter...\n\nIt will take more that just a few lines of code, though, so I have\nadded it to the tracker, for now:\nhttps://bugs.kde.org/show_bug.cgi?id=380020? The top priority right now\nit to finish a first version based on KF5 (aka \"KDE 5\").\n\n> Using RKward 0.6.4\n\nNote that the current version of RKWard is 0.6.5. Chances are you\nwill be able to install this, without upgrading any other parts of your\nsystem. See https://rkward.kde.org/Download_RKWard\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170520/767350c6/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wed, 17 May 2017 17:04:17 +0000\nGeorgios x <br_shadow at msn.com> wrote:\n> I am switching from RStudio to using RKward. I want to move the\n> workspace to the right sidebar, but when I do so an",
+      "thread_id": "thread-424ef031d196",
+      "thread_depth": 1,
+      "month": "2017-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-424ef031d196",
+      "subject": "Workspace in right sidebar by default",
+      "message_count": 2,
+      "participants": [
+        "Georgios x",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2017-05-17T17:04:17Z",
+      "last_reply": "2017-05-20T20:30:53Z",
+      "root_message_id": "msg-424ef031d196"
+    }
+  ]
+}

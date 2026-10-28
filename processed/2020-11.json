@@ -1,0 +1,126 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2020-11",
+  "messages": [
+    {
+      "id": "msg-886d1df259b0",
+      "message_id": "<20201101084105.2c0d0c2c@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2020-11-01T07:41:21Z",
+      "subject": "Using Ctags in rkward",
+      "subject_clean": "Using Ctags in rkward",
+      "in_reply_to": "<4588885.xLNVB3ZKRu@tilia>",
+      "references": [
+        "<335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>",
+        "<20201028221029.653ac9f3@booklife>",
+        "<4588885.xLNVB3ZKRu@tilia>"
+      ],
+      "body_plain": "Hi,\n\nAm Thu, 29 Oct 2020 10:46:14 +0100\nschrieb Vojtěch Zeisek <vojtech.zeisek at opensuse.org>:\n> Dne středa 28. října 2020 22:10:29 CET, Thomas Friedrichsmeier\n> napsal(a):\n> > I can make it so that kate plugin actions will be active\n> > whenever a script window is active.  \n> \n> It would be definitely perfect to have such a nice feature. Can we\n> look forward the next release? :-)\n\nOk, I have added that in master just now (as usual, it may be up to 24\nhours for the automated builds to catch up). Please take a look.\n\nDo note that we are relatively free, now, to assign menu actions from\nkate plugins to one of the following contexts:\n  - show them all the time\n  - show them when a script window _or_ the plugin's tool window is\n    active\n  - show them only for the plugin's tool window\n\nWhich option makes most sense may differ from plugin to plugin, so\nplease provide feeback, if you think we can improve something.\n\nAlso, we can make some simple modifications, such as moving top-level\nmenus to a sub-menu. I've moved \"CTags\" to \"View\", for instance. But\nagain, I'll need the feedback of those who are experimenting with those\nplugins.\n\nFinally, Martin, perhaps you could write up a mini-tutorial on setting\nup CTags inside RKWard?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201101/1b1e84af/attachment.sig>",
+      "body_snippet": "Hi,\n\nAm Thu, 29 Oct 2020 10:46:14 +0100\nschrieb Vojtěch Zeisek <vojtech.zeisek at opensuse.org>:\n> Dne středa 28. října 2020 22:10:29 CET, Thomas Friedrichsmeier\n> napsal(a):\n> > I can make it so that",
+      "thread_id": "thread-886d1df259b0",
+      "thread_depth": 0,
+      "month": "2020-11"
+    },
+    {
+      "id": "msg-8fc6ddd252d5",
+      "message_id": "<5280063.LVazt49eX4@tilia>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2020-11-01T09:56:12Z",
+      "subject": "Using Ctags in rkward",
+      "subject_clean": "Using Ctags in rkward",
+      "in_reply_to": "<20201101084105.2c0d0c2c@booklife>",
+      "references": [
+        "<335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>",
+        "<4588885.xLNVB3ZKRu@tilia>",
+        "<20201101084105.2c0d0c2c@booklife>"
+      ],
+      "body_plain": "Hello\n\nDne neděle 1. listopadu 2020 8:41:21 CET, Thomas Friedrichsmeier napsal(a):\n> Am Thu, 29 Oct 2020 10:46:14 +0100 schrieb Vojtěch Zeisek:\n> > Dne středa 28. října 2020 22:10:29 CET, Thomas Friedrichsmeier\n> > napsal(a):\n> > > I can make it so that kate plugin actions will be active\n> > > whenever a script window is active.\n> > \n> > It would be definitely perfect to have such a nice feature.\n> > Can we look forward the next release? :-)\n> \n> Ok, I have added that in master just now (as usual, it may be up to\n> 24 hours for the automated builds to catch up). Please take a look.\n> Do note that we are relatively free, now, to assign menu actions\n> from kate plugins to one of the following contexts:\n>   - show them all the time\n>   - show them when a script window _or_ the plugin's tool window\n>     is active\n>   - show them only for the plugin's tool window\n> Which option makes most sense may differ from plugin to plugin,\n> so please provide feeback, if you think we can improve something.\n> Also, we can make some simple modifications, such as moving top-level\n> menus to a sub-menu. I've moved \"CTags\" to \"View\", for instance. But\n> again, I'll need the feedback of those who are experimenting with those\n> plugins.\n\nPerfect, thank You. :-) Will it appear in some upcoming version? I so, we \nusing rolling-release distros would get in very quickly.\n\n> Finally, Martin, perhaps you could write up a mini-tutorial on setting\n> up CTags inside RKWard?\n> Regards\n> Thomas\n\nSincerely,\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201101/74b52920/attachment.sig>",
+      "body_snippet": "Hello\n\nDne neděle 1. listopadu 2020 8:41:21 CET, Thomas Friedrichsmeier napsal(a):\n> Am Thu, 29 Oct 2020 10:46:14 +0100 schrieb Vojtěch Zeisek:\n> > Dne středa 28. října 2020 22:10:29 CET, Thomas Fried",
+      "thread_id": "thread-886d1df259b0",
+      "thread_depth": 1,
+      "month": "2020-11"
+    },
+    {
+      "id": "msg-e61d6348b7fc",
+      "message_id": "<f49ea3d2-8253-18e3-eb28-31940a30b635@uni-duesseldorf.de>",
+      "from_name": "Martin Papenberg",
+      "from_email_hash": "54367d41f5d2f8a2390bb27e7ec3c189d1beb6111dbbe8db43169b23d245ae61",
+      "date": "2020-11-02T08:48:32Z",
+      "subject": "Using Ctags in rkward",
+      "subject_clean": "Using Ctags in rkward",
+      "in_reply_to": "<20201101084105.2c0d0c2c@booklife>",
+      "references": [
+        "<335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>",
+        "<20201028221029.653ac9f3@booklife>",
+        "<4588885.xLNVB3ZKRu@tilia>",
+        "<20201101084105.2c0d0c2c@booklife>"
+      ],
+      "body_plain": "> Ok, I have added that in master just now (as usual, it may be up to 24\n> hours for the automated builds to catch up). Please take a look.\n\nThanks Thomas, this is perfect; I think it is a huge improvement for rkward!\n\n> Finally, Martin, perhaps you could write up a mini-tutorial on setting\n> up CTags inside RKWard?\n\nSure. A primer follows here, but I can also prepare an online tutorial \nincluding screenshots (if you want to include this tutorial on the \nwebsite at some point, I can prepare one in Markdown):\n\n---\n\n- CTags has to be installed on the local machine, on Ubuntu this for \nexample as follows:\n\n* sudo apt install exuberant-ctags\n\n- CTags by default does not have support for the R language, but can be \nadded by the user. To enable R support, we can add the following lines \nto a file \".ctags\" in the home directory (if it does not exist, create it):\n\n--langdef=R\n--langmap=r:.R.r\n--regex-R=/^[ \\t]*\"?([.A-Za-z][.A-Za-z0-9_]*)\"?[ \\t]*(<-|=)[ \n\\t]function/\\1/f,Functions/\n\n(I got this from Fong Chun Chan's Blog here: \nhttps://tinyheero.github.io/2017/05/13/r-vim-ctags.html)\n\n- In rkward, activate the Ctags plugin:\n\n* Settings -> configure rkward -> Kate Plugins -> check \"CTags\"\n\n- Now, there should be a CTags button at the botton of the main rkward \nwindow (next to \"R Console\", \"Help Search\" etc.). Click the button and \ngo to \"Index targets\". Here, you can click \"+ Add\" to add the directory \nthat should be indexed by CTags. This has to be done for each directory \nwhere we work with R files (however, it works recursively, so if you \nindex the upper most directory, all of the directories within are \nindexed as well)\n\n- To use CTags, define custom key bindings:\n\n* Settings -> Configure Keyboard Shortcuts -> Action CTags\n\nI think in R, the important actions are \"Go To Definition\" to jump to a \nfunction definition (I use CTRL-Y) and \"Jump back one step\" (I use CTRL-Q)\n\n---\n\nIt would be nice if anyone can test and verify that this works.\n\nCheers,\n\nMartin",
+      "body_snippet": "> Ok, I have added that in master just now (as usual, it may be up to 24\n> hours for the automated builds to catch up). Please take a look.\n\nThanks Thomas, this is perfect; I think it is a huge improv",
+      "thread_id": "thread-886d1df259b0",
+      "thread_depth": 1,
+      "month": "2020-11"
+    },
+    {
+      "id": "msg-9dd8d5c90d4e",
+      "message_id": "<20201107141201.617e95b8@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2020-11-07T13:12:01Z",
+      "subject": "Using Ctags in rkward",
+      "subject_clean": "Using Ctags in rkward",
+      "in_reply_to": "<f49ea3d2-8253-18e3-eb28-31940a30b635@uni-duesseldorf.de>",
+      "references": [
+        "<335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>",
+        "<20201028221029.653ac9f3@booklife>",
+        "<4588885.xLNVB3ZKRu@tilia>",
+        "<20201101084105.2c0d0c2c@booklife>",
+        "<f49ea3d2-8253-18e3-eb28-31940a30b635@uni-duesseldorf.de>"
+      ],
+      "body_plain": "Hi!\n\nAm Mon, 2 Nov 2020 09:48:32 +0100\nschrieb Martin Papenberg <martin.papenberg at uni-duesseldorf.de>:\n> > Finally, Martin, perhaps you could write up a mini-tutorial on\n> > setting up CTags inside RKWard?  \n> \n> Sure. A primer follows here, but I can also prepare an online\n> tutorial including screenshots (if you want to include this tutorial\n> on the website at some point, I can prepare one in Markdown):\n\nThanks. It would be great, indeed, if you could turn this into markdown\nfor inclusion on the website!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201107/03af554e/attachment.sig>",
+      "body_snippet": "Hi!\n\nAm Mon, 2 Nov 2020 09:48:32 +0100\nschrieb Martin Papenberg <martin.papenberg at uni-duesseldorf.de>:\n> > Finally, Martin, perhaps you could write up a mini-tutorial on\n> > setting up CTags inside",
+      "thread_id": "thread-886d1df259b0",
+      "thread_depth": 2,
+      "month": "2020-11"
+    },
+    {
+      "id": "msg-3dbaf82da2c4",
+      "message_id": "<20201107143112.189f4483@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2020-11-07T13:31:12Z",
+      "subject": "Using Ctags in rkward",
+      "subject_clean": "Using Ctags in rkward",
+      "in_reply_to": "<5280063.LVazt49eX4@tilia>",
+      "references": [
+        "<335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>",
+        "<4588885.xLNVB3ZKRu@tilia>",
+        "<20201101084105.2c0d0c2c@booklife>",
+        "<5280063.LVazt49eX4@tilia>"
+      ],
+      "body_plain": "Am Sun, 01 Nov 2020 10:56:12 +0100\nschrieb Vojtěch Zeisek <vojtech.zeisek at opensuse.org>:\n> Perfect, thank You. :-) Will it appear in some upcoming version? I\n> so, we using rolling-release distros would get in very quickly.\n\nWell, of course it will be released, sooner or later. We do have daily\nbuilds of the development version at least for Ubuntu:\nhttps://rkward.kde.org/RKWard_Source_Repository.html\n\nFor other distributions, there are no automated builds, so far, but\nin most cases building from source is not terribly hard, these days.\n(I'm currently working on some larger stuff, but in a separate git\nbranch; the master branch is still very close to the 0.7.2 release.)\n\nIf this particular change WRT to kate plugins gets some decent testing\n(hint, hint) and positive feedback, it may be possible to turn this into\na mini-release, soonish.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201107/6f013563/attachment.sig>",
+      "body_snippet": "Am Sun, 01 Nov 2020 10:56:12 +0100\nschrieb Vojtěch Zeisek <vojtech.zeisek at opensuse.org>:\n> Perfect, thank You. :-) Will it appear in some upcoming version? I\n> so, we using rolling-release distros ",
+      "thread_id": "thread-886d1df259b0",
+      "thread_depth": 2,
+      "month": "2020-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-886d1df259b0",
+      "subject": "Using Ctags in rkward",
+      "message_count": 5,
+      "participants": [
+        "Martin Papenberg",
+        "Thomas Friedrichsmeier",
+        "Vojtěch Zeisek"
+      ],
+      "started": "2020-11-01T07:41:21Z",
+      "last_reply": "2020-11-07T13:31:12Z",
+      "root_message_id": "msg-886d1df259b0"
+    }
+  ]
+}

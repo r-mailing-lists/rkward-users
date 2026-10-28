@@ -1,0 +1,64 @@
+From ghislain.durif at univ-lyon1.fr  Wed May  7 14:19:34 2014
+From: ghislain.durif at univ-lyon1.fr (Ghislain Durif)
+Date: Wed, 07 May 2014 16:19:34 +0200
+Subject: [rkward-users] Rkward listening to port 22299
+Message-ID: <536A40F6.3050907@univ-lyon1.fr>
+
+Dear Rkward community,
+
+I am new in this list and I am very sorry if that question has already 
+been asked. I encountered an interesting problem while I was doing some 
+administration on my computer (Ubuntu 12.04). I am currently working 
+with Rkward 0.6.1 (and KDE 4.8.5), installed from the debian ppa 
+repository. It appears from a port scan with the netstat command that 
+the process rkward.rbacken is listening to the port 22299 while running. 
+I wonder whether it is a normal behaviour or not?
+
+Thank you in advance for your help
+
+-- 
+Ghislain DURIF
+
+UMR 5558 Biom?trie et Biologie ?volutive
+Universit? Claude Bernard Lyon 1
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed May  7 18:25:36 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 07 May 2014 20:25:36 +0200
+Subject: [rkward-users] Rkward listening to port 22299
+In-Reply-To: <536A40F6.3050907@univ-lyon1.fr>
+References: <536A40F6.3050907@univ-lyon1.fr>
+Message-ID: <6522515.HLEfRxakWk@late>
+
+Hi!
+
+On Wednesday 07 May 2014 16:19:34 Ghislain Durif wrote:
+> I am new in this list and I am very sorry if that question has already
+> been asked. I encountered an interesting problem while I was doing some
+> administration on my computer (Ubuntu 12.04). I am currently working
+> with Rkward 0.6.1 (and KDE 4.8.5), installed from the debian ppa
+> repository. It appears from a port scan with the netstat command that
+> the process rkward.rbacken is listening to the port 22299 while running.
+> I wonder whether it is a normal behaviour or not?
+
+It is normal behavior for the RKWard R backend (as for any R session) to 
+listen on one unprivileged port. The exact number will vary. This is the R 
+help server. Try pointing a browser to
+
+  http://127.0.0.1:XXXXXX/library/base/html/print.html
+
+(substituting XXXXXX for the port number).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140507/45843b08/attachment.sig>
+

@@ -1,0 +1,1590 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec  2 12:14:13 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 2 Dec 2010 13:14:13 +0100
+Subject: [rkward-users] network proxy
+In-Reply-To: <AANLkTikR4ssrNr0E4c65af1jiga_v8NugSMu-7iCbNzv@mail.gmail.com>
+References: <AANLkTikGF+dFajN6RPL2fV+O2rzXS0yAVmd4_=9NCA-v@mail.gmail.com>
+	<AANLkTikR4ssrNr0E4c65af1jiga_v8NugSMu-7iCbNzv@mail.gmail.com>
+Message-ID: <201012021314.18455.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Monday 29 November 2010, Mischa Vreeburg wrote:
+> It seems KDE is only picking up the setting in /etc/profile.d.
+> when I start konquerer with the no_proxy line I get
+> also the same error. I think it is an error with kde
+
+Ok, it seems KDE really does not honor the NO_PROXY variable,  by default. 
+This is configurable for KDE, globally, from System Settings->Network & 
+Connectivity->Network->Proxy. You can also alter the relevant settings from 
+within konqueror: Settings->Configure Konqueror->Web Browsing->Proxy.
+
+So, while KDE's behavior with respect to proxies does look strange, indeed, 
+this should allow you to configure it, correctly.
+
+Before you do: What I don't understand is why this used to work for you, 
+before. Any chance that you have changed anything with respect to proxy 
+configuration and / or upgraded KDE at the same time? Could you second-check 
+that help pages work for you when using rkward 0.5.4, instead of the daily 
+builds?
+
+Perhaps there are some other environment variables which KDE does respect. 
+Could you send me the output of
+   Sys.getenv()
+run in the R Console?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101202/4d6bdf87/attachment.sig>
+
+From rruizeuler at ucsd.edu  Sun Dec  5 02:56:41 2010
+From: rruizeuler at ucsd.edu (Alex Ruiz E.)
+Date: Sat, 04 Dec 2010 18:56:41 -0800
+Subject: [rkward-users] Change from editor to console with keyboard
+Message-ID: <1291517801.3016.4.camel@X>
+
+
+Dear helpers,
+
+How can I change the focus of the window from the editor to the R
+console with the keyboard (i.e. without clicking)? I'm sorry if I'm
+missing something obvious but I haven't found a way to do it, and I find
+it would improve my workflow a lot.
+
+Thanks for your help,
+Alex
+
+
+
+
+From kapatp at gmail.com  Sun Dec  5 15:52:53 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sun, 5 Dec 2010 10:52:53 -0500
+Subject: [rkward-users] Change from editor to console with keyboard
+In-Reply-To: <1291517801.3016.4.camel@X>
+References: <1291517801.3016.4.camel@X>
+Message-ID: <AANLkTi=4VqJGPf1QDijESBGEyKrPW0jHWjfz-yFiXRo-@mail.gmail.com>
+
+Hi Alex,
+
+On Sat, Dec 4, 2010 at 9:56 PM, Alex Ruiz E. <rruizeuler at ucsd.edu> wrote:
+>
+> Dear helpers,
+>
+> How can I change the focus of the window from the editor to the R
+> console with the keyboard (i.e. without clicking)? I'm sorry if I'm
+> missing something obvious but I haven't found a way to do it, and I find
+> it would improve my workflow a lot.
+
+Alt + 0: toggles focus on the document (script) window
+Alt + 5: toggles focus on the R Console.
+
+To the RKWard specific shortcuts, type
+> rk.show.html ("rkward://page/rkward_shotcuts")
+in the R console
+
+Regards,
+--
+Prasenjit
+
+
+
+From rruizeuler at ucsd.edu  Sun Dec  5 20:07:35 2010
+From: rruizeuler at ucsd.edu (Alex Ruiz E.)
+Date: Sun, 05 Dec 2010 12:07:35 -0800
+Subject: [rkward-users] Change from editor to console with keyboard
+In-Reply-To: <AANLkTi=4VqJGPf1QDijESBGEyKrPW0jHWjfz-yFiXRo-@mail.gmail.com>
+References: <1291517801.3016.4.camel@X>
+	<AANLkTi=4VqJGPf1QDijESBGEyKrPW0jHWjfz-yFiXRo-@mail.gmail.com>
+Message-ID: <1291579655.31163.0.camel@X>
+
+
+Yes! That was it. I appreciate the help Prasenjit.
+Alex
+
+On Sun, 2010-12-05 at 10:52 -0500, Prasenjit Kapat wrote:
+> Hi Alex,
+> 
+> On Sat, Dec 4, 2010 at 9:56 PM, Alex Ruiz E. <rruizeuler at ucsd.edu> wrote:
+> >
+> > Dear helpers,
+> >
+> > How can I change the focus of the window from the editor to the R
+> > console with the keyboard (i.e. without clicking)? I'm sorry if I'm
+> > missing something obvious but I haven't found a way to do it, and I find
+> > it would improve my workflow a lot.
+> 
+> Alt + 0: toggles focus on the document (script) window
+> Alt + 5: toggles focus on the R Console.
+> 
+> To the RKWard specific shortcuts, type
+> > rk.show.html ("rkward://page/rkward_shotcuts")
+> in the R console
+> 
+> Regards,
+> --
+> Prasenjit
+> 
+> ------------------------------------------------------------------------------
+> What happens now with your Lotus Notes apps - do you make another costly 
+> upgrade, or settle for being marooned without product support? Time to move
+> off Lotus Notes and onto the cloud with Force.com, apps are easier to build,
+> use, and manage than apps on traditional platforms. Sign up for the Lotus 
+> Notes Migration Kit to learn more. http://p.sf.net/sfu/salesforce-d2d
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+
+
+
+From noreply at sourceforge.net  Wed Dec  8 10:38:40 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 08 Dec 2010 10:38:40 +0000
+Subject: [rkward-users] [Help] history() doesn't work in rkward
+Message-ID: <forum-165574-8906992@sourceforge.net>
+
+
+The following forum message was posted by annavt at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4005932:
+
+Hi,
+
+the command history() doesn't work for me in rkward (but does in r from the
+command line).
+When I call history() from rkward I get an empty top pane.  The history is however
+saved somewhere, as I can use the arrows to scroll through my previous commands.
+This history is also saved somewhere as I can come back to it in a new session
+of rkward, but I cannot find the file anywhere on my computer.  It's not the
+.Rhistory in my home directory.
+Maybe this is a bug that has been fixed in a newer release, but I can't find
+any mention of it in the forums?
+
+Does anyone have any ideas?
+Many thanks
+Anna
+
+> sessionInfo()
+R version 2.11.1 (2010-05-31) 
+x86_64-redhat-linux-gnu 
+
+locale:
+ [1] LC_CTYPE=en_GB          LC_NUMERIC=C            LC_TIME=en_GB          
+ [4] LC_COLLATE=en_GB        LC_MONETARY=en_GB       LC_MESSAGES=en_GB      
+ [7] LC_PAPER=en_GB          LC_NAME=en_GB           LC_ADDRESS=en_GB       
+[10] LC_TELEPHONE=en_GB      LC_MEASUREMENT=en_GB    LC_IDENTIFICATION=en_GB
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] rkward_0.5.3       
+
+loaded via a namespace (and not attached):
+[1] grid_2.11.1   lattice_0.19-13   tools_2.11.1  
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec  9 15:35:08 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 9 Dec 2010 16:35:08 +0100
+Subject: [rkward-users] [Help] history() doesn't work in rkward
+In-Reply-To: <forum-165574-8906992@sourceforge.net>
+References: <forum-165574-8906992@sourceforge.net>
+Message-ID: <201012091635.12862.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 08 December 2010, SourceForge.net wrote:
+> the command history() doesn't work for me in rkward (but does in r from the
+> command line).
+> When I call history() from rkward I get an empty top pane.  The history is
+> however saved somewhere, as I can use the arrows to scroll through my
+> previous commands. This history is also saved somewhere as I can come back
+> to it in a new session of rkward, but I cannot find the file anywhere on
+> my computer.  It's not the .Rhistory in my home directory.
+> Maybe this is a bug that has been fixed in a newer release, but I can't
+> find any mention of it in the forums?
+
+while the R Console in RKWard is meant to behave just like R running in a 
+regular console, technically it is quite a different thing. And this means you 
+will find a few differences like this in corner cases.
+
+Support for R's history-functions simply has not yet been added, yet. It is on 
+our TODO list: 
+http://sourceforge.net/tracker/?func=detail&aid=2996587&group_id=50231&atid=459010 
+.
+
+Regards
+Thomas
+
+P.S.: In RKWard, the history is saved in ~/.kde/share/config/rkwardrc , but 
+admittedly not in a form that could be re-used, easily.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101209/1ef25934/attachment.sig>
+
+From noreply at sourceforge.net  Sat Dec 11 11:20:27 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 11 Dec 2010 11:20:27 +0000
+Subject: [rkward-users] [Open Discussion] Shortcut key for focus
+Message-ID: <forum-165573-8916773@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4009805:
+
+Many thanks for rkward, which I use most of the time I run R on ubuntu 9.10
+and 10.04 (which is a lot of time!)
+
+One thing that I find inconvenient is having to use the mouse to change the
+focus from
+the script editor to the console.  Would it be possible to define on shortcut
+key (please, one, not
+a combination) so that the focus would change from one window to the other?
+Please excuse me if this exists already and have not found it!
+
+Agus
+
+
+
+
+From noreply at sourceforge.net  Sat Dec 11 13:06:17 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 11 Dec 2010 13:06:17 +0000
+Subject: [rkward-users] [Open Discussion] RE: Shortcut key for focus
+In-Reply-To: <forum-165573-8916773@sourceforge.net>
+Message-ID: <forum-165573-8916929@sourceforge.net>
+
+
+The following forum message was posted by fsando at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4009805:
+
+You should be able to change any shortcut from 
+
+settings > configure shortcuts
+
+I'm not sure, though, which version of RKWard that has this option, I use
+0.5.5-devel1 according to the about dialog
+
+
+
+From rruizeuler at ucsd.edu  Sat Dec 11 13:34:25 2010
+From: rruizeuler at ucsd.edu (Alex Ruiz E.)
+Date: Sat, 11 Dec 2010 05:34:25 -0800
+Subject: [rkward-users] [Open Discussion] Shortcut key for focus
+In-Reply-To: <forum-165573-8916773@sourceforge.net>
+References: <forum-165573-8916773@sourceforge.net>
+Message-ID: <1292074465.14952.3.camel@X>
+
+
+I had a similar question just a couple of days ago. Prasenjit kindly
+suggested:
+
+Alt + 0: toggles focus on the document (script) window
+Alt + 5: toggles focus on the R Console.
+
+I reconfigured these to my needs. Maybe you can do the same on one key?
+Alex
+
+On Sat, 2010-12-11 at 11:20 +0000, SourceForge.net wrote:
+> The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4009805:
+> 
+> Many thanks for rkward, which I use most of the time I run R on ubuntu 9.10
+> and 10.04 (which is a lot of time!)
+> 
+> One thing that I find inconvenient is having to use the mouse to change the
+> focus from
+> the script editor to the console.  Would it be possible to define on shortcut
+> key (please, one, not
+> a combination) so that the focus would change from one window to the other?
+> Please excuse me if this exists already and have not found it!
+> 
+> Agus
+> 
+> 
+> ------------------------------------------------------------------------------
+> Oracle to DB2 Conversion Guide: Learn learn about native support for PL/SQL,
+> new data types, scalar functions, improved concurrency, built-in packages, 
+> OCI, SQL*Plus, data movement tools, best practices and more.
+> http://p.sf.net/sfu/oracle-sfdev2dev 
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+
+
+
+From noreply at sourceforge.net  Sat Dec 11 17:46:13 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 11 Dec 2010 17:46:13 +0000
+Subject: [rkward-users] [Open Discussion] RE: Shortcut key for focus
+In-Reply-To: <forum-165573-8916929@sourceforge.net>
+Message-ID: <forum-165573-8917364@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4009805:
+
+Hi!
+
+This is an often requested feature. It is in our tracker, here:
+https://sourceforge.net/tracker/?func=detail&aid=2930505&group_id=50231&atid=459010
+.
+
+Quoting from there:
+[quote] agree this would be nice to have, and eventually we will have this.
+ 
+ Unfortunately, realizing this is technically more difficult than it may
+ seem, and so this will not happen right away. Two more alternatives for the
+ interim:
+ 1) Repeatedly pressing Alt+5 will also switch between console and current
+ script, but with the side-effect of hiding the console while the script
+ window is active.
+ 2) You can detach the console or the script window (or both;
+ Windows->Detach) and use the Alt+Tab feature of the window manager to
+ switch between the two.
+ 
+[/quote]
+
+
+
+From noreply at sourceforge.net  Tue Dec 14 00:00:59 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 14 Dec 2010 00:00:59 +0000
+Subject: [rkward-users] [Help] enable automatic indentation in rkward
+Message-ID: <forum-165574-8921065@sourceforge.net>
+
+
+The following forum message was posted by pythonscript at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4012480:
+
+Is there a way to enable rkward to automatically indent my code blocks when
+I begin them? That seems like a rather basic feature of any programming IDE,
+if only for the sake of readability, but I'm not sure how to enable it
+by default.
+
+Thank you!
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 06:10:58 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 06:10:58 +0000
+Subject: [rkward-users] [Help] Install from source on ML 2010.1
+Message-ID: <forum-165574-8923812@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+I'm a user of Mandriva Linux 2010.1 on an x86_64 desktop.
+ML 10.1 RPM packages provide R 2.11.0 and rkward 0.5.3.
+
+Unfortunately some recent R packages I use need the upgrade to 2.12.0,
+(and also upgraded rkward since it needed to be reinstalled from source,
+AFAIK) so I needed to compile from source, but this being foreign to me,
+I prefer to keep the system packaged version and rkward as well,
+until the new install is successful.
+
+I have just installed R version 2.12.0 from source (to /usr/local/bin/R, 
+with library location /home/mhudson/R-2.12.0/library/)
+and Rkward from source to version 0.5.4 following 
+[url]https://sourceforge.net/apps/mediawiki/rkward/index.php?title=Building_RKWa
+rd_From_Source[/url]
+and INSTALL guidance, configuring as:
+
+[mhudson at penguin build]$ cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`
+-DR_EXECUTABLE=/usr/local/bin/R
+-DR_LIBDIR=/home/mhudson/R/x86_64-unknown-linux-gnu-library/2.12
+
+followed by make and make install.
+Install seemed OK, but there are problems on running rkward (see below)
+related to linking R package libraries. Note also the "R- 2.11.0", 
+which is the ML10.1 r-base.
+
+[mhudson at penguin build]$ rkward --v
+Qt: 4.6.2
+KDE Development Platform: 4.4.3 (KDE 4.4.3)
+RKWard: 0.5.4
+
+--------------------
+Installation appears to be complete (unfortunately it is hard to tell in
+CMake).
+Consider running
+    make plugintests
+for some automated functionality tests.
+In case of errors, consult the file 'INSTALL'.
+--------------------
+[mhudson at penguin build]$ rkward --help
+Usage: rkward [Qt-options] [KDE-options] [options] [File] 
+
+Frontend to the R statistics language
+
+Generic options:
+  --help                    Show help about options
+  --help-qt                 Show Qt specific options
+  --help-kde                Show KDE specific options
+  --help-all                Show all options
+  --author                  Show author information
+  -v, --version             Show version information
+  --license                 Show license information
+  --                        End of options
+
+Options:
+  --evaluate <Rcode>        After starting (and after loading the specified
+workspace, if applicable), evaluate the given R code.
+  --debug-level <level>     Verbosity of debug messages (0-5) [2]
+  --debug-flags <flags>     Mask for components to debug (see debug.h) [8191]
+  --debugger <command>      Debugger (enclose any debugger arguments in single
+quotes ('') together with the command)
+  --disable-stack-check     Disable R C stack checking
+
+Arguments:
+  File                      R workspace file to open
+[mhudson at penguin build]$ rkward --v
+Qt: 4.6.2
+KDE Development Platform: 4.4.3 (KDE 4.4.3)
+RKWard: 0.5.4
+[mhudson at penguin build]$ rkward &
+[1] 2817
+[mhudson at penguin build]$ Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared library
+'/usr/local/lib64/R/library/methods/libs/methods.so':
+  /usr/local/lib64/R/library/methods/libs/methods.so: undefined symbol:
+R_tryEvalSilent
+In addition: Warning message:
+package 'methods' was built under R version 2.12.0 
+
+R version 2.11.0 (2010-04-22)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+Any advice would be much appreciated.
+
+tia
+
+Malcolm
+
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 06:25:25 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 06:25:25 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8923812@sourceforge.net>
+Message-ID: <forum-165574-8923836@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+supplement: this is how R sees rkward
+
+[mhudson at penguin ~]$ /usr/local/bin/R
+
+R version 2.12.0 (2010-10-15)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library (rkward)
+
+Attaching package: 'rkward'
+
+The following object(s) are masked from 'package:graphics':
+
+    plot.new
+
+The following object(s) are masked from 'package:grDevices':
+
+    dev.off, dev.set, x11, X11
+
+The following object(s) are masked from 'package:utils':
+
+    menu, select.list
+
+The following object(s) are masked from 'package:base':
+
+    makeActiveBinding, q, quit, require, setwd, Sys.setlocale
+
+Malcolm
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 11:11:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 11:11:38 +0000
+Subject: [rkward-users] [Open Discussion] starting up on working directory
+Message-ID: <forum-165573-8924366@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4014361:
+
+Hi!
+
+When I select the .RData file upon start up, the working directory is not
+automatically set to
+that of the .RData. Could this be at least a configurable option? 
+
+Thanks
+
+Agus 
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 11:21:50 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 11:21:50 +0000
+Subject: [rkward-users] [Help] Cannot install packages from within RKward
+Message-ID: <forum-165574-8924376@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+Hi!
+
+When I try to install packages from within RKward I'm told to become root (which
+makes sense as I always manage packages
+as root in R) but once I enter my password and open the Output window, nothing
+happens, no text to the output window, I finally
+have to cancel and install the package from a "raw" R console started as root
+(i.e., the conventional way).
+Using ubuntu 10.04 
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 12:06:09 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 12:06:09 +0000
+Subject: [rkward-users] [Help] RE: enable automatic indentation in rkward
+In-Reply-To: <forum-165574-8921065@sourceforge.net>
+Message-ID: <forum-165574-8924466@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4012480:
+
+Yes, there is. To enable this in a single script file window, use Edit->Tools
+Move->Indentation. C style probably does what you want, although different people
+seem to expect different indentation behavior. You can also add something like
+[code]# kate: space-indent on; indent-width 4; mixedindent off; indent-mode
+cstyle;[/code]
+near the top of a script file.
+
+To make a specific indentation behavior the default for all scripts in RKWard,
+use Settings->Configure Editor->Editing->Indentation.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 12:23:25 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 12:23:25 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8923836@sourceforge.net>
+Message-ID: <forum-165574-8924491@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi!
+
+Ok, so somehow the wrong version of R, or of RKWard is being used. Mixing several
+versions of R and RKWard on a single system is possible, but has a whole lot
+of pitfalls. My first guess is that you have made more that one attempt at compiling
+and installing RKWard 0.5.4, and now there are several versions of rkward on
+your system, some of which are broken...
+
+For diagnostics, try
+[code]which rkward[/code]
+and
+[code]find /usr -name "rkward"[/code]
+
+Also check whether the path returned by
+[code]kde4-config --prefix[/code]
+looks sensible. (Or, easiest, perhaps, run "make install", again, and look closely,
+where files are being installed, to).
+
+The "rkward" command itself is just a small shell script. Please try opening
+that in a text editor. Around line 4, you will find
+[code]export R_binary=...[/code]
+Obviously, this should point to the R executable that you specified on the cmake
+line. If it points to R 2.11.0, instead, it probably belongs to a different
+installation of RKWard.
+
+Does any of that provide a useful hint?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 12:27:49 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 12:27:49 +0000
+Subject: [rkward-users] [Open Discussion] RE: starting up on working
+	directory
+In-Reply-To: <forum-165573-8924366@sourceforge.net>
+Message-ID: <forum-165573-8924498@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4014361:
+
+Hi!
+
+Yes, I guess it would make sense to add this as an option. I will have to rework
+some aspects of opening ".RData" files, anyway (esp. regarding whether or not
+to load and .RData file that happens to be in the working directory on startup).
+Could you add this request to the feature request tracker
+(https://sourceforge.net/tracker/?group_id=50231&atid=459010), to make sure
+I will remember to add this?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 13:10:22 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 13:10:22 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8924376@sourceforge.net>
+Message-ID: <forum-165574-8924576@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+Hi!
+
+Thanks for reporting. Probably some unsuitable version of kdesu gets used at
+this point. Unfortunately, several incarnations of kdesu may be present on a
+single system: One from KDE3, one from KDE4, and then IIRC Ubuntu ships a custom
+version of kdesu in addtion to that (based on kdesu). So to find out what's
+going wrong, we need to find out which is used, first.
+
+To do so, could you attempt to install a package in rkward again. Then, when
+prompted for the root password, please check your process list (
+[code]ps ax | grep "kdesu"[/code]
+). Next, please test, which version of kdesu this is, and whether it works for
+you at all:
+[code][path]/kdesu --version[/code]
+[code][path]/kdesu -t echo "test"[/code]
+The latter should print 'test' to the console, after prompting for your root
+password.
+
+Maybe with that info, we will have a better picture of exactly what goes wrong.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 13:21:21 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 13:21:21 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8924491@sourceforge.net>
+Message-ID: <forum-165574-8924603@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi Thomas,
+
+thanks for your comments, indeed I tried a few cmake commands before 
+compilation succeded. Here are the results of the prompts you suggested:
+
+[mhudson at penguin ~]$ which rkward
+/usr/bin/rkward
+[mhudson at penguin ~]$ ls -l /usr/bin/rkward
+-rwxr-xr-x 1 root root 1273 2010-12-15 14:23 /usr/bin/rkward*
+[mhudson at penguin ~]$ find /usr -name "rkward"
+/usr/bin/rkward
+/usr/share/apps/rkward
+/usr/share/doc/rkward
+/usr/share/doc/HTML/en/rkward
+find: `/usr/lost+found': Permission denied
+/usr/lib64/R/library/rkward
+/usr/lib64/R/library/rkward/R/rkward
+[mhudson at penguin ~]$ kde4-config --prefix
+/usr
+(I would have expected /usr/local, ML reserves /usr for its own packages,
+as I read [url]http://wiki.mandriva.com/en/Docs/Basic_tasks/Installing_and_remov
+ing_software/Installing_from_source[/url].
+So it appears the previous rkward apps will be overwritten
+ML has the rkward 0.5.3 libraries under /usr/lib64/R/library/rkward/).
+
+The make install is installing apps to /usr/share/apps/rkward/.
+
+[mhudson at penguin ~]$ cat /usr/bin/rkward
+#!/bin/sh
+# Shell wrapper for rkward executable.
+
+export R_binary="/usr/local/bin/R"
+[snip]
+(this looks correct, pointing to my R 2.12.0)
+
+
+Maybe the way forward is for me to urpme rkward to remove 0.5.3 as far
+as possible,
+then redo the cmake configuration with option
+-DCMAKE_INSTALL_PREFIX=/usr/local 
+
+Any thoughts?
+I'll try this tomorrow night.(Aus), its getting late...
+
+best wishes, and thanks for a great environment.
+
+Malcolm
+
+
+
+
+
+
+
+From noreply at sourceforge.net  Wed Dec 15 14:08:10 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Dec 2010 14:08:10 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8924603@sourceforge.net>
+Message-ID: <forum-165574-8924667@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi!
+
+Hm, if the R_binary-variable is set correctly in the starter script, then you
+should really see R 2.12.0 starting, not R 2.11.0. If you look to the end of
+this script, it basically just calls
+[code]R CMD /usr/bin/rkward.bin[/code]
+Perhaps you can try running that on the console, directly, for testing
+purposes.
+
+I wonder, whether your installation of R might be a bit broken. Could you try
+running:
+[code][/usr/local/bin/]R CMD sh -c 'echo $R_VERSION'[/code]
+This should print 2.12.0. But I suspect it prints 2.11.0 instead, on your
+system?
+
+[quote]Maybe the way forward is for me to urpme rkward to remove 0.5.3 as far
+as possible, then redo the cmake configuration with option
+-DCMAKE_INSTALL_PREFIX=/usr/local [/quote]
+
+Now that you have already overwritten your previous installation, I suggest
+to keep the /usr-prefix for the time being (at least until we have resolved
+the current problem). Having several KDE directories can bring new pitfalls,
+in some cases.
+
+Regards
+Thomas
+
+
+
+From smallsoap at gmail.com  Wed Dec 15 14:16:13 2010
+From: smallsoap at gmail.com (SmallSoap [Nexus6])
+Date: Wed, 15 Dec 2010 15:16:13 +0100
+Subject: [rkward-users] Syntax highlighting in Sweave files
+Message-ID: <AANLkTimVzLH5xLxF6ugwb+iOSGuLpieXW+K794_NvtfH@mail.gmail.com>
+
+Dear rkward users/maintainers,
+
+I have two questions:
+1) When I open an Sweave script in rkward, the syntax-highlighting initially
+is set to R-code. However, from the moment I save my file (CTRL-S),
+syntax-highlighting is set to latex-style. I would like it to stick to
+R-type syntax highlighting. Is that possible?
+2) Can I set or change the recognized file-types in the open-file dialog? My
+Sweave files have the extension .Rtex, so I always have to switch to "all
+files" before I can see them.
+
+Thanks in advance!
+
+Jan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101215/7c7d5605/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec 16 08:48:55 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Dec 2010 09:48:55 +0100
+Subject: [rkward-users] Syntax highlighting in Sweave files
+In-Reply-To: <AANLkTimVzLH5xLxF6ugwb+iOSGuLpieXW+K794_NvtfH@mail.gmail.com>
+References: <AANLkTimVzLH5xLxF6ugwb+iOSGuLpieXW+K794_NvtfH@mail.gmail.com>
+Message-ID: <201012160948.59628.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 15 December 2010, SmallSoap [Nexus6] wrote:
+> 1) When I open an Sweave script in rkward, the syntax-highlighting
+> initially is set to R-code. However, from the moment I save my file
+> (CTRL-S), syntax-highlighting is set to latex-style. I would like it to
+> stick to R-type syntax highlighting. Is that possible?
+
+to switch back to R highlighting once, on an individual script, use Edit-
+>Tools Move->Highlighting->Scripts->R Script. One quick and dirty way to avoid 
+the highlight-switching, would be to save the file with .R/.r extension.
+
+To make the editor use R highlighting for .Rtex files, open any script window, 
+select Settings->Configure Editor->Open / Save->Modes & Filetypes. There you 
+can add a new Filetype for the extension .Rtex, and set it to use R 
+highlighting (make sure to also set a priority of at least 20).
+
+> 2) Can I set or change the recognized file-types in the open-file dialog?
+> My Sweave files have the extension .Rtex, so I always have to switch to
+> "all files" before I can see them.
+
+No, unfortunately, this is not possible, ATM. Could you add a request to make 
+this configurable to our feature req	uest tracker 
+(http://sourceforge.net/tracker/?group_id=50231&atid=459010)?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101216/9335f496/attachment.sig>
+
+From noreply at sourceforge.net  Thu Dec 16 09:04:31 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 09:04:31 +0000
+Subject: [rkward-users] [Open Discussion] RE: starting up on working
+	directory
+In-Reply-To: <forum-165573-8924498@sourceforge.net>
+Message-ID: <forum-165573-8926528@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4014361:
+
+Done!, thanks
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 09:09:52 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 09:09:52 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8924576@sourceforge.net>
+Message-ID: <forum-165574-8926539@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+Thanks, this is what I get:
+
+alobo at delia:~$ ps ax | grep "kdesu"
+ 4176 ?        Sl     0:00 /usr/lib/kde4/libexec/kdesu -t /usr/bin/R CMD R --no-save
+< /home/alobo/.rkward/install_script.R
+ 4201 pts/2    S+     0:00 grep --color=auto kdesu
+alobo at delia:~$ ps ax | grep "kdesu"
+ 4176 ?        Sl     0:00 /usr/lib/kde4/libexec/kdesu -t /usr/bin/R CMD R --no-save
+< /home/alobo/.rkward/install_script.R
+ 4204 pts/2    S+     0:00 grep --color=auto kdesu
+alobo at delia:~$ /usr/lib/kde4/libexec/kdesu --version
+Qt: 4.6.2
+KDE Development Platform: 4.4.2 (KDE 4.4.2)
+KdeSudo: 3.4.2.2
+alobo at delia:~$ /usr/lib/kde4/libexec/kdesu -t echo "test"
+test
+alobo at delia:~$ 
+
+
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 10:36:24 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 10:36:24 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926539@sourceforge.net>
+Message-ID: <forum-165574-8926642@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+Hm, that's puzzling. That looks all correct.
+
+I've tried something in the development version, but I'm not sure it will help.
+Could you try building from SVN, or using tomorrow's daily build
+(https://launchpad.net/~rkward-devel/+archive/rkward-dailys)?
+
+If case it still does not work, could you try this?
+- Start package installation again. Do not enter/click anything in the password
+dialog.
+- "grep" for "kdesu" again, as before.
+- Run the command that you found (i.e. this would have been
+[code]/usr/lib/kde4/libexec/kdesu -t /usr/bin/R CMD R --no-save <
+/home/alobo/.rkward/install_script.R[/code]
+in the above case).
+- What happens?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 10:50:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 10:50:38 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926642@sourceforge.net>
+Message-ID: <forum-165574-8926665@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+I think it is just this problem:
+alobo at delia:~$ /usr/lib/kde4/libexec/kdesu -t /usr/bin/R CMD R --no-save
+< /home/alobo/.rkward/install_script.R
+kdesu: Unknown option '-save'.
+
+if I do
+
+alobo at delia:~$ /usr/lib/kde4/libexec/kdesu -t '/usr/bin/R CMD R --no-save' <
+/home/alobo/.rkward/install_script.R
+
+I start an R session, but stops at 
+[Previously saved workspace restored]
+
+and never ends
+
+Perhaps you could add some print() commands to the install.script.R that gets
+generated?
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 11:38:44 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 11:38:44 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8924667@sourceforge.net>
+Message-ID: <forum-165574-8926727@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi Thomas,
+[code]
+[mhudson at penguin ~]$ R CMD /usr/bin/rkward.bin
+[/code]
+R version 2.11.0 (2010-04-22)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R. 
+
+Simultaneously, the RKWard GUI opens with the comment:
+"There was a problem starting the R backend. The following error(s) occurred:
+- The 'rkward' R-library either could not be loaded at all, or not in the correct
+version. This may lead to all sorts of errors, from single missing features
+to complete failure to function. The most likely cause is that the last installation
+did not place all files in the correct place. However, in some cases, left-overs
+from a previous installation that was not cleanly removed may be the cause.
+You should quit RKWard, now, and fix your installation. For help with that,
+see http://p.sf.net/rkward/compiling.
+-An unspecified error occurred that is not yet handled by RKWard. Likely RKWard
+will not function properly. Please check your setup. "
+
+[code]
+[mhudson at penguin ~]$ /usr/local/bin/R CMD sh -c 'echo $R_VERSION'
+[/code]
+2.12.0
+[code]
+[mhudson at penguin ~]$ cat /usr/bin/rkward
+[/code]
+#!/bin/sh
+# Shell wrapper for rkward executable.
+
+export R_binary="/usr/local/bin/R"
+[snip]
+## Start rkward. Running through R CMD to set all the relevant R enviroment
+variables
+exec $R_binary CMD $debugger $0.bin "$@"
+
+The problem appears to be with the R-library.
+R was configured with:
+[code]./configure  --prefix=/usr/lib64/R/R-2.12.0[/code]
+
+following R's  R-admin.html
+[quote]
+2.4 Installation
+ To ensure that the installed tree is usable by the right group of users, set
+umask appropriately (perhaps to ?022?) before unpacking the sources and
+throughout the build process.
+After 
+ 
+     ./configure
+     make
+     make check
+
+(or, when building outside the source, TOP_SRCDIR/configure, etc) have been
+completed successfully, you can install the complete R tree to your system by
+typing
+     make install
+
+This will install to the following directories: 
+prefix/bin or bindir
+the front-end shell script and other scripts and executables 
+prefix/man/man1 or mandir/man1
+the man page 
+prefix/LIBnn/R or libdir/R
+all the rest (libraries, on-line help system, ...). Here LIBnn is usually ?lib?,
+but may be ?lib64? on some 64-bit Linux systems. This is known as the R
+home directory.
+where prefix is determined during configuration (typically /usr/local) and can
+be set by running configure with the option --prefix, as in
+ 
+     ./configure --prefix=/where/you/want/R/to/go
+[/quote]
+
+However:
+[code][root at penguin mhudson]# ls -l /usr/lib64/R/R-2.12.0
+ls: cannot access /usr/lib64/R/R-2.12.0: No such file or directory
+[/code]
+Instead I see I created /usr/lib64/R-2.12.0 which remains empty.
+So here is the problem with the R install? what to do?
+
+hth
+Malcolm
+
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 12:52:56 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 12:52:56 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926665@sourceforge.net>
+Message-ID: <forum-165574-8926816@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+[quote]kdesu: Unknown option '-save'. [/quote]
+
+I see. It's that thing. Well, in this case, I am confident, that I have fixed
+it in the development version, indeed. So again, please try tomorrow's daily
+build.
+
+[quote]Perhaps you could add some print() commands to the install.script.R that
+gets generated?[/quote]
+
+It would not help in this case, since the script never gets run, at all, here.
+(And when it does run, it generates a whole bunch of output, already).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 13:07:52 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 13:07:52 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8926727@sourceforge.net>
+Message-ID: <forum-165574-8926833@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi!
+
+I believe the "--prefix" is meant to be something like "/usr" or "/usr/local".
+No idea, why it is not being accepted. You'd need to quizz the R people about
+that. However, your R appears to end up in /usr/local/, and why not just use
+that.
+
+Since [code]/usr/local/bin/R CMD sh -c 'echo $R_VERSION' [/code] yields 2.12.0,
+my previous idea appears to have been wrong. Here's a new idea:
+
+1) Make sure to configure R with the "--enable-R-shlib" option. The shared library
+is needed by RKWard. My guess is that you did not use this option when compiling
+R, but an older version of the shared library is already present on your system,
+and RKWard picks up that, by accident.
+2) Since you made several attempts to compile RKWard, please remove the file
+"CMakeCache.txt" in the rkward build directory. It may contain obsolete cached
+values. Compile RKWard again, after that.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 13:26:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 13:26:38 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926816@sourceforge.net>
+Message-ID: <forum-165574-8926870@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+How do I install the daily build?
+Agus
+
+
+
+From noreply at sourceforge.net  Thu Dec 16 13:35:46 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 16 Dec 2010 13:35:46 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926870@sourceforge.net>
+Message-ID: <forum-165574-8926902@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+See https://launchpad.net/~rkward-devel/+archive/rkward-dailys . This has a
+link to "Read about installing". Thus, as far as I know you need to run
+[code]sudo add-apt-repository ppa:rkward-devel/rkward-dailys[/code]
+and then just run a regular software update after that. I don't use Ubuntu myself,
+though. (And of course, today's daily build does not have the fix, yet).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri Dec 17 12:14:16 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 17 Dec 2010 12:14:16 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8926833@sourceforge.net>
+Message-ID: <forum-165574-8929273@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Thomas,
+
+I tried 1) but it fails to compile:
+[code] 
+[mhudson at penguin R-2.12.0]$ ./configure --enable-R-shlib
+[/code]
+[snip] ...
+/usr/bin/ld: ../appl/libappl.a(ch2inv.o): relocation R_X86_64_32 against `.rodata'
+can not be used when making a shared object; recompile with -fPIC
+../appl/libappl.a: could not read symbols: Bad value
+collect2: ld returned 1 exit status
+make[3]: *** [libR.so] Error 1
+make[3]: Leaving directory `/home/mhudson/R-2.12.0/src/main'
+make[2]: *** [R] Error 2
+make[2]: Leaving directory `/home/mhudson/R-2.12.0/src/main'
+make[1]: *** [R] Error 1
+make[1]: Leaving directory `/home/mhudson/R-2.12.0/src'
+make: *** [R] Error 1
+Malcolm
+
+
+
+From noreply at sourceforge.net  Fri Dec 17 16:04:15 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 17 Dec 2010 16:04:15 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8929273@sourceforge.net>
+Message-ID: <forum-165574-8929711@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi!
+
+Ok, so the good news is that we have found the cause of the original problem:
+You don't have the (right version of the) R shared library. Ideally this would
+have been detected automatically, while configuring RKWard, but anyway, this
+is where the problem is at.
+
+The bad news is that I'm afraid I can't help you much further at this point.
+You could try adding
+[code]--with-pic[/code]
+to you ./configure line, but I'm not sure whether this should help. It may be
+a good idea to take a look at the Mandriva src.rpm for R 2.11.0, and see which
+configure-flags are being used, there. While trying to find that, I came across
+this: http://pkgs.org/mandriva-cooker/mandriva-main-release-x86_64/R-base-2.12.0
+-3mdv2011.0.x86_64.rpm.html . I don't know much about Mandriva, but perhaps
+this means there is a ready-packaged R 2.12.0, which you could use, after all?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sat Dec 18 10:43:45 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 18 Dec 2010 10:43:45 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8929711@sourceforge.net>
+Message-ID: <forum-165574-8931584@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi Thomas,
+
+[quote]The bad news is that I'm afraid I can't help you much further at this
+point.
+[/quote]
+I really appreciate the time you have put in on this already, with some
+success.
+
+[quote] It may be a good idea to take a look at the Mandriva src.rpm for R 2.11.0,
+and see which configure-flags are being used, there.[/quote]
+While I found the src.rpm package I don't know how to determine the config-flags
+of the source. Do I install the RPM, then untar the tgz component, and then
+search?  It may not be relevant anymore, anyway.
+
+[quote]
+I came across this:
+http://pkgs.org/mandriva-cooker/mandriva-main-release-x86_64/R-base-2.12.0-3mdv2
+011.0.x86_64.rpm.html
+[/quote]
+I followed through on this, downloading 
+[url]http://mirrors.us.kernel.org/mandriva/Mandrakelinux/devel/2011.0/x86_64/med
+ia/main/release/R-base-2.12.0-3mdv2011.0.x86_64.rpm[/url]
+and 
+[url]
+http://mirrors.us.kernel.org/mandriva/Mandrakelinux/devel/2011.0/x86_64/media/ma
+in/release/lib64lzma5-5.0.0-2mdv2011.0.x86_64.rpm
+[/url]
+from the Mandriva Cooker site, and installing (successfully it appears).
+This writes the R libraries to the standard ML locations.
+Before this I had uninstalled, then re-installed rkward 0.5.3.
+Now:
+[code]
+[root at penguin R-2.12.0]# R                                                 
+
+R version 2.12.0 (2010-10-15)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-mandriva-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> q()
+Save workspace image? [y/n/c]: n
+[root at penguin R-2.12.0]# quit
+bash: quit: command not found
+[root at penguin R-2.12.0]# exit
+exit
+[mhudson at penguin R-2.12.0]$ rkward
+
+R version 2.12.0 (2010-10-15)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-mandriva-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+[/code]
+
+However R still has a problem:
+[code]
+[mhudson at penguin R-2.12.0]$ R
+
+R version 2.12.0 (2010-10-15)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-mandriva-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> setwd('/penguin/mhudson/CTC/Rachel/shrinkage')
+Error in setwd("/penguin/mhudson/CTC/Rachel/shrinkage") : 
+  cannot change working directory
+[/code]
+and for rkward, while the GUI looks OK , 
+a persistent error attends each command:
+[code]
+setwd('/penguin/mhudson/CTC/Rachel/shrinkage') # R 2.12.0
+Error in eval(expr, envir, enclos) : cannot change working directory
+
+ls()
+ [1] "age"            "aggrisk"        "aggrisk.expd"   "aggrisk.glm"   
+ [5] "aggrisk.obsd"   "apparent"       "appMH"          "blood.pressure"
+ [9] "cell"           "cholesterol"    "counts"         "d.AD"          
+[13] "dd"             "dd1"            "expd"           "f"             
+[17] "glm.D93"        "j"              "k"              "l"             
+[21] "L"              "lp"             "MI5"            "MI5.glm"       
+[25] "n"              "obsd"           "outcome"        "p"             
+[29] "p2"             "p52"            "p52g"           "p53"           
+[33] "p54"            "pp"             "run5a2"         "run5p2"        
+[37] "rung"           "rung.bw"     
+
+
+
+From noreply at sourceforge.net  Sat Dec 18 11:32:11 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 18 Dec 2010 11:32:11 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8931584@sourceforge.net>
+Message-ID: <forum-165574-8931631@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+[quote]> setwd('/penguin/mhudson/CTC/Rachel/shrinkage')
+Error in setwd("/penguin/mhudson/CTC/Rachel/shrinkage") : 
+  cannot change working directory[/quote]
+
+Interesting. I suppose that directory does exist, and you have permission to
+enter it? Same problem for any directory (try setwd('/tmp'), for instance?
+
+[quote]Error: unprotect(): only 1 protected items[/quote]
+
+Yes, that's the error that you get when using R 2.12.0 with rkward 0.5.3. So
+you still need to compile rkward 0.5.4, again. However, I am confident that
+this time it will work, correctly (don't forget to remove CMakeCache.txt in
+the rkward build directory).
+
+[quote]While I found the src.rpm package I don't know how to determine
+the config-flags of the source. Do I install the RPM, then untar the tgz component,
+and then search?  It may not be relevant anymore, anyway.[/quote]
+
+I use Debian myself, so I don't know too much about handling RPMs. Perhaps this
+page http://bradthemad.org/tech/notes/patching_rpms.php is helpful. The instructions
+for configuring and compiling are in the .spec file that should be contained
+in the src.rpm.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon Dec 20 10:43:54 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 20 Dec 2010 10:43:54 +0000
+Subject: [rkward-users] [Help] RE: Cannot install packages from within RKward
+In-Reply-To: <forum-165574-8926902@sourceforge.net>
+Message-ID: <forum-165574-8935168@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014364:
+
+works fine, thanks:
+Version 0.5.5-devel1
+Using KDE Development Platform 4.4.2 (KDE 4.4.2)
+
+Agus
+
+
+
+From noreply at sourceforge.net  Mon Dec 20 10:46:27 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 20 Dec 2010 10:46:27 +0000
+Subject: [rkward-users] [Open Discussion] Separate row for tabs of Help pages
+Message-ID: <forum-165573-8935170@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4020766:
+
+Hi!
+
+I normally have to open several script files (i.e., my log file + some scripts
+and functions). Then if I open a couple of help pages
+the row of tabs becomes to long and it's a bit tedious going from one extreme
+to the other. It would be handy
+having the Help tabs as a separate row.
+
+Thanks!
+
+Agus
+
+
+
+From noreply at sourceforge.net  Mon Dec 20 11:18:45 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 20 Dec 2010 11:18:45 +0000
+Subject: [rkward-users] [Help] RE: Install from source on ML 2010.1
+In-Reply-To: <forum-165574-8931631@sourceforge.net>
+Message-ID: <forum-165574-8935245@sourceforge.net>
+
+
+The following forum message was posted by hmhxmu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4014040:
+
+Hi Thomas
+
+[quote]Interesting. I suppose that directory does exist, and you have permission
+to enter it?[/quote]
+Lol. My mistake.
+
+[quote]So you still need to compile rkward 0.5.4, again.[/quote]
+After uninstalling rkward-0.5.3, removing the cached file and compiling 0.5.4
+[code][mhudson at penguin build]$ cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
+-DR_EXECUTABLE=/usr/bin/R
+[/code]
+and make install it all just works.
+Everything seemed to work.
+
+Maybe the simpler option now is to install a new rkward rpm on Mandriva Cooker,
+see
+[url] http://forum.mandriva.com/en/viewtopic.php?f=86&t=133617&p=839220#p839220[
+/url]
+See Ahmad's earlier response too as to a surer way to install using src rpms
+Its as simple as grabbing the corresponding src.rpm and
+[code]rpmbuild --rebuild /path/to/*.src.rpm [/code]
+
+Just to advise that all ended well.
+
+Thanks again,
+
+Malcolm
+
+
+
+From noreply at sourceforge.net  Mon Dec 20 12:16:53 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 20 Dec 2010 12:16:53 +0000
+Subject: [rkward-users] [Open Discussion] RE: Separate row for tabs of Help
+	pages
+In-Reply-To: <forum-165573-8935170@sourceforge.net>
+Message-ID: <forum-165573-8935361@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/4020766:
+
+Hi!
+
+I'd be rather skeptical of having several rows of tabs. However, I do see the
+point. A related feature wish is this:
+ http://sourceforge.net/tracker/?func=detail&aid=2966886&group_id=50231&atid=459010
+. This should allow to manage a lot more document windows, and also it will
+make it possible to sort by window type.
+
+Regards
+Thomas
+
+
+
+From cjohns38 at gmail.com  Tue Dec 28 01:30:32 2010
+From: cjohns38 at gmail.com (Craig Johnson)
+Date: Mon, 27 Dec 2010 19:30:32 -0600
+Subject: [rkward-users] Variable Class and IRT
+Message-ID: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+
+New user to R and RkWard so I'm trying to work through things.  One of the
+things I'm trying to do is play around with the IRT features.  The problem
+I'm having is that I don't have the proper "class" to run the statistics.  I
+can change the variable type (integer, factor, string, etc) but I can't
+figure out how to change the class.  Any suggestions would be helpful.
+
+Thanks!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101227/d29521df/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Dec 29 16:06:37 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 29 Dec 2010 17:06:37 +0100
+Subject: [rkward-users] Variable Class and IRT
+In-Reply-To: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+References: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+Message-ID: <201012291706.41920.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 28 December 2010, Craig Johnson wrote:
+> New user to R and RkWard so I'm trying to work through things.  One of the
+> things I'm trying to do is play around with the IRT features.  The problem
+> I'm having is that I don't have the proper "class" to run the statistics. 
+> I can change the variable type (integer, factor, string, etc) but I can't
+> figure out how to change the class.  Any suggestions would be helpful.
+
+could you give a bit more detail, exactly which feature you are trying to use, 
+and exactly what the symptoms are?
+
+The model fitting features should accept objects of class "matrix" or 
+"data.frame". Chances are that you really do have a data.frame. (Note: A 
+data.frame is an entire "set" of data, not a single variable). Otherwise you 
+could try convering to one on the R Console:
+  some.name <- as.data.frame (x)
+
+The tests work on fitted models. Here you'd select an object as produced by one 
+of the model fitting dialogs (e.g. "estimates.rasch").
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20101229/8aa748bc/attachment.sig>
+

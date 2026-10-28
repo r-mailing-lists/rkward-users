@@ -1,0 +1,122 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-01",
+  "messages": [
+    {
+      "id": "msg-d0f50906f572",
+      "message_id": "<forum-165574-11007017@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-01-04T03:21:14Z",
+      "subject": "[rkward-users] [Help] rkward start and crash error",
+      "subject_clean": "[rkward-users] [Help] rkward start and crash error",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi,\nI am facing some serious issues with RKward 0.5.7z-dailybuilds. It is crashing\nas soon as it starts. I am worried that a backend R problem is some how associated,\nat least that is what the error message is indicating.\n\nHere is my system info:\nOS: Linux mint11 (Katya)\nKernel: Linux 2.6.38-12\nPlatform: X86_64\nCPU: Intel core i7-2620 M CPU 2.70 GHz\nRam: 5.8 GB\nI manage to take some screenshots:\n[URL=http://imageshack.us/photo/my-images/502/error2i.png/][IMG]http://img502.im\nageshack.us/img502/8653/error2i.th.png[/IMG][/URL]\n[URL=http://imageshack.us/photo/my-images/6/rkwardstartingerror.png/][IMG]http:/\n/img6.imageshack.us/img6/258/rkwardstartingerror.th.png[/IMG][/URL]\nHere are some pastebin results:\nhttp://pastebin.com/rmy7PtWc\nand\nhttp://pastebin.com/HJRAcLLn - although this one might not be too helpful.\nIf I try to reinstall rkward, I get dependency error:\n[URL=http://imageshack.us/photo/my-images/171/rkwardreinstallationiss.png/][IMG]\nhttp://img171.imageshack.us/img171/5997/rkwardreinstallationiss.th.png[/IMG][/UR\nL]\n\nOne other thing, exactly same problem is observed in a different system where\nUbuntu 10.04 64 bit installed. Unfortunately, I do not have the details error\ncode for that system now. However, both of them were running fine two months\nago. Any suggestions to resolve this issue is much appreciated.\nBest,\nSourav",
+      "body_snippet": "The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi,\nI am facing some serious issues with RKward 0.5.7z-dailybuilds. It ",
+      "thread_id": "thread-d0f50906f572",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-1e51d06c9c84",
+      "message_id": "<forum-165574-11008215@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-01-04T09:11:59Z",
+      "subject": "[rkward-users] [Help] RE: rkward start and crash error",
+      "subject_clean": "[rkward-users] [Help] RE: rkward start and crash error",
+      "in_reply_to": "<forum-165574-11007017@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi!\n\nYou are trying to use a version of RKWard compiled against R < 2.14.0 with R\n>= 2.14.0. This is not going to work, and essentially that is what that dependency\nerror is about.\n\nUse this PPA, instead, which provided binaries of RKWard built against R 2.14.x:\nhttps://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran .\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi!\n\nYou are trying to use a version of RKWard compiled against R < 2.14.0 ",
+      "thread_id": "thread-d0f50906f572",
+      "thread_depth": 1,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-d57ebf2807b0",
+      "message_id": "<forum-165574-11015824@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-01-05T20:51:07Z",
+      "subject": "[rkward-users] [Help] RE: rkward start and crash error",
+      "subject_clean": "[rkward-users] [Help] RE: rkward start and crash error",
+      "in_reply_to": "<forum-165574-11008215@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi Thomas,\n\n[quote]You are trying to use a version of RKWard compiled against R < 2.14.0\nwith R >= 2.14.0. This is not going to work, and essentially that is what that\ndependency error is about.[/quote]\n\nThanks for explaining.\n\n[quote]Use this PPA, instead, which provided binaries of RKWard built against\nR 2.14.x: https://launchpad.net/~rkward-devel/+archive/rkward-dailys-cran\n[/quote]\n\nResolved the problem without further issues.\n\nThanks.\nBest,\nSourav",
+      "body_snippet": "The following forum message was posted by chak8870 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4923509:\n\nHi Thomas,\n\n[quote]You are trying to use a version of RKWard compiled a",
+      "thread_id": "thread-d0f50906f572",
+      "thread_depth": 2,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-66db2e6c986b",
+      "message_id": "<201201111627.40705.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2012-01-11T15:27:36Z",
+      "subject": "[rkward-users] first public beta for RKWard on MacOSX",
+      "subject_clean": "[rkward-users] first public beta for RKWard on MacOSX",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "dear all,\n\nwe are proud to announce the first public beta test version or RKWard on \nMacOSX. if you have access to a Mac -- or know people who are anxious to use \nRKWard on their's --, please consider testing this release, and give us \nfeedback:\n o https://sourceforge.net/projects/rkwardextras/files/MacOSX\n\nyou should find all neccessary installation notes in the README.MacOSX file.\n\nknown issues:\n=============\n\n1. the bundle is still huge (2,7 GB unpacked on your harddrive), as it comes \nwith a full KDE base environment. hopefully we'll find ways to change that in \nfuture releases, but for the moment we're focussing on possible problems with \nRKWard itself.\n\n2. RKWard's ususal graphics device features are still missing. graphics \ndevices are therefore what you get from R directly, without the nice add-ons \nRKWard offers on GNU/linux and Windows.\n\napart from that, so far RKWard seems to work fine -- see for yourselves :-) \nyour comments and suggestions are most welcome!\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 190 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120111/1884f1d4/attachment.sig>",
+      "body_snippet": "dear all,\n\nwe are proud to announce the first public beta test version or RKWard on \nMacOSX. if you have access to a Mac -- or know people who are anxious to use \nRKWard on their's --, please consider",
+      "thread_id": "thread-66db2e6c986b",
+      "thread_depth": 0,
+      "month": "2012-01"
+    },
+    {
+      "id": "msg-4bd7ebbbeed5",
+      "message_id": "<forum-165574-11109370@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-01-31T08:51:31Z",
+      "subject": "[rkward-users] [Help] Use R console on a via SSH con. Remote PC",
+      "subject_clean": "[rkward-users] [Help] Use R console on a via SSH con. Remote PC",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by fischuu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:\n\nHello,\nI try to start with my local installation of RKWard an R console on a server,\nto which I am connected via SSh tunnel.\nIs there any way to make RKWard using this console instead of the locally installed\none? I couldn't find any related posts, even if I would assume that many people\nhave the same problem, that RKWard would be perfect to control R on a distant\nserver.\n\nThanks for any help, best wishes!",
+      "body_snippet": "The following forum message was posted by fischuu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:\n\nHello,\nI try to start with my local installation of RKWard an R console ",
+      "thread_id": "thread-4bd7ebbbeed5",
+      "thread_depth": 0,
+      "month": "2012-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d0f50906f572",
+      "subject": "[rkward-users] [Help] rkward start and crash error",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2012-01-04T03:21:14Z",
+      "last_reply": "2012-01-05T20:51:07Z",
+      "root_message_id": "msg-d0f50906f572"
+    },
+    {
+      "id": "thread-66db2e6c986b",
+      "subject": "[rkward-users] first public beta for RKWard on MacOSX",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2012-01-11T15:27:36Z",
+      "last_reply": "2012-01-11T15:27:36Z",
+      "root_message_id": "msg-66db2e6c986b"
+    },
+    {
+      "id": "thread-4bd7ebbbeed5",
+      "subject": "[rkward-users] [Help] Use R console on a via SSH con. Remote PC",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2012-01-31T08:51:31Z",
+      "last_reply": "2012-01-31T08:51:31Z",
+      "root_message_id": "msg-4bd7ebbbeed5"
+    }
+  ]
+}

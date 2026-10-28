@@ -1,0 +1,265 @@
+From ilan.tal at gmail.com  Mon Apr  1 12:43:05 2013
+From: ilan.tal at gmail.com (Ilan Tal)
+Date: Mon, 1 Apr 2013 15:43:05 +0300
+Subject: [rkward-users] newbie question
+Message-ID: <CAD=Y4BeyzkFV1s5PCUa5iJuio4xJE33=2f8WVUaRWirvSqWz6Q@mail.gmail.com>
+
+I am trying to get started and have made a work sheet containing country
+and mean life expectancy. (This data I downloaded.) If it were CSV I could
+import it but it has a space between the country string and the number.
+I saw there was something like val=table[,2] to pick the second value from
+the table but I don't know how to make that happen here.
+I can press the Code key and it generates code to do basic statistics, but
+I don't know how to modify the code to pick up the second value in my data.
+Obviously it can't do the basic statistics because of the country string I
+have fouling up the works.
+
+Maybe there is a method to split the data into 2 variables but I haven't
+figured out how to do such a thing.
+
+In short, how do I get it to do something useful for me?
+
+Thanks,
+Ilan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130401/c4cec2a2/attachment.html>
+
+From ilan.tal at gmail.com  Mon Apr  1 13:42:47 2013
+From: ilan.tal at gmail.com (Ilan Tal)
+Date: Mon, 1 Apr 2013 16:42:47 +0300
+Subject: [rkward-users] newbie
+Message-ID: <CAD=Y4Be+pGorEm9tJN9LojtQs11Ex2CJvWCCunD9keUPeJRweA@mail.gmail.com>
+
+Thanks. I found a method of importing data where I could specify that a
+space would separate values. Now the countries are in V1 and the life
+expectancy in V3. Now it will actually do something.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130401/d5dc59b0/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Apr  2 17:12:07 2013
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 2 Apr 2013 19:12:07 +0200
+Subject: [rkward-users] [rkward-announce] RKWard 0.6.1 is released
+Message-ID: <201304021912.11378.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+RKWard 0.6.1 is now available, officially. Read more on new features and fixes 
+on http://rkward.sf.net .
+
+An important note to users compiling from source and packagers: RKWard 0.6.0 
+will not work with R 3.0.0. RKWard 0.6.1 will work with R 3.0.0, but only, if 
+it was compiled against R 3.0.0. RKWard 0.6.1 compiled against R 2.15.x will 
+not work with R 3.0.0. Thus, if you update R *after* installing RKWard 0.6.1, 
+make sure to re-compile!
+
+Thanks to all who provided feedback, testing, translations, documentation, 
+donations, and code!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130402/8fdc4962/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Minimize network downtime and maximize team effectiveness.
+Reduce network management and security costs.Learn how to hire 
+the most talented Cisco Certified professionals. Visit the 
+Employer Resources Portal
+http://www.cisco.com/web/learning/employer_resources/index.html
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From naby88 at gmail.com  Mon Apr  8 03:58:09 2013
+From: naby88 at gmail.com (Rashedun Naby)
+Date: Mon, 8 Apr 2013 09:58:09 +0600
+Subject: [rkward-users] Connection closed unexpectedly. Last error was:
+	QLocalSocket: Remote closed
+Message-ID: <CANOsoevJjYGhThVbFixAmsLDKz+fWJcr=DRYkatOMCxMWimJsA@mail.gmail.com>
+
+When I first opened RKWard, it shows me this-
+
+
+"*Connection closed unexpectedly. Last error was: QLocalSocket: Remote
+closed*
+
+*The R backend will be shut down immediately. This means, you can not use
+any more functions that rely on it. I.e. you can do hardly anything at all,
+not even save the workspace (but if you're lucky, R already did that). What
+you can do, however, is save any open command-files, the output, or copy
+data out of open data editors. Quit RKWard after that.*
+*Since this should never happen, please write a mail to
+rkward-devel at lists.sourceforge.net, and tell us, what you were trying to
+do, when this happened. Sorry*!"
+
+
+
+
+*And RKWard showing me this every time I open RKWad*. Now what should I do?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130408/a16d5b0e/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Apr  8 08:30:03 2013
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 8 Apr 2013 10:30:03 +0200
+Subject: [rkward-users] Connection closed unexpectedly. Last error was:
+	QLocalSocket: Remote closed
+In-Reply-To: <CANOsoevJjYGhThVbFixAmsLDKz+fWJcr=DRYkatOMCxMWimJsA@mail.gmail.com>
+References: <CANOsoevJjYGhThVbFixAmsLDKz+fWJcr=DRYkatOMCxMWimJsA@mail.gmail.com>
+Message-ID: <201304081030.08829.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+On Monday 08 April 2013, Rashedun Naby wrote:
+> When I first opened RKWard, it shows me this-
+> 
+> 
+> "*Connection closed unexpectedly. Last error was: QLocalSocket: Remote
+> closed*
+
+[...]
+
+> *And RKWard showing me this every time I open RKWad*. Now what should I do?
+
+Is this on MacOS by any chance? We seem to be having some problems with the 
+RKWard 0.6.1 installation bundle on *some* Mac installations.
+
+If the answer is yes, please:
+
+1. Try the new bundle at
+  http://sourceforge.net/projects/rkwardextras/files/MacOSX/needs_CRAN_R/
+Instructions are available, there. Note that in this bundle, R is *not* 
+included, but rather you will install R from CRAN. Also, you will have to make 
+sure to pick the right one of the two files, depending on whether you 
+installed R 3.0.0 or R 2.15.x.
+
+2. If this does *not* work, please install the debug bundle at:
+  https://sourceforge.net/projects/rkwardextras/files/MacOSX/development
+(This one includes R.) After installation, open a terminal, and run RKWard 
+with
+  /Applications/RKWard/RKWard.app/Contents/MacOS/rkward --backend-debugger
+  '(opt/rkward/bin/valgrind --log-file=somefile.log'
+(all on one line). Send us "somefile.log", afterwards.
+
+Finally, if I guessed wrong, and this is not about RKWard 0.6.1 on Mac OS, 
+then please give us some details of your setup: OS, version of R, version of 
+RKWard, method of installation.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130408/ddb089e3/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Mon Apr  8 08:39:41 2013
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 08 Apr 2013 10:39:41 +0200
+Subject: [rkward-users] Connection closed unexpectedly. Last error was:
+	QLocalSocket: Remote closed
+In-Reply-To: <CANOsoevJjYGhThVbFixAmsLDKz+fWJcr=DRYkatOMCxMWimJsA@mail.gmail.com>
+References: <CANOsoevJjYGhThVbFixAmsLDKz+fWJcr=DRYkatOMCxMWimJsA@mail.gmail.com>
+Message-ID: <1664254.a7VtR2m863@yrla>
+
+hi,
+
+Am Montag, 8. April 2013, 09:58:09 schrieb Rashedun Naby:
+> And RKWard showing me this every time I open RKWad*. Now what should I do?
+
+we need more information, like:
+ - GNU/linux, windows or OS X?
+ - version of R
+ - version of RKWard
+ - how did you install RKWard (from source, bundle package, distribution...)
+
+just a hunch: did you try to install RKWard compiled for R 2.15 on a machine 
+with R 3.0? that will not work.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130408/26c86646/attachment.sig>
+
+From dooshra at users.sf.net  Fri Apr 26 14:09:30 2013
+From: dooshra at users.sf.net (Hanan Sela)
+Date: Fri, 26 Apr 2013 14:09:30 +0000
+Subject: [rkward-users] [rkward:discussion] RKWard does not save recovery
+	files
+Message-ID: </p/rkward/discussion/165574/51a0be01928806c5089a22584ce9d33df1ebf60a.discussion@rkward.p.sourceforge.net>
+
+Hello
+RKWard used to save recovery files. For some reason it does not do this any more on my machine. Any suggestions how to restore this function?
+Thank you
+
+
+---
+[RKWard does not save recovery files](https://sourceforge.net/p/rkward/discussion/165574/thread/8a662556/?limit=25#e332)
+
+
+---
+
+Sent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>
+
+To unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130426/eec7e985/attachment.html>
+
+From tfry at users.sf.net  Fri Apr 26 16:58:40 2013
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Fri, 26 Apr 2013 16:58:40 +0000
+Subject: [rkward-users] [rkward:discussion] RKWard does not save recovery
+	files
+Message-ID: </p/rkward/discussion/165574/274f582e68869a8fd8b918c00ec93d97aa33ebff.discussion@rkward.p.sourceforge.net>
+
+Hi,
+
+depends on what exactly you mean by recovery files, as there are several:
+
+1. "Emergency saves" of the R workspace, in case of a crash. These are always enabled, but whether or not an emergency save can be done depends on the nature of the crash. It works most of the time, but can't be guaranteed to work in every case.
+2. Automatic saves of R script files. Settings->Configure RKWard->Script editor->Autosaves.
+3. Meanwhile the katepart has gained support for automatic saving of recovery files. The advantage over 2) is that these should be recovered, automatically, the next time you open the file. Frankly, I don't know where that would be configured, though.
+
+Did you mean one of these or something different?
+
+Regards
+Thomas
+
+---
+[RKWard does not save recovery files](https://sourceforge.net/p/rkward/discussion/165574/thread/8a662556/?limit=25#102f)
+
+
+---
+
+Sent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>
+
+To unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130426/7355ff92/attachment.html>
+

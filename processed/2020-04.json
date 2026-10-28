@@ -1,0 +1,119 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2020-04",
+  "messages": [
+    {
+      "id": "msg-3f92e3aac3be",
+      "message_id": "<fc751cf3-0fd2-1ab6-6781-1b66c7198aee@vcn.bc.ca>",
+      "from_name": "Magnus Bein",
+      "from_email_hash": "2b220be004f74a8f54d05f632b72b6fc6416ed96117b65111898ac1a8109b392",
+      "date": "2020-04-10T16:44:09Z",
+      "subject": "Customizing colours",
+      "subject_clean": "Customizing colours",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all, I am wondering if it is possible to change the colour scheme of \nrkward IDE and how I may be able to do that. Thanks, Magnus",
+      "body_snippet": "Hi all, I am wondering if it is possible to change the colour scheme of \nrkward IDE and how I may be able to do that. Thanks, Magnus",
+      "thread_id": "thread-3f92e3aac3be",
+      "thread_depth": 0,
+      "month": "2020-04"
+    },
+    {
+      "id": "msg-012ae2a6fcdc",
+      "message_id": "<3c090be6-6567-ba6e-aa93-b458740db86e@vcn.bc.ca>",
+      "from_name": "Magnus Bein",
+      "from_email_hash": "2b220be004f74a8f54d05f632b72b6fc6416ed96117b65111898ac1a8109b392",
+      "date": "2020-04-10T16:46:51Z",
+      "subject": "Customizing colours",
+      "subject_clean": "Customizing colours",
+      "in_reply_to": "<fc751cf3-0fd2-1ab6-6781-1b66c7198aee@vcn.bc.ca>",
+      "references": [
+        "<fc751cf3-0fd2-1ab6-6781-1b66c7198aee@vcn.bc.ca>"
+      ],
+      "body_plain": "Nevermind, I found the \"schema\" option. That is sufficient. My apologies \nfor the unecessary request. M\n\nOn 2020-04-10 12:44 p.m., Magnus Bein wrote:\n> Hi all, I am wondering if it is possible to change the colour scheme of \n> rkward IDE and how I may be able to do that. Thanks, Magnus",
+      "body_snippet": "Nevermind, I found the \"schema\" option. That is sufficient. My apologies \nfor the unecessary request. M\n\nOn 2020-04-10 12:44 p.m., Magnus Bein wrote:\n> Hi all, I am wondering if it is possible to chan",
+      "thread_id": "thread-3f92e3aac3be",
+      "thread_depth": 1,
+      "month": "2020-04"
+    },
+    {
+      "id": "msg-f898d8f1438a",
+      "message_id": "<1634691.HNc88oq60N@tilia>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2020-04-10T16:50:23Z",
+      "subject": "Customizing colours",
+      "subject_clean": "Customizing colours",
+      "in_reply_to": "<fc751cf3-0fd2-1ab6-6781-1b66c7198aee@vcn.bc.ca>",
+      "references": [
+        "<fc751cf3-0fd2-1ab6-6781-1b66c7198aee@vcn.bc.ca>"
+      ],
+      "body_plain": "Dne pátek 10. dubna 2020 18:44:09 CEST, Magnus Bein napsal(a):\n> Hi all, I am wondering if it is possible to change the colour scheme\n> of rkward IDE and how I may be able to do that. Thanks, Magnus\n\nDo You mean script editor? If so, open any script and go to menu Settings and \nsearch Editor Settings. If You mean command line theme, AFAIK it takes \nsettings from Konsole, so open it and set profile there. If You mean app \ndesign, go to KDE System Settings, and set icon theme, window style, etc. \nthere.\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200410/368cd29a/attachment.sig>",
+      "body_snippet": "Dne pátek 10. dubna 2020 18:44:09 CEST, Magnus Bein napsal(a):\n> Hi all, I am wondering if it is possible to change the colour scheme\n> of rkward IDE and how I may be able to do that. Thanks, Magnus\n\n",
+      "thread_id": "thread-3f92e3aac3be",
+      "thread_depth": 1,
+      "month": "2020-04"
+    },
+    {
+      "id": "msg-b6ac5eb6eb9f",
+      "message_id": "<5E979089.8060300@gmx.de>",
+      "from_name": "Marcus Glöder",
+      "from_email_hash": "ab4972aa4a283eaf55ace93b63b50b74c84200f091c06836ddc53c8450e96cf6",
+      "date": "2020-04-15T22:54:01Z",
+      "subject": "RKWard 0.7.1 for Windows 32 bit",
+      "subject_clean": "RKWard 0.7.1 for Windows 32 bit",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all together,\n\nIs there a 32-bit version of RKWard 0.7.1 for Windows? Unfortunately,\nRKWard 0.6.2 requires a full installation of KDE for Windows.\n\nThanks and best regards\nMarcus Glöder\n\n--\nPM:  m.gloeder at gmx.de",
+      "body_snippet": "Hello all together,\n\nIs there a 32-bit version of RKWard 0.7.1 for Windows? Unfortunately,\nRKWard 0.6.2 requires a full installation of KDE for Windows.\n\nThanks and best regards\nMarcus Glöder\n\n--\nPM: ",
+      "thread_id": "thread-b6ac5eb6eb9f",
+      "thread_depth": 0,
+      "month": "2020-04"
+    },
+    {
+      "id": "msg-c7cc639c956e",
+      "message_id": "<20200417215414.6eda566c@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2020-04-17T19:54:14Z",
+      "subject": "RKWard 0.7.1 for Windows 32 bit",
+      "subject_clean": "RKWard 0.7.1 for Windows 32 bit",
+      "in_reply_to": "<5E979089.8060300@gmx.de>",
+      "references": [
+        "<5E979089.8060300@gmx.de>"
+      ],
+      "body_plain": "Hi!\n\nOn Thu, 16 Apr 2020 00:54:01 +0200\nMarcus Glöder <m.gloeder at gmx.de> wrote:\n> Hello all together,\n> \n> Is there a 32-bit version of RKWard 0.7.1 for Windows? Unfortunately,\n> RKWard 0.6.2 requires a full installation of KDE for Windows.\n\nSorry to say, but no, there isn't. While RKWard *could* be compiled for\n32-bit, gathering all the dependencies is no mean feat, and doing so\nfor several architectures multiplies the problem. For this reason, a\nfew years ago, the maintainers of the KDE build servers have decided\nto drop support for 32bit on Windows.\n\n*In theory* it will still be possible to compile your own 32bit version\nof RKWard. The general procedure is detailed, here:\n\nhttps://community.kde.org/Guidelines_and_HOWTOs/Build_from_source/Windows\n\nAs the final step you'd run \"craft rkward\", and keep your fingers\ncrossed. To be honest, though, I'd be surprised, if it works.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20200417/40df48f7/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Thu, 16 Apr 2020 00:54:01 +0200\nMarcus Glöder <m.gloeder at gmx.de> wrote:\n> Hello all together,\n> \n> Is there a 32-bit version of RKWard 0.7.1 for Windows? Unfortunately,\n> RKWard 0.6.2 requi",
+      "thread_id": "thread-b6ac5eb6eb9f",
+      "thread_depth": 1,
+      "month": "2020-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3f92e3aac3be",
+      "subject": "Customizing colours",
+      "message_count": 3,
+      "participants": [
+        "Magnus Bein",
+        "Vojtěch Zeisek"
+      ],
+      "started": "2020-04-10T16:44:09Z",
+      "last_reply": "2020-04-10T16:50:23Z",
+      "root_message_id": "msg-3f92e3aac3be"
+    },
+    {
+      "id": "thread-b6ac5eb6eb9f",
+      "subject": "RKWard 0.7.1 for Windows 32 bit",
+      "message_count": 2,
+      "participants": [
+        "Marcus Glöder",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2020-04-15T22:54:01Z",
+      "last_reply": "2020-04-17T19:54:14Z",
+      "root_message_id": "msg-b6ac5eb6eb9f"
+    }
+  ]
+}

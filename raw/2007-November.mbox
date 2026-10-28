@@ -1,0 +1,901 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Nov  2 12:37:23 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 2 Nov 2007 13:37:23 +0100
+Subject: [rkward-users] Preview of RKWard 0.4.8a
+Message-ID: <200711021337.27251.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+if you are subscribed to rkward-devel, you will have noted, that the current 
+focus of development is mostly on the KDE4 port of rkward. Still some things 
+have happened on the KDE3 side of things as well. Most importantly a number 
+of bugs have been found and fixed in RKWard 0.4.8. Therefore, I'd like to 
+create a 0.4.8a bugfix release shortly. No non-trivial new features are 
+included in this release, only bug-fixes.
+
+------- Testing -------
+
+Most changes in this bugfix release are rather simple, and should not 
+introduce any new regressions, however, at least one fix is fairly 
+system-specific, and should get some testing on as many different systems as 
+possible. Therefore, I would like to ask you to download and test 
+http://rkward.sourceforge.net/temp/rkward-0.4.8a.pre1.tar.gz .
+
+Of course there can never be too much testing, but for this particular 
+release, even very basic testing would be highly welcome on many different 
+systems. I.e.
+- Compile
+- Start and do some very basic things
+If you encounter any problems, please post them to the list. If you don't 
+encounter any problems, please post a short message to the list as well, with 
+info on:
+- your distribution
+- your processor architecture
+- your version of R installed
+
+-------- Release timeline ---------
+
+0.4.8a will be released between Wednesday the 7th and Sunday the 11th, 
+depending on how much time I have available, and the amount of testing 
+feedback we get. There will not be a second preview release, unless serious 
+problems show up.
+
+-------- Further development --------
+
+Versions 0.4.9 (KDE3) and 0.5.0 (KDE4) have not been scheduled, yet. I think 
+they will likely both be released some time in December this year, however.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071102/5157c1e4/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Nov 11 18:17:46 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 11 Nov 2007 19:17:46 +0100
+Subject: [rkward-users] RKWard 0.4.8a
+Message-ID: <200711111917.50446.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+I've just packaged and uploaded RKWard 0.4.8a. This is a bugfix release, only, 
+which addresses some problems discovered since the release of 0.4.8. For a 
+download link and some more bits of information, visit 
+http://rkward.sourceforge.net .
+
+Thanks to all testers and contributors!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071111/9c4100d4/attachment.sig>
+
+From noreply at sourceforge.net  Mon Nov 12 06:55:13 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 11 Nov 2007 22:55:13 -0800
+Subject: [rkward-users] [rkward - Help] disable autocomplete
+Message-ID: <4618075.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4618075
+By: yjhuoh
+
+i'm using rkward 0.4.7 in mandriva 2008. is there any freaking way to disable
+the autocomplete in the script editor? it's rather annoying. i couldn't find
+anything for the life of me. not online and not after searching through dialog
+or dialog. anybody have a fix or help of some sort?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Nov 12 12:49:47 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 12 Nov 2007 04:49:47 -0800
+Subject: [rkward-users] [rkward - Help] RE: disable autocomplete
+In-Reply-To: <4618075.165574@sourceforge.net>
+Message-ID: <4618439.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4618439
+By: tfry
+
+Hi,
+
+unfortunately, no, there is no such option. It was already added to the KDE
+4 port (version 0.5.0; under development), but is not available in any released
+version. If it's absolutely intolerable, you can get the sources, go to the
+file rkward/windows/rkcommandeditorwindow.cpp, find the function "tryCompletionProxy
+()" (around line 240, depending on the version you have), and add "//" in front
+of the single line inside that function ("completion_timer->start..."). Then
+compile and install. Code completions will be disabled in the script editor,
+entirely.
+
+But short of that, the only other option is to wait for a released version where
+this is configurable.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Nov 14 09:52:50 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 14 Nov 2007 01:52:50 -0800
+Subject: [rkward-users] [rkward - Help] 0.4.9pre1 dialog problems
+Message-ID: <4622607.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4622607
+By: fsando
+
+Ubuntu 7.10, 
+rkward 0.4.9pre1, 
+KDE 3.5.8
+
+I'm experiencing some apparent problems with dialogs, I don't know if it has
+to do with Ubuntu or if it perhaps is related to the compilation process (ie.
+whether I may have wrong libraries installed)
+The specific situation:
+I want to install new packages via the 'settings' menu and it goes as follows:
+'Settings' > 'Configure Packages'
+Select 'Install' tab
+'Install packages to' points to '/usr/local/lib/R/site-library' which needs
+root to access.
+Click the 'Fetch list' button
+This triggers two dialog boxes:the Select CRAN mirror dialog and one with the
+title 'Fetching list' After a moment a text in red says: 'There have been errors
+and / or warnings! See below for a transcript'.
+Two problems here:
+1) This dialog is so small that buttons are not visible - you have to resize
+it to get to the buttons.
+2) The error/warning (colored red) seems to be 'Loading Tcl/Tk interface ...
+done' - is this an error/warning?
+This also occurred under ubuntu 7.04
+
+I select a mirror, the package list is downloaded, I select a package to install
+and is greeted with the dialog 'Selected library location is not writable -
+RKWard'
+I click the button 'Become root'
+A dialog 'Installing packages' appears but no dialog to enter root password
+shows - this did work under ubuntu 7.04..
+
+I sort of solved this by installing to a folder that doesn't need root.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Nov 14 11:23:30 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 14 Nov 2007 03:23:30 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622607.165574@sourceforge.net>
+Message-ID: <4622751.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4622751
+By: fsando
+
+UPDATE
+On a hunch I installed kdesudo. Now I get this error in the message box: 
+
+kdesu: Unknown option '-t'.
+kdesu: Use --help to get a list of available command line options.
+
+kdesu --help 
+does not mention a '-t' options
+
+Here it is mentioned but ...
+http://docs.kde.org/stable/en/kdebase/kdesu/using-kdesu.html 
+
+'-t' - Enable terminal output. This disables password keeping. This is largely
+for debugging purposes; if you want to run a console mode app, use the standard
+su instead.
+
+
+>From the debug output when you run:
+
+rkward --debug-level 5
+
+I guess the problem lies in 
+rkloadlibsdialog.cpp line 165 and 201:
+if (as_root) *proc << "kdesu" << "-t";
+
+I would like to change this but don't know how. 
+I found one other unconfirmed and unanswered bug report on this: 
+
+http://www.nabble.com/-Bug-151149--New:-the-%22-t%22-option-is-not-recognised-in
+-the-kdesu-command.-t4666447.html
+
+Hope this helps
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Nov 14 16:26:03 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 14 Nov 2007 08:26:03 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622607.165574@sourceforge.net>
+Message-ID: <4623202.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4623202
+By: tfry
+
+Hi,
+
+thanks for your report. Regarding your points:
+1) This should now be improved - slightly - in the current SVN sources. The
+dialog size is still not really optimal, but at least it should be large enough
+to show the buttons.
+2) Yes, this is rather unfortunate. The problem is that at this particular point,
+the only way to differentiate between "normal" output and errors/warnings is
+to check, whether the output arrived on stdout or stderr. For some reason, the
+"Loading Tcl/Tk interface" message arrives on stderr. It's certainly rather
+annoying, but I don't have an idea on how to fix this, ATM.
+
+About your follow-up:
+Hm. We do need the -t option in kdesu. Otherwise we do not see any output at
+all, so there is no way to watch what's happening. This works fine on debian,
+and I don't understand, why it appears to be disabled on ubuntu. In KDE4 we
+might be able to use a more direct mechanism (though I haven't figured out how
+to use this, yet), but right now I have no idea on how to work around this limitation
+(well, other than to install to a directory that does not need root
+permissions).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Nov 15 08:08:35 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 15 Nov 2007 00:08:35 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622751.165574@sourceforge.net>
+Message-ID: <4624633.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4624633
+By: johanvdw
+
+About this kdesu issue: kdesu is just a link to kdesudo in kubuntu, because
+ubuntu tries not to use the superuser account but uses sudo for everything.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Nov 15 08:19:14 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 15 Nov 2007 00:19:14 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622607.165574@sourceforge.net>
+Message-ID: <4624648.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4624648
+By: fsando
+
+Thanks for your answer.
+I have researched a little further. As far as I can tell kdesu was replaced
+in ubuntu 7.10 with a command called kdesudo. It appears the '-t' option was
+lost in the process, perhaps the good people at ubuntu/canonical disregarded
+it because it's a debug option? After all, who needs debugging if your work
+is perfect? ;)
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Nov 15 08:23:21 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 15 Nov 2007 00:23:21 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622607.165574@sourceforge.net>
+Message-ID: <4624658.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4624658
+By: fsando
+
+@Johan Van de Wauw
+That's true but it still defeats rkward as it doesn't recognize the '-t' option
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Nov 16 08:55:17 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 16 Nov 2007 00:55:17 -0800
+Subject: [rkward-users] [rkward - Help] solved !! -- labels for crosstabs (N
+	to 1) pl
+In-Reply-To: <4558578.165574@sourceforge.net>
+Message-ID: <4626728.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4626728
+By: edoviak
+
+Hi Thomas and RKWard Developers,
+
+I found a simple way to use R code to create the labels for any number of independent
+variables and any number of values. I sent the R script and the test dataset
+to the rkward-devel mailing list. Hopefully, it will pass through the spam filter.
+Let me know if it does not.
+
+Thanks again!
+- Eric
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Nov 16 17:24:57 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 16 Nov 2007 09:24:57 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4392952.165574@sourceforge.net>
+Message-ID: <4627472.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4627472
+By: earlycj5
+
+Ah, thanks for the update, I'd forgotten about this as well.
+
+I'll see what I can do.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Nov 16 17:49:16 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 16 Nov 2007 09:49:16 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4392952.165574@sourceforge.net>
+Message-ID: <4627512.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4627512
+By: earlycj5
+
+No dice.
+
+Going to try to move this machine to openSUSE, both the user and I prefer that
+for several reasons to RHEL4.  Rkward is in the scientific repository there
+and updated quickly when new versions come out.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Nov 17 21:12:02 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 17 Nov 2007 13:12:02 -0800
+Subject: [rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4
+	Fails
+In-Reply-To: <4627512.165574@sourceforge.net>
+Message-ID: <4629171.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4629171
+By: kapatp
+
+> Going to try to move this machine to openSUSE
+
+ahhh... i am appalled at openSUSE - anything below download.opensuse.com/repositories
+seems to be either i586 or x86_64 arch only - where are the ppc pakcages?
+
+i have this iBookG4 for my 'mobile' need and've never got a distribution with
+the necessary hardwares working.... one of these
+wireless/close-lid/sound/projector-display is always disfunctional. i was happy
+to see opensuse almost work - but alas, no ppc packages in the repositories....
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Nov 18 13:57:19 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 18 Nov 2007 05:57:19 -0800
+Subject: [rkward-users] [rkward - Help] RE: solved !! -- labels for
+	crosstabs (N to 1) pl
+In-Reply-To: <4626728.165574@sourceforge.net>
+Message-ID: <4629726.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4629726
+By: tfry
+
+Hi Eric,
+
+that's great news. I'm looking forward to your script. Unfortunately, if you
+already sent it, it seems to have gone lost in some filter, indeed. Could you
+resend?
+
+Thanks!
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Nov 18 23:49:53 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 18 Nov 2007 15:49:53 -0800
+Subject: [rkward-users] [rkward - Help] RE: trouble with crosstabs and
+	regression out
+In-Reply-To: <4558578.165574@sourceforge.net>
+Message-ID: <4630286.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4630286
+By: edoviak
+
+Here's the message I sent to rkward-devel [at] lists [dot] sourceforge [dot]
+net
+
+Is that the correct address? I'll also try resending it. Apologies in advance
+if you get it a few times.
+
+- Eric
+
+-------------------
+
+Hi Thomas and RKWard Developers,
+
+Last month, I promised to create labels for the output of the  crosstabs (N
+to 1) plugin. Apologies for being a bum.
+
+On a positive note, I found a simple way to use R code to create the labels.
+Below this message is the text of the R script and the simple comma-separated
+value dataset that I used to test the script.
+
+Since a month has passed ... Here's a summary of the bug that this script fixes:
+In the current version of RKWard (0.4.8a), the output table of the crosstabs
+(N to 1) plugin is very confusing. For example, create a fictional dataset with
+two dummy variables: RKWard_user (1 if uses RKWard, 0 otherwise) and female
+(1 if female, 0 otherwise). Then run the N to 1 crosstab and look at the output.
+The only labels on the rows and columns are 0 and 1.
+
+The script below adds labels to the rows and columns of the output table. It
+can handle any number of independent variables and any number of values.
+
+I hope this small contribution helps. Let me know if you have any questions.
+
+Thanks again for producing a great product!
+- Eric
+
+
+
+local({
+## Prepare
+## Compute
+x <- my.csv.data[["white"]]
+yvars <- list (substitute (my.csv.data[["gray"]]), substitute
+(my.csv.data[["black"]]))
+results <- list()
+descriptions <- list ()
+
+# calculate crosstabs
+for (i in 1:length (yvars)) {
+   yvar <- eval (yvars[[i]], envir=globalenv ())
+   results[[i]] <- table(x, yvar)
+
+   descriptions[[i]] <- list ('Dependent'=rk.get.description
+(my.csv.data[["white"]]), 'Independent'=rk.get.description (yvars[[i]],
+is.substitute=TRUE))
+}
+
+## make row and column names
+nu_dep     <- c( rep( NA , times=length( results ) ) )
+nu_indep   <- c( rep( NA , times=length( results ) ) )
+
+dep_dim_names    <- c( rep( NA , times=length( results ) ) )
+indep_dim_names  <- c( rep( NA , times=length( results ) ) )
+
+
+for (i in 1:length( results ) ) {
+       nu_dep[i]     <- length( row.names(   results[[i]]  ) )
+       nu_indep[i]   <- length( row.names( t(results[[i]]) ) )
+
+       dep_name   <- c( rep( NA , times = nu_dep[i]   ) )
+       indep_name <- c( rep( NA , times = nu_indep[i] ) )
+
+       for (j in 1:nu_dep[i]) {
+         dep_name[j]   <- as.character( paste( descriptions[[i]][['Dependent']],
+"=", row.names( results[[i]] )[j] , ": " ) )         }
+
+       for (j in 1:nu_indep[i]) {
+         indep_name[j]   <- as.character( paste(
+descriptions[[i]][['Independent']],"=", row.names( t( results[[i]] ) )[j] ,
+": " ) )
+       }
+
+       dep_dim_names[i]   <- list(dep_name)
+       indep_dim_names[i] <- list(indep_name)
+}
+
+## Print result
+for (i in 1:length (results)) {
+    rk.header ("Crosstabs (n to 1)", parameters=list ("Dependent",
+descriptions[[i]][['Dependent']], "Independent",
+descriptions[[i]][['Independent']]))
+   rk.print (as.data.frame( matrix( results[[i]] , nrow=nu_dep[i] , ncol=nu_indep[i]
+,
+              dimnames= list( dep_dim_names[i][[1]] , indep_dim_names[i][[1]]
+) ) ) )
+ }
+})
+
+
+black,white,gray
+2,3,1
+0,3,3
+1,1,1
+0,2,2
+1,2,4
+0,0,1
+1,0,2
+0,0,1
+2,0,1
+0,0,4
+1,1,1
+0,1,2
+2,1,1
+0,1,2
+1,1,1
+0,0,2
+2,1,0
+0,0,0
+1,0,0
+2,0,3
+1,1,0
+0,1,0
+1,1,3
+0,1,0
+1,1,0
+1,0,0
+1,1,0
+1,0,3
+1,0,4
+0,0,0
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Nov 19 22:07:01 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 19 Nov 2007 14:07:01 -0800
+Subject: [rkward-users] [rkward - Help] RE: trouble with crosstabs and
+	regression out
+In-Reply-To: <4630286.165574@sourceforge.net>
+Message-ID: <4632504.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4632504
+By: tfry
+
+Hi,
+
+> Here's the message I sent to rkward-devel [at] lists [dot] sourceforge [dot]
+net
+> 
+> Is that the correct address? I'll also try resending it. Apologies in advance
+if you get it a few times.
+
+that's strange. This is the correct address, indeed, but once again it seems
+to have been lost, somewhere (and I have no idea, where. Did you receive any
+"your message is being held" notifications or the like?). I did receive the
+mail you sent to my @users.sourceforge.net-address, directly.
+
+> The script below adds labels to the rows and columns of the output table.
+It can handle
+> any number of independent variables and any number of values. 
+> 
+> I hope this small contribution helps. Let me know if you have any questions. 
+
+It really did help. In the end I decided to approach the problem slightly
+differently, by moving the logic (in somewhat modified form) into rk.results()
+itself (I did so, as I felt, printing 2d tables might be needed at other places
+as well, in the future). But having an existing working solution to look at
+certainly helped in doing that. So thanks a lot.
+
+If you're following SVN
+(http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN), you can have
+a look already (you'll need to make install, again, to install the new rk.results()
+function), and test whether it works in all cases you have tested your solution
+in.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Nov 26 22:53:11 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Nov 2007 14:53:11 -0800
+Subject: [rkward-users] [rkward - Help] how to separate the R console?
+Message-ID: <4643984.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4643984
+By: jhernand15
+
+With the last update of Rkward to 0.48a version, the program lost the great
+feature of separate de R-console from the main Rkward window. In previous versions
+(0.44) there was an arrow in the top right side of the Rkward R-console. Clicking
+on this arrow produce the R-console detachment from the main program. Does anybody
+know the way to fix this problem?. For me is very important to separate this
+window from Rkward main program. I use R to teach statistic to my student and
+this feature is essential for me.
+Thank's in advance
+Juan Hernandez
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Nov 26 23:02:46 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Nov 2007 15:02:46 -0800
+Subject: [rkward-users] [rkward - Help] RE: how to separate the R console?
+In-Reply-To: <4643984.165574@sourceforge.net>
+Message-ID: <4643994.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4643994
+By: tfry
+
+Hi,
+
+this is still possible, but slightly different than before: Just click on the
+R Console, then select Windows->Detach from the menu. You can reattach using
+Window->Attach to main window. This works for all (tool or normal) windows,
+including X11 windows (which are detached by default).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Nov 26 23:08:12 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Nov 2007 15:08:12 -0800
+Subject: [rkward-users] [rkward - Help] RE: how to separate the R console?
+In-Reply-To: <4643984.165574@sourceforge.net>
+Message-ID: <4644471.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4644471
+By: jhernand15
+
+Thank you very much and congratulations to the people of Rkward for this excellent
+work. It is a luck the existence of so generous people.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Nov 27 03:25:33 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Nov 2007 19:25:33 -0800
+Subject: [rkward-users] [rkward - Open Discussion] php backend
+Message-ID: <4644722.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4644722
+By: michaelgfox
+
+I am a Mac user who is totally new to Linux.  I have been trying it out in a
+virtualized environment and I have Ubuntu 7.04 and Fedora 2007 running nicely.
+I successfully installed rkward on both, but I can't get it to work.  I get
+the data menu all right, but when I try to input data and then run a function
+(e.g., regression), I get a php backend error message.  When I go to rkward
+settings/PHP backend, it asks me for the location of the PHP binary, which isn't
+the default it supplies.  I tried searching for something that resembled the
+default and that the setting would take, and in Fedora the closest I could find
+was "/usr/lib/php/modules/phpcups.so".  So I put that in.  That got me farther,
+to a "Fitting Linear Models" window, but I still got no output and got an error
+message, "The PHP backend died unexpectedly. The current output buffer is shown
+below:".  I would appreciate some help to get me through this - how can I locate
+whatever the program expects for PHP binary?  Or is there something I have to
+run to create it?
+
+Thanks in advance.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Tue Nov 27 07:24:18 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 Nov 2007 23:24:18 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: php backend
+In-Reply-To: <4644722.165573@sourceforge.net>
+Message-ID: <4644936.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4644936
+By: johanvdw
+
+For ubuntu, you need a package called "php5-cli" (sudo apt-get install php5-cli).
+In that case you can just use /usr/bin/php as the executable.
+
+I don't use fedora myself, but from googling it seems the package name there
+is something similar to "php-cli-5.*"
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Tue Nov 27 12:21:11 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 27 Nov 2007 04:21:11 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: php backend
+In-Reply-To: <4644936.165573@sourceforge.net>
+Message-ID: <4645337.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4645337
+By: michaelgfox
+
+Thanks for your reply.  Getting the php5-cli seems to have moved the process
+forward a bit on my Ubuntu installation.  (Haven't tried Fedora yet.)  Now I
+think I am missing something related to kde.  I wasn't sure how to get and install
+the KDE libraries (I'm using Gnome on both Ubuntu and Fedora), so I used the
+add/remove application and asked it to install anything that looked related
+to KDE libraries.  But now when I start up rkward, I get an error message, "Could
+not read network connection list /home/username/DCOPserver_username-desktop_0.
+Please check that "dcopter" program is running." [Note, I think it was dcopter
+program; I may have written it down wrong.]  Then it continues and I do get
+rkward started, but I get the following message: "Will not save configuration.
+Configuration file "/home/username/.kde/share/config/rkwardc" is not writable"
+and also"/home/username/.kde/share/config/globals" is not writable".  What do
+I do to overcome these problems?
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Thu Nov 29 11:35:47 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 29 Nov 2007 03:35:47 -0800
+Subject: [rkward-users] [rkward - Help] RE: disable autocomplete
+In-Reply-To: <4618075.165574@sourceforge.net>
+Message-ID: <4649601.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4649601
+By: yjhuoh
+
+sorry to hear that. i suppose i can deal with it for now. thanks for the timely
+response and keep up the good work. i'm a big fan!
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2016-01",
+  "messages": [
+    {
+      "id": "msg-5613ea31c648",
+      "message_id": "<20160120161634.5afd7e5a@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2016-01-20T15:16:34Z",
+      "subject": "RKWard ticket tracker migration",
+      "subject_clean": "RKWard ticket tracker migration",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nAs most of you will be aware, RKWard has moved from our former hosting\non SF.net to KDE.org. The last bit that is still in the old location is\nexisting bugs and feature-request tickets.\n\nWell, not for much longer, I intend to migrate those, soon. If you have\nsubmitted or commented on reports in our old tracker, _and_ you\nalso have an account on http://bugs.kde.org , I would like to ask you\nto send me your SF account name _and_ bugs.kde.org account name in\nprivate mail. This way your posts will be associated with your account\nafter the import.\n\nWithout this, your reports and posts will still be imported, but you\nwill not receive automatic notifications of replies / status changes.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 819 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160120/d7d6f78e/attachment.sig>",
+      "body_snippet": "Hi!\n\nAs most of you will be aware, RKWard has moved from our former hosting\non SF.net to KDE.org. The last bit that is still in the old location is\nexisting bugs and feature-request tickets.\n\nWell, no",
+      "thread_id": "thread-5613ea31c648",
+      "thread_depth": 0,
+      "month": "2016-01"
+    },
+    {
+      "id": "msg-d716911323e7",
+      "message_id": "<3007199.33xcQV6MgL@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-01-24T11:32:20Z",
+      "subject": "RKWard merch?",
+      "subject_clean": "RKWard merch?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nthere's a few conferences and presentations ahead of me, e.g., the next köln R \nuser group meeting:\n https://twitter.com/RKWardNet/status/690969964342333441\n\ni've been wanting this for a long time, and am now about to order me a shirt \nwith the RKWard logo. so i'm just asking around, is anyone else here \ninterested in such a shirt to show your affection for your favourite piece of \nsoftware? ;-)\n\njust drop me note, and i can fill you in with the details. prices should be \n<<20€ plus shipping, depending on the number of pieces we want.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 836 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160124/d12a456b/attachment.sig>",
+      "body_snippet": "hi,\n\nthere's a few conferences and presentations ahead of me, e.g., the next köln R \nuser group meeting:\n https://twitter.com/RKWardNet/status/690969964342333441\n\ni've been wanting this for a long tim",
+      "thread_id": "thread-d716911323e7",
+      "thread_depth": 0,
+      "month": "2016-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5613ea31c648",
+      "subject": "RKWard ticket tracker migration",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2016-01-20T15:16:34Z",
+      "last_reply": "2016-01-20T15:16:34Z",
+      "root_message_id": "msg-5613ea31c648"
+    },
+    {
+      "id": "thread-d716911323e7",
+      "subject": "RKWard merch?",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2016-01-24T11:32:20Z",
+      "last_reply": "2016-01-24T11:32:20Z",
+      "root_message_id": "msg-d716911323e7"
+    }
+  ]
+}

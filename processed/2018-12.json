@@ -1,0 +1,38 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2018-12",
+  "messages": [
+    {
+      "id": "msg-713b401dd476",
+      "message_id": "</p/rkward/discussion/165573/ebc71738019a1cb8dec8d9e2acced2e43d0494f7.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Ismail Lachheb via RKWard-users",
+      "from_email_hash": "18a235aace9aa125ff2728aa74463499076280a8bb89a52fd4699751b14068d1",
+      "date": "2018-12-19T10:07:28Z",
+      "subject": "[rkward-users] [rkward:discussion] Flatpak Support",
+      "subject_clean": "[rkward-users] [rkward:discussion] Flatpak Support",
+      "in_reply_to": "<50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52fe034309d12e68e2967.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Hi, \n\nIt would be great if your apps was avalaible as a flatpak on flathub (https://flatpak.org) (https://flathub.org)  So it will be easily installable on every distro. \n\n\n\n\n\n---\n\n[Flatpak Support ](https://sourceforge.net/p/rkward/discussion/165573/thread/eca8ce03a2/?limit=25#14ef)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20181219/ebcaeac2/attachment.html>\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi, \n\nIt would be great if your apps was avalaible as a flatpak on flathub (https://flatpak.org) (https://flathub.org)  So it will be easily installable on every distro. \n\n\n\n\n\n---\n\n[Flatpak Support ](",
+      "thread_id": "thread-713b401dd476",
+      "thread_depth": 0,
+      "month": "2018-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-713b401dd476",
+      "subject": "[rkward-users] [rkward:discussion] Flatpak Support",
+      "message_count": 1,
+      "participants": [
+        "Ismail Lachheb via RKWard-users"
+      ],
+      "started": "2018-12-19T10:07:28Z",
+      "last_reply": "2018-12-19T10:07:28Z",
+      "root_message_id": "msg-713b401dd476"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+From noreply at sourceforge.net  Thu Jul  8 16:47:13 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 Jul 2010 16:47:13 +0000
+Subject: [rkward-users] [Help] Interrupt processing
+Message-ID: <forum-165574-8499737@sourceforge.net>
+
+
+The following forum message was posted by lambu0815 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3764223:
+
+Hi all,
+it seems like a simple question, but I cannot find the answer. How do I interrupt  script execution in RKWard? Ctrl+C doesn\'t work.
+
+RKWard 0.5.2 on Ubuntu 10.04 (gnome)
+
+Thank you all.
+Andre
+
+
+
+From noreply at sourceforge.net  Thu Jul  8 18:30:24 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 Jul 2010 18:30:24 +0000
+Subject: [rkward-users] [Help] RE: Interrupt processing
+In-Reply-To: <forum-165574-8499737@sourceforge.net>
+Message-ID: <forum-165574-8499910@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3764223:
+
+Yes, the Ctrl+C in R Console doesn\'t work here as well (rkward svn on KDE 4.4.4 Debian/sid, R 2.11.1). I remember there was some discussion on the devel list a while back on whether Ctrl+C should be used for copying but I am not sure if anything was changed! It works on my KDE 3 version.
+
+The other method is to go the Pending Jobs tab, click on the running job and hit \'Cancel selected commands.\' Most of the time this works.
+
+
+
+From noreply at sourceforge.net  Thu Jul  8 19:14:47 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 Jul 2010 19:14:47 +0000
+Subject: [rkward-users] [Help] RE: Interrupt processing
+In-Reply-To: <forum-165574-8499910@sourceforge.net>
+Message-ID: <forum-165574-8499967@sourceforge.net>
+
+
+The following forum message was posted by lambu0815 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3764223:
+
+Allright, thank you.
+
+I had found the \"pending jobs\" but kind of confused the \"interrupt\" and \"cancel\" buttons and kept pressing them again and again, thats why it didn\'t stop at all. Hitting only \"cancel\" works fine.
+
+Therefore, so far, no problems with RKWard in Gnome. Great.
+
+Thanks again.
+Andr?
+
+
+
+From noreply at sourceforge.net  Sat Jul 10 08:34:48 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 10 Jul 2010 08:34:48 +0000
+Subject: [rkward-users] [Open Discussion] size characters
+Message-ID: <forum-165573-8502613@sourceforge.net>
+
+
+The following forum message was posted by nawak at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/3766109:
+
+Hi,
+
+Very basic question :
+How i can improve the size of characters in console ?
+
+thanks
+
+
+
+From noreply at sourceforge.net  Sun Jul 11 20:01:54 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 11 Jul 2010 20:01:54 +0000
+Subject: [rkward-users] [Open Discussion] RE: size characters
+In-Reply-To: <forum-165573-8502613@sourceforge.net>
+Message-ID: <forum-165573-8504113@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/3766109:
+
+Hi!
+
+Since version 0.5.3, you should find \"Enlarge Font\" and \"Shrink Font\" in the \"View\"-menu, whenever the console is active.
+
+For older versions, permanent settings, or any other specific needs, this setting is pretty well hidden, indeed: The font setting is shared with the script-editor windows. So open a Script File, then select Settings->Configure Editor->Fonts & Colors->Fonts. Note that with some versions of KDE you need to restart RKWard before the setting is applied in the console.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Jul 15 20:14:58 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 15 Jul 2010 20:14:58 +0000
+Subject: [rkward-users] [Help] importing data
+Message-ID: <forum-165574-8512567@sourceforge.net>
+
+
+The following forum message was posted by davidjoubert at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3772649:
+
+I just installed Rkward and I cannot seem to load data in any format (the file I want to load, however, was originally SPSS .sav format). The space where I would normally enter the location of the file remains red and I cannot enter anything. Please advise.
+Thanks !
+
+David
+
+
+
+From noreply at sourceforge.net  Fri Jul 16 10:23:44 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 16 Jul 2010 10:23:44 +0000
+Subject: [rkward-users] [Help] RE: importing data
+In-Reply-To: <forum-165574-8512567@sourceforge.net>
+Message-ID: <forum-165574-8513770@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3772649:
+
+Hi,
+
+works fine, here. Could you give us some more details?
+
+- Which platform (Windows / Linux) are you working on, how did you install RKWard?
+- Which version of RKWard, which version of KDE?
+- Are you trying to enter the file manually, or do you select one after clicking the small browse button? Does either of these two ways work, or do both fail?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri Jul 16 18:48:03 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 16 Jul 2010 18:48:03 +0000
+Subject: [rkward-users] [Help] RE: importing data
+In-Reply-To: <forum-165574-8513770@sourceforge.net>
+Message-ID: <forum-165574-8514619@sourceforge.net>
+
+
+The following forum message was posted by davidjoubert at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3772649:
+
+Sure ! I use Windows XP 64-bit on a university server. I installed latest version of R first (2.11.1), followed by KDE 4.4, and Rkward 0.5.3. I didn\'t encounter any problems during installation. R Commander seems to work fine. When I try to load a SPSS dataset in Rkward, the space where I would normally input the file name remains red. I can use the browse button to get into the directories and identify the file I want to load, but nothing appears in the red space after I click on the file I want. When I try entering the file manually, it\'s impossible to write anything in the red space. The expression VAR appears in it though, don\'t know what it\'s about. 
+
+Thanks a lot for your help,
+
+David   
+
+
+
+From noreply at sourceforge.net  Sun Jul 18 08:59:38 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 18 Jul 2010 08:59:38 +0000
+Subject: [rkward-users] [Help] RE: importing data
+In-Reply-To: <forum-165574-8514619@sourceforge.net>
+Message-ID: <forum-165574-8516572@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3772649:
+
+Ok, I think these are two issues.
+
+First, there are [b]two[/b] input fields. The upper one is for the file-name, the second is used to assign the table a name in R (R supports many tables at once, that\'s why this is needed). The second field should be pre-initialized to \"my.spss.data\". If it\'s red, that is probably because you already have an object by that name. You could check the \"overwrite\"-checkbox, or change the name to \"my.spss.data2\", or something. That \"VAR\"-appearing is an annoying bug, indeed, but it should not prevent you from using the dialog, and it\'s fixed in our development version.
+
+Regarding the upper field, it should be possible to enter the filename, there, manually. To get the button to work, try this: Go to Programs->KDE->System Settings->Advanced->Platform and uncheck \"Use native file dialogs\". Restart RKWard. This is a bug in KDE, which is fixed for KDE 4.5, IIRC.
+
+Does this help?
+
+Regards
+Thomas
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jul 19 13:14:47 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 19 Jul 2010 15:14:47 +0200
+Subject: [rkward-users] Some progress on the Mac
+Message-ID: <201007191514.52000.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+recently several people have tried (and failed) to install RKWard on the Mac. 
+Now a friend has given me ssh-access to his mac, and after some trial-and-
+error, I have sucessfully compiled rkward on the Mac.
+
+I have not done any decent testing, yet, since working remotely with X11 over 
+SSH is painfully slow, but it appears to work, too. Note that rkward hung at 
+startup for me twice, which may be due to some Mac or SSH-specific problem. 
+Probably there *are* some further problems, and I'll try to investigate those 
+as time allows. However, I did not want to wait before letting you know that 
+rkward finally *can* be installed on the Mac.
+
+Updated instructions are available at 
+https://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac .
+
+I believe the key missing step was to run ". /sw/sbin/kde4-buildenv.sh" (note 
+the dot and space at the start of the command). You will also need to use an 
+up-to-date svn checkout of rkward.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100719/2a51392c/attachment.sig>
+
+From bt_jannis at yahoo.de  Tue Jul 20 16:00:18 2010
+From: bt_jannis at yahoo.de (Jannis)
+Date: Tue, 20 Jul 2010 16:00:18 +0000 (GMT)
+Subject: [rkward-users] Autosave function
+Message-ID: <101311.89457.qm@web28207.mail.ukl.yahoo.com>
+
+Dear Rkward users,
+
+
+does anybody know whether there is any autosave capability in rkward? I use the rather unstable windows version of rkward (I know I should use Linux, but this is my work PC ;-) ), so autosaving would save a lot of hassle. I could not find any such option yet.
+
+
+Cheers
+Jannis
+
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jul 22 08:11:35 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 22 Jul 2010 10:11:35 +0200
+Subject: [rkward-users] Autosave function
+In-Reply-To: <101311.89457.qm@web28207.mail.ukl.yahoo.com>
+References: <101311.89457.qm@web28207.mail.ukl.yahoo.com>
+Message-ID: <201007221011.39293.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 20 July 2010, Jannis wrote:
+> does anybody know whether there is any autosave capability in rkward? I use
+> the rather unstable windows version of rkward (I know I should use Linux,
+> but this is my work PC ;-) ), so autosaving would save a lot of hassle. I
+> could not find any such option yet.
+
+the development version of RKWard has support for this (still somewhat buggy 
+on windows). Also, sophisticated support for recovering text documents in the 
+editor component is under development in the KDE libraries (but probably not 
+before KDE 4.6).
+
+But no, there is no such option, yet.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100722/20d4599f/attachment.sig>
+
+From alobolistas at gmail.com  Thu Jul 22 13:05:00 2010
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Thu, 22 Jul 2010 15:05:00 +0200
+Subject: [rkward-users] start with empty workspace
+Message-ID: <AANLkTinfjFvpGAHFGMIJ-Oqr0gypKGtuIiczG6JEy4BB@mail.gmail.com>
+
+Hi!
+
+At least in my ubuntu version, if I select start with empty workspace
+I actually find that the .RData file of the default directory has
+actually been loaded.
+Is this intentional or a bug that I should report? It's a bit
+confusing. If this behavior is intentional,
+a message stating something like "/home/alobo/.Rdata has been loaded"
+would be useful.
+BTW, when are you planning a new release?
+
+Thanks!
+
+Agus
+
+
+
+From bt_jannis at yahoo.de  Sun Jul 25 11:23:26 2010
+From: bt_jannis at yahoo.de (Jannis)
+Date: Sun, 25 Jul 2010 11:23:26 +0000 (GMT)
+Subject: [rkward-users] opening graphik window with predefined size in Rkward
+Message-ID: <849943.12328.qm@web28207.mail.ukl.yahoo.com>
+
+Dear list,
+
+
+does anybody of you know how to open a graphics window (under windows) with a predefined size?
+
+Running:
+
+
+windows(width=3,height=3) 
+
+opens a window under Rkward, but the size settings only seem to have an influence above a certain threshhold. With very small settings, always some default sized window is opened (though it is shifted out of the visible screen area). There are some settings for the graphics output in Rkward, but they do not seem to have any effect on my problem.
+
+
+Any suggestions? Is this a bug?
+
+Cheers
+Jannis
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-08",
+  "messages": [
+    {
+      "id": "msg-565941589074",
+      "message_id": "<5205712.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-08-29T12:12:59Z",
+      "subject": "[rkward-users] [rkward - Help] RKWard won't start (libRlapack.so)",
+      "subject_clean": "[rkward-users] [rkward - Help] RKWard won't start (libRlapack.so)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5205712\nBy: fsando\n\nI'm using Ubuntu 8.04 and rkward build 2373.\nI can't start rkward anymore (used it 4 days ago), when I try to start it from\nthe command line I get the following error:\n/usr/local/bin/rkward.bin: error while loading shared libraries: libRlapack.so:\ncannot open shared object file: No such file or directory\n\nI've found several references to this error in the Debian bug tracker but they\nare at least 3-6 months old, and there doesn't appear to be anything I can do\nto fix it. I'm not sure what to do.\nI wanted to 'reinstall' R in Synaptic but that option was grayed out so I 'removed'\nand 'installed' instead.\nI tried to recompile rkward but get the error: /usr/bin/ld: cannot find\n-lRlapack\n\nI install R from sources of aug 25 2008 - still the same result\n\nTried to install rkward through synaptics which is 0.5.0b-2hardy0 (don't know\nwhich build that translates into) - still the same result.\n\nPerhaps someone knows what is wrong.\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5205712\nBy: fsando\n\nI'm using Ubuntu 8.04 and rkward build 2373.\nI can't start rkward anymore (used it 4 days ago",
+      "thread_id": "thread-565941589074",
+      "thread_depth": 0,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-8271b9e472bd",
+      "message_id": "<5205947.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-08-29T13:48:01Z",
+      "subject": "[rkward-users] [rkward - Help] RE: RKWard won't start (libRlapack.so)",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: RKWard won't start (libRlapack.so)",
+      "in_reply_to": "<5205712.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5205947\nBy: fsando\n\nAfter a couple of hours poking around I found the solution. I probably should\nhave known from the start as I have seen this or related bugs turn up at regular\nintervals through out my 8 year long acquaintance with R.\n\nTurns out rkward missed a couple of libraries. The libraries are present on\nmy system they are just not in the path and they are not where other components\n(ie. rkward) expect them to be.\n\nThe solution is to either make a symbolic link to them in the path or copying\nthem into the path (I copied them).\n\nWhy does this happen so often with various libraries? Probably because R puts\nits files in different places on different distros (Windows included) and apparently\nthis may change slightly from version to version???\n\nAnyway if some program can't find parts of R, go hunting for the missing part\non your machine and copy it into your path or create a link from your path to\nit.\n\nHope this may help others.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5205947\nBy: fsando\n\nAfter a couple of hours poking around I found the solution. I probably should\nhave known from",
+      "thread_id": "thread-565941589074",
+      "thread_depth": 1,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-aa38e389db41",
+      "message_id": "<5206287.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-08-29T15:52:38Z",
+      "subject": "[rkward-users] [rkward - Help] Compilation and checkinstall",
+      "subject_clean": "[rkward-users] [rkward - Help] Compilation and checkinstall",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5206287\nBy: f_bresson\n\nSo as to ease the installation of Rkward (0.4.9a) on kubuntu hardy, I would\nlike to use \"checkinstall\" instead of \"make install\". However, the installation\nof the created package fails due to a problem with the package. Is there a solution\n? Thanks\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5206287\nBy: f_bresson\n\nSo as to ease the installation of Rkward (0.4.9a) on kubuntu hardy, I would\nlike to use \"c",
+      "thread_id": "thread-aa38e389db41",
+      "thread_depth": 0,
+      "month": "2008-08"
+    },
+    {
+      "id": "msg-46a3cc9f6623",
+      "message_id": "<5206444.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-08-29T16:45:29Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compilation and checkinstall",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compilation and checkinstall",
+      "in_reply_to": "<5206287.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5206444\nBy: kapatp\n\nsorry, i don't have a solution per say. i remember having tried it a long time\nback and not succeeding :((  but isn't 0.4.9a (0.4.9-2??) already in kubuntu\nhardy?\nhttp://packages.ubuntu.com/hardy/rkward\n\nIf you are looking for some other version, take a look at the pool:\nhttp://us.archive.ubuntu.com/ubuntu/pool/universe/r/rkward/\n\ni think the perennial problem is the highlighting stylesheet conflict with kate-part.\nkate includes one, but rkward tries to replace it with its own (which is the\nalways at least as new as the kate-part version).\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5206444\nBy: kapatp\n\nsorry, i don't have a solution per say. i remember having tried it a long time\nback and not s",
+      "thread_id": "thread-aa38e389db41",
+      "thread_depth": 1,
+      "month": "2008-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-565941589074",
+      "subject": "[rkward-users] [rkward - Help] RKWard won't start (libRlapack.so)",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-08-29T12:12:59Z",
+      "last_reply": "2008-08-29T13:48:01Z",
+      "root_message_id": "msg-565941589074"
+    },
+    {
+      "id": "thread-aa38e389db41",
+      "subject": "[rkward-users] [rkward - Help] Compilation and checkinstall",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-08-29T15:52:38Z",
+      "last_reply": "2008-08-29T16:45:29Z",
+      "root_message_id": "msg-aa38e389db41"
+    }
+  ]
+}

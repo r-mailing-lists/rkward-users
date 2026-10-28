@@ -1,0 +1,459 @@
+From noreply at sourceforge.net  Fri Feb  1 03:45:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 31 Jan 2008 19:45:36 -0800
+Subject: [rkward-users] [rkward - Open Discussion] Compile on OSX?
+Message-ID: <4754193.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4754193
+By: izahn
+
+Hi,
+I've been using RKward on Kubuntu for some time now. I also use Mac OSX, and
+have been running KDE4 on that platform for several months(it kind of works).
+I recently tried compiling RKward on OSX, but ran into trouble when qmake could
+not find R_HOME. Is there a way to make this work?
+
+Thanks,
+Ista
+
+P.S., here are the details: I downloaded RKward 5.0a, added export
+PATH=/opt/qt4/bin:$PATH
+ to my .profile, and ran cmake. This returned 
+
+-- Found Qt-Version 4.3.3 (using /opt/qt4/bin/qmake)
+-- Found KDE 4.0 include dir: /opt/kde4/include
+-- Found KDE 4 library dir: /opt/kde4/lib
+-- Found KDE4 kconfig_compiler preprocessor: /opt/kde4/bin/kconfig_compiler
+-- Found KDE4 automoc: /opt/kde4/bin/kde4automoc
+-- Looking for R executable
+-- Specified by user
+-- Using R at /Applications/R.app/Contents/MacOS/R
+-- Looking for R_HOME
+
+
+The R.app GUI opened, and informed me that
+
+The file /Users/izahn/CMD does not exist.
+The file /Users/izahn/sh does not exist.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Sun Feb  3 18:09:57 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 03 Feb 2008 10:09:57 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: Compile on OSX?
+In-Reply-To: <4754193.165573@sourceforge.net>
+Message-ID: <4757480.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4757480
+By: izahn
+
+OK, I've made some progress, but specifying R_HOME etc. in the cmake options.
+In fact, the cmake part works fine now, but when I try make install I get the
+following:
+
+sudo make install
+Password:
+[  1%] Generating rksaveobjectchooser.moc
+[  2%] Generating rkspinbox.moc
+[  2%] Generating getfilenamewidget.moc
+[  3%] Generating rkobjectlistview.moc
+[  3%] Generating multistringselector.moc
+[  4%] Generating rkprogresscontrol.moc
+Scanning dependencies of target misc
+[  4%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkspinbox.o
+[  5%] Building CXX object rkward/misc/CMakeFiles/misc.dir/getfilenamewidget.o
+[  6%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkobjectlistview.o
+[  6%] Building CXX object rkward/misc/CMakeFiles/misc.dir/xmlhelper.o
+[  7%] Building CXX object
+rkward/misc/CMakeFiles/misc.dir/multistringselector.o
+[  7%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkcommonfunctions.o
+[  8%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkprogresscontrol.o
+[  8%] Building CXX object
+rkward/misc/CMakeFiles/misc.dir/rksaveobjectchooser.o
+[  9%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkdummypart.o
+[ 10%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkstandardicons.o
+/Users/****/Desktop/rkward-0.5.0a/rkward/misc/rkstandardicons.cpp:61:2: warning:
+#warning TODO add further action icons here
+[ 10%] Building CXX object rkward/misc/CMakeFiles/misc.dir/rkstandardactions.o
+Linking CXX static library ../../lib/libmisc.a
+[ 10%] Built target misc
+[ 11%] Generating rktoolwindowbar.moc
+[ 11%] Generating rkcommandeditorwindow.moc
+[ 12%] Generating rkhtmlwindow.moc
+[ 12%] Generating rcontrolwindow.moc
+[ 13%] Generating detachedwindowcontainer.moc
+[ 13%] Generating rkmdiwindow.moc
+[ 14%] Generating rkworkplaceview.moc
+[ 15%] Generating rkworkplace.moc
+[ 15%] Generating rkwindowcatcher.moc
+[ 16%] Generating rkcommandlog.moc
+[ 16%] Generating rkhelpsearchwindow.moc
+[ 17%] Generating rktoplevelwindowgui.moc
+[ 17%] Generating rkfilebrowser.moc
+Scanning dependencies of target windows
+[ 18%] Building CXX object
+rkward/windows/CMakeFiles/windows.dir/rkcommandeditorwindow.o
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkcommandeditorwindow.cpp:767:2:
+warning: #warning deal with object removals while the completion model is active!
+Maybe cache all information?
+[ 18%] Building CXX object rkward/windows/CMakeFiles/windows.dir/rkhtmlwindow.o
+[ 19%] Building CXX object
+rkward/windows/CMakeFiles/windows.dir/rcontrolwindow.o
+[ 19%] Building CXX object
+rkward/windows/CMakeFiles/windows.dir/detachedwindowcontainer.o
+[ 20%] Building CXX object rkward/windows/CMakeFiles/windows.dir/rkmdiwindow.o
+[ 21%] Building CXX object
+rkward/windows/CMakeFiles/windows.dir/rkworkplaceview.o
+[ 21%] Building CXX object rkward/windows/CMakeFiles/windows.dir/rkworkplace.o
+[ 22%] Building CXX object
+rkward/windows/CMakeFiles/windows.dir/rkwindowcatcher.o
+/Users/******/Desktop/rkward-0.5.0a/rkward/windows/../rkwardapplication.h:38:
+error: ?XEvent? has not been declared
+/opt/qt4/include/QtGui/qx11embed_x11.h:70: error: ?XEvent? has not been
+declared
+/opt/qt4/include/QtGui/qx11embed_x11.h:108: error: ?XEvent? has not been
+declared
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkwindowcatcher.cpp: In constructor
+?RKCaughtX11Window::RKCaughtX11Window(WId, int)?:
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkwindowcatcher.cpp:112: error:
+?KWindowInfo? was not declared in this scope
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkwindowcatcher.cpp:112: error:
+expected `;' before ?wininfo?
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkwindowcatcher.cpp:113: error:
+?wininfo? was not declared in this scope
+/Users/****/Desktop/rkward-0.5.0a/rkward/windows/rkwindowcatcher.cpp:114: error:
+?wininfo? was not declared in this scope
+make[2]: *** [rkward/windows/CMakeFiles/windows.dir/rkwindowcatcher.o] Error 1
+make[1]: *** [rkward/windows/CMakeFiles/windows.dir/all] Error 2
+make: *** [all] Error 2
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Feb  4 12:41:32 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 04 Feb 2008 04:41:32 -0800
+Subject: [rkward-users] [rkward - Help] frequency table
+Message-ID: <4758508.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4758508
+By: markbaas
+
+Under SPSS you have under descriptive statics a frequency table, where is that
+in Rkward.
+Greetings
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Feb  8 23:03:21 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 08 Feb 2008 15:03:21 -0800
+Subject: [rkward-users] [rkward - Help] RE: frequency table
+In-Reply-To: <4758508.165574@sourceforge.net>
+Message-ID: <4767696.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4767696
+By: fsando
+
+As of 0.4 this feature seems not to be implemented.
+You can use the code table(x) where 'x' is your variable or if it's a data.frame:
+table(data[["varname"]]) where 'data' is your data.frame.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Feb  9 00:08:16 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 08 Feb 2008 16:08:16 -0800
+Subject: [rkward-users] [rkward - Help] compile and install errors 0.5 in
+	Ubuntu
+Message-ID: <4767787.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4767787
+By: fsando
+
+I use Ubuntu 7.10
+I have successfully compiled 0.4 versions earlier but am having troubles with
+version 0.5.
+
+This is with version 2349. I tried several earlier version (one step backwards
+at a time) with the same result so I assume it is my setup that is at fault.
+
+When trying to install from source using svn I first get an error from cmake:
+NOTE: msgfmt not found. Translations will *not* be installed
+
+Then I get an error from make (repeated for lines 41,51,61):
+rkstandardactions.cpp:31: error: invalid conversion from ?QAction*?
+to ?KAction*?
+
+
+I Then downloaded 0.5a from sourceforge. I resolved several dependency issues
+(or maybe not?) but finally got stuck on the following:
+Dependensy is not satisfiable: kdelibs5.
+
+I looked inside the package and it seems to want kdelibs5 (>= 4:4.0.0-2). Ubuntu
+has, as far as I can tell, kdelibs5-4:4.0.0-0
+
+
+Just tried again to run cmake after my attempt at the deb-package and the installing
+of (some of?) the dependencies for the deb-package but this time with a new
+error:
+CMake Error: KDE4Internal_DIR is not set.  It must be set to the directory containing
+KDE4InternalConfig.cmake in order to use KDE4Internal.
+
+And I have no idea what KDE4Internal_DIR is.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Feb 10 14:38:05 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 10 Feb 2008 06:38:05 -0800
+Subject: [rkward-users] [rkward - Help] compile can not find -lssl
+Message-ID: <4769760.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4769760
+By: hakova
+
+Hi there,
+
+I am using Mandriva 2008 and R-base 2.6 (from an rpm package). I wanted to install
+rkward 0.4.7a from the rpm package as well, but when I did it, rkward did not
+launch reporting an error:
+
+/usr/bin/rkward.bin: symbol lookup error: /usr/bin/rkward.bin: undefined symbol:
+R_LastvalueSymbol
+
+>From a quick search in mail archives I got the information by Thomas (2007-09-13)
+indicating that when this happens, one should either downgrade the R-base package
+to 2.5.1 or compile the SVN version at that date. Because there was newer releases
+since then, I decided to compile rkward 0.4.9 instead.
+
+I then started my compiling adventure for rkward 0.4.9 since I am still using
+KDE 3.5.7. First I tackled the fortran issue (ld can not find -lgfortran) but
+thanks to the mailing list archive I was able to overcome that issue. The next
+hurdle now is reported as follows:
+
+/usr/bin/ld: cannot find -lssl
+
+I am guessing R-base package was not compiled with this option and if that is
+so, I may have to compile R-base, too. Do you think this is the case? If there
+is any other way that I can work around this without having to compile the R-base
+I will greatly appreciate that.
+
+Thanks in advance for the response(s).
+
+Hakan
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Feb 10 15:55:12 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 10 Feb 2008 07:55:12 -0800
+Subject: [rkward-users] [rkward - Help] RE: compile can not find -lssl
+In-Reply-To: <4769760.165574@sourceforge.net>
+Message-ID: <4769844.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4769844
+By: hakova
+
+Never mind, Iwas able to get it work once I realized that the missing thing
+was the ssl libraries. It compiled and is working fine now.
+
+Hakan
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Feb 12 07:51:14 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 11 Feb 2008 23:51:14 -0800
+Subject: [rkward-users] [rkward - Help] RE: compile and install errors 0.5
+	in Ubuntu
+In-Reply-To: <4767787.165574@sourceforge.net>
+Message-ID: <4772903.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4772903
+By: fsando
+
+SOLVED:
+Turns out it was a combination of two different issues
+
+(from: http://ubuntuforums.org/showthread.php?t=643113 )
+Tell cmake about KDE dir
+
+export PATH=$PATH:/usr/lib/kde4/bin
+
+If the above error regarding KDE4Internal_DIR persists remove 'CMakeCache.txt'
+and try again
+
+A new error: 
+/usr/bin/ld: cannot find -lphonon
+
+... is solved be enabling 'pre-released' and 'unsupported' updates and then
+installing libphonon-dev
+
+>From here I experienced smooth sailing
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Feb 12 07:52:44 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 11 Feb 2008 23:52:44 -0800
+Subject: [rkward-users] [rkward - Help] RE: compile and install errors 0.5
+	in Ubuntu
+In-Reply-To: <4767787.165574@sourceforge.net>
+Message-ID: <4772904.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4772904
+By: fsando
+
+Oh by the way, the new 0.5 sure looks great. I keep getting impressed with your
+work.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Feb 19 01:24:59 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 18 Feb 2008 17:24:59 -0800
+Subject: [rkward-users] [rkward - Help] RE: frequency table
+In-Reply-To: <4758508.165574@sourceforge.net>
+Message-ID: <4785932.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4785932
+By: markbaas
+
+Hey ive got the code
+
+data.frame(age=sample(table(var)),percent=sample(prop.table(table(var))))
+
+
+Now i want to make a plugin... I can't get it done. This is what i have it works
+like sh*t:
+
+<?
+function preprocess () {
+}
+
+function calculate () {
+?>
+<? $vars = "substitute (" . str_replace ("\n", "), substitute (", trim (getRK_val
+("x"))) . ")"; ?>
+vars <- list(<? echo ($vars); ?>)
+result <- vector(mode = "list") 
+for(var in vars){
+	result <- data.frame(age=sample(table(var)),percent=sample(prop.table(table(var
+))))
+}
+<?
+}
+
+function printout () {
+?>
+
+rk.header ("Frequency Table")
+rk.print (result)
+<?
+}
+?>
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Feb 26 20:29:09 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 26 Feb 2008 12:29:09 -0800
+Subject: [rkward-users] [rkward - Help] Import data crashes X
+Message-ID: <4802435.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4802435
+By: ldmaze
+
+Hi, 
+
+I have installed both R 2.6.2 and rkward 0.4.9 on OpenSuse 10.3 (x86_64) using
+available rpms for each.  rkward looks great.  Unfortunately, there is something
+going on with the data import function. When I try and add a .csv table to a
+workspace I have created, it kills X and logs me out.
+
+Anyone have a way to fix this, or know where I might look for answers? 
+
+Thanks!
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

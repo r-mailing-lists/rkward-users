@@ -1,0 +1,143 @@
+From noreply at sourceforge.net  Fri Dec  5 02:22:06 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 05 Dec 2008 02:22:06 +0000
+Subject: [rkward-users] [rkward - Help] I cannot create my account in wiki
+Message-ID: <5759560.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5759560
+By: jinid
+
+Hello! Sorry and Thanks.
+
+if you are OK, 
+About RKward wiki(rkward.sourceforge.net/wiki), 
+I would like to ask something.
+
+I would like to be a user,
+However, the screen say : Log in "incorrect or missing confirmation code"
+endlessly.
+In this case, if you have some direction, please let me know that.
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Dec  8 22:06:33 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Dec 2008 22:06:33 +0000
+Subject: [rkward-users] [rkward - Help] pdf vignettes fail to display
+Message-ID: <5778217.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5778217
+By: ybukhman
+
+Hi,
+
+packages from Bioconductor project have vignettes, which are pdf files.  When
+I try to open one from RKWard help browser, it doesn't launch any pdf viewer,
+and I just get a window full of garbage.  My work-around is to run help.start
+and specify firefox as the browser.  Is there a way to make RKWard handle the
+pdf files properly, though?
+
+Thanks.
+
+Yury
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From kapatp at gmail.com  Thu Dec 11 21:17:40 2008
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Thu, 11 Dec 2008 16:17:40 -0500
+Subject: [rkward-users] rkward - the R package,
+	fails to install. A solution found.
+Message-ID: <de8c7cb40812111317v28a5127q9afdd93701eaa277@mail.gmail.com>
+
+Hi,
+
+Finally our dept moved to R 2.8 and I had to bite the bullet and
+update rkward. I was seeing some comits in the svn tree, so I decided
+to run the svn again. Since the office machine runs KDE 3.5.4 (RedHat
+EL5), I tried out the release_branch_0.4.9.
+
+Good news: Everything compiled fine.
+Bad news (initially): rkward, the R package not as the KDE software,
+did not install.
+
+Looking through the "make install" log:
+
+make[3]: Entering directory
+`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages'
+Makefile:656: warning: overriding commands for target `distclean'
+Makefile:583: warning: ignoring old commands for target `distclean'
+mkdir -p tmp ; \
+        OLDTMP=$TMPDIR ; \
+        export TMPDIR=`pwd`/tmp ; \
+        mkdir -p //home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ ; \
+        /usr/lib/R/bin/R CMD INSTALL -l
+//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ rkward ; \
+        export TMPDIR=$OLDTMP
+/usr/lib/R/bin/INSTALL: line 950: cd:
+/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward
+/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward:
+No such file or directory
+/bin/sed: can't read DESCRIPTION: No such file or directory
+ERROR: no 'Package' field in 'DESCRIPTION'
+/bin/sed: read error on
+/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward:
+Is a directory
+make[3]: Leaving directory
+`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages'
+make[3]: Entering directory
+`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend'
+
+So, it seemes "R CMD INSTALL" bailed out. I tried it on the terminal directly:
+
+$ /usr/lib/R/bin/R CMD INSTALL -d -l
+//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ rkward
+
+<similar error>
+
+Directory specification was wrong with R CMD INSTALL. Couldn't figure
+out much from /usr/lib/R/bin/INSTALL script. Line 950 was a cd
+command, may be the argument spec was messed up somehow.
+
+Good news: The following worked:
+
+$ /usr/lib/R/bin/R CMD INSTALL -d -l
+//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ ./rkward
+
+Note the "./rkward" instead of "rkward" in the end.
+
+Nothing has changed on the Rkward's end: the
+rbackend/rpackages/Makefile.am file is same from the earlier released
+0.4.9 : the last commit on it was on 30 Dec 07 by Thomas (#2289), and
+the relevant line is:
+
+        ${R_HOMEDIR}/bin/R CMD INSTALL -l $(DESTDIR)/$(R_LIBDIR) rkward ; \
+
+So I guess R's implementation of "R CMD INSTALL" seems to have
+changed. I'll try to investigate this further. But as of now, if
+anyone needs to install the "updated" 0.4.9 version from svn code for
+R 2.8.0, the above solution should work. Use it after "make install".
+
+Didn't anyone face this earlier?
+
+-- 
+Prasenjit
+
+
+

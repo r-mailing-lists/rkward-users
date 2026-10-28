@@ -1,0 +1,74 @@
+From thomas.friedrichsmeier at kdemail.net  Wed Apr 23 13:47:46 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Wed, 23 Apr 2025 14:47:46 +0200
+Subject: RKWard 0.8.1 is released!
+Message-ID: <20250423144746.3ee9c3a0@booklife>
+
+Hi!
+
+RKWard 0.8.1 is officially available for download, today. You can read
+up on the details, and pick the correct download for your platform on
+https://rkward.kde.org, as usual. Thanks to all testers and
+contributors!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250423/9855bb62/attachment.sig>
+
+From tsvibar at proton.me  Thu Apr 24 12:26:02 2025
+From: tsvibar at proton.me (Micha Silver)
+Date: Thu, 24 Apr 2025 11:26:02 +0000
+Subject: First time user
+Message-ID: <M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>
+
+Is there a keyboard shortcut in RKWard to enter the R equals character '<-' and the pipe '|>' ?
+Thanks
+
+--
+Micha Silver
+tel: +972-523665918
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250424/d9e2a781/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Sat Apr 26 09:11:44 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sat, 26 Apr 2025 10:11:44 +0200
+Subject: First time user
+In-Reply-To: <M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>
+References: <M-wQqBBDLRflBTVu_-50iQKt0wWxYiS4fxUuk-yFdnlvf00rwfs9nJrYGEg5jnyJmwRha8WFYoFk3UsPnUguqxXuVaCv_ff3Rnq664u6urw=@proton.me>
+Message-ID: <20250426101144.77c09e54@booklife>
+
+Hi,
+
+On Thu, 24 Apr 2025 11:26:02 +0000
+Micha Silver <tsvibar at proton.me> wrote:
+> Is there a keyboard shortcut in RKWard to enter the R equals
+> character '<-' and the pipe '|>' ? Thanks
+
+no, there is not, but you can easily add this, yourself:
+
+1. On the right-hand-side of the main window, click on "Snippets"
+2. You may want to create a new "repository" to contain you custom
+snippets (right-click).
+3. Create a new snippet (right-click on the desired repository, then
+select "Add snippet". I hope the dialog is self-explanatory. Otherwise,
+just ask. To assign a keyboard shortcut, click on the button next to the
+"name" field.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250426/0e617ff4/attachment.sig>
+

@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-10",
+  "messages": [
+    {
+      "id": "msg-3775c8682462",
+      "message_id": "</p/rkward/discussion/165574/c1600cd52e49c1d9db67c44c39fb922862780d88.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Black Wizard",
+      "from_email_hash": "0198c498c4ca1edc2208b74d5b6cf4013b0ada3722787aec71b9736b87645e17",
+      "date": "2013-10-15T10:24:16Z",
+      "subject": "[rkward-users] [rkward:discussion] RkWard: rkward.frontend.exe error",
+      "subject_clean": "[rkward-users] [rkward:discussion] RkWard: rkward.frontend.exe error",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Good time of a day!\n\nI use Windows 7 x64 and downloaded RkWard bundle RKWard-0.6.1_R-3.0.0rc-KDE-4.8.0.exe\n\nBut RkWard don't run and give out error message: \n\nProblem Event Name: APPCRASH\n   Application Name: rkward.frontend.exe\n   Application Version: 0.0.0.0\n   Application Timestamp: 51585642\n   Fault Module Name: QtCore4.dll\n   Fault Module Version: 4.7.4.0\n   The time stamp module with the error: 4f271d81\n   Exception Code: 40000015\n   Exception Offset: 00012861\n   OS Version: 6.1.7601.2.1.0.768.3\n   Language Code: 1049\n   Additional Information 1: 83bb\n   Additional Information 2: 83bb82d8d0d076ec21046cac27615354\n   Additional Information 3: 0aa2\n   Additional Information 4: 0aa2e6386a167f90de7acdedd373fd9a\n\n   How I may run this program? Thank you for your help for me.\n\n\n---\n\n[RkWard: rkward.frontend.exe error](https://sourceforge.net/p/rkward/discussion/165574/thread/aea2301d/?limit=50#990e)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20131015/280f3db9/attachment.html>",
+      "body_snippet": "Good time of a day!\n\nI use Windows 7 x64 and downloaded RkWard bundle RKWard-0.6.1_R-3.0.0rc-KDE-4.8.0.exe\n\nBut RkWard don't run and give out error message: \n\nProblem Event Name: APPCRASH\n   Applicati",
+      "thread_id": "thread-3775c8682462",
+      "thread_depth": 0,
+      "month": "2013-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3775c8682462",
+      "subject": "[rkward-users] [rkward:discussion] RkWard: rkward.frontend.exe error",
+      "message_count": 1,
+      "participants": [
+        "Black Wizard"
+      ],
+      "started": "2013-10-15T10:24:16Z",
+      "last_reply": "2013-10-15T10:24:16Z",
+      "root_message_id": "msg-3775c8682462"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+From thomas.friedrichsmeier at kdemail.net  Fri Oct  2 20:37:59 2020
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Fri, 2 Oct 2020 21:37:59 +0200
+Subject: Call for testing
+Message-ID: <20201002212153.6d6d64be@booklife>
+
+Hi!
+
+It's about time to release a new version of RKWard, and we need your
+help for testing. For those, who have not been following the
+development, the key feature to look out for is that RKWard can now use
+kate plugins. Importantly, this brings a much awaited "Search in
+Files"-feature, but also many other goodies such as "Project"
+management for source repositories, and Previews for bibtex referennces.
+
+Beyond this, code completion features have been improved in the R
+Console window, and a first run wizard now checks for common setup
+issues.
+
+A tentative release timeline with further links can be found at
+https://rkward.kde.org/Release_Schedule.html . The most important
+download links are also given, below.
+
+Thanks!
+Thomas
+
+-- Mac users (and anybody with access to a Mac) --
+- Get the latest DMG from
+  https://binary-factory.kde.org/view/MacOS/job/RKWard_Nightly_macos/
+
+- You will have to install R, separately (if you don't already have it).
+  Currently any version between 3.4 and 3.6 should work. I'm planning
+  to update the requirement to 4.0.0 and higher before the release,
+  though.
+
+- No further configuration should be needed. RKWard should detect the
+  newest version of R installed.
+
+-- Windows users --
+- Get the latest installer from
+  https://binary-factory.kde.org/view/Windows%20MingW/job/RKWard_Nightly_mingw64/
+
+- R 4.0.2 is included in the bundle. You should be able to start RKWard
+  right away. (Actually, it's R 3.6.2 right now, but will be R 4.0.2 on
+  tomorrow's build).
+
+- If you have a separate version of R installed on this machine, please
+  also try the following: Edit the rkward.ini file (inside the
+  "bin" folder of your RKWard installation), changing the content to "R
+  executable=auto". In theory this should detect your external R
+  installation and use that.
+
+-- Linux / BSD users --
+- Compile the lastest git master version from source, or install one of
+  the nightly builds, if we provide one for your distribution
+  (https://rkward.kde.org/RKWard_Source_Repository.html).
+
+- Should you have several versions of R installed, try
+  switching between versions using the --r-executable commandline
+  parameter.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201002/22c2bc27/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Fri Oct 16 15:19:15 2020
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Fri, 16 Oct 2020 16:19:15 +0200
+Subject: RKWard 0.7.2 is released!
+Message-ID: <20201016161915.15f759f7@booklife>
+
+Hi!
+
+I'm happy to announce that RKWard 0.7.2 is finally available for
+download, today. You can read up on the details, and pick the correct
+download for your platform on https://rkward.kde.org, as usual. Thanks
+to all contributors!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201016/b2d76c2f/attachment.sig>
+
+From martin.papenberg at uni-duesseldorf.de  Wed Oct 28 14:01:38 2020
+From: martin.papenberg at uni-duesseldorf.de (Martin Papenberg)
+Date: Wed, 28 Oct 2020 15:01:38 +0100
+Subject: Using Ctags in rkward
+Message-ID: <335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>
+
+Hello everyone,
+
+I was wondering if it is possible to use Ctags in rkward or if anyone 
+has already been able to make it work.
+
+Some context: CTags is a tool that can make your text editor 
+"understand" code. In particular, it can be used to jump from a function 
+call to the function definition. I was trying to enable Ctags support in 
+rkward using the Ctags plugin for Kate; in vanilla Kate, this worked for 
+me. That is, when I open an R project in Kate, I can jump from a line 
+where a function is called to the function definition, even across 
+files. (It was necessary to first add R language support, which is 
+however easily done, for example as described here: 
+https://tinyheero.github.io/2017/05/13/r-vim-ctags.html.) To me, this 
+functionality is really useful, especially when developing an R package 
+where I use many files to hold my R code.
+
+In rkward, I can in principle activate the Ctags plugin, via *configure 
+rkward -> Kate plugins*, but I did not find out how to actually use 
+Ctags afterwards. In Kate, I could define key bindings for the Ctags 
+plugin, but in rkward the "katectags" option is missing under the 
+keybinding customization menu. So, to make Ctags work under rkward, I 
+guess it would be necessary to include the "katectags" plugin options 
+under the keybindings menu, if that is possible. In kate, the Ctags 
+plugin can also be used when using the right mouse in the text editor, 
+but this also seems not to be enabled in rkward.
+
+I think that being able to use Ctags in rkward would be really great for 
+R package development, and given that it is possible in Kate, it might 
+also be possible to port this functionality to rkward? What do you guys 
+think?
+
+Cheers,
+
+Martin
+
+
+
+From thomas.friedrichsmeier at kdemail.net  Wed Oct 28 21:10:29 2020
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Wed, 28 Oct 2020 22:10:29 +0100
+Subject: Using Ctags in rkward
+In-Reply-To: <335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>
+References: <335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>
+Message-ID: <20201028221029.653ac9f3@booklife>
+
+Hi,
+
+Am Wed, 28 Oct 2020 15:01:38 +0100
+schrieb Martin Papenberg <martin.papenberg at uni-duesseldorf.de>:
+> I was wondering if it is possible to use Ctags in rkward or if anyone 
+> has already been able to make it work.
+
+as a quick feedback, I can see the problem. Not sure on the best
+solution, yet.
+
+If you feel like some experimenting, try commenting out this line in
+the sources:
+
+https://invent.kde.org/education/rkward/-/blob/releases/0.7.2/rkward/windows/katepluginintegration.cpp#L517
+
+This will make kate plugin actions appear regardless of the context
+(importantly, also while the corresponding tool window is inactive).
+
+I don't think that is a good solution, but maybe, instead, I can make it
+so that kate plugin actions will be active whenever a script window is
+active.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201028/965820ae/attachment.sig>
+
+From martin.papenberg at uni-duesseldorf.de  Thu Oct 29 09:23:21 2020
+From: martin.papenberg at uni-duesseldorf.de (Martin Papenberg)
+Date: Thu, 29 Oct 2020 10:23:21 +0100
+Subject: Using Ctags in rkward
+In-Reply-To: <20201028221029.653ac9f3@booklife>
+References: <335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>
+ <20201028221029.653ac9f3@booklife>
+Message-ID: <6d9ac6a9-e465-9c6f-74df-3a378ee39466@uni-duesseldorf.de>
+
+Hi Thomas,
+
+> If you feel like some experimenting, try commenting out this line in
+> the sources:
+>
+> https://invent.kde.org/education/rkward/-/blob/releases/0.7.2/rkward/windows/katepluginintegration.cpp#L517
+
+okay -- this seems to work for me. I understand that this option is not 
+feasible for the rkward program in general, but for my own development 
+environment, this is perfect. Thanks!
+
+Cheers,
+
+Martin
+
+
+Am 28.10.20 um 22:10 schrieb Thomas Friedrichsmeier:
+> Hi,
+>
+> Am Wed, 28 Oct 2020 15:01:38 +0100
+> schrieb Martin Papenberg <martin.papenberg at uni-duesseldorf.de>:
+>> I was wondering if it is possible to use Ctags in rkward or if anyone
+>> has already been able to make it work.
+> as a quick feedback, I can see the problem. Not sure on the best
+> solution, yet.
+>
+> If you feel like some experimenting, try commenting out this line in
+> the sources:
+>
+> https://invent.kde.org/education/rkward/-/blob/releases/0.7.2/rkward/windows/katepluginintegration.cpp#L517
+>
+> This will make kate plugin actions appear regardless of the context
+> (importantly, also while the corresponding tool window is inactive).
+>
+> I don't think that is a good solution, but maybe, instead, I can make it
+> so that kate plugin actions will be active whenever a script window is
+> active.
+>
+> Regards
+> Thomas
+
+From vojtech.zeisek at opensuse.org  Thu Oct 29 09:46:14 2020
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Thu, 29 Oct 2020 10:46:14 +0100
+Subject: Using Ctags in rkward
+In-Reply-To: <20201028221029.653ac9f3@booklife>
+References: <335b7b4d-f7d6-6e4d-27f6-da4507428cc3@uni-duesseldorf.de>
+ <20201028221029.653ac9f3@booklife>
+Message-ID: <4588885.xLNVB3ZKRu@tilia>
+
+Hi
+
+Dne středa 28. října 2020 22:10:29 CET, Thomas Friedrichsmeier napsal(a):
+> Am Wed, 28 Oct 2020 15:01:38 +0100 schrieb Martin Papenberg:
+> > I was wondering if it is possible to use Ctags in rkward
+> > or if anyone has already been able to make it work.
+> 
+> as a quick feedback, I can see the problem. Not sure on the
+> best solution, yet.
+> If you feel like some experimenting, try commenting out this
+> line in the sources:
+> https://invent.kde.org/education/rkward/-/blob/releases/0.7.2/
+> rkward/windows/katepluginintegration.cpp#L517
+> This will make kate plugin actions appear regardless of the context
+> (importantly, also while the corresponding tool window is inactive).
+> I don't think that is a good solution, but maybe, instead,
+> I can make it so that kate plugin actions will be active
+> whenever a script window is active.
+
+It would be definitely perfect to have such a nice feature. Can we look 
+forward the next release? :-)
+
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20201029/79c4d7c3/attachment.sig>
+

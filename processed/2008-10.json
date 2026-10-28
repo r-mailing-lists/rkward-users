@@ -1,0 +1,395 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-10",
+  "messages": [
+    {
+      "id": "msg-8001a5765319",
+      "message_id": "<48FDF2E9.4@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2008-10-21T15:19:05Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid  beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid  beta broken",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\na *.deb package for intrepid from the ubuntu repositories (or compile it\nyourselt the Debian way by taking sources either from ubuntu\nrepositories or from the sourceforge.net rkward debian repository) you\nget Rkward without the Main menu and without the the \"Welcome to RKward\"\npage.... Also, without the \"Help\" menu!\n\nBut if you compile it yourself with a simple sequence:\n\ncd rkward_source_dir\ncmake .\nmake\nsudo make install\n\nRkward looks normal, only missing some icons...\n\nI guess that means that there is an error in rkward sources, maybe\nrelated to the former Kubuntu place to KDE4 packages...\n\nDonatas Glodenis",
+      "body_snippet": "Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\na *.deb package for intrepid from the ubuntu repositories (or compile it\nyourselt the Debian way by taking sources either from ",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 0,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-ec3a8066c5b6",
+      "message_id": "<de8c7cb40810212301x25e62e0bp2f9661b972c34211@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-10-22T06:01:50Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<48FDF2E9.4@akl.lt>",
+      "references": [
+        "<48FDF2E9.4@akl.lt>"
+      ],
+      "body_plain": "Hi Users,\n\nThe problem with R 2.8.0 is something different. Provided below is a\nmail from Michael who maintains the ubuntu packages on CRAN. Similar\nproblem has also been reported on SuSE. I am not aware of any\nsolution, but something does need to be done to fix this. Unless you\nreally need R 2.8.0, I suggest pinning R 2.7.2 version as available\nfrom CRAN.\n\nOn Tue, Oct 21, 2008 at 11:19 AM, Donatas G. <dgvirtual at akl.lt> wrote:\n> Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\n> a *.deb package for intrepid from the ubuntu repositories (or compile it\n> yourselt the Debian way by taking sources either from ubuntu\n> repositories or from the sourceforge.net rkward debian repository) you\n> get Rkward without the Main menu and without the the \"Welcome to RKward\"\n> page.... Also, without the \"Help\" menu!\n>\n> But if you compile it yourself with a simple sequence:\n>\n> cd rkward_source_dir\n> cmake .\n> make\n> sudo make install\n>\n> Rkward looks normal, only missing some icons...\n>\n> I guess that means that there is an error in rkward sources, maybe\n> related to the former Kubuntu place to KDE4 packages...\n\nMichael says:\n\n========================\nI maintain Ubuntu packages on CRAN for amd64.  Today, the new version of\nR (2.8.0) came out, and I am unable to build an rkward package based\naround 2.8.0.  Turns out the decision has been made to remove Rdevices.h\nand Rgraphics.h from the installed portion of R.  They still exist in\nthe source code, however.  Since Rdevices.h is not available to ubuntu,\nthe build fails under hardy and intrepid.  Same problem with the package\nrpy.\n\nNot sure what the fix is, but at this point I think we are going to\nrelease R 2.8.0 builds for ubuntu without an update to rkward.  Would\nhave found this sooner, but testing packages is one of the last things\non the list.\n\nThanks,\nMichael\n======================\n\nHopefully something will come up soon.",
+      "body_snippet": "Hi Users,\n\nThe problem with R 2.8.0 is something different. Provided below is a\nmail from Michael who maintains the ubuntu packages on CRAN. Similar\nproblem has also been reported on SuSE. I am not aw",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-2ebc12cda577",
+      "message_id": "<48FF12FA.6080305@fs-analyse.dk>",
+      "from_name": "stfs",
+      "from_email_hash": "bf7486321a46230e043d74517295d9aeb6d5c5f4056c56fdd65e23c364a231ea",
+      "date": "2008-10-22T11:48:10Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Is there anything  a  non-programmer can do to help the situation?\n\n \nFrom: Prasenjit Kapat <kapatp at gm...> - 2008-10-22 06:02\n > Hi Users,\n >\n > The problem with R 2.8.0 is something different. Provided below is a\n > mail from Michael who maintains the ubuntu packages on CRAN. Similar\n > problem has also been reported on SuSE. I am not aware of any\n > solution, but something does need to be done to fix this. Unless you\n > really need R 2.8.0, I suggest pinning R 2.7.2 version as available\n > from CRAN.\n >\n > On Tue, Oct 21, 2008 at 11:19 AM, Donatas G. <dgvirtual at ak...> wrote:\n > > Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you \ninstall\n > > a *.deb package for intrepid from the ubuntu repositories (or \ncompile it\n > > yourselt the Debian way by taking sources either from ubuntu\n > > repositories or from the sourceforge.net rkward debian repository) you\n > > get Rkward without the Main menu and without the the \"Welcome to \nRKward\"\n > > page.... Also, without the \"Help\" menu!\n > >\n > > But if you compile it yourself with a simple sequence:\n > >\n > > cd rkward_source_dir\n > > cmake .\n > > make\n > > sudo make install\n > >\n > > Rkward looks normal, only missing some icons...\n > >\n > > I guess that means that there is an error in rkward sources, maybe\n > > related to the former Kubuntu place to KDE4 packages...\n >\n > Michael says:\n >\n > ========================\n > I maintain Ubuntu packages on CRAN for amd64. Today, the new version of\n > R (2.8.0) came out, and I am unable to build an rkward package based\n > around 2.8.0. Turns out the decision has been made to remove Rdevices.h\n > and Rgraphics.h from the installed portion of R. They still exist in\n > the source code, however. Since Rdevices.h is not available to ubuntu,\n > the build fails under hardy and intrepid. Same problem with the package\n > rpy.\n >\n > Not sure what the fix is, but at this point I think we are going to\n > release R 2.8.0 builds for ubuntu without an update to rkward. Would\n > have found this sooner, but testing packages is one of the last things\n > on the list.\n >\n > Thanks,\n > Michael\n > ======================\n >\n > Hopefully something will come up soon.\n\n\n-- \nFinn Sand?\ntel.:  +45 6075 0013\nmail: fs at 3q.dk",
+      "body_snippet": "Is there anything  a  non-programmer can do to help the situation?\n\n \nFrom: Prasenjit Kapat <kapatp at gm...> - 2008-10-22 06:02\n > Hi Users,\n >\n > The problem with R 2.8.0 is something different. Pro",
+      "thread_id": "thread-2ebc12cda577",
+      "thread_depth": 0,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-625f8e5af2b0",
+      "message_id": "<48FF2EC2.4010106@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2008-10-22T13:46:42Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<48FF12FA.6080305@fs-analyse.dk>",
+      "references": [
+        "<48FF12FA.6080305@fs-analyse.dk>"
+      ],
+      "body_plain": "This is actually a packaging type of issue. There is some mistake in the\npackage source debian/rules, I suppose. And I would also guess, that it\nis related to the standard install directories of kde4, since the parts\nmissing (like the Help menu) seem to be related to the standard KDE stuff.\n\nJust a guess, maybe I am wrong..\n\nDonatas\n\nstfs ra??:\n> Is there anything  a  non-programmer can do to help the situation?\n>\n>  \n> From: Prasenjit Kapat <kapatp at gm...> - 2008-10-22 06:02\n>  > Hi Users,\n>  >\n>  > The problem with R 2.8.0 is something different. Provided below is a\n>  > mail from Michael who maintains the ubuntu packages on CRAN. Similar\n>  > problem has also been reported on SuSE. I am not aware of any\n>  > solution, but something does need to be done to fix this. Unless you\n>  > really need R 2.8.0, I suggest pinning R 2.7.2 version as available\n>  > from CRAN.\n>  >\n>  > On Tue, Oct 21, 2008 at 11:19 AM, Donatas G. <dgvirtual at ak...> wrote:\n>  > > Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you \n> install\n>  > > a *.deb package for intrepid from the ubuntu repositories (or \n> compile it\n>  > > yourselt the Debian way by taking sources either from ubuntu\n>  > > repositories or from the sourceforge.net rkward debian repository) you\n>  > > get Rkward without the Main menu and without the the \"Welcome to \n> RKward\"\n>  > > page.... Also, without the \"Help\" menu!\n>  > >\n>  > > But if you compile it yourself with a simple sequence:\n>  > >\n>  > > cd rkward_source_dir\n>  > > cmake .\n>  > > make\n>  > > sudo make install\n>  > >\n>  > > Rkward looks normal, only missing some icons...\n>  > >\n>  > > I guess that means that there is an error in rkward sources, maybe\n>  > > related to the former Kubuntu place to KDE4 packages...\n>  >\n>  > Michael says:\n>  >\n>  > ========================\n>  > I maintain Ubuntu packages on CRAN for amd64. Today, the new version of\n>  > R (2.8.0) came out, and I am unable to build an rkward package based\n>  > around 2.8.0. Turns out the decision has been made to remove Rdevices.h\n>  > and Rgraphics.h from the installed portion of R. They still exist in\n>  > the source code, however. Since Rdevices.h is not available to ubuntu,\n>  > the build fails under hardy and intrepid. Same problem with the package\n>  > rpy.\n>  >\n>  > Not sure what the fix is, but at this point I think we are going to\n>  > release R 2.8.0 builds for ubuntu without an update to rkward. Would\n>  > have found this sooner, but testing packages is one of the last things\n>  > on the list.\n>  >\n>  > Thanks,\n>  > Michael\n>  > ======================\n>  >\n>  > Hopefully something will come up soon.\n>\n>\n>",
+      "body_snippet": "This is actually a packaging type of issue. There is some mistake in the\npackage source debian/rules, I suppose. And I would also guess, that it\nis related to the standard install directories of kde4,",
+      "thread_id": "thread-2ebc12cda577",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-3a093c2e0354",
+      "message_id": "<de8c7cb40810220810m6eb4fa92hc0a48b6eef2fd18@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-10-22T15:10:57Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<48FDF2E9.4@akl.lt>",
+      "references": [
+        "<48FDF2E9.4@akl.lt>"
+      ],
+      "body_plain": "Hi,\n\nOn 10/21/08, Donatas G. <dgvirtual at akl.lt> wrote:\n> Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\n> a *.deb package for intrepid from the ubuntu repositories (or compile it\n> yourselt the Debian way by taking sources either from ubuntu\n> repositories or from the sourceforge.net rkward debian repository) you\n> get Rkward without the Main menu and without the the \"Welcome to RKward\"\n> page.... Also, without the \"Help\" menu!\n\nCan you try to get the R-2.8.0 sources and grab the two files,\nRdevices.h and Rgraphics.h, as mentioned in Michael's mail. Put them\nin the path somewhere so that rkward (when compiling) can find them,\nmay be inside rkward's src/rkward folder itself. See if the\ncompilation works any different.\n\n--\nPK",
+      "body_snippet": "Hi,\n\nOn 10/21/08, Donatas G. <dgvirtual at akl.lt> wrote:\n> Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\n> a *.deb package for intrepid from the ubuntu repositories (or com",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-f862ce38394e",
+      "message_id": "<48FF7075.3040007@fs-analyse.dk>",
+      "from_name": "stfs",
+      "from_email_hash": "bf7486321a46230e043d74517295d9aeb6d5c5f4056c56fdd65e23c364a231ea",
+      "date": "2008-10-22T18:27:01Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<de8c7cb40810220810m6eb4fa92hc0a48b6eef2fd18@mail.gmail.com>",
+      "references": [
+        "<48FDF2E9.4@akl.lt>",
+        "<de8c7cb40810220810m6eb4fa92hc0a48b6eef2fd18@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\nI will do it this weekend - I can't afford to loose my rkward \ninstallation on this computer right now but I get my spare one back in the\nweekend.\nThere's a posting from 'tfry' in the devel list about this aswell.\nfs\n\nOn 2008-10-22 17:10, Prasenjit Kapat wrote:\n> Hi,\n>\n> On 10/21/08, Donatas G. <dgvirtual at akl.lt> wrote:\n>   \n>> Hi, RKWard in Ubuntu Intrepid Beta is currently broken: when you install\n>> a *.deb package for intrepid from the ubuntu repositories (or compile it\n>> yourselt the Debian way by taking sources either from ubuntu\n>> repositories or from the sourceforge.net rkward debian repository) you\n>> get Rkward without the Main menu and without the the \"Welcome to RKward\"\n>> page.... Also, without the \"Help\" menu!\n>>     \n>\n> Can you try to get the R-2.8.0 sources and grab the two files,\n> Rdevices.h and Rgraphics.h, as mentioned in Michael's mail. Put them\n> in the path somewhere so that rkward (when compiling) can find them,\n> may be inside rkward's src/rkward folder itself. See if the\n> compilation works any different.\n>\n> --\n> PK\n>\n> -------------------------------------------------------------------------\n> This SF.Net email is sponsored by the Moblin Your Move Developer's challenge\n> Build the coolest Linux based applications with Moblin SDK & win great prizes\n> Grand prize is a trip for two to an Open Source event anywhere in the world\n> http://moblin-contest.org/redirect.php?banner_id=100&url=/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>\n>   \n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081022/6a5b32ea/attachment.html>",
+      "body_snippet": "Hi,\nI will do it this weekend - I can't afford to loose my rkward \ninstallation on this computer right now but I get my spare one back in the\nweekend.\nThere's a posting from 'tfry' in the devel list a",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 2,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-3da9d7cc3453",
+      "message_id": "<de8c7cb40810222212x6588601eqf32a14fe4a63366b@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-10-23T05:12:45Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<48FF7075.3040007@fs-analyse.dk>",
+      "references": [
+        "<48FDF2E9.4@akl.lt>",
+        "<de8c7cb40810220810m6eb4fa92hc0a48b6eef2fd18@mail.gmail.com>",
+        "<48FF7075.3040007@fs-analyse.dk>"
+      ],
+      "body_plain": "On Wed, Oct 22, 2008 at 2:27 PM, stfs <stfs at fs-analyse.dk> wrote:\n> Hi,\n> I will do it this weekend - I can't afford to loose my rkward installation\n> on this computer right now but I get my spare one back in the\n> weekend.\n> There's a posting from 'tfry' in the devel list about this aswell.\n> fs\n\nYes, this has an easy fix, as Thomas ('tfry') suggested. The fix has\nbeen comfirmed to work on openSuSE. It might soon be commited to SVN\nand hopefully the Ubuntu repos will get the fix from their maintainers\ntoo.",
+      "body_snippet": "On Wed, Oct 22, 2008 at 2:27 PM, stfs <stfs at fs-analyse.dk> wrote:\n> Hi,\n> I will do it this weekend - I can't afford to loose my rkward installation\n> on this computer right now but I get my spare ",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 3,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-d20b36895e6d",
+      "message_id": "<5506946.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-26T11:09:28Z",
+      "subject": "[rkward-users] [rkward - Help] rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5506946\nBy: tramni\n\nHello!\nI am running Salckware Linux 12.1.0 with R-2.8.0. I cannot compile rkward-0.4.9.a\non my system because of the missing files Rdevices.h and Rgraphics.h. As the\nR-2.8.0 ChangeLog says, they are already obsolete and that is why they are no\nlonger installed. However, rkward looks for them and complains. Copying those\nfiles manually to the R/include directory produces compilation errors. The only\noption to run rkward now is compile it against an older version of R.\n\nAny suggestions will be appreciated.\n\nRegards,\nMartin\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5506946\nBy: tramni\n\nHello!\nI am running Salckware Linux 12.1.0 with R-2.8.0. I cannot compile rkward-0.4.9.a\non m",
+      "thread_id": "thread-d20b36895e6d",
+      "thread_depth": 0,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-dc8e1fbb2f4f",
+      "message_id": "<5506995.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-26T11:19:47Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": "<5506946.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5506995\nBy: fsando\n\nHi Martin\nThe problem is known and an official solution is probably only a day or two\naway\n\nThere is a simple work-around\n>From the rkward-devel list:\nOn 2008-10-22 20:17, Thomas Friedrichsmeier wrote:\n> Hi,\n>\n> On Tuesday 21 October 2008, Michael Rutter wrote:\n>> I maintain Ubuntu packages on CRAN for amd64.  Today, the new version of\n>> R (2.8.0) came out, and I am unable to build an rkward package based\n>> around 2.8.0.  Turns out the decision has been made to remove Rdevices.h\n>> and Rgraphics.h from the installed portion of R.  They still exist in\n>> the source code, however.  Since Rdevices.h is not available to ubuntu,\n>> the build fails under hardy and intrepid.  Same problem with the package\n>> rpy.\n>>\n>> Not sure what the fix is, but at this point I think we are going to\n>> release R 2.8.0 builds for ubuntu without an update to rkward.  Would\n>> have found this sooner, but testing packages is one of the last things\n>> on the list.\n>\n> thanks for pointing this out!\n>\n> I'm still extremely short on time (and on a dialup connection). For all I\ncan\n> see, the fix is as easy as removing the line\n> #include \"Rdevices.h\"\n> from rbackend/rembedinternal.cpp (around line 90). It simply was not really \n> needed, an now it breaks things. So, the fix is simple enough, however, I \n> won't get around to roll fixed packages too soon. Still, if you are a package\n> maintainer, you will know how to release a fixed package. I'd appreciate it\na\n> lot, if you could look into that!\n>\n> Note: I did not actually download and check R 2.8.0, so possibly other things\n> are borken as well. As for the missing header, the solution is simply to \n> remove the include line as detailed above.\n>\n> Regards\n> Thomas\n\nAnd :\n\nOn 2008-10-24 07:59, Stefan R?diger wrote:\n> Am Thursday 23 October 2008 20:39:30 schrieb Thomas Friedrichsmeier:\n>> On Wednesday 22 October 2008, Stefan R?diger wrote:\n>>> Should I apply this to SVN in order to avoid this problem for people who\n>>> use code from there?\n>> Yes, please do. You might want to put a \"REVIEW\" or other remark in the\n>> commit message, though: Possibly this line was actually needed for R 2.6.x\n>> or earlier, after all. We should check that, sooner or later, and add some\n>> version-specific code, if needed. For now, compatibility with R 2.8 is much\n>> more important than backwards compatibility with those pretty old versions\n>> of R.\n>>\n>> BTW: In the KDE 4 version, in SVN, there is a little script to roll a\n>> release relatively easily: Just call\n>> \tmakedist.sh version-name\n>> So, in case you would like to give it a try, you could create a source\n>> release with a fix (remember to adjust the ChangeLog, and do some testing,\n>> of course). I think several of you should have the required permissions for\n>> uploading to sourceforge, too.\n>>\n>> Regards\n>> Thomas\n>\n> I will do that on monday unless somebody else is faster than me.\n>\n> Regards\n> Stefan\n\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5506995\nBy: fsando\n\nHi Martin\nThe problem is known and an official solution is probably only a day or two\naway\n\nT",
+      "thread_id": "thread-d20b36895e6d",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-06260c16a3e6",
+      "message_id": "<5507045.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-26T11:29:40Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": "<5506946.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5507045\nBy: tramni\n\nfsando,\nthank you very much for your reply. I will wait for the official solution. Will\nit be a patch or what? Where shall we look for it?\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5507045\nBy: tramni\n\nfsando,\nthank you very much for your reply. I will wait for the official solution. Will\nit be",
+      "thread_id": "thread-d20b36895e6d",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-7120b83d8ad6",
+      "message_id": "<5508112.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-26T14:34:11Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": "<5507045.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5508112\nBy: fsando\n\nI don't know exactly\nIt's definitely a patch to the 0,5 branch - don't know if / when it will be\nbackported or whether 0.49 is expected to work with R 2.8.\n\n>From the mails (in my answer above) I assume you first see the patch in the\nrepository - then it will most likely find its way into the official Ubuntu-hardy\nand intrepid repositories. How long that will take I don't know but my guess\nis not long.\n\nSo your best bet at getting soon is to draw the latest source from the rkward\nrepository - if you can't wait for tomorrow (presumably) I think you could get\nit today and change the offending line described in the mail cited above.\n\nIf you are going for the svn  install I suggest you go with the 0.5 version.\nHere are some instructions (gained from my own experience - THEY DON'T WORK\nON INTREPID)\n# install stuff needed for compiling: subversion, cmake and kde3 develop libraries.\n(Yes kde3 libraries are named kde4, just like kde4 libs are named kde5).\nsudo apt-get install cmake subversion kde4-devel\n\n# important: run this command in the console which adds the location of the\nkde libs to the path.\nexport PATH=$PATH:/usr/lib/kde4/bin\n\n# then draw the sources from the repository - this will get you the latest\nsources\nsvn co https://rkward.svn.sourceforge.net/svnroot/rkward/trunk rkward  \n\n# move to rkward folder run the usual commands (don't miss the period '.' in\nthe cmake command for current folder\ncd rkward/rkward\ncmake .\nmake \nsudo make install\n\n# later updates are done with \nsvn up\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5508112\nBy: fsando\n\nI don't know exactly\nIt's definitely a patch to the 0,5 branch - don't know if / when it will",
+      "thread_id": "thread-d20b36895e6d",
+      "thread_depth": 2,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-887ff4a83eee",
+      "message_id": "<5508264.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-26T15:02:02Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": "<5506946.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5508264\nBy: tramni\n\nfsando,\n\nThank you very much for your responsiveness. I am not in a hurry, so I will\nbe waiting for a patch or whatsoever. I currently work with R-2.8.0 and the\nrkward I built for R-2.7.2. I have seen no obvious problems do far.\nI am only interested in rkward-0.4.9a because it is the latest version, compatible\nwith KDE 3. KDE 4 will probably be available with Slackware next year, so until\nthen I will have to stick to rkward-0.4.9.a.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5508264\nBy: tramni\n\nfsando,\n\nThank you very much for your responsiveness. I am not in a hurry, so I will\nbe waiti",
+      "thread_id": "thread-d20b36895e6d",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-5fe46435bbf0",
+      "message_id": "<4904E29A.2080307@fs-analyse.dk>",
+      "from_name": "stfs",
+      "from_email_hash": "bf7486321a46230e043d74517295d9aeb6d5c5f4056c56fdd65e23c364a231ea",
+      "date": "2008-10-26T21:35:22Z",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "subject_clean": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "in_reply_to": "<de8c7cb40810222212x6588601eqf32a14fe4a63366b@mail.gmail.com>",
+      "references": [
+        "<48FDF2E9.4@akl.lt>",
+        "<de8c7cb40810220810m6eb4fa92hc0a48b6eef2fd18@mail.gmail.com>",
+        "<48FF7075.3040007@fs-analyse.dk>",
+        "<de8c7cb40810222212x6588601eqf32a14fe4a63366b@mail.gmail.com>"
+      ],
+      "body_plain": "I did a successful compile / install on hardy with the 'Rdevices.h' \ncommented out. Haven't tried on intrepid and won't be able to until the \nend of the week - but it probably won't be needed by then.\n\nOn 2008-10-23 07:12, Prasenjit Kapat wrote:\n> On Wed, Oct 22, 2008 at 2:27 PM, stfs <stfs at fs-analyse.dk> wrote:\n>   \n>> Hi,\n>> I will do it this weekend - I can't afford to loose my rkward installation\n>> on this computer right now but I get my spare one back in the\n>> weekend.\n>> There's a posting from 'tfry' in the devel list about this aswell.\n>> fs\n>>     \n>\n> Yes, this has an easy fix, as Thomas ('tfry') suggested. The fix has\n> been comfirmed to work on openSuSE. It might soon be commited to SVN\n> and hopefully the Ubuntu repos will get the fix from their maintainers\n> too.\n>\n> -------------------------------------------------------------------------\n> This SF.Net email is sponsored by the Moblin Your Move Developer's challenge\n> Build the coolest Linux based applications with Moblin SDK & win great prizes\n> Grand prize is a trip for two to an Open Source event anywhere in the world\n> http://moblin-contest.org/redirect.php?banner_id=100&url=/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>\n>   \n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081026/f997e21a/attachment.html>",
+      "body_snippet": "I did a successful compile / install on hardy with the 'Rdevices.h' \ncommented out. Haven't tried on intrepid and won't be able to until the \nend of the week - but it probably won't be needed by then.",
+      "thread_id": "thread-8001a5765319",
+      "thread_depth": 4,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-4f68a93427f2",
+      "message_id": "<de8c7cb40810271053h7bcc1a00vaa0752d0cd0a158c@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-10-27T17:53:12Z",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] R 2.8.0 for Debian etch",
+      "subject_clean": "[rkward-users] Fwd: [R-sig-Debian] R 2.8.0 for Debian etch",
+      "in_reply_to": "<20081027154532.GA7188@localdomain>",
+      "references": [
+        "<20081027154532.GA7188@localdomain>"
+      ],
+      "body_plain": "So the Debian repo has things updated appropriately now. Hopefully\nUbuntu's repo should follow soon.\n\n\n---------- Forwarded message ----------\nFrom: Johannes Ranke <jranke at uni-bremen.de>\nDate: Mon, Oct 27, 2008 at 11:45 AM\nSubject: [R-sig-Debian] R 2.8.0 for Debian etch\nTo: r-sig-debian at r-project.org\n\n\nDear all,\n\nIt is my pleasure to announce the immediate availability of R 2.8.0\nfor the current Debian stable release on CRAN. Source packages and\nbinaries for i386 and amd64 are at your disposal.\n\nI also updated the README to include a short howto for using R 2.8.0 from\nunstable on testing (lenny), which is currently frozen. This currently pulls\nthe current pcre from unstable, next to the current R packages.\n\nBy removing references to Rdevices.h, I was able to provide updated packages\nof rkward 0.4.9a (i386 and amd64) and python-rpy (currently i386 only, amd64\nwill probably follow soon) as well. As usual, the latest recommended packages\nare updated, as well as littler and RODBC.\n\nPlease report any problems you might encounter to this list.\n\nKind regards,\n\nJohannes Ranke\n\n--\nAlumnus of the University of Bremen\nhttp://www.uft.uni-bremen.de/chemie/ranke               jranke at uni-bremen.de\n\n_______________________________________________\nR-SIG-Debian mailing list\nR-SIG-Debian at r-project.org\nhttps://stat.ethz.ch/mailman/listinfo/r-sig-debian",
+      "body_snippet": "So the Debian repo has things updated appropriately now. Hopefully\nUbuntu's repo should follow soon.\n\n\n---------- Forwarded message ----------\nFrom: Johannes Ranke <jranke at uni-bremen.de>\nDate: Mon,",
+      "thread_id": "thread-4f68a93427f2",
+      "thread_depth": 0,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-4a4e28badf27",
+      "message_id": "<20081028192556.GA8755@localdomain>",
+      "from_name": "Johannes Ranke",
+      "from_email_hash": "8d7dc9cf8d248719dcd9a94c124dab5545d72861321d11f36ce7fddb3c609524",
+      "date": "2008-10-28T19:25:56Z",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] R 2.8.0 for Debian etch",
+      "subject_clean": "[rkward-users] Fwd: [R-sig-Debian] R 2.8.0 for Debian etch",
+      "in_reply_to": "<de8c7cb40810271053h7bcc1a00vaa0752d0cd0a158c@mail.gmail.com>",
+      "references": [
+        "<20081027154532.GA7188@localdomain>",
+        "<de8c7cb40810271053h7bcc1a00vaa0752d0cd0a158c@mail.gmail.com>"
+      ],
+      "body_plain": "Dear Prasenjit Kapat,\n\nplease don't forget that CRAN is not an official Debian repository. I don't know\nif an updated rkward 0.4.9 (using KDE 3) will be uploaded to Debian unstable,\ngiven that at the moment, only 0.5 is in unstable at the moment.\n\nGreetings,\n\nJohannes\n\n* Prasenjit Kapat <kapatp at gmail.com> [081027 19:00]:\n> So the Debian repo has things updated appropriately now. Hopefully\n> Ubuntu's repo should follow soon.\n> \n> \n> ---------- Forwarded message ----------\n> From: Johannes Ranke <jranke at uni-bremen.de>\n> Date: Mon, Oct 27, 2008 at 11:45 AM\n> Subject: [R-sig-Debian] R 2.8.0 for Debian etch\n> To: r-sig-debian at r-project.org\n> \n> \n> Dear all,\n> \n> It is my pleasure to announce the immediate availability of R 2.8.0\n> for the current Debian stable release on CRAN. Source packages and\n> binaries for i386 and amd64 are at your disposal.\n> \n> I also updated the README to include a short howto for using R 2.8.0 from\n> unstable on testing (lenny), which is currently frozen. This currently pulls\n> the current pcre from unstable, next to the current R packages.\n> \n> By removing references to Rdevices.h, I was able to provide updated packages\n> of rkward 0.4.9a (i386 and amd64) and python-rpy (currently i386 only, amd64\n> will probably follow soon) as well. As usual, the latest recommended packages\n> are updated, as well as littler and RODBC.\n> \n> Please report any problems you might encounter to this list.\n> \n> Kind regards,\n> \n> Johannes Ranke\n> \n> --\n> Alumnus of the University of Bremen\n> http://www.uft.uni-bremen.de/chemie/ranke               jranke at uni-bremen.de\n> \n> _______________________________________________\n> R-SIG-Debian mailing list\n> R-SIG-Debian at r-project.org\n> https://stat.ethz.ch/mailman/listinfo/r-sig-debian\n> \n> -------------------------------------------------------------------------\n> This SF.Net email is sponsored by the Moblin Your Move Developer's challenge\n> Build the coolest Linux based applications with Moblin SDK & win great prizes\n> Grand prize is a trip for two to an Open Source event anywhere in the world\n> http://moblin-contest.org/redirect.php?banner_id=100&url=/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n\n-- \nDr. Johannes Ranke                 jranke at uni-bremen.de",
+      "body_snippet": "Dear Prasenjit Kapat,\n\nplease don't forget that CRAN is not an official Debian repository. I don't know\nif an updated rkward 0.4.9 (using KDE 3) will be uploaded to Debian unstable,\ngiven that at the ",
+      "thread_id": "thread-4f68a93427f2",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-e638a3d914ac",
+      "message_id": "<5544692.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-31T05:32:15Z",
+      "subject": "[rkward-users] [rkward - Help] keyboard / focus / xubuntu problem?",
+      "subject_clean": "[rkward-users] [rkward - Help] keyboard / focus / xubuntu problem?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5544692\nBy: enliteme\n\nHi there,\n\nI working quite much with rkward (imho the best GUI for R), but i have the following\nproblem.\n - occasionally can't \"run all\" by F9, can't copy/paste \n - still can type (but sometimes my text ends up in the interactive console\nwindow, instead of the script editor window)\n - although i'm still in editor window the icon menus change to something that\nis usually if the focus is on the console window\n - changing focus a few times between script editor/console window solves the\nproblem.\n\nI vaguely remember that some 3-4 years ago similar problem devastated my ubuntu\n(non-responding keys, lost focus), but i am not sure if it is related...\n\nanyhow, does anyone have any  tip if its a rkward or rather a xubuntu problem?\n(no similar problems with other applications though...)\n\nbest,\n\ngabor\n\nspecs : \n- Xubuntu 8.04 running on VMware from win XP\n- rkward 0.4.9 , KDE 3.5.10\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5544692\nBy: enliteme\n\nHi there,\n\nI working quite much with rkward (imho the best GUI for R), but i have the follo",
+      "thread_id": "thread-e638a3d914ac",
+      "thread_depth": 0,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-3b1145a5fb77",
+      "message_id": "<5544707.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-31T05:37:58Z",
+      "subject": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "in_reply_to": "<5544692.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5544707\nBy: enliteme\n\njust a related question:\nis there any shortcut key to change focus between console/editor windows?\nI would entirely exclude my mouse from the development (write/run/test) cycle\nif possible.\n\nalso, is there any  way to use  CTRL-C, CTRL-V shortcuts  **across** rkward\nwindows?\n(or any other key bindings)\n\n\n\n\n\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5544707\nBy: enliteme\n\njust a related question:\nis there any shortcut key to change focus between console/editor w",
+      "thread_id": "thread-e638a3d914ac",
+      "thread_depth": 1,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-29d5eb85cef0",
+      "message_id": "<5548415.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-31T15:04:23Z",
+      "subject": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "in_reply_to": "<5544707.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5548415\nBy: kapatp\n\n> is there any shortcut key to change focus between console/editor windows? \n\nThese work (albeit buggy sometimes) :\n Alt 0 : Editor; Alt 3 : Command Log; Alt 4 : Pending Jobs; Alt 5: Console;\nAlt 6 : Help\n\nTip: Sometimes the focus freezes on the Console. To get rid of that, Cycle through\n\"Alt 0 + Alt 5\" sequence a few times, rapidly :)\n\nTip: Alt 3 ... 6 can be used to toggle (open/close) the respective windows as\nwell.\n\nThese partially work: \nAlt 1 : Workspace Browser; Alt 2 : File Browser\n\nPartially because, though you can toggle (open/close) the browsers, you still\nhave to use the mouse to navigate through them...\n\n> is there any way to use CTRL-C, CTRL-V shortcuts **across** rkward windows? \n\nThese should be handled by the Desktop Mangager (e.g., Klipper for KDE). If\nyou are asking about copying/pasting between Console and Editor then except\nCtrl-C in Console (which is actually intended to stop the running command),\nthey should work.\n\nRegards\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5548415\nBy: kapatp\n\n> is there any shortcut key to change focus between console/editor windows? \n\nThese work (alb",
+      "thread_id": "thread-e638a3d914ac",
+      "thread_depth": 2,
+      "month": "2008-10"
+    },
+    {
+      "id": "msg-127b5c1e527a",
+      "message_id": "<5548455.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-10-31T15:12:36Z",
+      "subject": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "in_reply_to": "<5544692.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5548455\nBy: kapatp\n\n> - occasionally can't \"run all\" by F9, can't copy/paste\n\nI rarely use F9, so can not comment on it. But never had any problems with copy/paste\n(modulo focus issues)..\n\n> - still can type (but sometimes my text ends up in the interactive console\nwindow, instead of the script editor window)\n> - although i'm still in editor window the icon menus change to something that\nis usually if the focus is on the console window\n> - changing focus a few times between script editor/console window solves the\nproblem.\n \nRight, these are still annoying bugs, but not \"show stopper\" I guess. I face\nthese routinely in KDE 3.5 using rkward 0.4.9a. Do not know about the 0.5 version\non KDE 4.x! As I mentioned in the other reply, repeated use of \"Alt-0 Alt-5\"\ngets the focus fixed. Doing this with shortcut keys, as opposed to a mouse,\nis not that bad actually! You get the hang of it :)\n\nRegards,\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5548455\nBy: kapatp\n\n> - occasionally can't \"run all\" by F9, can't copy/paste\n\nI rarely use F9, so can not comment",
+      "thread_id": "thread-e638a3d914ac",
+      "thread_depth": 1,
+      "month": "2008-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8001a5765319",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid  beta broken",
+      "message_count": 6,
+      "participants": [
+        "Donatas G.",
+        "Prasenjit Kapat",
+        "stfs"
+      ],
+      "started": "2008-10-21T15:19:05Z",
+      "last_reply": "2008-10-26T21:35:22Z",
+      "root_message_id": "msg-8001a5765319"
+    },
+    {
+      "id": "thread-2ebc12cda577",
+      "subject": "[rkward-users] rkward in Kubuntu Intrepid beta broken",
+      "message_count": 2,
+      "participants": [
+        "Donatas G.",
+        "stfs"
+      ],
+      "started": "2008-10-22T11:48:10Z",
+      "last_reply": "2008-10-22T13:46:42Z",
+      "root_message_id": "msg-2ebc12cda577"
+    },
+    {
+      "id": "thread-d20b36895e6d",
+      "subject": "[rkward-users] [rkward - Help] rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "message_count": 5,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-10-26T11:09:28Z",
+      "last_reply": "2008-10-26T15:02:02Z",
+      "root_message_id": "msg-d20b36895e6d"
+    },
+    {
+      "id": "thread-4f68a93427f2",
+      "subject": "[rkward-users] Fwd: [R-sig-Debian] R 2.8.0 for Debian etch",
+      "message_count": 2,
+      "participants": [
+        "Johannes Ranke",
+        "Prasenjit Kapat"
+      ],
+      "started": "2008-10-27T17:53:12Z",
+      "last_reply": "2008-10-28T19:25:56Z",
+      "root_message_id": "msg-4f68a93427f2"
+    },
+    {
+      "id": "thread-e638a3d914ac",
+      "subject": "[rkward-users] [rkward - Help] keyboard / focus / xubuntu problem?",
+      "message_count": 4,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-10-31T05:32:15Z",
+      "last_reply": "2008-10-31T15:12:36Z",
+      "root_message_id": "msg-e638a3d914ac"
+    }
+  ]
+}

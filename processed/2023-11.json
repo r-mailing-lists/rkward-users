@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2023-11",
+  "messages": [
+    {
+      "id": "msg-f575a038760e",
+      "message_id": "<CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2023-11-27T15:43:07Z",
+      "subject": "RKWard Site Configuration",
+      "subject_clean": "RKWard Site Configuration",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nJust to note that https://rkward.kde.org/ , does not\nappear correctly displayed.\nCan you have a look?\nBest Regards!\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231127/27d1755f/attachment.htm>",
+      "body_snippet": "Hi,\nJust to note that https://rkward.kde.org/ , does not\nappear correctly displayed.\nCan you have a look?\nBest Regards!\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed.",
+      "thread_id": "thread-f575a038760e",
+      "thread_depth": 0,
+      "month": "2023-11"
+    },
+    {
+      "id": "msg-5e1a6524ce76",
+      "message_id": "<20231129231100.52d6bf7a@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2023-11-30T06:15:47Z",
+      "subject": "RKWard Site Configuration",
+      "subject_clean": "RKWard Site Configuration",
+      "in_reply_to": "<CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>"
+      ],
+      "body_plain": "On Mon, 27 Nov 2023 09:43:07 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi,\n> Just to note that https://rkward.kde.org/ , does not\n> appear correctly displayed.\n> Can you have a look?\n> Best Regards!\n> Alfonso\n\nThanks for reporting, not sure, why this broke.\n\nI fixed the worst symptoms, but there may be some rough edges left. I\nalso had to flatten the navigation bar, as nested menus did not seem to\nwork any longer.\n\nShould anybody wish to help, the repository governing this website is\nat: https://invent.kde.org/websites/rkward-kde-org\n\n(README.md for basic instructions).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231130/fdf3e45c/attachment.sig>",
+      "body_snippet": "On Mon, 27 Nov 2023 09:43:07 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi,\n> Just to note that https://rkward.kde.org/ , does not\n> appear correctly displayed.\n> Can you ha",
+      "thread_id": "thread-f575a038760e",
+      "thread_depth": 1,
+      "month": "2023-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-f575a038760e",
+      "subject": "RKWard Site Configuration",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2023-11-27T15:43:07Z",
+      "last_reply": "2023-11-30T06:15:47Z",
+      "root_message_id": "msg-f575a038760e"
+    }
+  ]
+}

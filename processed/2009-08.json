@@ -1,0 +1,506 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-08",
+  "messages": [
+    {
+      "id": "msg-0c809fce913b",
+      "message_id": "<1249374142.82cf4f4alexandre.villers@cebc.cnrs.fr>",
+      "from_name": "alexandre villers",
+      "from_email_hash": "57d5378b264e974d055e0926c8918973779fd8ab12728ef929a92575bd46a47a",
+      "date": "2009-08-04T08:22:22Z",
+      "subject": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "subject_clean": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear all,\n\nSorry for what may appear as a mail from a lazy person. I decided to stop using windoze and assimilated and to jump into the world of free softwares. Unfortunately I'm at the end of my PhD and did not have much time to properly learn how to use linux.\nI was already using R on windoze and but was a bit confused by its appearance on Ubuntu and found that Rward would be a good starting point.\nBut even after reading the wiki on how to install RKward, I must admit I'm still completely lost.\nSo if someone is in holidays and can waste time detailing me the \"how to\"...\n\nBest regards\n\n\nAlex\nAlexandre Villers\nPhD. Student\nTeam Biodiversity\nCEBC CNRS\n79360 Beauvoir sur Niort\n\n\n__________ Information from ESET Mail Security, version of virus signature database 4303 (20090804) __________\n\nThe message was checked by ESET Mail Security.\nhttp://www.eset.com",
+      "body_snippet": "Dear all,\n\nSorry for what may appear as a mail from a lazy person. I decided to stop using windoze and assimilated and to jump into the world of free softwares. Unfortunately I'm at the end of my PhD ",
+      "thread_id": "thread-0c809fce913b",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-52267ad4b78c",
+      "message_id": "<200908041223.52554.dg@lapas.info>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "e408e1ddef9b9752226a1fbf7a32926eb70c1661d8365ff8dda8f67455eca08d",
+      "date": "2009-08-04T09:23:52Z",
+      "subject": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "subject_clean": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "in_reply_to": "<1249374142.82cf4f4alexandre.villers@cebc.cnrs.fr>",
+      "references": [
+        "<1249374142.82cf4f4alexandre.villers@cebc.cnrs.fr>"
+      ],
+      "body_plain": "Just start a program \"konsole\" and run command \n\nsudo apt-get install rkward\n\non the command line. Enter you password and answer \"y\" to all questions that \napt will ask, and it will pull in all dependencies and install the program.\n\nAlternatively, if you are a completely Graphical User Interface type of a guy, \nhit Alt+F2, type in kpackagekit, and the program managing software will start. \nThere search for rkward and install it - should be pretty much intuitive, so I \nwill not write details here.\n\nhope it helps,\n\nDonatas\n\nOn antradienis 04 Rugpj?tis 2009 11:22:22 alexandre villers wrote:\n> Dear all,\n>\n> Sorry for what may appear as a mail from a lazy person. I decided to stop\n> using windoze and assimilated and to jump into the world of free softwares.\n> Unfortunately I'm at the end of my PhD and did not have much time to\n> properly learn how to use linux. I was already using R on windoze and but\n> was a bit confused by its appearance on Ubuntu and found that Rward would\n> be a good starting point. But even after reading the wiki on how to install\n> RKward, I must admit I'm still completely lost. So if someone is in\n> holidays and can waste time detailing me the \"how to\"...\n>\n> Best regards\n>\n>\n> Alex\n> Alexandre Villers\n> PhD. Student\n> Team Biodiversity\n> CEBC CNRS\n> 79360 Beauvoir sur Niort\n>\n>\n> __________ Information from ESET Mail Security, version of virus signature\n> database 4303 (20090804) __________\n>\n> The message was checked by ESET Mail Security.\n> http://www.eset.com\n>\n>\n>\n> ---------------------------------------------------------------------------\n>--- Let Crystal Reports handle the reporting - Free Crystal Reports 2008\n> 30-Day trial. Simplify your report design, integration and deployment - and\n> focus on what you do best, core application coding. Discover what's new\n> with Crystal Reports now.  http://p.sf.net/sfu/bobj-july\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Just start a program \"konsole\" and run command \n\nsudo apt-get install rkward\n\non the command line. Enter you password and answer \"y\" to all questions that \napt will ask, and it will pull in all depend",
+      "thread_id": "thread-0c809fce913b",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-19dcd149bde0",
+      "message_id": "<200908041224.37254.dgvirtual@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2009-08-04T09:24:37Z",
+      "subject": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "subject_clean": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Just start a program \"konsole\" and run command \n\nsudo apt-get install rkward\n\non the command line. Enter you password and answer \"y\" to all questions that \napt will ask, and it will pull in all dependencies and install the program.\n\nAlternatively, if you are a completely Graphical User Interface type of a guy, \nhit Alt+F2, type in kpackagekit, and the program managing software will start. \nThere search for rkward and install it - should be pretty much intuitive, so I \nwill not write details here.\n\nhope it helps,\n\nDonatas\n\nOn antradienis 04 Rugpj?tis 2009 11:22:22 alexandre villers wrote:\n> Dear all,\n>\n> Sorry for what may appear as a mail from a lazy person. I decided to stop\n> using windoze and assimilated and to jump into the world of free softwares.\n> Unfortunately I'm at the end of my PhD and did not have much time to\n> properly learn how to use linux. I was already using R on windoze and but\n> was a bit confused by its appearance on Ubuntu and found that Rward would\n> be a good starting point. But even after reading the wiki on how to install\n> RKward, I must admit I'm still completely lost. So if someone is in\n> holidays and can waste time detailing me the \"how to\"...\n>\n> Best regards\n>\n>\n> Alex\n> Alexandre Villers\n> PhD. Student\n> Team Biodiversity\n> CEBC CNRS\n> 79360 Beauvoir sur Niort\n>\n>\n> __________ Information from ESET Mail Security, version of virus signature\n> database 4303 (20090804) __________\n>\n> The message was checked by ESET Mail Security.\n> http://www.eset.com\n>\n>\n>\n> ---------------------------------------------------------------------------\n>--- Let Crystal Reports handle the reporting - Free Crystal Reports 2008\n> 30-Day trial. Simplify your report design, integration and deployment - and\n> focus on what you do best, core application coding. Discover what's new\n> with Crystal Reports now.  http://p.sf.net/sfu/bobj-july\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Just start a program \"konsole\" and run command \n\nsudo apt-get install rkward\n\non the command line. Enter you password and answer \"y\" to all questions that \napt will ask, and it will pull in all depend",
+      "thread_id": "thread-19dcd149bde0",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-a4da0d1e966d",
+      "message_id": "<1249384277.8477ca4alexandre.villers@cebc.cnrs.fr>",
+      "from_name": "alexandre villers",
+      "from_email_hash": "57d5378b264e974d055e0926c8918973779fd8ab12728ef929a92575bd46a47a",
+      "date": "2009-08-04T11:11:17Z",
+      "subject": "[rkward-users] some elements",
+      "subject_clean": "[rkward-users] some elements",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "dear all,\n\nI realized I wasn't really clear in my precedent message.\nI tried different ways of installing RKward.\nI used the Synaptic package manager (RKward) or tried directly from the Konsole.\nI got to install RKward, but (that's why I was asking the question on the \"how to\") I can not get the same window as seen on the screenshots (on the wiki page of RKward). I get a message at starting \"Greffons n?cessaires. Vous pouvez les configurer en utilisant le menu Configuration->Configuration de RKWard\" (which could be roughly translated by \"Plugins missing. You can configure them by using the menu...\")\nWhen starting, I don't get the startup dialog box and a lot of menus are missing...\nAny idea ? cause I don't see the configuration menu anywhere in RKward...\n\nThanks for your help\nAlexandre Villers\nPhD. Student\nTeam Biodiversity\nCEBC CNRS\n79360 Beauvoir sur Niort\n\n\n__________ Information from ESET Mail Security, version of virus signature database 4304 (20090804) __________\n\nThe message was checked by ESET Mail Security.\nhttp://www.eset.com",
+      "body_snippet": "dear all,\n\nI realized I wasn't really clear in my precedent message.\nI tried different ways of installing RKward.\nI used the Synaptic package manager (RKward) or tried directly from the Konsole.\nI got",
+      "thread_id": "thread-a4da0d1e966d",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-6857f0988407",
+      "message_id": "<200908041328.28458.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-04T11:28:23Z",
+      "subject": "[rkward-users] some elements",
+      "subject_clean": "[rkward-users] some elements",
+      "in_reply_to": "<1249384277.8477ca4alexandre.villers@cebc.cnrs.fr>",
+      "references": [
+        "<1249384277.8477ca4alexandre.villers@cebc.cnrs.fr>"
+      ],
+      "body_plain": "Hi,\n\nunfortunately, RKWard is badly broken in Ubuntu 9.04. Meik Michalke provides \nup-to-date working packages in a private repository, as detailed on \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories \n. Running the following in a console window should do the trick:\n\n   sudo echo \"deb http://reaktanz.de/deb/rkward jaunty main\" > \n/etc/apt/sources.list.d/rkward.list\n   sudo apt-get update\n   sudo apt-get install rkward\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090804/46e563ce/attachment.sig>",
+      "body_snippet": "Hi,\n\nunfortunately, RKWard is badly broken in Ubuntu 9.04. Meik Michalke provides \nup-to-date working packages in a private repository, as detailed on \nhttp://sourceforge.net/apps/mediawiki/rkward/ind",
+      "thread_id": "thread-a4da0d1e966d",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-d62fb017e738",
+      "message_id": "<1249392945.82af834alexandre.villers@cebc.cnrs.fr>",
+      "from_name": "alexandre villers",
+      "from_email_hash": "57d5378b264e974d055e0926c8918973779fd8ab12728ef929a92575bd46a47a",
+      "date": "2009-08-04T13:35:45Z",
+      "subject": "[rkward-users] rkward and ubuntu 9.04",
+      "subject_clean": "[rkward-users] rkward and ubuntu 9.04",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear Thomas (and all RKward users),\n\nThank you for your help ! It works fine from what I can judge.\nI just had a problem with the directory where RKward stores downloaded libraries (names of the one existing and the one requested when downloading did not match /.rkward/package_archive).\n\nthanks again.\n\nAlex\nAlexandre Villers\nPhD. Student\nTeam Biodiversity\nCEBC CNRS\n79360 Beauvoir sur Niort\n\n\n__________ Information from ESET Mail Security, version of virus signature database 4304 (20090804) __________\n\nThe message was checked by ESET Mail Security.\nhttp://www.eset.com",
+      "body_snippet": "Dear Thomas (and all RKward users),\n\nThank you for your help ! It works fine from what I can judge.\nI just had a problem with the directory where RKward stores downloaded libraries (names of the one e",
+      "thread_id": "thread-d62fb017e738",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-ac86f6c18942",
+      "message_id": "<1249401434.7934.5.camel@mcardeal-laptop>",
+      "from_name": "Mauricio Cardeal",
+      "from_email_hash": "7df72355813d44c901f9e953246654c3f4d5e778d4b8f1fe5879e7e89ae0f051",
+      "date": "2009-08-04T15:57:14Z",
+      "subject": "[rkward-users] output",
+      "subject_clean": "[rkward-users] output",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am new RKWard user, and I would like to know how to send a regular and\nsimple output analysis (something like mean age, for example) to output\nwindow. I am running under ubuntu 9.04 and R 2.9.1.\n\nage <- c(12,15,17,11)\nmean(age)\n\nMany thanks.\nMauricio\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090804/530341c1/attachment.html>",
+      "body_snippet": "I am new RKWard user, and I would like to know how to send a regular and\nsimple output analysis (something like mean age, for example) to output\nwindow. I am running under ubuntu 9.04 and R 2.9.1.\n\nag",
+      "thread_id": "thread-ac86f6c18942",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-d76a9b83ec31",
+      "message_id": "<200908042302.46111.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-04T21:02:41Z",
+      "subject": "[rkward-users] RKWard 0.5.1",
+      "subject_clean": "[rkward-users] RKWard 0.5.1",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all!\n\nRKWard 0.5.1 is finally available for download. The official announcement with \ndownload links is on the homepage at http://rkward.sf.net .\n\nMany thanks to all testers and contributors!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090804/fb51f407/attachment.sig>",
+      "body_snippet": "Hi all!\n\nRKWard 0.5.1 is finally available for download. The official announcement with \ndownload links is on the homepage at http://rkward.sf.net .\n\nMany thanks to all testers and contributors!\n\nRega",
+      "thread_id": "thread-d76a9b83ec31",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-26a15fc2056a",
+      "message_id": "<200908051032.29235.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-05T08:32:25Z",
+      "subject": "[rkward-users] output",
+      "subject_clean": "[rkward-users] output",
+      "in_reply_to": "<1249401434.7934.5.camel@mcardeal-laptop>",
+      "references": [
+        "<1249401434.7934.5.camel@mcardeal-laptop>"
+      ],
+      "body_plain": "On Tuesday 04 August 2009, Mauricio Cardeal wrote:\n> I am new RKWard user, and I would like to know how to send a regular and\n> simple output analysis (something like mean age, for example) to output\n> window. I am running under ubuntu 9.04 and R 2.9.1.\n>\n> age <- c(12,15,17,11)\n> mean(age)\n\n     rk.print(x)\ndoes this for most objects (technically that's just a thin wrapper around the \nHTML() function in R2HTML).\nTo add captions, use\n     rk.header(title)\n\nWe really are lacking documentation for this and similar features. But you can \nalways have a look at the R code generated by plugin dialogs to see how \nsomething is done.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090805/dc3ea073/attachment.sig>",
+      "body_snippet": "On Tuesday 04 August 2009, Mauricio Cardeal wrote:\n> I am new RKWard user, and I would like to know how to send a regular and\n> simple output analysis (something like mean age, for example) to output\n",
+      "thread_id": "thread-ac86f6c18942",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-e61837fe1af1",
+      "message_id": "<200908051039.09401.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-05T08:39:09Z",
+      "subject": "[rkward-users] rkward and ubuntu 9.04",
+      "subject_clean": "[rkward-users] rkward and ubuntu 9.04",
+      "in_reply_to": "<1249392945.82af834alexandre.villers@cebc.cnrs.fr>",
+      "references": [
+        "<1249392945.82af834alexandre.villers@cebc.cnrs.fr>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 04 August 2009, alexandre villers wrote:\n> I just had a problem with the directory where RKward stores downloaded\n> libraries (names of the one existing and the one requested when downloading\n> did not match /.rkward/package_archive).\n\nI'm afraid I did not quite understand the problem. Could you give some more \ndetail on what is (not) happening, and what you expect to happen?\n\nNote that two directories really are involved. First, R downloads the package \nsources to some directory. This is ~/.rkward/package_archive by default, if \nSettings->Configure RKWard->R packages->Archive downloaded packages is checked. \nElse the source packages are downloaded to a temporary directory.\nIn a second step, the packages are installed in the R library directory.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090805/ddbe68de/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 04 August 2009, alexandre villers wrote:\n> I just had a problem with the directory where RKward stores downloaded\n> libraries (names of the one existing and the one requested when down",
+      "thread_id": "thread-d62fb017e738",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-3376adde11ab",
+      "message_id": "<7559131.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-08-13T09:24:21Z",
+      "subject": "[rkward-users] [rkward - Help] How to use Intervals package?",
+      "subject_clean": "[rkward-users] [rkward - Help] How to use Intervals package?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7559131\nBy: tofol\n\nHi, I'm using rkward 0.5.1 with KDE 4.3.0 in Mandriva 2009.1 One\nI've created a variable with data and i want create intervals with this variable.\nI've installed the package Intervals and I've yet loaded it, but i don't know\nhow i can use it. I need help.\nHere is a screenshot http://img12.imageshack.us/i/rkward.png/\nThanks\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7559131\nBy: tofol\n\nHi, I'm using rkward 0.5.1 with KDE 4.3.0 in Mandriva 2009.1 One\nI've created a variable with ",
+      "thread_id": "thread-3376adde11ab",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-bff4aa078da8",
+      "message_id": "<7559724.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-08-13T15:27:38Z",
+      "subject": "[rkward-users] [rkward - Help] RE: How to use Intervals package?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: How to use Intervals package?",
+      "in_reply_to": "<7559131.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7559724\nBy: tfry\n\nThe short answer is, RKWard does not have any built-in support for this package\n(i.e. no graphical menus/dialogs), so you will have to use the R Console (\"Console\nde R\").\n\nFor a slightly longer answer: Unfortunately, there is not yet a standard way\nto get information on a package. But after loading the package, you can switch\nto the Workspace Browser (Espaco de trabajo), right click on any of the functions\nin the package, and chose \"Search Help\". That has links to an index page, and\nin the case of the interval package, the index has a link to an overview in\nPDF format. Read that first, and see if it answers your questions.\n\nIf after that you feel completely lost, perhaps take a thorough look at this,\nfirst: Help->Help on R->An Introduction to R.\n\nIf you feel you understand the basics, but just can't get this or that to work,\nfeel free to come back with a more specific question. However, in that case\nyou may want to post to r-help, instead, to profit from the larger user base\n(see http://www.r-project.org/posting-guide.html).\n\nIf you get things to work, alright, but you think RKWard should really offer\na graphical user interface for that, consider contributing a plugin:\nhttp://rkward.sourceforge.net/documents/devel/plugins/index.html\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7559724\nBy: tfry\n\nThe short answer is, RKWard does not have any built-in support for this package\n(i.e. no graphi",
+      "thread_id": "thread-3376adde11ab",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-2292f41a8a18",
+      "message_id": "<10dee4690908261221u2eeb3c81p172452af52ce305@mail.gmail.com>",
+      "from_name": "Fernando Saldanha",
+      "from_email_hash": "e187078f69097ebef9f8c06f41e2d36081ad3f74c323004e336cfe8ea6e7165e",
+      "date": "2009-08-26T19:21:35Z",
+      "subject": "[rkward-users] Installation on Windows",
+      "subject_clean": "[rkward-users] Installation on Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I tried to install RKWard on Windows Vista but when I try to start the\napplication I get a message saying that libktexteditor.dll was not\nfound. I Googled and could not find good info on that dll.\n\nI chose MinGW when installing KDE stable 4.3.0.  I noticed that the\ninstructions for the KDE installation tell you to install\nkdelibs-mingw and kdebase-mingw. But these libraries do not seem to be\nin the list of the available libraries in the package selection\nscreen.\n\nOn the PHP installation instructions I read \"On the Components page,\nyou need to select Program/CLI Executable.\" But I could not see any\nscreen that would allow me to do that.\n\nCan anyone help?\n\nThanks..\n\nFS",
+      "body_snippet": "I tried to install RKWard on Windows Vista but when I try to start the\napplication I get a message saying that libktexteditor.dll was not\nfound. I Googled and could not find good info on that dll.\n\nI ",
+      "thread_id": "thread-2292f41a8a18",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-ded6722dc956",
+      "message_id": "<1a393e3a0908310129n6ca0bf6bs2ea09b67cc5e7a1d@mail.gmail.com>",
+      "from_name": "Emmanuel Jjunju",
+      "from_email_hash": "41fa69a8bf92a6e7aee3303c95dd53a49172800e42eef5e95e692df2ea58e027",
+      "date": "2009-08-31T08:29:54Z",
+      "subject": "[rkward-users] rkward on windows",
+      "subject_clean": "[rkward-users] rkward on windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I have been using rkward on ubuntu and it was fine. But sometimes I am\nworking in windows so i tried the install. First of all i noted that the KDE\ninstallation has to be \"package and not end-user\".\n\nAnyway i managed to install and use the program until I tried to save a work\nspace or open one.\n\nOn saving there is this error: \" Saving to file '/C:/Rdir/myspace1.r'\nfailed. Do you want to try saving to a different filename?\"\nA different name, directory or file extension doesnt solve the problem.\n\nOn trying to open an existing workspace i get this error: \"There has been an\nerror opening file '/D:/D/dscale/dscale.RData' \".\n\nI am using Vista Premium and I have also disabled user account control at\nsome time but this did not work either. Does anyone have a solution to this?\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/c1e4966b/attachment.html>",
+      "body_snippet": "I have been using rkward on ubuntu and it was fine. But sometimes I am\nworking in windows so i tried the install. First of all i noted that the KDE\ninstallation has to be \"package and not end-user\".\n\n",
+      "thread_id": "thread-ded6722dc956",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-64a47d23d723",
+      "message_id": "<1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>",
+      "from_name": "Emmanuel Jjunju",
+      "from_email_hash": "41fa69a8bf92a6e7aee3303c95dd53a49172800e42eef5e95e692df2ea58e027",
+      "date": "2009-08-31T09:42:35Z",
+      "subject": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "subject_clean": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Error Message:\nThe PHP backend could not be started. Check whether you have correctly\nconfigured the location of the PHP-binary (Settings->Configure Settings->PHP\nbackend)\nalso rkward.bin.exe stops working when i try to browse to the directory when\ntrying to configure PHP.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/d3ec355e/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: PHP-Configure-Error.jpg\nType: image/jpeg\nSize: 107780 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/d3ec355e/attachment.jpg>",
+      "body_snippet": "Error Message:\nThe PHP backend could not be started. Check whether you have correctly\nconfigured the location of the PHP-binary (Settings->Configure Settings->PHP\nbackend)\nalso rkward.bin.exe stops wo",
+      "thread_id": "thread-64a47d23d723",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-301b2a8a7478",
+      "message_id": "<7598457.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-08-31T09:51:10Z",
+      "subject": "[rkward-users] [rkward - Help] Display list redraw incomplete",
+      "subject_clean": "[rkward-users] [rkward - Help] Display list redraw incomplete",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7598457\nBy: fraca83\n\nHello,\nMy problem is occuring sometime when I close a plot:\n> plot(0, 0)\n>savePlot(\"filename\",type=\"jpeg\")\n>graphics.off()\n> Warning message:\n> Display list redraw incomplete\n>\n In addition to the  warning, a new rkward window are launched and . If I launch\nthe plot  in R I have only the warnings . How Can I fix the problem? Or How\nCan I close the new rkward windows by console?\nThanks\nMarco\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7598457\nBy: fraca83\n\nHello,\nMy problem is occuring sometime when I close a plot:\n> plot(0, 0)\n>savePlot(\"filename",
+      "thread_id": "thread-301b2a8a7478",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-f69fc38f70eb",
+      "message_id": "<200908311156.26372.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-31T09:56:20Z",
+      "subject": "[rkward-users] Installation on Windows",
+      "subject_clean": "[rkward-users] Installation on Windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nthe windows version of RKWard is still very young, and we have not gathered \ntoo much experience, so far. Therefore, sorry if the following is mostly a bit \nof guesswork, and no definite answer:\n\nOn Wednesday 26 August 2009, Fernando Saldanha wrote:\n> I chose MinGW when installing KDE stable 4.3.0.  I noticed that the\n> instructions for the KDE installation tell you to install\n> kdelibs-mingw and kdebase-mingw. But these libraries do not seem to be\n> in the list of the available libraries in the package selection\n> screen.\n\nI did not yet get around to try with KDE 4.3.0. If all else fails, you could \ntry using KDE 4.2.3, instead, which is at least known to work (you may need to \nselect the primary server \"winkde.org\" in the mirror-list).\n\nThe \"-mingw\" suffix is no longer shown in the latest version of the KDE \ninstaller, but as long as you chose MinGW-compiler initially, this should not \nbe an issue. Just install \"kdelibs\" and \"kdebase\".\n\nAfter KDE-installation, the missing library libktexteditor.dll should be \nlocated in [KDEDIRS]\\bin\\ . You may need to add [KDEDIRS]\\bin and \n[KDEDIRS]\\lib to your PATH, as described. (This is probably the first thing you \nshould try, if you haven't done that, yet).\n\n> On the PHP installation instructions I read \"On the Components page,\n> you need to select Program/CLI Executable.\" But I could not see any\n> screen that would allow me to do that.\n\nLooking at the screenshots at \nhttp://foundationphp.com/tutorials/php_installer.php (which is a generic guide \nfor PHP-installation, NOT the sequence to follow to install RKWard), the title \nof the page is \"Choose Items to Install\" (step number 7). If your PHP \ninstaller looks completely different, please post some details on which \ninstaller you are using.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/ee955077/attachment.sig>",
+      "body_snippet": "Hi,\n\nthe windows version of RKWard is still very young, and we have not gathered \ntoo much experience, so far. Therefore, sorry if the following is mostly a bit \nof guesswork, and no definite answer:\n",
+      "thread_id": "thread-f69fc38f70eb",
+      "thread_depth": 0,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-33b6dfdc65a2",
+      "message_id": "<200908311216.25248.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-31T10:16:22Z",
+      "subject": "[rkward-users] rkward on windows",
+      "subject_clean": "[rkward-users] rkward on windows",
+      "in_reply_to": "<1a393e3a0908310129n6ca0bf6bs2ea09b67cc5e7a1d@mail.gmail.com>",
+      "references": [
+        "<1a393e3a0908310129n6ca0bf6bs2ea09b67cc5e7a1d@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> On saving there is this error: \" Saving to file '/C:/Rdir/myspace1.r'\n> failed. Do you want to try saving to a different filename?\"\n> A different name, directory or file extension doesnt solve the problem.\n\nhmm, that leading extra slash \"/\" in the file path is the problem. I wonder \nwhere that comes from, though. This used to be an issue in some preview \nreleases, but should be fixed in the official 0.5.1 (and in fact loading and \nsaving workspaces works fine for me). Are you sure you are using RKWard 0.5.1 \n(with no \"-preX\" \"-testX\" or other suffix; see Help->About RKWard)?\n\nIf that can be ruled out, perhaps this is an issue in combination with Windows \nVista? I do my testing on Windows XP, so perhaps this could be the problem. \nDoes anybody else on this list run RKWard on Windows Vista? If so, do you see \nthe same problem?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/ee3ba95a/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> On saving there is this error: \" Saving to file '/C:/Rdir/myspace1.r'\n> failed. Do you want to try saving to a different filename?\"\n> A differen",
+      "thread_id": "thread-ded6722dc956",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-2266d4b81437",
+      "message_id": "<200908311324.37702.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-08-31T11:24:33Z",
+      "subject": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "subject_clean": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "in_reply_to": "<1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>",
+      "references": [
+        "<1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> Error Message:\n> The PHP backend could not be started. Check whether you have correctly\n> configured the location of the PHP-binary (Settings->Configure\n> Settings->PHP backend)\n\nso far that is to be expected. On Windows it's pretty much impossible to guess \nthe correct location of the PHP installation, so you will have to set this up, \nonce, in most cases.\n\n> also rkward.bin.exe stops working when i try to browse to the directory\n> when trying to configure PHP.\n\nI'll have to take a look into this (not on windows right now). KDE on Windows \ndoes have some file-browsing related bugs/crashes.\n\nAs a temporary workaround, search for the file \"rkwardrc\" in your user's \ndirectory. You can edit this with a text editor. You need to adjust the value \nof the \"PHP binary\" setting.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090831/a3c07437/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> Error Message:\n> The PHP backend could not be started. Check whether you have correctly\n> configured the location of the PHP-binary (Settings->C",
+      "thread_id": "thread-64a47d23d723",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-6e6bf52f2e68",
+      "message_id": "<7598872.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-08-31T11:35:35Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Display list redraw incomplete",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Display list redraw incomplete",
+      "in_reply_to": "<7598457.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7598872\nBy: tfry\n\nCould you give some more detail? Which version of RKWard is this, which version\nof KDE libs, which version of R? Are you running in a KDE session or some other\nenvironment?\n\nWhat you are trying to do should really work (and should not even give any warnings\nin R or RKWard). RKWard \"captures\" the R graphics windows, so this is the rkward\nwindow that appears, but these should close automatically on graphics.off()\n/ dev.off(). Some versions of RKWard did have bugs in this area, though. So\nmy guess is that you are using an old version of RKWard, and an update will\nfix this for you (0.5.1 - for KDE 4 - and 0.4.9b - for KDE 3 - are current).\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7598872\nBy: tfry\n\nCould you give some more detail? Which version of RKWard is this, which version\nof KDE libs, wh",
+      "thread_id": "thread-301b2a8a7478",
+      "thread_depth": 1,
+      "month": "2009-08"
+    },
+    {
+      "id": "msg-2b8b36c702d2",
+      "message_id": "<6fdf6d430908310731r2692d0ffo86280471ee7f0b2d@mail.gmail.com>",
+      "from_name": "Nicolas Chapados",
+      "from_email_hash": "0d3cd2018daf326cea13ff6deab629628816495f1a2d545cb75cea6df2b2ae4f",
+      "date": "2009-08-31T14:31:59Z",
+      "subject": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "subject_clean": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello all,\n\nI'm a new RKWard user and so far I've been quite pleased with the\nenvironment it provides for R development. ?However, I'm wondering if\nthe compatibility with RGtk2 has been tested. ?The following simple\nprogram crashes RKWard with a SIGABRT ::\n\n    require(RGtk2)\n    require(gWidgets)\n    require(gWidgetsRGtk2)\n    options(\"guiToolkit\" = \"RGtk2\")\n    gbutton(\"Hello world\", container=gwindow())\n\n(I would gladly use Qt widgets within R, but there does not appear to\nbe any suitable bindings available.)\nI am running under Ubuntu 9.04 and RKWard 0.5.1. ?Here is the traceback I get ::\n\nApplication: RKWard (rkward), signal SIGABRT\n[Current thread is 0 (LWP 11110)]\nThread 2 (Thread 0xb2e7bb90 (LWP 11115)):\n#0 ?0xb7fac430 in __kernel_vsyscall ()\n#1 ?0xb5aed412 in pthread_cond_timedwait@@GLIBC_2.3.2 () from\n/lib/tls/i686/cmov/libpthread.so.0\n#2 ?0xb5cdf344 in pthread_cond_timedwait () from /lib/tls/i686/cmov/libc.so.6\n#3 ?0xb5ec9359 in ?? () from /usr/lib/libQtCore.so.4\n#4 ?0xb5ec948b in QThread::msleep () from /usr/lib/libQtCore.so.4\n#5 ?0x08142419 in _start ()\nThread 1 (Thread 0xb4dc6700 (LWP 11110)):\n[KCrash Handler]\n#6 ?0xb7fac430 in __kernel_vsyscall ()\n#7 ?0xb5c176d0 in raise () from /lib/tls/i686/cmov/libc.so.6\n#8 ?0xb5c19098 in abort () from /lib/tls/i686/cmov/libc.so.6\n#9 ?0xb5c105ce in __assert_fail () from /lib/tls/i686/cmov/libc.so.6\n#10 0xb5b3e7d7 in ?? () from /usr/lib/libX11.so.6\n#11 0xb5b3f0e5 in _XEventsQueued () from /usr/lib/libX11.so.6\n#12 0xb5b27738 in XPending () from /usr/lib/libX11.so.6\n#13 0xb4700796 in gdk_event_check (source=0x0) at\n/build/buildd/gtk+2.0-2.16.1/gdk/x11/gdkevents-x11.c:154\n#14 0xb504b6f6 in IA__g_main_context_check (context=0x9659e90,\nmax_priority=2147483647, fds=0x9f4a148, n_fds=13) at\n/build/buildd/glib2.0-2.20.1/glib/gmain.c:2323\n#15 0xb504bfdd in g_main_context_iterate (context=0x9659e90, block=1,\ndispatch=1, self=0x9657568) at\n/build/buildd/glib2.0-2.20.1/glib/gmain.c:2445\n#16 0xb504c268 in IA__g_main_context_iteration (context=0x9659e90,\nmay_block=1) at /build/buildd/glib2.0-2.20.1/glib/gmain.c:2511\n#17 0xb5fe9438 in QEventDispatcherGlib::processEvents () from\n/usr/lib/libQtCore.so.4\n#18 0xb630d365 in ?? () from /usr/lib/libQtGui.so.4\n#19 0xb5fbc06a in QEventLoop::processEvents () from /usr/lib/libQtCore.so.4\n#20 0xb5fbc4aa in QEventLoop::exec () from /usr/lib/libQtCore.so.4\n#21 0xb5fbe959 in QCoreApplication::exec () from /usr/lib/libQtCore.so.4\n#22 0xb626bd17 in QApplication::exec () from /usr/lib/libQtGui.so.4\n#23 0x080741c7 in _start ()\n\n\nMany thanks for any help!\n+ Nicolas Chapados",
+      "body_snippet": "Hello all,\n\nI'm a new RKWard user and so far I've been quite pleased with the\nenvironment it provides for R development. ?However, I'm wondering if\nthe compatibility with RGtk2 has been tested. ?The f",
+      "thread_id": "thread-2b8b36c702d2",
+      "thread_depth": 0,
+      "month": "2009-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0c809fce913b",
+      "subject": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "message_count": 2,
+      "participants": [
+        "Donatas G.",
+        "alexandre villers"
+      ],
+      "started": "2009-08-04T08:22:22Z",
+      "last_reply": "2009-08-04T09:23:52Z",
+      "root_message_id": "msg-0c809fce913b"
+    },
+    {
+      "id": "thread-19dcd149bde0",
+      "subject": "[rkward-users] help to install RKward on Ubuntu 9.04",
+      "message_count": 1,
+      "participants": [
+        "Donatas G."
+      ],
+      "started": "2009-08-04T09:24:37Z",
+      "last_reply": "2009-08-04T09:24:37Z",
+      "root_message_id": "msg-19dcd149bde0"
+    },
+    {
+      "id": "thread-a4da0d1e966d",
+      "subject": "[rkward-users] some elements",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "alexandre villers"
+      ],
+      "started": "2009-08-04T11:11:17Z",
+      "last_reply": "2009-08-04T11:28:23Z",
+      "root_message_id": "msg-a4da0d1e966d"
+    },
+    {
+      "id": "thread-d62fb017e738",
+      "subject": "[rkward-users] rkward and ubuntu 9.04",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "alexandre villers"
+      ],
+      "started": "2009-08-04T13:35:45Z",
+      "last_reply": "2009-08-05T08:39:09Z",
+      "root_message_id": "msg-d62fb017e738"
+    },
+    {
+      "id": "thread-ac86f6c18942",
+      "subject": "[rkward-users] output",
+      "message_count": 2,
+      "participants": [
+        "Mauricio Cardeal",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-08-04T15:57:14Z",
+      "last_reply": "2009-08-05T08:32:25Z",
+      "root_message_id": "msg-ac86f6c18942"
+    },
+    {
+      "id": "thread-d76a9b83ec31",
+      "subject": "[rkward-users] RKWard 0.5.1",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-08-04T21:02:41Z",
+      "last_reply": "2009-08-04T21:02:41Z",
+      "root_message_id": "msg-d76a9b83ec31"
+    },
+    {
+      "id": "thread-3376adde11ab",
+      "subject": "[rkward-users] [rkward - Help] How to use Intervals package?",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-08-13T09:24:21Z",
+      "last_reply": "2009-08-13T15:27:38Z",
+      "root_message_id": "msg-3376adde11ab"
+    },
+    {
+      "id": "thread-2292f41a8a18",
+      "subject": "[rkward-users] Installation on Windows",
+      "message_count": 1,
+      "participants": [
+        "Fernando Saldanha"
+      ],
+      "started": "2009-08-26T19:21:35Z",
+      "last_reply": "2009-08-26T19:21:35Z",
+      "root_message_id": "msg-2292f41a8a18"
+    },
+    {
+      "id": "thread-ded6722dc956",
+      "subject": "[rkward-users] rkward on windows",
+      "message_count": 2,
+      "participants": [
+        "Emmanuel Jjunju",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-08-31T08:29:54Z",
+      "last_reply": "2009-08-31T10:16:22Z",
+      "root_message_id": "msg-ded6722dc956"
+    },
+    {
+      "id": "thread-64a47d23d723",
+      "subject": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "message_count": 2,
+      "participants": [
+        "Emmanuel Jjunju",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-08-31T09:42:35Z",
+      "last_reply": "2009-08-31T11:24:33Z",
+      "root_message_id": "msg-64a47d23d723"
+    },
+    {
+      "id": "thread-301b2a8a7478",
+      "subject": "[rkward-users] [rkward - Help] Display list redraw incomplete",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-08-31T09:51:10Z",
+      "last_reply": "2009-08-31T11:35:35Z",
+      "root_message_id": "msg-301b2a8a7478"
+    },
+    {
+      "id": "thread-f69fc38f70eb",
+      "subject": "[rkward-users] Installation on Windows",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-08-31T09:56:20Z",
+      "last_reply": "2009-08-31T09:56:20Z",
+      "root_message_id": "msg-f69fc38f70eb"
+    },
+    {
+      "id": "thread-2b8b36c702d2",
+      "subject": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "message_count": 1,
+      "participants": [
+        "Nicolas Chapados"
+      ],
+      "started": "2009-08-31T14:31:59Z",
+      "last_reply": "2009-08-31T14:31:59Z",
+      "root_message_id": "msg-2b8b36c702d2"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+From br_shadow at msn.com  Wed May 17 17:04:17 2017
+From: br_shadow at msn.com (Georgios x)
+Date: Wed, 17 May 2017 17:04:17 +0000
+Subject: Workspace in right sidebar by default
+Message-ID: <DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>
+
+Hi everyone,
+
+
+I am switching from RStudio to using RKward. I want to move the workspace to the right sidebar, but when I do so and I close the program, when I open it the workspace is back in the left sidebar. Is there a way to make it permanent in the right sidebar ?
+
+
+Using RKward 0.6.4
+
+
+Thank you.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170517/cb1e65ce/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat May 20 20:30:53 2017
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sat, 20 May 2017 22:30:53 +0200
+Subject: Workspace in right sidebar by default
+In-Reply-To: <DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>
+References: <DB5PR10MB0263462080E2DAF1138FFE708CE70@DB5PR10MB0263.EURPRD10.PROD.OUTLOOK.COM>
+Message-ID: <20170520223053.052ba926@edge>
+
+Hi,
+
+On Wed, 17 May 2017 17:04:17 +0000
+Georgios x <br_shadow at msn.com> wrote:
+> I am switching from RStudio to using RKward. I want to move the
+> workspace to the right sidebar, but when I do so and I close the
+> program, when I open it the workspace is back in the left sidebar. Is
+> there a way to make it permanent in the right sidebar ?
+
+seems like a reasonable expectatiion, and in fact I had to check,
+myself, whether the feature was just well-hidden, broken, or
+non-existent. Turns out it was the latter...
+
+It will take more that just a few lines of code, though, so I have
+added it to the tracker, for now:
+https://bugs.kde.org/show_bug.cgi?id=380020? The top priority right now
+it to finish a first version based on KF5 (aka "KDE 5").
+
+> Using RKward 0.6.4
+
+Note that the current version of RKWard is 0.6.5. Chances are you
+will be able to install this, without upgrading any other parts of your
+system. See https://rkward.kde.org/Download_RKWard
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170520/767350c6/attachment.sig>
+

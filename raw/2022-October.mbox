@@ -1,0 +1,311 @@
+From flabra at xtra.co.nz  Mon Oct 10 10:20:25 2022
+From: flabra at xtra.co.nz (Fabian Labra-Sprohnle)
+Date: Mon, 10 Oct 2022 22:20:25 +1300
+Subject: install rkward in Linux Slackware 15
+Message-ID: <6343E3D9.7020800@xtra.co.nz>
+
+Dear User
+
+I wonder if someone of you has been able to install rkward in*Linux 
+Slackware 15*. I would appreciate any help to do that
+
+Regards
+
+Fabián
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/55a16102/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Oct 10 19:39:31 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 10 Oct 2022 20:39:31 +0200
+Subject: Call for testing upcoming RKWard 0.7.5
+Message-ID: <20221010203931.74fbd634@booklife>
+
+Hi!
+
+It is once again time to bring the changes in the RKWard development
+tree to a wider audience. A release on October 25 seems doable:
+https://rkward.kde.org/Release_Schedule.html .
+
+Of course, as usual, I'm hoping for your help in testing, to make sure
+the final release does not suffer from avoidable defects.
+
+As for what to look out for, many changes concern the following areas:
+
+- Many new code snippets have been added, and existing snippets have
+  been improved.
+- There is a new option to restart the R backend. This can be very
+  useful when trying to make sure that a script is fully reproducible.
+- Code completions have been improved. Among other things help topics
+  ("?xyz"), and objects inside packages that are not currently loaded
+  ("package:::xyz") can be completed. 
+
+Looking forward to your feedback!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/976aab4f/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Oct 10 19:43:42 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 10 Oct 2022 20:43:42 +0200
+Subject: install rkward in Linux Slackware 15
+In-Reply-To: <6343E3D9.7020800@xtra.co.nz>
+References: <6343E3D9.7020800@xtra.co.nz>
+Message-ID: <20221010204342.196dc58f@booklife>
+
+Hi,
+
+On Mon, 10 Oct 2022 22:20:25 +1300
+Fabian Labra-Sprohnle <flabra at xtra.co.nz> wrote:
+> I wonder if someone of you has been able to install rkward in*Linux 
+> Slackware 15*. I would appreciate any help to do that
+
+The generic starting point would be
+https://rkward.kde.org/Building_RKWard_From_Source.html, if you get
+stuck, post the specific error message, and we can likely talk you
+through the process.
+
+Alternatively, there is usable AppImage for the upcoming release at
+https://binary-factory.kde.org/view/AppImage/job/RKWard_Nightly_appimage-centos7/
+, which should work on any Linux distribution (all you have to do is
+mark the downloaded package as executable).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/492228e9/attachment.sig>
+
+From alfonsociologo at gmail.com  Mon Oct 17 18:13:04 2022
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Mon, 17 Oct 2022 12:13:04 -0500
+Subject: Six broken plugins
+Message-ID: <CAMqnA+j62R0-p=aODmoAJDfiiUrHRENhcW4vZhzw7GHU2PhFhw@mail.gmail.com>
+
+On last update, I've encounter six broken plugins,
+Rkward Versión 0.7.50z+0.7.6+devel1
+[image: image.png]
+Is there a way to fix this?
+Thanks to all!!!
+Regards
+ Alfonso
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/489e5707/attachment-0001.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: image.png
+Type: image/png
+Size: 103425 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/489e5707/attachment-0001.png>
+
+From alfonsociologo at gmail.com  Mon Oct 17 18:52:48 2022
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Mon, 17 Oct 2022 12:52:48 -0500
+Subject: Six broken plugins and one unstable
+Message-ID: <CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>
+
+Hi all, and thanks for all the nice effort you put into this.
+It looks like my first message did not pass through the spam filter.
+
+So I'll try to explain better:
+On last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)
+
+ I've got six broken plugins and one loaded but unstable:
+
+ID State
+rkward::analysis broken
+rkward::data broken
+rkward::import_export broken
+rkward::irt broken
+rkward::plots broken
+rkward::x11device broken
+ComparingCronbachalphas::ComparingCrnonbachalpas_rkward Loded, Unstable
+
+¿Is there a way to fix this?
+Thanks to all.
+
+Regards
+Alfonso
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/63a3a73f/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Oct 17 19:52:54 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 17 Oct 2022 20:52:54 +0200
+Subject: Six broken plugins and one unstable
+In-Reply-To: <CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>
+References: <CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>
+Message-ID: <20221017205254.441abc19@booklife>
+
+On Mon, 17 Oct 2022 12:52:48 -0500
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+
+> Hi all, and thanks for all the nice effort you put into this.
+> It looks like my first message did not pass through the spam filter.
+
+It was held back for its size. I approved it, meanwhile, but we seem to
+have overlapped.
+
+> So I'll try to explain better:
+> On last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)
+> 
+>  I've got six broken plugins and one loaded but unstable:
+
+My bad, I broke the version number in master. Should be fixed with the
+next update.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/d0355bf3/attachment.sig>
+
+From alfonsociologo at gmail.com  Mon Oct 17 19:57:29 2022
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Mon, 17 Oct 2022 13:57:29 -0500
+Subject: Six broken plugins and one unstable
+In-Reply-To: <20221017205254.441abc19@booklife>
+References: <CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>
+ <20221017205254.441abc19@booklife>
+Message-ID: <CAMqnA+i_WvXo3vkHsMug-bxTjTWKVux1XPQ=eRQzCYXvJUszdQ@mail.gmail.com>
+
+Great, thanks!
+Alfonso
+
+El lun, 17 oct 2022 a la(s) 13:53, Thomas Friedrichsmeier (
+thomas.friedrichsmeier at kdemail.net) escribió:
+
+> On Mon, 17 Oct 2022 12:52:48 -0500
+> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+>
+> > Hi all, and thanks for all the nice effort you put into this.
+> > It looks like my first message did not pass through the spam filter.
+>
+> It was held back for its size. I approved it, meanwhile, but we seem to
+> have overlapped.
+>
+> > So I'll try to explain better:
+> > On last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)
+> >
+> >  I've got six broken plugins and one loaded but unstable:
+>
+> My bad, I broke the version number in master. Should be fixed with the
+> next update.
+>
+> Regards
+> Thomas
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/3517fa17/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Oct 24 21:14:18 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 24 Oct 2022 22:14:18 +0200
+Subject: RKWard 0.7.3 is released!
+Message-ID: <20221024221418.287b9304@booklife>
+
+Hi!
+
+RKWard 0.7.5 is officially available for download, today. You can read
+up on the details, and pick the correct download for your platform on
+https://rkward.kde.org, as usual. Thanks to all contributors!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221024/21a90428/attachment.sig>
+
+From alfonsociologo at gmail.com  Thu Oct 27 00:54:51 2022
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Wed, 26 Oct 2022 18:54:51 -0500
+Subject: Changing the name of data.frame object on the workspace crashes RKWard
+Message-ID: <CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>
+
+Hello,
+
+First, Thanks a lot for the new version!
+It's very nice!
+This is just to share that I've noticed a little bug which is driving
+me crazy.
+When I use the contextual menú to change the name of a data.frame crashes
+RKWard.
+Version 0.7.5.
+¿Is just me or anyone can confirm this?
+[image: image.png]
+
+Clicking "Accept" crashes the program.
+Thanks one more time for your work and your help.
+Regards
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221026/803accfb/attachment.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: image.png
+Type: image/png
+Size: 8020 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221026/803accfb/attachment.png>
+
+From thomas.friedrichsmeier at kdemail.net  Thu Oct 27 16:30:02 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 27 Oct 2022 17:30:02 +0200
+Subject: Changing the name of data.frame object on the workspace crashes
+ RKWard
+In-Reply-To: <CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>
+References: <CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>
+Message-ID: <20221027173002.25795b35@booklife>
+
+On Wed, 26 Oct 2022 18:54:51 -0500
+> When I use the contextual menú to change the name of a data.frame
+> crashes RKWard.
+
+Thanks for reporting. Fixed (too late for RKWward 0.7.5, of course).
+
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221027/2af6b0af/attachment.sig>
+

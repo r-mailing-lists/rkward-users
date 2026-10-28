@@ -1,0 +1,247 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2022-10",
+  "messages": [
+    {
+      "id": "msg-77947412bb5e",
+      "message_id": "<6343E3D9.7020800@xtra.co.nz>",
+      "from_name": "Fabian Labra-Sprohnle",
+      "from_email_hash": "127156d6bcdc7589f9c0b623801dec56054d0a8832f1ec294c049e03da232935",
+      "date": "2022-10-10T09:20:25Z",
+      "subject": "install rkward in Linux Slackware 15",
+      "subject_clean": "install rkward in Linux Slackware 15",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear User\n\nI wonder if someone of you has been able to install rkward in*Linux \nSlackware 15*. I would appreciate any help to do that\n\nRegards\n\nFabián\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/55a16102/attachment.htm>",
+      "body_snippet": "Dear User\n\nI wonder if someone of you has been able to install rkward in*Linux \nSlackware 15*. I would appreciate any help to do that\n\nRegards\n\nFabián\n\n-------------- next part --------------\nAn HTML ",
+      "thread_id": "thread-77947412bb5e",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-597ed7b1f2b6",
+      "message_id": "<20221010203931.74fbd634@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-10-10T18:39:31Z",
+      "subject": "Call for testing upcoming RKWard 0.7.5",
+      "subject_clean": "Call for testing upcoming RKWard 0.7.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nIt is once again time to bring the changes in the RKWard development\ntree to a wider audience. A release on October 25 seems doable:\nhttps://rkward.kde.org/Release_Schedule.html .\n\nOf course, as usual, I'm hoping for your help in testing, to make sure\nthe final release does not suffer from avoidable defects.\n\nAs for what to look out for, many changes concern the following areas:\n\n- Many new code snippets have been added, and existing snippets have\n  been improved.\n- There is a new option to restart the R backend. This can be very\n  useful when trying to make sure that a script is fully reproducible.\n- Code completions have been improved. Among other things help topics\n  (\"?xyz\"), and objects inside packages that are not currently loaded\n  (\"package:::xyz\") can be completed. \n\nLooking forward to your feedback!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/976aab4f/attachment.sig>",
+      "body_snippet": "Hi!\n\nIt is once again time to bring the changes in the RKWard development\ntree to a wider audience. A release on October 25 seems doable:\nhttps://rkward.kde.org/Release_Schedule.html .\n\nOf course, as ",
+      "thread_id": "thread-597ed7b1f2b6",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-64fc0b080485",
+      "message_id": "<20221010204342.196dc58f@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-10-10T18:43:42Z",
+      "subject": "install rkward in Linux Slackware 15",
+      "subject_clean": "install rkward in Linux Slackware 15",
+      "in_reply_to": "<6343E3D9.7020800@xtra.co.nz>",
+      "references": [
+        "<6343E3D9.7020800@xtra.co.nz>"
+      ],
+      "body_plain": "Hi,\n\nOn Mon, 10 Oct 2022 22:20:25 +1300\nFabian Labra-Sprohnle <flabra at xtra.co.nz> wrote:\n> I wonder if someone of you has been able to install rkward in*Linux \n> Slackware 15*. I would appreciate any help to do that\n\nThe generic starting point would be\nhttps://rkward.kde.org/Building_RKWard_From_Source.html, if you get\nstuck, post the specific error message, and we can likely talk you\nthrough the process.\n\nAlternatively, there is usable AppImage for the upcoming release at\nhttps://binary-factory.kde.org/view/AppImage/job/RKWard_Nightly_appimage-centos7/\n, which should work on any Linux distribution (all you have to do is\nmark the downloaded package as executable).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221010/492228e9/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Mon, 10 Oct 2022 22:20:25 +1300\nFabian Labra-Sprohnle <flabra at xtra.co.nz> wrote:\n> I wonder if someone of you has been able to install rkward in*Linux \n> Slackware 15*. I would appreciate a",
+      "thread_id": "thread-77947412bb5e",
+      "thread_depth": 1,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-db7fb38c9ac6",
+      "message_id": "<CAMqnA+j62R0-p=aODmoAJDfiiUrHRENhcW4vZhzw7GHU2PhFhw@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-10-17T17:13:04Z",
+      "subject": "Six broken plugins",
+      "subject_clean": "Six broken plugins",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "On last update, I've encounter six broken plugins,\nRkward Versión 0.7.50z+0.7.6+devel1\n[image: image.png]\nIs there a way to fix this?\nThanks to all!!!\nRegards\n Alfonso\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/489e5707/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: image.png\nType: image/png\nSize: 103425 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/489e5707/attachment-0001.png>",
+      "body_snippet": "On last update, I've encounter six broken plugins,\nRkward Versión 0.7.50z+0.7.6+devel1\n[image: image.png]\nIs there a way to fix this?\nThanks to all!!!\nRegards\n Alfonso\n                      ORCID ID:\n",
+      "thread_id": "thread-db7fb38c9ac6",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-321038f119e0",
+      "message_id": "<CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-10-17T17:52:48Z",
+      "subject": "Six broken plugins and one unstable",
+      "subject_clean": "Six broken plugins and one unstable",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all, and thanks for all the nice effort you put into this.\nIt looks like my first message did not pass through the spam filter.\n\nSo I'll try to explain better:\nOn last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)\n\n I've got six broken plugins and one loaded but unstable:\n\nID State\nrkward::analysis broken\nrkward::data broken\nrkward::import_export broken\nrkward::irt broken\nrkward::plots broken\nrkward::x11device broken\nComparingCronbachalphas::ComparingCrnonbachalpas_rkward Loded, Unstable\n\n¿Is there a way to fix this?\nThanks to all.\n\nRegards\nAlfonso\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/63a3a73f/attachment.htm>",
+      "body_snippet": "Hi all, and thanks for all the nice effort you put into this.\nIt looks like my first message did not pass through the spam filter.\n\nSo I'll try to explain better:\nOn last update: Versión 0.7.50z+0.7.6",
+      "thread_id": "thread-321038f119e0",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-43749aac7458",
+      "message_id": "<20221017205254.441abc19@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-10-17T18:52:54Z",
+      "subject": "Six broken plugins and one unstable",
+      "subject_clean": "Six broken plugins and one unstable",
+      "in_reply_to": "<CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>"
+      ],
+      "body_plain": "On Mon, 17 Oct 2022 12:52:48 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi all, and thanks for all the nice effort you put into this.\n> It looks like my first message did not pass through the spam filter.\n\nIt was held back for its size. I approved it, meanwhile, but we seem to\nhave overlapped.\n\n> So I'll try to explain better:\n> On last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)\n> \n>  I've got six broken plugins and one loaded but unstable:\n\nMy bad, I broke the version number in master. Should be fixed with the\nnext update.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/d0355bf3/attachment.sig>",
+      "body_snippet": "On Mon, 17 Oct 2022 12:52:48 -0500\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi all, and thanks for all the nice effort you put into this.\n> It looks like my first message did no",
+      "thread_id": "thread-321038f119e0",
+      "thread_depth": 1,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-5bb558ee12e5",
+      "message_id": "<CAMqnA+i_WvXo3vkHsMug-bxTjTWKVux1XPQ=eRQzCYXvJUszdQ@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-10-17T18:57:29Z",
+      "subject": "Six broken plugins and one unstable",
+      "subject_clean": "Six broken plugins and one unstable",
+      "in_reply_to": "<20221017205254.441abc19@booklife>",
+      "references": [
+        "<CAMqnA+i2Gvew=gz+KHYFfHGC3kOuO5Kzj_i=Fd1S_LHPjrLSzQ@mail.gmail.com>",
+        "<20221017205254.441abc19@booklife>"
+      ],
+      "body_plain": "Great, thanks!\nAlfonso\n\nEl lun, 17 oct 2022 a la(s) 13:53, Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> On Mon, 17 Oct 2022 12:52:48 -0500\n> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n>\n> > Hi all, and thanks for all the nice effort you put into this.\n> > It looks like my first message did not pass through the spam filter.\n>\n> It was held back for its size. I approved it, meanwhile, but we seem to\n> have overlapped.\n>\n> > So I'll try to explain better:\n> > On last update: Versión 0.7.50z+0.7.6+devel1 (LinuxMint 20.3)\n> >\n> >  I've got six broken plugins and one loaded but unstable:\n>\n> My bad, I broke the version number in master. Should be fixed with the\n> next update.\n>\n> Regards\n> Thomas\n>\n\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221017/3517fa17/attachment.htm>",
+      "body_snippet": "Great, thanks!\nAlfonso\n\nEl lun, 17 oct 2022 a la(s) 13:53, Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> On Mon, 17 Oct 2022 12:52:48 -0500\n> DES Alfonso Cano Robles <al",
+      "thread_id": "thread-321038f119e0",
+      "thread_depth": 2,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-b0387b236a82",
+      "message_id": "<20221024221418.287b9304@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-10-24T20:14:18Z",
+      "subject": "RKWard 0.7.3 is released!",
+      "subject_clean": "RKWard 0.7.3 is released!",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nRKWard 0.7.5 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all contributors!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221024/21a90428/attachment.sig>",
+      "body_snippet": "Hi!\n\nRKWard 0.7.5 is officially available for download, today. You can read\nup on the details, and pick the correct download for your platform on\nhttps://rkward.kde.org, as usual. Thanks to all contri",
+      "thread_id": "thread-b0387b236a82",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-8e41d29e60da",
+      "message_id": "<CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-10-26T23:54:51Z",
+      "subject": "Changing the name of data.frame object on the workspace crashes RKWard",
+      "subject_clean": "Changing the name of data.frame object on the workspace crashes RKWard",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nFirst, Thanks a lot for the new version!\nIt's very nice!\nThis is just to share that I've noticed a little bug which is driving\nme crazy.\nWhen I use the contextual menú to change the name of a data.frame crashes\nRKWard.\nVersion 0.7.5.\n¿Is just me or anyone can confirm this?\n[image: image.png]\n\nClicking \"Accept\" crashes the program.\nThanks one more time for your work and your help.\nRegards\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221026/803accfb/attachment.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: image.png\nType: image/png\nSize: 8020 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221026/803accfb/attachment.png>",
+      "body_snippet": "Hello,\n\nFirst, Thanks a lot for the new version!\nIt's very nice!\nThis is just to share that I've noticed a little bug which is driving\nme crazy.\nWhen I use the contextual menú to change the name of a ",
+      "thread_id": "thread-8e41d29e60da",
+      "thread_depth": 0,
+      "month": "2022-10"
+    },
+    {
+      "id": "msg-455953c9cc25",
+      "message_id": "<20221027173002.25795b35@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-10-27T15:30:02Z",
+      "subject": "Changing the name of data.frame object on the workspace crashes RKWard",
+      "subject_clean": "Changing the name of data.frame object on the workspace crashes RKWard",
+      "in_reply_to": "<CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+iB0Dsd=dAswtFspPbfvrcDjVDNiBNQehJVhRwAwvp-aA@mail.gmail.com>"
+      ],
+      "body_plain": "On Wed, 26 Oct 2022 18:54:51 -0500\n> When I use the contextual menú to change the name of a data.frame\n> crashes RKWard.\n\nThanks for reporting. Fixed (too late for RKWward 0.7.5, of course).\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20221027/2af6b0af/attachment.sig>",
+      "body_snippet": "On Wed, 26 Oct 2022 18:54:51 -0500\n> When I use the contextual menú to change the name of a data.frame\n> crashes RKWard.\n\nThanks for reporting. Fixed (too late for RKWward 0.7.5, of course).\n\nThomas\n-",
+      "thread_id": "thread-8e41d29e60da",
+      "thread_depth": 1,
+      "month": "2022-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-77947412bb5e",
+      "subject": "install rkward in Linux Slackware 15",
+      "message_count": 2,
+      "participants": [
+        "Fabian Labra-Sprohnle",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-10-10T09:20:25Z",
+      "last_reply": "2022-10-10T18:43:42Z",
+      "root_message_id": "msg-77947412bb5e"
+    },
+    {
+      "id": "thread-597ed7b1f2b6",
+      "subject": "Call for testing upcoming RKWard 0.7.5",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-10-10T18:39:31Z",
+      "last_reply": "2022-10-10T18:39:31Z",
+      "root_message_id": "msg-597ed7b1f2b6"
+    },
+    {
+      "id": "thread-db7fb38c9ac6",
+      "subject": "Six broken plugins",
+      "message_count": 1,
+      "participants": [
+        "DES Alfonso Cano Robles"
+      ],
+      "started": "2022-10-17T17:13:04Z",
+      "last_reply": "2022-10-17T17:13:04Z",
+      "root_message_id": "msg-db7fb38c9ac6"
+    },
+    {
+      "id": "thread-321038f119e0",
+      "subject": "Six broken plugins and one unstable",
+      "message_count": 3,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-10-17T17:52:48Z",
+      "last_reply": "2022-10-17T18:57:29Z",
+      "root_message_id": "msg-321038f119e0"
+    },
+    {
+      "id": "thread-b0387b236a82",
+      "subject": "RKWard 0.7.3 is released!",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-10-24T20:14:18Z",
+      "last_reply": "2022-10-24T20:14:18Z",
+      "root_message_id": "msg-b0387b236a82"
+    },
+    {
+      "id": "thread-8e41d29e60da",
+      "subject": "Changing the name of data.frame object on the workspace crashes RKWard",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-10-26T23:54:51Z",
+      "last_reply": "2022-10-27T15:30:02Z",
+      "root_message_id": "msg-8e41d29e60da"
+    }
+  ]
+}

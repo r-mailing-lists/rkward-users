@@ -1,0 +1,728 @@
+From noreply at sourceforge.net  Wed Sep 12 19:13:49 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 12 Sep 2007 12:13:49 -0700
+Subject: [rkward-users] [rkward - Open Discussion] A suggestion
+Message-ID: <4515229.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4515229
+By: f_bresson
+
+First I would like to thank you for providing this excellent tool. I just would
+like to say that the thin red line that tells which "window" is active, is a
+bit too thin. I also would like to know why we cannot get the last command with
+the up arrow on the console.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Thu Sep 13 05:16:18 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 12 Sep 2007 22:16:18 -0700
+Subject: [rkward-users] [rkward - Help] Display Graphic
+Message-ID: <4515896.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4515896
+By: userr
+
+Hello, 
+
+I use R on windows and when I type theses commmands :
+
+
+
+> x<-c("S","ES","L")
+> y<-c(50,20,30)
+> pie(y)
+
+
+it will display a window with the pie.
+
+But with rkwards, when I type these commands in the script file windows , nothing
+appears.
+
+I checked the output windows but it is the same, nothing appears.
+
+Do I need to activate an option to see graphics automatically ?
+
+Thank you
+ruser
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Sep 13 14:13:10 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 13 Sep 2007 16:13:10 +0200
+Subject: [rkward-users] [rkward-tracker] rkward does not start
+In-Reply-To: <200709131318.22561.snvv101@gmail.com>
+References: <200709131318.22561.snvv101@gmail.com>
+Message-ID: <200709131613.16004.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+a quick note first: the rkward-tracker list is really meant as a read-only 
+list for reports submitted via the trackers 
+(https://sourceforge.net/tracker/?group_id=50231). Manual mail is best 
+addressed to rkward-users or rkward-devel, depending on the content.
+
+Since this may be of interest to many users, I'm sending the reply to 
+rkward-users.
+
+On Thursday 13 September 2007, sdn wrote:
+> When I try to start rkward i get the following error:
+>
+> /usr/bin/rkward.bin: symbol lookup error: /usr/bin/rkward.bin: undefined
+> symbol: R_LastvalueSymbol
+>
+> I found only one similar problem in
+> http://permalink.gmane.org/gmane.linux.debian.devel.bugs.general/302176
+>
+> but no solution
+>
+> Any sugestion about that?
+
+This is due to a change between R 2.5 and 2.6. Debian unstable now has a 
+pre-release of R 2.6, so this is why you see the problem. I have committed a 
+fix for this to the development version, but there is no fixed release, yet.
+
+To work around the problem, either
+a) downgrade R (package r-base) to 2.5.1
+or
+b) download and compile the SVN version 
+(http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN)
+
+I'll try to get a fixed version of rkward into the debian archive, soon, but 
+this may still take a while to happen.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070913/b4fc0da0/attachment.sig>
+
+From noreply at sourceforge.net  Fri Sep 14 13:45:42 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 14 Sep 2007 06:45:42 -0700
+Subject: [rkward-users] [rkward - Help] RE: Crashing after Successful(?)
+	Install
+In-Reply-To: <4395350.165574@sourceforge.net>
+Message-ID: <4518414.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4518414
+By: tfry
+
+I'm sorry for the long delay, hope you're still around.
+
+> library(rkward)
+
+This is not supposed to work. You always need to start the rkward binary.
+
+> But it crashes if I try to do much of anything, like enter a simple command
+like a=5.
+
+Hm. I don't have any good idea on what may be the problem. Are there any messages
+to the console?
+
+If you start with
+# rkward --debug-level 5
+Could you post the output of that (after the crash) somewhere? (This generates
+a whole lot of output, so the forum is not going to be the best place to post
+it. Maybe zip it up, and post to rkward-devel, instead).
+
+Thanks!
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Sep 14 14:30:43 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 14 Sep 2007 07:30:43 -0700
+Subject: [rkward-users] [rkward - Open Discussion] RE: A suggestion
+In-Reply-To: <4515229.165573@sourceforge.net>
+Message-ID: <4518494.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4518494
+By: tfry
+
+Hi!
+
+Thanks for your kind words.
+
+> I just would like to say that the thin red line that tells which "window"
+is active, is a bit too thin.
+
+Hm. I guess this may depend on the screen resolution, your're working on. Perhaps
+we'll need a way to adjust this. Since I will not take care of this right away,
+could you submit a feature request for this
+(https://sourceforge.net/tracker/?group_id=50231&atid=459010)? This way the
+suggestion won't get lost.
+
+> I also would like to know why we cannot get the last command with the up arrow
+on the console.
+
+? This is supposed to work, and it works just fine, here. Could you try again?
+Perhaps it was a temporary problem of some sort (occasionally focus does not
+work correctly). Which version of rkward are you using?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Fri Sep 14 14:37:38 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 14 Sep 2007 07:37:38 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4515896.165574@sourceforge.net>
+Message-ID: <4518505.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4518505
+By: tfry
+
+Hi,
+
+> But with rkwards, when I type these commands in the script file windows ,
+nothing appears.
+
+Do you really mean the script file window, or perhaps rather the R Console?
+The first is what you get when you select File->New->Script File from the Menu.
+The latter is what you get by clicking on the R Console button at the bottom
+of the main window. Commands in the Script File window are not executed at all,
+until you select to "Run" them (from the menu, toolbar, or shortcuts). The R
+Console in contrast should behave just like a regular R session.
+
+If you are in fact referring to the R Console window, this is supposed to work,
+and does, here. In this case, which version of RKWard / R / KDE are you using?
+What happens when you enter
+> x11()
+? What happens when you enter
+> grDevices::x11()
+?
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Sep 15 08:14:58 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 15 Sep 2007 01:14:58 -0700
+Subject: [rkward-users] [rkward - Open Discussion] RE: A suggestion
+In-Reply-To: <4515229.165573@sourceforge.net>
+Message-ID: <4519719.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4519719
+By: f_bresson
+
+>? This is supposed to work, and it works just fine, here. Could you try again?
+Perhaps it was a temporary problem of some sort (occasionally focus does not
+work correctly). Which version of rkward are you using?
+
+I am using the version 0.4.7a on Kubuntu 7.10. Maybe is it a problem with Gutsy,
+since this version of Kubuntu is still an alpha release. In fact, I have to
+say that the problem does not occur systematically. It seems that it occurs
+when I send the current line from my script.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Sun Sep 16 15:14:00 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 16 Sep 2007 08:14:00 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4515896.165574@sourceforge.net>
+Message-ID: <4520951.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4520951
+By: userr
+
+Hello Thomas,
+
+Thank you for your help
+
+I am aware of what you spoke about the difference betwen the console and the
+script file.
+I will not give you the version of Rkward / R / KDE because everything works
+well on my home computer.
+
+I precise I use a virtual machine (virtual box) to run linux under windows.
+The image which works well on my home computer but not (only for rkward) on
+my laptop.
+
+Theses commands make appear an empty window :
+
+x11()
+grDevices::x11()
+
+Thank you
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Sep 16 23:09:23 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 16 Sep 2007 16:09:23 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4520951.165574@sourceforge.net>
+Message-ID: <4521386.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4521386
+By: tfry
+
+> I precise I use a virtual machine (virtual box) to run linux under windows.
+
+I guess this is likely what's causing trouble. We use some rather advanced X
+server operations to "capture" the plotting windows produced by R. Apparently
+those do not work correctly inside the virtual box. Perhaps you could drop the
+vendor of the virtual box a note about this, maybe they have a way to fix this.
+
+You should be able to work around this issue by running the following in the
+console (once per session):
+x11 <- X11 <- grDevices::X11
+
+This should give you the regular R X11 windows for graphics. You will miss out
+on a number of features we usually add to those windows, though (such as menu
+options to export the graphic to a file, etc.).
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Sep 16 23:14:30 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 16 Sep 2007 16:14:30 -0700
+Subject: [rkward-users] [rkward - Open Discussion] RE: A suggestion
+In-Reply-To: <4519719.165573@sourceforge.net>
+Message-ID: <4521390.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4521390
+By: tfry
+
+I see. The problem is this situation:
+
+1- Run "print (1)" in the console
+2- Enter "print (2)" in the script editor and run it (through the console)
+3- Switch to the console, press up arrow, you will get "print (1)" again, instead
+of "print (2)".
+
+Is this the situation you're referring to?
+
+If so, I agree, this is rather confusing. I'll try to look into this, soon.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 07:41:50 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 00:41:50 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4515896.165574@sourceforge.net>
+Message-ID: <4521745.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4521745
+By: userr
+
+Hello, 
+
+it does not work. Do you have another idea ?
+
+thank you
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 11:20:51 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 04:20:51 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4521745.165574@sourceforge.net>
+Message-ID: <4522063.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4522063
+By: tfry
+
+Hi,
+
+sorry, I had not been paying attention. In fact, since both x11()
+and grDevices::x11() create a window all right, that could not be the source
+of the problem. So disregard my previous post.
+
+One issue we had in the past was that R sometimes thought it was in non-interactive
+mode when running inside rkward. Could you try
+
+> interactive()            # I suspect this may yield FALSE on your system
+and
+> options()$device
+
+If R is indeed in non-interactive mode, let me ask again, which version of rkward
+this is. Recent versions try to make sure R runs interactive. Some older versions
+would sometimes not run interactively, when invoked directly (e.g. from the
+menu), instead of from a console/xterm. Could you try starting rkward by typing
+"rkward" in an xterm? Any change?
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 12:55:18 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 05:55:18 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4515896.165574@sourceforge.net>
+Message-ID: <4522199.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4522199
+By: userr
+
+yes it works thank you 
+
+I have to launch it from a konsole
+
+For information :
+
+interactive() returns false
+
+the version of rkward is : 0.4.1
+
+do you want I give you the results of options()
+
+Thank you
+
+
+
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 13:20:14 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 06:20:14 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4522199.165574@sourceforge.net>
+Message-ID: <4522228.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4522228
+By: tfry
+
+Ok, thanks for the info.
+
+This means the issue has already been fixed in more recent versions of rkward.
+If you have that option, I recommend upgrading to the current version 0.4.7a,
+as a whole lot of further bugs, small and large, have been fixed, and a good
+deal of features has been added since 0.4.1.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 18:02:19 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 11:02:19 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4515896.165574@sourceforge.net>
+Message-ID: <4522700.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4522700
+By: userr
+
+ok 
+
+thank you for all.
+
+But I use debian (whereas I am not an expert in Linux).
+When I need to install a software I enter :
+
+apt-get install software
+
+Then I suppose that the last version of Rkward has not yet been integrated to
+the linux packages.
+
+Do you have a .deb with which the install is simple ?
+
+
+Ruser 
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Sep 17 21:51:13 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 17 Sep 2007 14:51:13 -0700
+Subject: [rkward-users] [rkward - Help] RE: Display Graphic
+In-Reply-To: <4522700.165574@sourceforge.net>
+Message-ID: <4523034.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4523034
+By: tfry
+
+> Do you have a .deb with which the install is simple ? 
+
+If you're on i386, then yes, there is a backport for debian stable. Just add
+this line to your /etc/apt/sources.list:
+deb http://rkward.sourceforge.net/debian stable/
+Then "apt-get update" and then your regular install.
+
+If you're on a different architecture, you still have the option to compile
+your own .deb (see
+http://www.debian.org/doc/manuals/apt-howto/ch-sourcehandling.en.html) with
+the sources from debian unstable, (or from "deb-src
+http://rkward.sourceforge.net/debian ./"), as we try to keep the source packages
+backwards compatible as much as possible.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Sep 19 20:36:18 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 19 Sep 2007 22:36:18 +0200
+Subject: [rkward-users] First preview of rkward 0.4.8 / Release Schedule /
+	Translations
+Message-ID: <200709192236.23092.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+development has been somewhat slower during the past few months, but all the 
+same, in that time a fairly large amount of changes has accumulated. So time 
+has come to create a new release. As RKWard 0.4.7a is not compatible with the 
+upcoming version of R, we will try to release close to R 2.6.0, which is 
+scheduled for October, 3.
+
+As a first step, there is the usual preview release, available at 
+http://rkward.sourceforge.net/temp/rkward-0.4.8pre1.tar.gz . And as usual, 
+I'd like to ask you to do as much testing, as you can find the time to. In 
+particular, you may want to focus on the plugins listed on this page: 
+http://rkward.sourceforge.net/wiki/index.php?title=Development_Status_of_Plugins . 
+Further visible changes include a new file selector tool window (right below 
+the workspace browser on the left), and a reworked object viewer (what you 
+get, when you right-click on an object an select "View"). For a full list of 
+changes so far, have a look at the ChangeLog provided in the preview release.
+
+--- Release Schedule ---
+
+The further timeline for the 0.4.8 release will look roughly like this:
+- On or around Wednesday, September 26: Second preview release
+- Monday October 1: Deadline for translations
+- On or around Wednesday, October 3: Final release
+Both the second preview, and the final release will be announced on both 
+mailing lists (devel and users), when they happen.
+
+--- Translations ---
+
+As indicated above, the deadline for translations is the 1st of October. Few - 
+if any - changes in translatable strings are expected until the release, so 
+now is a good time to start updating your translation. If you are fairly sure 
+you will have enough free time to update your translation after the second 
+preview release, i.e. at the end of this month, you may consider delaying 
+your work until then, to make sure you don't miss out on any last minute 
+string changes.
+Reminder: The current .pot and .po files are contained in the 
+subdirectory "po" of the preview release.
+
+--- Developers ---
+
+I will create a new branch in SVN, in a few minutes, so you can commit changes 
+as usual, without worrying too much about interfering with the release. 
+Please start your commit comments with either "FOR 0.4.8" or "NOT FOR 0.4.8", 
+to make it easier for me to merge the relevant changes into the release 
+branch. Please focus mostly on fixing bugs, enhancing documentation, or doing 
+trivial work on existing plugins (those are the ones to be marked as "for 
+0.4.8"), rather than creating new plugins or doing complex changes (which 
+will not go into the 0.4.8 release).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070919/092b9439/attachment.sig>
+
+From noreply at sourceforge.net  Thu Sep 20 11:12:16 2007
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 20 Sep 2007 04:12:16 -0700
+Subject: [rkward-users] [rkward - Open Discussion] RE: A suggestion
+In-Reply-To: <4515229.165573@sourceforge.net>
+Message-ID: <4528460.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4528460
+By: f_bresson
+
+That's exactly the problem. I hope that you can fix it for the next release.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Sep 27 13:09:59 2007
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 27 Sep 2007 15:09:59 +0200
+Subject: [rkward-users] Second preview of RKWard 0.4.8
+Message-ID: <200709271510.02906.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+a day later than announced, I've prepared the second preview release of the 
+upcoming version 0.4.8. Unless an important reason comes up, this will be the 
+last preview release, and will be almost identical to the final release, 
+scheduled for October, 3. So, if you can find the time, please do download 
+the new preview (http://rkward.sourceforge.net/temp/rkward-0.4.8pre2.tar.gz), 
+and do as much testing as you can.
+
+--- Release Schedule ---
+
+The further timeline for the 0.4.8 release is unchanged. The remaining key 
+dates are:
+- Monday October 1: Deadline for translations
+- On or around Wednesday, October 3: Final release
+
+--- Translations ---
+
+As indicated above, the deadline for translations is the 1st of October, so 
+you should update your translations, now. Since the first preview, one 
+translatable string has been added, so if you have already updated the 
+translation, there is one new string, which you may want to add (sorry!). No 
+further changes in translatable strings are expected until the release, 
+except in emergencies.
+Reminder: The current .pot and .po files are contained in the 
+subdirectory "po" of the preview release.
+
+--- Developers ---
+
+The same rules continue to apply, i.e. please prefix your commit messages with 
+either "FOR 0.4.8" or "NOT FOR 0.4.8". From now on, only changes that fix 
+bugs, and documentation changes will be accepted into the 0.4.8 release 
+branch. Everything else is "NOT FOR 0.4.8".
+
+--- Technical note ---
+
+When replying to this mail, please send your reply only to *either* of 
+rkward-devel *or* rkward-users (whichever you feel is more appropriate), 
+unless it directly concerns the release schedule. Most active developers are 
+subscribed to both lists.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20070927/135c1d68/attachment.sig>
+

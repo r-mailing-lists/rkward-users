@@ -1,0 +1,39 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2014-08",
+  "messages": [
+    {
+      "id": "msg-7d013387396f",
+      "message_id": "</p/rkward/discussion/165574/f5fa65f5d76cba83a970f06850f1351599608b66.discussion@rkward.p.sourceforge.net>",
+      "from_name": "WRF",
+      "from_email_hash": "9da6a78662efb3cd496560594cfacdfee931c2e9ef0c66e305256e3929f6a5c8",
+      "date": "2014-08-08T09:19:15Z",
+      "subject": "[rkward-users] [rkward:discussion] Re: problem with the function highlight",
+      "subject_clean": "[rkward-users] [rkward:discussion] Re: problem with the function highlight",
+      "in_reply_to": "</p/rkward/discussion/165574/11484283@import>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+        "</p/rkward/discussion/165574/11484283@import>"
+      ],
+      "body_plain": "I am running ubuntu 12.04 x64 with rkward version 0.5.7 (on KDE Development Platform 4.8.5 (4.8.5))\nand I have the same error, the white text on yellow for the function dialog box.\n\nThis is probably something ubuntu related, as I kind of remember on 10.10 or 11.10 that the dialog box was white on blue, not sure why/how it changed.\n\n\n---\n\n[problem with the function highlight](https://sourceforge.net/p/rkward/discussion/165574/thread/81a3344c/?limit=25#c95e/b874)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140808/8570e277/attachment.html>",
+      "body_snippet": "I am running ubuntu 12.04 x64 with rkward version 0.5.7 (on KDE Development Platform 4.8.5 (4.8.5))\nand I have the same error, the white text on yellow for the function dialog box.\n\nThis is probably s",
+      "thread_id": "thread-7d013387396f",
+      "thread_depth": 0,
+      "month": "2014-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-7d013387396f",
+      "subject": "[rkward-users] [rkward:discussion] Re: problem with the function highlight",
+      "message_count": 1,
+      "participants": [
+        "WRF"
+      ],
+      "started": "2014-08-08T09:19:15Z",
+      "last_reply": "2014-08-08T09:19:15Z",
+      "root_message_id": "msg-7d013387396f"
+    }
+  ]
+}

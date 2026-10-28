@@ -1,0 +1,2721 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jan  3 18:05:30 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 3 Jan 2008 19:05:30 +0100
+Subject: [rkward-users] First preview release of RKWard 0.5.0 (KDE 4)
+Message-ID: <200801031905.35300.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+as indicated in the recent announcement of 0.4.9pre1, I'd like to follow up 
+0.4.9 with a release of the KDE 4 version of RKWard (0.5.0) quickly. I have 
+now prepared a preview of this, available at 
+http://rkward.sourceforge.net/temp/rkward-0.5.0pre1.tar.gz .
+
+If you have a KDE 4 installation already, it would be nice if you could give 
+this a test-run. With KDE 4's switch to using cmake as the new build-system, 
+the installation process has changed for RKWard as well (and the 
+source .tar.gz is 50% smaller). Instructions are available in the "INSTALL" 
+file in the .tar.gz. The short version is:
+
+Unpack the .tar.gz
+Create a temporary directory somewhere, and cd there
+Run "cmake /path/to/sources -DCMAKE_INSTALL_PREFIX=$KDEDIR"
+Then the usual
+# make
+# sudo make install
+
+Since the sources have changed quite radically while porting, all testing is 
+very welcome.
+
+---- Translators ----
+
+.po and .pot files are provided in the .tar.gz as usual. Before working on 
+your translations in detail, you may want to check whether everything seems 
+ok with the .po files provided (the message extraction process changed as 
+well). Final translations should be submitted by January 18 according to the 
+current release plan, but you'll get another note before than.
+
+ ---- Further timeline ----
+
+Depending on the amount of feedback, there may or may not be a second preview 
+release of 0.5.0, around January 14. If all goes well, the offical 0.5.0 will 
+be released around January 21st.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080103/201c3e9a/attachment.sig>
+
+From noreply at sourceforge.net  Sun Jan  6 11:42:59 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 06 Jan 2008 03:42:59 -0800
+Subject: [rkward-users] [rkward - Help] How to change the font color in the
+	console
+Message-ID: <4706024.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4706024
+By: jhernand15
+
+Hi, I am trying to change the green color of the font in the console. But I
+don't find any place where to get it. It looks like we only can change the font
+color in the editor window.
+Thanks in advance
+Juan
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan  6 13:05:52 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 06 Jan 2008 05:05:52 -0800
+Subject: [rkward-users] [rkward - Help] How to avoid the function help
+Message-ID: <4706103.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4706103
+By: jhernand15
+
+For me is very annoying the help-functions windows that appear always when you
+write the name of a function in the editor windows. Please how to eliminate
+this help. I can't find the way in the config rkward menu and config editor
+in preferences.
+Thanks
+Juan
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan  6 17:00:18 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 06 Jan 2008 09:00:18 -0800
+Subject: [rkward-users] [rkward - Help] RE: How to change the font color in
+	the console
+In-Reply-To: <4706024.165574@sourceforge.net>
+Message-ID: <4706305.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4706305
+By: tfry
+
+There is no obvious way to do this, but internally the console is a (heavily
+misused) katepart, just as the script editor, so the same configuration applies
+to both. So you can:
+
+1. Open an editor window
+2. Select Settings->Configure Editor->Fonts & Colors->Highlighting Text Styles
+3. Select "Scripts/RKWard Output" from the dropdown (this is the highlighting
+used in the console)
+4. Adjust the properties of the "Output" style
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan  6 17:03:29 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 06 Jan 2008 09:03:29 -0800
+Subject: [rkward-users] [rkward - Help] RE: How to avoid the function help
+In-Reply-To: <4706103.165574@sourceforge.net>
+Message-ID: <4706308.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4706308
+By: tfry
+
+See https://sourceforge.net/forum/forum.php?thread_id=1867152&forum_id=165574 .
+
+In KDE 3 versions of RKWard, there is no easy way to turn off auto-completion
+(but one option is described in the above thread). In RKWard 0.5.0 (for KDE
+4), to be released in around 2 weeks, there will be an option to turn off
+autocompletion.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jan  6 17:11:54 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 06 Jan 2008 09:11:54 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4624648.165574@sourceforge.net>
+Message-ID: <4706312.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4706312
+By: tfry
+
+FYI, kdesudo 2.0 supposedly support the "-t" option, and should therefore work
+correctly with RKWard (I haven't tested, myself).
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From pingoufc4 at yahoo.fr  Sun Jan  6 22:00:04 2008
+From: pingoufc4 at yahoo.fr (pingou)
+Date: Sun, 06 Jan 2008 23:00:04 +0100
+Subject: [rkward-users] [rkward-devel] First preview of rkward 0.4.9 /
+	release timeline
+In-Reply-To: <200712301630.17324.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200712301630.17324.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <47814F64.6070104@yahoo.fr>
+
+Thomas Friedrichsmeier wrote:
+> Hi,
+>
+> a first preview release of RKWard 0.4.9 (for KDE 3) can be found at
+http://rkward.sourceforge.net/temp/rkward-0.4.9pre1.tar.gz . If you have
+some time, please download this and do some testing.
+>
+> -- Relase timeline --
+>
+> I think the 0.4.9 release is in fairly good shape already, and
+probably no second preview release will be needed (unless serious issues
+turn up). Still, since we're in the middle of the year-end holiday
+season, we should go slowly, and target a release on or around Monday,
+January 14 2008.
+>
+
+I have packaged it without problem (except the change on the
+localization of the .desktop file)
+For those who use Fedora and would like to test this new
+version the RPM can be found there :
+http://pingoured.dyndns.org/public/RPM/rkward/rkward-debuginfo-0.4.9pre1-1.fc8.x86_64.rpm
+If needed I can build it for 32bits arch.
+
+Happy new year to all of you.
+
+Regards,
+P.Yves
+
+
+	
+
+	
+		
+___________________________________________________________________________ 
+Yahoo! Mail r?invente le mail ! D?couvrez le nouveau Yahoo! Mail et son interface r?volutionnaire.
+http://fr.mail.yahoo.com
+
+
+
+
+From pingoufc4 at yahoo.fr  Sun Jan  6 22:15:46 2008
+From: pingoufc4 at yahoo.fr (pingou)
+Date: Sun, 06 Jan 2008 23:15:46 +0100
+Subject: [rkward-users] [rkward-devel] First preview of rkward 0.4.9 /
+	release timeline
+In-Reply-To: <47814F64.6070104@yahoo.fr>
+References: <200712301630.17324.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<47814F64.6070104@yahoo.fr>
+Message-ID: <47815312.5060102@yahoo.fr>
+
+pingou wrote:
+> Thomas Friedrichsmeier wrote:
+>> Hi,
+>>
+>> a first preview release of RKWard 0.4.9 (for KDE 3) can be found at
+> http://rkward.sourceforge.net/temp/rkward-0.4.9pre1.tar.gz . If you have
+> some time, please download this and do some testing.
+[...]
+> For those who use Fedora and would like to test this new
+> version the RPM can be found there :
+> http://pingoured.dyndns.org/public/RPM/rkward/rkward-debuginfo-0.4.9pre1-1.fc8.x86_64.rpm
+Actually the correct rpm is this one
+http://pingoured.dyndns.org/public/RPM/rkward/rkward-0.4.9pre1-1.fc8.x86_64.rpm
+
+Sorry for the mistakes,
+P.Yves
+
+	
+
+	
+		
+___________________________________________________________________________ 
+Yahoo! Mail r?invente le mail ! D?couvrez le nouveau Yahoo! Mail et son interface r?volutionnaire.
+http://fr.mail.yahoo.com
+
+
+
+
+From noreply at sourceforge.net  Mon Jan  7 14:46:55 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 07 Jan 2008 06:46:55 -0800
+Subject: [rkward-users] [rkward - Open Discussion] Bug when using
+	Annotations for illumina array
+Message-ID: <4707562.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4707562
+By: daffydoc
+
+Hello,
+
+I write here to report a bug I had with Rkward, using bioconductor package
+lumiHumanV1 to annotate an illumina array with GO categories
+
+When I run the lines given in the lumiHumanV1GO help file, I get an extraordinary
+long computation time (I let rkward running for more than 24 hours before I
+decided to stop it). when running the same code directly from the R console
+everything works perfectly it runs in only a few minutes.
+
+I guess this comes from a bug from Rkward.
+
+For any other task, rkward works fine on my computer
+
+
+this might not be thee right place for bug report, if so could someone tell
+me where I should write ?
+
+
+Maxime
+
+
+PS: the code that caused rkward to crash...
+
+ # Convert to a list
+    xx <- as.list(lumiHumanV1GO)
+    # Remove all the NAs
+    xx <- xx[!is.na(xx)]
+    if(length(xx) > 0){
+            # Try the firest one
+            got <- xx[[1]]           
+            got[[1]][["GOID"]]
+            got[[1]][["Ontology"]]
+            got[[1]][["Evidence"]]
+
+    }
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Jan  7 22:08:07 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 07 Jan 2008 14:08:07 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: Bug when using
+	Annotations for illumina array
+In-Reply-To: <4707562.165573@sourceforge.net>
+Message-ID: <4708246.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4708246
+By: tfry
+
+RKWard has performance issues when dealing with datasets containing many (tens
+of thousands) items (or sub-items, such as elements in a list/environment).
+GO is one of those packages, and I guess lumiHumanV1 is another. Frankly, I'm
+rather surprised, you don't see the issue directly when loading lumiHumanV1?
+
+Unfortunately this is a problem of the current design and not easily solved,
+though at least some partial progress has been made. If you were using a version
+of RKWard prior to 0.4.8, upgrading to 0.4.8 will improve the situation somewhat
+(but probably not enough to be useful).
+
+There is a bug-tracker at https://sourceforge.net/tracker/?group_id=50231&atid=459007
+. You can also write about such problems to the rkward-devel mailing list (prior
+subscription recommended, as this makes spam control easier for us):
+https://lists.sourceforge.net/lists/listinfo/rkward-devel .
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Jan  7 23:15:18 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 07 Jan 2008 15:15:18 -0800
+Subject: [rkward-users] [rkward - Help] RE: 0.4.9pre1 dialog problems
+In-Reply-To: <4622607.165574@sourceforge.net>
+Message-ID: <4708318.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4708318
+By: fsando
+
+Thanks for your answer
+At the moment it works fine. I have the 2286 version installed (the last before
+cmake I believe). Recently I installed the full KDE desktop (under Ubuntu 7.10
+- Gnome). Still running Gnome, RKward seems to run a lot better now.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Jan  8 11:03:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jan 2008 03:03:36 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: Bug when using
+	Annotations for illumina a
+In-Reply-To: <4707562.165573@sourceforge.net>
+Message-ID: <4709590.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4709590
+By: daffydoc
+
+Thank you for your help, it's obviously the same problem that happens when using
+GO.
+
+But the issue only appears when I try to use the lumiHumanV1GO object, not during
+the loading.
+
+I use Rkward 0.4.7a with R.2.5.0 so this might be part of the problem, but for
+the moment I guess, I'll just keep on working directly with R and leave Rkward
+for tasks that do not involve Gene Ontologies...
+
+Regards 
+Maxime
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Tue Jan  8 12:33:17 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jan 2008 04:33:17 -0800
+Subject: [rkward-users] [rkward - Open Discussion] RE: Bug when using
+	Annotations for illumina a
+In-Reply-To: <4709590.165573@sourceforge.net>
+Message-ID: <4709702.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4709702
+By: tfry
+
+Yes, after installing lumiHumanV1 I can see why it does not fail while loading.
+This is because all the objects that cause the problem in lumiHumanV1GO are
+inside another environment, which RKWard will not investigate by default. You
+could - theoretically - avoid the hangup by making sure the large list never
+exists in a place where RKWard would see it, e.g. by wrapping a "local({...})"
+around the code in question. Of course this would only make sense, if the end
+result of your computation is a more managable dataset, that you can then
+assign/return to globalenv(). (Generally objects with many rows are fine (e.g.
+data.frame's), only large lists / environments are a problem).
+
+So, indeed, I guess for now the only viable solution is to use plain R for such
+tasks. I'll keep the problem in mind, and I have some basic ideas on how to
+fix this, but as mentionend, this is going to take some time.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jan 14 21:04:09 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 14 Jan 2008 22:04:09 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+Message-ID: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+as announced, RKWard 0.4.9 was released, today. See the release notice on 
+http://rkward.sourceforge.net/ for details.
+
+Many thanks to all testers, developers, translators, and contributors!
+
+--------
+
+RKWard 0.5.0 for KDE 4 seems to be in shape for a release on Jan. 21st, as 
+planned. Since little has changed since the 0.5.0pre1 preview release, and 
+I'm rather busy at the moment, I don't plan to prepare a second preview 
+before then.
+
+So - if you have not done so, yet - please give this some final testing. 
+Translations for RKWard 0.5.0 should be sent to this list (or committed to 
+SVN, if you have access) by this Sunday, Jan. 20th.
+
+Download link: http://rkward.sourceforge.net/temp/rkward-0.5.0pre1.tar.gz
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080114/06a3e648/attachment.sig>
+
+From dgvirtual at akl.lt  Tue Jan 15 10:11:49 2008
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Tue, 15 Jan 2008 12:11:49 +0200
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801151211.50051.dgvirtual@akl.lt>
+
+On Monday 14 January 2008 23:04:09 Thomas Friedrichsmeier ra??:
+> Hi,
+>
+> as announced, RKWard 0.4.9 was released, today. See the release notice on
+> http://rkward.sourceforge.net/ for details.
+>
+> Many thanks to all testers, developers, translators, and contributors!
+
+I tried to build a debian package and got this error: 
+
+===============================
+/bin/bash ../libtool --silent --tag=CXX --mode=link 
+g++  -Wno-long-long -Wundef
+-ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscri
+pts -Wall -W -Wpointer-arith -O2 -Wformat-security -Wmissing-format-attribute -W
+no-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common    -o 
+rkward.bin
+-L/usr/share/qt3/lib -L/usr/lib     rkward.o main.o rkglobals.o 
+robjectbrowser.o
+ robjectviewer.o rkconsole.o rkwardapplication.o 
+rkward_skel.o ../rkward/windows
+/libwindows.a ../rkward/agents/libagents.a ../rkward/dialogs/libdialogs.a ../rkw
+ard/plugin/libplugin.a ../rkward/settings/libsettings.a ../rkward/dataeditor/lib
+dataeditor.a ../rkward/core/libcore.a ../rkward/rbackend/librbackend.a ../rkward
+/scriptbackends/libscriptbackends.a ../rkward/misc/libmisc.a -lkhtml -lkmdi -lki
+o -lkdeui -lkdecore -lqt-mt  -lz -lpng -lz -lm -lXext -lX11  -lSM -lICE -lpthrea
+d  -L/usr/lib/R/lib -lR -lRlapack -lgfortran  -lkatepartinterfaces
+/usr/bin/ld: cannot find -lgfortran
+collect2: ld returned 1 exit status
+make[4]: *** [rkward.bin] Error 1
+make[4]: Leaving directory `/home/dg/diegimas/rkward-0.4.9/rkward'
+make[3]: *** [all-recursive] Error 1
+make[3]: Leaving directory `/home/dg/diegimas/rkward-0.4.9/rkward'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/home/dg/diegimas/rkward-0.4.9'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/home/dg/diegimas/rkward-0.4.9'
+make: *** [build-stamp] Error 2
+===============================
+
+The same happened when running make in manual install.
+
+I am on Kubuntu 7.10, KDE 3.5.8, building rkward 0.4.8 was no problem.
+
+What could be the problem here?
+
+-- 
+Donatas Glodenis
+http://dg.lapas.info
+
+
+
+From johan.vandewauw at gmail.com  Tue Jan 15 11:47:39 2008
+From: johan.vandewauw at gmail.com (Johan Van de Wauw)
+Date: Tue, 15 Jan 2008 12:47:39 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801151211.50051.dgvirtual@akl.lt>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801151211.50051.dgvirtual@akl.lt>
+Message-ID: <791a12030801150347n35138611p6cffddf10929f405@mail.gmail.com>
+
+Check this discussion:
+http://sourceforge.net/forum/forum.php?thread_id=1883207&forum_id=165574
+
+On Jan 15, 2008 11:11 AM, Donatas G. <dgvirtual at akl.lt> wrote:
+
+> On Monday 14 January 2008 23:04:09 Thomas Friedrichsmeier ra??:
+> > Hi,
+> >
+> > as announced, RKWard 0.4.9 was released, today. See the release notice
+> on
+> > http://rkward.sourceforge.net/ for details.
+> >
+> > Many thanks to all testers, developers, translators, and contributors!
+>
+> I tried to build a debian package and got this error:
+>
+> ===============================
+> /bin/bash ../libtool --silent --tag=CXX --mode=link
+> g++  -Wno-long-long -Wundef
+> -ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion
+> -Wchar-subscri
+> pts -Wall -W -Wpointer-arith -O2 -Wformat-security
+> -Wmissing-format-attribute -W
+> no-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common    -o
+> rkward.bin
+> -L/usr/share/qt3/lib -L/usr/lib     rkward.o main.o rkglobals.o
+> robjectbrowser.o
+>  robjectviewer.o rkconsole.o rkwardapplication.o
+> rkward_skel.o ../rkward/windows
+> /libwindows.a ../rkward/agents/libagents.a ../rkward/dialogs/libdialogs.a
+> ../rkw
+> ard/plugin/libplugin.a ../rkward/settings/libsettings.a
+> ../rkward/dataeditor/lib
+> dataeditor.a ../rkward/core/libcore.a ../rkward/rbackend/librbackend.a
+> ../rkward
+> /scriptbackends/libscriptbackends.a ../rkward/misc/libmisc.a -lkhtml
+> -lkmdi -lki
+> o -lkdeui -lkdecore -lqt-mt  -lz -lpng -lz -lm -lXext -lX11  -lSM -lICE
+> -lpthrea
+> d  -L/usr/lib/R/lib -lR -lRlapack -lgfortran  -lkatepartinterfaces
+> /usr/bin/ld: cannot find -lgfortran
+> collect2: ld returned 1 exit status
+> make[4]: *** [rkward.bin] Error 1
+> make[4]: Leaving directory `/home/dg/diegimas/rkward-0.4.9/rkward'
+> make[3]: *** [all-recursive] Error 1
+> make[3]: Leaving directory `/home/dg/diegimas/rkward-0.4.9/rkward'
+> make[2]: *** [all-recursive] Error 1
+> make[2]: Leaving directory `/home/dg/diegimas/rkward-0.4.9'
+> make[1]: *** [all] Error 2
+> make[1]: Leaving directory `/home/dg/diegimas/rkward-0.4.9'
+> make: *** [build-stamp] Error 2
+> ===============================
+>
+> The same happened when running make in manual install.
+>
+> I am on Kubuntu 7.10, KDE 3.5.8, building rkward 0.4.8 was no problem.
+>
+> What could be the problem here?
+>
+> --
+> Donatas Glodenis
+> http://dg.lapas.info
+>
+> -------------------------------------------------------------------------
+> Check out the new SourceForge.net Marketplace.
+> It's the best place to buy or sell services for
+> just about anything Open Source.
+>
+> http://ad.doubleclick.net/clk;164216239;13503038;w?http://sf.net/marketplace
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080115/5b45f97f/attachment.html>
+
+From noreply at sourceforge.net  Wed Jan 16 04:52:18 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 15 Jan 2008 20:52:18 -0800
+Subject: [rkward-users] [rkward - Help] Turn off konsole window
+Message-ID: <4724422.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4724422
+By: muzza1962
+
+Hi,
+
+I have installed rkward 0.4.8a on kde 3.5.5.  Why does it need start a KDE konsole
+window to start the application?  Is there any way of turning this off in the
+rkward.desktop file?  The Terminal option in that file is already set to false.
+
+Thanks
+
+Murray  
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From ertugrulerata at gmail.com  Wed Jan 16 05:51:26 2008
+From: ertugrulerata at gmail.com (ertugrulerata)
+Date: Wed, 16 Jan 2008 07:51:26 +0200
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801160751.26632.ertugrulerata@gmail.com>
+
+Monday 14 January 2008 23:04:09 tarihinde Thomas Friedrichsmeier ?unlar? 
+yazm??t?:
+> Hi,
+>
+> as announced, RKWard 0.4.9 was released, today. See the release notice on
+> http://rkward.sourceforge.net/ for details.
+>
+> Many thanks to all testers, developers, translators, and contributors!
+>
+> --------
+>
+> RKWard 0.5.0 for KDE 4 seems to be in shape for a release on Jan. 21st, as
+> planned. Since little has changed since the 0.5.0pre1 preview release, and
+> I'm rather busy at the moment, I don't plan to prepare a second preview
+> before then.
+>
+> So - if you have not done so, yet - please give this some final testing.
+> Translations for RKWard 0.5.0 should be sent to this list (or committed to
+> SVN, if you have access) by this Sunday, Jan. 20th.
+>
+> Download link: http://rkward.sourceforge.net/temp/rkward-0.5.0pre1.tar.gz
+>
+> Regards
+> Thomas
+
+hi 
+
+my kde version is 4.0 
+my R version is 2.6.1 
+my Qt4 version 4.3.3.
+
+my cmake opts 
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/kde/4 -DCMAKE_BUILD_TYPE=release -DR-HOME=/usr/lib/R ..
+
+cmake setup error :
+
+-- Found Qt-Version 4.3.3 (using /usr/bin/qmake-qt4)
+-- Found X11: /usr/lib/libX11.so
+-- Found KDE 4.0 include dir: /usr/kde/4/include
+-- Found KDE 4 library dir: /usr/kde/4/lib
+-- Found KDE4 kconfig_compiler preprocessor: /usr/kde/4/bin/kconfig_compiler
+-- Found KDE4 automoc: /usr/kde/4/bin/kde4automoc
+-- Looking for R executable
+-- Specified by user
+-- Using R at /usr/bin/R
+-- Looking for R_HOME
+-- R_HOME is /usr/lib/R
+-- Looking for R include files
+-- Include files should be at /usr/lib/R/include. Checking for R.h
+-- Found at /usr/lib/R/include/R.h
+-- Checking for existence of libR.so
+-- Exists at /usr/lib/R/lib/libR.so
+-- Checking whether we should link against libRlapack.so
+-- Yes, /usr/lib/R/lib/libRlapack.so exists
+-- Checking whether we should link against libRblas.so
+-- Yes, /usr/lib/R/lib/libRblas.so exists
+-- Checking for R package library location to use
+CMake Error: No existing library location found
+-- Configuring done
+DEBUG: "cmake -DCMAKE_INSTALL_PREFIX=/usr/kde/4 -DCMAKE_BUILD_TYPE=release -DR-HOME=/usr/lib/R .." 
+i?in d?n?? de?eri 255
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jan 16 13:59:15 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 16 Jan 2008 14:59:15 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801160751.26632.ertugrulerata@gmail.com>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801160751.26632.ertugrulerata@gmail.com>
+Message-ID: <200801161459.19305.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 16 January 2008, ertugrulerata wrote:
+> -- Checking for R package library location to use
+> CMake Error: No existing library location found
+> -- Configuring done
+> DEBUG: "cmake -DCMAKE_INSTALL_PREFIX=/usr/kde/4 -DCMAKE_BUILD_TYPE=release
+> -DR-HOME=/usr/lib/R .." i?in d?n?? de?eri 255
+
+could you try the following? Download 
+http://rkward.svn.sourceforge.net/viewvc/*checkout*/rkward/trunk/rkward/rkward/rbackend/FindR.cmake?revision=2318 
+and overwrite "rkward/rbackend/FindR.cmake" with this file. Then try cmake 
+again. Does it work, now?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080116/b080ab1e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jan 16 14:22:22 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 16 Jan 2008 15:22:22 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801161459.19305.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801160751.26632.ertugrulerata@gmail.com>
+	<200801161459.19305.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801161522.26019.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Wednesday 16 January 2008, Thomas Friedrichsmeier wrote:
+> On Wednesday 16 January 2008, ertugrulerata wrote:
+> > -- Checking for R package library location to use
+> > CMake Error: No existing library location found
+> > -- Configuring done
+> > DEBUG: "cmake -DCMAKE_INSTALL_PREFIX=/usr/kde/4
+> > -DCMAKE_BUILD_TYPE=release -DR-HOME=/usr/lib/R .." i?in d?n?? de?eri 255
+>
+> could you try the following? Download
+> http://rkward.svn.sourceforge.net/viewvc/*checkout*/rkward/trunk/rkward/rkw
+>ard/rbackend/FindR.cmake?revision=2318 and overwrite
+> "rkward/rbackend/FindR.cmake" with this file. Then try cmake again. Does it
+> work, now?
+
+Correction: Use this download link, instead:
+http://rkward.svn.sourceforge.net/viewvc/*checkout*/rkward/trunk/rkward/rkward/rbackend/FindR.cmake?revision=2319
+
+Regards
+Thomas
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080116/fdadbdb8/attachment.sig>
+
+From dgvirtual at akl.lt  Wed Jan 16 14:38:19 2008
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Wed, 16 Jan 2008 16:38:19 +0200
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <791a12030801152328l7e2915fcr6af4982cdb775aff@mail.gmail.com>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801151506.12564.dgvirtual@akl.lt>
+	<791a12030801152328l7e2915fcr6af4982cdb775aff@mail.gmail.com>
+Message-ID: <200801161638.19978.dgvirtual@akl.lt>
+
+On Wednesday 16 January 2008 09:28:49 ra??te:
+> This doesn't seem to be an rkward problem, but a debian packaging problem.
+
+Right, the program builds when using common procedure.
+
+> I'm not sure which script you have used to generate a debian package, 
+
+It was 
+dpkg-buildpackage -rfakeroot -uc -b
+
+> but I 
+> would check your debian/rules file: this line seems to be causing the
+> problem:
+>
+> dh_shlibdeps -- --ignore-missing-info
+> I think it should just be
+>
+> dh_shlibdeps --ignore-missing-info
+
+did not help... The problem persists. 
+
+> I'm not an expert at packaging either, so if the problem persist you might
+> want to consult some debian/ubuntu people on irc or somewhere else.
+Thank you anyway.
+
+-- 
+Donatas Glodenis
+http://dg.lapas.info
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jan 16 15:18:18 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 16 Jan 2008 16:18:18 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801161638.19978.dgvirtual@akl.lt>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<791a12030801152328l7e2915fcr6af4982cdb775aff@mail.gmail.com>
+	<200801161638.19978.dgvirtual@akl.lt>
+Message-ID: <200801161618.18863.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 16 January 2008, Donatas G. wrote:
+> On Wednesday 16 January 2008 09:28:49 ra??te:
+> > but I
+> > would check your debian/rules file: this line seems to be causing the
+> > problem:
+> >
+> > dh_shlibdeps -- --ignore-missing-info
+> > I think it should just be
+> >
+> > dh_shlibdeps --ignore-missing-info
+>
+> did not help... The problem persists.
+
+if "the problem" is still that -lgfortran is not found, then in fact this will 
+not change anything. See this thread 
+http://sourceforge.net/forum/forum.php?thread_id=1883207&forum_id=165574 
+(among others) for suggestions on working around this. In general, I believe 
+installing g++, gcc, and gfortran in version 4.2 should do the trick.
+
+Even with that solved, the "--ignore-missing-info" parameter will lead to 
+problems building a .deb on ubuntu. See 
+http://thread.gmane.org/gmane.comp.statistics.rkward.devel/88/focus=89 and 
+the follow-up mail.
+
+Meik Michalke has prepared a .deb for ubuntu gutsy and i386 (thanks!). I've 
+uploaded this to:
+
+http://rkward.sourceforge.net/temp/rkward_0.4.9gutsy1-1_i386.changes
+http://rkward.sourceforge.net/temp/rkward_0.4.9gutsy1-1_i386.deb
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080116/3a340644/attachment.sig>
+
+From earlycj5 at gmail.com  Wed Jan 16 15:31:20 2008
+From: earlycj5 at gmail.com (Adam Sparks)
+Date: Wed, 16 Jan 2008 09:31:20 -0600
+Subject: [rkward-users] Thanks for the great software,
+ I used it extensively for some recent publications
+Message-ID: <478E2348.4010400@gmail.com>
+
+Doing a bit of shameless self promotion but also wanted to say thanks
+and point out that I recommended this software in a publication that we
+recently published.
+
+A webpage version of a poster I presented in August 07 on the documents
+that we created is here: http://www-personal.ksu.edu/~asparks/
+
+During Fall 2006, teaching documents were developed by students in a
+Plant Disease Epidemiology and Ecology graduate level course at Kansas
+State. The final product is a set of five documents that can be used for
+classroom or self-taught learning of these concepts. For each specific
+topic, students were asked to find three peer-reviewed articles
+illustrating the topic as the basis for constructing each module.
+Students worked with a post-doctoral research fellow and advanced
+graduate student to construct each teaching module.
+
+Our goal for these modules was to provide an open access publication
+based on free software in order to expand the availability of teaching
+materials for plant disease ecology and epidemiology to the widest
+audience possible. All five modules have been reviewed and accepted by
+Plant Health Instructor, http://www.apsnet.org/education/top.html.
+
+The introductory document in particular mentions RKward.  Throughout the
+rest of the documents the code is formatted in RKward syntax
+highlighting by using the HTML export function.
+
+Thanks again for great software, keep up the good work!
+
+regards,
+Adam Sparks
+
+
+
+From noreply at sourceforge.net  Wed Jan 16 15:33:00 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Jan 2008 07:33:00 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4724422.165574@sourceforge.net>
+Message-ID: <4725268.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4725268
+By: tfry
+
+Hi,
+
+no, there is no easy way to turn this off, ATM. If it annoys you too much, you
+can modify the wrapper script (generally installed in /usr[/local]/bin/rkward).
+
+The main reason for the console window is that earlier versions of R refused
+to run interactively unless launched from a tty. While this has been fixed in
+recent versions of R, we still make sure to start a console window for backwards
+compatibility.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From ertugrulerata at gmail.com  Wed Jan 16 18:53:40 2008
+From: ertugrulerata at gmail.com (ertugrulerata)
+Date: Wed, 16 Jan 2008 20:53:40 +0200
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801161522.26019.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801161459.19305.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801161522.26019.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801162053.40328.ertugrulerata@gmail.com>
+
+Wednesday 16 January 2008 16:22:22 tarihinde Thomas Friedrichsmeier ?unlar? 
+yazm??t?:
+> On Wednesday 16 January 2008, Thomas Friedrichsmeier wrote:
+> > On Wednesday 16 January 2008, ertugrulerata wrote:
+> > > -- Checking for R package library location to use
+> > > CMake Error: No existing library location found
+> > > -- Configuring done
+> > > DEBUG: "cmake -DCMAKE_INSTALL_PREFIX=/usr/kde/4
+> > > -DCMAKE_BUILD_TYPE=release -DR-HOME=/usr/lib/R .." i?in d?n?? de?eri
+> > > 255
+> >
+> > could you try the following? Download
+> > http://rkward.svn.sourceforge.net/viewvc/*checkout*/rkward/trunk/rkward/r
+> >kw ard/rbackend/FindR.cmake?revision=2318 and overwrite
+> > "rkward/rbackend/FindR.cmake" with this file. Then try cmake again. Does
+> > it work, now?
+>
+> Correction: Use this download link, instead:
+> http://rkward.svn.sourceforge.net/viewvc/*checkout*/rkward/trunk/rkward/rkw
+>ard/rbackend/FindR.cmake?revision=2319
+>
+> Regards
+> Thomas
+
+hi
+Fixed thanks.
+
+error in my previous e-mail is resolved and ?i compiled rkward ?and 
+installed ?. now rkward crash with following error:
+----------------------------------------------------------------------------------------------------
+rkward(11468)/kparts KParts::PartManager::addPart: Part ' "" ' has a 
+widget ?"" ?with a focus policy of NoFocus. It should haveat least a 
+ClickFocus policy, for part activation to work well.
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jan 16 20:33:23 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 16 Jan 2008 21:33:23 +0100
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801162053.40328.ertugrulerata@gmail.com>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801161522.26019.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801162053.40328.ertugrulerata@gmail.com>
+Message-ID: <200801162133.27355.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Wednesday 16 January 2008, ertugrulerata wrote:
+> error in my previous e-mail is resolved and ?i compiled rkward ?and
+> installed ?. now rkward crash with following error:
+> ---------------------------------------------------------------------------
+>------------------------- rkward(11468)/kparts KParts::PartManager::addPart:
+> Part ' "" ' has a widget ?"" ?with a focus policy of NoFocus. It should
+> haveat least a ClickFocus policy, for part activation to work well.
+
+This message is unlikely to be related to the crash (but I will investigate 
+it). My best guess is that once again a wrong version of the rkward R library 
+is getting picked up (one from a previous installation of an older version). 
+Please try running
+
+# R CMD REMOVE rkward
+
+*several times* until you get a message that no "rkward" library could be 
+found. Do this both as root and as regular user. Now install rkward again.
+
+If this does not help, run rkward with
+
+# rkward --debug-level 5 2> debuglog
+
+, zip up the resulting file "debuglog", and post it (preferrably to 
+rkward-devel at lists.sourceforge.net to keep traffic on this list low).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080116/5586711d/attachment.sig>
+
+From ertugrulerata at gmail.com  Wed Jan 16 22:02:44 2008
+From: ertugrulerata at gmail.com (ertugrulerata)
+Date: Thu, 17 Jan 2008 00:02:44 +0200
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801162133.27355.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801162053.40328.ertugrulerata@gmail.com>
+	<200801162133.27355.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801170002.44588.ertugrulerata@gmail.com>
+
+Wednesday 16 January 2008 22:33:23 tarihinde Thomas Friedrichsmeier ?unlar? 
+yazm??t?:
+> On Wednesday 16 January 2008, ertugrulerata wrote:
+> > error in my previous e-mail is resolved and ?i compiled rkward ?and
+> > installed ?. now rkward crash with following error:
+> > -------------------------------------------------------------------------
+> >-- ------------------------- rkward(11468)/kparts
+> > KParts::PartManager::addPart: Part ' "" ' has a widget ?"" ?with a focus
+> > policy of NoFocus. It should haveat least a ClickFocus policy, for part
+> > activation to work well.
+>
+> This message is unlikely to be related to the crash (but I will investigate
+> it). My best guess is that once again a wrong version of the rkward R
+> library is getting picked up (one from a previous installation of an older
+> version). Please try running
+>
+> # R CMD REMOVE rkward
+>
+> *several times* until you get a message that no "rkward" library could be
+> found. Do this both as root and as regular user. Now install rkward again.
+>
+> If this does not help, run rkward with
+>
+> # rkward --debug-level 5 2> debuglog
+>
+> , zip up the resulting file "debuglog", and post it (preferrably to
+> rkward-devel at lists.sourceforge.net to keep traffic on this list low).
+>
+> Regards
+> Thomas
+
+hi
+
+error unsolved.
+
+in my system 
+ll .kde
+lrwxrwxrwx 1 ertugrulerata users 7 Oca 15 21:56 .kde -> .kde3.5 
+
+and 
+
+rkward(4628)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget  ""  
+with a focus policy of NoFocus. It should have at least a ClickFocus policy, 
+for part activation to work well.
+
+KCrash: Application 'rkward' crashing...
+sock_file=/home/ertugrulerata/.kde/socket-myasus/kdeinit4__0
+Warning: connect() failed: : not found 
+KCrash cannot reach kdeinit, launching directly.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: debuglog.gz
+Type: application/x-gzip
+Size: 189486 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080117/61ed9d83/attachment.gz>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jan 17 01:27:57 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 17 Jan 2008 02:27:57 +0100
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801170002.44588.ertugrulerata@gmail.com>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801162133.27355.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801170002.44588.ertugrulerata@gmail.com>
+Message-ID: <200801170228.00650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Wednesday 16 January 2008, ertugrulerata wrote:
+> error unsolved.
+
+Ok. I think I have an idea what went wrong. Please download 
+http://rkward.sourceforge.net/temp/rkward-0.5.0pre2.tar.gz and try again.
+
+Additional notes:
+- For now you may want to use -DCMAKE_BUILD_TYPE=debugfull . In case you run 
+into any further crashes, this will produce a backtrace, which may help me to 
+find the problem more easily.
+- The option -DR_HOME is not really equivalent to the old --with-r-home of 
+configure. Instead - if needed - use -DR_EXECUTABLE=/usr/bin/R (or whatever). 
+This will also set R_HOME correctly, unless you are attempting an exotic 
+cross-build for a vastly different system.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080117/e407840e/attachment.sig>
+
+From noreply at sourceforge.net  Thu Jan 17 02:35:20 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Jan 2008 18:35:20 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4725268.165574@sourceforge.net>
+Message-ID: <4726498.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4726498
+By: muzza1962
+
+Hi Thomas,
+
+Thanks for your help.  I commented out the first few lines and the konsole window
+is now disabled :-).
+
+Using rkward I have noticed sometimes starting it just hangs on startup.  I
+am using rkward-0.4.9-5.1 on Suse 10.2 with KDE 3.5.5-3.
+If you need more info I can run it in debug mode and make the logs available
+if that helps.
+
+Regards
+
+Murray
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From ertugrulerata at gmail.com  Thu Jan 17 08:35:23 2008
+From: ertugrulerata at gmail.com (ertugrulerata)
+Date: Thu, 17 Jan 2008 10:35:23 +0200
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801170228.00650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801170002.44588.ertugrulerata@gmail.com>
+	<200801170228.00650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801171035.24409.ertugrulerata@gmail.com>
+
+Thursday 17 January 2008 03:27:57 tarihinde Thomas Friedrichsmeier ?unlar? 
+yazm??t?:
+> On Wednesday 16 January 2008, ertugrulerata wrote:
+> > error unsolved.
+>
+> Ok. I think I have an idea what went wrong. Please download
+> http://rkward.sourceforge.net/temp/rkward-0.5.0pre2.tar.gz and try again.
+>
+> Additional notes:
+> - For now you may want to use -DCMAKE_BUILD_TYPE=debugfull . In case you
+> run into any further crashes, this will produce a backtrace, which may help
+> me to find the problem more easily.
+> - The option -DR_HOME is not really equivalent to the old --with-r-home of
+> configure. Instead - if needed - use -DR_EXECUTABLE=/usr/bin/R (or
+> whatever). This will also set R_HOME correctly, unless you are attempting
+> an exotic cross-build for a vastly different system.
+>
+> Regards
+> Thomas
+
+hi 
+
+new tarball with cmake opts:
+-DCMAKE_BUILD_TYPE=release -DR_HOME=/usr/lib/R 
+
+compiled, and installed perfectement. in shutdown rkward says:
+
+Assert failed 
+at /var/pisi/rkward-0.5.0_pre2-17/work/rkward-0.5.0pre2/rkward/rbackend/rcommandstack.cpp - 
+function ~RCommandStackModel line 215
+
+
+
+From noreply at sourceforge.net  Thu Jan 17 11:45:53 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 17 Jan 2008 03:45:53 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4726498.165574@sourceforge.net>
+Message-ID: <4727088.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4727088
+By: tfry
+
+Hi,
+
+yes, some debug info would be helpful. Either by attaching a debugger when it
+hangs (if you need instructions for this, write back), or by running rkward with
+
+# rkward --debug-level 5 2> debuglog
+
+(only the last ~200 lines in "debuglog" before the hang will be relevant)
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jan 17 12:49:44 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 17 Jan 2008 13:49:44 +0100
+Subject: [rkward-users] RKWard 0.5.0 crash
+In-Reply-To: <200801171035.24409.ertugrulerata@gmail.com>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801170228.00650.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801171035.24409.ertugrulerata@gmail.com>
+Message-ID: <200801171349.48030.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Thursday 17 January 2008, ertugrulerata wrote:
+> in shutdown rkward says:
+>
+> Assert failed
+> at
+> /var/pisi/rkward-0.5.0_pre2-17/work/rkward-0.5.0pre2/rkward/rbackend/rcomma
+>ndstack.cpp - function ~RCommandStackModel line 215
+
+This is during a regular shutdown (i.e. File->Quit), this time, right? Yes, I 
+see this, too, most of the time. It should be harmless, but I'll still need 
+to find out why this happens. For now you can safely ignore this message.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080117/ebc46433/attachment.sig>
+
+From noreply at sourceforge.net  Thu Jan 17 23:53:23 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 17 Jan 2008 15:53:23 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4727088.165574@sourceforge.net>
+Message-ID: <4728560.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4728560
+By: muzza1962
+
+OK.  Here's the log from one hang.  I think I saw another hang with a permissions
+error too.  I will post that if I get that again.
+
+Regards
+
+Murray
+
+mtrainer at dev02:~> tail -200 debuglog
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function ~RKStructureGetter line 52
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function SEXPToRData line 545
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function ~RData line 32
+Trace: rdata.cpp - function discardData line 60
+Trace: rdata.cpp - function ~RData line 32
+Trace: rdata.cpp - function discardData line 60
+done running command
+Trace: rcommandstack.cpp - function pop line 105
+Trace: rthread.cpp - function doCommand line 143
+Trace: rkcommandeditorwindow.cpp - function RKFunctionArgHinter line 347
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkconsole.cpp - function RKConsolePart line 869
+Trace: rkmdiwindow.cpp - function initializeActivationSignals line 187
+Trace: rkconsole.cpp - function initializeActions line 780
+Trace: rkconsole.cpp - function clear line 666
+Trace: rkconsole.cpp - function tryNextInBatch line 628
+Trace: rkconsole.cpp - function cursorAtTheEnd line 468
+Looking for syntax highlighting definition
+none
+asm6502
+avr assembler
+gnu assembler
+intel x86 (nasm)
+mips assembler
+picasm
+.desktop
+apache configuration
+cisco
+fstab
+ini files
+kdesvn-buildrc
+wine config
+4gl
+4gl-per
+ldif
+progress
+sql
+sql (mysql)
+sql (postgresql)
+error: /opt/kde3/share/apps/katepart/syntax/logohighlightstyle.es.xml
+ahdl
+spice
+verilog
+vhdl
+ca
+de_de
+en_us
+en_us
+fr_fr
+it
+nl
+pl
+pt_br
+ru
+sl
+sr
+sr at latn
+sv
+asp
+bibtex
+coldfusion
+css
+doxygen
+gnu gettext
+html
+javadoc
+jsp
+latex
+mab-db
+postscript
+ruby/rails/rhtml
+sgml
+txt2tags
+vrml
+wikimedia
+xml
+xml (debug)
+xslt
+abc
+alerts
+changelog
+cmake
+css/php
+cue sheet
+debian changelog
+debian control
+diff
+javascript/php
+lilypond
+m3u
+makefile
+music publisher
+pov-ray
+renderman rib
+rpm spec
+gdl
+matlab
+octave
+scilab
+ti basic
+awk
+bash
+common lisp
+euphoria
+ferite
+javascript
+lua
+mason
+perl
+php (html)
+php/php
+pike
+python
+quake script
+r script
+rexx
+rkward output
+Trace: rksettingsmoduleconsole.cpp - function loadCommandHistory line 133
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkmdiwindow.cpp - function setToolWrapper line 210
+Trace: rkworkplace.cpp - function registerToolWindow line 121
+Trace: rkworkplace.cpp - function addWindow line 111
+Trace: rkworkplace.cpp - function attachWindow line 75
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkworkplace.cpp - function windowActivated line 516
+Trace: rkward.cpp - function partAdded line 376
+Trace: rkmdiwindow.cpp - function RKMDIWindow line 32
+Trace: rcommandreceiver.cpp - function RCommandReceiver line 25
+Trace: rkhelpsearchwindow.cpp - function RKHelpSearchWindow line 46
+Trace: rkdummypart.cpp - function RKDummyPart line 25
+Trace: rkmdiwindow.cpp - function initializeActivationSignals line 187
+WARNING: please edit ~/.scim/global and change /DefaultConfigModule to kconfig
+Trace: rinterface.cpp - function issueCommand line 87
+Trace: rdata.cpp - function RData line 25
+Trace: rcommand.cpp - function RCommand line 31
+Trace: rcommand.cpp - function addReceiver line 60
+Trace: rcommandreceiver.cpp - function addCommand line 55
+Trace: rcommand.cpp - function addReceiver line 60
+Trace: rcommandreceiver.cpp - function addCommand line 55
+Trace: rinterface.cpp - function issueCommand line 214
+Trace: rcommandstack.cpp - function issueCommand line 38
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkmdiwindow.cpp - function setToolWrapper line 210
+Trace: rkworkplace.cpp - function registerToolWindow line 121
+Trace: rkworkplace.cpp - function addWindow line 111
+Trace: rkworkplace.cpp - function attachWindow line 75
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkworkplace.cpp - function windowActivated line 516
+Trace: rkward.cpp - function partAdded line 376
+Trace: rkhtmlwindow.cpp - function initialize line 262
+Trace: rcontrolwindow.cpp - function initialize line 85
+Trace: rcontrolwindow.cpp - function show line 92
+Trace: rcontrolwindow.cpp - function refreshCommands line 203
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function update line 410
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RReadConsole line 162
+Trace: rthread.cpp - function handleStandardCallback line 425
+Trace: rthread.cpp - function flushOutput line 292
+output '
+ *** caught segfault ***
+address 0x1, cause 'memory not mapped'
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+'
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Jan 18 00:10:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 17 Jan 2008 16:10:36 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4724422.165574@sourceforge.net>
+Message-ID: <4728581.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4728581
+By: muzza1962
+
+Here is the other error - looks like it fails at the same place but slightly
+different error message.
+
+Murray
+
+mtrainer at dev02:~> tail -200 debuglog
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'writeChar': 0x83b1360, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'write.dcf': 0x83b0650, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'writeLines': 0x83b129c, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'write.table0': 0x83b14e8, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching '%x%': 0x8367cb0, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'xor': 0x83b11a0, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'xpdrows.data.frame': 0x83b10a4, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function getStructureSafe line 144
+Trace: rkstructuregetter.cpp - function getStructureWrapper line 163
+Trace: rkstructuregetter.cpp - function getStructureWorker line 196
+fetching 'zapsmall': 0x83b0fa8, s-type 5
+Trace: rkstructuregetter.cpp - function resolvePromise line 169
+temporarily resolving unbound promise
+resolved type is 3
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function RData line 25
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rembedinternal.cpp - function SEXPToStringList line 454
+Trace: rkstructuregetter.cpp - function ~RKStructureGetter line 52
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function SEXPToRData line 545
+Trace: rdata.cpp - function RData line 25
+Trace: rdata.cpp - function ~RData line 32
+Trace: rdata.cpp - function discardData line 60
+Trace: rdata.cpp - function ~RData line 32
+Trace: rdata.cpp - function discardData line 60
+done running command
+Trace: rcommandstack.cpp - function pop line 105
+Trace: rthread.cpp - function doCommand line 143
+Trace: rkmdiwindow.cpp - function initializeActivationSignals line 187
+WARNING: please edit ~/.scim/global and change /DefaultConfigModule to kconfig
+Trace: rinterface.cpp - function issueCommand line 87
+Trace: rdata.cpp - function RData line 25
+Trace: rcommand.cpp - function RCommand line 31
+Trace: rcommand.cpp - function addReceiver line 60
+Trace: rcommandreceiver.cpp - function addCommand line 55
+Trace: rcommand.cpp - function addReceiver line 60
+Trace: rcommandreceiver.cpp - function addCommand line 55
+Trace: rinterface.cpp - function issueCommand line 214
+Trace: rcommandstack.cpp - function issueCommand line 38
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkmdiwindow.cpp - function setCaption line 64
+Trace: rkmdiwindow.cpp - function setToolWrapper line 210
+Trace: rkworkplace.cpp - function registerToolWindow line 121
+Trace: rkworkplace.cpp - function addWindow line 111
+Trace: rkworkplace.cpp - function attachWindow line 75
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkmdiwindow.cpp - function eventFilter line 146
+Trace: rkworkplace.cpp - function windowActivated line 516
+Trace: rkward.cpp - function partAdded line 376
+Trace: rkhtmlwindow.cpp - function initialize line 262
+Trace: rcontrolwindow.cpp - function initialize line 85
+Trace: rcontrolwindow.cpp - function show line 92
+Trace: rcontrolwindow.cpp - function refreshCommands line 203
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function update line 410
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rcontrolwindow.cpp - function addCommands line 232
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rcontrolwindow.cpp - function addCommand line 256
+Trace: rcontrolwindow.cpp - function update line 384
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RWriteConsoleEx line 209
+Trace: rthread.cpp - function handleOutput line 257
+Trace: rembedinternal.cpp - function RReadConsole line 162
+Trace: rthread.cpp - function handleStandardCallback line 425
+Trace: rthread.cpp - function flushOutput line 292
+output '
+ *** caught segfault ***
+address 0x40000020, cause 'invalid permissions'
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From dgvirtual at akl.lt  Fri Jan 18 09:35:04 2008
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Fri, 18 Jan 2008 11:35:04 +0200
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801161618.18863.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801161638.19978.dgvirtual@akl.lt>
+	<200801161618.18863.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801181135.04344.dgvirtual@akl.lt>
+
+On Wednesday 16 January 2008 17:18:18 Thomas Friedrichsmeier ra??:
+> http://rkward.sourceforge.net/temp/rkward_0.4.9gutsy1-1_i386.deb
+
+Thanks for the deb.
+
+I solved the problem with GCC and fortran names/versions, only the deb build 
+problem remained. And I don't have to solve it now thanks to a downloadable 
+deb.
+
+-- 
+Donatas Glodenis
+http://dg.lapas.info
+
+
+
+From meik.michalke at uni-duesseldorf.de  Fri Jan 18 09:40:44 2008
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 18 Jan 2008 10:40:44 +0100
+Subject: [rkward-users] RKWard 0.4.9 is released / RKWard 0.5.0 timeline
+In-Reply-To: <200801181135.04344.dgvirtual@akl.lt>
+References: <200801142204.13181.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801161618.18863.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200801181135.04344.dgvirtual@akl.lt>
+	(sfid-20080118_103632_034740_8E7F540B)
+Message-ID: <200801181040.48136.meik.michalke@uni-duesseldorf.de>
+
+am Freitag, 18. Januar 2008 (10:35) schrieb Donatas G.:
+> And I don't have to solve it now thanks to a downloadable deb.
+
+you're wellcome. i'll try to keep this service running :o)
+
+
+viele gruesse :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080118/082e3c5e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jan 21 23:36:04 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 22 Jan 2008 00:36:04 +0100
+Subject: [rkward-users] RKWard 0.5.0 for KDE4 is released
+Message-ID: <200801220036.08237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+version 0.5.0 of RKWard is available for download, now. See 
+http://rkward.sf.net for some more details. The new release is designed for 
+KDE 4, and needs a least KDE 4 libraries to be installed.
+
+Many thanks to all contributors, testers, translators!
+
+---- Debian users: ----
+
+Note: The debian package provided should be installable with
+# dpkg -i --force depends rkward_0.5.0-1_i386_sid.deb
+even if some dependencies have not entered the main archive, yet. However, a 
+number of icons may be missing. 
+
+---- Developers: ----
+
+Feel free to commit changes of all sorts to SVN again. Please make sure to 
+commit your changes to trunk (i.e. the KDE4 version). If you cannot use KDE4, 
+yet, no problem: Just continue to use RKWard 0.4.9, but specify the 
+pluginmaps from your SVN checkout under Settings->Configure RKWard->Plugins. 
+This way you can work on the most recent versions of the plugins, without 
+using the most recent version of RKWard.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080122/f216b7d3/attachment.sig>
+
+From noreply at sourceforge.net  Tue Jan 22 12:30:03 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 22 Jan 2008 04:30:03 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4728560.165574@sourceforge.net>
+Message-ID: <4735772.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4735772
+By: tfry
+
+Brrr. I have an idea where this comes from, but this would be pretty hard to
+fix. Does this happen very often? Otherwise, I think I'll ignore this for RKWard
+0.4.x.
+
+In RKWard 0.5.0, the code in question is entirely different (and this sort of
+problem should not occur, there). However, this cannot simply be backported,
+as it relies heavily on new features in Qt4 (model/view architecture).
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From nono.231 at gmail.com  Tue Jan 22 17:26:24 2008
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 22 Jan 2008 17:26:24 +0000
+Subject: [rkward-users] =?iso-8859-7?q?=C1=F0=3A__RKWard_0=2E5=2E0_for_KDE?=
+	=?iso-8859-7?q?4_is_released?=
+In-Reply-To: <200801220036.08237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801220036.08237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550801220926n1f07161esb482afe16885ecb3@mail.gmail.com>
+
+2008/1/21, Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+> Hi,
+>
+> version 0.5.0 of RKWard is available for download, now. See
+> http://rkward.sf.net for some more details. The new release is designed for
+> KDE 4, and needs a least KDE 4 libraries to be installed.
+>
+> Many thanks to all contributors, testers, translators!
+
+Hi Thomas and everybody!
+
+I installed in a virtual machine kubuntu with KDE 4.0 (from here
+http://cdimage.ubuntu.com/kubuntu/releases/gutsy/kde4/. This is an
+unsupported remaster of Kubuntu 7.10 with KDE 4.0.) Installed
+development packages and downloaded via svn the latest rkward 0.5
+sources.  Everything worked fine. I had to add the plugin maps myself.
+No problem.
+
+The only problem that I had is that the plugins are actually not
+working. Selecting a variable and pressing the green arrow does
+nothing. Do not know if I am doing something wrong or there is a
+problem. Is it reproducible?
+
+Kind Regards
+Ilias
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jan 22 19:09:53 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 22 Jan 2008 20:09:53 +0100
+Subject: [rkward-users]
+ =?utf-8?b?W3Jrd2FyZC1kZXZlbF0gzpHPgDogIFJLV2FyZCAw?=
+ =?utf-8?q?=2E5=2E0_for_KDE4_is_released?=
+In-Reply-To: <3ff92a550801220926n1f07161esb482afe16885ecb3@mail.gmail.com>
+References: <200801220036.08237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550801220926n1f07161esb482afe16885ecb3@mail.gmail.com>
+Message-ID: <200801222009.57261.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Tuesday 22 January 2008, I. Soumpasis wrote:
+> The only problem that I had is that the plugins are actually not
+> working. Selecting a variable and pressing the green arrow does
+> nothing. Do not know if I am doing something wrong or there is a
+> problem. Is it reproducible?
+
+Ouch, that's bad. Confirmed. I wonder when exactly that happened, since I 
+definitely tested that before (but not too recently, it seems).
+
+This is now fixed in SVN. I guess I'll have to prepare a bugfix release pretty 
+soon...
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080122/d956c57c/attachment.sig>
+
+From noreply at sourceforge.net  Wed Jan 23 00:40:33 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 22 Jan 2008 16:40:33 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4735772.165574@sourceforge.net>
+Message-ID: <4737023.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4737023
+By: muzza1962
+
+
+> Does this happen very often?
+
+Yes very often - its a bit of a showstopper.  I think it only happens if you
+have already run rkward once and closed it.
+
+Murray
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Jan 23 12:55:28 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 23 Jan 2008 04:55:28 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4737023.165574@sourceforge.net>
+Message-ID: <4737743.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4737743
+By: tfry
+
+Ok. I have made an attempt at fixing this.
+
+Since this problem occurs very, very rarely, here, it would be nice, if you
+could do some testing. Could you please download and compile this:
+http://rkward.sourceforge.net/temp/rkward-0.4.9a-test1.tar.gz , and then report
+whether the problem persists or not?
+
+Thanks!
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From nono.231 at gmail.com  Wed Jan 23 15:45:54 2008
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Wed, 23 Jan 2008 15:45:54 +0000
+Subject: [rkward-users]
+	=?iso-8859-7?q?=5Brkward-devel=5D_=C1=F0=3A__RKWar?=
+	=?iso-8859-7?q?d_0=2E5=2E0_for_KDE4_is_released?=
+In-Reply-To: <200801222009.57261.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801220036.08237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550801220926n1f07161esb482afe16885ecb3@mail.gmail.com>
+	<200801222009.57261.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550801230745g2db0b90ajc11aed8ae649cd8@mail.gmail.com>
+
+2008/1/22, Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de
+>:
+>
+> On Tuesday 22 January 2008, I. Soumpasis wrote:
+> > The only problem that I had is that the plugins are actually not
+> > working. Selecting a variable and pressing the green arrow does
+> > nothing. Do not know if I am doing something wrong or there is a
+> > problem. Is it reproducible?
+>
+> Ouch, that's bad. Confirmed. I wonder when exactly that happened, since I
+> definitely tested that before (but not too recently, it seems).
+>
+> This is now fixed in SVN. I guess I'll have to prepare a bugfix release
+> pretty
+> soon...
+
+
+Hi Thomas. I confirm also. Fixed.
+
+Kind Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080123/6e34c292/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jan 23 17:06:17 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Wed, 23 Jan 2008 18:06:17 +0100
+Subject: [rkward-users] Bugfix release 0.5.0a
+Message-ID: <200801231806.21048.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+due to the problem with no objects being selectable in most plugins at all, I 
+have prepared a 0.5.0a bugfix release. See http://rkward.sf.net. There are 
+virtually no other changes other than fixing this (only a minor adjustment of 
+the cmake files).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080123/b2e1e389/attachment.sig>
+
+From noreply at sourceforge.net  Thu Jan 24 06:52:35 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 23 Jan 2008 22:52:35 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4737743.165574@sourceforge.net>
+Message-ID: <4739302.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4739302
+By: muzza1962
+
+Hi,
+
+That appears to have fixed the problem.  I compiled it on my development machine
+and it doesn't have the hanging on startup so far.  Do you know if the fixed
+version will appear in rpm format here soon:
+
+ftp://ftp.uni-bayreuth.de/pub/math/statlib/R/CRAN/bin/linux/suse/10.2/RPMS/i586/
+
+Otherwise I will have to manually copy the required binaries up to our production
+server.
+
+Murray
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Jan 24 22:58:47 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 24 Jan 2008 14:58:47 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4739302.165574@sourceforge.net>
+Message-ID: <4740555.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4740555
+By: tfry
+
+> Otherwise I will have to manually copy the required binaries up to our production
+server.
+
+I guess that's the safest bet at this moment. 0.4.9a is not even released (not
+sure, when I will make an official version), and before that it usually is not
+packaged.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From jranke at uni-bremen.de  Thu Jan 24 23:01:29 2008
+From: jranke at uni-bremen.de (Johannes Ranke)
+Date: Fri, 25 Jan 2008 00:01:29 +0100
+Subject: [rkward-users] rkward from SVN fails to build on Debian sid
+Message-ID: <20080124230129.GA13816@mail.uni-bremen.de>
+
+Hi Thomas,
+
+I have compiled rkward 0.5 successully before, but now I get:
+
+[...]
+
+Linking CXX executable rkward.bin
+cd /home/ranke/kde/build/rkward/trunk/rkward/rkward && /usr/bin/cmake -P
+CMakeFiles/rkward.bin.dir/cmake_clean_target.cmake
+cd /home/ranke/kde/build/rkward/trunk/rkward/rkward && /usr/bin/c++
+-Wnon-virtual-dtor -Wno-long-long -ansi -Wundef -Wcast-align
+-Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security
+-fno-exceptions -fno-check-new -fno-common -Woverloaded-virtual
+-fvisibility=hidden -fvisibility-inlines-hidden -g3 -fno-inline  -fPIC
+-Wl,--enable-new-dtags  "CMakeFiles/rkward.bin.dir/rkward.bin_automoc.o"
+"CMakeFiles/rkward.bin.dir/rkward.o" "CMakeFiles/rkward.bin.dir/main.o"
+"CMakeFiles/rkward.bin.dir/rkglobals.o"
+"CMakeFiles/rkward.bin.dir/robjectbrowser.o"
+"CMakeFiles/rkward.bin.dir/robjectviewer.o"
+"CMakeFiles/rkward.bin.dir/rkconsole.o"
+"CMakeFiles/rkward.bin.dir/rkwardapplication.o"   -o rkward.bin
+-rdynamic -L/home/ranke/kde/lib -L/usr/lib/R/lib
+-L/home/ranke/kde/build/rkward/trunk/rkward/lib
+-L/home/ranke/qt/4/qt-copy/lib -lQtCore -lpthread -lQtNetwork -lQtDBus
+-lQtXml -lz -lbz2 -lresolv -lkdecore -Wl,-Bstatic -lwindows -lagents
+-ldialogs -lplugin -lsettings -ldataeditor -lcore-lscriptbackends
+-lrbackend -lmisc -Wl,-Bdynamic -lQtCore -lpthread -lkdecore -lkdeui
+-lkio -lkparts -lktexteditor -lkjs -lQtDBus -lQtCore -lpthread -lQtGui
+-lphonon -ljpeg -lgif -lpng -lz -lkhtml -lQtCore -lpthread -lkdecore
+-lkdeui -lkio -lz -lQtCore -lpthread -lkdecore -lsolid -lkfile -lQtSvg
+-lQtCore -lpthread -lkdecore -lSM -lICE -lX11 -lXext -lXft -lXau -lXdmcp
+-lXpm -lQtGui -lQtXml -lXtst -lXcursor -lXfixes -lkdeui-lR -lRlapack
+-lgfortran -lRblas -lkparts -lm -lpcre -lpcreposix -lstreamanalyzer
+-lstreams -lfam -lacl -lattr -lXrender -lQtDBus -lQtNetwork-lbz2
+-lresolv
+-Wl,-rpath,/home/ranke/kde/lib:/home/ranke/kde/lib:/usr/lib/R/lib:/home/ranke/qt/4/qt-copy/lib
+/usr/bin/ld: cannot find -lRblas
+collect2: ld returned 1 exit status
+make[2]: *** [rkward/rkward.bin] Fehler 1
+make[2]: Leaving directory `/home/ranke/kde/build/rkward/trunk/rkward'
+make[1]: *** [rkward/CMakeFiles/rkward.bin.dir/all] Fehler 2
+make[1]: Leaving directory `/home/ranke/kde/build/rkward/trunk/rkward'
+make: *** [all] Fehler 2
+
+I suspect the problem is that 
+
+    /usr/lib/R/lib/libRblas.so
+
+has gone away with the upgrade to r-base-core 2.6.1-2.
+
+Best regards,
+
+Johannes
+
+-- 
+Dr. Johannes Ranke                 jranke at uni-bremen.de     Key ID: F649AF90
+UFT Bremen, Leobenerstr. 1         +49 421 218 63373
+D-28359 Bremen                     http://www.uft.uni-bremen.de/chemie/ranke
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jan 25 00:23:26 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 25 Jan 2008 01:23:26 +0100
+Subject: [rkward-users] rkward from SVN fails to build on Debian sid
+In-Reply-To: <20080124230129.GA13816@mail.uni-bremen.de>
+References: <20080124230129.GA13816@mail.uni-bremen.de>
+Message-ID: <200801250123.30712.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 25 January 2008, Johannes Ranke wrote:
+> I have compiled rkward 0.5 successully before, but now I get:
+
+[...]
+
+>ke/qt/4/qt-copy/lib /usr/bin/ld: cannot find -lRblas
+
+[...]
+
+> I suspect the problem is that
+>
+>     /usr/lib/R/lib/libRblas.so
+>
+> has gone away with the upgrade to r-base-core 2.6.1-2.
+
+Yes, that causes the problem. However, the fix should be as simple as running 
+the "cmake" command again, before make.
+
+(Acutally we don't use any symbols from libRblas in rkward. We only link 
+against it when present, as there have been strange problems with failed 
+symbol lookups at runtime in the past, without this. Since Dirk is CCed: 
+Maybe you have an idea on this?)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080125/48757bec/attachment.sig>
+
+From jranke at uni-bremen.de  Fri Jan 25 05:55:43 2008
+From: jranke at uni-bremen.de (Johannes Ranke)
+Date: Fri, 25 Jan 2008 06:55:43 +0100
+Subject: [rkward-users] rkward from SVN fails to build on Debian sid
+In-Reply-To: <200801250123.30712.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <20080124230129.GA13816@mail.uni-bremen.de>
+	<200801250123.30712.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <20080125055542.GA14553@mail.uni-bremen.de>
+
+> > I suspect the problem is that
+> >
+> >     /usr/lib/R/lib/libRblas.so
+> >
+> > has gone away with the upgrade to r-base-core 2.6.1-2.
+> 
+> Yes, that causes the problem. However, the fix should be as simple as running 
+> the "cmake" command again, before make.
+
+Oh, yes, I thought of this solution when I had already sent this mail
+and the computer was shut down. Sorry for bothering the two of you!
+I removed CMakeCache.txt from the build directory and now it compiles.
+
+Thanks for your quick replies,
+
+Johannes
+
+> (Acutally we don't use any symbols from libRblas in rkward. We only link 
+> against it when present, as there have been strange problems with failed 
+> symbol lookups at runtime in the past, without this. Since Dirk is CCed: 
+> Maybe you have an idea on this?)
+> 
+> Regards
+> Thomas
+
+
+
+> -------------------------------------------------------------------------
+> This SF.net email is sponsored by: Microsoft
+> Defy all challenges. Microsoft(R) Visual Studio 2008.
+> http://clk.atdmt.com/MRT/go/vse0120000070mrt/direct/01/
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+-- 
+Dr. Johannes Ranke                 jranke at uni-bremen.de     Key ID: F649AF90
+UFT Bremen, Leobenerstr. 1         +49 421 218 63373
+D-28359 Bremen                     http://www.uft.uni-bremen.de/chemie/ranke
+
+
+
+From noreply at sourceforge.net  Mon Jan 28 13:29:16 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Jan 2008 05:29:16 -0800
+Subject: [rkward-users] [rkward - Help] console display justify
+Message-ID: <4745613.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4745613
+By: perkeryang
+
+hello,
+i am a new rkward user(it's a good gui software^^"),and my os is ubuntu.
+i have some problem...during using rk..
+ususally,i also run R in textmode, and it show like this...
+================================================================
+EX:
+> -10:30
+ [1] -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0   1   2   3   4   5   6   7
+8   9  10  11  12  13
+[25]  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30
+> 
+================================================================
+
+it can auto justify by right hand.
+the numbers can be arrangement well for looking , up line and bottom line be
+order clear,
+
+But....!!
+rkward console display .......
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+EX:
+-10:30
+ [1] -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0   1   2   3   4   5   6   7
+8   9  10  11  12  13  14  15  16  17  18  19
+[31]  20  21  22  23  24  25  26  27  28  29  30
+>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+rk console display show justify by left hand ,
+the up line can order bottom line....
+
+how can i setting ,like as textmode.
+
+thx everyone see the post.....
+
+ i have a break english......
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jan 28 21:33:03 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Jan 2008 13:33:03 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4745613.165574@sourceforge.net>
+Message-ID: <4746456.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4746456
+By: kapatp
+
+Hi Perker,
+
+Which versions of RkWard and Ubuntu are you using? The R Console window should
+show right-justification properly. The only issue that I currently see is in
+the "Command log" window where it looks centered and the numbers in the two
+lines do not align properly. I remember Thomas had implemented the fixed spacing
+fonts! But the fixed font is not used in Command log window at all!
+
+Regards
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jan 28 22:16:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Jan 2008 14:16:36 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4745613.165574@sourceforge.net>
+Message-ID: <4746542.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4746542
+By: tfry
+
+Hm, acutally, I just found out that we do not set a fixed font in the Console
+after all. It seems like there simply is no way to force the katepart to use
+a monospaced font (programmatically), at least none that I could find.
+
+To set up a fixed font, do the following (rather counter-intuitive, I admit):
+Select File->New->Script File. Now select Settings->Configure Editor. Under
+"Fonts & Colors"->Fonts select your favorite monospaced font. The font will
+apply to both script files, and the R Console window.
+
+Regarding the command log: I did (try to) make sure a fixed spaced font it always
+used there (the one you configured as fixed width font in KDE's control center.
+It works, here. Could you make sure you actually have set a monospace font as
+"fixed with font" in KDE?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Jan 29 03:38:12 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Jan 2008 19:38:12 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4745613.165574@sourceforge.net>
+Message-ID: <4747478.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4747478
+By: perkeryang
+
+thx....tfry,kapat
+
+kapat,
+my rkward version:0.49pre1 
+sorry...i only see the console...not attend the command log
+the command log it's really right-justification,but another problem...
+the line tail....ever lines is not same long...
+
+tfry,
+maybe my ubuntu(gnome) font not set well...and i use chinese font...that can
+display as good as  englhish origin font setting...>"<
+
+rkward , it's a good sotfware...for R..^^
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Jan 29 06:30:17 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 28 Jan 2008 22:30:17 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4740555.165574@sourceforge.net>
+Message-ID: <4747615.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4747615
+By: muzza1962
+
+Hi Thomas,
+
+Do you have a list of binaries I need to copy up.  I tried copying rkward.bin
+but it appears to need other files.
+
+Thanks
+
+Murray
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Jan 29 12:25:08 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 29 Jan 2008 04:25:08 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4747615.165574@sourceforge.net>
+Message-ID: <4748066.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4748066
+By: tfry
+
+rkward.bin should be the only file that has changed compared to 0.4.9. So, if
+you first install a 0.4.9 rpm and then replace the installed rkward.bin with
+the one from 0.4.9a-test1, that *should* work.
+
+In total, rkward needs a whole lot of further files. You can roll a binary tarball
+relatively easily, by simply running
+
+# make install DESTDIR=/some/temporary/path/rkward
+# tar -cvzf rkward_binary.tar.gz /some/temporary/path/rkward
+
+then unpack that in "/" on the machine you want to install on (please verify
+the tar.gz looks correct, first!).
+
+I don't know much about building .rpms, but I guess taking a .src.rpm from
+http://download.opensuse.org/repositories/home:/dsteuer/ if should not be overly
+hard to build a 0.4.9a-test1.rpm from that.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Jan 30 03:08:53 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 29 Jan 2008 19:08:53 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4748066.165574@sourceforge.net>
+Message-ID: <4749763.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4749763
+By: muzza1962
+
+I created the tar file as sugggested and extracted it on the destination machine.
+I get the error below:
+
+/opt/kde3/bin/rkward.bin: symbol lookup error: /opt/kde3/bin/rkward.bin: undefined
+symbol: R_LastvalueSymbol
+
+I think something is missing that is needed?
+
+Murray
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Jan 30 11:38:58 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 30 Jan 2008 03:38:58 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4749763.165574@sourceforge.net>
+Message-ID: <4750275.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4750275
+By: tfry
+
+Looks like you are using different versions of R on the compilation and the
+deployment system. IIRC, that's probably R 2.5.x on the first, and R 2.6.x on
+the latter.
+
+The safest assumption is that rkward compiled with R 2.x will only work with
+R 2.x at runtime (though there are some exceptions to this rule).
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Jan 30 18:18:54 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 30 Jan 2008 10:18:54 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4746542.165574@sourceforge.net>
+Message-ID: <4750956.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4750956
+By: kapatp
+
+@Thomas, regarding command log: Hmm, looks like a bug then. I do have fixed
+font defined in KDE, but command log does not seem to use it. Kindly look at
+this picture:
+http://www.hotlinkfiles.com/files/922641_vd8en/nsole_Cmdlog_FixedFont_Issue.png
+The above picture is for RkWard 0.4.9 compiled on RHEL 5.1 with R 2.5 and installed
+in $HOME/.kde. I do have a similar problem on my home machine (Kubuntu 7.10:
+R 2.5 + RkWard 0.4.9) where RkWard is installed system wide. BTW, this is not
+a burning issue, command log is very much useable without fixed-spacing fonts.
+Where it is important is - Editor, Console, and Object viewer uses fixed spacing
+font - great job.
+
+@Perker, I am not sure how Gnome's font manager works, but Thomas's suggestion
+(Configure Editor > Fonts & Colors > Font, then select a fixed spacing font)
+should have worked! Or is it a problem with the locale (Chinese) that you have?
+You can try (may be just for once) to change you locale and and language to
+English and see of the problem persists.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Jan 31 06:44:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 30 Jan 2008 22:44:36 -0800
+Subject: [rkward-users] [rkward - Help] RE: Turn off konsole window
+In-Reply-To: <4750275.165574@sourceforge.net>
+Message-ID: <4752235.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4752235
+By: muzza1962
+
+Hi,
+
+I recompiled it against the latest R-stats rpm and it works fine on my production
+machine.  Look forward to testing it out.  Thanks for your help.
+
+Regards
+
+Murray
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Jan 31 06:46:41 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 30 Jan 2008 22:46:41 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4745613.165574@sourceforge.net>
+Message-ID: <4752237.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4752237
+By: perkeryang
+
+thx for everyone^^"
+acturally, i change a font can fix the problem(like:Deja VuSans Mono),but i
+always use the apple font(LiHei Pro),and how can i recognize which font is a
+fixed spacing font???
+and command log still have problem..
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu Jan 31 06:51:15 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 30 Jan 2008 22:51:15 -0800
+Subject: [rkward-users] [rkward - Help] RE: console display justify
+In-Reply-To: <4745613.165574@sourceforge.net>
+Message-ID: <4752241.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4752241
+By: perkeryang
+
+i answer my problem 1, some fonts have"mono"....they are fixed spacing font....
+have some problem can fix my Lehei font become a fixed spacing??
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From ertugrulerata at gmail.com  Thu Jan 31 15:27:56 2008
+From: ertugrulerata at gmail.com (ertugrulerata)
+Date: Thu, 31 Jan 2008 17:27:56 +0200
+Subject: [rkward-users] Bugfix release 0.5.0a
+In-Reply-To: <200801231806.21048.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200801231806.21048.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200801311727.56958.ertugrulerata@gmail.com>
+
+Wednesday 23 January 2008 19:06:17 tarihinde Thomas Friedrichsmeier ?unlar? 
+yazm??t?:
+> Hi,
+>
+> due to the problem with no objects being selectable in most plugins at all,
+> I have prepared a 0.5.0a bugfix release. See http://rkward.sf.net. There
+> are virtually no other changes other than fixing this (only a minor
+> adjustment of the cmake files).
+>
+> Regards
+> Thomas
+
+hi 
+
+for Pardus, 
+build files  : 
+http://svn.pardus.org.tr/pardus/playground/ertugrul/experimantal/only_kde4/rkward 
+
+
+

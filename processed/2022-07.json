@@ -1,0 +1,168 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2022-07",
+  "messages": [
+    {
+      "id": "msg-65b2a0ca65bc",
+      "message_id": "<1667926071.1012301.1658611194187@mail.yahoo.com>",
+      "from_name": "someone",
+      "from_email_hash": "e2bffe3ee799b235f7bf4f507e3335a9a7befe6f88d5f551098b2e0b01a71a6e",
+      "date": "2022-07-23T21:19:54Z",
+      "subject": "rkward, updated version, published to my review",
+      "subject_clean": "rkward, updated version, published to my review",
+      "in_reply_to": "<30117384.25128.1654036563288@mail.yahoo.com>",
+      "references": [
+        "<1902229017.2379704.1651337404916.ref@mail.yahoo.com>",
+        "<1780865767.2390840.1651343104933@mail.yahoo.com>",
+        "<20220430213047.2101c356@booklife>",
+        "<3434346.CbtlEUcBR6@yrla>",
+        "<331188678.3192560.1651611574299@mail.yahoo.com>",
+        "<20220504213738.2d6cf0af@booklife>",
+        "<2069149236.30066.1651698068172@mail.yahoo.com>",
+        "<20220506231405.78fdcc12@booklife>",
+        "<383327820.355399.1651878664568@mail.yahoo.com>",
+        "<470454116.67024.1653000355300@mail.yahoo.com>",
+        "<20220521132107.24ba0740@booklife>",
+        "<1180875467.880232.1653144409327@mail.yahoo.com>",
+        "<325328235.1536596.1653343052434@mail.yahoo.com>",
+        "<1211832795.2861330.1653624696682@mail.yahoo.com>",
+        "<20220527074859.7fbcc7bc@booklife>",
+        "<1530684985.2915936.1653651698353@mail.yahoo.com>",
+        "<338633248.3649625.1653924011343@mail.yahoo.com>",
+        "<20220530202752.743c0414@booklife>",
+        "<1988616664.3356389.1653938903174@mail.yahoo.com>",
+        "<30117384.25128.1654036563288@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi all\nThanks again for doing so much work on RKWard.\nI mentioned I had updated my review of free to use and easy to use statistical software packages. Would it be possible to list a link to my review on the RKWard website, perhaps in the Further resources section of the Get Involved page?\nThanks\nGene\n\n\n-----Original Message-----\nFrom: someone <maffydoit at aol.com>\nTo: thomas.friedrichsmeier at kdemail.net <thomas.friedrichsmeier at kdemail.net>; rkward-users at kde.org <rkward-users at kde.org>\nSent: Tue, May 31, 2022 6:36 pm\nSubject: rkward, updated version, published to my review\n\nHi all\nJust fyi, I updated my review of free to use stat software, which now reviews 0.7.4.  \nhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105959\n\nThanks again for all the revisions.\nGene\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220723/91d15897/attachment.htm>",
+      "body_snippet": "Hi all\nThanks again for doing so much work on RKWard.\nI mentioned I had updated my review of free to use and easy to use statistical software packages. Would it be possible to list a link to my review",
+      "thread_id": "thread-65b2a0ca65bc",
+      "thread_depth": 0,
+      "month": "2022-07"
+    },
+    {
+      "id": "msg-cc356237d304",
+      "message_id": "<CAMqnA+heKPixxBC-vNjyCah-6HNSgLGPZtrmVsOBHK-4Gq=neA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-07-28T12:06:54Z",
+      "subject": "Subset on ltm_cronbach_alph",
+      "subject_clean": "Subset on ltm_cronbach_alph",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all.\nI just wanted to comment on an issue in the item response theory plugin\nwhen subsetting a data frame.\nI think it's related to the file:\n\n/rkward/plugins/analysis/irt/tests/ltm_cronbach_alpha.js\n\n\nSpecifically with lines:\n\n// reformat inp_items\n\n> 17 if (inp_items)\n> 18 inp_items = inp_items.replace(/\\n/g,', ').replace(/(\\w*)\\[\\[|\\]\\]/g, ''\n> );\n\n\n // The \"((/\\w*)/g\"  argument is not enough to replace the name of a data\nframe like \"data.frame\" or \"my.data.r\" which returns a \"syntax error\".\nShort work around by changing the name of the data frame to not using\nperiod(s) (\".\") (or any special characters). I've explored a few solutions\nusing regex with no satisfactory success as for limiting the result only to\nthe name of the data frame.\nThanks for all the hard work!!!\nRegards\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220728/67e1397e/attachment.htm>",
+      "body_snippet": "Hi all.\nI just wanted to comment on an issue in the item response theory plugin\nwhen subsetting a data frame.\nI think it's related to the file:\n\n/rkward/plugins/analysis/irt/tests/ltm_cronbach_alpha.j",
+      "thread_id": "thread-cc356237d304",
+      "thread_depth": 0,
+      "month": "2022-07"
+    },
+    {
+      "id": "msg-e298320c874b",
+      "message_id": "<20220728145106.447dcfcc@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-07-28T12:51:06Z",
+      "subject": "Subset on ltm_cronbach_alph",
+      "subject_clean": "Subset on ltm_cronbach_alph",
+      "in_reply_to": "<CAMqnA+heKPixxBC-vNjyCah-6HNSgLGPZtrmVsOBHK-4Gq=neA@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+heKPixxBC-vNjyCah-6HNSgLGPZtrmVsOBHK-4Gq=neA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nAm Thu, 28 Jul 2022 07:06:54 -0500\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> Hi all.\n> I just wanted to comment on an issue in the item response theory\n> plugin when subsetting a data frame.\n> I think it's related to the file:\n> \n> /rkward/plugins/analysis/irt/tests/ltm_cronbach_alpha.js\n> \n> \n> Specifically with lines:\n> \n> // reformat inp_items\n> \n> > 17 if (inp_items)\n> > 18 inp_items = inp_items.replace(/\\n/g,',\n> > ').replace(/(\\w*)\\[\\[|\\]\\]/g, '' );  \n> \n> \n>  // The \"((/\\w*)/g\"  argument is not enough to replace the name of a\n> data frame like \"data.frame\" or \"my.data.r\" which returns a \"syntax\n> error\". Short work around by changing the name of the data frame to\n> not using period(s) (\".\") (or any special characters). I've explored\n> a few solutions using regex with no satisfactory success as for\n> limiting the result only to the name of the data frame.\n\nThanks! Fixed. (Although I would not be surprised, if there are more\nplaces where a similar fix is needed).\n\nThat code was pretty ancient, no regular expression wrangling is needed:\nhttps://invent.kde.org/education/rkward/commit/c25922ce23c3381fd31878332a5338c889a0634b\n\nImportantly, getList() allows to retrieve list values as an array, and\nthe modifier \".shortname\" extracts the column name, reliably.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220728/ad401cb3/attachment.sig>",
+      "body_snippet": "Hi,\n\nAm Thu, 28 Jul 2022 07:06:54 -0500\nschrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> Hi all.\n> I just wanted to comment on an issue in the item response theory\n> plugin when subset",
+      "thread_id": "thread-cc356237d304",
+      "thread_depth": 1,
+      "month": "2022-07"
+    },
+    {
+      "id": "msg-8b2f6dc5f0e9",
+      "message_id": "<CAMqnA+hNp_oWRFP+wWAPiJY13P1Y=sNU+=+_FpyiAiRFF46sTA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2022-07-28T13:54:17Z",
+      "subject": "Subset on ltm_cronbach_alph",
+      "subject_clean": "Subset on ltm_cronbach_alph",
+      "in_reply_to": "<20220728145106.447dcfcc@booklife>",
+      "references": [
+        "<CAMqnA+heKPixxBC-vNjyCah-6HNSgLGPZtrmVsOBHK-4Gq=neA@mail.gmail.com>",
+        "<20220728145106.447dcfcc@booklife>"
+      ],
+      "body_plain": "Many thanks!!!\nI´ll report If I find any similar fix is needed.\nRegards\nAlfonso\n\n\nEl jue, 28 jul 2022 a la(s) 07:51, Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> Hi,\n>\n> Am Thu, 28 Jul 2022 07:06:54 -0500\n> schrieb DES Alfonso Cano Robles <alfonsociologo at gmail.com>:\n> > Hi all.\n> > I just wanted to comment on an issue in the item response theory\n> > plugin when subsetting a data frame.\n> > I think it's related to the file:\n> >\n> > /rkward/plugins/analysis/irt/tests/ltm_cronbach_alpha.js\n> >\n> >\n> > Specifically with lines:\n> >\n> > // reformat inp_items\n> >\n> > > 17 if (inp_items)\n> > > 18 inp_items = inp_items.replace(/\\n/g,',\n> > > ').replace(/(\\w*)\\[\\[|\\]\\]/g, '' );\n> >\n> >\n> >  // The \"((/\\w*)/g\"  argument is not enough to replace the name of a\n> > data frame like \"data.frame\" or \"my.data.r\" which returns a \"syntax\n> > error\". Short work around by changing the name of the data frame to\n> > not using period(s) (\".\") (or any special characters). I've explored\n> > a few solutions using regex with no satisfactory success as for\n> > limiting the result only to the name of the data frame.\n>\n> Thanks! Fixed. (Although I would not be surprised, if there are more\n> places where a similar fix is needed).\n>\n> That code was pretty ancient, no regular expression wrangling is needed:\n>\n> https://invent.kde.org/education/rkward/commit/c25922ce23c3381fd31878332a5338c889a0634b\n>\n> Importantly, getList() allows to retrieve list values as an array, and\n> the modifier \".shortname\" extracts the column name, reliably.\n>\n> Regards\n> Thomas\n>\n\n\n--\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220728/813e5ede/attachment.htm>",
+      "body_snippet": "Many thanks!!!\nI´ll report If I find any similar fix is needed.\nRegards\nAlfonso\n\n\nEl jue, 28 jul 2022 a la(s) 07:51, Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> Hi,\n>\n",
+      "thread_id": "thread-cc356237d304",
+      "thread_depth": 2,
+      "month": "2022-07"
+    },
+    {
+      "id": "msg-c93360d5bd71",
+      "message_id": "<4b73e002-5a00-2f8f-9f61-bd302020c1e3@ncf.ca>",
+      "from_name": "Brian Lunergan",
+      "from_email_hash": "1fa515bab87884a43b162f533d00772c274c3865f0929f8c4fc60c637b9a2389",
+      "date": "2022-07-30T19:12:51Z",
+      "subject": "Curious issue with over-size configuration screen...",
+      "subject_clean": "Curious issue with over-size configuration screen...",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi ho folks:\n\nPulled in the most recent edition of Rkward. Running it on Linux Mint\n20.3 under the Cinnamon DTE. Everything seems okay but the config window\ncomes up too large for the screen on my laptop and will not cooperate\nwhen I try to make it smaller. Even with the panel across the bottom\nhidden the cancel and save buttons are not viewable or accessible.\nCuriously, even the edition of Kate I pulled in has the same issue.\n\nAny ideas for a solution or even just a work-around?\n\nRegards...\n-- \nBrian Lunergan\nRussell, Ontario\nCanada\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: OpenPGP_signature\nType: application/pgp-signature\nSize: 665 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220730/a4e8df07/attachment.sig>",
+      "body_snippet": "Hi ho folks:\n\nPulled in the most recent edition of Rkward. Running it on Linux Mint\n20.3 under the Cinnamon DTE. Everything seems okay but the config window\ncomes up too large for the screen on my lap",
+      "thread_id": "thread-c93360d5bd71",
+      "thread_depth": 0,
+      "month": "2022-07"
+    },
+    {
+      "id": "msg-c5e248803d0d",
+      "message_id": "<20220730214948.0b7ad924@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-07-30T19:49:48Z",
+      "subject": "Curious issue with over-size configuration screen...",
+      "subject_clean": "Curious issue with over-size configuration screen...",
+      "in_reply_to": "<4b73e002-5a00-2f8f-9f61-bd302020c1e3@ncf.ca>",
+      "references": [
+        "<4b73e002-5a00-2f8f-9f61-bd302020c1e3@ncf.ca>"
+      ],
+      "body_plain": "Hi,\n\nOn Sat, 30 Jul 2022 15:12:51 -0400\nBrian Lunergan <ff809 at ncf.ca> wrote:\n> Pulled in the most recent edition of Rkward. Running it on Linux Mint\n> 20.3 under the Cinnamon DTE. Everything seems okay but the config\n> window comes up too large for the screen on my laptop and will not\n> cooperate when I try to make it smaller. Even with the panel across\n> the bottom hidden the cancel and save buttons are not viewable or\n> accessible. Curiously, even the edition of Kate I pulled in has the\n> same issue.\n> \n> Any ideas for a solution or even just a work-around?\n\nas for a workaround, most window managers on Linux allow to move a\nwindow by holding Alt, the clicking anywhere in the window and\ndragging. This should allow you to reach the hidden buttons.\n\nThat the same problem is present in kate isn't too surprising at all:\nRKWard uses the same text editing component, and therefore some of the\nsame configuration pages. Likely it is one of those that is too large.\n\nCould you please:\n\na) Post the installed version of the KDE libraries (Help->About\nRKWard->Libraries)?\nb) Click through the configuration pages (do not forget to also look\ninto tabs, where they exist), trying to identify whichever page\nprevents shrinking? I.e. a page that is filled from top to bottom with\ncontrols that cannot themselves be shrunk any further. (For instance,\nscrollable view an typically shrink to around three or four rows of\ntext, but e.g. a checkbox control has a fixed height).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220730/7ff49560/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sat, 30 Jul 2022 15:12:51 -0400\nBrian Lunergan <ff809 at ncf.ca> wrote:\n> Pulled in the most recent edition of Rkward. Running it on Linux Mint\n> 20.3 under the Cinnamon DTE. Everything seems ",
+      "thread_id": "thread-c93360d5bd71",
+      "thread_depth": 1,
+      "month": "2022-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-65b2a0ca65bc",
+      "subject": "rkward, updated version, published to my review",
+      "message_count": 1,
+      "participants": [
+        "someone"
+      ],
+      "started": "2022-07-23T21:19:54Z",
+      "last_reply": "2022-07-23T21:19:54Z",
+      "root_message_id": "msg-65b2a0ca65bc"
+    },
+    {
+      "id": "thread-cc356237d304",
+      "subject": "Subset on ltm_cronbach_alph",
+      "message_count": 3,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-07-28T12:06:54Z",
+      "last_reply": "2022-07-28T13:54:17Z",
+      "root_message_id": "msg-cc356237d304"
+    },
+    {
+      "id": "thread-c93360d5bd71",
+      "subject": "Curious issue with over-size configuration screen...",
+      "message_count": 2,
+      "participants": [
+        "Brian Lunergan",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-07-30T19:12:51Z",
+      "last_reply": "2022-07-30T19:49:48Z",
+      "root_message_id": "msg-c93360d5bd71"
+    }
+  ]
+}

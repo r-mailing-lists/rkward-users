@@ -1,0 +1,166 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2024-05",
+  "messages": [
+    {
+      "id": "msg-04f5ee627168",
+      "message_id": "<CAPQxSbvbWeBQdvdE6pnt5O4rz9QP9Y4Gcte=E3BvZ6KLJizCqg@mail.gmail.com>",
+      "from_name": "Alejandro César Cosentino",
+      "from_email_hash": "0e0d2b91474407dbe6c7172035e66d6861be340ff7d3766baf7fc43bfcc33ee4",
+      "date": "2024-05-04T21:24:59Z",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "subject_clean": "Kate addons not working on Fedora 40 KDE",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\nI've attempted to integrate Kate addons into RKWard. Although I've\ninstalled the text editor on my system, each time I relaunch the software,\nI encounter the same warning message at startup. RKWard shows a message\nsaying I need to incorporate the Kate addons.\nBelow, my system characteristics\n\nOperating System: Fedora Linux 40\nKDE Plasma Version: 6.0.4\nKDE Frameworks Version: 6.1.0\nQt Version: 6.7.0\nKernel Version: 6.8.8-300.fc40.x86_64 (64-bit)\nGraphics Platform: X11\n\nCould you please assist me?\nCheers,\nAlejandro\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240504/97643bb9/attachment.htm>",
+      "body_snippet": "Hi!\nI've attempted to integrate Kate addons into RKWard. Although I've\ninstalled the text editor on my system, each time I relaunch the software,\nI encounter the same warning message at startup. RKWar",
+      "thread_id": "thread-04f5ee627168",
+      "thread_depth": 0,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-1132ac9fea10",
+      "message_id": "<47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>",
+      "from_name": "rkward @ oijn",
+      "from_email_hash": "0d7f35fdf1a21019a39e447738c3c7592a7a530fde5908432194f31586fbae46",
+      "date": "2024-05-08T00:08:03Z",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "subject_clean": "Kate addons not working on Fedora 40 KDE",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Regarding the issue of Kate addons not working/integrating into RKWard.\n\nI have noticed the same thing.  For me seems to be recent - probably \nrelated to the KDE6 upgrade.  I delayed upgrading to the latest KDE6 for \nas long as possible as I knew it would break things.  However, other \nessential software I use forced an upgrade to fix a problem.\n\nLooking at: \nhttps://mail.kde.org/pipermail/rkward-tracker/2024-April/010660.html\n\nSeems Kate plugin path may have changed?\n\nI can still use RKWard as I normally do - so apart from the annoyance - \nit doesn't seem to be a show-stopper?\n\nWe might just have to wait for an updated version of RKWard.",
+      "body_snippet": "Regarding the issue of Kate addons not working/integrating into RKWard.\n\nI have noticed the same thing.  For me seems to be recent - probably \nrelated to the KDE6 upgrade.  I delayed upgrading to the ",
+      "thread_id": "thread-1132ac9fea10",
+      "thread_depth": 0,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-ec6df2ce8fda",
+      "message_id": "<20240509110922.268c27aa@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-05-09T09:09:22Z",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "subject_clean": "Kate addons not working on Fedora 40 KDE",
+      "in_reply_to": "<47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>",
+      "references": [
+        "<47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>"
+      ],
+      "body_plain": "Hi,\n\nOn Wed, 08 May 2024 01:08:03 +0100\n\"rkward @ oijn\" <rkward-users at oijn.uk> wrote:\n> Seems Kate plugin path may have changed?\n\nyes, but more importantly kate is now based on KF6/Qt6, and so the\nkate plugins will not work with a KF5/Qt5 version of RKWard. I'm working\non a KF6 version, but it will be some more time before a release.\n\nIf you are willing to compile from source, you can use a KF6 RKWard,\ntoday, and this should indeed be pretty stable, already (on Linux).\n\nFor this you'll need the master git branch from\nhttps://invent.kde.org/education/rkward\n\nGeneric instructions for building from source can be found at\nhttps://rkward.kde.org/Building_RKWard_From_Source.html\nalthough the package names and versions to install will no longer be\ncorrect. Don't hesitate to ask for assistance with that!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240509/7de56f7f/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wed, 08 May 2024 01:08:03 +0100\n\"rkward @ oijn\" <rkward-users at oijn.uk> wrote:\n> Seems Kate plugin path may have changed?\n\nyes, but more importantly kate is now based on KF6/Qt6, and so the\n",
+      "thread_id": "thread-1132ac9fea10",
+      "thread_depth": 1,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-10bce4723242",
+      "message_id": "<33083ffd1e2e702f3ea807f3078f1dfc@oijn.uk>",
+      "from_name": "rkward @ oijn",
+      "from_email_hash": "0d7f35fdf1a21019a39e447738c3c7592a7a530fde5908432194f31586fbae46",
+      "date": "2024-05-12T00:35:46Z",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "subject_clean": "Kate addons not working on Fedora 40 KDE",
+      "in_reply_to": "<20240509110922.268c27aa@booklife>",
+      "references": [
+        "<47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>",
+        "<20240509110922.268c27aa@booklife>"
+      ],
+      "body_plain": "Thomas,\n\nthanks for the tip - it is what I suspected.\nI would also like to thank you for your efforts.\n\nOn 2024-05-09 10:09, Thomas Friedrichsmeier wrote:\n> Hi,\n> \n> On Wed, 08 May 2024 01:08:03 +0100\n> \"rkward @ oijn\" <rkward-users at oijn.uk> wrote:\n>> Seems Kate plugin path may have changed?\n> \n> yes, but more importantly kate is now based on KF6/Qt6, and so the\n> kate plugins will not work with a KF5/Qt5 version of RKWard. I'm \n> working\n> on a KF6 version, but it will be some more time before a release.\n> \n> ... Don't hesitate to ask for assistance with that!\n> \n> Regards\n> Thomas",
+      "body_snippet": "Thomas,\n\nthanks for the tip - it is what I suspected.\nI would also like to thank you for your efforts.\n\nOn 2024-05-09 10:09, Thomas Friedrichsmeier wrote:\n> Hi,\n> \n> On Wed, 08 May 2024 01:08:03 +0100",
+      "thread_id": "thread-1132ac9fea10",
+      "thread_depth": 2,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-7bdcfbd71404",
+      "message_id": "<CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-05-12T03:58:47Z",
+      "subject": "Reset Kate addons to origianl config",
+      "subject_clean": "Reset Kate addons to origianl config",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello and thank you in advance,\n\nThis might be related with \"Kate addons not working on Fedora 40 KDE\", but\nI still need help with resetting kate's plugins to original selection since\nI cant open RKWard, it crashes on startup since I selected git blame plugin.\n>From terminal:\n$ rkward\nQCommandLineParser: already having an option named \"h\"\nQCommandLineParser: already having an option named \"help-all\"\nQCommandLineParser: already having an option named \"v\"\nViolación de segmento (`core' generado)\n$\n\nI´m on RKward daily for cran...\n\n0.7.5+0.7.6+devel1-0daily+202405090317~ubuntu22.04.1\n\nHow can I reset the selection?\n\nRegards\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240511/b1736c42/attachment.htm>",
+      "body_snippet": "Hello and thank you in advance,\n\nThis might be related with \"Kate addons not working on Fedora 40 KDE\", but\nI still need help with resetting kate's plugins to original selection since\nI cant open RKWa",
+      "thread_id": "thread-7bdcfbd71404",
+      "thread_depth": 0,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-255e5fc621c0",
+      "message_id": "<20240512113523.1b1670d4@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-05-12T09:35:23Z",
+      "subject": "Reset Kate addons to origianl config",
+      "subject_clean": "Reset Kate addons to origianl config",
+      "in_reply_to": "<CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+iXhN35nUV21ZFoUW9X0zyoVMQFpVMHHuaFH2efB1fRkw@mail.gmail.com>"
+      ],
+      "body_plain": "On Sat, 11 May 2024 21:58:47 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> How can I reset the selection?\n\nThe easiest will be to edit ~/.config/rkwardrc . There is a section\n[Kate Plugins] (you can edit or remove this).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240512/c6e3cab5/attachment.sig>",
+      "body_snippet": "On Sat, 11 May 2024 21:58:47 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> How can I reset the selection?\n\nThe easiest will be to edit ~/.config/rkwardrc . There is a section\n[K",
+      "thread_id": "thread-7bdcfbd71404",
+      "thread_depth": 1,
+      "month": "2024-05"
+    },
+    {
+      "id": "msg-918edf6a39ba",
+      "message_id": "<20240512114400.12aaee0a@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-05-12T09:44:00Z",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "subject_clean": "Kate addons not working on Fedora 40 KDE",
+      "in_reply_to": "<20240509110922.268c27aa@booklife>",
+      "references": [
+        "<47e6dc35ba2647329db898fb78fd6031@adrianhead.uk>",
+        "<20240509110922.268c27aa@booklife>"
+      ],
+      "body_plain": "On Thu, 9 May 2024 11:09:22 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n> If you are willing to compile from source, you can use a KF6 RKWard,\n> today, and this should indeed be pretty stable, already (on Linux).\n\nI will add, there are now (development snapshot) AppImages of RKWard KF6\nthat are expected to work on a wide range of distributions:\n\nhttps://cdn.kde.org/ci-builds/education/rkward/master/linux/\n\nAfter downloading, you'll have to chmod u+x the downloaded file.\n\nIMPORTANT: While the AppImage embeds an installation of R, this is\nquite limited in functionality, for technical reasons. Importantly, you\nwill not be able to install most R packages. However, you can run the\nAppImage as:\n\n./rkward-xyz-AppImage --r-executable /usr/bin/R\n\nto use your system installed full-featured R. (This is still\nfairly fresh, and admittedly still somewhat experimental, therefore no\nUI support for selecting the R version, so far).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240512/626b8ebe/attachment.sig>",
+      "body_snippet": "On Thu, 9 May 2024 11:09:22 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n> If you are willing to compile from source, you can use a KF6 RKWard,\n> today, and this should ",
+      "thread_id": "thread-1132ac9fea10",
+      "thread_depth": 2,
+      "month": "2024-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-04f5ee627168",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "message_count": 1,
+      "participants": [
+        "Alejandro César Cosentino"
+      ],
+      "started": "2024-05-04T21:24:59Z",
+      "last_reply": "2024-05-04T21:24:59Z",
+      "root_message_id": "msg-04f5ee627168"
+    },
+    {
+      "id": "thread-1132ac9fea10",
+      "subject": "Kate addons not working on Fedora 40 KDE",
+      "message_count": 4,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "rkward @ oijn"
+      ],
+      "started": "2024-05-08T00:08:03Z",
+      "last_reply": "2024-05-12T09:44:00Z",
+      "root_message_id": "msg-1132ac9fea10"
+    },
+    {
+      "id": "thread-7bdcfbd71404",
+      "subject": "Reset Kate addons to origianl config",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2024-05-12T03:58:47Z",
+      "last_reply": "2024-05-12T09:35:23Z",
+      "root_message_id": "msg-7bdcfbd71404"
+    }
+  ]
+}

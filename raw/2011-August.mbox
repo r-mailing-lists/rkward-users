@@ -1,0 +1,148 @@
+From s.marcantonio at libero.it  Wed Aug 10 05:45:51 2011
+From: s.marcantonio at libero.it (Peppe)
+Date: Wed, 10 Aug 2011 07:45:51 +0200
+Subject: [rkward-users] proposal
+Message-ID: <4E421B0F.8030000@libero.it>
+
+Hi,
+I was thinking,  why notadd something like right click"run 
+inbatchmode"for .R  files?
+Cheers.
+Peppe.
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110810/ac4337cf/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Aug 10 07:56:14 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 10 Aug 2011 09:56:14 +0200
+Subject: [rkward-users] proposal
+In-Reply-To: <4E421B0F.8030000@libero.it>
+References: <4E421B0F.8030000@libero.it>
+Message-ID: <201108100956.14429.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 10 August 2011, Peppe wrote:
+> I was thinking,  why notadd something like right click"run
+> inbatchmode"for .R  files?
+
+you mean in the file browser window? Yes, that sounds like it could be useful.
+
+Could you add that suggestion to our feature request tracker 
+(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse)? It 
+often takes a while until we get around to implement new features, and having 
+ideas listed in the tracker is the best way to make sure, we don't forget 
+about them.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110810/c6b894ec/attachment.sig>
+
+From stop.psy at gmail.com  Fri Aug 12 14:10:26 2011
+From: stop.psy at gmail.com (Andrey Chetverikov)
+Date: Fri, 12 Aug 2011 18:10:26 +0400
+Subject: [rkward-users] how to disable "large plot warning"
+Message-ID: <CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>
+
+Hi!
+
+How can I disable "Large plot! Do you still want to store it in the
+history?" warning?
+
+All the best,
+Andrey
+
+
+
+From noreply at sourceforge.net  Mon Aug 15 14:10:32 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 15 Aug 2011 16:10:32 +0200
+Subject: [rkward-users] [Help] Running RKWard on openSuse 11.3
+Message-ID: <forum-165574-10594709@sourceforge.net>
+
+The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:
+
+Hi friends,
+
+I installed RKWard from
+https://build.opensuse.org/package/binaries?package=rkward&project=devel%3Alangu
+ages%3AR%3Asupplement&repository=openSUSE_11.3  and it actually seemed to install
+fine, since I didn't get any errors.
+Starting RKWard from a bash gives
+/usr/lib/kde4/libexec/rkward.frontend: symbol lookup error:
+/usr/lib/kde4/libexec/rkward.frontend: undefined symbol:
+_ZN9QListData11detach_growEPii
+
+Anyone knows what this means? Thanks a lot!
+
+
+
+From noreply at sourceforge.net  Mon Aug 15 14:14:11 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 15 Aug 2011 16:14:11 +0200
+Subject: [rkward-users] [Help] RE: Running RKWard on openSuse 11.3
+In-Reply-To: <forum-165574-10594709@sourceforge.net>
+Message-ID: <forum-165574-10594711@sourceforge.net>
+
+The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:
+
+I am sorry, this would be the correct information for the repository used:
+http://download.opensuse.org/repositories/devel:/languages:/R:/supplement/openSU
+SE_Factory/
+
+
+
+From noreply at sourceforge.net  Tue Aug 16 09:27:51 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 16 Aug 2011 11:27:51 +0200
+Subject: [rkward-users] [Help] RE: Running RKWard on openSuse 11.3
+In-Reply-To: <forum-165574-10594711@sourceforge.net>
+Message-ID: <forum-165574-10596701@sourceforge.net>
+
+The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:
+
+OK, this is embarrassing.....I think the repo I posted is for openSUSE 11.4
+and I still use 11.3. RKWard works now after picking the .rpm from the correct
+repo (...devel:/languages:/R:/supplement/openSUSE_11.3).
+
+Sorry for wasting time and space ;-)
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Aug 27 11:01:29 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 27 Aug 2011 13:01:29 +0200
+Subject: [rkward-users] how to disable "large plot warning"
+In-Reply-To: <CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>
+References: <CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>
+Message-ID: <201108271301.29281.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Sorry for the long delay.
+
+On Friday 12 August 2011, Andrey Chetverikov wrote:
+> How can I disable "Large plot! Do you still want to store it in the
+> history?" warning?
+
+You can configure the limit using "Settings->Configure RKWard->Onscreen 
+Graphics->Maximum size of a single recorded plot".
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110827/e2bda615/attachment.sig>
+

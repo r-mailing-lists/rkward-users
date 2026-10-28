@@ -1,0 +1,711 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-11",
+  "messages": [
+    {
+      "id": "msg-b170d4f9a765",
+      "message_id": "<1257110649.3006.1.camel@patrick-desktop>",
+      "from_name": "Patrick Richardson",
+      "from_email_hash": "6728300bf85a87918e195f6a93f893147b79e39c5243071415c7f258049259e8",
+      "date": "2009-11-01T21:24:09Z",
+      "subject": "[rkward-users] Scripts being saved in binary",
+      "subject_clean": "[rkward-users] Scripts being saved in binary",
+      "in_reply_to": "<200910261630.28421.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1255476431.12476.2.camel@patrick-desktop>",
+        "<200910261630.28421.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Thomas,\n\nThanks for your response. Your suggestion did the trick. Thank you for\ndeveloping such an awesome tool.\n\nBest regards,\n\nPatrick\n\nOn Mon, 2009-10-26 at 16:30 +0100, Thomas Friedrichsmeier wrote:\n> Hi,\n> \n> sorry that it took me so long to reply. I'm terribly busy ATM.\n> \n> On Wednesday 14 October 2009, Patrick Richardson wrote:\n> > I'm running rkward-0.5.1 on Ubuntu 9.04. Although I love this program, I\n> > can't seem to get my scripts to save properly. When I click \"Save\" I get\n> > a warning message that the file will be saved as binary. Has anyone else\n> > had this problem or know how to get rid of it?\n> \n> This means you have some characters in your file which cannot be represented in \n> your current encoding. Often times those are typographic quotes or long \n> dashes. Either find those characters and replace them, or switch to UTF-8 \n> encoding (Edit->Tools Move->Encoding).\n> \n> Note that the warning message comes from the katepart that we use for the \n> editor in RKWard. And yes, this warning could really be more helpful (see also \n> https://bugs.kde.org/show_bug.cgi?id=89866).\n> \n> Regards\n> Thomas\n> ------------------------------------------------------------------------------\n> Come build with us! The BlackBerry(R) Developer Conference in SF, CA\n> is the only developer event you need to attend this year. Jumpstart your\n> developing skills, take BlackBerry mobile applications to market and stay \n> ahead of the curve. Join us from November 9 - 12, 2009. Register now!\n> http://p.sf.net/sfu/devconference\n> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Thomas,\n\nThanks for your response. Your suggestion did the trick. Thank you for\ndeveloping such an awesome tool.\n\nBest regards,\n\nPatrick\n\nOn Mon, 2009-10-26 at 16:30 +0100, Thomas Friedrichsmeier wrot",
+      "thread_id": "thread-b170d4f9a765",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-4f9e657dd4f9",
+      "message_id": "<200911020216.09547.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2009-11-02T01:16:05Z",
+      "subject": "[rkward-users] updated karmic packages",
+      "subject_clean": "[rkward-users] updated karmic packages",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\ni've added support for ubuntu 9.10 (karmic) to my repositories today. packages \nof rkward 0.5.2 for both i386 and amd64 are available, for R 2.9 as well as \n2.10. in case you need/want to repackage, here's the diff:\n o http://reaktanz.de/deb/rkward_0.5.2-1~ubuntu3.diff.gz\n\nsee \nhttps://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories\nfor installation details.\n\nthis will be the last version i've compiled for intrepid (8.10), but i guess \nhardy (8.04) will be supported until 10.04, at least the kde4 version (i've \njust recompiled 0.4.9b for kde3 with R 2.10, though).\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091102/56a40cb0/attachment.sig>",
+      "body_snippet": "hi,\n\ni've added support for ubuntu 9.10 (karmic) to my repositories today. packages \nof rkward 0.5.2 for both i386 and amd64 are available, for R 2.9 as well as \n2.10. in case you need/want to repacka",
+      "thread_id": "thread-4f9e657dd4f9",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-a66201089424",
+      "message_id": "<457348020.26087@egw.bjut.edu.cn>",
+      "from_name": "Zhijiang Wang",
+      "from_email_hash": "0e59041304475e16b6100b69e2b884f432213fa6aa53bac9bd38f3cb8d0108e0",
+      "date": "2009-11-04T15:20:20Z",
+      "subject": "[rkward-users] Error about rkward",
+      "subject_clean": "[rkward-users] Error about rkward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091104/97c0650d/attachment.html>",
+      "body_snippet": "An HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091104/97c0650d/attachment.html>",
+      "thread_id": "thread-a66201089424",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-27b659423561",
+      "message_id": "<200911041645.53189.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-11-04T15:45:49Z",
+      "subject": "[rkward-users] Error about rkward",
+      "subject_clean": "[rkward-users] Error about rkward",
+      "in_reply_to": "<457348020.26087@egw.bjut.edu.cn>",
+      "references": [
+        "<457348020.26087@egw.bjut.edu.cn>"
+      ],
+      "body_plain": "hi,\n\nAm Mittwoch, 4. November 2009 16:20:20 schrieb Zhijiang Wang:\n> I am so puzzled, who could help me?\n\ni think the easiest way for you would be to try the unofficial repository and \ninstall rkward 0.5.2 for ubuntu 8.10 (use the \"intrepid\" parts):\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091104/0668296e/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Mittwoch, 4. November 2009 16:20:20 schrieb Zhijiang Wang:\n> I am so puzzled, who could help me?\n\ni think the easiest way for you would be to try the unofficial repository and \ninstall rkward ",
+      "thread_id": "thread-a66201089424",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-84d5039631b4",
+      "message_id": "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>",
+      "from_name": "Gourab",
+      "from_email_hash": "f3399cc6940f7d7ca95f93605e261ea327b254a3c463d6e7ea679756fc826c51",
+      "date": "2009-11-05T11:47:58Z",
+      "subject": "[rkward-users] rkward runnng problem",
+      "subject_clean": "[rkward-users] rkward runnng problem",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi\nI am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\ninstalled R(built from source) and then RKWARD following the instructions.\nNow though the instruction is complete rkward cannot function because it has\nan error related to the backend and it says :\n\nThere was a problem starting the R backend. The following error(s) occurred:\n\nThe 'rkward' R-library either could not be loaded at all, or not in the\ncorrect version. This may lead to all sorts of errors, from single missing\nfeatures to complete failure to function. The most likely cause is that the\nlast installation did not place all files in the correct place. However, in\nsome cases, left-overs from a previous installation that was not cleanly\nremoved may be the cause.\n\nYou should quit RKWard, now, and fix your installation. For help with that,\nsee http://p.sf.net/rkward/compiling.\n\n-There was a problem opening the files needed for communication with R. Most\nlikely this is due to an incorrect setting for the location of these files.\nCheck whether you have correctly configured the location of the log-files\n(Settings->Configure Settings->Logfiles) and restart RKWard.\n\n-An unspecified error occurred that is not yet handled by RKWard. Likely\nRKWard will not function properly. Please check your setup.\n\nI cannot figure out where I went wrong with compiling steps. I deleted all\nthe old R executable file that I had in my computer before installing the\nnew R from source. Can anyone help me in resolving the issue?\n\nThanks\n\n\n\n\n\n-- \nGourab De\nDepartment of Biostatistics,\nHarvard University,\nCambridge, MA-02138\nUSA\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091105/9368ce5a/attachment.html>",
+      "body_snippet": "Hi\nI am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\ninstalled R(built from source) and then RKWARD following the instructions.\nNow though the instruction is complete rkward cann",
+      "thread_id": "thread-84d5039631b4",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-ce5f177d5d15",
+      "message_id": "<200911051339.59334.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-11-05T12:39:59Z",
+      "subject": "[rkward-users] rkward runnng problem",
+      "subject_clean": "[rkward-users] rkward runnng problem",
+      "in_reply_to": "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>",
+      "references": [
+        "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>"
+      ],
+      "body_plain": "hi,\n\nAm Donnerstag, 5. November 2009 12:47:58 schrieb Gourab:\n> I am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\n> installed R(built from source) and then RKWARD following the instructions.\n\ncould you be more specific which instructions you mean exactly? some more \ninformation needed to track down the problem:\n - which version of R and rkward did you install?\n - what directory were they intalled to\n\nthat is, what do you get by calling these commands:\n R --version\n which R\n rkward --version\n which rkward\n\nif you're using ubuntu, is there a specific reason why you built the software \nfrom source? it's much easier and less error-prone to use precompiled packages \nfrom a repository, especially if you're new to GNU/linux. but if you see this \nas a learning experience, go on ;-)\n\nbut be careful not to mess up your package management:\n\n> I deleted all the old R executable file that I had in my computer before\n> installing the new R from source.\n\nwhat do you mean by \"delete\"? did you remove it via your package management \n(e.g., apt-get, aptitude, synaptic, adept or something similar) or delete \nindividual files by hand from your hard drive? if the latter, you should never \never do that to files that were installed by the package system!\n\nplease give us some more information, that we can look into your problem :-)\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091105/8ad38c8f/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Donnerstag, 5. November 2009 12:47:58 schrieb Gourab:\n> I am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\n> installed R(built from source) and then RKWARD following the i",
+      "thread_id": "thread-84d5039631b4",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-27f71d110a19",
+      "message_id": "<de8c7cb40911051159v50674873g9027eec709b73b21@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-11-05T19:59:52Z",
+      "subject": "[rkward-users] rkward runnng problem",
+      "subject_clean": "[rkward-users] rkward runnng problem",
+      "in_reply_to": "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>",
+      "references": [
+        "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>"
+      ],
+      "body_plain": "Gourab:\n\nOn Thu, Nov 5, 2009 at 6:47 AM, Gourab <gourab at gmail.com> wrote:\n> Hi\n> I am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\n> installed R(built from source) and then RKWARD following the instructions.\n> Now though the instruction is complete rkward cannot function because it has\n> an error related to the backend and it says :\n>\n> There was a problem starting the R backend. The following error(s) occurred:\n>\n> The 'rkward' R-library either could not be loaded at all, or not in the\n> correct version. This may lead to all sorts of errors, from single missing\n> features to complete failure to function. The most likely cause is that the\n> last installation did not place all files in the correct place. However, in\n> some cases, left-overs from a previous installation that was not cleanly\n> removed may be the cause.\n>\n> You should quit RKWard, now, and fix your installation. For help with that,\n> see http://p.sf.net/rkward/compiling.\n>\n> -There was a problem opening the files needed for communication with R. Most\n> likely this is due to an incorrect setting for the location of these files.\n> Check whether you have correctly configured the location of the log-files\n> (Settings->Configure Settings->Logfiles) and restart RKWard.\n>\n> -An unspecified error occurred that is not yet handled by RKWard. Likely\n> RKWard will not function properly. Please check your setup.\n>\n> I cannot figure out where I went wrong with compiling steps. I deleted all\n> the old R executable file that I had in my computer before installing the\n> new R from source. Can anyone help me in resolving the issue?\n\n\nOnce you have \"cleaned up\" the mess [*], try installing R from the\ninstructions here:\nhttp://cran.r-project.org/bin/linux/ubuntu/\n\nThen try installing rkward from Meik's repository, see here:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories\n\n(you should use the \"rkward-cran\" flavor described under \"KDE4\nVersion\" subheading)\n\n\n* How you clean up depends on your response to Meik's earlier questions.\n\n-- \nPrasenjit",
+      "body_snippet": "Gourab:\n\nOn Thu, Nov 5, 2009 at 6:47 AM, Gourab <gourab at gmail.com> wrote:\n> Hi\n> I am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\n> installed R(built from source) and then RK",
+      "thread_id": "thread-84d5039631b4",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-b63130af686f",
+      "message_id": "<cb9c26d70911061410t1b3594a1s707d4aaf61fc7b14@mail.gmail.com>",
+      "from_name": "Gourab",
+      "from_email_hash": "f3399cc6940f7d7ca95f93605e261ea327b254a3c463d6e7ea679756fc826c51",
+      "date": "2009-11-06T22:10:37Z",
+      "subject": "[rkward-users] rkward runnng problem",
+      "subject_clean": "[rkward-users] rkward runnng problem",
+      "in_reply_to": "<de8c7cb40911051159v50674873g9027eec709b73b21@mail.gmail.com>",
+      "references": [
+        "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>",
+        "<de8c7cb40911051159v50674873g9027eec709b73b21@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks both of you for the pointers.\nFirst to answer meik - the version of R was 2.10.0 and it's installed in\nusr/local/bin/R\nThe version of rkward is 0.5.2 and it's installed usr/bin/R -\nSo for installing R - I downloaded the latest version and first used\n*./configure\n--enable-R-shlib* to configure the package. And then used *make* to compile\nand then finally *make install* to install it. I got the instructions for\nthis process from a R-ubuntu forum. The instructions also suggested that i\nshould do *make clean *before installing the new version - but I did not do\nthat.\nFor installing RKWARD I used the options for the sourceforge wiki page(\nusing cmake to install)\nRight now the stage I am in is : I uninstalled the R and RKWARD using make\nuninstall. So I believe it's all clean and empty and I can start installing\nit the right way once I know the right way.\nThe reason I want to build it from source is\na. I need to learn how to do this and it is giving me good kicks to do it\nb. I have been suggested to build R from source to ensure that its\nperformance is optimized for my system\nI have not deleted the package files manually - I uninstalled using\nsynaptic. I did delete a folder called R manually - it was sitting on my\nhome folder - and while installing Rkward I needed to create a similar name\ndirectory (R_LIBS_USER for cmake option) for the new version -so I deleted\nthe one with the old version. Is that something i should not have done?\n\nIf you think it's a classic case of a monkey with a gun , I will not try\ninstalling it from the source and just use the precompiled package. But\nthanks for all the help so far.\n\n* *\n\nOn Thu, Nov 5, 2009 at 2:59 PM, Prasenjit Kapat <kapatp at gmail.com> wrote:\n\n> Gourab:\n>\n> On Thu, Nov 5, 2009 at 6:47 AM, Gourab <gourab at gmail.com> wrote:\n> > Hi\n> > I am a newbie in linux and R. I installed Kubuntu 9.10 on my laptop and\n> > installed R(built from source) and then RKWARD following the\n> instructions.\n> > Now though the instruction is complete rkward cannot function because it\n> has\n> > an error related to the backend and it says :\n> >\n> > There was a problem starting the R backend. The following error(s)\n> occurred:\n> >\n> > The 'rkward' R-library either could not be loaded at all, or not in the\n> > correct version. This may lead to all sorts of errors, from single\n> missing\n> > features to complete failure to function. The most likely cause is that\n> the\n> > last installation did not place all files in the correct place. However,\n> in\n> > some cases, left-overs from a previous installation that was not cleanly\n> > removed may be the cause.\n> >\n> > You should quit RKWard, now, and fix your installation. For help with\n> that,\n> > see http://p.sf.net/rkward/compiling.\n> >\n> > -There was a problem opening the files needed for communication with R.\n> Most\n> > likely this is due to an incorrect setting for the location of these\n> files.\n> > Check whether you have correctly configured the location of the log-files\n> > (Settings->Configure Settings->Logfiles) and restart RKWard.\n> >\n> > -An unspecified error occurred that is not yet handled by RKWard. Likely\n> > RKWard will not function properly. Please check your setup.\n> >\n> > I cannot figure out where I went wrong with compiling steps. I deleted\n> all\n> > the old R executable file that I had in my computer before installing the\n> > new R from source. Can anyone help me in resolving the issue?\n>\n>\n> Once you have \"cleaned up\" the mess [*], try installing R from the\n> instructions here:\n> http://cran.r-project.org/bin/linux/ubuntu/\n>\n> Then try installing rkward from Meik's repository, see here:\n>\n> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories\n>\n> (you should use the \"rkward-cran\" flavor described under \"KDE4\n> Version\" subheading)\n>\n>\n> * How you clean up depends on your response to Meik's earlier questions.\n>\n> --\n> Prasenjit\n>\n\n\n\n-- \nGourab De\nDepartment of Biostatistics,\nHarvard University,\nCambridge, MA-02138\nUSA\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091106/88d7912d/attachment.html>",
+      "body_snippet": "Thanks both of you for the pointers.\nFirst to answer meik - the version of R was 2.10.0 and it's installed in\nusr/local/bin/R\nThe version of rkward is 0.5.2 and it's installed usr/bin/R -\nSo for insta",
+      "thread_id": "thread-84d5039631b4",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-dc70006a67e6",
+      "message_id": "<de8c7cb40911061500q331d91b9ua692bfaaa5d7be86@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-11-06T23:00:37Z",
+      "subject": "[rkward-users] rkward runnng problem",
+      "subject_clean": "[rkward-users] rkward runnng problem",
+      "in_reply_to": "<cb9c26d70911061410t1b3594a1s707d4aaf61fc7b14@mail.gmail.com>",
+      "references": [
+        "<cb9c26d70911050347y7797300fs6f62b9b46fe796da@mail.gmail.com>",
+        "<de8c7cb40911051159v50674873g9027eec709b73b21@mail.gmail.com>",
+        "<cb9c26d70911061410t1b3594a1s707d4aaf61fc7b14@mail.gmail.com>"
+      ],
+      "body_plain": "On Fri, Nov 6, 2009 at 5:10 PM, Gourab <gourab at gmail.com> wrote:\n> Thanks both of you for the pointers.\n> First to answer meik - the version of R was 2.10.0 and it's installed in\n> usr/local/bin/R\n> The version of rkward is 0.5.2 and it's installed usr/bin/R -\n> So for installing R - I downloaded the latest version and first used\n> ./configure --enable-R-shlib to configure the package. And then used make to\n> compile and then finally make install to install it. I got the instructions\n> for this process from a R-ubuntu forum. The instructions also suggested that\n> i should do make clean before installing the new version - but I did not do\n> that.\n> For installing RKWARD I used the options for the sourceforge wiki page(\n> using cmake to install)\n> Right now the stage I am in is : I uninstalled the R and RKWARD using make\n> uninstall. So I believe it's all clean and empty and I can start installing\n> it the right way once I know the right way.\n> The reason I want to build it from source is\n> a. I need to learn how to do this and it is giving me good kicks to do it\n> b. I have been suggested to build R from source to ensure that its\n> performance is optimized for my system\n> I have not deleted the package files manually - I uninstalled using\n\nMy suggestions in a nutshell:  install the pre-compiled version of R\nand have your *kicks* by compiling rkward from source. So, lets take\nthings step by step:\n\n1. I am assuming you have no version of R installed right now. The\nsynaptic removal may have left some config files. Lets \"purge\"  them.\nOpen a konsole and type:\n\ndpkg -l | egrep \"r-base|r-cran\" | grep ^rc\n\nIf you dont see any output, you are good to go. If not, type:\n\nsudo dpkg -P $(dpkg -l | egrep \"r-base|r-cran\" | grep ^rc | awk '{print $2}')\n\n2. Install R from the instructions here (Statlib mirror might be the\nnearest for you):\nhttp://cran.r-project.org/bin/linux/ubuntu/\n\n3. Then get the 0.5.2 version of rkward source from here:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Download_RKWard\n\n4. Follow the compilation instructions here:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Building_RKWard_From_Source#Building_RKWard_0.5.0_and_above\n\n> synaptic. I did delete a folder called R manually - it was sitting on my\n> home folder - and while installing Rkward I needed to create a similar name\n> directory (R_LIBS_USER for cmake option) for the new version -so I deleted\n> the one with the old version. Is that something i should not have done?\n\nFor Rkward, you may only need to remove the rkward directory in\n/home/gourab/R/i486-pc-linux-gnu-library/2.10 or whatever the\nR_LIBS_USER is defined as. If you remove ~/R then you'll loose all\nyour locally installed R libraries.\n\n> If you think it's a classic case of a monkey with a gun , I will not try\n> installing it from the source and just use the precompiled package. But\n> thanks for all the help so far.\n\nLet the monkey learn then ;) Just kidding...\n\nBTW, I strongly believe that a simple ./configure && make && make\ninstall will not make R optimized for your machine. You'll have to\nplay around with compiler architecture specific optimization switches\nfor that. So, the epsilon-improvement (if any) by compiling,\nespecially for readily available pre-compiled binaries, is not worth\nit!\n\nGood luck.\n-- \nPrasenjit",
+      "body_snippet": "On Fri, Nov 6, 2009 at 5:10 PM, Gourab <gourab at gmail.com> wrote:\n> Thanks both of you for the pointers.\n> First to answer meik - the version of R was 2.10.0 and it's installed in\n> usr/local/bin/R\n",
+      "thread_id": "thread-84d5039631b4",
+      "thread_depth": 3,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-2fdf9efbb218",
+      "message_id": "<200911101550.55545.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-10T14:50:52Z",
+      "subject": "[rkward-users] Notice: Forum posts are no longer forwarded to this list",
+      "subject_clean": "[rkward-users] Notice: Forum posts are no longer forwarded to this list",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nJust a short note to let you know that forum posts \n(https://sourceforge.net/projects/rkward/forums) are no longer forwarded to \nthis mailing list since a few weeks. If you are interested in following the \nforums, you can either\n- If you have a sourceforge account: Log in an click the \"Monitor\" button next \nto the forums.\n- Subscribe to the RSS feeds for the forums.\nDevelopers and contributors are highly encouraged to subscribe one way or the \nother, in order to get notified of support requests in the forums.\n\nPersonally, I found it very useful to receive the forum actiivity via this \nmailing list, but unfortunately, Sourceforge has decided to remove this \nfeature.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091110/d589f86d/attachment.sig>",
+      "body_snippet": "Hi!\n\nJust a short note to let you know that forum posts \n(https://sourceforge.net/projects/rkward/forums) are no longer forwarded to \nthis mailing list since a few weeks. If you are interested in foll",
+      "thread_id": "thread-2fdf9efbb218",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-40e4e472ada3",
+      "message_id": "<200911182204.03814.dgvirtual@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2009-11-18T20:04:03Z",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "subject_clean": "[rkward-users] ggplot2 in ubuntu?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "when I try to open some old R data file in RKWard (on Kubuntu 9.10), I get a \nmessage that it is unable to open the file since package ggplot2 is missing. I \nchecked and true, there is no package with keyword ggplot2 in ubuntu \nrepositories... \n\nShould I switch to R from R-cran repositories, or what should I do?\n\nDonatas",
+      "body_snippet": "when I try to open some old R data file in RKWard (on Kubuntu 9.10), I get a \nmessage that it is unable to open the file since package ggplot2 is missing. I \nchecked and true, there is no package with",
+      "thread_id": "thread-40e4e472ada3",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-658e0bb9f616",
+      "message_id": "<200911191317.53550.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-11-19T12:17:49Z",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "subject_clean": "[rkward-users] ggplot2 in ubuntu?",
+      "in_reply_to": "<200911182204.03814.dgvirtual@akl.lt>",
+      "references": [
+        "<200911182204.03814.dgvirtual@akl.lt>"
+      ],
+      "body_plain": "hi donatas,\n\nAm Mittwoch, 18. November 2009 21:04:03 schrieb Donatas G.:\n> I checked and true, there is no package with keyword ggplot2 in\n> ubuntu repositories...\n> \n> Should I switch to R from R-cran repositories, or what should I do?\n\nyou probably just need this certain package, not a whole new R installation. \ntry the \"configure packages\" dialog under \"settings\" to install ggplot2. you \nprobably first have to define a local destination for R-libs (like \"$HOME/R\"), \nso first hit the \"configure repositories\" button and check your settings.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091119/f493e56f/attachment.sig>",
+      "body_snippet": "hi donatas,\n\nAm Mittwoch, 18. November 2009 21:04:03 schrieb Donatas G.:\n> I checked and true, there is no package with keyword ggplot2 in\n> ubuntu repositories...\n> \n> Should I switch to R from R-cra",
+      "thread_id": "thread-40e4e472ada3",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-1d1155d2b809",
+      "message_id": "<200911240911.45324.dgvirtual@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2009-11-24T07:11:45Z",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "subject_clean": "[rkward-users] ggplot2 in ubuntu?",
+      "in_reply_to": "<200911191317.53550.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<200911182204.03814.dgvirtual@akl.lt>",
+        "<200911191317.53550.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "On 2009 m. Lapkritis 19 d., ketvirtadienis 14:17:49 meik michalke wrote:\n> hi donatas,\n> \n> Am Mittwoch, 18. November 2009 21:04:03 schrieb Donatas G.:\n> > I checked and true, there is no package with keyword ggplot2 in\n> > ubuntu repositories...\n> >\n> > Should I switch to R from R-cran repositories, or what should I do?\n> \n> you probably just need this certain package, not a whole new R\n>  installation. try the \"configure packages\" dialog under \"settings\" to\n>  install ggplot2. you probably first have to define a local destination for\n>  R-libs (like \"$HOME/R\"), so first hit the \"configure repositories\" button\n>  and check your settings.\n\nThank you for suggesting that. I finall found out that ggplot2 deb package is \nnowhere to be found, so I had to resort to installing from within R. Which is \nnot my favorite method, since I like to manage all programs with the package \nmanager only.\n\nThe rkward interface did not seem to work (it did not produce any output about \nwhat it was doing in the details window for quite a while) or I was just too \nimpatient. then I tried using the default method\n\ninstall.packages(\"ggplot2\", dependencies = TRUE)\n\nR told me it is gonna install a host of other packages (172 mb in all - \nchecked after the installer exited). Then it showed me all the progress (the \nthing that was potentially missing in Rkward, although there might have been \nmore missing - like the installation itself).\n\nI also had to run R as root to be able to install the packages systemwide on \n/usr/local/lib/R/site-packages/\n\nDonatas",
+      "body_snippet": "On 2009 m. Lapkritis 19 d., ketvirtadienis 14:17:49 meik michalke wrote:\n> hi donatas,\n> \n> Am Mittwoch, 18. November 2009 21:04:03 schrieb Donatas G.:\n> > I checked and true, there is no package with",
+      "thread_id": "thread-40e4e472ada3",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-d19641523007",
+      "message_id": "<200911241338.21610.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-11-24T12:38:17Z",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "subject_clean": "[rkward-users] ggplot2 in ubuntu?",
+      "in_reply_to": "<200911240911.45324.dgvirtual@akl.lt>",
+      "references": [
+        "<200911182204.03814.dgvirtual@akl.lt>",
+        "<200911191317.53550.meik.michalke@uni-duesseldorf.de>",
+        "<200911240911.45324.dgvirtual@akl.lt>"
+      ],
+      "body_plain": "Am Dienstag, 24. November 2009 08:11:45 schrieb Donatas G.:\n> The rkward interface did not seem to work (it did not produce any output\n>  about  what it was doing in the details window for quite a while) or I was\n>  just too impatient.\n\nhm, at what stage exactly did that happen? were you able to at least choose a \nCRAN-mirror and select \"ggplot2\" from the recieved list?\n\n> install.packages(\"ggplot2\", dependencies = TRUE)\n[...]\n> I also had to run R as root to be able to install the packages systemwide\n>  on  /usr/local/lib/R/site-packages/\n\nyou don't have to install R packages system wide, if only you want to use them \nalone. you can define a user specific directory for that, say \n\"/home/donatas/R\":\n\n install.packages(\"ggplot2\", lib=\"/home/donatas/R\", dependencies=TRUE)\n\nin order to work with packages in that directory, you must also tell rkward of \nits existence (settings -> configure rkward -> R-packages -> library paths, \nthe lower window).\n\ni'd reccomend this, to prevent you from messing up the package management of \nyour distrubution.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091124/d6603e24/attachment.sig>",
+      "body_snippet": "Am Dienstag, 24. November 2009 08:11:45 schrieb Donatas G.:\n> The rkward interface did not seem to work (it did not produce any output\n>  about  what it was doing in the details window for quite a whi",
+      "thread_id": "thread-40e4e472ada3",
+      "thread_depth": 3,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-5c8099214f69",
+      "message_id": "<200911241603.02898.dgvirtual@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2009-11-24T14:03:02Z",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "subject_clean": "[rkward-users] ggplot2 in ubuntu?",
+      "in_reply_to": "<200911241338.21610.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<200911182204.03814.dgvirtual@akl.lt>",
+        "<200911240911.45324.dgvirtual@akl.lt>",
+        "<200911241338.21610.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "On 2009 m. Lapkritis 24 d., antradienis 14:38:17 meik michalke wrote:\n> Am Dienstag, 24. November 2009 08:11:45 schrieb Donatas G.:\n> > The rkward interface did not seem to work (it did not produce any output\n> >  about  what it was doing in the details window for quite a while) or I\n> > was just too impatient.\n> \n> hm, at what stage exactly did that happen? were you able to at least choose\n>  a CRAN-mirror and select \"ggplot2\" from the recieved list?\n> \n\nYes, I could select the cran mirror (for that a menu based on another non-qt) \ntoolkit was loaded),  I got a fresh list of packages, selected ggplot2, \nclicked the install button, and then rkward asked me if I want to define a \nlocal directory to install R packages, or do it as root (which is what I \nchose). It then popped up a progress window with a button \"show details\" . But \nthat was it: nothing appeared in the progress details window for a few minutes \nat the least, . While the R cli interface produced immediate output upon \nexecution of install.packages().\n\n> \n> you don't have to install R packages system wide, if only you want to use\n>  them alone. you can define a user specific directory for that, say\n> \"/home/donatas/R\":\n> \n>  install.packages(\"ggplot2\", lib=\"/home/donatas/R\", dependencies=TRUE)\n> \n> in order to work with packages in that directory, you must also tell rkward\n>  of its existence (settings -> configure rkward -> R-packages -> library\n>  paths, the lower window).\n> \n> i'd reccomend this, to prevent you from messing up the package management\n>  of your distrubution.\n\nYes, i kind of knew this, but I did not want executables and other system files \ninstalled locally. \n\nDonatas",
+      "body_snippet": "On 2009 m. Lapkritis 24 d., antradienis 14:38:17 meik michalke wrote:\n> Am Dienstag, 24. November 2009 08:11:45 schrieb Donatas G.:\n> > The rkward interface did not seem to work (it did not produce an",
+      "thread_id": "thread-40e4e472ada3",
+      "thread_depth": 4,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-f8420109b09f",
+      "message_id": "<4B0D6617.7040307@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-25T17:15:03Z",
+      "subject": "[rkward-users] Problem building according to \"deb-src for all systems \"",
+      "subject_clean": "[rkward-users] Problem building according to \"deb-src for all systems \"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I'm following directions on building\ndeb-src for all systems on ubuntu 9.04\nI successfully run:\n# update package cache\nsudo apt-get update\n# fetch build dependencies\nsudo apt-get build-dep rkward\n\nBut when I run\n# fetch and build sources\napt-get source -b rkward\n\nafter a while I get:\n/home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:91:22: error: \nRdevices.h: No such file or directory\n/home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:461: warning: \n?timeout_counter? defined but not used\nmake[3]: *** [rkward/rbackend/CMakeFiles/rbackend.dir/rembedinternal.o] Error 1\nmake[3]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\nmake[2]: *** [rkward/rbackend/CMakeFiles/rbackend.dir/all] Error 2\nmake[2]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\nmake[1]: *** [all] Error 2\nmake[1]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\nmake: *** [build-stamp] Error 2\ndpkg-buildpackage: failure: debian/rules build gave error exit status 2\nBuild command 'cd rkward-0.5.0b && dpkg-buildpackage -b -uc' failed.\n\nAny solution to this?\n\nThanks for your help\n\nAgus",
+      "body_snippet": "I'm following directions on building\ndeb-src for all systems on ubuntu 9.04\nI successfully run:\n# update package cache\nsudo apt-get update\n# fetch build dependencies\nsudo apt-get build-dep rkward\n\nBut",
+      "thread_id": "thread-f8420109b09f",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-7534fcc38dbd",
+      "message_id": "<4B0D6B86.90007@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-25T17:38:14Z",
+      "subject": "[rkward-users] Problem building according to \"deb-src for all systems \"",
+      "subject_clean": "[rkward-users] Problem building according to \"deb-src for all systems \"",
+      "in_reply_to": "<4B0D6617.7040307@gmail.com>",
+      "references": [
+        "<4B0D6617.7040307@gmail.com>"
+      ],
+      "body_plain": "Answering myself:\nI had the wrong repository:\nhttp://deb.reaktanz.de/rkward\ninstead of\nhttp://rkward.sourceforge.net/debian stable/\n\nWith rkward.sourceforge.net/ the build works fine\n\nThanks!\n\nAgus\n\nAgustin Lobo wrote:\n> I'm following directions on building\n> deb-src for all systems on ubuntu 9.04\n> I successfully run:\n> # update package cache\n> sudo apt-get update\n> # fetch build dependencies\n> sudo apt-get build-dep rkward\n> \n> But when I run\n> # fetch and build sources\n> apt-get source -b rkward\n> \n> after a while I get:\n> /home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:91:22: \n> error: Rdevices.h: No such file or directory\n> /home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:461: \n> warning: ?timeout_counter? defined but not used\n> make[3]: *** [rkward/rbackend/CMakeFiles/rbackend.dir/rembedinternal.o] \n> Error 1\n> make[3]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\n> make[2]: *** [rkward/rbackend/CMakeFiles/rbackend.dir/all] Error 2\n> make[2]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\n> make[1]: *** [all] Error 2\n> make[1]: Leaving directory `/home/alobo/rkward-0.5.0b/build'\n> make: *** [build-stamp] Error 2\n> dpkg-buildpackage: failure: debian/rules build gave error exit status 2\n> Build command 'cd rkward-0.5.0b && dpkg-buildpackage -b -uc' failed.\n> \n> Any solution to this?\n> \n> Thanks for your help\n> \n> Agus\n>",
+      "body_snippet": "Answering myself:\nI had the wrong repository:\nhttp://deb.reaktanz.de/rkward\ninstead of\nhttp://rkward.sourceforge.net/debian stable/\n\nWith rkward.sourceforge.net/ the build works fine\n\nThanks!\n\nAgus\n\nA",
+      "thread_id": "thread-f8420109b09f",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-e9b95d04c283",
+      "message_id": "<200911251930.12055.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2009-11-25T18:30:04Z",
+      "subject": "[rkward-users] Problem building according to \"deb-src for all systems\"",
+      "subject_clean": "[rkward-users] Problem building according to \"deb-src for all systems\"",
+      "in_reply_to": "<4B0D6B86.90007@gmail.com>",
+      "references": [
+        "<4B0D6617.7040307@gmail.com>",
+        "<4B0D6B86.90007@gmail.com>"
+      ],
+      "body_plain": "hi agustin,\n\nAm Mittwoch, 25. November 2009 18:38:14 schrieb Agustin Lobo:\n> I had the wrong repository:\n> http://deb.reaktanz.de/rkward\n\ni beg to differ ;-) because:\n\n> /home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:91:22: \n> error: Rdevices.h: No such file or directory\n\nthe rkward repository should have offered you rkward 0.5.2-1~ubuntu3, not \n0.5.0b (those sources aren't even on my server). i think you downloaded the \nrkward sources from the official ubuntu repository instead:\n o http://packages.ubuntu.com/intrepid/rkward\ndid you have a deb-src entry for the reaktanz repo in your sources list?\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091125/404dc07e/attachment.sig>",
+      "body_snippet": "hi agustin,\n\nAm Mittwoch, 25. November 2009 18:38:14 schrieb Agustin Lobo:\n> I had the wrong repository:\n> http://deb.reaktanz.de/rkward\n\ni beg to differ ;-) because:\n\n> /home/alobo/rkward-0.5.0b/rkwa",
+      "thread_id": "thread-f8420109b09f",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-2d0358459e57",
+      "message_id": "<4B0D9CFE.3070901@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-25T21:09:18Z",
+      "subject": "[rkward-users] graphic output",
+      "subject_clean": "[rkward-users] graphic output",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI find rkward great, but I'm a bit confused with the graphic\nwindow (i.e. after any plot() command)\nIs there any way to save the graphic window to a file?\nWhat can be done with the output file Output rk_out.html ?\nWhere is it? Can it be saved with another name? Can it\nbe merged with  the other html file that you get\nwith Export as HTML ?\n\nAlso, the graphic window is resized as soon as I\nclick on it. Is this intended?\n\nThanks!\n\nAgus",
+      "body_snippet": "Hi!\n\nI find rkward great, but I'm a bit confused with the graphic\nwindow (i.e. after any plot() command)\nIs there any way to save the graphic window to a file?\nWhat can be done with the output file Ou",
+      "thread_id": "thread-2d0358459e57",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-f75adb0e3a2b",
+      "message_id": "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-11-25T21:45:27Z",
+      "subject": "[rkward-users] graphic output",
+      "subject_clean": "[rkward-users] graphic output",
+      "in_reply_to": "<4B0D9CFE.3070901@gmail.com>",
+      "references": [
+        "<4B0D9CFE.3070901@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Wed, Nov 25, 2009 at 4:09 PM, Agustin Lobo <alobolistas at gmail.com> wrote:\n> Hi!\n>\n> I find rkward great, but I'm a bit confused with the graphic\n> window (i.e. after any plot() command)\n> Is there any way to save the graphic window to a file?\n\nDevice > Export should give the export dialog.\n\n> What can be done with the output file Output rk_out.html ?\n> Where is it? Can it be saved with another name? Can it\n> be merged with ?the other html file that you get\n> with Export as HTML ?\n\nrk_out.html is in ~/.rkward. I use it frequently to copy images to\nopenoffice.org! See here:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Output_Window\n\n> Also, the graphic window is resized as soon as I\n> click on it. Is this intended?\n\nI rarely use the KDE4 version these days :( (I am stuck with KDE3 in\nmy dept). But I've seen this resizing happen with with KDE4 version,\non few occasions that I've tried them at home. Never with the KDE3\nversion though. So, I don't think this is intended.\n\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nOn Wed, Nov 25, 2009 at 4:09 PM, Agustin Lobo <alobolistas at gmail.com> wrote:\n> Hi!\n>\n> I find rkward great, but I'm a bit confused with the graphic\n> window (i.e. after any plot() command)\n> I",
+      "thread_id": "thread-2d0358459e57",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-4df47ea8072c",
+      "message_id": "<4B0E28D4.6020005@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T07:05:56Z",
+      "subject": "[rkward-users] Problem building according to \"deb-src for all systems\"",
+      "subject_clean": "[rkward-users] Problem building according to \"deb-src for all systems\"",
+      "in_reply_to": "<200911251930.12055.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<4B0D6617.7040307@gmail.com>",
+        "<4B0D6B86.90007@gmail.com>",
+        "<200911251930.12055.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "You are right: I had the reaktanz repo twice as binary\nThanks\n\nAgus\n\nmeik michalke wrote:\n> hi agustin,\n> \n> Am Mittwoch, 25. November 2009 18:38:14 schrieb Agustin Lobo:\n>> I had the wrong repository:\n>> http://deb.reaktanz.de/rkward\n> \n> i beg to differ ;-) because:\n> \n>> /home/alobo/rkward-0.5.0b/rkward/rbackend/rembedinternal.cpp:91:22: \n>> error: Rdevices.h: No such file or directory\n> \n> the rkward repository should have offered you rkward 0.5.2-1~ubuntu3, not \n> 0.5.0b (those sources aren't even on my server). i think you downloaded the \n> rkward sources from the official ubuntu repository instead:\n>  o http://packages.ubuntu.com/intrepid/rkward\n> did you have a deb-src entry for the reaktanz repo in your sources list?\n> \n> \n> viele gr??e :: m.eik\n> \n> \n> \n> ------------------------------------------------------------------------\n> \n> ------------------------------------------------------------------------------\n> Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day \n> trial. Simplify your report design, integration and deployment - and focus on \n> what you do best, core application coding. Discover what's new with\n> Crystal Reports now.  http://p.sf.net/sfu/bobj-july\n> \n> \n> ------------------------------------------------------------------------\n> \n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "You are right: I had the reaktanz repo twice as binary\nThanks\n\nAgus\n\nmeik michalke wrote:\n> hi agustin,\n> \n> Am Mittwoch, 25. November 2009 18:38:14 schrieb Agustin Lobo:\n>> I had the wrong repository",
+      "thread_id": "thread-f8420109b09f",
+      "thread_depth": 3,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-3539d875676f",
+      "message_id": "<4B0E2C65.7070207@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T07:21:09Z",
+      "subject": "[rkward-users] plugins?",
+      "subject_clean": "[rkward-users] plugins?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\nWhen I started rkward the first times, I was getting this message:\nPlugins are needed: you may manage these through \"Settings->Configure RKWard\n\nBy default, I had this directory:\n/usr/share/apps/rkward//all.pluginmap\n\nThen I browsed and could put this other one:\n/usr/share/kde4/apps/rkward/all.pluginmap\n\nNow I do not get the message and get the tabs with additional tools, so I think\nI did the right thing, but could you please confirm that I actually set the \nappropriate directory?\n\nAlso, is there a repo with more plugins or are new plugins installed with new \nrkward versions?\n\nUsing rkward 5.2 on ubuntu 9.04 (built according to directions \"deb-src for all \nsystems\")\n\nThanks\n\nAgus",
+      "body_snippet": "Hi!\nWhen I started rkward the first times, I was getting this message:\nPlugins are needed: you may manage these through \"Settings->Configure RKWard\n\nBy default, I had this directory:\n/usr/share/apps/r",
+      "thread_id": "thread-3539d875676f",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-c38cdda0a277",
+      "message_id": "<4B0E308D.2070206@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T07:38:53Z",
+      "subject": "[rkward-users] graphic output",
+      "subject_clean": "[rkward-users] graphic output",
+      "in_reply_to": "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>",
+      "references": [
+        "<4B0D9CFE.3070901@gmail.com>",
+        "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks a lot,\n\nI apologize for overlooking the obvious Export option in the graphics window!\n\nRegarding rk_out.html and copying to OO, the problem is that\nthe size of the plot is changed in rk_out.html. As I'm plotting spatial objects,\nthe result is distorted. Is there an option to be set for controlling the size\nof the plot in rk_out.html ?\n\nAlso, are there plans to include SVG and/or WMF among the exporting options?\nI know WMF is a win format, but it's a convenient vector format for copying to \nOO (which does not support xfig format and barely SVG). In other words: a vector\nformat that OO could easily import would be great.\n\nFinally, can rk_out.html\nbe merged with  the other html file that you get\nwith Export as HTML ?\n\nThanks\n\nAgus\n\nPrasenjit Kapat wrote:\n> Hi,\n> \n> On Wed, Nov 25, 2009 at 4:09 PM, Agustin Lobo <alobolistas at gmail.com> wrote:\n>> Hi!\n>>\n>> I find rkward great, but I'm a bit confused with the graphic\n>> window (i.e. after any plot() command)\n>> Is there any way to save the graphic window to a file?\n> \n> Device > Export should give the export dialog.\n> \n>> What can be done with the output file Output rk_out.html ?\n>> Where is it? Can it be saved with another name? Can it\n>> be merged with  the other html file that you get\n>> with Export as HTML ?\n> \n> rk_out.html is in ~/.rkward. I use it frequently to copy images to\n> openoffice.org! See here:\n> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Screenshots#Output_Window\n> \n>> Also, the graphic window is resized as soon as I\n>> click on it. Is this intended?\n> \n> I rarely use the KDE4 version these days :( (I am stuck with KDE3 in\n> my dept). But I've seen this resizing happen with with KDE4 version,\n> on few occasions that I've tried them at home. Never with the KDE3\n> version though. So, I don't think this is intended.\n>",
+      "body_snippet": "Thanks a lot,\n\nI apologize for overlooking the obvious Export option in the graphics window!\n\nRegarding rk_out.html and copying to OO, the problem is that\nthe size of the plot is changed in rk_out.htm",
+      "thread_id": "thread-2d0358459e57",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-85029cb4f328",
+      "message_id": "<4B0E3119.3060904@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T07:41:13Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nIs it possible to save (i.e., to html) the contents of the console, so that\nyou have both the input commands and their output? This would be\nvery useful for making web pages with exercises.\n\nThanks\n\nAgus",
+      "body_snippet": "Hi!\n\nIs it possible to save (i.e., to html) the contents of the console, so that\nyou have both the input commands and their output? This would be\nvery useful for making web pages with exercises.\n\nThan",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 0,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-4e94a8bd24e5",
+      "message_id": "<111060c20911260027q6b5007c1nf7fd47aa1b7c5930@mail.gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2009-11-26T08:27:59Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": "<4B0E3119.3060904@gmail.com>",
+      "references": [
+        "<4B0E3119.3060904@gmail.com>"
+      ],
+      "body_plain": "Hi Agustin\n\nHave a look on the features offered with the Swevae function used with\nthe R2HTML package (provided you use html for the web pages). This\nshould allow you to generate input and outputs from R to html\n\nMat\n\n2009/11/26 Agustin Lobo <alobolistas at gmail.com>:\n> Hi!\n>\n> Is it possible to save (i.e., to html) the contents of the console, so that\n> you have both the input commands and their output? This would be\n> very useful for making web pages with exercises.\n>\n> Thanks\n>\n> Agus\n>\n> ------------------------------------------------------------------------------\n> Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day\n> trial. Simplify your report design, integration and deployment - and focus on\n> what you do best, core application coding. Discover what's new with\n> Crystal Reports now. ?http://p.sf.net/sfu/bobj-july\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>",
+      "body_snippet": "Hi Agustin\n\nHave a look on the features offered with the Swevae function used with\nthe R2HTML package (provided you use html for the web pages). This\nshould allow you to generate input and outputs fro",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-73d6e050cf0d",
+      "message_id": "<4B0E46FE.9010608@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T09:14:38Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": "<111060c20911260027q6b5007c1nf7fd47aa1b7c5930@mail.gmail.com>",
+      "references": [
+        "<4B0E3119.3060904@gmail.com>",
+        "<111060c20911260027q6b5007c1nf7fd47aa1b7c5930@mail.gmail.com>"
+      ],
+      "body_plain": "Thanks Matthieu,\n\nI know R2HTML (a bit), but actually wondered if there is some kind\nof tool like R2HTML embedded in rkward.\n\nAgus\n\nMatthieu Stigler wrote:\n> Hi Agustin\n> \n> Have a look on the features offered with the Swevae function used with\n> the R2HTML package (provided you use html for the web pages). This\n> should allow you to generate input and outputs from R to html\n> \n> Mat\n> \n> 2009/11/26 Agustin Lobo <alobolistas at gmail.com>:\n>> Hi!\n>>\n>> Is it possible to save (i.e., to html) the contents of the console, so that\n>> you have both the input commands and their output? This would be\n>> very useful for making web pages with exercises.\n>>\n>> Thanks\n>>\n>> Agus\n>>\n>> ------------------------------------------------------------------------------\n>> Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day\n>> trial. Simplify your report design, integration and deployment - and focus on\n>> what you do best, core application coding. Discover what's new with\n>> Crystal Reports now.  http://p.sf.net/sfu/bobj-july\n>> _______________________________________________\n>> RKWard-users mailing list\n>> RKWard-users at lists.sourceforge.net\n>> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>>\n>",
+      "body_snippet": "Thanks Matthieu,\n\nI know R2HTML (a bit), but actually wondered if there is some kind\nof tool like R2HTML embedded in rkward.\n\nAgus\n\nMatthieu Stigler wrote:\n> Hi Agustin\n> \n> Have a look on the feature",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-c7affc939046",
+      "message_id": "<200911261047.04520.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-26T09:47:01Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": "<4B0E46FE.9010608@gmail.com>",
+      "references": [
+        "<4B0E3119.3060904@gmail.com>",
+        "<111060c20911260027q6b5007c1nf7fd47aa1b7c5930@mail.gmail.com>",
+        "<4B0E46FE.9010608@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> I know R2HTML (a bit), but actually wondered if there is some kind\n> of tool like R2HTML embedded in rkward.\n\nin fact, RKWard does make use of R2HTML to generate the rk_out.html. But no, \nwe just don't offer the input-recording, yet. Care to open a feature request \nfor this \n(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse)? \nThat's the second-best way to make sure, this will be added sooner or later \n(the best way is to provide a patch, if you know how to program).\n\nHere's a temporary hack:\n1) Do your work in the console.\n2) Select all and Edit->Copy selection literally. Paste into a script editor.\n3) Select Edit->Tools Move->Highlighting->Scripts->RKWard Output to get the \nconsole highlighting.\n4) Now use File->Export as HTML.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091126/a37f465a/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> I know R2HTML (a bit), but actually wondered if there is some kind\n> of tool like R2HTML embedded in rkward.\n\nin fact, RKWard does make use of ",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 3,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-af7785189004",
+      "message_id": "<200911261054.09326.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-26T09:54:09Z",
+      "subject": "[rkward-users] graphic output",
+      "subject_clean": "[rkward-users] graphic output",
+      "in_reply_to": "<4B0E308D.2070206@gmail.com>",
+      "references": [
+        "<4B0D9CFE.3070901@gmail.com>",
+        "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>",
+        "<4B0E308D.2070206@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> Regarding rk_out.html and copying to OO, the problem is that\n> the size of the plot is changed in rk_out.html. As I'm plotting spatial\n>  objects, the result is distorted. Is there an option to be set for\n>  controlling the size of the plot in rk_out.html ?\n\nno, that's another missing feature. However, take a look at the function\n    rk.graph.on()\nYou can override this to set a different width / height, and even to use svg() \ninstead of png().\n\nWe do intend to make SVG the default, and offer options to control plotting, \neventually. But we're never short on good ideas, only on developer time...\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091126/fee8c6e8/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> Regarding rk_out.html and copying to OO, the problem is that\n> the size of the plot is changed in rk_out.html. As I'm plotting spatial\n>  objec",
+      "thread_id": "thread-2d0358459e57",
+      "thread_depth": 3,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-09c5a0d155a8",
+      "message_id": "<200911261127.52113.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-26T10:27:46Z",
+      "subject": "[rkward-users] plugins?",
+      "subject_clean": "[rkward-users] plugins?",
+      "in_reply_to": "<4B0E2C65.7070207@gmail.com>",
+      "references": [
+        "<4B0E2C65.7070207@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> By default, I had this directory:\n> /usr/share/apps/rkward//all.pluginmap\n> \n> Then I browsed and could put this other one:\n> /usr/share/kde4/apps/rkward/all.pluginmap\n\nI'm not sure, why this gets mis-detected on some systems. But your new setting \nis the correct one.\n\n> Also, is there a repo with more plugins or are new plugins installed with\n>  new rkward versions?\n\nAs of now, you get new plugins with new versions of rkward. We do intend to \nmake this more modular (and Meik keeps nagging me about that ;-)).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091126/ba3133a8/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> By default, I had this directory:\n> /usr/share/apps/rkward//all.pluginmap\n> \n> Then I browsed and could put this other one:\n> /usr/share/kde4/a",
+      "thread_id": "thread-3539d875676f",
+      "thread_depth": 1,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-4f01b3659890",
+      "message_id": "<200911261131.44507.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-26T10:31:44Z",
+      "subject": "[rkward-users] graphic output",
+      "subject_clean": "[rkward-users] graphic output",
+      "in_reply_to": "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>",
+      "references": [
+        "<4B0D9CFE.3070901@gmail.com>",
+        "<de8c7cb40911251345y2af213d4xd91c22816047510c@mail.gmail.com>"
+      ],
+      "body_plain": "On Wednesday 25 November 2009, Prasenjit Kapat wrote:\n> On Wed, Nov 25, 2009 at 4:09 PM, Agustin Lobo <alobolistas at gmail.com> wrote:\n> > Also, the graphic window is resized as soon as I\n> > click on it. Is this intended?\n> \n> I rarely use the KDE4 version these days :( (I am stuck with KDE3 in\n> my dept). But I've seen this resizing happen with with KDE4 version,\n> on few occasions that I've tried them at home. Never with the KDE3\n> version though. So, I don't think this is intended.\n\nHm. I don't see this, here. Is the window resized to a totally different size, \nor is it just a few pixels?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091126/1ff7c4f6/attachment.sig>",
+      "body_snippet": "On Wednesday 25 November 2009, Prasenjit Kapat wrote:\n> On Wed, Nov 25, 2009 at 4:09 PM, Agustin Lobo <alobolistas at gmail.com> wrote:\n> > Also, the graphic window is resized as soon as I\n> > click o",
+      "thread_id": "thread-2d0358459e57",
+      "thread_depth": 2,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-f1f01d89e548",
+      "message_id": "<4B0E9CCE.1050409@gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2009-11-26T15:20:46Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": "<200911261047.04520.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<4B0E3119.3060904@gmail.com>",
+        "<111060c20911260027q6b5007c1nf7fd47aa1b7c5930@mail.gmail.com>",
+        "<4B0E46FE.9010608@gmail.com>",
+        "<200911261047.04520.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Thanks for the work around. One more point:\nThis is the type of script I use:\n#Get ready\nrequire(rgdal)\nrequire(raster)\n#1. Vector (in R, SpatialPolygonsDataFrame) to raster conversion\n#We import the limit of the Parc to set the region:\nmidsn <- \n\"/media/Transcend/MASTER_ICTA2007_2008/ExercisesJEMES/ExerciseVPRESSURE/MVPressDATA/Limitparcplaespecial\"\nPNMlimit <- readOGR(midsn, layer=\"AmbitPlaEspecial\")\nvisitCODEQP <- raster(extent(PNMlimit))\ndim(visitCODEQP)\n\nI do as you say: copy and paste to the console, run the whole thing, and copy and\npaste from the console to the editor. Doing as you say, I get the text\n(now with \"> #\") grey, and the R output, green, which is good. Nevertheles, in \nthe editor, in order to do not get\nthe \"> # \" for the text in the html, I just replace the \"> #\" by nothing. The \nproblem is\nthat the text becomes green as the R output (i.e., the output to \ndim(visitCODEQP) is green also), which is a bit confusing in the\nhtml page.\n\nIs there any way I could keep the grey color of the text after\nI delete the \"> #\" ?\n\nI know it's not too hard editing this manually, but I'm trying to get a method \nas automatic as possible. Maybe the solution is making the html with the \"> #\"\nand then use an html editor to delete all the \"> #\" and keeping the color.\n\nThanks a lot for your help.\n\nAgus\n\n\n\n\n\n\nThomas Friedrichsmeier wrote:\n> Hi,\n> \n> On Thursday 26 November 2009, Agustin Lobo wrote:\n>> I know R2HTML (a bit), but actually wondered if there is some kind\n>> of tool like R2HTML embedded in rkward.\n> \n> in fact, RKWard does make use of R2HTML to generate the rk_out.html. But no, \n> we just don't offer the input-recording, yet. Care to open a feature request \n> for this \n> (http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse)? \n> That's the second-best way to make sure, this will be added sooner or later \n> (the best way is to provide a patch, if you know how to program).\n> \n> Here's a temporary hack:\n> 1) Do your work in the console.\n> 2) Select all and Edit->Copy selection literally. Paste into a script editor.\n> 3) Select Edit->Tools Move->Highlighting->Scripts->RKWard Output to get the \n> console highlighting.\n> 4) Now use File->Export as HTML.\n> \n> Regards\n> Thomas\n> \n> \n> ------------------------------------------------------------------------\n> \n> ------------------------------------------------------------------------------\n> Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day \n> trial. Simplify your report design, integration and deployment - and focus on \n> what you do best, core application coding. Discover what's new with\n> Crystal Reports now.  http://p.sf.net/sfu/bobj-july\n> \n> \n> ------------------------------------------------------------------------\n> \n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Thanks for the work around. One more point:\nThis is the type of script I use:\n#Get ready\nrequire(rgdal)\nrequire(raster)\n#1. Vector (in R, SpatialPolygonsDataFrame) to raster conversion\n#We import the ",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 4,
+      "month": "2009-11"
+    },
+    {
+      "id": "msg-dc1276fd20ba",
+      "message_id": "<200911281022.29596.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-11-28T09:22:25Z",
+      "subject": "[rkward-users] Saving Console?",
+      "subject_clean": "[rkward-users] Saving Console?",
+      "in_reply_to": "<4B0E9CCE.1050409@gmail.com>",
+      "references": [
+        "<4B0E3119.3060904@gmail.com>",
+        "<200911261047.04520.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<4B0E9CCE.1050409@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> Is there any way I could keep the grey color of the text after\n> I delete the \"> #\" ?\n> \n> I know it's not too hard editing this manually, but I'm trying to get a\n>  method as automatic as possible. Maybe the solution is making the html\n>  with the \"> #\" and then use an html editor to delete all the \"> #\" and\n>  keeping the color.\n\nif removing the \"> \" from commented lines, then in fact, removing it after the \nexport is probably the best solution. The \"RKWard Output\"-syntax highlighting \ndefintion (which should actually be called \"Interactive R session\" instead) \nonly differentiates between code and output regions. Inside output regions, no \nattempt is made at highlighting anything.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091128/a16c8484/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 26 November 2009, Agustin Lobo wrote:\n> Is there any way I could keep the grey color of the text after\n> I delete the \"> #\" ?\n> \n> I know it's not too hard editing this manually, but ",
+      "thread_id": "thread-85029cb4f328",
+      "thread_depth": 5,
+      "month": "2009-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b170d4f9a765",
+      "subject": "[rkward-users] Scripts being saved in binary",
+      "message_count": 1,
+      "participants": [
+        "Patrick Richardson"
+      ],
+      "started": "2009-11-01T21:24:09Z",
+      "last_reply": "2009-11-01T21:24:09Z",
+      "root_message_id": "msg-b170d4f9a765"
+    },
+    {
+      "id": "thread-4f9e657dd4f9",
+      "subject": "[rkward-users] updated karmic packages",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2009-11-02T01:16:05Z",
+      "last_reply": "2009-11-02T01:16:05Z",
+      "root_message_id": "msg-4f9e657dd4f9"
+    },
+    {
+      "id": "thread-a66201089424",
+      "subject": "[rkward-users] Error about rkward",
+      "message_count": 2,
+      "participants": [
+        "Zhijiang Wang",
+        "meik michalke"
+      ],
+      "started": "2009-11-04T15:20:20Z",
+      "last_reply": "2009-11-04T15:45:49Z",
+      "root_message_id": "msg-a66201089424"
+    },
+    {
+      "id": "thread-84d5039631b4",
+      "subject": "[rkward-users] rkward runnng problem",
+      "message_count": 5,
+      "participants": [
+        "Gourab",
+        "Prasenjit Kapat",
+        "meik michalke"
+      ],
+      "started": "2009-11-05T11:47:58Z",
+      "last_reply": "2009-11-06T23:00:37Z",
+      "root_message_id": "msg-84d5039631b4"
+    },
+    {
+      "id": "thread-2fdf9efbb218",
+      "subject": "[rkward-users] Notice: Forum posts are no longer forwarded to this list",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-11-10T14:50:52Z",
+      "last_reply": "2009-11-10T14:50:52Z",
+      "root_message_id": "msg-2fdf9efbb218"
+    },
+    {
+      "id": "thread-40e4e472ada3",
+      "subject": "[rkward-users] ggplot2 in ubuntu?",
+      "message_count": 5,
+      "participants": [
+        "Donatas G.",
+        "meik michalke"
+      ],
+      "started": "2009-11-18T20:04:03Z",
+      "last_reply": "2009-11-24T14:03:02Z",
+      "root_message_id": "msg-40e4e472ada3"
+    },
+    {
+      "id": "thread-f8420109b09f",
+      "subject": "[rkward-users] Problem building according to \"deb-src for all systems \"",
+      "message_count": 4,
+      "participants": [
+        "Agustin Lobo",
+        "meik michalke"
+      ],
+      "started": "2009-11-25T17:15:03Z",
+      "last_reply": "2009-11-26T07:05:56Z",
+      "root_message_id": "msg-f8420109b09f"
+    },
+    {
+      "id": "thread-2d0358459e57",
+      "subject": "[rkward-users] graphic output",
+      "message_count": 5,
+      "participants": [
+        "Agustin Lobo",
+        "Prasenjit Kapat",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-11-25T21:09:18Z",
+      "last_reply": "2009-11-26T10:31:44Z",
+      "root_message_id": "msg-2d0358459e57"
+    },
+    {
+      "id": "thread-3539d875676f",
+      "subject": "[rkward-users] plugins?",
+      "message_count": 2,
+      "participants": [
+        "Agustin Lobo",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-11-26T07:21:09Z",
+      "last_reply": "2009-11-26T10:27:46Z",
+      "root_message_id": "msg-3539d875676f"
+    },
+    {
+      "id": "thread-85029cb4f328",
+      "subject": "[rkward-users] Saving Console?",
+      "message_count": 6,
+      "participants": [
+        "Agustin Lobo",
+        "Matthieu Stigler",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-11-26T07:41:13Z",
+      "last_reply": "2009-11-28T09:22:25Z",
+      "root_message_id": "msg-85029cb4f328"
+    }
+  ]
+}

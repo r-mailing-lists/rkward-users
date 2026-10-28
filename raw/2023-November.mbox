@@ -1,0 +1,55 @@
+From alfonsociologo at gmail.com  Mon Nov 27 15:43:07 2023
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Mon, 27 Nov 2023 09:43:07 -0600
+Subject: RKWard Site Configuration
+Message-ID: <CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>
+
+Hi,
+Just to note that https://rkward.kde.org/ , does not
+appear correctly displayed.
+Can you have a look?
+Best Regards!
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231127/27d1755f/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Thu Nov 30 06:15:47 2023
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 30 Nov 2023 07:15:47 +0100
+Subject: RKWard Site Configuration
+In-Reply-To: <CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>
+References: <CAMqnA+jVS_+11fGFALMqdwYosY7bvwP8RYpRfuQecOdAJQMTdg@mail.gmail.com>
+Message-ID: <20231129231100.52d6bf7a@booklife>
+
+On Mon, 27 Nov 2023 09:43:07 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+
+> Hi,
+> Just to note that https://rkward.kde.org/ , does not
+> appear correctly displayed.
+> Can you have a look?
+> Best Regards!
+> Alfonso
+
+Thanks for reporting, not sure, why this broke.
+
+I fixed the worst symptoms, but there may be some rough edges left. I
+also had to flatten the navigation bar, as nested menus did not seem to
+work any longer.
+
+Should anybody wish to help, the repository governing this website is
+at: https://invent.kde.org/websites/rkward-kde-org
+
+(README.md for basic instructions).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231130/fdf3e45c/attachment.sig>
+

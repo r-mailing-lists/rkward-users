@@ -1,0 +1,142 @@
+From rachels at mailbox.org  Sun Sep 22 03:55:57 2024
+From: rachels at mailbox.org (Rachel Schrader)
+Date: Sat, 21 Sep 2024 20:55:57 -0600
+Subject: flatpak
+Message-ID: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+
+I was curious if I could still get rkward on flatpak. The homepage as a 
+link for it but it appears to be broken and I don't see it on flathub.
+
+I am using debian I don't think rkward is in the stable repos.
+
+Thank you kde friends.
+
+- Rachel
+
+
+From meik.michalke at uni-duesseldorf.de  Sun Sep 22 07:25:40 2024
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sun, 22 Sep 2024 08:25:40 +0200
+Subject: flatpak
+In-Reply-To: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+Message-ID: <3291697.vLe5Evfrdn@meadow>
+
+hi rachel,
+
+Am Sonntag, 22. September 2024, 04:55:57 CEST schrieb Rachel Schrader:
+> I was curious if I could still get rkward on flatpak. The homepage as a
+> link for it but it appears to be broken and I don't see it on flathub.
+
+currently, we are officially providing AppImage builds of the latest version 
+of RKWard:
+
+  https://rkward.kde.org/Binaries_and_Build_Scripts.html
+
+> I am using debian I don't think rkward is in the stable repos.
+
+the reason for this confusing state is the current lack of support for plasma 
+6 in some distributions, while the development of RKWard has moved to that up-
+to-date branch of KDE and we don't have the resources to support both, plasma 
+5 and 6.
+
+so for the time being, the AppImage is what we recommend to use. hopefully 
+this is a transitional phase until automatic packaging for these distros 
+becomes available again. but given that kubuntu LTS was just released with 
+plasma 5, it looks like the AppImage builds are likely to stay with us for a 
+couple of years.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at 40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240922/8860af3e/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Sun Sep 22 10:15:57 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 22 Sep 2024 11:15:57 +0200
+Subject: flatpak
+In-Reply-To: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+Message-ID: <20240922104256.6932b70b@booklife>
+
+Adding to Meik's reply:
+
+On Sat, 21 Sep 2024 20:55:57 -0600
+Rachel Schrader <rachels at mailbox.org> wrote:
+> I was curious if I could still get rkward on flatpak. The homepage as
+> a link for it but it appears to be broken and I don't see it on
+> flathub.
+
+I don't seem to find that link. Could you point me to it so I can
+remove / replace it?
+
+For some context on why we are not providing flatpak: We've
+experimented with that, but the flatpak sandboxing is simply too
+restrictive. I order to be able to install R add-on packages, we'd need
+to be able to interface with a system-installed R, but that seems to be
+out of reach.
+
+As Meik already wrote, we do provide official AppImages, however, which
+do no suffer from the same limitation.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240922/764c0c2a/attachment.sig>
+
+From rachels at mailbox.org  Sun Sep 22 19:07:41 2024
+From: rachels at mailbox.org (Rachel Schrader)
+Date: Sun, 22 Sep 2024 12:07:41 -0600
+Subject: flatpak
+In-Reply-To: <20240922104256.6932b70b@booklife>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+ <20240922104256.6932b70b@booklife>
+Message-ID: <9c50db9b-7384-4a45-a088-c53247ed933e@mailbox.org>
+
+It's on this page. https://apps.kde.org/rkward/
+
+Thank you for the info. I will use the appimage for the time being.
+
+I am not a developer but I am a data analyst and sociologist who really 
+likes KDE. Hopefully I can help out in other places such as reporting 
+bugs or with documentation.
+
+On 9/22/24 03:15, Thomas Friedrichsmeier wrote:
+> Adding to Meik's reply:
+>
+> On Sat, 21 Sep 2024 20:55:57 -0600
+> Rachel Schrader <rachels at mailbox.org> wrote:
+>> I was curious if I could still get rkward on flatpak. The homepage as
+>> a link for it but it appears to be broken and I don't see it on
+>> flathub.
+> I don't seem to find that link. Could you point me to it so I can
+> remove / replace it?
+>
+> For some context on why we are not providing flatpak: We've
+> experimented with that, but the flatpak sandboxing is simply too
+> restrictive. I order to be able to install R add-on packages, we'd need
+> to be able to interface with a system-installed R, but that seems to be
+> out of reach.
+>
+> As Meik already wrote, we do provide official AppImages, however, which
+> do no suffer from the same limitation.
+>
+> Regards
+> Thomas
+

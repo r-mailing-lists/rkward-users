@@ -1,0 +1,163 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2025-09",
+  "messages": [
+    {
+      "id": "msg-23c44e081350",
+      "message_id": "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2025-09-10T07:20:40Z",
+      "subject": "A few plug-ins that could be of some use",
+      "subject_clean": "A few plug-ins that could be of some use",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, here are some plug-ins I think could be useful:\n\nA simple RKWard plugin to transpose a data frame, converting rows to\ncolumns and columns to rows.\nhttps://github.com/AlfCano/rk.transpose.df\n\nAn RKWard plugin to split concatenated columns into a long or wide format\nusing the cSplit() function from the splitstackshape package.\nhttps://github.com/AlfCano/rk.cSplit\n\nAn RKWard plugin package to easily reshape data frames by pivoting them\nfrom wide to long (pivot_longer) or long to wide (pivot_wider), powered by\nthe tidyr package.\nhttps://github.com/AlfCano/rk.pivot.reshape\n\nrk.shiny.plugins\n1. rpivotTable\nDescription: Creates a powerful and interactive drag-and-drop pivot table,\nsimilar to those found in spreadsheet software. Ideal for quick data\nexploration and summarization.\nDepends on: rpivotTable R package.\nFeatures: Includes an option to save the generated pivot table widget to an\nobject in the R environment.\n2. ggplot GUI\nDescription: Launches the ggplot_shiny() interactive interface from the\nggplotgui package. This provides a \"point-and-click\" graphical user\ninterface for building complex ggplot2 graphics.\nDepends on: ggplotgui R package.\n3. ggquickeda\nDescription: Launches the run_ggquickeda() interactive interface from the\nggquickeda package. This provides a comprehensive Shiny gadget for\nexploratory data analysis.\nDepends on: ggquickeda R package.\nhttps://github.com/AlfCano/rk.shiny.plugins\n\nAn RKWard plugin to calculate Aiken's V coefficient and its score\nconfidence intervals for assessing content validity. Features detailed\ntabular output and a ggplot2 bar chart with error bars and a live preview.\nhttps://github.com/AlfCano/rk.aiken_v\n\nFor the last one... rk.survey.design\nThis plugin will generate and execute the R code needed to create a\nsurvey.design object based on your selections, and display a summary of the\ndesign object in the RKWard results window.\nhttps://github.com/AlfCano/rk.survey.design\n\nThis one is a bit problematic... still haven't found a way\nto correctly clean the variables names contained inside\nthe variables data.frame of the survey object svydesign. I hope to\ncomplement with a couple of plugins to svymean, svytotal and svyby at least.\n\nRegards\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250910/a31b5888/attachment.htm>",
+      "body_snippet": "Hi, here are some plug-ins I think could be useful:\n\nA simple RKWard plugin to transpose a data frame, converting rows to\ncolumns and columns to rows.\nhttps://github.com/AlfCano/rk.transpose.df\n\nAn RK",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 0,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-fba14406f452",
+      "message_id": "<20250911080350.473ed66d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-09-11T06:03:50Z",
+      "subject": "A few plug-ins that could be of some use",
+      "subject_clean": "A few plug-ins that could be of some use",
+      "in_reply_to": "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>"
+      ],
+      "body_plain": "On Wed, 10 Sep 2025 01:20:40 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi, here are some plug-ins I think could be useful:\n\nThanks for sharing! Those look very useful, indeed, in particular the\ndata-reshaping ones are quite sorely needed.\n\nWe should probably make those more readily available via our plugin\nrepository on files.kde.org (and in the mid-term, it may make sense to\nmerge some into the main source distribution). @Meik, I know that I have\nasked, before, but I just cannot remember, where to find, and how to\nuse the scripts needed for that.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250911/9d7634b0/attachment.sig>",
+      "body_snippet": "On Wed, 10 Sep 2025 01:20:40 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n\n> Hi, here are some plug-ins I think could be useful:\n\nThanks for sharing! Those look very useful, inde",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 1,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-5fe1593e44b8",
+      "message_id": "<2469622.Sp3UJrmEge@meadow>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2025-09-13T07:02:17Z",
+      "subject": "[Extern] Re: A few plug-ins that could be of some use",
+      "subject_clean": "[Extern] Re: A few plug-ins that could be of some use",
+      "in_reply_to": "<20250911080350.473ed66d@booklife>",
+      "references": [
+        "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+        "<20250911080350.473ed66d@booklife>"
+      ],
+      "body_plain": "hi,\n\nAm Donnerstag, 11. September 2025, 08:03:50 CEST schrieb Thomas \nFriedrichsmeier:\n> @Meik, I know that I have asked, before, but I just cannot remember, where \n> to find, and how to use the scripts needed for that.\n\noh, haven't done that in a while. there's a roxyPackage[1] script somewhere...  \ni'll look it up and get back to you :D\n\n\nviele grüße :: m.eik\n\n\n[1] https://github.com/unDocUMeantIt/roxyPackage/tree/develop\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at 40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 488 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250913/77a1cad3/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Donnerstag, 11. September 2025, 08:03:50 CEST schrieb Thomas \nFriedrichsmeier:\n> @Meik, I know that I have asked, before, but I just cannot remember, where \n> to find, and how to use the scrip",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 2,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-8b5bc15793e5",
+      "message_id": "<20250924160432.2626aa6c@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-09-24T14:04:32Z",
+      "subject": "[Extern] Re: A few plug-ins that could be of some use",
+      "subject_clean": "[Extern] Re: A few plug-ins that could be of some use",
+      "in_reply_to": "<2469622.Sp3UJrmEge@meadow>",
+      "references": [
+        "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+        "<20250911080350.473ed66d@booklife>",
+        "<2469622.Sp3UJrmEge@meadow>"
+      ],
+      "body_plain": "Hi,\n\n@Alfonso:\nI'd like to make your plugins available from our repository on\nfiles.kde.org (which is included in RKWard's R package management\ndialog, by default), in time for the next release of RKWard (soon).\n\nI see you've continued working on these and further plugins. Which ones\ndo you consider ready (enough), which ones should get some more time to\ndevelop? Should I package specific commits/tags/branches?\n\nAm Sat, 13 Sep 2025 09:02:17 +0200\nschrieb meik michalke <meik.michalke at uni-duesseldorf.de>:\n> Am Donnerstag, 11. September 2025, 08:03:50 CEST schrieb Thomas \n> Friedrichsmeier:\n> > @Meik, I know that I have asked, before, but I just cannot\n> > remember, where to find, and how to use the scripts needed for\n> > that.  \n> \n> oh, haven't done that in a while. there's a roxyPackage[1] script\n> somewhere... i'll look it up and get back to you :D\n\n@Meik:\nI took a look, and it (function roxy.package()) seemed to require a\nmore complex setup than I had hoped for. Much of that complexity comes\nfrom trying to build \"binary\" packages for Windows and Mac. My current\nsuspicion is that this was required, historically, but is no longer\nreally needed, since meanwhile\n- R packages gained a \"Needs compilation\" flag\n- R supports options(pkgType=\"both\") on Windows and Mac\n- RKWard's package management dialog no longer breaks with the latter\n(this last bit is a fix I committed mere minutes ago, the new Windows\ninstaller is still building).\n\nWith options(pkgType=\"both\"), it now seems practically possible to\ndistribute plugin packages (as long as they do not require compilation),\nas sources, only, which should make things _a lot_ easier(*).\n\nI do wonder, whether I'm overlooking additional reasons, why we did\nnot take that route, before. Do you remember any further problems?\n\nRegards\nThomas\n\n(*) Actually, a repository still seems to require empty dummy PACKAGES\nfiles for all binary architectures and versions of R, but that's still\ntrivial to create.\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250924/c5ee14e8/attachment.sig>",
+      "body_snippet": "Hi,\n\n@Alfonso:\nI'd like to make your plugins available from our repository on\nfiles.kde.org (which is included in RKWard's R package management\ndialog, by default), in time for the next release of RKW",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 3,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-552f8d4aab19",
+      "message_id": "<2206950.opyBTl7zni@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2025-09-25T06:23:43Z",
+      "subject": "[Extern] Re: Re: A few plug-ins that could be of some use",
+      "subject_clean": "[Extern] Re: Re: A few plug-ins that could be of some use",
+      "in_reply_to": "<20250924160432.2626aa6c@booklife>",
+      "references": [
+        "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+        "<2469622.Sp3UJrmEge@meadow>",
+        "<20250924160432.2626aa6c@booklife>"
+      ],
+      "body_plain": "hi,\n\nAm Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas Friedrichsmeier:\n> @Meik:\n> I took a look, and it (function roxy.package()) seemed to require a\n> more complex setup than I had hoped for. Much of that complexity comes\n> from trying to build \"binary\" packages for Windows and Mac.\n\nbuilding binary packages is actually quite simple, because it just zips the \ninstalled linux packages. it only gets a bit more complicated if you also want \nto build debian packages, but that also is a do-it-once thing and then you \njust run the script.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at 40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 525 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250925/690b1873/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas Friedrichsmeier:\n> @Meik:\n> I took a look, and it (function roxy.package()) seemed to require a\n> more complex setup than I had hoped",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 4,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-7ca7c6ebeb2c",
+      "message_id": "<20250925162455.4df4078f@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-09-25T14:24:55Z",
+      "subject": "[Extern] Re: Re: A few plug-ins that could be of some use",
+      "subject_clean": "[Extern] Re: Re: A few plug-ins that could be of some use",
+      "in_reply_to": "<2206950.opyBTl7zni@yrla>",
+      "references": [
+        "<CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>",
+        "<2469622.Sp3UJrmEge@meadow>",
+        "<20250924160432.2626aa6c@booklife>",
+        "<2206950.opyBTl7zni@yrla>"
+      ],
+      "body_plain": "Am Thu, 25 Sep 2025 08:23:43 +0200\nschrieb meik michalke <meik.michalke at uni-duesseldorf.de>:\n> Am Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas\n> Friedrichsmeier:\n> > @Meik:\n> > I took a look, and it (function roxy.package()) seemed to require a\n> > more complex setup than I had hoped for. Much of that complexity\n> > comes from trying to build \"binary\" packages for Windows and Mac.  \n> \n> building binary packages is actually quite simple, because it just\n> zips the installed linux packages. it only gets a bit more\n> complicated if you also want to build debian packages, but that also\n> is a do-it-once thing and then you just run the script.\n\nI see, that simplifies things, but AFAIU you still need a (linux)\ninstallation of every supported R version to get there (and an update\nfor every future version of R)?\n\nIf it's easy to do, I'm all for providing \"binaries\", too. I'm just\ntrying to get the barrier low enough that we will actually provide\ntimely updates in the future (something we have not been terribly good\nat, so far).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250925/89c00771/attachment.sig>",
+      "body_snippet": "Am Thu, 25 Sep 2025 08:23:43 +0200\nschrieb meik michalke <meik.michalke at uni-duesseldorf.de>:\n> Am Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas\n> Friedrichsmeier:\n> > @Meik:\n> > I took",
+      "thread_id": "thread-23c44e081350",
+      "thread_depth": 5,
+      "month": "2025-09"
+    },
+    {
+      "id": "msg-ef6bc42c4eb8",
+      "message_id": "<20250927105334.4489e8ae@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2025-09-27T08:53:34Z",
+      "subject": "Merging rkward-users and rkward-devel mailing lists",
+      "subject_clean": "Merging rkward-users and rkward-devel mailing lists",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nas subscribers, most of you will be aware that RKWard has two main\nmailing lists: rkward-devel at kde.org, and rkward-users at kde.org.\nHistorically, the motivation for creating rkward-users (a few years\nafter rkward-devel) was not to actually keep discussions separate, but\nto encourage participation from users, who might otherwise be reluctant\nto post to a \"-devel\" mailing list, perhaps after witnessing the\nsometimes harsh rebuffs for doing so some other lists.\n\nNonetheless, communication has rather been moving away from e-mail, and\nof the modest traffic on both lists, much has been double-posts, and/or\n\"inappropriate content\" in the sense that usage-questions evolved into\nimplementation discussions or vice-versa.\n\nLong story short, I intend to request a merge of these two lists into a\nsingle list rkward at kde.org. Your subscription should remain active,\nautomatically, but if subscribed with different addresses, you may be\nsubscribed twice after the merge, and you may need to adjust filters in\nyour mail client.\n\nIf there are any objections to this step, please speak up, within a\nweek.\n\nFor completeness, I'll point out that there is also the list\nrkward-tracker at kde.org, which receives automated messages about commit\nmessages, failures in automated builds, etc., which can be quite \"noisy\"\nat times. I do not currently intend to change anything about this list,\neven though a lot of that info can also be received by subscribing to\nindividual notifications via invent.kde.org.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: Digitale Signatur von OpenPGP\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250927/86238adf/attachment.sig>",
+      "body_snippet": "Hi,\n\nas subscribers, most of you will be aware that RKWard has two main\nmailing lists: rkward-devel at kde.org, and rkward-users at kde.org.\nHistorically, the motivation for creating rkward-users (a f",
+      "thread_id": "thread-ef6bc42c4eb8",
+      "thread_depth": 0,
+      "month": "2025-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-23c44e081350",
+      "subject": "A few plug-ins that could be of some use",
+      "message_count": 6,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2025-09-10T07:20:40Z",
+      "last_reply": "2025-09-25T14:24:55Z",
+      "root_message_id": "msg-23c44e081350"
+    },
+    {
+      "id": "thread-ef6bc42c4eb8",
+      "subject": "Merging rkward-users and rkward-devel mailing lists",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2025-09-27T08:53:34Z",
+      "last_reply": "2025-09-27T08:53:34Z",
+      "root_message_id": "msg-ef6bc42c4eb8"
+    }
+  ]
+}

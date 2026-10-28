@@ -1,0 +1,74 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2016-12",
+  "messages": [
+    {
+      "id": "msg-d3ad77c6794e",
+      "message_id": "<91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>",
+      "from_name": "Philip (Michael) Dykes",
+      "from_email_hash": "75b0170639ed67aca471d2022b9c305a5442467b782af765677792f178074a00",
+      "date": "2016-12-19T14:26:09Z",
+      "subject": "Graphing a piece-wise defined function in RKward",
+      "subject_clean": "Graphing a piece-wise defined function in RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am very new to both R and Rkward and am trying to plot the following:\n\nf(x)=    x^2, if x <= 2,\n             6-x, if x > 2.\n\nHow can I do this in Rkward? Also, I would like the graph (plot) to look \nas much as possible like the graph I was in this book (attached).\n\nThanks so much.\n\n-MD\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: piecewise1.jpg\nType: image/jpeg\nSize: 76908 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/4faee62a/attachment-0001.jpg>",
+      "body_snippet": "I am very new to both R and Rkward and am trying to plot the following:\n\nf(x)=    x^2, if x <= 2,\n             6-x, if x > 2.\n\nHow can I do this in Rkward? Also, I would like the graph (plot) to look ",
+      "thread_id": "thread-d3ad77c6794e",
+      "thread_depth": 0,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-1e2d4cd4cc32",
+      "message_id": "<1599805.yIKGi5RSgC@chiana>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2016-12-19T14:58:48Z",
+      "subject": "Graphing a piece-wise defined function in RKward",
+      "subject_clean": "Graphing a piece-wise defined function in RKward",
+      "in_reply_to": "<91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>",
+      "references": [
+        "<91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>"
+      ],
+      "body_plain": "hi michael,\n\nAm Montag, 19. Dezember 2016, 09:26:09 CET schrieb Philip (Michael) Dykes:\n> I am very new to both R and Rkward and am trying to plot the following:\n> \n> f(x)=    x^2, if x <= 2,\n>              6-x, if x > 2.\n> \n> How can I do this in Rkward? Also, I would like the graph (plot) to look\n> as much as possible like the graph I was in this book (attached).\n\nthis is a very basic R question, and general R support is far beyond the scope \nif this mailing list (and, well, you should not send attachments to mailing \nlists).\n\nbut FWIW, here's a hint to get you a little closer to what you want to \nachieve:\n\n  piecewise <- function(x){\n    if(x <= 2){\n      y <- x^2\n    } else {\n      y <- 6-x\n    }\n    return(y)\n  }\n\n  plot(sapply(-3:6, piecewise))\n\n\nyou should try to work yourself through some basic R tutorials, there's a lot \nof them out there on the web ;-)\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 819 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/70bc8b82/attachment.sig>",
+      "body_snippet": "hi michael,\n\nAm Montag, 19. Dezember 2016, 09:26:09 CET schrieb Philip (Michael) Dykes:\n> I am very new to both R and Rkward and am trying to plot the following:\n> \n> f(x)=    x^2, if x <= 2,\n>       ",
+      "thread_id": "thread-d3ad77c6794e",
+      "thread_depth": 1,
+      "month": "2016-12"
+    },
+    {
+      "id": "msg-1b0e8eed540c",
+      "message_id": "<20587605.IlVgTOixNW@veles.site>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2016-12-19T15:06:34Z",
+      "subject": "Graphing a piece-wise defined function in RKward",
+      "subject_clean": "Graphing a piece-wise defined function in RKward",
+      "in_reply_to": "<91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>",
+      "references": [
+        "<91b64a02-aca7-f324-81e7-1bf48416eb7c@gmail.com>"
+      ],
+      "body_plain": "Dne pondělí 19. prosince 2016 9:26:09 CET, Philip (Michael) Dykes napsal(a):\n> I am very new to both R and Rkward and am trying to plot the following:\n> \n> f(x)=    x^2, if x <= 2,\n>              6-x, if x > 2.\n> \n> How can I do this in Rkward? Also, I would like the graph (plot) to look\n> as much as possible like the graph I was in this book (attached).\n\nI'd start with something like\n\nx <- seq(from=-3, to=6.5, by=0.1)\n\nfor (i in 1:length(x)) {\n  if(x[i] <= 2) {\n    y[i] <- x[i]^2\n    } else if(x[i] > 2) {\n      y[i] <- 6-x[i]\n      }\n  }\n\nplot(x, y)\n\nThere are plenty of possibilities to tune plot look and feel.\n\n-- \nVojtěch Zeisek\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\n\nhttps://www.opensuse.org/\nhttps://trapa.cz/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20161219/173bac1b/attachment.sig>",
+      "body_snippet": "Dne pondělí 19. prosince 2016 9:26:09 CET, Philip (Michael) Dykes napsal(a):\n> I am very new to both R and Rkward and am trying to plot the following:\n> \n> f(x)=    x^2, if x <= 2,\n>              6-x,",
+      "thread_id": "thread-d3ad77c6794e",
+      "thread_depth": 1,
+      "month": "2016-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d3ad77c6794e",
+      "subject": "Graphing a piece-wise defined function in RKward",
+      "message_count": 3,
+      "participants": [
+        "Philip (Michael) Dykes",
+        "Vojtěch Zeisek",
+        "meik michalke"
+      ],
+      "started": "2016-12-19T14:26:09Z",
+      "last_reply": "2016-12-19T15:06:34Z",
+      "root_message_id": "msg-d3ad77c6794e"
+    }
+  ]
+}

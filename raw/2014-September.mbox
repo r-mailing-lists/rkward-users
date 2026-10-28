@@ -1,0 +1,148 @@
+From meik.michalke at uni-duesseldorf.de  Sun Sep 14 22:41:23 2014
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 15 Sep 2014 00:41:23 +0200
+Subject: [rkward-users] testing localised plugins
+Message-ID: <2782053.ykhkpoZhfb@yrla>
+
+hi,
+
+lately we're experimenting a bit with approaches to localise plugins. you may 
+have noticed that although RKWard's menu titles are translated, most of the 
+actual plugin dialogs are in english. heretofore, RKWard didn't support 
+translations for plugins.
+
+this has changed in the development version (SVN after 2014-09-12), and there 
+is now one external plugin with inital support for english and german:
+  http://rkward.sourceforge.net/R/pckg/rk.ANOVA/index.html
+
+so *if* you're running a bleeding edge version of RKWard, have installed that 
+plugin in version 0.01-18 *and* start RKWard in an environment with the locale 
+set to de_DE, you should get its dialogs in german (e.g., Analysis  -> ANOVA -
+> ANOVA), otherwise it should fallback to the english default.
+
+this plugin should still work with older versions of RKWard! so it would be 
+nice if you gave some feedback anyway -- does it run in your environment?
+
+users of debian based distributions can try the debian package called
+
+  r-other-rkward-rk.anova
+
+which is in our own repository. instructions on how to get that up and running 
+can be found here:
+  http://rkward.sourceforge.net/R/pckg/rkwarddev/deb_repo.html
+
+please note that this implementation of plugin translations is rather rude -- 
+the package simply ships a full set of dialogs for each language. we're aware 
+that there are more elegant ways of doing this -- yet this was kind of a low 
+hanging fruit, and you can actually use the translated dialogs with older 
+releases of RKWard (with a few clicks). we'll likely add a more elaborate 
+method for this in the future. especially since using this method is only 
+feasible if a plugin is maintained by an rkwarddev script. however, if you're 
+simply *using* RKWard, this shouldn't concern you ;-)
+
+
+you don't speak german? like to help out with another translation? then please 
+download the package sources:
+  http://rkward.sourceforge.net/R/src/contrib/rk.ANOVA_0.01-18.tar.gz
+and take a look at the file
+
+  rk.ANOVA/inst/rkward/rkwarddev_ANOVA_plugin_script.R
+
+in it, you will find a lot of appearances of a function called i18n(), e.g.:
+
+  i18n(
+    en="Dependent variable",
+    de="Abh?ngige Variable"
+  )
+
+so, to add a new language like french, simply add it to all the lists:
+
+  i18n(
+    en="Dependent variable",
+    de="Abh?ngige Variable",
+    fr="<your translation>"
+  )
+
+(don't forget the comma...). that should do it -- you then need to run the 
+script to build it -- once for each language! make sure to specify each 
+language by a proper rk.set.language() call, see lines 15 ff. feel free to bug 
+me with questions if you can't figure it out ;-)
+
+enough for now... i'd be hapy if you give it a try.
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140915/2e405abd/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Sep 29 18:21:33 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 29 Sep 2014 20:21:33 +0200
+Subject: [rkward-users] [rkward-announce] Upcoming release,
+	call for testing and translating RKWard 0.6.2
+Message-ID: <3256444.mFZNJaOxuG@late>
+
+Hi!
+
+After over a year, it's time for a new release of RKWard: 0.6.2. I would like 
+to ask you for help in testing, packaging and translating. Details on 
+available downloads, and a tentative release schedule can be found at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+as usual. The targetted release date is October 20, and I would like to ask 
+you to provide feedback by October 15.
+
+Note that in the current testing releases, some loose ends are not yet tied 
+up. Importantly some documentation is still to be written, and tests to be 
+updated. Additional preview releases will be created as we take care of these 
+bits, and work to fix any bugs you find.
+
+Key features to look out for in RKWard 0.6.2 are the new RK() graphics device 
+(used for plots by default), which finally brings RKWard's graphics features 
+to the Mac, but also fixes some problems in corner cases. Also, there have 
+been a number of additions to the plugin infrastructure, and the new Data-
+>Recode categorical data plugin shows some of them (this plugin needs thorough 
+testing, please take a look!). Importantly, plugins can now query the R 
+backend for information such as factor levels.
+
+See the release schedule, above, for all relevant instructions and 
+downloads.
+
+--- Translators ---
+
+Now is a good time to start updating your translations. As usual, the deadline 
+to send your updates ends with the testing phase on October 15, as we will be 
+finalizing the sources, shortly after. As a reminder, RKWard is registered 
+for translations on launchpad: https://translations.launchpad.net/rkward , and 
+it is recommended to upload your translations, there. Sending translations by 
+mail is also ok, of course.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140929/1bf99135/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Slashdot TV.  Videos for Nerds.  Stuff that Matters.
+http://pubads.g.doubleclick.net/gampad/clk?id=160591471&iu=/4140/ostg.clktrk
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+

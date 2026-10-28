@@ -1,0 +1,73 @@
+From jinwvl at users.sf.net  Sun Jul 26 07:55:08 2015
+From: jinwvl at users.sf.net (Jin)
+Date: Sun, 26 Jul 2015 07:55:08 +0000
+Subject: [rkward-users]  [rkward:discussion] R script
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/54e52e57927d22164a151a7f143b837e0cb72160.discussion@rkward.p.sourceforge.net>
+
+Is it possible to find the original R script of the recent workspace saved?
+
+
+---
+
+[R script](https://sourceforge.net/p/rkward/discussion/165574/thread/04765e71/?limit=25#813c)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150726/5f231068/attachment.html>
+-------------- next part --------------
+------------------------------------------------------------------------------
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+From tfry at users.sf.net  Sun Jul 26 11:25:34 2015
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Sun, 26 Jul 2015 11:25:34 +0000
+Subject: [rkward-users]  [rkward:discussion] R script
+In-Reply-To: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+References: <50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/0dbbc9dba9bc80a58758265c219c846ca96da56f.discussion@rkward.p.sourceforge.net>
+
+Hi!
+
+Depends on what exactly you are looking for, but in all likelihood, the answer is: No. Workspaces are simply not tied to any one R script in R. The workspace could be the result of running many different scripts or no script at all.
+
+RKWard does support the concept of "workplaces", meaning a set of script and data windows associated with a particular saved workspace. When loading a workspace via Workspace->Open [Recent] Workspace, the workplace will be restored, automatically. However, if you have closed the script file in question before saving the workspace, there is again no association between the workspace and the script. (If you are R savy, and want more details and flexibilitly, see ?rk.save.workplace).
+
+In case you're simply trying to locate a recent script file, look at File->Open Recent R Script File.
+
+Hope this helps.
+Thomas
+
+
+---
+
+[R script](https://sourceforge.net/p/rkward/discussion/165574/thread/04765e71/?limit=25#348b)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150726/a73efe1a/attachment.html>
+-------------- next part --------------
+------------------------------------------------------------------------------
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+

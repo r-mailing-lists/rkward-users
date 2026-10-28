@@ -1,0 +1,42 @@
+From vojtech.zeisek at opensuse.org  Wed Dec  6 09:17:25 2017
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Wed, 06 Dec 2017 10:17:25 +0100
+Subject: [rkward-users] KF5 based RKWard
+Message-ID: <1858500.SvoJyqWHI3@veles.suse>
+
+Hi,
+as upcoming KDE applications 17.12 is going to completely drop KDE4/Qt4 
+support, which will cause removal of RKWard 0.6.5 (depending on KDE4/Qt4), as 
+user of openSUSE Tumbleweed (running the newest applications), I gave a try to 
+the latest developmental version of RKWard 0.6.9git.20171022T093... kindly 
+packaged in home:wolfi323, https://software.opensuse.org/package/rkward I was 
+very happy with its state. UI is old good the same and so far I did not notice 
+any major issues. So I hope version 0.7 will be officially available soon.
+Thank You!
+V.
+
+-- 
+Vojtěch Zeisek
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+
+https://www.opensuse.org/
+https://trapa.cz/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20171206/5d297b58/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Check out the vibrant tech community on one of the world's most
+engaging tech sites, Slashdot.org! http://sdm.link/slashdot
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+

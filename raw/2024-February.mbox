@@ -1,0 +1,46 @@
+From rkward-users at oijn.uk  Sun Feb 11 02:27:02 2024
+From: rkward-users at oijn.uk (rkward @ oijn)
+Date: Sun, 11 Feb 2024 02:27:02 +0000
+Subject: possible idea for a new RKWard feature - an RKWard set total max
+ memory limit encompassing all rkward.rbackends
+Message-ID: <7856337037fdceeb525abe46f3c1ed9a@oijn.uk>
+
+A possible idea for a new RKWard feature.
+
+I have come across situations where R consumes as much memory as it can 
+get resulting in thrashing to swap and quite quickly an unresponsive 
+system.
+
+This can be safeguarded by using something like:
+library(unix)                            #Required to force mem limits 
+and avoid swap
+rlimit_as(4.8e+10,  4.8e+10)             #Set soft limit = 48G; hard 
+limit = 48G
+
+This is a limit per R process... and works OK if using only a single R 
+process - this can be set to safeguard the running desktop and avoid an 
+unresponsive computer.
+
+However, if you are using multicore libraries
+options(cores = 16)
+registerDoMC()
+
+What is really needed is:
+rlimit_as(3e+9,  3e+9)             #Set soft limit = 3G; hard limit = 3G
+
+It would be idea to set the soft & hard limit (or something similar in 
+concept) as a setting within RKWard as a total allowed limit.  As within 
+a session there may be parts with a single R process and you wish the 
+full limit to be 48G for that process. But also have later in the 
+session have multiple R processes where the total limit should still 
+remain 48G but be divided between the number of R processes.  I would 
+think that RKWard having control over rkward.rbackend would be in an 
+ideal position to be able to set a simple single limit and enforce it 
+such that single processes could grow up to the limit.  But where 
+multiple processes are being run - the limit can be distributed 
+automagically still keeping the total allowed limit.
+
+Thx
+
+Just an idea I had?
+

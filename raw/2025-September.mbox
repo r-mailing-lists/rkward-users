@@ -1,0 +1,324 @@
+From alfonsociologo at gmail.com  Wed Sep 10 08:20:40 2025
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Wed, 10 Sep 2025 01:20:40 -0600
+Subject: A few plug-ins that could be of some use
+Message-ID: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+
+Hi, here are some plug-ins I think could be useful:
+
+A simple RKWard plugin to transpose a data frame, converting rows to
+columns and columns to rows.
+https://github.com/AlfCano/rk.transpose.df
+
+An RKWard plugin to split concatenated columns into a long or wide format
+using the cSplit() function from the splitstackshape package.
+https://github.com/AlfCano/rk.cSplit
+
+An RKWard plugin package to easily reshape data frames by pivoting them
+from wide to long (pivot_longer) or long to wide (pivot_wider), powered by
+the tidyr package.
+https://github.com/AlfCano/rk.pivot.reshape
+
+rk.shiny.plugins
+1. rpivotTable
+Description: Creates a powerful and interactive drag-and-drop pivot table,
+similar to those found in spreadsheet software. Ideal for quick data
+exploration and summarization.
+Depends on: rpivotTable R package.
+Features: Includes an option to save the generated pivot table widget to an
+object in the R environment.
+2. ggplot GUI
+Description: Launches the ggplot_shiny() interactive interface from the
+ggplotgui package. This provides a "point-and-click" graphical user
+interface for building complex ggplot2 graphics.
+Depends on: ggplotgui R package.
+3. ggquickeda
+Description: Launches the run_ggquickeda() interactive interface from the
+ggquickeda package. This provides a comprehensive Shiny gadget for
+exploratory data analysis.
+Depends on: ggquickeda R package.
+https://github.com/AlfCano/rk.shiny.plugins
+
+An RKWard plugin to calculate Aiken's V coefficient and its score
+confidence intervals for assessing content validity. Features detailed
+tabular output and a ggplot2 bar chart with error bars and a live preview.
+https://github.com/AlfCano/rk.aiken_v
+
+For the last one... rk.survey.design
+This plugin will generate and execute the R code needed to create a
+survey.design object based on your selections, and display a summary of the
+design object in the RKWard results window.
+https://github.com/AlfCano/rk.survey.design
+
+This one is a bit problematic... still haven't found a way
+to correctly clean the variables names contained inside
+the variables data.frame of the survey object svydesign. I hope to
+complement with a couple of plugins to svymean, svytotal and svyby at least.
+
+Regards
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250910/a31b5888/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Thu Sep 11 07:03:50 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 11 Sep 2025 08:03:50 +0200
+Subject: A few plug-ins that could be of some use
+In-Reply-To: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+References: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+Message-ID: <20250911080350.473ed66d@booklife>
+
+On Wed, 10 Sep 2025 01:20:40 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+
+> Hi, here are some plug-ins I think could be useful:
+
+Thanks for sharing! Those look very useful, indeed, in particular the
+data-reshaping ones are quite sorely needed.
+
+We should probably make those more readily available via our plugin
+repository on files.kde.org (and in the mid-term, it may make sense to
+merge some into the main source distribution). @Meik, I know that I have
+asked, before, but I just cannot remember, where to find, and how to
+use the scripts needed for that.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250911/9d7634b0/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Sat Sep 13 08:02:17 2025
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sat, 13 Sep 2025 09:02:17 +0200
+Subject: [Extern] Re: A few plug-ins that could be of some use
+In-Reply-To: <20250911080350.473ed66d@booklife>
+References: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+ <20250911080350.473ed66d@booklife>
+Message-ID: <2469622.Sp3UJrmEge@meadow>
+
+hi,
+
+Am Donnerstag, 11. September 2025, 08:03:50 CEST schrieb Thomas 
+Friedrichsmeier:
+> @Meik, I know that I have asked, before, but I just cannot remember, where 
+> to find, and how to use the scripts needed for that.
+
+oh, haven't done that in a while. there's a roxyPackage[1] script somewhere...  
+i'll look it up and get back to you :D
+
+
+viele grüße :: m.eik
+
+
+[1] https://github.com/unDocUMeantIt/roxyPackage/tree/develop
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at 40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250913/77a1cad3/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Wed Sep 24 15:04:32 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Wed, 24 Sep 2025 16:04:32 +0200
+Subject: [Extern] Re: A few plug-ins that could be of some use
+In-Reply-To: <2469622.Sp3UJrmEge@meadow>
+References: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+ <20250911080350.473ed66d@booklife> <2469622.Sp3UJrmEge@meadow>
+Message-ID: <20250924160432.2626aa6c@booklife>
+
+Hi,
+
+@Alfonso:
+I'd like to make your plugins available from our repository on
+files.kde.org (which is included in RKWard's R package management
+dialog, by default), in time for the next release of RKWard (soon).
+
+I see you've continued working on these and further plugins. Which ones
+do you consider ready (enough), which ones should get some more time to
+develop? Should I package specific commits/tags/branches?
+
+Am Sat, 13 Sep 2025 09:02:17 +0200
+schrieb meik michalke <meik.michalke at uni-duesseldorf.de>:
+> Am Donnerstag, 11. September 2025, 08:03:50 CEST schrieb Thomas 
+> Friedrichsmeier:
+> > @Meik, I know that I have asked, before, but I just cannot
+> > remember, where to find, and how to use the scripts needed for
+> > that.  
+> 
+> oh, haven't done that in a while. there's a roxyPackage[1] script
+> somewhere... i'll look it up and get back to you :D
+
+@Meik:
+I took a look, and it (function roxy.package()) seemed to require a
+more complex setup than I had hoped for. Much of that complexity comes
+from trying to build "binary" packages for Windows and Mac. My current
+suspicion is that this was required, historically, but is no longer
+really needed, since meanwhile
+- R packages gained a "Needs compilation" flag
+- R supports options(pkgType="both") on Windows and Mac
+- RKWard's package management dialog no longer breaks with the latter
+(this last bit is a fix I committed mere minutes ago, the new Windows
+installer is still building).
+
+With options(pkgType="both"), it now seems practically possible to
+distribute plugin packages (as long as they do not require compilation),
+as sources, only, which should make things _a lot_ easier(*).
+
+I do wonder, whether I'm overlooking additional reasons, why we did
+not take that route, before. Do you remember any further problems?
+
+Regards
+Thomas
+
+(*) Actually, a repository still seems to require empty dummy PACKAGES
+files for all binary architectures and versions of R, but that's still
+trivial to create.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250924/c5ee14e8/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Thu Sep 25 07:23:43 2025
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Thu, 25 Sep 2025 08:23:43 +0200
+Subject: [Extern] Re: Re: A few plug-ins that could be of some use
+In-Reply-To: <20250924160432.2626aa6c@booklife>
+References: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+ <2469622.Sp3UJrmEge@meadow> <20250924160432.2626aa6c@booklife>
+Message-ID: <2206950.opyBTl7zni@yrla>
+
+hi,
+
+Am Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas Friedrichsmeier:
+> @Meik:
+> I took a look, and it (function roxy.package()) seemed to require a
+> more complex setup than I had hoped for. Much of that complexity comes
+> from trying to build "binary" packages for Windows and Mac.
+
+building binary packages is actually quite simple, because it just zips the 
+installed linux packages. it only gets a bit more complicated if you also want 
+to build debian packages, but that also is a do-it-once thing and then you 
+just run the script.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at 40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 525 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250925/690b1873/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Thu Sep 25 15:24:55 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Thu, 25 Sep 2025 16:24:55 +0200
+Subject: [Extern] Re: Re: A few plug-ins that could be of some use
+In-Reply-To: <2206950.opyBTl7zni@yrla>
+References: <CAMqnA+gqjYFfX=UF+rJWX3uVLq5iWtTEko2EzPVEWqdeWW-L2w@mail.gmail.com>
+ <2469622.Sp3UJrmEge@meadow> <20250924160432.2626aa6c@booklife>
+ <2206950.opyBTl7zni@yrla>
+Message-ID: <20250925162455.4df4078f@booklife>
+
+Am Thu, 25 Sep 2025 08:23:43 +0200
+schrieb meik michalke <meik.michalke at uni-duesseldorf.de>:
+> Am Mittwoch, 24. September 2025, 16:04:32 CEST schrieb Thomas
+> Friedrichsmeier:
+> > @Meik:
+> > I took a look, and it (function roxy.package()) seemed to require a
+> > more complex setup than I had hoped for. Much of that complexity
+> > comes from trying to build "binary" packages for Windows and Mac.  
+> 
+> building binary packages is actually quite simple, because it just
+> zips the installed linux packages. it only gets a bit more
+> complicated if you also want to build debian packages, but that also
+> is a do-it-once thing and then you just run the script.
+
+I see, that simplifies things, but AFAIU you still need a (linux)
+installation of every supported R version to get there (and an update
+for every future version of R)?
+
+If it's easy to do, I'm all for providing "binaries", too. I'm just
+trying to get the barrier low enough that we will actually provide
+timely updates in the future (something we have not been terribly good
+at, so far).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250925/89c00771/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Sat Sep 27 09:53:34 2025
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sat, 27 Sep 2025 10:53:34 +0200
+Subject: Merging rkward-users and rkward-devel mailing lists
+Message-ID: <20250927105334.4489e8ae@booklife>
+
+Hi,
+
+as subscribers, most of you will be aware that RKWard has two main
+mailing lists: rkward-devel at kde.org, and rkward-users at kde.org.
+Historically, the motivation for creating rkward-users (a few years
+after rkward-devel) was not to actually keep discussions separate, but
+to encourage participation from users, who might otherwise be reluctant
+to post to a "-devel" mailing list, perhaps after witnessing the
+sometimes harsh rebuffs for doing so some other lists.
+
+Nonetheless, communication has rather been moving away from e-mail, and
+of the modest traffic on both lists, much has been double-posts, and/or
+"inappropriate content" in the sense that usage-questions evolved into
+implementation discussions or vice-versa.
+
+Long story short, I intend to request a merge of these two lists into a
+single list rkward at kde.org. Your subscription should remain active,
+automatically, but if subscribed with different addresses, you may be
+subscribed twice after the merge, and you may need to adjust filters in
+your mail client.
+
+If there are any objections to this step, please speak up, within a
+week.
+
+For completeness, I'll point out that there is also the list
+rkward-tracker at kde.org, which receives automated messages about commit
+messages, failures in automated builds, etc., which can be quite "noisy"
+at times. I do not currently intend to change anything about this list,
+even though a lot of that info can also be received by subscribing to
+individual notifications via invent.kde.org.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: Digitale Signatur von OpenPGP
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250927/86238adf/attachment.sig>
+

@@ -1,0 +1,187 @@
+From alfonsociologo at gmail.com  Wed Oct  9 04:47:55 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Tue, 8 Oct 2024 21:47:55 -0600
+Subject: flatpak
+In-Reply-To: <9c50db9b-7384-4a45-a088-c53247ed933e@mailbox.org>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+ <20240922104256.6932b70b@booklife>
+ <9c50db9b-7384-4a45-a088-c53247ed933e@mailbox.org>
+Message-ID: <CAMqnA+gEqWJMhWfq3kiHp5KoDgJ_FT0y0Woj=BU9OzGCSWOYvQ@mail.gmail.com>
+
+For what it is worth, here is a presentation of
+> "RKWard Appimage Install with Gear lever (Flatpak) a Linux Mint example"
+>
+https://docs.google.com/presentation/d/1j9osgN7OUmVPcARyyJBd1FNoevzBB42YR2VSeP0QDbw/edit?usp=sharing
+Regards
+Alfonso
+
+
+
+El dom, 22 sept 2024 a la(s) 12:08 p.m., Rachel Schrader (
+rachels at mailbox.org) escribió:
+
+> It's on this page. https://apps.kde.org/rkward/
+>
+> Thank you for the info. I will use the appimage for the time being.
+>
+> I am not a developer but I am a data analyst and sociologist who really
+> likes KDE. Hopefully I can help out in other places such as reporting
+> bugs or with documentation.
+>
+> On 9/22/24 03:15, Thomas Friedrichsmeier wrote:
+> > Adding to Meik's reply:
+> >
+> > On Sat, 21 Sep 2024 20:55:57 -0600
+> > Rachel Schrader <rachels at mailbox.org> wrote:
+> >> I was curious if I could still get rkward on flatpak. The homepage as
+> >> a link for it but it appears to be broken and I don't see it on
+> >> flathub.
+> > I don't seem to find that link. Could you point me to it so I can
+> > remove / replace it?
+> >
+> > For some context on why we are not providing flatpak: We've
+> > experimented with that, but the flatpak sandboxing is simply too
+> > restrictive. I order to be able to install R add-on packages, we'd need
+> > to be able to interface with a system-installed R, but that seems to be
+> > out of reach.
+> >
+> > As Meik already wrote, we do provide official AppImages, however, which
+> > do no suffer from the same limitation.
+> >
+> > Regards
+> > Thomas
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20241008/42317638/attachment.htm>
+
+From meik.michalke at uni-duesseldorf.de  Wed Oct  9 09:44:43 2024
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 09 Oct 2024 10:44:43 +0200
+Subject: [Extern] Re: flatpak
+In-Reply-To: <CAMqnA+gEqWJMhWfq3kiHp5KoDgJ_FT0y0Woj=BU9OzGCSWOYvQ@mail.gmail.com>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+ <9c50db9b-7384-4a45-a088-c53247ed933e@mailbox.org>
+ <CAMqnA+gEqWJMhWfq3kiHp5KoDgJ_FT0y0Woj=BU9OzGCSWOYvQ@mail.gmail.com>
+Message-ID: <4181375.PmcEfagsvq@yrla>
+
+hi,
+
+Am Mittwoch, 9. Oktober 2024, 05:47:55 CEST schrieb DES Alfonso Cano Robles:
+> For what it is worth, here is a presentation of
+> 
+> > "RKWard Appimage Install with Gear lever (Flatpak) a Linux Mint example"
+> 
+> https://docs.google.com/presentation/d/1j9osgN7OUmVPcARyyJBd1FNoevzBB42YR2VS
+> eP0QDbw/edit?usp=sharing
+
+what does the flatpak package actually do here? add an icon to the task bar?
+
+other than that, the instructions seem to rely on the AppImage as well. Nice 
+to see my updater plugin was discovered, though :D but i think i needs to add 
+it another selection option "stable" vs. "development", because currently it 
+only autodetects the latest daily build. that might be surprising to most 
+users, so i probably wouldn't recommend that to the general audience at the 
+moment.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at 40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20241009/ec7294e0/attachment.sig>
+
+From alfonsociologo at gmail.com  Wed Oct  9 16:37:37 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Wed, 9 Oct 2024 09:37:37 -0600
+Subject: [Extern] Re: flatpak
+In-Reply-To: <4181375.PmcEfagsvq@yrla>
+References: <f50d20fa-100c-4886-8835-72aeaf5407f2@mailbox.org>
+ <9c50db9b-7384-4a45-a088-c53247ed933e@mailbox.org>
+ <CAMqnA+gEqWJMhWfq3kiHp5KoDgJ_FT0y0Woj=BU9OzGCSWOYvQ@mail.gmail.com>
+ <4181375.PmcEfagsvq@yrla>
+Message-ID: <CAMqnA+ii1RiUsSqMuiOpOZDaL+KCp7hk5jMbB6NPj50v+EQsMg@mail.gmail.com>
+
+Yep, it basically maneges and integrates the appimage with the expected
+desktop behavior.
+It makes checksum, changes permission to executable, moves it to an
+appimage dedicated directory, adds it to the app menu and auto detects the
+correct icon to add into the taskbar. Therefore, every secondary window is
+added in the same icon in the taskbar with a number indicator, at least on
+Cinnamon (desktop environment) but my guess is that it works at least on
+Gnome and KDE. I know it all can be done manually using different GUIs, but
+I still find this useful when dealing with "installation" of Appimages.
+Thank you for all your work, it is a nice plug-in (especially when testing
+new versions). I'll make that distinction, "stable" vs. "development".
+Regards
+Alfonso
+
+
+El mié, 9 oct 2024 a la(s) 2:46 a.m., meik michalke (
+meik.michalke at uni-duesseldorf.de) escribió:
+
+> hi,
+>
+> Am Mittwoch, 9. Oktober 2024, 05:47:55 CEST schrieb DES Alfonso Cano
+> Robles:
+> > For what it is worth, here is a presentation of
+> >
+> > > "RKWard Appimage Install with Gear lever (Flatpak) a Linux Mint
+> example"
+> >
+> >
+> https://docs.google.com/presentation/d/1j9osgN7OUmVPcARyyJBd1FNoevzBB42YR2VS
+> > eP0QDbw/edit?usp=sharing
+>
+> what does the flatpak package actually do here? add an icon to the task
+> bar?
+>
+> other than that, the instructions seem to rely on the AppImage as well.
+> Nice
+> to see my updater plugin was discovered, though :D but i think i needs to
+> add
+> it another selection option "stable" vs. "development", because currently
+> it
+> only autodetects the latest daily build. that might be surprising to most
+> users, so i probably wouldn't recommend that to the general audience at
+> the
+> moment.
+>
+>
+> viele grüße :: m.eik
+>
+> --
+>   dipl. psych. meik michalke
+>   institut f"ur experimentelle psychologie
+>   abt. f"ur diagnostik und differentielle psychologie
+>   heinrich-heine-universit"at 40204 d"usseldorf
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20241009/3745d2c6/attachment.htm>
+

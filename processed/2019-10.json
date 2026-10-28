@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2019-10",
+  "messages": [
+    {
+      "id": "msg-c7288b88ded4",
+      "message_id": "<AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>",
+      "from_name": "DELALIEU  Alexandre",
+      "from_email_hash": "cd29ec8bcf9a0e392cf1316e1d443a21165364c5393964b88699d8194c863268",
+      "date": "2019-10-11T14:12:03Z",
+      "subject": "How to change the language of the RKWard GUI under Windows 10 ?",
+      "subject_clean": "How to change the language of the RKWard GUI under Windows 10 ?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello,\n\nI installed RKWard 0.7.0b on Windows 10.\n\nThe RKWard GUI is displayed in the default language of my operating system.\n\nIs there a way to change it and to specify another language ?\n\nThank you in advance\nAlex\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191011/15e019fe/attachment.html>",
+      "body_snippet": "Hello,\n\nI installed RKWard 0.7.0b on Windows 10.\n\nThe RKWard GUI is displayed in the default language of my operating system.\n\nIs there a way to change it and to specify another language ?\n\nThank you ",
+      "thread_id": "thread-c7288b88ded4",
+      "thread_depth": 0,
+      "month": "2019-10"
+    },
+    {
+      "id": "msg-a12a373d1a44",
+      "message_id": "<20191013091405.24f0b255@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2019-10-13T07:14:05Z",
+      "subject": "How to change the language of the RKWard GUI under Windows 10 ?",
+      "subject_clean": "How to change the language of the RKWard GUI under Windows 10 ?",
+      "in_reply_to": "<AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>",
+      "references": [
+        "<AM0P190MB0769243B5E1415B4A54E7191F3970@AM0P190MB0769.EURP190.PROD.OUTLOOK.COM>"
+      ],
+      "body_plain": "Hi,\n\nOn Fri, 11 Oct 2019 14:12:03 +0000\n\"DELALIEU  Alexandre\" <Alexandre.Delalieu at ulb.be> wrote:\n> I installed RKWard 0.7.0b on Windows 10.\n> \n> The RKWard GUI is displayed in the default language of my operating\n> system.\n> \n> Is there a way to change it and to specify another language ?\n\nIn a command shell, run\n  set LANG=DE\nthen\n  (PATH\\TO\\)rkward\n\nWhere you'll replace \"DE\" with your language, of course, or \"C\" for no\ntranslation (English).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20191013/92139de5/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Fri, 11 Oct 2019 14:12:03 +0000\n\"DELALIEU  Alexandre\" <Alexandre.Delalieu at ulb.be> wrote:\n> I installed RKWard 0.7.0b on Windows 10.\n> \n> The RKWard GUI is displayed in the default language ",
+      "thread_id": "thread-c7288b88ded4",
+      "thread_depth": 1,
+      "month": "2019-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c7288b88ded4",
+      "subject": "How to change the language of the RKWard GUI under Windows 10 ?",
+      "message_count": 2,
+      "participants": [
+        "DELALIEU  Alexandre",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2019-10-11T14:12:03Z",
+      "last_reply": "2019-10-13T07:14:05Z",
+      "root_message_id": "msg-c7288b88ded4"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2022-02",
+  "messages": [
+    {
+      "id": "msg-42c4fc61fb83",
+      "message_id": "<8844125.GMFoALFxkl@tilia>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2022-02-05T18:52:17Z",
+      "subject": "[rkward-users] 'rk.show.question' is deprecated.",
+      "subject_clean": "[rkward-users] 'rk.show.question' is deprecated.",
+      "in_reply_to": "<4982409.TVDpdRerln@veles>",
+      "references": [
+        "<2154560.aLCPS8EEhN@tilia>",
+        "<20220124194000.7d8f24fe@booklife>",
+        "<4982409.TVDpdRerln@veles>"
+      ],
+      "body_plain": "Hello,\nsorry for late reply. I compiled Git snapshot (I kept version number) at \n<https://build.opensuse.org/package/show/home:vojtaeus/rkward> and I still get \nthe \"'rk.show.question' is deprecated.\" warning... :-( I hope I haven't done \nanything wrong, I just cloned <https://invent.kde.org/education/rkward>\nFew notes from compilation:\n1) README.translations references for fetching translations usage of \"scripts/\nimport_translations.py\" or \"git://anongit.kde.org/scratch/tfry/rkward-po-\nexport\", but as they are at <https://invent.kde.org/tfry/rkward-po-export>, \nboth ways fail.\n2) openSUSE Rpmlint complains about:\nW: gzipped-svg-icon /usr/share/icons/hicolor/scalable/apps/rkward.svgz\nNot all desktop environments that support SVG icons support them gzipped \n(.svgz). Install the icon as plain uncompressed SVG.\nW: files-duplicate /usr/share/rkward/data/multi_input.js /usr/share/rkward/\ndata/level_select.js (the files are indeed identical)\nI also removed patch <https://build.opensuse.org/package/view_file/\ndevel:languages:R:released/rkward/patch-fix-crash-ggplot2.diff?expand=1> as it \nshould be already unneeded.\n\nDne úterý 25. ledna 2022 18:58:55 CET jste napsal(a):\n> Dne pondělí 24. ledna 2022 19:40:00 CET, Thomas Friedrichsmeier napsal(a):\n> > On Sun, 23 Jan 2022 23:32:20 +0100 wrote:\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220205/e07f8d7a/attachment.sig>",
+      "body_snippet": "Hello,\nsorry for late reply. I compiled Git snapshot (I kept version number) at \n<https://build.opensuse.org/package/show/home:vojtaeus/rkward> and I still get \nthe \"'rk.show.question' is deprecated.\"",
+      "thread_id": "thread-42c4fc61fb83",
+      "thread_depth": 0,
+      "month": "2022-02"
+    },
+    {
+      "id": "msg-69a3e0849084",
+      "message_id": "<9241405.Y5MKg7Ryj6@tilia>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2022-02-05T19:34:49Z",
+      "subject": "[rkward-users] 'rk.show.question' is deprecated.",
+      "subject_clean": "[rkward-users] 'rk.show.question' is deprecated.",
+      "in_reply_to": "<8844125.GMFoALFxkl@tilia>",
+      "references": [
+        "<2154560.aLCPS8EEhN@tilia>",
+        "<4982409.TVDpdRerln@veles>",
+        "<8844125.GMFoALFxkl@tilia>"
+      ],
+      "body_plain": "Dne sobota 5. února 2022 19:52:17 CET jste napsal(a):\n> Hello,\n> sorry for late reply. I compiled Git snapshot (I kept version number) at\n> <https://build.opensuse.org/package/show/home:vojtaeus/rkward> and I still\n> get the \"'rk.show.question' is deprecated.\" warning... :-( I hope I haven't\n> done anything wrong, I just cloned <https://invent.kde.org/education/rkward>\n\nThis was my fault, caching problem in the repository. It's fine, of course.\n\n> Few notes from compilation:\n> 1) README.translations references for fetching translations usage of\n> \"scripts/ import_translations.py\" or\n> \"git://anongit.kde.org/scratch/tfry/rkward-po- export\", but as they\n> are at <https://invent.kde.org/tfry/rkward-po-export>, both ways fail.\n> 2) openSUSE Rpmlint complains about:\n> W: gzipped-svg-icon /usr/share/icons/hicolor/scalable/apps/rkward.svgz\n> Not all desktop environments that support SVG icons support them gzipped\n> (.svgz). Install the icon as plain uncompressed SVG.\n> W: files-duplicate /usr/share/rkward/data/multi_input.js /usr/share/\n> rkward/data/level_select.js (the files are indeed identical)\n> I also removed patch <https://build.opensuse.org/package/view_file/\n> devel:languages:R:released/rkward/patch-fix-crash-ggplot2.diff?expand=1>\n> as it should be already unneeded.\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220205/cb40b8c3/attachment.sig>",
+      "body_snippet": "Dne sobota 5. února 2022 19:52:17 CET jste napsal(a):\n> Hello,\n> sorry for late reply. I compiled Git snapshot (I kept version number) at\n> <https://build.opensuse.org/package/show/home:vojtaeus/rkwar",
+      "thread_id": "thread-42c4fc61fb83",
+      "thread_depth": 1,
+      "month": "2022-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-42c4fc61fb83",
+      "subject": "[rkward-users] 'rk.show.question' is deprecated.",
+      "message_count": 2,
+      "participants": [
+        "Vojtěch Zeisek"
+      ],
+      "started": "2022-02-05T18:52:17Z",
+      "last_reply": "2022-02-05T19:34:49Z",
+      "root_message_id": "msg-42c4fc61fb83"
+    }
+  ]
+}

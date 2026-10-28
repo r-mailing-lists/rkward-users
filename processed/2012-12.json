@@ -1,0 +1,39 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-12",
+  "messages": [
+    {
+      "id": "msg-3df7dff6bc89",
+      "message_id": "<50CE1505.90408@ehime-u.ac.jp>",
+      "from_name": "Rudolf Reinelt",
+      "from_email_hash": "ae97fbf4e22e6860e97aca073c5d29b195aaac19bdfd97c71bb33909cc27349f",
+      "date": "2012-12-16T18:37:57Z",
+      "subject": "[rkward-users] [rkward-devel] ggplot2 error no solution yet",
+      "subject_clean": "[rkward-users] [rkward-devel] ggplot2 error no solution yet",
+      "in_reply_to": "<50CDF13B.5010608@ehime-u.ac.jp>",
+      "references": [
+        "<201212011925.23691.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<50CDF13B.5010608@ehime-u.ac.jp>"
+      ],
+      "body_plain": "(17.12.2012 01:05), Rudolf Reinelt wrote:\n> Hi,\n>\n> It's\n>   install.packages (\"ggplot2\")\n>\n> That did it!!! Thank you very much for this excellent service\n> RR\n>\n> (02.12.2012 03:25), Thomas Friedrichsmeier wrote:\n>> Hi,\n>>\n>> On Saturday 01 December 2012, Rudolf Reinelt wrote:\n>>> try re-installing ggplot2 (either using\n>>> the install.packages() command,\n>>>\n>>> results in\n>>>\n>>>> install.ggplot\n>>> Error: object 'install.ggplot' not found\n>> It's\n>>    install.packages (\"ggplot2\")\n>>\n>>> RKWard using Settings->Manage R\n>>> packages...->Install / Update / Remove)  leads to\n>>>\n>>> Warning: unable to access index for repository \n>>> /bin/windows/contrib/2.15\n>> [...]\n>>\n>> Looks like you're having connectivity problems. Besides generic \n>> advice (check\n>> firewall, proxy settings, try different mirror, ...), in some setups, \n>> you may\n>> have to call\n>>    setInternet2(TRUE)\n>> before accessing the net from R (RKWard 0.6.1 will have a UI option \n>> for this).\n>>\n>> Regards\n>> Thomas\n>",
+      "body_snippet": "(17.12.2012 01:05), Rudolf Reinelt wrote:\n> Hi,\n>\n> It's\n>   install.packages (\"ggplot2\")\n>\n> That did it!!! Thank you very much for this excellent service\n> RR\n>\n> (02.12.2012 03:25), Thomas Friedric",
+      "thread_id": "thread-3df7dff6bc89",
+      "thread_depth": 0,
+      "month": "2012-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-3df7dff6bc89",
+      "subject": "[rkward-users] [rkward-devel] ggplot2 error no solution yet",
+      "message_count": 1,
+      "participants": [
+        "Rudolf Reinelt"
+      ],
+      "started": "2012-12-16T18:37:57Z",
+      "last_reply": "2012-12-16T18:37:57Z",
+      "root_message_id": "msg-3df7dff6bc89"
+    }
+  ]
+}

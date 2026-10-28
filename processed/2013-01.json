@@ -1,0 +1,233 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-01",
+  "messages": [
+    {
+      "id": "msg-82654d04a2ee",
+      "message_id": "<50EFA4CB.5020900@ucsd.edu>",
+      "from_name": "Alex Ruiz E.",
+      "from_email_hash": "b541d8b6693fd5177cbd7224d5693a6549573158d9c5d14622e4fbb478f95eef",
+      "date": "2013-01-11T05:36:11Z",
+      "subject": "[rkward-users] Donate to Rkward",
+      "subject_clean": "[rkward-users] Donate to Rkward",
+      "in_reply_to": "<201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1301534675.2696.11.camel@X>",
+        "<201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi, sorry for bringing up an old thread, but I see that PayPal is still \nthe only way to donate. Have developers considered using Software in the \nPublic Interest, Inc. (www.spi-inc.org) as a donation portal? It also \nacts as fiscal sponsor. I'm unsure whether this is right for a project \nlike Rkward, but I see some individual applications being listed as \nbeneficiaries. I just found out about this project and thought it could \nbe useful.\n\n--Alex\n\nOn 03/31/2011 07:08 AM, Thomas Friedrichsmeier wrote:\n> Hi,\n>\n> On Thursday 31 March 2011, Alex Ruiz Euler wrote:\n>> Is there a way to donate that is not via PayPal? I would love to give\n>> something to the extent that my overstretched grad student paycheck\n>> allows, but I don't want to do it with PP.\n> I can totally understand your reluctance to use PayPal. However, at the\n> moment, it's the only option that our host (sourceforge) supports. Perhaps it\n> will make sense to provide one more option in the future, but in fact, I\n> wouldn't know which one to pick. Any recommendations on a payment service that\n> is\n> - international / cross currency\n> - mostly fair\n> - widely in use?\n>\n>> Also, some friends and I have had some hypothesis about how you\n>> pronounce Rkward. Most of them are pretty weird. For example, one claims\n>> that it is supposed to go with an Australian accent playing on the word\n>> awkward because most of us users are probably, well, awkward.\n> Well, as far as the pronounciation goes, that is the \"correct\" interpretation.\n> But you shouldn't go looking for any deeper meaning. When I first registered\n> the project, way back then, I simply did not spend a whole lot of time\n> thinking about a good name. I stuck to the constraint that the name should\n> contain the letters R and K. \"Ark\" and \"Kross\" were taken, already, and I\n> didn't think much beyond that. So that's how RKWard ended up with its awkward\n> name. I guess it's not the name that I would pick today, but I still sort of\n> like the self-referential aspect of it...\n>\n>> Another\n>> has the incredible hypothesis that you actually pronounce it Rkward, but\n>> that is really awkward too. So... how to pronounce it?\n> Actually, that pronounciation is totally fine with me, as well. Whatever you\n> feel is least (or most) awkward.\n>\n> Regards\n> Thomas\n>\n>\n> ------------------------------------------------------------------------------\n> Create and publish websites with WebMatrix\n> Use the most popular FREE web apps or write code yourself;\n> WebMatrix provides all the features you need to develop and\n> publish your website. http://p.sf.net/sfu/ms-webmatrix-sf\n>\n>\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130110/c0e6368c/attachment.html>",
+      "body_snippet": "Hi, sorry for bringing up an old thread, but I see that PayPal is still \nthe only way to donate. Have developers considered using Software in the \nPublic Interest, Inc. (www.spi-inc.org) as a donation",
+      "thread_id": "thread-82654d04a2ee",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-b8a73aed4abb",
+      "message_id": "<201301111017.33892.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-01-11T09:17:29Z",
+      "subject": "[rkward-users] Donate to Rkward",
+      "subject_clean": "[rkward-users] Donate to Rkward",
+      "in_reply_to": "<50EFA4CB.5020900@ucsd.edu>",
+      "references": [
+        "<1301534675.2696.11.camel@X>",
+        "<201103311608.38760.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<50EFA4CB.5020900@ucsd.edu>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 11 January 2013, Alex Ruiz E. wrote:\n> Hi, sorry for bringing up an old thread, but I see that PayPal is still\n> the only way to donate. Have developers considered using Software in the\n> Public Interest, Inc. (www.spi-inc.org) as a donation portal? It also\n> acts as fiscal sponsor. I'm unsure whether this is right for a project\n> like Rkward, but I see some individual applications being listed as\n> beneficiaries. I just found out about this project and thought it could\n> be useful.\n\nactually, since a few days, flattr (www.flattr.com) is a second option for \ndonating to RKWard. Admittedly, you'd need true eagle eyes to see this: So \nfar, there's just a tiny button below the left-hand navigation menu on our \nwiki pages.\n\nSPI looks like it requires substantial bureaucratic effort. More than I'd be \nwilling to put in, ATM, consider the level of donations that seems realistic \nto expect. I have it on my list to read up on pledgie (pledgie.com). (Their \nFAQ seems to say, only the receiving side needs a paypal account, but I did \nnot find any real info on their payment options, yet).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130111/1d9451c0/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 11 January 2013, Alex Ruiz E. wrote:\n> Hi, sorry for bringing up an old thread, but I see that PayPal is still\n> the only way to donate. Have developers considered using Software in the",
+      "thread_id": "thread-82654d04a2ee",
+      "thread_depth": 1,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-1827ef3dbb23",
+      "message_id": "<201301151214.53683.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-01-15T11:14:49Z",
+      "subject": "[rkward-users] [rkward-announce] SVN repository URL has changed",
+      "subject_clean": "[rkward-users] [rkward-announce] SVN repository URL has changed",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nThe URL of the RKWard SVN repository has changed. Those tracking SVN, please \nrefer to http://sourceforge.net/p/rkward/code/ for the new URL(s).\n\nIn general, the safest thing to do is to check out a fresh working copy. \nHowever, esp. if you have any local changes in your working copy, you can also \n\"switch\" your working copy to the new location. To do so, run\n   svn info\nNote the given URL. Copy the new url from the above web page, then run\n   svn switch --relocate old_url new_url\n\nIn case of problems, just ask.\n\nNote that it may take us a while to update links to the SVN repository, \neverywhere applicable. However, if you happen to come across any references to \nthe previous location \n(http(s)://rkward.svn.sourceforge.net/svnroot/rkward/trunk/) after the end of \nthe week, please let us know.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130115/0a087109/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nMaster SQL Server Development, Administration, T-SQL, SSAS, SSIS, SSRS\nand more. Get SQL Server skills now (including 2012) with LearnDevNow -\n200+ hours of step-by-step video tutorials by Microsoft MVPs and experts.\nSALE $99.99 this month only - learn more at:\nhttp://p.sf.net/sfu/learnmore_122512\n-------------- next part --------------\n_______________________________________________\nrkward-announce mailing list\nrkward-announce at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-announce",
+      "body_snippet": "Hi!\n\nThe URL of the RKWard SVN repository has changed. Those tracking SVN, please \nrefer to http://sourceforge.net/p/rkward/code/ for the new URL(s).\n\nIn general, the safest thing to do is to check ou",
+      "thread_id": "thread-1827ef3dbb23",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-3177d5e09caa",
+      "message_id": "<7509832.900Zb6RbKl@chiana>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2013-01-16T14:38:45Z",
+      "subject": "[rkward-users] svn update: important for MacPorts users",
+      "subject_clean": "[rkward-users] svn update: important for MacPorts users",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nfor those of you who are *building* RKWard with MacPorts, please make sure you \nare using an up-to-date portfile. all others: please ignore this e-mail.\n\nthe old portfiles will fail soon, as they refer to the now outdated svn \nrepository. the latest development portfile can be found here:\n http://svn.code.sf.net/p/rkward/code/trunk/rkward/macports/kde/rkward/Portfile\n\nif you want to build the stable 0.6.0 release, use this one instead:\n http://svn.code.sf.net/p/rkward/code/trunk/rkward/macports/kde/rkward/Portfile.release\nand remove the \".release\" suffix.\n\nthe wiki has been updated accordingly:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Mac#Installing_from_source_using_MacPorts\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: smime.p7s\nType: application/pkcs7-signature\nSize: 4139 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130116/0d2499cd/attachment.p7s>",
+      "body_snippet": "hi,\n\nfor those of you who are *building* RKWard with MacPorts, please make sure you \nare using an up-to-date portfile. all others: please ignore this e-mail.\n\nthe old portfiles will fail soon, as they",
+      "thread_id": "thread-3177d5e09caa",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-08f035bd3984",
+      "message_id": "<trinity-2faf9682-0887-4ddf-b7c6-379e40c4dc5b-1359538534236@3capp-webde-bs44>",
+      "from_name": "NoSkill ButStyle",
+      "from_email_hash": "e003651a2b6a270a16059eaf00dc6a713d81a3725b2230193a5fdcdda2662d5f",
+      "date": "2013-01-30T09:35:34Z",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "subject_clean": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI downloaded the latest update today, and now the R syntax highlightning looks different. For example, functions are not bold anymore, as well as Text after ##.\n\nIs there a way to switch back to the old look? I tried to edit Settings -> Configure Editor -> Fonts & Colors -> Highlightning Text Styles -> Scripts/R-Script, but there still the \"old\" styles are shown which do not correspond to what the editor highlights. Furthermore, there I cannot change any options, e.g. I cannot uncheck or check boxes.\n\nThanks in advance,\nPeter",
+      "body_snippet": "Hi,\n\nI downloaded the latest update today, and now the R syntax highlightning looks different. For example, functions are not bold anymore, as well as Text after ##.\n\nIs there a way to switch back to ",
+      "thread_id": "thread-08f035bd3984",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-635fe7012ffe",
+      "message_id": "<201301301316.51185.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-01-30T12:16:46Z",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "subject_clean": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "in_reply_to": "<trinity-2faf9682-0887-4ddf-b7c6-379e40c4dc5b-1359538534236@3capp-webde-bs44>",
+      "references": [
+        "<trinity-2faf9682-0887-4ddf-b7c6-379e40c4dc5b-1359538534236@3capp-webde-bs44>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 30 January 2013, NoSkill ButStyle wrote:\n> I downloaded the latest update today, and now the R syntax highlightning\n> looks different. For example, functions are not bold anymore, as well as\n> Text after ##.\n> \n> Is there a way to switch back to the old look? I tried to edit Settings ->\n> Configure Editor -> Fonts & Colors -> Highlightning Text Styles ->\n> Scripts/R-Script, but there still the \"old\" styles are shown which do not\n> correspond to what the editor highlights. Furthermore, there I cannot\n> change any options, e.g. I cannot uncheck or check boxes.\n\nnothing has changed in RKWard 0.6.0 with respect to highlighting. The problem \nmust be related to a change in some other package, e.g. in kdelibs. Could you \nprovide details on your distribution (some flavor of Ubuntu, IIRC?) and \ninstalled version of KDE?\n\nThe settings page you are looking at is the correct one, indeed. Here, these \nsettings correspond to what I'm seeing, and I can change options, successfully \n(some of the check boxes seem to need more than one click to react, though).\n\nDo you get any highlighting at all? Could it be you switched to a different \nhighlighting mode, somehow (Edit->Tools Move->Highlighting, for the active \nscript, or Settings->Configure Editor->Open/Save->Modes & Filetypes for the \ndefault highlighting mode)?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130130/e9c00ca3/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 30 January 2013, NoSkill ButStyle wrote:\n> I downloaded the latest update today, and now the R syntax highlightning\n> looks different. For example, functions are not bold anymore, as",
+      "thread_id": "thread-08f035bd3984",
+      "thread_depth": 1,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-3e62a28e6e1d",
+      "message_id": "<trinity-8cb29aa8-6a0b-458c-bba1-236839bf1e6f-1359553415902@3capp-webde-bs06>",
+      "from_name": "NoSkill ButStyle",
+      "from_email_hash": "e003651a2b6a270a16059eaf00dc6a713d81a3725b2230193a5fdcdda2662d5f",
+      "date": "2013-01-30T13:43:35Z",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "subject_clean": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nthanks for the swift repsonse! Sorry that I failed to provide more information.\n\nI am using Ubuntu 12.04 64Bit. kdelibs are the following versions:\n\nkdelibs-bin 4:4.8.5-0ubuntu0.1\nkdelibs5-plugins 4:4.8.5-0ubuntu0.1\nkatepart 4:4.8.5-0ubuntu0.1\nlibkdeui5 4:4.8.5-0ubuntu0.1\n\n\nThere are some more kde-related things, so I am not sure if the right one is among those. You were correct, some KDE-Packages were updated along with RKward today, these are listed here:\nhttp://www.abload.de/img/updatedf4syz.png\n\nI checked the highlightening modes as you described, but they seem to be correct.\n\nI get some kind of highlightning, which looks like this: http://www.abload.de/img/ulhoswj.png\n\nThanks,\nPeter",
+      "body_snippet": "Hi,\n\nthanks for the swift repsonse! Sorry that I failed to provide more information.\n\nI am using Ubuntu 12.04 64Bit. kdelibs are the following versions:\n\nkdelibs-bin 4:4.8.5-0ubuntu0.1\nkdelibs5-plugin",
+      "thread_id": "thread-3e62a28e6e1d",
+      "thread_depth": 0,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-bcbc34b3f29c",
+      "message_id": "<201301301626.39299.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-01-30T15:26:34Z",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "subject_clean": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "in_reply_to": "<trinity-8cb29aa8-6a0b-458c-bba1-236839bf1e6f-1359553415902@3capp-webde-bs06>",
+      "references": [
+        "<trinity-8cb29aa8-6a0b-458c-bba1-236839bf1e6f-1359553415902@3capp-webde-bs06>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 30 January 2013, NoSkill ButStyle wrote:\n> I checked the highlightening modes as you described, but they seem to be\n> correct.\n> \n> I get some kind of highlightning, which looks like this:\n> http://www.abload.de/img/ulhoswj.png\n\nthis looks like R highlighting, indeed. AFAICS, it's just the bold font \nweights that are missing. Perhaps this is the core of the problem, really. \nPossibly this is related to the font / font system in use?\n\nSome things to try:\n- Try adjusting some other attribute (e.g. color). Does this show an effect \n(function names use the \"Keyword\" attribute, ## comments use \"Headline\").\n- Open an R script in kwrite or kate. Does this show the correct styles? Are \nthe styles adjustable, here?\n- Try selecting a different font at Settings->Configure Editor->Fonts & \nColors>Font. Does this help?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130130/54b06b72/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 30 January 2013, NoSkill ButStyle wrote:\n> I checked the highlightening modes as you described, but they seem to be\n> correct.\n> \n> I get some kind of highlightning, which looks like",
+      "thread_id": "thread-3e62a28e6e1d",
+      "thread_depth": 1,
+      "month": "2013-01"
+    },
+    {
+      "id": "msg-d639f3dd0468",
+      "message_id": "<trinity-ea0ad2d5-3a12-4761-a2f5-a0f5ad38a805-1359561429639@3capp-webde-bs48>",
+      "from_name": "NoSkill ButStyle",
+      "from_email_hash": "e003651a2b6a270a16059eaf00dc6a713d81a3725b2230193a5fdcdda2662d5f",
+      "date": "2013-01-30T15:57:09Z",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "subject_clean": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Changing the font from \"Monospace\" to others (e.g. DejaVu Sans Mono looks similar enough) worked for me, thanks!",
+      "body_snippet": "Changing the font from \"Monospace\" to others (e.g. DejaVu Sans Mono looks similar enough) worked for me, thanks!",
+      "thread_id": "thread-d639f3dd0468",
+      "thread_depth": 0,
+      "month": "2013-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-82654d04a2ee",
+      "subject": "[rkward-users] Donate to Rkward",
+      "message_count": 2,
+      "participants": [
+        "Alex Ruiz E.",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-01-11T05:36:11Z",
+      "last_reply": "2013-01-11T09:17:29Z",
+      "root_message_id": "msg-82654d04a2ee"
+    },
+    {
+      "id": "thread-1827ef3dbb23",
+      "subject": "[rkward-users] [rkward-announce] SVN repository URL has changed",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-01-15T11:14:49Z",
+      "last_reply": "2013-01-15T11:14:49Z",
+      "root_message_id": "msg-1827ef3dbb23"
+    },
+    {
+      "id": "thread-3177d5e09caa",
+      "subject": "[rkward-users] svn update: important for MacPorts users",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2013-01-16T14:38:45Z",
+      "last_reply": "2013-01-16T14:38:45Z",
+      "root_message_id": "msg-3177d5e09caa"
+    },
+    {
+      "id": "thread-08f035bd3984",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "message_count": 2,
+      "participants": [
+        "NoSkill ButStyle",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-01-30T09:35:34Z",
+      "last_reply": "2013-01-30T12:16:46Z",
+      "root_message_id": "msg-08f035bd3984"
+    },
+    {
+      "id": "thread-3e62a28e6e1d",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "message_count": 2,
+      "participants": [
+        "NoSkill ButStyle",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-01-30T13:43:35Z",
+      "last_reply": "2013-01-30T15:26:34Z",
+      "root_message_id": "msg-3e62a28e6e1d"
+    },
+    {
+      "id": "thread-d639f3dd0468",
+      "subject": "[rkward-users] Resore old syntax highlightning in RKward 0.6.0",
+      "message_count": 1,
+      "participants": [
+        "NoSkill ButStyle"
+      ],
+      "started": "2013-01-30T15:57:09Z",
+      "last_reply": "2013-01-30T15:57:09Z",
+      "root_message_id": "msg-d639f3dd0468"
+    }
+  ]
+}

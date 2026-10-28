@@ -1,0 +1,145 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2016-02",
+  "messages": [
+    {
+      "id": "msg-73a194b56553",
+      "message_id": "</p/rkward/discussion/165574/e700de415fc5141c77b3c9ea23303f1b114d19f5.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Leszek Pawlowicz",
+      "from_email_hash": "6f7b155eb9b3a0e54343fc07f4018f9e2869f5a8ced53678995c3792cf8d2536",
+      "date": "2016-02-14T20:36:46Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "I'm trying to get RKWard working with Microsoft R Open (installed on Windows 10, R version 3.2.3). For this, I installed KDE and RKWard independently, and specified the directory that contains R, Microsoft R open in this case. If I double-click on the program icon created by installation, it tells me that it can't locate rkward.bat, and sure enough it's not in the install directory (C:\\ProgramData\\KDE\\bin). RKWard.exe is there, and if I double click on that, it seems to start up RKWard successfully, but I can't seem to load any data. However, I also get a KDE Crash Handler warning telling me that RKWard closed unexpectedly, with error \"Executable: RKWARD~1.EXE PID: 6928 Signal: Unknown (0x 0)\". Any thoughts on what the problem might be?\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thread/6eaabce1/?limit=25#a41c)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160214/f3e29ccd/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSite24x7 APM Insight: Get Deep Visibility into Application Performance\nAPM + Mobile APM + RUM: Monitor 3 App instances at just $35/Month\nMonitor end-to-end web transactions and take corrective actions now\nTroubleshoot faster and improve end-user experience. Signup Now!\nhttp://pubads.g.doubleclick.net/gampad/clk?id=272487151&iu=/4140\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "I'm trying to get RKWard working with Microsoft R Open (installed on Windows 10, R version 3.2.3). For this, I installed KDE and RKWard independently, and specified the directory that contains R, Micr",
+      "thread_id": "thread-73a194b56553",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-e869af3959c9",
+      "message_id": "</p/rkward/discussion/165574/ca7ed75d2083be1ab0fddcdd510f7b8c60dea8b9.discussion@rkward.p.sourceforge.net>",
+      "from_name": "m.eik",
+      "from_email_hash": "4bcbe7ea11270607cbba98865d602aff5a2dd09b8d323870bd5ed9d5bb3622b7",
+      "date": "2016-02-14T21:06:44Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "hi laszek,\nthe RKWard project moved to https://rkward.kde.org a while ago, it would help us if you opened a ticket in the KDE bug tracking system instead, see https://rkward.kde.org/Bugs for details on this.\nwhen you do, please also add the the version number of RKWard you are trying this with, as the RKWard installation needs to support the version of R you want to use it with. a crashing RKWard sounds like a mismatch here. R 3.2.3 should run with RKWard 0.6.4.\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thread/6eaabce1/?limit=25#5297)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160214/0785edf8/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSite24x7 APM Insight: Get Deep Visibility into Application Performance\nAPM + Mobile APM + RUM: Monitor 3 App instances at just $35/Month\nMonitor end-to-end web transactions and take corrective actions now\nTroubleshoot faster and improve end-user experience. Signup Now!\nhttp://pubads.g.doubleclick.net/gampad/clk?id=272487151&iu=/4140\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "hi laszek,\nthe RKWard project moved to https://rkward.kde.org a while ago, it would help us if you opened a ticket in the KDE bug tracking system instead, see https://rkward.kde.org/Bugs for details o",
+      "thread_id": "thread-e869af3959c9",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-9dbb74eaf81f",
+      "message_id": "</p/rkward/discussion/165574/5b593acfeb526c8dcec39f4797811aeb228ea308.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Leszek Pawlowicz",
+      "from_email_hash": "6f7b155eb9b3a0e54343fc07f4018f9e2869f5a8ced53678995c3792cf8d2536",
+      "date": "2016-02-14T21:08:40Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "So I stepped back, and installed the standard version of RKWard (including the KDE and R installations), in the hope that I could get that to work first, then try to get it to work with Microsoft R Open. And it does install (again, Windows 10 64-bit) , will run, and calculates stats successfully; however, if I try to create any graphics (e.g. plots), I get a \"red circle with a slash in it\" icon, which I assume means that either the PNG graphic was not created successfully, or RKWard can't find it to load it into the window. KDE problem?\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thread/6eaabce1/?limit=25#ebd4)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160214/ebd317ff/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSite24x7 APM Insight: Get Deep Visibility into Application Performance\nAPM + Mobile APM + RUM: Monitor 3 App instances at just $35/Month\nMonitor end-to-end web transactions and take corrective actions now\nTroubleshoot faster and improve end-user experience. Signup Now!\nhttp://pubads.g.doubleclick.net/gampad/clk?id=272487151&iu=/4140\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "So I stepped back, and installed the standard version of RKWard (including the KDE and R installations), in the hope that I could get that to work first, then try to get it to work with Microsoft R Op",
+      "thread_id": "thread-9dbb74eaf81f",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-beac1ef8539c",
+      "message_id": "</p/rkward/discussion/165574/f387bf40b71333d078009e30c564851f3141ea10.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Leszek Pawlowicz",
+      "from_email_hash": "6f7b155eb9b3a0e54343fc07f4018f9e2869f5a8ced53678995c3792cf8d2536",
+      "date": "2016-02-14T21:09:34Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "in_reply_to": "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Sorry - your message came up as I was typing this one. I will resubmit both on the KDE bug tracking system.\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thread/6eaabce1/?limit=25#8e2e)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160214/0b3b110e/attachment.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSite24x7 APM Insight: Get Deep Visibility into Application Performance\nAPM + Mobile APM + RUM: Monitor 3 App instances at just $35/Month\nMonitor end-to-end web transactions and take corrective actions now\nTroubleshoot faster and improve end-user experience. Signup Now!\nhttp://pubads.g.doubleclick.net/gampad/clk?id=272487151&iu=/4140\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Sorry - your message came up as I was typing this one. I will resubmit both on the KDE bug tracking system.\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thr",
+      "thread_id": "thread-beac1ef8539c",
+      "thread_depth": 0,
+      "month": "2016-02"
+    },
+    {
+      "id": "msg-c9b765fab0fe",
+      "message_id": "</p/rkward/discussion/165574/817d6a68d4220955492e46f09dc3e0f0b9efddf7.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2016-02-14T21:16:40Z",
+      "subject": "[rkward-users] [rkward:discussion] Re: RKWard with Microsoft R Open",
+      "subject_clean": "[rkward-users] [rkward:discussion] Re: RKWard with Microsoft R Open",
+      "in_reply_to": "</p/rkward/discussion/165574/5b593acfeb526c8dcec39f4797811aeb228ea308.discussion@rkward.p.sourceforge.net>",
+      "references": [
+        "<50f52f6934309d12e68e1646.discussion@rkward.p.sourceforge.net>",
+        "</p/rkward/discussion/165574/5b593acfeb526c8dcec39f4797811aeb228ea308.discussion@rkward.p.sourceforge.net>"
+      ],
+      "body_plain": "Hi!\n\n> ... or RKWard can't find it to load it into the window. KDE problem?\n\nSimilar problems often occur when parts of an old installation are still running. Rebooting will usually fix this.\n\n\n---\n\n[RKWard with Microsoft R Open](https://sourceforge.net/p/rkward/discussion/165574/thread/6eaabce1/?limit=25#ebd4/ea04)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20160214/ce124687/attachment-0001.html>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSite24x7 APM Insight: Get Deep Visibility into Application Performance\nAPM + Mobile APM + RUM: Monitor 3 App instances at just $35/Month\nMonitor end-to-end web transactions and take corrective actions now\nTroubleshoot faster and improve end-user experience. Signup Now!\nhttp://pubads.g.doubleclick.net/gampad/clk?id=272487151&iu=/4140\n-------------- next part --------------\n_______________________________________________\nRKWard-users mailing list\nRKWard-users at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-users",
+      "body_snippet": "Hi!\n\n> ... or RKWard can't find it to load it into the window. KDE problem?\n\nSimilar problems often occur when parts of an old installation are still running. Rebooting will usually fix this.\n\n\n---\n\n[",
+      "thread_id": "thread-9dbb74eaf81f",
+      "thread_depth": 1,
+      "month": "2016-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-73a194b56553",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "message_count": 1,
+      "participants": [
+        "Leszek Pawlowicz"
+      ],
+      "started": "2016-02-14T20:36:46Z",
+      "last_reply": "2016-02-14T20:36:46Z",
+      "root_message_id": "msg-73a194b56553"
+    },
+    {
+      "id": "thread-e869af3959c9",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "message_count": 1,
+      "participants": [
+        "m.eik"
+      ],
+      "started": "2016-02-14T21:06:44Z",
+      "last_reply": "2016-02-14T21:06:44Z",
+      "root_message_id": "msg-e869af3959c9"
+    },
+    {
+      "id": "thread-9dbb74eaf81f",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "message_count": 2,
+      "participants": [
+        "Leszek Pawlowicz",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2016-02-14T21:08:40Z",
+      "last_reply": "2016-02-14T21:16:40Z",
+      "root_message_id": "msg-9dbb74eaf81f"
+    },
+    {
+      "id": "thread-beac1ef8539c",
+      "subject": "[rkward-users] [rkward:discussion] RKWard with Microsoft R Open",
+      "message_count": 1,
+      "participants": [
+        "Leszek Pawlowicz"
+      ],
+      "started": "2016-02-14T21:09:34Z",
+      "last_reply": "2016-02-14T21:09:34Z",
+      "root_message_id": "msg-beac1ef8539c"
+    }
+  ]
+}

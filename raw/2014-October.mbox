@@ -1,0 +1,77 @@
+From meik.michalke at uni-duesseldorf.de  Sun Oct  5 10:24:01 2014
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sun, 05 Oct 2014 12:24:01 +0200
+Subject: [rkward-users] please test: new plugin for power analysis
+Message-ID: <2868216.XnjrzQIJvH@yrla>
+
+hi,
+
+here's a new RKWard plugin for you to have a look at: rk.power
+
+screenshot:
+ http://reaktanz.de/stuff/R/screenshot_RKWard_power.png
+in our repo:
+ http://rkward.sourceforge.net/R/pckg/rk.power/index.html
+
+if you're using the repo's debian packages, you can get it via
+
+  sudo aptitude install r-other-rkward-rk.power
+
+it uses the pwr package for calculation, so r-cran-pwr is a good addition, if 
+you find it in your repositories.
+
+this is version 0.01-1, so please send me your bug reports and desired 
+features for future releases ;-)
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141005/e842952d/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Oct 20 18:22:09 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 20 Oct 2014 20:22:09 +0200
+Subject: [rkward-users] [rkward-announce] RKWard 0.6.2 is released
+Message-ID: <3119401.mWICZmykyM@late>
+
+Hi!
+
+This is to let you know that RKWard 0.6.2 is now available, officially. Read 
+more on new features and fixes on http://rkward.sf.net .
+
+Thanks to all who provided feedback, testing, translations, documentation, 
+donations, and code!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141020/748814a6/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Comprehensive Server Monitoring with Site24x7.
+Monitor 10 servers for $9/Month.
+Get alerted through email, SMS, voice calls or mobile push notifications.
+Take corrective actions from your mobile device.
+http://p.sf.net/sfu/Zoho
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+

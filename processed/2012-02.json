@@ -1,0 +1,106 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-02",
+  "messages": [
+    {
+      "id": "msg-d9b8df8e6fa6",
+      "message_id": "<forum-165574-11118915@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-02-02T15:53:50Z",
+      "subject": "[rkward-users] [Help] RE: Use R console on a via SSH con. Remote PC",
+      "subject_clean": "[rkward-users] [Help] RE: Use R console on a via SSH con. Remote PC",
+      "in_reply_to": "<forum-165574-11109370@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:\n\nHi!\n\nThis is not currently possible, but we do intend to support this, eventually.\nHowever this does mean a good bit of development effort, and we're always short\non time. Thus, please don't hold your breath.\n\nAs an interim solution, you may want to consider running RKWard on the remote\nserver, using a VNC or remote X11 connection tunnelled through SSH.\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4985957:\n\nHi!\n\nThis is not currently possible, but we do intend to support this, even",
+      "thread_id": "thread-d9b8df8e6fa6",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-1a697beb5a36",
+      "message_id": "<forum-165573-11217082@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-02-27T13:56:10Z",
+      "subject": "[rkward-users] [Open Discussion] Error on Startup",
+      "subject_clean": "[rkward-users] [Open Discussion] Error on Startup",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by stimpy-ch at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:\n\nHi,\n\nI have installed rkward from Ubuntu repository. \nMy specs:\nOS: Kubuntu 11.10, 64bit\nR: v2.14.1\nrkward: 0.5.6\n\nWhen I run rkward an error message comes up reporting about a communication\nproblem with R. Later it says this error is not further specified.\n\nIn details you can see\n[i]R version 2.14.1 (2011-12-22)\nCopyright (C) 2011 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\nPlatform: x86_64-pc-linux-gnu (64-bit)\n\nR ist freie Software und kommt OHNE JEGLICHE GARANTIE.\nSie sind eingeladen, es unter bestimmten Bedingungen weiter zu verbreiten.\nTippen Sie 'license()' or 'licence()' f?r Details dazu.\n\nR ist ein Gemeinschaftsprojekt mit vielen Beitragenden.\nTippen Sie 'contributors()' f?r mehr Information und 'citation()',\num zu erfahren, wie R oder R packages in Publikationen zitiert werden k?nnen.\n\nTippen Sie 'demo()' f?r einige Demos, 'help()' f?r on-line Hilfe, oder\n'help.start()' f?r eine HTML Browserschnittstelle zur Hilfe.\nTippen Sie 'q()', um R zu verlassen.\n\n\n[b]Attache Paket: ?rkward?\n\nThe following object(s) are masked from ?package:grDevices?:\n\nx11, X11\n\nThe following object(s) are masked from ?package:base?:\n\nmakeActiveBinding, q, quit, require, setwd, Sys.setlocale\n\nFehler in assign(backupname, original, envir = as.environment(\"package:rkward\"))\n:\nkann keine Bindungen zu einer abgeschlossenen Umgebung hinzuf?gen\nCalls: .rk.fix.assignments -> rk.replace.function -> assign\nstarting httpd help server ... done\nFehler in assign(\".rk.output.html.file\", x, as.environment(\"package:rkward\"))\n:\nkann den Wert einer festgestellten Bindung f?r '.rk.output.html.file' nicht\n?ndern\nCalls: rk.set.output.html.file -> assign[/b][/i]\n\nIf I try to run a script file like downloading sme file (file <- \"http://.....\n) im getting a message like (freely translated)\nError in .rk.set.reply(NULL) : \n  unable to change value of a given bounding for '.rk.rkreply' \nCalls: <Anonymous> -> .rk.do.call -> .rk.set.reply\n\nWhat is there going wrong?\n\nKing regards \nstimpy-ch",
+      "body_snippet": "The following forum message was posted by stimpy-ch at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:\n\nHi,\n\nI have installed rkward from Ubuntu repository. \nMy specs:\nOS: Ku",
+      "thread_id": "thread-1a697beb5a36",
+      "thread_depth": 0,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-e1fa4d94d3be",
+      "message_id": "<forum-165573-11221043@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2012-02-28T13:19:49Z",
+      "subject": "[rkward-users] [Open Discussion] RE: Error on Startup",
+      "subject_clean": "[rkward-users] [Open Discussion] RE: Error on Startup",
+      "in_reply_to": "<forum-165573-11217082@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:\n\nHi!\n\nYou are using R from CRAN or from a PPA. Often this will work with the version\nof RKWard in the main Ubuntu archive. In the case of R 2.14.x it does not. Please\ninstall rkward (version 0.5.7) from this PPA, instead:\n[url]https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran[/url] .\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165573/topic/5071200:\n\nHi!\n\nYou are using R from CRAN or from a PPA. Often this will work with the",
+      "thread_id": "thread-1a697beb5a36",
+      "thread_depth": 1,
+      "month": "2012-02"
+    },
+    {
+      "id": "msg-af3d3b330a0a",
+      "message_id": "<1330457506.47711.YahooMailNeo@web114613.mail.gq1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2012-02-28T19:31:46Z",
+      "subject": "[rkward-users] Error when trying to load an .R file in clicking on it",
+      "subject_clean": "[rkward-users] Error when trying to load an .R file in clicking on it",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\nI'd like to be able to load a script file directly when I clic on it but the following error message appears :\n?\nError loading workspace - RKWard\nThere has been an error opening file\n?'J:/dossiers/Francois/Cours/COURS.E10/SOL6021/Programmation/R/Analyse.R':\n?\nIs there a way to do that ?\n?\nThanks,\n\nFran?ois Maurice, B. Sc., A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120228/0d972d9f/attachment.html>",
+      "body_snippet": "Hi,\n?\nI'd like to be able to load a script file directly when I clic on it but the following error message appears :\n?\nError loading workspace - RKWard\nThere has been an error opening file\n?'J:/dossie",
+      "thread_id": "thread-af3d3b330a0a",
+      "thread_depth": 0,
+      "month": "2012-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-d9b8df8e6fa6",
+      "subject": "[rkward-users] [Help] RE: Use R console on a via SSH con. Remote PC",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2012-02-02T15:53:50Z",
+      "last_reply": "2012-02-02T15:53:50Z",
+      "root_message_id": "msg-d9b8df8e6fa6"
+    },
+    {
+      "id": "thread-1a697beb5a36",
+      "subject": "[rkward-users] [Open Discussion] Error on Startup",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2012-02-27T13:56:10Z",
+      "last_reply": "2012-02-28T13:19:49Z",
+      "root_message_id": "msg-1a697beb5a36"
+    },
+    {
+      "id": "thread-af3d3b330a0a",
+      "subject": "[rkward-users] Error when trying to load an .R file in clicking on it",
+      "message_count": 1,
+      "participants": [
+        "Francois Maurice"
+      ],
+      "started": "2012-02-28T19:31:46Z",
+      "last_reply": "2012-02-28T19:31:46Z",
+      "root_message_id": "msg-af3d3b330a0a"
+    }
+  ]
+}

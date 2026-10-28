@@ -1,0 +1,536 @@
+From seb44550 at gmail.com  Thu Dec  4 10:05:36 2014
+From: seb44550 at gmail.com (Seb R)
+Date: Thu, 4 Dec 2014 11:05:36 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+Message-ID: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+
+Hi,
+Thanks for your replies.
+
+Below is the result of the rk.sessionInfo()
+
+Seb.
+
+
+--------------------------------------------
+--------------------------------------------
+> library(raster)
+Le chargement a n?cessit? le package : sp
+> trace(raster:::.polygonsToRaster,edit=TRUE)
+Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+> rk.sessionInfo()
+-- Frontend --
+RKWard version: 0.6.2z+0.6.3+devel1
+KDE version (runtime): 4.14.1
+KDE version (compile time): 4.14.1
+Qt build key: x86_64 linux g++-4 full-config
+Local KDE directory: /home/seb/.kde/
+RKWard storage directory: /home/seb/.rkward/
+Backend version (as known to the frontend): 3.1.2
+
+Debug message file (this may contain relevant diagnostic output in
+case of trouble):
+/tmp/rkward.frontend.n10478
+
+-- Backend --
+Debug message file (this may contain relevant diagnostic output in
+case of trouble):
+/tmp/rkward.rbackend.J10504
+
+R version (compile time): 3.1.2  (2014-10-31 r66913)
+R runtime session info:
+R version 3.1.2 (2014-10-31)
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+locale:
+ [1] LC_CTYPE=fr_FR.UTF-8          LC_NUMERIC=C
+LC_TIME=fr_FR.UTF-8           LC_COLLATE=fr_FR.UTF-8
+ [5] LC_MONETARY=fr_FR.UTF-8       LC_MESSAGES=fr_FR.UTF-8
+LC_PAPER=fr_FR.UTF-8          LC_NAME=fr_FR.UTF-8
+ [9] LC_ADDRESS=fr_FR.UTF-8        LC_TELEPHONE=fr_FR.UTF-8
+LC_MEASUREMENT=fr_FR.UTF-8    LC_IDENTIFICATION=fr_FR.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] raster_2.3-12 sp_1.0-15     rkward_0.6.3
+
+loaded via a namespace (and not attached):
+[1] grid_3.1.2      lattice_0.20-29 tools_3.1.2
+
+
+--------------------------------------------
+--------------------------------------------
+
+From: Robert J. Hijmans <r.hijmans at gm...> - 2014-11-24 17:17:48
+
+Thanks, this is indeed a small bug in 'raster' when using is.factor
+with and empty RasterStack an empty list is returned.
+
+is.factor(stack())
+
+The next version will return FALSE as expected.
+
+Robert
+
+On Mon, Nov 24, 2014 at 1:37 AM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ...> wrote:
+> Hi,
+>
+> CCing the maintainer of raster, as this seems to be a buglet in raster
+> (although it's rather unlikely to step on it, outside of rkward):
+>
+>   is.factor(as.environment("package:raster")$.__C__RasterStackBrick at ...)
+>
+> returns
+>
+>   list()
+>
+> where one should reasonably expect a logical. Now, again this is totally
+> unlikely to trigger outside of RKWard, as this is not an object a user would
+> ever deal with, directly. RKWard does while looking at the objects contained
+> in the package.
+>
+> I'll safeguard against this in RKWard, now, but it might make sense to fix
+> this in raster, too (esp. if there is any chance that this could also trigger
+> under more likely circumstances).
+>
+> On the upside, this error message in RKWard should not have any noticable
+> consequences, and is safe to ignore.
+>
+> I cannot reproduce the second problem. Looks like failure to quote the name of
+> the function to trace, before passing it to edit. Could you provide
+>   rk.sessionInfo()
+> ?
+>
+> Regards
+> Thomas
+>
+> On Monday 24 November 2014 09:31:03 Seb R wrote:
+>> I've been using rkward for a while now with Ubuntu.
+>> I use the latest version of r-cran with the latest version of rkward
+>> (stable or daily build).
+>> Since I am on trusty, but also on utopic, whatever the version of rkward I
+>> used, I got the following errors :
+>>
+>> ----------------------------
+>>
+>> >     rm(list=ls())
+>> >     library(raster)
+>>
+>> Le chargement a n?cessit? le package : sp
+>> Erreur : LOGICAL() can only be applied to a 'logical', not a 'list'
+>> Avis : failure to get object prototype
+>>
+>> >       trace(raster:::.polygonsToRaster,edit=TRUE)
+>>
+>> Erreur dans as.character(name) :
+>>   cannot coerce type 'closure' to vector of type 'character'
+>> ------------------------------
+>>
+>> This must not be a problem of the raster library as I don't get the problem
+>> when using Rstudio or the terminal directly.
+>> Any idea on how to circumvent this problem ?
+>> Thank you
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141204/bbfebbe3/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec  4 11:59:44 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 04 Dec 2014 12:59:44 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+References: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+Message-ID: <2972132.NSxkBPFMhm@late>
+
+Hi,
+
+On Thursday 04 December 2014 11:05:36 Seb R wrote:
+> Below is the result of the rk.sessionInfo()
+
+ok, thanks.
+
+> > trace(raster:::.polygonsToRaster,edit=TRUE)
+> 
+> Erreur dans as.character(name) :
+>   cannot coerce type 'closure' to vector of type 'character'
+
+I still can't reproduce this. Do you get the same when doing
+  fix(raster:::.polygonsToRaster)
+? Is this the only function that seems to be affected, or anything you try to 
+trace with edit=TRUE? After the error, what does
+  traceback()
+report?
+
+What is the value of
+  getOption("editor")
+?
+
+Please try, if the following fixes the problem:
+
+options("editor"=
+function (file = file, title = file, name = NULL, prompt = TRUE) 
+{
+    if (!is.character(file)) {
+        nfile = tempfile()
+        if (!is.character(title)) title=nfile
+        env = environment(file)
+        dput(file, file = nfile, control = c("useSource", "keepNA", 
+            "keepInteger", "showAttributes"))
+        .Call("rk.edit.files", nfile, title, name, prompt, PACKAGE = 
+"(embedding)")
+        x <- dget(nfile)
+        environment(x) <- env
+        return(x)
+    }
+    invisible(.Call("rk.edit.files", as.character(file), as.character(title), 
+        as.character(name), isTRUE(prompt), PACKAGE = "(embedding)"))
+})
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141204/9f27190e/attachment.sig>
+
+From seb44550 at gmail.com  Thu Dec  4 13:22:27 2014
+From: seb44550 at gmail.com (Seb R)
+Date: Thu, 4 Dec 2014 14:22:27 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <2972132.NSxkBPFMhm@late>
+References: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+	<2972132.NSxkBPFMhm@late>
+Message-ID: <CAF6-RU6NrO_VDY4cOGskUHUq+sAobhYfcYFAw39m37Zte+4P-Q@mail.gmail.com>
+
+1/ It seems I got the problem for any "trace" with edit=TRUE
+*.*2/ I cannot use "fix" on a function but I can use it on any variable of
+my workspace and it opens the adequate window...
+3/ Changing the editor function did not repaired the problem, nor changed
+the traceback error
+I don't remember having done something special with the editor or X11 or
+what...
+I jsut tried to completely remove the rkward package from my Ubuntu as well
+as the .rkward folder in my personnal folder. I reinstalled but this did
+not change the problem.
+*..*
+Thank you for taking time to help
+
+## 1/
+
+* > trace(matrix,edit=T)*Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+
+*> matrix*function (data = NA, nrow = 1, ncol = 1, byrow = FALSE, dimnames
+= NULL)
+{
+    if (is.object(data) || !is.atomic(data))
+        data <- as.vector(data)
+    .Internal(matrix(data, nrow, ncol, byrow, dimnames, missing(nrow),
+        missing(ncol)))
+}
+<bytecode: 0xad5bd0>
+<environment: namespace:base>
+
+*> fix(matrix)*Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+
+*> trace("matrix",edit=T)*Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+
+
+*> ff <- function(x) {x*2}> trace(ff,edit=TRUE)*
+Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+*> fix(ff)*
+Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+
+
+## 2/
+
+
+
+
+*> aa <- matrix(1:4,ncol=2)> fix(aa)*## 3/
+
+*> fix(raster:::.polygonsToRaster)*Erreur dans
+fix(raster:::.polygonsToRaster) : 'fix' necessite un nom
+*> trace(raster:::.polygonsToRaster,edit=TRUE)*
+Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+*> traceback()*
+13: editor(name = name, file = file, title = title)
+12: edit.default(def, editor = editor, file = file)
+11: utils::edit(def, editor = editor, file = file)
+10: .makeTracedFunction(def, tracer, exit, at, print, doEdit)
+9: .initTraceable(.Object, ...)
+8: initialize(value, ...)
+7: initialize(value, ...)
+6: new(traceClass, def = if (doEdit) def else original, tracer = tracer,
+       exit = exit, at = at, print = print, doEdit = edit)
+5: methods::.TraceWithMethods(raster:::.polygonsToRaster, edit = TRUE,
+       where = <environment>)
+4: eval(expr, envir, enclos)
+3: eval(expr, p)
+2: eval.parent(call)
+1: trace(raster:::.polygonsToRaster, edit = TRUE)
+*> getOption("editor")*
+function (file = file, title = file, name = NULL, prompt = TRUE)
+{
+    if (!is.character(file)) {
+        nfile = tempfile()
+        env = environment(file)
+        dput(file, file = nfile, control = c("useSource", "keepNA",
+            "keepInteger", "showAttributes"))
+        .Call("rk.edit.files", nfile, title, name, prompt, PACKAGE =
+"(embedding)")
+        x <- dget(nfile)
+        environment(x) <- env
+        return(x)
+    }
+    invisible(.Call("rk.edit.files", as.character(file),
+as.character(title),
+        as.character(name), isTRUE(prompt), PACKAGE = "(embedding)"))
+}
+<environment: namespace:rkward>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*> options("editor"=+ function (file = file, title = file, name = NULL,
+prompt = TRUE)+ {+     if (!is.character(file)) {+         nfile =
+tempfile()+         if (!is.character(title)) title=nfile+         env =
+environment(file)+         dput(file, file = nfile, control =
+c("useSource", "keepNA",+             "keepInteger",
+"showAttributes"))+         .Call("rk.edit.files", nfile, title, name,
+prompt, PACKAGE =+ "(embedding)")+         x <- dget(nfile)+
+environment(x) <- env+         return(x)+     }+
+invisible(.Call("rk.edit.files", as.character(file),
+as.character(title),+         as.character(name), isTRUE(prompt), PACKAGE =
+"(embedding)"))+ })*
+
+
+*> trace(raster:::.polygonsToRaster,edit=TRUE)*Erreur dans
+as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+
+*> traceback()*13: editor(name = name, file = file, title = title)
+12: edit.default(def, editor = editor, file = file)
+11: utils::edit(def, editor = editor, file = file)
+10: .makeTracedFunction(def, tracer, exit, at, print, doEdit)
+9: .initTraceable(.Object, ...)
+8: initialize(value, ...)
+7: initialize(value, ...)
+6: new(traceClass, def = if (doEdit) def else original, tracer = tracer,
+       exit = exit, at = at, print = print, doEdit = edit)
+5: methods::.TraceWithMethods(raster:::.polygonsToRaster, edit = TRUE,
+       where = <environment>)
+4: eval(expr, envir, enclos)
+3: eval(expr, p)
+2: eval.parent(call)
+1: trace(raster:::.polygonsToRaster, edit = TRUE)
+
+2014-12-04 12:59 GMT+01:00 Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+
+> Hi,
+>
+> On Thursday 04 December 2014 11:05:36 Seb R wrote:
+> > Below is the result of the rk.sessionInfo()
+>
+> ok, thanks.
+>
+> > > trace(raster:::.polygonsToRaster,edit=TRUE)
+> >
+> > Erreur dans as.character(name) :
+> >   cannot coerce type 'closure' to vector of type 'character'
+>
+> I still can't reproduce this. Do you get the same when doing
+>   fix(raster:::.polygonsToRaster)
+> ? Is this the only function that seems to be affected, or anything you try
+> to
+> trace with edit=TRUE? After the error, what does
+>   traceback()
+> report?
+>
+> What is the value of
+>   getOption("editor")
+> ?
+>
+> Please try, if the following fixes the problem:
+>
+> options("editor"=
+> function (file = file, title = file, name = NULL, prompt = TRUE)
+> {
+>     if (!is.character(file)) {
+>         nfile = tempfile()
+>         if (!is.character(title)) title=nfile
+>         env = environment(file)
+>         dput(file, file = nfile, control = c("useSource", "keepNA",
+>             "keepInteger", "showAttributes"))
+>         .Call("rk.edit.files", nfile, title, name, prompt, PACKAGE =
+> "(embedding)")
+>         x <- dget(nfile)
+>         environment(x) <- env
+>         return(x)
+>     }
+>     invisible(.Call("rk.edit.files", as.character(file),
+> as.character(title),
+>         as.character(name), isTRUE(prompt), PACKAGE = "(embedding)"))
+> })
+>
+> Thanks!
+> Thomas
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141204/f7c6d897/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Dec  4 15:18:17 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 04 Dec 2014 16:18:17 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <CAF6-RU6NrO_VDY4cOGskUHUq+sAobhYfcYFAw39m37Zte+4P-Q@mail.gmail.com>
+References: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+	<2972132.NSxkBPFMhm@late>
+	<CAF6-RU6NrO_VDY4cOGskUHUq+sAobhYfcYFAw39m37Zte+4P-Q@mail.gmail.com>
+Message-ID: <6956316.B4n0ZgFeyR@late>
+
+Hi, 
+
+I believe I'm starting to understand what goes wrong on your system. What I 
+don't understand is why it doesn't go wrong on mine...
+
+Could you try this:
+
+options ("editor"=function (name=NULL, file="", title=NULL, prompt = TRUE) 
+{
+    if (!is.null(name)) {
+        if (is.null (title)) title = deparse (substitute (name))
+        if (file == "") file = tempfile()
+        env = environment(name)
+        dput(name, file = file, control = c("useSource", "keepNA", 
+            "keepInteger", "showAttributes"))
+        .Call("rk.edit.files", file, title, "", prompt, PACKAGE = 
+"(embedding)")
+        x <- dget(file)
+        environment(x) <- env
+        return(x)
+    }
+    invisible(.Call("rk.edit.files", as.character(file), as.character(title), 
+        as.character(name), isTRUE(prompt), PACKAGE = "(embedding)"))
+})
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141204/92ac7b23/attachment.sig>
+
+From seb44550 at gmail.com  Fri Dec  5 10:14:33 2014
+From: seb44550 at gmail.com (Seb R)
+Date: Fri, 5 Dec 2014 11:14:33 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <6956316.B4n0ZgFeyR@late>
+References: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+	<2972132.NSxkBPFMhm@late>
+	<CAF6-RU6NrO_VDY4cOGskUHUq+sAobhYfcYFAw39m37Zte+4P-Q@mail.gmail.com>
+	<6956316.B4n0ZgFeyR@late>
+Message-ID: <CAF6-RU465Xk2dYxxXsY1edZVjzZ8WEGSVKR7fxvC85S-o1xj8A@mail.gmail.com>
+
+Hi,
+You got it !
+The new editor function makes the trace function working correctly now...
+Thanks
+
+2014-12-04 16:18 GMT+01:00 Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+
+> Hi,
+>
+> I believe I'm starting to understand what goes wrong on your system. What I
+> don't understand is why it doesn't go wrong on mine...
+>
+> Could you try this:
+>
+> options ("editor"=function (name=NULL, file="", title=NULL, prompt = TRUE)
+> {
+>     if (!is.null(name)) {
+>         if (is.null (title)) title = deparse (substitute (name))
+>         if (file == "") file = tempfile()
+>         env = environment(name)
+>         dput(name, file = file, control = c("useSource", "keepNA",
+>             "keepInteger", "showAttributes"))
+>         .Call("rk.edit.files", file, title, "", prompt, PACKAGE =
+> "(embedding)")
+>         x <- dget(file)
+>         environment(x) <- env
+>         return(x)
+>     }
+>     invisible(.Call("rk.edit.files", as.character(file),
+> as.character(title),
+>         as.character(name), isTRUE(prompt), PACKAGE = "(embedding)"))
+> })
+>
+> Thanks!
+> Thomas
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141205/1a61c454/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Dec  5 13:50:36 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 05 Dec 2014 14:50:36 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <CAF6-RU465Xk2dYxxXsY1edZVjzZ8WEGSVKR7fxvC85S-o1xj8A@mail.gmail.com>
+References: <CAF6-RU6n-z6dGcFJMGAEzaP22xkCXL5O_TWphf3JHOHEG7pA_w@mail.gmail.com>
+	<6956316.B4n0ZgFeyR@late>
+	<CAF6-RU465Xk2dYxxXsY1edZVjzZ8WEGSVKR7fxvC85S-o1xj8A@mail.gmail.com>
+Message-ID: <4796598.LnuHjgZIq9@late>
+
+Hi!
+
+On Friday 05 December 2014 11:14:33 Seb R wrote:
+> You got it !
+> The new editor function makes the trace function working correctly now...
+
+Ok, thanks for reporting and testing!
+
+Will be fixed in the next release. For now you can add the given code to 
+Settings->Configure RKWard->R Backend->Further option commands.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141205/231df8c7/attachment.sig>
+

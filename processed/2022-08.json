@@ -1,0 +1,55 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2022-08",
+  "messages": [
+    {
+      "id": "msg-a7e84eb9f553",
+      "message_id": "<CACTkyF1=HzrJUmnCZ7Y2my_vatzM5vBuxAmvztHmGGDqVnp3kQ@mail.gmail.com>",
+      "from_name": "Muhammad Aaqib Shamim",
+      "from_email_hash": "60d589385179956168831d0348d4ea101665f0793fb260d5474812395f4ed565",
+      "date": "2022-08-13T14:59:07Z",
+      "subject": "RKWard installation -reg.",
+      "subject_clean": "RKWard installation -reg.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Greetings\n\nI have tried installing RKWard but when I open it, it gives this error\nmessage :\n\n// The backend process failed to start with exit code 6, message:\n'dyld[1305]: Library not loaded: @rpath/libR.dylib\n\nReferenced from: /Applications/rkward.app/Contents/MacOS/rkward.rbackend\n\nReason: tried:\n'/Users/packaging/Craft/BinaryFactory/macos-64-clang/lib/R/R.framework/Resources/lib/libR.dylib'\n(no such file), './libR.dylib' (mach-o file, but is an incompatible\narchitecture (have 'arm64', need 'x86_64')),\n'/Users/packaging/Craft/BinaryFactory/macos-64-clang/lib/R/R.framework/Resources/lib/libR.dylib'\n(no such file), './libR.dylib' (mach-o file, but is an incompatible\narchitecture (have 'arm64', need 'x86_64')), '/usr/lib/libR.dylib' (no such\nfile)\n\n'. //\n\n\nI have installed RKWard 0.7.4 on my Macbook Air M2 running on macOS v12.4.\nI already had R [4.2.1 GUI 1.79 Big Sur ARM build] , RStudio, and a few\nother apps like jamovi and BlueSky installed.\n\nOne odd thing about installation unlike in the case of other mentioned\nsoftwares was that when I clicked on the .dmg file, and then dragged this\napp to the Applications folder, the process got completed instantly, and I\ncouldn't 'see' any 'installation process, agreeing to TnC etc. steps'.\n\n\nA troubleshooting solution on your website mentioned this but terminal\nfailed to execute the command.\n\n// Possible solution no. 1: Your KDE setup is probably not ready, most\nlikely dbus is not running. Before you can start any KDE software, you\nfirst need to run the following commands once: sudo launchctl load -w\n/Library/LaunchDaemons/org.freedesktop.dbus-system.plist launchctl load -w\n/Library/LaunchAgents/org.freedesktop.dbus-session.plist //\n\n\nI searched online but didn't find anyone posting this issue earlier. It\nwould be very helpful if you could guide me as to how I can work around\nthese issues\n\n\n\n\n\n\n-- \nRegards\n\nDr. Muhammad Aaqib Shamim | MBBS\nJunior Resident (MD-PhD)\nDepartment of Pharmacology\nAll India Institute of Medical Sciences - Jodhpur\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220813/3c3cc1a9/attachment.htm>",
+      "body_snippet": "Greetings\n\nI have tried installing RKWard but when I open it, it gives this error\nmessage :\n\n// The backend process failed to start with exit code 6, message:\n'dyld[1305]: Library not loaded: @rpath/l",
+      "thread_id": "thread-a7e84eb9f553",
+      "thread_depth": 0,
+      "month": "2022-08"
+    },
+    {
+      "id": "msg-0d18429afdbe",
+      "message_id": "<20220813220036.6e697b90@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2022-08-13T20:00:36Z",
+      "subject": "RKWard installation -reg.",
+      "subject_clean": "RKWard installation -reg.",
+      "in_reply_to": "<CACTkyF1=HzrJUmnCZ7Y2my_vatzM5vBuxAmvztHmGGDqVnp3kQ@mail.gmail.com>",
+      "references": [
+        "<CACTkyF1=HzrJUmnCZ7Y2my_vatzM5vBuxAmvztHmGGDqVnp3kQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sat, 13 Aug 2022 20:29:07 +0530\nMuhammad Aaqib Shamim <aaqibsh at gmail.com> wrote:\n> I have tried installing RKWard but when I open it, it gives this error\n> message :\n\n[...]\n\n> '/Users/packaging/Craft/BinaryFactory/macos-64-clang/lib/R/R.framework/Resources/lib/libR.dylib'\n> (no such file), './libR.dylib' (mach-o file, but is an incompatible\n> architecture (have 'arm64', need 'x86_64')),\n\nSo far we can provide x86_64 (Intel 64-bit) binaries, only, and\nthis will require a corresponding installation of R. However, your installation of R appears to be arm64.\n\nTo my - fragile - knowledge, there is no clean support for having R for\nboth architectures in parallel, so you can either\na) uninstall R and re-install the Intel build (not sure what your other\n   apps will think of that, however)\nor\nb) run the Windows build of RKWard in a virtual machine or emulation.\n   This comes bundled with R, so no need to install R in addition.\n\nI am aware, neither choice is great, and we're hoping to be able to\nprovide arm64 builds, too. There is not timeline for that, however.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220813/7ca147bb/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sat, 13 Aug 2022 20:29:07 +0530\nMuhammad Aaqib Shamim <aaqibsh at gmail.com> wrote:\n> I have tried installing RKWard but when I open it, it gives this error\n> message :\n\n[...]\n\n> '/Users/packa",
+      "thread_id": "thread-a7e84eb9f553",
+      "thread_depth": 1,
+      "month": "2022-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a7e84eb9f553",
+      "subject": "RKWard installation -reg.",
+      "message_count": 2,
+      "participants": [
+        "Muhammad Aaqib Shamim",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2022-08-13T14:59:07Z",
+      "last_reply": "2022-08-13T20:00:36Z",
+      "root_message_id": "msg-a7e84eb9f553"
+    }
+  ]
+}

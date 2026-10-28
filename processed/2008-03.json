@@ -1,0 +1,52 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-03",
+  "messages": [
+    {
+      "id": "msg-5746a1c34e5c",
+      "message_id": "<4835596.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-03-13T19:57:54Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] I have same error",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] I have same error",
+      "in_reply_to": "<4757480.165573@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4835596\nBy: keizie\n\nI tried to put a line of X11/Xlib.h include but failed with conflicting declaration\n?typedef void Display? error.\nI can't tell rkward is wrong or kde is wrong.\nDoes anybody know that? How can I bypass this error?\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4835596\nBy: keizie\n\nI tried to put a line of X11/Xlib.h include but failed with conflicting declaration\n?typedef ",
+      "thread_id": "thread-5746a1c34e5c",
+      "thread_depth": 0,
+      "month": "2008-03"
+    },
+    {
+      "id": "msg-9c41a074d23f",
+      "message_id": "<4843046.165573@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-03-17T14:49:44Z",
+      "subject": "[rkward-users] [rkward - Open Discussion] RE: I have same error",
+      "subject_clean": "[rkward-users] [rkward - Open Discussion] RE: I have same error",
+      "in_reply_to": "<4835596.165573@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4843046\nBy: tfry\n\nHi,\n\nsorry for not responding earlier. Right now RKWard does not support MacOS X.\nBesides the troubles you already ran into, there are some more lingering in\nrembedinternal.cpp, and potentially a few other files.\n\nWhile we certainly hope to support MacOS in the future, we'd really need some\nhelp in the port. If you have some development knowledge, your help will be\nmuch appreciated. You can best contact us on rkward-devel at lists dot sourceforge\ndot net about this, and we'll try to help out, where we can. But if you're just\nlooking for an easy solution to compile RKWard on MacOS, we just can't provide\nthat, yet.\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165573",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4843046\nBy: tfry\n\nHi,\n\nsorry for not responding earlier. Right now RKWard does not support MacOS X.\nBesides the t",
+      "thread_id": "thread-5746a1c34e5c",
+      "thread_depth": 1,
+      "month": "2008-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5746a1c34e5c",
+      "subject": "[rkward-users] [rkward - Open Discussion] I have same error",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-03-13T19:57:54Z",
+      "last_reply": "2008-03-17T14:49:44Z",
+      "root_message_id": "msg-5746a1c34e5c"
+    }
+  ]
+}

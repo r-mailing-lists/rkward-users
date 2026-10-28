@@ -1,0 +1,1386 @@
+From maffydoit at aol.com  Sun May  1 01:31:52 2022
+From: maffydoit at aol.com (someone)
+Date: Sun, 1 May 2022 00:31:52 +0000 (UTC)
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <20220430213047.2101c356@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1902229017.2379704.1651337404916@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife>
+Message-ID: <1243244083.2430009.1651365112864@mail.yahoo.com>
+
+Thanks, tomorrow I'll get the next nightly build. For me, that would be, Sunday, May 1st, in the USA. Then I'll try again
+Thanks
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: someone <maffydoit at aol.com>
+Cc: rkward-users at kde.org <rkward-users at kde.org>
+Sent: Sat, Apr 30, 2022 3:30 pm
+Subject: Re: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression
+
+Hi,
+
+On Sat, 30 Apr 2022 18:25:04 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> [...] Now when i open rkward, I got a box that says, r engine has
+> died. Error during handshake with backend process. Expected token,
+> received token (bunch of numbers)
+
+this only only some of the time, not every time, right? I am aware this
+pops up on Windows, sometimes (only when starting), and I recently had
+an idea what might be causing it.
+
+So this is a good opportunity to test my theory: I hope you will not
+see that message again, with tomorrow's build (otherwise, please let me
+know).
+
+> The first time i had opened rkward,
+> i wanted to do regression, i started, then the program said i needed
+> a component, and asked me to chose a location.
+
+The builds started using R 4.2.0 (instead of R 4.1.2), yesterday, and so
+it is an expected side-effect, that you will be prompted to install any
+add-ons, again, when they are needed. 
+
+[...]
+
+> I asked again for
+> USA: MI and got a box saying there are errors or warnings. Warning,
+> unable to access index for repository,
+> http://files.kde.org/rkward/R/bin/windows/contrib/4.2
+
+This is a bug on our end, indeed (we still need to set up a repository
+for R 4.2), but the warning is harmless in itself.
+
+> Is this enough information?
+
+Yes, thanks for reporting.
+
+Regards
+Thomas
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220501/72007f07/attachment-0001.htm>
+
+From maffydoit at aol.com  Mon May  2 23:00:09 2022
+From: maffydoit at aol.com (someone)
+Date: Mon, 2 May 2022 22:00:09 +0000 (UTC)
+Subject: rkward, installing issues
+In-Reply-To: <1975061285.2874577.1651528675384@mail.yahoo.com>
+References: <649547968.393498.1650547974599.ref@mail.yahoo.com>
+ <649547968.393498.1650547974599@mail.yahoo.com>
+ <20220421165553.348ecec1@booklife>
+ <461630867.89708.1650582473921@mail.yahoo.com>
+ <20220422210728.4db0f19d@booklife>
+ <640808287.334237.1650660497574@mail.yahoo.com>
+ <20220423002111.789fbd0c@booklife>
+ <368419623.494674.1650743901270@mail.yahoo.com>
+ <1975061285.2874577.1651528675384@mail.yahoo.com>
+Message-ID: <744288489.2879219.1651528809765@mail.yahoo.com>
+
+Hi 
+I uninstalled the previous version of rkward, and then ....
+I just downloaded the nightly build from here
+https://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/
+
+i installed it, it said it had to install a component, and asked me to select a mirror. This time i chose ohio (the state with "Hi!" between two oh's).
+Looked okay, but when that was done, i got two pop up boxes
+
+One says "crash recover file detected. It looks like rward has crashed, recently. We are sorry about that. However, not everything is lost." then some stuff about recovery files, do i want them? (no I don't).
+Another box was "The legacy output file has been imported. If satisfied with the result you can now save it in the new format. To remove the old output file, run rk.import.legacy.output(import=false, delete=true)
+I guess this is because the last version crashed. Do i need to do anything? I don't need to save anything from my previous sessions? Can i just click "delete" from the crash recovery file detected box, and "okay" from the legacy output file popup?
+
+Thanks
+Gene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220502/0fc2fd9f/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Tue May  3 06:09:26 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Tue, 3 May 2022 07:09:26 +0200
+Subject: rkward, installing issues
+In-Reply-To: <744288489.2879219.1651528809765@mail.yahoo.com>
+References: <649547968.393498.1650547974599.ref@mail.yahoo.com>
+ <649547968.393498.1650547974599@mail.yahoo.com>
+ <20220421165553.348ecec1@booklife>
+ <461630867.89708.1650582473921@mail.yahoo.com>
+ <20220422210728.4db0f19d@booklife>
+ <640808287.334237.1650660497574@mail.yahoo.com>
+ <20220423002111.789fbd0c@booklife>
+ <368419623.494674.1650743901270@mail.yahoo.com>
+ <1975061285.2874577.1651528675384@mail.yahoo.com>
+ <744288489.2879219.1651528809765@mail.yahoo.com>
+Message-ID: <20220503070926.347f4999@booklife>
+
+On Mon, 2 May 2022 22:00:09 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Can i just click "delete" from the crash recovery file
+> detected box, and "okay" from the legacy output file popup?
+
+Yes.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220503/7356112a/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Tue May  3 16:08:39 2022
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 03 May 2022 17:08:39 +0200
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <20220430213047.2101c356@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife>
+Message-ID: <3434346.CbtlEUcBR6@yrla>
+
+hi,
+
+Am Samstag, 30. April 2022, 21:30:47 CEST schrieb Thomas Friedrichsmeier:
+> > I asked again for
+> > USA: MI and got a box saying there are errors or warnings. Warning,
+> > unable to access index for repository,
+> > http://files.kde.org/rkward/R/bin/windows/contrib/4.2
+> 
+> This is a bug on our end, indeed (we still need to set up a repository
+> for R 4.2), but the warning is harmless in itself.
+
+this should be fixed now, i've built plugin packages for R 4.2 and created the 
+repos for windows, macOS and debian packages.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220503/65ff5e83/attachment.sig>
+
+From maffydoit at aol.com  Tue May  3 21:59:34 2022
+From: maffydoit at aol.com (someone)
+Date: Tue, 3 May 2022 20:59:34 +0000 (UTC)
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <3434346.CbtlEUcBR6@yrla>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+Message-ID: <331188678.3192560.1651611574299@mail.yahoo.com>
+
+Looks good.
+I uninstalled rkward on my desktop, went to the nightly pagehttps://binary-factory.kde.org/view/Windows%2064-bit/job/RKWard_Nightly_win64/
+downloaded and installed the nightly update  
+| rkward-master-1065-windows-msvc2019_64-cl.exe |
+
+
+ran regression with standardized coefficient, everything installed easily. The results look good.
+Two questions. 
+1. Usually, with other software, there is some anova table, that has sum of squares, mean squares, for the model and error. I don't know if that's anything you'd want to add. 
+2. Is the official release available at the project website?  https://rkward.kde.org/RKWard_on_Windows.html
+Thanks again for all your work.
+Gene
+
+
+-----Original Message-----
+From: meik michalke <meik.michalke at uni-duesseldorf.de>
+To: someone <maffydoit at aol.com>; rkward-users at kde.org; Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+Sent: Tue, May 3, 2022 11:08 am
+Subject: Re: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression
+
+hi,
+
+Am Samstag, 30. April 2022, 21:30:47 CEST schrieb Thomas Friedrichsmeier:
+> > I asked again for
+> > USA: MI and got a box saying there are errors or warnings. Warning,
+> > unable to access index for repository,
+> > http://files.kde.org/rkward/R/bin/windows/contrib/4.2
+> 
+> This is a bug on our end, indeed (we still need to set up a repository
+> for R 4.2), but the warning is harmless in itself.
+
+this should be fixed now, i've built plugin packages for R 4.2 and created the 
+repos for windows, macOS and debian packages.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220503/e7cad29d/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Wed May  4 20:37:38 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Wed, 4 May 2022 21:37:38 +0200
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <331188678.3192560.1651611574299@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+Message-ID: <20220504213738.2d6cf0af@booklife>
+
+On Tue, 3 May 2022 20:59:34 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> 1. Usually, with other software, there is some anova table, that has
+> sum of squares, mean squares, for the model and error. I don't know
+> if that's anything you'd want to add.
+
+True. Added that to the linear regression dialog. Note that for more
+complex cases, you may want to install the "rk.ANOVA" package, which
+adds a new dialog to the Analysis menu.
+
+> 2. Is the official release
+> available at the project website?
+> https://rkward.kde.org/RKWard_on_Windows.html Thanks again for all
+> your work.
+
+I don't quite understand your question, but maybe I'm a bit blind when
+it comes to seeing what a new user would see. Please explain, if this
+needs some improvement.
+
+Anyway, the first two links on that page are the official 0.7.3 release
+(two links, because there is a variant with R 4.1.2 and one with R
+4.2.0). A little way down you'll find a link to the nightlies.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220504/5c7c0fac/attachment.sig>
+
+From maffydoit at aol.com  Wed May  4 22:01:08 2022
+From: maffydoit at aol.com (someone)
+Date: Wed, 4 May 2022 21:01:08 +0000 (UTC)
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <20220504213738.2d6cf0af@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+Message-ID: <2069149236.30066.1651698068172@mail.yahoo.com>
+
+Hi Thomas,
+"2. Is the official release available at the project website?"
+
+Ah, I said that wrong. Sorry. I meant, you do nightly releases, adding various components, like now the anova table. What I meant was, when does the official release get updated to include what's in the nightly releases? So, today, 5/4/2022, the nightly release appears to be rkward-master-1066. What's the date of the "official" version, here   https://rkward.kde.org/RKWard_on_Windows.html ?
+
+So, how up to date is 0.7.3? It includes nightly releases up to what date? How would I know when it gets updated?
+Does that make sense? Hopefully I said it better this time.
+Thanks
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: rkward-users at kde.org
+Cc: someone <maffydoit at aol.com>
+Sent: Wed, May 4, 2022 3:37 pm
+Subject: Re: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression
+
+On Tue, 3 May 2022 20:59:34 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> 1. Usually, with other software, there is some anova table, that has sum of squares, mean squares, for the model and error. I don't know if that's anything you'd want to add.
+
+True. Added that to the linear regression dialog. Note that for more complex cases, you may want to install the "rk.ANOVA" package, which adds a new dialog to the Analysis menu.
+
+> 2. Is the official release available at the project website?
+> https://rkward.kde.org/RKWard_on_Windows.html Thanks again for all your work.
+
+I don't quite understand your question, but maybe I'm a bit blind when it comes to seeing what a new user would see. Please explain, if this needs some improvement.
+
+Anyway, the first two links on that page are the official 0.7.3 release (two links, because there is a variant with R 4.1.2 and one with R 4.2.0). A little way down you'll find a link to the nightlies.
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220504/d0fb1d1e/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Fri May  6 22:14:05 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Fri, 6 May 2022 23:14:05 +0200
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <2069149236.30066.1651698068172@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+Message-ID: <20220506231405.78fdcc12@booklife>
+
+Hi,
+
+On Wed, 4 May 2022 21:01:08 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Ah, I said that wrong. Sorry. I meant, you do nightly releases,
+> adding various components, like now the anova table. What I meant
+> was, when does the official release get updated to include what's in
+> the nightly releases?
+
+we don't release on a fixed schedule, and most of the time we do not
+plan releases far ahead. No timeline is currently set for 0.7.4.
+However, looking at the current set of changes, I think a
+release somewhere around late May, early June may be good bet.
+
+> So, today, 5/4/2022, the nightly release
+> appears to be rkward-master-1066. What's the date of the "official"
+> version, here   https://rkward.kde.org/RKWard_on_Windows.html ?
+
+0.7.3 was officially released on April 21st. The R 4.2.0 variant was
+added on April 30.
+
+> So, how up to date is 0.7.3?
+
+It's still quite fresh, although we've also made some nice progress,
+since.
+
+> It includes nightly releases up to what
+> date?
+
+This is harder to answer than one might think: A while before each
+release, development is "branched" into separate lines: one to
+become the release, and receiving only conservative changes,
+another to become the release after that, and also receiving more new
+features. The second branch corresponds to the nightlies.
+
+Of course both are still connected in that bug fixes and some other
+small changes are made to both branches in parallel. I'd have to look up
+the date of branching, but that would have been early to mid April.
+
+> How would I know when it gets updated?
+
+This list always gets a notification of new releases. Alternatively,
+here's an RSS stream you could subscribe to:
+https://apps.kde.org/rkward/
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220506/a68c682e/attachment.sig>
+
+From maffydoit at aol.com  Sat May  7 00:11:04 2022
+From: maffydoit at aol.com (someone)
+Date: Fri, 6 May 2022 23:11:04 +0000 (UTC)
+Subject: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe,
+ regression
+In-Reply-To: <20220506231405.78fdcc12@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+Message-ID: <383327820.355399.1651878664568@mail.yahoo.com>
+
+Thanks very much for responding!
+I'm writing a review of software. I'll use the most recent 'official' release.
+Thanks
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: rkward-users at kde.org
+Cc: someone <maffydoit at aol.com>
+Sent: Fri, May 6, 2022 5:14 pm
+Subject: Re: nightly release, rkward-master-1062-windows-msvc2019_64-cl.exe, regression
+
+Hi,
+
+On Wed, 4 May 2022 21:01:08 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Ah, I said that wrong. Sorry. I meant, you do nightly releases, adding various components, like now the anova table. What I meant was, when does the official release get updated to include what's in the nightly releases?
+
+we don't release on a fixed schedule, and most of the time we do not plan releases far ahead. No timeline is currently set for 0.7.4. However, looking at the current set of changes, I think a release somewhere around late May, early June may be good bet.
+
+> So, today, 5/4/2022, the nightly release appears to be rkward-master-1066. What's the date of the "official" version, here   https://rkward.kde.org/RKWard_on_Windows.html ?
+
+0.7.3 was officially released on April 21st. The R 4.2.0 variant was added on April 30.
+
+> So, how up to date is 0.7.3?
+
+It's still quite fresh, although we've also made some nice progress,since.
+
+> It includes nightly releases up to what date?
+
+This is harder to answer than one might think: A while before each release, development is "branched" into separate lines: one to become the release, and receiving only conservative changes, another to become the release after that, and also receiving more new features. The second branch corresponds to the nightlies.
+
+Of course both are still connected in that bug fixes and some other small changes are made to both branches in parallel. I'd have to look up the date of branching, but that would have been early to mid April.
+
+> How would I know when it gets updated?
+
+This list always gets a notification of new releases. Alternatively, here's an RSS stream you could subscribe to:
+https://apps.kde.org/rkward/
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220506/aeac7c05/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Fri May 13 22:18:20 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Fri, 13 May 2022 23:18:20 +0200
+Subject: Call for testing upcoming RKWard 0.7.4
+Message-ID: <20220513231820.10ca996d@booklife>
+
+Hi!
+
+RKWard has made some nice progress during the past month, and I'd like
+to make the new features more widely available, soon. A release by the
+end of the month looks ambitious but still realistic:
+https://rkward.kde.org/Release_Schedule.html .
+
+Of course, as usual, I'm hoping for your help in testing. As to what to
+look out for, this release cycle was particularly focused on
+streamlining the first steps with RKWard (but I believe long time users
+will appreciate these changes as well):
+
+- The "Welcome to RKWard" page has been reworked, entirely, and now
+  serves as a "dashboard" with some of the most important task,
+  including access to recently used files (replaces the previous pop-up
+  startup dialog).
+- The package installation dialog has also been reworked to show fewer
+  pop-up dialogs, and hopefully to be more readable. In total, this
+  should bring down the number of pop-up dialogs a tpyical first-time
+  user will see from six to three (which still isn't ideal, but
+  certainly better).
+- Almost all plugins now support a preview, helping to see results
+  faster, and to send only intended output to the output window.
+- More import options, including an "Import Data" assistant to help
+  finding them.
+
+Looking forward to your feedback!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220513/9a736b36/attachment.sig>
+
+From alfonsociologo at gmail.com  Sun May 15 19:41:51 2022
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sun, 15 May 2022 13:41:51 -0500
+Subject: Call for testing upcoming RKWard 0.7.4
+In-Reply-To: <20220513231820.10ca996d@booklife>
+References: <20220513231820.10ca996d@booklife>
+Message-ID: <CAMqnA+hXku-oZdo+aZ+31Rk36GH-UmpwFDpB61x9g8tcYUyGqA@mail.gmail.com>
+
+WoW...
+Nice, thanks for all the hard work, I'll update this summer:
+
+https://sites.google.com/viep.com.mx/recusosderkward/p%C3%A1gina-principal
+
+Thanks!!!
+Alfonso
+
+El vie, 13 may 2022 a la(s) 16:18, Thomas Friedrichsmeier (
+thomas.friedrichsmeier at kdemail.net) escribió:
+
+> Hi!
+>
+> RKWard has made some nice progress during the past month, and I'd like
+> to make the new features more widely available, soon. A release by the
+> end of the month looks ambitious but still realistic:
+> https://rkward.kde.org/Release_Schedule.html .
+>
+> Of course, as usual, I'm hoping for your help in testing. As to what to
+> look out for, this release cycle was particularly focused on
+> streamlining the first steps with RKWard (but I believe long time users
+> will appreciate these changes as well):
+>
+> - The "Welcome to RKWard" page has been reworked, entirely, and now
+>   serves as a "dashboard" with some of the most important task,
+>   including access to recently used files (replaces the previous pop-up
+>   startup dialog).
+> - The package installation dialog has also been reworked to show fewer
+>   pop-up dialogs, and hopefully to be more readable. In total, this
+>   should bring down the number of pop-up dialogs a tpyical first-time
+>   user will see from six to three (which still isn't ideal, but
+>   certainly better).
+> - Almost all plugins now support a preview, helping to see results
+>   faster, and to send only intended output to the output window.
+> - More import options, including an "Import Data" assistant to help
+>   finding them.
+>
+> Looking forward to your feedback!
+> Thomas
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220515/481ea5d9/attachment.htm>
+
+From maffydoit at aol.com  Thu May 19 23:45:55 2022
+From: maffydoit at aol.com (someone)
+Date: Thu, 19 May 2022 22:45:55 +0000 (UTC)
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <383327820.355399.1651878664568@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+Message-ID: <470454116.67024.1653000355300@mail.yahoo.com>
+
+Hi 
+I downloaded the most recent nightly version 1082 for windows. A couple of comments.
+The install went very well. I noticed there is now an uninstall option in the windows menu. That's good.
+I imported a csv file, and then did a basic frequency, or crosstab, n to n. 
+A couple of suggestions and a question.
+First, the results look correct.
+This is how my variable of interest is listed on the output tablemy.csv.data[["AreaRegion"]]
+
+That is, of course, the correct variable, but is this part necessary? my.csv.data[["  "]] 
+Also, the frequency is laid out this way
+var1   var2   var3freq    freq   freq
+Is it possible to have the results come out this way?
+var1   freqvar2   freqvar3   freq
+
+Now a question. The results also has this. Does that mean anything? I guess it's not an error.
+Messages, warnings, or errors:Loading required package: R2HTML
+
+Then i did descriptive statistics. Ah, well. I clicked on Analysis, then Descriptive Statistics. A blank screen shows up with only this textRKWard output initialized on Thu May 19 18:36:11 2022 
+
+It turns out the dialog box -did- come up, but it got immediately put behind my other programs (email, word processor). I'm not sure if that's just me.
+I then got to the dialog box, and i noticed that "Auto close" was checked. I noticed this because when I ran the analysis, i didn't see the results. I guess because the autoclose. So i unchecked that and ran the analysis again. The results looked good.
+Perhaps a suggestion, although it's a nice to have, but not necessary. 
+The columns in the descriptive analysis are mean, min, max, standard deviation, length of sample, and number of NAs.  I'm not exactly sure what "length of sample" means. I'm assuming it's number of units in that category, that is, N. 
+That's all for the moment. I'm really not sure if any of the things I'm describing are particular to me, and won't show up for anyone else.
+Thanks
+Gene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220519/ae32b735/attachment.htm>
+
+From maffydoit at aol.com  Fri May 20 02:06:57 2022
+From: maffydoit at aol.com (someone)
+Date: Fri, 20 May 2022 01:06:57 +0000 (UTC)
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <470454116.67024.1653000355300@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+Message-ID: <1575738667.472652.1653008817105@mail.yahoo.com>
+
+
+I forgot one part. I wrote"The columns in the descriptive analysis are mean, min, max, standard deviation, length of sample, and number of NAs. "I meant to ask, is it possible to have an option, a check box or something, that you can select which of those you want? And could sum be one of the possible columns?
+Thanks
+Gene
+
+
+-----Original Message-----
+From: someone <maffydoit at aol.com>
+To: thomas.friedrichsmeier at kdemail.net <thomas.friedrichsmeier at kdemail.net>; rkward-users at kde.org <rkward-users at kde.org>
+Sent: Thu, May 19, 2022 6:45 pm
+Subject: rkward, review of most recent version, basic analysis
+
+Hi 
+I downloaded the most recent nightly version 1082 for windows. A couple of comments.
+The install went very well. I noticed there is now an uninstall option in the windows menu. That's good.
+I imported a csv file, and then did a basic frequency, or crosstab, n to n. 
+A couple of suggestions and a question.
+First, the results look correct.
+This is how my variable of interest is listed on the output tablemy.csv.data[["AreaRegion"]]
+
+That is, of course, the correct variable, but is this part necessary? my.csv.data[["  "]] 
+Also, the frequency is laid out this way
+var1   var2   var3freq    freq   freq
+Is it possible to have the results come out this way?
+var1   freqvar2   freqvar3   freq
+
+Now a question. The results also has this. Does that mean anything? I guess it's not an error.
+Messages, warnings, or errors:Loading required package: R2HTML
+
+Then i did descriptive statistics. Ah, well. I clicked on Analysis, then Descriptive Statistics. A blank screen shows up with only this textRKWard output initialized on Thu May 19 18:36:11 2022 
+
+It turns out the dialog box -did- come up, but it got immediately put behind my other programs (email, word processor). I'm not sure if that's just me.
+I then got to the dialog box, and i noticed that "Auto close" was checked. I noticed this because when I ran the analysis, i didn't see the results. I guess because the autoclose. So i unchecked that and ran the analysis again. The results looked good.
+Perhaps a suggestion, although it's a nice to have, but not necessary. 
+The columns in the descriptive analysis are mean, min, max, standard deviation, length of sample, and number of NAs.  I'm not exactly sure what "length of sample" means. I'm assuming it's number of units in that category, that is, N. 
+That's all for the moment. I'm really not sure if any of the things I'm describing are particular to me, and won't show up for anyone else.
+Thanks
+Gene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220520/d1ac428d/attachment-0001.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Sat May 21 11:54:57 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sat, 21 May 2022 12:54:57 +0200
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <1575738667.472652.1653008817105@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <1575738667.472652.1653008817105@mail.yahoo.com>
+Message-ID: <20220521125457.0634cb5a@booklife>
+
+On Fri, 20 May 2022 01:06:57 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> I forgot one part. I wrote"The columns in the descriptive analysis
+> are mean, min, max, standard deviation, length of sample, and number
+> of NAs. "I meant to ask, is it possible to have an option, a check
+> box or something, that you can select which of those you want? And
+> could sum be one of the possible columns? Thanks Gene
+
+Yes. Check the further tabs of the dialog, in this case "Range, Sum,
+Product, and Length".
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220521/e58e79f2/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Sat May 21 12:21:07 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sat, 21 May 2022 13:21:07 +0200
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <470454116.67024.1653000355300@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+Message-ID: <20220521132107.24ba0740@booklife>
+
+Hi,
+
+On Thu, 19 May 2022 22:45:55 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> That is, of course, the correct variable, but is this part necessary?
+> my.csv.data[["  "]] Also, the frequency is laid out this way
+> var1   var2   var3freq    freq   freq
+> Is it possible to have the results come out this way?
+> var1   freqvar2   freqvar3   freq
+
+makes sense. I implemented a solution, but it will take some time to
+appear in the nightlies, as it is currently hitting a bug in R2HTML.
+
+> Now a question. The results also has this. Does that mean anything? I
+> guess it's not an error. Messages, warnings, or errors:Loading
+> required package: R2HTML
+
+It simply means the package R2HTML was loaded. Admittedly, not a useful
+message in most cases, but it _could_ contain further info regarding
+problems in the installation. Either way, you'll only see this once per
+session.
+
+[...]
+
+> It turns out the dialog box -did- come up, but it got immediately put
+> behind my other programs (email, word processor).
+
+That seems to happen on some systems, under some conditions, but
+unfortunately, I have no good idea, when/why.
+
+> I'm not sure if
+> that's just me. I then got to the dialog box, and i noticed that
+> "Auto close" was checked.
+
+This does not have anything to do with the problem, however. "Auto
+close" controls whether the dialog is closed, when you press "Submit".
+
+[...]
+
+As a question from my side: I read between your lines that you did not
+discover the "Preview" option, yet (some way below "Submit"). Would you
+mind giving that a try? And assuming you'll find it useful, what would
+have made that option more visible to you?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220521/d20360ed/attachment.sig>
+
+From maffydoit at aol.com  Sat May 21 15:15:03 2022
+From: maffydoit at aol.com (someone)
+Date: Sat, 21 May 2022 14:15:03 +0000 (UTC)
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <20220521125457.0634cb5a@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <1575738667.472652.1653008817105@mail.yahoo.com>
+ <20220521125457.0634cb5a@booklife>
+Message-ID: <587728144.882409.1653142503925@mail.yahoo.com>
+
+Oops, yes, that's on me. That's exactly what I want. Thanks.
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: someone <maffydoit at aol.com>
+Cc: rkward-users at kde.org <rkward-users at kde.org>
+Sent: Sat, May 21, 2022 6:54 am
+Subject: Re: rkward, review of most recent version, basic analysis
+
+On Fri, 20 May 2022 01:06:57 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> I forgot one part. I wrote"The columns in the descriptive analysis
+> are mean, min, max, standard deviation, length of sample, and number
+> of NAs. "I meant to ask, is it possible to have an option, a check
+> box or something, that you can select which of those you want? And
+> could sum be one of the possible columns? Thanks Gene
+
+Yes. Check the further tabs of the dialog, in this case "Range, Sum,
+Product, and Length".
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220521/c0a526db/attachment.htm>
+
+From maffydoit at aol.com  Sat May 21 15:46:49 2022
+From: maffydoit at aol.com (someone)
+Date: Sat, 21 May 2022 14:46:49 +0000 (UTC)
+Subject: rkward, review of most recent version, basic analysis
+In-Reply-To: <20220521132107.24ba0740@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+Message-ID: <1180875467.880232.1653144409327@mail.yahoo.com>
+
+Hi
+"Messages, warnings, or errors: Loading required package: R2HTML"
+Okay, seems like it could present useful information, so it's good to have it.
+> the dialog box -did- come up
+I use windows 10, home version, I'm not sure what information would help.
+That appearing behind other programs didn't happen when i downloaded the current 'official' version.If i closed rkward and reopened it, then this time, at least the first time i ran it, the dialog box stayed in front.
+
+I tried the preview. Seems okay. I'm not really sure what advantages it has over submitting the analysis. It seems useful to see that the results will really be what I want. So that's good. I just didn't look at this preview the first time, i guess i didn't think about it much. But it seems useful.
+I really like the button at the bottom save results to file. One thing. I used the folder button to select a folder where i wanted the results to go. There was also another box, seeming to say it would save as a csv file.  But then when I checked those results, the output file wasn't a csv file, it wasn't any kind of file. I could open with notepad.  If I changed the name of the file to end in .csv then i could open it in my spreadsheet program (I use libre office). I guess i assumed, since the option was to save as a csv file, that the output would automatically be named .csv.  I didn't know I had to do that myself in the dialog box. But now I know.
+Thanks again for all your work on this.
+Gene
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: rkward-users at kde.org
+Cc: someone <maffydoit at aol.com>
+Sent: Sat, May 21, 2022 7:21 am
+Subject: Re: rkward, review of most recent version, basic analysis
+
+Hi,
+
+On Thu, 19 May 2022 22:45:55 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> That is, of course, the correct variable, but is this part necessary?
+> my.csv.data[["  "]] Also, the frequency is laid out this way
+> var1   var2   var3freq    freq   freq
+> Is it possible to have the results come out this way?
+> var1   freqvar2   freqvar3   freq
+
+makes sense. I implemented a solution, but it will take some time to appear in the nightlies, as it is currently hitting a bug in R2HTML.
+
+> Now a question. The results also has this. Does that mean anything? I guess it's not an error. Messages, warnings, or errors:Loading required package: R2HTML
+
+It simply means the package R2HTML was loaded. Admittedly, not a useful message in most cases, but it _could_ contain further info regarding problems in the installation. Either way, you'll only see this once per session.
+
+[...]
+
+> It turns out the dialog box -did- come up, but it got immediately put behind my other programs (email, word processor).
+
+That seems to happen on some systems, under some conditions, but unfortunately, I have no good idea, when/why.
+
+> I'm not sure if that's just me. I then got to the dialog box, and i noticed that "Auto close" was checked.
+
+This does not have anything to do with the problem, however. "Auto close" controls whether the dialog is closed, when you press "Submit".
+
+[...]
+
+As a question from my side: I read between your lines that you did not discover the "Preview" option, yet (some way below "Submit"). Would you mind giving that a try? And assuming you'll find it useful, what would have made that option more visible to you?
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220521/5465c2bd/attachment.htm>
+
+From maffydoit at aol.com  Mon May 23 22:57:32 2022
+From: maffydoit at aol.com (someone)
+Date: Mon, 23 May 2022 21:57:32 +0000 (UTC)
+Subject: rkward, review of free to use statistical software
+In-Reply-To: <1180875467.880232.1653144409327@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+Message-ID: <325328235.1536596.1653343052434@mail.yahoo.com>
+
+Hi all
+I recently published, on SSRN, this paper
+Shackman, Gene, Free To Use Statistical Software: Comparing Statistical Analyses (May 10, 2022). 
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105959
+
+The good news is that all the packages give the same statistical results. They don't all have all the same analyses available, but when they do, their results are pretty much the same.
+I include RKWard, among others. I'll periodically update the paper, when new versions of software come out.
+I hope you all find it useful.
+And, stay healthy.
+Thanks
+Gene
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220523/e3b1a1b2/attachment.htm>
+
+From maffydoit at aol.com  Fri May 27 05:11:36 2022
+From: maffydoit at aol.com (someone)
+Date: Fri, 27 May 2022 04:11:36 +0000 (UTC)
+Subject: rkward, updated version
+In-Reply-To: <325328235.1536596.1653343052434@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+Message-ID: <1211832795.2861330.1653624696682@mail.yahoo.com>
+
+Hi
+Just wondering if there might be a timeline for when the updated version of RKWard would be officially released. I guess this would be 0.7.4.
+Thanks
+Gene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220527/68086305/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Fri May 27 06:48:59 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Fri, 27 May 2022 07:48:59 +0200
+Subject: rkward, updated version
+In-Reply-To: <1211832795.2861330.1653624696682@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+Message-ID: <20220527074859.7fbcc7bc@booklife>
+
+On Fri, 27 May 2022 04:11:36 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+
+> Hi
+> Just wondering if there might be a timeline for when the updated
+> version of RKWard would be officially released. I guess this would be
+> 0.7.4. Thanks Gene
+
+The plan is to release on Monday:
+
+https://rkward.kde.org/Release_Schedule.html
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220527/03c71457/attachment.sig>
+
+From maffydoit at aol.com  Fri May 27 12:41:38 2022
+From: maffydoit at aol.com (someone)
+Date: Fri, 27 May 2022 11:41:38 +0000 (UTC)
+Subject: rkward, updated version
+In-Reply-To: <20220527074859.7fbcc7bc@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+ <20220527074859.7fbcc7bc@booklife>
+Message-ID: <1530684985.2915936.1653651698353@mail.yahoo.com>
+
+Great!
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: rkward-users at kde.org
+Cc: someone <maffydoit at aol.com>
+Sent: Fri, May 27, 2022 1:48 am
+Subject: Re: rkward, updated version
+
+On Fri, 27 May 2022 04:11:36 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+
+> Hi
+> Just wondering if there might be a timeline for when the updated
+> version of RKWard would be officially released. I guess this would be
+> 0.7.4. Thanks Gene
+
+The plan is to release on Monday:
+
+https://rkward.kde.org/Release_Schedule.html
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220527/907ea0df/attachment.htm>
+
+From maffydoit at aol.com  Mon May 30 16:20:11 2022
+From: maffydoit at aol.com (someone)
+Date: Mon, 30 May 2022 15:20:11 +0000 (UTC)
+Subject: rkward, updated version, reviewed
+In-Reply-To: <1530684985.2915936.1653651698353@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+ <20220527074859.7fbcc7bc@booklife>
+ <1530684985.2915936.1653651698353@mail.yahoo.com>
+Message-ID: <338633248.3649625.1653924011343@mail.yahoo.com>
+
+Hi all
+Just fyi, i downloaded 0.7.4 today and ran all the analyses I did before, frequencies, means, correlations and regression. They all came out exactly the same as I got before, and pretty much the same as I got with SAS. The installation (on windows 10) was easy, and I was able to run the program and analysis easily. 
+Thanks very much for the update.
+
+Just two comments.
+Were you going to have the frequencies table vertical instead of horizonal?
+The means table has a column "length of sample", which is N. Did I mention that before? Where does this term "length of sample" come from?
+I will upload my revised review (Free to use statistical software: Comparing statistical analyses) and post another note when the revised version gets published.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105959
+
+
+Thanks again for your work.
+Gene
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220530/2af6d679/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon May 30 19:27:52 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 30 May 2022 20:27:52 +0200
+Subject: rkward, updated version, reviewed
+In-Reply-To: <338633248.3649625.1653924011343@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+ <20220527074859.7fbcc7bc@booklife>
+ <1530684985.2915936.1653651698353@mail.yahoo.com>
+ <338633248.3649625.1653924011343@mail.yahoo.com>
+Message-ID: <20220530202752.743c0414@booklife>
+
+Hi,
+
+On Mon, 30 May 2022 15:20:11 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Just fyi, i downloaded 0.7.4 today and ran all the analyses I did
+> before, frequencies, means, correlations and regression. They all
+> came out exactly the same as I got before, and pretty much the same
+> as I got with SAS. The installation (on windows 10) was easy, and I
+> was able to run the program and analysis easily. Thanks very much for
+> the update.
+
+thanks for the feedback!
+
+> Just two comments.
+> Were you going to have the frequencies table vertical instead of
+> horizonal?
+
+I made that configurable meanwhile (more precisely, you can now
+control, how many of the variables are listed in rows). However that
+was a little trickier than it would seem, and did not make it into
+0.7.4, for that reason.
+
+> The means table has a column "length of sample", which is
+> N. Did I mention that before? 
+
+You did.
+
+> Where does this term "length of sample"
+> come from?
+
+https://invent.kde.org/education/rkward/-/blob/master/rkward/plugins/descriptive/descriptive_statistics.js#L65
+
+I did not immediately react then, as I wasn't quite sure what would be
+the best label (and I am not sure, still). Right now, I'm thinking,
+perhaps "length (N)".
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220530/f56af66f/attachment.sig>
+
+From maffydoit at aol.com  Mon May 30 20:28:23 2022
+From: maffydoit at aol.com (someone)
+Date: Mon, 30 May 2022 19:28:23 +0000 (UTC)
+Subject: rkward, updated version, reviewed
+In-Reply-To: <20220530202752.743c0414@booklife>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+ <20220527074859.7fbcc7bc@booklife>
+ <1530684985.2915936.1653651698353@mail.yahoo.com>
+ <338633248.3649625.1653924011343@mail.yahoo.com>
+ <20220530202752.743c0414@booklife>
+Message-ID: <1988616664.3356389.1653938903174@mail.yahoo.com>
+
+Hi
+Thanks again for working on these.
+I guess I'd just have a column labeled "N".  I'm not really clear on what "length" means in this context. I haven't seen it used in social science or public health research. Perhaps in another field?
+Thanks
+Gene
+
+
+-----Original Message-----
+From: Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net>
+To: rkward-users at kde.org
+Cc: someone <maffydoit at aol.com>
+Sent: Mon, May 30, 2022 2:27 pm
+Subject: Re: rkward, updated version, reviewed
+
+Hi,
+
+On Mon, 30 May 2022 15:20:11 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Just fyi, i downloaded 0.7.4 today and ran all the analyses I did before, frequencies, means, correlations and regression. They all came out exactly the same as I got before, and pretty much the same as I got with SAS. The installation (on windows 10) was easy, and I was able to run the program and analysis easily. Thanks very much for the update.
+
+thanks for the feedback!
+
+> Just two comments.
+> Were you going to have the frequencies table vertical instead of horizonal?
+
+I made that configurable meanwhile (more precisely, you can now control, how many of the variables are listed in rows). However that was a little trickier than it would seem, and did not make it into 0.7.4, for that reason.
+
+> The means table has a column "length of sample", which is N. Did I mention that before? 
+
+You did.
+
+> Where does this term "length of sample" come from?
+
+https://invent.kde.org/education/rkward/-/blob/master/rkward/plugins/descriptive/descriptive_statistics.js#L65
+
+I did not immediately react then, as I wasn't quite sure what would be the best label (and I am not sure, still). Right now, I'm thinking, perhaps "length (N)".
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220530/d2e7a2b8/attachment.htm>
+
+From meik.michalke at uni-duesseldorf.de  Mon May 30 20:40:52 2022
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 30 May 2022 21:40:52 +0200
+Subject: rkward, updated version, reviewed
+In-Reply-To: <1988616664.3356389.1653938903174@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <20220530202752.743c0414@booklife>
+ <1988616664.3356389.1653938903174@mail.yahoo.com>
+Message-ID: <4659101.LvFx2qVVIh@yrla>
+
+hi,
+
+Am Montag, 30. Mai 2022, 21:28:23 CEST schrieb someone:
+> I guess I'd just have a column labeled "N".  I'm not really clear on what
+> "length" means in this context. I haven't seen it used in social science or
+> public health research. Perhaps in another field?
+
+on a more general note, RKWard usually tries to remain close to the output 
+that is generated by the actual R packages used in the dialogs, just with a 
+nicer layout. that is, names of columns or similar are often just taken as-is 
+from the functions that are called and put into a table. if we were replacing 
+those names with custom ones, the plugin code might easily break after of a 
+package update, probably unnoticed for a while. it makes it also harder to 
+understand the output if names in our output are different from the package 
+documentation.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220530/3e7d6277/attachment-0001.sig>
+
+From maffydoit at aol.com  Tue May 31 03:42:00 2022
+From: maffydoit at aol.com (someone)
+Date: Tue, 31 May 2022 02:42:00 +0000 (UTC)
+Subject: rkward, updated version, reviewed
+In-Reply-To: <4659101.LvFx2qVVIh@yrla>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <20220530202752.743c0414@booklife>
+ <1988616664.3356389.1653938903174@mail.yahoo.com> <4659101.LvFx2qVVIh@yrla>
+Message-ID: <184824882.3825938.1653964920165@mail.yahoo.com>
+
+Thanks for the explanation. 
+So the R package used for means, sums, has a column labeled "length of sample" and RKWard is kind of organizing the R packages into one overall package: RKWard? I didn't know that's how it worked. Good to know.
+Thanks
+Gene
+
+
+-----Original Message-----
+From: meik michalke <meik.michalke at uni-duesseldorf.de>
+To: rkward-users at kde.org <rkward-users at kde.org>
+Cc: someone <maffydoit at aol.com>
+Sent: Mon, May 30, 2022 3:40 pm
+Subject: Re: rkward, updated version, reviewed
+
+hi,
+
+Am Montag, 30. Mai 2022, 21:28:23 CEST schrieb someone: I guess I'd just have a column labeled "N".  I'm not really clear on what "length" means in this context. I haven't seen it used in social science or public health research. Perhaps in another field?
+
+on a more general note, RKWard usually tries to remain close to the output that is generated by the actual R packages used in the dialogs, just with a nicer layout. that is, names of columns or similar are often just taken as-is from the functions that are called and put into a table. if we were replacing those names with custom ones, the plugin code might easily break after of a package update, probably unnoticed for a while. it makes it also harder to understand the output if names in our output are different from the package documentation.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220531/3b40dbff/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Tue May 31 21:43:52 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Tue, 31 May 2022 22:43:52 +0200
+Subject: rkward, updated version, reviewed
+In-Reply-To: <184824882.3825938.1653964920165@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <20220530202752.743c0414@booklife>
+ <1988616664.3356389.1653938903174@mail.yahoo.com>
+ <4659101.LvFx2qVVIh@yrla>
+ <184824882.3825938.1653964920165@mail.yahoo.com>
+Message-ID: <20220531224352.07ca89cf@booklife>
+
+On Tue, 31 May 2022 02:42:00 +0000 (UTC)
+someone <maffydoit at aol.com> wrote:
+> Thanks for the explanation. 
+> So the R package used for means, sums, has a column labeled "length
+> of sample" and RKWard is kind of organizing the R packages into one
+> overall package: RKWard?
+
+This particular dialog combines functionality that comes in different
+functions in R. That is gathered and printed in a single table, because
+that simply seems useful. Other dialogs will wrap just a single
+function.
+
+The R function for "length of sample" does not return a named column
+at all, just a number. The function itself is called length(), however,
+which is what Meik is referring to, in this case.
+
+Calling this function "length()" is pretty standard in the context of
+programming. In many, but not all use cases, this will correspond to the
+meaning of "N". In other cases, "n" would be more appropriate. That
+really depends on the layout, and meaning of the data. (Consider "long"
+format vs "wide" format of repeated measurements, for just one example).
+
+So that's why I think "length (N)" might be a good mix in order to
+convey the potential meaning, without making too many assumptions.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220531/0d7fd00d/attachment.sig>
+
+From maffydoit at aol.com  Tue May 31 23:36:03 2022
+From: maffydoit at aol.com (someone)
+Date: Tue, 31 May 2022 22:36:03 +0000 (UTC)
+Subject: rkward, updated version, published to my review
+In-Reply-To: <1988616664.3356389.1653938903174@mail.yahoo.com>
+References: <1902229017.2379704.1651337404916.ref@mail.yahoo.com>
+ <1780865767.2390840.1651343104933@mail.yahoo.com>
+ <20220430213047.2101c356@booklife> <3434346.CbtlEUcBR6@yrla>
+ <331188678.3192560.1651611574299@mail.yahoo.com>
+ <20220504213738.2d6cf0af@booklife>
+ <2069149236.30066.1651698068172@mail.yahoo.com>
+ <20220506231405.78fdcc12@booklife>
+ <383327820.355399.1651878664568@mail.yahoo.com>
+ <470454116.67024.1653000355300@mail.yahoo.com>
+ <20220521132107.24ba0740@booklife>
+ <1180875467.880232.1653144409327@mail.yahoo.com>
+ <325328235.1536596.1653343052434@mail.yahoo.com>
+ <1211832795.2861330.1653624696682@mail.yahoo.com>
+ <20220527074859.7fbcc7bc@booklife>
+ <1530684985.2915936.1653651698353@mail.yahoo.com>
+ <338633248.3649625.1653924011343@mail.yahoo.com>
+ <20220530202752.743c0414@booklife>
+ <1988616664.3356389.1653938903174@mail.yahoo.com>
+Message-ID: <30117384.25128.1654036563288@mail.yahoo.com>
+
+Hi all
+Just fyi, I updated my review of free to use stat software, which now reviews 0.7.4.  
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105959
+
+Thanks again for all the revisions.
+Gene
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220531/bf1a544a/attachment.htm>
+

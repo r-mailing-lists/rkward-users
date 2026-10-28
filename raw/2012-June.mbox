@@ -1,0 +1,118 @@
+From meik.michalke at uni-duesseldorf.de  Tue Jun  5 18:10:38 2012
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 05 Jun 2012 20:10:38 +0200
+Subject: [rkward-users] OS X build updated
+Message-ID: <3438920.V5IJNn9yIh@yrla>
+
+hi,
+
+i've updated the pre-built OS X bundle to the current development snapshot 
+(RKWard 0.5.7+svn4267, R 2.15.0, KDE 4.8.3):
+ o http://sourceforge.net/projects/rkwardextras/files/MacOSX/
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120605/b5eaef5a/attachment.sig>
+
+From noreply at sourceforge.net  Tue Jun 19 07:20:18 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 19 Jun 2012 00:20:18 -0700
+Subject: [rkward-users] [Help] MD5 Request.
+Message-ID: <forum-165574-11579301@sourceforge.net>
+
+The following forum message was posted by mcertini at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5363673:
+
+I am trying to find the MD5 for the file rkward.frontend.exe which resides in
+the KDE subdirectory.  When I look at the MD5 in the subdirectory R I could
+not find this file's hash.  An MD5 file does not exist in the KDE subdirectory.
+
+
+
+From gpscruise at gmail.com  Wed Jun 27 01:42:11 2012
+From: gpscruise at gmail.com (james pruett)
+Date: Tue, 26 Jun 2012 20:42:11 -0500
+Subject: [rkward-users] (no subject)
+Message-ID: <CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>
+
+newbie here.
+
+I installed rkward on Ubuntu.
+It installed aok.
+
+----------------------I get this error:---------------------
+> install.packages("devtools")
+Installing package(s) into ?/home/jim/R/i686-pc-linux-gnu-library/2.12?
+(as ?lib? is unspecified)
+--- Please select a CRAN mirror for use in this session ---
+Warning message:
+In getDependencies(pkgs, dependencies, available, lib) :
+  package ?devtools? is not available
+----------------------------------------------------------
+
+Thanks for creating this. It looks good!
+-cellurl
+
+
+
+From Jan.Lammertyn at ugent.be  Wed Jun 27 08:02:34 2012
+From: Jan.Lammertyn at ugent.be (Jan Lammertyn)
+Date: Wed, 27 Jun 2012 10:02:34 +0200
+Subject: [rkward-users] (no subject)
+In-Reply-To: <CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>
+References: <CAHymeZoaQVgbv2aMaCdgS6b2CieT9pabXmtxTuu-NnHiLjrPbQ@mail.gmail.com>
+Message-ID: <4FEABE1A.3020703@ugent.be>
+
+Hi James,
+
+No experience with devtools, but apparently you run R version 2.12 and 
+devtools needs at least 2.13. Therefore it's not available for your 
+version. See also http://cran.r-project.org/web/packages/devtools/index.html
+
+
+On 27/06/2012 03:42 AM, james pruett wrote:
+> newbie here.
+>
+> I installed rkward on Ubuntu.
+> It installed aok.
+>
+> ----------------------I get this error:---------------------
+>> install.packages("devtools")
+> Installing package(s) into ?/home/jim/R/i686-pc-linux-gnu-library/2.12?
+> (as ?lib? is unspecified)
+> --- Please select a CRAN mirror for use in this session ---
+> Warning message:
+> In getDependencies(pkgs, dependencies, available, lib) :
+>    package ?devtools? is not available
+> ----------------------------------------------------------
+>
+> Thanks for creating this. It looks good!
+> -cellurl
+>
+> ------------------------------------------------------------------------------
+> Live Security Virtual Conference
+> Exclusive live event will cover all the ways today's security and
+> threat landscape has changed and how IT managers can respond. Discussions
+> will include endpoint security, mobile security and the latest in malware
+> threats. http://www.accelacomm.com/jaw/sfrnl04242012/114/50122263/
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+
+
+
+
+

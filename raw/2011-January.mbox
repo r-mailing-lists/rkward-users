@@ -1,0 +1,256 @@
+From meik.michalke at uni-duesseldorf.de  Mon Jan  3 18:09:04 2011
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 3 Jan 2011 19:09:04 +0100
+Subject: [rkward-users] Variable Class and IRT
+In-Reply-To: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+References: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+Message-ID: <201101031909.04697.meik.michalke@uni-duesseldorf.de>
+
+hi craig,
+
+am Dienstag 28 Dezember 2010 (02:30) schrieb Craig Johnson:
+> One of the things I'm trying to do is play around with the IRT features.
+
+i'm responsible for the IRT plugin, so that's nice to read ;-)
+
+> The problem I'm having is that I don't have the proper "class" to run the
+> statistics.
+
+with the given information i cannot add something of value to what thomas 
+already explained. in case you're uncomfortable to discuss your analysis on 
+the list, feel free to contact me directly. the matter seems to be more R 
+basics than RKWard specific anyway, as far as i can see.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at 40225 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110103/dc0e6f8a/attachment.sig>
+
+From cjohns38 at gmail.com  Mon Jan  3 18:36:49 2011
+From: cjohns38 at gmail.com (Craig Johnson)
+Date: Mon, 3 Jan 2011 12:36:49 -0600
+Subject: [rkward-users] Variable Class and IRT
+In-Reply-To: <201101031909.04697.meik.michalke@uni-duesseldorf.de>
+References: <AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>
+	<201101031909.04697.meik.michalke@uni-duesseldorf.de>
+Message-ID: <AANLkTikYB+eEAaVhK8X+w8+O+QWd8dsmpUGEG0kOo5ed@mail.gmail.com>
+
+Hey guys,
+
+This is on my list of things to dive into I just haven't gotten to it,
+sorry!  I'm sure it's probably something simple that I'm missing.  Basically
+I've imported some data and went to try the IRT stuff and was unable to do
+so because it appears the data isn't in the right format.
+
+I'll try and get some more specific info (perhaps a sample file) in the next
+day or so.
+
+Thanks again for your responses and great with with RKWard.  It's a much
+more friendly step to go from SAS to R when you can at least do the basics
+with the GUI.
+
+Craig
+
+
+On Mon, Jan 3, 2011 at 12:09 PM, meik michalke <
+meik.michalke at uni-duesseldorf.de> wrote:
+
+> hi craig,
+>
+> am Dienstag 28 Dezember 2010 (02:30) schrieb Craig Johnson:
+> > One of the things I'm trying to do is play around with the IRT features.
+>
+> i'm responsible for the IRT plugin, so that's nice to read ;-)
+>
+> > The problem I'm having is that I don't have the proper "class" to run the
+> > statistics.
+>
+> with the given information i cannot add something of value to what thomas
+> already explained. in case you're uncomfortable to discuss your analysis on
+> the list, feel free to contact me directly. the matter seems to be more R
+> basics than RKWard specific anyway, as far as i can see.
+>
+>
+> viele gr??e :: m.eik
+>
+> --
+> dipl. psych. meik michalke
+> institut f"ur experimentelle psychologie
+> abt. f"ur diagnostik und differentielle psychologie
+> heinrich-heine-universit"at 40225 d"usseldorf
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110103/be0b3b24/attachment.html>
+
+From kapatp at gmail.com  Sun Jan 30 01:28:53 2011
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sat, 29 Jan 2011 20:28:53 -0500
+Subject: [rkward-users] [R-sig-Debian] Ubuntu and R.
+In-Reply-To: <19779.32601.689506.181506@max.nulle.part>
+References: <AANLkTimEZQKqGR297=99JdRg+44B8EyvQonU3WqR38PY@mail.gmail.com>
+	<19779.32601.689506.181506@max.nulle.part>
+Message-ID: <AANLkTintWOQ8ZsGajSS1wf4mUNiUNEY6hX9WnRAX5Vmj@mail.gmail.com>
+
+Here is a message from r-sig-debian, which I took the liberty to take
+up on our list.
+
+On Fri, Jan 28, 2011 at 9:45 PM, Dirk Eddelbuettel <edd at debian.org> wrote:
+>
+> On 28 January 2011 at 17:39, Matthew Bascom wrote:
+> | Hello,
+> |
+> | I?ve encountered a couple hurdles after installing Ubuntu for the first time
+> | and working with R with RKWard.
+> |
+> | The Keyboard: I have to hit the quote button twice to get a quote or
+> | apostrophe! I tried adjusting keyboard settings but nothing changed. ?And
+> | the RKWard GUI won?t recognize quotes from my machines even though they show
+> | up on the RKWard text editor. On the other hand, RKWard will run quoted
+> | material when I copy and paste material with quotes such as in a help.search
+> | query.
+>
+> There is not a lot to go by here.
+>
+> Thomas frequently builds on Debian and Ubuntu, in fact he is the maintainer.
+> Thanks to the backporters Vincent and Michal, a version is always included on
+> the CRAN repo for Ubuntu, eg at
+>
+> ? ? http://cran.us.r-project.org/bin/linux/ubuntu/
+>
+> where you should read the README. ?Just running 'apt-get install rkward'
+> should install it; and by launching
+>
+> ? ? $ rkward
+>
+> it surely start a working version. I have no problem using quotes either.
+>
+> Dirk
+>
+> | Thank you in advance,
+> |
+> | Matt
+
+For some background info: how did you install R and RKWard? Could you
+provide the output of sessionInfo()?
+
+
+-- 
+Prasenjit
+
+
+
+From prof.prlwrlczkwsky at googlemail.com  Sun Jan 30 21:34:49 2011
+From: prof.prlwrlczkwsky at googlemail.com (Prof Prlwrlczkwsky)
+Date: Sun, 30 Jan 2011 22:34:49 +0100
+Subject: [rkward-users] Howto configure RKWard to give consistent results
+ with R running in the Xterminal window?
+Message-ID: <AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>
+
+Is it possible to configure RKWard to give consistent results with R running
+in the Xterminal window?
+In the R console of the X-terminal I get:
+
+    > owd = setwd(tempdir())
+    > owd
+    [1] "/home/andreas"
+
+whereas in the R console of RKWard I get for the same commands:
+    > owd = setwd(tempdir())
+    > owd
+    NULL
+
+(R2.12.1 under opensuse11.2)
+
+Any Ideas?
+
+Andreas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110130/4162a1aa/attachment.html>
+
+From kapatp at gmail.com  Sun Jan 30 22:26:10 2011
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sun, 30 Jan 2011 17:26:10 -0500
+Subject: [rkward-users] Howto configure RKWard to give consistent
+ results with R running in the Xterminal window?
+In-Reply-To: <AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>
+References: <AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>
+Message-ID: <AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>
+
+Hi,
+
+On Sun, Jan 30, 2011 at 4:34 PM, Prof Prlwrlczkwsky
+<prof.prlwrlczkwsky at googlemail.com> wrote:
+> Is it possible to configure RKWard to give consistent results with R running
+> in the Xterminal window?
+> In the R console of the X-terminal I get:
+>
+> ??? > owd = setwd(tempdir())
+> ??? > owd
+> ??? [1] "/home/andreas"
+>
+> whereas in the R console of RKWard I get for the same commands:
+> ??? > owd = setwd(tempdir())
+> ??? > owd
+> ??? NULL
+>
+> (R2.12.1 under opensuse11.2)
+>
+> Any Ideas?
+
+Fixed in SVN. Thanks for the bug! If you do not use svn trunk, as a
+trivial workaround, run the following whenever you start rkward:
+
+setwd <- function (x) {
+	owd <- getwd ()
+	rkward::setwd (x)
+	invisible (owd)
+}
+
+Thomas: I hope there are there are no side affects!
+
+-- 
+Prasenjit
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jan 31 14:23:09 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 31 Jan 2011 15:23:09 +0100
+Subject: [rkward-users] Howto configure RKWard to give consistent
+	results with R running in the Xterminal window?
+In-Reply-To: <AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>
+References: <AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>
+	<AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>
+Message-ID: <201101311523.12892.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 30 January 2011, Prasenjit Kapat wrote:
+> Thomas: I hope there are there are no side affects!
+
+no negative side effects to be expected from your fix. I simply forgot to pay 
+attention to the return value, when I overloaded setwd().
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110131/62cf3ef7/attachment.sig>
+

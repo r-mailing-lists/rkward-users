@@ -1,0 +1,155 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-07",
+  "messages": [
+    {
+      "id": "msg-1086803826a1",
+      "message_id": "<2879571.s7iyOpGyUA@chiana>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2012-07-02T11:24:49Z",
+      "subject": "[rkward-users] Fwd: [JSS-Announce] New JSS Special Volume 49: Graphical User Interfaces for R",
+      "subject_clean": "[rkward-users] Fwd: [JSS-Announce] New JSS Special Volume 49: Graphical User Interfaces for R",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nthe Journal of Statistical Software just published a special volume on \ngraphical user interfaces for R, also including an issue on RKWard:\n\n RKWard: A Comprehensive Graphical User Interface and Integrated Development  \n   Environment for Statistical Analysis with R\n   Stefan R?diger, Thomas Friedrichsmeier, Prasenjit Kapat, Meik Michalke\n Vol. 49, Issue 9, Jun 2012\n Submitted 2010-12-28, Accepted 2011-05-06\n Url: http://www.jstatsoft.org/v49/i09\n Paper: http://www.jstatsoft.org/v49/i09/paper\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 187 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120702/3b05f8be/attachment.sig>",
+      "body_snippet": "hi,\n\nthe Journal of Statistical Software just published a special volume on \ngraphical user interfaces for R, also including an issue on RKWard:\n\n RKWard: A Comprehensive Graphical User Interface and ",
+      "thread_id": "thread-1086803826a1",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-897e350f47da",
+      "message_id": "<201207131932.36035.newsletter@fichtinger.org>",
+      "from_name": "Johannes Fichtinger",
+      "from_email_hash": "676e368b39a7d8d9fa79e768e694e0bf37ecbc2a49914bae2e9161152a45cdb3",
+      "date": "2012-07-13T18:32:35Z",
+      "subject": "[rkward-users] Warning about too long lines",
+      "subject_clean": "[rkward-users] Warning about too long lines",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi\n\nAfter a recent update to KDE 4.8.4 in Debian SID using rkward 0.5.7, I \nsometimes get this warning: \n\n?The file /home/.../file.r was opened and contained too long lines (more than \n1,024 characters). Too long lines were wrapped and the document is set to \nread-only mode, as saving will modify its content.?\n\nI understand that there is a setting in Settings --> Configure Editor --> \nOpen/Save --> Line Length Limit which is set to 1.024 by default. Setting this \nto 0 should prevent that line length check. \n\nHowever, it seems that on my machine this setting (line length limit = 0) is \nnot saved when I close and reopen rkward. \n\nAny ideas how to solve this issue?\n\nBest Wishes\nJohannes \n\n\n-- \nDr. Johannes Fichtinger\nLecturer in Logistics and Supply Chain Management\nBuilding 32, Cranfield School of Management\nCranfield University, Cranfield, Beds, England MK43 0AL\nT: +44 (0)1234 751122 ext 2921",
+      "body_snippet": "Hi\n\nAfter a recent update to KDE 4.8.4 in Debian SID using rkward 0.5.7, I \nsometimes get this warning: \n\n?The file /home/.../file.r was opened and contained too long lines (more than \n1,024 character",
+      "thread_id": "thread-897e350f47da",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-8c5b2c73d03c",
+      "message_id": "<1342558067.45111.YahooMailNeo@web122304.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2012-07-17T20:47:47Z",
+      "subject": "[rkward-users] Variable labels",
+      "subject_clean": "[rkward-users] Variable labels",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n?\nI'm using write.table() to export dataframes to Excel. All works fine except that I want to use variable labels instead of variable names !\n?\nIn RKWard, if I open a dataframe, I can write variable labels directly in the dataframe editor.\n?\nTwo questions :\n?\n1) Is it possible to write variable labels via the syntax ?\n?\n2) Is it possible to export variables labels instead of variables name with write.table() ?\n?\nThanks,\n\nFran?ois Maurice, B. Sc., A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120717/f880916b/attachment.html>",
+      "body_snippet": "Hi,\n?\nI'm using write.table() to export dataframes to Excel. All works fine except that I want to use variable labels instead of variable names !\n?\nIn RKWard, if I open a dataframe, I can write variab",
+      "thread_id": "thread-8c5b2c73d03c",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-b9071b486f5d",
+      "message_id": "<20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>",
+      "from_name": "Griera",
+      "from_email_hash": "46ddaf20e50a78ed092c7cf1771883abf91989f49c2c0d7035755c352543fb6a",
+      "date": "2012-07-24T08:05:33Z",
+      "subject": "[rkward-users] Installing plugins",
+      "subject_clean": "[rkward-users] Installing plugins",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello:\n\nIs there a tutorial on how to install plugins from\nhttp://rkward.sourceforge.net/R/? How can I install them? Thanks for\nthe help. Regard.",
+      "body_snippet": "Hello:\n\nIs there a tutorial on how to install plugins from\nhttp://rkward.sourceforge.net/R/? How can I install them? Thanks for\nthe help. Regard.",
+      "thread_id": "thread-b9071b486f5d",
+      "thread_depth": 0,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-7a81f38e4c94",
+      "message_id": "<1525490.tOap6R3gpn@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-07-24T08:39:29Z",
+      "subject": "[rkward-users] Installing plugins",
+      "subject_clean": "[rkward-users] Installing plugins",
+      "in_reply_to": "<20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>",
+      "references": [
+        "<20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>"
+      ],
+      "body_plain": "hi,\n\nam Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:\n> Is there a tutorial on how to install plugins from\n> http://rkward.sourceforge.net/R/? How can I install them? Thanks for\n> the help.\n\nRKWard plugins are R packages. that is, you install a plugin like you would \ninstall any other R package.\n\nif the repository is configured in RKWard, which should be the default, (check \nthat via \"cofingure RKWard\" -> \"R packages\"), you can use RKWards \"configure R \npackages\" dialog. packages which include plugins show a small RKWard logo \nthere. by convention, most of these packages' names start with \"rk.*\".\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120724/e834402d/attachment.sig>",
+      "body_snippet": "hi,\n\nam Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:\n> Is there a tutorial on how to install plugins from\n> http://rkward.sourceforge.net/R/? How can I install them? Thanks for\n> the help.\n\nRKWard ",
+      "thread_id": "thread-b9071b486f5d",
+      "thread_depth": 1,
+      "month": "2012-07"
+    },
+    {
+      "id": "msg-52f3a0936a78",
+      "message_id": "<20120724122446.25727d60@epigpbn01.ad-hugtip.local>",
+      "from_name": "Griera",
+      "from_email_hash": "46ddaf20e50a78ed092c7cf1771883abf91989f49c2c0d7035755c352543fb6a",
+      "date": "2012-07-24T10:24:46Z",
+      "subject": "[rkward-users] Installing plugins",
+      "subject_clean": "[rkward-users] Installing plugins",
+      "in_reply_to": "<1525490.tOap6R3gpn@yrla>",
+      "references": [
+        "<20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>",
+        "<1525490.tOap6R3gpn@yrla>"
+      ],
+      "body_plain": "Hello:\n\nOn Tue, 24 Jul 2012 10:39:29 +0200\nmeik michalke <meik.michalke at uni-duesseldorf.de> wrote:\n> hi,\n> \n> am Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:\n> > Is there a tutorial on how to install plugins from\n> > http://rkward.sourceforge.net/R/? How can I install them? Thanks for\n> > the help.\n> \n> RKWard plugins are R packages. that is, you install a plugin like you would \n> install any other R package.\n\nThank you. I have done it without problems. I had not thought of that\ncan be installed as a normal package. Regards.\n\n> \n> if the repository is configured in RKWard, which should be the default, (check \n> that via \"cofingure RKWard\" -> \"R packages\"), you can use RKWards \"configure R \n> packages\" dialog. packages which include plugins show a small RKWard logo \n> there. by convention, most of these packages' names start with \"rk.*\".\n> \n> \n> viele gr??e :: m.eik\n> \n> -- \n> dipl. psych. meik michalke\n> institut f\"ur experimentelle psychologie\n> abt. f\"ur diagnostik und differentielle psychologie\n> heinrich-heine-universit\"at d-40204 d\"usseldorf",
+      "body_snippet": "Hello:\n\nOn Tue, 24 Jul 2012 10:39:29 +0200\nmeik michalke <meik.michalke at uni-duesseldorf.de> wrote:\n> hi,\n> \n> am Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:\n> > Is there a tutorial on how to in",
+      "thread_id": "thread-b9071b486f5d",
+      "thread_depth": 2,
+      "month": "2012-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1086803826a1",
+      "subject": "[rkward-users] Fwd: [JSS-Announce] New JSS Special Volume 49: Graphical User Interfaces for R",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2012-07-02T11:24:49Z",
+      "last_reply": "2012-07-02T11:24:49Z",
+      "root_message_id": "msg-1086803826a1"
+    },
+    {
+      "id": "thread-897e350f47da",
+      "subject": "[rkward-users] Warning about too long lines",
+      "message_count": 1,
+      "participants": [
+        "Johannes Fichtinger"
+      ],
+      "started": "2012-07-13T18:32:35Z",
+      "last_reply": "2012-07-13T18:32:35Z",
+      "root_message_id": "msg-897e350f47da"
+    },
+    {
+      "id": "thread-8c5b2c73d03c",
+      "subject": "[rkward-users] Variable labels",
+      "message_count": 1,
+      "participants": [
+        "Francois Maurice"
+      ],
+      "started": "2012-07-17T20:47:47Z",
+      "last_reply": "2012-07-17T20:47:47Z",
+      "root_message_id": "msg-8c5b2c73d03c"
+    },
+    {
+      "id": "thread-b9071b486f5d",
+      "subject": "[rkward-users] Installing plugins",
+      "message_count": 3,
+      "participants": [
+        "Griera",
+        "meik michalke"
+      ],
+      "started": "2012-07-24T08:05:33Z",
+      "last_reply": "2012-07-24T10:24:46Z",
+      "root_message_id": "msg-b9071b486f5d"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+From meik.michalke at uni-duesseldorf.de  Sat Mar 11 16:51:53 2017
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sat, 11 Mar 2017 17:51:53 +0100
+Subject: new location for debian packages of RKWard plugins
+Message-ID: <4053435.1vLpWKsrxr@yrla>
+
+hi there,
+
+we'd like to inform all of you that we have moved our debian repository for 
+plugin packages (and related R packages) from files.kde.org to 
+distribute.kde.org. this is (only) of relevance for you if you are running a 
+debian-based operating system and have configured apt to use that repository. 
+
+well, in that case you already should have noticed that the repo isn't 
+functioning any longer. please replace your current configuration with the new 
+addresses:
+
+ # for binary packages:
+ deb https://distribute.kde.org/rkward/deb unstable main
+ # for source packages:
+ deb-src https://distribute.kde.org/rkward/deb unstable main
+
+you can then install all additional RKWard plugins through your systems's 
+package management (note that you need to install the package "rkward-keyring" 
+first, to import the repo's PGP key). currently, that includes the following 
+packages:
+
+ r-other-rkward-rk.anova
+ r-other-rkward-rk.clusteranalysis
+ r-other-rkward-rk.cohenkappa
+ r-other-rkward-rk.factoranalysis
+ r-other-rkward-rk.gitinstall
+ r-other-rkward-rk.multidimensionalscaling
+
+as well as:
+ r-other-rkward-rkwarddev (plugin development)
+ r-other-rkward-ximple    (XML package, dependency for rkwarddev)
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20170311/929a0018/attachment.sig>
+

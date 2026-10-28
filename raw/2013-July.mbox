@@ -1,0 +1,30 @@
+From tfry at users.sf.net  Tue Jul 16 08:26:56 2013
+From: tfry at users.sf.net (Thomas Friedrichsmeier)
+Date: Tue, 16 Jul 2013 08:26:56 +0000
+Subject: [rkward-users] [rkward:discussion] Re: Error starting Rkward 0.6.1
+ with R 3.0.1 on openSUSE 12.3
+In-Reply-To: <c92ea0714b308c9476633b92d54521100a341084.discussion@rkward.p.sourceforge.net>
+Message-ID: </p/rkward/discussion/165574/654ae27c4020f4be5d09bcc165022aa2a0f6ccd0.discussion@rkward.p.sourceforge.net>
+
+Very sorry for the late reply. Looks like I did not get a notification of your post.
+
+> Error: package ?rkward? was built before R 3.0.0: please re-install it
+
+For use with R >= 3.0.0 you need a version of RKWard compiled against R >= 3.0.0. I am not sure whether suitable binaries exist for openSuse. However, compilation from source is relatively straight-forward on Linux systems: http://p.sf.net/rkward/compiling
+
+Regards
+Thomas
+
+---
+[Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3](https://sourceforge.net/p/rkward/discussion/165574/thread/cff64476/?limit=25#50b7/0223)
+
+
+---
+
+Sent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/
+
+To unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130716/938a71b7/attachment.html>
+

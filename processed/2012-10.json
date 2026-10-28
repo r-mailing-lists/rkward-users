@@ -1,0 +1,573 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-10",
+  "messages": [
+    {
+      "id": "msg-e856e6ccc8b1",
+      "message_id": "<201210081209.19462.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-08T10:09:19Z",
+      "subject": "[rkward-users] [rkward-announce] Upcoming release, call for testing RKWard 0.6.0",
+      "subject_clean": "[rkward-users] [rkward-announce] Upcoming release, call for testing RKWard 0.6.0",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nOnce again, it's time to prepare a new release, and once again, I would like \nto ask you for help in testing, packaging and translating. Details on \navailable downloads, and a tentative release schedule can be found at \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule \nas usual. The targetted release date is October 24. and I would like to ask \nyou to provide feedback by October 15.\n\nFeatures to look out for are the new debugger tool windows (try debugging and \nR function), the new table of contents in the output window, and several \nreworked plugins (most importantly t-test and Wilcoxon-test), but many further \nsmall features have been added, and bugs have been fixed.\n\nPerhaps most importantly, 0.6.0 will be the first official release of RKWard \nfor which we will provide ready-to-use binaries for Mac OS X. So, if you have \na Mac at hands, be sure to give this a try.\n\n(See the release schedule, above, for all relevant instructions and \ndownloads.)\n\n--- Translators ---\n\nNow is a good time to start updating your translations. As usual, the deadline \nto send your updates ends with the testing phase on October 15. As a reminder, \nRKWard is now registered for translations on launchpad: \nhttps://translations.launchpad.net/rkward , and it is recommended to upload \nyour translations, there. Sending translations by mail is also ok, of course.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121008/a620f8e1/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nDon't let slow site performance ruin your business. Deploy New Relic APM\nDeploy New Relic app performance management and know exactly\nwhat is happening inside your Ruby, Python, PHP, Java, and .NET app\nTry New Relic at no cost today and get our sweet Data Nerd shirt too!\nhttp://p.sf.net/sfu/newrelic-dev2dev\n-------------- next part --------------\n_______________________________________________\nrkward-announce mailing list\nrkward-announce at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-announce",
+      "body_snippet": "Hi!\n\nOnce again, it's time to prepare a new release, and once again, I would like \nto ask you for help in testing, packaging and translating. Details on \navailable downloads, and a tentative release s",
+      "thread_id": "thread-e856e6ccc8b1",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-8324f2b0fccd",
+      "message_id": "<507DF2AE.7070805@worldlinc.net>",
+      "from_name": "JohnT",
+      "from_email_hash": "b22bb758061f61949bcdba01cb582f80654dfd21343add19e4b9339021fcb071",
+      "date": "2012-10-16T23:50:06Z",
+      "subject": "[rkward-users] rkward build problem",
+      "subject_clean": "[rkward-users] rkward build problem",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The source download uses cmake to build according to the configure\nmessage, but cmake dies trying to perform QT4_AUTOMOC which is said to be\nnot needed. Where does QT4_AUTOMOC come from? Why not stick with standard\nUnix/Linux build tools which work? A good configure script should test for\nthe presence of needed files and headers, and report that QT4_AUTOMOC\nisn't present, and what version of QT is required for the build. Cmake\ndoesn't tell squat.\n\nJohn in Kansas\n\n-- \nhttp://www.mozilla.org Firefox browser, Thunderbird email, Seamonkey\nall-in-one, Sunbird calendar and more. Free secure open-source software\nfor Windows, Linux, Mac OS and other operating systems",
+      "body_snippet": "The source download uses cmake to build according to the configure\nmessage, but cmake dies trying to perform QT4_AUTOMOC which is said to be\nnot needed. Where does QT4_AUTOMOC come from? Why not stick",
+      "thread_id": "thread-8324f2b0fccd",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-6bddeb685cdd",
+      "message_id": "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+      "from_name": "Rebel Tyrcus",
+      "from_email_hash": "24f2bf299aa08a38c52526de4c141a57c7f57dc6a3ff4272a5dcd87625dfd85e",
+      "date": "2012-10-17T09:12:01Z",
+      "subject": "[rkward-users] Select cases",
+      "subject_clean": "[rkward-users] Select cases",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all\n\nI'm new to R and RKWard in my quest for getting rid of SPSS. I hope I\nplace my questions in the correct list.\n\n1. I've read the article in the Journal of Statistical Software about\nRKWard, but is there any manual out there explaning all the functions\nin RKWArd with more detail?\n\n2. Is there an option to select cases filtering by a variable with the\nmenus? I've seen you can code it with the \"subset\" expression, but I'm\nnew to R code as well...\n\n3. Is there an option to recode or calculate to new variables in\ndifferent ones with the menus? I know there are the recode and compute\nexpressions, but I rather start using the menus until I learn how R\ncode works.\n\nThanks in advance.\n\nJoan",
+      "body_snippet": "Hi all\n\nI'm new to R and RKWard in my quest for getting rid of SPSS. I hope I\nplace my questions in the correct list.\n\n1. I've read the article in the Journal of Statistical Software about\nRKWard, but",
+      "thread_id": "thread-6bddeb685cdd",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-6a55de1f9095",
+      "message_id": "<8448288.msf0If2fv8@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-10-17T09:24:39Z",
+      "subject": "[rkward-users] rkward build problem",
+      "subject_clean": "[rkward-users] rkward build problem",
+      "in_reply_to": "<507DF2AE.7070805@worldlinc.net>",
+      "references": [
+        "<507DF2AE.7070805@worldlinc.net>"
+      ],
+      "body_plain": "hi,\n\nam Dienstag 16 Oktober 2012, 18:50:06 schrieb JohnT:\n> The source download uses cmake to build according to the configure\n> message, but cmake dies trying to perform QT4_AUTOMOC which is said to be\n> not needed. Where does QT4_AUTOMOC come from?\n\ni seem to run into the same problem with MacPorts (0.6.0 branch):\n\n<configure>\n-- The C compiler identification is GNU 4.2.1\n-- The CXX compiler identification is GNU 4.2.1\n-- Checking whether C compiler has -isysroot\n-- Checking whether C compiler has -isysroot - yes\n-- Checking whether C compiler supports OSX deployment target flag\n-- Checking whether C compiler supports OSX deployment target flag - yes\n-- Check for working C compiler: /usr/bin/llvm-gcc-4.2\n-- Check for working C compiler: /usr/bin/llvm-gcc-4.2 -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Checking whether CXX compiler has -isysroot\n-- Checking whether CXX compiler has -isysroot - yes\n-- Checking whether CXX compiler supports OSX deployment target flag\n-- Checking whether CXX compiler supports OSX deployment target flag - yes\n-- Check for working CXX compiler: /usr/bin/llvm-g++-4.2\n-- Check for working CXX compiler: /usr/bin/llvm-g++-4.2 -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at dataeditor/CMakeLists.txt:18 (QT4_AUTOMOC):\n  Unknown CMake command \"QT4_AUTOMOC\".\n\n\n-- Configuring incomplete, errors occurred!\nCommand failed:  cd \n\"/opt/rkward/var/macports/build/_opt_ports_kde_rkward/rkward/work/release_branch_0.6.0/rkward/build\" \n&& cmake .. -DCMAKE_INSTALL_PREFIX=/opt/rkward -DCMAKE_VERBOSE_MAKEFILE=ON -\nDCMAKE_COLOR_MAKEFILE=ON -DCMAKE_BUILD_TYPE=Release -\nDCMAKE_BUILD_WITH_INSTALL_RPATH=ON -DCMAKE_INSTALL_NAME_DIR=/opt/rkward/lib -\nDCMAKE_SYSTEM_PREFIX_PATH=\"/opt/rkward;/usr\" -\nDCMAKE_MODULE_PATH=/opt/rkward/share/cmake/modules -Wno-dev -DNO_R_XML=1 -\nDRKVERSION_NUMBER=0.6.0 -DBUNDLE_INSTALL_DIR=/Applications/RKWard -\nDQT_QT_INCLUDE_DIR=/opt/rkward/include/QtCore -\nDCMAKE_OSX_ARCHITECTURES=\"x86_64\" -DCMAKE_OSX_SYSROOT=/ \nExit code: 1\nError: org.macports.configure for port rkward returned: configure failure: \ncommand execution failed\nWarning: targets not executed for rkward: org.macports.activate \norg.macports.configure org.macports.build org.macports.destroot \norg.macports.install\nPlease see the log file for port rkward for details:\n    /opt/rkward/var/macports/logs/_opt_ports_kde_rkward/rkward/main.log\nTo report a bug, follow the instructions in the guide:\n    http://guide.macports.org/#project.tickets\nError: Processing of port rkward failed\n</configure>\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: smime.p7s\nType: application/pkcs7-signature\nSize: 2282 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121017/1bd47056/attachment.p7s>",
+      "body_snippet": "hi,\n\nam Dienstag 16 Oktober 2012, 18:50:06 schrieb JohnT:\n> The source download uses cmake to build according to the configure\n> message, but cmake dies trying to perform QT4_AUTOMOC which is said to ",
+      "thread_id": "thread-8324f2b0fccd",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-dae28aef030d",
+      "message_id": "<201210171222.36878.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-17T10:22:31Z",
+      "subject": "[rkward-users] rkward build problem",
+      "subject_clean": "[rkward-users] rkward build problem",
+      "in_reply_to": "<507DF2AE.7070805@worldlinc.net>",
+      "references": [
+        "<507DF2AE.7070805@worldlinc.net>"
+      ],
+      "body_plain": "Hi,\n\nbefore I'll turn to helping you, I'll bite the bait. I know, I shouldn't, but \nyou *are* asking for it:\n\nOn Wednesday 17 October 2012, JohnT wrote (in sligthly different order):\n> Why not stick with standard\n> Unix/Linux build tools which work?\n\nBecause you cannot build KDE applications using standard Unix/Linux build \ntools (where \"standard\" seems to refer to a state of the world at least five \nyears, ago). Ok, yes, in theory, you can. If you spend a couple man-years \nwriting the required autotools code (and cross-platform, please), and then \nmaintain the resulting mess. Feel free to volunteer.\n\nBelieve me, I don't welcome every single decision the KDE team has made for \nKDE 4. But switching the build system from autotools to cmake was a very \nreasonable thing to do. You see, RKWard has been around in KDE 3 times, \nalready, and so we were using autotools back then. The \"admin\" directory, \ncontaining the automess used to be more than two times larger than the \nremainder of the RKWard code base. Yes, most of that was \"borrowed\", and even \ncompletely irrelevant logic, but see - if it's just too complex to maintain, \nyou don't have a real chance of sorting it out, without breaking it, either. \nAs a reminder, RKWard / KDE was not even available for the Mac or for Windows, \nat the time.\n\nDid those \"standard\" build tools work? Yes, most of the time. But, in fact, \nusers were asking for help building RKWard much more frequently back in the \nday.\n\nNo, cmake does not actually make things less complex, overall. But it makes \nthe build configuration *modular*, and maintainable. The drawback of \nmodularity is that - sometimes - it will not be immediately obvious, where you \nshould look for something (such as a missing QT4_AUTOMOC macro). But that's a \nrather affordable price to pay.\n\n> A good configure script should test for\n> the presence of needed files and headers, and report that QT4_AUTOMOC\n> isn't present, and what version of QT is required for the build. Cmake\n> doesn't tell squat.\n\nAnd a good issue report should include information on installed versions of \nrelevant packages, *and* a verbatim copy of the error message, even if it \ndoesn't mean squat to the reporter. You see, probably that message *should* be \nimproved. But to do so, we need a better picture, what exactly you got, and \nwhy.\n\n> The source download uses cmake to build according to the configure\n> message, but cmake dies trying to perform QT4_AUTOMOC which is said to be\n> not needed. Where does QT4_AUTOMOC come from? \n\nI can't tell you which package to install, exactly (as you did not even \nspecify your distribution), but if you install the KDE-libraries *and* \nheaders, as specified on line 4 of \"INSTALL\", that should pull the required \ndependencies. Look for a package called kdelibs-devel, kdelibs-dev or similar \nnames. See http://p.sf.net/rkward/compiling for more specific advice, \nincluding links to binaries, and distribution-specific build rules.\n\nWell, no offense meant. Excuse me for the lecture. You *are* always welcome to \nask for (more) help on this list. But please do include more specific \ninformation, and less general rhetoric, next time.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121017/d2d4630d/attachment.sig>",
+      "body_snippet": "Hi,\n\nbefore I'll turn to helping you, I'll bite the bait. I know, I shouldn't, but \nyou *are* asking for it:\n\nOn Wednesday 17 October 2012, JohnT wrote (in sligthly different order):\n> Why not stick w",
+      "thread_id": "thread-8324f2b0fccd",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-a019a01c38a8",
+      "message_id": "<201210171240.02532.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-17T10:39:58Z",
+      "subject": "[rkward-users] rkward build problem",
+      "subject_clean": "[rkward-users] rkward build problem",
+      "in_reply_to": "<8448288.msf0If2fv8@yrla>",
+      "references": [
+        "<507DF2AE.7070805@worldlinc.net>",
+        "<8448288.msf0If2fv8@yrla>"
+      ],
+      "body_plain": "Hi!\n\nOn Wednesday 17 October 2012, meik michalke wrote:\n> i seem to run into the same problem with MacPorts (0.6.0 branch):\n> \n> <configure>\n> -- The C compiler identification is GNU 4.2.1\n> -- The CXX compiler identification is GNU 4.2.1\n> -- Checking whether C compiler has -isysroot\n> -- Checking whether C compiler has -isysroot - yes\n> -- Checking whether C compiler supports OSX deployment target flag\n> -- Checking whether C compiler supports OSX deployment target flag - yes\n> -- Check for working C compiler: /usr/bin/llvm-gcc-4.2\n> -- Check for working C compiler: /usr/bin/llvm-gcc-4.2 -- works\n> -- Detecting C compiler ABI info\n> -- Detecting C compiler ABI info - done\n> -- Checking whether CXX compiler has -isysroot\n> -- Checking whether CXX compiler has -isysroot - yes\n> -- Checking whether CXX compiler supports OSX deployment target flag\n> -- Checking whether CXX compiler supports OSX deployment target flag - yes\n> -- Check for working CXX compiler: /usr/bin/llvm-g++-4.2\n> -- Check for working CXX compiler: /usr/bin/llvm-g++-4.2 -- works\n> -- Detecting CXX compiler ABI info\n> -- Detecting CXX compiler ABI info - done\n> CMake Error at dataeditor/CMakeLists.txt:18 (QT4_AUTOMOC):\n>   Unknown CMake command \"QT4_AUTOMOC\".\n\nAh, I see (although I don't know, whether or not it's the same problem that \nJohn is facing). The problem is that you gave the path to the CMakeLists.txt \ninside the \"rkward\"-subdirectory, instead of the top-level one. Probably \nthat's because the release branch has one \"rkward\" stripped from the path. Add \na \"/..\" and you should be fine.\n\nThat definitely has some potential for confusion, so I'll add a check and \nmessage for this problem in a minute (development version, only).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121017/d72adb6d/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Wednesday 17 October 2012, meik michalke wrote:\n> i seem to run into the same problem with MacPorts (0.6.0 branch):\n> \n> <configure>\n> -- The C compiler identification is GNU 4.2.1\n> -- The CX",
+      "thread_id": "thread-8324f2b0fccd",
+      "thread_depth": 2,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-c785336e2e33",
+      "message_id": "<1350518456.16046.8.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-18T00:00:56Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi all,\n\nI am using RKward in Ubuntu for a while now. I am fascinated with the\ninterface and the productivity.\n\nCurrently, I am working on a large data sets where summary tables and\nplots are important for visualization. I managed to create table and\ngraphs and pipe them to the output. However, I am having problems with\nthe output settings.\n\nWhat I get:\nHuge font size in TOC -\nhttp://imageshack.us/photo/my-images/823/rkout1.png/\nConsiderable blank spaces after the title.\nNo control on the size of the output image.\n\nWhat I wish:\nControl over each level of TOC fonts and spacings (using some sort of\nparameters)\nCopy graphs to the output according to a certain specifications (for\nexample 480 X 240 px) (I can create a desired graph by changing\nparameters within RKWard, however, when the graph is copied to output it\ngoes to default.\n\nThere is one last thing:\nWhen I use the following code, I get one graph in the active window (I\nam copy pasting code for each variable - which is a crude way to do it,\nbut I am not really savvy with looping mechanism yet). \"Previous and\nnext\" is - grayed out. Usually when I get boxplots from a data within\nRKward, I get sequential outputs and I can go back and forth to look at\nindividual plots.\n[img]http://imageshack.us/photo/my-images/94/007kj.png/[/img]\n\n[b]My RKward version:[/b]\nRKWard\nVersion 0.5.7z+0.6.0+pre1\nUsing KDE Development Platform 4.7.4 (4.7.4)\n\n[b]Here is my kernel version[/b]\n3.0.0-26-generic #43-Ubuntu SMP Tue Sep 25 17:19:22 UTC 2012 x86_64\nx86_64 x86_64 GNU/Linux\n\nHere is the script and demo data:\n# New version of length which can handle NA's: if na.rm==T, don't count\nthem\nlibrary(doBy)\nlength2 <- function (x, na.rm=FALSE) {\n    if (na.rm) sum(!is.na(x))\n    else       length(x)\n}\ncdataNA <- summaryBy(tyr ~ spp + wat + ins, data=demo,\nFUN=c(length2,mean,sd), na.rm=TRUE)\n# Rename column change.length to just N\nnames(cdataNA)[names(cdataNA)==\"tyr.length2\"] <- \"N\"\nlevels(cdataNA$wat) <- c(levels(cdataNA$wat), \"High\")\ncdataNA$wat[cdataNA$wat == \"Yes\"] <- \"High\" \nlevels(cdataNA$wat) <- c(levels(cdataNA$wat), \"Low\")\ncdataNA$wat[cdataNA$wat == \"No\"] <- \"Low\"\n# Calculate standard error of the mean\ncdataNA$tyr.SE <- cdataNA$tyr.sd / sqrt(cdataNA$N)\n#Print table at output\nrk.header(level = 2, \"Summary table - tyr\")\nrk.print(cdataNA, titles = NULL, align = \"left\")\n# Now create a barplot using ggplot2\nlibrary(ggplot2)\na <- ggplot(cdataNA, aes(x = wat, y = tyr.mean, fill = ins))\nb <- a + geom_bar(stat = \"identity\", position = \"dodge\") + facet_grid (~\nspp)\n# Now put errorbars.\nc <- b + geom_errorbar(aes(ymin=tyr.mean-tyr.SE, ymax=tyr.mean+tyr.SE), \n                  width=.2,                    # Width of the error bars\n                  position=position_dodge(.9)) + \nxlab (\"wat\") + \nylab (\"tyr (PA/PA std)\")\nc\nrk.header(\"tyr:\")\n## Copy the displayed plot to the output:\nplot (c, align = \"left\")\ndev.copy (device = rk.graph.on)\nrk.graph.off ()\n\nLink to demo data: [url]http://pastebin.com/M4iEJUPf[/url]\n\nI appreciate any help on this.\n\nThanks in advance.\n\nBest,\nSourav\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121017/bd98de4c/attachment.html>",
+      "body_snippet": "Hi all,\n\nI am using RKward in Ubuntu for a while now. I am fascinated with the\ninterface and the productivity.\n\nCurrently, I am working on a large data sets where summary tables and\nplots are importan",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-c923940eb943",
+      "message_id": "<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-18T07:35:04Z",
+      "subject": "[rkward-users] Select cases",
+      "subject_clean": "[rkward-users] Select cases",
+      "in_reply_to": "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>"
+      ],
+      "body_plain": "Hi!\n\nOn Wednesday 17 October 2012, Rebel Tyrcus wrote:\n> I'm new to R and RKWard in my quest for getting rid of SPSS. I hope I\n> place my questions in the correct list.\n\nThis is the right place, indeed.\n \n> 1. I've read the article in the Journal of Statistical Software about\n> RKWard, but is there any manual out there explaning all the functions\n> in RKWArd with more detail?\n\nThe article in JSS is the most comprehensive piece of documentation that we \nhave, to date. There is a bit a \"getting started\" info available via Help-\n>Help on RKWard (or pressing F1). Also, most plugins come with a short help \npage (click the \"Help\"-button in those dialogs), and many help pages contain \nlinks to related functionality.\n\nHowever, if you're looking for a real hands-on tutorial, I'm afraid, we just \ndon't have that, yet. (Everybody reading this: YOU can help. Just edit our \nwiki. Ok, actually, for technical reasons, you will have to ask for write \npermissions before you can edit the wiki, but we grant those, liberally).\n\n> 2. Is there an option to select cases filtering by a variable with the\n> menus? I've seen you can code it with the \"subset\" expression, but I'm\n> new to R code as well...\n\nAdmittedly, this is a blatantly obvious omission, but the sad fact is that we \ndon't have graphical support for subsetting, yet. I'll put it on the feature \nplan for 0.6.1, though. Meanwhile, you could try to get by using Data->Sort, \nand then copy-and-paste to select cases.\n\n> 3. Is there an option to recode or calculate to new variables in\n> different ones with the menus? I know there are the recode and compute\n> expressions, but I rather start using the menus until I learn how R\n> code works.\n\nNot yet available, either. Sorry.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121018/bb24ab13/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Wednesday 17 October 2012, Rebel Tyrcus wrote:\n> I'm new to R and RKWard in my quest for getting rid of SPSS. I hope I\n> place my questions in the correct list.\n\nThis is the right place, indee",
+      "thread_id": "thread-6bddeb685cdd",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-f732409ecbaf",
+      "message_id": "<201210180954.17111.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-18T07:54:13Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<1350518456.16046.8.camel@N0teb00k-3350>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 18 October 2012, Sourav Chakraborty wrote:\n> What I get:\n> Huge font size in TOC -\n> http://imageshack.us/photo/my-images/823/rkout1.png/\n> Considerable blank spaces after the title.\n\ndoes it help to change the font size? View->Enlarge Font / Shrink Font, \ndefault shortcuts Ctrl+ and Ctrl-.\n\n> No control on the size of the output image.\n\nSettings->Configure RKWard->Output->Graphics .\n\nWhen writing your own R code, you can also pass parameters width and height to \nrk.graph.on().\n\n> What I wish:\n> Control over each level of TOC fonts and spacings (using some sort of\n> parameters)\n\nThe development version has some support for adding custom HTML-headers to the \noutput document, e.g. a custom CSS-definition. If it really bugs you, you \ncould also modify the (extremly basic) default CSS file we ship. Use\nView->View Document Source on the output window to find out where this is \nlocated on your system.\n\n> Copy graphs to the output according to a certain specifications (for\n> example 480 X 240 px) (I can create a desired graph by changing\n> parameters within RKWard, however, when the graph is copied to output it\n> goes to default.\n\nSee above, the defaults are configurable. It may make sense to provide an \nadditional option to copy on-screen graphs to the output in their current \nsize. Feel free to submit a feature request \n(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse) so \nthat we will be reminded about this, in time.\n\n> There is one last thing:\n> When I use the following code, I get one graph in the active window (I\n> am copy pasting code for each variable - which is a crude way to do it,\n> but I am not really savvy with looping mechanism yet). \"Previous and\n> next\" is - grayed out. Usually when I get boxplots from a data within\n> RKward, I get sequential outputs and I can go back and forth to look at\n> individual plots.\n\nI did not actually try this code (if you can, please try to condense your \nexamples to the absolute minimum, and use data from the datasets-package; this \nreally saves us valuable time), and maybe I did not understand the problem. \nBut:\n\n> plot (c, align = \"left\")\n> dev.copy (device = rk.graph.on)\n> rk.graph.off ()\n\nWhat this will do is:\n1. Create the plot in the default device, i.e. on-screen.\n2. Copy the onscreen plot to the output window.\n\nI guess, instead, you were looking for:\n  rk.graph.on ()\n  plot (c, align = \"left\")\n  rk.graph.off ()\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121018/cb04b662/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 18 October 2012, Sourav Chakraborty wrote:\n> What I get:\n> Huge font size in TOC -\n> http://imageshack.us/photo/my-images/823/rkout1.png/\n> Considerable blank spaces after the title.\n",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-36780d51c4c6",
+      "message_id": "<1350595569.16046.34.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-18T21:26:09Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<201210180954.17111.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210180954.17111.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nThanks for your quick response. \n\nI changed the font size using view-> enlarge/shrink font. However, it is\na control over global font size, therefore all the fonts are changed\nincluding TOC fonts. My table fonts were smaller earlier and now it is\nharder to read them. The reason I want to change them is because because\nof the size and spacing, some information do not fit in one page (empty\nspace).\n\nI see that I was using the term \"output\" superficially. My apologies and\na clarification. I absolutely love the output in the \"On-screen\ngraphics\" (I can manipulate and create any size graph I want, this is\none of the main reason I love using RKward). My problem is the\nrk_out.html. \n\nThe development version has some support for adding custom HTML-headers\nto the \noutput document, e.g. a custom CSS-definition. If it really bugs you,\nyou \ncould also modify the (extremly basic) default CSS file we ship. Use\nView->View Document Source on the output window to find out where this\nis \nlocated on your system.\n\nFirst of all, I appreciate what you are doing for free. I will not say\nthat anything about this software bugs me. However, I was wondering if\nthere is a flexibility as it is a open source development project. And\nyou already mentioned that I can create a custom CSS. I have done some\nsearching and found out that I should manipulate the following code.\nUnfortunately, I have no knowledge about CSS manipulation. A little\nreading did not help me. It would be great if you can enlighten me about\nhow and where I can incorporate level 1 font 14 point (bold) spacing (6\nabove 3 below) in the following code (and if I want to change level 2\nfonts where should I define it).\n\npre.code {\n\tmargin-left: 2em;\n}\n\npre.code:before {\n\tdisplay: block;\n\tcontent: \"> \";\n\twidth: 2em;\n\tcolor: black;\n\tfloat: left;\n\tmargin-left: -2em;\n}\n\npre.output_normal {\n\tclear: both;\t/* make sure never to float around the \"> \" marker */\n}\n\npre.output_warning {\n\tclear: both;\t/* make sure never to float around the \"> \" marker */\n\tbackground-color: #ffaaaa;\n}\n\ntable {\n\tborder-spacing: 0px;\n}\n\n/* TOC menu */\n.RKTOC {\n\tbackground-color: #eeeeff;\n\tposition: fixed;\n\ttop: 0px;\n\tright: 0px;\n\theight: 100%;\n\twidth: 25%;\n\tpadding: 7px;\n\tdisplay: none;\n\toverflow: auto;\n}\n\n.RKTOChidden {\n\tdisplay: inline;\nheight: 1em;\n\toverflow: hidden;\n}\n\n.toggleTOC:link, .toggleTOC:visited {\n\tcolor: blue;\n\tfont-weight: bold;\n}\n\n.right {\n\tposition: absolute;\n\tright: 7px;\n\ttext-align: right;\n}\n\n.center {\n\tposition: absolute;\n\tright: 25%;\n\tleft: 25%;\n\ttop: 7px;\n\ttext-align: center;\n}\n\n/* end TOC menu */\n\n\n\nI did not actually try this code (if you can, please try to condense\nyour examples to the absolute minimum, \nand use data from the datasets-package; this really saves us valuable\ntime), and maybe I did not understand the problem. \n\nI apologize for providing my own scripts and data. I understand the\ninconvenience and will address it in subsequent posts.\n\nLet me try to clarify one more time. If a script loops through my\ncolumns to create graphs for each column, is there a way to keep the\ngraphs in the\nR graphics window (I have done this before, however, now I only see one\ngraph at a time when I run my script).\n\nThank you once again for following up in detail.\n\nI will look forward to hear back from you.\n\nBest,\nSourav\n\n\n\n\n\nOn Thu, 2012-10-18 at 09:54 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Thursday 18 October 2012, Sourav Chakraborty wrote:\n> > What I get:\n> > Huge font size in TOC -\n> > http://imageshack.us/photo/my-images/823/rkout1.png/\n> > Considerable blank spaces after the title.\n> \n> does it help to change the font size? View->Enlarge Font / Shrink Font, \n> default shortcuts Ctrl+ and Ctrl-.\n> \n> > No control on the size of the output image.\n> \n> Settings->Configure RKWard->Output->Graphics .\n> \n> When writing your own R code, you can also pass parameters width and height to \n> rk.graph.on().\n> \n> > What I wish:\n> > Control over each level of TOC fonts and spacings (using some sort of\n> > parameters)\n> \n> The development version has some support for adding custom HTML-headers to the \n> output document, e.g. a custom CSS-definition. If it really bugs you, you \n> could also modify the (extremly basic) default CSS file we ship. Use\n> View->View Document Source on the output window to find out where this is \n> located on your system.\n> \n> > Copy graphs to the output according to a certain specifications (for\n> > example 480 X 240 px) (I can create a desired graph by changing\n> > parameters within RKWard, however, when the graph is copied to output it\n> > goes to default.\n> \n> See above, the defaults are configurable. It may make sense to provide an \n> additional option to copy on-screen graphs to the output in their current \n> size. Feel free to submit a feature request \n> (http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse) so \n> that we will be reminded about this, in time.\n> \n> > There is one last thing:\n> > When I use the following code, I get one graph in the active window (I\n> > am copy pasting code for each variable - which is a crude way to do it,\n> > but I am not really savvy with looping mechanism yet). \"Previous and\n> > next\" is - grayed out. Usually when I get boxplots from a data within\n> > RKward, I get sequential outputs and I can go back and forth to look at\n> > individual plots.\n> \n> I did not actually try this code (if you can, please try to condense your \n> examples to the absolute minimum, and use data from the datasets-package; this \n> really saves us valuable time), and maybe I did not understand the problem. \n> But:\n> \n> > plot (c, align = \"left\")\n> > dev.copy (device = rk.graph.on)\n> > rk.graph.off ()\n> \n> What this will do is:\n> 1. Create the plot in the default device, i.e. on-screen.\n> 2. Copy the onscreen plot to the output window.\n> \n> I guess, instead, you were looking for:\n>   rk.graph.on ()\n>   plot (c, align = \"left\")\n>   rk.graph.off ()\n> \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121018/0fde64be/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nThanks for your quick response. \n\nI changed the font size using view-> enlarge/shrink font. However, it is\na control over global font size, therefore all the fonts are changed\nincluding TO",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 2,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-07fe3ed8ba31",
+      "message_id": "<CAE+DF+3Cj2HkCrnL8xNQP=9VG4N-d-51tcgTaPczpSQcbzDr3Q@mail.gmail.com>",
+      "from_name": "Rebel Tyrcus",
+      "from_email_hash": "24f2bf299aa08a38c52526de4c141a57c7f57dc6a3ff4272a5dcd87625dfd85e",
+      "date": "2012-10-19T13:24:32Z",
+      "subject": "[rkward-users] Select cases",
+      "subject_clean": "[rkward-users] Select cases",
+      "in_reply_to": "<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "First of all, thank you for all your quick answers.\n\n> The article in JSS is the most comprehensive piece of documentation that we\n> have, to date. There is a bit a \"getting started\" info available via Help-\n>>Help on RKWard (or pressing F1). Also, most plugins come with a short help\n> page (click the \"Help\"-button in those dialogs), and many help pages contain\n> links to related functionality.\n>\n> However, if you're looking for a real hands-on tutorial, I'm afraid, we just\n> don't have that, yet. (Everybody reading this: YOU can help. Just edit our\n> wiki. Ok, actually, for technical reasons, you will have to ask for write\n> permissions before you can edit the wiki, but we grant those, liberally).\n\nOk, so it seems I'm quite on my own, because I already read all the\ninfo in the Help section  :)\n\nI started writing my own tutorial, so, if someday I start getting\nthings sorted out with RKWard I can try edit the wiki or collaborate\nin translating to my language (catalan), because I don't have any\nknowledge in programming (I'm in the health sciences sector).\n\n> Admittedly, this is a blatantly obvious omission, but the sad fact is that we\n> don't have graphical support for subsetting, yet. I'll put it on the feature\n> plan for 0.6.1, though. Meanwhile, you could try to get by using Data->Sort,\n> and then copy-and-paste to select cases.\n\nImplementing that would be a great feature.\n\n>> 3. Is there an option to recode or calculate to new variables in\n>> different ones with the menus? I know there are the recode and compute\n>> expressions, but I rather start using the menus until I learn how R\n>> code works.\n\nOk, thanks.\n\nKind regards,\n\nJoan",
+      "body_snippet": "First of all, thank you for all your quick answers.\n\n> The article in JSS is the most comprehensive piece of documentation that we\n> have, to date. There is a bit a \"getting started\" info available vi",
+      "thread_id": "thread-6bddeb685cdd",
+      "thread_depth": 2,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-d69b0047edb0",
+      "message_id": "<1849969.HA3LMVVk03@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-10-20T17:47:34Z",
+      "subject": "[rkward-users] Select cases",
+      "subject_clean": "[rkward-users] Select cases",
+      "in_reply_to": "<CAE+DF+3Cj2HkCrnL8xNQP=9VG4N-d-51tcgTaPczpSQcbzDr3Q@mail.gmail.com>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAE+DF+3Cj2HkCrnL8xNQP=9VG4N-d-51tcgTaPczpSQcbzDr3Q@mail.gmail.com>"
+      ],
+      "body_plain": "hi,\n\nam Freitag 19 Oktober 2012, 15:24:32 schrieb Rebel Tyrcus:\n> > Admittedly, this is a blatantly obvious omission, but the sad fact is that\n> > we don't have graphical support for subsetting, yet. I'll put it on the\n> > feature plan for 0.6.1, though. Meanwhile, you could try to get by using\n> > Data->Sort, and then copy-and-paste to select cases.\n> \n> Implementing that would be a great feature.\n\ni've tried to come up with something hopefully useful. it's a first subsetting \nplugin called \"rk.subset\", which is limited to data.frames and can also only \nfilter by variables which are a column in the selected data object. despite \nthese limitations, if nothing it can still hint you to how to use the subset() \nfunction if you need more complex subsetting ;-)\n\nto test it, go to \"settings\" -> \"manage R packages\" -> \"install/update/remove\" \nand search/install the package \"rk.subset\". the new dialog will then be \navailable from RKWard's \"data\" menu.\n\nlet me know what you think of it!\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: smime.p7s\nType: application/pkcs7-signature\nSize: 2282 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121020/ce1a0576/attachment.p7s>",
+      "body_snippet": "hi,\n\nam Freitag 19 Oktober 2012, 15:24:32 schrieb Rebel Tyrcus:\n> > Admittedly, this is a blatantly obvious omission, but the sad fact is that\n> > we don't have graphical support for subsetting, yet. ",
+      "thread_id": "thread-6bddeb685cdd",
+      "thread_depth": 3,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-0b870207f8d5",
+      "message_id": "<508478F2.4090403@worldlinc.net>",
+      "from_name": "JohnT",
+      "from_email_hash": "b22bb758061f61949bcdba01cb582f80654dfd21343add19e4b9339021fcb071",
+      "date": "2012-10-21T22:36:34Z",
+      "subject": "[rkward-users] build questions",
+      "subject_clean": "[rkward-users] build questions",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "What was the last version of rkward that used the GNU/Linux Makefile build\nsystem? What versions of R does it work with?\n\nDoes anyone have a version of rkward that uses the simpler tcl/tk toolkit?\n\nJohn T in Kansas USA\n\n\n-- \nhttp://www.mozilla.org Firefox browser, Thunderbird email, Seamonkey\nall-in-one, Sunbird calendar and more. Free secure open-source software\nfor Windows, Linux, Mac OS and other operating systems",
+      "body_snippet": "What was the last version of rkward that used the GNU/Linux Makefile build\nsystem? What versions of R does it work with?\n\nDoes anyone have a version of rkward that uses the simpler tcl/tk toolkit?\n\nJo",
+      "thread_id": "thread-0b870207f8d5",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-38fd4fedfa25",
+      "message_id": "<9523344.4t2J0HpCQQ@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-10-22T00:12:57Z",
+      "subject": "[rkward-users] build questions",
+      "subject_clean": "[rkward-users] build questions",
+      "in_reply_to": "<508478F2.4090403@worldlinc.net>",
+      "references": [
+        "<508478F2.4090403@worldlinc.net>"
+      ],
+      "body_plain": "am Sonntag 21 Oktober 2012, 17:36:34 schrieb JohnT:\n> Does anyone have a version of rkward that uses the simpler tcl/tk toolkit?\n\nyou must be looking for RTWard instead, then ;-) :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: smime.p7s\nType: application/pkcs7-signature\nSize: 2282 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121022/829a6fc3/attachment.p7s>",
+      "body_snippet": "am Sonntag 21 Oktober 2012, 17:36:34 schrieb JohnT:\n> Does anyone have a version of rkward that uses the simpler tcl/tk toolkit?\n\nyou must be looking for RTWard instead, then ;-) :: m.eik\n\n-- \ndipl. p",
+      "thread_id": "thread-0b870207f8d5",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-cc8ef72eb0be",
+      "message_id": "<201210220955.08048.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-22T07:55:02Z",
+      "subject": "[rkward-users] build questions",
+      "subject_clean": "[rkward-users] build questions",
+      "in_reply_to": "<508478F2.4090403@worldlinc.net>",
+      "references": [
+        "<508478F2.4090403@worldlinc.net>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 22 October 2012, JohnT wrote:\n> What was the last version of rkward that used the GNU/Linux Makefile build\n> system? What versions of R does it work with?\n\nthat would be rkward 0.4.9c. That release dates from March 2010, but active \ndevelopment of this series of rkward stopped in late 2007. This works with KDE \n3.x. Last version of R this is known to work with is 2.10.0, although with \nluck, it *might* work with some versions of R after this (but definitely not R \n2.14.0 or above). I don't know for sure, because nobody tested this, because \nthis version of rkward is totally obsolete.\n\nSeriously: Just post the exact cmake command you were using, and even more \nimportantly, the *exact* output you got. Chances are, we'll be able to provide \nyou with a solution in less than 24 hours, including the lag due to different \ntime zones.\n\n(But in fact, my next guess is that you simply gave cmake the path to the \n\"rkward\"-subdirectory, instead of to the toplevel directory of the sources. In \nthe development version of rkward, I have already added a check for this \ncondition, and a better error message. See: We *do* care about such problems.)\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121022/05749e72/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 22 October 2012, JohnT wrote:\n> What was the last version of rkward that used the GNU/Linux Makefile build\n> system? What versions of R does it work with?\n\nthat would be rkward 0.4.9c. ",
+      "thread_id": "thread-0b870207f8d5",
+      "thread_depth": 1,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-a69bc535dacd",
+      "message_id": "<201210221329.54225.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-22T11:29:48Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<1350595569.16046.34.camel@N0teb00k-3350>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210180954.17111.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1350595569.16046.34.camel@N0teb00k-3350>"
+      ],
+      "body_plain": "Hi,\n\nOn Thursday 18 October 2012, you wrote:\n> First of all, I appreciate what you are doing for free. I will not say\n> that anything about this software bugs me. However, I was wondering if\n> there is a flexibility as it is a open source development project. And\n> you already mentioned that I can create a custom CSS. I have done some\n> searching and found out that I should manipulate the following code.\n> Unfortunately, I have no knowledge about CSS manipulation. A little\n> reading did not help me. It would be great if you can enlighten me about\n> how and where I can incorporate level 1 font 14 point (bold) spacing (6\n> above 3 below) in the following code (and if I want to change level 2\n> fonts where should I define it).\n\nfirst, please note that the CSS-file we provide is minimal, and does not \nspecify the size of captions or the spacing around them, at all. So what you \nare seeing is the default styles for your system. Frankly, though, I don't \nhave any idea, where these can be configured (anybody?).\n\nFor this reason, it is also hard to tell, where exactly the spacing comes \nfrom. Try adding:\n\nh1 {\n    font-size: 2em;\n    margin: 0;\n    padding: 0;\n    line-height: 80%;\n}\n\nExperiment with that. For level 2 headings write \"h2\", instead of \"h1\", and so \non. For regular text write \"body\".\n\n> Let me try to clarify one more time. If a script loops through my\n> columns to create graphs for each column, is there a way to keep the\n> graphs in the\n> R graphics window (I have done this before, however, now I only see one\n> graph at a time when I run my script).\n\nI'm afraid, I still don't understand. Do you want separate windows per graph? \nAdd an \n  x11()\nbefore each plot, then. Or you don't see them in the history (\"Previous plot\", \n\"Next plot\")? Works for me. Try this (non-sensical) example:\n\n  library (ggplots2)\n\n  if (!exists (\"i\")) i <- 0\n  i <- i + 100\n\n  a <- ggplot(mtcars + i, aes(factor(cyl)))\n  b <- a + geom_bar()\n\n  b\n  dev.copy (device=rk.graph.on)\n  rk.graph.off()\n\nCopy this to a script window, and use Run->Run all, repeatedly. Here, this \nyields one plot window, with a history of plots. Does it fail to work for you?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121022/4e4e8ab6/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thursday 18 October 2012, you wrote:\n> First of all, I appreciate what you are doing for free. I will not say\n> that anything about this software bugs me. However, I was wondering if\n> there i",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 3,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-af617199d93b",
+      "message_id": "<1350934390.3120.22.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-22T19:33:10Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<201210221329.54225.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210180954.17111.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1350595569.16046.34.camel@N0teb00k-3350>",
+        "<201210221329.54225.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nI will work on the CSS side and report back later. \n\nI ran your ggplot2 code. Even if I ran the code 3 times, I saw only one\nplot (I am supposed to see 3 plots - correct?). I don't see them in the\nhistory and can't navigate through \"previous\" or \"next\".\n\nThanks for all your help.\n\nBest,\nSourav\n\n\nOn Mon, 2012-10-22 at 13:29 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Thursday 18 October 2012, you wrote:\n> > First of all, I appreciate what you are doing for free. I will not say\n> > that anything about this software bugs me. However, I was wondering if\n> > there is a flexibility as it is a open source development project. And\n> > you already mentioned that I can create a custom CSS. I have done some\n> > searching and found out that I should manipulate the following code.\n> > Unfortunately, I have no knowledge about CSS manipulation. A little\n> > reading did not help me. It would be great if you can enlighten me about\n> > how and where I can incorporate level 1 font 14 point (bold) spacing (6\n> > above 3 below) in the following code (and if I want to change level 2\n> > fonts where should I define it).\n> \n> first, please note that the CSS-file we provide is minimal, and does not \n> specify the size of captions or the spacing around them, at all. So what you \n> are seeing is the default styles for your system. Frankly, though, I don't \n> have any idea, where these can be configured (anybody?).\n> \n> For this reason, it is also hard to tell, where exactly the spacing comes \n> from. Try adding:\n> \n> h1 {\n>     font-size: 2em;\n>     margin: 0;\n>     padding: 0;\n>     line-height: 80%;\n> }\n> \n> Experiment with that. For level 2 headings write \"h2\", instead of \"h1\", and so \n> on. For regular text write \"body\".\n> \n> > Let me try to clarify one more time. If a script loops through my\n> > columns to create graphs for each column, is there a way to keep the\n> > graphs in the\n> > R graphics window (I have done this before, however, now I only see one\n> > graph at a time when I run my script).\n> \n> I'm afraid, I still don't understand. Do you want separate windows per graph? \n> Add an \n>   x11()\n> before each plot, then. Or you don't see them in the history (\"Previous plot\", \n> \"Next plot\")? Works for me. Try this (non-sensical) example:\n> \n>   library (ggplots2)\n> \n>   if (!exists (\"i\")) i <- 0\n>   i <- i + 100\n> \n>   a <- ggplot(mtcars + i, aes(factor(cyl)))\n>   b <- a + geom_bar()\n> \n>   b\n>   dev.copy (device=rk.graph.on)\n>   rk.graph.off()\n> \n> Copy this to a script window, and use Run->Run all, repeatedly. Here, this \n> yields one plot window, with a history of plots. Does it fail to work for you?\n> \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121022/0f92c88f/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nI will work on the CSS side and report back later. \n\nI ran your ggplot2 code. Even if I ran the code 3 times, I saw only one\nplot (I am supposed to see 3 plots - correct?). I don't see the",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 4,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-6783a342ee8f",
+      "message_id": "<201210230935.46751.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-23T07:35:41Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<1350934390.3120.22.camel@N0teb00k-3350>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210221329.54225.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1350934390.3120.22.camel@N0teb00k-3350>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 22 October 2012, Sourav Chakraborty wrote:\n> I ran your ggplot2 code. Even if I ran the code 3 times, I saw only one\n> plot (I am supposed to see 3 plots - correct?). I don't see them in the\n> history and can't navigate through \"previous\" or \"next\".\n\nok, then at least I understand the problem description, now. There were some \nproblems with RKWard 0.5.7, R 2.15.0, and plot history, indeed, although I do \nnot remember the details. This should be fixed in the upcoming RKWard 0.6.0 \n(which I hope to announce, tomorrow). Please try again with RKWard 0.6.0, and \nlet me know, whether you still see the problem.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121023/b286bfef/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 22 October 2012, Sourav Chakraborty wrote:\n> I ran your ggplot2 code. Even if I ran the code 3 times, I saw only one\n> plot (I am supposed to see 3 plots - correct?). I don't see them i",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 5,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-bf46dc577c47",
+      "message_id": "<1351087901.6027.3.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-24T14:11:41Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<201210230935.46751.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210221329.54225.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1350934390.3120.22.camel@N0teb00k-3350>",
+        "<201210230935.46751.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nI updated my rkward this morning to:\n\nRKWard\nVersion 0.6.0z+0.6.1+devel1\nUsing KDE Development Platform 4.7.4 (4.7.4)\n\nHere is my R Version:\nR version 2.15.1 (2012-06-22)\nPlatform: x86_64-pc-linux-gnu (64-bit)\n\nI ran ggplot2 code again. Only one plot is visible, plot history is\nstill not working properly.\nThanks.\nSourav\n\nOn Tue, 2012-10-23 at 09:35 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Monday 22 October 2012, Sourav Chakraborty wrote:\n> > I ran your ggplot2 code. Even if I ran the code 3 times, I saw only one\n> > plot (I am supposed to see 3 plots - correct?). I don't see them in the\n> > history and can't navigate through \"previous\" or \"next\".\n> \n> ok, then at least I understand the problem description, now. There were some \n> problems with RKWard 0.5.7, R 2.15.0, and plot history, indeed, although I do \n> not remember the details. This should be fixed in the upcoming RKWard 0.6.0 \n> (which I hope to announce, tomorrow). Please try again with RKWard 0.6.0, and \n> let me know, whether you still see the problem.\n> \n> Thanks!\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121024/8fc0a0bb/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nI updated my rkward this morning to:\n\nRKWard\nVersion 0.6.0z+0.6.1+devel1\nUsing KDE Development Platform 4.7.4 (4.7.4)\n\nHere is my R Version:\nR version 2.15.1 (2012-06-22)\nPlatform: x86_64-",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 6,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-908c1f43732c",
+      "message_id": "<201210241641.38034.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-24T14:41:34Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<1351087901.6027.3.camel@N0teb00k-3350>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210230935.46751.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1351087901.6027.3.camel@N0teb00k-3350>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 24 October 2012, Sourav Chakraborty wrote:\n> I ran ggplot2 code again. Only one plot is visible, plot history is\n> still not working properly.\n\nok, thanks. So I updated my ggplots2-package, and now I can see the problem, \ntoo. I've fixed it in SVN, right away, so please try again with the next daily \nbuild, tomorrow.\n\n(Too late to fix this for 0.6.0, of course).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121024/79fd3b20/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 24 October 2012, Sourav Chakraborty wrote:\n> I ran ggplot2 code again. Only one plot is visible, plot history is\n> still not working properly.\n\nok, thanks. So I updated my ggplots2-p",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 7,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-4ce83777ba2a",
+      "message_id": "<201210241701.25364.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-24T15:01:24Z",
+      "subject": "[rkward-users] [rkward-announce] RKWard 0.6.0 is released",
+      "subject_clean": "[rkward-users] [rkward-announce] RKWard 0.6.0 is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nJust to let you know that RKWard 0.6.0 is released, officially, now. As \nusual, links to downloads, as well as a summary of new and changed features is \navailable on our website at http://rkward.sf.net .\n\nNote that the Windows installation bundle has not yet finished uploading (it's \ngoing at snail speed, but the bundle should be available in a few hours).\n\nThanks to everybody involved!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121024/8648ec53/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nEveryone hates slow websites. So do we.\nMake your web apps faster with AppDynamics\nDownload AppDynamics Lite for free today:\nhttp://p.sf.net/sfu/appdyn_sfd2d_oct\n-------------- next part --------------\n_______________________________________________\nrkward-announce mailing list\nrkward-announce at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-announce",
+      "body_snippet": "Hi!\n\nJust to let you know that RKWard 0.6.0 is released, officially, now. As \nusual, links to downloads, as well as a summary of new and changed features is \navailable on our website at http://rkward.",
+      "thread_id": "thread-4ce83777ba2a",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-df9954ea689c",
+      "message_id": "<1351179330.3027.10.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-25T15:35:30Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<201210241641.38034.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210230935.46751.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1351087901.6027.3.camel@N0teb00k-3350>",
+        "<201210241641.38034.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nFor me the problem still exists! I updated RKward this morning.\n\nHere is the new version (not really different than yesterday!):\nRKWard\nVersion 0.6.0z+0.6.1+devel1\nUsing KDE Development Platform 4.7.4 (4.7.4)\n\nI was unable to get a change log info but hope the following information\nwill help you determine if I am using the right ppa and build. \nhttp://ppa.launchpad.net/pool/main/r/rkward/rkward_0.6.0z+0.6.1-0daily\n+3781+201210231116~oneiric1_amd64.changelog\n\nLet me know if I am doing something wrong.\n\nThanks.\n\nBest,\nSourav\n\n\nOn Wed, 2012-10-24 at 16:41 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Wednesday 24 October 2012, Sourav Chakraborty wrote:\n> > I ran ggplot2 code again. Only one plot is visible, plot history is\n> > still not working properly.\n> \n> ok, thanks. So I updated my ggplots2-package, and now I can see the problem, \n> too. I've fixed it in SVN, right away, so please try again with the next daily \n> build, tomorrow.\n> \n> (Too late to fix this for 0.6.0, of course).\n> \n> Regards\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121025/80775d21/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nFor me the problem still exists! I updated RKward this morning.\n\nHere is the new version (not really different than yesterday!):\nRKWard\nVersion 0.6.0z+0.6.1+devel1\nUsing KDE Development Pl",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 8,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-88078b09d6c1",
+      "message_id": "<201210251748.19871.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-25T15:48:19Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<1351179330.3027.10.camel@N0teb00k-3350>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210241641.38034.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1351179330.3027.10.camel@N0teb00k-3350>"
+      ],
+      "body_plain": "Hi!\n\nOn Thursday 25 October 2012, you wrote:\n> For me the problem still exists! I updated RKward this morning.\n> \n> Here is the new version (not really different than yesterday!):\n> RKWard\n> Version 0.6.0z+0.6.1+devel1\n> Using KDE Development Platform 4.7.4 (4.7.4)\n> \n> I was unable to get a change log info but hope the following information\n> will help you determine if I am using the right ppa and build.\n> http://ppa.launchpad.net/pool/main/r/rkward/rkward_0.6.0z+0.6.1-0daily\n> +3781+201210231116~oneiric1_amd64.changelog\n> \n> Let me know if I am doing something wrong.\n\nBad timing, I guess. 3783 is the revision number when the change got in \n(numbering in bazaar; in SVN the numbering differs). You seem to have 3781. \nTry again, once you see an updated daily build.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121025/5311aeec/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Thursday 25 October 2012, you wrote:\n> For me the problem still exists! I updated RKward this morning.\n> \n> Here is the new version (not really different than yesterday!):\n> RKWard\n> Version 0",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 9,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-ee51614593cc",
+      "message_id": "<1351263460.2858.8.camel@N0teb00k-3350>",
+      "from_name": "Sourav Chakraborty",
+      "from_email_hash": "2d3d5f1bc8e1ce94798ec75360e0d513c13a16372cc51c4750022c4c779239b8",
+      "date": "2012-10-26T14:57:40Z",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "subject_clean": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "in_reply_to": "<201210251748.19871.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<1350518456.16046.8.camel@N0teb00k-3350>",
+        "<201210241641.38034.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<1351179330.3027.10.camel@N0teb00k-3350>",
+        "<201210251748.19871.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi Thomas,\n\nI have updated RKward to 3783 this morning.\n\nHistory in the plot window is working perfectly well. I can easily\nnavigate to previous and next plot with your demo data.\n\nThanks for taking the time to fixing this issue.\n\nI will follow-up with you on the custom CSS issue when I find a\nsolution.\n\nBest,\nSourav\n\nOn Thu, 2012-10-25 at 17:48 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi!\n> \n> On Thursday 25 October 2012, you wrote:\n> > For me the problem still exists! I updated RKward this morning.\n> > \n> > Here is the new version (not really different than yesterday!):\n> > RKWard\n> > Version 0.6.0z+0.6.1+devel1\n> > Using KDE Development Platform 4.7.4 (4.7.4)\n> > \n> > I was unable to get a change log info but hope the following information\n> > will help you determine if I am using the right ppa and build.\n> > http://ppa.launchpad.net/pool/main/r/rkward/rkward_0.6.0z+0.6.1-0daily\n> > +3781+201210231116~oneiric1_amd64.changelog\n> > \n> > Let me know if I am doing something wrong.\n> \n> Bad timing, I guess. 3783 is the revision number when the change got in \n> (numbering in bazaar; in SVN the numbering differs). You seem to have 3781. \n> Try again, once you see an updated daily build.\n> \n> Thanks!\n> Thomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121026/7e13eef7/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nI have updated RKward to 3783 this morning.\n\nHistory in the plot window is working perfectly well. I can easily\nnavigate to previous and next plot with your demo data.\n\nThanks for taking t",
+      "thread_id": "thread-c785336e2e33",
+      "thread_depth": 10,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-ae5ab8ffe535",
+      "message_id": "<50900B84.1000109@ifado.de>",
+      "from_name": "Frederik Aust",
+      "from_email_hash": "893083f811d2446e07085672906d747251f8da899a4040390093cad732e9b4f0",
+      "date": "2012-10-30T17:16:52Z",
+      "subject": "[rkward-users] Flush RKWard output",
+      "subject_clean": "[rkward-users] Flush RKWard output",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi there,\n\ntoday I came across a situation in which I needed to flush the \nRKWard-generated output-file. The GUI has a button, that let's you do \nthat. However, I was unable to find a command line function I can call \nfrom within my scripts to do the job.\n\nI played around a bit and came up with this simple function:\n\nrk.flush.output <- function(){\n   unlink(rk.get.output.html.file())\n   rk.set.output.html.file(rk.get.output.html.file())\n}\n\nI was wondering whether RKWard offers a function like this and I just \nmissed it.\n\nBest regards,\nFrederik\n\nP.S.: I'm aware that it is possible to simply create a new output file \nusing rk.set.output.html.file().\n\n-- \nDipl.-Psych. Frederik Aust\n\nLeibniz Research Center for Working Environment and Human Factors\nResearch Group: Perceptual cybernetics\nArdeystr. 67\n44139 Dortmund\nGermany\n\nE-mail: AustF at ifado.de\nTel.:   +49 / 231 1084 382\nWeb:    http://www.ifado.de/",
+      "body_snippet": "Hi there,\n\ntoday I came across a situation in which I needed to flush the \nRKWard-generated output-file. The GUI has a button, that let's you do \nthat. However, I was unable to find a command line fun",
+      "thread_id": "thread-ae5ab8ffe535",
+      "thread_depth": 0,
+      "month": "2012-10"
+    },
+    {
+      "id": "msg-a503f0e4808a",
+      "message_id": "<201210311317.18975.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-10-31T12:17:14Z",
+      "subject": "[rkward-users] Flush RKWard output",
+      "subject_clean": "[rkward-users] Flush RKWard output",
+      "in_reply_to": "<50900B84.1000109@ifado.de>",
+      "references": [
+        "<50900B84.1000109@ifado.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 30 October 2012, Frederik Aust wrote:\n> I played around a bit and came up with this simple function:\n> \n> rk.flush.output <- function(){\n>    unlink(rk.get.output.html.file())\n>    rk.set.output.html.file(rk.get.output.html.file())\n> }\n> \n> I was wondering whether RKWard offers a function like this and I just\n> missed it.\n\nno, you did not miss anything. But I have just added your function to the \ndevelopment version (only difference is that I've added an optional parameter \nfor flushing a non-current output file).\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121031/c24a42ae/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 30 October 2012, Frederik Aust wrote:\n> I played around a bit and came up with this simple function:\n> \n> rk.flush.output <- function(){\n>    unlink(rk.get.output.html.file())\n>    rk.",
+      "thread_id": "thread-ae5ab8ffe535",
+      "thread_depth": 1,
+      "month": "2012-10"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e856e6ccc8b1",
+      "subject": "[rkward-users] [rkward-announce] Upcoming release, call for testing RKWard 0.6.0",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-10-08T10:09:19Z",
+      "last_reply": "2012-10-08T10:09:19Z",
+      "root_message_id": "msg-e856e6ccc8b1"
+    },
+    {
+      "id": "thread-8324f2b0fccd",
+      "subject": "[rkward-users] rkward build problem",
+      "message_count": 4,
+      "participants": [
+        "JohnT",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2012-10-16T23:50:06Z",
+      "last_reply": "2012-10-17T10:39:58Z",
+      "root_message_id": "msg-8324f2b0fccd"
+    },
+    {
+      "id": "thread-6bddeb685cdd",
+      "subject": "[rkward-users] Select cases",
+      "message_count": 4,
+      "participants": [
+        "Rebel Tyrcus",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2012-10-17T09:12:01Z",
+      "last_reply": "2012-10-20T17:47:34Z",
+      "root_message_id": "msg-6bddeb685cdd"
+    },
+    {
+      "id": "thread-c785336e2e33",
+      "subject": "[rkward-users] rkward output issues [TOC and plot parameter modifications].",
+      "message_count": 11,
+      "participants": [
+        "Sourav Chakraborty",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-10-18T00:00:56Z",
+      "last_reply": "2012-10-26T14:57:40Z",
+      "root_message_id": "msg-c785336e2e33"
+    },
+    {
+      "id": "thread-0b870207f8d5",
+      "subject": "[rkward-users] build questions",
+      "message_count": 3,
+      "participants": [
+        "JohnT",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2012-10-21T22:36:34Z",
+      "last_reply": "2012-10-22T07:55:02Z",
+      "root_message_id": "msg-0b870207f8d5"
+    },
+    {
+      "id": "thread-4ce83777ba2a",
+      "subject": "[rkward-users] [rkward-announce] RKWard 0.6.0 is released",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-10-24T15:01:24Z",
+      "last_reply": "2012-10-24T15:01:24Z",
+      "root_message_id": "msg-4ce83777ba2a"
+    },
+    {
+      "id": "thread-ae5ab8ffe535",
+      "subject": "[rkward-users] Flush RKWard output",
+      "message_count": 2,
+      "participants": [
+        "Frederik Aust",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-10-30T17:16:52Z",
+      "last_reply": "2012-10-31T12:17:14Z",
+      "root_message_id": "msg-ae5ab8ffe535"
+    }
+  ]
+}

@@ -1,0 +1,2653 @@
+From computing.account at googlemail.com  Tue Jun  2 18:38:04 2009
+From: computing.account at googlemail.com (AG)
+Date: Tue, 02 Jun 2009 19:38:04 +0100
+Subject: [rkward-users] RKWard requests backend
+Message-ID: <4A25718C.2080303@gmail.com>
+
+Hello List
+
+I've decided to dive into R and found a useful GUI for GNU/Linux (Debian 
+testing/ Squeeze) called RKWard.  However, when I fire it up a dialog 
+box appears with the statement "R backend requests information".  I have 
+tried entering the path to the R libraries (e.g. /usr/bin/R; /etc/R; and 
+so on) but none of these work, and the darn thing won't go away without 
+killing the entire program.  It also will not allow me to by-pass it, 
+nor access any help files, etc.  Does anyone know just what "backends" 
+it is looking for?
+
+Thanks
+
+AG
+
+
+
+From computing.account at googlemail.com  Tue Jun  2 19:02:33 2009
+From: computing.account at googlemail.com (AG)
+Date: Tue, 02 Jun 2009 20:02:33 +0100
+Subject: [rkward-users] [R] RKWard: R backend requests information
+In-Reply-To: <4A25722B.5040508@nic.fi>
+References: <4A255E57.6020900@gmail.com> <4A25722B.5040508@nic.fi>
+Message-ID: <4A257749.8060006@gmail.com>
+
+K. Elo wrote:
+> Hi!
+>
+> The current version of rkward does not work with R 2.9. The only
+> solution is - until a fixed version is published for Debian - to
+> downgrade to R 2.8 if You like to use rkward.
+>
+> See also:
+> http://sourceforge.net/tracker/?func=detail&aid=2708787&group_id=50231&atid=459007
+> (So they have already fixed this, but...)
+>
+> HTH,
+> KE
+>
+> AG wrote:
+>   
+>> Hello List
+>>
+>> I've decided to dive into R and found a useful GUI for GNU/Linux (Debian
+>> testing/ Squeeze) called RKWard.  However, when I fire it up a dialog
+>> box appears with the statement "R backend requests information".  I have
+>> tried entering the path to the R libraries (e.g. /usr/bin/R; /etc/R; and
+>> so on) but none of these work, and the darn thing won't go away without
+>> killing the entire program.  It also will not allow me to by-pass it,
+>> nor access any help files, etc.  Does anyone know just what "backends"
+>> it is looking for?
+>>
+>> Thanks
+>>
+>> AG
+>>
+>>     
+>
+>   
+Thanks for the notice on 2.9.  Does this suggest that this is better 
+taken up with Debian maintainers ?  Not wanting to start a flame war, 
+just a genuine query.  If it's my distro's issue, then I'll take it back 
+there, otherwise they may not know.  Testing is a little bouncy right 
+now, so it could well already be on their todo list.
+
+Thanks for the prompt comeback.
+
+AG
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090602/04a86df8/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun  2 20:55:59 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 2 Jun 2009 22:55:59 +0200
+Subject: [rkward-users] [R] RKWard: R backend requests information
+In-Reply-To: <4A257749.8060006@gmail.com>
+References: <4A255E57.6020900@gmail.com> <4A25722B.5040508@nic.fi>
+	<4A257749.8060006@gmail.com>
+Message-ID: <200906022256.06508.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 02 June 2009, AG wrote:
+> Thanks for the notice on 2.9.  Does this suggest that this is better
+> taken up with Debian maintainers ?  Not wanting to start a flame war,
+> just a genuine query.  If it's my distro's issue, then I'll take it back
+> there, otherwise they may not know.  Testing is a little bouncy right
+> now, so it could well already be on their todo list.
+>
+> Thanks for the prompt comeback.
+
+this issue was a problem in rkward. In rkward itself it has been fixed since a 
+while (version 0.5.0c to be precise). Debian unstable also has a fixed package 
+(0.5.0d-3), already. However, as is the nature of debian testing, it takes a 
+while until the fixed package makes it to testing, and when exactly this will 
+happen is unknown. You can take a look at 
+http://packages.qa.debian.org/r/rkward.html to track the status of the 
+package, but there is no way to speed up this process.
+
+To use rkward now, you can:
+- follow the instructions for Debian & derivatives on 
+http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts 
+or
+- follow the generic instructions on building RKWard from source:
+http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Building_RKWard_From_Source
+
+Let us know, if you need further help.
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090602/7e05025e/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090602/7e05025e/attachment.sig>
+
+From computing.account at googlemail.com  Tue Jun  2 21:49:40 2009
+From: computing.account at googlemail.com (AG)
+Date: Tue, 02 Jun 2009 22:49:40 +0100
+Subject: [rkward-users] [R] RKWard: R backend requests information
+In-Reply-To: <200906022256.06508.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4A255E57.6020900@gmail.com> <4A25722B.5040508@nic.fi>
+	<4A257749.8060006@gmail.com>
+	<200906022256.06508.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4A259E74.7000801@gmail.com>
+
+Hello Thomas
+
+Thomas Friedrichsmeier wrote:
+> Hi,
+>
+>
+> On Tuesday 02 June 2009, AG wrote:
+> > Thanks for the notice on 2.9. Does this suggest that this is better
+> > taken up with Debian maintainers ? Not wanting to start a flame war,
+> > just a genuine query. If it's my distro's issue, then I'll take it back
+> > there, otherwise they may not know. Testing is a little bouncy right
+> > now, so it could well already be on their todo list.
+> >
+> > Thanks for the prompt comeback.
+>
+>
+> this issue was a problem in rkward. In rkward itself it has been fixed 
+> since a while (version 0.5.0c to be precise). Debian unstable also has 
+> a fixed package (0.5.0d-3), already. However, as is the nature of 
+> debian testing, it takes a while until the fixed package makes it to 
+> testing, and when exactly this will happen is unknown. You can take a 
+> look at http://packages.qa.debian.org/r/rkward.html to track the 
+> status of the package, but there is no way to speed up this process.
+>
+> To use rkward now, you can:
+> - follow the instructions for Debian & derivatives on 
+> http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts 
+> or
+> - follow the generic instructions on building RKWard from source:
+> http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Building_RKWard_From_Source
+>
+>
+> Let us know, if you need further help.
+>
+>
+> Regards
+> Thomas
+
+Thank you for the information - this is useful to know.  I'll look at 
+investing time in following up your suggestions over the weekend.
+
+Thank you to both respondents for quick, informative replies.  This list 
+is to be commended if this is the calibre of respondents participating.
+
+Thank you, and I'll be sure to come back if I run aground.
+
+Best wishes
+
+AG
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090602/e45219c5/attachment.html>
+
+From matthieu.stigler at gmail.com  Wed Jun  3 15:27:02 2009
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Wed, 03 Jun 2009 17:27:02 +0200
+Subject: [rkward-users] Prob installing rkward for Ubuntu hardy
+Message-ID: <4A269646.8030901@gmail.com>
+
+Hi
+
+I tried to use the nice unofficial repos from Meik (thanks a lot!) but 
+there is an unsatisfied dependency problem:
+
+after adding the line for the sources in list.sources.d/rkward_cran.list 
+and update/upgrade rkward is not suggested, trying:
+sudo apt-get install rkward gives:
+
+Les paquets suivants contiennent des d?pendances non satisfaites :
+  rkward: D?pend: kdelibs5 (>= 4:4.0.5-0ubuntu1~hardy3) mais 
+4:4.0.3-0ubuntu5.2 devra ?tre install?
+          D?pend: libqt4-dbus (>= 4.4.0) mais il n'est pas installable
+          D?pend: libqt4-network (>= 4.4.0) mais il n'est pas installable
+          D?pend: libqt4-svg (>= 4.4.0) mais il n'est pas installable
+          D?pend: libqt4-xml (>= 4.4.0) mais il n'est pas installable
+          D?pend: libqtcore4 (>= 4.4.0) mais il n'est pas installable
+          D?pend: libqtgui4 (>= 4.4.0) mais il n'est pas installable
+E: Paquets d?fectueux
+
+How can I solve that? Thanks a lot!!
+Matthieu
+
+
+
+From meik.michalke at uni-duesseldorf.de  Wed Jun  3 16:45:56 2009
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 3 Jun 2009 18:45:56 +0200
+Subject: [rkward-users] Prob installing rkward for Ubuntu hardy
+In-Reply-To: <4A269646.8030901@gmail.com>
+References: <4A269646.8030901@gmail.com> (sfid-20090603_183331_348996_51D9EA56)
+Message-ID: <200906031846.00252.meik.michalke@uni-duesseldorf.de>
+
+am Mittwoch, 3. Juni 2009 (17:27) schrieb Matthieu Stigler:
+>   rkward: D?pend: kdelibs5 (>= 4:4.0.5-0ubuntu1~hardy3) mais
+> 4:4.0.3-0ubuntu5.2 devra ?tre install?
+>           D?pend: libqt4-dbus (>= 4.4.0) mais il n'est pas installable
+>           D?pend: libqt4-network (>= 4.4.0) mais il n'est pas installable
+>           D?pend: libqt4-svg (>= 4.4.0) mais il n'est pas installable
+>           D?pend: libqt4-xml (>= 4.4.0) mais il n'est pas installable
+>           D?pend: libqtcore4 (>= 4.4.0) mais il n'est pas installable
+>           D?pend: libqtgui4 (>= 4.4.0) mais il n'est pas installable
+> E: Paquets d?fectueux
+>
+> How can I solve that?
+
+try adding the official hardy-backports repository.
+
+it's odd though, i don't recall activating them in my build system in the 
+first place... hm...
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090603/35b6ff00/attachment.sig>
+
+From quesada at gmail.com  Thu Jun  4 12:39:05 2009
+From: quesada at gmail.com (Jose Quesada)
+Date: Thu, 04 Jun 2009 14:39:05 +0200
+Subject: [rkward-users] congrats on RKward
+Message-ID: <4A27C069.8020401@gmail.com>
+
+Hi,
+
+Just wanted to say... I just checked it again after a year or so, and...
+congrats on RKward.
+You have made A LOT of progress. You have the best environment for R on
+any platform.
+I'm considering swtiching (again!) to linux, mostly because of RKward.
+
+Best,
+-Jose
+
+-- 
+Jose Quesada, PhD.
+Max Planck Institute, Human Development, Berlin
+http://www.josequesada.name/           
+
+
+
+
+From Meik.Michalke at uni-duesseldorf.de  Thu Jun  4 13:57:57 2009
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Thu, 04 Jun 2009 15:57:57 +0200
+Subject: [rkward-users] Prob installing rkward for Ubuntu hardy
+In-Reply-To: <200906031846.00252.meik.michalke@uni-duesseldorf.de>
+References: <4A269646.8030901@gmail.com>
+	<200906031846.00252.meik.michalke@uni-duesseldorf.de>
+Message-ID: <200906041557.58145.meik.michalke@uni-duesseldorf.de>
+
+hi again,
+
+On Wednesday 03 June 2009 18:45:56 meik michalke wrote:
+> am Mittwoch, 3. Juni 2009 (17:27) schrieb Matthieu Stigler:
+> >   rkward: D?pend: kdelibs5 (>= 4:4.0.5-0ubuntu1~hardy3) mais
+> > 4:4.0.3-0ubuntu5.2 devra ?tre install?
+> >           D?pend: libqt4-dbus (>= 4.4.0) mais il n'est pas installable
+> >           D?pend: libqt4-network (>= 4.4.0) mais il n'est pas installable
+> >           D?pend: libqt4-svg (>= 4.4.0) mais il n'est pas installable
+> >           D?pend: libqt4-xml (>= 4.4.0) mais il n'est pas installable
+> >           D?pend: libqtcore4 (>= 4.4.0) mais il n'est pas installable
+> >           D?pend: libqtgui4 (>= 4.4.0) mais il n'est pas installable
+> > E: Paquets d?fectueux
+> >
+> > How can I solve that?
+>
+> try adding the official hardy-backports repository.
+>
+> it's odd though, i don't recall activating them in my build system in the
+> first place... hm...
+
+i checked that again, and just as i remembered i didn't use the backports 
+repositoy on the build system(s). that is, the hardy packages i provide do not 
+depend on kdelibs5 >= 4.0.5-0ubuntu1~hardy3 but are fine with 4.0.3-0ubuntu5.2 
+(i checked that with aptitude). i have no clue where the dependencies above 
+come from. can you please post the results of "aptitude show rkward"?
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090604/1dee9dbf/attachment.sig>
+
+From petr.slavik at tiscali.cz  Fri Jun  5 07:13:12 2009
+From: petr.slavik at tiscali.cz (Petr =?ISO-8859-1?Q?Slav=EDk?=)
+Date: Fri, 05 Jun 2009 09:13:12 +0200
+Subject: [rkward-users] congrats on RKward
+In-Reply-To: <4A27C069.8020401@gmail.com>
+References: <4A27C069.8020401@gmail.com>
+Message-ID: <1244185992.5254.5.camel@slavik.stefanu>
+
+So do I.
+
+But using OpenSuse 11.1 copy of RKward and S-plus 2000 (ilegally)
+(WXP-legally) [dual-boot].
+
+I appreciate big improvement of RKward.
+
+Thanks a lot!
+
+bobanek
+
+
+Jose Quesada p??e v ?t 04. 06. 2009 v 14:39 +0200:
+> Hi,
+> 
+> Just wanted to say... I just checked it again after a year or so, and...
+> congrats on RKward.
+> You have made A LOT of progress. You have the best environment for R on
+> any platform.
+> I'm considering swtiching (again!) to linux, mostly because of RKward.
+> 
+> Best,
+> -Jose
+> 
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jun  5 07:46:42 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 5 Jun 2009 09:46:42 +0200
+Subject: [rkward-users] congrats on RKward
+In-Reply-To: <4A27C069.8020401@gmail.com>
+References: <4A27C069.8020401@gmail.com>
+Message-ID: <200906050947.06474.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+many thanks for the kind words! It's always nice to receive this sort of 
+feedback ;-). And I'm sure all other contributors appreciate it as much as I 
+do.
+
+On Thursday 04 June 2009, Jose Quesada wrote:
+> I'm considering swtiching (again!) to linux, mostly because of RKward.
+
+BTW, I am currently working on porting RKWard to windows, and I'm making 
+better-than-expected progress with that. But you better don't hold your breath 
+for that, there are still many porting issues to solve, and this will take an 
+unknown amount of time (and don't let that keep you from switching to linux!).
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090605/ad151ffe/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090605/ad151ffe/attachment.sig>
+
+From noreply at sourceforge.net  Fri Jun  5 10:27:16 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 05 Jun 2009 10:27:16 +0000
+Subject: [rkward-users] [rkward - Help] Scatterplot lines as splines?
+Message-ID: <7428269.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7428269
+By: miraceti2009
+
+Is it possible to create a scatterplot of type "plot lines", where lines are
+replaced with splines (cubic splines or B-splines)?
+
+Thank you.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From matthieu.stigler at gmail.com  Fri Jun  5 17:21:09 2009
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Fri, 05 Jun 2009 19:21:09 +0200
+Subject: [rkward-users] Prob installing rkward for Ubuntu hardy
+In-Reply-To: <200906041557.58145.meik.michalke@uni-duesseldorf.de>
+References: <4A269646.8030901@gmail.com>	<200906031846.00252.meik.michalke@uni-duesseldorf.de>
+	<200906041557.58145.meik.michalke@uni-duesseldorf.de>
+Message-ID: <4A295405.5020008@gmail.com>
+
+meik michalke a ?crit :
+> hi again,
+>
+> On Wednesday 03 June 2009 18:45:56 meik michalke wrote:
+>   
+>> am Mittwoch, 3. Juni 2009 (17:27) schrieb Matthieu Stigler:
+>>     
+>>>   rkward: D?pend: kdelibs5 (>= 4:4.0.5-0ubuntu1~hardy3) mais
+>>> 4:4.0.3-0ubuntu5.2 devra ?tre install?
+>>>           D?pend: libqt4-dbus (>= 4.4.0) mais il n'est pas installable
+>>>           D?pend: libqt4-network (>= 4.4.0) mais il n'est pas installable
+>>>           D?pend: libqt4-svg (>= 4.4.0) mais il n'est pas installable
+>>>           D?pend: libqt4-xml (>= 4.4.0) mais il n'est pas installable
+>>>           D?pend: libqtcore4 (>= 4.4.0) mais il n'est pas installable
+>>>           D?pend: libqtgui4 (>= 4.4.0) mais il n'est pas installable
+>>> E: Paquets d?fectueux
+>>>
+>>> How can I solve that?
+>>>       
+>> try adding the official hardy-backports repository.
+>>
+>> it's odd though, i don't recall activating them in my build system in the
+>> first place... hm...
+>>     
+>
+> i checked that again, and just as i remembered i didn't use the backports 
+> repositoy on the build system(s). that is, the hardy packages i provide do not 
+> depend on kdelibs5 >= 4.0.5-0ubuntu1~hardy3 but are fine with 4.0.3-0ubuntu5.2 
+> (i checked that with aptitude). i have no clue where the dependencies above 
+> come from. can you please post the results of "aptitude show rkward"?
+>
+>   
+Hi
+
+Thanks for your help! Actually I took another solution which is to 
+upgrade the system (now Ubuntu 9.04) but the bad part of it is that I 
+can't now check for this problem with 8.04... sorry for it!
+
+Btw, I installed rkward for 8.04 with your repos on two others machines 
+and this problem didn't appear...
+
+I just had a small problem when I came to Ubuntu 8.10, is that the 
+default plugin path was:
+/usr/share/apps/rkward//all.pluginmap
+
+I had to change it to:
+/usr/share/kde4/apps/rkward/all.pluginmap
+
+Thanks a lot!
+
+
+> viele gr??e :: m.eik
+>
+>   
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------------
+> OpenSolaris 2009.06 is a cutting edge operating system for enterprises 
+> looking to deploy the next generation of Solaris that includes the latest 
+> innovations from Sun and the OpenSource community. Download a copy and 
+> enjoy capabilities such as Networking, Storage and Virtualization. 
+> Go to: http://p.sf.net/sfu/opensolaris-get
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+
+From noreply at sourceforge.net  Fri Jun  5 21:46:33 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 05 Jun 2009 21:46:33 +0000
+Subject: [rkward-users] [rkward - Help] rcdklibs(Java) causes R/rkward to
+	crash
+Message-ID: <7429180.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7429180
+By: rtautenh
+
+The following line works fine in the R-shell but not in rkward (version: svn
+today).
+
+library(rcdklibs) 
+
+
+Loading required package: rJava
+
+ *** caught segfault ***
+address 0x7f4453444aa0, cause 'invalid permissions'
+
+Traceback:
+ 1: .External(interface, obj at jobj, returnSig, method, ..., PACKAGE = "rJava")
+ 2: .jcall(ic, "Ljava/lang/reflect/Field;", "getField", "TYPE")
+ 3: .jinit(classpath = c(jar.cdk))
+ 4: f(libname, pkgname)
+ 5: firstlib(which.lib.loc, package)
+ 6: doTryCatch(return(expr), name, parentenv, handler)
+ 7: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 8: tryCatchList(expr, classes, parentenv, handlers)
+ 9: tryCatch(expr, error = function(e) {    call <- conditionCall(e)  
+if (!is.null(call)) {        if (identical(call[[1L]], quote(doTryCatch))) 
+call <- sys.call(-4L)        dcall <- deparse(call)[1L]        prefix <- paste("Error
+in", dcall, ": ")        LONG <- 75L        msg <- conditionMessage(e)     
+sm <- strsplit(msg, "\n")[[1L]]        if (14L + nchar(dcall, type = "w") +
+nchar(sm[1L], type = "w") >             LONG)             prefix <- paste(prefix,
+"\n  ", sep = "")    }    else prefix <- "Error : "    msg <- paste(prefix,
+conditionMessage(e), "\n", sep = "")    .Internal(seterrmessage(msg[1L]))  
+if (!silent && identical(getOption("show.error.messages"),         TRUE)) {
+cat(msg, file = stderr())        .Internal(printDeferredWarnings())    }   
+invisible(structure(msg, class = "try-error"))})
+10: try(firstlib(which.lib.loc, package))
+11: library(rcdklibs)
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+
+
+
+Any ideas ?
+
+Thanks!
+Ralf.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Jun  6 11:45:18 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 06 Jun 2009 11:45:18 +0000
+Subject: [rkward-users] [rkward - Help] RE: rcdklibs(Java) causes R/rkward
+	to crash
+In-Reply-To: <7429180.165574@sourceforge.net>
+Message-ID: <7429752.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7429752
+By: tfry
+
+Hi Ralf,
+
+just so I know, where to start looking:
+Did this work, before? If so, when (roughly) did you last try this,
+successfully?
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon Jun  8 19:34:15 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Jun 2009 19:34:15 +0000
+Subject: [rkward-users] [rkward - Open Discussion] Ubuntu 9.04 - "No plugins
+	found" KDE4 - error
+Message-ID: <7432751.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7432751
+By: johnlindsey
+
+OK,  there seems to be a packaging error in the Ubuntu universe repositories
+and I'm trying to figure out how I can help to get it fixed.  What I've found
+is that for rkward 0.5.0b the kdebase is KDE4 (4.4.0.66).  Now from the rkward
+documentation on building from source, this isn't going to work.
+
+There is a reference to some unofficial repositories on
+http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Binaries_and_Build_
+Scripts that point to http://reaktanz.de/deb/rkward, but that is not accessible.
+
+I've used rkward on Debian 5.01 and Fedora 11, so I know it is a worthwhile
+effort to get the Ubuntu repositories updated.  I'm willing to help.  Maybe
+a rkward3 package is for KDE3 would solve the issue or maybe letting KDE pull
+in everything like the latest Fedora does?
+
+If someone thinks this should be posted to Ubuntu, then I'll go that way. 
+
+  
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Mon Jun  8 20:06:59 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 08 Jun 2009 20:06:59 +0000
+Subject: [rkward-users] [rkward - Open Discussion] RE: Ubuntu 9.04 - "No
+	plugins found" KDE4 - error
+In-Reply-To: <7432751.165573@sourceforge.net>
+Message-ID: <7432814.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7432814
+By: m-eik
+
+hi john,
+
+you cannot browse my repository, but it is accessible via apt. just add it to
+/etc/apt/sources.list.d/rkward.list and fetch the "rkward" package (e.g. "sudo
+aptitude update ; sudo aptitude install rkward"). please read
+http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Binaries_and_Build_
+Scripts#Unofficial_Ubuntu_repositories carefully to get the right repo for your
+needs, because it depends on the ubuntu, R and (maybe) KDE version you're
+running.
+
+best regards :: m.eik
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Tue Jun  9 07:57:20 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Jun 2009 07:57:20 +0000
+Subject: [rkward-users] [rkward - Help] RE: Scatterplot lines as splines?
+In-Reply-To: <7428269.165574@sourceforge.net>
+Message-ID: <7433614.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7433614
+By: tfry
+
+Our scatterplot plugin simply does not have support for this, yet. Of course
+it is still possible to do this, but you'll have to write a bit of R code yourself.
+You can start out with the code generated by the scatterplot plugin (click on
+code, or copy it from the Command Log after running). Put that into a script
+file and insert something like
+
+    lines(spline(Xvars[[i]], Yvars[[i]]))
+
+below the call to "points". click Run->Run all, and that should be it.
+
+See also
+   help(spline)
+
+Regards
+Thomas
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Jun  9 16:16:01 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Jun 2009 16:16:01 +0000
+Subject: [rkward-users] [rkward - Open Discussion] RE: Ubuntu 9.04 - "No
+	plugins found" KDE4 - error
+In-Reply-To: <7432751.165573@sourceforge.net>
+Message-ID: <7434534.165573@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7434534
+By: johnlindsey
+
+Thanks much, it works great. 
+rkward is now 0.5.0d
+I had the plugins missing and could assign through settings.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165573
+
+
+
+From noreply at sourceforge.net  Thu Jun 11 19:06:18 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 11 Jun 2009 19:06:18 +0000
+Subject: [rkward-users] [rkward - Help] RE: rcdklibs(Java) causes R/rkward
+	to crash
+In-Reply-To: <7429180.165574@sourceforge.net>
+Message-ID: <7439398.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7439398
+By: rtautenh
+
+Hi Thomas,
+
+sorry, no idea. I never used this package before.
+
+Ralf.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jun 15 15:28:29 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 15 Jun 2009 17:28:29 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on Windows
+Message-ID: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+this is to announce the first preview release of RKWard running on MS Windows. 
+If you have that "other OS" available, please give this a try: 
+http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2.exe . I fully 
+expect there are still a lot of issues, including potential problems with the 
+installer, but I think we are ready for a first round of testing.
+
+A number of significant changes have happened on the Linux/BSD platform as well 
+(see http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Feature_Plan 
+for some of them), and if you would like to see them now, the usual source 
+tarball is here: http://rkward.sourceforge.net/temp/rkward-0.5.1-pre2.tar.gz .
+
+An official 0.5.1-release is not yet scheduled, and is probably still some time 
+away. A release timeline will be announced whenever a release is nearing, and 
+as usual we will allot time for testing, translating and packaging. Still, 
+with the summer vacation-season coming up, translators may want to start 
+updating translations for 0.5.1-pre2, just in case.
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090615/8036958e/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090615/8036958e/attachment.sig>
+
+From nono.231 at gmail.com  Mon Jun 15 19:26:47 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Mon, 15 Jun 2009 20:26:47 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906151226r4ae2df77r92f125ed08177f71@mail.gmail.com>
+
+Hi Thomas!
+
+Great news! I will try it ASAP. Are the any specs for R in windows (>2.7.0
+or something like that)?
+
+Ilias
+
+2009/6/15 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> Hi,
+>
+>
+> this is to announce the first preview release of RKWard running on MS
+> Windows. If you have that "other OS" available, please give this a try:
+> http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2.exe . I fully
+> expect there are still a lot of issues, including potential problems with
+> the installer, but I think we are ready for a first round of testing.
+>
+>
+> A number of significant changes have happened on the Linux/BSD platform as
+> well (see
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Feature_Planfor some of them), and if you would like to see them now, the usual source
+> tarball is here:
+> http://rkward.sourceforge.net/temp/rkward-0.5.1-pre2.tar.gz .
+>
+>
+> An official 0.5.1-release is not yet scheduled, and is probably still some
+> time away. A release timeline will be announced whenever a release is
+> nearing, and as usual we will allot time for testing, translating and
+> packaging. Still, with the summer vacation-season coming up, translators may
+> want to start updating translations for 0.5.1-pre2, just in case.
+>
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> Crystal Reports - New Free Runtime and 30 Day Trial
+> Check out the new simplified licensing option that enables unlimited
+> royalty-free distribution of the report engine for externally facing
+> server and web deployment.
+> http://p.sf.net/sfu/businessobjects
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090615/37846b8c/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 16 07:03:30 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2009 09:03:30 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906151226r4ae2df77r92f125ed08177f71@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906151226r4ae2df77r92f125ed08177f71@mail.gmail.com>
+Message-ID: <200906160903.34744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 15 June 2009, I. Soumpasis wrote:
+> Great news! I will try it ASAP. Are the any specs for R in windows (>2.7.0
+> or something like that)?
+
+yes, I should have mentioned: The installer requires R 2.9.0.
+
+Regards
+Thomas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/dcc6c103/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/dcc6c103/attachment.sig>
+
+From nono.231 at gmail.com  Tue Jun 16 10:59:11 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 16 Jun 2009 11:59:11 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906160903.34744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906151226r4ae2df77r92f125ed08177f71@mail.gmail.com>
+	<200906160903.34744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906160359u69b7d5bch538e6caf6bd09d39@mail.gmail.com>
+
+I made a first testing but it does not work for me. I am on Windows XP.I
+don't find an RKWard shortcut on the Desktop.
+
+When I run rkward.bat I get 'C:\Program' is not recognized as a ....
+command. The problem is the space I think.
+
+If I try straight rkward.bin.exe it complains about libtexteditor.dll.
+
+Ilias
+
+2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> Hi,
+>
+>
+> On Monday 15 June 2009, I. Soumpasis wrote:
+> > Great news! I will try it ASAP. Are the any specs for R in windows
+> (>2.7.0
+> > or something like that)?
+>
+>
+> yes, I should have mentioned: The installer requires R 2.9.0.
+>
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> Crystal Reports - New Free Runtime and 30 Day Trial
+> Check out the new simplified licensing option that enables unlimited
+> royalty-free distribution of the report engine for externally facing
+> server and web deployment.
+> http://p.sf.net/sfu/businessobjects
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/8c7e0ce7/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 16 11:58:53 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2009 13:58:53 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906160359u69b7d5bch538e6caf6bd09d39@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906160903.34744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160359u69b7d5bch538e6caf6bd09d39@mail.gmail.com>
+Message-ID: <200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Tuesday 16 June 2009, I. Soumpasis wrote:
+> I made a first testing but it does not work for me. I am on Windows XP.I
+> don't find an RKWard shortcut on the Desktop.
+
+Ok, probably some spaces-in-the-path issue as well, I'll look into that later.
+
+> When I run rkward.bat I get 'C:\Program' is not recognized as a ....
+> command. The problem is the space I think.
+
+Looks like it. Could you edit rkward.bat (should be installed in 
+your_kde_dir\bin\rkward.bat)? Change the last line to
+	CALL "%R_BINARY%" CMD "%DEBUGGER%" "%RKWARD.BIN%" %1 %2 %3 %4 %5 %6 %7 %8 %9
+i.e. quote %R_BINARY%, %DEBUGGER% and %RKWARD.BIN%. Does that change anything?
+
+> If I try straight rkward.bin.exe it complains about libtexteditor.dll.
+
+Is a file by that name installed in %KDEDIRS%\lib ? Is %KDEDIRS%\lib in your 
+%PATH%?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/ace69478/attachment.sig>
+
+From nono.231 at gmail.com  Tue Jun 16 12:28:16 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 16 Jun 2009 13:28:16 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906160903.34744.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160359u69b7d5bch538e6caf6bd09d39@mail.gmail.com>
+	<200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>
+
+2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+>
+> > When I run rkward.bat I get 'C:\Program' is not recognized as a ....
+> > command. The problem is the space I think.
+>
+> Looks like it. Could you edit rkward.bat (should be installed in
+> your_kde_dir\bin\rkward.bat)? Change the last line to
+>        CALL "%R_BINARY%" CMD "%DEBUGGER%" "%RKWARD.BIN%" %1 %2 %3 %4 %5 %6
+> %7 %8 %9
+> i.e. quote %R_BINARY%, %DEBUGGER% and %RKWARD.BIN%. Does that change
+> anything?
+
+
+Nothing.   Can this line be written in another way. What is the alternative
+character of space in windows?
+
+
+>
+> > If I try straight rkward.bin.exe it complains about libtexteditor.dll.
+>
+> Is a file by that name installed in %KDEDIRS%\lib ? Is %KDEDIRS%\lib in
+> your
+> %PATH%?
+
+
+I added the path, but nothing again. I searched the KDE folder for
+libtexteditor.dll but it is not there. I installed KDE 4.2.3 (checked all
+available components).
+
+Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/499f43e6/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 16 13:07:27 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2009 15:07:27 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>
+Message-ID: <200906161507.30954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Tuesday 16 June 2009, I. Soumpasis wrote:
+> Nothing.   Can this line be written in another way. What is the alternative
+> character of space in windows?
+
+Try this:
+      CALL "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+
+> I added the path, but nothing again. I searched the KDE folder for
+> libtexteditor.dll but it is not there. I installed KDE 4.2.3 (checked all
+> available components).
+
+Ok, well that *is* another problem, then. You will have to install that file 
+somehow. I'm not sure, which package it is in, and I'm not currently on 
+windows to check. Perhaps you need to specifically install kdelibs-mingw (you 
+may need to chose "Developer mode" and "MinGW" in the initial steps of the 
+installer).
+
+Did anybody succeed in getting RKWard to run on windows, yet?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/645554cd/attachment.sig>
+
+From nono.231 at gmail.com  Tue Jun 16 14:51:19 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 16 Jun 2009 15:51:19 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906161507.30954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>
+	<200906161507.30954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906160751h4de591f7g90f83a91c57851c5@mail.gmail.com>
+
+2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> On Tuesday 16 June 2009, I. Soumpasis wrote:
+> > Nothing.   Can this line be written in another way. What is the
+> alternative
+> > character of space in windows?
+>
+> Try this:
+>      CALL "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+
+
+No luck :(
+
+
+>
+>
+> > I added the path, but nothing again. I searched the KDE folder for
+> > libtexteditor.dll but it is not there. I installed KDE 4.2.3 (checked all
+> > available components).
+>
+> Ok, well that *is* another problem, then. You will have to install that
+> file
+> somehow. I'm not sure, which package it is in, and I'm not currently on
+> windows to check. Perhaps you need to specifically install kdelibs-mingw
+> (you
+> may need to chose "Developer mode" and "MinGW" in the initial steps of the
+> installer).
+
+
+No luck again. There is no kdelibs-mingw, only mingw-utilws and
+kdelibs-msvc. But still after installing the devel the same problem appears.
+
+Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/f4298b19/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 16 16:09:20 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2009 18:09:20 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+ Windows
+In-Reply-To: <3ff92a550906160751h4de591f7g90f83a91c57851c5@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>	<200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>	<3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>	<200906161507.30954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160751h4de591f7g90f83a91c57851c5@mail.gmail.com>
+Message-ID: <4A37C3B0.8090905@ruhr-uni-bochum.de>
+
+I. Soumpasis schrieb:
+> 2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+>> Try this:
+>>      CALL "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+> 
+> 
+> No luck :(
+
+Well, it can't work until the other problem is solved. So let's focus on 
+that, first.
+
+> No luck again. There is no kdelibs-mingw, only mingw-utilws and
+> kdelibs-msvc. But still after installing the devel the same problem appears.
+
+Ok, it looks like it just isn't easily possible to switch the mode in 
+the KDE installer. Apparently you need to either delete your KDE 
+installation and start afresh (probably the least troublesome as long as 
+you have not yet configured anything special in KDE), or install to an 
+additional KDE directory. This time, on the third page of the installer, 
+be sure to select Compiler Mode "MinGW". You may need to select "Package 
+Manager" mode for that. Now the -mingw versions should be available (you 
+need kdelibs-mingw and kdebase-mingw).
+
+Sorry about the trouble. I hope this time it will work.
+
+Regards
+Thomas
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 16 19:57:30 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2009 21:57:30 +0200
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+as a small update, there is a new version of the windows installer, which 
+addresses at least one of the issues that came up so far:
+
+http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2b.exe
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/19f35819/attachment.sig>
+
+From nono.231 at gmail.com  Tue Jun 16 20:01:14 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Tue, 16 Jun 2009 21:01:14 +0100
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906161301x336b83a7rc13cd81b621caf32@mail.gmail.com>
+
+I will try it again possibly tomorrow when I 'll have access to the windows
+computer.
+
+Ilias
+
+2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> Hi,
+>
+> as a small update, there is a new version of the windows installer, which
+> addresses at least one of the issues that came up so far:
+>
+> http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2b.exe
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> Crystal Reports - New Free Runtime and 30 Day Trial
+> Check out the new simplified licensing option that enables unlimited
+> royalty-free distribution of the report engine for externally facing
+> server and web deployment.
+> http://p.sf.net/sfu/businessobjects
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090616/0b0246eb/attachment.html>
+
+From noreply at sourceforge.net  Wed Jun 17 04:32:55 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 17 Jun 2009 04:32:55 +0000
+Subject: [rkward-users] [rkward - Help] rkward editor adding dos "carriage
+	return"??
+Message-ID: <7448703.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7448703
+By: achronon
+
+This is annoying!  I use RKWard on (k)ubuntu(8.10) and Fedora(10).  The RKWard
+GUI editor seems to be adding the DOS carriage return with the line feed.  This
+seems highly irregular for what I thought was a native gnu/linux KDE package.
+
+I found the scripts run fine within rkward but if I go to a console and run
+a script using say the littler /usr/bin/r wrapper then the damn carriage return
+characters confound me.
+
+I don't want to have to repeatedly use fromdos every time I edit my R scripts.
+
+So how can I stop this behaviour?
+
+TFAHIA
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From nono.231 at gmail.com  Wed Jun 17 08:03:16 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Wed, 17 Jun 2009 09:03:16 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <4A37C3B0.8090905@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906161358.56957.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160528t34c98353rb43be63578152cd5@mail.gmail.com>
+	<200906161507.30954.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906160751h4de591f7g90f83a91c57851c5@mail.gmail.com>
+	<4A37C3B0.8090905@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906170103s62b08004q8824bc645241f41b@mail.gmail.com>
+
+2009/6/16 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> I. Soumpasis schrieb:
+> > 2009/6/16 Thomas Friedrichsmeier <
+> thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> >> Try this:
+> >>      CALL "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+> >
+> >
+> > No luck :(
+>
+> Well, it can't work until the other problem is solved. So let's focus on
+> that, first.
+
+
+Again the same problem here. It seems to me that the space of Program Files
+is responsible somehow.
+
+
+>
+>
+> > No luck again. There is no kdelibs-mingw, only mingw-utilws and
+> > kdelibs-msvc. But still after installing the devel the same problem
+> appears.
+>
+> Ok, it looks like it just isn't easily possible to switch the mode in
+> the KDE installer. Apparently you need to either delete your KDE
+> installation and start afresh (probably the least troublesome as long as
+> you have not yet configured anything special in KDE), or install to an
+> additional KDE directory. This time, on the third page of the installer,
+> be sure to select Compiler Mode "MinGW". You may need to select "Package
+> Manager" mode for that. Now the -mingw versions should be available (you
+> need kdelibs-mingw and kdebase-mingw).
+>
+> Sorry about the trouble. I hope this time it will work.
+>
+
+I did the procedure. Now there is another problem. It cannot find R.dll.
+However when I installed it, it was found in the checks. R version 2.9.0.
+
+Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090617/a0d09ee4/attachment.html>
+
+From kapatp at gmail.com  Wed Jun 17 08:09:34 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Wed, 17 Jun 2009 04:09:34 -0400
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com>
+
+Hi Thomas,
+
+On Tue, Jun 16, 2009 at 3:57 PM, Thomas
+Friedrichsmeier<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> as a small update, there is a new version of the windows installer, which
+> addresses at least one of the issues that came up so far:
+>
+> http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2b.exe
+
+This is a great news... I tried this exe and it "works." In brief the
+process was:
+
+1. R-2.9.0
+2. KDE - with many devel files - at least the ones that seemed
+relevant to me. This took a LONG time.
+3. PHP - cli only
+4. RKward 0.5.1_pre2
+
+Bingo!
+
+I searched for libtexteditor.dll, but did not find any under KDE (on
+XP) installation (I  used C:\KDE4).
+
+But the php is giving some errors. I'll take that up on a separate
+thread with a screenshot.
+
+> Regards
+> Thomas
+
+Kudos!
+-- 
+Prasenjit
+
+
+
+From noreply at sourceforge.net  Wed Jun 17 11:02:23 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 17 Jun 2009 11:02:23 +0000
+Subject: [rkward-users] [rkward - Help] RE: rkward editor adding dos
+	"carriage return"??
+In-Reply-To: <7448703.165574@sourceforge.net>
+Message-ID: <7449297.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7449297
+By: tfry
+
+Open a script editor, then select Settings->Configure Editor->Open/Save. Make
+sure "End of line" is set to UNIX. This option only affects newly created files.
+To make sure the DOS carriage return gets pruned even from files that already
+have it, uncheck the "Automatic end of line detection" option.
+
+Let us know, if this does not work for you.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jun 17 11:14:37 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 Jun 2009 13:14:37 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906170103s62b08004q8824bc645241f41b@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4A37C3B0.8090905@ruhr-uni-bochum.de>
+	<3ff92a550906170103s62b08004q8824bc645241f41b@mail.gmail.com>
+Message-ID: <200906171314.43237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Wednesday 17 June 2009, I. Soumpasis wrote:
+> Again the same problem here. It seems to me that the space of Program Files
+> is responsible somehow.
+
+As a last attempt you could further shorten that line to
+    "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+(BTW, what is the value that gets assigned to R_BINARY on line 10 of the 
+script?).
+
+If that still does not work, then what happens, when you enter
+    "C:\your_path_to_R\bin\R.exe" CMD "C:\your_path_to_KDE\bin\rkward.bin.exe"
+in a command shell?
+
+> I did the procedure. Now there is another problem. It cannot find R.dll.
+> However when I installed it, it was found in the checks. R version 2.9.0.
+
+But that's when you try to invoke rkward.bin.exe directly, right? That is to 
+be expected. That's what rkward.bat is supposed to take care of.
+
+BTW, do you get an icon on the desktop with the new installer (0.5.1-pre2b)?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090617/1b2eeb4e/attachment.sig>
+
+From noreply at sourceforge.net  Wed Jun 17 11:17:21 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 17 Jun 2009 11:17:21 +0000
+Subject: [rkward-users] [rkward - Help] RE: rcdklibs(Java) causes R/rkward
+	to crash
+In-Reply-To: <7439398.165574@sourceforge.net>
+Message-ID: <7449326.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7449326
+By: tfry
+
+Ok, too bad. That looks like a really obscure problem. I do have an idea for
+one thing to try to address this (and a few similar) problems, but that's a
+lot of work, and won't happen soon (and whether it really fixes this issue,
+remains to be seen).
+
+Interestingly, this problem does not appear in RKWard on windows.
+
+Regards
+Thomas
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jun 17 14:28:10 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 Jun 2009 16:28:10 +0200
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com>
+Message-ID: <200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Wednesday 17 June 2009, Prasenjit Kapat wrote:
+> This is a great news... I tried this exe and it "works." In brief the
+> process was:
+
+I'm glad to hear at least one person got this far. BTW, there is a rudimentary 
+page in the wiki: 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Windows
+perhaps you could all help documenting the required steps, since installation 
+really is a bit difficult ATM.
+
+> 2. KDE - with many devel files - at least the ones that seemed
+> relevant to me. This took a LONG time.
+
+In theory you should not need any devel files (but keep them, now that you have 
+installed them. Perhaps a bit later you can try to set things up so you can 
+compile from source on windows (if you're feeling adventurous, take a look at 
+windows_nsis/make_release.bat in SVN. This is the script that I'm running to 
+create the release/installer).
+
+Since Illias ran into problems at this point: Did you chose the MinGW compiler 
+mode or MSVC? I just don't know, whether or not that should work as well, 
+that's why I'm asking.
+
+> I searched for libtexteditor.dll, but did not find any under KDE (on
+> XP) installation (I  used C:\KDE4).
+
+In fact it's called libktexteditor.dll.a , here.
+
+> But the php is giving some errors. I'll take that up on a separate
+> thread with a screenshot.
+
+Ok, the next version of the installer is up:
+http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2c.exe
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090617/6df6086d/attachment.sig>
+
+From kapatp at gmail.com  Wed Jun 17 14:50:19 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Wed, 17 Jun 2009 10:50:19 -0400
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com> 
+	<200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <de8c7cb40906170750h859b0e6g7204e9a012402ee1@mail.gmail.com>
+
+Hi,
+
+On Wed, Jun 17, 2009 at 10:28 AM, Thomas
+Friedrichsmeier<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+
+> Since Illias ran into problems at this point: Did you chose the MinGW compiler
+> mode or MSVC? I just don't know, whether or not that should work as well,
+> that's why I'm asking.
+
+I remember to have used MinGW w/ "Package Manager" mode instead of
+"End User" mode when installing KDE. Then created the KDEDIRS
+variable, and added the lib to %PATH.
+
+I will try to note the packages that got installed with KDE.
+
+On the issue of space in the paths, in my case:
+1. R - there is space : C:\Program Files\R\R-2.9.0
+2. KDE - NO space: C:\KDE4
+3. PHP - there is space : C:\Program Files\PHP
+
+I'll try the pre2c version tonight.
+
+-- 
+Prasenjit
+
+
+
+From nono.231 at gmail.com  Wed Jun 17 16:35:07 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Wed, 17 Jun 2009 17:35:07 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906171314.43237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4A37C3B0.8090905@ruhr-uni-bochum.de>
+	<3ff92a550906170103s62b08004q8824bc645241f41b@mail.gmail.com>
+	<200906171314.43237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906170935g365a5011xe3c7c4c9b5565f01@mail.gmail.com>
+
+Hi!
+
+2009/6/17 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+> On Wednesday 17 June 2009, I. Soumpasis wrote:
+> > Again the same problem here. It seems to me that the space of Program
+> Files
+> > is responsible somehow.
+>
+> As a last attempt you could further shorten that line to
+>     "%R_BINARY%" CMD "%RKWARD.BIN%" %1 %2 %3 %4 %5
+> (BTW, what is the value that gets assigned to R_BINARY on line 10 of the
+> script?).
+
+
+ No luck again. The value is
+SET R_BINARY=C:\Program Files\R\bin\R.exe
+
+
+>
+> If that still does not work, then what happens, when you enter
+>    "C:\your_path_to_R\bin\R.exe" CMD
+> "C:\your_path_to_KDE\bin\rkward.bin.exe"
+> in a command shell?
+
+
+ No it doesn't work.  I get the "C:\ program" is not recognized as an
+internal or external command. I made a research on this. The problem is the
+rkward part. I tried
+"C:\Program Files\R\bin\R.exe" CMD "C:\Progra~1\KDE\bin\rkward.bin.exe"
+and
+"C:\Program Files\R\bin\R.exe" CMD C:\Progra~1\KDE\bin\rkward.bin.exe
+
+and both work.
+
+I think this the reason that Prasenjit's installation works, becaause the
+path is in C:\KDE (no space).
+
+I changed line 13 to
+SET RKWARD.BIN=C:\Progra~1\KDE2\bin\rkward.bin.exe
+
+and it works. But this is not a solution because it is an absolute path.
+
+
+>
+> BTW, do you get an icon on the desktop with the new installer
+> (0.5.1-pre2b)?
+
+
+Yes this works. :)
+
+Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090617/4077da6e/attachment.html>
+
+From noreply at sourceforge.net  Thu Jun 18 04:24:35 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 18 Jun 2009 04:24:35 +0000
+Subject: [rkward-users] [rkward - Help] RE: rkward editor adding dos
+	"carriage return"??
+In-Reply-To: <7448703.165574@sourceforge.net>
+Message-ID: <7450754.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7450754
+By: achronon
+
+Ahh yes, I new someone would be able to help :-)
+
+(problem stemmed from starting up editing R source code from a colleague who
+was working on a Winblows machine)
+
+After configuring the Editor as you suggested I still had to quit RKWard, restart
+it, then all was well.
+
+Thanks.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From kapatp at gmail.com  Thu Jun 18 05:34:29 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Thu, 18 Jun 2009 01:34:29 -0400
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <de8c7cb40906170750h859b0e6g7204e9a012402ee1@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com> 
+	<200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de> 
+	<de8c7cb40906170750h859b0e6g7204e9a012402ee1@mail.gmail.com>
+Message-ID: <de8c7cb40906172234u404b79fcy67e2178d920e2e54@mail.gmail.com>
+
+Hi,
+
+On Wed, Jun 17, 2009 at 10:50 AM, Prasenjit Kapat<kapatp at gmail.com> wrote:
+> Hi,
+>
+> On Wed, Jun 17, 2009 at 10:28 AM, Thomas
+> Friedrichsmeier<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+>
+>> Since Illias ran into problems at this point: Did you chose the MinGW compiler
+>> mode or MSVC? I just don't know, whether or not that should work as well,
+>> that's why I'm asking.
+>
+> I remember to have used MinGW w/ "Package Manager" mode instead of
+> "End User" mode when installing KDE. Then created the KDEDIRS
+> variable, and added the lib to %PATH.
+>
+> I will try to note the packages that got installed with KDE.
+
+Attached is a file which lists all (I think) the KDE packages that got
+installed (along with their dependencies). Illias's problem seems to
+be with the space in the path, so  this info my not be helpful,
+still...
+
+
+-- 
+Prasenjit
+-------------- next part --------------
+ Directory of E:\KDE4-packages
+
+ <DIR>          .
+ <DIR>          ..
+ 16,030,800 ActivePerl-5.8.8.819-MSWin32-x86-267479.msi
+    832,069 aspell-0.60.5-1-bin.tar.bz2
+         62 aspell-0.60.5-1-bin.tar.bz2.md5
+  1,283,948 aspell-en-6.0-41-bin.tar.bz2
+         63 aspell-en-6.0-41-bin.tar.bz2.md5
+    134,861 astyle-1.22-bin.zip
+         54 astyle-1.22-bin.zip.md5
+     44,647 automoc-mingw-0.9.88-bin.tar.bz2
+         67 automoc-mingw-0.9.88-bin.tar.bz2.md5
+  8,925,501 binutils-2.19.1-mingw32-bin.tar.gz
+  4,575,838 boost-mingw-1.37.0-1-bin.tar.bz2
+         67 boost-mingw-1.37.0-1-bin.tar.bz2.md5
+    381,893 cfitsio-3.10-bin.tar.bz2
+         59 cfitsio-3.10-bin.tar.bz2.md5
+  9,538,769 cmake-2.6.2-bin.zip
+  4,710,784 cmake-2.6.2-src.zip
+     29,028 config.txt
+    257,917 cyrus-sasl-2.1.22-bin.tar.bz2
+         64 cyrus-sasl-2.1.22-bin.tar.bz2.md5
+ 17,944,576 dbg_x86_6.9.3.113.msi
+  1,170,713 dbus-mingw-1.2.4-1-bin.tar.bz2
+         65 dbus-mingw-1.2.4-1-bin.tar.bz2.md5
+    292,422 DebugView.zip
+    610,769 depends-2.2-bin.zip
+    456,027 diffutils-2.8.7-1-bin.zip
+         60 diffutils-2.8.7-1-bin.zip.md5
+ 11,608,431 digikam-mingw-0.10.0-bin.tar.bz2
+         67 digikam-mingw-0.10.0-bin.tar.bz2.md5
+  2,380,047 doxygen-1.5.6-bin.zip
+462,460,792 dxsdk_apr2007.exe
+     68,063 ebook-tools-0.1.0-bin.tar.bz2
+         64 ebook-tools-0.1.0-bin.tar.bz2.md5
+  1,315,918 exiv2-mingw-0.18-bin.tar.bz2
+         63 exiv2-mingw-0.18-bin.tar.bz2.md5
+     66,829 expat-2.0.1-bin.zip
+         54 expat-2.0.1-bin.zip.md5
+    285,554 Filemon.zip
+    509,555 findutils-4.2.20-2-bin.zip
+         61 findutils-4.2.20-2-bin.zip.md5
+    555,751 fontconfig-mingw-2.4.2-3-bin.tar.bz2
+         71 fontconfig-mingw-2.4.2-3-bin.tar.bz2.md5
+    571,393 freetype-mingw-2.3.7-1-bin.tar.bz2
+         69 freetype-mingw-2.3.7-1-bin.tar.bz2.md5
+  2,812,535 gcc-core-3.4.5-20060117-3.tar.gz
+  4,058,117 gcc-g++-3.4.5-20060117-3.tar.gz
+  2,048,441 gcc-g77-3.4.5-20060117-3.tar.gz
+  2,088,701 gdb-6.8-mingw-3.tar.bz2
+     44,870 gettext-0.17-1-bin.tar.bz2
+         61 gettext-0.17-1-bin.tar.bz2.md5
+      7,015 gettext-0.17-1-lib.tar.bz2
+         61 gettext-0.17-1-lib.tar.bz2.md5
+     19,258 giflib-4.1.4-1-bin.zip
+         57 giflib-4.1.4-1-bin.zip.md5
+    250,257 grep-2.5.1a-bin.zip
+         54 grep-2.5.1a-bin.zip.md5
+  1,609,999 iconv-1.12-1-bin.tar.bz2
+         59 iconv-1.12-1-bin.tar.bz2.md5
+    110,314 jasper-1.900.1-2-bin.zip
+         59 jasper-1.900.1-2-bin.zip.md5
+     66,040 jpeg-6.b-5-bin.zip
+         53 jpeg-6.b-5-bin.zip.md5
+  6,208,187 kdebase-apps-mingw-4.2.3-bin.tar.bz2
+         71 kdebase-apps-mingw-4.2.3-bin.tar.bz2.md5
+     67,252 kdebase-apps-mingw-4.2.3-lib.tar.bz2
+         71 kdebase-apps-mingw-4.2.3-lib.tar.bz2.md5
+  4,217,388 kdebase-apps-mingw-4.2.3-src.tar.bz2
+         71 kdebase-apps-mingw-4.2.3-src.tar.bz2.md5
+ 70,065,493 kdebase-runtime-mingw-4.2.3-bin.tar.bz2
+         74 kdebase-runtime-mingw-4.2.3-bin.tar.bz2.md5
+      6,214 kdebase-runtime-mingw-4.2.3-lib.tar.bz2
+         74 kdebase-runtime-mingw-4.2.3-lib.tar.bz2.md5
+ 67,661,164 kdebase-runtime-mingw-4.2.3-src.tar.bz2
+         74 kdebase-runtime-mingw-4.2.3-src.tar.bz2.md5
+ 44,468,393 kdebase-workspace-mingw-4.2.3-bin.tar.bz2
+         76 kdebase-workspace-mingw-4.2.3-bin.tar.bz2.md5
+     49,421 kdebase-workspace-mingw-4.2.3-lib.tar.bz2
+         76 kdebase-workspace-mingw-4.2.3-lib.tar.bz2.md5
+ 50,656,525 kdebase-workspace-mingw-4.2.3-src.tar.bz2
+         76 kdebase-workspace-mingw-4.2.3-src.tar.bz2.md5
+ 47,677,043 kdeedu-mingw-4.2.3-bin.tar.bz2
+         65 kdeedu-mingw-4.2.3-bin.tar.bz2.md5
+ 36,860,021 kdegames-mingw-4.2.3-bin.tar.bz2
+         67 kdegames-mingw-4.2.3-bin.tar.bz2.md5
+  6,256,720 kdegraphics-mingw-4.2.3-bin.tar.bz2
+         70 kdegraphics-mingw-4.2.3-bin.tar.bz2.md5
+ 18,435,827 kdelibs-mingw-4.2.3-bin.tar.bz2
+         66 kdelibs-mingw-4.2.3-bin.tar.bz2.md5
+  2,984,005 kdelibs-mingw-4.2.3-lib.tar.bz2
+         66 kdelibs-mingw-4.2.3-lib.tar.bz2.md5
+  9,861,277 kdelibs-mingw-4.2.3-src.tar.bz2
+         66 kdelibs-mingw-4.2.3-src.tar.bz2.md5
+  9,525,975 kdenetwork-mingw-4.2.3-bin.tar.bz2
+         69 kdenetwork-mingw-4.2.3-bin.tar.bz2.md5
+  3,743,358 kdepimlibs-mingw-4.2.3-bin.tar.bz2
+         69 kdepimlibs-mingw-4.2.3-bin.tar.bz2.md5
+  8,584,859 kdesdk-mingw-4.2.3-bin.tar.bz2
+         65 kdesdk-mingw-4.2.3-bin.tar.bz2.md5
+     88,028 kdesdk-mingw-4.2.3-lib.tar.bz2
+         65 kdesdk-mingw-4.2.3-lib.tar.bz2.md5
+  5,414,160 kdesdk-mingw-4.2.3-src.tar.bz2
+         65 kdesdk-mingw-4.2.3-src.tar.bz2.md5
+  3,125,769 kdeutils-mingw-4.2.3-bin.tar.bz2
+         67 kdeutils-mingw-4.2.3-bin.tar.bz2.md5
+     57,900 kdeutils-mingw-4.2.3-lib.tar.bz2
+         67 kdeutils-mingw-4.2.3-lib.tar.bz2.md5
+  2,367,557 kdeutils-mingw-4.2.3-src.tar.bz2
+         67 kdeutils-mingw-4.2.3-src.tar.bz2.md5
+  1,447,198 kdewebdev-mingw-4.2.3-bin.tar.bz2
+         68 kdewebdev-mingw-4.2.3-bin.tar.bz2.md5
+  1,417,774 kdewin-installer-mingw-0.9.5-bin.tar.bz2
+         75 kdewin-installer-mingw-0.9.5-bin.tar.bz2.md5
+    164,844 kdewin-installer.log
+    104,196 kdewin32-mingw-0.3.9-bin.tar.bz2
+         67 kdewin32-mingw-0.3.9-bin.tar.bz2.md5
+    145,672 kdewin32-mingw-0.3.9-lib.tar.bz2
+         67 kdewin32-mingw-0.3.9-lib.tar.bz2.md5
+  6,335,126 kile-mingw-20081130-bin.tar.bz2
+         66 kile-mingw-20081130-bin.tar.bz2.md5
+  5,918,048 kipi-plugins-mingw-0.2.0-bin.tar.bz2
+         71 kipi-plugins-mingw-0.2.0-bin.tar.bz2.md5
+  2,891,782 konversation-mingw-1.2alpha3-bin.tar.bz2
+         75 konversation-mingw-1.2alpha3-bin.tar.bz2.md5
+  4,189,029 ktorrent-mingw-3.2-bin.tar.bz2
+         65 ktorrent-mingw-3.2-bin.tar.bz2.md5
+    151,873 lcms-1.18-bin.tar.bz2
+         56 lcms-1.18-bin.tar.bz2.md5
+    156,938 libbzip2-1.0.5-1-bin.tar.bz2
+         63 libbzip2-1.0.5-1-bin.tar.bz2.md5
+    103,227 libgmp-4.2.4-bin.tar.bz2
+         59 libgmp-4.2.4-bin.tar.bz2.md5
+    193,148 libical-0.43-bin.tar.bz2
+         59 libical-0.43-bin.tar.bz2.md5
+     85,294 libidn-1.13-bin.tar.bz2
+         58 libidn-1.13-bin.tar.bz2.md5
+    538,038 libmsn-mingw-4.0-beta4-bin.tar.bz2
+         69 libmsn-mingw-4.0-beta4-bin.tar.bz2.md5
+     79,841 libpng-1.2.35-bin.tar.bz2
+         60 libpng-1.2.35-bin.tar.bz2.md5
+    158,822 libspectre-0.2.1-bin.tar.bz2
+         63 libspectre-0.2.1-bin.tar.bz2.md5
+    455,794 libxml2-2.6.32-1-bin.tar.bz2
+         63 libxml2-2.6.32-1-bin.tar.bz2.md5
+    105,703 libxslt-1.1.23-3-bin.tar.bz2
+         63 libxslt-1.1.23-3-bin.tar.bz2.md5
+     48,578 libzip-0.8.0-bin.tar.bz2
+         59 libzip-0.8.0-bin.tar.bz2.md5
+    140,095 MinGW-5.1.4.exe
+  1,288,136 mingw-utils-0.3-bin.zip
+         58 mingw-utils-0.3-bin.zip.md5
+      1,353 mingw.ini
+      1,327 mingw.ini.old
+    565,306 mingwrt-3.15.2-mingw32-dev.tar.gz
+    475,844 OggDS0995.exe
+  3,075,662 openbabel-mingw-2.2.0-bin.tar.bz2
+         68 openbabel-mingw-2.2.0-bin.tar.bz2.md5
+    631,201 openssl-0.9.8j-1-bin.tar.bz2
+         63 openssl-0.9.8j-1-bin.tar.bz2.md5
+          0 packlist.txt
+     49,750 patch-2.5.9-bin.zip
+         54 patch-2.5.9-bin.zip.md5
+    570,682 pcre-mingw-7.8-2-bin.tar.bz2
+         63 pcre-mingw-7.8-2-bin.tar.bz2.md5
+    384,131 phonon-mingw-4.3.0-bin.tar.bz2
+         65 phonon-mingw-4.3.0-bin.tar.bz2.md5
+    147,308 phonon-mingw-4.3.0-lib.tar.bz2
+         65 phonon-mingw-4.3.0-lib.tar.bz2.md5
+    994,372 poppler-mingw-0.10.5-bin.tar.bz2
+         67 poppler-mingw-0.10.5-bin.tar.bz2.md5
+    137,466 poppler-mingw-0.10.5-lib.tar.bz2
+         67 poppler-mingw-0.10.5-lib.tar.bz2.md5
+  1,615,732 ProcessExplorer.zip
+  1,277,400 ProcessMonitor.zip
+  1,163,573 qca-mingw-2.0.1-4-bin.tar.bz2
+         64 qca-mingw-2.0.1-4-bin.tar.bz2.md5
+    119,583 qca-mingw-2.0.1-4-lib.tar.bz2
+         64 qca-mingw-2.0.1-4-lib.tar.bz2.md5
+    112,356 qimageblitz-mingw-0.0.5-bin.tar.bz2
+         70 qimageblitz-mingw-0.0.5-bin.tar.bz2.md5
+ 16,037,341 qt-mingw-4.4.3-3-bin.tar.bz2
+         63 qt-mingw-4.4.3-3-bin.tar.bz2.md5
+  9,168,566 qt-mingw-4.4.3-3-lib.tar.bz2
+         63 qt-mingw-4.4.3-3-lib.tar.bz2.md5
+    271,346 Regmon.zip
+      3,604 runtime-mingw-1.0-bin.zip
+         60 runtime-mingw-1.0-bin.zip.md5
+  7,360,584 Setup-Subversion-1.5.2.en-us.msi
+    452,592 shared-mime-info-0.60-bin.tar.bz2
+         68 shared-mime-info-0.60-bin.tar.bz2.md5
+  2,659,522 soprano-mingw-2.2.2-bin.tar.bz2
+         66 soprano-mingw-2.2.2-bin.tar.bz2.md5
+  2,606,087 strigi-mingw-0.6.5-bin.tar.bz2
+         65 strigi-mingw-0.6.5-bin.tar.bz2.md5
+    462,796 taglib-mingw-1.5.0-bin.tar.bz2
+         65 taglib-mingw-1.5.0-bin.tar.bz2.md5
+    136,179 tiff-3.8.2-2-bin.zip
+         55 tiff-3.8.2-2-bin.zip.md5
+ 15,772,694 TortoiseCVS-1.10.9.exe
+ 18,763,264 TortoiseSVN-1.5.5.14361-win32-svn-1.5.4.msi
+    328,737 upx-3.0.3-bin.zip
+  1,634,605 w32api-3.13-mingw32-dev.tar.gz
+  2,425,684 winscp417setup.exe
+    333,559 zip-2.31-bin.zip
+     41,090 zlib-1.2.3-2-bin.zip
+         55 zlib-1.2.3-2-bin.zip.md5
+           204 File(s)  1,074,446,995 bytes
+             2 Dir(s)  17,454,346,240 bytes free
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jun 18 10:56:36 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 18 Jun 2009 12:56:36 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906170935g365a5011xe3c7c4c9b5565f01@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906171314.43237.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906170935g365a5011xe3c7c4c9b5565f01@mail.gmail.com>
+Message-ID: <200906181256.36286.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Wednesday 17 June 2009, I. Soumpasis wrote:
+>  No it doesn't work.  I get the "C:\ program" is not recognized as an
+> internal or external command. I made a research on this. The problem is the
+> rkward part. I tried
+> "C:\Program Files\R\bin\R.exe" CMD "C:\Progra~1\KDE\bin\rkward.bin.exe"
+> and
+> "C:\Program Files\R\bin\R.exe" CMD C:\Progra~1\KDE\bin\rkward.bin.exe
+>
+> and both work.
+
+Ok, I understand, now.
+
+> I changed line 13 to
+> SET RKWARD.BIN=C:\Progra~1\KDE2\bin\rkward.bin.exe
+>
+> and it works. But this is not a solution because it is an absolute path.
+
+Could you try these, for line 13, instead (one at a time. I'm providing 
+several in case the others don't work, as I can't test, right now):
+
+SET RKWARD.BIN=%~dsp0
+SET RKWARD.BIN=%~sdp0
+SET RKWARD.BIN=%~d0%sp0
+SET RKWARD.BIN=%~s0\..\rkward.bin.exe
+
+Regards
+Thomas
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090618/346d716e/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jun 18 10:58:24 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 18 Jun 2009 12:58:24 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906181256.36286.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906170935g365a5011xe3c7c4c9b5565f01@mail.gmail.com>
+	<200906181256.36286.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200906181258.25088.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Thursday 18 June 2009, Thomas Friedrichsmeier wrote:
+> Could you try these, for line 13, instead (one at a time. I'm providing
+> several in case the others don't work, as I can't test, right now):
+
+Sorry, make that:
+
+SET RKWARD.BIN=%~dsp0\rkward.bin.exe
+SET RKWARD.BIN=%~sdp0\rkward.bin.exe
+SET RKWARD.BIN=%~d0%sp0\rkward.bin.exe
+SET RKWARD.BIN=%~s0\..\rkward.bin.exe
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090618/33bb80a1/attachment.sig>
+
+From nono.231 at gmail.com  Thu Jun 18 11:59:57 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Thu, 18 Jun 2009 12:59:57 +0100
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <200906181258.25088.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906170935g365a5011xe3c7c4c9b5565f01@mail.gmail.com>
+	<200906181256.36286.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906181258.25088.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <3ff92a550906180459v10d51d01v23314d6b2725e12@mail.gmail.com>
+
+2009/6/18 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+
+>
+>
+> SET RKWARD.BIN=%~dsp0\rkward.bin.exe
+
+
+works
+
+
+> SET RKWARD.BIN=%~sdp0\rkward.bin.exe
+
+
+works
+
+
+>
+> SET RKWARD.BIN=%~d0%sp0\rkward.bin.exe
+
+
+doesn't work
+
+
+>
+> SET RKWARD.BIN=%~s0\..\rkward.bin.exe
+>
+
+works
+
+
+Regards,
+Ilias
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090618/aedf2947/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jun 19 20:39:16 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 19 Jun 2009 22:39:16 +0200
+Subject: [rkward-users] RKWard 0.5.1-pre2: First preview of RKWard on
+	Windows
+In-Reply-To: <3ff92a550906180459v10d51d01v23314d6b2725e12@mail.gmail.com>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906181258.25088.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<3ff92a550906180459v10d51d01v23314d6b2725e12@mail.gmail.com>
+Message-ID: <200906192239.23010.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Thursday 18 June 2009, I. Soumpasis wrote:
+> > SET RKWARD.BIN=%~dsp0\rkward.bin.exe
+>
+> works
+[...]
+
+Thanks for testing these.
+
+Fixed in:
+http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2d.exe
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090619/b5e88683/attachment.sig>
+
+From noreply at sourceforge.net  Sun Jun 21 13:22:12 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Jun 2009 13:22:12 +0000
+Subject: [rkward-users] [rkward - Help] on starup Plugins are needed
+Message-ID: <7456148.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7456148
+By: kstus
+
+I just installed RKWard on Ubuntu (jaunty) and when I launch it I get the following:
+"Plugins are needed: you may manage these through "Settings ->Configure RKWard".
+
+But under the Settings I only have two options "Show Tookbar" and "Show
+Statusbar".
+
+Also I get "Page does not exist or is borken".  
+
+Thanks.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jun 21 15:23:00 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Jun 2009 15:23:00 +0000
+Subject: [rkward-users] [rkward - Help] RE: on starup Plugins are needed
+In-Reply-To: <7456148.165574@sourceforge.net>
+Message-ID: <7456273.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7456273
+By: johnlindsey
+
+Ok, Here is the trick.  Go to the built binaries page.
+https://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build
+_Scripts
+
+add Unofficial Ubuntu repositories 
+
+    *  RKWard compiled against the official Ubuntu R. To use these pre-compiled
+binaries use the following repositories (add them to
+/etc/apt/sources.list.d/rkward.list):
+
+# use only one of these:
+deb http://reaktanz.de/deb/rkward jaunty main
+
+and everything should work:
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jun 21 19:04:34 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Jun 2009 19:04:34 +0000
+Subject: [rkward-users] [rkward - Help] RE: on starup Plugins are needed
+In-Reply-To: <7456148.165574@sourceforge.net>
+Message-ID: <7456461.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7456461
+By: kstus
+
+Unfortunately  /etc/apt/sources.list.d is an empty folder.  
+
+If I update R to the latest version will it work?  
+ 
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jun 21 20:27:24 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Jun 2009 20:27:24 +0000
+Subject: [rkward-users] [rkward - Help] RE: on starup Plugins are needed
+In-Reply-To: <7456461.165574@sourceforge.net>
+Message-ID: <7456550.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7456550
+By: tfry
+
+> Unfortunately /etc/apt/sources.list.d is an empty folder.  
+
+Yes, just create the file rkward.list inside that folder. If you prefer, you
+can also add the line to your /etc/apt/sources.list, instead.
+
+> If I update R to the latest version will it work?
+
+No, this issue is due to a problem with the KDE installation directories in
+Ubuntu jaunty, and has nothing to do with your version of R.
+(If you do update your version of R, you may need a different .deb / apt-line,
+as detailed on http://p.sf.net/rkward/binaries .)
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Jun 21 21:08:03 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 21 Jun 2009 21:08:03 +0000
+Subject: [rkward-users] [rkward - Help] RE: on starup Plugins are needed
+In-Reply-To: <7456148.165574@sourceforge.net>
+Message-ID: <7456619.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7456619
+By: kstus
+
+Thanks very much.  I got it to work.  
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From meik.michalke at uni-duesseldorf.de  Mon Jun 22 21:34:15 2009
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 22 Jun 2009 23:34:15 +0200
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	(sfid-20090615_173657_433232_3F0FD244)
+Message-ID: <200906222334.19794.meik.michalke@uni-duesseldorf.de>
+
+am Montag, 15. Juni 2009 (17:28) schrieb Thomas Friedrichsmeier:
+> A number of significant changes have happened on the Linux/BSD platform as
+> well (see
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Feature_Plan
+> for some of them), and if you would like to see them now, the usual source
+> tarball is here:
+> http://rkward.sourceforge.net/temp/rkward-0.5.1-pre2.tar.gz .
+
+i've updated some of the ubuntu packages in my repository today. don't worry, 
+i won't announce every new upload here, because you will of course get new 
+packages automatically with the next upgrade ;-)
+
+but i would like to let you know that i've added amd64 builds for jaunty (both 
+official ubuntu R and the newer cran version). the dependencies of those 
+packages now reflect the R version they were compiled for, to minimize 
+trouble. jaunty is the only release i've updated so far.
+
+btw., is R 2.8.1 somewhat broken? cat(R.home('include')) doesn't give the 
+correct value on my machines (i fixed that with a cmake option in the rules 
+file -- odd though). you don't have to worry about that when installing the 
+package, it just complicated the build.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090622/f3638b68/attachment.sig>
+
+From xavier.depedro at ub.edu  Tue Jun 23 18:36:32 2009
+From: xavier.depedro at ub.edu (Xavier de Pedro)
+Date: Tue, 23 Jun 2009 20:36:32 +0200
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+ of RKWard on Windows
+In-Reply-To: <200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com>
+	<200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4A4120B0.7060505@ub.edu>
+
+Hi all:
+
+I'm a RKWard user on GNU/Linux (thanks for this nice GUI for R! :-), but 
+I'm interested in promoting it under windows in our university 
+(computers for students have Windows). So I tried with the 
+install_rkward_0.5.1-pre2d.exe package, follwing the instructions on the 
+Wiki and this list.
+
+RKWard doesn't run becuase it complains that it can't find the  
+libtexteditor.dll
+FYI
+
+I'm willing to test any further trial to make it work under windows...
+And thanks for the porting effort!
+Cheers
+
+Xavi
+
+En/na Thomas Friedrichsmeier ha escrit:
+> Hi,
+>
+> On Wednesday 17 June 2009, Prasenjit Kapat wrote:
+>   
+>> This is a great news... I tried this exe and it "works." In brief the
+>> process was:
+>>     
+>
+> I'm glad to hear at least one person got this far. BTW, there is a rudimentary 
+> page in the wiki: 
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Windows
+> perhaps you could all help documenting the required steps, since installation 
+> really is a bit difficult ATM.
+>
+>   
+>> 2. KDE - with many devel files - at least the ones that seemed
+>> relevant to me. This took a LONG time.
+>>     
+>
+> In theory you should not need any devel files (but keep them, now that you have 
+> installed them. Perhaps a bit later you can try to set things up so you can 
+> compile from source on windows (if you're feeling adventurous, take a look at 
+> windows_nsis/make_release.bat in SVN. This is the script that I'm running to 
+> create the release/installer).
+>
+> Since Illias ran into problems at this point: Did you chose the MinGW compiler 
+> mode or MSVC? I just don't know, whether or not that should work as well, 
+> that's why I'm asking.
+>
+>   
+>> I searched for libtexteditor.dll, but did not find any under KDE (on
+>> XP) installation (I  used C:\KDE4).
+>>     
+>
+> In fact it's called libktexteditor.dll.a , here.
+>
+>   
+>> But the php is giving some errors. I'll take that up on a separate
+>> thread with a screenshot.
+>>     
+>
+> Ok, the next version of the installer is up:
+> http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2c.exe
+>
+> Regards
+> Thomas
+>   
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------------
+> Crystal Reports - New Free Runtime and 30 Day Trial
+> Check out the new simplified licensing option that enables unlimited
+> royalty-free distribution of the report engine for externally facing 
+> server and web deployment.
+> http://p.sf.net/sfu/businessobjects
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+From noreply at sourceforge.net  Tue Jun 23 20:10:11 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 23 Jun 2009 20:10:11 +0000
+Subject: [rkward-users] [rkward - Help] RE: rcdklibs(Java) causes R/rkward
+	to crash
+In-Reply-To: <7429180.165574@sourceforge.net>
+Message-ID: <7460229.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7460229
+By: rtautenh
+
+Just found another way to crash rkward :(
+ library(RGtk2) 
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From nono.231 at gmail.com  Wed Jun 24 08:23:31 2009
+From: nono.231 at gmail.com (I. Soumpasis)
+Date: Wed, 24 Jun 2009 09:23:31 +0100
+Subject: [rkward-users] [rkward-devel] RKWard 0.5.1-pre2: First preview
+	of RKWard on Windows
+In-Reply-To: <4A4120B0.7060505@ub.edu>
+References: <200906151728.33143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<200906162157.34723.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<de8c7cb40906170109qf8c2353t7648c36a6d40bec6@mail.gmail.com>
+	<200906171628.14716.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4A4120B0.7060505@ub.edu>
+Message-ID: <3ff92a550906240123w2de20248lda81af641fc058c@mail.gmail.com>
+
+Hi Xavier,
+
+Thanks for the good words and for testing.
+
+We run into this problem earlier. The solution is described by a previous
+post of Thomas. I am pasting the part that should help.
+
+"Ok, it looks like it just isn't easily possible to switch the mode in
+the KDE installer. Apparently you need to either delete your KDE
+installation and start afresh (probably the least troublesome as long as
+you have not yet configured anything special in KDE), or install to an
+additional KDE directory. This time, on the third page of the installer,
+be sure to select Compiler Mode "MinGW". You may need to select "Package
+Manager" mode for that. Now the -mingw versions should be available (you
+need kdelibs-mingw and kdebase-mingw)."
+
+So you have to delete the KDE folder and reinstall KDE and opt for the
+Compiler mode minGW and follow these instructions. Things should work after
+that.
+
+Regards,
+Ilias
+
+2009/6/23 Xavier de Pedro <xavier.depedro at ub.edu>
+
+> Hi all:
+>
+> I'm a RKWard user on GNU/Linux (thanks for this nice GUI for R! :-), but
+> I'm interested in promoting it under windows in our university
+> (computers for students have Windows). So I tried with the
+> install_rkward_0.5.1-pre2d.exe package, follwing the instructions on the
+> Wiki and this list.
+>
+> RKWard doesn't run becuase it complains that it can't find the
+> libtexteditor.dll
+> FYI
+>
+> I'm willing to test any further trial to make it work under windows...
+> And thanks for the porting effort!
+> Cheers
+>
+> Xavi
+>
+> En/na Thomas Friedrichsmeier ha escrit:
+> > Hi,
+> >
+> > On Wednesday 17 June 2009, Prasenjit Kapat wrote:
+> >
+> >> This is a great news... I tried this exe and it "works." In brief the
+> >> process was:
+> >>
+> >
+> > I'm glad to hear at least one person got this far. BTW, there is a
+> rudimentary
+> > page in the wiki:
+> >
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Windows
+> > perhaps you could all help documenting the required steps, since
+> installation
+> > really is a bit difficult ATM.
+> >
+> >
+> >> 2. KDE - with many devel files - at least the ones that seemed
+> >> relevant to me. This took a LONG time.
+> >>
+> >
+> > In theory you should not need any devel files (but keep them, now that
+> you have
+> > installed them. Perhaps a bit later you can try to set things up so you
+> can
+> > compile from source on windows (if you're feeling adventurous, take a
+> look at
+> > windows_nsis/make_release.bat in SVN. This is the script that I'm running
+> to
+> > create the release/installer).
+> >
+> > Since Illias ran into problems at this point: Did you chose the MinGW
+> compiler
+> > mode or MSVC? I just don't know, whether or not that should work as well,
+> > that's why I'm asking.
+> >
+> >
+> >> I searched for libtexteditor.dll, but did not find any under KDE (on
+> >> XP) installation (I  used C:\KDE4).
+> >>
+> >
+> > In fact it's called libktexteditor.dll.a , here.
+> >
+> >
+> >> But the php is giving some errors. I'll take that up on a separate
+> >> thread with a screenshot.
+> >>
+> >
+> > Ok, the next version of the installer is up:
+> > http://rkward.sourceforge.net/temp/install_rkward_0.5.1-pre2c.exe
+> >
+> > Regards
+> > Thomas
+> >
+> > ------------------------------------------------------------------------
+> >
+> >
+> ------------------------------------------------------------------------------
+> > Crystal Reports - New Free Runtime and 30 Day Trial
+> > Check out the new simplified licensing option that enables unlimited
+> > royalty-free distribution of the report engine for externally facing
+> > server and web deployment.
+> > http://p.sf.net/sfu/businessobjects
+> > ------------------------------------------------------------------------
+> >
+> > _______________________________________________
+> > RKWard-users mailing list
+> > RKWard-users at lists.sourceforge.net
+> > https://lists.sourceforge.net/lists/listinfo/rkward-users
+> >
+>
+>
+> ------------------------------------------------------------------------------
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090624/52320335/attachment.html>
+
+From noreply at sourceforge.net  Thu Jun 25 22:48:49 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 25 Jun 2009 22:48:49 +0000
+Subject: [rkward-users] [rkward - Help] Problems with kubuntu 9.04
+Message-ID: <7464493.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7464493
+By: senfman
+
+hi guys,
+
+after upgrading from kubuntu 8.10 to 9.04 the rkward software seems to be messed
+up. The Menus and their entries are mixed up somehow and the documentation window
+of the programm contains the message: "Page does not exist or is broken".
+
+when starting rkward i get the following error messages (in the konsole):
+
+
+rkward(7118): Shortcut for KAction  "window_show_workspace" "Show/Hide Workspace
+Browser" set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_show_filebrowser" "Show/Hide Filesystem
+Browser" set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_show_commandlog" "Show/Hide CommandLog"
+set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_show_pendingjobs" "Show/Hide Pending
+Jobs" set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_show_console" "Show/Hide Console"
+set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_show_helpsearch" "Show/Hide R Help
+Search" set with QShortcut::setShortcut()! See KAction documentation.
+rkward(7118): Shortcut for KAction  "window_activate_docview" "Activate Document
+view" set with QShortcut::setShortcut()! See KAction documentation.
+Calling appendChild() on a null node does nothing.
+Calling appendChild() on a null node does nothing.
+
+How can I fix this? Maybe this is has something to do with the new KDE Version
+coming with Kubuntu 9.04. What do you think?
+
+Regards, igor
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Jun 26 05:09:31 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 26 Jun 2009 05:09:31 +0000
+Subject: [rkward-users] [rkward - Help] RE: Problems with kubuntu 9.04
+In-Reply-To: <7464493.165574@sourceforge.net>
+Message-ID: <7464856.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=7464856
+By: kapatp
+
+Hi Igor,
+
+Could you try a repository as listed here:
+https://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build
+_Scripts#Unofficial_Ubuntu_repositories
+
+Use ONLY ONE - the one that suits your setup.
+
+HTH,
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Jun 30 20:20:21 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 30 Jun 2009 22:20:21 +0200
+Subject: [rkward-users] Call for testing: RKWard 0.5.1-pre3 / release
+	schedule
+Message-ID: <200906302220.44417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi all,
+
+I've prepared new preview release of the upcoming RKWard 0.5.1, and would like 
+to ask you to do some testing:
+http://rkward.sf.net/temp/rkward-0.5.1-pre3.tar.gz
+
+A windows .exe will probably follow tomorrow. It will be linked on the 
+download page: 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Download_RKWard .
+
+The release schedule is available in the wiki, this time, at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+.
+
+As you can see the period for testing / translations is quite long, with the 
+deadline at July, 20th for both. I will be away from E-Mail during much of 
+that time, but I'll make sure to look at everything that you report.
+
+The targetted date for the final release is July, 28th.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 197 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090630/02ab28e1/attachment.sig>
+

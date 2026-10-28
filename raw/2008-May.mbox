@@ -1,0 +1,1089 @@
+From jmbeldalois at gmail.com  Thu May  1 18:03:05 2008
+From: jmbeldalois at gmail.com (Juanma Belda)
+Date: Thu, 1 May 2008 20:03:05 +0200
+Subject: [rkward-users] Problem with rkward
+Message-ID: <c8fdd5c10805011103m5f542d97v59bf7a0cfc717115@mail.gmail.com>
+
+Hi,
+
+I've just upload to kubuntu 8.04 and try to execute rkward 0.4.9-2
+everything seems ok but when I try to running the application fails
+because libRblas.so doesn't exist.
+
+Any suggestion?
+
+Regards,
+
+--
+Juanma
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu May  1 21:42:23 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Thu, 1 May 2008 23:42:23 +0200
+Subject: [rkward-users] Problem with rkward
+In-Reply-To: <c8fdd5c10805011103m5f542d97v59bf7a0cfc717115@mail.gmail.com>
+References: <c8fdd5c10805011103m5f542d97v59bf7a0cfc717115@mail.gmail.com>
+Message-ID: <200805012342.33155.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Thursday 01 May 2008, Juanma Belda wrote:
+> I've just upload to kubuntu 8.04 and try to execute rkward 0.4.9-2
+> everything seems ok but when I try to running the application fails
+> because libRblas.so doesn't exist.
+
+you can either compile from source, or wait for another short while, until the 
+package is rebuilt in hardy (see 
+https://bugs.launchpad.net/ubuntu/+source/rkward/+bug/221399).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080501/42c067a9/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri May  2 12:29:52 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 2 May 2008 14:29:52 +0200
+Subject: [rkward-users] Problem with rkward
+In-Reply-To: <200805012342.33155.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <c8fdd5c10805011103m5f542d97v59bf7a0cfc717115@mail.gmail.com>
+	<200805012342.33155.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <200805021429.52129.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Thursday 01 May 2008, Thomas Friedrichsmeier wrote:
+> Hi,
+>
+> On Thursday 01 May 2008, Juanma Belda wrote:
+> > I've just upload to kubuntu 8.04 and try to execute rkward 0.4.9-2
+> > everything seems ok but when I try to running the application fails
+> > because libRblas.so doesn't exist.
+>
+> you can either compile from source, or wait for another short while, until
+> the package is rebuilt in hardy (see
+> https://bugs.launchpad.net/ubuntu/+source/rkward/+bug/221399).
+
+Update: A fixed build is now available in hardy-proposed. If you're using 
+ubuntu-hardy, and ran into this bug, you can help by following the 
+instructions in 
+https://bugs.launchpad.net/ubuntu/+source/rkward/+bug/221399/comments/13 and 
+adding a comment to the bug report.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080502/77b1ebd4/attachment.sig>
+
+From noreply at sourceforge.net  Thu May  8 11:31:56 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 04:31:56 -0700
+Subject: [rkward-users] [rkward - Help] Problems with cmake on AMD64 ubuntu
+	8.04
+Message-ID: <4952302.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4952302
+By: krcabrer
+
+kenneth at ubuntu-desktop:~/downloads/rkward/rkward-0.5.0b$ cmake .
+Hello dear developers:
+
+I try to compile rkward on ubuntu 8.04 AMD64 with kde4 and qt4 libs and
+headers.
+
+But when I call cmake . I got the following
+
+--- snip ---
+
+-- Found Qt-Version 4.4.0 (using /usr/bin/qmake-qt4)
+-- Found X11: /usr/lib/libX11.so
+CMake Error: This project requires some variables to be set,
+and cmake can not find them.
+Please set the following variables:
+QT_QT_INCLUDE_DIR
+
+CMake Error: Internal CMake error, TryCompile configure of cmake failed
+CMake Error: Could not compile simple test program:
+ #include <QtCore/QtGlobal>
+ int main()
+ {
+ #ifdef QT_VISIBILITY_AVAILABLE 
+ return 0;
+ #else 
+ return 1; 
+ #endif 
+ }
+
+-- Configuring done
+
+
+
+PS:
+The command uname -a shows
+uname -a
+Linux ubuntu-desktop 2.6.24-16-rt #1 SMP PREEMPT RT Thu Apr 10 14:04:43 UTC
+2008 x86_64 GNU/Linux
+
+Would you please help me?
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu May  8 11:33:23 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 04:33:23 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4952302.165574@sourceforge.net>
+Message-ID: <4952303.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4952303
+By: krcabrer
+
+One more situation:
+
+I comple rkward on a x86 machine on ubuntu x86 8.04 and it works fine!
+
+Thank you for your help.
+
+Kenneth
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Thu May  8 18:44:05 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 11:44:05 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4952303.165574@sourceforge.net>
+Message-ID: <4952866.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4952866
+By: hazzy
+
+Hi,
+
+just to avoid the impression that rkward can not be compiled on amd64 - I just
+did that (built against a fresh compile of KDE trunk). When compiling KDE 4
+software, I use the recipe from
+
+http://techbase.kde.org/Getting_Started/Increased_Productivity_in_KDE4_with_Scri
+pts
+
+which works fine. I don't know what's the state of KDE 4 in Ubuntu 8.04, though.
+Should be fine, too, I believe.
+
+Best regards,
+
+Johannes Ranke
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri May  9 02:35:25 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 19:35:25 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4952302.165574@sourceforge.net>
+Message-ID: <4953464.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4953464
+By: krcabrer
+
+Thank youi Dr. Johannes Ranke (hazzy) for your answer.
+
+So, I must compile KDE 4, from source on a amd64 platform?
+Did I understand right?
+
+But, why it works on a x86 UBUNTU 8.04 platform, but not on
+a AMD64 one? 
+I read the link you sent, but, it is a developer issue.
+I am a simple final user... 
+
+Im trying to compile the last version of rkward, because
+on the respositories the last rkward version doesn't work either.
+
+I want to know if there a simple workaround for this problems,
+or if somebody had the same problem too, and how did he/she
+solved.
+
+Thank you for your help.
+
+Kenneth
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri May  9 04:38:24 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 21:38:24 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4952302.165574@sourceforge.net>
+Message-ID: <4953571.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4953571
+By: hazzy
+
+Dear Kenneth,
+
+no, you do not have to compile KDE 4 from sources. Because of my limited knowledge
+of cmake, I think someone else should answer this. I wonder why cmake is looking
+for such a strange environmental variable like QT_QT_INCLUDE_DIR. Are you sure
+this is not a cut and paste error? Maybe you just need to set the QT_INCLUDE_DIR
+variable to the correct location. I wonder how you have QT 4.4 on your system,
+did you compile that from sources? The version in hardy of libqt4-dev is 4.3.4
+
+Best regards,
+
+Johannes Ranke
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri May  9 05:48:18 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 22:48:18 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4953571.165574@sourceforge.net>
+Message-ID: <4953651.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4953651
+By: krcabrer
+
+
+Thank you Hazzy (Dr. Johannes Ranke), for your answer.
+
+No, the error message show me that strange variable:
+
+"QT_QT_INCLUDE_DIR"
+
+with double QT
+
+I repeat the cut and paste form the error message:
+
+-- Found Qt-Version 4.4.0 (using /usr/bin/qmake-qt4)
+-- Found X11: /usr/lib/libX11.so
+CMake Error: This project requires some variables to be set,
+and cmake can not find them.
+Please set the following variables:
+QT_QT_INCLUDE_DIR
+
+CMake Error: Internal CMake error, TryCompile configure of cmake failed
+CMake Error: Could not compile simple test program:
+ #include <QtCore/QtGlobal>
+ int main()
+ {
+ #ifdef QT_VISIBILITY_AVAILABLE 
+ return 0;
+ #else 
+ return 1; 
+ #endif 
+ }
+
+-- Configuring done
+
+How do I set the "QT_INCLUDE_DIR"? 
+I test with this commands, are they right?
+
+ export $QT_INCLUDE_DIR=/usr/include/qt4
+ export $QT_QT_INCLUDE_DIR=/usr/include/qt4
+
+But, the problem continues.
+
+You ask me why do I have QT 4.4 and not the 4.3.4 that is
+the oficial hardy ubuntu release. I do not recompile QT,
+I got it form the repository: (hardy-backports).
+
+I do reinstall the libqt4-dev, and I still have the problem.
+
+Do you think I should uninstall the 4.4 QT version, and
+install the 4.3.4 QT version?
+
+Again, thank you very much for your help.
+
+Kenneth
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri May  9 05:52:21 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 08 May 2008 22:52:21 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4952302.165574@sourceforge.net>
+Message-ID: <4953657.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4953657
+By: krcabrer
+
+Just a typo:
+
+The commands that I use were:
+
+export QT_INCLUDE_DIR=/usr/include/qt4 
+export QT_QT_INCLUDE_DIR=/usr/include/qt4 
+
+Without "$".
+
+Still the problem.
+
+Thank you.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From breitu at aol.com  Fri May  9 06:38:38 2008
+From: breitu at aol.com (karl)
+Date: Fri, 09 May 2008 08:38:38 +0200
+Subject: [rkward-users] How to show Intermediate results in output/console?
+Message-ID: <4823F16E.809@aol.com>
+
+I am a newbie trying to use RKWard.
+What can I do that intermediate results of a script are shown somewhere?
+I don't want to see the whole program in the console and in the output
+window appear only the graphics as far as I see.
+ Example:
+I have as script
+
+x <- rnorm(22)
+
+and now I want that only x[1] appears in the console or output, nothing
+else.
+What command achieves this?
+Thanks
+
+Karl
+
+
+
+From jranke at uni-bremen.de  Fri May  9 08:07:07 2008
+From: jranke at uni-bremen.de (Johannes Ranke)
+Date: Fri, 9 May 2008 10:07:07 +0200
+Subject: [rkward-users] How to show Intermediate results in
+	output/console?
+In-Reply-To: <4823F16E.809@aol.com>
+References: <4823F16E.809@aol.com>
+Message-ID: <20080509080707.GA18257@mail.uni-bremen.de>
+
+Hi,
+
+* karl <breitu at aol.com> [080509 08:40]:
+> I am a newbie trying to use RKWard.
+
+The R FAQ and the r-help mailing lists might be helpful (but do read the
+posting guide before posting).
+
+> What can I do that intermediate results of a script are shown somewhere?
+> I don't want to see the whole program in the console and in the output
+> window appear only the graphics as far as I see.
+>  Example:
+> I have as script
+> 
+> x <- rnorm(22)
+> 
+> and now I want that only x[1] appears in the console or output, nothing
+> else.
+
+Try to include
+
+  x[1]
+
+in your script, this prints the first element of x to the R console.
+Whenever you just give the name of an object without an assignment, it
+is printed with the respective print() method.
+
+Best regards,
+
+Johannes Ranke
+
+
+
+From breitu at aol.com  Fri May  9 08:29:38 2008
+From: breitu at aol.com (karl)
+Date: Fri, 09 May 2008 10:29:38 +0200
+Subject: [rkward-users] How to show Intermediate results in
+	output/console?
+Message-ID: <48240B72.5020905@aol.com>
+
+Sorry,
+but I tried this already and I have read some introduction but this
+seems to me a problem in Rkward.
+ I know that if I write x[1] in the console that I get then this element.
+ I have switched off that the whole script written in the RKward window 
+is shown in the console when I run the script.
+As I said what I want is that running a script some
+results appear in the console or in the output window.
+If I run
+
+x <- rnorm(10)
+x[1]
+
+as a script, nothing shows up in the console. Seems that I have to do
+something in RKward or some other command to get waht I want.
+
+Ciao
+
+Karl
+
+
+
+From noreply at sourceforge.net  Fri May  9 08:30:33 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 09 May 2008 01:30:33 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4953657.165574@sourceforge.net>
+Message-ID: <4953874.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4953874
+By: hazzy
+
+Hi again,
+
+I just checked in 
+
+/usr/share/cmake-2.4/Modules/FindQt4.cmake
+
+and as far as I understand this cmake module should be setting your
+$QT_QT_INCLUDE_DIR. But as I said, I don't really understand how cmake works,
+so someone else might be able to help you better. It's also possible that there
+is a problem with the QT 4.4 package in hardy-backports.
+
+Does someone else know more?
+
+Regards,
+
+Johannes Ranke
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri May  9 11:50:56 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 09 May 2008 04:50:56 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4953651.165574@sourceforge.net>
+Message-ID: <4954182.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4954182
+By: tfry
+
+The usual way to set variables to cmake is to specify them in the cmake call
+like this:
+
+cmake ../whereever -DQT_INCLUDE_DIR=/usr/include/whereever
+
+So you could try with that.
+
+I don't really know, what the problem is, usually this variable should be detected
+automatically. However it is unlikely that this is a problem in rkward. Have
+you tried compiling any other KDE4 application?
+
+BTW, if all else fails, RKWard 0.4.9 had a problem in ubuntu, but a fixed recompiled
+version has been uploaded to hardy-updates recently. So you could just use that
+for the time being.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri May  9 13:05:47 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 9 May 2008 15:05:47 +0200
+Subject: [rkward-users] How to show Intermediate results in
+	output/console?
+In-Reply-To: <48240B72.5020905@aol.com>
+References: <48240B72.5020905@aol.com>
+Message-ID: <200805091505.51644.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 09 May 2008, karl wrote:
+>  I have switched off that the whole script written in the RKward window
+> is shown in the console when I run the script.
+
+ok, well, no scripts and no script output will be shown in the console, then. 
+You should still see the result in the command log (unless you've switched 
+that off as well).
+
+To direct something to the output window, instead, use:
+	rk.print (x[1])
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080509/62f95daf/attachment.sig>
+
+From noreply at sourceforge.net  Fri May  9 12:24:58 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 09 May 2008 05:24:58 -0700
+Subject: [rkward-users] [rkward - Help] RE: Problems with cmake on AMD64
+	ubuntu 8.04
+In-Reply-To: <4954182.165574@sourceforge.net>
+Message-ID: <4954231.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4954231
+By: krcabrer
+
+Dear Dr.Thomas Friedrichsmeier (tfry):
+
+It works!!!
+
+I type on the directory where I unzip and untar the tar.gz file.
+
+cmake . -DQT_QT_INCLUDE_DIR=/usr/include/qt4
+
+And now it compiles right!
+I install it, and I make some tests and it works fine, until now.
+
+Any way, I dont'n know why that variable is not set on
+my system, and how can I set it right. I reinstall QT libraries,
+and KDE 4 also.... but it didin't work either.
+
+Thank you, you are very kind.
+
+Thanks you, Dr. Friedrichsmeier and Dr. Ranke for your time.
+
+Have a nice day.
+
+Kenneth
+
+
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat May 10 17:21:00 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 10 May 2008 10:21:00 -0700
+Subject: [rkward-users] [rkward - Help] Become root: Incorrect password
+Message-ID: <4956009.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4956009
+By: fsando
+
+I've run into a problem.
+When I want to install a new package from a repository the "Become root" dialogue
+does not accept my password though it is indeed correct.
+
+I'm on Ubuntu 7.04 Gnome
+
+It's been a while since I last installed new packages (so I don't know how long
+this problem existed) but today.
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat May 10 17:22:33 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 10 May 2008 10:22:33 -0700
+Subject: [rkward-users] [rkward - Help] RE: Become root: Incorrect password
+In-Reply-To: <4956009.165574@sourceforge.net>
+Message-ID: <4956011.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4956011
+By: fsando
+
+I should add that I am on rkward version 2373
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat May 10 21:45:20 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 10 May 2008 14:45:20 -0700
+Subject: [rkward-users] [rkward - Help] .rk.get.structure() strange behaviour
+Message-ID: <4956278.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4956278
+By: fsando
+
+I am seeing this all the time:
+
+My laptop runs at 100% cpu, in the 'pending jobs' window I see this function:
+
+.rk.get.structure(as.environment(".GlobalEnv"),".GlobalEnv",envlevel=-1,namespac
+ename="")
+
+This will last for a around 15 - 25 seconds or so.
+
+It seems to run whenever i run something that change data. It doesn't matter
+much if it is a large data structure or just a simple integer. Even deleting
+a simple integer will trigger this function and will run for 15 seconds. If
+I run several commands (like several lines) that each change something
+.rk.get.structure() is run at every command. I don't know about these matters
+but to me it seems strange that deleting an integer should invlove so much
+activity.
+
+I have been researching a little about the problem and it seems to get worse
+the larger the datasets in the workspace. If I delete all data and (as it were)
+start over with an almost empty workspace it runs fast again. But then as the
+workspace 'fills up' this function runs for longer and longer.
+''
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue May 13 21:22:57 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 13 May 2008 14:22:57 -0700
+Subject: [rkward-users] [rkward - Help] Hierarchical clustering
+Message-ID: <4961471.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4961471
+By: john_doe_1
+
+Hello,
+
+First of all, sorry for my english...
+
+This a stupid question but: is it possible to do an (agglomerative) hierarchical
+clustering with rkward? I'm a newbee in data mining and with rkward and I don't
+even know if it possible... I like rkward and I would like to do my work with.
+If it si impossible,  do you know a good (open source) software to do this kind
+of things?
+
+Thanks
+
+Ben
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed May 14 03:46:16 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 13 May 2008 20:46:16 -0700
+Subject: [rkward-users] [rkward - Help] RE: Hierarchical clustering
+In-Reply-To: <4961471.165574@sourceforge.net>
+Message-ID: <4961912.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4961912
+By: hazzy
+
+Hi,
+
+this is a question regarding the capabilities of the underlying R software for
+statistical computing. A good start to get acquainted with them would be to
+study one or more of the manuals or books mentioned at www.r-project.org and
+look at the list of contributed packages at cran.r-project.org.
+
+Johannes
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed May 14 05:09:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 13 May 2008 22:09:36 -0700
+Subject: [rkward-users] [rkward - Help] RE: Hierarchical clustering
+In-Reply-To: <4961471.165574@sourceforge.net>
+Message-ID: <4961999.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4961999
+By: krcabrer
+
+Hi John Doe:
+
+Then answer is yes, you can do that with R, and of course with Rkward as an
+interface.
+
+But is not in the menu of Rkward.
+
+You must write a script with the function "hclust", check on the R help with
+this command:
+
+help(hclust)
+
+Best regards.
+
+Kenneth
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun May 25 06:01:44 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 24 May 2008 23:01:44 -0700
+Subject: [rkward-users] [rkward - Help] Strange behavior in rkward script
+	editor
+Message-ID: <4984784.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4984784
+By: krcabrer
+
+I got this strange behavior when using the rkward script editor:
+
+I use a Spanish keyboard that make this accents on vowels "?" or "?"
+by pressing "'" key and then "a" key to obtain "?".
+
+Well in all my kde and gnome applications it works fine, and in
+rkward works at the beginning (the first two minutes), but suddenly it doesn't
+work any more.
+When I try the "' + a" combination key it shows me  "'a", but not "?" or "'e"
+instead of "?".
+
+This strange behavior happens only in the rkward script editor,
+all the others kde and gnome applications works fine.
+
+Thank you for your help.
+
+Kenneth
+
+PS:
+My linux distribution is:
+Linux ubuntu-desktop 2.6.24-16-rt #1 SMP PREEMPT RT Thu Apr 10 14:04:43 UTC
+2008 x86_64 GNU/Linux
+rkward version: 
+RKward version 0.5.0b Using KDE 4.0.3 
+Qt version:
+4.4.0.1ubuntu5-hardy1 (hardy-backports)
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun May 25 20:33:04 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 May 2008 13:33:04 -0700
+Subject: [rkward-users] [rkward - Help] error compiling rkward 0.5
+Message-ID: <4985787.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4985787
+By: fsando
+
+I'm having an annoying error when trying to compile rkward - i've compiled the
+same version a few days ago so nothing's wrong with rkward but I had to reinstall
+Ubuntu 8.04 and now I'm missing something.
+
+I've installed: 
+build-essential
+kde4-devel
+r-core-base (2.7)
+r-base-dev (2.7)
+
+svn info says version 2372
+cmake says ok (except msgfmt missing)
+
+sudo make install reports the following
+
+In file included from
+/home/finn/data/download/rkward/rkward/rkward/rkward/misc/rkspinbox.cpp:194:
+/home/finn/data/download/rkward/rkward/rkward/rkward/misc/rkspinbox.moc:20:
+error: expected constructor, destructor, or type conversion before ?static?
+/home/finn/data/download/rkward/rkward/rkward/rkward/misc/rkspinbox.moc:44:
+error: ?qt_meta_data_RKSpinBox? was not declared in this scope
+/home/finn/data/download/rkward/rkward/rkward/rkward/misc/rkspinbox.moc:74:
+error: expected constructor, destructor, or type conversion at end of input
+make[2]: *** [rkward/misc/CMakeFiles/misc.dir/rkspinbox.o] Error 1
+make[1]: *** [rkward/misc/CMakeFiles/misc.dir/all] Error 2
+make: *** [all] Error 2
+Help greatly appreciated
+Finn
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun May 25 21:30:47 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 May 2008 14:30:47 -0700
+Subject: [rkward-users] [rkward - Help] RE: error compiling rkward 0.5
+In-Reply-To: <4985787.165574@sourceforge.net>
+Message-ID: <4985870.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4985870
+By: fsando
+
+Turns out an update from the 'backport' repository solved this
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun May 25 21:31:50 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 May 2008 14:31:50 -0700
+Subject: [rkward-users] [rkward - Help] RE: Become root: Incorrect password
+In-Reply-To: <4956009.165574@sourceforge.net>
+Message-ID: <4985873.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4985873
+By: fsando
+
+The problem was solved by an upgrade to ubuntu 8.04
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun May 25 22:37:10 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 May 2008 15:37:10 -0700
+Subject: [rkward-users] [rkward - Help] RE: Strange behavior in rkward
+	script editor
+In-Reply-To: <4984784.165574@sourceforge.net>
+Message-ID: <4985979.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4985979
+By: manchito
+
+I've only got this behaviour when changing the locale from es_CO.UTF-8 to en_US
+and then opening a scriptfile created under the former.
+
+Perhaps you should try:
+
+export LANG=es_ES.UTF-8
+
+before launching RKWard from a console (in case you haven't already got LANG
+so setted up).
+
+Try:
+
+echo $LANG
+
+to be sure.
+
+I've got a Spanish keyboard but, instead, it's configured with the Dvorak variant.
+Though I think this is not to change things a lot. I know this is more a hint
+than a solution. Let me know if it's useful.
+
+RKward 0.5.0b
+Ubuntu 8.04 (2.6.24-16-generic)
+Qt: 4.3.4
+KDE: 4.0.3
+
+Mancho
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon May 26 04:45:08 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 25 May 2008 21:45:08 -0700
+Subject: [rkward-users] [rkward - Help] RE: Strange behavior in rkward
+	script editor
+In-Reply-To: <4985979.165574@sourceforge.net>
+Message-ID: <4986291.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4986291
+By: krcabrer
+
+Hi Mancho:
+
+Well it is working fine.... I already had the es_CO.UTF-8 LANG settled up when
+I call to:
+
+echo $LANG
+
+It answers me with
+
+es_CO.UTF-8
+
+I typed:
+
+export LANG=es_ES.UTF-8 
+
+in a console then I call rkward, and until now it is working.
+
+Is it a problem with es_CO.UTF-8 configuration and KDE or Qt or just rkward?
+
+Thank you for your help.
+
+Kenneth
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Mon May 26 09:15:18 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 26 May 2008 02:15:18 -0700
+Subject: [rkward-users] [rkward - Help] RE: Strange behavior in rkward
+	script editor
+In-Reply-To: <4986291.165574@sourceforge.net>
+Message-ID: <4986670.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4986670
+By: tfry
+
+Hi,
+
+> Is it a problem with es_CO.UTF-8 configuration and KDE or Qt or just rkward?
+
+RKWard just uses the katepart (the embeddable version of the kwrite/kate editor)
+for the script editor, and certainly does not implement any low-level editing
+code like for composing accented characters. So I think the katepart (i.e. KDE
+libraries) is to blame, here.
+
+Note that RKWard 0.5.0 uses the KDE 4 libraries, and hence also katepart from
+KDE 4. Most of your other KDE applications are probably still using KDE 3 versions,
+which might explain why you see this bug in rkward, only.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

@@ -1,0 +1,414 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-05",
+  "messages": [
+    {
+      "id": "msg-6e9294bb5cb0",
+      "message_id": "</p/rkward/discussion/165573/735dfb1c008fc05ddc8c1c29e623cbefb8e71deb.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-06T11:03:09Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nJust updated R and RKWard and i'mhaving problems starting the GUI. Running rkward from the terminal i get the following:\n\n<code>\n#$ rkward\n#KCrash: Application 'rkward' crashing...\n#KCrash: Attempting to start /usr/lib/kde4/libexec/drkonqi from kdeinit\n#sock_file=/home/burfee/.kde/socket-burfee/kdeinit4__0\n#[2]   Exit 253                rkward\n#[3]+  Stopped                 rkward\n</code>\n\nBelow is the error stack:\n<code>\nApplication: rkward (0.6.1)\nKDE Platform Version: 4.8.5 (4.8.5)\nQt Version: 4.8.1\nOperating System: Linux 3.2.0-41-generic x86_64\nDistribution: Ubuntu 12.04.2 LTS\n\n-- Information about the crash:\n<In detail, tell us what you were doing  when the application crashed.>\n\nThe crash can be reproduced every time.\n\n-- Backtrace:\nApplication: RKWard (rkward.frontend), signal: Segmentation fault\nUsing host libthread_db library \"/lib/x86_64-linux-gnu/libthread_db.so.1\".\n[Current thread is 1 (Thread 0x7f179faa6780 (LWP 24516))]\n\nThread 3 (Thread 0x7f1788356700 (LWP 24521)):\n#0  0x00007f179ae21313 in poll () from /lib/x86_64-linux-gnu/libc.so.6\n#1  0x00007f1796d69036 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#2  0x00007f1796d6949a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#3  0x00007f178835b98b in ?? () from /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so\n#4  0x00007f1796d8a9e5 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#5  0x00007f179a25de9a in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0\n#6  0x00007f179ae2cccd in clone () from /lib/x86_64-linux-gnu/libc.so.6\n#7  0x0000000000000000 in ?? ()\n\nThread 2 (Thread 0x7f1787b55700 (LWP 24522)):\n#0  0x00007f179ae21313 in poll () from /lib/x86_64-linux-gnu/libc.so.6\n#1  0x00007f1796d69036 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#2  0x00007f1796d6949a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#3  0x00007f178ec44406 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0\n#4  0x00007f1796d8a9e5 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0\n#5  0x00007f179a25de9a in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0\n#6  0x00007f179ae2cccd in clone () from /lib/x86_64-linux-gnu/libc.so.6\n#7  0x0000000000000000 in ?? ()\n\nThread 1 (Thread 0x7f179faa6780 (LWP 24516)):\n[KCrash Handler]\n#6  0x00007f179c6cbbb7 in QString::operator=(QString const&) () from /usr/lib/x86_64-linux-gnu/libQtCore.so.4\n#7  0x00007f179c70c32c in QFile::QFile(QString const&) () from /usr/lib/x86_64-linux-gnu/libQtCore.so.4\n#8  0x0000000000547e47 in XMLHelper::openXMLFile (this=0xf74190, filename=..., debug_level=3, with_includes=true, with_snippets=true) at /home/burfee/rkward-0.6.1/rkward/misc/xmlhelper.cpp:63\n#9  0x00000000004e7eca in RKSettingsModulePlugins::fixPluginMapLists () at /home/burfee/rkward-0.6.1/rkward/settings/rksettingsmoduleplugins.cpp:355\n#10 0x00000000004e904d in RKSettingsModulePlugins::loadSettings (config=<optimized out>) at /home/burfee/rkward-0.6.1/rkward/settings/rksettingsmoduleplugins.cpp:210\n#11 0x00000000004dcc89 in RKSettings::loadSettings (config=0xdeae10) at /home/burfee/rkward-0.6.1/rkward/settings/rksettings.cpp:186\n#12 0x000000000043d16f in RKWardMainWindow::readOptions (this=0xed96c0) at /home/burfee/rkward-0.6.1/rkward/rkward.cpp:686\n#13 0x000000000043d509 in RKWardMainWindow::RKWardMainWindow (this=0xed96c0, options=0xbca330, __in_chrg=<optimized out>, __vtt_parm=<optimized out>) at /home/burfee/rkward-0.6.1/rkward/rkward.cpp:144\n#14 0x0000000000435ad8 in main (argc=<optimized out>, argv=<optimized out>) at /home/burfee/rkward-0.6.1/rkward/main.cpp:184\n\nReport to rkward-devel at lists.sourceforge.net\n</code>\n\nWhat should i do to fix it?\n\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=50#443d)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/4487f214/attachment.html>",
+      "body_snippet": "Hi,\n\nJust updated R and RKWard and i'mhaving problems starting the GUI. Running rkward from the terminal i get the following:\n\n<code>\n#$ rkward\n#KCrash: Application 'rkward' crashing...\n#KCrash: Attem",
+      "thread_id": "thread-6e9294bb5cb0",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-9901e3a85c21",
+      "message_id": "</p/rkward/discussion/165573/bce2ac7491f91ca6c58698c9bfd844e8f09c0628.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-06T11:03:48Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "error stack\n\n\nAttachment: rkward-20130506-135018.kcrash (3.2 kB; application/octet-stream)\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#9155)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/f08ad135/attachment.html>",
+      "body_snippet": "error stack\n\n\nAttachment: rkward-20130506-135018.kcrash (3.2 kB; application/octet-stream)\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segment",
+      "thread_id": "thread-9901e3a85c21",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-ffa0593e6f24",
+      "message_id": "</p/rkward/discussion/165573/d0a3d73ace0c0dd7f6dfefaf55517554280c69e1.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-05-06T12:05:10Z",
+      "subject": "[rkward-users] [rkward:discussion] Re: RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] Re: RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": "<735dfb1c008fc05ddc8c1c29e623cbefb8e71deb.discussion@rkward.p.sourceforge.net>",
+      "references": [],
+      "body_plain": "Hi!\n\nI was just going to tell you to re-compile RKWard *after* udgrading to R 3.0.0, but in fact, your backtrace looks different.\n\nI have found a bug that might be causing this in SVN, and fixed it. If you are building from SVN, please try again after an \"svn up\".\n\nOtherwise, this problem may occur, if a \"pluginmap\" which was previously known to RKWard can no longer be found. You can check your ~./kde/share/config/rkwardrc for such pluginmaps, and remove them manually, or (re-) move ~./kde/share/config/rkwardrc to start with a clean setup.\n\nHowever, quite likely, the reason that a previously known pluginmap file has gone missing, is that you did not install RKWard, correctly. In particular, make sure to use the correct -DCMAKE_INSTALL_PREFIX option when compiling. Note that binaries of RKWard for Ubuntu and R 3.0.0 are available since yesterday: https://launchpad.net/~rkward-devel/+archive/rkward-stable-cran .\n\nFinally: Please don't post to both the forum and the bug-tracker. Either would have been fine in this case, but having both just increases the bookkeeping effort.\n\nRegards\nThomas\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#443d/2110)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/68f7cb40/attachment.html>",
+      "body_snippet": "Hi!\n\nI was just going to tell you to re-compile RKWard *after* udgrading to R 3.0.0, but in fact, your backtrace looks different.\n\nI have found a bug that might be causing this in SVN, and fixed it. I",
+      "thread_id": "thread-ffa0593e6f24",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-cfc9f8367680",
+      "message_id": "</p/rkward/discussion/165573/c189aca52e47f8a32bd1da22c4c6be511797c83b.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-06T14:30:11Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Thomas,\n\nThanks for your answer and sorry for double posting.\nI managed to install it by adding the new ppa and then \nsudo apt-get install rkward.\n\nBest,\nAlex\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#e68f)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/3dbba3a5/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nThanks for your answer and sorry for double posting.\nI managed to install it by adding the new ppa and then \nsudo apt-get install rkward.\n\nBest,\nAlex\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubun",
+      "thread_id": "thread-cfc9f8367680",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-6e4fb18cec05",
+      "message_id": "</p/rkward/discussion/165574/cbd7555a052d1c27c8b517fcdd7cfe3fc4fb6945.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-06T16:25:16Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI recently updated R and RKWard and I am encountering issues using it. The help window takes too long to load.\n\nFor example: typing ?ls in the command line prompts a window titled \"Transfering\" that says \nSource: http://127.0.0.1:11269/library/base/html/ls.html\n\nIt keeps loading and sometimes it opens the help window after a long time (about 10-20 seconds) with the required info, sometimes it opens a blank help window, that gets filled after a minute or so.\nI didn't encounter this behavoiour before, so I would say it is not normal.\n\nIf i take the above link and put it in my browser it opens instantly.\n\nI tried renaming the rkwardc file from /home/burfee/.kde/share/config, but no change. Don't know if it should be causing this but tried to see.\nAll packages are updated for R 3.0\nTried re-installing rkward.\n\nAlso, I noticed that when I open RKWard there the window goes gray for a while, which also didn't happen before the update.\n\nAny other suggestions?\n\nBest,\nAlex\n\n---\n[RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window](https://sourceforge.net/p/rkward/discussion/165574/thread/94e14198/?limit=25#79a2)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/393dfe5e/attachment.html>",
+      "body_snippet": "Hi,\n\nI recently updated R and RKWard and I am encountering issues using it. The help window takes too long to load.\n\nFor example: typing ?ls in the command line prompts a window titled \"Transfering\" t",
+      "thread_id": "thread-6e4fb18cec05",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-f899445ebe48",
+      "message_id": "</p/rkward/discussion/165574/47a31cdbfcabe0b67393c7661af601b37f117ae2.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-05-06T17:18:19Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI've seen the help window taking somewhat long to load on occasion, too. I did not see this, often, so I can't be sure, but so far, my impression was that this would happen when opening a help page for the first time, after e.g. installing / updating packages. In other words, so far, I believe, this is simply a cache issue.\n\nWhat about the second time you open a help page, i.e.:\n~~~~~~\n?ls      # Wait for it to load, then\n?print\n~~~~~~\n\nDoes this come up faster? If it does not, and you see this, consistently, could you compare this in firefox and konqueror? Is it fast in both stand-alone browsers? (Note: To get the relevant port number you can run .rk.getHelpBaseUrl(), although this will produce a warning; or set options(browser=\"konqueror\")).\n\n> Also, I noticed that when I open RKWard the window goes gray for a whilev(20-30 seconds), which also didn't happen before the update.\n\nWhich window, exactly? Does the problem persist on a subsequent start? (One thing RKWard does on startup (and has been doing since many versions) is to call installed.packages(), which can take quite a while, if you have many packages installed, and the disk cache is cold. During this time, the status indicator icon in the lower right corner will remain yellow, and no other R command will be run. Most parts of the UI should still work, though.)\n\nRegards\nThomas\n\n---\n[RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window](https://sourceforge.net/p/rkward/discussion/165574/thread/94e14198/?limit=25#ac9f)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/7f790a55/attachment.html>",
+      "body_snippet": "Hi,\n\nI've seen the help window taking somewhat long to load on occasion, too. I did not see this, often, so I can't be sure, but so far, my impression was that this would happen when opening a help pa",
+      "thread_id": "thread-f899445ebe48",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-b0f75943f990",
+      "message_id": "</p/rkward/discussion/165574/d6acedf3e7575c06eda4b80e5cfb04fd60c80354.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-06T18:13:28Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Thomas,\n\nFor me it it takes long to load everytime since the update.\nEven if i do\n?ls\n?ls\nfor each of them will take very long to load.\n\nThe \"Transferring\" window with the bouncing left and right progressbar will stay on the screen for a long time. And most of the time, after it dissapears, the help window is blank. It will eventually get filled after a while, but it takes a long time.\n\n.rk.getHelpBaseUrl()\nError in tools::startDynamicHelp() : server already running\n[1] \"http://127.0.0.1:11394\"\n\nI did options(browser = \"firefox\") and it loads instantly when doing ?ls\n\nRegarding the grayed window: the rkward window, the entire GUI. And i also noticed that it doesn't happen only on startup. Unfortunately i cannot reproduce this, but i got grayed window from random clicks through the script window.\n\nI got an Intel dual-core at 2.4 with 8 GB RAM and during the time the GUI gets grayed the processor doesn't show high activity.\n\nBest regards,\nAlex\n\n\n---\n[RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window](https://sourceforge.net/p/rkward/discussion/165574/thread/94e14198/?limit=25#5b07)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130506/080032c7/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nFor me it it takes long to load everytime since the update.\nEven if i do\n?ls\n?ls\nfor each of them will take very long to load.\n\nThe \"Transferring\" window with the bouncing left and right p",
+      "thread_id": "thread-b0f75943f990",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-0db5f66b46aa",
+      "message_id": "</p/rkward/discussion/165574/ee1fa63e59af81c05ac19c734993e38f6ec59352.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-05-07T08:07:06Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Alex,\n\nok, something is definitely going wrong on your system, then. This should not happen. It looks a bit like something is slowing down the frontend process, but I don't have a good idea what that could be.\n\nSome things to try:\n\n> I did options(browser = \"firefox\") and it loads instantly when doing ?ls\n\nCould you also try options(browser = \"konqueror\")? If that works fast, we know the problem is specific to rkward. If it does not, we may be looking at a problem with KDE applications in general.\n\n> Regarding the grayed window: the rkward window, the entire GUI.\n\nThis is highly unusual. The only time you should see the entire window go gray, is when a modal dialog is waiting for input.\n\nLet's try to track this down. Since I can't reproduce this at all, I'll need your help gathering evidence. Could you please do some (ideally all) of the things below, for me?\n\n1. Please locate and post the latest rkward.rbackend.XYZ and rkward.frontend.XYZ-files in your /tmp directory.\n2. Start RKWard from the command line with \"rkward --debug-level 4\", quit once the status indicator has turned green, and also post the resulting rkward.frontend.XYZ and rkward.rbackend.XYZ-files.\n3. Please post the output of rk.sessionInfo().\n4. Please move your ~./Rprofile out of the way (if any), also please start rkward from a directory that does not contain any .RData file. Double check that no workspace is loaded after starting up (ls (all.names=TRUE)). Does this change anything?\n5. Run\n~~~~~~~~~~~\nsudo apt-get install gdb     # if you don't already have gdb installed\nrkward --debugger gdb\n# At the gdb prompt, type:\nstart\ncont\n# Once you see the grayed window, go back to the terminal, and hit\nCtrl+C\n# then type\nthread apply all bt full\nquit    # Answer \"y\"\n~~~~~~~~~~~~\nCopy the resulting output on the terminal and post it.\n\nThanks!\nThomas\n\n---\n[RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window](https://sourceforge.net/p/rkward/discussion/165574/thread/94e14198/?limit=25#33eb)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130507/da6ba225/attachment.html>",
+      "body_snippet": "Hi Alex,\n\nok, something is definitely going wrong on your system, then. This should not happen. It looks a bit like something is slowing down the frontend process, but I don't have a good idea what th",
+      "thread_id": "thread-0db5f66b46aa",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-c110cb5a4dd0",
+      "message_id": "</p/rkward/discussion/165574/52f2d0e4a115ef0263daa7d6a2425f8b33949fbf.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Burfee",
+      "from_email_hash": "b7801ce764282db28da40ed5dc4a2884860af024ad8709d44aa812b2408f8483",
+      "date": "2013-05-07T10:14:24Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Thomas,\n\nThanks for your prompt reply.\nI installed konqueror because i didn't have it and noticed that when i opened it i encountered the same issue with the grayed window. I concluded that it was a KDE related issue.\n\nI rebooted my laptop to see if this fixes it and now the problem is gone... i feel like I'm using windows now, not linux...\n\nThanks for all your help.\n\nBest regards,\nAlex\n\n---\n[RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window](https://sourceforge.net/p/rkward/discussion/165574/thread/94e14198/?limit=25#1750)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130507/3aeaf3a4/attachment.html>",
+      "body_snippet": "Hi Thomas,\n\nThanks for your prompt reply.\nI installed konqueror because i didn't have it and noticed that when i opened it i encountered the same issue with the grayed window. I concluded that it was ",
+      "thread_id": "thread-c110cb5a4dd0",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-b6fea33ef0a5",
+      "message_id": "</p/rkward/discussion/165573/a9b3dfd8eb3a2e5b23928fb5d77e4f60c66d0702.discussion@rkward.p.sourceforge.net>",
+      "from_name": "AndresM",
+      "from_email_hash": "17c74f2c19e91a2e8a5a8c1de78911bd78d8a979f560352c14f923da3f6646e0",
+      "date": "2013-05-17T20:38:39Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, I get the same error. I have installed the RKward package from launchpad (CRAN version) through the ubuntu software center (previouslly I added the ppa:rkward-devel/rkward-stable-cran to my system)\nThe output of rkward --version is:\nQt: 4.8.1\nPlataforma de desarrollo de KDE: 4.8.5 (4.8.5)\nRKWard: 0.6.1\n\nFile rkwardrc does not exist. \n\nThank you for any help!!\n\nThe error output at the starting point is attached.\n\n\n\nAttachment: RKward crash (2.7 kB; application/octet-stream)\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#89d7)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130517/363ee860/attachment.html>",
+      "body_snippet": "Hi, I get the same error. I have installed the RKward package from launchpad (CRAN version) through the ubuntu software center (previouslly I added the ppa:rkward-devel/rkward-stable-cran to my system",
+      "thread_id": "thread-b6fea33ef0a5",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-9a9d01717d12",
+      "message_id": "</p/rkward/discussion/165573/fd5d06616167f5ca2c818c2f1cac4b05d0a4c2d7.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-05-18T17:55:03Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI'm not sure this is the same bug. The last two stops of the backtrace look the same, but not what leads up to it. Before anything else, please double check:\n\na) That you have R version 3.0.0 installed, i.e. not the version of R that came with your Ubuntu, and that R 3.0.0 is at /usr/bin/R. If /usr/bin/R is the version that came with your Ubuntu, use the \"rkward-stable\" PPA, not \"rkward-stable-cran\".\nb) That you really do not have an existing ~./kde/share/config/rkwardrc .\nc) That 'which rkward' shows /usr/bin/rkward (i.e. there is no confliciting installation on your system).\n\nIf none of this is the issue, start rkward with \"rkward --debug-level 5\", and post the latest pair of /tmp/rkward.frontend.XYZ and /tmp/rkward.rbackend.XYZ after that.\n\nThanks!\nThomas\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#cda1)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130518/306189cc/attachment.html>",
+      "body_snippet": "Hi!\n\nI'm not sure this is the same bug. The last two stops of the backtrace look the same, but not what leads up to it. Before anything else, please double check:\n\na) That you have R version 3.0.0 ins",
+      "thread_id": "thread-9a9d01717d12",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-c5f1f3f89877",
+      "message_id": "</p/rkward/discussion/165573/9a3acb3e0e45c7498a1ca9d8209b3d878ee32c86.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-05-18T18:03:52Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Addendum: Of course R 3.0.1 is ok, too.\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#b306)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130518/21bb133c/attachment.html>",
+      "body_snippet": "Addendum: Of course R 3.0.1 is ok, too.\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/",
+      "thread_id": "thread-c5f1f3f89877",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-a136e981ee0c",
+      "message_id": "</p/rkward/discussion/165573/f14bc0cbc0a72863b5fe13574a4ea2ff56ec74cb.discussion@rkward.p.sourceforge.net>",
+      "from_name": "AndresM",
+      "from_email_hash": "17c74f2c19e91a2e8a5a8c1de78911bd78d8a979f560352c14f923da3f6646e0",
+      "date": "2013-05-18T21:24:46Z",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "subject_clean": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Thank you Thomas for your quick answer.\nWhen I started to check the 3 points, I discovered the file \"rkwardrc\". I changed its name, and all worked fine!!\nThe problem was:\nI used RKward stable ubuntu version, with R 2.15. But when R 3.0.0 (CRAN) stable version was released, the RKward 0.6.1 from lunchpad did not work (an error about dependencies prevented the installation). I had to move to RKward CRAN version. I checked \"rkwardrc\" after compiling the wrong version of RKward (launchpad.net/~rkward-devel/+archive/rkward-stable), so I never got the file. But now, with CRAN version (\"launchpad.net/~rkward-devel/+archive/rkward-stable-cran\") I found the file. I've renamed it, and thats it!\nThank you for your help!!\n\n---\n[RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)](https://sourceforge.net/p/rkward/discussion/165573/thread/8e0801f3/?limit=25#739e)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165573/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130518/01b476c5/attachment.html>",
+      "body_snippet": "Thank you Thomas for your quick answer.\nWhen I started to check the 3 points, I discovered the file \"rkwardrc\". I changed its name, and all worked fine!!\nThe problem was:\nI used RKward stable ubuntu v",
+      "thread_id": "thread-a136e981ee0c",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-5b147ef0a2e1",
+      "message_id": "</p/rkward/discussion/165574/c92ea0714b308c9476633b92d54521100a341084.discussion@rkward.p.sourceforge.net>",
+      "from_name": "\"Vojtěch Zeisek\"",
+      "from_email_hash": "b20d593f9299ccf58db0527e7715e5b3ddc67122788ec066beecd16b18cc9247",
+      "date": "2013-05-23T08:33:54Z",
+      "subject": "[rkward-users] [rkward:discussion] Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "subject_clean": "[rkward-users] [rkward:discussion] Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello, I installed R 3.0.1 from openSUSE repository https://build.opensuse.org/package/show?project=devel%3Alanguages%3AR%3Abase&package=R and Rkward 0.6.1 from https://build.opensuse.org/package/show?project=devel%3Alanguages%3AR%3Asupplement&package=rkward on openSUSE 12.3 (64b) with KDE 4.10.2. Rkward says there were error during launching R core. Some errors Rkward is not able to handle yet.\n\nR version 3.0.1 (2013-05-16) -- \"Good Sport\"\nCopyright (C) 2013 The R Foundation for Statistical Computing\nPlatform: x86_64-suse-linux-gnu (64-bit)\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\nError: package ?rkward? was built before R 3.0.0: please re-install it\nError in stopifnot(.rk.app.version == \"0.6.1\") : \nobject '.rk.app.version' not found\nError: could not find function \".rk.fix.assignments\"\nError: could not find function \".rk.getHelpBaseUrl\"\nError during wrapup: could not find function \".rk.do.error\"\nError in options(editor = rk.edit.files) : \nobject 'rk.edit.files' not found\nError during wrapup: could not find function \".rk.do.error\"\nError in options(pager = rk.show.files) : \nobject 'rk.show.files' not found\nError during wrapup: could not find function \".rk.do.error\"\nError in options(browser = rk.show.html) : \nobject 'rk.show.html' not found\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \"rk.toggle.plot.history\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \"rk.verify.plot.hist.limits\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \"rk.set.output.html.file\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.get.structure\"\nError during wrapup: could not find function \".rk.do.error\"\nError: could not find function \".rk.watch.globalenv\"\nError during wrapup: could not find function \".rk.do.error\"\n\nAny idea how to get it to work?\n\n\n---\n[Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3](https://sourceforge.net/p/rkward/discussion/165574/thread/cff64476/?limit=25#50b7)\n\n\n---\n\nSent from sourceforge.net because you indicated interest in <https://sourceforge.net/p/rkward/discussion/165574/>\n\nTo unsubscribe from further messages, please visit <https://sourceforge.net/auth/subscriptions/>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130523/9c01a225/attachment.html>",
+      "body_snippet": "Hello, I installed R 3.0.1 from openSUSE repository https://build.opensuse.org/package/show?project=devel%3Alanguages%3AR%3Abase&package=R and Rkward 0.6.1 from https://build.opensuse.org/package/show",
+      "thread_id": "thread-5b147ef0a2e1",
+      "thread_depth": 0,
+      "month": "2013-05"
+    },
+    {
+      "id": "msg-e3a846eec4bd",
+      "message_id": "<2557788.3SKPdocE2E@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2013-05-24T21:04:28Z",
+      "subject": "[rkward-users] new devel binary snapshot for OS X",
+      "subject_clean": "[rkward-users] new devel binary snapshot for OS X",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\ni've just uploaded a fresh binary bundle of the most recent development \nsnapshot of RKWard for OS X:\n http://sourceforge.net/projects/rkwardextras/files/MacOSX/development/RKWard-devel-binary-0.6.1-svn4755_KDE-4.10.3_needs_CRAN_R-3.0.0.dmg\n\nits main purpose is to let you test the new graphics device, which is supposed \nto become one of the main new features of the next release. for the first time \nit enables all graphics features of RKWard (like plot history, easy export \netc.) for mac users.\n\nas the file name suggests, it's supposed to be installed *after* R from CRAN \nwas installed (>= 3.0.0). if you want to test the package, follow the \n\"UPDATES/UNINSTALL\" instructions in the README to replace an earlier version.\n\nand of course, we're interested in your feedback on what's great and what \nisn't. since it's bleeding endge, it's totally possible it doesn't work for \nyou at all, so you shouldn't try this on productive machines.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130524/1537db63/attachment.sig>",
+      "body_snippet": "hi,\n\ni've just uploaded a fresh binary bundle of the most recent development \nsnapshot of RKWard for OS X:\n http://sourceforge.net/projects/rkwardextras/files/MacOSX/development/RKWard-devel-binary-0.",
+      "thread_id": "thread-e3a846eec4bd",
+      "thread_depth": 0,
+      "month": "2013-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-6e9294bb5cb0",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-06T11:03:09Z",
+      "last_reply": "2013-05-06T11:03:09Z",
+      "root_message_id": "msg-6e9294bb5cb0"
+    },
+    {
+      "id": "thread-9901e3a85c21",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-06T11:03:48Z",
+      "last_reply": "2013-05-06T11:03:48Z",
+      "root_message_id": "msg-9901e3a85c21"
+    },
+    {
+      "id": "thread-ffa0593e6f24",
+      "subject": "[rkward-users] [rkward:discussion] Re: RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-05-06T12:05:10Z",
+      "last_reply": "2013-05-06T12:05:10Z",
+      "root_message_id": "msg-ffa0593e6f24"
+    },
+    {
+      "id": "thread-cfc9f8367680",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-06T14:30:11Z",
+      "last_reply": "2013-05-06T14:30:11Z",
+      "root_message_id": "msg-cfc9f8367680"
+    },
+    {
+      "id": "thread-6e4fb18cec05",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-06T16:25:16Z",
+      "last_reply": "2013-05-06T16:25:16Z",
+      "root_message_id": "msg-6e4fb18cec05"
+    },
+    {
+      "id": "thread-f899445ebe48",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-05-06T17:18:19Z",
+      "last_reply": "2013-05-06T17:18:19Z",
+      "root_message_id": "msg-f899445ebe48"
+    },
+    {
+      "id": "thread-b0f75943f990",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-06T18:13:28Z",
+      "last_reply": "2013-05-06T18:13:28Z",
+      "root_message_id": "msg-b0f75943f990"
+    },
+    {
+      "id": "thread-0db5f66b46aa",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-05-07T08:07:06Z",
+      "last_reply": "2013-05-07T08:07:06Z",
+      "root_message_id": "msg-0db5f66b46aa"
+    },
+    {
+      "id": "thread-c110cb5a4dd0",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 with R 3.0 on Ubuntu 12.04 x64 --takes too long to open the help window",
+      "message_count": 1,
+      "participants": [
+        "Burfee"
+      ],
+      "started": "2013-05-07T10:14:24Z",
+      "last_reply": "2013-05-07T10:14:24Z",
+      "root_message_id": "msg-c110cb5a4dd0"
+    },
+    {
+      "id": "thread-b6fea33ef0a5",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "AndresM"
+      ],
+      "started": "2013-05-17T20:38:39Z",
+      "last_reply": "2013-05-17T20:38:39Z",
+      "root_message_id": "msg-b6fea33ef0a5"
+    },
+    {
+      "id": "thread-9a9d01717d12",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-05-18T17:55:03Z",
+      "last_reply": "2013-05-18T17:55:03Z",
+      "root_message_id": "msg-9a9d01717d12"
+    },
+    {
+      "id": "thread-c5f1f3f89877",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-05-18T18:03:52Z",
+      "last_reply": "2013-05-18T18:03:52Z",
+      "root_message_id": "msg-c5f1f3f89877"
+    },
+    {
+      "id": "thread-a136e981ee0c",
+      "subject": "[rkward-users] [rkward:discussion] RKWard 0.6.1 using R 3.0 on Ubuntu 12.04 crashing on start --rkward.frontend PID: 24582 Signal: Segmentation fault (11)",
+      "message_count": 1,
+      "participants": [
+        "AndresM"
+      ],
+      "started": "2013-05-18T21:24:46Z",
+      "last_reply": "2013-05-18T21:24:46Z",
+      "root_message_id": "msg-a136e981ee0c"
+    },
+    {
+      "id": "thread-5b147ef0a2e1",
+      "subject": "[rkward-users] [rkward:discussion] Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "message_count": 1,
+      "participants": [
+        "\"Vojtěch Zeisek\""
+      ],
+      "started": "2013-05-23T08:33:54Z",
+      "last_reply": "2013-05-23T08:33:54Z",
+      "root_message_id": "msg-5b147ef0a2e1"
+    },
+    {
+      "id": "thread-e3a846eec4bd",
+      "subject": "[rkward-users] new devel binary snapshot for OS X",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2013-05-24T21:04:28Z",
+      "last_reply": "2013-05-24T21:04:28Z",
+      "root_message_id": "msg-e3a846eec4bd"
+    }
+  ]
+}

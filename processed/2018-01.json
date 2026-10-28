@@ -1,0 +1,74 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2018-01",
+  "messages": [
+    {
+      "id": "msg-cbcb7c2ff674",
+      "message_id": "<517129.1722.qm@web102519.mail.kks.yahoo.co.jp>",
+      "from_name": "kenjisato1996 at yahoo.co.jp",
+      "from_email_hash": "87ed0706de808ad40fcdd2f54a8c9985fe9c04d079485cfcfed373ccfc7c67b6",
+      "date": "2018-01-11T05:26:51Z",
+      "subject": "RKWard 0.7.0 Crashing",
+      "subject_clean": "RKWard 0.7.0 Crashing",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi there,\n\nI have recently installed RKWard due to a need in my institution, and I am coming across a problem with the application, RKWard crashes as soon as it opens.\n\nUpon installation, I realized that the version of R used was much earlier than what I needed (which is ver 3.4.3) and when I did install and change the directory to it via the rkward.ini file this problem occured.\n\nThis was the same on the earlier version of RKWard.\n\nIs this a common issue and would you have a solution to this?\n\nKind Regards,\nKenji\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/dc4720fc/attachment.html>",
+      "body_snippet": "Hi there,\n\nI have recently installed RKWard due to a need in my institution, and I am coming across a problem with the application, RKWard crashes as soon as it opens.\n\nUpon installation, I realized t",
+      "thread_id": "thread-cbcb7c2ff674",
+      "thread_depth": 0,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-67e2d42bfbc0",
+      "message_id": "<CAFQDPR1KYfTsymr5URgP0VcmvvamwakP7SV6B8AQuP7KMQQjCQ@mail.gmail.com>",
+      "from_name": "Donatas Glodenis",
+      "from_email_hash": "e408e1ddef9b9752226a1fbf7a32926eb70c1661d8365ff8dda8f67455eca08d",
+      "date": "2018-01-11T10:35:28Z",
+      "subject": "RKWard 0.7.0 Crashing",
+      "subject_clean": "RKWard 0.7.0 Crashing",
+      "in_reply_to": "<517129.1722.qm@web102519.mail.kks.yahoo.co.jp>",
+      "references": [
+        "<517129.1722.qm@web102519.mail.kks.yahoo.co.jp>"
+      ],
+      "body_plain": "Crashes are only to be expected in such an early build 0.7.0 has not been\nreleased yet. For any practical purpose use 0.6.5 version.\n\nDonatas G.\n\nSiųsta iš „Sony Xperia“ išmaniojo telefono\n\n2018 saus. 11 07:27 <kenjisato1996 at yahoo.co.jp> rašė:\n\n> Hi there,\n>\n> I have recently installed RKWard due to a need in my institution, and I am\n> coming across a problem with the application, RKWard crashes as soon as\n> it opens.\n>\n> Upon installation, I realized that the version of R used was much earlier\n> than what I needed (which is ver 3.4.3) and when I did install and change\n> the directory to it via the rkward.ini file this problem occured.\n>\n> This was the same on the earlier version of RKWard.\n>\n> Is this a common issue and would you have a solution to this?\n>\n> Kind Regards,\n> Kenji\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/e25bc468/attachment.html>",
+      "body_snippet": "Crashes are only to be expected in such an early build 0.7.0 has not been\nreleased yet. For any practical purpose use 0.6.5 version.\n\nDonatas G.\n\nSiųsta iš „Sony Xperia“ išmaniojo telefono\n\n2018 saus.",
+      "thread_id": "thread-cbcb7c2ff674",
+      "thread_depth": 1,
+      "month": "2018-01"
+    },
+    {
+      "id": "msg-0b5af21691ef",
+      "message_id": "<72201208.jJXM3eXULC@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2018-01-11T14:26:04Z",
+      "subject": "RKWard 0.7.0 Crashing",
+      "subject_clean": "RKWard 0.7.0 Crashing",
+      "in_reply_to": "<517129.1722.qm@web102519.mail.kks.yahoo.co.jp>",
+      "references": [
+        "<517129.1722.qm@web102519.mail.kks.yahoo.co.jp>"
+      ],
+      "body_plain": "dear kenji,\n\nAm Donnerstag, 11. Januar 2018, 14:26:51 CET schrieb \nkenjisato1996 at yahoo.co.jp:\n> Upon installation, I realized that the version of R used was much earlier\n> than what I needed (which is ver 3.4.3) and when I did install and change\n> the directory to it via the rkward.ini file this problem occured.\n\ni take it you're running RKWard on windows. RKWard needs the R version it was \ncompiled with to work correctly. it is usually possible to do point release \nupgrades of R (like using 3.4.3 instead of 3.4.2), but since R sometimes \nchanges fundamentally between even minor (3.3 vs. 3.4) upgrades, you need to \nuse the version that RKWard expects.\n\ni think the latest 0.7.0 windows build was done with R 3.3. if you're lucky \nthomas could possibly build a more recent snapshot.\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 473 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180111/058339a8/attachment.sig>",
+      "body_snippet": "dear kenji,\n\nAm Donnerstag, 11. Januar 2018, 14:26:51 CET schrieb \nkenjisato1996 at yahoo.co.jp:\n> Upon installation, I realized that the version of R used was much earlier\n> than what I needed (which",
+      "thread_id": "thread-cbcb7c2ff674",
+      "thread_depth": 1,
+      "month": "2018-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cbcb7c2ff674",
+      "subject": "RKWard 0.7.0 Crashing",
+      "message_count": 3,
+      "participants": [
+        "Donatas Glodenis",
+        "kenjisato1996 at yahoo.co.jp",
+        "meik michalke"
+      ],
+      "started": "2018-01-11T05:26:51Z",
+      "last_reply": "2018-01-11T14:26:04Z",
+      "root_message_id": "msg-cbcb7c2ff674"
+    }
+  ]
+}

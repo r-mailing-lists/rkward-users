@@ -1,0 +1,375 @@
+From noreply at sourceforge.net  Tue Aug 14 03:18:16 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 13 Aug 2012 20:18:16 -0700
+Subject: [rkward-users] [Help] t-Test with Groups?
+Message-ID: <forum-165574-11757228@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Hi all. I was hoping to standardize on RKWard for an intro stats class I'm teaching
+next semester, but I can't seem to find something I need, and I suspect I just
+don't know where to look.
+
+I need to do t-tests by groups, e.g.,:
+
+[code]t.test(formula = Weight ~ Sex)[/code]
+
+--Where "Weight" is a number variable and "Sex" is a two-level factor.
+
+This works fine in the R console at the bottom of the RKWard window, so I know
+that the appropriate packages are installed (I'm running this in a MacOS "Lion"
+VM to simulate what most of my students will have--installed with the very handy
+DMG), but I can't find anything in the GUI to set a "by" variable.
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Aug 14 08:37:03 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 14 Aug 2012 10:37:03 +0200
+Subject: [rkward-users] Warning about too long lines
+In-Reply-To: <201207131932.36035.newsletter@fichtinger.org>
+References: <201207131932.36035.newsletter@fichtinger.org>
+Message-ID: <201208141037.07469.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 13 July 2012, Johannes Fichtinger wrote:
+> However, it seems that on my machine this setting (line length limit = 0)
+> is not saved when I close and reopen rkward.
+
+as it turns out, a config-related bug was "fixed" in katepart, recently. As a 
+side-effect of this fix, *no* katepart settings get saved in rkward at all 
+(I'm not sure, when exactly this was done, but with KDE < 4.8, it should still 
+work, as far as I am aware).
+
+> Any ideas how to solve this issue?
+
+I have committed a fix for this issue to the development version of RKWard. 
+See http://p.sf.net/rkward/svn for instructions.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120814/05767249/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Aug 14 09:30:48 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 14 Aug 2012 11:30:48 +0200
+Subject: [rkward-users] Variable labels
+In-Reply-To: <1342558067.45111.YahooMailNeo@web122304.mail.ne1.yahoo.com>
+References: <1342558067.45111.YahooMailNeo@web122304.mail.ne1.yahoo.com>
+Message-ID: <201208141130.53736.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+sorry for the late reply.
+
+On Tuesday 17 July 2012, Francois Maurice wrote:
+> Two questions :
+>  
+> 1) Is it possible to write variable labels via the syntax ?
+
+Yes. See ?rk.get.label .
+  
+> 2) Is it possible to export variables labels instead of variables name with
+> write.table() ? 
+
+You can use
+    write.table(..., col.names=sapply(my.data, rk.get.label))
+(substitute "my.data" with the name of your data.frame).
+
+In the development version of RKWard, I have just added a convenience function 
+"rk.list.labels()" to make it easier to extract variable labels from a 
+data.frame. Also, rk.get.label() now behaves better, in case no label has been 
+assigned. If you would like to try the development version, see 
+http://p.sf.net/rkward/svn .
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120814/2835d94a/attachment.sig>
+
+From noreply at sourceforge.net  Tue Aug 14 10:16:07 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 14 Aug 2012 03:16:07 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11757228@sourceforge.net>
+Message-ID: <forum-165574-11758070@sourceforge.net>
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Hi!
+
+The functionality you are looking for is simply not implemented, in the "official"
+RKWard distribution.
+
+However, the RKWard GUI can be extended by plugins. And, in fact, Meik Michalke
+has written a plugin that allows to do t-tests on "long" format data. Use
+Settings->Manage R Packages, and install package "rk.ANOVA". You will find a
+new GUI entry "Pairwise t-Tests". The main point of the plugin is to allow comparing
+pairwise differences between 3 or more groups, but it will also work for 2.
+Perhaps that is good enough for you, or perhaps you would like to look into
+extending our standard t-test dialog yourself:
+[url]http://rkward.sourceforge.net/documents/devel/plugins/index.html[/url].
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Aug 15 02:02:26 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 14 Aug 2012 19:02:26 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11758070@sourceforge.net>
+Message-ID: <forum-165574-11762729@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+I'll take a look! Actually, I was wondering where I could find ANOVA as well.
+
+I have been hoping that some enterprising developers would write a good GUI
+for R for a very long time. I find that I usually prefer to just type the commands
+in, if I know exactly what I want to do, but for students, that can be a little
+daunting. No matter what, though, I wanted them to learn on something they could
+(legally) just have on their machines and continue to use in their own research,
+unlike SPSS, which is what I learned on. So far, I think RKWard is going to
+make that possible.
+
+...As long as I can get it to install on Mountain Lion, for the students who
+have upgraded, or people like me who have new Apple laptops... That's the next
+experiment.
+
+
+
+From noreply at sourceforge.net  Wed Aug 15 02:18:28 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 14 Aug 2012 19:18:28 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11762729@sourceforge.net>
+Message-ID: <forum-165574-11762759@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Nope, it's missing something:
+
+[code]Error in ezANOVA_main(data = data, dv = dv, wid = wid, within = within,
+:
+  argument "wid" is missing, with no default
+Calls: local ... eval -> eval -> eval -> eval -> ezANOVA -> ezANOVA_main[/code]
+But it's not the end of the world. We're not doing ANOVAs at all, so I'll just
+have them type the code for the t-tests.
+
+Thanks for the help.
+
+
+
+From noskillbutstyle at web.de  Wed Aug 15 09:09:44 2012
+From: noskillbutstyle at web.de (NoSkill ButStyle)
+Date: Wed, 15 Aug 2012 11:09:44 +0200 (CEST)
+Subject: [rkward-users] Rkward not working with R 2.15
+Message-ID: <trinity-feeb5c88-a5a1-4eda-b7a6-dd3fa0928859-1345021784233@3capp-webde-bs16>
+
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120815/e76ca8b4/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Aug 15 09:28:57 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 15 Aug 2012 11:28:57 +0200
+Subject: [rkward-users] Rkward not working with R 2.15
+In-Reply-To: <trinity-feeb5c88-a5a1-4eda-b7a6-dd3fa0928859-1345021784233@3capp-webde-bs16>
+References: <trinity-feeb5c88-a5a1-4eda-b7a6-dd3fa0928859-1345021784233@3capp-webde-bs16>
+Message-ID: <201208151129.01940.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+I'm allowing your mail through our filter. However, in the future, please 
+avoid posting messages in HTML format. Thanks.
+
+On Wednesday 15 August 2012, NoSkill ButStyle wrote:
+> So, do I have to reinstall the latest Rkward version on my own? Is there a
+> detailed (more detailes than
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Building_RKWa
+> rd_From_Source) instruction on how to do this in ubuntu? Or should the
+> instruction on
+> http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Building_RKWa
+> rd_From_Source work on Ubuntu as well?
+
+The instructions should work just fine. However, more specific instructions 
+for many distributions (including Ubuntu) are available on this page:
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts
+
+Note that for Ubuntu we also provide a number of different binaries in 
+launchpad PPAs, for easy installation using your package manager. See 
+https://launchpad.net/~rkward-devel for an overview. Since you are using an R 
+version from CRAN (or a similar source), make sure to use the "-cran" version 
+of our PPA(s), too.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120815/49c399a8/attachment.sig>
+
+From noreply at sourceforge.net  Wed Aug 15 16:23:16 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Aug 2012 09:23:16 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11762759@sourceforge.net>
+Message-ID: <forum-165574-11764722@sourceforge.net>
+
+The following forum message was posted by m-eik at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+hi,
+
+regarding the ANOVA error: i assume you tried a pure between subject design?
+it seems ezANOVA of the ez package still insists on a subject identifier even
+for those designs. i've added a workaround for this in rk.ANOVA 0.01-12, could
+you give that a try?
+
+as for the mac version of RKWard: we're still working on this and are happy
+for feedback! most of us are not actually mac users, and it could probably progress
+much faster if we had more eyes looking at it. a lot of people seem to experience
+problems with missing MIME types (an error pops up, in bad cases you can't really
+open *.R files with RKWard). the reason is found and a workaround in place (see
+https://sourceforge.net/mailarchive/message.php?msg_id=29650937 for details),
+but before you give this to your students, we should probably fix this one for
+good ;-)
+
+
+viele gr??e :: m.eik
+
+
+
+From noreply at sourceforge.net  Thu Aug 16 02:15:02 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Aug 2012 19:15:02 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11764722@sourceforge.net>
+Message-ID: <forum-165574-11781535@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Thanks for the extra info.
+
+I don't see rk.ANOVA 0.01-12 on CRAN (Tokyo mirror). Do I need to look at a
+specific mirror, or get off stable releases?
+
+I also found a new submenu under "Data" for setting up within-subject data.
+Is that what was missing? I didn't look in there at all.
+
+I have gotten the MIME error, but it hasn't seemed to cause any problems, at
+least for what I need the students to do for this class. I'll give that new
+directory a shot.
+
+
+
+From noreply at sourceforge.net  Thu Aug 16 02:23:05 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Aug 2012 19:23:05 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11781535@sourceforge.net>
+Message-ID: <forum-165574-11781637@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Sorry. Version 0.01-12 showed up after restarting. 
+
+When I try to run a between groups ANOVA, it now asks for the ez package. I
+install it, and it asks for it again. Evidently there are a bunch of installation
+errors.
+
+
+
+From noreply at sourceforge.net  Thu Aug 16 02:51:55 2012
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 15 Aug 2012 19:51:55 -0700
+Subject: [rkward-users] [Help] RE: t-Test with Groups?
+In-Reply-To: <forum-165574-11781637@sourceforge.net>
+Message-ID: <forum-165574-11781952@sourceforge.net>
+
+The following forum message was posted by kklein at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/5521778:
+
+Ah, but it works on my main installation (also a Mac with 10.7.x, but installed
+the "long" way through MacPorts). It does not, however, run a t-test, so it
+doesn't really help me with my class, although it's nice to be able to do ANOVAs
+in RKWard now.
+
+I have added the linked mime directory to the "fast" installation on the VM,
+and have not seen the MIME errors again. The only caveat to the installation
+of those files, though, is very weird: The unarchiving utility bundled in MacOS
+does not like that .zip file. It decompresses it to another compressed file
+of type .cpgz. Then, when you decompress that, it just makes another copy of
+the .zip! Ad infinitum.
+
+If you use the popular The UnArchiver freeware utility to decompress (most power
+users use this--as far as I know, it just makes calls to the BSD archive tools,
+rather than rolling its own), it works fine.
+
+Decompressing with The UnArchiver to a folder, and then re-compressing it with
+the MacOS, however, results in the same weird .cpgz behavior! There are some
+baffled threads about this around the 'net. Even making a new folder called
+"mime" in MacOS and just moving the contents in, and then compressing, results
+in the same. Crazy.
+
+It is looking like the safest way to go on the Mac is still the MacPorts
+installation, unsurprisingly, although I will still probably recommend the .dmg
+route to the students, as what we need it to do, it largely does, and if it
+doesn't, they can just type out the code in the console.
+
+BTW, I'd be happy to test out Mac versions of RKWard. I have access to machines
+running 10.6 through 10.8. I'm afraid I'm pretty hopeless with actually diagnosing
+code, though.
+
+
+
+From meik.michalke at uni-duesseldorf.de  Wed Aug 22 21:15:32 2012
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 22 Aug 2012 23:15:32 +0200
+Subject: [rkward-users] new Mac bundle
+Message-ID: <3524665.f97IxWV7AU@yrla>
+
+hi,
+
+here's a new bundle package of RKWard for Mac OS X:
+ o http://sourceforge.net/projects/rkwardextras/files/MacOSX/
+
+if you have the opportunity to test it on a machine where RKWard wasn't 
+installed before, feedback would be greatly appreciated! this bundle tries to 
+automate all the things you had to do manually after the installation of 
+previous bundles, so if all went well, RKWard should now work right away.
+
+it also addresses a MIME type problem earlier bundles suffered from. if these 
+new magic postinstall tweaks don't work, please try the troubleshooting 
+section in the updated README.MacOSX file, and yell at me.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 2282 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120822/dc1af120/attachment.p7s>
+

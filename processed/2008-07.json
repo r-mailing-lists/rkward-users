@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-07",
+  "messages": [
+    {
+      "id": "msg-a73923fe9d86",
+      "message_id": "<48710576.3060807@gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2008-07-06T17:48:38Z",
+      "subject": "[rkward-users] Update 0.5: how to get the old shortcuts?",
+      "subject_clean": "[rkward-users] Update 0.5: how to get the old shortcuts?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello\n\nLast week, the KDE version in the repository for Ubuntu 8.04 came from \n3.4 to 4.0.5, so RKward was updated to 0.5. The change made some minor \nproblems:\n\n-the shortcuts are differents... if I remember well,  could use F8, F9 \nand F10 for run line/selection/all and now it changed, one needs Shift + \nF8, F9 and F10... Am I right? And there was also the shortcut Shift + L \nfor run line... I did not find a way to configure it in the old \nfashion... is there a possibility?\n\n-the icons in the toolbar for th are too large to be all displayed (this \nmay come from the french version where \"run all\" becomes \"lancer la \nligne courante\") so I can't see them all. Can I configure how they are \ndisplayed?\n\nThank you!!",
+      "body_snippet": "Hello\n\nLast week, the KDE version in the repository for Ubuntu 8.04 came from \n3.4 to 4.0.5, so RKward was updated to 0.5. The change made some minor \nproblems:\n\n-the shortcuts are differents... if I ",
+      "thread_id": "thread-a73923fe9d86",
+      "thread_depth": 0,
+      "month": "2008-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a73923fe9d86",
+      "subject": "[rkward-users] Update 0.5: how to get the old shortcuts?",
+      "message_count": 1,
+      "participants": [
+        "Matthieu Stigler"
+      ],
+      "started": "2008-07-06T17:48:38Z",
+      "last_reply": "2008-07-06T17:48:38Z",
+      "root_message_id": "msg-a73923fe9d86"
+    }
+  ]
+}

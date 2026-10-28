@@ -1,0 +1,418 @@
+From alobolistas at gmail.com  Wed Dec  2 19:30:40 2009
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Wed, 02 Dec 2009 20:30:40 +0100
+Subject: [rkward-users] .Rhistory
+Message-ID: <4B16C060.4020203@gmail.com>
+
+I think that Rkward does not read the .Rhistory file
+when the .RDate is selected, am I wrong? Is this intended?
+If so, could this option be configured? (i.e., "read in the .Rhistory
+file if present in the same directory than the selected .RData")
+Anyway, is there a button to load the .Rhistory ?
+
+As I work in different projects, I prefer having different .Rhistory
+files for each.
+
+Thanks!
+
+Agus
+
+
+
+From alobolistas at gmail.com  Fri Dec  4 16:08:08 2009
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Fri, 04 Dec 2009 17:08:08 +0100
+Subject: [rkward-users] version for MAC OS?
+Message-ID: <4B1933E8.4080001@gmail.com>
+
+Hi!
+
+Is there a version of RKward for Mac OS (i.e. Leopard)?
+Plans for it? While the default GUI for Mac is good, RKward is better...
+
+Agus
+
+
+
+From kapatp at gmail.com  Sat Dec  5 01:11:25 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Fri, 4 Dec 2009 20:11:25 -0500
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <4B1933E8.4080001@gmail.com>
+References: <4B1933E8.4080001@gmail.com>
+Message-ID: <de8c7cb40912041711w2c0edd69m4249cace5151f08c@mail.gmail.com>
+
+On Fri, Dec 4, 2009 at 11:08 AM, Agustin Lobo <alobolistas at gmail.com> wrote:
+> Hi!
+>
+> Is there a version of RKward for Mac OS (i.e. Leopard)?
+> Plans for it? While the default GUI for Mac is good, RKward is better...
+>
+> Agus
+
+Well, I don't think there is any plans for any official port. But it
+would be interesting to compile it with the macports [*]
+(http://www.macports.org/) which already has kde 4.3.4. Thomas can
+better comment on this "compilability."
+
+
+-- 
+Prasenjit
+
+[*] the fink project is a bit behind
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Dec  7 09:35:22 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 7 Dec 2009 10:35:22 +0100
+Subject: [rkward-users] version for MAC OS?
+Message-ID: <200912071035.22394.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 04 December 2009, Agustin Lobo wrote:
+> Is there a version of RKward for Mac OS (i.e. Leopard)?
+> Plans for it? While the default GUI for Mac is good, RKward is better...
+
+RKWard uses some X11-specifics, so I suppose it cannot be compiled natively for 
+Mac OS. I think it should work with X11 on Mac just fine, but I'm pretty 
+ignorant about this, and I don't even know, whether that would imply 
+installing X11-versions of KDE, Qt and R as well.
+
+Creating a native version for Mac OS should not be too hard, I believe, but 
+obviously it would require someone with at least basic knowledge of Mac OS, 
+and access to a Mac for testing. As you will have guessed, I don't have 
+either. If anybody would like to give it a shot, I'd be happy to help as much 
+as I can, but I just can't port it myself.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091207/44f48a22/attachment.sig>
+
+From alobolistas at gmail.com  Tue Dec  8 20:20:16 2009
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Tue, 08 Dec 2009 21:20:16 +0100
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <200912071034.40361.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4B1933E8.4080001@gmail.com>
+	<200912071034.40361.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4B1EB500.6010307@gmail.com>
+
+I understand. I can help, but I'm not qualified for being
+the person making the native version for Mac OS, unless I get
+detailed directions on what to do.
+Maybe the developers (Simon Urbanek) of R for Mac OS X 
+(http://cran.r-project.org/bin/macosx/)
+would be interested?
+
+Agus
+
+Thomas Friedrichsmeier wrote:
+> Hi,
+> 
+> On Friday 04 December 2009, Agustin Lobo wrote:
+>> Is there a version of RKward for Mac OS (i.e. Leopard)?
+>> Plans for it? While the default GUI for Mac is good, RKward is better...
+> 
+> RKWard uses some X11-specifics, so I suppose it cannot be compiled natively for 
+> Mac OS. I think it should work with X11 on Mac just fine, but I'm pretty 
+> ignorant about this, and I don't even know, whether that would imply 
+> installing X11-versions of KDE, Qt and R as well.
+> 
+> Creating a native version for Mac OS should not be too hard, I believe, but 
+> obviously it would require someone with at least basic knowledge of Mac OS, 
+> and access to a Mac for testing. As you will have guessed, I don't have 
+> either. If anybody would like to give it a shot, I'd be happy to help as much 
+> as I can, but I just can't port it myself.
+> 
+> Regards
+> Thomas
+
+
+
+From simon.urbanek at r-project.org  Tue Dec  8 21:25:44 2009
+From: simon.urbanek at r-project.org (Simon Urbanek)
+Date: Tue, 8 Dec 2009 16:25:44 -0500
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <4B1EB500.6010307@gmail.com>
+References: <4B1933E8.4080001@gmail.com>
+	<200912071034.40361.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4B1EB500.6010307@gmail.com>
+Message-ID: <D9E3B3C1-3303-4961-891B-9BF0AF4ECBBB@r-project.org>
+
+On Dec 8, 2009, at 15:20 , Agustin Lobo wrote:
+
+> I understand. I can help, but I'm not qualified for being
+> the person making the native version for Mac OS, unless I get
+> detailed directions on what to do.
+> Maybe the developers (Simon Urbanek) of R for Mac OS X (http://cran.r-project.org/bin/macosx/ 
+> )
+> would be interested?
+>
+
+I have no idea about RKWard but from the FAQ it says that it is a KDE  
+application which substantially reduces the chances of any native  
+ports. We are using native Cocoa for the R GUI so they have nothing in  
+common. (more comments below)
+
+In general, feel free to ask on R-SIG-Mac about things related to Macs  
+and R.
+
+
+> Thomas Friedrichsmeier wrote:
+>> Hi,
+>> On Friday 04 December 2009, Agustin Lobo wrote:
+>>> Is there a version of RKward for Mac OS (i.e. Leopard)?
+>>> Plans for it? While the default GUI for Mac is good, RKward is  
+>>> better...
+
+AFAICS RKWard has different goals than the R for Mac GUI. I would say  
+that RKward is more like JGR (which is cross-platform BTW) than the  
+Mac GUI. Nonetheless, wishes and suggestions for improvement of the  
+Mac GUI are highly welcome.
+
+
+>> RKWard uses some X11-specifics, so I suppose it cannot be compiled  
+>> natively for Mac OS. I think it should work with X11 on Mac just  
+>> fine, but I'm pretty ignorant about this, and I don't even know,  
+>> whether that would imply installing X11-versions of KDE, Qt and R  
+>> as well.
+>> Creating a native version for Mac OS should not be too hard, I  
+>> believe,
+
+If RKWard is truly a KDE app then to the contrary. KDE is a very heavy  
+infrastructure. There seem to be some effort of porting it to Macs but  
+since it's so heavy your can't easily deploy an application. But  
+again, I really don't know much about RKWard -- if it can be made to  
+rely only on Qt then the story is entirely different, of course.
+
+Cheers,
+Simon
+
+
+>> but obviously it would require someone with at least basic  
+>> knowledge of Mac OS, and access to a Mac for testing. As you will  
+>> have guessed, I don't have either. If anybody would like to give it  
+>> a shot, I'd be happy to help as much as I can, but I just can't  
+>> port it myself.
+>> Regards
+>> Thomas
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Dec  9 08:06:26 2009
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 9 Dec 2009 09:06:26 +0100
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <D9E3B3C1-3303-4961-891B-9BF0AF4ECBBB@r-project.org>
+References: <4B1933E8.4080001@gmail.com> <4B1EB500.6010307@gmail.com>
+	<D9E3B3C1-3303-4961-891B-9BF0AF4ECBBB@r-project.org>
+Message-ID: <200912090906.33867.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Tuesday 08 December 2009, Simon Urbanek wrote:
+> On Dec 8, 2009, at 15:20 , Agustin Lobo wrote:
+> >> Creating a native version for Mac OS should not be too hard, I
+> >> believe,
+> 
+> If RKWard is truly a KDE app then to the contrary. KDE is a very heavy
+> infrastructure. There seem to be some effort of porting it to Macs but
+> since it's so heavy your can't easily deploy an application. But
+> again, I really don't know much about RKWard -- if it can be made to
+> rely only on Qt then the story is entirely different, of course.
+
+I was talking about what needs to be done in RKWard itself. There, we have 
+some platform-specific code (for X11 and Windows, so far) to detect and 
+"swallow" the R screen graphics device windows. That's basically the one area 
+that needs porting. Anyway, this is getting quite technical, so if you would 
+like to continue, here, please take the discussion to rkward-devel, instead of 
+rkward-users.
+
+RKWard does rely on KDE, and I wouldn't claim porting KDE is "not too hard", 
+but others have already done that (http://mac.kde.org). Can't comment on the 
+quality of that port, and how hard or easy it is to install.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20091209/ee9a6657/attachment.sig>
+
+From alobolistas at gmail.com  Wed Dec  9 13:13:52 2009
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Wed, 09 Dec 2009 14:13:52 +0100
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <200912090906.33867.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4B1933E8.4080001@gmail.com> <4B1EB500.6010307@gmail.com>
+	<D9E3B3C1-3303-4961-891B-9BF0AF4ECBBB@r-project.org>
+	<200912090906.33867.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4B1FA290.8050600@gmail.com>
+
+Thank you both for your GUIs.
+I understand that, from a Mac perspective, a native
+GUI is better and I'm impressed by the difference between
+the default GUI in Mac and in Win: the R GUI for Mac is much better.
+But I'm looking for a common GUI (linux,win,mac) to make
+my life easier at teaching. On this regard, I've found RKward
+very useful (it's not only a GUI but includes some elementary
+functions in the menu, which helps some students) and wish have it for 
+all 3 OS. I'm working myself
+mostly under ubuntu, 80% of students use win, 15% Mac and 5% linux.
+
+Regards,
+
+Agus
+
+
+Thomas Friedrichsmeier wrote:
+> On Tuesday 08 December 2009, Simon Urbanek wrote:
+>> On Dec 8, 2009, at 15:20 , Agustin Lobo wrote:
+>>>> Creating a native version for Mac OS should not be too hard, I
+>>>> believe,
+>> If RKWard is truly a KDE app then to the contrary. KDE is a very heavy
+>> infrastructure. There seem to be some effort of porting it to Macs but
+>> since it's so heavy your can't easily deploy an application. But
+>> again, I really don't know much about RKWard -- if it can be made to
+>> rely only on Qt then the story is entirely different, of course.
+> 
+> I was talking about what needs to be done in RKWard itself. There, we have 
+> some platform-specific code (for X11 and Windows, so far) to detect and 
+> "swallow" the R screen graphics device windows. That's basically the one area 
+> that needs porting. Anyway, this is getting quite technical, so if you would 
+> like to continue, here, please take the discussion to rkward-devel, instead of 
+> rkward-users.
+> 
+> RKWard does rely on KDE, and I wouldn't claim porting KDE is "not too hard", 
+> but others have already done that (http://mac.kde.org). Can't comment on the 
+> quality of that port, and how hard or easy it is to install.
+> 
+> Regards
+> Thomas
+
+
+
+From simon.urbanek at r-project.org  Wed Dec  9 15:01:22 2009
+From: simon.urbanek at r-project.org (Simon Urbanek)
+Date: Wed, 9 Dec 2009 10:01:22 -0500
+Subject: [rkward-users] version for MAC OS?
+In-Reply-To: <4B1FA290.8050600@gmail.com>
+References: <4B1933E8.4080001@gmail.com> <4B1EB500.6010307@gmail.com>
+	<D9E3B3C1-3303-4961-891B-9BF0AF4ECBBB@r-project.org>
+	<200912090906.33867.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4B1FA290.8050600@gmail.com>
+Message-ID: <63277D70-5DC7-47DB-B98D-CA8B9BB76231@r-project.org>
+
+
+On Dec 9, 2009, at 8:13 AM, Agustin Lobo wrote:
+
+> Thank you both for your GUIs.
+> I understand that, from a Mac perspective, a native
+> GUI is better and I'm impressed by the difference between
+> the default GUI in Mac and in Win: the R GUI for Mac is much better.
+> But I'm looking for a common GUI (linux,win,mac) to make
+> my life easier at teaching.
+
+
+JGR was created exactly for that reason (students complaining that the Windows GUI on their computers is different form the Macs we used for teaching) - it's cross-platform and has the same UI on all platforms so students don't get confused.
+
+Cheers,
+Simon
+
+
+> On this regard, I've found RKward
+> very useful (it's not only a GUI but includes some elementary
+> functions in the menu, which helps some students) and wish have it for all 3 OS. I'm working myself
+> mostly under ubuntu, 80% of students use win, 15% Mac and 5% linux.
+> 
+> Regards,
+> 
+> Agus
+> 
+> 
+> Thomas Friedrichsmeier wrote:
+>> On Tuesday 08 December 2009, Simon Urbanek wrote:
+>>> On Dec 8, 2009, at 15:20 , Agustin Lobo wrote:
+>>>>> Creating a native version for Mac OS should not be too hard, I
+>>>>> believe,
+>>> If RKWard is truly a KDE app then to the contrary. KDE is a very heavy
+>>> infrastructure. There seem to be some effort of porting it to Macs but
+>>> since it's so heavy your can't easily deploy an application. But
+>>> again, I really don't know much about RKWard -- if it can be made to
+>>> rely only on Qt then the story is entirely different, of course.
+>> I was talking about what needs to be done in RKWard itself. There, we have some platform-specific code (for X11 and Windows, so far) to detect and "swallow" the R screen graphics device windows. That's basically the one area that needs porting. Anyway, this is getting quite technical, so if you would like to continue, here, please take the discussion to rkward-devel, instead of rkward-users.
+>> RKWard does rely on KDE, and I wouldn't claim porting KDE is "not too hard", but others have already done that (http://mac.kde.org). Can't comment on the quality of that port, and how hard or easy it is to install.
+>> Regards
+>> Thomas
+> 
+> 
+
+
+
+
+From alobolistas at gmail.com  Wed Dec 16 16:50:45 2009
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Wed, 16 Dec 2009 17:50:45 +0100
+Subject: [rkward-users] rkward crashes with iplots
+Message-ID: <4B290FE5.4070405@gmail.com>
+
+Hi!
+
+I've found this just after require(iplots):
+
+Loading required package: iplots
+Loading required package: rJava
+
+  *** caught segfault ***
+address 0x683c10a1, cause 'memory not mapped'
+
+Traceback:
+  1: .External(interface, obj at jobj, returnSig, method, ..., PACKAGE = "rJava")
+  2: .jcall(ic, "Ljava/lang/reflect/Field;", "getField", "TYPE")
+  3: .jinit()
+  4: .jpackage("iplots")
+  5: f(libname, pkgname)
+  6: firstlib(which.lib.loc, package)
+  7: doTryCatch(return(expr), name, parentenv, handler)
+  8: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+  9: tryCatchList(expr, classes, parentenv, handlers)
+10: tryCatch(expr, error = function(e) {    call <- conditionCall(e)    if 
+(!is.null(call)) {        if (identical(call[[1L]], quote(doTryCatch))) 
+     call <- sys.call(-4L)        dcall <- deparse(call)[1L]        prefix <- 
+paste("Error in", dcall, ": ")        LONG <- 75L        msg <- 
+conditionMessage(e)        sm <- strsplit(msg, "\n")[[1L]]        w <- 14L + 
+nchar(dcall, type = "w") + nchar(sm[1L], type = "w")        if (is.na(w)) 
+       w <- 14L + nchar(dcall, type = "b") + nchar(sm[1L],                 type 
+= "b")        if (w > LONG)             prefix <- paste(prefix, "\n  ", sep = 
+"")    }    else prefix <- "Error : "    msg <- paste(prefix, 
+conditionMessage(e), "\n", sep = "")    .Internal(seterrmessage(msg[1L]))    if 
+(!silent && identical(getOption("show.error.messages"),         TRUE)) { 
+cat(msg, file = stderr())        .Internal(printDeferredWarnings())    } 
+invisible(structure(msg, class = "try-error"))})
+11: try(firstlib(which.lib.loc, package))
+12: library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = 
+TRUE,     warn.conflicts = warn.conflicts, keep.source = keep.source)
+13: base::require(as.character(package), quietly = quietly, character.only = 
+TRUE,     ...)
+14: require(iplots)
+
+Possible actions:
+1: abort (with core dump, if enabled)
+2: normal R exit
+3: exit R without saving workspace
+4: exit R saving workspace
+
+Agus
+
+
+

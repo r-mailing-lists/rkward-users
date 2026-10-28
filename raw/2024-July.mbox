@@ -1,0 +1,219 @@
+From alfonsociologo at gmail.com  Mon Jul  8 03:22:41 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sun, 7 Jul 2024 20:22:41 -0600
+Subject: Call for testing KF6-based version of RKWard
+In-Reply-To: <20240613155354.4c570b7d@booklife>
+References: <20240613155354.4c570b7d@booklife>
+Message-ID: <CAMqnA+jujgiSeG=72PYh4vSdoq+L2KNXGyqSZdmbU8c9qND0iA@mail.gmail.com>
+
+I know it might not be the right time to say this.
+As complex as the R ecosystem is, I've noticed that the RKWard interface
+crashes when It loads objects that don't satisfy the assumptions of a data
+frame. As a concrete example the starwars tibble which comes with the dplyr
+package, contains three lists. It can be loaded to the workspace area, but
+when the user tries to visualize it on the data viewer the GUI will crash.
+Could it be possible to stop this from happening? For example, checking if
+"data.frames" have at least one list (as with the case of that object
+class: tbl_df;tbl;data.frame) to not load those objects on the data view
+and returning a warning.
+
+[image: image.png]
+
+If loaded, it apparently works with no problem...
+
+[image: image.png]
+
+but when scrolling to the right it surely will crash, at least this time,
+it did.
+On the last linux appimage
+
+rkward-master-1191-linux-gcc-x86_64.AppImage 2024-07-07 17:11 370M
+
+ this is as far as I could get:
+
+[image: image.png]
+As soon as I double clicked on the object it crashed the first time I
+tried... the second time until scrolling to the right.
+[image: image.png]
+Hopefully it could aid in building a more robust interface which won't
+crash when an unaware user tries to use a data.frame/tibble object.
+Regards
+Alfonso
+
+El jue, 13 jun 2024 a la(s) 8:12 a.m., Thomas Friedrichsmeier (
+thomas.friedrichsmeier at kdemail.net) escribió:
+
+> Hi!
+>
+> Here's a short update on current progress towards a KF6 (aka KDE 6)
+> based release of RKWard, and a call to start testing.
+>
+> As a bit of background, the transition from KF5 to KF6 is complicated
+> by the fact, that some Linux distributions do not ship KF6 libraries,
+> yet, and may not have them in their stable releases for a long time,
+> while other distributions are already shipping some of our dependencies
+> (importantly, kate) in a KF6-only version. To address this, I worked on
+> getting out AppImage builds to a state that is (as far a I know) ready
+> for productive use. Importantly, the AppImages can now be used with a
+> full featured R installation on the host system.
+>
+> Of course, we plan on having Ubuntu daily builds, again, too, once
+> backported KF6-libraries are available.
+>
+> AppImage packages - as well as Windows and Mac builds - are available
+> from https://cdn.kde.org/ci-builds/education/rkward/master/ . Note that
+> these packages are generated, automatically, straight from the
+> development sources, and individual builds have not undergone human
+> testing. That said, no major problems are currently expected on Linux
+> and Windows, and we'll need your help to detect an address remaining
+> issues!
+>
+> Unfortunately, on MacOS, the situation is currently more dire. While
+> packages exist, these have not been tested at all. Since a number of
+> large changes have been done to platform-dependent code regarding the
+> startup procedure, there is a fairly high probability that these build
+> will quite simply fail to start at all (but no major issues are
+> expected once that difficulty is overcome). The problem is quite simply
+> that we do not have the hardware for testing and fixing these builds.
+>
+> *If you own a Mac, we want your help!* The first step will be to
+> download and (try to) run the .dmg, and report, what you see. Based on
+> that, and depending on how much time you're will to invest, I'll be
+> going to ask you for more info for diagnostics. Thanks!
+>
+> Regards
+> Thomas
+>
+
+
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240707/77234159/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Jul  8 16:55:44 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 8 Jul 2024 17:55:44 +0200
+Subject: Call for testing KF6-based version of RKWard
+In-Reply-To: <CAMqnA+jujgiSeG=72PYh4vSdoq+L2KNXGyqSZdmbU8c9qND0iA@mail.gmail.com>
+References: <20240613155354.4c570b7d@booklife>
+ <CAMqnA+jujgiSeG=72PYh4vSdoq+L2KNXGyqSZdmbU8c9qND0iA@mail.gmail.com>
+Message-ID: <20240708175544.24c90518@booklife>
+
+Hi,
+
+On Sun, 7 Jul 2024 20:22:41 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+
+> I know it might not be the right time to say this.
+> As complex as the R ecosystem is, I've noticed that the RKWard
+> interface crashes when It loads objects that don't satisfy the
+> assumptions of a data frame. As a concrete example the starwars
+> tibble which comes with the dplyr package, contains three lists. It
+> can be loaded to the workspace area, but when the user tries to
+> visualize it on the data viewer the GUI will crash. Could it be
+> possible to stop this from happening? For example, checking if
+> "data.frames" have at least one list (as with the case of that object
+> class: tbl_df;tbl;data.frame) to not load those objects on the data
+> view and returning a warning.
+
+a crash is always wrong. I'll look into this.
+
+Note: The lists have a rather strict size limit. In general, try
+posting the relevant R code, only, i.e. in this case:
+
+  library(dplyr)
+  starwars <- dplyr::starwars
+  rk.edit(starwars)
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240708/c8ab17a0/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Wed Jul 10 22:08:53 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Wed, 10 Jul 2024 23:08:53 +0200
+Subject: Call for testing KF6-based version of RKWard
+In-Reply-To: <20240708175544.24c90518@booklife>
+References: <20240613155354.4c570b7d@booklife>
+ <CAMqnA+jujgiSeG=72PYh4vSdoq+L2KNXGyqSZdmbU8c9qND0iA@mail.gmail.com>
+ <20240708175544.24c90518@booklife>
+Message-ID: <20240710230853.0a5b9464@booklife>
+
+Should be fixed in the more recent builds.
+
+Thomas
+
+On Mon, 8 Jul 2024 17:55:44 +0200
+Thomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:
+
+> Hi,
+> 
+> On Sun, 7 Jul 2024 20:22:41 -0600
+> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+> 
+> > I know it might not be the right time to say this.
+> > As complex as the R ecosystem is, I've noticed that the RKWard
+> > interface crashes when It loads objects that don't satisfy the
+> > assumptions of a data frame. As a concrete example the starwars
+> > tibble which comes with the dplyr package, contains three lists. It
+> > can be loaded to the workspace area, but when the user tries to
+> > visualize it on the data viewer the GUI will crash. Could it be
+> > possible to stop this from happening? For example, checking if
+> > "data.frames" have at least one list (as with the case of that
+> > object class: tbl_df;tbl;data.frame) to not load those objects on
+> > the data view and returning a warning.  
+> 
+> a crash is always wrong. I'll look into this.
+> 
+> Note: The lists have a rather strict size limit. In general, try
+> posting the relevant R code, only, i.e. in this case:
+> 
+>   library(dplyr)
+>   starwars <- dplyr::starwars
+>   rk.edit(starwars)
+> 
+> Thanks!
+> Thomas
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240710/c6cf5802/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Sun Jul 28 08:00:56 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 28 Jul 2024 09:00:56 +0200
+Subject: RKWard 0.8.0 is released!
+Message-ID: <20240728090056.38865aeb@booklife>
+
+Hi!
+
+RKWard 0.8.0 is officially available for download, today. You can read
+up on the details, and pick the correct download for your platform on
+https://rkward.kde.org, as usual. Thanks to all contributors!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240728/ce6ff3e0/attachment.sig>
+

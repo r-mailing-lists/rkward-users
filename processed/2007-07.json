@@ -1,0 +1,159 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2007-07",
+  "messages": [
+    {
+      "id": "msg-2a879e496437",
+      "message_id": "<4392952.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-02T19:15:04Z",
+      "subject": "[rkward-users] [rkward - Help] Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4392952\nBy: earlycj5\n\nGood afternoon.\n\nI'm trying to compile Rkward on a machine running RedHat EL4 currently.\n\nHowever, I cannot.  No matter what I've tried thus far, I get this error:\nmake[3]: Entering directory `/home/ksupdel/Downloads/rkward-0.4.7a/rkward'\n/bin/sh ../libtool --silent --tag=CXX --mode=link g++  -Wno-long-long -Wundef\n-ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts\n-Wall -W -Wpointer-arith -O2 -Wformat-security -Wmissing-format-attribute\n-Wno-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common    -o rkward.bin\n-L/usr/lib64 -L/usr/lib64/qt-3.3/lib -L/usr/X11R6/lib64    -R /usr/lib64 -R\n/usr/lib64 -R /usr/lib64/qt-3.3/lib -R /usr/X11R6/lib64 rkward.o main.o rkglobals.o\nrobjectbrowser.o robjectviewer.o rkconsole.o rkwardapplication.o rkward_skel.o\n../rkward/windows/libwindows.a ../rkward/agents/libagents.a\n../rkward/dialogs/libdialogs.a ../rkward/plugin/libplugin.a\n../rkward/settings/libsettings.a ../rkward/dataeditor/libdataeditor.a\n../rkward/core/libcore.a ../rkward/rbackend/librbackend.a\n../rkward/scriptbackends/libscriptbackends.a ../rkward/misc/libmisc.a -lkhtml\n-lkmdi -lkio -lkdeui -lkdecore -lqt-mt  -lz -lpng -lz -lm -lXext -lX11  -lSM\n-lICE -lpthread  -L/usr/lib64/R/lib -lR -lRlapack -lgfortran -lRblas\n-lkatepartinterfaces\n/usr/bin/ld: cannot find -lgfortran\ncollect2: ld returned 1 exit status\nmake[3]: *** [rkward.bin] Error 1\nmake[3]: Leaving directory `/home/ksupdel/Downloads/rkward-0.4.7a/rkward'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/ksupdel/Downloads/rkward-0.4.7a/rkward'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/ksupdel/Downloads/rkward-0.4.7a'\nmake: *** [all] Error 2\n\n\nI've installed the g77 RPM and the R-devel RPM as well.\n\nAny hints or suggestions are GREATLY appreciated.  The main purpose of this\nmachine is statistical analysis and I think it would be a great benefit to have\nthis program running on it.\n\nThanks,\nAdam\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4392952\nBy: earlycj5\n\nGood afternoon.\n\nI'm trying to compile Rkward on a machine running RedHat EL4 currently.\n\nH",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-68049c81f750",
+      "message_id": "<4393034.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-02T20:20:54Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4392952.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393034\nBy: earlycj5\n\nHmm, I see I'm not the only person with this problem.\n\nhttps://sourceforge.net/mailarchive/forum.php?thread_name=465A66BC.7080208%40gma\nil.com&forum_name=rkward-users\n\nThough I have libgfortran installed.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393034\nBy: earlycj5\n\nHmm, I see I'm not the only person with this problem.\n\nhttps://sourceforge.net/mailarchive/",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 1,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-75c7b9ce1193",
+      "message_id": "<4393086.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-02T20:52:32Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4392952.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393086\nBy: earlycj5\n\nOk, I compiled and installed 0.4.7 but 0.4.7a still won't compile.\n\nSo at least for now it's usable but any help is appreciated.  Especially as\nnew releases come out if this continues to be an issue.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393086\nBy: earlycj5\n\nOk, I compiled and installed 0.4.7 but 0.4.7a still won't compile.\n\nSo at least for now it'",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 1,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-1dcbc761878b",
+      "message_id": "<4393160.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-02T21:38:58Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4393086.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393160\nBy: kapatp\n\nHi Adam,\n\nI am really not the right person to help you out here. Thomas is offline for\na few weeks. You will have to wait till he comes back.\n\n0.4.7a was supposed to solve the fortran linking issues. I don't have access\nto any modifyable RHEL4 machine, but I did a little bit of poking around. The\nlinker (I think, I might be wrong) looks for the file libgfortran.a which on\ndebian systems is provided by gfortran-4.1. My guess is that on RHEL4 it is\nprovided by gcc4-gfortran-4.1.1-53.EL4 or something similar.\n\nHope this helps.\nPK\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4393160\nBy: kapatp\n\nHi Adam,\n\nI am really not the right person to help you out here. Thomas is offline for\na few ",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 2,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-aea27246d7a5",
+      "message_id": "<4394096.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-03T13:56:50Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4392952.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4394096\nBy: earlycj5\n\nPK,\nI'll check it out, I've installed all the RPMs I can find related to Fortran,\nbut knowing what the linker is looking for might help me.  I was in the dark\nthere not knowing just exactly WHAT it was looking for.  I'll see what I can\ndo with that.\n\nLike I said, ight now I at least have 0.4.7 installed, so we can work on it\nas we discover things and/or when Thomas gets back.  :)\n\nRegards,\nAdam\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4394096\nBy: earlycj5\n\nPK,\nI'll check it out, I've installed all the RPMs I can find related to Fortran,\nbut knowi",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 1,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-a564a653742c",
+      "message_id": "<4395350.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-04T04:50:13Z",
+      "subject": "[rkward-users] [rkward - Help] Crashing after Successful(?) Install",
+      "subject_clean": "[rkward-users] [rkward - Help] Crashing after Successful(?) Install",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4395350\nBy: psychostats\n\nI installed version 0.4.7a from source on PCLinuxOS 2007 by following the recommended\nsteps. Everything seemed to go properly, and the program will load without any\napparent errors.  But it crashes if I try to do much of anything, like enter\na simple command like a=5.\n\nIf I try loading it from R using Konsole, the RKWard window does not come up,\nand I get the following output.\n\n     > library(rkward)\n\n     Attaching package: 'rkward'\n\n\n             The following object(s) are masked from package:grDevices :\n\n              x11 X11\n\n\n             The following object(s) are masked from package:base :\n\n              makeActiveBinding q quit require setwd Sys.setlocale\n\n\nI thought I had all the necessary packages installed, but now I wonder if I\nmissed one or more.  As you might have guessed, I am in the early stages of\nlearning Linux, so please bear with me.  :-)\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4395350\nBy: psychostats\n\nI installed version 0.4.7a from source on PCLinuxOS 2007 by following the recommended\nst",
+      "thread_id": "thread-a564a653742c",
+      "thread_depth": 0,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-c0bf8d7cd964",
+      "message_id": "<4412949.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-14T20:26:26Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4392952.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4412949\nBy: kapatp\n\nHi,\n\nSome update from my side and a possible solution:\n\nRecently I  moved from a 486 arch Debian/Sid to amd64 arch Debian/Sid, and I\nfaced exactly the same problem. I think this issue has something to do with\nthe linker in a 64bit architecture. And my guess, seeing '/usr/lib64' in your\npath, is that you are running a 64 bit machine too. In this case, here is a\npossible solution, though I am not sure if this is the right way:\n\nAs I had mentioned in my earlier mail, the linker, /usr/bin/ld is looking for\na file like libgfortran.a or libgfortran.so which is supposed to be provided\nby the package libgfortran1 or libgfortran2 or something similar. Here is what\nI have:\n\n$ ls -l /usr/lib/libgfortran*\nlrwxrwxrwx 1 root root     20 2007-07-14 08:41 /usr/lib/libgfortran.so.1 ->\nlibgfortran.so.1.0.0\n-rw-r--r-- 1 root root 629360 2007-07-09 17:51 /usr/lib/libgfortran.so.1.0.0\nlrwxrwxrwx 1 root root     20 2007-07-14 07:59 /usr/lib/libgfortran.so.2 ->\nlibgfortran.so.2.0.0\n-rw-r--r-- 1 root root 764848 2007-07-13 17:20 /usr/lib/libgfortran.so.2.0.0\n\nIdeally this should've worked. But since it doesn't lets make a brute force\nlink to the shared object:\n\n$ cd /usr/lib; sudo ln -s libgfortran.so.2 libgfortran.so\n\nYou can do the same thing in /usr/lib64 instead of /usr/lib but not both :)\nNow, try to compile rkward. I think this should work. But again, let me warn\nyou: I have no idea how, if at all, this is going to effect (benefit or harm)\nother programs linking to libgfortran.so. So, try it at your own risk.\n\nTake this as a temporary solution only. There has to be proper solution to this\nfrom the linker side by adding some flag (may be) to /usr/bin/ld. We'll have\nto wait for Thomas to suggest a better solution. As far as I can see, this is\nnot a rkward specific problem. You will (might?) face the same situation when\ncompiling any C/C++ code and linking against the gfortran library using the\n\"-lgfortran\" flag.\n\nHope this helps.\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4412949\nBy: kapatp\n\nHi,\n\nSome update from my side and a possible solution:\n\nRecently I  moved from a 486 arch Deb",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 1,
+      "month": "2007-07"
+    },
+    {
+      "id": "msg-0ae7ff202975",
+      "message_id": "<4412957.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-07-14T20:29:34Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Redhat EL4 Fails",
+      "in_reply_to": "<4393086.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4412957\nBy: kapatp\n\n> Ok, I compiled and installed 0.4.7 but 0.4.7a still won't compile.\n\nThe reason why 0.4.7 worked was because it was not linking against libgfortran\nusing the \"-lgfortran\" flag to /usr/bin/ld while compiling.\n\nRegards\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4412957\nBy: kapatp\n\n> Ok, I compiled and installed 0.4.7 but 0.4.7a still won't compile.\n\nThe reason why 0.4.7 wo",
+      "thread_id": "thread-2a879e496437",
+      "thread_depth": 2,
+      "month": "2007-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2a879e496437",
+      "subject": "[rkward-users] [rkward - Help] Compiling Rkward on Redhat EL4 Fails",
+      "message_count": 7,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-07-02T19:15:04Z",
+      "last_reply": "2007-07-14T20:29:34Z",
+      "root_message_id": "msg-2a879e496437"
+    },
+    {
+      "id": "thread-a564a653742c",
+      "subject": "[rkward-users] [rkward - Help] Crashing after Successful(?) Install",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-07-04T04:50:13Z",
+      "last_reply": "2007-07-04T04:50:13Z",
+      "root_message_id": "msg-a564a653742c"
+    }
+  ]
+}

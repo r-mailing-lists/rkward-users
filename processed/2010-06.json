@@ -1,0 +1,393 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2010-06",
+  "messages": [
+    {
+      "id": "msg-9ee308145fda",
+      "message_id": "<4C051C63.2010102@gmail.com>",
+      "from_name": "Matthieu Stigler",
+      "from_email_hash": "8be7d9af3aa05df3cb73327099ca82a1e00b62ae5b6e52d77e9d9908c4ad6d37",
+      "date": "2010-06-01T14:42:43Z",
+      "subject": "[rkward-users] Debugging",
+      "subject_clean": "[rkward-users] Debugging",
+      "in_reply_to": "<201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<4BFD7136.8080105@dms.umontreal.ca>",
+        "<201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "A nice feature that would be highly welcome in the debugger (so to be \nclear: the one called by browser(), right?) would be that pressing \"up \narrow key\" calls back the last entered command, as is the case for the \nusual console.\n\nIt seems to me that this is not possible for now... did I miss \nsomething? Would it be difficult to include it?\n\nThanks!!!\n\nMatthieu\n\n\n\n\nThomas Friedrichsmeier a ?crit :\n> Hi,\n>\n> On Wednesday 26 May 2010, Luc Villandre wrote:\n>   \n>> I have been trying to debug one of my functions and\n>> I haven't been exactly very satisfied with the debugger. I find it\n>> frustrating how, at least for now, it would seem that when the debugging\n>> window pops up, the rest of the program freezes until the debugging\n>> phase is over. Also, the type of display used by the debugger doesn't\n>> allow for color coding and for an increase in the font size. Would there\n>> be a way to change that?\n>>     \n>\n> no, unfortunately, there are no hidden features like this. This area simply \n> hasn't received too much love so far. We do plan to turn this into a \"real\" \n> debugger, eventually, including syntax highlighting, inspection of the call \n> stack, local objects, etc. But don't hold your breath, currently some other \n> issues have higher priority.\n>\n>   \n>> Is there a way to tell the program to run the debugger in the R-terminal\n>> window? What I would like in fact is for the program to allow me to\n>> access the browser just as if I was running R in a regular terminal\n>> window (outside Rkward).\n>>     \n>\n> No, there is not. The R console in RKWard is just an emulation, and that \n> feature would need to be programmed into it. Besides, this is not quite \n> trivial, conceptually: In a GUI like RKWard, the console does not play the \n> central role that it has in a standalone R terminal. Not all commands get \n> entered through the console, but they may also come from plugins, the \n> data.frame editor, help search, etc. This could create the situation, that R \n> is waiting for user input on the R console, but the user just isn't aware of \n> that, and all other commands will just wait forever. Thus we need to make sure \n> that requests for user input from the backend are always highly visible.\n>\n> So, while I can see your point, I am not sure this is a good way to handle \n> interactive user input situations.\n>\n> Regards\n> Thomas\n>   \n> ------------------------------------------------------------------------\n>\n> ------------------------------------------------------------------------------\n>\n>   \n> ------------------------------------------------------------------------\n>\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>",
+      "body_snippet": "A nice feature that would be highly welcome in the debugger (so to be \nclear: the one called by browser(), right?) would be that pressing \"up \narrow key\" calls back the last entered command, as is the",
+      "thread_id": "thread-9ee308145fda",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-2bf4c6e5d86a",
+      "message_id": "<201006031019.18113.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-06-03T08:19:11Z",
+      "subject": "[rkward-users] Debugging",
+      "subject_clean": "[rkward-users] Debugging",
+      "in_reply_to": "<4C051C63.2010102@gmail.com>",
+      "references": [
+        "<4BFD7136.8080105@dms.umontreal.ca>",
+        "<201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<4C051C63.2010102@gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 01 June 2010, Matthieu Stigler wrote:\n> A nice feature that would be highly welcome in the debugger (so to be\n> clear: the one called by browser(), right?) would be that pressing \"up\n> arrow key\" calls back the last entered command, as is the case for the\n> usual console.\n> \n> It seems to me that this is not possible for now... did I miss\n> something? Would it be difficult to include it?\n\nincluding this should be quite possible, but I will need to restructure some \nthings, so it's not something to implement within a few minutes. I will not \ntake care of this, immediately, but if you put this into our feature request \ntracker \n(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse), I \nwill probably come back to this, soon.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100603/9548f58e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 01 June 2010, Matthieu Stigler wrote:\n> A nice feature that would be highly welcome in the debugger (so to be\n> clear: the one called by browser(), right?) would be that pressing \"up\n>",
+      "thread_id": "thread-9ee308145fda",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-210b5c74e924",
+      "message_id": "<forum-165574-8446447@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-06-08T03:06:39Z",
+      "subject": "[rkward-users] [Help] how to direct output to the welcome window",
+      "subject_clean": "[rkward-users] [Help] how to direct output to the welcome window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nHi, is it possible to direct command output to the window where the welcome message is shown?\nalso, can I start the R console automatically when I start Rkward?\nas shown below.\n------------------------------------\n|  work-   |    welcome         |\n|   space |     message        |\n-------------------------------------\n|                                           |\n|        R console                   |\n------------------------------------",
+      "body_snippet": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nHi, is it possible to direct command output to the window where th",
+      "thread_id": "thread-210b5c74e924",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-2b5144cdeb73",
+      "message_id": "<forum-165574-8447375@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-06-08T10:20:24Z",
+      "subject": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "subject_clean": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "in_reply_to": "<forum-165574-8446447@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nHi,\n\n[quote]is it possible to direct command output to the window where the welcome message is shown?[/quote]\n\nif you mean the welcome window itself, no, that is read-only. You could modify the text in there by editing [kde_data_dir]/apps/rkward/pages/rkward_welcome.rkh , if you really want to. If you mean the output window (which is shown in the same area of the main window by default), take a look at the functions rk.print(), rk.print.literal(), rk.header(), and rk.results(). Currently this is undocumented, but I think they will be easy to figure out.\n\n[quote]also, can I start the R console automatically when I start Rkward?[/quote]\n\nThe show/hide status of the tool windows is not saved, yet. This will be implemented, eventually, but there\\'s always a lot of work to do... You could invoke rkward like this:\n[code]rkward --evaluate \\'print(\\\"Hello\\\")\\'[/code]\nThis has the side-effect of bringing up the console (but not the workspace browser).\n\nHope this helps.\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nHi,\n\n[quote]is it possible to direct command output to the window where the",
+      "thread_id": "thread-210b5c74e924",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-418e4f3ae100",
+      "message_id": "<forum-165574-8447785@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-06-08T13:14:03Z",
+      "subject": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "subject_clean": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "in_reply_to": "<forum-165574-8447375@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nsorry for the confusion, I want to show my output in that area, not necessarily the same window. The result of using rk.print is exactly what I want. So I think maybe there is a way to direct output to HTML as default, i.e. without invoking the rk.print()?\n\n[quote]The show/hide status of the tool windows is not saved, yet. This will be implemented, eventually, but there\\'s always a lot of work to do... You could invoke rkward like this: [/quote]\nNice to know this is under development. rkward has made some really nice progress. Thanks a lot.",
+      "body_snippet": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nsorry for the confusion, I want to show my output in that area, no",
+      "thread_id": "thread-210b5c74e924",
+      "thread_depth": 2,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-8092b3d3df25",
+      "message_id": "<forum-165574-8447860@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-06-08T13:43:03Z",
+      "subject": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "subject_clean": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "in_reply_to": "<forum-165574-8447785@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\n[quote]So I think maybe there is a way to direct output to HTML as default, i.e. without invoking the rk.print()? [/quote]\n\nAgain, not yet, unfortunately, but once again, this will be added, sooner or later (possibly even for RKWard 0.5.4).\n\nCurrently, an easy solution is prevented by this issue: https://stat.ethz.ch/pipermail/r-devel/2010-June/057646.html .",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\n[quote]So I think maybe there is a way to direct output to HTML as default,",
+      "thread_id": "thread-210b5c74e924",
+      "thread_depth": 3,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-0a95beebf3ea",
+      "message_id": "<forum-165574-8449229@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2010-06-09T04:40:49Z",
+      "subject": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "subject_clean": "[rkward-users] [Help] RE: how to direct output to the welcome window",
+      "in_reply_to": "<forum-165574-8447860@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nGreat to know that these features are under development. Guess I\\'ll just have to wait for a while. :)",
+      "body_snippet": "The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:\n\nGreat to know that these features are under development. Guess I\\'",
+      "thread_id": "thread-210b5c74e924",
+      "thread_depth": 4,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-4bba703f82b1",
+      "message_id": "<4C179099.1010504@vortices.com>",
+      "from_name": "Zoe Demery",
+      "from_email_hash": "af183e5949d336f6c940d56c86d56e5630cacb1761873bf71971169c40b51aa4",
+      "date": "2010-06-15T14:39:21Z",
+      "subject": "[rkward-users] Mac OS X user",
+      "subject_clean": "[rkward-users] Mac OS X user",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI'm quite a newbie with R and thought that RKWard looked like quite an\neasy interface to get into it.  I've tried installing it on my MacBook\n(Snow Leopard) following your instructions.  However, I cannot install\nkdelibs.  It gives two options to choose from but neither work.  Any ideas?\n\nMany thanks,\nZoe",
+      "body_snippet": "Hi,\n\nI'm quite a newbie with R and thought that RKWard looked like quite an\neasy interface to get into it.  I've tried installing it on my MacBook\n(Snow Leopard) following your instructions.  However,",
+      "thread_id": "thread-4bba703f82b1",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-17328364fbda",
+      "message_id": "<201006160906.04851.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-06-16T07:05:59Z",
+      "subject": "[rkward-users] Mac OS X user",
+      "subject_clean": "[rkward-users] Mac OS X user",
+      "in_reply_to": "<4C179099.1010504@vortices.com>",
+      "references": [
+        "<4C179099.1010504@vortices.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Tuesday 15 June 2010, Zoe Demery wrote:\n> I'm quite a newbie with R and thought that RKWard looked like quite an\n> easy interface to get into it.  I've tried installing it on my MacBook\n> (Snow Leopard) following your instructions.  However, I cannot install\n> kdelibs.  It gives two options to choose from but neither work.  Any ideas?\n\nthanks for giving this a try. We attempted to get RKWard installed based on \nKDE from fink a few weeks ago. Installing kdelibs was not a problem, then, so \nRoel, if you are still around, perhaps you can comment on this.\n\nNote that we were not able to figure out the parameters needed to pass to \ncmake, so we did not manage to compile RKWard. If you want to give this \nanother try, I certainly don't want to stop you. But note that figuring out all \nsteps is not going to be easy. So if you want a quick solution that just \nworks, RKWard on the Mac is not currently what you are looking for.\n\n--\n\nStill reading on? Here are some more notes about RKWard on the Mac.\n- It might be possible to run the Windows version under wine \n(http://wiki.winehq.org/MacOSX/Installing). RKWard for Windows has become \npretty easy to install, so this could be worth a try.\n- Meanwhile, I've made some changes that should allow compiling RKWard against \nthe mac-native variant of kdelibs (in theory, it's all untested). This means \nyou could also use the kde packages from macports (http://www.macports.org/), \nas an alternative.\n\nRegards\nThomas\n\nP.S.: Recently, a friend has offered to give me ssh-access to his mac, and I'm \nconfident that will allow me to figure out the required parameters. However, he \nis in the middle of moving, the mac is stashed away, and it may be some more \nweeks, before he gets around to set it up.\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100616/30e05cfc/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Tuesday 15 June 2010, Zoe Demery wrote:\n> I'm quite a newbie with R and thought that RKWard looked like quite an\n> easy interface to get into it.  I've tried installing it on my MacBook\n> (Sno",
+      "thread_id": "thread-4bba703f82b1",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-698dd568cf82",
+      "message_id": "<28680254.608541276845085106.JavaMail.defaultUser@defaultHost>",
+      "from_name": "n.vialma at libero.it",
+      "from_email_hash": "18167cf173be20b6084345786e6b7ad453596817033aeb156dca85bde9f033f7",
+      "date": "2010-06-18T07:11:25Z",
+      "subject": "[rkward-users] RKWARD",
+      "subject_clean": "[rkward-users] RKWARD",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list,\nI have a question. I have the RKward configuration. I don't know what happened \nbut now when I open R I have in my workspace data frames which I used in the \npast sessions...I'm quite sure that I dident save them.How can I set  RKward in \norder to open a new workspace? \nThanks a lot",
+      "body_snippet": "Dear list,\nI have a question. I have the RKward configuration. I don't know what happened \nbut now when I open R I have in my workspace data frames which I used in the \npast sessions...I'm quite sure ",
+      "thread_id": "thread-698dd568cf82",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-9ec081722096",
+      "message_id": "<201006191205.18175.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-06-19T10:05:13Z",
+      "subject": "[rkward-users] RKWARD",
+      "subject_clean": "[rkward-users] RKWARD",
+      "in_reply_to": "<28680254.608541276845085106.JavaMail.defaultUser@defaultHost>",
+      "references": [
+        "<28680254.608541276845085106.JavaMail.defaultUser@defaultHost>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 18 June 2010, n.vialma at libero.it wrote:\n> I have a question. I have the RKward configuration. I don't know what\n>  happened but now when I open R I have in my workspace data frames which I\n>  used in the past sessions...I'm quite sure that I dident save them.How can\n>  I set  RKward in order to open a new workspace?\n\nlook for a (hidden) file named \".RData\" in the directory you started rkward \nfrom (your home directory, when starting rkward from the menu). Move / remove \nthis file.\n\n(This behavior should really be configurable, and default to not restoring the \n.RData-workspace - but that's for a future release).\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100619/aad76970/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 18 June 2010, n.vialma at libero.it wrote:\n> I have a question. I have the RKward configuration. I don't know what\n>  happened but now when I open R I have in my workspace data frames w",
+      "thread_id": "thread-698dd568cf82",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-fc2fe62a5ed9",
+      "message_id": "<4C1E4296.6080500@unil.ch>",
+      "from_name": "Roel Verberne",
+      "from_email_hash": "e90ca727d7ff7e438a82b27437521663055127246a2bb134e2dc9d72c154e86d",
+      "date": "2010-06-20T16:32:22Z",
+      "subject": "[rkward-users] Mac OS X user",
+      "subject_clean": "[rkward-users] Mac OS X user",
+      "in_reply_to": "<4C179099.1010504@vortices.com>",
+      "references": [
+        "<4C179099.1010504@vortices.com>"
+      ],
+      "body_plain": "Hi,\n\nJust a short reply as I don't have the time to delve back into it right \nnow. So off the top of my head: In order for all the dependencies to \nwork, you need to install the X11 version of kdelibs (i.e. kdelibs4-x11, \nkdelibs4-x11-dev and kdelibs4-x11-shlibs) I currently have version \n4.4.1-1 installed. There were some problems with some dependencies \nthough, with qt, redland or both if I remember correctly. I could not \nbuild these myself, so I got binaries from one of their developers. In \nthe end, I got kde installed (although I never actually ran it to see if \nit's working), however as Thomas pointed out I did not manage to build \nRKWard.\n\nIf you could post the contents of the error message you get I might be \nable to help you along past the kde-problem, but I'm no crack either..\n\nRoel\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100620/742bf17f/attachment.html>",
+      "body_snippet": "Hi,\n\nJust a short reply as I don't have the time to delve back into it right \nnow. So off the top of my head: In order for all the dependencies to \nwork, you need to install the X11 version of kdelibs",
+      "thread_id": "thread-4bba703f82b1",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-5963d832f6cc",
+      "message_id": "<AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2010-06-21T12:24:15Z",
+      "subject": "[rkward-users] Text in Output?",
+      "subject_clean": "[rkward-users] Text in Output?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\nIs it possible to include text in the output (and then save it\nas html including graphics that have been sent\nto the output)?\n\nThanks!\n\nAgus",
+      "body_snippet": "Hi!\nIs it possible to include text in the output (and then save it\nas html including graphics that have been sent\nto the output)?\n\nThanks!\n\nAgus",
+      "thread_id": "thread-5963d832f6cc",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-3dc076151bc6",
+      "message_id": "<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-06-21T18:36:45Z",
+      "subject": "[rkward-users] Text in Output?",
+      "subject_clean": "[rkward-users] Text in Output?",
+      "in_reply_to": "<AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>",
+      "references": [
+        "<AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 21 June 2010, Agustin Lobo wrote:\n> Is it possible to include text in the output\n\nyou can use\n  rk.header(), rk.print(), and rk.print.literal()\n. If you need more specific formatting, you can also use\n  .rk.cat.output()\nwhich allows adding raw HTML code.\n\n> (and then save it\n> as html including graphics that have been sent\n> to the output)?\n\nActually, ATM, the easiest way to export the output including the graphics is \nto copy the files from ~/.rkward/ (files rk_out.html and graph*.png/svg/jpg). \n\nFor any other output format besides HTML, selecting everything and \ncopying/pasting into OpenOffice works pretty well.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100621/770111cd/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 21 June 2010, Agustin Lobo wrote:\n> Is it possible to include text in the output\n\nyou can use\n  rk.header(), rk.print(), and rk.print.literal()\n. If you need more specific formatting, y",
+      "thread_id": "thread-5963d832f6cc",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-6c4cf31e9610",
+      "message_id": "<B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>",
+      "from_name": "AYeroslaviz",
+      "from_email_hash": "61e929c047c260fc834815093fc7da04701d8fc21cc870be16c536f7710a7a74",
+      "date": "2010-06-22T06:34:02Z",
+      "subject": "[rkward-users] Rkward on Mac cmake problem",
+      "subject_clean": "[rkward-users] Rkward on Mac cmake problem",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI have a problem installing Rkward on my mac (version 10.6..4)\n\nI did all the steps mentioned here: http://rkward.sourceforge.net/\nAs I wanted to install cmake it told me it can't find the package, but with the command \n\nfink list -i | grep cmake\n\n i \tboost1.41.cmake\t1.41.0-12\tBoost C++ Libraries\n i \tboost1.41.cmake-shlibs\t1.41.0-12\tBoost C++ Libraries\n i \tcmake\t2.8.1-2\tCross-platform Make\n\nso I assumed it is already installed. Am I wrong?\n\nThe problems occurs when I'm trying to run the command:\ncmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` -DR_EXECUTABLE=/usr/bin/R\n\nI'm getting the following error message:\n\n-bash: kde4-config: command not found\n-- The C compiler identification is GNU\n-- The CXX compiler identification is GNU\n-- Checking whether C compiler has -isysroot\n-- Checking whether C compiler has -isysroot - yes\n-- Checking whether C compiler supports OSX deployment target flag\n-- Checking whether C compiler supports OSX deployment target flag - yes\n-- Check for working C compiler: /usr/bin/gcc\n-- Check for working C compiler: /usr/bin/gcc -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Checking whether CXX compiler has -isysroot\n-- Checking whether CXX compiler has -isysroot - yes\n-- Checking whether CXX compiler supports OSX deployment target flag\n-- Checking whether CXX compiler supports OSX deployment target flag - yes\n-- Check for working CXX compiler: /usr/bin/c++\n-- Check for working CXX compiler: /usr/bin/c++ -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):\n  ERROR: Could not find KDE4 kde4-config\nCall Stack (most recent call first):\n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\n\nwhat am I doing wrong?\nAs I'm a Newbie both to Mac and to Linux, I just followed the steps mentioned on the site, so I'm not sure what and where i need to change.\n\nI will be happy for every help I can get.\n\nTHX\n\nAssa\n\n\nAssa Yeroslaviz\nApplication service, Bioinformatics group\nMax Planck Institute for the Biology of Aging\nRobert-Koch-Strasse 21\n50931 Cologne\nGermany\nphone: +49 221 47889793\ne-mail: AYeroslaviz at age.mpg.de",
+      "body_snippet": "Hi,\n\nI have a problem installing Rkward on my mac (version 10.6..4)\n\nI did all the steps mentioned here: http://rkward.sourceforge.net/\nAs I wanted to install cmake it told me it can't find the packag",
+      "thread_id": "thread-6c4cf31e9610",
+      "thread_depth": 0,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-6636bdc93a03",
+      "message_id": "<AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>",
+      "from_name": "Agustin Lobo",
+      "from_email_hash": "b7fde75e33862bf3ff7e6dad3c67daee92c017baa9c2c3114430838483d9c33c",
+      "date": "2010-06-22T09:53:31Z",
+      "subject": "[rkward-users] Text in Output?",
+      "subject_clean": "[rkward-users] Text in Output?",
+      "in_reply_to": "<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>",
+        "<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "It would be handy having an option \"Copy text to Output\" (equivalent\nto \"Device/Copy to Output\" for graphics) in\nthe script editor and in the console.\n\nWhen I select few lines in the script editor and use \"Edit/Copy as\nHTML\" and paste\nto an editor, do not get but the text, no html character controls, so\nthat the colors\ndo not get exported. Is there any way of doing this? I get the same with\n\"Edit/Copy as HTML\" than with just \"Edit/Copy\"\n\nUltimately, what I would like is the same color coding of the script\neditor saved\nin html or latex (lyx) or OO ....\nI thought I would be able of getting this in the Output (including the graphics\nsaved with \"Device/Copy to Output\") and than just save the Output as a file.\n\nAgus\n\n\n\n2010/6/21 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>:\n> Hi,\n>\n> On Monday 21 June 2010, Agustin Lobo wrote:\n>> Is it possible to include text in the output\n>\n> you can use\n> ?rk.header(), rk.print(), and rk.print.literal()\n> . If you need more specific formatting, you can also use\n> ?.rk.cat.output()\n> which allows adding raw HTML code.\n>\n>> (and then save it\n>> as html including graphics that have been sent\n>> to the output)?\n>\n> Actually, ATM, the easiest way to export the output including the graphics is\n> to copy the files from ~/.rkward/ (files rk_out.html and graph*.png/svg/jpg).\n>\n> For any other output format besides HTML, selecting everything and\n> copying/pasting into OpenOffice works pretty well.\n>\n> Regards\n> Thomas\n>\n> ------------------------------------------------------------------------------\n> ThinkGeek and WIRED's GeekDad team up for the Ultimate\n> GeekDad Father's Day Giveaway. ONE MASSIVE PRIZE to the\n> lucky parental unit. ?See the prize list and enter to win:\n> http://p.sf.net/sfu/thinkgeek-promo\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>\n>",
+      "body_snippet": "It would be handy having an option \"Copy text to Output\" (equivalent\nto \"Device/Copy to Output\" for graphics) in\nthe script editor and in the console.\n\nWhen I select few lines in the script editor and",
+      "thread_id": "thread-5963d832f6cc",
+      "thread_depth": 2,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-8161ea35c880",
+      "message_id": "<AANLkTim9SiL3GGU7XrYtdwEHvRcR1fr7FpDaXdFvQIuB@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2010-06-22T14:49:33Z",
+      "subject": "[rkward-users] Rkward on Mac cmake problem",
+      "subject_clean": "[rkward-users] Rkward on Mac cmake problem",
+      "in_reply_to": "<B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>",
+      "references": [
+        "<B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>"
+      ],
+      "body_plain": "Hi Assa,\n\nOn Tue, Jun 22, 2010 at 6:34 AM, AYeroslaviz <Assa.Yeroslaviz at age.mpg.de> wrote:\n> Hi,\n>\n> I have a problem installing Rkward on my mac (version 10.6..4)\n\nThe bottleneck on OSX is to get KDE working first :( And it is hasn't\nbeen cracked yet! See the discussions here (especially Mike Arthur's\nreplies towards the end):\n\nhttp://sourceforge.net/mailarchive/forum.php?thread_name=69DD0C09-8134-422F-85FB-CDCF14AAEAAD%40mikearthur.co.uk&forum_name=rkward-users\n\nand here:\n\nhttp://sourceforge.net/mailarchive/forum.php?thread_name=4C1E4296.6080500%40unil.ch&forum_name=rkward-users\n\nSo, my comments below don't hold much water at all!! Still...\n\n> I did all the steps mentioned here: http://rkward.sourceforge.net/\n> As I wanted to install cmake it told me it can't find the package, but with the command\n>\n> fink list -i | grep cmake\n>\n> ?i ? ? ?boost1.41.cmake 1.41.0-12 ? ? ? Boost C++ Libraries\n> ?i ? ? ?boost1.41.cmake-shlibs ?1.41.0-12 ? ? ? Boost C++ Libraries\n> ?i ? ? ?cmake ? 2.8.1-2 Cross-platform Make\n>\n> so I assumed it is already installed. Am I wrong?\n>\n> The problems occurs when I'm trying to run the command:\n> cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` -DR_EXECUTABLE=/usr/bin/R\n>\n> I'm getting the following error message:\n>\n> -bash: kde4-config: command not found\n\nHmm, is KDE 4 installed? If so, can you use the full path for\nkde4-config? May be /sw/bin/kde4-config? (Find where kde4-config\nis...)\n\n> -- Detecting CXX compiler ABI info - done\n> CMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):\n> ?ERROR: Could not find KDE4 kde4-config\n\nAs you can see from the above threads, this has been a problem on OSX\n....  Unfortunately, not much that we can do now.\n\nRegards,\n-- \nPrasenjit",
+      "body_snippet": "Hi Assa,\n\nOn Tue, Jun 22, 2010 at 6:34 AM, AYeroslaviz <Assa.Yeroslaviz at age.mpg.de> wrote:\n> Hi,\n>\n> I have a problem installing Rkward on my mac (version 10.6..4)\n\nThe bottleneck on OSX is to get ",
+      "thread_id": "thread-6c4cf31e9610",
+      "thread_depth": 1,
+      "month": "2010-06"
+    },
+    {
+      "id": "msg-581d2b4d9495",
+      "message_id": "<201006251411.39244.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2010-06-25T12:11:30Z",
+      "subject": "[rkward-users] Text in Output?",
+      "subject_clean": "[rkward-users] Text in Output?",
+      "in_reply_to": "<AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>",
+      "references": [
+        "<AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>",
+        "<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>"
+      ],
+      "body_plain": "On Tuesday 22 June 2010, Agustin Lobo wrote:\n> It would be handy having an option \"Copy text to Output\" (equivalent\n> to \"Device/Copy to Output\" for graphics) in\n> the script editor and in the console.\n\nGood suggestion. I've added it to our feature request tracker.\n\n> When I select few lines in the script editor and use \"Edit/Copy as\n> HTML\" and paste\n> to an editor, do not get but the text, no html character controls, so\n> that the colors\n> do not get exported. Is there any way of doing this? I get the same with\n> \"Edit/Copy as HTML\" than with just \"Edit/Copy\"\n\nBug in KDE: http://bugs.kde.org/show_bug.cgi?id=228204 . Apparently this was \nfixed in KDE 4.4.4.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100625/8c00b155/attachment.sig>",
+      "body_snippet": "On Tuesday 22 June 2010, Agustin Lobo wrote:\n> It would be handy having an option \"Copy text to Output\" (equivalent\n> to \"Device/Copy to Output\" for graphics) in\n> the script editor and in the console",
+      "thread_id": "thread-5963d832f6cc",
+      "thread_depth": 3,
+      "month": "2010-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9ee308145fda",
+      "subject": "[rkward-users] Debugging",
+      "message_count": 2,
+      "participants": [
+        "Matthieu Stigler",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-06-01T14:42:43Z",
+      "last_reply": "2010-06-03T08:19:11Z",
+      "root_message_id": "msg-9ee308145fda"
+    },
+    {
+      "id": "thread-210b5c74e924",
+      "subject": "[rkward-users] [Help] how to direct output to the welcome window",
+      "message_count": 5,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2010-06-08T03:06:39Z",
+      "last_reply": "2010-06-09T04:40:49Z",
+      "root_message_id": "msg-210b5c74e924"
+    },
+    {
+      "id": "thread-4bba703f82b1",
+      "subject": "[rkward-users] Mac OS X user",
+      "message_count": 3,
+      "participants": [
+        "Roel Verberne",
+        "Thomas Friedrichsmeier",
+        "Zoe Demery"
+      ],
+      "started": "2010-06-15T14:39:21Z",
+      "last_reply": "2010-06-20T16:32:22Z",
+      "root_message_id": "msg-4bba703f82b1"
+    },
+    {
+      "id": "thread-698dd568cf82",
+      "subject": "[rkward-users] RKWARD",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "n.vialma at libero.it"
+      ],
+      "started": "2010-06-18T07:11:25Z",
+      "last_reply": "2010-06-19T10:05:13Z",
+      "root_message_id": "msg-698dd568cf82"
+    },
+    {
+      "id": "thread-5963d832f6cc",
+      "subject": "[rkward-users] Text in Output?",
+      "message_count": 4,
+      "participants": [
+        "Agustin Lobo",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2010-06-21T12:24:15Z",
+      "last_reply": "2010-06-25T12:11:30Z",
+      "root_message_id": "msg-5963d832f6cc"
+    },
+    {
+      "id": "thread-6c4cf31e9610",
+      "subject": "[rkward-users] Rkward on Mac cmake problem",
+      "message_count": 2,
+      "participants": [
+        "AYeroslaviz",
+        "Prasenjit Kapat"
+      ],
+      "started": "2010-06-22T06:34:02Z",
+      "last_reply": "2010-06-22T14:49:33Z",
+      "root_message_id": "msg-6c4cf31e9610"
+    }
+  ]
+}

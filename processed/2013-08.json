@@ -1,0 +1,155 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-08",
+  "messages": [
+    {
+      "id": "msg-05e05075ddce",
+      "message_id": "</p/rkward/discussion/165573/001b6b576d30d3af22cb2ff7b1165bc6dfd1f744.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Ingmar Gutberlet",
+      "from_email_hash": "a3b8a2c92eba14df8bc28badc02160504defa94659ac926539d418f932808bd8",
+      "date": "2013-08-10T17:21:16Z",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "subject_clean": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "I am new to R and installed the RKWard 0.61 R 3.0.0RC win32 bundle. RKWard runs and generally works (afaikt), however, I can not list the demo datasets. E.g. when I enter...\n\nlibrary(MASS)\ndata()\n\npackage:MASS shows up in the workspace, but data() results in error...\n\nError in pager(files, header = header, title = title, delete.file = delete.file) : \n  unused arguments (header = header, delete.file = delete.file) \n\nIf I try the same from RGui.exe or from RStudio it works. Also, the error is independent of OS, appearing exactly the same on WinXP SP3 and Win7 Pro x64, all users with admin rights.\n\nAny help would be much appreciated.\n\n\n---\n\n[rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets](https://sourceforge.net/p/rkward/discussion/165573/thread/bee570da/?limit=25#71ff)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130810/7b91b125/attachment.html>",
+      "body_snippet": "I am new to R and installed the RKWard 0.61 R 3.0.0RC win32 bundle. RKWard runs and generally works (afaikt), however, I can not list the demo datasets. E.g. when I enter...\n\nlibrary(MASS)\ndata()\n\npac",
+      "thread_id": "thread-05e05075ddce",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-bb1baf50415f",
+      "message_id": "</p/rkward/discussion/165573/07a1a24f69d59a8ffbb6ca18c8ef2ce2c4e68d05.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-08-10T17:45:54Z",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "subject_clean": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nTrue. This is already fixed in our development version. As a workaround in RKWard 0.6.1, run the following R code:\n\n~~~~\noptions (pager=function (file = file, header = file, title = NULL, delete.file = FALSE, \n    prompt = TRUE, delete = delete.file) \n{\n    invisible(.Call(\"rk.show.files\", as.character(file), as.character(header), \n        as.character(title), delete, isTRUE(prompt), PACKAGE = \"(embedding)\"))\n})\n~~~~\n\nYou can paste this into \"Settings->Configure RKWard->R Backend->Further (option) commands to run in each session\", in order to make it permanent.\n\nRegards\nThomas\n\n\n---\n\n[rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets](https://sourceforge.net/p/rkward/discussion/165573/thread/bee570da/?limit=25#1691)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130810/77dd96ec/attachment.html>",
+      "body_snippet": "Hi!\n\nTrue. This is already fixed in our development version. As a workaround in RKWard 0.6.1, run the following R code:\n\n~~~~\noptions (pager=function (file = file, header = file, title = NULL, delete.",
+      "thread_id": "thread-bb1baf50415f",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-6ce70d1e85f3",
+      "message_id": "</p/rkward/discussion/165573/c8adc2aa2ca988005652440ae9a4ebbdc49d8c0c.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Ingmar Gutberlet",
+      "from_email_hash": "a3b8a2c92eba14df8bc28badc02160504defa94659ac926539d418f932808bd8",
+      "date": "2013-08-11T10:18:18Z",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "subject_clean": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Wow, THAT was quick and to the point...\nThanks!\nIngmar\n\n\n---\n\n[rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets](https://sourceforge.net/p/rkward/discussion/165573/thread/bee570da/?limit=25#7c2d)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165573/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130811/e557ceb0/attachment.html>",
+      "body_snippet": "Wow, THAT was quick and to the point...\nThanks!\nIngmar\n\n\n---\n\n[rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets](https://sourceforge.net/p/rkward/discussion/165573/thread/bee570da/?limit=",
+      "thread_id": "thread-6ce70d1e85f3",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-0b40fbe7447f",
+      "message_id": "<140b619d766.-364053351967299352.-378301283415209466@zoho.com>",
+      "from_name": "luc.bianchi",
+      "from_email_hash": "333c60a66369a520617b25368ebf73b23fef4bc25735ef8bb89de1860697ef37",
+      "date": "2013-08-25T15:31:21Z",
+      "subject": "[rkward-users] Graphics windows attached to the main window",
+      "subject_clean": "[rkward-users] Graphics windows attached to the main window",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello:\n first of all, I want to say Hi!, I'm new in the list. I've been using RKWard for almost 2 years and I think it's really great, now I'm using the 0.5.7 version under Linuxmint 13 and  p, li { white-space: pre-wrap; }KDE 4.8.5.\n\nThe question is, I would like to know if it is possible to have the graphics window always visible in the application window like the Workspace Browser, the Editor, the File Browser, and the RConsole (like in R-Studio).\n\nThe only similar solution I've found is to have the graphics window fixed on top of all the applications windows, but this not exactly what I need.\n\nThanks!\n\nLucas.\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130825/fd9909bc/attachment.html>",
+      "body_snippet": "Hello:\n first of all, I want to say Hi!, I'm new in the list. I've been using RKWard for almost 2 years and I think it's really great, now I'm using the 0.5.7 version under Linuxmint 13 and  p, li { w",
+      "thread_id": "thread-0b40fbe7447f",
+      "thread_depth": 0,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-df5809d911c7",
+      "message_id": "<10533643.dUlgb1Bvvu@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-08-30T15:32:19Z",
+      "subject": "[rkward-users] Graphics windows attached to the main window",
+      "subject_clean": "[rkward-users] Graphics windows attached to the main window",
+      "in_reply_to": "<140b619d766.-364053351967299352.-378301283415209466@zoho.com>",
+      "references": [
+        "<140b619d766.-364053351967299352.-378301283415209466@zoho.com>"
+      ],
+      "body_plain": "Hi!\n\nOn Sunday 25 August 2013 08:31:21 luc.bianchi wrote:\n> The question is, I would like to know if it is possible to have the graphics\n> window always visible in the application window like the Workspace Browser,\n> the Editor, the File Browser, and the RConsole (like in R-Studio).\n> \n> The only similar solution I've found is to have the graphics window fixed on\n> top of all the applications windows, but this not exactly what I need.\n\nI'm not quite sure, whether this is what you mean by \"fixed on top of all the \napplication windows\", but to make sure you are aware of the option: You can \n\"attach\" graphics windows using Window->Attach. This will put the window in \nthe central document area (where script files, data editors, output window go \nby default).\n\nEventually, we'll add the option to collect graphics windows in a tool area \n(like in R-Studio), but this is not currently possible.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130830/0e61220a/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Sunday 25 August 2013 08:31:21 luc.bianchi wrote:\n> The question is, I would like to know if it is possible to have the graphics\n> window always visible in the application window like the Work",
+      "thread_id": "thread-0b40fbe7447f",
+      "thread_depth": 1,
+      "month": "2013-08"
+    },
+    {
+      "id": "msg-035dabc30dc7",
+      "message_id": "<140cfea9937.8109162383204371787.-7805567197563109501@zoho.com>",
+      "from_name": "luc.bianchi",
+      "from_email_hash": "333c60a66369a520617b25368ebf73b23fef4bc25735ef8bb89de1860697ef37",
+      "date": "2013-08-30T15:49:53Z",
+      "subject": "[rkward-users] Asunto: Re: Graphics windows attached to the main window",
+      "subject_clean": "[rkward-users] Asunto: Re: Graphics windows attached to the main window",
+      "in_reply_to": "<10533643.dUlgb1Bvvu@late>",
+      "references": [
+        "<140b619d766.-364053351967299352.-378301283415209466@zoho.com>",
+        "<10533643.dUlgb1Bvvu@late>"
+      ],
+      "body_plain": "---- Activado Fri, 30 Aug 2013 08:28:26 -0700 Thomas Friedrichsmeier&lt;thomas.friedrichsmeier at ruhr-uni-bochum.de&gt; escribi? ---- \n\n\nHi! \n \nOn Sunday 25 August 2013 08:31:21 luc.bianchi wrote: \n&gt; The question is, I would like to know if it is possible to have the graphics \n&gt; window always visible in the application window like the Workspace Browser, \n&gt; the Editor, the File Browser, and the RConsole (like in R-Studio). \n&gt; \n&gt; The only similar solution I've found is to have the graphics window fixed on \n&gt; top of all the applications windows, but this not exactly what I need. \n \nI'm not quite sure, whether this is what you mean by \"fixed on top of all the \napplication windows\", but to make sure you are aware of the option: You can \n\"attach\" graphics windows using Window-&gt;Attach. This will put the window in \nthe central document area (where script files, data editors, output window go \nby default). \n \nEventually, we'll add the option to collect graphics windows in a tool area \n(like in R-Studio), but this is not currently possible. \n \nRegards \nThomas \n\n\nHi Thomas,\nThanks for answering.\n\nI didn't know this option ('Window-&gt;Attach'), for me, it's better this way, but it's not exactly what I'd like. I'll be patient and I'll wait until the option to collect graphics windows in the tool area is available.\n\nThanks a lot!\n\nRegards,\nLucas.\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130830/9386bf3a/attachment.html>",
+      "body_snippet": "---- Activado Fri, 30 Aug 2013 08:28:26 -0700 Thomas Friedrichsmeier&lt;thomas.friedrichsmeier at ruhr-uni-bochum.de&gt; escribi? ---- \n\n\nHi! \n \nOn Sunday 25 August 2013 08:31:21 luc.bianchi wrote: \n&",
+      "thread_id": "thread-0b40fbe7447f",
+      "thread_depth": 2,
+      "month": "2013-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-05e05075ddce",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "message_count": 1,
+      "participants": [
+        "Ingmar Gutberlet"
+      ],
+      "started": "2013-08-10T17:21:16Z",
+      "last_reply": "2013-08-10T17:21:16Z",
+      "root_message_id": "msg-05e05075ddce"
+    },
+    {
+      "id": "thread-bb1baf50415f",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-08-10T17:45:54Z",
+      "last_reply": "2013-08-10T17:45:54Z",
+      "root_message_id": "msg-bb1baf50415f"
+    },
+    {
+      "id": "thread-6ce70d1e85f3",
+      "subject": "[rkward-users] [rkward:discussion] rkward 0.61 R 3.0.0RC bundle win32 - can't list demo datasets",
+      "message_count": 1,
+      "participants": [
+        "Ingmar Gutberlet"
+      ],
+      "started": "2013-08-11T10:18:18Z",
+      "last_reply": "2013-08-11T10:18:18Z",
+      "root_message_id": "msg-6ce70d1e85f3"
+    },
+    {
+      "id": "thread-0b40fbe7447f",
+      "subject": "[rkward-users] Graphics windows attached to the main window",
+      "message_count": 3,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "luc.bianchi"
+      ],
+      "started": "2013-08-25T15:31:21Z",
+      "last_reply": "2013-08-30T15:49:53Z",
+      "root_message_id": "msg-0b40fbe7447f"
+    }
+  ]
+}

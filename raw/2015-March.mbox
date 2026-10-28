@@ -1,0 +1,242 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Mar  7 08:46:04 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sat, 7 Mar 2015 09:46:04 +0100
+Subject: [rkward-users] RKWard 0.6.3 is released
+Message-ID: <20150307094604.611ba40c@late>
+
+Hi!
+
+This is to let you know that RKWard 0.6.3 is now available, officially.
+Read more on new features and fixes on http://rkward.sf.net .
+
+Thanks to all who provided feedback, testing, translations,
+documentation, donations, and code!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150307/35cc645f/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Mar  7 11:16:37 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sat, 7 Mar 2015 12:16:37 +0100
+Subject: [rkward-users] [rkward-devel] RKWard 0.6.3 is released
+In-Reply-To: <20150307094604.611ba40c@late>
+References: <20150307094604.611ba40c@late>
+Message-ID: <20150307121637.4a09a069@late>
+
+Hi!
+
+... never do the release in a hurry ...
+
+Those who have already tried downloading will have noted that this is
+currently not possible, due to wrong permissions. This will hopefully
+be fixed very soon. Please try again in a few hours. Thanks for your
+patience!
+
+Also, of course our homepage is now at http://rkward.kde.org .
+
+Regards
+Thomas
+
+On Sat, 7 Mar 2015 09:46:04 +0100
+Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+wrote:
+> This is to let you know that RKWard 0.6.3 is now available,
+> officially. Read more on new features and fixes on
+> http://rkward.sf.net .
+> 
+> Thanks to all who provided feedback, testing, translations,
+> documentation, donations, and code!
+> 
+> Regards
+> Thomas
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150307/76bb46cd/attachment.sig>
+
+From meik.michalke at uni-duesseldorf.de  Sat Mar 14 15:21:15 2015
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Sat, 14 Mar 2015 16:21:15 +0100
+Subject: [rkward-users] RKWard presentation & new rkwarddev release
+Message-ID: <24595745.xcUVdOnfMp@yrla>
+
+hi,
+
+as mentioned earlier, we presented RKWard a few days ago at the TeaP (the 
+second largest psychological conference in the german speaking area, although 
+english is the primary conference language now). there was a symposium with 
+five talks dedicated to R, and we started the session with RKWard (i stepped 
+in, since unfortunately, thomas couldn't be there as planned). the room was 
+packed with people standing, which was a bit of a pleasant surprise because we 
+actually got the worst of all possible time slots: 9 o'clock in the morning 
+after the conference dinner ;-) it went really well, we should do this more 
+often to get more attention.
+
+you can download the presentation slides of that session via the open science 
+framework:
+ https://osf.io/view/teap2015/
+
+i didn't manage to get the new rkwarddev package released in time for the 
+conference, but did so yesterday. it has quite an impressive number of changes 
+and improvements, so i raised the version number to 0.07-1:
+ http://files.kde.org/rkward/R/pckg/rkwarddev/NEWS.html
+it's actually 0.07-2 already, because i forgot to replace all the obsolete 
+sourceforge URLs.
+
+
+viele grüße :: m.eik
+
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 836 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150314/5982ee3a/attachment.sig>
+
+From ivan.artalejo at yahoo.es  Sat Mar 14 17:25:47 2015
+From: ivan.artalejo at yahoo.es (=?UTF-8?Q?Iv=C3=A1n_Artalejo?=)
+Date: Sat, 14 Mar 2015 17:25:47 +0000 (UTC)
+Subject: [rkward-users] RKWard in other languages
+In-Reply-To: <20150224143703.22223672@late>
+References: <20150224143703.22223672@late>
+Message-ID: <1007454528.7724508.1426353947351.JavaMail.yahoo@mail.yahoo.com>
+
+Hi,
+In Windows 7 operating system.
+I waited to version 0.6.3 of RKWard, where it was announced that would be fully translatable.
+When installing the new version, it is still in English. 
+I searched inside the installation folder KDE / translations and I have not found any file that references the Spanish.
+I have been searching the internet and I have not located any file to download with the Spanish language.
+What is the procedure?
+Thank You
+      De: Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+ Para: Iván Artalejo <ivan.artalejo at yahoo.es> 
+CC: "rkward-users at kde.org" <rkward-users at kde.org> 
+ Enviado: Martes 24 de febrero de 2015 14:37
+ Asunto: Re: [rkward-users] RKWard in other languages
+   
+Hi!
+
+
+
+On Tue, 24 Feb 2015 11:31:21 +0000 (UTC)
+Iván Artalejo <ivan.artalejo at yahoo.es> wrote:
+> How can I install RKWard in other languages, for example spanish?
+
+Before everything else: Language support will be _much_ better in the
+upcoming RKWard 0.6.3 (expected in less than two weeks). If you'd tell
+us which platform you're on, we could give you instructions for
+installing a preview release of 0.6.3. 
+
+Other than that, the answer will still depend on what platform you are
+using, and possibly on how you are installing:
+
+- Linux / MacOS:
+All available translations should already be included in your
+installation. RKWard 0.6.3 included "es", but "ca" was de-activated
+due to being too incomplete. To test that translations are actually
+working, start RKWard as
+  KDE_LANG=de rkward
+(the "de" translation is comparatively complete in 0.6.2).
+- Windows:
+The binaries for RKWard up to 0.6.2 did not include any translations,
+yet. The upcoming binaries for 0.6.3 will include translations. The
+existing 0.6.3-pre2 installer already does.
+
+Regards
+Thomas
+
+  
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150314/07989c4f/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Mar 15 12:36:53 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 15 Mar 2015 13:36:53 +0100
+Subject: [rkward-users] RKWard in other languages
+In-Reply-To: <1007454528.7724508.1426353947351.JavaMail.yahoo@mail.yahoo.com>
+References: <20150224143703.22223672@late>
+ <1007454528.7724508.1426353947351.JavaMail.yahoo@mail.yahoo.com>
+Message-ID: <20150315133653.33e5c144@late>
+
+Hi,
+
+On Sat, 14 Mar 2015 17:25:47 +0000 (UTC)
+Iván Artalejo <ivan.artalejo at yahoo.es> wrote:
+> In Windows 7 operating system.
+> I waited to version 0.6.3 of RKWard, where it was announced that
+> would be fully translatable. When installing the new version, it is
+> still in English. I searched inside the installation folder KDE /
+> translations and I have not found any file that references the
+> Spanish. I have been searching the internet and I have not located
+> any file to download with the Spanish language. What is the
+> procedure?
+
+I am not sure, why this does not work for you out of the box, sorry
+about this. Is your Windows OS localized to Spanish? Either way, the
+following should do the trick:
+
+Open a command window, run
+  cd C:\Your\RKWard\Installation\KDE\bin
+  SET KDE_LANG=es
+  rkward.exe
+Tested and works in a Win7 virtual machine. Consider putting this in
+a .bat file for now, or set the KDE_LANG environment variable to es,
+permanently (Control Panel->System->Advanced->Environment Variables).
+
+In fact, I do note that translations for system messages are missing,
+in the binary bundle installation, though. I'll have to think about how
+to fix this (probably this can only be done using a separate download,
+after all). If you want to fix this for yourself, today, you'll have
+to:
+
+  1. Download the KDE on Windows installer:
+http://winkde.org/pub/kde/ports/win32/installer/kdewin-installer-gui-1.0.0.exe
+  2. Run this, point it to the "KDE"-folder inside your existing RKWard
+  installation (C:\Your\RKWard\Installation\KDE)
+  3. All other settings should be ok, simply click "Next"
+  4. Click "language packs", and install "es".
+  5. I am not sure, whether you will now see the Spanish version,
+  automatically, whenever starting RKWard, or whether you will still
+  have to follow the above procedure of setting KDE_LANG. Feedback on
+  this would be appreciated!
+
+Once again, sorry about the inconvenience. I had - wrongly - expected
+this to "just work". I'll try to come up with a proper solution as time
+allows.
+
+Regards
+Thomas
+
+P.S.: The translation files for RKWard itself are installed in
+  KDE\share\locale\*\LC_MESSAGES\rkward.mo
+and
+  KDE\share\apps\rkward\po\*
+inside your installation folder.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150315/9860abb2/attachment.sig>
+

@@ -1,0 +1,38 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2023-08",
+  "messages": [
+    {
+      "id": "msg-a315a39eca53",
+      "message_id": "<1907478202.104738.1692145087187@mail.yahoo.com>",
+      "from_name": "Luís Gustavo Schuck",
+      "from_email_hash": "8a0c10e1d31331b6088a9f5f70d3b40b238ca06d4fcd3296313c75cf718271bf",
+      "date": "2023-08-16T00:18:07Z",
+      "subject": "Contribute to the project",
+      "subject_clean": "Contribute to the project",
+      "in_reply_to": null,
+      "references": [
+        "<1907478202.104738.1692145087187.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hello.\nThis week i find out about RKward and find the project very interesting. I'm a R User for some years now and would like to contribute.\nI saw the open tasks page and believe i can help with documentation and things like that. I'm starting to use the RKWard....\nI dont know if this is the rigth place to post about it....\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20230816/7367b6c0/attachment.htm>",
+      "body_snippet": "Hello.\nThis week i find out about RKward and find the project very interesting. I'm a R User for some years now and would like to contribute.\nI saw the open tasks page and believe i can help with docu",
+      "thread_id": "thread-a315a39eca53",
+      "thread_depth": 0,
+      "month": "2023-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-a315a39eca53",
+      "subject": "Contribute to the project",
+      "message_count": 1,
+      "participants": [
+        "Luís Gustavo Schuck"
+      ],
+      "started": "2023-08-16T00:18:07Z",
+      "last_reply": "2023-08-16T00:18:07Z",
+      "root_message_id": "msg-a315a39eca53"
+    }
+  ]
+}

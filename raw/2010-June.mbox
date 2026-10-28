@@ -1,0 +1,668 @@
+From matthieu.stigler at gmail.com  Tue Jun  1 14:42:43 2010
+From: matthieu.stigler at gmail.com (Matthieu Stigler)
+Date: Tue, 01 Jun 2010 16:42:43 +0200
+Subject: [rkward-users] Debugging
+In-Reply-To: <201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <4BFD7136.8080105@dms.umontreal.ca>
+	<201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <4C051C63.2010102@gmail.com>
+
+A nice feature that would be highly welcome in the debugger (so to be 
+clear: the one called by browser(), right?) would be that pressing "up 
+arrow key" calls back the last entered command, as is the case for the 
+usual console.
+
+It seems to me that this is not possible for now... did I miss 
+something? Would it be difficult to include it?
+
+Thanks!!!
+
+Matthieu
+
+
+
+
+Thomas Friedrichsmeier a ?crit :
+> Hi,
+>
+> On Wednesday 26 May 2010, Luc Villandre wrote:
+>   
+>> I have been trying to debug one of my functions and
+>> I haven't been exactly very satisfied with the debugger. I find it
+>> frustrating how, at least for now, it would seem that when the debugging
+>> window pops up, the rest of the program freezes until the debugging
+>> phase is over. Also, the type of display used by the debugger doesn't
+>> allow for color coding and for an increase in the font size. Would there
+>> be a way to change that?
+>>     
+>
+> no, unfortunately, there are no hidden features like this. This area simply 
+> hasn't received too much love so far. We do plan to turn this into a "real" 
+> debugger, eventually, including syntax highlighting, inspection of the call 
+> stack, local objects, etc. But don't hold your breath, currently some other 
+> issues have higher priority.
+>
+>   
+>> Is there a way to tell the program to run the debugger in the R-terminal
+>> window? What I would like in fact is for the program to allow me to
+>> access the browser just as if I was running R in a regular terminal
+>> window (outside Rkward).
+>>     
+>
+> No, there is not. The R console in RKWard is just an emulation, and that 
+> feature would need to be programmed into it. Besides, this is not quite 
+> trivial, conceptually: In a GUI like RKWard, the console does not play the 
+> central role that it has in a standalone R terminal. Not all commands get 
+> entered through the console, but they may also come from plugins, the 
+> data.frame editor, help search, etc. This could create the situation, that R 
+> is waiting for user input on the R console, but the user just isn't aware of 
+> that, and all other commands will just wait forever. Thus we need to make sure 
+> that requests for user input from the backend are always highly visible.
+>
+> So, while I can see your point, I am not sure this is a good way to handle 
+> interactive user input situations.
+>
+> Regards
+> Thomas
+>   
+> ------------------------------------------------------------------------
+>
+> ------------------------------------------------------------------------------
+>
+>   
+> ------------------------------------------------------------------------
+>
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>   
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Thu Jun  3 08:19:11 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 3 Jun 2010 10:19:11 +0200
+Subject: [rkward-users] Debugging
+In-Reply-To: <4C051C63.2010102@gmail.com>
+References: <4BFD7136.8080105@dms.umontreal.ca>
+	<201005291046.56904.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<4C051C63.2010102@gmail.com>
+Message-ID: <201006031019.18113.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 01 June 2010, Matthieu Stigler wrote:
+> A nice feature that would be highly welcome in the debugger (so to be
+> clear: the one called by browser(), right?) would be that pressing "up
+> arrow key" calls back the last entered command, as is the case for the
+> usual console.
+> 
+> It seems to me that this is not possible for now... did I miss
+> something? Would it be difficult to include it?
+
+including this should be quite possible, but I will need to restructure some 
+things, so it's not something to implement within a few minutes. I will not 
+take care of this, immediately, but if you put this into our feature request 
+tracker 
+(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse), I 
+will probably come back to this, soon.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100603/9548f58e/attachment.sig>
+
+From noreply at sourceforge.net  Tue Jun  8 03:06:39 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jun 2010 03:06:39 +0000
+Subject: [rkward-users] [Help] how to direct output to the welcome window
+Message-ID: <forum-165574-8446447@sourceforge.net>
+
+
+The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:
+
+Hi, is it possible to direct command output to the window where the welcome message is shown?
+also, can I start the R console automatically when I start Rkward?
+as shown below.
+------------------------------------
+|  work-   |    welcome         |
+|   space |     message        |
+-------------------------------------
+|                                           |
+|        R console                   |
+------------------------------------
+
+
+
+From noreply at sourceforge.net  Tue Jun  8 10:20:24 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jun 2010 10:20:24 +0000
+Subject: [rkward-users] [Help] RE: how to direct output to the welcome window
+In-Reply-To: <forum-165574-8446447@sourceforge.net>
+Message-ID: <forum-165574-8447375@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:
+
+Hi,
+
+[quote]is it possible to direct command output to the window where the welcome message is shown?[/quote]
+
+if you mean the welcome window itself, no, that is read-only. You could modify the text in there by editing [kde_data_dir]/apps/rkward/pages/rkward_welcome.rkh , if you really want to. If you mean the output window (which is shown in the same area of the main window by default), take a look at the functions rk.print(), rk.print.literal(), rk.header(), and rk.results(). Currently this is undocumented, but I think they will be easy to figure out.
+
+[quote]also, can I start the R console automatically when I start Rkward?[/quote]
+
+The show/hide status of the tool windows is not saved, yet. This will be implemented, eventually, but there\'s always a lot of work to do... You could invoke rkward like this:
+[code]rkward --evaluate \'print(\"Hello\")\'[/code]
+This has the side-effect of bringing up the console (but not the workspace browser).
+
+Hope this helps.
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue Jun  8 13:14:03 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jun 2010 13:14:03 +0000
+Subject: [rkward-users] [Help] RE: how to direct output to the welcome window
+In-Reply-To: <forum-165574-8447375@sourceforge.net>
+Message-ID: <forum-165574-8447785@sourceforge.net>
+
+
+The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:
+
+sorry for the confusion, I want to show my output in that area, not necessarily the same window. The result of using rk.print is exactly what I want. So I think maybe there is a way to direct output to HTML as default, i.e. without invoking the rk.print()?
+
+[quote]The show/hide status of the tool windows is not saved, yet. This will be implemented, eventually, but there\'s always a lot of work to do... You could invoke rkward like this: [/quote]
+Nice to know this is under development. rkward has made some really nice progress. Thanks a lot.
+
+
+
+From noreply at sourceforge.net  Tue Jun  8 13:43:03 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 08 Jun 2010 13:43:03 +0000
+Subject: [rkward-users] [Help] RE: how to direct output to the welcome window
+In-Reply-To: <forum-165574-8447785@sourceforge.net>
+Message-ID: <forum-165574-8447860@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:
+
+[quote]So I think maybe there is a way to direct output to HTML as default, i.e. without invoking the rk.print()? [/quote]
+
+Again, not yet, unfortunately, but once again, this will be added, sooner or later (possibly even for RKWard 0.5.4).
+
+Currently, an easy solution is prevented by this issue: https://stat.ethz.ch/pipermail/r-devel/2010-June/057646.html .
+
+
+
+From noreply at sourceforge.net  Wed Jun  9 04:40:49 2010
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 09 Jun 2010 04:40:49 +0000
+Subject: [rkward-users] [Help] RE: how to direct output to the welcome window
+In-Reply-To: <forum-165574-8447860@sourceforge.net>
+Message-ID: <forum-165574-8449229@sourceforge.net>
+
+
+The following forum message was posted by fengqiangyang at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/3734259:
+
+Great to know that these features are under development. Guess I\'ll just have to wait for a while. :)
+
+
+
+From zoe at vortices.com  Tue Jun 15 14:39:21 2010
+From: zoe at vortices.com (Zoe Demery)
+Date: Tue, 15 Jun 2010 15:39:21 +0100
+Subject: [rkward-users] Mac OS X user
+Message-ID: <4C179099.1010504@vortices.com>
+
+Hi,
+
+I'm quite a newbie with R and thought that RKWard looked like quite an
+easy interface to get into it.  I've tried installing it on my MacBook
+(Snow Leopard) following your instructions.  However, I cannot install
+kdelibs.  It gives two options to choose from but neither work.  Any ideas?
+
+Many thanks,
+Zoe
+
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Jun 16 07:05:59 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 16 Jun 2010 09:05:59 +0200
+Subject: [rkward-users] Mac OS X user
+In-Reply-To: <4C179099.1010504@vortices.com>
+References: <4C179099.1010504@vortices.com>
+Message-ID: <201006160906.04851.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 15 June 2010, Zoe Demery wrote:
+> I'm quite a newbie with R and thought that RKWard looked like quite an
+> easy interface to get into it.  I've tried installing it on my MacBook
+> (Snow Leopard) following your instructions.  However, I cannot install
+> kdelibs.  It gives two options to choose from but neither work.  Any ideas?
+
+thanks for giving this a try. We attempted to get RKWard installed based on 
+KDE from fink a few weeks ago. Installing kdelibs was not a problem, then, so 
+Roel, if you are still around, perhaps you can comment on this.
+
+Note that we were not able to figure out the parameters needed to pass to 
+cmake, so we did not manage to compile RKWard. If you want to give this 
+another try, I certainly don't want to stop you. But note that figuring out all 
+steps is not going to be easy. So if you want a quick solution that just 
+works, RKWard on the Mac is not currently what you are looking for.
+
+--
+
+Still reading on? Here are some more notes about RKWard on the Mac.
+- It might be possible to run the Windows version under wine 
+(http://wiki.winehq.org/MacOSX/Installing). RKWard for Windows has become 
+pretty easy to install, so this could be worth a try.
+- Meanwhile, I've made some changes that should allow compiling RKWard against 
+the mac-native variant of kdelibs (in theory, it's all untested). This means 
+you could also use the kde packages from macports (http://www.macports.org/), 
+as an alternative.
+
+Regards
+Thomas
+
+P.S.: Recently, a friend has offered to give me ssh-access to his mac, and I'm 
+confident that will allow me to figure out the required parameters. However, he 
+is in the middle of moving, the mac is stashed away, and it may be some more 
+weeks, before he gets around to set it up.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100616/30e05cfc/attachment.sig>
+
+From n.vialma at libero.it  Fri Jun 18 07:11:25 2010
+From: n.vialma at libero.it (n.vialma at libero.it)
+Date: Fri, 18 Jun 2010 09:11:25 +0200 (CEST)
+Subject: [rkward-users] RKWARD
+Message-ID: <28680254.608541276845085106.JavaMail.defaultUser@defaultHost>
+
+ Dear list,
+I have a question. I have the RKward configuration. I don't know what happened 
+but now when I open R I have in my workspace data frames which I used in the 
+past sessions...I'm quite sure that I dident save them.How can I set  RKward in 
+order to open a new workspace? 
+Thanks a lot
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sat Jun 19 10:05:13 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 19 Jun 2010 12:05:13 +0200
+Subject: [rkward-users] RKWARD
+In-Reply-To: <28680254.608541276845085106.JavaMail.defaultUser@defaultHost>
+References: <28680254.608541276845085106.JavaMail.defaultUser@defaultHost>
+Message-ID: <201006191205.18175.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 18 June 2010, n.vialma at libero.it wrote:
+> I have a question. I have the RKward configuration. I don't know what
+>  happened but now when I open R I have in my workspace data frames which I
+>  used in the past sessions...I'm quite sure that I dident save them.How can
+>  I set  RKward in order to open a new workspace?
+
+look for a (hidden) file named ".RData" in the directory you started rkward 
+from (your home directory, when starting rkward from the menu). Move / remove 
+this file.
+
+(This behavior should really be configurable, and default to not restoring the 
+.RData-workspace - but that's for a future release).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100619/aad76970/attachment.sig>
+
+From roel.verberne at unil.ch  Sun Jun 20 16:32:22 2010
+From: roel.verberne at unil.ch (Roel Verberne)
+Date: Sun, 20 Jun 2010 18:32:22 +0200
+Subject: [rkward-users] Mac OS X user
+In-Reply-To: <4C179099.1010504@vortices.com>
+References: <4C179099.1010504@vortices.com>
+Message-ID: <4C1E4296.6080500@unil.ch>
+
+Hi,
+
+Just a short reply as I don't have the time to delve back into it right 
+now. So off the top of my head: In order for all the dependencies to 
+work, you need to install the X11 version of kdelibs (i.e. kdelibs4-x11, 
+kdelibs4-x11-dev and kdelibs4-x11-shlibs) I currently have version 
+4.4.1-1 installed. There were some problems with some dependencies 
+though, with qt, redland or both if I remember correctly. I could not 
+build these myself, so I got binaries from one of their developers. In 
+the end, I got kde installed (although I never actually ran it to see if 
+it's working), however as Thomas pointed out I did not manage to build 
+RKWard.
+
+If you could post the contents of the error message you get I might be 
+able to help you along past the kde-problem, but I'm no crack either..
+
+Roel
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100620/742bf17f/attachment.html>
+
+From alobolistas at gmail.com  Mon Jun 21 12:24:15 2010
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Mon, 21 Jun 2010 14:24:15 +0200
+Subject: [rkward-users] Text in Output?
+Message-ID: <AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>
+
+Hi!
+Is it possible to include text in the output (and then save it
+as html including graphics that have been sent
+to the output)?
+
+Thanks!
+
+Agus
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Jun 21 18:36:45 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 21 Jun 2010 20:36:45 +0200
+Subject: [rkward-users] Text in Output?
+In-Reply-To: <AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>
+References: <AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>
+Message-ID: <201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 21 June 2010, Agustin Lobo wrote:
+> Is it possible to include text in the output
+
+you can use
+  rk.header(), rk.print(), and rk.print.literal()
+. If you need more specific formatting, you can also use
+  .rk.cat.output()
+which allows adding raw HTML code.
+
+> (and then save it
+> as html including graphics that have been sent
+> to the output)?
+
+Actually, ATM, the easiest way to export the output including the graphics is 
+to copy the files from ~/.rkward/ (files rk_out.html and graph*.png/svg/jpg). 
+
+For any other output format besides HTML, selecting everything and 
+copying/pasting into OpenOffice works pretty well.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100621/770111cd/attachment.sig>
+
+From Assa.Yeroslaviz at age.mpg.de  Tue Jun 22 06:34:02 2010
+From: Assa.Yeroslaviz at age.mpg.de (AYeroslaviz)
+Date: Tue, 22 Jun 2010 08:34:02 +0200
+Subject: [rkward-users] Rkward on Mac cmake problem
+Message-ID: <B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>
+
+Hi,
+
+I have a problem installing Rkward on my mac (version 10.6..4)
+
+I did all the steps mentioned here: http://rkward.sourceforge.net/
+As I wanted to install cmake it told me it can't find the package, but with the command 
+
+fink list -i | grep cmake
+
+ i 	boost1.41.cmake	1.41.0-12	Boost C++ Libraries
+ i 	boost1.41.cmake-shlibs	1.41.0-12	Boost C++ Libraries
+ i 	cmake	2.8.1-2	Cross-platform Make
+
+so I assumed it is already installed. Am I wrong?
+
+The problems occurs when I'm trying to run the command:
+cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` -DR_EXECUTABLE=/usr/bin/R
+
+I'm getting the following error message:
+
+-bash: kde4-config: command not found
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+CMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):
+  ERROR: Could not find KDE4 kde4-config
+Call Stack (most recent call first):
+  CMakeLists.txt:10 (FIND_PACKAGE)
+
+
+-- Configuring incomplete, errors occurred!
+
+what am I doing wrong?
+As I'm a Newbie both to Mac and to Linux, I just followed the steps mentioned on the site, so I'm not sure what and where i need to change.
+
+I will be happy for every help I can get.
+
+THX
+
+Assa
+
+
+Assa Yeroslaviz
+Application service, Bioinformatics group
+Max Planck Institute for the Biology of Aging
+Robert-Koch-Strasse 21
+50931 Cologne
+Germany
+phone: +49 221 47889793
+e-mail: AYeroslaviz at age.mpg.de
+
+
+
+
+From alobolistas at gmail.com  Tue Jun 22 09:53:31 2010
+From: alobolistas at gmail.com (Agustin Lobo)
+Date: Tue, 22 Jun 2010 11:53:31 +0200
+Subject: [rkward-users] Text in Output?
+In-Reply-To: <201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>
+	<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>
+
+It would be handy having an option "Copy text to Output" (equivalent
+to "Device/Copy to Output" for graphics) in
+the script editor and in the console.
+
+When I select few lines in the script editor and use "Edit/Copy as
+HTML" and paste
+to an editor, do not get but the text, no html character controls, so
+that the colors
+do not get exported. Is there any way of doing this? I get the same with
+"Edit/Copy as HTML" than with just "Edit/Copy"
+
+Ultimately, what I would like is the same color coding of the script
+editor saved
+in html or latex (lyx) or OO ....
+I thought I would be able of getting this in the Output (including the graphics
+saved with "Device/Copy to Output") and than just save the Output as a file.
+
+Agus
+
+
+
+2010/6/21 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+> Hi,
+>
+> On Monday 21 June 2010, Agustin Lobo wrote:
+>> Is it possible to include text in the output
+>
+> you can use
+> ?rk.header(), rk.print(), and rk.print.literal()
+> . If you need more specific formatting, you can also use
+> ?.rk.cat.output()
+> which allows adding raw HTML code.
+>
+>> (and then save it
+>> as html including graphics that have been sent
+>> to the output)?
+>
+> Actually, ATM, the easiest way to export the output including the graphics is
+> to copy the files from ~/.rkward/ (files rk_out.html and graph*.png/svg/jpg).
+>
+> For any other output format besides HTML, selecting everything and
+> copying/pasting into OpenOffice works pretty well.
+>
+> Regards
+> Thomas
+>
+> ------------------------------------------------------------------------------
+> ThinkGeek and WIRED's GeekDad team up for the Ultimate
+> GeekDad Father's Day Giveaway. ONE MASSIVE PRIZE to the
+> lucky parental unit. ?See the prize list and enter to win:
+> http://p.sf.net/sfu/thinkgeek-promo
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+
+
+
+From kapatp at gmail.com  Tue Jun 22 14:49:33 2010
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Tue, 22 Jun 2010 14:49:33 +0000
+Subject: [rkward-users] Rkward on Mac cmake problem
+In-Reply-To: <B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>
+References: <B3B14F4D-4131-44E3-86B9-4562780EC55E@age.mpg.de>
+Message-ID: <AANLkTim9SiL3GGU7XrYtdwEHvRcR1fr7FpDaXdFvQIuB@mail.gmail.com>
+
+Hi Assa,
+
+On Tue, Jun 22, 2010 at 6:34 AM, AYeroslaviz <Assa.Yeroslaviz at age.mpg.de> wrote:
+> Hi,
+>
+> I have a problem installing Rkward on my mac (version 10.6..4)
+
+The bottleneck on OSX is to get KDE working first :( And it is hasn't
+been cracked yet! See the discussions here (especially Mike Arthur's
+replies towards the end):
+
+http://sourceforge.net/mailarchive/forum.php?thread_name=69DD0C09-8134-422F-85FB-CDCF14AAEAAD%40mikearthur.co.uk&forum_name=rkward-users
+
+and here:
+
+http://sourceforge.net/mailarchive/forum.php?thread_name=4C1E4296.6080500%40unil.ch&forum_name=rkward-users
+
+So, my comments below don't hold much water at all!! Still...
+
+> I did all the steps mentioned here: http://rkward.sourceforge.net/
+> As I wanted to install cmake it told me it can't find the package, but with the command
+>
+> fink list -i | grep cmake
+>
+> ?i ? ? ?boost1.41.cmake 1.41.0-12 ? ? ? Boost C++ Libraries
+> ?i ? ? ?boost1.41.cmake-shlibs ?1.41.0-12 ? ? ? Boost C++ Libraries
+> ?i ? ? ?cmake ? 2.8.1-2 Cross-platform Make
+>
+> so I assumed it is already installed. Am I wrong?
+>
+> The problems occurs when I'm trying to run the command:
+> cmake .. -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` -DR_EXECUTABLE=/usr/bin/R
+>
+> I'm getting the following error message:
+>
+> -bash: kde4-config: command not found
+
+Hmm, is KDE 4 installed? If so, can you use the full path for
+kde4-config? May be /sw/bin/kde4-config? (Find where kde4-config
+is...)
+
+> -- Detecting CXX compiler ABI info - done
+> CMake Error at /sw/share/cmake-2.8/Modules/FindKDE4.cmake:58 (MESSAGE):
+> ?ERROR: Could not find KDE4 kde4-config
+
+As you can see from the above threads, this has been a problem on OSX
+....  Unfortunately, not much that we can do now.
+
+Regards,
+-- 
+Prasenjit
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Jun 25 12:11:30 2010
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 25 Jun 2010 14:11:30 +0200
+Subject: [rkward-users] Text in Output?
+In-Reply-To: <AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>
+References: <AANLkTilpn8R44wub6J5jXyyuygspdJsn11tmuxSdLkvY@mail.gmail.com>
+	<201006212036.50697.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<AANLkTil8LMmwk1hRDhIWUijNUzpcfMU-HB0hexSpM96m@mail.gmail.com>
+Message-ID: <201006251411.39244.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Tuesday 22 June 2010, Agustin Lobo wrote:
+> It would be handy having an option "Copy text to Output" (equivalent
+> to "Device/Copy to Output" for graphics) in
+> the script editor and in the console.
+
+Good suggestion. I've added it to our feature request tracker.
+
+> When I select few lines in the script editor and use "Edit/Copy as
+> HTML" and paste
+> to an editor, do not get but the text, no html character controls, so
+> that the colors
+> do not get exported. Is there any way of doing this? I get the same with
+> "Edit/Copy as HTML" than with just "Edit/Copy"
+
+Bug in KDE: http://bugs.kde.org/show_bug.cgi?id=228204 . Apparently this was 
+fixed in KDE 4.4.4.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20100625/8c00b155/attachment.sig>
+

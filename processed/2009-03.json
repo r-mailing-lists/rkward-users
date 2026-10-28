@@ -1,0 +1,125 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-03",
+  "messages": [
+    {
+      "id": "msg-9b01d5b5b8f1",
+      "message_id": "<6876704.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-03-19T20:47:53Z",
+      "subject": "[rkward-users] [rkward - Help] rkward on windows",
+      "subject_clean": "[rkward-users] [rkward - Help] rkward on windows",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6876704\nBy: balduin2\n\nHi,\n\nas KDE 4.1 is now also available for Windows, I asked myself whether it's possible\nto compile rkward for win32.\n\nI'm not a developer nor do I know what it takes to produce a fully working port\nbut as many kde-applications are already ported to windows I'd like to know\nwhen we can expect to use rkward on the windows plattform.\n\nAny thoughts and ideas?\n\nThanks in advance\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6876704\nBy: balduin2\n\nHi,\n\nas KDE 4.1 is now also available for Windows, I asked myself whether it's possible\nto ",
+      "thread_id": "thread-9b01d5b5b8f1",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-8de8a59dc8d5",
+      "message_id": "<6885827.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-03-20T09:55:59Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward on windows",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward on windows",
+      "in_reply_to": "<6876704.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6885827\nBy: xavidp\n\nThat would be lovely! \n(for all our students in our university, which are still using Windows in their\ncomputer rooms in all the campuses... whereas they are taught to use R in many\nuniversity degrees... )\nVery good idea.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6885827\nBy: xavidp\n\nThat would be lovely! \n(for all our students in our university, which are still using Windows",
+      "thread_id": "thread-9b01d5b5b8f1",
+      "thread_depth": 1,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-7b586c881440",
+      "message_id": "<6944068.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-03-24T22:32:46Z",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "in_reply_to": "<4956278.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6944068\nBy: fsando\n\n> Hello, \n> on 2009-01-25 I posted a message in sourceforge, related to\n> a problem with .rk.get.structure() in Rkward. I posted that\n> message because I saw that you have had exactly the same\n> problem that me, i.e., that after reading (or generating)\n> some data, the message \"R engine busy\" appears and lasts for\n> 15-25 seconds, while the message .rk.get.structure(....\n> appears in the pending jobs window. Could you finally found\n> a solution to this problem? I have googled the web and\n> nobody else seems to have experienced something similar.\n> I would be very grateful if you could help me in this\n> question, because I think that R/Rkward is great for\n> statistics, but these long waiting times are very disappointing.\n>   \n> Thanks in advance,\n> Angelo Santana\n\nSorry for not seeing your question before.\n\nBasically the problem has largely gone away, I am not sure what exactly caused\nit though I have some ideas.\n\nIt was solved by updating to the newest version which I usually do via svn rather\nthan the package manager. Sometimes, though, I have to first install the official\npackage (to get all the dependencies) then I just install from source on top\nof the existing installation and things tend to work.\n\nIn short: upgrade to newest version. It may seem a bit awkward to have to do\nit that way but it is my impression that rkward is in a transitional phase right\nnow. Hopefully that will change in the not-too-distant future.\n\n\nI believe the reason for the lag may be due to some kind of bug in the way rkward\nadds to R data objects to suits its own structures. This becomes worse when\nthe workspace contains a lot of large objects with many children (like lists\nand data frames).\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=6944068\nBy: fsando\n\n> Hello, \n> on 2009-01-25 I posted a message in sourceforge, related to\n> a problem with .rk.",
+      "thread_id": "thread-7b586c881440",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-c921c4782225",
+      "message_id": "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-03-30T20:11:52Z",
+      "subject": "[rkward-users] RKWard 0.5.0c is released",
+      "subject_clean": "[rkward-users] RKWard 0.5.0c is released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see \nhttp://rkward.sourceforge.net/ .\n\nMany thanks to all testers and contributors. The amount of testing and \nfeedback in the few days since my first call for testing has been truly \namazing.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090330/71bb83a8/attachment.sig>",
+      "body_snippet": "Hi!\n\nI have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see \nhttp://rkward.sourceforge.net/ .\n\nMany thanks to all testers and contributors. The amount of testing and \nfeedback in t",
+      "thread_id": "thread-c921c4782225",
+      "thread_depth": 0,
+      "month": "2009-03"
+    },
+    {
+      "id": "msg-1e43fc491b79",
+      "message_id": "<3ff92a550903310511y5e519d66kb0e3a12cc22758f6@mail.gmail.com>",
+      "from_name": "I. Soumpasis",
+      "from_email_hash": "a94678a1f84caf75ec69c1589fd4aed1043a851856c73c70d75d592af82476bc",
+      "date": "2009-03-31T12:11:20Z",
+      "subject": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "subject_clean": "[rkward-users] [rkward-devel] RKWard 0.5.0c is released",
+      "in_reply_to": "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200903302211.55387.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi,\n\nI am a little bit confused with the ubuntu distro. Is it needed a special\ndeb file?\n\nI have 2 machines a i386 and a x86_64 with ubuntu 8.10. I think I can make\ndeb files for both architectures.\n\nRegards,\nilias\n\n2009/3/30 Thomas Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de>\n\n> Hi!\n>\n> I have just uploaded RKWard 0.5.0c. For a more elaborate announcement, see\n> http://rkward.sourceforge.net/ .\n>\n> Many thanks to all testers and contributors. The amount of testing and\n> feedback in the few days since my first call for testing has been truly\n> amazing.\n>\n> Regards\n> Thomas\n>\n>\n> ------------------------------------------------------------------------------\n>\n> _______________________________________________\n> RKWard-devel mailing list\n> RKWard-devel at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-devel\n>\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090331/0461dc5a/attachment.html>",
+      "body_snippet": "Hi,\n\nI am a little bit confused with the ubuntu distro. Is it needed a special\ndeb file?\n\nI have 2 machines a i386 and a x86_64 with ubuntu 8.10. I think I can make\ndeb files for both architectures.\n\n",
+      "thread_id": "thread-c921c4782225",
+      "thread_depth": 1,
+      "month": "2009-03"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-9b01d5b5b8f1",
+      "subject": "[rkward-users] [rkward - Help] rkward on windows",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-03-19T20:47:53Z",
+      "last_reply": "2009-03-20T09:55:59Z",
+      "root_message_id": "msg-9b01d5b5b8f1"
+    },
+    {
+      "id": "thread-7b586c881440",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-03-24T22:32:46Z",
+      "last_reply": "2009-03-24T22:32:46Z",
+      "root_message_id": "msg-7b586c881440"
+    },
+    {
+      "id": "thread-c921c4782225",
+      "subject": "[rkward-users] RKWard 0.5.0c is released",
+      "message_count": 2,
+      "participants": [
+        "I. Soumpasis",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-03-30T20:11:52Z",
+      "last_reply": "2009-03-31T12:11:20Z",
+      "root_message_id": "msg-c921c4782225"
+    }
+  ]
+}

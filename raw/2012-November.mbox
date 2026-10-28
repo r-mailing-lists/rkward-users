@@ -1,0 +1,225 @@
+From rebel.tyrcus at gmail.com  Fri Nov  2 12:02:56 2012
+From: rebel.tyrcus at gmail.com (Rebel Tyrcus)
+Date: Fri, 2 Nov 2012 13:02:56 +0100
+Subject: [rkward-users] [rkward-devel]  Select cases
+In-Reply-To: <1849969.HA3LMVVk03@yrla>
+References: <CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>
+	<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAE+DF+3Cj2HkCrnL8xNQP=9VG4N-d-51tcgTaPczpSQcbzDr3Q@mail.gmail.com>
+	<1849969.HA3LMVVk03@yrla>
+Message-ID: <CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>
+
+On Sat, Oct 20, 2012 at 7:47 PM, meik michalke
+<meik.michalke at uni-duesseldorf.de> wrote:
+> i've tried to come up with something hopefully useful. it's a first subsetting
+> plugin called "rk.subset", which is limited to data.frames and can also only
+> filter by variables which are a column in the selected data object. despite
+> these limitations, if nothing it can still hint you to how to use the subset()
+> function if you need more complex subsetting ;-)
+>
+> to test it, go to "settings" -> "manage R packages" -> "install/update/remove"
+> and search/install the package "rk.subset". the new dialog will then be
+> available from RKWard's "data" menu.
+>
+> let me know what you think of it!
+
+Hey, sorry for the late reply. I've tried to install the plugin, but
+unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what
+the problem is but I cannot select any CRAN mirror, so I haven't been
+able to install it.
+
+I'll try to install it at home on my linux system, but where I really
+need it is at work...
+
+Thank you anyway.
+
+Joan
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Nov  2 12:52:25 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 2 Nov 2012 13:52:25 +0100
+Subject: [rkward-users] [rkward-devel]  Select cases
+In-Reply-To: <CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>
+References: <CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>
+	<1849969.HA3LMVVk03@yrla>
+	<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>
+Message-ID: <201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 02 November 2012, Rebel Tyrcus wrote:
+> Hey, sorry for the late reply. I've tried to install the plugin, but
+> unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what
+> the problem is but I cannot select any CRAN mirror, so I haven't been
+> able to install it.
+
+could you give some more detail on this problem? What happens, exactly?
+
+Two shots in the dark:
+- Does it change anything, if you try specifying a fixed mirror at Settings-
+>Configure RKWard->R packages->CRAN download mirror?
+- Does your firewall block internet access for rkward.rbackend.exe?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121102/7e2f12dd/attachment.sig>
+
+From rebel.tyrcus at gmail.com  Mon Nov  5 15:11:05 2012
+From: rebel.tyrcus at gmail.com (Rebel Tyrcus)
+Date: Mon, 5 Nov 2012 16:11:05 +0100
+Subject: [rkward-users] [rkward-devel] Select cases
+In-Reply-To: <201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>
+	<1849969.HA3LMVVk03@yrla>
+	<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>
+	<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>
+
+On Fri, Nov 2, 2012 at 1:52 PM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> On Friday 02 November 2012, Rebel Tyrcus wrote:
+>> Hey, sorry for the late reply. I've tried to install the plugin, but
+>> unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what
+>> the problem is but I cannot select any CRAN mirror, so I haven't been
+>> able to install it.
+>
+> could you give some more detail on this problem? What happens, exactly?
+>
+> Two shots in the dark:
+> - Does it change anything, if you try specifying a fixed mirror at Settings-
+>>Configure RKWard->R packages->CRAN download mirror?
+> - Does your firewall block internet access for rkward.rbackend.exe?
+
+I tried the plugin at home (linux) and it worked flawlesly.
+
+At work (windows) I was guesing is just a proxy problem. I remembered
+that for R I had to modifiy the direct access to the program in the
+desktop, starting R with the flag --internet2. Apparently, this causes
+R using IE proxy internals, otherwise R cannot connect to CRAN servers
+
+"C:\Archivos de programa\R\R-2.15.2\bin\i386\Rgui.exe" --internet2
+
+I guess that the same problem must apply in RKWard.
+
+Best regards.
+
+Joan
+
+
+
+From meik.michalke at uni-duesseldorf.de  Mon Nov  5 17:28:24 2012
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 05 Nov 2012 18:28:24 +0100
+Subject: [rkward-users] windows quirks [was: Select cases]
+In-Reply-To: <CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>
+References: <CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>
+	<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>
+Message-ID: <1378597.fBFNv7rjKA@yrla>
+
+hi joan,
+
+am Montag 05 November 2012, 16:11:05 schrieb Rebel Tyrcus:
+> I tried the plugin at home (linux) and it worked flawlesly.
+
+cool, thanks for the feedback. does it do what you want/need?
+
+> At work (windows) I was guesing is just a proxy problem. I remembered
+> that for R I had to modifiy the direct access to the program in the
+> desktop, starting R with the flag --internet2. Apparently, this causes
+> R using IE proxy internals, otherwise R cannot connect to CRAN servers
+> 
+> "C:\Archivos de programa\R\R-2.15.2\bin\i386\Rgui.exe" --internet2
+
+i received another mail from a user running into the same problem on windows 
+(proxy settings in his company, CRAN downloads failed). thanks for this hint!
+
+according to
+http://cran.r-project.org/bin/windows/base/rw-FAQ.html#The-Internet-download-
+functions-fail_002e
+
+calling
+
+  setInternet2(TRUE)
+
+in a running R session should have the same effect, can you confirm this? if 
+that is the case, you could try to add this command to 
+
+  settings -> configure RKWard -> R-backend -> options box at the bottom
+
+i have also seen (again) that the file opening dialog reliably crashed RKWard 
+0.6.0. we experimented a little and found out that setting the initial working 
+directory to something accessible like
+
+  setwd("C:/") 
+
+acts as a workaround, so having this command in the options box can relieve 
+you from that problem. however, both problems should be solvable in a more 
+obvious manner.
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 2282 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121105/4c5fab01/attachment.p7s>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov  5 18:18:57 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 5 Nov 2012 19:18:57 +0100
+Subject: [rkward-users] [rkward-devel] Select cases
+In-Reply-To: <CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>
+References: <CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>
+	<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>
+Message-ID: <201211051919.02222.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 05 November 2012, Rebel Tyrcus wrote:
+> At work (windows) I was guesing is just a proxy problem. I remembered
+> that for R I had to modifiy the direct access to the program in the
+> desktop, starting R with the flag --internet2. Apparently, this causes
+> R using IE proxy internals, otherwise R cannot connect to CRAN servers
+> 
+> "C:\Archivos de programa\R\R-2.15.2\bin\i386\Rgui.exe" --internet2
+> 
+> I guess that the same problem must apply in RKWard.
+
+yes, if you have to do that in R, then most likely it is the same problem in 
+RKWard, indeed. Since you won't be able to pass custom command line parameters 
+to R, use
+   setInternet2 (TRUE)
+in the R Console window, after starting, and before accessing the net. If that 
+fixes the problem, you can add this to Settings->Configure RKWard->R backend-
+>Further commands to run in each session, in order to make it permanent.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121105/8881c473/attachment.sig>
+

@@ -1,0 +1,117 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Feb 20 12:28:18 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 20 Feb 2015 13:28:18 +0100
+Subject: [rkward-users] Upcoming release RKWard 0.6.3 - Call for testing
+Message-ID: <20150220132818.76a26785@late>
+
+Hi!
+
+A new release of RKWard is coming up, and now is the time to take care
+of the last few rough edges. Please help us with this, if you have some
+time to spare.
+
+I think it's safe to go with a rather short testing period this time,
+and so I'd like to ask you to provide feedback by February 28.
+Naturally, if anything important comes up, the testing period will be
+extended as necessary. More details and download links at
+https://rkward.kde.org/Release_Schedule .
+
+Key new features to look out for, are:
+- RKWard is now 100% translatable. This does not mean it is 100%
+  translated into your language, yet, but this is finally possible.
+- The management of active plugins was reworked. Test Settings->Manage
+  R packages and plugins->Manage RKWard plugins . If you need even more
+  flexibility, take a look at the R function rk.set.plugin.status().
+- The plugin for importing cvs / text data has been reworked from
+  scratch, and also all distributions calculators (densities /
+  quantiles / probabilities).
+- The Analysis->Power Analysis plugin is now part of the distribution
+  (previously available as a separate download).
+
+
+--- Translators ---
+
+In case you've missed it: We are moving to KDE.org, and translations
+are already managed, there. Your existing translations files should
+have been imported. If you have not done so, yet, get in touch with
+your KDE language team (http://l10n.kde.org/teams-list.php).
+
+This also means that calls for translations are no longer sent to this
+list! https://mail.kde.org/mailman/listinfo/kde-i18n-doc is the list
+for this, now.
+
+
+--- RKWard on TeaP ---
+
+For those attending Teap in Hildesheim, in early March, you may be
+interested to learn that there is a symposium "R: Statistics at your
+command" on March 11, 9:00 - 10:30, and this includes a presentation on
+RKWard.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150220/66da278c/attachment.sig>
+
+From ivan.artalejo at yahoo.es  Tue Feb 24 11:31:21 2015
+From: ivan.artalejo at yahoo.es (=?UTF-8?Q?Iv=C3=A1n_Artalejo?=)
+Date: Tue, 24 Feb 2015 11:31:21 +0000 (UTC)
+Subject: [rkward-users] RKWard in other languages
+Message-ID: <1130819713.10180725.1424777481351.JavaMail.yahoo@mail.yahoo.com>
+
+How can I install RKWard in other languages, for example spanish?
+
+Thank you.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150224/9bb65111/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Feb 24 13:37:03 2015
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 24 Feb 2015 14:37:03 +0100
+Subject: [rkward-users] RKWard in other languages
+In-Reply-To: <1130819713.10180725.1424777481351.JavaMail.yahoo@mail.yahoo.com>
+References: <1130819713.10180725.1424777481351.JavaMail.yahoo@mail.yahoo.com>
+Message-ID: <20150224143703.22223672@late>
+
+Hi!
+
+On Tue, 24 Feb 2015 11:31:21 +0000 (UTC)
+Iván Artalejo <ivan.artalejo at yahoo.es> wrote:
+> How can I install RKWard in other languages, for example spanish?
+
+Before everything else: Language support will be _much_ better in the
+upcoming RKWard 0.6.3 (expected in less than two weeks). If you'd tell
+us which platform you're on, we could give you instructions for
+installing a preview release of 0.6.3. 
+
+Other than that, the answer will still depend on what platform you are
+using, and possibly on how you are installing:
+
+- Linux / MacOS:
+All available translations should already be included in your
+installation. RKWard 0.6.3 included "es", but "ca" was de-activated
+due to being too incomplete. To test that translations are actually
+working, start RKWard as
+   KDE_LANG=de rkward
+(the "de" translation is comparatively complete in 0.6.2).
+- Windows:
+The binaries for RKWard up to 0.6.2 did not include any translations,
+yet. The upcoming binaries for 0.6.3 will include translations. The
+existing 0.6.3-pre2 installer already does.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 819 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20150224/3a6ae48f/attachment.sig>
+

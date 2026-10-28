@@ -1,0 +1,652 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-05",
+  "messages": [
+    {
+      "id": "msg-cd18718f80d4",
+      "message_id": "<200905051911.39125.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2009-05-05T17:11:33Z",
+      "subject": "[rkward-users] ubuntu packages",
+      "subject_clean": "[rkward-users] ubuntu packages",
+      "in_reply_to": "<200904301819.51973.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<200904291833.20714.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<200904301819.51973.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "hi,\n\ni have even more packages for you to try 8-) before i add these to the wiki, \ni'd like to have some feedback if they actually work for you.\n\ni've added packages compiled against the recent CRAN version of R (2.9) for \nubuntu 8.04 (kde3 + 4) and 9.04, and built a package for 8.10 as well (CRAN is \nstill missing there, i must first prepare a new qemu image for that). this \nshould cover most use cases for ubuntu, i think:\n\n ### packages for ubuntu 9.04 (jaunty jackalope)\n  ## rkward-0.5.0d-test1 (kde4)\n   # for official ubuntu packages of R:\n  deb http://reaktanz.de/deb/rkward jaunty main\n   # for CRAN packages of R:\n  deb http://reaktanz.de/deb/rkward-cran jaunty main\n\n ### packages for ubuntu 8.10 (intrepid ibex)\n   # rkward-0.5.0d-test1 (kde4)\n   # for official ubuntu packages of R:\n  deb http://reaktanz.de/deb/rkward intrepid main\n   # for CRAN packages of R:\n  [yet to come]\n\n ### packages for ubuntu 8.04 (hardy heron)\n  ## rkward-0.5.0d-test1 (kde4)\n   # for official ubuntu packages of R:\n  deb http://reaktanz.de/deb/rkward hardy main\n   # for CRAN packages of R:\n  deb http://reaktanz.de/deb/rkward-cran hardy main\n  ## rkward-0.4.9b-test1 (kde3)\n   # for official ubuntu packages of R:\n  deb http://reaktanz.de/deb/rkward-kde3 hardy main\n   # for CRAN packages of R:\n  deb http://reaktanz.de/deb/rkward-kde3-cran hardy main\n\nhint: you need only *one* of these, depending on your installation...\n\nplease let me know if you run into problems, but also if it works! it should, \nactually, they all worked on their own test system. but i'd like to have some \nfield testing to feel comfortable.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090505/6b382f66/attachment.sig>",
+      "body_snippet": "hi,\n\ni have even more packages for you to try 8-) before i add these to the wiki, \ni'd like to have some feedback if they actually work for you.\n\ni've added packages compiled against the recent CRAN v",
+      "thread_id": "thread-cd18718f80d4",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-3e7b0a3bf80a",
+      "message_id": "<200905062300.05246.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-05-06T21:00:00Z",
+      "subject": "[rkward-users] Release candidate of RKWard 0.4.9b and 0.5.0d",
+      "subject_clean": "[rkward-users] Release candidate of RKWard 0.4.9b and 0.5.0d",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nAs announced, in last week's mail, I'm closing the first round of testing for \nthe coming releases of RKWard. Testing has turned up a hand full of issues, \nsome of which have been addressed meanwhile. Other issues remain, and \nprobably will not be fixed for the releases, but at this point I think we are \nin pretty good shape for a release, and I am not aware of any showstopper \nbugs.\n\nBased on that, I think we can proceed with the release process swiftly. I've \ncreated \"release candidate\" versions of both releases. Release candidate \nmeans, I expect to turn these into official versions without further changes. \nNaturally, important issues will be addressed as needed, but minor quirks \nwill have to wait for the next releases.\n\nOf course we still need all the testing we can get, and all issues you report \nwill be addressed, eventually. Therefore, if you can find some time, please \ngive these new versions another round of testing:\n\nFor KDE 3:\nhttp://rkward.sourceforge.net/temp/rkward-0.4.9b-rc1.tar.gz\n\nFor KDE 4:\nhttp://rkward.sourceforge.net/temp/rkward-0.5.0d-rc1.tar.gz\n\n--- Timeline ---\nIf all goes well, the official release will be made Sunday, May 10 or Monday, \nMay 11, depending on when exactly I will find the time.\n\n--- Developers / Contributors ---\nPlease don't make changes to SVN until the official release is out. Instead, \nif you have some time and motivation to work on the project in the coming few \ndays, consider working on our new wiki \n(http://apps.sourceforge.net/mediawiki/rkward/index.php?title=Main_Page) a \nbit, to get things into presentable shape.\n\n--- Packagers ---\nI will write a separate mail to rkward-devel shortly.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090506/f711c743/attachment.sig>",
+      "body_snippet": "Hi!\n\nAs announced, in last week's mail, I'm closing the first round of testing for \nthe coming releases of RKWard. Testing has turned up a hand full of issues, \nsome of which have been addressed meanw",
+      "thread_id": "thread-3e7b0a3bf80a",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-c9dbef87a325",
+      "message_id": "<7379707.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-07T15:04:40Z",
+      "subject": "[rkward-users] [rkward - Help] RE: I cannot create my account in wiki",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: I cannot create my account in wiki",
+      "in_reply_to": "<5759560.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379707\nBy: tfry\n\nSorry for taking this long to reply.\n\nOur old wiki was terribly broken for some time. We now have a new wiki\nat http://apps.sourceforge.net/mediawiki/rkward/ . Unfortunately, getting access\nis still not easy, but here are the instructions:\nhttp://apps.sourceforge.net/mediawiki/rkward/index.php?title=Help:Wiki_Editing .\n\nOnce again, sorry for letting you wait this long, and I hope you're still\ninterested.\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379707\nBy: tfry\n\nSorry for taking this long to reply.\n\nOur old wiki was terribly broken for some time. We now ha",
+      "thread_id": "thread-c9dbef87a325",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-9871353468d4",
+      "message_id": "<7379713.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-07T15:11:22Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Single Quotes in Output View",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Single Quotes in Output View",
+      "in_reply_to": "<5013700.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379713\nBy: tfry\n\nI know it's been a long time since you asked this question. But if this is still\nan issue, or somebody else looks this up in the archive: When the output window\nis shown, you should be able to select the correct encoding from View->Set\nEncoding.\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379713\nBy: tfry\n\nI know it's been a long time since you asked this question. But if this is still\nan issue, or s",
+      "thread_id": "thread-9871353468d4",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-11b7546823e0",
+      "message_id": "<7379747.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-07T15:29:08Z",
+      "subject": "[rkward-users] [rkward - Help] RE: nice RKward",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: nice RKward",
+      "in_reply_to": "<5005466.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379747\nBy: tfry\n\nYes, this will nice R as well.\n\nUnder common circumstances with will not have any noticeable effect on the speed\nof computations, though. You can ask for hints on speeding up specific calculations\non the rkward-users mailing list.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379747\nBy: tfry\n\nYes, this will nice R as well.\n\nUnder common circumstances with will not have any noticeable ef",
+      "thread_id": "thread-11b7546823e0",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-e6d797ab0086",
+      "message_id": "<7379828.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-07T16:24:51Z",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "in_reply_to": "<4956278.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379828\nBy: tfry\n\nFinally I found the time to investigate this. And ouch, indeed, we have a bug\nhere. The bug is only noticeable, if there are many / complex objects in the\nuser workspace, though. So the short-term \"solution\" is to clean up the\nworkspace.\n\nBug tracker item:\nhttps://sourceforge.net/forum/message.php?msg_id=6247285\n\nSorry for the long delay!\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379828\nBy: tfry\n\nFinally I found the time to investigate this. And ouch, indeed, we have a bug\nhere. The bug is ",
+      "thread_id": "thread-e6d797ab0086",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-044eade001f3",
+      "message_id": "<7379830.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-07T16:25:49Z",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "in_reply_to": "<7379828.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379830\nBy: tfry\n\nWhoops, wrong link. This one leads to the tracker item:\nhttps://sourceforge.net/tracker/?func=detail&aid=2788482&group_id=50231&atid=459\n007\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7379830\nBy: tfry\n\nWhoops, wrong link. This one leads to the tracker item:\nhttps://sourceforge.net/tracker/?func=d",
+      "thread_id": "thread-e6d797ab0086",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-4c6f82454272",
+      "message_id": "<200905111140.54027.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-05-11T09:40:49Z",
+      "subject": "[rkward-users] RKWard 0.4.9b and 0.5.0d released",
+      "subject_clean": "[rkward-users] RKWard 0.4.9b and 0.5.0d released",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nRKWard 0.4.9b and 0.5.0d are now officially released. As usual, \nhttp://rkward.sf.net/ has an announcement with a summary of the changes.\n\nThanks for your testing / contributions!\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090511/32f7020a/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090511/32f7020a/attachment.sig>",
+      "body_snippet": "Hi,\n\nRKWard 0.4.9b and 0.5.0d are now officially released. As usual, \nhttp://rkward.sf.net/ has an announcement with a summary of the changes.\n\nThanks for your testing / contributions!\n\nRegards\nThomas",
+      "thread_id": "thread-4c6f82454272",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-52108cc663ca",
+      "message_id": "<7387417.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-12T10:08:16Z",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "in_reply_to": "<4956278.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7387417\nBy: tfry\n\nThis should be fixed in SVN revision 2466 (for the KDE 4 branch, only, not sure,\nwhether I'll backport the changes to the KDE 3 branch). Could you give that\na try?\n\nPlease attach further comments to the bug report:\nhttps://sourceforge.net/tracker/?func=detail&aid=2788482&group_id=50231&atid=459\n007\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7387417\nBy: tfry\n\nThis should be fixed in SVN revision 2466 (for the KDE 4 branch, only, not sure,\nwhether I'll b",
+      "thread_id": "thread-52108cc663ca",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-9b154c5f9b8a",
+      "message_id": "<7389830.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-13T15:25:11Z",
+      "subject": "[rkward-users] [rkward - Help] SVN support in rkward ?",
+      "subject_clean": "[rkward-users] [rkward - Help] SVN support in rkward ?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389830\nBy: sneumann\n\nHi, \n\nIs there a recommended way to use SVN to manage files \nin the \"Filesystem Browser\" Tab of RKWard ? \n\nI.e. does that pane use some KDE widget/component \nwhich can be beefed up by a SVN plugin ? \n\nYours,\nSteffen\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389830\nBy: sneumann\n\nHi, \n\nIs there a recommended way to use SVN to manage files \nin the \"Filesystem Browser\" Ta",
+      "thread_id": "thread-9b154c5f9b8a",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-94a7e288ed79",
+      "message_id": "<7389932.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-13T16:10:45Z",
+      "subject": "[rkward-users] [rkward - Help] RE: SVN support in rkward ?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: SVN support in rkward ?",
+      "in_reply_to": "<7389830.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389932\nBy: tfry\n\nThe filesystem browser tab does use a standard KDE widget, and therefore it\nalso supports the KDE kioslaves. For instance, you can simply type\n  svn+http://rkward.svn.sourceforge.net/svnroot/rkward/trunk/rkward/\ninto the location-bar of the browser. Unfortunately, kio_svn only supports read\naccess, but no commits.\n\nNote that this does not work in places where the R processor is involved, as\nthat does not know how to use kioslaves.\n\nAlso, you're probably looking for some more elaborate support esp. also for\ncommitting files. That is not currently possible, and I don't see a way to implement\nthis with reasonable effort. Since this isn't a terribly common use case, I\nprobably won't look into this any further, in the foreseeable future. But if\nyou want to give it a try yourself, or you want to convince us otherwise, contact\nus on rkward-devel AT lists.sourceforge.net .\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389932\nBy: tfry\n\nThe filesystem browser tab does use a standard KDE widget, and therefore it\nalso supports the K",
+      "thread_id": "thread-9b154c5f9b8a",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-5bc336bd8a3d",
+      "message_id": "<7389979.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-13T16:50:01Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward on windows",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward on windows",
+      "in_reply_to": "<6885827.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389979\nBy: tfry\n\nYes, that would be lovely, and eventually it will happen. However, this will\ntake quite some effort, and the developers can only devote a limited amount\nof time to the project. At the moment, we have not even started working on a\nwindows port.\n\nI see you're actively coding in a number of projects. If you would like to get\ninvolved, we could certainly need more hands in all areas, here at RKWard. Contact\nus on rkward-devel AT lists.sourceforge.net, if you like.\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7389979\nBy: tfry\n\nYes, that would be lovely, and eventually it will happen. However, this will\ntake quite some ef",
+      "thread_id": "thread-5bc336bd8a3d",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-f6b829618722",
+      "message_id": "<7390376.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-13T20:58:22Z",
+      "subject": "[rkward-users] [rkward - Help] Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7390376\nBy: joekirchner\n\nHi,\n\nI am unable to build the just released Rkward 050d on OpenSuSE 11.1 with KDE4.\nI also tried the release candidate version last week with the same results.\nIt looks like Cmake cannot find KDE4, even though I have tried dozens of ways\nto tell it how to find it.  Note that I determined my KDE4 directory by submitting\n\"which kget\" and taking off the \"/bin/kget/\" portion of the path. Below I show\nmy output, trying several methods to tell Cmake where to find KDE4. The syntax\nmay not be correct on some of them, because I found the Rkward INSTALL directions\nconfusing.  Nevertheless, they all result in the same error message.\n\nI am using CMake version 2.6.2-2.19.  My box has 2 Dual-Core AMD-Opteron CPUs\nwith 4Gb ram.\n\nCan anyone help with this or is it a bug?\n\nDo you know when and if a SuSE RPM will be released?  That would solve\nmy problem.\n\nThanks, \n\nJoe\n\nHere is my output\n\n=====================================================================\nroot:/usr/bin/build # which kget\n/usr/bin/kget\nroot:/usr/bin/build #\n\nroot:/usr/bin/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release\n-- The C compiler identification is GNU                                    \n-- The CXX compiler identification is GNU                                  \n-- Check for working C compiler: /usr/bin/gcc                              \n-- Check for working C compiler: /usr/bin/gcc -- works                     \n-- Detecting C compiler ABI info                                           \n-- Detecting C compiler ABI info - done                                    \n-- Check for working CXX compiler: /usr/bin/c++                            \n-- Check for working CXX compiler: /usr/bin/c++ -- works                   \n-- Detecting CXX compiler ABI info                                         \n-- Detecting CXX compiler ABI info - done                                  \nCMake Error at /usr/share/cmake/Modules/FindKDE4.cmake:83 (MESSAGE):       \n  ERROR: cmake/modules/FindKDE4Internal.cmake not found in                 \n  /root/.kde4/share/apps;/usr/share/kde4/apps;/etc/kde4/share/apps         \nCall Stack (most recent call first):                                       \n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\nroot:/usr/bin/build # rm -rf *\nroot:/usr/bin/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\n-- The C compiler identification is GNU\n-- The CXX compiler identification is GNU\n-- Check for working C compiler: /usr/bin/gcc\n-- Check for working C compiler: /usr/bin/gcc -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++\n-- Check for working CXX compiler: /usr/bin/c++ -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at /usr/share/cmake/Modules/FindKDE4.cmake:83 (MESSAGE):\n  ERROR: cmake/modules/FindKDE4Internal.cmake not found in\n  /root/.kde4/share/apps;/usr/share/kde4/apps;/etc/kde4/share/apps\nCall Stack (most recent call first):\n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\nroot:/usr/bin/build # rm -rf *\nroot:/usr/bin/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=`/usr --prefix`\nbash: /usr: is a directory\n-- The C compiler identification is GNU\n-- The CXX compiler identification is GNU\n-- Check for working C compiler: /usr/bin/gcc\n-- Check for working C compiler: /usr/bin/gcc -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++\n-- Check for working CXX compiler: /usr/bin/c++ -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at /usr/share/cmake/Modules/FindKDE4.cmake:83 (MESSAGE):\n  ERROR: cmake/modules/FindKDE4Internal.cmake not found in\n  /root/.kde4/share/apps;/usr/share/kde4/apps;/etc/kde4/share/apps\nCall Stack (most recent call first):\n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\nroot:/usr/bin/build # rm -rf *\nroot:/usr/bin/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release  --prefix=/usr\nCMake Error: The source directory \"/usr/bin/build/--prefix=/usr\" does not\nexist.\nSpecify --help for usage, or press the help button on the CMake GUI.\nroot:/usr/bin/build #\n=====================================================================\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7390376\nBy: joekirchner\n\nHi,\n\nI am unable to build the just released Rkward 050d on OpenSuSE 11.1 with KDE4.\nI al",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-0326d3b537c0",
+      "message_id": "<7390927.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-14T04:55:55Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7390376.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7390927\nBy: kapatp\n\nI am neither comfortable with cmake nor have I used Suse. But there are somethings\nthat seemed odd:\n\n1.  Instead of 'which kget' try 'kde4-config --prefix' -- this should ideally\nbe the required prefix.\n\n2. Instead of using /usr/bin/build for the building process try this:\n$ cd /home/joe/Download/rkward-0.5.0d\n$ mkdir build && cd build\n$ cmake ..  (assuming /home/joe/Download/rkward-0.5.0d contains the file\nCMakeLists.txt)\n\n3. Ubuntu's cmake package contains:\n/usr/share/cmake-2.6/Modules/FindKDE4.cmake\nTry the following  (may be as root) and let us know what you get:\nfind /usr -type f -name 'FindKDE4.cmake' \n\nAlso read the INSTALL/README file(s) for rkward.\n\nWe are updating our online documentation. I agree that currently it is a bit\nfragmented. Hopefully things will improve. It would be great if you can take\nsome time to provide your opinions on what is good/bad/what needs improvement\nregarding the new wiki:\n\nhttp://apps.sourceforge.net/mediawiki/rkward/index.php?title=Main_Page\n\nPlease feel free to contact us. Someone else on the list might provide insight\non Suse's rpm updates.\n\nRegards,\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7390927\nBy: kapatp\n\nI am neither comfortable with cmake nor have I used Suse. But there are somethings\nthat seeme",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-a4025753ced9",
+      "message_id": "<7391871.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-14T14:51:23Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7390376.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7391871\nBy: joekirchner\n\nThanks PK,\n\nI tried your suggestions without success and provide some feedback on the\ninstallation instructions and new wiki.\n\nThe response to \n\nfind /usr -type f -name 'FindKDE4.cmake'\n\nis\n\n/usr/share/cmake/Modules/FindKDE4.cmake\n\n\nAs you can see, I tried the 'kde4-config --prefix' syntax in the command:\n\ncmake /home/joe/Download/rkward-0.5.0d -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\n\nThis was the first command syntax I tried last week.  When that failed, I thought\nI was misinterpreting the INSTALL instructions and tried the other syntaxes.\nI even opened up /usr/share/cmake/Modules/FindKDE4.cmake to hardwire the variable\nwhich holds the location of KDE4.  One of the locations I tried was \"/usr\" which\nis the response I get when I type \"kde4-config --prefix\" at the terminal.\n\nI think the problem could be with /usr/share/cmake/Modules/FindKDE4.cmake at\nabout line 83 because it appears not to determine that it has the location of\nKDE4, after I have clearly hardwired the variable.\n\nIn any case, I tried two versions of the in-source syntax that you recommend,\nwithout any more luck:\n\nFirst\n========================================================================\n/home/joe/Download/rkward-0.5.0d # mkdir build\nroot:/home/joe/Download/rkward-0.5.0d # cd build\nroot:/home/joe/Download/rkward-0.5.0d/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\n-- The C compiler identification is GNU\n-- The CXX compiler identification is GNU\n-- Check for working C compiler: /usr/bin/gcc\n-- Check for working C compiler: /usr/bin/gcc -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++\n-- Check for working CXX compiler: /usr/bin/c++ -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at /usr/share/cmake/Modules/FindKDE4.cmake:83 (MESSAGE):\n  ERROR: cmake/modules/FindKDE4Internal.cmake not found in\n  /root/.kde4/share/apps;/usr/share/kde4/apps;/etc/kde4/share/apps\nCall Stack (most recent call first):\n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\nroot:/home/joe/Download/rkward-0.5.0d/build #\n========================================================================\n\nSecond \nrm -rf *\ncoventure:/home/joe/Download/rkward-0.5.0d/build # cmake  -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\nCMake Error: The source directory \"/home/joe/Download/rkward-0.5.0d/build\" does\nnot appear to contain CMakeLists.txt.\nSpecify --help for usage, or press the help button on the CMake GUI.\nroot:/home/joe/Download/rkward-0.5.0d/build #\n========================================================================\n\n\nOn Another Subject -- Feedback on Instructions and the new wiki\n\nI took a quick look at the new wiki.  I like the screenshots, but I think I\ncould evaluate the page better once I have Rkward started and try to reaquaint\nmyself with it.  (It has been about a year since I used it and that was only\nlight usage.)\n\nOne simple comment about the page, from a user perspective is that I would put\na link to installation instructions in the initial contents list.  At the top\nof the page, you will see the following text and links.  I have inserted in\nALL CAPS where a link to installation instructions would be nice.\n===============================================\n  User Documentation\n\nThis section contains documentation on RKWard from a user perspective / intended\nfor end users.\n\n    * Overview\n    * Screenshots\n    * General FAQ\n    * Available downloads\n    * INSTALLATION\n    * Further documentation \n=================================================\n\nI do have feedback on the confusing installation instructions.  Keep in mind,\nmy comments are more stylistic and perhaps after we have resolved my installation\nproblem, I can make some substantive suggestions.\n\nINSTALL document\n\n1) Line 17 recommends the \"out-of-source\" method, while you recommend the in-source\nvariation.  Would it be appropriate to explain to the user to try one method\nand if that does not work try the other?\n\n2) line 59 says, \"You _have to_ install RKWard.  Otherwise RKWard will be missing\nimportant menu-options...\"  That is just confusing. I had to reread it several\ntimes and kept thinking, well of course you have to install RKWard, that is\nwhat I am trying to do here.  Here is a suggested wording:  \"The last step is\nto run the 'make install' command.\"  I would leave out the \"otherwise RKWard\nwill be missing ...\" clause, although I find it interesting that it might work\nat all without 'make install'.\n\n\nGeneral FAQ document on the wiki--installation section\n(http://apps.sourceforge.net/mediawiki/rkward/index.php?title=General_FAQ#Compil\ning_and_installing)\n\n1) See my comment above about having an \"installation\" link on the new wiki.\nThat link might link to this installation text (or some similar revised text).\n\n2) In the KDE4 (RKWard versions 0.5.0 or higher) section, there is a recommended\napproach to run the following commands:\n\n=======================================================================\n# mkdir build; cd build\n# cmake path_to_rkward_sources [options]  # see below\n# make\n# sudo make install\n=======================================================================\n\nThe \"see below\" comment is confusing because there is no explanations of options\nbelow, except those for KDE3, which are relevant to the ./configuration -->\nmake --> make install framework, rather than the cmake --> make --> install\nframework.\n\n3) As an explanation to the above four commands, I would add an instruction\nfor the neophyte that the first three lines of code can be run as either root\nor normal user.\n\nWell, that is all the comments that I have for now.  Let me know if you have\nany more suggestions for resolving the installation problems.\n\nCheers,  \n\nJoe\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7391871\nBy: joekirchner\n\nThanks PK,\n\nI tried your suggestions without success and provide some feedback on the\nin",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-e9d9ab6b815c",
+      "message_id": "<7392402.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-14T20:20:21Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7390376.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7392402\nBy: joekirchner\n\nThanks PK,\n\nI tried your suggestions without success and provide some feedback on the\ninstallation instructions and new wiki.\n\nThe response to \n\nfind /usr -type f -name 'FindKDE4.cmake'\n\nis\n\n/usr/share/cmake/Modules/FindKDE4.cmake\n\n\nAs you can see, I tried the 'kde4-config --prefix' syntax in the command:\n\ncmake /home/joe/Download/rkward-0.5.0d -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\n\nThis was the first command syntax I tried last week.  When that failed, I thought\nI was misinterpreting the INSTALL instructions and tried the other syntaxes.\nI even opened up /usr/share/cmake/Modules/FindKDE4.cmake to hardwire the variable\nwhich holds the location of KDE4.  One of the locations I tried was \"/usr\" which\nis the response I get when I type \"kde4-config --prefix\" at the terminal.\n\nI think the problem could be with /usr/share/cmake/Modules/FindKDE4.cmake at\nabout line 83 because it appears not to determine that it has the location of\nKDE4, after I have clearly hardwired the variable.\n\nIn any case, I tried two versions of the in-source syntax that you recommend,\nwithout any more luck:\n\nFirst\n========================================================================\n/home/joe/Download/rkward-0.5.0d # mkdir build\nroot:/home/joe/Download/rkward-0.5.0d # cd build\nroot:/home/joe/Download/rkward-0.5.0d/build # cmake /home/joe/Download/rkward-0.5.0d\n-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\n-- The C compiler identification is GNU\n-- The CXX compiler identification is GNU\n-- Check for working C compiler: /usr/bin/gcc\n-- Check for working C compiler: /usr/bin/gcc -- works\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++\n-- Check for working CXX compiler: /usr/bin/c++ -- works\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\nCMake Error at /usr/share/cmake/Modules/FindKDE4.cmake:83 (MESSAGE):\n  ERROR: cmake/modules/FindKDE4Internal.cmake not found in\n  /root/.kde4/share/apps;/usr/share/kde4/apps;/etc/kde4/share/apps\nCall Stack (most recent call first):\n  CMakeLists.txt:10 (FIND_PACKAGE)\n\n\n-- Configuring incomplete, errors occurred!\nroot:/home/joe/Download/rkward-0.5.0d/build #\n========================================================================\n\nSecond \nrm -rf *\ncoventure:/home/joe/Download/rkward-0.5.0d/build # cmake  -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\nCMake Error: The source directory \"/home/joe/Download/rkward-0.5.0d/build\" does\nnot appear to contain CMakeLists.txt.\nSpecify --help for usage, or press the help button on the CMake GUI.\nroot:/home/joe/Download/rkward-0.5.0d/build #\n========================================================================\n\n\nOn Another Subject -- Feedback on Instructions and the new wiki\n\nI took a quick look at the new wiki.  I like the screenshots, but I think I\ncould evaluate the page better once I have Rkward started and try to reaquaint\nmyself with it.  (It has been about a year since I used it and that was only\nlight usage.)\n\nOne simple comment about the page, from a user perspective is that I would put\na link to installation instructions in the initial contents list.  At the top\nof the page, you will see the following text and links.  I have inserted in\nALL CAPS where a link to installation instructions would be nice.\n===============================================\n  User Documentation\n\nThis section contains documentation on RKWard from a user perspective / intended\nfor end users.\n\n    * Overview\n    * Screenshots\n    * General FAQ\n    * Available downloads\n    * INSTALLATION\n    * Further documentation \n=================================================\n\nI do have feedback on the confusing installation instructions.  Keep in mind,\nmy comments are more stylistic and perhaps after we have resolved my installation\nproblem, I can make some substantive suggestions.\n\nINSTALL document\n\n1) Line 17 recommends the \"out-of-source\" method, while you recommend the in-source\nvariation.  Would it be appropriate to explain to the user to try one method\nand if that does not work try the other?\n\n2) line 59 says, \"You _have to_ install RKWard.  Otherwise RKWard will be missing\nimportant menu-options...\"  That is just confusing. I had to reread it several\ntimes and kept thinking, well of course you have to install RKWard, that is\nwhat I am trying to do here.  Here is a suggested wording:  \"The last step is\nto run the 'make install' command.\"  I would leave out the \"otherwise RKWard\nwill be missing ...\" clause, although I find it interesting that it might work\nat all without 'make install'.\n\n\nGeneral FAQ document on the wiki--installation section\n(http://apps.sourceforge.net/mediawiki/rkward/index.php?title=General_FAQ#Compil\ning_and_installing)\n\n1) See my comment above about having an \"installation\" link on the new wiki.\nThat link might link to this installation text (or some similar revised text).\n\n2) In the KDE4 (RKWard versions 0.5.0 or higher) section, there is a recommended\napproach to run the following commands:\n\n=======================================================================\n# mkdir build; cd build\n# cmake path_to_rkward_sources [options]  # see below\n# make\n# sudo make install\n=======================================================================\n\nThe \"see below\" comment is confusing because there is no explanations of options\nbelow, except those for KDE3, which are relevant to the ./configuration -->\nmake --> make install framework, rather than the cmake --> make --> install\nframework.\n\n3) As an explanation to the above four commands, I would add an instruction\nfor the neophyte that the first three lines of code can be run as either root\nor normal user.\n\nWell, that is all the comments that I have for now.  Let me know if you have\nany more suggestions for resolving the installation problems.\n\nCheers,  \n\nJoe\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7392402\nBy: joekirchner\n\nThanks PK,\n\nI tried your suggestions without success and provide some feedback on the\nin",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-309b80672330",
+      "message_id": "<7392465.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-14T20:58:08Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7392402.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7392465\nBy: tfry\n\nHi Joe,\n\nthanks for your feedback. I'll take a closer look at your suggestions, soon.\nFor now, here's another shot at the installation problem:\n\nThe file you seem to be lacking is in fact \"FindKDE4internal.cmake\", not\n\"FindKDE4.cmake\". You could try\n   find /usr -name \"FindKDE4internal.cmake\"\nto check whether you have that file, somewhere. However, my guess is that you\ndon't have the kdelibs headers installed, yet. I don't know the exact name of\nthat on openSUSE, probably something like kdelibs4-devel, libkde4-devel, kdelibs-dev\n(version 4.x) or similar.\n\nCould you make sure you have that installed?\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7392465\nBy: tfry\n\nHi Joe,\n\nthanks for your feedback. I'll take a closer look at your suggestions, soon.\nFor now, ",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 2,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-d739db87c635",
+      "message_id": "<7393917.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-15T15:26:08Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7392402.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7393917\nBy: tfry\n\nShort feedback on your suggestions:\n\nINSTALL: 1) Technically that *is* and out-of-source build. But that's being\nnitpicky. Nobody really needs an in-source build, so I removed that part.\n2) Reworded a bit. I left the part about missing menu items in, as that is a\nfrequently reported symptom for all sorts of installation (make install)-related\nissues.\n\nWiki: 1) I've split the compilation/installation instructions out of the General\nFAQ, restructured/udpated them a bit, and linked them to the front page.\n2) Fixed.\n3) Any suggestion for a wording that does not make things even more confusing?\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7393917\nBy: tfry\n\nShort feedback on your suggestions:\n\nINSTALL: 1) Technically that *is* and out-of-source build.",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 2,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-779b48bc4264",
+      "message_id": "<7394222.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-15T18:36:02Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7390376.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7394222\nBy: joekirchner\n\nThomas,\n\nYou were right.  Find could not find FindKDE4internal.cmake.  I do have kdelibs4\ninstalled, but not kdelibs4-devel.  Unfortunately, this is dependent on bzip2-devel.\nI could not find corresponding version of bzip2 for my system after an exhaustive\nsearch.  I do have libkde4 and installed libkde4-devel.\n\nNow when I run cmake, I get the following error:\n\n============================================================================\nroot:/home/joe/Download/rkward-0.5.0d/build # cmake  -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`\nCMake Error: The source directory \"/home/joe/Download/rkward-0.5.0d/build\" does\nnot appear to contain CMakeLists.txt.\nSpecify --help for usage, or press the help button on the CMake GUI.\n\nroot:/home/joe/Download/rkward-0.5.0d/build #\n\n============================================================================\n\nI have written to bzip2 to request bzip2-devel.  I will let you know how that\ngoes if I get it.\n\nThanks,\n\nJoe\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7394222\nBy: joekirchner\n\nThomas,\n\nYou were right.  Find could not find FindKDE4internal.cmake.  I do have kdelibs",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-c76b31e4debc",
+      "message_id": "<7394491.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-15T22:11:44Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7394222.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7394491\nBy: kapatp\n\nOK:\n\n1. Try not to use root when building (probably doesn't harm,  but still...).\nroot is needed only when doing make install.\n\n2. [Aside] I got confused again. For Debian derivatives kdelibs4 was for KDE\n3.x and kdelibs5 is for KDE 4.x. But searching through opensuse softwares, it\nseems they are named: kdelibs3 and kdelibs4, respectively.\n\n3. Suse 11.1's 'libkde4-devel' package contains\n/usr/share/kde4/apps/cmake/modules/FindKDE4Internal.cmake which at the same\nlocation as that for Debian's kdelibs5-dev package.\n\nSuse 11.1: http://download.opensuse.org/repositories/KDE:/42/openSUSE_11.1/i586/\nlibkde4-devel-4.2.3-3.1.i586.rpm\nUbuntu: http://packages.ubuntu.com/jaunty/i386/kdelibs5-dev/filelist\n\nSo, there you go, install libkde4-devel, then give the correct cmake command:\n\n4. You'll need to provide a correct path to cmake, eg:\n\n/home/joe/Download/rkward-0.5.0d/build # cmake -DCMAKE_BUILD_TYPE=Release\n-DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` ..\n\nNote the '..' in the end of the above line. Specifically, this should be the\npath to the directory where CMakeLists.txt exists. It is generally specified\nas relative to the current working directory, hence '..' or '../rkward'.\n\nHopefully, it should compile now.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7394491\nBy: kapatp\n\nOK:\n\n1. Try not to use root when building (probably doesn't harm,  but still...).\nroot is nee",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 2,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-f5fdb10b6c68",
+      "message_id": "<7396107.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-17T15:40:27Z",
+      "subject": "[rkward-users] [rkward - Help] rkward-0.5.0d: \"QT4_AUTOMOC\" cmake problem",
+      "subject_clean": "[rkward-users] [rkward - Help] rkward-0.5.0d: \"QT4_AUTOMOC\" cmake problem",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7396107\nBy: intelligo\n\nI'm running openSUSE 11.1 32-bit with KDE 4.1.3 and cmake 2.6 patch 2.\n\nWhen I run cmake within-source with the following command:\n\ncmake -Wno-dev rkward/\n\nI get the following error:\n\nCMake Error at dataeditor/CMakeLists.txt:19 (QT4_AUTOMOC):\n  Unknown CMake command \"QT4_AUTOMOC\".\n\n\n-- Configuring incomplete, errors occurred!\n\nThe -Wno-dev option makes no difference.\n\nI have what I believe to be the necessary libraries and dependencies.  Moreover,\nI looked in the datafiles directory and there is no CMakeLists.txt file there.\nThe CMakesList.txt file in the rkward-0.5.0d directory does not contain the\nQT4-AUTOMOC command.\n\nWhat's the matter?\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7396107\nBy: intelligo\n\nI'm running openSUSE 11.1 32-bit with KDE 4.1.3 and cmake 2.6 patch 2.\n\nWhen I run cmake w",
+      "thread_id": "thread-f5fdb10b6c68",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-050e723b69b5",
+      "message_id": "<7397809.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-18T16:27:01Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.5.0d: \"QT4_AUTOMOC\" cmake problem",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.5.0d: \"QT4_AUTOMOC\" cmake problem",
+      "in_reply_to": "<7396107.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7397809\nBy: tfry\n\nIf you really want to use a within-source build, you need to start one directory\nhigher:\n   cmake [options] .\n\nHowever, the recommended approach is really these steps:\n\ntar -xvzf rkward-[version].tar.gz\ncd rkward-[version]\nmkdir build; cd build\ncmake [options] ..\nmake\nsudo make install\n\nSee also http://p.sf.net/rkward/compiling .\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7397809\nBy: tfry\n\nIf you really want to use a within-source build, you need to start one directory\nhigher:\n   cma",
+      "thread_id": "thread-f5fdb10b6c68",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-a50a17980b38",
+      "message_id": "<7397817.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-18T16:30:40Z",
+      "subject": "[rkward-users] [rkward - Help] RE: pdf vignettes fail to display",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: pdf vignettes fail to display",
+      "in_reply_to": "<5778217.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7397817\nBy: tfry\n\nApologies for the long delay. That's a bug in the RKWard help browser, and I\nsee no other workaround in current released versions of RKWard.\n\nHowever, this should now be fixed in the development versions on both the KDE\n3 and KDE 4 branches. If you would like to take a look without waiting for the\nnext official release, see http://p.sf.net/rkward/svn .\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7397817\nBy: tfry\n\nApologies for the long delay. That's a bug in the RKWard help browser, and I\nsee no other worka",
+      "thread_id": "thread-a50a17980b38",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-01f6bc0c919e",
+      "message_id": "<7400310.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-20T02:48:36Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "in_reply_to": "<7390376.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7400310\nBy: joekirchner\n\nThomas,\n\nWell, that was easier said than done.  I must have spent a good four to five\nhours dealing with dependencies.\n\nBut there is a rkward (pun fully intended) to persistence and I was successfully\nable to install and run the program.\n\nMost of the files that I needed were\nin http://download.opensuse.org/repositories/KDE:/42/openSUSE_11.1/x86_64, which\nyou mentioned, but a few could not find and had to go to http://rpm.pbone.net\nto find.  Note, that I I substituted my architecture--x86_64--for i586.  You\nmight want to warn folks, especially SuSE folks that they may need to rely on\nthese two sources for some of the odd dependencies.\n\nThe other thing that was odd, was that I needed to disable all of my repositories\nexcept http://download.opensuse.org/repositories/KDE:/42/openSUSE_11.1/x86_64\nand my local download directory. Somehow, I think that SuSE's YAST installer\nprioritized the other repositories, which did not include kde4.2 files.\n\nThanks for your help!!\n\nCheers\n\nJoe\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7400310\nBy: joekirchner\n\nThomas,\n\nWell, that was easier said than done.  I must have spent a good four to five\nho",
+      "thread_id": "thread-f6b829618722",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-548b40acbcc9",
+      "message_id": "<200905221445.43484.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-05-22T12:45:31Z",
+      "subject": "[rkward-users] Dropping support for R 2.6.x and older on KDE 4",
+      "subject_clean": "[rkward-users] Dropping support for R 2.6.x and older on KDE 4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI intend to drop support for R 2.6.x and earlier from coming releases of \nRKWard for KDE 4. This is in order to clean up an reduce code complexity. The \nKDE 3 branch, i.e. RKWard 0.4.9x will continue to support old versions of R.\n\nIs anybody here using the combination of RKWard >= 0.5.0 and R < 2.7.0, or do \nyou see any other good reason to keep supporting older versions of R in RKWard \nfor KDE 4? If so, please speak up, soon.\n\nRegards\nThomas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090522/21650c20/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090522/21650c20/attachment.sig>",
+      "body_snippet": "Hi,\n\nI intend to drop support for R 2.6.x and earlier from coming releases of \nRKWard for KDE 4. This is in order to clean up an reduce code complexity. The \nKDE 3 branch, i.e. RKWard 0.4.9x will cont",
+      "thread_id": "thread-548b40acbcc9",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-273425f428f9",
+      "message_id": "<7409824.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-26T07:00:00Z",
+      "subject": "[rkward-users] [rkward - Help] A UTF-8 and windows coding problem",
+      "subject_clean": "[rkward-users] [rkward - Help] A UTF-8 and windows coding problem",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7409824\nBy: krcabrer\n\nHi rkward developers.\n\nI want to know if it is possible to add an option so I can edit\ncompile and work with windows (ISO-8859-15) coded files.\n\nRight now you can \"save as..\" with a different codification than UTF-8,\nbut you can not edit again the same saved file, because the editor\ncomplain about the codification but do not let you to change\nthe codification or use the windows codification.\n\nI would like to have the option to work with windows (ISO-8859-15) \ncodification because I interchange a lot of R scripts with people that\nuse windows and do not have editors that understand UTF-8 codification.\n\nThank you for your help.\n\nKenneth\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7409824\nBy: krcabrer\n\nHi rkward developers.\n\nI want to know if it is possible to add an option so I can edit\ncomp",
+      "thread_id": "thread-273425f428f9",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-bfc6053db514",
+      "message_id": "<7410719.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-26T15:41:55Z",
+      "subject": "[rkward-users] [rkward - Help] RE: A UTF-8 and windows coding problem",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: A UTF-8 and windows coding problem",
+      "in_reply_to": "<7409824.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7410719\nBy: manchito\n\nHi Kenneth:\n\nI don't know what version of RKWard you are using, but in 0.5.0d (the latest)\nyou can change the encoding of the current script in: Edit -> Tools Move ->\nEncoding.\n\nYou can also change the default encoding for *all* the files you load/save in\nSettings -> Configure editor -> Open/Save -> General -> File Format -> Encoding.\n\nIt's nearly the same in RKWard 0.4.9b (KDE3).\n\nHope it helps. If not, feel free to ask further.\n\nBest regards,\n\nMancho\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7410719\nBy: manchito\n\nHi Kenneth:\n\nI don't know what version of RKWard you are using, but in 0.5.0d (the latest)\n",
+      "thread_id": "thread-273425f428f9",
+      "thread_depth": 1,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-7b55863e4d45",
+      "message_id": "<7413795.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-28T07:47:27Z",
+      "subject": "[rkward-users] [rkward - Help] RKward ask for information while startup",
+      "subject_clean": "[rkward-users] [rkward - Help] RKward ask for information while startup",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7413795\nBy: oeliii\n\nI installed Rkward (0.4.9a-3.5) on OpenSuse 11.0 from a rpm provided by the\nhttp://download.opensuse.org/repositories/home:/dsteuer/ repository.\n\nWhen I start rkward a window pops up that askes for Information\n\n\"R backend needs Information\"\n\"Selection:\"\n\nwhat do I need to type in to continue?\n\nthanks \n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7413795\nBy: oeliii\n\nI installed Rkward (0.4.9a-3.5) on OpenSuse 11.0 from a rpm provided by the\nhttp://download.o",
+      "thread_id": "thread-7b55863e4d45",
+      "thread_depth": 0,
+      "month": "2009-05"
+    },
+    {
+      "id": "msg-cc9b14c10d09",
+      "message_id": "<7414070.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2009-05-28T10:01:55Z",
+      "subject": "[rkward-users] [rkward - Help] RE: RKward ask for information while startup",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: RKward ask for information while startup",
+      "in_reply_to": "<7413795.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7414070\nBy: tfry\n\nMost likely you are using RKWard with R 2.9.0, and unfortunately that does not\nwork at all with RKWard 0.4.9a. So you basically have the choice between downgrading\nR (to R 2.7.0, if you want everything to work, properly), or installing RKWard\n0.4.9b (or 0.5.0d, if KDE 4 is an option).\n\nI don't know, if and when Detlef Steuer (or somebody else) will be providing\nupdated packages for OpenSuse. We have reworked our instructions on\ncompiling/installing RKWard form source, and probably your best bet is to give\nthat a try. The hardest part really is to find/install the packages that are\nneeded to make building work, the steps after that should be no problem:\n\nhttp://p.sf.net/rkward/compiling\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=7414070\nBy: tfry\n\nMost likely you are using RKWard with R 2.9.0, and unfortunately that does not\nwork at all with",
+      "thread_id": "thread-7b55863e4d45",
+      "thread_depth": 1,
+      "month": "2009-05"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cd18718f80d4",
+      "subject": "[rkward-users] ubuntu packages",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2009-05-05T17:11:33Z",
+      "last_reply": "2009-05-05T17:11:33Z",
+      "root_message_id": "msg-cd18718f80d4"
+    },
+    {
+      "id": "thread-3e7b0a3bf80a",
+      "subject": "[rkward-users] Release candidate of RKWard 0.4.9b and 0.5.0d",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-05-06T21:00:00Z",
+      "last_reply": "2009-05-06T21:00:00Z",
+      "root_message_id": "msg-3e7b0a3bf80a"
+    },
+    {
+      "id": "thread-c9dbef87a325",
+      "subject": "[rkward-users] [rkward - Help] RE: I cannot create my account in wiki",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-07T15:04:40Z",
+      "last_reply": "2009-05-07T15:04:40Z",
+      "root_message_id": "msg-c9dbef87a325"
+    },
+    {
+      "id": "thread-9871353468d4",
+      "subject": "[rkward-users] [rkward - Help] RE: Single Quotes in Output View",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-07T15:11:22Z",
+      "last_reply": "2009-05-07T15:11:22Z",
+      "root_message_id": "msg-9871353468d4"
+    },
+    {
+      "id": "thread-11b7546823e0",
+      "subject": "[rkward-users] [rkward - Help] RE: nice RKward",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-07T15:29:08Z",
+      "last_reply": "2009-05-07T15:29:08Z",
+      "root_message_id": "msg-11b7546823e0"
+    },
+    {
+      "id": "thread-e6d797ab0086",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-07T16:24:51Z",
+      "last_reply": "2009-05-07T16:25:49Z",
+      "root_message_id": "msg-e6d797ab0086"
+    },
+    {
+      "id": "thread-4c6f82454272",
+      "subject": "[rkward-users] RKWard 0.4.9b and 0.5.0d released",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-05-11T09:40:49Z",
+      "last_reply": "2009-05-11T09:40:49Z",
+      "root_message_id": "msg-4c6f82454272"
+    },
+    {
+      "id": "thread-52108cc663ca",
+      "subject": "[rkward-users] [rkward - Help] RE: .rk.get.structure() strange behaviour",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-12T10:08:16Z",
+      "last_reply": "2009-05-12T10:08:16Z",
+      "root_message_id": "msg-52108cc663ca"
+    },
+    {
+      "id": "thread-9b154c5f9b8a",
+      "subject": "[rkward-users] [rkward - Help] SVN support in rkward ?",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-13T15:25:11Z",
+      "last_reply": "2009-05-13T16:10:45Z",
+      "root_message_id": "msg-9b154c5f9b8a"
+    },
+    {
+      "id": "thread-5bc336bd8a3d",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward on windows",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-13T16:50:01Z",
+      "last_reply": "2009-05-13T16:50:01Z",
+      "root_message_id": "msg-5bc336bd8a3d"
+    },
+    {
+      "id": "thread-f6b829618722",
+      "subject": "[rkward-users] [rkward - Help] Can't build Rkward 050d on OpenSuSE 11.1 KDE4",
+      "message_count": 9,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-13T20:58:22Z",
+      "last_reply": "2009-05-20T02:48:36Z",
+      "root_message_id": "msg-f6b829618722"
+    },
+    {
+      "id": "thread-f5fdb10b6c68",
+      "subject": "[rkward-users] [rkward - Help] rkward-0.5.0d: \"QT4_AUTOMOC\" cmake problem",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-17T15:40:27Z",
+      "last_reply": "2009-05-18T16:27:01Z",
+      "root_message_id": "msg-f5fdb10b6c68"
+    },
+    {
+      "id": "thread-a50a17980b38",
+      "subject": "[rkward-users] [rkward - Help] RE: pdf vignettes fail to display",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-18T16:30:40Z",
+      "last_reply": "2009-05-18T16:30:40Z",
+      "root_message_id": "msg-a50a17980b38"
+    },
+    {
+      "id": "thread-548b40acbcc9",
+      "subject": "[rkward-users] Dropping support for R 2.6.x and older on KDE 4",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-05-22T12:45:31Z",
+      "last_reply": "2009-05-22T12:45:31Z",
+      "root_message_id": "msg-548b40acbcc9"
+    },
+    {
+      "id": "thread-273425f428f9",
+      "subject": "[rkward-users] [rkward - Help] A UTF-8 and windows coding problem",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-26T07:00:00Z",
+      "last_reply": "2009-05-26T15:41:55Z",
+      "root_message_id": "msg-273425f428f9"
+    },
+    {
+      "id": "thread-7b55863e4d45",
+      "subject": "[rkward-users] [rkward - Help] RKward ask for information while startup",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2009-05-28T07:47:27Z",
+      "last_reply": "2009-05-28T10:01:55Z",
+      "root_message_id": "msg-7b55863e4d45"
+    }
+  ]
+}

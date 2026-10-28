@@ -1,0 +1,124 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2019-08",
+  "messages": [
+    {
+      "id": "msg-261b246f58c5",
+      "message_id": "<21290062.739975.1564650661539@mail.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2019-08-01T09:11:01Z",
+      "subject": "Help info does not display",
+      "subject_clean": "Help info does not display",
+      "in_reply_to": null,
+      "references": [
+        "<21290062.739975.1564650661539.ref@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi,\nI just installed RkWard for Windows. \n\n Help does not want to appear neither from a script file (Function reference) nor from the Help Search window at the bottom of RKWard and nor from Help on R in the Help menu.\n\nFor example, I tried to get help for persp() function, but no help is displayed.\n\nI used the Windows installer to install RKWard:\n   \n   - RKWard Version 0.7.0b\n   - R 3.4.4\n   - Windows 10\n\nThanks,\n\nFrançois\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190801/4d80352e/attachment.html>",
+      "body_snippet": "Hi,\nI just installed RkWard for Windows. \n\n Help does not want to appear neither from a script file (Function reference) nor from the Help Search window at the bottom of RKWard and nor from Help on R ",
+      "thread_id": "thread-261b246f58c5",
+      "thread_depth": 0,
+      "month": "2019-08"
+    },
+    {
+      "id": "msg-e04106650194",
+      "message_id": "<20190801125134.23133f71@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2019-08-01T10:51:34Z",
+      "subject": "Help info does not display",
+      "subject_clean": "Help info does not display",
+      "in_reply_to": "<21290062.739975.1564650661539@mail.yahoo.com>",
+      "references": [
+        "<21290062.739975.1564650661539.ref@mail.yahoo.com>",
+        "<21290062.739975.1564650661539@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Thu, 1 Aug 2019 09:11:01 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n> I just installed RkWard for Windows. \n> \n>  Help does not want to appear neither from a script file (Function\n> reference) nor from the Help Search window at the bottom of RKWard\n> and nor from Help on R in the Help menu.\n> \n> For example, I tried to get help for persp() function, but no help is\n> displayed.\n\ncould you try running\n  rk.show.html(\"some_local_file.html\")\n? Does this work?\n\nWhat is the output of\n  options(\"browser\")\n? (Try setting it to\n  options(browser=rk.show.html)\n)\n\nDoes the \"Help on RKWard\" from the Help menu display, correctly?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190801/6983edc1/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Thu, 1 Aug 2019 09:11:01 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n> I just installed RkWard for Windows. \n> \n>  Help does not want to appear neither from a script fi",
+      "thread_id": "thread-261b246f58c5",
+      "thread_depth": 1,
+      "month": "2019-08"
+    },
+    {
+      "id": "msg-4b6a5626b41a",
+      "message_id": "<20190803143645.45e2f75b@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2019-08-03T12:36:45Z",
+      "subject": "Help info does not display",
+      "subject_clean": "Help info does not display",
+      "in_reply_to": "<1254576781.119937.1564741871945@mail.yahoo.com>",
+      "references": [
+        "<21290062.739975.1564650661539.ref@mail.yahoo.com>",
+        "<21290062.739975.1564650661539@mail.yahoo.com>",
+        "<20190801125134.23133f71@edge>",
+        "<1254576781.119937.1564741871945@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi!\n\nOn Fri, 2 Aug 2019 10:31:11 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n>  This one works perfectly :  rk.show.html(\"some_local_file.html\")\n\nGood. Does the following work, too:\n  browseURL(\"some_local_file.html\")\n\n> Here is the ouput of options(\"browser\"):\n[...]\n\nLooks good. My next guess is that it might be options(\"help_type\").\nCould you make sure this is set to \"html\"?\n\nThanks\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190803/b5b8d31e/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Fri, 2 Aug 2019 10:31:11 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n>  This one works perfectly :  rk.show.html(\"some_local_file.html\")\n\nGood. Does the following work,",
+      "thread_id": "thread-4b6a5626b41a",
+      "thread_depth": 0,
+      "month": "2019-08"
+    },
+    {
+      "id": "msg-a32806027479",
+      "message_id": "<20190804095910.23b02b58@edge>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2019-08-04T07:59:10Z",
+      "subject": "Help info does not display",
+      "subject_clean": "Help info does not display",
+      "in_reply_to": "<694679726.686775.1564861778358@mail.yahoo.com>",
+      "references": [
+        "<21290062.739975.1564650661539.ref@mail.yahoo.com>",
+        "<21290062.739975.1564650661539@mail.yahoo.com>",
+        "<20190801125134.23133f71@edge>",
+        "<1254576781.119937.1564741871945@mail.yahoo.com>",
+        "<20190803143645.45e2f75b@edge>",
+        "<694679726.686775.1564861778358@mail.yahoo.com>"
+      ],
+      "body_plain": "Hi!\n\nOn Sat, 3 Aug 2019 19:49:38 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n> Hi Thomas,\n> OK, browseURL(\"some_local_file.html\") works perfectly.\n> And options(\"help_type\") is set to \"html\"\n\nStrange. I cannot see what might possibly be wrong, then.\n\n> Another guess ?\n\nJust in case, please try a recent nightly build:\nhttps://binary-factory.kde.org/job/RKWard_Nightly_mingw64/\n\nIf that does not change anything, please check rk.sessionInfo() for the\nlocation of debug message files, and post them both (frontend /\nbackend).\n\nRegards\nThomas\n\n> Thanks,\n> \n> François\n> \n> \n>  \n> \n>     Le samedi 3 août 2019 08 h 36 min 56 s UTC−4, Thomas\n> Friedrichsmeier <thomas.friedrichsmeier at ruhr-uni-bochum.de> a écrit : \n>  Hi!\n> \n> On Fri, 2 Aug 2019 10:31:11 +0000 (UTC)\n> Francois Maurice <maurice.francois at ymail.com> wrote:\n> >  This one works perfectly :  rk.show.html(\"some_local_file.html\")  \n> \n> Good. Does the following work, too:\n>   browseURL(\"some_local_file.html\")\n> \n> > Here is the ouput of options(\"browser\"):  \n> [...]\n> \n> Looks good. My next guess is that it might be options(\"help_type\").\n> Could you make sure this is set to \"html\"?\n> \n> Thanks\n> Thomas  \n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20190804/ad7e1f9f/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Sat, 3 Aug 2019 19:49:38 +0000 (UTC)\nFrancois Maurice <maurice.francois at ymail.com> wrote:\n> Hi Thomas,\n> OK, browseURL(\"some_local_file.html\") works perfectly.\n> And options(\"help_type\") is",
+      "thread_id": "thread-a32806027479",
+      "thread_depth": 0,
+      "month": "2019-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-261b246f58c5",
+      "subject": "Help info does not display",
+      "message_count": 2,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2019-08-01T09:11:01Z",
+      "last_reply": "2019-08-01T10:51:34Z",
+      "root_message_id": "msg-261b246f58c5"
+    },
+    {
+      "id": "thread-4b6a5626b41a",
+      "subject": "Help info does not display",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2019-08-03T12:36:45Z",
+      "last_reply": "2019-08-03T12:36:45Z",
+      "root_message_id": "msg-4b6a5626b41a"
+    },
+    {
+      "id": "thread-a32806027479",
+      "subject": "Help info does not display",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2019-08-04T07:59:10Z",
+      "last_reply": "2019-08-04T07:59:10Z",
+      "root_message_id": "msg-a32806027479"
+    }
+  ]
+}

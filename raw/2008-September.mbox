@@ -1,0 +1,370 @@
+From noreply at sourceforge.net  Wed Sep  3 17:40:48 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 03 Sep 2008 17:40:48 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5205712.165574@sourceforge.net>
+Message-ID: <5223967.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5223967
+By: studentz
+
+Thanks for a wonderful GUI of R..Here is my problem:  After I  upgraded  ( I
+do not remember wich packages) the app is not working anymore. I reinstalled,
+downgraded the app without any success.
+This is the message after launched in a console: 
+/usr/bin/rkward.bin: error while loading shared libraries: libRlapack.so: cannot
+open shared object file: No such file or directory
+ (I looked  for the file in my file system and home and it is not present)
+
+Platform Ubuntu Hardy
+rkward_0.4.9-2ubuntu0.1_i386.deb   02-May-2008 03:04  870K
+rkward_0.5.0b-2_i386.deb           14-Jun-2008 10:05  927K 
+Thanks 
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Sep  6 04:02:43 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 06 Sep 2008 04:02:43 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5205947.165574@sourceforge.net>
+Message-ID: <5234940.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5234940
+By: studentz
+
+Thanks for you answer, you were right
+Here is how I solved my problem: 
+the library  is located in
+ /usr/lib/R/modules
+ but is named lapack.so
+next I copy the file in the same folder with the right name
+<sudo cp lapack.so libRlapack.so>
+make a link of this file and move to
+/usr/lib
+ voila it is working
+thanks
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Sep  9 14:48:17 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Sep 2008 14:48:17 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5205712.165574@sourceforge.net>
+Message-ID: <5247512.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5247512
+By: fsando
+
+Thank to you too.
+I'm just installing on a new laptop and ran into that very same issue, couldn't
+even install - your suggestion solved it. I only wonder why this keeps happening.
+It's a bit sad as it throws off people so easily.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Sep  9 16:03:38 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Sep 2008 16:03:38 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5205712.165574@sourceforge.net>
+Message-ID: <5247821.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5247821
+By: nono_231
+
+Dear fsando & studentz,
+
+As far as I remember libRlapack.so was not available at the official debs of
+Debian and Ubuntu. I say as far as I remember because I compile R for long time
+now.
+
+One option is to add 
+
+deb http://my.favorite.cran.mirror/bin/linux/ubuntu hardy/
+
+where at my.favorite.cran.mirror add you favorite and closer mirror e.g.
+
+deb http://cran.r-project.org/bin/linux/ubuntu hardy/
+
+This probably will have libRlapack.so, although not tested.
+
+the second option is to compile R yourself. I do not remember again surely but
+one of the libraries in the lib directory of R was missing the deb files. So
+I made a small script to install R correctly:
+
+#!/bin/bash
+./configure --enable-R-shlib --enable-mbcs && make
+
+Untar the file, if you want rename it to R, and run the script in the R fodler.
+
+This way you can have a topically installed R. In order to have  libRlapack.so
+and tk you have to have installed the libraries. The ./configure will help you
+see what is missing. I see that I have installed libblas3gf and and liblapack3gf.
+For Tk you need tk-dev, tcl-dev, for java support sun-java6-jdk. The
+
+./configure 
+
+script will warn you with what is missing anyhow. However if it is not critical
+it will compile and install without it.
+
+After running the above script somewhere in your home e.g. Projects, you have
+two options. One to make a shortcut to the /usr/bin:
+
+cd /usr/bin
+sudo ln -s ~/Projects/R/bin/R ./
+
+This way R is can be run from there using the R command as usual. 
+
+Otherwise you can make
+
+sudo make install 
+
+and install to your system. The first way is more handy at upgrading.
+
+I hope something of the above can help you
+
+Kind Regards,
+Ilias
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Sep  9 16:05:14 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 09 Sep 2008 16:05:14 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5205712.165574@sourceforge.net>
+Message-ID: <5247830.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5247830
+By: nono_231
+
+Sorry, a small correction.
+
+One option is to add to your repositories the 
+
+deb http://my.favorite.cran.mirror/bin/linux/ubuntu hardy/ 
+ 
+where at my.favorite.cran.mirror add you favorite and closer mirror e.g. 
+ 
+deb http://cran.r-project.org/bin/linux/ubuntu hardy/ 
+ 
+This probably will have libRlapack.so, although not tested.
+
+Regards,
+Ilias
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Sep 10 15:54:14 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 10 Sep 2008 15:54:14 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5247821.165574@sourceforge.net>
+Message-ID: <5252909.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5252909
+By: studentz
+
+I add some comments in Ubuntu launchpad, here is the tread
+https://answers.launchpad.net/ubuntu/+source/rkward/+question/44070
+
+Thanks nono 231 for your contribution.
+
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Wed Sep 10 19:09:34 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 10 Sep 2008 19:09:34 +0000
+Subject: [rkward-users] [rkward - Help] RE: RKWard won't start
+	(libRlapack.so)
+In-Reply-To: <5252909.165574@sourceforge.net>
+Message-ID: <5253624.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=5253624
+By: nono_231
+
+Dear studentz,
+
+Seems however that you didn't try at all any of my contributions, but on the
+contrary you are messing around threads as you mess your repositories. Probably,
+you have not read the ubuntu's or other's linux distribution notes. Somewhere
+there it says that software provided as is. And in all the ubuntu forums there
+is a big warning, don't mix repositories.
+
+So ubuntu offers the latest stable R and RKWard distribution up to the date
+of its official release. If these do not work this is a bug.
+
+However, if you want to keep your system more up-to-date with R and RKWard or
+whatever else, you take your own risk and add more repos or compile them yourself.
+Either way it is good to remove the R or RKWard distribution before doing that.
+It is good to ask for help, but it is not so good to blame others for this.
+
+Finally, there is a mailing list for debian distributions called R-SIG-Debian,
+that they have more knowledge on the issues and the cran repos.
+
+Thank you for your interest in RKWard,
+Kind Regards,
+Ilias 
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From kapatp at gmail.com  Tue Sep 16 07:55:11 2008
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Tue, 16 Sep 2008 03:55:11 -0400
+Subject: [rkward-users] some insights into the libRlapack.so mystery
+Message-ID: <de8c7cb40809160055mbc5af8fu55cfd1c19f915f08@mail.gmail.com>
+
+Hi All,
+
+I was curious as to what is wrong with this libRlapack.so issue, so
+here are some things I found... Of course the solution was easier than
+all this "investigation"...
+
+Fact 1: libRlapack.so is actually part of the official Ubuntu Hardy
+r-base-core (2.6.2-2) package. This can be seen from the following
+link:
+
+http://packages.ubuntu.com/search?searchon=contents&keywords=libRlapack.so&mode=exactfilename&suite=hardy&arch=any
+
+but not for the Intrepid (2.7.1-2) package:
+
+http://packages.ubuntu.com/search?searchon=contents&keywords=libRlapack.so&mode=exactfilename&suite=intrepid&arch=any
+
+Fact 2: libRlapack.so is not part of CRAN's version of r-base-core
+(2.7.2-1) for Hardy. I am using CRAN's repo for the latest version of
+R. Here is the proof:
+
+$ dpkg -L r-base-core | grep lapack.so
+/usr/lib/R/modules/lapack.so
+
+$ apt-cache policy r-base-core
+r-base-core:
+  Installed: 2.7.2-1hardy0
+  Candidate: 2.7.2-1hardy0
+  Version table:
+ *** 2.7.2-1hardy0 0
+        500 http://cran.mtu.edu hardy/ Packages
+        100 /var/lib/dpkg/status
+     2.6.2-2 0
+        500 http://us.archive.ubuntu.com hardy/universe Packages
+
+Fact 3: CRAN's version of rkward (0.5.0b) for Hardy needs
+libRlapack.so. Again, my installation of rkward currently is from
+CRAN!
+
+$ ldd /usr/bin/rkward.bin | grep lapack
+        libRlapack.so => /usr/lib/libRlapack.so (0xb5f07000)
+        liblapack.so.3gf => /usr/lib/liblapack.so.3gf (0xb51da000)
+
+The libRlapack.so is actually a symlink ("the solution"):
+$ ls -l /usr/lib/libRlapack.so
+<snip>  /usr/lib/libRlapack.so -> R/modules/lapack.so
+
+$ apt-cache policy rkward
+rkward:
+  Installed: 0.5.0b-2hardy0
+  Candidate: 0.5.0b-2hardy0
+  Version table:
+ *** 0.5.0b-2hardy0 0
+        500 http://cran.mtu.edu hardy/ Packages
+        100 /var/lib/dpkg/status
+     0.4.9-2ubuntu0.1 0
+        500 http://us.archive.ubuntu.com hardy-updates/universe Packages
+     0.4.9-2 0
+        500 http://us.archive.ubuntu.com hardy/universe Packages
+
+Fact 4: rkward (0.4.9-2) from Ubuntu Hardy official repository needs
+libRlapack.so. Note: I downloaded and extracted the i386 binary
+package from
+http://packages.ubuntu.com/hardy-updates/i386/rkward/download
+
+$ ldd ./rkward.bin_0.4.9-2ubuntu0.1_i386 |grep lapack
+        libRlapack.so => /usr/lib/libRlapack.so (0xb7607000)
+        liblapack.so.3gf => /usr/lib/liblapack.so.3gf (0xb55c3000)
+
+Fact 5: rkward (0.5.0b) from Ubuntu Intrepid official repository does
+not need ANY lapack libraries!!! Note: I downloaded and extracted the
+i386 binary from
+http://packages.ubuntu.com/intrepid/i386/rkward/download
+
+$ ldd ./rkward.bin_0.5.0b-2_i386 | grep lapack
+(gives nothing! Is this right? Did anyone try rkward on Intrepid)
+
+Conclusion? Is something wrong with the CRAN version of rkward?
+Actually I also had problem with the Renviron file. Creating a similar
+symlink was the solution, but that is another story...
+
+I will link this message from both sourceforge and launchpad for
+broader coverage without reposting it everywhere.
+
+If this is indeed a problem with the CRAN's rkward package then, we
+should file a bug with them and not with Ubuntu.
+
+Regards,
+PK
+
+
+

@@ -1,0 +1,43 @@
+From meik.michalke at uni-duesseldorf.de  Mon Jul 30 13:45:27 2018
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 30 Jul 2018 14:45:27 +0200
+Subject: debian packages of plugins available for R 3.5
+Message-ID: <2845658.ukP8sBWiNi@yrla>
+
+hi,
+
+this post only affects you if you're using the debian packages of our plugins.
+
+i've set up a new debian repository for plugin packages built for R 3.5. you 
+might have noticed that if you wanted to upgrade to R 3.5, all R packages (as 
+well as RKWard) must be upgraded as well, as the binary formats are 
+incompatible. to not mix up builds for earlier versions of R and R 3.5 
+onwards, most projects have added new repositories, e.g. CRAN now uses
+
+ https://cloud.r-project.org/bin/linux/ubuntu $UBUNTUVERSION-cran35/
+
+for R 3.5.
+
+if you want to use our new repository, simply replace "/deb" with "/debR35" in 
+your current apt sources configuration.
+
+full and up-to-date instructions for the rk.ANOVA plugin (just as an example) 
+can be found here:
+ https://mirror.kumi.systems/kde/files/rkward/R/pckg/rk.ANOVA/deb_repo.html
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 473 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180730/d9eca84b/attachment.sig>
+

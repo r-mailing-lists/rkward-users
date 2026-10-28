@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2014-09",
+  "messages": [
+    {
+      "id": "msg-cf3f0df06f76",
+      "message_id": "<2782053.ykhkpoZhfb@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2014-09-14T22:41:23Z",
+      "subject": "[rkward-users] testing localised plugins",
+      "subject_clean": "[rkward-users] testing localised plugins",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nlately we're experimenting a bit with approaches to localise plugins. you may \nhave noticed that although RKWard's menu titles are translated, most of the \nactual plugin dialogs are in english. heretofore, RKWard didn't support \ntranslations for plugins.\n\nthis has changed in the development version (SVN after 2014-09-12), and there \nis now one external plugin with inital support for english and german:\n  http://rkward.sourceforge.net/R/pckg/rk.ANOVA/index.html\n\nso *if* you're running a bleeding edge version of RKWard, have installed that \nplugin in version 0.01-18 *and* start RKWard in an environment with the locale \nset to de_DE, you should get its dialogs in german (e.g., Analysis  -> ANOVA -\n> ANOVA), otherwise it should fallback to the english default.\n\nthis plugin should still work with older versions of RKWard! so it would be \nnice if you gave some feedback anyway -- does it run in your environment?\n\nusers of debian based distributions can try the debian package called\n\n  r-other-rkward-rk.anova\n\nwhich is in our own repository. instructions on how to get that up and running \ncan be found here:\n  http://rkward.sourceforge.net/R/pckg/rkwarddev/deb_repo.html\n\nplease note that this implementation of plugin translations is rather rude -- \nthe package simply ships a full set of dialogs for each language. we're aware \nthat there are more elegant ways of doing this -- yet this was kind of a low \nhanging fruit, and you can actually use the translated dialogs with older \nreleases of RKWard (with a few clicks). we'll likely add a more elaborate \nmethod for this in the future. especially since using this method is only \nfeasible if a plugin is maintained by an rkwarddev script. however, if you're \nsimply *using* RKWard, this shouldn't concern you ;-)\n\n\nyou don't speak german? like to help out with another translation? then please \ndownload the package sources:\n  http://rkward.sourceforge.net/R/src/contrib/rk.ANOVA_0.01-18.tar.gz\nand take a look at the file\n\n  rk.ANOVA/inst/rkward/rkwarddev_ANOVA_plugin_script.R\n\nin it, you will find a lot of appearances of a function called i18n(), e.g.:\n\n  i18n(\n    en=\"Dependent variable\",\n    de=\"Abh?ngige Variable\"\n  )\n\nso, to add a new language like french, simply add it to all the lists:\n\n  i18n(\n    en=\"Dependent variable\",\n    de=\"Abh?ngige Variable\",\n    fr=\"<your translation>\"\n  )\n\n(don't forget the comma...). that should do it -- you then need to run the \nscript to build it -- once for each language! make sure to specify each \nlanguage by a proper rk.set.language() call, see lines 15 ff. feel free to bug \nme with questions if you can't figure it out ;-)\n\nenough for now... i'd be hapy if you give it a try.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 836 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140915/2e405abd/attachment.sig>",
+      "body_snippet": "hi,\n\nlately we're experimenting a bit with approaches to localise plugins. you may \nhave noticed that although RKWard's menu titles are translated, most of the \nactual plugin dialogs are in english. h",
+      "thread_id": "thread-cf3f0df06f76",
+      "thread_depth": 0,
+      "month": "2014-09"
+    },
+    {
+      "id": "msg-9505aa679609",
+      "message_id": "<3256444.mFZNJaOxuG@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2014-09-29T18:21:33Z",
+      "subject": "[rkward-users] [rkward-announce] Upcoming release, call for testing and translating RKWard 0.6.2",
+      "subject_clean": "[rkward-users] [rkward-announce] Upcoming release, call for testing and translating RKWard 0.6.2",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nAfter over a year, it's time for a new release of RKWard: 0.6.2. I would like \nto ask you for help in testing, packaging and translating. Details on \navailable downloads, and a tentative release schedule can be found at \nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule \nas usual. The targetted release date is October 20, and I would like to ask \nyou to provide feedback by October 15.\n\nNote that in the current testing releases, some loose ends are not yet tied \nup. Importantly some documentation is still to be written, and tests to be \nupdated. Additional preview releases will be created as we take care of these \nbits, and work to fix any bugs you find.\n\nKey features to look out for in RKWard 0.6.2 are the new RK() graphics device \n(used for plots by default), which finally brings RKWard's graphics features \nto the Mac, but also fixes some problems in corner cases. Also, there have \nbeen a number of additions to the plugin infrastructure, and the new Data-\n>Recode categorical data plugin shows some of them (this plugin needs thorough \ntesting, please take a look!). Importantly, plugins can now query the R \nbackend for information such as factor levels.\n\nSee the release schedule, above, for all relevant instructions and \ndownloads.\n\n--- Translators ---\n\nNow is a good time to start updating your translations. As usual, the deadline \nto send your updates ends with the testing phase on October 15, as we will be \nfinalizing the sources, shortly after. As a reminder, RKWard is registered \nfor translations on launchpad: https://translations.launchpad.net/rkward , and \nit is recommended to upload your translations, there. Sending translations by \nmail is also ok, of course.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20140929/1bf99135/attachment.sig>\n-------------- next part --------------\n------------------------------------------------------------------------------\nSlashdot TV.  Videos for Nerds.  Stuff that Matters.\nhttp://pubads.g.doubleclick.net/gampad/clk?id=160591471&iu=/4140/ostg.clktrk\n-------------- next part --------------\n_______________________________________________\nrkward-announce mailing list\nrkward-announce at lists.sourceforge.net\nhttps://lists.sourceforge.net/lists/listinfo/rkward-announce",
+      "body_snippet": "Hi!\n\nAfter over a year, it's time for a new release of RKWard: 0.6.2. I would like \nto ask you for help in testing, packaging and translating. Details on \navailable downloads, and a tentative release ",
+      "thread_id": "thread-9505aa679609",
+      "thread_depth": 0,
+      "month": "2014-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cf3f0df06f76",
+      "subject": "[rkward-users] testing localised plugins",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2014-09-14T22:41:23Z",
+      "last_reply": "2014-09-14T22:41:23Z",
+      "root_message_id": "msg-cf3f0df06f76"
+    },
+    {
+      "id": "thread-9505aa679609",
+      "subject": "[rkward-users] [rkward-announce] Upcoming release, call for testing and translating RKWard 0.6.2",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2014-09-29T18:21:33Z",
+      "last_reply": "2014-09-29T18:21:33Z",
+      "root_message_id": "msg-9505aa679609"
+    }
+  ]
+}

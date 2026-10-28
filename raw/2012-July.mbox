@@ -1,0 +1,200 @@
+From Meik.Michalke at uni-duesseldorf.de  Mon Jul  2 11:24:49 2012
+From: Meik.Michalke at uni-duesseldorf.de (meik michalke)
+Date: Mon, 02 Jul 2012 13:24:49 +0200
+Subject: [rkward-users] Fwd: [JSS-Announce] New JSS Special Volume 49:
+ Graphical User Interfaces for R
+Message-ID: <2879571.s7iyOpGyUA@chiana>
+
+hi,
+
+the Journal of Statistical Software just published a special volume on 
+graphical user interfaces for R, also including an issue on RKWard:
+
+ RKWard: A Comprehensive Graphical User Interface and Integrated Development  
+   Environment for Statistical Analysis with R
+   Stefan R?diger, Thomas Friedrichsmeier, Prasenjit Kapat, Meik Michalke
+ Vol. 49, Issue 9, Jun 2012
+ Submitted 2010-12-28, Accepted 2011-05-06
+ Url: http://www.jstatsoft.org/v49/i09
+ Paper: http://www.jstatsoft.org/v49/i09/paper
+
+
+viele gr??e :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  abt. f"ur diagnostik und differentielle psychologie
+  institut f"ur experimentelle psychologie
+  heinrich-heine-universit"at d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 187 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120702/3b05f8be/attachment.sig>
+
+From newsletter at fichtinger.org  Fri Jul 13 18:32:35 2012
+From: newsletter at fichtinger.org (Johannes Fichtinger)
+Date: Fri, 13 Jul 2012 19:32:35 +0100
+Subject: [rkward-users] Warning about too long lines
+Message-ID: <201207131932.36035.newsletter@fichtinger.org>
+
+Hi
+
+After a recent update to KDE 4.8.4 in Debian SID using rkward 0.5.7, I 
+sometimes get this warning: 
+
+?The file /home/.../file.r was opened and contained too long lines (more than 
+1,024 characters). Too long lines were wrapped and the document is set to 
+read-only mode, as saving will modify its content.?
+
+I understand that there is a setting in Settings --> Configure Editor --> 
+Open/Save --> Line Length Limit which is set to 1.024 by default. Setting this 
+to 0 should prevent that line length check. 
+
+However, it seems that on my machine this setting (line length limit = 0) is 
+not saved when I close and reopen rkward. 
+
+Any ideas how to solve this issue?
+
+Best Wishes
+Johannes 
+
+
+-- 
+Dr. Johannes Fichtinger
+Lecturer in Logistics and Supply Chain Management
+Building 32, Cranfield School of Management
+Cranfield University, Cranfield, Beds, England MK43 0AL
+T: +44 (0)1234 751122 ext 2921
+
+
+
+
+
+
+From maurice.francois at ymail.com  Tue Jul 17 20:47:47 2012
+From: maurice.francois at ymail.com (Francois Maurice)
+Date: Tue, 17 Jul 2012 13:47:47 -0700 (PDT)
+Subject: [rkward-users] Variable labels
+Message-ID: <1342558067.45111.YahooMailNeo@web122304.mail.ne1.yahoo.com>
+
+Hi,
+?
+I'm using write.table() to export dataframes to Excel. All works fine except that I want to use variable labels instead of variable names !
+?
+In RKWard, if I open a dataframe, I can write variable labels directly in the dataframe editor.
+?
+Two questions :
+?
+1) Is it possible to write variable labels via the syntax ?
+?
+2) Is it possible to export variables labels instead of variables name with write.table() ?
+?
+Thanks,
+
+Fran?ois Maurice, B. Sc., A. Stat.
+Candidat ? la ma?trise
+D?partement de sociologie
+Universit? de Montr?al
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120717/f880916b/attachment.html>
+
+From griera at gmail.com  Tue Jul 24 08:05:33 2012
+From: griera at gmail.com (Griera)
+Date: Tue, 24 Jul 2012 10:05:33 +0200
+Subject: [rkward-users] Installing plugins
+Message-ID: <20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>
+
+Hello:
+
+Is there a tutorial on how to install plugins from
+http://rkward.sourceforge.net/R/? How can I install them? Thanks for
+the help. Regard. 
+
+
+
+From meik.michalke at uni-duesseldorf.de  Tue Jul 24 08:39:29 2012
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Tue, 24 Jul 2012 10:39:29 +0200
+Subject: [rkward-users] Installing plugins
+In-Reply-To: <20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>
+References: <20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>
+Message-ID: <1525490.tOap6R3gpn@yrla>
+
+hi,
+
+am Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:
+> Is there a tutorial on how to install plugins from
+> http://rkward.sourceforge.net/R/? How can I install them? Thanks for
+> the help.
+
+RKWard plugins are R packages. that is, you install a plugin like you would 
+install any other R package.
+
+if the repository is configured in RKWard, which should be the default, (check 
+that via "cofingure RKWard" -> "R packages"), you can use RKWards "configure R 
+packages" dialog. packages which include plugins show a small RKWard logo 
+there. by convention, most of these packages' names start with "rk.*".
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at d-40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120724/e834402d/attachment.sig>
+
+From griera at gmail.com  Tue Jul 24 10:24:46 2012
+From: griera at gmail.com (Griera)
+Date: Tue, 24 Jul 2012 12:24:46 +0200
+Subject: [rkward-users] Installing plugins
+In-Reply-To: <1525490.tOap6R3gpn@yrla>
+References: <20120724100533.4b38b6fa@epigpbn01.ad-hugtip.local>
+	<1525490.tOap6R3gpn@yrla>
+Message-ID: <20120724122446.25727d60@epigpbn01.ad-hugtip.local>
+
+Hello:
+
+On Tue, 24 Jul 2012 10:39:29 +0200
+meik michalke <meik.michalke at uni-duesseldorf.de> wrote:
+> hi,
+> 
+> am Dienstag 24 Juli 2012, 10:05:33 schrieb Griera:
+> > Is there a tutorial on how to install plugins from
+> > http://rkward.sourceforge.net/R/? How can I install them? Thanks for
+> > the help.
+> 
+> RKWard plugins are R packages. that is, you install a plugin like you would 
+> install any other R package.
+
+Thank you. I have done it without problems. I had not thought of that
+can be installed as a normal package. Regards.
+
+> 
+> if the repository is configured in RKWard, which should be the default, (check 
+> that via "cofingure RKWard" -> "R packages"), you can use RKWards "configure R 
+> packages" dialog. packages which include plugins show a small RKWard logo 
+> there. by convention, most of these packages' names start with "rk.*".
+> 
+> 
+> viele gr??e :: m.eik
+> 
+> -- 
+> dipl. psych. meik michalke
+> institut f"ur experimentelle psychologie
+> abt. f"ur diagnostik und differentielle psychologie
+> heinrich-heine-universit"at d-40204 d"usseldorf
+
+
+

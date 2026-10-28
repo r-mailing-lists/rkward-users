@@ -1,0 +1,1831 @@
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon May  9 10:56:45 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 9 May 2011 12:56:45 +0200
+Subject: [rkward-users] Quick survey: RKWard on Windows 7
+Message-ID: <201105091256.48938.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Recently, we have received two independent reports of users not getting RKWard 
+to work on Windows 7, despite trying several variants of the installation. 
+Unfortunately, I have access to only one Windows 7 machine. RKWard installs 
+runs smoothly on that machine.
+
+I would like to get an idea of just how prevalent this sort of major problems 
+is on Windows 7, and hopefully get some pointers as to what might be causing 
+these problems. Therefore, if you have ever tried using (successfully or not) 
+RKWard on Windows 7, I would like to ask you for a minute of your time with 
+the following short questions.
+
+(If you don't know the answers to some, and don't have the time to look them 
+up, feel free to omit them. A partial answer is better than no answer.)
+
+1) Did RKWard work for you at all on Windows 7? I.e. were you able to start 
+it, and use some basic functionality at all? (Of course all bug reports are 
+always welcome, but this particular question is about complete failure to 
+function, only).
+1b) If RKWard did not work for you at all, did you see any error messages that 
+you can provide?
+
+2) Which exact version of Windows 7 are/were you using ("Home Premium", 
+"Ultimate", whatever). 32bit or 64bit?
+
+3) Which language/locale do you use in the Windows 7 installation?
+
+4) Does the user account name that you use on Windows 7 contain any spaces?
+
+5) Which brand(s) of Anti-Virus / Firewall software do you have installed?
+
+6) Which version of R, KDE, and RKWard did you try? Did you use the "complete 
+installation bundle" to install all three, or did you use the individual 
+installers?
+
+Thanks for you help!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110509/0ee235ea/attachment.sig>
+
+From noreply at sourceforge.net  Mon May  9 19:09:14 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon,  9 May 2011 19:09:14 +0000
+Subject: [rkward-users] [Help] How to disable native file dialog on windows?
+Message-ID: <forum-165574-10132866@sourceforge.net>
+
+
+The following forum message was posted by rse0 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523257:
+
+I don't find any doc on this and I would like to do so as rkward crashes when
+i try to open a file dialog.
+
+could someone put more info into the wiki?
+
+thx!
+
+
+
+From noreply at sourceforge.net  Tue May 10 05:19:04 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 10 May 2011 07:19:04 +0200
+Subject: [rkward-users] [Help] Rkward windows do not refresh
+Message-ID: <forum-165574-10135755@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Since few  days ago (I'm using the daily builds),
+once I start Rkward the windows do not update their contents. 
+That is, I can clik on one tab (i.e., for a script), the tab becomes active,
+but  the contents of
+the window is still the contents of the previously selected tab. Also, I cannot
+write.
+The console window is also in some cases not fully responsive.
+The problem is normally solved by quiting ans starting again. The second time
+it usually works fine.
+> sessionInfo()
+R version 2.13.0 (2011-04-13)
+Platform: i486-pc-linux-gnu (32-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                  LC_TIME=en_US.UTF-8
+ [4] LC_COLLATE=en_US.UTF-8        LC_MONETARY=en_US.UTF-8  
+LC_MESSAGES=en_US.UTF-8
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8      
+LC_ADDRESS=en_US.UTF-8
+[10] LC_TELEPHONE=en_US.UTF-8      LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] raster_1.8-15 sp_0.9-72     reshape_0.8.3 plyr_1.2.1    proto_0.3-8
+rkward_0.5.6
+
+loaded via a namespace (and not attached):
+[1] ggplot2_0.8.8   lattice_0.19-26 tools_2.13.0   
+>
+Agus
+
+
+
+From noreply at sourceforge.net  Tue May 10 07:46:28 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 10 May 2011 09:46:28 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10135755@sourceforge.net>
+Message-ID: <forum-165574-10136442@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Hi!
+
+I have not managed to reproduce the problem, so far. Thus a number
+of questions:
+
+[quote]once I start Rkward the windows do not update their contents.[/quote]
+[quote]The problem is normally solved by quiting ans starting again. The second
+time it usually works fine.[/quote]
+
+So, if I understand you correctly, you either get an RKWard session where window
+handling is broken right from the start, or an RKWard session where window handling
+is working. It is not a problem that appears after working in a session for
+a while. Correct?
+
+Can you give a rough estimate of what percentage of RKWard sessions is affected
+for you?
+
+I guess that you have set up RKWard to load an .RData file directly on startup.
+Perhaps the problem is related to this, somehow. If you configure RKWard not
+to load the .RData file on startup, but rather open it manually after startup,
+do you still see the problem?
+
+[quote]That is, I can clik on one tab (i.e., for a script), the tab becomes
+active, but the contents of the window is still the contents of the previously
+selected tab. Also, I cannot write. [/quote]
+
+Is the thin red border (which indicates the active window) shown around the
+window?
+
+What if you use the new Ctrl+[Shift+]Tab feature to switch windows (in a "broken"
+session) does that seem to activate the windows correctly?
+
+Could you post the contents of the most recent /tmp/kde-USERNAME/rkwardXXXXX.tmp
+after a broken session?
+
+Regards
+Thomas
+
+P.S.:
+[quote]> sessionInfo()[/quote]
+Since a few days there is rk.sessionInfo(), which adds a few RKWard specific
+lines to sessionInfo().
+
+
+
+From noreply at sourceforge.net  Tue May 10 11:15:53 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 10 May 2011 13:15:53 +0200
+Subject: [rkward-users] [Help] RE: How to disable native file dialog on
+	windows?
+In-Reply-To: <forum-165574-10132866@sourceforge.net>
+Message-ID: <forum-165574-10137495@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523257:
+
+Hi!
+
+Sorry. The KDE systemsettings dialog used to be installed by default. It no
+longer is, now, and of course that makes it rather non-obvious how to do this.
+I had not noticed that. Thanks for pointing this out.
+
+Instructions:
+1) Open the windows command line (cmd.exe). 
+2) Enter
+[code]cd c:\The\directory\where\KDE\is\installed
+cd bin
+kcmshell4.exe platform[/code]
+3) Uncheck the "Use native system file dialogs" option.
+
+I have just committed code to make RKWard to detect, and offer to disable, "native"
+file dialogs automatically. Thus, in upcoming versions, this will be much
+easier.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 10 13:40:45 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 10 May 2011 13:40:45 +0000
+Subject: [rkward-users] [Help] Symatec Endpoint Protection false postive
+Message-ID: <forum-165574-10138302@sourceforge.net>
+
+
+The following forum message was posted by rse0 at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4524490:
+
+Dear RKWard developers,
+
+I tried to use RKWard on Windows 7 with Symatec Endpoint Protection. I get a
+false positive warning (Suspicous.AD) on starting RKWard. Somehow this seems
+to be a problem with the Virsu Scanner thinking there might be a strange pattern
+in an executable.
+
+Anyway - there is another much more important question:
+Shortly after having "installed" RKward via the Windows Distribution (and getting
+this Error on the RKward Files) I started tpo keep getting repeated false postives
+on some tmp files.
+
+Is there something really installed when using the RKWard installer? Or it just
+a directrory and only when starting RKWard there some services are started?
+
+thx
+roman
+
+
+
+From noreply at sourceforge.net  Tue May 10 14:29:32 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 10 May 2011 16:29:32 +0200
+Subject: [rkward-users] [Help] RE: Symatec Endpoint Protection false postive
+In-Reply-To: <forum-165574-10138302@sourceforge.net>
+Message-ID: <forum-165574-10138609@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4524490:
+
+[quote]I get a false positive warning (Suspicous.AD) on starting
+RKWard.[/quote]
+
+Does the virus scanner mention which file(s) exactly it thinks to be suspicious?
+On starting RKWard several binaries are started, including some from KDE.
+
+[quote]I started tpo keep getting repeated false postives on some
+tmp files.[/quote]
+
+Again, can you name one or two of these?
+
+[quote]Is there something really installed when using the RKWard installer?
+Or it just a directrory and only when starting RKWard there some services are
+started?[/quote]
+
+You are talking about the "installation bundle" (with KDE, R, and RKWard in
+one)? Yes an no. This is really just a self-extracting archive, "installing"
+it simply unpacks it, nothing else. (In fact, you can even copy the whole
+installation to a USB-key, and use it on a different machine). However, when
+starting RKWard, some KDE services are started, indeed. I'd have to check, which
+ones exactly, but two processes which will remain active even after quitting
+RKWard are dbus and knotify4 from KDE. To get rid of those, you can run
+[code]kdeinit4.exe --terminate[/code]
+from the command line.
+
+On the first start, KDE will also create a hidden directory ".kde" inside your
+user account's "AppData" folder, where it stores various configuration related
+items, but also some temporary files. Further, RKWard creates a folder ".rkward"
+in your user account's documents folder, where it will store the output file,
+among other things. So, if the files in question have a ".kde" or ".rkward"
+in their path, then in fact, RKWard is probably to blame for their existance
+on your system.
+
+Feel free to ask for more info. And if you could post some of the "suspicious"
+filenames, perhaps we can do something to fix this, in the future.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed May 11 06:03:42 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 May 2011 08:03:42 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10136442@sourceforge.net>
+Message-ID: <forum-165574-10143402@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+[quote]Can you give a rough estimate of what percentage of RKWard sessions is
+affected for you? [/quote]
+50%: the 1st time does not work, the 2nd one works
+
+[quote]I guess that you have set up RKWard to load an .RData file directly on
+startup.[/quote]
+I get the options menu at startup, then select the .RData
+
+[quote]If you configure RKWard not to load the .RData file on startup, but rather
+open it manually after startup, do you still see the problem? [/quote]
+I'll do it (several trials) today  and will report back
+
+[quote]Is the thin red border (which indicates the active window) shown around
+the window? [/quote]
+Yes, and the tabs in the menu work. But the contents of the window does not
+change
+
+[quote]Could you post the contents of the most recent
+/tmp/kde-USERNAME/rkwardXXXXX.tmp after a broken session[/quote]
+I'll do it in a while
+
+Note: the problem occurs on 2 different computers running ubuntu 10.04
+and I suspect it's related to opening a large .RData file (related to memory
+resources?).
+Do you know of a tool I could use to make a video of my starting up under linux
+so that you could actually sse the problem?
+
+Many thanks for your support
+
+Agus
+
+
+
+
+From noreply at sourceforge.net  Wed May 11 09:00:28 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 May 2011 11:00:28 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10143402@sourceforge.net>
+Message-ID: <forum-165574-10144264@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+My /tmp/kde-USERNAME/rkwardXXXXX.tmp after a session with the problem
+(but note that I exit normally, as the menu works fine). I select "Discard"
+after Exit.
+
+alobo at delia:/tmp/kde-alobo$ cat rkwardPE6029.tmp
+rkward(6029)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "" 
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing
+"/usr/share/mime/magic"
+rkward(6029)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing
+"/home/alobo/.local/share/mime/magic"
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+rkward(6029)/kparts KParts::PartManager::addPart: Part ' "" ' has a widget 
+"khtml_part_widget"  with a focus policy of NoFocus. It should have at least
+a ClickFocus policy, for part activation to work well.
+
+Assert failed at
+/build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rktoolwindowbar.cpp - function
+addWidget line 134
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+Assert failed at
+/build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rktoolwindowbar.cpp - function
+addWidget line 134
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+Assert failed at
+/build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rktoolwindowbar.cpp - function
+addWidget line 134
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+Assert failed at
+/build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rktoolwindowbar.cpp - function
+addWidget line 134
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+Assert failed at
+/build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rktoolwindowbar.cpp - function
+addWidget line 134
+Assert failed at /build/buildd/rkward-0.5.5.z+0.5.6/rkward/windows/rkworkplace.cpp
+- function restoreWorkplace line 653
+rkward(6029)/Kate (Code Completion) KateCompletionWidget::startCompletion: No
+active window to install event filter on!!
+rkward(6029)/Kate (Code Completion) KateCompletionWidget::startCompletion: No
+active window to install event filter on!!
+rkward(6029)/Kate (Code Completion) KateCompletionWidget::startCompletion: No
+active window to install event filter on!!
+QThread: Destroyed while thread is still running
+QProcess: Destroyed while process is still running.
+
+
+
+
+
+From noreply at sourceforge.net  Wed May 11 18:38:07 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 May 2011 20:38:07 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10144264@sourceforge.net>
+Message-ID: <forum-165574-10147261@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Hi!
+
+I do not really understand what might be the cause of this issue, yet. However,
+based on the symptoms, I have tried something in SVN. Please let me know, whether
+you see any change with tomorrow's daily build.
+
+Perhaps, before you update, could you do two more tests with your current version
+for me?
+1) What happens when you close one of the tabs?
+2) What happens when you detach one of the windows? Does this fix the problem?
+Does at least the detached window behave correctly?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed May 11 19:22:02 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 11 May 2011 21:22:02 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10147261@sourceforge.net>
+Message-ID: <forum-165574-10147495@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+I think it's too late for the machine at home, I had just upgraded few minutes
+before your message.
+Now the tabs names shake like crazy until I click on any of them, but then everything
+works fine.
+I'll try at the office tomorrow morning and will report back.
+
+Agus
+
+
+
+
+
+From noreply at sourceforge.net  Thu May 12 04:21:28 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 12 May 2011 00:21:28 -0400
+Subject: [rkward-users] [Help] RE: Symatec Endpoint Protection false postive
+In-Reply-To: <forum-165574-10138609@sourceforge.net>
+Message-ID: <forum-165574-10150011@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4524490:
+
+Recently, I had an opportunity to install the bundle on a XP machine with Symantec
+Endpoint Protection as well.
+[quote]Does the virus scanner mention which file(s) exactly it thinks to be
+suspicious?[/quote]
+Yes, here is a screenshot from the log:
+[img]https://lh6.googleusercontent.com/_5fjMo1bhzQw/TctebssQUvI/AAAAAAAAApg/xYxm
+rlh4Wuw/s640/a.png[/img]
+[url]https://lh6.googleusercontent.com/_5fjMo1bhzQw/TctebssQUvI/AAAAAAAAApg/xYxm
+rlh4Wuw/s800/a.png[/url]
+
+[quote]I started tpo keep getting repeated false postives on some
+tmp files.[/quote]
+If these relate to [b]DHW*.tmp[/b] files, then you can find some material online
+describing this issue, for example:
+[url]http://www.symantec.com/connect/forums/generic-trojan-dwhtmp-temp-folder[/url].
+If not, then ignore this bit of information!
+
+
+
+From noreply at sourceforge.net  Thu May 12 10:11:44 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 12 May 2011 12:11:44 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10147495@sourceforge.net>
+Message-ID: <forum-165574-10151817@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+just to let you know: The change I made, yesterday, has [b]not[/b] hit the daily
+build archive, yet. The next daily build will probably happen in around three
+or four hours.
+
+BTW, one more thing: How many files do you have opened? Do all tabs fit in the
+tab bar, or do you get scroll-arrows on the tab bar? All script files, or others
+as well? (Or you could post the .rkworkplace file). One possibility is that
+the number of opened windows is what's causing the problem.
+
+
+
+From noreply at sourceforge.net  Thu May 12 10:17:28 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 12 May 2011 12:17:28 +0200
+Subject: [rkward-users] [Help] RE: Symatec Endpoint Protection false postive
+In-Reply-To: <forum-165574-10150011@sourceforge.net>
+Message-ID: <forum-165574-10151822@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4524490:
+
+Ok, thanks. Not sure, whether there is anything that we can do about this, except
+for documenting it, and hoping that Symantec will fix this, soon. One more question:
+While knotify4.exe and keditfiletype.exe are in quarantine, what exactly happens
+when you try to start RKWard? I assume RKWard will fail to start, but does it
+show any messages, does it crash, etc.?
+
+
+
+From noreply at sourceforge.net  Thu May 12 18:42:14 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 12 May 2011 20:42:14 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10151817@sourceforge.net>
+Message-ID: <forum-165574-10154547@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Changes in the .RData file might have "solved" the problem, because (not having
+updated) the problem does not happen anymore on any of the 2 machines.
+Of all your questions, I can only answer 3:
+
+[code]1) What happens when you close one of the tabs? [/code]
+Nothing, no response
+
+[code]Do all tabs fit in the tab bar, or do you get scroll-arrows on the tab
+bar?[/code]
+Yes, all tabs were fitting in the tab-bar
+
+[code]One possibility is that the number of opened windows is what's causing
+the problem. [/code]
+I doubt it, I think I have some more help tabs opened.
+
+I take note of the rest of your questions in case the problem appears again.
+I regret not having posted the .rkworkplace fiel, I should have thought on that.
+ 
+Thanks for your excellent support!
+
+Agus
+
+
+
+From noreply at sourceforge.net  Fri May 13 23:19:54 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 13 May 2011 19:19:54 -0400
+Subject: [rkward-users] [Help] RE: Symatec Endpoint Protection false postive
+In-Reply-To: <forum-165574-10151822@sourceforge.net>
+Message-ID: <forum-165574-10164707@sourceforge.net>
+
+
+The following forum message was posted by kapatp at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4524490:
+
+[quote]I assume RKWard will fail to start, but does it show any messages, does
+it crash, etc.?[/quote]
+Surprisingly enough, No! RKWard starts fine, and seems to work fine as well
+(just light usage)!
+
+
+
+From noreply at sourceforge.net  Sun May 15 10:59:50 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 15 May 2011 12:59:50 +0200
+Subject: [rkward-users] [Help] Mac installation (Snow Leopard)
+Message-ID: <forum-165574-10177381@sourceforge.net>
+
+
+The following forum message was posted by lindoro at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4531337:
+
+Hello to everyone,
+
+I tried to install RKWard on my Mac. I followed the procedure step-by-step (it
+took a whole day because I had to recompile everything! even Fink had to be
+recompiled because the authors do not offer yet a binary distribution for Snow
+leopard).
+Everything went smooth, apparently, but in the end RKWard refused to start.
+
+This is the last lines in the installation terminal:
+[code]--------------------
+Installation appears to be complete (unfortunately it is hard to tell in
+CMake).
+Consider running
+    make plugintests
+for some automated functionality tests.
+In case of errors, consult the file 'INSTALL'.
+--------------------
+RiccaDonna:build lindoro$ make plugintests
+Scanning dependencies of target plugintests
+KCrash: Application 'rkward' crashing...
+Unable to start Dr. Konqi
+make[3]: *** [tests/CMakeFiles/plugintests] Error 255
+make[2]: *** [tests/CMakeFiles/plugintests.dir/all] Error 2
+make[1]: *** [tests/CMakeFiles/plugintests.dir/rule] Error 2
+make: *** [plugintests] Error 2
+[/code]
+
+I also tried to launch RKWard in another terminal:
+[code]/sw/opt/kde4/x11/bin/rkward ; exit;
+RiccaDonna:~ lindoro$ /sw/opt/kde4/x11/bin/rkward ; exit;
+KCrash: Application 'rkward' crashing...
+sock_file=/Users/lindoro/.kde4/socket-RiccaDonna.local/kdeinit4__tmp_launch-Chrb
+Ie_org.macosforge.xquartz_0
+Warning: connect() failed: : No such file or directory
+KCrash cannot reach kdeinit, launching directly.
+[/code]
+
+The only thing I made differently from the istructions is that R was already
+installed (version 2.13.0).
+
+I am a newbie with R (and I already love it) and I am not very aware of the
+sophisticated tools and techniques you adopt for RKWard, even if I have a BS
+and a MS in computer science I'm more towards the theoretic dimension. In any
+case I have some capacity in this regard and if you believe I could help you
+in making the Mac version working (or more easily available) I'll be glad to
+help.
+
+Marco
+
+
+
+From noreply at sourceforge.net  Sun May 15 12:29:53 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 15 May 2011 14:29:53 +0200
+Subject: [rkward-users] [Help] RE: Mac installation (Snow Leopard)
+In-Reply-To: <forum-165574-10177381@sourceforge.net>
+Message-ID: <forum-165574-10177914@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4531337:
+
+Hi!
+
+[quote]it took a whole day because I had to recompile everything[/quote]
+
+Yes, that really is painful. Sorry to hear that it did not even work out in
+the end.
+
+[quote]In any case I have some capacity in this regard and if you believe I
+could help you in making the Mac version working (or more easily available)
+I'll be glad to help. [/quote]
+
+Well, that would really be absolutely wonderful! At the moment we quite simply
+lack a developer with a Mac, and it's hard to achieve any decent Mac support
+with only intermittent access to a Mac. Probably it will be easiest to discuss
+the details on the rkward-devel mailing list. However, here are some first pointers
+towards debugging this:
+
+1) Try starting rkward with 
+[code]rkward --debug-level 5[/code]
+This will generate files rkwardXXXXXX.tmp and rkward.rbackendXXXXXX.tmp . I'm
+not sure, where KDE puts its temporary files on the Mac, but I guess it will
+be /tmp/kde-USERNAME as on Unix. The file to look at first is rkwardXXXXXX.tmp.
+You will see that this contains a trace of function calls (and a few more debug
+messages), so this will give you some idea of when the crash happens. Post this
+to rkward-devel, if you need help (depending on the size, consider posting only
+the last 100 lines or so).
+
+2) To run rkward through a debugger, use
+[code]rkward --debugger 'gdb [--options]'[/code]
+(/sw/opt/kde4/x11/bin/rkward is just a wrapper script, so you can't run 'gdb
+rkward', directly). Note that rkward is split into two processes, and currently,
+this will debug the frontend process, only. But probably it is also the frontend
+process that is causing trouble.
+
+I'm very eager to achieve some decent Mac support, and I'm very much looking
+forward to working with you on this!
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Mon May 16 11:35:29 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 16 May 2011 13:35:29 +0200
+Subject: [rkward-users] [Help] turn off focus indication
+Message-ID: <forum-165574-10184205@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+Hello
+
+Is there a way to turn off the focus indication (red borders around the active
+window)?
+
+Don't really need it (the oxygen-theme on my KDE is doing this indication anyway)
+and it looks rather ugly ^ ^
+
+Best regards
+
+
+
+From schakra1 at my.uno.edu  Mon May 16 20:56:15 2011
+From: schakra1 at my.uno.edu (Sourav Chakraborty)
+Date: Mon, 16 May 2011 16:56:15 -0400
+Subject: [rkward-users] RKward-error updating packages
+Message-ID: <1305579375.3553.3.camel@pandoras-box>
+
+Hi,
+
+I am having problems updating R packages from rkward.
+
+It has been going for a while now. Can't remember if it is just two
+weeks or more.
+
+I use ubuntu 10.04 and rkward daily build ppa.
+
+Attached is the error message. Hope this will troubleshoot the issue.
+
+Best,
+Sourav Chakraborty, Ph.D. 
+The Ohio State University
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110516/115ad9d7/attachment.html>
+-------------- next part --------------
+R version 2.13.0 (2011-04-13)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: i486-pc-linux-gnu (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> options (repos=c (CRAN="http://cran.case.edu"))
+> install.packages (pkgs=c ("Rcmdr", "abind", "caTools", "car", "effects", "lmtest", "multcomp", "mvtnorm", "relimp", "rgl", "sandwich", "sm", "strucchange", "strucchange", "zoo"), lib="/usr/local/lib/R/site-library")
+trying URL 'http://cran.case.edu/src/contrib/Rcmdr_1.6-4.tar.gz'
+Content type 'application/x-gzip' length 2796047 bytes (2.7 Mb)
+opened URL
+==================================================
+downloaded 2.7 Mb
+
+trying URL 'http://cran.case.edu/src/contrib/abind_1.3-0.tar.gz'
+Content type 'application/x-gzip' length 19140 bytes (18 Kb)
+opened URL
+==================================================
+downloaded 18 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/caTools_1.11.tar.gz'
+Content type 'application/x-gzip' length 62232 bytes (60 Kb)
+opened URL
+==================================================
+downloaded 60 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/car_2.0-10.tar.gz'
+Content type 'application/x-gzip' length 359388 bytes (350 Kb)
+opened URL
+==================================================
+downloaded 350 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/effects_2.0-12.tar.gz'
+Content type 'application/x-gzip' length 119190 bytes (116 Kb)
+opened URL
+==================================================
+downloaded 116 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/lmtest_0.9-27.tar.gz'
+Content type 'application/x-gzip' length 273943 bytes (267 Kb)
+opened URL
+==================================================
+downloaded 267 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/multcomp_1.2-6.tar.gz'
+Content type 'application/x-gzip' length 930101 bytes (908 Kb)
+opened URL
+==================================================
+downloaded 908 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/mvtnorm_0.9-999.tar.gz'
+Content type 'application/x-gzip' length 318839 bytes (311 Kb)
+opened URL
+==================================================
+downloaded 311 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/relimp_1.0-2.tar.gz'
+Content type 'application/x-gzip' length 12949 bytes (12 Kb)
+opened URL
+==================================================
+downloaded 12 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/rgl_0.92.798.tar.gz'
+Content type 'application/x-gzip' length 1677772 bytes (1.6 Mb)
+opened URL
+==================================================
+downloaded 1.6 Mb
+
+trying URL 'http://cran.case.edu/src/contrib/sandwich_2.2-6.tar.gz'
+Content type 'application/x-gzip' length 881767 bytes (861 Kb)
+opened URL
+==================================================
+downloaded 861 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/sm_2.2-4.1.tar.gz'
+Content type 'application/x-gzip' length 154467 bytes (150 Kb)
+opened URL
+==================================================
+downloaded 150 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/strucchange_1.4-4.tar.gz'
+Content type 'application/x-gzip' length 788769 bytes (770 Kb)
+opened URL
+==================================================
+downloaded 770 Kb
+
+trying URL 'http://cran.case.edu/src/contrib/zoo_1.6-5.tar.gz'
+Content type 'application/x-gzip' length 892136 bytes (871 Kb)
+opened URL
+==================================================
+downloaded 871 Kb
+
+* installing *source* package ???abind??? ...
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (abind)
+* installing *source* package ???caTools??? ...
+** libs
+g++ -I/usr/share/R/include      -fpic  -O3 -pipe  -g -c Gif2R.cpp -o Gif2R.o
+g++ -I/usr/share/R/include      -fpic  -O3 -pipe  -g -c GifTools.cpp -o GifTools.o
+GifTools.cpp: In function ???int imreadGif(const char*, int, bool, uchar**, int&, int&, int&, int*, int&, char**)???:
+GifTools.cpp:598: warning: case label value is less than minimum value for type
+GifTools.cpp:608: warning: case label value is less than minimum value for type
+gcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c runfunc.c -o runfunc.o
+g++ -shared -o caTools.so Gif2R.o GifTools.o runfunc.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/caTools/libs
+** R
+** preparing package for lazy loading
+Error : package 'bitops' was built before R 2.10.0: please re-install it
+ERROR: lazy loading failed for package ???caTools???
+* removing ???/usr/local/lib/R/site-library/caTools???
+* installing *source* package ???car??? ...
+** R
+** data
+**  moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+Loading required package: splines
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (car)
+* installing *source* package ???effects??? ...
+** R
+** data
+**  moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+Error : package 'colorspace' was built before R 2.10.0: please re-install it
+ERROR: lazy loading failed for package ???effects???
+* removing ???/usr/local/lib/R/site-library/effects???
+* installing *source* package ???mvtnorm??? ...
+** libs
+gcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c miwa.c -o miwa.o
+gfortran   -fpic  -O3 -pipe  -g -c mvt.f -o mvt.o
+gcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c randomF77.c -o randomF77.o
+gfortran   -fpic  -O3 -pipe  -g -c tvpack.f -o tvpack.o
+gfortran   -fpic  -O3 -pipe  -g -c tvpackAPI.f -o tvpackAPI.o
+gcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c tvpackAux.c -o tvpackAux.o
+gcc -shared -o mvtnorm.so miwa.o mvt.o randomF77.o tvpack.o tvpackAPI.o tvpackAux.o -lgfortran -lm -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/mvtnorm/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (mvtnorm)
+* installing *source* package ???relimp??? ...
+** R
+** preparing package for lazy loading
+Loading Tcl/Tk interface ... done
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (relimp)
+* installing *source* package ???rgl??? ...
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for libpng-config... yes
+configure: using libpng-config
+configure: using libpng dynamic linkage
+checking for X... libraries , headers 
+checking GL/gl.h usability... no
+checking GL/gl.h presence... no
+checking for GL/gl.h... no
+checking GL/glu.h usability... no
+checking GL/glu.h presence... no
+checking for GL/glu.h... no
+configure: error: missing required header GL/gl.h
+ERROR: configuration failed for package ???rgl???
+* removing ???/usr/local/lib/R/site-library/rgl???
+* installing *source* package ???sm??? ...
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (sm)
+* installing *source* package ???zoo??? ...
+** R
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (zoo)
+* installing *source* package ???Rcmdr??? ...
+** libs
+gcc -I/usr/share/R/include      -fpic  -std=gnu99 -O3 -pipe  -g -c ismdi.c -o ismdi.o
+gcc -shared -o Rcmdr.so ismdi.o -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/Rcmdr/libs
+** R
+** inst
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+The Commander GUI is launched only in interactive sessions
+
+* DONE (Rcmdr)
+* installing *source* package ???lmtest??? ...
+** libs
+gfortran   -fpic  -O3 -pipe  -g -c pan.f -o pan.o
+gcc -shared -o lmtest.so pan.o -lgfortran -lm -L/usr/lib/R/lib -lR
+installing to /usr/local/lib/R/site-library/lmtest/libs
+** R
+** data
+**  moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (lmtest)
+* installing *source* package ???multcomp??? ...
+** R
+** data
+**  moving datasets to lazyload DB
+** demo
+** inst
+** preparing package for lazy loading
+Loading required package: splines
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (multcomp)
+* installing *source* package ???sandwich??? ...
+** R
+** data
+**  moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (sandwich)
+* installing *source* package ???strucchange??? ...
+** R
+** data
+**  moving datasets to lazyload DB
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (strucchange)
+
+The downloaded packages are in
+	???/tmp/RtmpBMLKoN/downloaded_packages???
+Warning messages:
+1: In install.packages(pkgs = c("Rcmdr", "abind", "caTools", "car",  :
+  installation of package 'caTools' had non-zero exit status
+2: In install.packages(pkgs = c("Rcmdr", "abind", "caTools", "car",  :
+  installation of package 'effects' had non-zero exit status
+3: In install.packages(pkgs = c("Rcmdr", "abind", "caTools", "car",  :
+  installation of package 'rgl' had non-zero exit status
+> system ("chown sc /home/sc/.rkward/package_archive/*")
+chown: cannot access `/home/sc/.rkward/package_archive/*': No such file or directory
+> q ()
+
+From noreply at sourceforge.net  Tue May 17 00:46:25 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 16 May 2011 20:46:25 -0400
+Subject: [rkward-users] [Help] totally basic question - using packages
+Message-ID: <forum-165574-10189002@sourceforge.net>
+
+
+The following forum message was posted by mefnj at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4533322:
+
+I'm sorry if this comes across as extremely basic.  I was trying to analyze
+some data using the extremevalues package (and other related packages).  i originally
+tried it in R, then realized it was going to take me forever to understand how
+to even get my dataset in and enter commands using the base R program.
+
+Then I came across Rkward and thought my problems were solved.  Got Rkward running
+and was able to install extremevalues from within Rkward (or at least I think
+it installed).  I thought the the new package would then show up in the Analysis
+menu, but it didn't.  I am clueless as to how to "invoke" extremevalues (or
+any other analysis/package that is not in the main Analysis menu).  I checked
+almost every help and documentation source I could find, but nowhere could anything
+helpful.
+
+Any assistance much appreciated.
+Many thanks!
+-Mark
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 17 07:00:14 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 May 2011 09:00:14 +0200
+Subject: [rkward-users] RKward-error updating packages
+In-Reply-To: <1305579375.3553.3.camel@pandoras-box>
+References: <1305579375.3553.3.camel@pandoras-box>
+Message-ID: <201105170900.17412.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 16 May 2011, Sourav Chakraborty wrote:
+> Attached is the error message. Hope this will troubleshoot the issue.
+
+look out for all lines that contain an "error":
+
+configure: error: missing required header GL/gl.h
+ERROR: configuration failed for package "rgl"
+
+---
+
+Error : package 'bitops' was built before R 2.10.0: please re-install it
+ERROR: lazy loading failed for package "caTools"
+
+---
+
+Error : package 'colorspace' was built before R 2.10.0: please re-install it
+ERROR: lazy loading failed for package "effects"
+
+The last two basically mean that you will need to update/re-install packages 
+"bitops" and "colorspace", first. Pretty annoying that R doesn't just do that 
+automatically, but hopefully, this sort of breakage will not occur too often.
+
+The first error means that you will need to install the gl-headers. Probably 
+packages libgl-dev (but I have not checked).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110517/1e87ec97/attachment.sig>
+
+From noreply at sourceforge.net  Tue May 17 07:07:37 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 09:07:37 +0200
+Subject: [rkward-users] [Help] RE: totally basic question - using packages
+In-Reply-To: <forum-165574-10189002@sourceforge.net>
+Message-ID: <forum-165574-10190909@sourceforge.net>
+
+
+The following forum message was posted by m-eik at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4533322:
+
+hi mark,
+
+well, unfortunately it takes more for something to appear in any menu in RKWard
+than to just install a plain R package. actually it's more the other way round:
+some developer must provide RKWard with a so called plugin, which adds new dialogs
+to the menu; and if that plugin depends on a certain R package, it will automatically
+guide you through the package installation. as long as there's no extremevalues
+plugin, it can't appear in RKWard, no matter how many packages you have
+installed.
+
+there is simply no way for any software to magically create a comprehensive
+GUI out of just a bunch of R functions... if you are an R beginner, you will
+have to learn the R basics first, anyways. there's a lot of how-tos and beginner's
+manuals out there. RKWard can still make your working with R much more comfotable
+(e.g., regarding your problem with data management, it has a powerful
+spreadsheet-like data editor and import dialogs for varous data formats), but
+you'll always have to know what you're doing!
+
+
+
+From noreply at sourceforge.net  Tue May 17 07:09:30 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 09:09:30 +0200
+Subject: [rkward-users] [Help] RE: totally basic question - using packages
+In-Reply-To: <forum-165574-10190909@sourceforge.net>
+Message-ID: <forum-165574-10190912@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4533322:
+
+Hi 
+
+there are two things you should be aware of:
+
+1. to use a library you need to load it into the workspace before you use it:
+Console: library("libraryname")
+RKward: click workspace -> load/unload packages ...
+
+2. I doubt that there will be an additional menu or menu-entry appearing in
+the RKward after you do so. RKward does not offer a graphical user interface
+for any package. The interface was designed for a certain set of packages (basic
+packages in R). If you use something special, you'll have to read about using
+R via commands. Don't worry ^^ to get some things working, this isn't that much
+of an effort - you'll find some tutorials on http://www.r-project.org/
+
+all the best,
+
+Marc
+
+
+
+From noreply at sourceforge.net  Tue May 17 07:52:16 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 09:52:16 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10184205@sourceforge.net>
+Message-ID: <forum-165574-10191087@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+Hi!
+
+No, there is no option to turn this off, ATM, although it is somewhat obsolete
+with the oxygen theme, indeed. You can:
+- hope that I will remember to fix this
+- submit a feature request
+(https://sourceforge.net/tracker/?group_id=50231&atid=459010)
+- if you know a bit of programming, submit a patch. The files to look at are
+rkmdiwindow.cpp, and the files in the settings-directory (probably
+rksettingsmodulegeneral.cpp would be the place to add an option).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 17 08:03:50 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 10:03:50 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191087@sourceforge.net>
+Message-ID: <forum-165574-10191101@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+Hi Thomas
+
+thank you for the answer. I guess I'll either hope or try with the patch (if
+I find the time and my skills are good enough).
+
+all the best,
+
+Marc
+
+
+
+From noreply at sourceforge.net  Tue May 17 09:19:36 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 11:19:36 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191101@sourceforge.net>
+Message-ID: <forum-165574-10191266@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+regarding the patching:
+
+the rkward.kdevprj is for KDevelop3 (KDevelop4 with cmakelist crashes whenever
+I open a file or try to edit a file (that appears to be still open after the
+crash))?
+
+
+
+From noreply at sourceforge.net  Tue May 17 10:21:20 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 12:21:20 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191266@sourceforge.net>
+Message-ID: <forum-165574-10191369@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+You are right, rkward.kdevprj is long obsolete. I have removed it from SVN,
+now, and added my kdevelop4 project file, instead. I hope that will work for
+you.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 17 11:07:06 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 13:07:06 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191369@sourceforge.net>
+Message-ID: <forum-165574-10191459@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+thanks (however - did not bring me a lot further).
+
+KDevelop4 still crashes:
+I can open any file from the rkward/trunk/rkward as long as it is directly within
+this folder. Opening any other file in the subfolders results in a crash of
+KDevelop4  (e.g. the ones you pointed out
+in rkward/trunk/rkward/rkward/windows/...).
+
+any idea to get around this problem?
+
+best regards,
+Marc
+
+
+
+
+From information4vikas at gmail.com  Tue May 17 11:31:55 2011
+From: information4vikas at gmail.com (Vikas Garud)
+Date: Tue, 17 May 2011 17:01:55 +0530
+Subject: [rkward-users] Box plots by groups
+Message-ID: <BANLkTinuCTq=xG5wDaY8tAZYE43Ze3HU_g@mail.gmail.com>
+
+Hi,
+
+I am a consultant in Quality Management.  I am exploring the use of R
+with any GUI - R commander/Rkward for doing analytical work.  Have
+installed R, R Commander and Rkward.
+
+I hope to learn by doing various exercises that I use for teaching
+analytical techniques to my clients.  I would be posting the data on
+this mailing list, and the rkward mailing list wherever I get stuck.
+
+First such technique I am trying to explore is the use of boxplots.
+The data is pasted below:
+Season	Transporter	Distance	Tonnage	Time
+1	1	500	1	17
+1	1	500	2	22
+1	1	1000	1	23
+1	1	1000	2	29
+1	1	1500	1	33
+1	1	1500	2	38
+1	2	500	1	19
+1	2	500	2	26
+1	2	1000	1	30
+1	2	1000	2	35
+1	2	1500	1	42
+1	2	1500	2	42
+2	1	500	1	18
+2	1	500	2	24
+2	1	1000	1	25
+2	1	1000	2	26
+2	1	1500	1	35
+2	1	1500	2	38
+2	2	500	1	21
+2	2	500	2	24
+2	2	1000	1	28
+2	2	1000	2	37
+2	2	1500	1	36
+2	2	1500	2	44
+
+In this exercise, I am trying to plot box plots of the variable
+"Time", the last column and separated by all the other variables-
+Season, Transporter, Distance and Tonnage.  I expect the output in
+form of multiple box plots, arranged side by side so that I can
+compare the time performance for, say, season 1, transporter 2,
+Distance 500 and tonnage 2 with, say, season 2, transporter 1,
+Distance 500 and tonnage 2.  The box plot command in R Commander
+(Grpahs->Boxplot...) has a button called "plot by groups" presumably
+to achieve what I am trying to do.  However, on clicking I don't get
+any further output.  What am I missing?  (There is nothing equivalent
+to this button under Rkward)
+
+I tried to search the mailing list on box plot, but could not find
+anything relevant.  I have also searched in manual and seen this type
+(or even more complex analysis) being done on terminal.  However, I
+need to do it under (any) GUI.  Any help is highly appreciated.
+
+Thanks
+Vikas Garud
+
+
+
+From noreply at sourceforge.net  Tue May 17 12:16:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 14:16:09 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191459@sourceforge.net>
+Message-ID: <forum-165574-10191665@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+[quote]any idea to get around this problem? [/quote]
+
+Hm, not really. Try a different version of kdevelop, if you have that option.
+
+Perhaps, try waiting for some time after you have opened the project, until
+kdevelop is done with parsing everything. Or try restarting kdevelop after opening
+the project file. Or use kate...
+
+Sorry that I can't offer any better advice, here.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 17 12:25:08 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 14:25:08 +0200
+Subject: [rkward-users] [Help] RE: turn off focus indication
+In-Reply-To: <forum-165574-10191665@sourceforge.net>
+Message-ID: <forum-165574-10191678@sourceforge.net>
+
+
+The following forum message was posted by schmima at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4532582:
+
+hm - I did wait - and other things are also not working. But anyway - I think
+I will get once a way around that error ;)
+
+yes - kate would be an option - but as I'm not really professional I'd like
+to avoid this - searching for class links and so is no fun ;)
+
+well - I'll report if I solved the problem/used another version/editor.
+
+have a nice day,
+
+Marc
+
+
+
+
+From noreply at sourceforge.net  Tue May 17 13:22:20 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 17 May 2011 09:22:20 -0400
+Subject: [rkward-users] [Help] RE: totally basic question - using packages
+In-Reply-To: <forum-165574-10190912@sourceforge.net>
+Message-ID: <forum-165574-10191881@sourceforge.net>
+
+
+The following forum message was posted by mefnj at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4533322:
+
+thank you very much for the replies.  at least i know i didn't do something
+wrong (or was oblivious to the obvious).
+
+i guess i'll start to wade into the wonder world of R ...
+
+-mark
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 17 15:46:03 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 May 2011 17:46:03 +0200
+Subject: [rkward-users] Box plots by groups
+In-Reply-To: <BANLkTinuCTq=xG5wDaY8tAZYE43Ze3HU_g@mail.gmail.com>
+References: <BANLkTinuCTq=xG5wDaY8tAZYE43Ze3HU_g@mail.gmail.com>
+Message-ID: <201105171746.07294.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Tuesday 17 May 2011, Vikas Garud wrote:
+>  The box plot command in R Commander
+> (Grpahs->Boxplot...) has a button called "plot by groups" presumably
+> to achieve what I am trying to do.  However, on clicking I don't get
+> any further output.  What am I missing?
+
+apparently, there is a bug when trying to plot using R Commander inside 
+RKWard. I'm looking for a fix to that. Thanks for reporting.
+
+Interim solution is to start R Commander in a plain R session, outside of 
+RKWard.
+
+> (There is nothing equivalent
+> to this button under Rkward)
+
+This has been added to the development version of RKWard a week or two ago. It 
+will be part of the next release, which will enter the testing phase real 
+soon, now. So hang on for a few more weeks (or try our development snapshots).
+ 
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110517/0050ac35/attachment.sig>
+
+From information4vikas at gmail.com  Tue May 17 16:08:26 2011
+From: information4vikas at gmail.com (Vikas Garud)
+Date: Tue, 17 May 2011 21:38:26 +0530
+Subject: [rkward-users] RKWard-users Digest, Vol 42, Issue 4
+In-Reply-To: <mailman.130378.1305647179.27713.rkward-users@lists.sourceforge.net>
+References: <mailman.130378.1305647179.27713.rkward-users@lists.sourceforge.net>
+Message-ID: <BANLkTine1ML_r5ZUeemKmaX=w0PmD6jJqg@mail.gmail.com>
+
+> From:?"Thomas Friedrichsmeier" <thomas.friedrichsmeier at ruhr-uni-bochum.de>
+> To:?rkward-users at lists.sourceforge.net
+> Date:?17 May 2011 17:46:03 +0200
+> Subject:?Re: [rkward-users] Box plots by groups
+> Hi,
+>
+> On Tuesday 17 May 2011, Vikas Garud wrote:
+>> ?The box plot command in R Commander
+>> (Grpahs->Boxplot...) has a button called "plot by groups" presumably
+>> to achieve what I am trying to do. ?However, on clicking I don't get
+>> any further output. ?What am I missing?
+>
+> apparently, there is a bug when trying to plot using R Commander inside
+> RKWard. I'm looking for a fix to that. Thanks for reporting.
+>
+> Interim solution is to start R Commander in a plain R session, outside of
+> RKWard.
+>
+>> (There is nothing equivalent
+>> to this button under Rkward)
+>
+> This has been added to the development version of RKWard a week or two ago. It
+> will be part of the next release, which will enter the testing phase real
+> soon, now. So hang on for a few more weeks (or try our development snapshots).
+>
+> Regards
+> Thomas
+
+Thanks Thomas for the quick response.  I have tried both R Commander
+and Rkward independent of each other.  Have not tried R Commander from
+within Rkward.  Sorry if I have miscommunicated.  I'll try it though.
+I'll fiddle around for some time.  I'll try the new release, or the
+developmental release then.
+Thanks
+Vikas Garud
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue May 17 18:26:08 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 17 May 2011 20:26:08 +0200
+Subject: [rkward-users] [rkward-announce] Upcoming release,
+	call for testing RKWard 0.5.6
+Message-ID: <201105172026.11939.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Once again, it's time to prepare a new release, and once again, I would like 
+to ask you for help in testing, packaging and translating. Details on 
+available downloads, and a tentative release schedule can be found at 
+http://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule 
+as usual.
+
+Compared to the previous release, the changes are less fundamental, 
+technically, and so I think we can get along with a relatively short testing 
+period. Thus, I would like to ask you to provide feedback by May 24, with a 
+targetted final release date on May 30. Naturally, the testing phase will be 
+expanded, if necessary.
+
+Features to look out for are the new "Copy to output" actions: Run->CC 
+commands to output and File->Copy lines to output (in the script editor and R 
+console windows). Further, you may want to try the new stop-button at the 
+right hand of the status bar (also in the "Run"-menu). If you are using S4 
+objects, you may want to take a look at their representation in the 
+"Workspace" browser.
+
+--- Translators ---
+
+Now is a good time to start updating your translations. As usual, the deadline 
+to send your updates ends with the testing phase on May 24. RKWard is now 
+registered for translations on launchpad: 
+https://translations.launchpad.net/rkward . You may want to give that a try. 
+Of course, if you do not have the time to look at this right now, or you do 
+not like this, you can continue to send your translations by mail.
+
+Thanks!
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110517/d00a0f31/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Achieve unprecedented app performance and reliability
+What every C/C++ and Fortran developer should know.
+Learn how Intel has extended the reach of its next-generation tools
+to help boost performance applications - inlcuding clusters.
+http://p.sf.net/sfu/intel-dev2devmay
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From noreply at sourceforge.net  Thu May 19 05:47:48 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 19 May 2011 07:47:48 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10154547@sourceforge.net>
+Message-ID: <forum-165574-10198094@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+The problem is back.
+I include an snapshot. Note that the text window on the left is selected, but
+part of a help page
+is actually displayed:
+https://sites.google.com/site/filestemp2/home/rkward1.jpeg
+If I detach a window, it works, but those docked do not refresh the contents.
+
+My .rkworkplace file:
+
+base::::file:///media/Iomega_HDD/FLUXPYR/EDDY_CURS/RFLUX
+script::::file:///media/Iomega_HDD/FLUXPYR/EDDY_CURS/RFLUX/flux1_log.txt
+help::::rkward://rhelpbase/library/stats/html/ts.html
+help::::rkward://rhelpbase/library/zoo/doc/index.html
+help::::rkward://rhelpbase/library/zoo/html/aggregate.zoo.html
+help::::rkward://rhelpbase/library/base/help/as.POSIXct
+help::::rkward://rhelpbase/library/raster/html/cluster.html
+help::::rkward://rhelpbase/library/zoo/html/yearmon.html
+workspace::sidebar,0::
+commandlog::sidebar,3::
+filebrowser::sidebar,0::
+pendingjobs::sidebar,4::
+console::sidebar,3::
+helpsearch::sidebar,3::
+
+> sessionInfo()
+R version 2.13.0 (2011-04-13)
+Platform: i486-pc-linux-gnu (32-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                  LC_TIME=en_US.UTF-8
+ [4] LC_COLLATE=en_US.UTF-8        LC_MONETARY=en_US.UTF-8  
+LC_MESSAGES=en_US.UTF-8
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8      
+LC_ADDRESS=en_US.UTF-8
+[10] LC_TELEPHONE=en_US.UTF-8      LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] rkward_0.5.6
+
+loaded via a namespace (and not attached):
+[1] tools_2.13.0
+
+Agus
+
+
+
+
+
+From noreply at sourceforge.net  Thu May 19 17:38:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 19 May 2011 19:38:09 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10198094@sourceforge.net>
+Message-ID: <forum-165574-10199758@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Hi!
+
+This is still a mystery to me. Could you try the following, to try to narrow
+down the problem:
+
+- Create a new R workspace, with nothing, or only few objects in it. Save it
+to "temp.RData", exit RKWard.
+- Copy the workplace file you posted to "temp.RData.rkworkplace".
+- Start RKWard and open temp.RData .
+
+Does this trigger the same problem?
+
+In a session that is affected: What happens when you run
+[quote]rk.restore.workplace()[/quote]
+in the R console (in theory, this should close all windows, and re-open them)?
+
+Which version of KDE are you using?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue May 24 20:48:49 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 24 May 2011 22:48:49 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10199758@sourceforge.net>
+Message-ID: <forum-165574-10222409@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+When I follow your directions, I get the message that I do not have access to
+the script file (which is not true)
+script::::file:///media/Iomega_HDD/FLUXPYR/EDDY_CURS/RFLUX/flux1_log.txt 
+ and the
+help pages are not displayed (the titles are displayed, but not the contents),
+just the following text:
+Only help files, NEWS, DESCRIPTION and files under doc/ in a package can be
+viewed
+ but I think this is an entirely different issue.
+
+When I encounter the error (which just happened again) and run
+rk.restore.workplace(), the windows are closed and opened, but the problem
+remains.
+
+Which KDE pakage(s) do you refer to? Note I use gnome, I have those kde packages
+that get installed for RKward. Most
+of them 4:4.4.5-0
+
+Agus
+
+
+
+From noreply at sourceforge.net  Wed May 25 05:57:41 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 May 2011 07:57:41 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10222409@sourceforge.net>
+Message-ID: <forum-165574-10224371@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Correction: If I use rk.restore.workplace() during a session in which the error
+is happening, the windows do not close and reopen, there is just no response
+(the console works).
+Agus
+
+
+
+From noreply at sourceforge.net  Wed May 25 11:28:50 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 May 2011 13:28:50 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10224371@sourceforge.net>
+Message-ID: <forum-165574-10225345@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+Hi!
+
+I'm afraid, I'm going to have to give up on this, soon. A few more things, before
+I do:
+1) Could you perhaps store a backup of the affected workspace/workplace and
+all related files, somewhere? In case the problem goes away one day, it would
+be good to be able to verify whether it was actually fixed, or whether you simply
+no longer trigger it, then.
+2) Is flux1_log.txt very large? Could there be anything else unusual about this
+file?
+3) Suppose you copy flux1_log.txt to an internal disk, instead of a USB drive
+(or whatever it is), open it from there, instead, save the workplace, and restart
+RKWard with that? Same issue?
+
+Regarding the errors you cite in comment #11: Yes, these are almost certainly
+unrelated. In case you copied the lines for the .rkworkplace-file, manually,
+with a text-editor, please check for any trailing or leading spaces, and make
+sure that there is a hard line break after each line. ATM, I can't think of
+any other possible source of error. This [i]should[/i] work (I tried, here,
+replacing flux1_log.txt for a different file, but did not manage to reproduce
+the bug).
+
+Some more loud thinking:
+- You said that the workspace is very big, and suggested a memory issue. I think
+this is very unlikely. You would get much less confined symptoms in this case.
+- Of course, a race condition comes to mind. But I can't make any sense of this,
+either. Only after the R workspace has been fully loaded, and all associated
+events have been processed, RKWard goes on with restoring the .rkworkplace.
+So that's guaranteed to be sequential.
+- ATM, I'm suspecting a problem in KDE / Qt, rather than RKWard code, but I
+can't find any pointers on that, either.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed May 25 17:23:40 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 25 May 2011 19:23:40 +0200
+Subject: [rkward-users] [Help] RE: Rkward windows do not refresh
+In-Reply-To: <forum-165574-10225345@sourceforge.net>
+Message-ID: <forum-165574-10226394@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:
+
+I agree this is difficult because it is very erratic: the same .rkworkplace-file
+and workspace work fine after closing (and not saving) the session in which
+I had the problem. It also happens with different projects, some very small
+(it seems to me that the fact that the problem first occurred using a very large
+workspace is a coincidence)  and on 2 different computers.
+Something I have not mentioned is that, when the problem occurs, the line numbers
+on the left do change if I select a different window, but not the contents of
+the window itself.
+
+Hopefully the problem will be solved in a future release of KDE/Qt...
+
+Thanks,
+
+Agus
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon May 30 15:24:12 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 30 May 2011 17:24:12 +0200
+Subject: [rkward-users] [rkward-announce] RKWard 0.5.6 is released
+Message-ID: <201105301724.17420.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+As planned, RKWard 0.5.6 has been released today. Please find an annoucement, 
+summary of changes, and links to downloads on http://rkward.sourceforge.net .
+
+Many thanks to all contributors!
+
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110530/428dc156/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+vRanger cuts backup time in half-while increasing security.
+With the market-leading solution for virtual backup and recovery, 
+you get blazing-fast, flexible, and affordable data protection.
+Download your free trial now. 
+http://p.sf.net/sfu/quest-d2dcopy1
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+

@@ -1,0 +1,267 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-04",
+  "messages": [
+    {
+      "id": "msg-cbb64ceed51f",
+      "message_id": "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+      "from_name": "Carlos Bessa",
+      "from_email_hash": "5a3cb4de0ba227f709785e5c00491d127c8daa7de4cc5607acc9ba6789ef27c4",
+      "date": "2012-04-20T13:24:37Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\nI'm using rkward to analyse some experimental data and I'm hitting a\nproblem when plotting a box plot (haven't tryed other plot type yet).\nI have many \"samples\", and because the x labels are horizontal... some are\nmissing due to lack of space (see pic 1).\nI've also tryed a vertical box plot, expecting the x labels to remain\nhorizontal... but no. They change to vertical... and so there's not enough\nspace this way either (see pic2).\nIs there a way to change the x label position to vertical, or 45?? I also\nhaven't found a way to change font/size.. but perhaps there isn't any?\n\nLet me finish by complementing the authors on such a great program. It's\ndefinately the most user-friendly, good looking, R GUI I've tryed so far.\nwith best regards,\nCarlos\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/6e01e411/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: rkward_boxplot_xlabel1.jpg.tar.gz\nType: application/x-gzip\nSize: 39048 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/6e01e411/attachment.gz>",
+      "body_snippet": "Hi,\nI'm using rkward to analyse some experimental data and I'm hitting a\nproblem when plotting a box plot (haven't tryed other plot type yet).\nI have many \"samples\", and because the x labels are horiz",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-b94e7f6c9047",
+      "message_id": "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-04-20T16:02:21Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 20 April 2012, Carlos Bessa wrote:\n> I'm using rkward to analyse some experimental data and I'm hitting a\n> problem when plotting a box plot (haven't tryed other plot type yet).\n> I have many \"samples\", and because the x labels are horizontal... some are\n> missing due to lack of space (see pic 1).\n> I've also tryed a vertical box plot, expecting the x labels to remain\n> horizontal... but no. They change to vertical... and so there's not enough\n> space this way either (see pic2).\n> Is there a way to change the x label position to vertical, or 45?? I also\n> haven't found a way to change font/size.. but perhaps there isn't any?\n\nwell, sadly, we simply don't have any of this covered, so far. You'll have to \nmake some adjustments by hand:\n- Prepare all other aspects of the plot using the GUI.\n- Copy the generated code from the bottom of the boxplot GUI, and paste it to \na blank script file.\n- Modify the call to boxplot() by hand. The parameter to control label \norientation is \"las\" (0, 1, 2, or 3; see ?par). The parameters to control \nscale and font are called \"cex.lab\" and \"font.lab\".\n\nIn fact, we should probably provide support for at least orientation and scale \nin the plot options GUI. In case you (or somebody else) would like to look \ninto contributing that, take a look at the \"plot_options\"-plugin.\n\n > Let me finish by complementing the authors on such a great program. It's\n> definately the most user-friendly, good looking, R GUI I've tryed so far.\n> with best regards,\n\nThanks!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/eba13371/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 20 April 2012, Carlos Bessa wrote:\n> I'm using rkward to analyse some experimental data and I'm hitting a\n> problem when plotting a box plot (haven't tryed other plot type yet).\n> I hav",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-632231559e34",
+      "message_id": "<1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>",
+      "from_name": "jacques canonge",
+      "from_email_hash": "6e1682fb7e1f364045cef2cc3ae130174949ea46d1d8b6370401e7ea8cdfb67d",
+      "date": "2012-04-21T12:10:54Z",
+      "subject": "[rkward-users] Uninstall",
+      "subject_clean": "[rkward-users] Uninstall",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi everyone,\n\n\nI would like to remove rkward from my systems.\n\nI have windows 7.I installed rkward first then KDE. My user experience has been quite unpleasant.\n\nI would like to remove both. But I cant find any solution on windows to do it.\n\nPlease could you you help.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120421/737b24c6/attachment.html>",
+      "body_snippet": "Hi everyone,\n\n\nI would like to remove rkward from my systems.\n\nI have windows 7.I installed rkward first then KDE. My user experience has been quite unpleasant.\n\nI would like to remove both. But I can",
+      "thread_id": "thread-632231559e34",
+      "thread_depth": 0,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-4b151631e3a4",
+      "message_id": "<1335055433.3293.9.camel@leopardo>",
+      "from_name": "Luis Ferreira",
+      "from_email_hash": "b21cee773e9422fb28d54ccc9d51261f36cafaedb9904174f900eb93e12e71b0",
+      "date": "2012-04-22T00:43:53Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>"
+      ],
+      "body_plain": "Hi.\n\nI'm a relative newbie with R and RKward and I was starting to write an\nanalogous e-mail when read this.\nI'm with a similar problem, with axis labels being cut by margins; I\ntried to change the parameters\n\nlas = 2\nor\nmar = c(5, 200, 4, 2) + 0.1\nor\nmai = c(0.5, 2, 0.5, 0.5)\n\nand paste the code on R Console, but no joy.\nI'm getting this results:\n\nhttp://dl.dropbox.com/u/5076546/boxplot_grouped_0.png\n\nwith las = 2\nhttp://dl.dropbox.com/u/5076546/boxplot_grouped.png\n\nChanging mar or mai doesn? t   appear to make changes on output.\nAny ideas?\n\nCheers.\nLu?s\n\nOn Sex, 2012-04-20 at 14:24 +0100, Carlos Bessa wrote:\n> Hi,\n> I'm using rkward to analyse some experimental data and I'm hitting a\n> problem when plotting a box plot (haven't tryed other plot type yet).\n> I have many \"samples\", and because the x labels are horizontal... some\n> are missing due to lack of space (see pic 1). \n> I've also tryed a vertical box plot, expecting the x labels to remain\n> horizontal... but no. They change to vertical... and so there's not\n> enough space this way either (see pic2).\n> Is there a way to change the x label position to vertical, or 45?? I\n> also haven't found a way to change font/size.. but perhaps there isn't\n> any?\n> \n> Let me finish by complementing the authors on such a great program.\n> It's definately the most user-friendly, good looking, R GUI I've tryed\n> so far.\n> with best regards,\n> Carlos\n> \n> \n> \n> \n> ------------------------------------------------------------------------------\n> For Developers, A Lot Can Happen In A Second.\n> Boundary is the first to Know...and Tell You.\n> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!\n> http://p.sf.net/sfu/Boundary-d2dvs2\n> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/6f2b2405/attachment.html>",
+      "body_snippet": "Hi.\n\nI'm a relative newbie with R and RKward and I was starting to write an\nanalogous e-mail when read this.\nI'm with a similar problem, with axis labels being cut by margins; I\ntried to change the pa",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-06878b66ab9d",
+      "message_id": "<201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-04-22T14:16:43Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<1335055433.3293.9.camel@leopardo>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+        "<1335055433.3293.9.camel@leopardo>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 22 April 2012, Luis Ferreira wrote:\n> Changing mar or mai doesn? t   appear to make changes on output.\n> Any ideas?\n\nfor some reason or another, mar, and mai cannot be set as parameters in the \nboxplot()-call. Instead, set them separately, before the actual boxplot():\n\n  par (mar=c (5, 20, 4, 2))\n  boxplot (...)\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/17511826/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 22 April 2012, Luis Ferreira wrote:\n> Changing mar or mai doesn? t   appear to make changes on output.\n> Any ideas?\n\nfor some reason or another, mar, and mai cannot be set as parameters",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-8b79a0cb62fb",
+      "message_id": "<201204221625.15591.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-04-22T14:25:15Z",
+      "subject": "[rkward-users] Uninstall",
+      "subject_clean": "[rkward-users] Uninstall",
+      "in_reply_to": "<1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>",
+      "references": [
+        "<1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Saturday 21 April 2012, jacques canonge wrote:\n> I would like to remove rkward from my systems.\n> \n> I have windows 7.I installed rkward first then KDE. My user experience has\n> been quite unpleasant.\n\nsorry to hear that.\n \n> I would like to remove both. But I cant find any solution on windows to do\n> it.\n\nIt seems somewhat unlikely that you really \"installed rkward first then KDE\".\nAssuming you installed KDE to C:\\KDE, simply remove C:\\KDE. This will also get \nrid of RKWard. Assuming you used the installation bundle, remove whichever \nfolder you unpacked that to.\n\nNaturally, this will also remove anything else that you may have written into \nthis folder, and that you might want to keep.\n\nYou may have to reboot before being able to remove the folders, as some KDE \nhelper applications may still be running. You will also have to remove any \nicons placed in the start-menu or on your desktop, manually. Nothing is \nwritten to the registry, however.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/fb5f3af9/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Saturday 21 April 2012, jacques canonge wrote:\n> I would like to remove rkward from my systems.\n> \n> I have windows 7.I installed rkward first then KDE. My user experience has\n> been quite unp",
+      "thread_id": "thread-632231559e34",
+      "thread_depth": 1,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-a32287cb5821",
+      "message_id": "<1335118063.3310.15.camel@leopardo>",
+      "from_name": "Luis Ferreira",
+      "from_email_hash": "b21cee773e9422fb28d54ccc9d51261f36cafaedb9904174f900eb93e12e71b0",
+      "date": "2012-04-22T18:07:43Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+        "<1335055433.3293.9.camel@leopardo>",
+        "<201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "It solved. Thank You.\n\nFirst I reordered the factor by  the median of the attribute. I can't\nfind the GUI capability to do this graphically, probably is a neat\naddiction.\n\nfreguesias.reorder.altimetria <- with(covilha at data, reorder(Freguesia,\nAltimetria, median))\n\nI also changed the default orientation of the x and y axis. Inside\nboxplot function, I turned perpendicular the y axis labels and\ndeactivated the x axis:\n\nhorizontal = TRUE, las = 2, xaxt=\"n\"\n\nAfter  boxplot, writing x axis labels aligned with axis:\ntry (par (axis(1, las = 1)))\n\nAlso, RKWard is a great piece of software. I'm working with geospatial\ndata, having 11962152 cells * 1 factor * 5 attributes, and RKWard\nprocesses all with no problems. I experimented directly from R command\nline, from Rcmdr and from latticiste package gui, and it filled all my\n12GB RAM on Ubuntu 11.10 64-bit.\n\nCheers.\nLu?s\n\n\n\nOn Dom, 2012-04-22 at 16:16 +0200, Thomas Friedrichsmeier wrote:\n\n> Hi,\n> \n> On Sunday 22 April 2012, Luis Ferreira wrote:\n> > Changing mar or mai doesn? t   appear to make changes on output.\n> > Any ideas?\n> \n> for some reason or another, mar, and mai cannot be set as parameters in the \n> boxplot()-call. Instead, set them separately, before the actual boxplot():\n> \n>   par (mar=c (5, 20, 4, 2))\n>   boxplot (...)\n> \n> Regards\n> Thomas\n> ------------------------------------------------------------------------------\n> For Developers, A Lot Can Happen In A Second.\n> Boundary is the first to Know...and Tell You.\n> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!\n> http://p.sf.net/sfu/Boundary-d2dvs2\n> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.html>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: rk_out.html.tar.gz\nType: application/x-compressed-tar\nSize: 1101 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.tar.gz>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: boxplot_grouped_label_margins_solved.png\nType: image/png\nSize: 54111 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.png>",
+      "body_snippet": "It solved. Thank You.\n\nFirst I reordered the factor by  the median of the attribute. I can't\nfind the GUI capability to do this graphically, probably is a neat\naddiction.\n\nfreguesias.reorder.altimetri",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-08bd098c6706",
+      "message_id": "<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>",
+      "from_name": "Carlos Bessa",
+      "from_email_hash": "5a3cb4de0ba227f709785e5c00491d127c8daa7de4cc5607acc9ba6789ef27c4",
+      "date": "2012-04-22T21:25:44Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+        "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Thanks all!\nI followed your instructions and now have the charts as i wanted. I did hit\nanother bump though... i use the preview window from the GUI to export the\nplot to pdf/svg. But if i use the script file or just type it on the\nconsole the plot shows up on the output window... and i haven't found a way\nto export it. I'm guessing there's some command that i can add to the\nscript to export it to some desired format, but i haven't found that yet.\nCan you help me with that?\n\nbest regards,\nCarlos\n\nOn Fri, Apr 20, 2012 at 5:02 PM, Thomas Friedrichsmeier <\nthomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n\n> Hi,\n>\n> On Friday 20 April 2012, Carlos Bessa wrote:\n> > I'm using rkward to analyse some experimental data and I'm hitting a\n> > problem when plotting a box plot (haven't tryed other plot type yet).\n> > I have many \"samples\", and because the x labels are horizontal... some\n> are\n> > missing due to lack of space (see pic 1).\n> > I've also tryed a vertical box plot, expecting the x labels to remain\n> > horizontal... but no. They change to vertical... and so there's not\n> enough\n> > space this way either (see pic2).\n> > Is there a way to change the x label position to vertical, or 45?? I also\n> > haven't found a way to change font/size.. but perhaps there isn't any?\n>\n> well, sadly, we simply don't have any of this covered, so far. You'll have\n> to\n> make some adjustments by hand:\n> - Prepare all other aspects of the plot using the GUI.\n> - Copy the generated code from the bottom of the boxplot GUI, and paste it\n> to\n> a blank script file.\n> - Modify the call to boxplot() by hand. The parameter to control label\n> orientation is \"las\" (0, 1, 2, or 3; see ?par). The parameters to control\n> scale and font are called \"cex.lab\" and \"font.lab\".\n>\n> In fact, we should probably provide support for at least orientation and\n> scale\n> in the plot options GUI. In case you (or somebody else) would like to look\n> into contributing that, take a look at the \"plot_options\"-plugin.\n>\n>  > Let me finish by complementing the authors on such a great program. It's\n> > definately the most user-friendly, good looking, R GUI I've tryed so far.\n> > with best regards,\n>\n> Thanks!\n>\n> Regards\n> Thomas\n>\n>\n> ------------------------------------------------------------------------------\n> For Developers, A Lot Can Happen In A Second.\n> Boundary is the first to Know...and Tell You.\n> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!\n> http://p.sf.net/sfu/Boundary-d2dvs2\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/d958a3f0/attachment.html>",
+      "body_snippet": "Thanks all!\nI followed your instructions and now have the charts as i wanted. I did hit\nanother bump though... i use the preview window from the GUI to export the\nplot to pdf/svg. But if i use the scr",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-4155e06a87c7",
+      "message_id": "<1335130925.3310.19.camel@leopardo>",
+      "from_name": "Luis Ferreira",
+      "from_email_hash": "b21cee773e9422fb28d54ccc9d51261f36cafaedb9904174f900eb93e12e71b0",
+      "date": "2012-04-22T21:42:05Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+        "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>"
+      ],
+      "body_plain": "I'm not sure if this is the fastest/eficient way, but you can (1)\ncopy/paste the images in output html, (2) export the html and open with\na browser or (3) you can copy the temporary images on RKward\ntemporary/workspace (here is /home/lf/.rkward) directory.\n\nCheers.\n\nLu?s\n\nOn Dom, 2012-04-22 at 22:25 +0100, Carlos Bessa wrote:\n> Thanks all!\n> I followed your instructions and now have the charts as i wanted. I\n> did hit another bump though... i use the preview window from the GUI\n> to export the plot to pdf/svg. But if i use the script file or just\n> type it on the console the plot shows up on the output window... and i\n> haven't found a way to export it. I'm guessing there's some command\n> that i can add to the script to export it to some desired format, but\n> i haven't found that yet. Can you help me with that?\n> \n> best regards,\n> Carlos\n> \n> \n> On Fri, Apr 20, 2012 at 5:02 PM, Thomas Friedrichsmeier\n> <thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> \n>         Hi,\n>         \n>         \n>         On Friday 20 April 2012, Carlos Bessa wrote:\n>         > I'm using rkward to analyse some experimental data and I'm\n>         hitting a\n>         > problem when plotting a box plot (haven't tryed other plot\n>         type yet).\n>         > I have many \"samples\", and because the x labels are\n>         horizontal... some are\n>         > missing due to lack of space (see pic 1).\n>         > I've also tryed a vertical box plot, expecting the x labels\n>         to remain\n>         > horizontal... but no. They change to vertical... and so\n>         there's not enough\n>         > space this way either (see pic2).\n>         > Is there a way to change the x label position to vertical,\n>         or 45?? I also\n>         > haven't found a way to change font/size.. but perhaps there\n>         isn't any?\n>         \n>         \n>         \n>         well, sadly, we simply don't have any of this covered, so far.\n>         You'll have to\n>         make some adjustments by hand:\n>         - Prepare all other aspects of the plot using the GUI.\n>         - Copy the generated code from the bottom of the boxplot GUI,\n>         and paste it to\n>         a blank script file.\n>         - Modify the call to boxplot() by hand. The parameter to\n>         control label\n>         orientation is \"las\" (0, 1, 2, or 3; see ?par). The parameters\n>         to control\n>         scale and font are called \"cex.lab\" and \"font.lab\".\n>         \n>         In fact, we should probably provide support for at least\n>         orientation and scale\n>         in the plot options GUI. In case you (or somebody else) would\n>         like to look\n>         into contributing that, take a look at the\n>         \"plot_options\"-plugin.\n>         \n>         \n>          > Let me finish by complementing the authors on such a great\n>         program. It's\n>         > definately the most user-friendly, good looking, R GUI I've\n>         tryed so far.\n>         > with best regards,\n>         \n>         \n>         \n>         Thanks!\n>         \n>         Regards\n>         Thomas\n>         \n>         ------------------------------------------------------------------------------\n>         For Developers, A Lot Can Happen In A Second.\n>         Boundary is the first to Know...and Tell You.\n>         Monitor Your Applications in Ultra-Fine Resolution. Try it\n>         FREE!\n>         http://p.sf.net/sfu/Boundary-d2dvs2\n>         _______________________________________________\n>         RKWard-users mailing list\n>         RKWard-users at lists.sourceforge.net\n>         https://lists.sourceforge.net/lists/listinfo/rkward-users\n>         \n> \n> \n> \n> \n> ------------------------------------------------------------------------------\n> For Developers, A Lot Can Happen In A Second.\n> Boundary is the first to Know...and Tell You.\n> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!\n> http://p.sf.net/sfu/Boundary-d2dvs2\n> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users\n\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/ad8077d5/attachment.html>",
+      "body_snippet": "I'm not sure if this is the fastest/eficient way, but you can (1)\ncopy/paste the images in output html, (2) export the html and open with\na browser or (3) you can copy the temporary images on RKward\nt",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-81b8a92cdf39",
+      "message_id": "<CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2012-04-23T04:38:38Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>",
+        "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Fri, Apr 20, 2012 at 12:02 PM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi,\n>\n> On Friday 20 April 2012, Carlos Bessa wrote:\n>> I'm using rkward to analyse some experimental data and I'm hitting a\n>> problem when plotting a box plot (haven't tryed other plot type yet).\n>> I have many \"samples\", and because the x labels are horizontal... some are\n>> missing due to lack of space (see pic 1).\n>> I've also tryed a vertical box plot, expecting the x labels to remain\n>> horizontal... but no. They change to vertical... and so there's not enough\n>> space this way either (see pic2).\n>> Is there a way to change the x label position to vertical, or 45?? I also\n>> haven't found a way to change font/size.. but perhaps there isn't any?\n>\n> well, sadly, we simply don't have any of this covered, so far. You'll have to\n> make some adjustments by hand:\n> - Prepare all other aspects of the plot using the GUI.\n> - Copy the generated code from the bottom of the boxplot GUI, and paste it to\n> a blank script file.\n> - Modify the call to boxplot() by hand. The parameter to control label\n> orientation is \"las\" (0, 1, 2, or 3; see ?par). The parameters to control\n> scale and font are called \"cex.lab\" and \"font.lab\".\n>\n> In fact, we should probably provide support for at least orientation and scale\n> in the plot options GUI. In case you (or somebody else) would like to look\n> into contributing that, take a look at the \"plot_options\"-plugin.\n\nI have started to implement these (las, cex.axis are included in an\nadditional \"Annotations\" tab under Plot Options). This will go through\nmany iterations before we settle on an acceptable placement of options\non the GUI. Once I get some more of these par attributes in there, you\ncan let me know your opinion.\n\n-- \nPrasenjit",
+      "body_snippet": "On Fri, Apr 20, 2012 at 12:02 PM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi,\n>\n> On Friday 20 April 2012, Carlos Bessa wrote:\n>> I'm using rkward to analyse som",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 2,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-ff73213d2285",
+      "message_id": "<201204230937.38245.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-04-23T07:37:33Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 22 April 2012, Carlos Bessa wrote:\n> I followed your instructions and now have the charts as i wanted. I did hit\n> another bump though... i use the preview window from the GUI to export the\n> plot to pdf/svg. But if i use the script file or just type it on the\n> console the plot shows up on the output window... and i haven't found a way\n> to export it. I'm guessing there's some command that i can add to the\n> script to export it to some desired format, but i haven't found that yet.\n> Can you help me with that?\n\nremove the calls to\n   rk.graph.on()\nand\n   rk.graph.off()\nto plot to an on-screen window (just like the preview window), instead of to \nthe output file.\n\nAlternatively, you can replace those calls with e.g.\n   postscript(...)\nand\n   dev.off()\nto make writing to a file part of your script.\n\nIf you rely on the output file (as suggested by Luis), you may want to adjust \nthe default format of the images in the output file to suit your needs. \nSettings->Configure RKWard->Output->Graphics.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120423/a58a070c/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 22 April 2012, Carlos Bessa wrote:\n> I followed your instructions and now have the charts as i wanted. I did hit\n> another bump though... i use the preview window from the GUI to export",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 3,
+      "month": "2012-04"
+    },
+    {
+      "id": "msg-c1a7433c5420",
+      "message_id": "<201204230948.19122.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-04-23T07:48:15Z",
+      "subject": "[rkward-users] Boxplot label",
+      "subject_clean": "[rkward-users] Boxplot label",
+      "in_reply_to": "<CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>",
+      "references": [
+        "<CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>",
+        "<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 23 April 2012, Prasenjit Kapat wrote:\n> I have started to implement these (las, cex.axis are included in an\n> additional \"Annotations\" tab under Plot Options). This will go through\n> many iterations before we settle on an acceptable placement of options\n> on the GUI. Once I get some more of these par attributes in there, you\n> can let me know your opinion.\n\ngreat!\n\nOne very quick comment on option placement: I would suggest to place \"las\" on \nthe \"Axes\" tab. That's where I would look first, at least. For cex.xyz and \nmargins, it probably really makes sense to put all of those on a separate tab.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120423/3981f034/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 23 April 2012, Prasenjit Kapat wrote:\n> I have started to implement these (las, cex.axis are included in an\n> additional \"Annotations\" tab under Plot Options). This will go through\n> ma",
+      "thread_id": "thread-cbb64ceed51f",
+      "thread_depth": 3,
+      "month": "2012-04"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-cbb64ceed51f",
+      "subject": "[rkward-users] Boxplot label",
+      "message_count": 10,
+      "participants": [
+        "Carlos Bessa",
+        "Luis Ferreira",
+        "Prasenjit Kapat",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2012-04-20T13:24:37Z",
+      "last_reply": "2012-04-23T07:48:15Z",
+      "root_message_id": "msg-cbb64ceed51f"
+    },
+    {
+      "id": "thread-632231559e34",
+      "subject": "[rkward-users] Uninstall",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "jacques canonge"
+      ],
+      "started": "2012-04-21T12:10:54Z",
+      "last_reply": "2012-04-22T14:25:15Z",
+      "root_message_id": "msg-632231559e34"
+    }
+  ]
+}

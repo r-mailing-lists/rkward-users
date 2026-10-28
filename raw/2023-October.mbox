@@ -1,0 +1,109 @@
+From alfonsociologo at gmail.com  Fri Oct 13 18:00:52 2023
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Fri, 13 Oct 2023 11:00:52 -0600
+Subject: Problems with knitr and rmarkdown
+Message-ID: <CAMqnA+jJXkRxi5Y5QdUOKxcqmbqYQr9Zir+v524PfjqTPWVBKA@mail.gmail.com>
+
+Hello to all, once again thanking you all for all the hard work that you
+have been putting into RKWard.
+
+I've been using RKWard
+
+   - R. Version 0.7.5z+0.7.6+devel1. https://rkward.kde.org
+   - With R cran base v4.3.1
+   - System:
+     Kernel: 5.15.0-86-generic x86_64 bits: 64 compiler: gcc v: 11.4.0
+   Desktop: Cinnamon 5.8.4
+       tk: GTK 3.24.33 wm: muffin dm: LightDM Distro: Linux Mint 21.2
+   Victoria base: Ubuntu 22.04 jammy
+
+Since I've updated to linux mint 21, I have tried to execute the next code
+from the export markdown menu:
+
+local({
+> ## Preparar
+> require(knitr)
+> require(rmarkdown)
+> rk.check.for.pandoc(
+>   stop_if_missing=TRUE,
+>   output_format="latex"
+> )
+
+## Computar
+> render(
+>   input="/home/cano/Escritorio/ENOE/Importclean/proyecto.Rmd",
+>   output_format="pdf_document",
+>   output_file="/home/cano/Escritorio/ENOE/Importclean/proyecto.pdf",
+>   quiet=TRUE
+> )
+> ## Imprimir el resultado
+> rk.header ("Exportar archivo RMarkdown", parameters=list("Archivo
+> RMarkdown"="/home/user//proyecto.Rmd",
+> "Formato de destino"="PDF",
+> "Guardar como"="/home/user/proyecto.pdf"))
+> })
+
+
+But when starting to evaluate R code from lines 51-54, I have got:
+
+Loading required package: knitr
+Loading required package: rmarkdown
+
+Quitting from lines 51-54 [unnamed-chunk-1] (proyecto.Rmd)
+Error in `.rk.do.call()`:
+! no se pudo encontrar la función ".rk.do.call"
+Backtrace:
+  1. rmarkdown::render(...)
+  2. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)
+  3. knitr:::process_file(text, output)
+  7. knitr:::process_group.block(group)
+  8. knitr:::call_block(x)
+     ...
+ 16. knitr:::sew.recordedplot(X[[i]], ...)
+ 17. base::mapply(...)
+ 18. knitr (local) `<fn>`(...)
+ 21. knitr:::plot2dev(...)
+ 22. grDevices::dev.off()
+
+Quitting from lines 51-54 [unnamed-chunk-1] (proyecto.Rmd)
+Error in `.rk.do.call()`:
+! no se pudo encontrar la función ".rk.do.call"
+Backtrace:
+  1. rmarkdown::render(...)
+  2. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)
+  3. knitr:::process_file(text, output)
+  7. knitr:::process_group.block(group)
+  8. knitr:::call_block(x)
+  9. knitr:::block_exec(params)
+ 10. knitr:::eng_r(options)
+ 11. grDevices::dev.off(dv)
+
+
+States  that the function ".rk.do.call" has not been found.
+I didn't have this problem on the previous version of mint.  Is it possible
+to fix this?
+Thanks to all.
+Best regards
+Alfonso.
+______________________
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231013/c5bb1c60/attachment.htm>
+
+From alfonsociologo at gmail.com  Wed Oct 25 02:20:41 2023
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Tue, 24 Oct 2023 19:20:41 -0600
+Subject: Problems with knitr and rmarkdown SOLVED!!!
+Message-ID: <CAMqnA+i-oNd6GniBUQ5d_ArbYByqF=LmYGFZm9s4Vfdjcr4dQg@mail.gmail.com>
+
+Hello to all, once again thanking you all for all the hard work that you
+have been putting into RKWard.
+The issue with the function: ".rk.do.call"
+Has been solved at least on Versión "0.7.5z+0.7.6+devel3"
+THANKS!!!!
+Best regards.
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20231024/c87526f6/attachment.htm>
+

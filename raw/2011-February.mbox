@@ -1,0 +1,997 @@
+From noreply at sourceforge.net  Fri Feb  4 19:13:26 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 04 Feb 2011 19:13:26 +0000
+Subject: [rkward-users] [Help] Align windows vertically
+Message-ID: <forum-165574-9093173@sourceforge.net>
+
+
+The following forum message was posted by marceltf at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4091202:
+
+Hi,
+
+is there a way to align the windows in RKWard vertically, e.g. that the script
+and output window are next to each other instead of being above/underneath each
+other?
+That way I would be able to see much more of code and output.
+
+Thanks!
+
+Regards,
+Marcel
+
+
+
+From noreply at sourceforge.net  Fri Feb  4 19:26:45 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 04 Feb 2011 19:26:45 +0000
+Subject: [rkward-users] [Help] RE: Align windows vertically
+In-Reply-To: <forum-165574-9093173@sourceforge.net>
+Message-ID: <forum-165574-9093200@sourceforge.net>
+
+
+The following forum message was posted by  at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4091202:
+
+Sure,
+
+[u]right[/u]-click the "R-console" button at the bottom of the screen and select
+"right-sidebar" (or left if you prefer).
+
+Regards,
+Jan
+
+
+
+From noreply at sourceforge.net  Fri Feb  4 21:28:42 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 04 Feb 2011 21:28:42 +0000
+Subject: [rkward-users] [Help] RE: Align windows vertically
+In-Reply-To: <forum-165574-9093200@sourceforge.net>
+Message-ID: <forum-165574-9093552@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4091202:
+
+... and in case that is not enough, use Windows->Detach to transform any window
+into a top-level window managed by the window manager.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Fri Feb  4 22:39:45 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 04 Feb 2011 22:39:45 +0000
+Subject: [rkward-users] [Help] RE: Align windows vertically
+In-Reply-To: <forum-165574-9093552@sourceforge.net>
+Message-ID: <forum-165574-9093783@sourceforge.net>
+
+
+The following forum message was posted by marceltf at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4091202:
+
+Thanks, works great. Sadly, RKWard won't remember this setting, but I guess
+I can spare two klicks at each start.
+
+
+
+From noreply at sourceforge.net  Fri Feb 11 09:15:27 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 11 Feb 2011 09:15:27 +0000
+Subject: [rkward-users] [Help] Rkward and R directory moved to another disk
+Message-ID: <forum-165574-9114018@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Hi!
+
+I moved my project to another disk and after selecting the .RData in the new
+disk, Rkward complains that cannot
+find the files I had opened in the editor because still looks for them in the
+older disk.
+Where is Rkward actully reading the files that have to be opened? I cannot find
+it. Perhaps
+I could just edit that file and change the path.
+Anyway, having the option of relative path would be nice. I would make it relative
+to the directory where .RData is.
+
+Thanks
+
+Agus
+
+
+
+From noreply at sourceforge.net  Fri Feb 11 10:11:12 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 11 Feb 2011 10:11:12 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9114018@sourceforge.net>
+Message-ID: <forum-165574-9114365@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Hi!
+
+By default, RKWard saves the list of open windows in an object ".rk.workplace.save"
+in the .RData file. That object is created directly before saving the workspace,
+and is removed after loading the workspace. Thus, if you want to modify the
+paths, there, you will need to use a plain R session. In fact, perhaps this
+mechanism is not terribly smart, after all, although I don't really have an
+idea for something better, ATM.
+
+RKWard can also be configured to save the list of open windows "globally" (i.e.
+not per workspace). In this case you will find the relevant paths
+in ~/.kde/share/config/rkwardrc .
+
+[quote]Anyway, having the option of relative path would be nice. I would make
+it relative to the directory where .RData is.[/quote]
+
+Agreed. This would be very useful (and should be the default). It's on my TODO
+list (which keeps growing).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Sun Feb 13 11:36:03 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 13 Feb 2011 11:36:03 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9114365@sourceforge.net>
+Message-ID: <forum-165574-9280877@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Thanks
+Why not having .rk.workplace.save as a text file in the working directory? It
+would be easier
+to edit in case of need.
+Anyway, I've done what you said (using a "plain R" session to modify
+.rk.workplace.save) and could solve
+the problem.
+
+Agus
+
+
+
+From noreply at sourceforge.net  Mon Feb 14 13:15:21 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Mon, 14 Feb 2011 13:15:21 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9280877@sourceforge.net>
+Message-ID: <forum-165574-9375488@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Hi,
+
+I used to lean against using a separate text file, esp. since this gives a headache
+for remote URLs. On the other hand, remote URLs are rare in the first place,
+and probably, the workplace representation is meaningless in this case, anyway.
+So I decided to go with a separate file, indeed.
+
+As a by-product, there are two new R functions rk.save.workplace() and
+rk.restore.workplace(), which might be of interest to power users (these could
+be used to switch between several sets of opened script windows).
+
+IIRC, you are using Ubuntu? Then perhaps you may be interested in giving tomorrow's
+daily builds a try: https://launchpad.net/~rkward-devel/+archive/rkward-dailys
+. Otherwise, you can compile from SVN (http://p.sf.net/rkward/svn).
+
+BTW, the workplace save file now also includes information on the "base" directory
+of the current workspace. In case the workspace has moved, for each script file
+to restore, RKWard will first try to open it from the old (absolute) location,
+and if it does not exist, there, RKWard will try to load it from an adjusted
+(relative) location. Thus, future versions should generally be able to cope
+with moved directories out of the box, without the need for manual editing.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Tue Feb 15 17:46:08 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 15 Feb 2011 17:46:08 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9375488@sourceforge.net>
+Message-ID: <forum-165574-9385974@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+After installing the daily build (from launchpad) I get this intimidating message
+prior selecting any workspace:
+There was a problem starting the R backend. The following error(s) occurred:
+- The 'rkward' R-library either could not be loaded at all, or not in the correct
+version. This may lead to all sorts of errors, from single missing features
+to complete failure to function. The most likely cause is that the last installation
+did not place all files in the correct place. However, in some cases, left-overs
+from a previous installation that was not cleanly removed may be the cause.
+You should quit RKWard, now, and fix your installation. For help with that,
+see http://p.sf.net/rkward/compiling.
+-There was a problem setting up the communication with R. Most likely this indicates
+a broken installation.
+You should quit RKWard, now, and fix your installation. For help with that,
+see http://p.sf.net/rkward/compiling.
+-An unspecified error occurred that is not yet handled by RKWard. Likely RKWard
+will not function properly. Please check your setup.
+
+What should I do? By now I just quit. According to Synaptic only the last version
+is installed.
+
+Agus
+
+
+
+From noreply at sourceforge.net  Tue Feb 15 21:24:01 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 15 Feb 2011 21:24:01 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9385974@sourceforge.net>
+Message-ID: <forum-165574-9386938@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Hi!
+
+Probably you installed from source, earlier? Unfortunately, since R looks for
+packages in many different locations, installing with different methods has
+the potential to end up with a mix of different versions. That's basically what
+this error message is about. Looks like I talked you into that situation. Sorry.
+
+Try running
+[code]R CMD REMOVE rkward[/code]
+several times, possibly with "-l /usr/lib/R/library", "-l /usr/lib/R/site-library",
+"-l /usr/local/lib/R/library", and possibly other library locations. Repeat
+until
+[code]library (rkward)[/code]
+can no longer be found in a plain R session. Now re-install rkward from
+synaptic.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 06:54:19 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 06:54:19 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9386938@sourceforge.net>
+Message-ID: <forum-165574-9389172@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Thanks. I tried, but still have the same problem. Also, I'm sure I never installed
+rkward from source. This is what I did:
+
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward
+[sudo] password for alobo: 
+Removing from library ?/usr/local/lib/R/site-library?
+Error in .find.package(pkgs, lib) : there is no package called 'rkward'
+Execution halted
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward -l /usr/lib/R/library
+Error in .find.package(pkgs, lib) : there is no package called 'rkward'
+Execution halted
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward -l /usr/lib/R/site-library
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward -l /usr/lib/R/site-library
+Error in .find.package(pkgs, lib) : there is no package called 'rkward'
+Execution halted
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward -l /usr/local/lib/R/library
+Error: ERROR: cannot cd to directory ?/usr/local/lib/R/library?
+Execution halted
+
+Then I removed rkward using synpatic (why was it still there?) and found rkward
+in my home directory. Do I still have
+to remove it from there? how?
+
+In R:
+> library(rkward)
+Error in library(rkward) : there is no package called 'rkward'
+
+
+alobo at alobo-laptop:~$ cd /
+alobo at alobo-laptop:/$ sudo find . -name rkward
+./home/alobo/rkward-0.5.2/build/doc/rkward
+./home/alobo/rkward-0.5.2/build/rkward
+./home/alobo/rkward-0.5.2/build/rkward/rkward
+./home/alobo/rkward-0.5.2/doc/rkward
+./home/alobo/rkward-0.5.2/rkward
+./home/alobo/rkward-0.5.2/rkward/rbackend/rpackages/rkward
+./home/alobo/rkward-0.5.2/debian/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/share/doc/kde/HTML/en/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/share/doc/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/share/menu/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/share/kde4/apps/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/lib/R/site-library/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/lib/R/site-library/rkward/R/rkward
+./home/alobo/rkward-0.5.2/debian/rkward/usr/bin/rkward
+./home/alobo/.kde/share/apps/rkward
+./home/alobo/rkward-0.5.0b/build/doc/rkward
+./home/alobo/rkward-0.5.0b/build/rkward
+./home/alobo/rkward-0.5.0b/build/rkward/rkward
+./home/alobo/rkward-0.5.0b/doc/rkward
+./home/alobo/rkward-0.5.0b/rkward
+./home/alobo/rkward-0.5.0b/rkward/rbackend/rpackages/rkward
+
+
+alobo at alobo-laptop:~$ sudo R CMD REMOVE rkward
+-l /home/alobo/rkward-0.5.2/debian/rkward/usr/lib/R/site-library/rkward
+[sudo] password for alobo: 
+Error in .find.package(pkgs, lib) : there is no package called 'rkward'
+Execution halted
+
+
+
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 07:21:47 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 07:21:47 +0000
+Subject: [rkward-users] [Help] Problems with installation KDWard
+Message-ID: <forum-165574-9389266@sourceforge.net>
+
+
+The following forum message was posted by sanchovy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+Dear friends,
+I have troubles with installation of KDWard on my laptop (Windows Vista x32).
+I tried two ways (RKWard on Windows_
+https://sourceforge.net/apps/mediawiki/rkward/index.php?title=RKWard_on_Windows)
+:
+1) Using binary installation bundle.
+2) Custom installation: RKWard on Windows installer
+In the first case after extracting and creating foler with KDE and R I have
+files RKward-ico (with error path... so I see message: ") and RKward.bat (after
+running it I see follow message: "Please note that RKWard is not well tested
+on Windows, yet...." and than message aboute mistake rkward.bin.exe....
+In the second case... I can not install KDE... 
+
+Can you help me with my problems?
+
+The best wishes!
+Thanks....
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 08:38:41 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 08:38:41 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9389172@sourceforge.net>
+Message-ID: <forum-165574-9389671@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+[quote]Then I removed rkward using synpatic (why was it still there?)[/quote]
+
+Synaptic knows about things done in synaptic, only.
+
+[quote]and found rkward in my home directory. Do I still have to remove it from
+there? how?[/quote]
+
+Unlikely to be the problem. But since these are outdated, anyway, simply do
+
+[code]rm -r /home/alobo/rkward-0.5.2/ /home/alobo/rkward-0.5.0b/[/code]
+
+(or use the file manager to remove these). By the way, these [i]do[/i] indicate
+that you compiled from source once, although that was probably a long time ago.
+
+Let's see what else might be wrong. Try
+
+[code]which rkward
+which rkward.bin
+which rkward.rbackend[/code]
+
+(all should show /usr/bin/rkward[.something]). Also, next time, ignore the scary
+error message for a moment, and check Help->About RKWard. Which version of RKWard/KDE
+does it show?
+
+Try running
+
+[quote]sessionInfo()
+#and
+.libPaths()[/quote]
+
+in the RKWard R Console. If that much works, then please post the output.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 09:10:02 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 09:10:02 +0000
+Subject: [rkward-users] [Help] RE: Problems with installation KDWard
+In-Reply-To: <forum-165574-9389266@sourceforge.net>
+Message-ID: <forum-165574-9389791@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+Hi!
+
+Could you please post the [i]exact[/i] error messages that you get (i.e. the
+one about something with RKWard.ico, and the one about rkward.bin.exe)?
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 09:15:35 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 09:15:35 +0000
+Subject: [rkward-users] [Help] RE: history() doesn't work in rkward
+In-Reply-To: <forum-165574-8906992@sourceforge.net>
+Message-ID: <forum-165574-9389812@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4005932:
+
+Hi,
+
+I just noted that I never replied to the forum (only to the mailing list, and
+probably you never saw that). Either way: The R history() functions simply are
+not supported in RKWard up to 0.5.4. They are supported in the latest development
+version (see http://p.sf.net/rkward/svn if interested).
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 13:36:24 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 13:36:24 +0000
+Subject: [rkward-users] [Help] RE: Problems with installation KDWard
+In-Reply-To: <forum-165574-9389791@sourceforge.net>
+Message-ID: <forum-165574-9390787@sourceforge.net>
+
+
+The following forum message was posted by sanchovy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+Thank you very much!
+
+I`m sorry but I forgot say that systems language of my laptop is russian (so
+some folder`s name are cyrillic ).
+I change language. At present moment l have english language and some folder
+looking as "abrakadabra".
+So, if I run rhe RKWard-icon 
+The first case, (see upper) process corrupt later!  :)
+                       messege: Error starting R - RKward (black window)
+Family none
+Failed to create "C:/Users/???????/AppData/Roaming/.kde/cache-??????-??" failed
+to create "C:Users/?????/AppData/Roaming/.kde/tmp-???????-??" failed.... (3
+times)
+
+                      and than small window with follow message:
+
+There was a problem starting the R backend. The following error(s) occured:
+-There was a problem setting up the communication with R. Most likely this is
+due to an incorrect version of the `rkward` R-library or failure to find that
+at all. This indicates a broken installation.
+You should quit RKWard, now, and fix your installation. For help with that,
+see......
+details:
+??????????? ?????: 'rkward'
+The following object(s) are masked from 'package:graphics':
+plot.new
+The following object(s) are masked from 'package:grDevices':
+dev.off, dev.set, win.graph, windows, x11, X11
+The following object(s) are masked from 'package:utils':
+menu, select.list
+The following object(s) are masked from 'package:base':
+makeActiveBinding, q, quit, require, setwd, Sys.setlocale
+starting httpd help server ... done
+?????? ? file(file, ifelse(append, "a", "w")) : 
+?? ???? ??????? ??????????
+????????: ??????????????
+In file(file, ifelse(append, "a", "w")) :
+?? ???? ??????? ???? 'C:/Users/????????/.rkward//rk_out.html':
+Invalid argument
+
+Left click Ok....... and than message aboute terminate of [i]rkward.bin.exe[/i]
+(sorry... text on russian language but idea  - "terminate")
+
+The second case (Custom installation: RKWard on Windows installer)
+When I install KDE in the last moment I see th? message aboute terminate
+[i]kwinstartmenu.exe[/i]
+
+Thanks!!!
+
+
+
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 14:30:07 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 14:30:07 +0000
+Subject: [rkward-users] [Help] RE: Problems with installation KDWard
+In-Reply-To: <forum-165574-9390787@sourceforge.net>
+Message-ID: <forum-165574-9391003@sourceforge.net>
+
+
+The following forum message was posted by sanchovy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+chronicle of events (of failure)
+
+1 - [img]http://www.imageurlhost.com/images/wmmkd7mc18q7j7rj4mdy.jpg[/img]
+2 - [img]http://www.imageurlhost.com/images/tj450ivj8dp2n29qkrv.jpg[/img]
+3 - [img]http://www.imageurlhost.com/images/4swev9lyzvalklm8n39s.jpg[/img]
+4 - [img]http://www.imageurlhost.com/images/2rsr6e58hdpedw1v413.jpg[/img]
+5 - [img]http://www.imageurlhost.com/images/b81az42b4ujdq9kuc3v.jpg[/img]
+
+I`m so sorry.
+I try use the JGR console, but detect that JGR frequent hang on my laptop...
+I have found (for himself) KDWard... but to not avail...as yet)
+
+Thank you for help!
+
+
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 14:58:32 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 14:58:32 +0000
+Subject: [rkward-users] [Help] RE: Problems with installation KDWard
+In-Reply-To: <forum-165574-9391003@sourceforge.net>
+Message-ID: <forum-165574-9391211@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+Ok, thanks for the info.
+
+After looking around some more, it appears, there is a known problem for all
+KDE on Windows applications, when your username contains "non-latin1" characters:
+https://bugs.kde.org/show_bug.cgi?id=201987 . Well... That's bad.
+
+Of course the obvious workaround is to create a user with only latin1 or even
+ascii characters in the name, and to run RKWard as that user (no new installation
+of KDE and RKWard should be needed). Sorry that I can't offer a better alternative,
+ATM.
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 16:10:21 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 16:10:21 +0000
+Subject: [rkward-users] [Help] RE: Problems with installation KDWard
+In-Reply-To: <forum-165574-9391211@sourceforge.net>
+Message-ID: <forum-165574-9391676@sourceforge.net>
+
+
+The following forum message was posted by sanchovy at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4365580:
+
+Thanks!
+I will try...
+
+The best regards
+
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 17:11:46 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 17:11:46 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9389671@sourceforge.net>
+Message-ID: <forum-165574-9392055@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+ok I do:
+alobo at alobo-laptop:~$ rm -r /home/alobo/rkward-0.5.2
+alobo at alobo-laptop:~$ rm -r /home/alobo/rkward-0.5.0b
+alobo at alobo-laptop:~$ which rkward
+alobo at alobo-laptop:~$ which rkward.bin
+alobo at alobo-laptop:~$ which rkward.rbackend
+
+Then I install rkward 0.5.5.daily-3011-201102151750~karmic1 and start rkward.
+
+I get the same warning, click OK and select new workspace. Then in the console:
+
+> sessionInfo()
+R version 2.12.1 (2010-12-16)
+Platform: i486-pc-linux-gnu (32-bit)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8          LC_NUMERIC=C                  LC_TIME=en_US.UTF-8
+ [4] LC_COLLATE=en_US.UTF-8        LC_MONETARY=en_US.UTF-8  
+LC_MESSAGES=en_US.UTF-8
+ [7] LC_PAPER=en_US.UTF-8          LC_NAME=en_US.UTF-8      
+LC_ADDRESS=en_US.UTF-8
+[10] LC_TELEPHONE=en_US.UTF-8      LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+Error during wrapup: could not find function ".rk.do.error"
+> .libPaths()
+[1] "/usr/local/lib/R/site-library" "/usr/lib/R/site-library"    
+"/usr/lib/R/library"
+Error during wrapup: could not find function ".rk.do.error"
+
+If I select an existing (but not useful) .RData, the rkward crashes.
+
+Now on the console:
+alobo at alobo-laptop:~$ which rkward
+/usr/bin/rkward
+alobo at alobo-laptop:~$ which rkward.bin
+/usr/bin/rkward.bin
+alobo at alobo-laptop:~$ which rkward.rbackend
+/usr/bin/rkward.rbackend
+alobo at alobo-laptop:~$ 
+
+
+BTW, it works fine on my machine at work (ubuntu 10.04 LTS). Maybe I should
+just upgrade here...
+
+Agus
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 17:22:09 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 17:22:09 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9392055@sourceforge.net>
+Message-ID: <forum-165574-9392113@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+oops, I forgot the version in Help->About RKWard:
+0.5.5-devel1 and KDE 4.3.5
+
+Agus
+
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 17:22:41 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 17:22:41 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9392113@sourceforge.net>
+Message-ID: <forum-165574-9392114@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Interesting. The output from sessionInfo() looks like the rkward package is
+not loaded at all.
+
+Do you have a directory /usr/lib/R/site-library/rkward ? Does it appear to contain
+anything? What happens when you try to load
+[code]library (rkward)[/code]
+in a plain R session, now? (Note: In case it does load, you will need to type
+base::q() to quit.)
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Wed Feb 16 17:29:22 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 17:29:22 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9392114@sourceforge.net>
+Message-ID: <forum-165574-9392156@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+Yes I do have the directory:
+alobo at alobo-laptop:~$ cd /usr/lib/R/site-library/rkward
+alobo at alobo-laptop:/usr/lib/R/site-library/rkward$ ls -l
+total 40
+-rw-r--r-- 1 root root 2823 2011-02-15 19:17 CONTENTS
+-rw-r--r-- 1 root root  566 2011-02-15 19:17 DESCRIPTION
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 help
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 html
+-rw-r--r-- 1 root root  854 2011-02-15 19:17 INDEX
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 latex
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 man
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 Meta
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 R
+drwxr-xr-x 2 root root 4096 2011-02-16 17:59 R-ex
+
+but the output in R is quite intriguing:
+
+> library(rkward)
+Error: package 'rkward' was built before R 2.10.0: please re-install it
+>
+
+how can it be old if I just installed it?
+
+Agus
+
+
+
+From meik.michalke at uni-duesseldorf.de  Wed Feb 16 18:09:22 2011
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Wed, 16 Feb 2011 19:09:22 +0100
+Subject: [rkward-users]
+ =?iso-8859-1?q?=5BHelp=5D_RE=3A_Rkward_and_R_direc?=
+ =?iso-8859-1?q?tory_moved_to_another=09disk?=
+In-Reply-To: <forum-165574-9375488@sourceforge.net>
+References: <forum-165574-9375488@sourceforge.net>
+	(sfid-20110214_175051_524217_1E948AF8)
+Message-ID: <201102161909.28254.meik.michalke@uni-duesseldorf.de>
+
+hi,
+
+am Montag 14 Februar 2011 (14:15) schrieb SourceForge.net:
+> BTW, the workplace save file now also includes information on the "base"
+> directory of the current workspace. In case the workspace has moved, for
+> each script file to restore, RKWard will first try to open it from the old
+> (absolute) location, and if it does not exist, there, RKWard will try to
+> load it from an adjusted (relative) location. Thus, future versions should
+> generally be able to cope with moved directories out of the box, without
+> the need for manual editing.
+
+cool! on some projects i use kind of a DIY cloud, FUSE mounted network devices 
+(encfs layered over sshfs) -- works just great :-)
+
+
+viele gr??e :: m.eik
+
+-- 
+dipl. psych. meik michalke
+institut f"ur experimentelle psychologie
+abt. f"ur diagnostik und differentielle psychologie
+heinrich-heine-universit"at 40225 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110216/ca8da6e0/attachment.sig>
+
+From noreply at sourceforge.net  Wed Feb 16 18:39:46 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Wed, 16 Feb 2011 18:39:46 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9392156@sourceforge.net>
+Message-ID: <forum-165574-9392555@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+[quote]but the output in R is quite intriguing:
+> library(rkward) Error: package 'rkward' was built before R 2.10.0: please
+re-install it
+how can it be old if I just installed it? [/quote]
+
+Ok, now it makes sense. Well, the problem is that the daily builds are built
+against the version of R in the Ubuntu universe. For karmic that's 2.9.2. However,
+you have R 2.12.1, probably from CRAN. So that's why R refuses to load it...
+
+Well, that's not easily resolvable. You could upgrade your Ubuntu, you could
+compile RKWard from source (http://p.sf.net/rkward/svn for the latest version),
+or you could go back to whatever version you had installed, previously.
+
+(Probably at some point we will provide more PPAs on launchpad, which would
+cover your setup, too, but probably not for the daily builds.)
+
+Regards
+Thomas
+
+
+
+From noreply at sourceforge.net  Thu Feb 17 07:10:00 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 17 Feb 2011 07:10:00 +0000
+Subject: [rkward-users] [Help] RE: Rkward and R directory moved to another
+	disk
+In-Reply-To: <forum-165574-9392555@sourceforge.net>
+Message-ID: <forum-165574-9397241@sourceforge.net>
+
+
+The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4101958:
+
+ok, thanks. I understand that I must upgrade to 10.04, 9.10 is not a LTS. 
+I feel guilty for having bothered you with this issue, I'm on 9.04 just because
+of insufficient
+system admin on my home computer.
+
+Agus
+
+
+
+
+
+From noreply at sourceforge.net  Tue Feb 22 07:01:54 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 22 Feb 2011 07:01:54 +0000
+Subject: [rkward-users] [Help] Submit Button on Basic Statistics
+Message-ID: <forum-165574-9426974@sourceforge.net>
+
+
+The following forum message was posted by mikeontheridge at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4380212:
+
+I am very new at this, working tutorials.  Using  the Basic Statistics menu
+selection, submit button does not work.  I can work around it by cutting and
+pasting the code into a script and running it, but obviously that is not how
+it is meant to work.  Running on Ubuntu 10.4.  Is this just a bug, or is there
+something simple I am missing? Thanks.
+
+Mike
+
+
+
+From noreply at sourceforge.net  Tue Feb 22 08:24:17 2011
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 22 Feb 2011 08:24:17 +0000
+Subject: [rkward-users] [Help] RE: Submit Button on Basic Statistics
+In-Reply-To: <forum-165574-9426974@sourceforge.net>
+Message-ID: <forum-165574-9427388@sourceforge.net>
+
+
+The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4380212:
+
+Hi!
+
+It's a known bug in RKWard 0.5.4. It's fixed in our development version (you
+may want to take a look at
+https://launchpad.net/~rkward-devel/+archive/rkward-dailys), but not in an official
+release, so far.
+
+The bug is triggered, when there is an object called "my.data" in your workspace.
+So, if you don't need that, remove it, or rename it as a workaround.
+
+Regards
+Thomas
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Feb 23 08:40:17 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 23 Feb 2011 09:40:17 +0100
+Subject: [rkward-users] [rkward-announce] New mailing list rkward-announce
+Message-ID: <201102230940.21660.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+This is to announce our new mailing list "rkward-announce". rkward-announce is 
+meant to be a very low volume mailing list. The idea is that this list may be 
+of interest particularly to packagers. The list will receive notifications of 
+new release schedules and new official releases, but rarely anything else.
+
+This list is read-only for most purposes. Any mail you send to it will be 
+moderated, and most likely rejected. Reply to rkward-devel or rkward-users, 
+instead.
+
+Visit https://lists.sourceforge.net/mailman/listinfo/rkward-announce to 
+subscribe.
+
+-- Current subscribers of rkward-users and / or rkward-devel --
+
+If you are happy with the amount and type of mail you get, you do not need to 
+change anything. You will automatically receive all mail to rkward-announce. 
+There is no benefit in subscribing to rkward-announce *in addition* to rkward-
+users or rkward-devel.
+
+-- Current moderators of rkward-devel --
+
+I have made you moderators of rkward-announce, too, with the same password. In 
+contrast to rkward-devel, please apply very strict moderation standards to 
+rkward-announce. I.e., here, any mail which is not an important announcement 
+should be rejected (ideally with an explanation that mail should be sent to 
+rkward-users / rkward-devel, instead).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110223/2fdf7066/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Free Software Download: Index, Search & Analyze Logs and other IT data in 
+Real-Time with Splunk. Collect, index and harness all the fast moving IT data 
+generated by your applications, servers and devices whether physical, virtual
+or in the cloud. Deliver compliance at lower cost and gain new business 
+insights. http://p.sf.net/sfu/splunk-dev2dev 
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Wed Feb 23 12:01:23 2011
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 23 Feb 2011 13:01:23 +0100
+Subject: [rkward-users] [rkward-announce] RKWard 0.5.5 release schedule /
+	call for testing
+Message-ID: <201102231301.27146.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Once again, it's time to release a new version of RKWard. While not too many 
+visible features have been added, the current development sources contain a 
+sizeable number of bugfixes. Also, there have been significant internal changes: 
+RKWard now consists of two separate processes, one for the frontend, one for 
+the backend, which helps to iron out some incompatibilities with certain 
+packages (rJava, and RGtk2, in particular), and to enhance stability, overall.
+
+Of course, all the changes need to be tested, and so, if you have a bit of 
+time to spare, please participate in testing. Details on where to find sources 
+and / or binaries of the 0.5.5 pre-releases can be found here:
+https://sourceforge.net/apps/mediawiki/rkward/index.php?title=Release_Schedule
+
+The testing phase will be open until March 6, 2011. Please try to provide your 
+feedback until then. The targetted official release date for RKWard 0.5.5 is 
+March 14, 2011.
+
+-- Translators --
+
+Now is a good time to start updating your translations. As usual, the deadline 
+for sending updated translations ends with the testing phase, i.e. March 6, 
+2011.
+
+-- Developers --
+
+I have created a separate branch for the release in SVN 
+(release_branch_0.5.5). This means, you are free to do any type of changes in 
+trunk, as usual. However, if you want a change to become part of the release, 
+it will have to be merged into the release branch. Write a mail to rkward-
+devel, if unsure.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110223/e7463cc7/attachment.sig>
+-------------- next part --------------
+------------------------------------------------------------------------------
+Free Software Download: Index, Search & Analyze Logs and other IT data in 
+Real-Time with Splunk. Collect, index and harness all the fast moving IT data 
+generated by your applications, servers and devices whether physical, virtual
+or in the cloud. Deliver compliance at lower cost and gain new business 
+insights. http://p.sf.net/sfu/splunk-dev2dev 
+-------------- next part --------------
+_______________________________________________
+rkward-announce mailing list
+rkward-announce at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-announce
+

@@ -1,0 +1,63 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-02",
+  "messages": [
+    {
+      "id": "msg-e89072a23072",
+      "message_id": "<1361539832.29355.YahooMailNeo@web122306.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2013-02-22T13:30:32Z",
+      "subject": "[rkward-users] Francois Maurice",
+      "subject_clean": "[rkward-users] Francois Maurice",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "255);\">htunyanjhyfvubhtesnubfmrapiksplel\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130222/54e19911/attachment.html>",
+      "body_snippet": "255);\">htunyanjhyfvubhtesnubfmrapiksplel\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130222/54e19911/attac",
+      "thread_id": "thread-e89072a23072",
+      "thread_depth": 0,
+      "month": "2013-02"
+    },
+    {
+      "id": "msg-e62ba911f5d5",
+      "message_id": "<CAEeP31uY0+jY19Wo18ovC3TpG-RVDc248iau=cC40jYC2pGUOQ@mail.gmail.com>",
+      "from_name": "Alejo C.S.",
+      "from_email_hash": "06fdeba5194ff4ac6e003d4848f0b8f216bcddff5a8b27ce3a1e79b1bb3d348f",
+      "date": "2013-02-28T12:46:57Z",
+      "subject": "[rkward-users] Graphics window stores only one plot",
+      "subject_clean": "[rkward-users] Graphics window stores only one plot",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear list, I'm using RKward 0.5.7 in Debian Wheezy amd64 and R  version\n2.15.1. When I make several plots, only the last one is stored in Graphics\nWindows. In preferences, the maximum number of stored graphics is 20 and\nthe maximum size per graphic is 5120 (Kb). Any idea?\n\nThanks in advance\n\nC.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130228/328f0951/attachment.html>",
+      "body_snippet": "Dear list, I'm using RKward 0.5.7 in Debian Wheezy amd64 and R  version\n2.15.1. When I make several plots, only the last one is stored in Graphics\nWindows. In preferences, the maximum number of stored",
+      "thread_id": "thread-e62ba911f5d5",
+      "thread_depth": 0,
+      "month": "2013-02"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-e89072a23072",
+      "subject": "[rkward-users] Francois Maurice",
+      "message_count": 1,
+      "participants": [
+        "Francois Maurice"
+      ],
+      "started": "2013-02-22T13:30:32Z",
+      "last_reply": "2013-02-22T13:30:32Z",
+      "root_message_id": "msg-e89072a23072"
+    },
+    {
+      "id": "thread-e62ba911f5d5",
+      "subject": "[rkward-users] Graphics window stores only one plot",
+      "message_count": 1,
+      "participants": [
+        "Alejo C.S."
+      ],
+      "started": "2013-02-28T12:46:57Z",
+      "last_reply": "2013-02-28T12:46:57Z",
+      "root_message_id": "msg-e62ba911f5d5"
+    }
+  ]
+}

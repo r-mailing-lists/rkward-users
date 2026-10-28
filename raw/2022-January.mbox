@@ -1,0 +1,315 @@
+From vojtech.zeisek at opensuse.org  Sun Jan 23 11:02:35 2022
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Sun, 23 Jan 2022 12:02:35 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+Message-ID: <2154560.aLCPS8EEhN@tilia>
+
+Hello,
+when I create graph, in most of cases I'm asked by po-up window
+WARNING - RKWard
+Large plot!
+Do you still want to store it in the history?
+[Yes] ~~No~~
+And then regardless if clicking Yes or No I get in R console
+Warning message:
+'rk.show.question' is deprecated.
+Use 'rk.askYesNo' instead.
+See help("Deprecated")
+I tried to play with limits for storing plots in history in RKWard settings, 
+but it didn't help. How to get rid of this? It's annoying...
+Thanks,
+V.
+
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220123/97240193/attachment.sig>
+-------------- next part --------------
+_______________________________________________
+RKWard-users mailing list
+RKWard-users at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+From thomas.friedrichsmeier at kdemail.net  Sun Jan 23 21:47:50 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sun, 23 Jan 2022 22:47:50 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <2154560.aLCPS8EEhN@tilia>
+References: <2154560.aLCPS8EEhN@tilia>
+Message-ID: <20220123224730.51feb991@booklife>
+
+Hi,
+
+On Sun, 23 Jan 2022 12:02:35 +0100
+Vojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:
+> And then regardless if clicking Yes or No I get in R console
+> Warning message:
+> 'rk.show.question' is deprecated.
+> Use 'rk.askYesNo' instead.
+> See help("Deprecated")
+
+thanks for reporting. I addressed that in the development version, so
+if you are using the daily builds, this part of the problem should go
+away within 24 hours.
+
+> I tried to play with limits for storing plots in history in RKWard
+> settings, but it didn't help. How to get rid of this? It's annoying...
+
+I assume you're annoyed more by the pop than by the console warning
+message. I am somewhat surprised, you are seeing it this often. Could
+you, manually, run
+   object.size(recordPlot())
+for some of those plots, so I can get an idea, what size we are
+actually talking about? Possibly, the GUIs enforced maximum size is too
+strict, but I wonder by how much. BTW, setting
+   options("rk.graphics.hist.max.plotsize"=size_in_kb)
+will allow you to bypass the the GUI limit, for the active session.
+
+Of course the most definite solution to the problem will be to disable
+plot history, entirely, should nothing else help.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220123/7e03dd95/attachment.sig>
+
+From vojtech.zeisek at opensuse.org  Sun Jan 23 22:32:20 2022
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Sun, 23 Jan 2022 23:32:20 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <20220123224730.51feb991@booklife>
+References: <2154560.aLCPS8EEhN@tilia> <20220123224730.51feb991@booklife>
+Message-ID: <1965881.L1bQSob2Ba@tilia>
+
+Hello,
+thank You for super fast reaction. :-)
+
+Dne neděle 23. ledna 2022 22:47:50 CET, Thomas Friedrichsmeier napsal(a):
+> On Sun, 23 Jan 2022 12:02:35 +0100 Vojtěch Zeisek wrote:
+> > And then regardless if clicking Yes or No I get in R console
+> > Warning message:
+> > 'rk.show.question' is deprecated.
+> > Use 'rk.askYesNo' instead.
+> > See help("Deprecated")
+> 
+> thanks for reporting. I addressed that in the development
+> version, so if you are using the daily builds, this part
+> of the problem should go away within 24 hours.
+
+I use openSUSE Tumbleweed RPMs. I can grab the git snapshot, fork package and try myself.
+
+> > I tried to play with limits for storing plots in history in RKWard
+> > settings, but it didn't help. How to get rid of this? It's annoying...
+> 
+> I assume you're annoyed more by the pop than by the console warning
+> message. I am somewhat surprised, you are seeing it this often. Could
+> you, manually, run
+>    object.size(recordPlot())
+> for some of those plots, so I can get an idea, what size we are
+> actually talking about? Possibly, the GUIs enforced maximum size
+> is too strict, but I wonder by how much. BTW, setting
+>    options("rk.graphics.hist.max.plotsize"=size_in_kb)
+> will allow you to bypass the the GUI limit, for the active session.
+
+The defaults are 20 items in history and maximal size of single figure 1024. If I enlarge to 10000 I get rid of most of warning, but not of all.
+Full commands:
+require("vcfR")
+arabidopsis.vcf <- read.vcfR(file="https://soubory.trapa.cz/rcourse/arabidopsis.vcf.gz")
+arabidopsis.vcf.dp <- extract.gt(x=arabidopsis.vcf, element="DP", as.numeric=TRUE)
+arabidopsis.vcf.miss <- apply(X=arabidopsis.vcf.dp, MARGIN=2, FUN=function(x){sum(is.na(x))})
+arabidopsis.vcf.miss <- arabidopsis.vcf.miss/nrow(arabidopsis.vcf)
+barplot(height=arabidopsis.vcf.miss, ylab="Percentage of missing data", las=2)
+object.size(recordPlot())
+106864 bytes
+I wouldn't say this is the most complex plot I have there...
+
+> Of course the most definite solution to the problem will be
+> to disable plot history, entirely, should nothing else help.
+
+Yeah, I'd like to avoid that as I use to use it. It's nice feature. One more interesting problem of this sort is also, that after while after plotting plenty of images I get
+WARNING! - RKWard
+History limit reached, removing the first plot. Limits can be changed in Settings > RKWard > Output.
+Do you want to be notified in future?
+Yes / No
+And even if I click No, I'm sometimes asked again with the same question... But this I'm unable to repeat every time... Surely it will be repeated next section latest, but that's probably intentional.
+One more thing might be worth of change, but here I'm not sure where it comes from. Every time I start RKWard, the R console has soft line warp off, i.e. super long lines. And if I turn soft line wrap on in the View menu, it is not remembered for next startup.
+One last thing, as I'm playing with it right now... I have RKWard 0.7.2, Plastma 5.23.5, Framework 5.90 and Qt 5.15.2 and if I in RKWard settings in Kate Plugins section activate "CLose Except/Like", it doesn't start at all and starting from terminal writes just one line about SIGSEGV...
+Thank You for this nice tool. :-)
+Sincerely,
+V.
+
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220123/e03835fb/attachment.sig>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Jan 24 18:40:00 2022
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 24 Jan 2022 19:40:00 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <1965881.L1bQSob2Ba@tilia>
+References: <2154560.aLCPS8EEhN@tilia> <20220123224730.51feb991@booklife>
+ <1965881.L1bQSob2Ba@tilia>
+Message-ID: <20220124194000.7d8f24fe@booklife>
+
+Hi,
+
+On Sun, 23 Jan 2022 23:32:20 +0100
+Vojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:
+
+> The defaults are 20 items in history and maximal size of single
+> figure 1024. If I enlarge to 10000 I get rid of most of warning, but
+> not of all.
+
+I guess I can up the configurable limit some, maybe to 50000 kB, and
+maybe increase the default to 8192 kB or something. Note that
+50 MB multiplied by 20 is still up to 1 GB dedicated to plot history,
+alone. There is a reason for the warning, after all.
+
+> One more interesting problem of this sort is also, that after while
+> after plotting plenty of images I get WARNING! - RKWard History limit
+> reached, removing the first plot. Limits can be changed in Settings >
+> RKWard > Output. Do you want to be notified in future? Yes / No
+> And even if I click No, I'm sometimes asked again with the same
+> question... But this I'm unable to repeat every time... Surely it
+> will be repeated next section latest, but that's probably
+> intentional.
+
+Perhaps that warning could perhaps be removed, entirely. I don't think
+users expect the plot history to be unlimited. Ideally a passive popup
+could still give a hint about the relevant setting.
+
+> One more thing might be worth of change, but here I'm
+> not sure where it comes from. Every time I start RKWard, the R
+> console has soft line warp off, i.e. super long lines. And if I turn
+> soft line wrap on in the View menu, it is not remembered for next
+> startup.
+
+That's sort of intentional, or at least the intention is to default to
+non-wrapped lines in the console, even if the user has soft wrap
+configured elsewhere. It might be turned into a config option, however.
+
+> One last thing, as I'm playing with it right now... I have
+> RKWard 0.7.2, Plastma 5.23.5, Framework 5.90 and Qt 5.15.2 and if I
+> in RKWard settings in Kate Plugins section activate "CLose
+> Except/Like", it doesn't start at all and starting from terminal
+> writes just one line about SIGSEGV...
+
+Will have to investigate. Consider opening a bug report for this.
+
+Regards
+Thomas
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220124/e4b9b77a/attachment.sig>
+
+From vojtech.zeisek at opensuse.org  Tue Jan 25 17:58:55 2022
+From: vojtech.zeisek at opensuse.org (=?utf-8?B?Vm9qdMSbY2g=?= Zeisek)
+Date: Tue, 25 Jan 2022 18:58:55 +0100
+Subject: [rkward-users] 'rk.show.question' is deprecated.
+In-Reply-To: <20220124194000.7d8f24fe@booklife>
+References: <2154560.aLCPS8EEhN@tilia> <1965881.L1bQSob2Ba@tilia>
+ <20220124194000.7d8f24fe@booklife>
+Message-ID: <4982409.TVDpdRerln@veles>
+
+Hi
+
+Dne pondělí 24. ledna 2022 19:40:00 CET, Thomas Friedrichsmeier napsal(a):
+> On Sun, 23 Jan 2022 23:32:20 +0100 wrote:
+> > The defaults are 20 items in history and maximal size of single
+> > figure 1024. If I enlarge to 10000 I get rid of most of warning,
+> > but not of all.
+> 
+> I guess I can up the configurable limit some, maybe to 50000 kB,
+> and maybe increase the default to 8192 kB or something. Note that
+> 50 MB multiplied by 20 is still up to 1 GB dedicated to plot
+> history, alone. There is a reason for the warning, after all.
+
+Yes, I know it can be pretty large...
+
+> > One more interesting problem of this sort is also, that after while
+> > after plotting plenty of images I get WARNING! - RKWard History limit
+> > reached, removing the first plot. Limits can be changed in Settings >
+> > RKWard > Output. Do you want to be notified in future? Yes / No
+> > And even if I click No, I'm sometimes asked again with the same
+> > question... But this I'm unable to repeat every time... Surely it
+> > will be repeated next section latest, but that's probably
+> > intentional.
+> 
+> Perhaps that warning could perhaps be removed, entirely. I don't
+> think users expect the plot history to be unlimited. Ideally a
+> passive popup could still give a hint about the relevant setting.
+
+Some passive info not asking every time and not requiring immediate action 
+would be nice.
+
+> > One more thing might be worth of change, but here I'm
+> > not sure where it comes from. Every time I start RKWard,
+> > the R console has soft line warp off, i.e. super long
+> > lines. And if I turn soft line wrap on in the View menu,
+> > it is not remembered for next startup.
+> 
+> That's sort of intentional, or at least the intention is to default
+> to non-wrapped lines in the console, even if the user has soft wrap
+> configured elsewhere. It might be turned into a config option, however.
+
+Configuration option would be nice. If I have my settings elsewhere, I expect 
+all apps taking this settings...
+
+> > One last thing, as I'm playing with it right now... I have
+> > RKWard 0.7.2, Plastma 5.23.5, Framework 5.90 and Qt 5.15.2 and
+> > if I in RKWard settings in Kate Plugins section activate "CLose
+> > Except/Like", it doesn't start at all and starting from terminal
+> > writes just one line about SIGSEGV...
+> 
+> Will have to investigate. Consider opening a bug report for this.
+
+I'll try to get bit more info and see...
+Thank You,
+V.
+
+-- 
+Vojtěch Zeisek
+https://trapa.cz/
+
+Komunita openSUSE GNU/Linuxu
+Community of the openSUSE GNU/Linux
+https://www.opensuse.org/
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20220125/e812df37/attachment.sig>
+

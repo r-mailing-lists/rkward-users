@@ -1,0 +1,147 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-12",
+  "messages": [
+    {
+      "id": "msg-5a9e3e77fc3a",
+      "message_id": "<1385990830.37029.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+      "from_name": "Francois Maurice",
+      "from_email_hash": "f2bf9b360401640757afe16b711961aa7fff3aa8f758f3b5bde7fa04ae78c4e7",
+      "date": "2013-12-02T13:27:10Z",
+      "subject": "[rkward-users] Relative paths in RKWard WorkPlace",
+      "subject_clean": "[rkward-users] Relative paths in RKWard WorkPlace",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI try to put a R WorkSpace (.RData file) under version control using Subversion.\n\nBut I have a problem with RKWard WorkPlace. RKWard seems to save script files in the workplace with absolute paths. So, from one svn working copy to another, \nI must reload the script files in RKWard workplace.\n\nIs there a way to specify a base path, say to the working copy root, and saving the script files in the RKWard workplace with paths relative to that base path ?\n\n\nThanks,\n\n?\nFran?ois Maurice,?A. Stat.\nCandidat ? la ma?trise\nD?partement de sociologie\nUniversit? de Montr?al\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20131202/ea7e7e48/attachment.html>",
+      "body_snippet": "Hi,\n\nI try to put a R WorkSpace (.RData file) under version control using Subversion.\n\nBut I have a problem with RKWard WorkPlace. RKWard seems to save script files in the workplace with absolute path",
+      "thread_id": "thread-5a9e3e77fc3a",
+      "thread_depth": 0,
+      "month": "2013-12"
+    },
+    {
+      "id": "msg-b07297022a28",
+      "message_id": "<2405246.tMgFv8P6PS@late>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2013-12-04T10:25:54Z",
+      "subject": "[rkward-users] Relative paths in RKWard WorkPlace",
+      "subject_clean": "[rkward-users] Relative paths in RKWard WorkPlace",
+      "in_reply_to": "<1385990830.37029.YahooMailNeo@web120603.mail.ne1.yahoo.com>",
+      "references": [
+        "<1385990830.37029.YahooMailNeo@web120603.mail.ne1.yahoo.com>"
+      ],
+      "body_plain": "Hi!\n\nOn Monday 02 December 2013 05:27:10 Francois Maurice wrote:\n> I try to put a R WorkSpace (.RData file) under version control using\n> Subversion.\n> \n> But I have a problem with RKWard WorkPlace. RKWard seems to save script\n> files in the workplace with absolute paths. So, from one svn working copy\n> to another, I must reload the script files in RKWard workplace.\n> \n> Is there a way to specify a base path, say to the working copy root, and\n> saving the script files in the RKWard workplace with paths relative to that\n> base path ?\n\nRKWard will save the base path, if (and only if) the workspace itself has a \nknown URL, i.e., you saved the workspace (not workplace) somewhere, and \nrk.get.workspace.url() returns non-NULL. Then, when opening the workplace \ndescription, RKWard will\n\n1. Try to open each file at the old absolute url\n2. If the file cannot be found, there, and it is a local url, calculate the \nrelative path from previous workspace url to current workspace url, add that \nrelative path to the url in question, and see if the file can be found, there.\n\nThus, what you are looking for should work, but only when working with a saved \nworkspace (both when saving, and when loading).\n\nI can see that the ability to specify a custom base url and / or relative url \nadjustment might be useful. Consider opening a feature request ticket.\n\nCurrently, I think the only workaround will be to edit the .rkworkplace file, \ndirectly. The format may be somewhat silly, but it's a plain text file, and \nediting the urls should be straight-forward.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20131204/84e807d2/attachment.sig>",
+      "body_snippet": "Hi!\n\nOn Monday 02 December 2013 05:27:10 Francois Maurice wrote:\n> I try to put a R WorkSpace (.RData file) under version control using\n> Subversion.\n> \n> But I have a problem with RKWard WorkPlace. R",
+      "thread_id": "thread-5a9e3e77fc3a",
+      "thread_depth": 1,
+      "month": "2013-12"
+    },
+    {
+      "id": "msg-d9c8f19de50e",
+      "message_id": "<1386821117.3565.3.camel@Dell>",
+      "from_name": "Leslie",
+      "from_email_hash": "ca5967cf8e93130fdb2e3e1cf125fe390c4f38b716a8510b409b5bfcc38ed66f",
+      "date": "2013-12-12T04:05:17Z",
+      "subject": "[rkward-users] acf",
+      "subject_clean": "[rkward-users] acf",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello.  I am using rkward 0.5.7 on Ubuntu12.04.\nI am trying to perform autocorrelation function on my time series data.\nIf I enter my data into an online R processor\n(www.wessa.net/rwasp_autocorrelation.wasp) it performs a Box-Cox\ntransformation and sets differencing = 0 (i.e., lambda = 1, d=0, D=0),\nthen gives me a nice autocorrelation function and graphs.  But I would\nlike to do all this myself with rkward instead of relying on the\nwebsite.\nI downloaded r-cran-tseries  using my package manager.\nI can import my data to the workspace but I do not see how to set\nstationarity and run autocorrelation function from the menu.  Do I have\nto enter the r code myself in the R Console?\nThanks in advance for any help on this.  I am new to rkward and not much\nof a statistician.\n\n-Leslie Brothers",
+      "body_snippet": "Hello.  I am using rkward 0.5.7 on Ubuntu12.04.\nI am trying to perform autocorrelation function on my time series data.\nIf I enter my data into an online R processor\n(www.wessa.net/rwasp_autocorrelati",
+      "thread_id": "thread-d9c8f19de50e",
+      "thread_depth": 0,
+      "month": "2013-12"
+    },
+    {
+      "id": "msg-33f2bea019d3",
+      "message_id": "<2487933.S5QotWUXI0@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2013-12-12T09:17:41Z",
+      "subject": "[rkward-users] acf",
+      "subject_clean": "[rkward-users] acf",
+      "in_reply_to": "<1386821117.3565.3.camel@Dell>",
+      "references": [
+        "<1386821117.3565.3.camel@Dell>"
+      ],
+      "body_plain": "hi leslie,\n\nAm Mittwoch, 11. Dezember 2013, 20:05:17 schrieb Leslie:\n> I downloaded r-cran-tseries  using my package manager.\n> I can import my data to the workspace but I do not see how to set\n> stationarity and run autocorrelation function from the menu.  Do I have\n> to enter the r code myself in the R Console?\n\nin short: yes.\n\nR itself is a programming language, so you use it by executing commands. \nRKWard provides a (hoepfully) much more comfortable interface to it, and for \nsome statistics it offers dialogs from the menu, where you are looking. but \nthese menus don't come with the actual R package, as long as the package \nauthor (or anybody else) didn't explicitly write one for RKWard.\n\nRKWard can be extended by plugins:\n http://rkward.sf.net/R\nso if you know that the calculations you want to do are something you will \nhave to deal with for a while, it might be worth the time to write your own \nGUI dialog:\n http://rkward.sourceforge.net/documents/devel/plugins/\n http://rkward.sourceforge.net/R/pckg/rkwarddev/rkwarddev_vignette.pdf\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20131212/a98bda02/attachment.sig>",
+      "body_snippet": "hi leslie,\n\nAm Mittwoch, 11. Dezember 2013, 20:05:17 schrieb Leslie:\n> I downloaded r-cran-tseries  using my package manager.\n> I can import my data to the workspace but I do not see how to set\n> stat",
+      "thread_id": "thread-d9c8f19de50e",
+      "thread_depth": 1,
+      "month": "2013-12"
+    },
+    {
+      "id": "msg-a010e9b89e30",
+      "message_id": "<1386857246.2024.0.camel@Dell>",
+      "from_name": "Leslie",
+      "from_email_hash": "ca5967cf8e93130fdb2e3e1cf125fe390c4f38b716a8510b409b5bfcc38ed66f",
+      "date": "2013-12-12T14:07:26Z",
+      "subject": "[rkward-users] acf",
+      "subject_clean": "[rkward-users] acf",
+      "in_reply_to": "<2487933.S5QotWUXI0@yrla>",
+      "references": [
+        "<1386821117.3565.3.camel@Dell>",
+        "<2487933.S5QotWUXI0@yrla>"
+      ],
+      "body_plain": "Meik,\n   Thank you.  That is very helpful.\n-Leslie\n\n-----Original Message-----\nFrom: meik michalke <meik.michalke at uni-duesseldorf.de>\nTo: rkward-users at lists.sourceforge.net\nCc: Leslie <leslie.brothers at verizon.net>\nSubject: Re: [rkward-users] acf\nDate: Thu, 12 Dec 2013 10:17:41 +0100\n\nhi leslie,\n\nAm Mittwoch, 11. Dezember 2013, 20:05:17 schrieb Leslie:\n> I downloaded r-cran-tseries  using my package manager.\n> I can import my data to the workspace but I do not see how to set\n> stationarity and run autocorrelation function from the menu.  Do I have\n> to enter the r code myself in the R Console?\n\nin short: yes.\n\nR itself is a programming language, so you use it by executing commands. \nRKWard provides a (hoepfully) much more comfortable interface to it, and for \nsome statistics it offers dialogs from the menu, where you are looking. but \nthese menus don't come with the actual R package, as long as the package \nauthor (or anybody else) didn't explicitly write one for RKWard.\n\nRKWard can be extended by plugins:\n http://rkward.sf.net/R\nso if you know that the calculations you want to do are something you will \nhave to deal with for a while, it might be worth the time to write your own \nGUI dialog:\n http://rkward.sourceforge.net/documents/devel/plugins/\n http://rkward.sourceforge.net/R/pckg/rkwarddev/rkwarddev_vignette.pdf\n\n\nviele gr??e :: m.eik",
+      "body_snippet": "Meik,\n   Thank you.  That is very helpful.\n-Leslie\n\n-----Original Message-----\nFrom: meik michalke <meik.michalke at uni-duesseldorf.de>\nTo: rkward-users at lists.sourceforge.net\nCc: Leslie <leslie.br",
+      "thread_id": "thread-d9c8f19de50e",
+      "thread_depth": 2,
+      "month": "2013-12"
+    },
+    {
+      "id": "msg-a998eaa99a3d",
+      "message_id": "<52BC74B4.3080005@gmx.ch>",
+      "from_name": "David Croll",
+      "from_email_hash": "e572002006711f0326d8777d3f3a9e71268108861ac81d34bfc979cc9f5670a1",
+      "date": "2013-12-26T18:25:56Z",
+      "subject": "[rkward-users] \"help\" text while typing a function: white on salmon-colored background, nearly illegible",
+      "subject_clean": "[rkward-users] \"help\" text while typing a function: white on salmon-colored background, nearly illegible",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello dear RKWard users,\n\n\nI've encountered a problem with the user interface design.\n\nIn R on Mac OS X, when I began to type \"scan()\" (or any other command \nfor that matter), the standard function call was neatly displayed at the \nbottom of the window.\n\nNow I've changed to RKWard, and the function call is displayed in a \nwhite font on a salmon-colored background - this is nearly impossible to \nread.\n\nHere's a screenshot: http://oi40.tinypic.com/20uu4r9.jpg\n\nIs there a possibility to change these colors?\n\n\nKind regards,\n\nDavid",
+      "body_snippet": "Hello dear RKWard users,\n\n\nI've encountered a problem with the user interface design.\n\nIn R on Mac OS X, when I began to type \"scan()\" (or any other command \nfor that matter), the standard function ca",
+      "thread_id": "thread-a998eaa99a3d",
+      "thread_depth": 0,
+      "month": "2013-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5a9e3e77fc3a",
+      "subject": "[rkward-users] Relative paths in RKWard WorkPlace",
+      "message_count": 2,
+      "participants": [
+        "Francois Maurice",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-12-02T13:27:10Z",
+      "last_reply": "2013-12-04T10:25:54Z",
+      "root_message_id": "msg-5a9e3e77fc3a"
+    },
+    {
+      "id": "thread-d9c8f19de50e",
+      "subject": "[rkward-users] acf",
+      "message_count": 3,
+      "participants": [
+        "Leslie",
+        "meik michalke"
+      ],
+      "started": "2013-12-12T04:05:17Z",
+      "last_reply": "2013-12-12T14:07:26Z",
+      "root_message_id": "msg-d9c8f19de50e"
+    },
+    {
+      "id": "thread-a998eaa99a3d",
+      "subject": "[rkward-users] \"help\" text while typing a function: white on salmon-colored background, nearly illegible",
+      "message_count": 1,
+      "participants": [
+        "David Croll"
+      ],
+      "started": "2013-12-26T18:25:56Z",
+      "last_reply": "2013-12-26T18:25:56Z",
+      "root_message_id": "msg-a998eaa99a3d"
+    }
+  ]
+}

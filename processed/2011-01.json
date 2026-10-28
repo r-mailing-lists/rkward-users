@@ -1,0 +1,154 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2011-01",
+  "messages": [
+    {
+      "id": "msg-77f171c1b4f6",
+      "message_id": "<201101031909.04697.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2011-01-03T18:09:04Z",
+      "subject": "[rkward-users] Variable Class and IRT",
+      "subject_clean": "[rkward-users] Variable Class and IRT",
+      "in_reply_to": "<AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>",
+      "references": [
+        "<AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>"
+      ],
+      "body_plain": "hi craig,\n\nam Dienstag 28 Dezember 2010 (02:30) schrieb Craig Johnson:\n> One of the things I'm trying to do is play around with the IRT features.\n\ni'm responsible for the IRT plugin, so that's nice to read ;-)\n\n> The problem I'm having is that I don't have the proper \"class\" to run the\n> statistics.\n\nwith the given information i cannot add something of value to what thomas \nalready explained. in case you're uncomfortable to discuss your analysis on \nthe list, feel free to contact me directly. the matter seems to be more R \nbasics than RKWard specific anyway, as far as i can see.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at 40225 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110103/dc0e6f8a/attachment.sig>",
+      "body_snippet": "hi craig,\n\nam Dienstag 28 Dezember 2010 (02:30) schrieb Craig Johnson:\n> One of the things I'm trying to do is play around with the IRT features.\n\ni'm responsible for the IRT plugin, so that's nice to",
+      "thread_id": "thread-77f171c1b4f6",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-7cc42d6a1371",
+      "message_id": "<AANLkTikYB+eEAaVhK8X+w8+O+QWd8dsmpUGEG0kOo5ed@mail.gmail.com>",
+      "from_name": "Craig Johnson",
+      "from_email_hash": "f578471da56fbdf2e1cec8492b620f626ef22382f2e77a9c3803d66346c85203",
+      "date": "2011-01-03T18:36:49Z",
+      "subject": "[rkward-users] Variable Class and IRT",
+      "subject_clean": "[rkward-users] Variable Class and IRT",
+      "in_reply_to": "<201101031909.04697.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<AANLkTimkccGMReuW_h8cg3O64YtgY+h5e73FTt7a2G4-@mail.gmail.com>",
+        "<201101031909.04697.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "Hey guys,\n\nThis is on my list of things to dive into I just haven't gotten to it,\nsorry!  I'm sure it's probably something simple that I'm missing.  Basically\nI've imported some data and went to try the IRT stuff and was unable to do\nso because it appears the data isn't in the right format.\n\nI'll try and get some more specific info (perhaps a sample file) in the next\nday or so.\n\nThanks again for your responses and great with with RKWard.  It's a much\nmore friendly step to go from SAS to R when you can at least do the basics\nwith the GUI.\n\nCraig\n\n\nOn Mon, Jan 3, 2011 at 12:09 PM, meik michalke <\nmeik.michalke at uni-duesseldorf.de> wrote:\n\n> hi craig,\n>\n> am Dienstag 28 Dezember 2010 (02:30) schrieb Craig Johnson:\n> > One of the things I'm trying to do is play around with the IRT features.\n>\n> i'm responsible for the IRT plugin, so that's nice to read ;-)\n>\n> > The problem I'm having is that I don't have the proper \"class\" to run the\n> > statistics.\n>\n> with the given information i cannot add something of value to what thomas\n> already explained. in case you're uncomfortable to discuss your analysis on\n> the list, feel free to contact me directly. the matter seems to be more R\n> basics than RKWard specific anyway, as far as i can see.\n>\n>\n> viele gr??e :: m.eik\n>\n> --\n> dipl. psych. meik michalke\n> institut f\"ur experimentelle psychologie\n> abt. f\"ur diagnostik und differentielle psychologie\n> heinrich-heine-universit\"at 40225 d\"usseldorf\n>\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110103/be0b3b24/attachment.html>",
+      "body_snippet": "Hey guys,\n\nThis is on my list of things to dive into I just haven't gotten to it,\nsorry!  I'm sure it's probably something simple that I'm missing.  Basically\nI've imported some data and went to try t",
+      "thread_id": "thread-77f171c1b4f6",
+      "thread_depth": 1,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-6192a021739c",
+      "message_id": "<AANLkTintWOQ8ZsGajSS1wf4mUNiUNEY6hX9WnRAX5Vmj@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2011-01-30T01:28:53Z",
+      "subject": "[rkward-users] [R-sig-Debian] Ubuntu and R.",
+      "subject_clean": "[rkward-users] [R-sig-Debian] Ubuntu and R.",
+      "in_reply_to": "<19779.32601.689506.181506@max.nulle.part>",
+      "references": [
+        "<AANLkTimEZQKqGR297=99JdRg+44B8EyvQonU3WqR38PY@mail.gmail.com>",
+        "<19779.32601.689506.181506@max.nulle.part>"
+      ],
+      "body_plain": "Here is a message from r-sig-debian, which I took the liberty to take\nup on our list.\n\nOn Fri, Jan 28, 2011 at 9:45 PM, Dirk Eddelbuettel <edd at debian.org> wrote:\n>\n> On 28 January 2011 at 17:39, Matthew Bascom wrote:\n> | Hello,\n> |\n> | I?ve encountered a couple hurdles after installing Ubuntu for the first time\n> | and working with R with RKWard.\n> |\n> | The Keyboard: I have to hit the quote button twice to get a quote or\n> | apostrophe! I tried adjusting keyboard settings but nothing changed. ?And\n> | the RKWard GUI won?t recognize quotes from my machines even though they show\n> | up on the RKWard text editor. On the other hand, RKWard will run quoted\n> | material when I copy and paste material with quotes such as in a help.search\n> | query.\n>\n> There is not a lot to go by here.\n>\n> Thomas frequently builds on Debian and Ubuntu, in fact he is the maintainer.\n> Thanks to the backporters Vincent and Michal, a version is always included on\n> the CRAN repo for Ubuntu, eg at\n>\n> ? ? http://cran.us.r-project.org/bin/linux/ubuntu/\n>\n> where you should read the README. ?Just running 'apt-get install rkward'\n> should install it; and by launching\n>\n> ? ? $ rkward\n>\n> it surely start a working version. I have no problem using quotes either.\n>\n> Dirk\n>\n> | Thank you in advance,\n> |\n> | Matt\n\nFor some background info: how did you install R and RKWard? Could you\nprovide the output of sessionInfo()?\n\n\n-- \nPrasenjit",
+      "body_snippet": "Here is a message from r-sig-debian, which I took the liberty to take\nup on our list.\n\nOn Fri, Jan 28, 2011 at 9:45 PM, Dirk Eddelbuettel <edd at debian.org> wrote:\n>\n> On 28 January 2011 at 17:39, Ma",
+      "thread_id": "thread-6192a021739c",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-81783f335171",
+      "message_id": "<AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>",
+      "from_name": "Prof Prlwrlczkwsky",
+      "from_email_hash": "d0385078f59da4a271224854ed2b576e65e579a006707e44ad22156cb79362ae",
+      "date": "2011-01-30T21:34:49Z",
+      "subject": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "subject_clean": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Is it possible to configure RKWard to give consistent results with R running\nin the Xterminal window?\nIn the R console of the X-terminal I get:\n\n    > owd = setwd(tempdir())\n    > owd\n    [1] \"/home/andreas\"\n\nwhereas in the R console of RKWard I get for the same commands:\n    > owd = setwd(tempdir())\n    > owd\n    NULL\n\n(R2.12.1 under opensuse11.2)\n\nAny Ideas?\n\nAndreas\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110130/4162a1aa/attachment.html>",
+      "body_snippet": "Is it possible to configure RKWard to give consistent results with R running\nin the Xterminal window?\nIn the R console of the X-terminal I get:\n\n    > owd = setwd(tempdir())\n    > owd\n    [1] \"/home/a",
+      "thread_id": "thread-81783f335171",
+      "thread_depth": 0,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-fb554157bfc0",
+      "message_id": "<AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2011-01-30T22:26:10Z",
+      "subject": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "subject_clean": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "in_reply_to": "<AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sun, Jan 30, 2011 at 4:34 PM, Prof Prlwrlczkwsky\n<prof.prlwrlczkwsky at googlemail.com> wrote:\n> Is it possible to configure RKWard to give consistent results with R running\n> in the Xterminal window?\n> In the R console of the X-terminal I get:\n>\n> ??? > owd = setwd(tempdir())\n> ??? > owd\n> ??? [1] \"/home/andreas\"\n>\n> whereas in the R console of RKWard I get for the same commands:\n> ??? > owd = setwd(tempdir())\n> ??? > owd\n> ??? NULL\n>\n> (R2.12.1 under opensuse11.2)\n>\n> Any Ideas?\n\nFixed in SVN. Thanks for the bug! If you do not use svn trunk, as a\ntrivial workaround, run the following whenever you start rkward:\n\nsetwd <- function (x) {\n\towd <- getwd ()\n\trkward::setwd (x)\n\tinvisible (owd)\n}\n\nThomas: I hope there are there are no side affects!\n\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nOn Sun, Jan 30, 2011 at 4:34 PM, Prof Prlwrlczkwsky\n<prof.prlwrlczkwsky at googlemail.com> wrote:\n> Is it possible to configure RKWard to give consistent results with R running\n> in the Xterminal",
+      "thread_id": "thread-81783f335171",
+      "thread_depth": 1,
+      "month": "2011-01"
+    },
+    {
+      "id": "msg-f749465f5595",
+      "message_id": "<201101311523.12892.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-01-31T14:23:09Z",
+      "subject": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "subject_clean": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "in_reply_to": "<AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>",
+      "references": [
+        "<AANLkTi=QtwCDxeE63oMPByNAq1tKpRBgnReyptiMVe2_@mail.gmail.com>",
+        "<AANLkTimi9Nm6-aKM2KfNq0DdUzNab-rB-xPvo9n6nUVR@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sunday 30 January 2011, Prasenjit Kapat wrote:\n> Thomas: I hope there are there are no side affects!\n\nno negative side effects to be expected from your fix. I simply forgot to pay \nattention to the return value, when I overloaded setwd().\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110131/62cf3ef7/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sunday 30 January 2011, Prasenjit Kapat wrote:\n> Thomas: I hope there are there are no side affects!\n\nno negative side effects to be expected from your fix. I simply forgot to pay \nattention t",
+      "thread_id": "thread-81783f335171",
+      "thread_depth": 2,
+      "month": "2011-01"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-77f171c1b4f6",
+      "subject": "[rkward-users] Variable Class and IRT",
+      "message_count": 2,
+      "participants": [
+        "Craig Johnson",
+        "meik michalke"
+      ],
+      "started": "2011-01-03T18:09:04Z",
+      "last_reply": "2011-01-03T18:36:49Z",
+      "root_message_id": "msg-77f171c1b4f6"
+    },
+    {
+      "id": "thread-6192a021739c",
+      "subject": "[rkward-users] [R-sig-Debian] Ubuntu and R.",
+      "message_count": 1,
+      "participants": [
+        "Prasenjit Kapat"
+      ],
+      "started": "2011-01-30T01:28:53Z",
+      "last_reply": "2011-01-30T01:28:53Z",
+      "root_message_id": "msg-6192a021739c"
+    },
+    {
+      "id": "thread-81783f335171",
+      "subject": "[rkward-users] Howto configure RKWard to give consistent results with R running in the Xterminal window?",
+      "message_count": 3,
+      "participants": [
+        "Prasenjit Kapat",
+        "Prof Prlwrlczkwsky",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-01-30T21:34:49Z",
+      "last_reply": "2011-01-31T14:23:09Z",
+      "root_message_id": "msg-81783f335171"
+    }
+  ]
+}

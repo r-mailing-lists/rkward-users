@@ -1,0 +1,124 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2012-11",
+  "messages": [
+    {
+      "id": "msg-b7b1c320241b",
+      "message_id": "<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>",
+      "from_name": "Rebel Tyrcus",
+      "from_email_hash": "24f2bf299aa08a38c52526de4c141a57c7f57dc6a3ff4272a5dcd87625dfd85e",
+      "date": "2012-11-02T12:02:56Z",
+      "subject": "[rkward-users] [rkward-devel]  Select cases",
+      "subject_clean": "[rkward-users] [rkward-devel]  Select cases",
+      "in_reply_to": "<1849969.HA3LMVVk03@yrla>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<201210180935.08143.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAE+DF+3Cj2HkCrnL8xNQP=9VG4N-d-51tcgTaPczpSQcbzDr3Q@mail.gmail.com>",
+        "<1849969.HA3LMVVk03@yrla>"
+      ],
+      "body_plain": "On Sat, Oct 20, 2012 at 7:47 PM, meik michalke\n<meik.michalke at uni-duesseldorf.de> wrote:\n> i've tried to come up with something hopefully useful. it's a first subsetting\n> plugin called \"rk.subset\", which is limited to data.frames and can also only\n> filter by variables which are a column in the selected data object. despite\n> these limitations, if nothing it can still hint you to how to use the subset()\n> function if you need more complex subsetting ;-)\n>\n> to test it, go to \"settings\" -> \"manage R packages\" -> \"install/update/remove\"\n> and search/install the package \"rk.subset\". the new dialog will then be\n> available from RKWard's \"data\" menu.\n>\n> let me know what you think of it!\n\nHey, sorry for the late reply. I've tried to install the plugin, but\nunfortunately I'm on RKWard on Windows (0.6.0), and I don't know what\nthe problem is but I cannot select any CRAN mirror, so I haven't been\nable to install it.\n\nI'll try to install it at home on my linux system, but where I really\nneed it is at work...\n\nThank you anyway.\n\nJoan",
+      "body_snippet": "On Sat, Oct 20, 2012 at 7:47 PM, meik michalke\n<meik.michalke at uni-duesseldorf.de> wrote:\n> i've tried to come up with something hopefully useful. it's a first subsetting\n> plugin called \"rk.subset\"",
+      "thread_id": "thread-b7b1c320241b",
+      "thread_depth": 0,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-c6a484d7a6db",
+      "message_id": "<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-11-02T12:52:25Z",
+      "subject": "[rkward-users] [rkward-devel]  Select cases",
+      "subject_clean": "[rkward-users] [rkward-devel]  Select cases",
+      "in_reply_to": "<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<1849969.HA3LMVVk03@yrla>",
+        "<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Friday 02 November 2012, Rebel Tyrcus wrote:\n> Hey, sorry for the late reply. I've tried to install the plugin, but\n> unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what\n> the problem is but I cannot select any CRAN mirror, so I haven't been\n> able to install it.\n\ncould you give some more detail on this problem? What happens, exactly?\n\nTwo shots in the dark:\n- Does it change anything, if you try specifying a fixed mirror at Settings-\n>Configure RKWard->R packages->CRAN download mirror?\n- Does your firewall block internet access for rkward.rbackend.exe?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121102/7e2f12dd/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Friday 02 November 2012, Rebel Tyrcus wrote:\n> Hey, sorry for the late reply. I've tried to install the plugin, but\n> unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what\n> th",
+      "thread_id": "thread-b7b1c320241b",
+      "thread_depth": 1,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-f309b2983168",
+      "message_id": "<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>",
+      "from_name": "Rebel Tyrcus",
+      "from_email_hash": "24f2bf299aa08a38c52526de4c141a57c7f57dc6a3ff4272a5dcd87625dfd85e",
+      "date": "2012-11-05T15:11:05Z",
+      "subject": "[rkward-users] [rkward-devel] Select cases",
+      "subject_clean": "[rkward-users] [rkward-devel] Select cases",
+      "in_reply_to": "<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<1849969.HA3LMVVk03@yrla>",
+        "<CAE+DF+1o-1xfWf9PPtf2D0rDr6k=bCXMH+fVt=gMPhPJXnFh_Q@mail.gmail.com>",
+        "<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "On Fri, Nov 2, 2012 at 1:52 PM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi,\n>\n> On Friday 02 November 2012, Rebel Tyrcus wrote:\n>> Hey, sorry for the late reply. I've tried to install the plugin, but\n>> unfortunately I'm on RKWard on Windows (0.6.0), and I don't know what\n>> the problem is but I cannot select any CRAN mirror, so I haven't been\n>> able to install it.\n>\n> could you give some more detail on this problem? What happens, exactly?\n>\n> Two shots in the dark:\n> - Does it change anything, if you try specifying a fixed mirror at Settings-\n>>Configure RKWard->R packages->CRAN download mirror?\n> - Does your firewall block internet access for rkward.rbackend.exe?\n\nI tried the plugin at home (linux) and it worked flawlesly.\n\nAt work (windows) I was guesing is just a proxy problem. I remembered\nthat for R I had to modifiy the direct access to the program in the\ndesktop, starting R with the flag --internet2. Apparently, this causes\nR using IE proxy internals, otherwise R cannot connect to CRAN servers\n\n\"C:\\Archivos de programa\\R\\R-2.15.2\\bin\\i386\\Rgui.exe\" --internet2\n\nI guess that the same problem must apply in RKWard.\n\nBest regards.\n\nJoan",
+      "body_snippet": "On Fri, Nov 2, 2012 at 1:52 PM, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi,\n>\n> On Friday 02 November 2012, Rebel Tyrcus wrote:\n>> Hey, sorry for the late reply.",
+      "thread_id": "thread-b7b1c320241b",
+      "thread_depth": 2,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-83a644a0ed78",
+      "message_id": "<1378597.fBFNv7rjKA@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2012-11-05T17:28:24Z",
+      "subject": "[rkward-users] windows quirks [was: Select cases]",
+      "subject_clean": "[rkward-users] windows quirks [was: Select cases]",
+      "in_reply_to": "<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>"
+      ],
+      "body_plain": "hi joan,\n\nam Montag 05 November 2012, 16:11:05 schrieb Rebel Tyrcus:\n> I tried the plugin at home (linux) and it worked flawlesly.\n\ncool, thanks for the feedback. does it do what you want/need?\n\n> At work (windows) I was guesing is just a proxy problem. I remembered\n> that for R I had to modifiy the direct access to the program in the\n> desktop, starting R with the flag --internet2. Apparently, this causes\n> R using IE proxy internals, otherwise R cannot connect to CRAN servers\n> \n> \"C:\\Archivos de programa\\R\\R-2.15.2\\bin\\i386\\Rgui.exe\" --internet2\n\ni received another mail from a user running into the same problem on windows \n(proxy settings in his company, CRAN downloads failed). thanks for this hint!\n\naccording to\nhttp://cran.r-project.org/bin/windows/base/rw-FAQ.html#The-Internet-download-\nfunctions-fail_002e\n\ncalling\n\n  setInternet2(TRUE)\n\nin a running R session should have the same effect, can you confirm this? if \nthat is the case, you could try to add this command to \n\n  settings -> configure RKWard -> R-backend -> options box at the bottom\n\ni have also seen (again) that the file opening dialog reliably crashed RKWard \n0.6.0. we experimented a little and found out that setting the initial working \ndirectory to something accessible like\n\n  setwd(\"C:/\") \n\nacts as a workaround, so having this command in the options box can relieve \nyou from that problem. however, both problems should be solvable in a more \nobvious manner.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: smime.p7s\nType: application/pkcs7-signature\nSize: 2282 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121105/4c5fab01/attachment.p7s>",
+      "body_snippet": "hi joan,\n\nam Montag 05 November 2012, 16:11:05 schrieb Rebel Tyrcus:\n> I tried the plugin at home (linux) and it worked flawlesly.\n\ncool, thanks for the feedback. does it do what you want/need?\n\n> At ",
+      "thread_id": "thread-b7b1c320241b",
+      "thread_depth": 3,
+      "month": "2012-11"
+    },
+    {
+      "id": "msg-528067f1868a",
+      "message_id": "<201211051919.02222.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2012-11-05T18:18:57Z",
+      "subject": "[rkward-users] [rkward-devel] Select cases",
+      "subject_clean": "[rkward-users] [rkward-devel] Select cases",
+      "in_reply_to": "<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>",
+      "references": [
+        "<CAE+DF+2EDHE3oQEYa1SRRHm3b-prjVr3mC1XnD=SWQYOTcbDxg@mail.gmail.com>",
+        "<201211021352.25298.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+        "<CAE+DF+3crMfFs98TErB_O82DaYAzMgZDWz3PHdj_6dk2DFi1RQ@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 05 November 2012, Rebel Tyrcus wrote:\n> At work (windows) I was guesing is just a proxy problem. I remembered\n> that for R I had to modifiy the direct access to the program in the\n> desktop, starting R with the flag --internet2. Apparently, this causes\n> R using IE proxy internals, otherwise R cannot connect to CRAN servers\n> \n> \"C:\\Archivos de programa\\R\\R-2.15.2\\bin\\i386\\Rgui.exe\" --internet2\n> \n> I guess that the same problem must apply in RKWard.\n\nyes, if you have to do that in R, then most likely it is the same problem in \nRKWard, indeed. Since you won't be able to pass custom command line parameters \nto R, use\n   setInternet2 (TRUE)\nin the R Console window, after starting, and before accessing the net. If that \nfixes the problem, you can add this to Settings->Configure RKWard->R backend-\n>Further commands to run in each session, in order to make it permanent.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20121105/8881c473/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 05 November 2012, Rebel Tyrcus wrote:\n> At work (windows) I was guesing is just a proxy problem. I remembered\n> that for R I had to modifiy the direct access to the program in the\n> des",
+      "thread_id": "thread-b7b1c320241b",
+      "thread_depth": 3,
+      "month": "2012-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-b7b1c320241b",
+      "subject": "[rkward-users] [rkward-devel]  Select cases",
+      "message_count": 5,
+      "participants": [
+        "Rebel Tyrcus",
+        "Thomas Friedrichsmeier",
+        "meik michalke"
+      ],
+      "started": "2012-11-02T12:02:56Z",
+      "last_reply": "2012-11-05T18:18:57Z",
+      "root_message_id": "msg-b7b1c320241b"
+    }
+  ]
+}

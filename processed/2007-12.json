@@ -1,0 +1,229 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2007-12",
+  "messages": [
+    {
+      "id": "msg-1028870b86ed",
+      "message_id": "<4654327.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-02T11:54:26Z",
+      "subject": "[rkward-users] [rkward - Help] Compiling Rkward on Kubuntu Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] Compiling Rkward on Kubuntu Gutsy",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654327\nBy: f_bresson\n\nPlease, I need some help to compile the version 0.4.8a for Kubuntu Gutsy. Everything\nseems ok when I launch the ./configure command. But  with the make command,\nthe process stop with the following lines :\n\n/usr/bin/ld: cannot find -lgfortran\ncollect2: ld returned 1 exit status\n\nHow can I solve the problem please ?\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654327\nBy: f_bresson\n\nPlease, I need some help to compile the version 0.4.8a for Kubuntu Gutsy. Everything\nseems",
+      "thread_id": "thread-1028870b86ed",
+      "thread_depth": 0,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-6457b616ca65",
+      "message_id": "<4654638.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-02T17:49:23Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "in_reply_to": "<4654327.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654638\nBy: kapatp\n\nHi f_bresson,\n\n> /usr/bin/ld: cannot find -lgfortran \n> collect2: ld returned 1 exit status\n\nThis is the classic issue with gcc and g++. Try 'gcc -v'. This should show 4.1.3\nas the version. If so, then we can fix it easily. Install gcc 4.2 by 'aptitude\ninstall gcc-4.2'.\nThen before configuring do the following..\n\n$ export CC=/usr/bin/gcc-4.2; export C++=/usr/bin/g++-4.2\n$ ./configure # add your usual options, if any\n\nHTH,\nRegards\nPK\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654638\nBy: kapatp\n\nHi f_bresson,\n\n> /usr/bin/ld: cannot find -lgfortran \n> collect2: ld returned 1 exit status\n\n",
+      "thread_id": "thread-1028870b86ed",
+      "thread_depth": 1,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-cc04bc2bbd84",
+      "message_id": "<4654751.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-02T19:39:39Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "in_reply_to": "<4654638.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654751\nBy: johanvdw\n\nYou need to add:\nexport LDFLAGS=\"-L/usr/lib/gcc/i486-linux-gnu/4.2/\"\n\nbefore configuring. The gfortran lib is not in the standard /usr/lib location,\nwhich causes the mentioned problem.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4654751\nBy: johanvdw\n\nYou need to add:\nexport LDFLAGS=\"-L/usr/lib/gcc/i486-linux-gnu/4.2/\"\n\nbefore configuring. T",
+      "thread_id": "thread-1028870b86ed",
+      "thread_depth": 2,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-d42777e7cbf4",
+      "message_id": "<4655378.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-03T09:16:44Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Compiling Rkward on Kubuntu Gutsy",
+      "in_reply_to": "<4654327.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4655378\nBy: f_bresson\n\nI solved the problem. The package gfortran-4.2 was already installed, but\ngfortran-4.1 was required. Thanks for your advices.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4655378\nBy: f_bresson\n\nI solved the problem. The package gfortran-4.2 was already installed, but\ngfortran-4.1 was",
+      "thread_id": "thread-1028870b86ed",
+      "thread_depth": 1,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-4d95b0df481e",
+      "message_id": "<4673678.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-13T12:32:41Z",
+      "subject": "[rkward-users] [rkward - Help] Import spss bugfixes",
+      "subject_clean": "[rkward-users] [rkward - Help] Import spss bugfixes",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4673678\nBy: fsando\n\nHi \nI am now using rkward regularly and I have found a couple of bugs in the import\ndialog regarding SPSS datasets. I have gone through the code and have made some\ncode that should correct it. I am not sure what is the best way to about this\nprocess.\nThe bugs:\n1. unchecking \"Use value labels\" causes read.spss to use default values which\nhappens to be TRUE instead of false\n2. unchecking \"Edit\" cause the data to not be imported at all\n\nThere is also an issue with value labels not shown in rkward editor rather the\neditor appears to be using the \"levels\" attribute instead. i am working on a\nfix that will convert labels to levels though there are some snags.\nRegards\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4673678\nBy: fsando\n\nHi \nI am now using rkward regularly and I have found a couple of bugs in the import\ndialog re",
+      "thread_id": "thread-4d95b0df481e",
+      "thread_depth": 0,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-7604b6cc3a8e",
+      "message_id": "<4678933.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-17T15:19:04Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "in_reply_to": "<4673678.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4678933\nBy: tfry\n\nHi,\n\nthe best way to get these changes into RKWard is to write a message to rkward-devel\nat lists dot sf dot net. This makes it easier to follow up in replies.\nFor representing the changes you made, use\n# diff -u oldfile newfile\nThis allows us to see easily what the relevant changes are. If you're using\nan SVN version, \"svn diff\" will do the trick, nicely (see\nhttp://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN).\n\nThe issue of value labels / levels is a bit difficult, since R only supports\nlabels / levels for factors, out-of-the-box. RKWard uses the levels attribute\nto be compatible with R in this respect, but does not insist on assigning levels\nonly to factors. But let us know about your approach!\n\nRegards\nThomas\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4678933\nBy: tfry\n\nHi,\n\nthe best way to get these changes into RKWard is to write a message to rkward-devel\nat lis",
+      "thread_id": "thread-4d95b0df481e",
+      "thread_depth": 1,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-8b375e5a93c0",
+      "message_id": "<4679550.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-17T20:27:40Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "in_reply_to": "<4673678.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4679550\nBy: fsando\n\nI tried to post to rkward-devel but received this error \n\n550-Postmaster verification failed \n[...] \n50-Several RFCs state that you are required to have\na postmaster 550-mailbox for each mail domain. This host does not accept\nmail 550-from domains whose servers reject the postmaster address. 550\nSender verify failed (in reply to RCPT TO command)\n\nI don't know if it's just because I'm posting to soon after joining or it's\na setting on my mail server. If it persists I may post here until it is solved.\nAnyway this is the what I tried to post:\nthe diff-file is pasted at the end\n==================================================================\nI believe there are a couple of errors in the code generated by the\n\n\"Import SPSS file\" dialog. I have created a patch that should correct this.\n\nI have attached the diff-file (svn diff)\n\nThe two errors are:\n1) When the \"Use value labels\" is deselected the \"use.value.labels\" argument\nis removed (i.e. set to default) but default=TRUE it should be\n\"use.value.label=FALSE\".\nI made an else clause for when getRK_val (\"use_labels\") is FALSE.\n\nPerhaps it would be better to use default arguments and only act when getRK_val\n(\"use_labels\") is FALSE but I cannot easily determine the consequences of that,\nthus this approach.\n\n2) When \"Edit\" is deselected the assignment to globalenv is removed along with\nthe \"edit\" statement. I moved the assignment outside the \"doedit\" condition.\n\nI considered the problem with value labels and they way the enter into rkward\nvia the levels attribute. I thought it would be relatively easy but to do something\nabout it, not so. Problem now is that you can't assign labels to non-positive\nvalues in rkward editor.\n\nI have this idea but don't know if it is at all doable: what about having an\nextra field for value labels (like the current one that refers to levels). This\nfield should have two columns the first for the values, the second for their\ncorresponding labels. A third column could be added that indicate missing values.\nI know there would be issues related to the way R handles data.frame etc. not\neasily solved.\nI am not a c-programmer so, of course, it's easy to dream up all kinds of \"brilliant\"\nideas, but anyway.\nKind\nRegards\nFinn \n===================================================================\n\ndiff-file\n\nIndex: rkward/plugins/00saveload/import/import_spss.php\n===================================================================\n--- rkward/plugins/00saveload/import/import_spss.php\t(revision 2280)\n+++ rkward/plugins/00saveload/import/import_spss.php\t(working copy)\n@@ -17,17 +17,22 @@\n }\n <?\t}\n }\n-\n+// when \"Use value labels\" is deselected, \"use.value.labels\" is removed - i.e.\nset to default but default=TRUE - should be FALSE\n function calculate () {\n \tif (getRK_val (\"data_frame\")) {\n \t\t$data_frame = true;\n \t\t$data_frame_opt = \", to.data.frame=TRUE\";\n \t}\n-\n-\tif (getRK_val (\"use_labels\")) {\n+//\"Use value labels\" selected, use.value.label=TRUE\n+\tif (getRK_val (\"use_labels\")) { \n \t\t$labels_opt = \", use.value.labels=TRUE\";\n \t\t$labels_opt .= \", max.value.labels=\" . getRK_val (\"labels_limit\");\n \t\tif (getRK_val (\"trim_labels\")) $labels_opt .= \", trim.factor.names=TRUE\";\n+\t} else \n+//\"Use value labels\" deselected, use.value.label=FALSE\n+\t{\n+\t\t$labels_opt = \", use.value.labels=FALSE\";\n+\t\tif (getRK_val (\"trim_labels\")) $labels_opt .= \", trim.factor.names=TRUE\";\n \t}\n \n \t$object = getRK_val (\"saveto\");\n@@ -54,10 +59,11 @@\n \t\t}\n \t}\n }\n+<? //assign imported data to globalenv moved outside the doedit condition,\nwill always be executed ?>\n+<? echo ($object); ?> <<- <? echo ($object); ?>\t\t# assign to globalenv()\n <?\t}\n \tif (getRK_val (\"doedit\") && $data_frame) { ?>\n \n-<? echo ($object); ?> <<- <? echo ($object); ?>\t\t# assign to globalenv()\n rk.edit (<? echo ($object); ?>)\n <?\t}\n }\n@@ -65,3 +71,7 @@\n function printout () {\n }\n ?>\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4679550\nBy: fsando\n\nI tried to post to rkward-devel but received this error \n\n550-Postmaster verification failed ",
+      "thread_id": "thread-4d95b0df481e",
+      "thread_depth": 1,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-024aacc6d2f1",
+      "message_id": "<4679577.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-17T20:58:34Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "in_reply_to": "<4679550.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4679577\nBy: tfry\n\nHi,\n\nabout the mail problem: Perhaps you should open a ticket in the main sourceforge\nrequest tracker about this. This does not appear to be a restriction of the\nmailing list software, but an earlier filter while accepting (or rather rejecting)\nthe mail. (Though perhaps SF will tell you it's your mail provider's fault.\nIf it really does not conform to such RFCs, that might potentially cause problems\nwith other mail servers as well).\n\nRegarding the issues:\n1) Omitting the argument, when it is at its default value is slightly nicer,\nin general. I'll need to check whether the default of use.value.labels has changed\n(I certainly hope, not!), or whether it was a plain bug from the start.\n\n2) Ouch. Yes of course, you're right.\n\nI'll commit these changes as soon as I got around to checking 1).\n\nRegarding value labels vs. levels:\nI can see the problem. However, changing this would add complexity, some potential\nfor confusion (*), and move us further away from \"the R way\" of handling data.\nSo I'm not sure it's really worth it. Ideally, R itself would support value\nlabels for arbitrary values, but I don't think this is likely to happen\nmid-term.\n\n(*): Basically those \"arbitrary value\" labels would only work as expected inside\nthe data editor in RKWard. Making them work in all other contexts where you'd\nexpect value labels to be printed (or missing values to be treated) would be\nnext to impossible. So - at least until a convincing solution is found - I'd\nlike to rather enforce the limitation of labelling only consequtive positive\nintegers early on and consistently, instead of dealing with all the follow up\nissues of trying to support \"arbitrary value\" labels. Keep the suggestions coming,\nthough.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4679577\nBy: tfry\n\nHi,\n\nabout the mail problem: Perhaps you should open a ticket in the main sourceforge\nrequest t",
+      "thread_id": "thread-4d95b0df481e",
+      "thread_depth": 2,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-4d45f62e6f4e",
+      "message_id": "<4680137.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2007-12-18T00:16:14Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Import spss bugfixes",
+      "in_reply_to": "<4673678.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4680137\nBy: fsando\n\nHi Thomas\nThanks for your answer.\nI expect the mail problem will go away or I'll have to do something about it.\n\nOn the value label conundrum I absolutely agree with you. No obvious solution.\nA solid solution would indeed have to involve R-devel. But such things do happen\nI think. The data.frame format has evolved somewhat I believe and methods have\nbeen adapted. So if the changes are well thought out they may make it into the\ncentral methods. I really would like to see the data.frame improved/extended\nin the the way of spss and even improved on what spss does. I think rkward with\nits ease of use and intuitive interface has tremendous potential for being the\nstandard statistical package of Linux.\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=4680137\nBy: fsando\n\nHi Thomas\nThanks for your answer.\nI expect the mail problem will go away or I'll have to do s",
+      "thread_id": "thread-4d95b0df481e",
+      "thread_depth": 1,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-3143803cc18f",
+      "message_id": "<200712301547.00686.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-12-30T14:46:56Z",
+      "subject": "[rkward-users] SVN trunk is now KDE 4",
+      "subject_clean": "[rkward-users] SVN trunk is now KDE 4",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nan important note to all users of SVN versions: I have now finally moved the \nKDE 4 version of rkward to \"trunk\". The previous trunk is now located at \nhttps://rkward.svn.sourceforge.net/svnroot/rkward/branches/release_branch_0.4.9 .\n\nIf you have been following the trunk, and want to do the switch to the KDE 4 \nversions now, all you need to do is\n\n# svn up\n\nIf you have been following the trunk, and want to stick with the KDE 3 version \nof rkward for the time being, run (in the top directory of your working \ncopy):\n\n# svn switch \nhttps://rkward.svn.sourceforge.net/svnroot/rkward/branches/release_branch_0.4.9\n# svn up\n\nIf you have already been following the KDE 4 branch, you will now want to \nswitch to trunk, using (in the top directory of your working copy):\n\n# svn switch https://rkward.svn.sourceforge.net/svnroot/rkward/trunk/rkward\n# svn up\n\nRegards\nThomas\n\nP.S.: I'll try to prepare a preview release of 0.4.9 today, and will give some \ninformation on the expected timeline, then.\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071230/e6433163/attachment.sig>",
+      "body_snippet": "Hi,\n\nan important note to all users of SVN versions: I have now finally moved the \nKDE 4 version of rkward to \"trunk\". The previous trunk is now located at \nhttps://rkward.svn.sourceforge.net/svnroot/",
+      "thread_id": "thread-3143803cc18f",
+      "thread_depth": 0,
+      "month": "2007-12"
+    },
+    {
+      "id": "msg-4a5f5c26c6f6",
+      "message_id": "<200712301630.17324.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2007-12-30T15:30:12Z",
+      "subject": "[rkward-users] First preview of rkward 0.4.9 / release timeline",
+      "subject_clean": "[rkward-users] First preview of rkward 0.4.9 / release timeline",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\na first preview release of RKWard 0.4.9 (for KDE 3) can be found at \nhttp://rkward.sourceforge.net/temp/rkward-0.4.9pre1.tar.gz . If you have some \ntime, please download this and do some testing.\n\n-- Relase timeline --\n\nI think the 0.4.9 release is in fairly good shape already, and probably no \nsecond preview release will be needed (unless serious issues turn up). Still, \nsince we're in the middle of the year-end holiday season, we should go \nslowly, and target a release on or around Monday, January 14 2008.\n\nUntil then:\n\n-- Translators --\n\nNo changes in translatable strings are expected until the release, so you can \ngo ahead and start working on your translations, now. As usual the .po \nand .pot files can be found in the subdirectory \"po\" of the preview release. \nPlease try to submit your translations no later than Friday, January 11 2008.\n\n-- Developers --\n\nThere will be no strict ban on plugin changes, but please commit only trivial \nchanges, or post the diff to the development mailing list before comitting. \nPlease also review the ChangeLog and \nhttp://rkward.sourceforge.net/wiki/index.php?title=Development_Status_of_Plugins , \nand add any missing information that you are aware of. Commit your changes \neither to trunk (which is the KDE 4 version, now), or directly to the 0.4.9 \nrelease branch (see the previous mail).\n\n-- 0.5.0 release --\n\nI'll prepare a preview release of 0.5.0 (for KDE 4) in a few days (i.e. first \nweek of January). I think a release one week after 0.4.9 (i.e. on or around \nJanuary 21) will be realistic. More specific instructions will follow, then. \nIt would be nice, if developers could give me an estimate (in private mail) \non when they will be able to switch to KDE 4, so we can work out a reasonable \nway to coordinate development during the transition phase.\n\nRegards, and a happy new year!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20071230/b88166f5/attachment.sig>",
+      "body_snippet": "Hi,\n\na first preview release of RKWard 0.4.9 (for KDE 3) can be found at \nhttp://rkward.sourceforge.net/temp/rkward-0.4.9pre1.tar.gz . If you have some \ntime, please download this and do some testing.",
+      "thread_id": "thread-4a5f5c26c6f6",
+      "thread_depth": 0,
+      "month": "2007-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1028870b86ed",
+      "subject": "[rkward-users] [rkward - Help] Compiling Rkward on Kubuntu Gutsy",
+      "message_count": 4,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-12-02T11:54:26Z",
+      "last_reply": "2007-12-03T09:16:44Z",
+      "root_message_id": "msg-1028870b86ed"
+    },
+    {
+      "id": "thread-4d95b0df481e",
+      "subject": "[rkward-users] [rkward - Help] Import spss bugfixes",
+      "message_count": 5,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2007-12-13T12:32:41Z",
+      "last_reply": "2007-12-18T00:16:14Z",
+      "root_message_id": "msg-4d95b0df481e"
+    },
+    {
+      "id": "thread-3143803cc18f",
+      "subject": "[rkward-users] SVN trunk is now KDE 4",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2007-12-30T14:46:56Z",
+      "last_reply": "2007-12-30T14:46:56Z",
+      "root_message_id": "msg-3143803cc18f"
+    },
+    {
+      "id": "thread-4a5f5c26c6f6",
+      "subject": "[rkward-users] First preview of rkward 0.4.9 / release timeline",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2007-12-30T15:30:12Z",
+      "last_reply": "2007-12-30T15:30:12Z",
+      "root_message_id": "msg-4a5f5c26c6f6"
+    }
+  ]
+}

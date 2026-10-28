@@ -1,0 +1,87 @@
+From alfonsociologo at gmail.com  Fri Jul 18 06:56:33 2025
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Thu, 17 Jul 2025 23:56:33 -0600
+Subject: No subject
+Message-ID: <CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>
+
+Hi,
+I hope you are well,
+This is just to note that I was not able to install rkwarddev weather from
+CRAN nor from GitHub:
+
+> devtools::install_github("rkward-community/rkwarddev")
+Downloading GitHub repo rkward-community/rkwarddev at HEAD
+Skipping 1 packages not available: rkward
+── R CMD build
+─────────────────────────────────────────────────────────────────
+✔  checking for file
+‘/tmp/RtmpqHyJjp/remotes2fb074bc28983/rkward-community-rkwarddev-cbc0c57/DESCRIPTION’
+...
+─  preparing ‘rkwarddev’:
+✔  checking DESCRIPTION meta-information ...
+─  installing the package to process help pages
+         -----------------------------------
+─  installing *source* package ‘rkwarddev’ ...
+   ** this is package ‘rkwarddev’ version ‘0.10-2’
+   ** using staged installation
+   ** R
+   ** demo
+   ** inst
+   ** byte-compile and prepare package for lazy loading
+   Aviso:
+   You've loaded the package 'rkward', but RKWard doesn't appear to be
+running. If this causes trouble, try detach("package:rkward").
+   Error in .make_numeric_version(x, strict,
+.standard_regexps()$valid_R_system_version,  :
+     invalid non-character version specification 'x' (type: list)
+   Error: unable to load R code in package ‘rkwarddev’
+   Ejecución interrumpida
+   ERROR: lazy loading failed for package ‘rkwarddev’
+─  removing ‘/tmp/RtmpTwYlS8/Rinst3100d147e3070/rkwarddev’
+         -----------------------------------
+   ERROR: package installation failed
+Error: Failed to install 'rkwarddev' from GitHub:
+  ! System command 'R' failed
+
+I was able to install the develop version, though, but I wasn't able to do
+much with it. Which would you recommend?
+Thanks for everything.
+Regards
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250717/e98d8d69/attachment.htm>
+
+From meik.michalke at uni-duesseldorf.de  Fri Jul 18 09:36:35 2025
+From: meik.michalke at uni-duesseldorf.de (meik michalke)
+Date: Fri, 18 Jul 2025 10:36:35 +0200
+Subject: [Extern]
+In-Reply-To: <CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>
+References: <CAMqnA+hFpwXrk3rEURraUmVZXJFO54fo79vziaaCjDLMxeVW8g@mail.gmail.com>
+Message-ID: <3728960.VcsEVMUYb5@meadow>
+
+hi,
+
+Am Freitag, 18. Juli 2025, 07:56:33 CEST schrieb DES Alfonso Cano Robles:
+> You've loaded the package 'rkward', but RKWard doesn't appear to be
+> running.
+
+did you try this outside of a running RKWard session? rkwarddev is supposed to 
+be running in RKWard.
+
+
+viele grüße :: m.eik
+
+-- 
+  dipl. psych. meik michalke
+  institut f"ur experimentelle psychologie
+  abt. f"ur diagnostik und differentielle psychologie
+  heinrich-heine-universit"at 40204 d"usseldorf
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 488 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20250718/7f60c1f2/attachment.sig>
+

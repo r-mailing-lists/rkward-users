@@ -1,0 +1,661 @@
+From dgvirtual at akl.lt  Mon Nov 10 13:29:00 2014
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Mon, 10 Nov 2014 15:29:00 +0200
+Subject: [rkward-users] rkward console encoding problem on Widows
+Message-ID: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+
+Hi,
+
+I have an encoding problem on Rkward - newest windows bundle build (Rkward
+0.6.2).
+
+Here is a screenshot:
+
+http://img42.com/u3X5i
+
+You can see that the data in the data frame is displayed correctly (like
+the word "katalik??) and the data in R console is printed incorrectly (the
+same word - ??Katalik????. The same problem exists in command log. Do I
+have to change settings somewhere? Or is it an rkward bug?
+
+Donatas
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141110/64338451/attachment.html>
+
+From dg at lapas.info  Mon Nov 10 13:31:37 2014
+From: dg at lapas.info (Donatas Glodenis)
+Date: Mon, 10 Nov 2014 15:31:37 +0200
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+Message-ID: <CAFQDPR0TYqeN5LDJ1=Deq+Widtnv+iZ7++-ZmvM1fkJE3pKV2A@mail.gmail.com>
+
+By the way, I opened R (without RKward) and ran the same command.
+The encoding got displayed correctly:
+
+> summary(DATA14$R02)
+            Katalik?          Sta?iatiki?             Sentiki?
+                 752                   24                    7
+Evangelik? liuteron? Evangelik? reformat?               Jud?j?
+                   9                    2                    1
+           Musulmon?                Kita              Neatsak?
+                   1                    1                    2
+   Jehovos liudytoj?             Baptist?              Pagoni?
+                   1                    2                    1
+                NA's
+                 200
+>
+
+2014-11-10 15:29 GMT+02:00 Donatas G. <dgvirtual at akl.lt>:
+
+> Hi,
+>
+> I have an encoding problem on Rkward - newest windows bundle build (Rkward
+> 0.6.2).
+>
+> Here is a screenshot:
+>
+> http://img42.com/u3X5i
+>
+> You can see that the data in the data frame is displayed correctly (like
+> the word "katalik??) and the data in R console is printed incorrectly (the
+> same word - ??Katalik?? ??. The same problem exists in command log. Do I
+> have to change settings somewhere? Or is it an rkward bug?
+>
+> Donatas
+>
+>
+>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141110/6c938875/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov 10 14:47:02 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 10 Nov 2014 15:47:02 +0100
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <CAFQDPR0TYqeN5LDJ1=Deq+Widtnv+iZ7++-ZmvM1fkJE3pKV2A@mail.gmail.com>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+	<CAFQDPR0TYqeN5LDJ1=Deq+Widtnv+iZ7++-ZmvM1fkJE3pKV2A@mail.gmail.com>
+Message-ID: <1942207.EUSR08zPof@late>
+
+Hi,
+
+no, I did not change anything with respect to encoding in RKWard. However, if 
+this used to work, before, conceivably the regression is related to the new 
+startup procedure, somehow.
+
+On Monday 10 November 2014 15:31:37 Donatas Glodenis wrote:
+> By the way, I opened R (without RKward) and ran the same command.
+> 
+> The encoding got displayed correctly:
+
+Please run
+
+  Sys.getlocale()
+
+in both plain R, and in RKWard, and compare the two. In particular, look out 
+for the value of LC_CTYPE. It should probably be something like "lt_LT.UTF-8". 
+I.e. you could try
+
+  Sys.setlocale (LC_CTYPE="lt_LT.UTF-8")
+
+Could you also try what happens, when you do a simple "roundtrip", i.e. enter
+
+  c ("Katalik?", "Sta?iatiki?")
+
+in RKWard's R console, and see what gets printed?
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141110/6e6cdbf4/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov 10 16:39:49 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 10 Nov 2014 17:39:49 +0100
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <CAFQDPR0WdM5DcX7Uq40XR+=yE--nawMvih5pLRhT3t=zBTWWSQ@mail.gmail.com>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+	<1942207.EUSR08zPof@late>
+	<CAFQDPR0WdM5DcX7Uq40XR+=yE--nawMvih5pLRhT3t=zBTWWSQ@mail.gmail.com>
+Message-ID: <2154535.mCqR9e7nit@late>
+
+Hi Donatas,
+
+On Monday 10 November 2014 17:41:38 you wrote:
+> I do not think it ever worked for me ( I remember remotely, that last time
+> I just switched to my Linux laptop and the problem was solved :) .
+
+ok, then it probably is not anything new.
+ 
+> > Sys.setlocale (LC_CTYPE="lt_LT.UTF-8")
+> 
+> Error in base::Sys.setlocale(category, locale, ...) :
+>   unused argument (LC_CTYPE = "lt_LT.UTF-8")
+
+Ah, yes. I keep forgetting that Windows doesn't speak UTF-8. But since the 
+code-pages match in R and RKWard, this should not be the problem.
+
+I now tried in Windows 7, setting Lithunian localization. I get the same code 
+pages from Sys.getlocale(). Interestingly, when I try to enter any special 
+chars, R just strips them off:
+
+> "Sta?iatiki?"
+[1] "Staciatikiu"
+
+Same when entering in the data editor. They appear correctly on typing, but in 
+R, only a stripped version is stored. Obviously that's not so great, but it's 
+not the symptoms you're seeing, either. And, importantly, a plain R console 
+does not even allow me to enter the special chars. They get stripped to the 
+nearest ascii character while I'm typing.
+
+So follow-up question: How did you get those data into R in the first place? 
+What does
+  Encoding (DATA14$R02)
+(or)
+  Encoding (levels (DATA$R02))
+print?
+
+Another interesting bit is that I have absolutely no problem entering and 
+showing German or French special chars in RKWard (but the R console does not 
+allow me to enter them, either).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141110/38c03997/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov 10 18:08:11 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 10 Nov 2014 19:08:11 +0100
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <2154535.mCqR9e7nit@late>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+	<CAFQDPR0WdM5DcX7Uq40XR+=yE--nawMvih5pLRhT3t=zBTWWSQ@mail.gmail.com>
+	<2154535.mCqR9e7nit@late>
+Message-ID: <1468560.xTEMeLj5uD@late>
+
+Hi once more,
+
+On Monday 10 November 2014 17:39:49 Thomas Friedrichsmeier wrote:
+> So follow-up question: How did you get those data into R in the first place?
+> What does
+>   Encoding (DATA14$R02)
+> (or)
+>   Encoding (levels (DATA$R02))
+> print?
+
+one more follow-up question:
+
+What does 
+  options("encoding")
+print?
+
+Probably the key ingredients of this problem are 
+- a charset that is neither latin1, nor a multibyte charset
+- some lack of explicit encoding specification in RKWard's R backend.
+
+Probably quite fixable, but will take some digging, and good testing. I hope I 
+can fix this for 0.6.3, but right now, I'll look into finishing some other 
+things, first.
+
+So once I have your answers to the questions, above, I'll gather all info in a 
+new bug ticket for this in our tracker, in order to remind me again, shortly, 
+and hopefully, I can fix this for 0.6.3.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141110/dffd6dc3/attachment.sig>
+
+From dg at lapas.info  Tue Nov 11 09:11:29 2014
+From: dg at lapas.info (Donatas Glodenis)
+Date: Tue, 11 Nov 2014 11:11:29 +0200
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <2154535.mCqR9e7nit@late>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+	<1942207.EUSR08zPof@late>
+	<CAFQDPR0WdM5DcX7Uq40XR+=yE--nawMvih5pLRhT3t=zBTWWSQ@mail.gmail.com>
+	<2154535.mCqR9e7nit@late>
+Message-ID: <CAFQDPR1jXbdj9s+oxrAYDboyM+PPm156HZQ_ykJk-RXJ7s7K=A@mail.gmail.com>
+
+Hi Thomas, thanks for all your work in trying to analyze this problem, it
+seems it is at least partly in vain, though. I just figured out the problem
+affects only the summary command (describe, table, levels - all print
+fine). But below I also did quite a lot of work (before I figured the
+problem out), may be also in vain, but maybe some of it you will find
+interesting/useful.
+
+I did not manage to figure out why the summary program prints it wrong in
+Rkward. As I said before, it does print correctly in the plain rgui.exe
+console.
+
+Sincerely
+
+Donatas
+
+2014-11-10 18:39 GMT+02:00 Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de>:
+
+>
+>
+> I now tried in Windows 7, setting Lithunian localization. I get the same
+> code
+> pages from Sys.getlocale(). Interestingly, when I try to enter any special
+> chars, R just strips them off:
+>
+> > "Sta?iatiki?"
+> [1] "Staciatikiu"
+>
+Same when entering in the data editor. They appear correctly on typing, but
+> in
+> R, only a stripped version is stored. Obviously that's not so great, but
+> it's
+> not the symptoms you're seeing, either. And, importantly, a plain R console
+> does not even allow me to enter the special chars. They get stripped to the
+> nearest ascii character while I'm typing.
+>
+
+In my case I can enter the secials characters both in Rkward console and in
+R console (rgui.exe) fine. I am also on Windows 7, btw. I can also create a
+data frame, enter special characters, and, surprise!, I they get printed
+correctly in Rkward console!
+
+
+> So follow-up question: How did you get those data into R in the first
+> place?
+>
+
+Imported those from an spss file. The file, apparently, had an encoding
+Windows-1257 (or maybe ISO-8859-13, which for most purposes is the same). I
+could import it in Windows without specifying the import encoding - and it
+displayed Lithuanian characters fine. But when I tried to do that in Linux
+(Kubuntu 14.04, RKward 6.2) I had to specify the encoding ISO-8859-13,
+otherwise the special characters were left out.
+
+Here is the import code:
+
+local({
+## Prepare
+require (foreign)
+## Compute
+data <- read.spss
+("C:/Users/D.Glodenis/Programos/RKWard/workspaces/tm2007+nrtic2014/2014/Religija
+2014 03.sav", to.data.frame=TRUE, max.value.labels=1000000)
+
+# set variable labels for use in RKWard
+labels <- attr (data, "variable.labels");
+if (!is.null (labels)) {
+    for (i in 1:length (labels)) {
+        col <- make.names (names (labels[i]))
+        if (!is.null (col)) {
+            rk.set.label (data[[col]], labels[i])
+        }
+    }
+}
+
+.GlobalEnv$DATA14 <- data        # assign to globalenv()
+rk.edit (.GlobalEnv$DATA14)
+## Print result
+rk.header("Import SPSS data", parameters=list("File",
+"C:/Users/D.Glodenis/Programos/RKWard/workspaces/tm2007+nrtic2014/2014/Religija
+2014 03.sav",
+    "Import as", "DATA14"))
+})
+
+I changed the import encoding to "ISO8859-13", and it changed nothing.
+
+
+> What does
+>   Encoding (DATA14$R02)
+> (or)
+>   Encoding (levels (DATA$R02))
+> print?
+>
+
+It is messy! another thing I noticed is, that the problem only appears with
+one command - summary!:
+
+> summary(DATA14$R02)
+            ??Katalik????          ??Sta??iatiki????
+??Sentiki????
+                 752                   24                    7
+...
+This is garbage as before. But look at this!
+
+> levels(DATA14$R02)
+ [1] "Katalik?"             "Sta?iatiki?"          "Sentiki?"
+.....
+
+Now, Encodings:
+
+> Encoding (levels (DATA14$R02))
+ [1] "unknown" "unknown" "unknown" "unknown" "unknown" "unknown" "unknown"
+ [8] "unknown" "unknown" "unknown" "unknown" "unknown"
+
+I ran
+
+> Encoding (levels (DATA14$R02))<-"ISO8859-13"
+## encoding not changed, still "unknown", same garbage in summary() output
+and:
+
+> Encoding (levels (DATA14$R02))<-"UTF-8"
+
+> Encoding (levels(DATA14$R02))
+ [1] "UTF-8"   "UTF-8"   "UTF-8"   "UTF-8"   "UTF-8"   "UTF-8"   "UTF-8"
+ [8] "unknown" "UTF-8"   "UTF-8"   "UTF-8"   "UTF-8"
+
+> levels(DATA14$R02)
+ [1] "??Katalik\xf8??"                "??Sta\xe8iatiki\xf8??"
+ [3] "??Sentiki\xf8??"                "??Evangelik\xf8 liuteron\xf8??"
+ [5] "??Evangelik\xf8 reformat\xf8??" "??Jud\xebj\xf8??"
+ [7] "??Musulmon\xf8??"               "Kita "
+ [9] "??Neatsak\xeb??"                "??Jehovos liudytoj\xf8??"
+[11] "??Baptist\xf8??"                "??Pagoni\xf8??"
+
+> summary(DATA14$R02)
+               ??Katalik\xf8??          ??Sta\xe8iatiki\xf8??
+                       752                         24
+               ??Sentiki\xf8?? ??Evangelik\xf8 liuteron\xf8??
+
+- this is similar, but not identical, garbage as before
+
+Changing encoding back (that is, using just any random string) turns the
+data back into the previous form.
+
+> Encoding (levels(DATA14$R02))<-"sd?sd?"
+
+
+I did another experiment. Created an empty data frame "test", changed first
+column var data type to string. Proceeded like this:
+
+> test$var<-c("??erty","z?cv?f?m","w?p?lkj??")
+> Encoding(test$var)
+[1] "unknown" "unknown" "unknown"
+> Encoding(test$var)<- "ISO8859-13"
+## I took the string ISO8859-13 from the code of spss import dialog
+> Encoding(test$var)
+[1] "unknown" "unknown" "unknown"
+## strange, the iso encoding setting does not work; I also tried
+"ISO885913" and "ISO-8859-13", "CP1257", "WINDOWS-1257" - no luck
+> test$var
+[1] "??erty"    "z?cv?f?m"  "w?p?lkj??"
+> Encoding(test$var)<- "UTF-8"
+> test$var
+[1] "??\xe0\xfeerty??"          "??z\xfbcv\xe6f\xe8m??"
+"??w\xe1p\xf8lkj\xeb\xf8??"
+> Encoding(test$var)
+[1] "UTF-8" "UTF-8" "UTF-8"
+# changing to UTF8 does work! also "latin1" works.
+
+
+Another interesting bit is that I have absolutely no problem entering and
+> showing German or French special chars in RKWard (but the R console does
+> not
+> allow me to enter them, either).
+>
+
+
+> What does
+>> options("encoding")
+> print?
+
+> options("encoding")
+$encoding
+[1] "native.enc"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141111/062d27ff/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Tue Nov 11 11:42:36 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Tue, 11 Nov 2014 12:42:36 +0100
+Subject: [rkward-users] rkward console encoding problem on Widows
+In-Reply-To: <CAFQDPR1jXbdj9s+oxrAYDboyM+PPm156HZQ_ykJk-RXJ7s7K=A@mail.gmail.com>
+References: <CAFQDPR0ZVFYJo=YoY_m09N88EJFf98aN_N9nAi2UamdRNyzrig@mail.gmail.com>
+	<2154535.mCqR9e7nit@late>
+	<CAFQDPR1jXbdj9s+oxrAYDboyM+PPm156HZQ_ykJk-RXJ7s7K=A@mail.gmail.com>
+Message-ID: <2143862.bj4CGtNknj@late>
+
+Hi!
+
+Thanks a lot for your research. I can't make too much sense of this right now 
+(particularly the discrepancy between summary() and levels() is totally 
+puzzling!), but will give it a closer look in time. If you make any further 
+related observations, please record them in this ticket: 
+https://sourceforge.net/p/rkward/bugs/136/ .
+
+One small bit I can clarify:
+
+On Tuesday 11 November 2014 11:11:29 Donatas Glodenis wrote:
+> > Encoding(test$var)<- "ISO8859-13"
+> 
+> ## I took the string ISO8859-13 from the code of spss import dialog
+> 
+> > Encoding(test$var)
+> 
+> [1] "unknown" "unknown" "unknown"
+> ## strange, the iso encoding setting does not work; I also tried
+> "ISO885913" and "ISO-8859-13", "CP1257", "WINDOWS-1257" - no luck
+
+Encoding is what R knows about a string it has already stored. This can only 
+take the values "UTF-8", "latin1", "bytes", and "unknown". "bytes" mean it is 
+probably not a printable string in the first place. "unknown" essentially 
+means that R will take this string as encoded in the "native" encoding, i.e. 
+ISO-8859-13 or CP1257 in your case.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141111/592bf46e/attachment.sig>
+
+From seb44550 at gmail.com  Mon Nov 24 08:31:03 2014
+From: seb44550 at gmail.com (Seb R)
+Date: Mon, 24 Nov 2014 09:31:03 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+Message-ID: <CAF6-RU6w=Q2aoCespQSm=Vxq+pziER2ytsZNik2vwxBkxbbtnQ@mail.gmail.com>
+
+Hi,
+I've been using rkward for a while now with Ubuntu.
+I use the latest version of r-cran with the latest version of rkward
+(stable or daily build).
+Since I am on trusty, but also on utopic, whatever the version of rkward I
+used, I got the following errors :
+
+----------------------------
+>     rm(list=ls())
+>     library(raster)
+Le chargement a n?cessit? le package : sp
+Erreur : LOGICAL() can only be applied to a 'logical', not a 'list'
+Avis : failure to get object prototype
+>       trace(raster:::.polygonsToRaster,edit=TRUE)
+Erreur dans as.character(name) :
+  cannot coerce type 'closure' to vector of type 'character'
+------------------------------
+
+This must not be a problem of the raster library as I don't get the problem
+when using Rstudio or the terminal directly.
+Any idea on how to circumvent this problem ?
+Thank you
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141124/8097b5e5/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Nov 24 09:37:45 2014
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 24 Nov 2014 10:37:45 +0100
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <CAF6-RU6w=Q2aoCespQSm=Vxq+pziER2ytsZNik2vwxBkxbbtnQ@mail.gmail.com>
+References: <CAF6-RU6w=Q2aoCespQSm=Vxq+pziER2ytsZNik2vwxBkxbbtnQ@mail.gmail.com>
+Message-ID: <3725416.UppB5ryvWm@late>
+
+Hi,
+
+CCing the maintainer of raster, as this seems to be a buglet in raster 
+(although it's rather unlikely to step on it, outside of rkward):
+
+  is.factor(as.environment("package:raster")$.__C__RasterStackBrick at prototype)
+
+returns
+
+  list()
+
+where one should reasonably expect a logical. Now, again this is totally 
+unlikely to trigger outside of RKWard, as this is not an object a user would 
+ever deal with, directly. RKWard does while looking at the objects contained 
+in the package.
+
+I'll safeguard against this in RKWard, now, but it might make sense to fix 
+this in raster, too (esp. if there is any chance that this could also trigger 
+under more likely circumstances).
+
+On the upside, this error message in RKWard should not have any noticable 
+consequences, and is safe to ignore.
+
+I cannot reproduce the second problem. Looks like failure to quote the name of 
+the function to trace, before passing it to edit. Could you provide
+  rk.sessionInfo()
+?
+
+Regards
+Thomas
+
+On Monday 24 November 2014 09:31:03 Seb R wrote:
+> I've been using rkward for a while now with Ubuntu.
+> I use the latest version of r-cran with the latest version of rkward
+> (stable or daily build).
+> Since I am on trusty, but also on utopic, whatever the version of rkward I
+> used, I got the following errors :
+> 
+> ----------------------------
+> 
+> >     rm(list=ls())
+> >     library(raster)
+> 
+> Le chargement a n?cessit? le package : sp
+> Erreur : LOGICAL() can only be applied to a 'logical', not a 'list'
+> Avis : failure to get object prototype
+> 
+> >       trace(raster:::.polygonsToRaster,edit=TRUE)
+> 
+> Erreur dans as.character(name) :
+>   cannot coerce type 'closure' to vector of type 'character'
+> ------------------------------
+> 
+> This must not be a problem of the raster library as I don't get the problem
+> when using Rstudio or the terminal directly.
+> Any idea on how to circumvent this problem ?
+> Thank you
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20141124/c9b5149c/attachment.sig>
+
+From r.hijmans at gmail.com  Mon Nov 24 17:17:41 2014
+From: r.hijmans at gmail.com (Robert J. Hijmans)
+Date: Mon, 24 Nov 2014 09:17:41 -0800
+Subject: [rkward-users] Error of object format with Ubuntu
+In-Reply-To: <3725416.UppB5ryvWm@late>
+References: <CAF6-RU6w=Q2aoCespQSm=Vxq+pziER2ytsZNik2vwxBkxbbtnQ@mail.gmail.com>
+	<3725416.UppB5ryvWm@late>
+Message-ID: <CANtt_hy21HYqkqoPFPHsKOqN1GxqskO04Ckp9OCf2h5TmER2uw@mail.gmail.com>
+
+Thanks, this is indeed a small bug in 'raster' when using is.factor
+with and empty RasterStack an empty list is returned.
+
+is.factor(stack())
+
+The next version will return FALSE as expected.
+
+Robert
+
+
+On Mon, Nov 24, 2014 at 1:37 AM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> CCing the maintainer of raster, as this seems to be a buglet in raster
+> (although it's rather unlikely to step on it, outside of rkward):
+>
+>   is.factor(as.environment("package:raster")$.__C__RasterStackBrick at prototype)
+>
+> returns
+>
+>   list()
+>
+> where one should reasonably expect a logical. Now, again this is totally
+> unlikely to trigger outside of RKWard, as this is not an object a user would
+> ever deal with, directly. RKWard does while looking at the objects contained
+> in the package.
+>
+> I'll safeguard against this in RKWard, now, but it might make sense to fix
+> this in raster, too (esp. if there is any chance that this could also trigger
+> under more likely circumstances).
+>
+> On the upside, this error message in RKWard should not have any noticable
+> consequences, and is safe to ignore.
+>
+> I cannot reproduce the second problem. Looks like failure to quote the name of
+> the function to trace, before passing it to edit. Could you provide
+>   rk.sessionInfo()
+> ?
+>
+> Regards
+> Thomas
+>
+> On Monday 24 November 2014 09:31:03 Seb R wrote:
+>> I've been using rkward for a while now with Ubuntu.
+>> I use the latest version of r-cran with the latest version of rkward
+>> (stable or daily build).
+>> Since I am on trusty, but also on utopic, whatever the version of rkward I
+>> used, I got the following errors :
+>>
+>> ----------------------------
+>>
+>> >     rm(list=ls())
+>> >     library(raster)
+>>
+>> Le chargement a n?cessit? le package : sp
+>> Erreur : LOGICAL() can only be applied to a 'logical', not a 'list'
+>> Avis : failure to get object prototype
+>>
+>> >       trace(raster:::.polygonsToRaster,edit=TRUE)
+>>
+>> Erreur dans as.character(name) :
+>>   cannot coerce type 'closure' to vector of type 'character'
+>> ------------------------------
+>>
+>> This must not be a problem of the raster library as I don't get the problem
+>> when using Rstudio or the terminal directly.
+>> Any idea on how to circumvent this problem ?
+>> Thank you
+
+
+

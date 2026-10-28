@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2013-07",
+  "messages": [
+    {
+      "id": "msg-2fcbf9dfa1fd",
+      "message_id": "</p/rkward/discussion/165574/654ae27c4020f4be5d09bcc165022aa2a0f6ccd0.discussion@rkward.p.sourceforge.net>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "3a9ef4ea793b546037ae4356a1aeceafc0347798f666a2eb224105e0f8444d3e",
+      "date": "2013-07-16T08:26:56Z",
+      "subject": "[rkward-users] [rkward:discussion] Re: Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "subject_clean": "[rkward-users] [rkward:discussion] Re: Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "in_reply_to": "<c92ea0714b308c9476633b92d54521100a341084.discussion@rkward.p.sourceforge.net>",
+      "references": [],
+      "body_plain": "Very sorry for the late reply. Looks like I did not get a notification of your post.\n\n> Error: package ?rkward? was built before R 3.0.0: please re-install it\n\nFor use with R >= 3.0.0 you need a version of RKWard compiled against R >= 3.0.0. I am not sure whether suitable binaries exist for openSuse. However, compilation from source is relatively straight-forward on Linux systems: http://p.sf.net/rkward/compiling\n\nRegards\nThomas\n\n---\n[Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3](https://sourceforge.net/p/rkward/discussion/165574/thread/cff64476/?limit=25#50b7/0223)\n\n\n---\n\nSent from sourceforge.net because rkward-users at lists.sourceforge.net is subscribed to https://sourceforge.net/p/rkward/discussion/165574/\n\nTo unsubscribe from further messages, a project admin can change settings at https://sourceforge.net/p/rkward/admin/discussion/forums.  Or, if this is a mailing list, you can unsubscribe from the mailing list.\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20130716/938a71b7/attachment.html>",
+      "body_snippet": "Very sorry for the late reply. Looks like I did not get a notification of your post.\n\n> Error: package ?rkward? was built before R 3.0.0: please re-install it\n\nFor use with R >= 3.0.0 you need a versi",
+      "thread_id": "thread-2fcbf9dfa1fd",
+      "thread_depth": 0,
+      "month": "2013-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-2fcbf9dfa1fd",
+      "subject": "[rkward-users] [rkward:discussion] Re: Error starting Rkward 0.6.1 with R 3.0.1 on openSUSE 12.3",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2013-07-16T08:26:56Z",
+      "last_reply": "2013-07-16T08:26:56Z",
+      "root_message_id": "msg-2fcbf9dfa1fd"
+    }
+  ]
+}

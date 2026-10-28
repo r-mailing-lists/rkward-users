@@ -1,0 +1,36 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2018-07",
+  "messages": [
+    {
+      "id": "msg-0d1d5560e076",
+      "message_id": "<2845658.ukP8sBWiNi@yrla>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2018-07-30T12:45:27Z",
+      "subject": "debian packages of plugins available for R 3.5",
+      "subject_clean": "debian packages of plugins available for R 3.5",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "hi,\n\nthis post only affects you if you're using the debian packages of our plugins.\n\ni've set up a new debian repository for plugin packages built for R 3.5. you \nmight have noticed that if you wanted to upgrade to R 3.5, all R packages (as \nwell as RKWard) must be upgraded as well, as the binary formats are \nincompatible. to not mix up builds for earlier versions of R and R 3.5 \nonwards, most projects have added new repositories, e.g. CRAN now uses\n\n https://cloud.r-project.org/bin/linux/ubuntu $UBUNTUVERSION-cran35/\n\nfor R 3.5.\n\nif you want to use our new repository, simply replace \"/deb\" with \"/debR35\" in \nyour current apt sources configuration.\n\nfull and up-to-date instructions for the rk.ANOVA plugin (just as an example) \ncan be found here:\n https://mirror.kumi.systems/kde/files/rkward/R/pckg/rk.ANOVA/deb_repo.html\n\n\nviele grüße :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  institut f\"ur experimentelle psychologie\n  abt. f\"ur diagnostik und differentielle psychologie\n  heinrich-heine-universit\"at d-40204 d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 473 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20180730/d9eca84b/attachment.sig>",
+      "body_snippet": "hi,\n\nthis post only affects you if you're using the debian packages of our plugins.\n\ni've set up a new debian repository for plugin packages built for R 3.5. you \nmight have noticed that if you wanted",
+      "thread_id": "thread-0d1d5560e076",
+      "thread_depth": 0,
+      "month": "2018-07"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-0d1d5560e076",
+      "subject": "debian packages of plugins available for R 3.5",
+      "message_count": 1,
+      "participants": [
+        "meik michalke"
+      ],
+      "started": "2018-07-30T12:45:27Z",
+      "last_reply": "2018-07-30T12:45:27Z",
+      "root_message_id": "msg-0d1d5560e076"
+    }
+  ]
+}

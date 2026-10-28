@@ -1,0 +1,159 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2009-09",
+  "messages": [
+    {
+      "id": "msg-1bf5a6667ee6",
+      "message_id": "<200909011250.37077.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-09-01T10:50:33Z",
+      "subject": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "subject_clean": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "in_reply_to": "<6fdf6d430908310731r2692d0ffo86280471ee7f0b2d@mail.gmail.com>",
+      "references": [
+        "<6fdf6d430908310731r2692d0ffo86280471ee7f0b2d@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 31 August 2009, Nicolas Chapados wrote:\n> I'm a new RKWard user and so far I've been quite pleased with the\n> environment it provides for R development.\n\nthanks!\n\n> However, I'm wondering if\n> the compatibility with RGtk2 has been tested.\n\nWell, tested, yes. We are aware of this issue, but it is not easy to fix. I do \nhave an idea on how to approach - and hopefully fix - this problem and a few \nrelated ones. But this will need a good deal of work, and other things are \nhigher up in priority ATM.\n\nLast time I checked, version 0.4.9b of RKWard (based on KDE/Qt 3) was not \naffected. While this version does not have some of the most recent features, \nperhaps this is an option for you.\n\nSee also \nhttps://sourceforge.net/tracker/?func=detail&aid=1878594&group_id=50231&atid=459007 \n. This describes slightly different symptoms, but I'm fairly sure that it's the \nsame underlying issue.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090901/aab169ed/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 31 August 2009, Nicolas Chapados wrote:\n> I'm a new RKWard user and so far I've been quite pleased with the\n> environment it provides for R development.\n\nthanks!\n\n> However, I'm wonderi",
+      "thread_id": "thread-1bf5a6667ee6",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-0c08f72b61a2",
+      "message_id": "<200909031953.06895.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-09-03T17:53:03Z",
+      "subject": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "subject_clean": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "in_reply_to": "<1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>",
+      "references": [
+        "<1a393e3a0908310242h1abcccf4g88b4fdeaa254c927@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> Error Message:\n> The PHP backend could not be started. Check whether you have correctly\n> configured the location of the PHP-binary (Settings->Configure\n> Settings->PHP backend)\n> also rkward.bin.exe stops working when i try to browse to the directory\n> when trying to configure PHP.\n\ncould you try again with the following version?\nhttp://sourceforge.net/projects/rkward/files/Under_Development/install_rkward_0.5.2-\nwindows_pre1.exe/download\n\nPlease let me know, whether or not this fixes the problems.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090903/ac2dc93b/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Monday 31 August 2009, Emmanuel Jjunju wrote:\n> Error Message:\n> The PHP backend could not be started. Check whether you have correctly\n> configured the location of the PHP-binary (Settings->C",
+      "thread_id": "thread-0c08f72b61a2",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-0b9349c6262b",
+      "message_id": "<200909040838.00448.ct529@york.ac.uk>",
+      "from_name": "Corrado",
+      "from_email_hash": "6fde2e46115dedfcdb81221eb4fce9f6b4e2638076d94193dc4c6054418c5410",
+      "date": "2009-09-04T07:38:00Z",
+      "subject": "[rkward-users] rkward and plugins",
+      "subject_clean": "[rkward-users] rkward and plugins",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Dear friend,\n\nI have difficulties installing any plugin. What is the procedure, exactly???? My \nlists are all empty!\n\nkubuntu 904 64 bit + kde 424 + rkward 050d.\n\nRegards\n-- \nCorrado Topi\n\nGlobal Climate Change & Biodiversity Indicators\nArea 18,Department of Biology\nUniversity of York, York, YO10 5YW, UK\nPhone: + 44 (0) 1904 328645, E-mail: ct529 at york.ac.uk",
+      "body_snippet": "Dear friend,\n\nI have difficulties installing any plugin. What is the procedure, exactly???? My \nlists are all empty!\n\nkubuntu 904 64 bit + kde 424 + rkward 050d.\n\nRegards\n-- \nCorrado Topi\n\nGlobal Clim",
+      "thread_id": "thread-0b9349c6262b",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-5b3aec297b7a",
+      "message_id": "<200909041004.23889.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2009-09-04T08:04:19Z",
+      "subject": "[rkward-users] rkward and plugins",
+      "subject_clean": "[rkward-users] rkward and plugins",
+      "in_reply_to": "<200909040838.00448.ct529@york.ac.uk>",
+      "references": [
+        "<200909040838.00448.ct529@york.ac.uk>"
+      ],
+      "body_plain": "hi corrado,\n\nam Freitag, 4. September 2009 (09:38) schrieb Corrado:\n> I have difficulties installing any plugin. What is the procedure,\n> exactly???? My lists are all empty!\n\nout of the blue i'd say the path to all.pluginmap is not configured correctly:\n  preferences -> configure rkward -> plugins\ncheck the .pluginmap files, on my kubuntu 9.04 it reads\n\n  /usr/share/kde4/apps/rkward/all.pluginmap\n\n> kubuntu 904 64 bit + kde 424 + rkward 050d.\n\nyou could add this repo and upgrade to 0.5.1:\nhttp://sourceforge.net/apps/mediawiki/rkward/index.php?title=Binaries_and_Build_Scripts#Unofficial_Ubuntu_repositories\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 197 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090904/1ba849e4/attachment.sig>",
+      "body_snippet": "hi corrado,\n\nam Freitag, 4. September 2009 (09:38) schrieb Corrado:\n> I have difficulties installing any plugin. What is the procedure,\n> exactly???? My lists are all empty!\n\nout of the blue i'd say t",
+      "thread_id": "thread-0b9349c6262b",
+      "thread_depth": 1,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-bdbcebd93153",
+      "message_id": "<200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2009-09-30T19:59:53Z",
+      "subject": "[rkward-users] Quick survey: Still using RKWard for KDE 3",
+      "subject_clean": "[rkward-users] Quick survey: Still using RKWard for KDE 3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nI'd like to conduct a quick informal survey to determine whether/when further \nbackports to KDE 3 are needed.\n\n1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?\n\n(No need to respond if the answer is \"no\").\n\n2) If so, which version of R do you use with that?\n\n3) Are there any specific reasons that keep you from upgrading?\n\nThanks!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20090930/a2dad258/attachment.sig>",
+      "body_snippet": "Hi!\n\nI'd like to conduct a quick informal survey to determine whether/when further \nbackports to KDE 3 are needed.\n\n1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?\n\n(No need to ",
+      "thread_id": "thread-bdbcebd93153",
+      "thread_depth": 0,
+      "month": "2009-09"
+    },
+    {
+      "id": "msg-c184c8b88353",
+      "message_id": "<de8c7cb40909301322v277acc5cp3a6665082361c3f3@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2009-09-30T20:22:29Z",
+      "subject": "[rkward-users] Quick survey: Still using RKWard for KDE 3",
+      "subject_clean": "[rkward-users] Quick survey: Still using RKWard for KDE 3",
+      "in_reply_to": "<200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "references": [
+        "<200909302159.53388.thomas.friedrichsmeier@ruhr-uni-bochum.de>"
+      ],
+      "body_plain": "Hi,\n\nOn 9/30/09, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> I'd like to conduct a quick informal survey to determine whether/when\n> further\n> backports to KDE 3 are needed.\n>\n> 1) Are you still using RKWard for KDE 3 (i.e. RKWard 0.4.9x or lower)?\n\nYES. (rkward 0.4.9b, OR the relevant svn branch - depending on developments)\n\n> (No need to respond if the answer is \"no\").\n\nStatistically, it is important to get the \"no\" responses too ;)\n\n> 2) If so, which version of R do you use with that?\n\nCurrently, R 2.8.2, but this updates from time to time....\n\n> 3) Are there any specific reasons that keep you from upgrading?\n\nYes: no control over the department's servers. They use RedHat EL,\ncurrently at 5.3.\n\n[Aside:\nI am not sure if RedHat EL 6 will include KDE 4, though SLE 11.0\nalready has KDE 4.1.3. Do any universities in US (or anywhere else for\nthat matter) use Canonical for their enterprise Linux solutions?]\n\n> Thanks!\n>\n> Regards\n> Thomas\n\nThanks for keeping KDE3 port alive. I can totally understand if you\ndecide not to in future (if yes/(no+yes) << 1).\n\nRegards\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nOn 9/30/09, Thomas Friedrichsmeier\n<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:\n> Hi!\n>\n> I'd like to conduct a quick informal survey to determine whether/when\n> further\n> backports to K",
+      "thread_id": "thread-bdbcebd93153",
+      "thread_depth": 1,
+      "month": "2009-09"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-1bf5a6667ee6",
+      "subject": "[rkward-users] Compatibility between RKWard and RGtk2",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-09-01T10:50:33Z",
+      "last_reply": "2009-09-01T10:50:33Z",
+      "root_message_id": "msg-1bf5a6667ee6"
+    },
+    {
+      "id": "thread-0c08f72b61a2",
+      "subject": "[rkward-users] Rkward for windows: Error on trying to setwd using menus",
+      "message_count": 1,
+      "participants": [
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-09-03T17:53:03Z",
+      "last_reply": "2009-09-03T17:53:03Z",
+      "root_message_id": "msg-0c08f72b61a2"
+    },
+    {
+      "id": "thread-0b9349c6262b",
+      "subject": "[rkward-users] rkward and plugins",
+      "message_count": 2,
+      "participants": [
+        "Corrado",
+        "meik michalke"
+      ],
+      "started": "2009-09-04T07:38:00Z",
+      "last_reply": "2009-09-04T08:04:19Z",
+      "root_message_id": "msg-0b9349c6262b"
+    },
+    {
+      "id": "thread-bdbcebd93153",
+      "subject": "[rkward-users] Quick survey: Still using RKWard for KDE 3",
+      "message_count": 2,
+      "participants": [
+        "Prasenjit Kapat",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2009-09-30T19:59:53Z",
+      "last_reply": "2009-09-30T20:22:29Z",
+      "root_message_id": "msg-bdbcebd93153"
+    }
+  ]
+}

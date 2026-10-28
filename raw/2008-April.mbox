@@ -1,0 +1,221 @@
+From noreply at sourceforge.net  Tue Apr  1 12:53:37 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 01 Apr 2008 05:53:37 -0700
+Subject: [rkward-users] [rkward - Help] Package problems under Gutsy
+Message-ID: <4877239.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4877239
+By: leczar
+
+Whenever I try to install new packages, I end up with an error. I am using the
+Settings>Configure Packages>Install path, end I am trying to install to
+/usr/lib/R/library. I am being asked for my root password and log in as such.
+I am getting several error messages like this (in this case, it is the "Hmisc"
+package)
+
+* Installing *source* package 'maps' ...
+** libs
+** arch - 
+gcc-4.2 -std=gnu99 -g -O2    Gmake.c   -o Gmake
+/bin/bash: gcc-4.2: command not found
+make: *** [Gmake] Error 127
+ERROR: compilation failed for package 'maps'
+** Removing '/usr/lib/R/library/maps'
+
+and in the end
+
+The downloaded packages are in
+	/tmp/Rtmp0PhefW/downloaded_packages
+There were 17 warnings (use warnings() to see them)
+>
+system ("chown username /home/username/.rkward/package_archive/*")
+chown: cannot access `/home/username/.rkward/package_archive/*': No such file
+or directory
+> q ()
+
+Any idea what I do wrong?
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Apr  1 13:08:36 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 01 Apr 2008 06:08:36 -0700
+Subject: [rkward-users] [rkward - Help] RE: Package problems under Gutsy
+In-Reply-To: <4877239.165574@sourceforge.net>
+Message-ID: <4877280.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4877280
+By: hazzy
+
+You need to install the r-base-dev package. This pulls gcc as a dependency,
+which you need to compile packages.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Tue Apr  1 15:02:55 2008
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Tue, 01 Apr 2008 08:02:55 -0700
+Subject: [rkward-users] [rkward - Help] RE: Package problems under Gutsy
+In-Reply-To: <4877239.165574@sourceforge.net>
+Message-ID: <4877596.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=4877596
+By: leczar
+
+Thanks a lot, that did the trick!! :)
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From albert.greinoecker at uibk.ac.at  Sun Apr 20 09:09:05 2008
+From: albert.greinoecker at uibk.ac.at (Albert Greinoecker)
+Date: Sun, 20 Apr 2008 11:09:05 +0200
+Subject: [rkward-users] editor window loses focus after execution (with
+	autocompletion)
+Message-ID: <1208682545.6988.16.camel@localhost>
+
+Hi,
+
+I'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I
+think it's really great software, there's just one annoying thing which
+I'm struggling with:
+When running a statement created by autocompletion (and the tooltip is
+still visible), the editor window loses focus after completion of the
+statement, which has the consequences that copy/paste goes to the
+console window and no scripts can be executed anymore. My unsatisfying
+workaround is klicking a few times between console and editor window. Is
+there a way get rid of this problem?
+
+thx,
+Albert
+
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Apr 20 21:36:06 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Sun, 20 Apr 2008 23:36:06 +0200
+Subject: [rkward-users] RKWard 0.4.9a and 0.5.0b
+Message-ID: <200804202336.12574.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi!
+
+Maintenance releases of RKWard 0.4.9 (for KDE 3) and 0.5.0 (for KDE 4) have 
+been released today. Most importantly, these should work with the upcoming R 
+2.7.0. Other than that, only few things have changed, but read for yourself 
+at http://rkward.sf.net .
+
+Many thanks to all testers / translators / contributors!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080420/02345733/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Apr 25 15:18:29 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Fri, 25 Apr 2008 17:18:29 +0200
+Subject: [rkward-users] editor window loses focus after execution (with
+	autocompletion)
+In-Reply-To: <1208682545.6988.16.camel@localhost>
+References: <1208682545.6988.16.camel@localhost>
+Message-ID: <200804251718.29417.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 20 April 2008, Albert Greinoecker wrote:
+> I'm using rkward 0.4.8 (Using KDE 3.5.6) on Ubuntu 7.04 Feisty Fawn. I
+> think it's really great software, there's just one annoying thing which
+> I'm struggling with:
+> When running a statement created by autocompletion (and the tooltip is
+> still visible), the editor window loses focus after completion of the
+> statement, which has the consequences that copy/paste goes to the
+> console window and no scripts can be executed anymore. My unsatisfying
+> workaround is klicking a few times between console and editor window. Is
+> there a way get rid of this problem?
+
+various focus problems have been around for quite some time. Some have been 
+fixed at one time or another (so you might try 0.4.9a to see if there is any 
+improvement), but it's never been quite perfect.
+
+Things seem to have improved considerably in the KDE 4 port (versions 0.5.0 
+and above), so if you can install that, this will probably solve the issue 
+(you can run rkward 0.5.0 in a KDE 3.5.x session, you only need to have the 
+KDE 4 libraries installed).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080425/cb77369e/attachment.sig>
+
+From dgvirtual at akl.lt  Fri Apr 25 17:21:12 2008
+From: dgvirtual at akl.lt (Donatas G.)
+Date: Fri, 25 Apr 2008 20:21:12 +0300
+Subject: [rkward-users] debian sources?
+Message-ID: <200804252021.13015.dgvirtual@akl.lt>
+
+It seems that debian source *.dsc file is missing from the repositories for 
+the newest 0.4.9a release. Could someone provide it?
+-- 
+Donatas Glodenis
+http://dg.lapas.info
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Apr 28 11:47:09 2008
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: Mon, 28 Apr 2008 13:47:09 +0200
+Subject: [rkward-users] debian sources?
+In-Reply-To: <200804252021.13015.dgvirtual@akl.lt>
+References: <200804252021.13015.dgvirtual@akl.lt>
+Message-ID: <200804281347.13934.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+On Friday 25 April 2008, Donatas G. wrote:
+> It seems that debian source *.dsc file is missing from the repositories for
+> the newest 0.4.9a release. Could someone provide it?
+
+Sorry, forgot the file in the upload. It's now online at 
+http://rkward.sf.net/debian (and also in the official debian/unstable 
+archive).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20080428/e4a4f389/attachment.sig>
+

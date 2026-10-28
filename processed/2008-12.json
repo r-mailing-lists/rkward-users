@@ -1,0 +1,90 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-12",
+  "messages": [
+    {
+      "id": "msg-154956e3f096",
+      "message_id": "<5759560.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-12-05T02:22:06Z",
+      "subject": "[rkward-users] [rkward - Help] I cannot create my account in wiki",
+      "subject_clean": "[rkward-users] [rkward - Help] I cannot create my account in wiki",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5759560\nBy: jinid\n\nHello! Sorry and Thanks.\n\nif you are OK, \nAbout RKward wiki(rkward.sourceforge.net/wiki), \nI would like to ask something.\n\nI would like to be a user,\nHowever, the screen say : Log in \"incorrect or missing confirmation code\"\nendlessly.\nIn this case, if you have some direction, please let me know that.\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5759560\nBy: jinid\n\nHello! Sorry and Thanks.\n\nif you are OK, \nAbout RKward wiki(rkward.sourceforge.net/wiki), \nI w",
+      "thread_id": "thread-154956e3f096",
+      "thread_depth": 0,
+      "month": "2008-12"
+    },
+    {
+      "id": "msg-7ed6c7396b60",
+      "message_id": "<5778217.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-12-08T22:06:33Z",
+      "subject": "[rkward-users] [rkward - Help] pdf vignettes fail to display",
+      "subject_clean": "[rkward-users] [rkward - Help] pdf vignettes fail to display",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5778217\nBy: ybukhman\n\nHi,\n\npackages from Bioconductor project have vignettes, which are pdf files.  When\nI try to open one from RKWard help browser, it doesn't launch any pdf viewer,\nand I just get a window full of garbage.  My work-around is to run help.start\nand specify firefox as the browser.  Is there a way to make RKWard handle the\npdf files properly, though?\n\nThanks.\n\nYury\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5778217\nBy: ybukhman\n\nHi,\n\npackages from Bioconductor project have vignettes, which are pdf files.  When\nI try to",
+      "thread_id": "thread-7ed6c7396b60",
+      "thread_depth": 0,
+      "month": "2008-12"
+    },
+    {
+      "id": "msg-ef93e69b1161",
+      "message_id": "<de8c7cb40812111317v28a5127q9afdd93701eaa277@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-12-11T21:17:40Z",
+      "subject": "[rkward-users] rkward - the R package, fails to install. A solution found.",
+      "subject_clean": "[rkward-users] rkward - the R package, fails to install. A solution found.",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nFinally our dept moved to R 2.8 and I had to bite the bullet and\nupdate rkward. I was seeing some comits in the svn tree, so I decided\nto run the svn again. Since the office machine runs KDE 3.5.4 (RedHat\nEL5), I tried out the release_branch_0.4.9.\n\nGood news: Everything compiled fine.\nBad news (initially): rkward, the R package not as the KDE software,\ndid not install.\n\nLooking through the \"make install\" log:\n\nmake[3]: Entering directory\n`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages'\nMakefile:656: warning: overriding commands for target `distclean'\nMakefile:583: warning: ignoring old commands for target `distclean'\nmkdir -p tmp ; \\\n        OLDTMP=$TMPDIR ; \\\n        export TMPDIR=`pwd`/tmp ; \\\n        mkdir -p //home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ ; \\\n        /usr/lib/R/bin/R CMD INSTALL -l\n//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ rkward ; \\\n        export TMPDIR=$OLDTMP\n/usr/lib/R/bin/INSTALL: line 950: cd:\n/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward\n/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward:\nNo such file or directory\n/bin/sed: can't read DESCRIPTION: No such file or directory\nERROR: no 'Package' field in 'DESCRIPTION'\n/bin/sed: read error on\n/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages/rkward:\nIs a directory\nmake[3]: Leaving directory\n`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend/rpackages'\nmake[3]: Entering directory\n`/scratch/pkapat/softwares/rkward_svn/rkward/rbackend'\n\nSo, it seemes \"R CMD INSTALL\" bailed out. I tried it on the terminal directly:\n\n$ /usr/lib/R/bin/R CMD INSTALL -d -l\n//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ rkward\n\n<similar error>\n\nDirectory specification was wrong with R CMD INSTALL. Couldn't figure\nout much from /usr/lib/R/bin/INSTALL script. Line 950 was a cd\ncommand, may be the argument spec was messed up somehow.\n\nGood news: The following worked:\n\n$ /usr/lib/R/bin/R CMD INSTALL -d -l\n//home/pkapat/R/i686-redhat-linux-gnu-library/2.8/ ./rkward\n\nNote the \"./rkward\" instead of \"rkward\" in the end.\n\nNothing has changed on the Rkward's end: the\nrbackend/rpackages/Makefile.am file is same from the earlier released\n0.4.9 : the last commit on it was on 30 Dec 07 by Thomas (#2289), and\nthe relevant line is:\n\n        ${R_HOMEDIR}/bin/R CMD INSTALL -l $(DESTDIR)/$(R_LIBDIR) rkward ; \\\n\nSo I guess R's implementation of \"R CMD INSTALL\" seems to have\nchanged. I'll try to investigate this further. But as of now, if\nanyone needs to install the \"updated\" 0.4.9 version from svn code for\nR 2.8.0, the above solution should work. Use it after \"make install\".\n\nDidn't anyone face this earlier?\n\n-- \nPrasenjit",
+      "body_snippet": "Hi,\n\nFinally our dept moved to R 2.8 and I had to bite the bullet and\nupdate rkward. I was seeing some comits in the svn tree, so I decided\nto run the svn again. Since the office machine runs KDE 3.5.",
+      "thread_id": "thread-ef93e69b1161",
+      "thread_depth": 0,
+      "month": "2008-12"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-154956e3f096",
+      "subject": "[rkward-users] [rkward - Help] I cannot create my account in wiki",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-12-05T02:22:06Z",
+      "last_reply": "2008-12-05T02:22:06Z",
+      "root_message_id": "msg-154956e3f096"
+    },
+    {
+      "id": "thread-7ed6c7396b60",
+      "subject": "[rkward-users] [rkward - Help] pdf vignettes fail to display",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-12-08T22:06:33Z",
+      "last_reply": "2008-12-08T22:06:33Z",
+      "root_message_id": "msg-7ed6c7396b60"
+    },
+    {
+      "id": "thread-ef93e69b1161",
+      "subject": "[rkward-users] rkward - the R package, fails to install. A solution found.",
+      "message_count": 1,
+      "participants": [
+        "Prasenjit Kapat"
+      ],
+      "started": "2008-12-11T21:17:40Z",
+      "last_reply": "2008-12-11T21:17:40Z",
+      "root_message_id": "msg-ef93e69b1161"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2008-11",
+  "messages": [
+    {
+      "id": "msg-4d1131080b3c",
+      "message_id": "<5555495.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-01T18:19:43Z",
+      "subject": "[rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex ?",
+      "subject_clean": "[rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex ?",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5555495\nBy: bgilm\n\nHello, \n\nI have recently updated my Ubuntu version fom Hardy Heron to Intrepid Ibex.\nRkward worked fine before I upgraded but now, I meet some problems...\nIt seems that within Ibex, the Rkward toolbar menu is not complete, the run\nmenu and the settings menu are especially missing...\nAm I the only one facing the problem ?\n\nThank you for your help  \n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5555495\nBy: bgilm\n\nHello, \n\nI have recently updated my Ubuntu version fom Hardy Heron to Intrepid Ibex.\nRkward wo",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-335b29474b76",
+      "message_id": "<5556563.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-01T22:51:11Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Rkward compatible with Intrepid Ibex ?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Rkward compatible with Intrepid Ibex ?",
+      "in_reply_to": "<5555495.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5556563\nBy: fsando\n\nTake a look here to see if it helps you\n\nhttps://bugs.launchpad.net/ubuntu/+source/rkward/+bug/272527\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5556563\nBy: fsando\n\nTake a look here to see if it helps you\n\nhttps://bugs.launchpad.net/ubuntu/+source/rkward/+bu",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 1,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-b5713a3182dd",
+      "message_id": "<4910A4F7.80605@akl.lt>",
+      "from_name": "Donatas G.",
+      "from_email_hash": "80867bbbba9f610aa107059997921f78873c7ca78b64691b825c24970c15bc9e",
+      "date": "2008-11-04T19:39:35Z",
+      "subject": "[rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex\t?",
+      "subject_clean": "[rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex\t?",
+      "in_reply_to": "<5555495.165574@sourceforge.net>",
+      "references": [
+        "<5555495.165574@sourceforge.net>"
+      ],
+      "body_plain": "Hi, I wrote about this in this list a bit earlier.\n\nThe solution proposed in the single responce you have received before\nmine is a solution to a different problem.\n\nWhat I had to do was - recompile the package without using the rules for\nbuilding package in ubuntu.\n\nThat is dirty, I know, but that was the best I could do...\n\nHere is what you have to do:\n\n# install the rkward build dependencies\nsudo apt-get build-dep rkward\n# remove the damaged rkward\nsudo apt-get remove rkward\n## do not remove the packages that apt-get will suggest to remove after this\n# get the sources of rkward - regular download, or the debian way:\napt-get source rkward\n#now, go into rkward-* directory, find the INSTALL or README file and\nfollow the prescribed procedure to build and install the package..\n\nAfter that you might still have to deal with the missing plugins\nproblem: see the thread proposed to you earlier.\n\nDonatas\n\n\nSourceForge.net ra??:\n> Read and respond to this message at: \n> https://sourceforge.net/forum/message.php?msg_id=5555495\n> By: bgilm\n>\n> Hello, \n>\n> I have recently updated my Ubuntu version fom Hardy Heron to Intrepid Ibex.\n> Rkward worked fine before I upgraded but now, I meet some problems...\n> It seems that within Ibex, the Rkward toolbar menu is not complete, the run\n> menu and the settings menu are especially missing...\n> Am I the only one facing the problem ?\n>\n> Thank you for your help  \n>\n> ______________________________________________________________________\n> You are receiving this email because you elected to monitor this forum.\n> To stop monitoring this forum, login to SourceForge.net and visit: \n> https://sourceforge.net/forum/unmonitor.php?forum_id=165574\n>\n> -------------------------------------------------------------------------\n> This SF.Net email is sponsored by the Moblin Your Move Developer's challenge\n> Build the coolest Linux based applications with Moblin SDK & win great prizes\n> Grand prize is a trip for two to an Open Source event anywhere in the world\n> http://moblin-contest.org/redirect.php?banner_id=100&url=/\n> _______________________________________________\n> RKWard-users mailing list\n> RKWard-users at lists.sourceforge.net\n> https://lists.sourceforge.net/lists/listinfo/rkward-users\n>",
+      "body_snippet": "Hi, I wrote about this in this list a bit earlier.\n\nThe solution proposed in the single responce you have received before\nmine is a solution to a different problem.\n\nWhat I had to do was - recompile t",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 1,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-f338e1f80735",
+      "message_id": "<5578049.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-05T03:02:59Z",
+      "subject": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "in_reply_to": "<5548415.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5578049\nBy: enliteme\n\nPK,\n\nThanks for the info. The use of shortcut keys helps a lot. Though requires some\ntime to get used to it.\n\n\nOn Suse (KDE3) rkward (0.4.9)  is I confirmed the same focus problem, so Xubuntu\nis not to be blamed.\n\nSomewhat OFF but after upgrading Ubuntu 8.10 rkward (0.5.0b) is broken (icons\nand some of the menus are missing). My default window manager is gnome, so there\ncan be some problem with KDE 4 I guess. After fixing it, I can tell if it has\nthis focus problem or not.\n\nIn either ways, this is really a great app, I hope that the developers won't\ngive up on it\n(e.g. I read somewhere about plans to extend it to Windows - seemingly with\nno tangible results).\n\nbtw, \nhttp://rkward.sourceforge.net/\nsays:\n\"R?ponse serveur SQL : Can't connect to local MySQL server through socket\n'/var/lib/mysql/mysql.sock' (2)\"\nwhich is not promising either...\n\n\nonce again, thanks for the replies.\n\ngbr\n\n\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5578049\nBy: enliteme\n\nPK,\n\nThanks for the info. The use of shortcut keys helps a lot. Though requires some\ntime t",
+      "thread_id": "thread-f338e1f80735",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-e3b77fb96465",
+      "message_id": "<5596777.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-07T16:26:00Z",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "in_reply_to": "<5506946.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5596777\nBy: earlycj5\n\nHhmmm, this was posted a couple weeks ago, I'm having this same issue.  I get\n75% built then it stops and complains about Rdevices.h not existing, yes I grabbed\nSVN code.  So this still hasn't been addressed I'm guessing?\n\nI was trying to compile since I don't have a fully functional toolbar in Intrepid.\nI can't create new script file tabs among other irritations with the version\nin the repositories.\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5596777\nBy: earlycj5\n\nHhmmm, this was posted a couple weeks ago, I'm having this same issue.  I get\n75% built the",
+      "thread_id": "thread-e3b77fb96465",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-2d46d50392a7",
+      "message_id": "<200811171446.06283.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2008-11-17T13:46:02Z",
+      "subject": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "subject_clean": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "in_reply_to": "<4910A4F7.80605@akl.lt>",
+      "references": [
+        "<5555495.165574@sourceforge.net>",
+        "<4910A4F7.80605@akl.lt>"
+      ],
+      "body_plain": "Am Dienstag 04 November 2008 20:39:35 schrieb Donatas G.:\n> What I had to do was - recompile the package without using the rules for\n> building package in ubuntu.\n>\n> That is dirty, I know, but that was the best I could do...\n\ni've managed to find the showstopper in the debian/rules -- two lines have to \nbe altered. change line 37 from\n    -DDATA_INSTALL_DIR=/usr/share/apps/ \\\nto\n    -DDATA_INSTALL_DIR=/usr/share/kde4/apps \\\n\nand line 80 from\n    rm -vf $(CURDIR)/debian/rkward/usr/share/apps/katepart/syntax/r.xml\nto\n    rm -vf $(CURDIR)/debian/rkward/usr/share/kde4/apps/katepart/syntax/r.xml\n\nif needed, apply the Rdevices.h patch (i.e. remove its inclusion as described \nby thomas). afterwards, building a functional debian package with\n   fakeroot dpkg-buildpackage -uc -us\n   sudo dpkg -i ../rkward_0.5.0b-2_i386.deb\nworked for me.\n\nyou may have to correct the path to all.pluginmap (rkward configuration -> \nplug-ins) as well, which is now to be found in /usr/share/kde4/apps/rkward/, \nof course.\n\nmost icons still seem to be out of path, though. but apart from that, rkward \nis fully functional.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081117/5c64f1d6/attachment.sig>",
+      "body_snippet": "Am Dienstag 04 November 2008 20:39:35 schrieb Donatas G.:\n> What I had to do was - recompile the package without using the rules for\n> building package in ubuntu.\n>\n> That is dirty, I know, but that w",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 2,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-ded34de58c1d",
+      "message_id": "<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-11-17T19:48:50Z",
+      "subject": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "subject_clean": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "in_reply_to": "<200811171446.06283.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<5555495.165574@sourceforge.net>",
+        "<4910A4F7.80605@akl.lt>",
+        "<200811171446.06283.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "A quick question here:\n\nOn Mon, Nov 17, 2008 at 8:46 AM, meik michalke\n<Meik.Michalke at uni-duesseldorf.de> wrote:\n>\n> i've managed to find the showstopper in the debian/rules -- two lines have to\n> be altered. change line 37 from\n>    -DDATA_INSTALL_DIR=/usr/share/apps/ \\\n> to\n>    -DDATA_INSTALL_DIR=/usr/share/kde4/apps \\\n>\n> and line 80 from\n>    rm -vf $(CURDIR)/debian/rkward/usr/share/apps/katepart/syntax/r.xml\n> to\n>    rm -vf $(CURDIR)/debian/rkward/usr/share/kde4/apps/katepart/syntax/r.xml\n\nIs this only for Hardy or Intrepid or both?\n\nRegards,\n--\nPK",
+      "body_snippet": "A quick question here:\n\nOn Mon, Nov 17, 2008 at 8:46 AM, meik michalke\n<Meik.Michalke at uni-duesseldorf.de> wrote:\n>\n> i've managed to find the showstopper in the debian/rules -- two lines have to\n> ",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 3,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-7cc1e0677e68",
+      "message_id": "<200811172120.00847.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "6a1403c70445546c3e7736ed1a42a43b0aba1a6c17f2f54516cf27d556c0c3fa",
+      "date": "2008-11-17T20:19:56Z",
+      "subject": "[rkward-users] rules fixed (almost) [was: Rkward compatible\twith Intrepid Ibex?]",
+      "subject_clean": "[rkward-users] rules fixed (almost) [was: Rkward compatible\twith Intrepid Ibex?]",
+      "in_reply_to": "<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>",
+      "references": [
+        "<5555495.165574@sourceforge.net>",
+        "<200811171446.06283.meik.michalke@uni-duesseldorf.de>",
+        "<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>"
+      ],
+      "body_plain": "hallo ,\n\nam Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:\n> Is this only for Hardy or Intrepid or both?\n\nthat's for intrepid.\n\ni've built a package from the same sources on a hardy system as well. but \nintrepid installs kde4 as default (prefix is /usr), whereas hardy comes with \nkde3 and the ability to install kde4 as well. all kde4 stuff in hardy is \ntherefor installed (aka prefix) to /usr/lib/kde4, with e.g. the \ndata_install_dir then being /usr/lib/kde4/share/kde4/apps. [i'm serious...]\n\nso, just alter the paths in the rules file depending on your kubuntu version \nand you should be fine. on hardy, you might have to \"export \nPATH=$PATH:/usr/lib/kde4/bin\" before calling dpkg-buildpackage, otherwise \nkde4 won't be found.\n\n\nviele gr??e :: m.eik\n\n-- \ndipl. psych. meik michalke\ninstitut f\"ur experimentelle psychologie\nabt. f\"ur diagnostik und differentielle psychologie\nheinrich-heine-universit\"at\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081117/99fe185c/attachment.sig>",
+      "body_snippet": "hallo ,\n\nam Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:\n> Is this only for Hardy or Intrepid or both?\n\nthat's for intrepid.\n\ni've built a package from the same sources on a hardy system",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 4,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-ff2dd4f94cb1",
+      "message_id": "<de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>",
+      "from_name": "Prasenjit Kapat",
+      "from_email_hash": "1aaabed538e5f2d629b33e919b31b5e2c9c13b131ce8e84f1b00776b280c06e6",
+      "date": "2008-11-17T23:06:29Z",
+      "subject": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "subject_clean": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "in_reply_to": "<200811172120.00847.meik.michalke@uni-duesseldorf.de>",
+      "references": [
+        "<5555495.165574@sourceforge.net>",
+        "<200811171446.06283.meik.michalke@uni-duesseldorf.de>",
+        "<de8c7cb40811171148i573fa826pc6bd0e86cf4c5e6d@mail.gmail.com>",
+        "<200811172120.00847.meik.michalke@uni-duesseldorf.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Mon, Nov 17, 2008 at 3:19 PM, meik michalke\n<meik.michalke at uni-duesseldorf.de> wrote:\n> hallo ,\n>\n> am Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:\n>> Is this only for Hardy or Intrepid or both?\n>\n> that's for intrepid.\n>\n> i've built a package from the same sources on a hardy system as well. but\n> intrepid installs kde4 as default (prefix is /usr), whereas hardy comes with\n> kde3 and the ability to install kde4 as well. all kde4 stuff in hardy is\n> therefor installed (aka prefix) to /usr/lib/kde4, with e.g. the\n> data_install_dir then being /usr/lib/kde4/share/kde4/apps. [i'm serious...]\n\n:)) Hmmm...  But, why is intrepid using /usr/share/kde4/apps instead\nof /usr/share/apps? After all, this was the default for kde3, so if\nKDE4 is the default for intrepid, shouldn't it use\n/usr/share/apps ? Anyway, it is good to know this non-trivial convention!!\n\n> so, just alter the paths in the rules file depending on your kubuntu version\n> and you should be fine. on hardy, you might have to \"export\n> PATH=$PATH:/usr/lib/kde4/bin\" before calling dpkg-buildpackage, otherwise\n> kde4 won't be found.\n\nThanks, I'll try that sometime. I am still using Hardy and I've pinned\nR at 2.7.2... I just didn't want to break the current (working!)\nsetup...\n\nRegards,\n--\nPK",
+      "body_snippet": "Hi,\n\nOn Mon, Nov 17, 2008 at 3:19 PM, meik michalke\n<meik.michalke at uni-duesseldorf.de> wrote:\n> hallo ,\n>\n> am Montag, 17. November 2008 (20:48) schrieb Prasenjit Kapat:\n>> Is this only for Hardy o",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 5,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-31afd6e0886c",
+      "message_id": "<200811181335.26075.meik.michalke@uni-duesseldorf.de>",
+      "from_name": "meik michalke",
+      "from_email_hash": "52a47ea780e50aaada7ea727ee08aca4f05de708ceeb2085ee18dcb921643768",
+      "date": "2008-11-18T12:35:22Z",
+      "subject": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "subject_clean": "[rkward-users] rules fixed (almost) [was: Rkward compatible with Intrepid Ibex?]",
+      "in_reply_to": "<de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>",
+      "references": [
+        "<5555495.165574@sourceforge.net>",
+        "<200811172120.00847.meik.michalke@uni-duesseldorf.de>",
+        "<de8c7cb40811171506l5550886fp7ca243a905b2305@mail.gmail.com>"
+      ],
+      "body_plain": "hi,\n\nAm Dienstag 18 November 2008 00:06:29 schrieb Prasenjit Kapat:\n> :)) Hmmm... ?But, why is intrepid using /usr/share/kde4/apps instead\n> of /usr/share/apps? After all, this was the default for kde3, so if\n> KDE4 is the default for intrepid, shouldn't it use\n> /usr/share/apps ?\n\ni agree. in fact, it does use /usr/share/apps as well. but perhaps its a \ntransitional state, and they're trying to clean up the directory tree... i'm \nnot an kubuntu developer, so i have no insight in that.\n\nyou can use the kde4-config command to get information about verious expected \npaths. for instance, to find the path for the data_install_dir:\n kde4-config --path data\n\n(\"kde4-config --types\" will list all available types).\n\n> Anyway, it is good to know this non-trivial convention!!\n\nto me it seemed the obvious place to look: if cmake/make/make install works, \nbut debian/rules doesn't, i guessed that the cmake call in the rules file with \nits list of options was to blame. i removed all options, as expected the \npackage worked, after that i just rebuild the package with more and more \noptions until the errors reoccurred: gotcha ;-)\n\n> Thanks, I'll try that sometime. I am still using Hardy and I've pinned\n> R at 2.7.2... I just didn't want to break the current (working!)\n> setup...\n\nwisely so... however, this path issues are unrelated to the Rdevices.h issue \nwith R 2.8. you could try to compile against 2.7 first, and if it doesn't work \nfor you, simply re-install the official package.\n\n\nviele gr??e :: m.eik\n\n-- \n  dipl. psych. meik michalke\n  abt. f\"ur diagnostik und differentielle psychologie\n  institut f\"ur experimentelle psychologie\n  heinrich-heine-universit\"at d\"usseldorf\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 189 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20081118/47029aa9/attachment.sig>",
+      "body_snippet": "hi,\n\nAm Dienstag 18 November 2008 00:06:29 schrieb Prasenjit Kapat:\n> :)) Hmmm... ?But, why is intrepid using /usr/share/kde4/apps instead\n> of /usr/share/apps? After all, this was the default for kde",
+      "thread_id": "thread-4d1131080b3c",
+      "thread_depth": 6,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-0eb6d9460820",
+      "message_id": "<5682906.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-20T16:53:21Z",
+      "subject": "[rkward-users] [rkward - Help] Saving a graph",
+      "subject_clean": "[rkward-users] [rkward - Help] Saving a graph",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5682906\nBy: er317\n\nHello,\n\nI used to have no problem saving graphs before (can't remember the exact way\nbut using print to file)\nupgrading to RKWARD 0.5.0b (KDE 4.0.3). but now i have yet to figure how. Say\ni do:\n\n> contour(x,y,z)\n\nthis shows in Graphics Device 2... how do i it in RKWARD's ouput window?\n\nAlternatively,\n\n> plot(rnorm(10),rnorm(10))\n+ dev.copy2eps(file=\"test.eps\") \nX11cairo \n       2\nThe resulting file home/test seems to have the required properties:\nType:    EPS image\nSize:    3.5KB\nMIME:   image/x-eps\n \nbut if I open it with Document Viewer it shows Loading... There's also a little\nWatch in the bottom right of the file icon. This usually happens in the process\nof saving or downloading a file.\n\nthanks!\n\nx86_64-pc/Ubuntu 8.04/Genome 2.22.3/R2.8.0\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5682906\nBy: er317\n\nHello,\n\nI used to have no problem saving graphs before (can't remember the exact way\nbut using",
+      "thread_id": "thread-0eb6d9460820",
+      "thread_depth": 0,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-9a1a02a7a820",
+      "message_id": "<5688330.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-21T09:54:48Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Saving a graph",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Saving a graph",
+      "in_reply_to": "<5682906.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5688330\nBy: fsando\n\nHi\nWhat I'm going to suggest is more of a hack but I think it points the way to\na long term solution.\nIn rkward graphs are made through a call to the function \n\nrk.graph.on()\n\nThis function creates graph images in the ~/.rkward folder.\nIt automatically names graph.01.png, graph.02.png etc. (or something very\nsimilar)\n\nWhen I make graphs now I always write code like this\n\nrk.graph.on()\nplot(x,y....)\nrk.grahp.off()\n\nThe image is not actually created until rk.graph.off() is run.\n\nI made a my own version of this command to control the size and name of the\nimage file I didn't go into the automatic the enumeration so it always appends\na number to the filename but it could probably be changed with some more code\ndigging.\n\n\na3q_rk.graph.on <- function (width = 480, height = 480,prefix=\"graph\", ...) \n{\n    filename <- rk.get.tempfile.name(prefix = prefix, extension = \".png\")\n    png(filename = file.path(filename), width = width, height = height, \n        ...)\n    cat(paste(\"<img src=\\\"\", filename, \"\\\" width=\\\"\", width, \n        \"\\\" height=\\\"\", height, \"\\\"><br>\", sep = \"\"), file =\nrk.get.output.html.file(),\n        append = TRUE)\n}\n\nIt is called like this\na3q_rk.graph.on(width,height,graph_name)\nplot(x,y....)\nrk.grahp.off()\n\n\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5688330\nBy: fsando\n\nHi\nWhat I'm going to suggest is more of a hack but I think it points the way to\na long term s",
+      "thread_id": "thread-0eb6d9460820",
+      "thread_depth": 1,
+      "month": "2008-11"
+    },
+    {
+      "id": "msg-a00a0e438608",
+      "message_id": "<5724552.165574@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2008-11-27T16:58:31Z",
+      "subject": "[rkward-users] [rkward - Help] RE: Saving a graph",
+      "subject_clean": "[rkward-users] [rkward - Help] RE: Saving a graph",
+      "in_reply_to": "<5682906.165574@sourceforge.net>",
+      "references": [],
+      "body_plain": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5724552\nBy: er317\n\nThanks!\n\n______________________________________________________________________\nYou are receiving this email because you elected to monitor this forum.\nTo stop monitoring this forum, login to SourceForge.net and visit: \nhttps://sourceforge.net/forum/unmonitor.php?forum_id=165574",
+      "body_snippet": "Read and respond to this message at: \nhttps://sourceforge.net/forum/message.php?msg_id=5724552\nBy: er317\n\nThanks!\n\n______________________________________________________________________\nYou are receiv",
+      "thread_id": "thread-0eb6d9460820",
+      "thread_depth": 1,
+      "month": "2008-11"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-4d1131080b3c",
+      "subject": "[rkward-users] [rkward - Help] Rkward compatible with Intrepid Ibex ?",
+      "message_count": 8,
+      "participants": [
+        "Donatas G.",
+        "Prasenjit Kapat",
+        "SourceForge.net",
+        "meik michalke"
+      ],
+      "started": "2008-11-01T18:19:43Z",
+      "last_reply": "2008-11-18T12:35:22Z",
+      "root_message_id": "msg-4d1131080b3c"
+    },
+    {
+      "id": "thread-f338e1f80735",
+      "subject": "[rkward-users] [rkward - Help] RE: keyboard / focus / xubuntu problem?",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-11-05T03:02:59Z",
+      "last_reply": "2008-11-05T03:02:59Z",
+      "root_message_id": "msg-f338e1f80735"
+    },
+    {
+      "id": "thread-e3b77fb96465",
+      "subject": "[rkward-users] [rkward - Help] RE: rkward-0.4.9a and R-2.8.0 obsolete Rdevices.h",
+      "message_count": 1,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-11-07T16:26:00Z",
+      "last_reply": "2008-11-07T16:26:00Z",
+      "root_message_id": "msg-e3b77fb96465"
+    },
+    {
+      "id": "thread-0eb6d9460820",
+      "subject": "[rkward-users] [rkward - Help] Saving a graph",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2008-11-20T16:53:21Z",
+      "last_reply": "2008-11-27T16:58:31Z",
+      "root_message_id": "msg-0eb6d9460820"
+    }
+  ]
+}

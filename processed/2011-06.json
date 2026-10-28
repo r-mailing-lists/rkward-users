@@ -1,0 +1,406 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2011-06",
+  "messages": [
+    {
+      "id": "msg-5439081875b5",
+      "message_id": "<web-227199959@srv.dir.bg>",
+      "from_name": "iamcelestial at dir.bg",
+      "from_email_hash": "4fdc9dc6f557eb1cc2e6dfca2624326484bc1a0f26e2d21dd886a92f039df100",
+      "date": "2011-06-02T10:46:02Z",
+      "subject": "[rkward-users] Open scripts from console with rkward",
+      "subject_clean": "[rkward-users] Open scripts from console with rkward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hello, I have the following problem (Ubuntu 10.10):\n\nI want to be able to load a script in rkward automatically just by \nclicking on it or by running rkward test.R in the console. (That's how \nI assigned a default program to open .R files).\nWell when I run this, rkward opens but it gives me an error and \ndoesn't open the R script. \"Error loading Workspace, there has been an \nerror opening /home/ap/test.R\". Of course it functions when I proceed \nto open the script via the menu. Does that mean that all R files must \nbe in some specific directory before I can open them from the console? \n I am a total Newb in Linux, under Windows I'd just click on the R \nFile and the editor would open it automatically... what can I do here?\n\nThanks in advance for any help!\n\nAlex",
+      "body_snippet": "Hello, I have the following problem (Ubuntu 10.10):\n\nI want to be able to load a script in rkward automatically just by \nclicking on it or by running rkward test.R in the console. (That's how \nI assig",
+      "thread_id": "thread-5439081875b5",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-b1a3cb08dfce",
+      "message_id": "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>",
+      "from_name": "Vikas Garud",
+      "from_email_hash": "fd7032e09f1410f36ccb8a39d7eeccc3b0e0e01daa2874cb1c93534698ddfb62",
+      "date": "2011-06-03T10:46:08Z",
+      "subject": "[rkward-users] GUI Experience - Box Plots",
+      "subject_clean": "[rkward-users] GUI Experience - Box Plots",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nThis is to share my experience of using GUI's for using various\nQuality Management/Assurance tools.\nA few days back, I had I had written a mail about Box plots and\nreceived some very good suggestions, including that for simple\nscripts.  Thanks everybody for the same.\n\nBased on the suggestions, I am trying three GUI's:  R Commander,\nJGR-Deducer combination and RKward.\n\nFor Box Plots, I found the JGR-Deducer combination the best choice.\n\nI could not get box plots - Factors and Dodging - in R Commander and\nRKward, though the reply on RKward mailing list suggests that the\nnewer version of RKward should solve the problem.\n\nThank you everybody for all the help.  I'll be asking questions about\nvarious tools that I would like to deploy through GUI's for R.  I'll\nalso be sharing my experiences.\n\nVikas Garud",
+      "body_snippet": "Hi,\n\nThis is to share my experience of using GUI's for using various\nQuality Management/Assurance tools.\nA few days back, I had I had written a mail about Box plots and\nreceived some very good suggest",
+      "thread_id": "thread-b1a3cb08dfce",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-8ffb8000bbcc",
+      "message_id": "<BANLkTikzUgxtg3psQr0qwir9Tim9uddmfA@mail.gmail.com>",
+      "from_name": "Liviu Andronic",
+      "from_email_hash": "ac80690a74d8c96bf595dc6f08afe02e887e0cd6871b17eb78f91be112f8f2e3",
+      "date": "2011-06-03T11:13:19Z",
+      "subject": "[rkward-users] [R] GUI Experience - Box Plots",
+      "subject_clean": "[rkward-users] [R] GUI Experience - Box Plots",
+      "in_reply_to": "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>",
+      "references": [
+        "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>"
+      ],
+      "body_plain": "On Fri, Jun 3, 2011 at 6:46 AM, Vikas Garud <information4vikas at gmail.com> wrote:\n> Hi,\n>\n> This is to share my experience of using GUI's for using various\n> Quality Management/Assurance tools.\n> A few days back, I had I had written a mail about Box plots and\n> received some very good suggestions, including that for simple\n> scripts. ?Thanks everybody for the same.\n>\n> Based on the suggestions, I am trying three GUI's: ?R Commander,\n> JGR-Deducer combination and RKward.\n>\n> For Box Plots, I found the JGR-Deducer combination the best choice.\n>\n> I could not get box plots - Factors and Dodging - in R Commander and\n> RKward, though the reply on RKward mailing list suggests that the\n> newer version of RKward should solve the problem.\n>\n> Thank you everybody for all the help. ?I'll be asking questions about\n> various tools that I would like to deploy through GUI's for R. ?I'll\n> also be sharing my experiences.\n>\nA good place would be r-sig-gui. Regards\nLiviu\n\n\n> Vikas Garud\n>\n> ______________________________________________\n> R-help at r-project.org mailing list\n> https://stat.ethz.ch/mailman/listinfo/r-help\n> PLEASE do read the posting guide http://www.R-project.org/posting-guide.html\n> and provide commented, minimal, self-contained, reproducible code.\n>\n\n\n\n-- \nDo you know how to read?\nhttp://www.alienetworks.com/srtest.cfm\nhttp://goodies.xfce.org/projects/applications/xfce4-dict#speed-reader\nDo you know how to write?\nhttp://garbl.home.comcast.net/~garbl/stylemanual/e.htm#e-mail",
+      "body_snippet": "On Fri, Jun 3, 2011 at 6:46 AM, Vikas Garud <information4vikas at gmail.com> wrote:\n> Hi,\n>\n> This is to share my experience of using GUI's for using various\n> Quality Management/Assurance tools.\n> A ",
+      "thread_id": "thread-b1a3cb08dfce",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-6ed80436f3f8",
+      "message_id": "<BANLkTinE29DVy65c_O8dQ8RF8SgqJV0cbw@mail.gmail.com>",
+      "from_name": "Vikas Garud",
+      "from_email_hash": "fd7032e09f1410f36ccb8a39d7eeccc3b0e0e01daa2874cb1c93534698ddfb62",
+      "date": "2011-06-03T12:31:10Z",
+      "subject": "[rkward-users] [R] GUI Experience - Box Plots",
+      "subject_clean": "[rkward-users] [R] GUI Experience - Box Plots",
+      "in_reply_to": "<BANLkTikzUgxtg3psQr0qwir9Tim9uddmfA@mail.gmail.com>",
+      "references": [
+        "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>",
+        "<BANLkTikzUgxtg3psQr0qwir9Tim9uddmfA@mail.gmail.com>"
+      ],
+      "body_plain": "> A good place would be r-sig-gui. Regards\n> Liviu\n>\n\nThanks Liviu.  Subscribing to that list.\n\nHope, it is still OK to write mails on these lists as well.\n\nRegards\nVikas Garud",
+      "body_snippet": "> A good place would be r-sig-gui. Regards\n> Liviu\n>\n\nThanks Liviu.  Subscribing to that list.\n\nHope, it is still OK to write mails on these lists as well.\n\nRegards\nVikas Garud",
+      "thread_id": "thread-b1a3cb08dfce",
+      "thread_depth": 2,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-e2f40df38611",
+      "message_id": "<BANLkTik_hw4-8M-Jr4u-Gh2-iy6LZoKX7w@mail.gmail.com>",
+      "from_name": "Vikas Garud",
+      "from_email_hash": "fd7032e09f1410f36ccb8a39d7eeccc3b0e0e01daa2874cb1c93534698ddfb62",
+      "date": "2011-06-03T12:35:44Z",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "subject_clean": "[rkward-users] Pareto Analysis using RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n\nI am exploring GUI's for doing Quality\nManagement/Assurance/Improvement activities and this is another mail\nin series!\n\nFocus of this mail is Pareto Analysis for following data (Truncated):\nDate\tDefect code\tOperator\tShift\tMachine\tCost - Internal\tCost -\nExternal\tCost - Total\n8-Jun-2011\t410\tJoe\t1\tAAA\t5\t50\t55\n8-Jun-2011\t465\tJoe\t1\tAAA\t1.5\t25\t26.5\n8-Jun-2011\t412\tJoe\t1\tAAA\t1.5\t10\t11.5\n8-Jun-2011\t410\tJoe\t1\tAAA\t5\t50\t55\n8-Jun-2011\t218\tJoe\t1\tAAA\t1\t10\t11\n8-Jun-2011\t440\tJoe\t1\tAAA\t1\t10\t11\n8-Jun-2011\t410\tJoe\t1\tAAA\t5\t50\t55\n8-Jun-2011\t413\tJoe\t1\tAAA\t0.5\t5\t5.5\n8-Jun-2011\t410\tJoe\t1\tAAA\t5\t50\t55\n8-Jun-2011\t465\tMoe\t1\tBBB\t1.5\t25\t26.5\n8-Jun-2011\t410\tMoe\t1\tBBB\t5\t50\t55\n8-Jun-2011\t412\tMoe\t1\tBBB\t1.5\t10\t11.5\n8-Jun-2011\t841\tMoe\t1\tBBB\t0.5\t5\t5.5\n8-Jun-2011\t410\tMoe\t1\tBBB\t5\t50\t55\n8-Jun-2011\t413\tMoe\t1\tBBB\t0.5\t5\t5.5\n8-Jun-2011\t410\tMoe\t1\tBBB\t5\t50\t55\n8-Jun-2011\t413\tMoe\t1\tBBB\t0.5\t5\t5.5\n8-Jun-2011\t465\tMoe\t1\tBBB\t1.5\t25\t26.5\n8-Jun-2011\t410\tMoe\t1\tBBB\t5\t50\t55\n\nIn all cases, the qcc package is loaded.\n\nRKward:\n\nI could get nice Pareto Chart, for the variable Defect code.  Is it\npossible to plot a Pareto Chart for, say, Total cost?  The attempt of\nplotting the same through RKward fails, in the sense that the number\nof times a particular cost value appears is used for plotting the\nPareto chart.  I'd like a Pareto plot by defect codes based on Total\ncost.  Is this possible?  How?\n\nThe data in this example to demonstrate Pareto Chart contains 8 defect\ncodes and it is possible to make sense of the plot.  Some real data\ncontains hundreds of records.  (There is file, somewhere on the\ninternet - sorry, I could not find the link - CFHPareto.xls containing\n11099 records in 37 defect codes.)  Doing a Pareto Analysis did give\nme nice coloured Pareto Chart, however, the legends are all mixed up\nand can not be read.  The utility of the Pareto chart is practically\nnil.  For such data, I would like to club categories beyond, say, 80%\nin cumulative total, to be clubbed in \"Others\".    Is it possible?\nHow?\n\nAny help is appreciated.\n\nRegards\nVikas Garud",
+      "body_snippet": "Hi,\n\nI am exploring GUI's for doing Quality\nManagement/Assurance/Improvement activities and this is another mail\nin series!\n\nFocus of this mail is Pareto Analysis for following data (Truncated):\nDate\t",
+      "thread_id": "thread-e2f40df38611",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-273109c22189",
+      "message_id": "<201106031926.35391.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-06-03T17:26:35Z",
+      "subject": "[rkward-users] GUI Experience - Box Plots",
+      "subject_clean": "[rkward-users] GUI Experience - Box Plots",
+      "in_reply_to": "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>",
+      "references": [
+        "<BANLkTi=h=4yMiTFZWhJLKXuWdz8SWsWPJw@mail.gmail.com>"
+      ],
+      "body_plain": "On Friday 03 June 2011, Vikas Garud wrote:\n> I could not get box plots - Factors and Dodging - in R Commander and\n> RKward, though the reply on RKward mailing list suggests that the\n> newer version of RKward should solve the problem.\n\nYes, grouping by factor is implemented in RKWard 0.5.6, which was released \nthis Monday. I've just implemented dodging in our development version.\n \nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110603/f2de4862/attachment.sig>",
+      "body_snippet": "On Friday 03 June 2011, Vikas Garud wrote:\n> I could not get box plots - Factors and Dodging - in R Commander and\n> RKward, though the reply on RKward mailing list suggests that the\n> newer version of",
+      "thread_id": "thread-b1a3cb08dfce",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-884ad1455e41",
+      "message_id": "<201106031950.42686.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-06-03T17:50:39Z",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "subject_clean": "[rkward-users] Pareto Analysis using RKward",
+      "in_reply_to": "<BANLkTik_hw4-8M-Jr4u-Gh2-iy6LZoKX7w@mail.gmail.com>",
+      "references": [
+        "<BANLkTik_hw4-8M-Jr4u-Gh2-iy6LZoKX7w@mail.gmail.com>"
+      ],
+      "body_plain": "On Friday 03 June 2011, Vikas Garud wrote:\n> I could get nice Pareto Chart, for the variable Defect code.  Is it\n> possible to plot a Pareto Chart for, say, Total cost?  The attempt of\n> plotting the same through RKward fails, in the sense that the number\n> of times a particular cost value appears is used for plotting the\n> Pareto chart.  I'd like a Pareto plot by defect codes based on Total\n> cost.  Is this possible?  How?\n\nWell, not via the GUI, currently. You'd have to transform the data like this:\n\n    cumulated.costs <- by (data$total.cost, data$defect, FUN=sum)\n\nThen plot this without further tabulation.\n\nLooks like something that we could reasonably add to the GUI. \n\n> The data in this example to demonstrate Pareto Chart contains 8 defect\n> codes and it is possible to make sense of the plot.  Some real data\n> contains hundreds of records.  (There is file, somewhere on the\n> internet - sorry, I could not find the link - CFHPareto.xls containing\n> 11099 records in 37 defect codes.)  Doing a Pareto Analysis did give\n> me nice coloured Pareto Chart, however, the legends are all mixed up\n> and can not be read.  The utility of the Pareto chart is practically\n> nil.  For such data, I would like to club categories beyond, say, 80%\n> in cumulative total, to be clubbed in \"Others\".    Is it possible?\n> How?\n\nWell, if the problem is reading the legends, then you'd probably want to cut \nby number of categories, rather than a limit by cumulative total, no?\n\n   cutoff <- 10\n   if (length (cumulated.costs) > cutoff) {\n       transformed <- sort (cumulated.costs, decreasing=TRUE)\n       transformed <- c (transformed[1:cutoff], \"Others\"=sum \n(transformed[(cutoff+1):length(transformed)]))\n   }\n\nMight be a useul addition to the GUI, too.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110603/81178c90/attachment.sig>",
+      "body_snippet": "On Friday 03 June 2011, Vikas Garud wrote:\n> I could get nice Pareto Chart, for the variable Defect code.  Is it\n> possible to plot a Pareto Chart for, say, Total cost?  The attempt of\n> plotting the ",
+      "thread_id": "thread-e2f40df38611",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-ce967ee0de00",
+      "message_id": "<BANLkTimFDHVKqnpH2e5n2RJ0CpntnsaoKQ@mail.gmail.com>",
+      "from_name": "Vikas Garud",
+      "from_email_hash": "fd7032e09f1410f36ccb8a39d7eeccc3b0e0e01daa2874cb1c93534698ddfb62",
+      "date": "2011-06-05T09:26:27Z",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "subject_clean": "[rkward-users] Pareto Analysis using RKward",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi Thomas,\n\nThanks for the reply and suggestions.  I tried those and got the\nresults as desired, well, almost.  Thanks.  Some questions though -\n\n> Well, if the problem is reading the legends, then you'd probably want to cut\n> by number of categories, rather than a limit by cumulative total, no?\n\nYou are right.  I should cut by limiting the number of categories.\nThe code suggested by you:\n   cutoff <- 10\n   if (length (cumulated.costs) > cutoff) {\n       transformed <- sort (cumulated.costs, decreasing=TRUE)\n       transformed <- c (transformed[1:cutoff], \"Others\"=sum\n(transformed[(cutoff+1):length(transformed)]))\n   }\n\nworked well for the sample data I had included earlier.  However, how\ndo I do that for another data, where I want to limit the list of\ndefects (categories for Pareto Chart) by number of such categories.\nFollowing is sample data from another source (it contains 10099\nrecords and 37 defect categories.  I would like Pareto Chart to\nconsist of, say 10, actual defect categories and remaining 27 combined\ninto others.\nDate\tLine\tDefect\n14/8/2005\t1\tBattery Failure\n15/8/2005\t3\tFit & Finish - Roof\n5/8/2005\t3\tFit & Finish - Bumper\n19/8/2005\t4\tFit & Finish - Roof\n26/8/2005\t2\tFit & Finish - Driver Side Door\n3/8/2005\t4\tEmissions failure\n16/8/2005\t1\tBrake Failure\n28/8/2005\t4\tEmissions failure\n29/8/2005\t4\tHood Release Failure\n15/8/2005\t4\tSeat Warmer Failure\n28/8/2005\t2\tHeadlamp failure\n30/8/2005\t4\tFit & Finish - Bumper\n21/8/2005\t2\tHeater Failure\n10/8/2005\t3\tPower Antenna Failure\n20/8/2005\t3\tEvaporator Coil Failure\n26/8/2005\t3\tEmissions failure\n17/8/2005\t4\tTail Light Failure\n15/8/2005\t3\tFit & Finish - Roof\n6/8/2005\t4\tPower Window Failure\n9/8/2005\t1\tFuel Injection Failure\n20/8/2005\t2\tFit & Finish - Roof\n15/8/2005\t4\tAir Conditioning Failure\n1/8/2005\t4\tFuel Injection Failure\n12/8/2005\t3\tFit & Finish - Driver Side Door\n26/8/2005\t2\tFit & Finish - Driver Side Door\n2/8/2005\t3\tSeat Warmer Failure\n1/8/2005\t2\tSunroof Leaking\n14/8/2005\t3\tDome Light Failure\n21/8/2005\t2\tBrake Failure\n3/8/2005\t4\tHood Release Failure\n3/8/2005\t4\tWiper Failure\n24/8/2005\t1\tThrottle Failure\n21/8/2005\t4\tBrake Failure\n19/8/2005\t2\tBrake Failure\n1/8/2005\t4\tTail Light Failure\n11/8/2005\t4\tHeater Failure\n26/8/2005\t3\tFit & Finish - Roof\n6/8/2005\t4\tSunroof Leaking\n23/8/2005\t2\tDome Light Failure\n13/8/2005\t2\tEvaporator Coil Failure\n\nI tried to generate a list for cumulated defects by:\n\ncumulated.defects <- by (my.csv.data$Defect, my.csv.data$Defect, FUN=count)\n(Probably shows my ignorance about using R)\n\nAnd got error:\nError in FUN(X[[1L]], ...) : object 'count' not found\nCalls: by ... by.default -> eval -> eval -> tapply -> lapply -> FUN\n\nThese would be good additions to GUI, would help in increasing the use\nof these tools in Quality Improvement Activities in Industry (as\nagainst research institutes, where people would not run away from\nusing scripts).\n\nOne more observation:  In traditional Pareto Chart, the Others\ncategory is at the end.  In the Pareto Chart drawn by using this\nscript, the \"Others\" category appears somewhere in the  middle - in\nsorted order.  Can this be taken towards the end?\n\nIs there a way to get the computed vectors (The cost total) in the\ndata?  How do I read values of total costs for various defects?  The\ntabulation in the output is in terms of serial number of the category\nand cumbersome to relate to actual data.\n\nAnd yes, I'll certainly try the latest version as soon as it is\navailable in SuSE repositories.  At present it is showing some build\nfailures.\n\nThanks and regards\nVikas Garud\n\nPS:  I did not receive your replies on my email Id.  I read your\nresponses in the archives.  Therefore could not quote your mail\nproperly.  Need to check the mailing list settings for mail delivery.\n  Vikas Garud",
+      "body_snippet": "Hi Thomas,\n\nThanks for the reply and suggestions.  I tried those and got the\nresults as desired, well, almost.  Thanks.  Some questions though -\n\n> Well, if the problem is reading the legends, then yo",
+      "thread_id": "thread-ce967ee0de00",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-298e5fcaeb30",
+      "message_id": "<201106051211.30315.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-06-05T10:11:26Z",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "subject_clean": "[rkward-users] Pareto Analysis using RKward",
+      "in_reply_to": "<BANLkTimFDHVKqnpH2e5n2RJ0CpntnsaoKQ@mail.gmail.com>",
+      "references": [
+        "<BANLkTimFDHVKqnpH2e5n2RJ0CpntnsaoKQ@mail.gmail.com>"
+      ],
+      "body_plain": "On Sunday 05 June 2011, Vikas Garud wrote:\n> I tried to generate a list for cumulated defects by:\n> \n> cumulated.defects <- by (my.csv.data$Defect, my.csv.data$Defect, FUN=count)\n> (Probably shows my ignorance about using R)\n> \n> And got error:\n> Error in FUN(X[[1L]], ...) : object 'count' not found\n> Calls: by ... by.default -> eval -> eval -> tapply -> lapply -> FUN\n\nWell, you could do\n  cumulated.defects <- by (my.csv.data$Defect, my.csv.data$Defect, FUN=length) \nalthough the more natural way would simply be\n  cumulated.defects <- table (my.csv.data$Defect)\n. BTW, this is also what out plugin currently does, when you check the \n\"tabulate\" option. Thus you may want to click the \"Code\"-button in the dialog, \nand inspect how things are done, there. That's what it's there, for.\n \n> One more observation:  In traditional Pareto Chart, the Others\n> category is at the end.  In the Pareto Chart drawn by using this\n> script, the \"Others\" category appears somewhere in the  middle - in\n> sorted order.  Can this be taken towards the end?\n\nNot easily from our end, no, as pareto.chart() always sorts the data.\n\nHowever, this would not be too hard to add to pareto.chart(), directly. You \nmight want to contact the maintainer of the qcc-package about this (Luca \nScrucca; luca AT stat.unipg.it). It would seem like a useful addition.\n\n> Is there a way to get the computed vectors (The cost total) in the\n> data?\n\nmy.data$computed <- computed[match (my.data$category, names(computed))\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110605/62c34d7e/attachment.sig>",
+      "body_snippet": "On Sunday 05 June 2011, Vikas Garud wrote:\n> I tried to generate a list for cumulated defects by:\n> \n> cumulated.defects <- by (my.csv.data$Defect, my.csv.data$Defect, FUN=count)\n> (Probably shows my ",
+      "thread_id": "thread-ce967ee0de00",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-4c4ee0a7ca1b",
+      "message_id": "<forum-165574-10273925@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-06-06T08:21:21Z",
+      "subject": "[rkward-users] [Help] bulk commenting",
+      "subject_clean": "[rkward-users] [Help] bulk commenting",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4560633:\n\nHi!\n\nIs it possible to add a \"#\" at the beginning of each line within a set of lines\nselected in the Editor to comment out a piece of code?\n\nThanks",
+      "body_snippet": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4560633:\n\nHi!\n\nIs it possible to add a \"#\" at the beginning of each line within ",
+      "thread_id": "thread-4c4ee0a7ca1b",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-f5f77a56e713",
+      "message_id": "<forum-165574-10274043@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-06-06T09:07:36Z",
+      "subject": "[rkward-users] [Help] RE: bulk commenting",
+      "subject_clean": "[rkward-users] [Help] RE: bulk commenting",
+      "in_reply_to": "<forum-165574-10273925@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by gewoonjan at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4560633:\n\nHi,\n\nYes you can comment lines out by using ctrl-D on the selected lines. To uncomment\nlines use ctrl-shift-D.\n\nJ",
+      "body_snippet": "The following forum message was posted by gewoonjan at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4560633:\n\nHi,\n\nYes you can comment lines out by using ctrl-D on the selected lin",
+      "thread_id": "thread-4c4ee0a7ca1b",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-ce442f619b7d",
+      "message_id": "<4DEFA897.5000204@unipa.it>",
+      "from_name": "marcantonio",
+      "from_email_hash": "16275e547f962454ef1bb7961200caba023f5952613103888a26c8a1284e68e8",
+      "date": "2011-06-08T16:51:35Z",
+      "subject": "[rkward-users] possible warning",
+      "subject_clean": "[rkward-users] possible warning",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\n  I was trying to install rkward0.5.6 under R2.13 but I got always this \nerror message:\npeppe at manai:~/Downloads/rkward-0.5.6/build$ cmake ../  \n-DCMAKE_INSTALL_PREFIX='kde4-config --prefix'  \n-DCMAKE_BUILD_TYPE=Release  -DCMAKE_BUILD_TYPE=debugfull\n-- Found Qt-Version 4.6.2 (using /usr/bin/qmake)\n-- Found X11: /usr/lib/libX11.so\n-- Phonon Version: 4.3.1\n-- Found KDE 4.4 include dir: /usr/include\n-- Found KDE 4.4 library dir: /usr/lib\n-- Found the KDE4 kconfig_compiler preprocessor: /usr/bin/kconfig_compiler\n-- Found automoc4: /usr/bin/automoc4\n-- Looking for R executable\n-- Specified by user\n-- Using R at /usr/local/bin/R\n-- Looking for R_HOME\n/usr/local/bin/R: line 227: /usr/local/lib/R/etc/ldpaths: No such file \nor directory\nERROR: R_HOME ('/usr/local/lib/R') not found\nCMake Error at rkward/rbackend/FindR.cmake:26 (MESSAGE):\n   Could NOT determine R_HOME (probably you misspecified the location of R)\nCall Stack (most recent call first):\n   rkward/rbackend/CMakeLists.txt:1 (INCLUDE)\n\nI realized, after some managings, the true option to be used when \ncompiling R is\n  ./configure --enable-R-shlib\n\nSaluti.\nPeppe.",
+      "body_snippet": "Hi,\n  I was trying to install rkward0.5.6 under R2.13 but I got always this \nerror message:\npeppe at manai:~/Downloads/rkward-0.5.6/build$ cmake ../  \n-DCMAKE_INSTALL_PREFIX='kde4-config --prefix'  \n-",
+      "thread_id": "thread-ce442f619b7d",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-fdb5e1f40f73",
+      "message_id": "<201106111109.05744.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-06-11T09:09:00Z",
+      "subject": "[rkward-users] possible warning",
+      "subject_clean": "[rkward-users] possible warning",
+      "in_reply_to": "<4DEFA897.5000204@unipa.it>",
+      "references": [
+        "<4DEFA897.5000204@unipa.it>"
+      ],
+      "body_plain": "Hi,\n\nthanks for your report about this. However, to me, the lack of the --enable-R-\nshlib option was not the only problem at this point:\n\nOn Wednesday 08 June 2011, marcantonio wrote:\n> -- Using R at /usr/local/bin/R\n> -- Looking for R_HOME\n> /usr/local/bin/R: line 227: /usr/local/lib/R/etc/ldpaths: No such file\n> or directory\n\nNote that this error occurs in the R startup script itself. We try to query it \nfor the value of R_HOME, but it bails out with an error on line 227, instead. \nThis also means that you would not have been able to start a regular R session \nfrom the command line, either. Thus, it looks like your R installation was \ncompletely broken (for whatever reason).\n\n> I realized, after some managings, the true option to be used when\n> compiling R is\n>   ./configure --enable-R-shlib\n\nIndeed, this is needed. If the above step had not failed, cmake would have \nproceeded to check for the existence of the shared library, shortly after, and \nwould have given you a more helpful error message at that point.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110611/d0880e7f/attachment.sig>",
+      "body_snippet": "Hi,\n\nthanks for your report about this. However, to me, the lack of the --enable-R-\nshlib option was not the only problem at this point:\n\nOn Wednesday 08 June 2011, marcantonio wrote:\n> -- Using R at ",
+      "thread_id": "thread-ce442f619b7d",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-90710ddbc9ce",
+      "message_id": "<forum-165574-10306125@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-06-14T13:39:33Z",
+      "subject": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "subject_clean": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "in_reply_to": "<forum-165574-10226394@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\nCould this problem be caused by rattle()?\nI tried rattle some time ago and I've recently observed that the package gets\nautomatically loaded. At quiting R I get:\nWarning message:\nIn save(list = ls(envir = .GlobalEnv, all.names = TRUE), file = outfile,  :\n  'package:rattle' may not be available when loading\n\nBTW, I just had a crash, this is the debuging info:\n\nApplication: RKWard (rkward.frontend), signal: Aborted\n[Current thread is 1 (Thread 0x7f7faad7f760 (LWP 3284))]\n\nThread 3 (Thread 0x7f7f91d09700 (LWP 3291)):\n#0  0x00007f7fa54ed16e in ?? () from /lib64/libc.so.6\n#1  0x00007f7fa54763dc in ?? () from /lib64/libc.so.6\n#2  0x00007f7fa5474e78 in free () from /lib64/libc.so.6\n#3  0x00007f7fa20831ba in ?? () from /lib64/libglib-2.0.so.0\n#4  0x00007f7fa6f74013 in QEventDispatcherGlib::~QEventDispatcherGlib() () from\n/usr/lib64/libQtCore.so.4\n#5  0x00007f7fa6e55364 in ?? () from /usr/lib64/libQtCore.so.4\n#6  0x00007f7fa6e5577d in ?? () from /usr/lib64/libQtCore.so.4\n#7  0x00007f7fa6bc59ca in start_thread () from /lib64/libpthread.so.0\n#8  0x00007f7fa54dd70d in clone () from /lib64/libc.so.6\n#9  0x0000000000000000 in ?? ()\n\nThread 2 (Thread 0x7f7f912f2700 (LWP 3304)):\n[KCrash Handler]\n#5  0x00007f7fa542aa75 in raise () from /lib64/libc.so.6\n#6  0x00007f7fa542e5c0 in abort () from /lib64/libc.so.6\n#7  0x00007f7fa54644fb in ?? () from /lib64/libc.so.6\n#8  0x00007f7fa546e5b6 in ?? () from /lib64/libc.so.6\n#9  0x00007f7fa5474e83 in free () from /lib64/libc.so.6\n#10 0x00007f7fa6f5fb26 in QObject::~QObject() () from /usr/lib64/libQtCore.so.4\n#11 0x00007f7fa6f64085 in QSocketNotifier::~QSocketNotifier() () from\n/usr/lib64/libQtCore.so.4\n#12 0x00007f7fa6ee4bda in ?? () from /usr/lib64/libQtCore.so.4\n#13 0x00007f7fa6ee9933 in ?? () from /usr/lib64/libQtCore.so.4\n#14 0x00007f7fa6f25037 in ?? () from /usr/lib64/libQtCore.so.4\n#15 0x00007f7fa6ee486a in QProcess::waitForFinished(int) () from\n/usr/lib64/libQtCore.so.4\n#16 0x000000000052be2e in _start ()\n\nThread 1 (Thread 0x7f7faad7f760 (LWP 3284)):\n#0  0x00007f7fa54ed16e in ?? () from /lib64/libc.so.6\n#1  0x00007f7fa54763dc in ?? () from /lib64/libc.so.6\n#2  0x00007f7fa5474e78 in free () from /lib64/libc.so.6\n#3  0x00007f7fa6f5f18b in QObject::~QObject() () from /usr/lib64/libQtCore.so.4\n#4  0x00007f7fa6ee4bda in ?? () from /usr/lib64/libQtCore.so.4\n#5  0x00007f7fa6ee4d62 in QProcess::~QProcess() () from\n/usr/lib64/libQtCore.so.4\n#6  0x00007f7fa6f58a5c in QObjectPrivate::deleteChildren() () from\n/usr/lib64/libQtCore.so.4\n#7  0x00007f7fa6f5fae4 in QObject::~QObject() () from /usr/lib64/libQtCore.so.4\n#8  0x00007f7fa6e52fd9 in QThread::~QThread() () from /usr/lib64/libQtCore.so.4\n#9  0x000000000052b858 in _start ()",
+      "body_snippet": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\nCould this problem be caused by rattle()?\nI tried rattle some time ago",
+      "thread_id": "thread-90710ddbc9ce",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-ef27811d38d1",
+      "message_id": "<forum-165574-10306131@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-06-14T13:43:14Z",
+      "subject": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "subject_clean": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "in_reply_to": "<forum-165574-10306125@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\nJust in case this might be useful as well:\n\n-rw------- 1 alobo alobo 5623 2011-06-14 15:37 rkwardPE3284.tmp\n-rw------- 1 alobo alobo  164 2011-06-14 15:37 rkward.rbackendMT3305.tmp\nalobo at delia:/tmp/kde-alobo$ more rkwardPE3284.tmp\nrkward(3284)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know \"\" \nrkward(3284)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing\n\"/usr/share/mime/magic\"\nrkward(3284)/kdecore (services) KMimeTypeFactory::parseMagic: Now parsing\n\"/home/alobo/.local/share/mime/mag\nic\"\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName\nline 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/misc/rkxmlguisyncer.cpp\n- function uiRcFileChanged\nline 85\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/misc/rkxmlguisyncer.cpp\n- function uiRcFileChanged\nline 85\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/misc/rkxmlguisyncer.cpp\n- function uiRcFileChanged line 85\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at\n/build/buildd/rkward-0.5.6z+0.5.7/rkward/windows/rkcommandeditorwindow.cpp -\nfunction tryCompletion line 545\nAssert failed at\n/build/buildd/rkward-0.5.6z+0.5.7/rkward/windows/rkcommandeditorwindow.cpp -\nfunction tryCompletion line 545\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp\n- function packageName line 52\nAssert failed at /build/buildd/rkward-0.5.6z+0.",
+      "body_snippet": "The following forum message was posted by aloboaleu at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\nJust in case this might be useful as well:\n\n-rw------- 1 alobo alobo 5",
+      "thread_id": "thread-90710ddbc9ce",
+      "thread_depth": 1,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-91f326de3e57",
+      "message_id": "<forum-165574-10306867@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-06-14T18:02:38Z",
+      "subject": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "subject_clean": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "in_reply_to": "<forum-165574-10306131@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\n[quote]Could this problem be caused by rattle()? [/quote]\n\nNot in theory. But of course, in theory, you would not see this problem. All\nyou can do is try (i.e. detach package::rattle, before you save the workspace,\nnext time). I have installed rattle, here, but still could not reproduce the\nproblem, so far.\n\n---\n\nThe crash looks like it occurred while exiting RKWard. Is that correct?\nUnfortunately, there is not much to be seen from the backtrace, beyond that.\nLet me know, if you see this more often, though.\n\n---\n\n[quote]Assert failed\nat /build/buildd/rkward-0.5.6z+0.5.7/rkward/core/renvironmentobject.cpp - function\npackageName line 52[/quote]\n[quote]Assert failed\nat /build/buildd/rkward-0.5.6z+0.5.7/rkward/windows/rkcommandeditorwindow.cpp\n- function tryCompletion line 545 [/quote]\n\nOk, I've just fixed these. They were harmless, though.\n\n[quote]Assert failed\nat /build/buildd/rkward-0.5.6z+0.5.7/rkward/misc/rkxmlguisyncer.cpp - function\nuiRcFileChanged line 85 [/quote]\n\nThis still needs fixing, but I am fairly sure that it is also harmless.\n\nRegards\nThomas",
+      "body_snippet": "The following forum message was posted by tfry at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4523913:\n\n[quote]Could this problem be caused by rattle()? [/quote]\n\nNot in theory. B",
+      "thread_id": "thread-90710ddbc9ce",
+      "thread_depth": 2,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-db6e68187e77",
+      "message_id": "<4DF86180.5020806@stud.uni-heidelberg.de>",
+      "from_name": "Sebastian Lerch",
+      "from_email_hash": "a569052be7c7726200d87035602208f7f85fb56b52aa1afcd244cb26d16f953a",
+      "date": "2011-06-15T07:38:40Z",
+      "subject": "[rkward-users] Show A4 Paper dimension",
+      "subject_clean": "[rkward-users] Show A4 Paper dimension",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hallo,\n\nI am quite new to using rkward, but I came up with a question I could \nnot answer by research: Is there any way to show some indication of the \nprintable space? For example I know other editors which have a grey line \nwhere A4 paper would end. This would be interesting for me because I \nwill be producing larger sequences of R-Code which I will have to print \nout to add to my diploma thesis and I would like to keep the formatting \nas easy as possible.\n\nThus, my question is if there is any feature in rkward which I haven't \nfound yet which may be able to show the printable part of the editor \nwindow, or indicate where an A4 paper would end.\n\nThank you very much in advance for any answer.\nBest regards,\nSebastian Lerch",
+      "body_snippet": "Hallo,\n\nI am quite new to using rkward, but I came up with a question I could \nnot answer by research: Is there any way to show some indication of the \nprintable space? For example I know other editor",
+      "thread_id": "thread-db6e68187e77",
+      "thread_depth": 0,
+      "month": "2011-06"
+    },
+    {
+      "id": "msg-fb6c6abc0f7f",
+      "message_id": "<201106161548.30513.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-06-16T13:48:30Z",
+      "subject": "[rkward-users] Show A4 Paper dimension",
+      "subject_clean": "[rkward-users] Show A4 Paper dimension",
+      "in_reply_to": "<4DF86180.5020806@stud.uni-heidelberg.de>",
+      "references": [
+        "<4DF86180.5020806@stud.uni-heidelberg.de>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 15 June 2011, Sebastian Lerch wrote:\n> Thus, my question is if there is any feature in rkward which I haven't\n> found yet which may be able to show the printable part of the editor\n> window, or indicate where an A4 paper would end.\n\nthere is no feature to indicate the printable area. However, I assume you will \nbe using a fixed sized font for your code examples, right? So you can:\n1) Find out how many chars are printable in your desired font in your word-\nprocessor.\n2) Open a script window in RKWard. Select Settings->Configure Editor->Editing. \nSet the static word wrap to the required number of chars, and check the \"Show \nstatic word warp indicator\"-option.\nNote that this will display an indicator, even if static word wrap is not \nenabled, which is probably just what you are looking for.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110616/c933525e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 15 June 2011, Sebastian Lerch wrote:\n> Thus, my question is if there is any feature in rkward which I haven't\n> found yet which may be able to show the printable part of the editor\n>",
+      "thread_id": "thread-db6e68187e77",
+      "thread_depth": 1,
+      "month": "2011-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-5439081875b5",
+      "subject": "[rkward-users] Open scripts from console with rkward",
+      "message_count": 1,
+      "participants": [
+        "iamcelestial at dir.bg"
+      ],
+      "started": "2011-06-02T10:46:02Z",
+      "last_reply": "2011-06-02T10:46:02Z",
+      "root_message_id": "msg-5439081875b5"
+    },
+    {
+      "id": "thread-b1a3cb08dfce",
+      "subject": "[rkward-users] GUI Experience - Box Plots",
+      "message_count": 4,
+      "participants": [
+        "Liviu Andronic",
+        "Thomas Friedrichsmeier",
+        "Vikas Garud"
+      ],
+      "started": "2011-06-03T10:46:08Z",
+      "last_reply": "2011-06-03T17:26:35Z",
+      "root_message_id": "msg-b1a3cb08dfce"
+    },
+    {
+      "id": "thread-e2f40df38611",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "Vikas Garud"
+      ],
+      "started": "2011-06-03T12:35:44Z",
+      "last_reply": "2011-06-03T17:50:39Z",
+      "root_message_id": "msg-e2f40df38611"
+    },
+    {
+      "id": "thread-ce967ee0de00",
+      "subject": "[rkward-users] Pareto Analysis using RKward",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "Vikas Garud"
+      ],
+      "started": "2011-06-05T09:26:27Z",
+      "last_reply": "2011-06-05T10:11:26Z",
+      "root_message_id": "msg-ce967ee0de00"
+    },
+    {
+      "id": "thread-4c4ee0a7ca1b",
+      "subject": "[rkward-users] [Help] bulk commenting",
+      "message_count": 2,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2011-06-06T08:21:21Z",
+      "last_reply": "2011-06-06T09:07:36Z",
+      "root_message_id": "msg-4c4ee0a7ca1b"
+    },
+    {
+      "id": "thread-ce442f619b7d",
+      "subject": "[rkward-users] possible warning",
+      "message_count": 2,
+      "participants": [
+        "Thomas Friedrichsmeier",
+        "marcantonio"
+      ],
+      "started": "2011-06-08T16:51:35Z",
+      "last_reply": "2011-06-11T09:09:00Z",
+      "root_message_id": "msg-ce442f619b7d"
+    },
+    {
+      "id": "thread-90710ddbc9ce",
+      "subject": "[rkward-users] [Help] RE: Rkward windows do not refresh",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2011-06-14T13:39:33Z",
+      "last_reply": "2011-06-14T18:02:38Z",
+      "root_message_id": "msg-90710ddbc9ce"
+    },
+    {
+      "id": "thread-db6e68187e77",
+      "subject": "[rkward-users] Show A4 Paper dimension",
+      "message_count": 2,
+      "participants": [
+        "Sebastian Lerch",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-06-15T07:38:40Z",
+      "last_reply": "2011-06-16T13:48:30Z",
+      "root_message_id": "msg-db6e68187e77"
+    }
+  ]
+}

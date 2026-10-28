@@ -1,0 +1,160 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2011-08",
+  "messages": [
+    {
+      "id": "msg-c3c5a23d15eb",
+      "message_id": "<4E421B0F.8030000@libero.it>",
+      "from_name": "Peppe",
+      "from_email_hash": "0afef23179e0ee7816c40662a1b0e3e408bb9fab2b7bc840e458fd6a049e4484",
+      "date": "2011-08-10T05:45:51Z",
+      "subject": "[rkward-users] proposal",
+      "subject_clean": "[rkward-users] proposal",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi,\nI was thinking,  why notadd something like right click\"run \ninbatchmode\"for .R  files?\nCheers.\nPeppe.\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110810/ac4337cf/attachment.html>",
+      "body_snippet": "Hi,\nI was thinking,  why notadd something like right click\"run \ninbatchmode\"for .R  files?\nCheers.\nPeppe.\n\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.",
+      "thread_id": "thread-c3c5a23d15eb",
+      "thread_depth": 0,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-3fb8bf70fd06",
+      "message_id": "<201108100956.14429.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-08-10T07:56:14Z",
+      "subject": "[rkward-users] proposal",
+      "subject_clean": "[rkward-users] proposal",
+      "in_reply_to": "<4E421B0F.8030000@libero.it>",
+      "references": [
+        "<4E421B0F.8030000@libero.it>"
+      ],
+      "body_plain": "Hi,\n\nOn Wednesday 10 August 2011, Peppe wrote:\n> I was thinking,  why notadd something like right click\"run\n> inbatchmode\"for .R  files?\n\nyou mean in the file browser window? Yes, that sounds like it could be useful.\n\nCould you add that suggestion to our feature request tracker \n(http://sourceforge.net/tracker/?atid=459010&group_id=50231&func=browse)? It \noften takes a while until we get around to implement new features, and having \nideas listed in the tracker is the best way to make sure, we don't forget \nabout them.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110810/c6b894ec/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Wednesday 10 August 2011, Peppe wrote:\n> I was thinking,  why notadd something like right click\"run\n> inbatchmode\"for .R  files?\n\nyou mean in the file browser window? Yes, that sounds like it ",
+      "thread_id": "thread-c3c5a23d15eb",
+      "thread_depth": 1,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-8dc2f6f17882",
+      "message_id": "<CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>",
+      "from_name": "Andrey Chetverikov",
+      "from_email_hash": "e68d0be64d23f0616aa9335fc4edaf0ce8ba50b5757c742a445bf71c7e5e574c",
+      "date": "2011-08-12T14:10:26Z",
+      "subject": "[rkward-users] how to disable \"large plot warning\"",
+      "subject_clean": "[rkward-users] how to disable \"large plot warning\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nHow can I disable \"Large plot! Do you still want to store it in the\nhistory?\" warning?\n\nAll the best,\nAndrey",
+      "body_snippet": "Hi!\n\nHow can I disable \"Large plot! Do you still want to store it in the\nhistory?\" warning?\n\nAll the best,\nAndrey",
+      "thread_id": "thread-8dc2f6f17882",
+      "thread_depth": 0,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-1bc3bb1e798c",
+      "message_id": "<forum-165574-10594709@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-08-15T14:10:32Z",
+      "subject": "[rkward-users] [Help] Running RKWard on openSuse 11.3",
+      "subject_clean": "[rkward-users] [Help] Running RKWard on openSuse 11.3",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nHi friends,\n\nI installed RKWard from\nhttps://build.opensuse.org/package/binaries?package=rkward&project=devel%3Alangu\nages%3AR%3Asupplement&repository=openSUSE_11.3  and it actually seemed to install\nfine, since I didn't get any errors.\nStarting RKWard from a bash gives\n/usr/lib/kde4/libexec/rkward.frontend: symbol lookup error:\n/usr/lib/kde4/libexec/rkward.frontend: undefined symbol:\n_ZN9QListData11detach_growEPii\n\nAnyone knows what this means? Thanks a lot!",
+      "body_snippet": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nHi friends,\n\nI installed RKWard from\nhttps://build.opensuse.org/packa",
+      "thread_id": "thread-1bc3bb1e798c",
+      "thread_depth": 0,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-674cf1a69a21",
+      "message_id": "<forum-165574-10594711@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-08-15T14:14:11Z",
+      "subject": "[rkward-users] [Help] RE: Running RKWard on openSuse 11.3",
+      "subject_clean": "[rkward-users] [Help] RE: Running RKWard on openSuse 11.3",
+      "in_reply_to": "<forum-165574-10594709@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nI am sorry, this would be the correct information for the repository used:\nhttp://download.opensuse.org/repositories/devel:/languages:/R:/supplement/openSU\nSE_Factory/",
+      "body_snippet": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nI am sorry, this would be the correct information for the repository ",
+      "thread_id": "thread-1bc3bb1e798c",
+      "thread_depth": 1,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-d5045ae69c56",
+      "message_id": "<forum-165574-10596701@sourceforge.net>",
+      "from_name": "SourceForge.net",
+      "from_email_hash": "a00fbc406e5a8f2fa563d6a41c82b745e656131220b5efa1c8a3ecd5402f273d",
+      "date": "2011-08-16T09:27:51Z",
+      "subject": "[rkward-users] [Help] RE: Running RKWard on openSuse 11.3",
+      "subject_clean": "[rkward-users] [Help] RE: Running RKWard on openSuse 11.3",
+      "in_reply_to": "<forum-165574-10594711@sourceforge.net>",
+      "references": [],
+      "body_plain": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nOK, this is embarrassing.....I think the repo I posted is for openSUSE 11.4\nand I still use 11.3. RKWard works now after picking the .rpm from the correct\nrepo (...devel:/languages:/R:/supplement/openSUSE_11.3).\n\nSorry for wasting time and space ;-)",
+      "body_snippet": "The following forum message was posted by julianhaas at http://sourceforge.net/projects/rkward/forums/forum/165574/topic/4657119:\n\nOK, this is embarrassing.....I think the repo I posted is for openSUS",
+      "thread_id": "thread-1bc3bb1e798c",
+      "thread_depth": 2,
+      "month": "2011-08"
+    },
+    {
+      "id": "msg-83935ba8feff",
+      "message_id": "<201108271301.29281.thomas.friedrichsmeier@ruhr-uni-bochum.de>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "5788a71988abb9472ec6ea7525cade7538b3cb3d32178ced51c7b1e82ef11760",
+      "date": "2011-08-27T11:01:29Z",
+      "subject": "[rkward-users] how to disable \"large plot warning\"",
+      "subject_clean": "[rkward-users] how to disable \"large plot warning\"",
+      "in_reply_to": "<CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>",
+      "references": [
+        "<CACLjke60UfZ+-PrfqK951mkvdHWwYLZ5tbz1U+gVP2qduQ-3ng@mail.gmail.com>"
+      ],
+      "body_plain": "Hi!\n\nSorry for the long delay.\n\nOn Friday 12 August 2011, Andrey Chetverikov wrote:\n> How can I disable \"Large plot! Do you still want to store it in the\n> history?\" warning?\n\nYou can configure the limit using \"Settings->Configure RKWard->Onscreen \nGraphics->Maximum size of a single recorded plot\".\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 198 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20110827/e2bda615/attachment.sig>",
+      "body_snippet": "Hi!\n\nSorry for the long delay.\n\nOn Friday 12 August 2011, Andrey Chetverikov wrote:\n> How can I disable \"Large plot! Do you still want to store it in the\n> history?\" warning?\n\nYou can configure the li",
+      "thread_id": "thread-8dc2f6f17882",
+      "thread_depth": 1,
+      "month": "2011-08"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-c3c5a23d15eb",
+      "subject": "[rkward-users] proposal",
+      "message_count": 2,
+      "participants": [
+        "Peppe",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-08-10T05:45:51Z",
+      "last_reply": "2011-08-10T07:56:14Z",
+      "root_message_id": "msg-c3c5a23d15eb"
+    },
+    {
+      "id": "thread-8dc2f6f17882",
+      "subject": "[rkward-users] how to disable \"large plot warning\"",
+      "message_count": 2,
+      "participants": [
+        "Andrey Chetverikov",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2011-08-12T14:10:26Z",
+      "last_reply": "2011-08-27T11:01:29Z",
+      "root_message_id": "msg-8dc2f6f17882"
+    },
+    {
+      "id": "thread-1bc3bb1e798c",
+      "subject": "[rkward-users] [Help] Running RKWard on openSuse 11.3",
+      "message_count": 3,
+      "participants": [
+        "SourceForge.net"
+      ],
+      "started": "2011-08-15T14:10:32Z",
+      "last_reply": "2011-08-16T09:27:51Z",
+      "root_message_id": "msg-1bc3bb1e798c"
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "list": "rkward-users",
+  "description": "",
+  "month": "2024-06",
+  "messages": [
+    {
+      "id": "msg-8f10ddcdca16",
+      "message_id": "<CAMqnA+jeysZrEKobEtbjhfmi+YMnbqyVoibWj7MTqncfZka_0g@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-06-02T12:47:37Z",
+      "subject": "Problem with \"rk.get.structure.global\"",
+      "subject_clean": "Problem with \"rk.get.structure.global\"",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi, I've been getting:\n\nError: object 'x' not found\nWarning in .Call(\"rk.get.structure.global\", as.character(name),\nas.integer(envlevel),  :\n  failure to get object x\n\nWhen using package \"ggsurvey\"\n\nWith its function: ggbarcrosstabs3d_svy\n\nIt uses the packages \"ggplot2\" and  \"survey\".\n\nCould it be a problem with \"rk.get.structure.global\"?\n\nThe function \"svyby()\" from package survey works fine though.\n\nI have installed:\n\n\n   - R. Version 0.7.5z+0.7.6+devel3. (CRAN)\n\nThanks for your help.\n\nRegards\n\nAlfonso\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240602/cf32d018/attachment.htm>",
+      "body_snippet": "Hi, I've been getting:\n\nError: object 'x' not found\nWarning in .Call(\"rk.get.structure.global\", as.character(name),\nas.integer(envlevel),  :\n  failure to get object x\n\nWhen using package \"ggsurvey\"\n\nW",
+      "thread_id": "thread-8f10ddcdca16",
+      "thread_depth": 0,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-2873038c2445",
+      "message_id": "<20240602202551.28431032@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-02T18:25:51Z",
+      "subject": "Problem with \"rk.get.structure.global\"",
+      "subject_clean": "Problem with \"rk.get.structure.global\"",
+      "in_reply_to": "<CAMqnA+jeysZrEKobEtbjhfmi+YMnbqyVoibWj7MTqncfZka_0g@mail.gmail.com>",
+      "references": [
+        "<CAMqnA+jeysZrEKobEtbjhfmi+YMnbqyVoibWj7MTqncfZka_0g@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sun, 2 Jun 2024 06:47:37 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> Error: object 'x' not found\n> Warning in .Call(\"rk.get.structure.global\", as.character(name),\n> as.integer(envlevel),  :\n>   failure to get object x\n\nthis, is a command that gets run internally, *after* the actual command\nthat you have run. Errors at this point are usually mostly harmless\n(although, of course they should not happen).\n\nIn this case it's probably that we somehow failed to keep track, which\nobjects exist in the workspace, and are trying to look up a\nnon-existant object \"x\". IIRC, I have recently fixed a buglet in that\narea in the Qt6 branch. With some luck it's already solved.\n\nCould you come up with step-by-step instuctions on how to trigger this?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240602/6e3c3f6e/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sun, 2 Jun 2024 06:47:37 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> Error: object 'x' not found\n> Warning in .Call(\"rk.get.structure.global\", as.character(name),\n> as",
+      "thread_id": "thread-8f10ddcdca16",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-210df5b5f9ee",
+      "message_id": "<20240613155354.4c570b7d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-13T13:56:23Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": null,
+      "references": [],
+      "body_plain": "Hi!\n\nHere's a short update on current progress towards a KF6 (aka KDE 6)\nbased release of RKWard, and a call to start testing.\n\nAs a bit of background, the transition from KF5 to KF6 is complicated\nby the fact, that some Linux distributions do not ship KF6 libraries,\nyet, and may not have them in their stable releases for a long time,\nwhile other distributions are already shipping some of our dependencies\n(importantly, kate) in a KF6-only version. To address this, I worked on\ngetting out AppImage builds to a state that is (as far a I know) ready\nfor productive use. Importantly, the AppImages can now be used with a\nfull featured R installation on the host system.\n\nOf course, we plan on having Ubuntu daily builds, again, too, once\nbackported KF6-libraries are available.\n\nAppImage packages - as well as Windows and Mac builds - are available\nfrom https://cdn.kde.org/ci-builds/education/rkward/master/ . Note that\nthese packages are generated, automatically, straight from the\ndevelopment sources, and individual builds have not undergone human\ntesting. That said, no major problems are currently expected on Linux\nand Windows, and we'll need your help to detect an address remaining\nissues!\n\nUnfortunately, on MacOS, the situation is currently more dire. While\npackages exist, these have not been tested at all. Since a number of\nlarge changes have been done to platform-dependent code regarding the\nstartup procedure, there is a fairly high probability that these build\nwill quite simply fail to start at all (but no major issues are\nexpected once that difficulty is overcome). The problem is quite simply\nthat we do not have the hardware for testing and fixing these builds.\n\n*If you own a Mac, we want your help!* The first step will be to\ndownload and (try to) run the .dmg, and report, what you see. Based on\nthat, and depending on how much time you're will to invest, I'll be\ngoing to ask you for more info for diagnostics. Thanks!\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240613/f6cd26cd/attachment.sig>",
+      "body_snippet": "Hi!\n\nHere's a short update on current progress towards a KF6 (aka KDE 6)\nbased release of RKWard, and a call to start testing.\n\nAs a bit of background, the transition from KF5 to KF6 is complicated\nby",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 0,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-d64ca2add311",
+      "message_id": "<CAMqnA+hzQji6FTwenKetbsfm-eoQftLjmbJ6OgotyjkZ2=acvA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-06-16T14:16:01Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240613155354.4c570b7d@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>"
+      ],
+      "body_plain": "Hi.\nI've been trying out this new build with AppImage on linux and I've noticed\nthat the filter search box in the workspace frame and in the dialog boxes\nis not working at all (the icon to hide/show it is also missing).\nI hope it helps.\nThank you,\nRegards\nAlfonso\n\nEl jue, 13 jun 2024 a la(s) 8:12 a.m., Thomas Friedrichsmeier (\nthomas.friedrichsmeier at kdemail.net) escribió:\n\n> Hi!\n>\n> Here's a short update on current progress towards a KF6 (aka KDE 6)\n> based release of RKWard, and a call to start testing.\n>\n> As a bit of background, the transition from KF5 to KF6 is complicated\n> by the fact, that some Linux distributions do not ship KF6 libraries,\n> yet, and may not have them in their stable releases for a long time,\n> while other distributions are already shipping some of our dependencies\n> (importantly, kate) in a KF6-only version. To address this, I worked on\n> getting out AppImage builds to a state that is (as far a I know) ready\n> for productive use. Importantly, the AppImages can now be used with a\n> full featured R installation on the host system.\n>\n> Of course, we plan on having Ubuntu daily builds, again, too, once\n> backported KF6-libraries are available.\n>\n> AppImage packages - as well as Windows and Mac builds - are available\n> from https://cdn.kde.org/ci-builds/education/rkward/master/ . Note that\n> these packages are generated, automatically, straight from the\n> development sources, and individual builds have not undergone human\n> testing. That said, no major problems are currently expected on Linux\n> and Windows, and we'll need your help to detect an address remaining\n> issues!\n>\n> Unfortunately, on MacOS, the situation is currently more dire. While\n> packages exist, these have not been tested at all. Since a number of\n> large changes have been done to platform-dependent code regarding the\n> startup procedure, there is a fairly high probability that these build\n> will quite simply fail to start at all (but no major issues are\n> expected once that difficulty is overcome). The problem is quite simply\n> that we do not have the hardware for testing and fixing these builds.\n>\n> *If you own a Mac, we want your help!* The first step will be to\n> download and (try to) run the .dmg, and report, what you see. Based on\n> that, and depending on how much time you're will to invest, I'll be\n> going to ask you for more info for diagnostics. Thanks!\n>\n> Regards\n> Thomas\n>\n\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240616/d33119d9/attachment.htm>",
+      "body_snippet": "Hi.\nI've been trying out this new build with AppImage on linux and I've noticed\nthat the filter search box in the workspace frame and in the dialog boxes\nis not working at all (the icon to hide/show i",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-fda608742ccb",
+      "message_id": "<20240616213230.26967b6d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-16T19:32:30Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<CAMqnA+hzQji6FTwenKetbsfm-eoQftLjmbJ6OgotyjkZ2=acvA@mail.gmail.com>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<CAMqnA+hzQji6FTwenKetbsfm-eoQftLjmbJ6OgotyjkZ2=acvA@mail.gmail.com>"
+      ],
+      "body_plain": "Hi,\n\nOn Sun, 16 Jun 2024 08:16:01 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I've been trying out this new build with AppImage on linux and I've\n> noticed that the filter search box in the workspace frame and in the\n> dialog boxes is not working at all\n\nthat should already be fixed in the most recent AppImage build (but\nafter my call for testing, and not yet in the most recent Windows\nbuild).\n\n> (the icon to hide/show it is also\n> missing). I hope it helps.\n\nI _hope_ that this - and all other - missing icons are already fixed in\nthat build, too. They all work for me on my system, anyway, so it would\nbe great, if you could test that one, again.\n\nThanks!\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240616/d9ece3bd/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Sun, 16 Jun 2024 08:16:01 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I've been trying out this new build with AppImage on linux and I've\n> noticed that the filter sea",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 2,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-df5b225be263",
+      "message_id": "<4737317.vXUDI8C0e8@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-17T12:24:37Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240613155354.4c570b7d@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>"
+      ],
+      "body_plain": "Dne čtvrtek 13. června 2024 15:56:23, SELČ, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> Here's a short update on current progress towards a KF6 (aka KDE 6)\n> based release of RKWard, and a call to start testing.\n> As a bit of background, the transition from KF5 to KF6 is complicated\n> by the fact, that some Linux distributions do not ship KF6 libraries,\n> yet, and may not have them in their stable releases for a long time,\n> while other distributions are already shipping some of our dependencies\n> (importantly, kate) in a KF6-only version. To address this, I worked on\n> getting out AppImage builds to a state that is (as far a I know) ready\n> for productive use. Importantly, the AppImages can now be used with a\n> full featured R installation on the host system.\n> Of course, we plan on having Ubuntu daily builds, again, too, once\n> backported KF6-libraries are available.\n> AppImage packages - as well as Windows and Mac builds - are available\n> from https://cdn.kde.org/ci-builds/education/rkward/master/ . Note\n> that these packages are generated, automatically, straight from the\n> development sources, and individual builds have not undergone human\n> testing. That said, no major problems are currently expected on Linux\n> and Windows, and we'll need your help to detect an address remaining\n> issues!\n\nHello,\njust to be sure, I suppose I can take latest master from\n<https://invent.kde.org/education/rkward> right?\nI'd create openSUSE RPM package as is\n<https://build.opensuse.org/package/show/openSUSE:Factory/rkward>\nYours,\nV.\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240617/ee4e0051/attachment.sig>",
+      "body_snippet": "Dne čtvrtek 13. června 2024 15:56:23, SELČ, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> Here's a short update on current progress towards a KF6 (aka KDE 6)\n> based release of RKWard, and a call to start",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-bdcf7f1b480b",
+      "message_id": "<20240617161220.0651fcf2@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-17T14:12:20Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<4737317.vXUDI8C0e8@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<4737317.vXUDI8C0e8@localhost>"
+      ],
+      "body_plain": "Hi,\n\nOn Mon, 17 Jun 2024 14:24:37 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> just to be sure, I suppose I can take latest master from\n> <https://invent.kde.org/education/rkward> right?\n\nyes, exactly!\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240617/4cf66157/attachment.sig>",
+      "body_snippet": "Hi,\n\nOn Mon, 17 Jun 2024 14:24:37 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> just to be sure, I suppose I can take latest master from\n> <https://invent.kde.org/education/rkwa",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 2,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-3ac0105d971e",
+      "message_id": "<3305376.Ra1z1o7ztC@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-18T08:06:37Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240617161220.0651fcf2@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<4737317.vXUDI8C0e8@localhost>",
+        "<20240617161220.0651fcf2@booklife>"
+      ],
+      "body_plain": "Dne pondělí 17. června 2024 16:12:20, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Mon, 17 Jun 2024 14:24:37 +0200 Vojtěch Zeisek wrote:\n> \n> > just to be sure, I suppose I can take latest master\n> > from <https://invent.kde.org/education/rkward> right?\n> \n> yes, exactly!\n\nSo far I'm struggling with compilation in\n<https://build.opensuse.org/package/show/home:vojtaeus/rkward>\nClick to \"failed\" leads to build log. Compilation is described in rkward.spec \nfile. I hope I'll solve it soon... ;-)\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240618/839c950e/attachment.sig>",
+      "body_snippet": "Dne pondělí 17. června 2024 16:12:20, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Mon, 17 Jun 2024 14:24:37 +0200 Vojtěch Zeisek wrote:\n> \n> > just to be sure, I suppose I can take latest master\n> > ",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 3,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-54741257dcdb",
+      "message_id": "<4204829.2qObnfrhBk@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-18T11:36:15Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<3305376.Ra1z1o7ztC@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240617161220.0651fcf2@booklife>",
+        "<3305376.Ra1z1o7ztC@localhost>"
+      ],
+      "body_plain": "Dne úterý 18. června 2024 10:06:37, SELČ jste napsal(a):\n> Dne pondělí 17. června 2024 16:12:20, SELČ, Thomas\n> Friedrichsmeier napsal(a):\n> > On Mon, 17 Jun 2024 14:24:37 +0200 Vojtěch Zeisek wrote:\n> > > just to be sure, I suppose I can take latest master\n> > > from <https://invent.kde.org/education/rkward> right?\n> > \n> > yes, exactly!\n> \n> So far I'm struggling with compilation in\n> <https://build.opensuse.org/package/show/home:vojtaeus/rkward>\n> Click to \"failed\" leads to build log. Compilation is described\n> in rkward.spec file. I hope I'll solve it soon... ;-)\n\nOK, so it compiles, but during the startup I get an error \"The backend process \nfailed to start with exit code 99, message: 'Backend lib not specified!'.\" \nHmmm... I'm not sure if it cames from some mistake in packaging or not.\nKnown problems with packaging:\n* No correctly created lang package (my problem).\n* Some files are duplicated (IMHO problem in compilation).\nThe rest is unimportant.\nWell, the RPM is available for download, but before real testing I must find \nout why it doesn't find R backend...\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240618/6d936c0b/attachment.sig>",
+      "body_snippet": "Dne úterý 18. června 2024 10:06:37, SELČ jste napsal(a):\n> Dne pondělí 17. června 2024 16:12:20, SELČ, Thomas\n> Friedrichsmeier napsal(a):\n> > On Mon, 17 Jun 2024 14:24:37 +0200 Vojtěch Zeisek wrote:\n",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 4,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-c86a97cc2e42",
+      "message_id": "<20240618160311.5e5ad7fe@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-18T14:03:11Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<4204829.2qObnfrhBk@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240617161220.0651fcf2@booklife>",
+        "<3305376.Ra1z1o7ztC@localhost>",
+        "<4204829.2qObnfrhBk@localhost>"
+      ],
+      "body_plain": "On Tue, 18 Jun 2024 13:36:15 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> OK, so it compiles, but during the startup I get an error \"The\n> backend process failed to start with exit code 99, message: 'Backend\n> lib not specified!'.\" Hmmm... I'm not sure if it cames from some\n> mistake in packaging or not.\n\nSee lines 255-257 in rkward/rbackend/rkfrontendtransmitter.cpp . We're\ntried to find the file rkward.rbackend.lib.so, here. (Starting with\n\"--debug-level 4\" will log the attempted paths to\n/tmp/rkward.frontend.log).\n\n> Known problems with packaging:\n> * No correctly created lang package (my problem).\n> * Some files are duplicated (IMHO problem in compilation).\n\nWhich ones?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240618/df151796/attachment.sig>",
+      "body_snippet": "On Tue, 18 Jun 2024 13:36:15 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> OK, so it compiles, but during the startup I get an error \"The\n> backend process failed to start with exit c",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 5,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-4df5d074ef01",
+      "message_id": "<20240618173826.46264c1b@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-18T15:38:26Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240618160311.5e5ad7fe@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240617161220.0651fcf2@booklife>",
+        "<3305376.Ra1z1o7ztC@localhost>",
+        "<4204829.2qObnfrhBk@localhost>",
+        "<20240618160311.5e5ad7fe@booklife>"
+      ],
+      "body_plain": "On Tue, 18 Jun 2024 16:03:11 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n> On Tue, 18 Jun 2024 13:36:15 +0200\n> Vojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> > OK, so it compiles, but during the startup I get an error \"The\n> > backend process failed to start with exit code 99, message: 'Backend\n> > lib not specified!'.\" Hmmm... I'm not sure if it cames from some\n> > mistake in packaging or not.  \n> \n> See lines 255-257 in rkward/rbackend/rkfrontendtransmitter.cpp . We're\n> tried to find the file rkward.rbackend.lib.so, here. (Starting with\n> \"--debug-level 4\" will log the attempted paths to\n> /tmp/rkward.frontend.log).\n\nI believe we may be missing the following line:\n\n  if (backend_lib.isEmpty()) backend_lib =\n  findBackendLibAtPath(QFileInfo(backend_executable).absolutePath() +\n  \"/../lib\");\n\ndoes it help to add this as line 227 (all in one line)?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240618/ac041da3/attachment.sig>",
+      "body_snippet": "On Tue, 18 Jun 2024 16:03:11 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n> On Tue, 18 Jun 2024 13:36:15 +0200\n> Vojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n>",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 6,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-9bd079b65f7d",
+      "message_id": "<8228089.xXAyS205AC@svarog>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-19T08:08:17Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240618160311.5e5ad7fe@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<4204829.2qObnfrhBk@localhost>",
+        "<20240618160311.5e5ad7fe@booklife>"
+      ],
+      "body_plain": "Dne úterý 18. června 2024 16:03:11, SELČ, Thomas Friedrichsmeier napsal(a):\n> > * Some files are duplicated (IMHO problem in compilation).\n> \n> Which ones?\n\nI get this warning:\n\n[  116s] rkward.x86_64: W: files-duplicate /usr/share/locale/lt/LC_MESSAGES/rkward__plots.mo /usr/share/locale/lt/LC_MESSAGES/rkward__embedded.mo:/usr/share/locale/lt/LC_MESSAGES/rkward__graphics_device.mo:/usr/share/locale/lt/LC_MESSAGES/rkward__item_response_theory.mo:/usr/share/locale/lt/LC_MESSAGES/rkward__pages.mo\n[  116s] rkward.x86_64: W: files-duplicate /usr/share/locale/zh_TW/LC_MESSAGES/rkward__plots.mo /usr/share/locale/zh_TW/LC_MESSAGES/rkward__analysis.mo:/usr/share/locale/zh_TW/LC_MESSAGES/rkward__data.mo:/usr/share/locale/zh_TW/LC_MESSAGES/rkward__distributions.mo:/usr/share/locale/zh_TW/LC_MESSAGES/rkward__embedded.mo:/usr/share/locale/zh_TW/LC_MESSAGES/rkward__graphics_device.mo:(and 3 more)\n[  116s] rkward.x86_64: W: files-duplicate /usr/share/rkward/data/multi_input.js /usr/share/rkward/data/level_select.js\n\nAnd recommendation\n\n[  116s] Your package contains duplicated files that are not hard- or symlinks. You\n[  116s] should use the %fdupes macro to link the files to one.\n\n(the macro is basically doing simlinks)\n\nAnother minor warning\n\n[  116s] rkward.x86_64: W: gzipped-svg-icon /usr/share/icons/hicolor/scalable/apps/rkward.svgz\n[  116s] Not all desktop environments that support SVG icons support them gzipped\n[  116s] (.svgz). Install the icon as plain uncompressed SVG.\n\nSorry, I'll have look at at the rest later afternoon or tomorrow.\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240619/ec981f79/attachment.sig>",
+      "body_snippet": "Dne úterý 18. června 2024 16:03:11, SELČ, Thomas Friedrichsmeier napsal(a):\n> > * Some files are duplicated (IMHO problem in compilation).\n> \n> Which ones?\n\nI get this warning:\n\n[  116s] rkward.x86_64",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 6,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-9c6142b55e1d",
+      "message_id": "<2154551.ha1ItBWQUk@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-20T11:37:08Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240618173826.46264c1b@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240618160311.5e5ad7fe@booklife>",
+        "<20240618173826.46264c1b@booklife>"
+      ],
+      "body_plain": "Dne úterý 18. června 2024 17:38:26, SELČ jste napsal(a):\n> On Tue, 18 Jun 2024 16:03:11 +0200 Thomas Friedrichsmeier wrote:\n> > On Tue, 18 Jun 2024 13:36:15 +0200 wrote:\n> > > OK, so it compiles, but during the startup I get an error\n> > > \"The backend process failed to start with exit code 99,\n> > > message: 'Backend lib not specified!'.\" Hmmm... I'm not\n> > > sure if it cames from some mistake in packaging or not.\n> > \n> > See lines 255-257 in rkward/rbackend/rkfrontendtransmitter.cpp .\n> > We're tried to find the file rkward.rbackend.lib.so, here.\n> > (Starting with \"--debug-level 4\" will log the attempted paths\n> > to /tmp/rkward.frontend.log).\n> \n> I believe we may be missing the following line:\n>   if (backend_lib.isEmpty()) backend_lib =\n>   findBackendLibAtPath(QFileInfo(backend_executable).absolutePath() +\n>   \"/../lib\");\n> does it help to add this as line 227 (all in one line)?\n\nI downloaded newest master and did edit like follows:\n\n$ diff -u rkward-0.7.9/rkward/rbackend/rkfrontendtransmitter.cpp~ rkward-0.7.9/rkward/rbackend/rkfrontendtransmitter.cpp\n--- rkward-0.7.9/rkward/rbackend/rkfrontendtransmitter.cpp~     2024-06-20 13:19:47.670841804 +0200 ### ORIGINAL\n+++ rkward-0.7.9/rkward/rbackend/rkfrontendtransmitter.cpp      2024-06-20 13:19:47.674175191 +0200 ### EDITED\n@@ -254,6 +254,7 @@\n        args.append (QStringLiteral(\"--server-name=\") + server->fullServerName ().toUtf8 ().toPercentEncoding ());\n        args.append (QStringLiteral(\"--rkd-server-name=\") + rkd_transmitter->serverName ().toUtf8 ().toPercentEncoding ());\n        args.append (QStringLiteral(\"--data-dir=\") + RKSettingsModuleGeneral::filesPath ().toUtf8 ().toPercentEncoding ());\n+       if (backend_lib.isEmpty()) backend_lib = findBackendLibAtPath(QFileInfo(backend_executable).absolutePath() + \"/../lib\");\n        args.append (QStringLiteral(\"--locale-dir=\") + localeDir ().toUtf8 ().toPercentEncoding ());\n        RK_DO({\n                RK_DEBUG(RBACKEND, DL_DEBUG, \"R binary: %s\", qPrintable(RKSessionVars::RBinary()));\n\nAnd the result is the same, it doesn't find the R backend. :-(\nThe RPM is available from <https://build.opensuse.org/package/show/home:vojtaeus/rkward>\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/2d399db8/attachment.sig>",
+      "body_snippet": "Dne úterý 18. června 2024 17:38:26, SELČ jste napsal(a):\n> On Tue, 18 Jun 2024 16:03:11 +0200 Thomas Friedrichsmeier wrote:\n> > On Tue, 18 Jun 2024 13:36:15 +0200 wrote:\n> > > OK, so it compiles, but ",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 7,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-e7119a3f440a",
+      "message_id": "<20240620153413.6fd916c0@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-20T13:34:13Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<2154551.ha1ItBWQUk@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240618160311.5e5ad7fe@booklife>",
+        "<20240618173826.46264c1b@booklife>",
+        "<2154551.ha1ItBWQUk@localhost>"
+      ],
+      "body_plain": "On Thu, 20 Jun 2024 13:37:08 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> I downloaded newest master and did edit like follows:\n\n[...]\n\nthat is too far down in the code. The location is passed via an\nenvironment variable at line 232.\n\nI have now simply added that line to master, please give that a try.\nThanks!\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/3914c904/attachment.sig>",
+      "body_snippet": "On Thu, 20 Jun 2024 13:37:08 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> I downloaded newest master and did edit like follows:\n\n[...]\n\nthat is too far down in the code. The lo",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 8,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-5f4010b147fa",
+      "message_id": "<3789947.0U7UIu27NP@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-20T14:31:22Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240620153413.6fd916c0@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<2154551.ha1ItBWQUk@localhost>",
+        "<20240620153413.6fd916c0@booklife>"
+      ],
+      "body_plain": "Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> [...]\n> > I downloaded newest master and did edit like follows:\n> [...]\n> that is too far down in the code. The location is\n> passed via an environment variable at line 232.\n> I have now simply added that line to master, please give that a try.\n\nSorry, I didn't get correctly what edit You mean.\nI downloaded new master and I keep getting the same error. :-(\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/702033af/attachment.sig>",
+      "body_snippet": "Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> [...]\n> > I downloaded newest master and did edit like follows:\n> [...]\n> th",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 9,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-08b9b623dd55",
+      "message_id": "<20240620171812.3bdcf3f2@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-20T15:18:12Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<3789947.0U7UIu27NP@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<2154551.ha1ItBWQUk@localhost>",
+        "<20240620153413.6fd916c0@booklife>",
+        "<3789947.0U7UIu27NP@localhost>"
+      ],
+      "body_plain": "On Thu, 20 Jun 2024 16:31:22 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n\n> Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas Friedrichsmeier\n> napsal(a):\n> > On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> > [...]  \n> > > I downloaded newest master and did edit like follows:  \n> > [...]\n> > that is too far down in the code. The location is\n> > passed via an environment variable at line 232.\n> > I have now simply added that line to master, please give that a\n> > try.  \n> \n> Sorry, I didn't get correctly what edit You mean.\n> I downloaded new master and I keep getting the same error. :-(\n\nOk, thanks.\n\nCould you run with\n  rkward --debug-level 4\nand post the contents of /tmp/rkward.frontend, afterwards?\n\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/e1634108/attachment.sig>",
+      "body_snippet": "On Thu, 20 Jun 2024 16:31:22 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n\n> Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas Friedrichsmeier\n> napsal(a):\n> > On Thu, 20 Jun 2024 13:",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 10,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-94315e799a0e",
+      "message_id": "<3700391.FbIMLqzPnS@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-20T15:29:20Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240620171812.3bdcf3f2@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<3789947.0U7UIu27NP@localhost>",
+        "<20240620171812.3bdcf3f2@booklife>"
+      ],
+      "body_plain": "Dne čtvrtek 20. června 2024 17:18:12, SELČ jste napsal(a):\n> On Thu, 20 Jun 2024 16:31:22 +0200 wrote:\n> > Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas\n> > Friedrichsmeier napsal(a):\n> > > On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> > > [...]\n> > > > I downloaded newest master and did edit like follows:\n> > > [...]\n> > > that is too far down in the code. The location is\n> > > passed via an environment variable at line 232.\n> > > I have now simply added that line to master,\n> > > please give that a try.\n> > \n> > Sorry, I didn't get correctly what edit You mean.\n> > I downloaded new master and I keep getting the same error. :-(\n> \n> Ok, thanks.\n> Could you run with\n>   rkward --debug-level 4\n> and post the contents of /tmp/rkward.frontend, afterwards?\n\nSure, here it is: <https://paste.opensuse.org/pastes/2aa95dddcd2a>\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/0b6b0f8b/attachment.sig>",
+      "body_snippet": "Dne čtvrtek 20. června 2024 17:18:12, SELČ jste napsal(a):\n> On Thu, 20 Jun 2024 16:31:22 +0200 wrote:\n> > Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas\n> > Friedrichsmeier napsal(a):\n> > > On Th",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 11,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-d9b60a95df3e",
+      "message_id": "<20240620174740.18201251@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-20T15:47:40Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<3700391.FbIMLqzPnS@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<3789947.0U7UIu27NP@localhost>",
+        "<20240620171812.3bdcf3f2@booklife>",
+        "<3700391.FbIMLqzPnS@localhost>"
+      ],
+      "body_plain": "Ah, I see now. librkward.rbackend.lib.so is installed to /usr/lib64,\nbut we're trying to find it in /usr/lib.\n\nNot quite sure what is the correct way to fix this (and no time, right\nto), but that's what goes wrong.\n\nThomas\n\nOn Thu, 20 Jun 2024 17:29:20 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n\n> Dne čtvrtek 20. června 2024 17:18:12, SELČ jste napsal(a):\n> > On Thu, 20 Jun 2024 16:31:22 +0200 wrote:  \n> > > Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas\n> > > Friedrichsmeier napsal(a):  \n> > > > On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> > > > [...]  \n> > > > > I downloaded newest master and did edit like follows:  \n> > > > [...]\n> > > > that is too far down in the code. The location is\n> > > > passed via an environment variable at line 232.\n> > > > I have now simply added that line to master,\n> > > > please give that a try.  \n> > > \n> > > Sorry, I didn't get correctly what edit You mean.\n> > > I downloaded new master and I keep getting the same error. :-(  \n> > \n> > Ok, thanks.\n> > Could you run with\n> >   rkward --debug-level 4\n> > and post the contents of /tmp/rkward.frontend, afterwards?  \n> \n> Sure, here it is: <https://paste.opensuse.org/pastes/2aa95dddcd2a>\n> \n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/60ef3f90/attachment.sig>",
+      "body_snippet": "Ah, I see now. librkward.rbackend.lib.so is installed to /usr/lib64,\nbut we're trying to find it in /usr/lib.\n\nNot quite sure what is the correct way to fix this (and no time, right\nto), but that's wh",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 12,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-0173a7bb0ac6",
+      "message_id": "<20240620222440.28bea61e@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-20T20:24:40Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240620174740.18201251@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<3789947.0U7UIu27NP@localhost>",
+        "<20240620171812.3bdcf3f2@booklife>",
+        "<3700391.FbIMLqzPnS@localhost>",
+        "<20240620174740.18201251@booklife>"
+      ],
+      "body_plain": "Should be fixed in master, now.\n\nThomas\n\nOn Thu, 20 Jun 2024 17:47:40 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n\n> Ah, I see now. librkward.rbackend.lib.so is installed to /usr/lib64,\n> but we're trying to find it in /usr/lib.\n> \n> Not quite sure what is the correct way to fix this (and no time, right\n> to), but that's what goes wrong.\n> \n> Thomas\n> \n> On Thu, 20 Jun 2024 17:29:20 +0200\n> Vojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> \n> > Dne čtvrtek 20. června 2024 17:18:12, SELČ jste napsal(a):  \n> > > On Thu, 20 Jun 2024 16:31:22 +0200 wrote:    \n> > > > Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas\n> > > > Friedrichsmeier napsal(a):    \n> > > > > On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> > > > > [...]    \n> > > > > > I downloaded newest master and did edit like follows:    \n> > > > > [...]\n> > > > > that is too far down in the code. The location is\n> > > > > passed via an environment variable at line 232.\n> > > > > I have now simply added that line to master,\n> > > > > please give that a try.    \n> > > > \n> > > > Sorry, I didn't get correctly what edit You mean.\n> > > > I downloaded new master and I keep getting the same error. :-(\n> > > >   \n> > > \n> > > Ok, thanks.\n> > > Could you run with\n> > >   rkward --debug-level 4\n> > > and post the contents of /tmp/rkward.frontend, afterwards?    \n> > \n> > Sure, here it is: <https://paste.opensuse.org/pastes/2aa95dddcd2a>\n> >   \n> \n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240620/4a0a4e88/attachment-0001.sig>",
+      "body_snippet": "Should be fixed in master, now.\n\nThomas\n\nOn Thu, 20 Jun 2024 17:47:40 +0200\nThomas Friedrichsmeier <thomas.friedrichsmeier at kdemail.net> wrote:\n\n> Ah, I see now. librkward.rbackend.lib.so is install",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 13,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-ad702c8c2738",
+      "message_id": "<9244475.ONJfNFn023@svarog>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-21T07:43:27Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240620222440.28bea61e@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<20240620174740.18201251@booklife>",
+        "<20240620222440.28bea61e@booklife>"
+      ],
+      "body_plain": "Dne čtvrtek 20. června 2024 22:24:40, SELČ, Thomas Friedrichsmeier napsal(a):\n> Should be fixed in master, now.\n\nYes, it works, thank You!\nBuild Service server for whatever reason refuses to rebuild the package (I'll \ntry to check why later today), but locally created package works well.\n\n> On Thu, 20 Jun 2024 17:47:40 +0200 wrote:\n> > Ah, I see now. librkward.rbackend.lib.so is installed to /usr/lib64,\n> > but we're trying to find it in /usr/lib.\n> > Not quite sure what is the correct way to fix this (and no time,\n> > right to), but that's what goes wrong.\n> > Thomas\n> > \n> > On Thu, 20 Jun 2024 17:29:20 +0200 wrote:\n> > > Dne čtvrtek 20. června 2024 17:18:12, SELČ jste napsal(a):\n> > > > On Thu, 20 Jun 2024 16:31:22 +0200 wrote:\n> > > > > Dne čtvrtek 20. června 2024 15:34:13, SELČ, Thomas\n> > > > > Friedrichsmeier napsal(a):\n> > > > > > On Thu, 20 Jun 2024 13:37:08 +0200 wrote:\n> > > > > > [...]\n> > > > > > > I downloaded newest master and did edit like follows:\n> > > > > > [...]\n> > > > > > that is too far down in the code. The location is\n> > > > > > passed via an environment variable at line 232.\n> > > > > > I have now simply added that line to master,\n> > > > > > please give that a try.\n> > > > > \n> > > > > Sorry, I didn't get correctly what edit You mean.\n> > > > > I downloaded new master and I keep getting the same error. :-(\n> > > > \n> > > > Ok, thanks.\n> > > > Could you run with\n> > > >   rkward --debug-level 4\n> > > > and post the contents of /tmp/rkward.frontend, afterwards?\n> > > \n> > > Sure, here it is: <https://paste.opensuse.org/pastes/2aa95dddcd2a>\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240621/537c027a/attachment.sig>",
+      "body_snippet": "Dne čtvrtek 20. června 2024 22:24:40, SELČ, Thomas Friedrichsmeier napsal(a):\n> Should be fixed in master, now.\n\nYes, it works, thank You!\nBuild Service server for whatever reason refuses to rebuild t",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 14,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-f2f830dc7b97",
+      "message_id": "<CAMqnA+joaCJ=-s8oc4GhQtUhM=XW=J5KCDYG2UQ2fRtrurpeQg@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-06-22T16:56:33Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<CAMqnA+jyRgfrs8f6RM09Kek79Ah7Dx9jmbdxA58MXtL9sOcR1g@mail.gmail.com>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<CAMqnA+hjkpkpjuujjP9RosrxSwmRjgybEgBBVAmXHstELJtsOQ@mail.gmail.com>",
+        "<20240619075137.060e2bcd@booklife>",
+        "<CAMqnA+g7WKWaJzJksrfHRoKANEbUxMaGZYR-v9Qpq5dkWpE36g@mail.gmail.com>",
+        "<20240619144323.6842647d@booklife>",
+        "<CAMqnA+juSikf4V1XZ84SRp5wdpV+e-U2LNdu0P24bD_yAworWQ@mail.gmail.com>",
+        "<20240619211927.76f7bc9d@booklife>",
+        "<CAMqnA+gHeoP1gs2iXPbwkkGQhoyB6Zx7ax_s7s1TqJ6Su8WqQg@mail.gmail.com>",
+        "<CAMqnA+gDDvFHMKs7fr4=zrTOxVA14SONDZcfZbzXKRbv66LB2Q@mail.gmail.com>",
+        "<20240621225314.063f7639@booklife>",
+        "<CAMqnA+jyRgfrs8f6RM09Kek79Ah7Dx9jmbdxA58MXtL9sOcR1g@mail.gmail.com>"
+      ],
+      "body_plain": "Just to add a little on the last mail,\n\nThis might be expected since no plugins are loaded:\n\n[image: image.png]\n\nRegards\nAlfonso\n\nEl sáb, 22 jun 2024 a la(s) 10:29 a.m., DES Alfonso Cano Robles (\nalfonsociologo at gmail.com) escribió:\n\n> That worked!\n> At least enough to run\n> At least to get:\n>   Sys.getenv()\n> in the R Console to run... I hope this helps,\n>\n> > Sys.getenv()\n>> ALLUSERSPROFILE         C:\\ProgramData\n>> APPDATA                 C:\\Users\\Alfonso\\AppData\\Roaming\n>> BIBINPUTS\n>> .;;C:/PROGRA~1/RKWard/lib/R/share/texmf/bibtex/bib;\n>> BINDIR                  bin/x64\n>> BSTINPUTS\n>> .;;C:/PROGRA~1/RKWard/lib/R/share/texmf/bibtex/bst;\n>> ChocolateyInstall       C:\\ProgramData\\chocolatey\n>> ChocolateyLastPathUpdate\n>>                         132547937717217653\n>> CommonProgramFiles      C:\\Program Files\\Common Files\n>> CommonProgramFiles(x86)\n>>                         C:\\Program Files (x86)\\Common Files\n>> CommonProgramW6432      C:\\Program Files\\Common Files\n>> COMPUTERNAME            DESKTOP-DHFJ8D5\n>> ComSpec                 C:\\WINDOWS\\system32\\cmd.exe\n>> CURL_CA_BUNDLE          C:/PROGRA~1/RKWard/lib/R/etc/curl-ca-bundle.crt\n>> DriverData              C:\\Windows\\System32\\Drivers\\DriverData\n>> HOME                    C:\\Users\\Alfonso\\Documents\n>> HOMEDRIVE               C:\n>> HOMEPATH                \\Users\\Alfonso\n>> LANGUAGE                es\n>> LOCALAPPDATA            C:\\Users\\Alfonso\\AppData\\Local\n>> LOGONSERVER             \\\\DESKTOP-DHFJ8D5\n>> MSYS2_ENV_CONV_EXCL     R_ARCH\n>> NUMBER_OF_PROCESSORS    4\n>> OneDrive                C:\\Users\\Alfonso\\OneDrive\n>> OS                      Windows_NT\n>> PATH\n>>  c:/rtools43/x86_64-w64-mingw32.static.posix/bin;c:/rtools43/usr/bin;C:\\PROGRA~1\\RKWard\\lib\\R\\bin/x64;c:/rtools43/x86_64-w64-mingw32.static.posix/bin;c:/rtools43/usr/bin;C:/Program\n>>                         Files/RKWard/bin;C:\\Rtools\\bin;C:\\Program Files\n>>                         (x86)\\Common\n>>                         Files\\Oracle\\Java\\javapath;C:\\Program Files\n>>                         (x86)\\Intel\\Intel(R) Management Engine\n>>                         Components\\iCLS\\;C:\\Program\n>>                         Files\\Intel\\Intel(R) Management Engine\n>>\n>> Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program\n>>                         Files (x86)\\Intel\\Intel(R) Management Engine\n>>                         Components\\DAL;C:\\Program Files\\Intel\\Intel(R)\n>>                         Management Engine Components\\DAL;C:\\Program\n>>                         Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common\n>>\n>> Files\\Intel\\WirelessCommon\\;C:\\Dwimperl\\perl\\bin;C:\\Dwimperl\\perl\\site\\bin;C:\\Dwimperl\\c\\bin;C:\\Program\n>>                         Files\\dotnet\\/\n>> PATHEXT\n>> .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC\n>> PROCESSOR_ARCHITECTURE\n>>                         AMD64\n>> PROCESSOR_IDENTIFIER    Intel64 Family 6 Model 142 Stepping 10,\n>>                         GenuineIntel\n>> PROCESSOR_LEVEL         6\n>> PROCESSOR_REVISION      8e0a\n>> ProgramData             C:\\ProgramData\n>> ProgramFiles            C:\\Program Files\n>> ProgramFiles(x86)       C:\\Program Files (x86)\n>> ProgramW6432            C:\\Program Files\n>> PROMPT                  $P$G\n>> PSModulePath            C:\\Program\n>>\n>> Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\n>> PUBLIC                  C:\\Users\\Public\n>> QT_D3DCREATE_MULTITHREADED\n>>                         1\n>> R_ARCH                  /x64\n>> R_BZIPCMD               bzip2\n>> R_CMD                   R CMD\n>> R_COMPILED_BY           gcc 12.3.0\n>> R_DOC_DIR               C:/PROGRA~1/RKWard/lib/R/doc\n>> R_GZIPCMD               gzip\n>> R_HOME                  C:/PROGRA~1/RKWard/lib/R\n>> R_INCLUDE_DIR           C:/PROGRA~1/RKWard/lib/R/include\n>> R_LIBS_SITE             C:/PROGRA~1/RKWard/lib/R/site-library\n>> R_LIBS_USER             C:\\Users\\Alfonso\\AppData\\Local/R/win-library/4.3\n>> R_OSTYPE                windows\n>> R_PAPERSIZE             a4\n>> R_RD4PDF                times,inconsolata,hyper\n>> R_RTOOLS43_PATH\n>> c:/rtools43/x86_64-w64-mingw32.static.posix/bin;c:/rtools43/usr/bin\n>> R_SHARE_DIR             C:/PROGRA~1/RKWard/lib/R/share\n>> R_UNZIPCMD              unzip\n>> R_USER                  C:\\Users\\Alfonso\\Documents\n>> R_VERSION               4.3.3\n>> R_ZIPCMD                zip\n>> RK_BACKEND_LIB          C:/Program\n>>                         Files/RKWard/lib/rkward.rbackend.lib.dll\n>> SED                     sed\n>> SESSIONNAME             Console\n>> SystemDrive             C:\n>> SystemRoot              C:\\WINDOWS\n>> TEMP                    C:\\Users\\Alfonso\\AppData\\Local\\Temp\n>> TEXINPUTS               .;;C:/PROGRA~1/RKWard/lib/R/share/texmf/tex/latex;\n>> TMP                     C:\\Users\\Alfonso\\AppData\\Local\\Temp\n>> TMPDIR                  C:\\Users\\Alfonso\\AppData\\Local\\Temp\n>> USERDOMAIN              DESKTOP-DHFJ8D5\n>> USERDOMAIN_ROAMINGPROFILE\n>>                         DESKTOP-DHFJ8D5\n>> USERNAME                Alfonso\n>> USERPROFILE             C:\\Users\\Alfonso\n>\n> windir                  C:\\WINDOWS\n>\n>\n> Thanks for all the effort much appreciated.\n> Regards\n> Alfonso\n>\n>\n> El vie, 21 jun 2024 a la(s) 2:53 p.m., Thomas Friedrichsmeier (\n> thomas.friedrichsmeier at kdemail.net) escribió:\n>\n>> On Thu, 20 Jun 2024 16:19:27 -0600\n>> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n>> > Just to comment,\n>> >  rkward-master-1112-windows-cl-msvc2022-x86_64.exe\n>> > <\n>> https://cdn.kde.org/ci-builds/education/rkward/master/windows/rkward-master-1112-windows-cl-msvc2022-x86_64.exe\n>> >\n>> > ,\n>> > Still not starting up, on VM Windows 10.\n>> > Is it possible to reset the qt variables?\n>>\n>> I haven't given up on this, yet, but I'll have to admit I'm a bit short\n>> on ideas, ATM. Your list of Env variables does not really show a smoking\n>> gun. One thing that might be a little unusual is that you have Rtools\n>> and java in your PATH. You might want to try removing those (SET\n>> PATH=XYZ) for the sake of trying, but my theory on how this could\n>> affect the problem is admittedly rather thin...\n>>\n>> As for the \"--debug-level 5\" log, I'm also not much smarter than\n>> before. I'm still quite convinced, the crash happens while loading the\n>> QWebEngine process, though. As one minor insight, I now understand, why\n>> my previous recipe to suppress showing the startup page did not work.\n>> You'll need a little more in your rkwardrc:\n>>\n>> [Internal]\n>> config file version=7\n>>\n>> [General]\n>> show help on startup=false\n>>\n>> You may want to give that a try, but of course, at best it will delay\n>> the crash. At least, however, it might give us on opportunity to check\n>> the environment variables, at a second point, by running\n>>   Sys.getenv()\n>> in the R Console.\n>>\n>> Finally, seeing that this seems to affect a VM, but not a regular\n>> installation, one idea could be a graphics compatibility problem\n>> (QWebEngine, based on chromium, is quite a beast). I do seem to recall\n>> having run into suspicious messages pointing into that direction,\n>> before. That said, in my Windows 10 VM (VirtualBox), fiddling with\n>> various settings of the graphics virtualization, I failed to produce\n>> any interesting results (it just works for me...).\n>>\n>> Regards\n>> Thomas\n>>\n>\n>\n> --\n> Dr. Alfonso Cano Robles\n>\n>\n>                       ORCID ID:\n> https://orcid.org/0000-0002-9496-2301\n>\n\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240622/d5ce3b5f/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: image.png\nType: image/png\nSize: 55781 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240622/d5ce3b5f/attachment-0001.png>",
+      "body_snippet": "Just to add a little on the last mail,\n\nThis might be expected since no plugins are loaded:\n\n[image: image.png]\n\nRegards\nAlfonso\n\nEl sáb, 22 jun 2024 a la(s) 10:29 a.m., DES Alfonso Cano Robles (\nalfo",
+      "thread_id": "thread-f2f830dc7b97",
+      "thread_depth": 0,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-f6f253019e3b",
+      "message_id": "<20240622235716.514d4a1d@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-22T21:57:16Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<CAMqnA+joaCJ=-s8oc4GhQtUhM=XW=J5KCDYG2UQ2fRtrurpeQg@mail.gmail.com>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<CAMqnA+hjkpkpjuujjP9RosrxSwmRjgybEgBBVAmXHstELJtsOQ@mail.gmail.com>",
+        "<20240619075137.060e2bcd@booklife>",
+        "<CAMqnA+g7WKWaJzJksrfHRoKANEbUxMaGZYR-v9Qpq5dkWpE36g@mail.gmail.com>",
+        "<20240619144323.6842647d@booklife>",
+        "<CAMqnA+juSikf4V1XZ84SRp5wdpV+e-U2LNdu0P24bD_yAworWQ@mail.gmail.com>",
+        "<20240619211927.76f7bc9d@booklife>",
+        "<CAMqnA+gHeoP1gs2iXPbwkkGQhoyB6Zx7ax_s7s1TqJ6Su8WqQg@mail.gmail.com>",
+        "<CAMqnA+gDDvFHMKs7fr4=zrTOxVA14SONDZcfZbzXKRbv66LB2Q@mail.gmail.com>",
+        "<20240621225314.063f7639@booklife>",
+        "<CAMqnA+jyRgfrs8f6RM09Kek79Ah7Dx9jmbdxA58MXtL9sOcR1g@mail.gmail.com>",
+        "<CAMqnA+joaCJ=-s8oc4GhQtUhM=XW=J5KCDYG2UQ2fRtrurpeQg@mail.gmail.com>"
+      ],
+      "body_plain": "We left out the list for a couple of posts. A bit of context for\nbystanders: Alfonso reported a crash on one installation of Windows\n(inside a virtual machine), while it works on another installation(s).\n\nWe've tracked it down to the point, where, the HTML renderer\n(QtWebEngine) is initialized.\n\nOn Sat, 22 Jun 2024 10:56:33 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> Just to add a little on the last mail,\n> \n> This might be expected since no plugins are loaded:\n\n[...]\n\nI think so. That'll just be a symptom of hacking the rkwardrc. Nothing\nthat would happen in a regular installation / start.\n\n> > That worked!\n> > At least enough to run\n> > At least to get:\n> >   Sys.getenv()\n> > in the R Console to run... I hope this helps,\n\nOk, good. But I suppose, as soon as you bring up any help page, the\ncrash is still there, right? Also, I don't see anything immediately\nsuspicious in your environment, unfortunately.\n\nI'm coming back to the idea that an incompatibility in the GPU\nvirtualization may be the issue, here. Searching the internet, it\nlooks like that would not be a first. Two approaches to testing this\ntheory:\n\na)\nAdjust the graphics settings of the virtual machine, turning off any\n3D acceleration. Reboot the VM, and see if that makes a difference.\n\nb)\n1. Download this file:\nhttps://download.qt.io/development_releases/prebuilt/llvmpipe/windows/opengl32sw-64-mesa_11_2_2-signed_sha256.7z\n, unzip, and copy the resulting opengl32sw.dll into c:\\program\nfiles\\rkward\\bin .\n2. Then start a command prompt (CMD.exe, not powershell) and enter:\nSET QT_OPENGL=software\n\"C:\\Program Files\\RKWard\\bin\\rkward.exe\"\n\nDoes either approach help?\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240622/a172ca78/attachment.sig>",
+      "body_snippet": "We left out the list for a couple of posts. A bit of context for\nbystanders: Alfonso reported a crash on one installation of Windows\n(inside a virtual machine), while it works on another installation(",
+      "thread_id": "thread-f2f830dc7b97",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-18fcf6118fe2",
+      "message_id": "<1759695.yu6kmZ5VWU@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-24T15:40:57Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240613155354.4c570b7d@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>"
+      ],
+      "body_plain": "Dne čtvrtek 13. června 2024 15:56:23, SELČ, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> Here's a short update on current progress towards a KF6 (aka KDE 6)\n> based release of RKWard, and a call to start testing.\n> As a bit of background, the transition from KF5 to KF6 is complicated\n> by the fact, that some Linux distributions do not ship KF6 libraries,\n> yet, and may not have them in their stable releases for a long time,\n> while other distributions are already shipping some of our dependencies\n> (importantly, kate) in a KF6-only version. To address this, I worked on\n> getting out AppImage builds to a state that is (as far a I know) ready\n> for productive use. Importantly, the AppImages can now be used with a\n> full featured R installation on the host system.\n\nHello,\nwe discussed with Thomas Friedrichsmeier problems with packaging (Thank You!), \nit's already fixed and RPM as downloadable from my openSUSE repository:\n<https://build.opensuse.org/package/show/home:vojtaeus/rkward>\n\nSo far it works well, except when I tried to load Geneland package:\n\n> library(Geneland)\nLoading required package: tcltk\nError: package or namespace load failed for ‘tcltk’:\n .onLoad failed in loadNamespace() for 'tcltk', details:\n  call: NULL\n  error: C stack usage  75062585772 is too close to the limit\nError: package ‘tcltk’ could not be loaded\nError: package ‘tcltk’ could not be loaded\n\nAnd in dialog window I see:\n\nConnection closed unexpectedly. Last error was.\nThe R kernel will be stopped immediately This means that you can no longer use \nany kernel-dependent functions to R. Also, in other words, you can't do \nanything at all, not even save your workspace If you're lucky, R has already \ndone it. However, what you can do is save open command files, output, or data \nfrom an open data editor. Then exit RKWard. Sorry.\n\nSimilar error I get when I run phangorn::consensusNet - it should make 3D \nrotating network with GL.\n\nLast minor issue I found is related package management dialog window from \nSettings menu. It seems that pane with packages has fixed height as when I \nmaximize it, in lower part I see just gray empty space. Also, when I install \nsome packages, the scroll bat keeps stick to the top, so I don't see progress.\n\nOtherwise I like it a lot, especially enhanced syntax highlight in console.\nYours,\nV.\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/7b335597/attachment.sig>",
+      "body_snippet": "Dne čtvrtek 13. června 2024 15:56:23, SELČ, Thomas Friedrichsmeier napsal(a):\n> Hi!\n> Here's a short update on current progress towards a KF6 (aka KDE 6)\n> based release of RKWard, and a call to start",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-79fb9697fa62",
+      "message_id": "<CAMqnA+j+6hrya6rMLXzPU6WW9-nUweJv=RqfQgXF8m_PgfwOLA@mail.gmail.com>",
+      "from_name": "DES Alfonso Cano Robles",
+      "from_email_hash": "335bc0c0aed1a420442f0c444f51e76bdcc717eb81edf0082221b2d2f769942a",
+      "date": "2024-06-24T19:44:04Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<CAMqnA+haNvvd92-yuFOc_Ja1SuPDp+H2kbvHfD230LbZvDg5=Q@mail.gmail.com>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<CAMqnA+hjkpkpjuujjP9RosrxSwmRjgybEgBBVAmXHstELJtsOQ@mail.gmail.com>",
+        "<20240619075137.060e2bcd@booklife>",
+        "<CAMqnA+g7WKWaJzJksrfHRoKANEbUxMaGZYR-v9Qpq5dkWpE36g@mail.gmail.com>",
+        "<20240619144323.6842647d@booklife>",
+        "<CAMqnA+juSikf4V1XZ84SRp5wdpV+e-U2LNdu0P24bD_yAworWQ@mail.gmail.com>",
+        "<20240619211927.76f7bc9d@booklife>",
+        "<CAMqnA+gHeoP1gs2iXPbwkkGQhoyB6Zx7ax_s7s1TqJ6Su8WqQg@mail.gmail.com>",
+        "<CAMqnA+gDDvFHMKs7fr4=zrTOxVA14SONDZcfZbzXKRbv66LB2Q@mail.gmail.com>",
+        "<20240621225314.063f7639@booklife>",
+        "<CAMqnA+jyRgfrs8f6RM09Kek79Ah7Dx9jmbdxA58MXtL9sOcR1g@mail.gmail.com>",
+        "<CAMqnA+joaCJ=-s8oc4GhQtUhM=XW=J5KCDYG2UQ2fRtrurpeQg@mail.gmail.com>",
+        "<20240622235716.514d4a1d@booklife>",
+        "<CAMqnA+h6uAeoHotSMbdPYcKfb6t_N27_o_yNXYJG95qFfdbm3A@mail.gmail.com>",
+        "<20240624162447.15fc2d60@booklife>",
+        "<CAMqnA+haNvvd92-yuFOc_Ja1SuPDp+H2kbvHfD230LbZvDg5=Q@mail.gmail.com>"
+      ],
+      "body_plain": "OK,\nI've double checked on Windows 10 and on one Windows 11 native installs all\npresent the same problem on:\n\nrkward-master-1112-windows-cl-msvc2022-x86_64.exe\n<https://cdn.kde.org/ci-builds/education/rkward/master/windows/rkward-master-1112-windows-cl-msvc2022-x86_64.exe>\nThey are not loading the plugins,\n\n\n[image: windows11.jpeg][image: window10_3.jpeg]\n\nI hope it helps,\nThanks!!!\n\n\n\nEl lun, 24 jun 2024 a la(s) 9:40 a.m., DES Alfonso Cano Robles (\nalfonsociologo at gmail.com) escribió:\n\n> Hello,\n> I just checked the installation on the Windows 10 native system which I\n> had installed earlier.\n> I confirm it's  also affected, by this other issue:[image:\n> windos10host.jpeg]\n>\n> ¿Is it a problem that both are configured in Spanish as primary language?\n> Thanks for everything,\n> Regards\n> Alfonso\n>\n>\n> El lun, 24 jun 2024 a la(s) 8:24 a.m., Thomas Friedrichsmeier (\n> thomas.friedrichsmeier at kdemail.net) escribió:\n>\n>> On Sun, 23 Jun 2024 13:04:22 -0600\n>> DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n>> [...]\n>>\n>> > About the first one, you are right that deactivating 3d\n>> > acceleration stopped it from crashing at startup. Now I have reseted\n>> > the file \"rkwardrc\" and I can see the wellcome html page.\n>>\n>> Ah, great! Now, I'm not sure, how common this problem may be (works for\n>> me in VirtualBox even with 3D acceleration active). If this is more\n>> prevalent, we may have to add a check to detect this.\n>>\n>> > Unfortunately, as far I can tell It is still not loading any plugins,\n>> > as soon as I load a dialog box I get this error message:\n>>\n>> I had thought this was due to the hacked rkwardrc. Looking into it now,\n>> I see that this file is missing from the latest installer, indeed. I'll\n>> still have to understand, why.\n>>\n>> > As for the second approach\n>>\n>> [...]\n>>\n>> > But I'm not sure I did this correctly:\n>>\n>> Looks good to me.\n>>\n>> > How can I be sure?\n>>\n>> With this second approach, it should work even while 3D acceleration is\n>> enabled for your VM...\n>>\n>> > The app started, but with the same symptoms, not loading any plugins.\n>>\n>> ... but this appears to be an entirely separate issue, after all.\n>>\n>> Regards\n>> Thomas\n>>\n>\n>\n> --\n> Dr. Alfonso Cano Robles\n>\n>\n>                       ORCID ID:\n> https://orcid.org/0000-0002-9496-2301\n>\n\n\n-- \nDr. Alfonso Cano Robles\n\n\n                      ORCID ID:\nhttps://orcid.org/0000-0002-9496-2301\n-------------- next part --------------\nAn HTML attachment was scrubbed...\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/c343596e/attachment-0001.htm>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: windos10host.jpeg\nType: image/jpeg\nSize: 206373 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/c343596e/attachment-0003.jpeg>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: windows11.jpeg\nType: image/jpeg\nSize: 229779 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/c343596e/attachment-0004.jpeg>\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: window10_3.jpeg\nType: image/jpeg\nSize: 152555 bytes\nDesc: not available\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/c343596e/attachment-0005.jpeg>",
+      "body_snippet": "OK,\nI've double checked on Windows 10 and on one Windows 11 native installs all\npresent the same problem on:\n\nrkward-master-1112-windows-cl-msvc2022-x86_64.exe\n<https://cdn.kde.org/ci-builds/education",
+      "thread_id": "thread-79fb9697fa62",
+      "thread_depth": 0,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-c4d7f1fc25e0",
+      "message_id": "<20240624225843.19a63779@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-24T20:58:43Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<1759695.yu6kmZ5VWU@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<1759695.yu6kmZ5VWU@localhost>"
+      ],
+      "body_plain": "On Mon, 24 Jun 2024 17:40:57 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> So far it works well, except when I tried to load Geneland package:\n> \n> > library(Geneland)  \n> Loading required package: tcltk\n> Error: package or namespace load failed for ‘tcltk’:\n>  .onLoad failed in loadNamespace() for 'tcltk', details:\n>   call: NULL\n>   error: C stack usage  75062585772 is too close to the limit\n[...]\n> Similar error I get when I run phangorn::consensusNet - it should\n> make 3D rotating network with GL.\n\nThanks, that was unexpected. Should be fixed in master, now.\n\n> Last minor issue I found is related package management dialog window\n> from Settings menu. It seems that pane with packages has fixed height\n> as when I maximize it, in lower part I see just gray empty space.\n> Also, when I install some packages, the scroll bat keeps stick to the\n> top, so I don't see progress.\n\nConfirmed, but I did not find a quick fix for this one.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240624/ff1a29f9/attachment.sig>",
+      "body_snippet": "On Mon, 24 Jun 2024 17:40:57 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n[...]\n> So far it works well, except when I tried to load Geneland package:\n> \n> > library(Geneland)  \n> Loadi",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 2,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-8f0b2239d2f0",
+      "message_id": "<20240625080858.2111d726@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-25T06:08:58Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<CAMqnA+j+6hrya6rMLXzPU6WW9-nUweJv=RqfQgXF8m_PgfwOLA@mail.gmail.com>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<CAMqnA+hjkpkpjuujjP9RosrxSwmRjgybEgBBVAmXHstELJtsOQ@mail.gmail.com>",
+        "<20240619075137.060e2bcd@booklife>",
+        "<CAMqnA+g7WKWaJzJksrfHRoKANEbUxMaGZYR-v9Qpq5dkWpE36g@mail.gmail.com>",
+        "<20240619144323.6842647d@booklife>",
+        "<CAMqnA+juSikf4V1XZ84SRp5wdpV+e-U2LNdu0P24bD_yAworWQ@mail.gmail.com>",
+        "<20240619211927.76f7bc9d@booklife>",
+        "<CAMqnA+gHeoP1gs2iXPbwkkGQhoyB6Zx7ax_s7s1TqJ6Su8WqQg@mail.gmail.com>",
+        "<CAMqnA+gDDvFHMKs7fr4=zrTOxVA14SONDZcfZbzXKRbv66LB2Q@mail.gmail.com>",
+        "<20240621225314.063f7639@booklife>",
+        "<CAMqnA+jyRgfrs8f6RM09Kek79Ah7Dx9jmbdxA58MXtL9sOcR1g@mail.gmail.com>",
+        "<CAMqnA+joaCJ=-s8oc4GhQtUhM=XW=J5KCDYG2UQ2fRtrurpeQg@mail.gmail.com>",
+        "<20240622235716.514d4a1d@booklife>",
+        "<CAMqnA+h6uAeoHotSMbdPYcKfb6t_N27_o_yNXYJG95qFfdbm3A@mail.gmail.com>",
+        "<20240624162447.15fc2d60@booklife>",
+        "<CAMqnA+haNvvd92-yuFOc_Ja1SuPDp+H2kbvHfD230LbZvDg5=Q@mail.gmail.com>",
+        "<CAMqnA+j+6hrya6rMLXzPU6WW9-nUweJv=RqfQgXF8m_PgfwOLA@mail.gmail.com>"
+      ],
+      "body_plain": "On Mon, 24 Jun 2024 13:44:04 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I've double checked on Windows 10 and on one Windows 11 native\n> installs all present the same problem on:\n> \n> rkward-master-1112-windows-cl-msvc2022-x86_64.exe\n> <https://cdn.kde.org/ci-builds/education/rkward/master/windows/rkward-master-1112-windows-cl-msvc2022-x86_64.exe>\n> They are not loading the plugins,\n\nIndeed. I had thought this was a side-effect of our earlier testing,\nbut it was a separate issue with the installer, after all. Should be\nfixed since build #1134.\n\nRegards\nThomas\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240625/b1e68777/attachment.sig>",
+      "body_snippet": "On Mon, 24 Jun 2024 13:44:04 -0600\nDES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:\n> I've double checked on Windows 10 and on one Windows 11 native\n> installs all present the same problem",
+      "thread_id": "thread-79fb9697fa62",
+      "thread_depth": 1,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-9c0daa9e0710",
+      "message_id": "<13044664.HNG8UJJ4vi@localhost>",
+      "from_name": "Vojtěch Zeisek",
+      "from_email_hash": "02b31b3a4a88d1c77a5400d295ee082a4c4cf53ed31468974c1e5c8e6ce551c8",
+      "date": "2024-06-28T11:30:33Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<20240624225843.19a63779@booklife>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<1759695.yu6kmZ5VWU@localhost>",
+        "<20240624225843.19a63779@booklife>"
+      ],
+      "body_plain": "Dne pondělí 24. června 2024 22:58:43, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Mon, 24 Jun 2024 17:40:57 +0200 wrote:\n> [...]\n> > So far it works well, except when I tried to load Geneland package:\n> > > library(Geneland)\n> > Loading required package: tcltk\n> > Error: package or namespace load failed for ‘tcltk’:\n> >  .onLoad failed in loadNamespace() for 'tcltk', details:\n> >   call: NULL\n> >   error: C stack usage  75062585772 is too close to the limit\n> [...]\n> > Similar error I get when I run phangorn::consensusNet - it\n> > should make 3D rotating network with GL.\n> \n> Thanks, that was unexpected. Should be fixed in master, now.\n\nHello,\nsorry for late reply. I updated package at <https://build.opensuse.org/package/show/home:vojtaeus/rkward> according to Git master and everything works as expected, no further issues found so far. :-) BTW, is current master supposed to build with KDE5 as well as KDE6, or only KDE6?\n\n-- \nVojtěch Zeisek\nhttps://trapa.cz/\n\nKomunita openSUSE GNU/Linuxu\nCommunity of the openSUSE GNU/Linux\nhttps://www.opensuse.org/\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: signature.asc\nType: application/pgp-signature\nSize: 833 bytes\nDesc: This is a digitally signed message part.\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240628/7ce40667/attachment.sig>",
+      "body_snippet": "Dne pondělí 24. června 2024 22:58:43, SELČ, Thomas Friedrichsmeier napsal(a):\n> On Mon, 24 Jun 2024 17:40:57 +0200 wrote:\n> [...]\n> > So far it works well, except when I tried to load Geneland package",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 3,
+      "month": "2024-06"
+    },
+    {
+      "id": "msg-dfc9fb784f31",
+      "message_id": "<20240628150318.65138ece@booklife>",
+      "from_name": "Thomas Friedrichsmeier",
+      "from_email_hash": "105c8039f0c8641bd204a68e6d417166ae71a457d027d4ef5dbbca2804622182",
+      "date": "2024-06-28T13:03:37Z",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "subject_clean": "Call for testing KF6-based version of RKWard",
+      "in_reply_to": "<13044664.HNG8UJJ4vi@localhost>",
+      "references": [
+        "<20240613155354.4c570b7d@booklife>",
+        "<1759695.yu6kmZ5VWU@localhost>",
+        "<20240624225843.19a63779@booklife>",
+        "<13044664.HNG8UJJ4vi@localhost>"
+      ],
+      "body_plain": "On Fri, 28 Jun 2024 13:30:33 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> Hello,\n> sorry for late reply. I updated package at\n> <https://build.opensuse.org/package/show/home:vojtaeus/rkward>\n> according to Git master and everything works as expected, no further\n> issues found so far. :-) BTW, is current master supposed to build\n> with KDE5 as well as KDE6, or only KDE6?\n\nthanks a lot for your testing and packaging!\n\nCurrent master is KF6, only. (I assume the presence of a separate\nkf6-branch may be misleading, here, it will be removed, in a while).\n\nRegards\nThomas \n\n-------------- next part --------------\nA non-text attachment was scrubbed...\nName: not available\nType: application/pgp-signature\nSize: 833 bytes\nDesc: OpenPGP digital signature\nURL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240628/f654a705/attachment.sig>",
+      "body_snippet": "On Fri, 28 Jun 2024 13:30:33 +0200\nVojtěch Zeisek <vojtech.zeisek at opensuse.org> wrote:\n> Hello,\n> sorry for late reply. I updated package at\n> <https://build.opensuse.org/package/show/home:vojtaeus",
+      "thread_id": "thread-210df5b5f9ee",
+      "thread_depth": 4,
+      "month": "2024-06"
+    }
+  ],
+  "threads": [
+    {
+      "id": "thread-8f10ddcdca16",
+      "subject": "Problem with \"rk.get.structure.global\"",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2024-06-02T12:47:37Z",
+      "last_reply": "2024-06-02T18:25:51Z",
+      "root_message_id": "msg-8f10ddcdca16"
+    },
+    {
+      "id": "thread-210df5b5f9ee",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "message_count": 22,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier",
+        "Vojtěch Zeisek"
+      ],
+      "started": "2024-06-13T13:56:23Z",
+      "last_reply": "2024-06-28T13:03:37Z",
+      "root_message_id": "msg-210df5b5f9ee"
+    },
+    {
+      "id": "thread-f2f830dc7b97",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2024-06-22T16:56:33Z",
+      "last_reply": "2024-06-22T21:57:16Z",
+      "root_message_id": "msg-f2f830dc7b97"
+    },
+    {
+      "id": "thread-79fb9697fa62",
+      "subject": "Call for testing KF6-based version of RKWard",
+      "message_count": 2,
+      "participants": [
+        "DES Alfonso Cano Robles",
+        "Thomas Friedrichsmeier"
+      ],
+      "started": "2024-06-24T19:44:04Z",
+      "last_reply": "2024-06-25T06:08:58Z",
+      "root_message_id": "msg-79fb9697fa62"
+    }
+  ]
+}

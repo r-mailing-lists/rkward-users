@@ -1,0 +1,2618 @@
+From alfonsociologo at gmail.com  Mon Aug  5 04:29:29 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Sun, 4 Aug 2024 21:29:29 -0600
+Subject: Wish to add rkward to appimage.github.io
+Message-ID: <CAMqnA+jbhRh_Zmje2RZa7Mb8qNgk6UT3MuMAmXqxePktVpXtUw@mail.gmail.com>
+
+Hi!
+I was delighted to find out that RKWard 0.8.0 is here!
+Since it might take time so that the conservative linux distributions use
+qt6, could it be possible to add the official release to the
+appimage.github.io directory?
+So that it can be installed from AppImage Pool (a flatpack app), it
+would require that the GitHub repository hosts AppImages on its Releases
+page.
+
+Regards
+Alfonso
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240804/0b648c0c/attachment.htm>
+
+From thomas.friedrichsmeier at kdemail.net  Mon Aug  5 20:50:15 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Mon, 5 Aug 2024 21:50:15 +0200
+Subject: Wish to add rkward to appimage.github.io
+In-Reply-To: <CAMqnA+jbhRh_Zmje2RZa7Mb8qNgk6UT3MuMAmXqxePktVpXtUw@mail.gmail.com>
+References: <CAMqnA+jbhRh_Zmje2RZa7Mb8qNgk6UT3MuMAmXqxePktVpXtUw@mail.gmail.com>
+Message-ID: <20240805215015.3ded4f45@booklife>
+
+Hi,
+
+On Sun, 4 Aug 2024 21:29:29 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+> I was delighted to find out that RKWard 0.8.0 is here!
+> Since it might take time so that the conservative linux distributions
+> use qt6, could it be possible to add the official release to the
+> appimage.github.io directory?
+> So that it can be installed from AppImage Pool (a flatpack app), it
+> would require that the GitHub repository hosts AppImages on its
+> Releases page.
+
+in principle, this sounds good, and you're quite welcome to submit our
+AppImage for publication in that pool (or wherever else - it's free
+software, after all)!
+
+The more difficult step is to keep the information up to date, in the
+long term. Making releases is a heavily bureaucratic exercise, already,
+and such updates are simply something that we _will_ forget. You are
+right in pointing out that this particular process could be automated,
+if our AppImages were hosted on github. Alas, that's not the case (and
+I'm not sure that can easily be done).
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240805/d68a501d/attachment.sig>
+
+From alfonsociologo at gmail.com  Fri Aug 16 17:11:40 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Fri, 16 Aug 2024 10:11:40 -0600
+Subject: Fwd: rkward Mac
+In-Reply-To: <CADDCMra1QSHttDsJrTKbpa1Dct4A0F2k5N7karZi74QQfLoLLA@mail.gmail.com>
+References: <CADDCMra1QSHttDsJrTKbpa1Dct4A0F2k5N7karZi74QQfLoLLA@mail.gmail.com>
+Message-ID: <CAMqnA+j0SGGk_8io92-9FCSTmHCA0-s2B36jbsAHj6YYzKdifg@mail.gmail.com>
+
+Hi,
+I hope you are well!
+I've been trying out to install RKWard on two  arm computers.
+
+With the first one, I Initially tried with the mac arm stable from:
+https://download.kde.org/stable/rkward/0.8.0/rkward-0.8.0-arm64.dmg
+With no success, it comes at the end of the installation process, it
+started R 4.4.1 correctly but closed unexpectedly just when it tried to
+show the html welcome screen.
+
+Then I tried the nightly build,
+- rkward-master-1346-macos-clang-arm64.dmg
+but I've had the same issue.
+
+Here I attached the rkward.frontend file along with the Translate Report,
+It is a M1 chip.
+As far as I can tell it is related with:
+
+> Path override failed for key base::DIR_APP_DICTIONARIES and path
+> '/Applications/rkward.app/Contents/MacOS/qtwebengine_dictionaries'
+
+I hope this helps to fix the problem.
+
+About the second computer I'll send the info in a separate email,
+
+I thank you for  everything you have done and your help!
+Alfonso
+-- 
+Dr. Alfonso Cano Robles
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-230 <https://orcid.org/0000-0002-9496-2301>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/8b99ca28/attachment-0001.htm>
+-------------- next part --------------
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               rkward [1426]
+Path:                  /Applications/rkward.app/Contents/MacOS/rkward
+Identifier:            org.kde.RKWard
+Version:               0.8.0z+0.8.1+devel2 (0.8.0z+0.8.1+devel2)
+Code Type:             ARM-64 (Native)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2024-08-15 17:28:04.4299 -0600
+OS Version:            macOS 13.5 (22G74)
+Report Version:        12
+Anonymous UUID:        C2E85FE5-BCFC-B828-8B33-35B37F4B31E6
+
+
+Time Awake Since Boot: 1500 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        33  Chrome_InProcRendererThread
+
+Exception Type:        EXC_BREAKPOINT (SIGTRAP)
+Exception Codes:       0x0000000000000001, 0x00000001863acf08
+
+Termination Reason:    Namespace SIGNAL, Code 5 Trace/BPT trap: 5
+Terminating Process:   exc handler [1426]
+
+Thread 0:: CrBrowserMain Dispatch queue: com.apple.main-thread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   SkyLight                      	       0x18b1556e0 SLSConnectionGetHeldWindowRights + 176
+5   AppKit                        	       0x18a066da8 -[NSCGSWindow initWithWindowID:] + 108
+6   AppKit                        	       0x1896d1d0c +[NSCGSWindow(NSCGSWindowCreation) windowWithWindowID:] + 96
+7   AppKit                        	       0x189f36e80 -[_NSCGSWindowOrdering _windowsWithOptions:onSpaces:xorSpacesMatching:forConnectionID:] + 460
+8   AppKit                        	       0x1896aaff0 -[NSApplication enumerateWindowsWithOptions:usingBlock:] + 324
+9   AppKit                        	       0x1896aae6c -[NSApplication _findWindowWithOptions:passingTest:] + 160
+10  AppKit                        	       0x18997ad2c -[NSApplication _bestMainWindowCandidateOnScreen:] + 192
+11  AppKit                        	       0x189e8eab4 -[NSWindow _orderOut:calculatingKeyWithOptions:documentWindow:] + 468
+12  AppKit                        	       0x1896f3230 NSPerformVisuallyAtomicChange + 108
+13  AppKit                        	       0x189e90390 -[NSWindow _reallyDoOrderWindowOutRelativeTo:] + 464
+14  AppKit                        	       0x189e90728 -[NSWindow _reallyDoOrderWindow:] + 80
+15  AppKit                        	       0x189e90978 -[NSWindow _doOrderWindow:] + 264
+16  libqcocoa.dylib               	       0x10a41cdf8 0x10a3e0000 + 249336
+17  QtGui                         	       0x107bb93c8 QWindowPrivate::setVisible(bool) + 752
+18  QtWidgets                     	       0x106f7fa8c 0x106f10000 + 457356
+19  QtGui                         	       0x107bb8520 QWindowPrivate::destroy() + 120
+20  QtGui                         	       0x107bb83a0 QWindow::~QWindow() + 60
+21  QtWidgets                     	       0x106f7be68 0x106f10000 + 441960
+22  QtWidgets                     	       0x106f58c1c QWidget::destroy(bool, bool) + 624
+23  QtWidgets                     	       0x106f55b9c QWidget::setParent(QWidget*, QFlags<Qt::WindowType>) + 2096
+24  QtWidgets                     	       0x106f47c3c QLayout::addChildWidget(QWidget*) + 240
+25  QtWidgets                     	       0x106f47af8 QLayout::addWidget(QWidget*) + 28
+26  QtWebEngineWidgets            	       0x10499bcbc 0x104990000 + 48316
+27  QtWebEngineWidgets            	       0x1049a06d0 0x104990000 + 67280
+28  QtWebEngineCore               	       0x10f389528 0x10f2dc000 + 709928
+29  QtWebEngineCore               	       0x10f37d758 QtWebEngineCore::WebContentsAdapter::initialize(content::SiteInstance*) + 624
+30  QtWebEngineCore               	       0x10f37e878 QtWebEngineCore::WebContentsAdapter::load(QWebEngineHttpRequest const&) + 1344
+31  QtWebEngineCore               	       0x10f37e320 QtWebEngineCore::WebContentsAdapter::load(QUrl const&) + 48
+32  rkward                        	       0x1046530d0 0x104608000 + 307408
+33  rkward                        	       0x10465ab08 0x104608000 + 338696
+34  QtWidgets                     	       0x106f67f64 QWidget::event(QEvent*) + 132
+35  QtWidgets                     	       0x106fe5c98 QFrame::event(QEvent*) + 56
+36  QtWidgets                     	       0x106f1d11c QApplicationPrivate::notify_helper(QObject*, QEvent*) + 272
+37  QtWidgets                     	       0x106f1ea34 QApplication::notify(QObject*, QEvent*) + 3160
+38  QtCore                        	       0x108184638 QCoreApplication::notifyInternal2(QObject*, QEvent*) + 212
+39  QtWidgets                     	       0x106f65fcc QWidgetPrivate::show_helper() + 128
+40  QtWidgets                     	       0x106f67a74 QWidgetPrivate::setVisible(bool) + 1368
+41  QtWidgets                     	       0x106f672f4 QWidget::setVisible(bool) + 676
+42  QtWidgets                     	       0x106f4f4fc QStackedLayout::setCurrentIndex(int) + 384
+43  QtWidgets                     	       0x106f4fc90 QStackedLayout::insertWidget(int, QWidget*) + 228
+44  QtWidgets                     	       0x107103e08 QTabWidget::addTab(QWidget*, QIcon const&, QString const&) + 56
+45  rkward                        	       0x10466e3fc 0x104608000 + 418812
+46  rkward                        	       0x104672638 0x104608000 + 435768
+47  rkward                        	       0x1046730e4 0x104608000 + 438500
+48  rkward                        	       0x104675444 0x104608000 + 447556
+49  rkward                        	       0x10482605c 0x104608000 + 2220124
+50  rkward                        	       0x104826288 0x104608000 + 2220680
+51  rkward                        	       0x104826d74 0x104608000 + 2223476
+52  rkward                        	       0x1047be998 0x104608000 + 1796504
+53  rkward                        	       0x1047be060 0x104608000 + 1794144
+54  QtCore                        	       0x1081c871c QObject::event(QEvent*) + 88
+55  QtWidgets                     	       0x106f1d11c QApplicationPrivate::notify_helper(QObject*, QEvent*) + 272
+56  QtWidgets                     	       0x106f1dfac QApplication::notify(QObject*, QEvent*) + 464
+57  QtCore                        	       0x108184638 QCoreApplication::notifyInternal2(QObject*, QEvent*) + 212
+58  QtCore                        	       0x108185650 QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) + 504
+59  libqcocoa.dylib               	       0x10a3f6ca0 0x10a3e0000 + 93344
+60  libqcocoa.dylib               	       0x10a3f7dd4 0x10a3e0000 + 97748
+61  CoreFoundation                	       0x18648a63c __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28
+62  CoreFoundation                	       0x18648a5d0 __CFRunLoopDoSource0 + 176
+63  CoreFoundation                	       0x18648a340 __CFRunLoopDoSources0 + 244
+64  CoreFoundation                	       0x186488f48 __CFRunLoopRun + 828
+65  CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+66  HIToolbox                     	       0x18fcdadf0 RunCurrentEventLoopInMode + 292
+67  HIToolbox                     	       0x18fcdac2c ReceiveNextEventCommon + 648
+68  HIToolbox                     	       0x18fcda984 _BlockUntilNextEventMatchingListInModeWithFilter + 76
+69  AppKit                        	       0x1896af97c _DPSNextEvent + 636
+70  AppKit                        	       0x1896aeb18 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 716
+71  libqcocoa.dylib               	       0x10a3f58d4 0x10a3e0000 + 88276
+72  QtCore                        	       0x10818df84 QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 540
+73  QtWidgets                     	       0x107134014 QDialog::exec() + 476
+74  rkward                        	       0x1046cbd80 0x104608000 + 802176
+75  rkward                        	       0x104620ec0 0x104608000 + 102080
+76  QtCore                        	       0x1081c892c QObject::event(QEvent*) + 616
+77  QtWidgets                     	       0x106f68b70 QWidget::event(QEvent*) + 3216
+78  QtWidgets                     	       0x107081f14 QMainWindow::event(QEvent*) + 716
+79  libKF6XmlGui.6.4.0.dylib      	       0x1063e08c8 KMainWindow::event(QEvent*) + 788
+80  QtWidgets                     	       0x106f1d11c QApplicationPrivate::notify_helper(QObject*, QEvent*) + 272
+81  QtWidgets                     	       0x106f1ea34 QApplication::notify(QObject*, QEvent*) + 3160
+82  QtCore                        	       0x108184638 QCoreApplication::notifyInternal2(QObject*, QEvent*) + 212
+83  QtCore                        	       0x108185650 QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) + 504
+84  libqcocoa.dylib               	       0x10a3f6ca0 0x10a3e0000 + 93344
+85  libqcocoa.dylib               	       0x10a3f7dd4 0x10a3e0000 + 97748
+86  CoreFoundation                	       0x18648a63c __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 28
+87  CoreFoundation                	       0x18648a5d0 __CFRunLoopDoSource0 + 176
+88  CoreFoundation                	       0x18648a3a0 __CFRunLoopDoSources0 + 340
+89  CoreFoundation                	       0x186488f48 __CFRunLoopRun + 828
+90  CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+91  HIToolbox                     	       0x18fcdadf0 RunCurrentEventLoopInMode + 292
+92  HIToolbox                     	       0x18fcdaa80 ReceiveNextEventCommon + 220
+93  HIToolbox                     	       0x18fcda984 _BlockUntilNextEventMatchingListInModeWithFilter + 76
+94  AppKit                        	       0x1896af97c _DPSNextEvent + 636
+95  AppKit                        	       0x1896aeb18 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 716
+96  AppKit                        	       0x1896a2f7c -[NSApplication run] + 464
+97  libqcocoa.dylib               	       0x10a3f5934 0x10a3e0000 + 88372
+98  QtCore                        	       0x10818df84 QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 540
+99  QtCore                        	       0x108184d64 QCoreApplication::exec() + 112
+100 rkward                        	       0x10461a784 0x104608000 + 75652
+101 dyld                          	       0x186053f28 start + 2236
+
+Thread 1:
+0   libsystem_pthread.dylib       	       0x1863a6d8c start_wqthread + 0
+
+Thread 2:: com.apple.CFSocket.private
+0   libsystem_kernel.dylib        	       0x186377030 __select + 8
+1   CoreFoundation                	       0x1864b416c __CFSocketManager + 636
+2   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+3   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 3:: QDBusConnectionManager
+0   libsystem_kernel.dylib        	       0x186374874 poll + 8
+1   QtCore                        	       0x1082f55f4 qt_safe_poll(pollfd*, unsigned int, QDeadlineTimer) + 60
+2   QtCore                        	       0x1082f987c QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 904
+3   QtCore                        	       0x10818df84 QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 540
+4   QtCore                        	       0x108266dc0 QThread::exec() + 284
+5   QtDBus                        	       0x106a278dc 0x106a0c000 + 112860
+6   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+7   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+8   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 4::  Dispatch queue: com.apple.root.user-interactive-qos
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   CoreFoundation                	       0x18648a7e4 __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x1864890c4 __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+7   Foundation                    	       0x187401fbc -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212
+8   AppKit                        	       0x189a25a98 -[NSAnimation _runBlocking] + 312
+9   AppKit                        	       0x189a25db0 __30-[NSAnimation _runInNewThread]_block_invoke + 124
+10  libdispatch.dylib             	       0x1861fa874 _dispatch_call_block_and_release + 32
+11  libdispatch.dylib             	       0x1861fc400 _dispatch_client_callout + 20
+12  libdispatch.dylib             	       0x18620dfb8 _dispatch_root_queue_drain + 684
+13  libdispatch.dylib             	       0x18620e6c0 _dispatch_worker_thread2 + 164
+14  libsystem_pthread.dylib       	       0x1863a8038 _pthread_wqthread + 228
+15  libsystem_pthread.dylib       	       0x1863a6d94 start_wqthread + 8
+
+Thread 5::  Dispatch queue: com.apple.root.user-interactive-qos
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   CoreFoundation                	       0x18648a7e4 __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x1864890c4 __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+7   Foundation                    	       0x187401fbc -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212
+8   AppKit                        	       0x189a25a98 -[NSAnimation _runBlocking] + 312
+9   AppKit                        	       0x189a25db0 __30-[NSAnimation _runInNewThread]_block_invoke + 124
+10  libdispatch.dylib             	       0x1861fa874 _dispatch_call_block_and_release + 32
+11  libdispatch.dylib             	       0x1861fc400 _dispatch_client_callout + 20
+12  libdispatch.dylib             	       0x18620dfb8 _dispatch_root_queue_drain + 684
+13  libdispatch.dylib             	       0x18620e6c0 _dispatch_worker_thread2 + 164
+14  libsystem_pthread.dylib       	       0x1863a8038 _pthread_wqthread + 228
+15  libsystem_pthread.dylib       	       0x1863a6d94 start_wqthread + 8
+
+Thread 6:
+0   libsystem_pthread.dylib       	       0x1863a6d8c start_wqthread + 0
+
+Thread 7:: RKFrontendTransmitter
+0   libsystem_kernel.dylib        	       0x186374874 poll + 8
+1   QtCore                        	       0x1082f55f4 qt_safe_poll(pollfd*, unsigned int, QDeadlineTimer) + 60
+2   QtCore                        	       0x1082f987c QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 904
+3   QtCore                        	       0x10818df84 QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 540
+4   QtCore                        	       0x108266dc0 QThread::exec() + 284
+5   rkward                        	       0x1047d0ba8 0x104608000 + 1870760
+6   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+7   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+8   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 8:: Thread (pooled)
+0   libsystem_kernel.dylib        	       0x18636f750 __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x1863ac574 _pthread_cond_wait + 1232
+2   QtCore                        	       0x108304de8 0x108100000 + 2117096
+3   QtCore                        	       0x108304c9c QWaitCondition::wait(QMutex*, QDeadlineTimer) + 108
+4   QtCore                        	       0x1082ff14c 0x108100000 + 2093388
+5   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+6   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+7   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 9:: Thread (pooled)
+0   libsystem_kernel.dylib        	       0x18636f750 __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x1863ac574 _pthread_cond_wait + 1232
+2   QtCore                        	       0x108304de8 0x108100000 + 2117096
+3   QtCore                        	       0x108304c9c QWaitCondition::wait(QMutex*, QDeadlineTimer) + 108
+4   QtCore                        	       0x1082ff14c 0x108100000 + 2093388
+5   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+6   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+7   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 10:: Thread (pooled)
+0   libsystem_kernel.dylib        	       0x18636f750 __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x1863ac574 _pthread_cond_wait + 1232
+2   QtCore                        	       0x108304de8 0x108100000 + 2117096
+3   QtCore                        	       0x108304c9c QWaitCondition::wait(QMutex*, QDeadlineTimer) + 108
+4   QtCore                        	       0x1082ff14c 0x108100000 + 2093388
+5   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+6   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+7   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 11:: Thread (pooled)
+0   libsystem_kernel.dylib        	       0x18636f750 __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x1863ac574 _pthread_cond_wait + 1232
+2   QtCore                        	       0x108304de8 0x108100000 + 2117096
+3   QtCore                        	       0x108304c9c QWaitCondition::wait(QMutex*, QDeadlineTimer) + 108
+4   QtCore                        	       0x1082ff14c 0x108100000 + 2093388
+5   QtCore                        	       0x1082f775c 0x108100000 + 2062172
+6   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+7   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 12:
+0   libsystem_pthread.dylib       	       0x1863a6d8c start_wqthread + 0
+
+Thread 13:: com.apple.NSEventThread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   CoreFoundation                	       0x18648a7e4 __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x1864890c4 __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+7   AppKit                        	       0x1897d9f54 _NSEventThread + 172
+8   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+9   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 14:: ThreadPoolServiceThread
+0   libsystem_kernel.dylib        	       0x186377e28 kevent64 + 8
+1   QtWebEngineCore               	       0x11363c860 0x10f2dc000 + 70649952
+2   QtWebEngineCore               	       0x11363c658 0x10f2dc000 + 70649432
+3   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+4   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+5   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+6   QtWebEngineCore               	       0x1135eda80 0x10f2dc000 + 70326912
+7   QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+8   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+9   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+10  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 15:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f77a4 0x10f2dc000 + 70367140
+8   QtWebEngineCore               	       0x1135f741c 0x10f2dc000 + 70366236
+9   QtWebEngineCore               	       0x1135f730c 0x10f2dc000 + 70365964
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 16:: ThreadPoolBackgroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f758c 0x10f2dc000 + 70366604
+8   QtWebEngineCore               	       0x1135f7398 0x10f2dc000 + 70366104
+9   QtWebEngineCore               	       0x1135f733c 0x10f2dc000 + 70366012
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 17:: Chrome_IOThread
+0   libsystem_kernel.dylib        	       0x186377e28 kevent64 + 8
+1   QtWebEngineCore               	       0x11363c860 0x10f2dc000 + 70649952
+2   QtWebEngineCore               	       0x11363c658 0x10f2dc000 + 70649432
+3   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+4   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+5   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+6   QtWebEngineCore               	       0x111e5aa64 0x10f2dc000 + 45607524
+7   QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+8   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+9   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+10  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 18:: NetworkConfigWatcher
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x113571464 0x10f2dc000 + 69817444
+7   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+8   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+9   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+10  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+11  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+12  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+13  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 19:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f77a4 0x10f2dc000 + 70367140
+8   QtWebEngineCore               	       0x1135f741c 0x10f2dc000 + 70366236
+9   QtWebEngineCore               	       0x1135f730c 0x10f2dc000 + 70365964
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 20:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f77a4 0x10f2dc000 + 70367140
+8   QtWebEngineCore               	       0x1135f741c 0x10f2dc000 + 70366236
+9   QtWebEngineCore               	       0x1135f730c 0x10f2dc000 + 70365964
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 21:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f77a4 0x10f2dc000 + 70367140
+8   QtWebEngineCore               	       0x1135f741c 0x10f2dc000 + 70366236
+9   QtWebEngineCore               	       0x1135f730c 0x10f2dc000 + 70365964
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 22:: Chrome_InProcGpuThread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135c198c 0x10f2dc000 + 70146444
+7   QtWebEngineCore               	       0x113571444 0x10f2dc000 + 69817412
+8   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+9   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+10  QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+11  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+12  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+13  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+14  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 23:: Chrome_ChildIOThread
+0   libsystem_kernel.dylib        	       0x186377e28 kevent64 + 8
+1   QtWebEngineCore               	       0x11363c860 0x10f2dc000 + 70649952
+2   QtWebEngineCore               	       0x11363c658 0x10f2dc000 + 70649432
+3   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+4   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+5   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+6   QtWebEngineCore               	       0x115a6cc8c 0x10f2dc000 + 108596364
+7   QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+8   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+9   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+10  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 24:: CompositorTileWorker1
+0   libsystem_kernel.dylib        	       0x18636f750 __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x1863ac574 _pthread_cond_wait + 1232
+2   QtWebEngineCore               	       0x11361d34c 0x10f2dc000 + 70521676
+3   QtWebEngineCore               	       0x1151bd2f4 0x10f2dc000 + 99488500
+4   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+5   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+6   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 25:: AudioThread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135c198c 0x10f2dc000 + 70146444
+7   QtWebEngineCore               	       0x113571444 0x10f2dc000 + 69817412
+8   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+9   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+10  QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+11  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+12  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+13  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+14  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 26:: ThreadPoolSingleThreadSharedForeground0
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f758c 0x10f2dc000 + 70366604
+8   QtWebEngineCore               	       0x1135f7448 0x10f2dc000 + 70366280
+9   QtWebEngineCore               	       0x1135f7354 0x10f2dc000 + 70366036
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 27:: NetworkConfigWatcher
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x113571464 0x10f2dc000 + 69817444
+7   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+8   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+9   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+10  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+11  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+12  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+13  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 28:: VizCompositorThread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135c198c 0x10f2dc000 + 70146444
+7   QtWebEngineCore               	       0x113571444 0x10f2dc000 + 69817412
+8   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+9   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+10  QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+11  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+12  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+13  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+14  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 29:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135f6c14 0x10f2dc000 + 70364180
+7   QtWebEngineCore               	       0x1135f758c 0x10f2dc000 + 70366604
+8   QtWebEngineCore               	       0x1135f741c 0x10f2dc000 + 70366236
+9   QtWebEngineCore               	       0x1135f730c 0x10f2dc000 + 70365964
+10  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+11  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+12  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 30:: NetworkService
+0   libsystem_kernel.dylib        	       0x186377e28 kevent64 + 8
+1   QtWebEngineCore               	       0x11363c860 0x10f2dc000 + 70649952
+2   QtWebEngineCore               	       0x11363c658 0x10f2dc000 + 70649432
+3   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+4   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+5   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+6   QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+7   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+8   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+9   libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 31:: NetworkNotificationThreadMac
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   CoreFoundation                	       0x18648a7e4 __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x1864890c4 __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x1864884b8 CFRunLoopRunSpecific + 612
+7   Foundation                    	       0x187401fbc -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212
+8   QtWebEngineCore               	       0x11366e810 0x10f2dc000 + 70854672
+9   QtWebEngineCore               	       0x11366d1f8 0x10f2dc000 + 70849016
+10  QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+11  QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+12  QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+13  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+14  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+15  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+16  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 32:: NetworkConfigWatcher
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x113571464 0x10f2dc000 + 69817444
+7   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+8   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+9   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+10  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+11  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+12  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+13  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 33 Crashed:: Chrome_InProcRendererThread
+0   libsystem_pthread.dylib       	       0x1863acf08 pthread_jit_write_protect_np + 516
+1   QtWebEngineCore               	       0x114d3e7ec 0x10f2dc000 + 94775276
+2   QtWebEngineCore               	       0x11012a708 0x10f2dc000 + 15001352
+3   QtWebEngineCore               	       0x1102c5d1c 0x10f2dc000 + 16686364
+4   QtWebEngineCore               	       0x10fe6e614 0x10f2dc000 + 12133908
+5   QtWebEngineCore               	       0x114d25e3c 0x10f2dc000 + 94674492
+6   QtWebEngineCore               	       0x114d22d0c 0x10f2dc000 + 94661900
+7   QtWebEngineCore               	       0x115ce6b28 0x10f2dc000 + 111192872
+8   QtWebEngineCore               	       0x115c6f64c 0x10f2dc000 + 110704204
+9   QtWebEngineCore               	       0x115b41990 0x10f2dc000 + 109468048
+10  QtWebEngineCore               	       0x115b405cc 0x10f2dc000 + 109462988
+11  QtWebEngineCore               	       0x115b41088 0x10f2dc000 + 109465736
+12  QtWebEngineCore               	       0x115b01ae8 0x10f2dc000 + 109206248
+13  QtWebEngineCore               	       0x113604d68 0x10f2dc000 + 70421864
+14  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+15  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+16  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 34:: Chrome_ChildIOThread
+0   libsystem_kernel.dylib        	       0x186377e28 kevent64 + 8
+1   QtWebEngineCore               	       0x11363c860 0x10f2dc000 + 70649952
+2   QtWebEngineCore               	       0x11363c658 0x10f2dc000 + 70649432
+3   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+4   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+5   QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+6   QtWebEngineCore               	       0x115a6cc8c 0x10f2dc000 + 108596364
+7   QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+8   QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+9   libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+10  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+Thread 35:: GpuMemoryThread
+0   libsystem_kernel.dylib        	       0x18636bf54 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x18637e280 mach_msg2_internal + 80
+2   libsystem_kernel.dylib        	       0x186374bb8 mach_msg_overwrite + 604
+3   libsystem_kernel.dylib        	       0x18636c2d0 mach_msg + 24
+4   QtWebEngineCore               	       0x11363670c 0x10f2dc000 + 70625036
+5   QtWebEngineCore               	       0x1135c1a18 0x10f2dc000 + 70146584
+6   QtWebEngineCore               	       0x1135c198c 0x10f2dc000 + 70146444
+7   QtWebEngineCore               	       0x113571444 0x10f2dc000 + 69817412
+8   QtWebEngineCore               	       0x1135dfe88 0x10f2dc000 + 70270600
+9   QtWebEngineCore               	       0x1135a31a0 0x10f2dc000 + 70021536
+10  QtWebEngineCore               	       0x113604c3c 0x10f2dc000 + 70421564
+11  QtWebEngineCore               	       0x113604dbc 0x10f2dc000 + 70421948
+12  QtWebEngineCore               	       0x11361de4c 0x10f2dc000 + 70524492
+13  libsystem_pthread.dylib       	       0x1863abfa8 _pthread_start + 148
+14  libsystem_pthread.dylib       	       0x1863a6da0 thread_start + 8
+
+
+Thread 33 crashed with ARM Thread State (64-bit):
+    x0: 0x2010002030300000   x1: 0x0000000fffffc110   x2: 0x0000000000000000   x3: 0x0000600003dff258
+    x4: 0x0000000000000006   x5: 0x0000000000003250   x6: 0x0000600003dff250   x7: 0x0000000000000001
+    x8: 0x0000000fffffc10c   x9: 0x2010002030300000  x10: 0x2010002030100000  x11: 0x0000600003dff250
+   x12: 0x0000000000000909  x13: 0x00000000001ff800  x14: 0x00000000000007fb  x15: 0x000000009001b326
+   x16: 0x00000001863acd04  x17: 0x000000011f0e4600  x18: 0x0000000000000000  x19: 0x000000011f0e4740
+   x20: 0x0000000119864000  x21: 0x00000001198dace8  x22: 0x0000000119a15000  x23: 0x0000000119864000
+   x24: 0x00000001199dd600  x25: 0x00000001199b7000  x26: 0x00006000038acc80  x27: 0x0000000000000000
+   x28: 0x000000017603ad30   fp: 0x000000017603a6d0   lr: 0x2e69000114d3e7ec
+    sp: 0x000000017603a6d0   pc: 0x00000001863acf08 cpsr: 0x20001000
+   far: 0x000000011012a6b4  esr: 0xf2000001 (Breakpoint) brk 1
+
+Binary Images:
+       0x104608000 -        0x104883fff org.kde.RKWard (0.8.0z+0.8.1+devel2) <7eace40c-16fb-330a-97df-fc695da082fb> /Applications/rkward.app/Contents/MacOS/rkward
+       0x104990000 -        0x1049a7fff org.qt-project.QtWebEngineWidgets (6.7) <8e9b9b95-73e7-38c3-b6ad-439ab146fd7d> /Applications/rkward.app/Contents/Frameworks/QtWebEngineWidgets.framework/Versions/A/QtWebEngineWidgets
+       0x10f2dc000 -        0x119257fff org.qt-project.QtWebEngineCore (6.7) <11f382d0-c793-3a1e-bb92-e83bf148483d> /Applications/rkward.app/Contents/Frameworks/QtWebEngineCore.framework/Versions/A/QtWebEngineCore
+       0x104f1c000 -        0x1052f3fff org.qt-project.QtQuick (6.7) <20f5d6fe-410b-3685-8f25-97b4e27ee3e0> /Applications/rkward.app/Contents/Frameworks/QtQuick.framework/Versions/A/QtQuick
+       0x104a78000 -        0x104af7fff org.qt-project.QtQmlModels (6.7) <95a88ca8-68e5-307d-88ec-5844779b5ce0> /Applications/rkward.app/Contents/Frameworks/QtQmlModels.framework/Versions/A/QtQmlModels
+       0x104a08000 -        0x104a2ffff org.qt-project.QtWebChannel (6.7) <6d559530-f806-3e92-9d92-d497430c24dd> /Applications/rkward.app/Contents/Frameworks/QtWebChannel.framework/Versions/A/QtWebChannel
+       0x104bb0000 -        0x104c13fff org.qt-project.QtPositioning (6.7) <ede3ebf1-6bc2-3bb0-aa92-3355a9d21c11> /Applications/rkward.app/Contents/Frameworks/QtPositioning.framework/Versions/A/QtPositioning
+       0x104d40000 -        0x104deffff libKF6KIOFileWidgets.6.4.0.dylib (*) <75088da3-783e-3ae7-a911-5607e4f0d4f7> /Applications/rkward.app/Contents/Frameworks/libKF6KIOFileWidgets.6.4.0.dylib
+       0x1049c8000 -        0x1049dbfff libKF6Bookmarks.6.4.0.dylib (*) <4aa422e8-32e1-3214-94a5-f670cc540f62> /Applications/rkward.app/Contents/Frameworks/libKF6Bookmarks.6.4.0.dylib
+       0x104c38000 -        0x104c77fff org.qt-project.QtCore5Compat (6.7) <c0facdc5-05df-3999-abef-b7136425ca0e> /Applications/rkward.app/Contents/Frameworks/QtCore5Compat.framework/Versions/A/QtCore5Compat
+       0x1057a4000 -        0x105a2bfff libKF6TextEditor.6.4.0.dylib (*) <19633e94-1ca8-3cce-b44d-d26b46030437> /Applications/rkward.app/Contents/Frameworks/libKF6TextEditor.6.4.0.dylib
+       0x105f40000 -        0x1062dbfff org.qt-project.QtQml (6.7) <5af10918-288b-30ee-b672-e45b906103f7> /Applications/rkward.app/Contents/Frameworks/QtQml.framework/Versions/A/QtQml
+       0x105ad8000 -        0x105c93fff libKF6SyntaxHighlighting.6.4.0.dylib (*) <faf6c332-4247-326b-b6e6-02514b09760e> /Applications/rkward.app/Contents/Frameworks/libKF6SyntaxHighlighting.6.4.0.dylib
+       0x104c94000 -        0x104cbbfff libKF6Parts.6.4.0.dylib (*) <6879540d-a140-3549-9fc8-b757a027b143> /Applications/rkward.app/Contents/Frameworks/libKF6Parts.6.4.0.dylib
+       0x105570000 -        0x105613fff libKF6KIOWidgets.6.4.0.dylib (*) <379e4654-7cd9-3906-9f3e-1af3d4fafb28> /Applications/rkward.app/Contents/Frameworks/libKF6KIOWidgets.6.4.0.dylib
+       0x104cdc000 -        0x104cfffff libKF6Completion.6.4.0.dylib (*) <5349033d-c96c-3585-9ae8-7e0008dfd28c> /Applications/rkward.app/Contents/Frameworks/libKF6Completion.6.4.0.dylib
+       0x104e48000 -        0x104e77fff libKF6KIOGui.6.4.0.dylib (*) <db1e7e6a-5a61-3401-bda4-1832dec31419> /Applications/rkward.app/Contents/Frameworks/libKF6KIOGui.6.4.0.dylib
+       0x105dec000 -        0x105edbfff libKF6KIOCore.6.4.0.dylib (*) <747e7f67-d561-3fe5-a461-acffc212f435> /Applications/rkward.app/Contents/Frameworks/libKF6KIOCore.6.4.0.dylib
+       0x104974000 -        0x10497ffff libKF6Crash.6.4.0.dylib (*) <ef4790d7-72c9-3769-b2ab-d46636f6224d> /Applications/rkward.app/Contents/Frameworks/libKF6Crash.6.4.0.dylib
+       0x105670000 -        0x1056d3fff org.qt-project.QtOpenGL (6.7) <985b44ed-38dd-3705-bbab-a3d8068f434a> /Applications/rkward.app/Contents/Frameworks/QtOpenGL.framework/Versions/A/QtOpenGL
+       0x104e9c000 -        0x104ee7fff libKF6Service.6.4.0.dylib (*) <494ce3d1-66ca-3e44-bbb5-2e31598272fe> /Applications/rkward.app/Contents/Frameworks/libKF6Service.6.4.0.dylib
+       0x105470000 -        0x1054bffff libKF6Solid.6.4.0.dylib (*) <6e790b4a-edb4-3627-9ea4-87438c4b1cc6> /Applications/rkward.app/Contents/Frameworks/libKF6Solid.6.4.0.dylib
+       0x104b28000 -        0x104b3bfff libKF6JobWidgets.6.4.0.dylib (*) <75dc0397-1f78-3509-a831-54ef2ccc00f8> /Applications/rkward.app/Contents/Frameworks/libKF6JobWidgets.6.4.0.dylib
+       0x1054e8000 -        0x105503fff libKF6Notifications.6.4.0.dylib (*) <91e9a6e7-4f6f-3ce4-af68-11e88d5d907c> /Applications/rkward.app/Contents/Frameworks/libKF6Notifications.6.4.0.dylib
+       0x10551c000 -        0x10554bfff libKF6Archive.6.4.0.dylib (*) <819aec62-a5aa-33f0-9195-1de1314d8944> /Applications/rkward.app/Contents/Frameworks/libKF6Archive.6.4.0.dylib
+       0x104b54000 -        0x104b5ffff libKF6WindowSystem.6.4.0.dylib (*) <405054e4-6ea4-388f-8b8a-4f9891650910> /Applications/rkward.app/Contents/Frameworks/libKF6WindowSystem.6.4.0.dylib
+       0x1063a8000 -        0x106433fff libKF6XmlGui.6.4.0.dylib (*) <741b1a30-051b-3f36-a7ec-67cae920775c> /Applications/rkward.app/Contents/Frameworks/libKF6XmlGui.6.4.0.dylib
+       0x105cb4000 -        0x105cf7fff org.qt-project.QtPrintSupport (6.7) <10d611e5-e643-3979-b9df-f72dec24aa1b> /Applications/rkward.app/Contents/Frameworks/QtPrintSupport.framework/Versions/A/QtPrintSupport
+       0x105d28000 -        0x105d5bfff libKF6ConfigWidgets.6.4.0.dylib (*) <24411329-0cc6-3291-a296-c6aa2c44ed99> /Applications/rkward.app/Contents/Frameworks/libKF6ConfigWidgets.6.4.0.dylib
+       0x104b74000 -        0x104b83fff libKF6ColorScheme.6.4.0.dylib (*) <04077cc1-83bd-3f2a-9a2a-3dae40baee11> /Applications/rkward.app/Contents/Frameworks/libKF6ColorScheme.6.4.0.dylib
+       0x106478000 -        0x1064c7fff libKF6I18n.6.4.0.dylib (*) <4aabdeaf-39ce-3322-889f-dbcacb9da643> /Applications/rkward.app/Contents/Frameworks/libKF6I18n.6.4.0.dylib
+       0x105744000 -        0x105763fff libKF6ConfigGui.6.4.0.dylib (*) <2e5bb944-1488-364d-a387-82ad7f50192e> /Applications/rkward.app/Contents/Frameworks/libKF6ConfigGui.6.4.0.dylib
+       0x106714000 -        0x1068bbfff libKF6WidgetsAddons.6.4.0.dylib (*) <0ad9f95a-aad4-3f02-a255-e7763a643c71> /Applications/rkward.app/Contents/Frameworks/libKF6WidgetsAddons.6.4.0.dylib
+       0x105d88000 -        0x105da3fff org.qt-project.QtXml (6.7) <989ebcaf-1d67-3ecc-a0d9-bfbfd4f0dda0> /Applications/rkward.app/Contents/Frameworks/QtXml.framework/Versions/A/QtXml
+       0x10655c000 -        0x1065abfff libKF6ConfigCore.6.4.0.dylib (*) <89dc0c31-40ba-3117-a08b-4807b46d049e> /Applications/rkward.app/Contents/Frameworks/libKF6ConfigCore.6.4.0.dylib
+       0x1065d8000 -        0x106603fff libKF6ItemViews.6.4.0.dylib (*) <126ae094-fb4a-361f-b041-b91a83c46d11> /Applications/rkward.app/Contents/Frameworks/libKF6ItemViews.6.4.0.dylib
+       0x106f10000 -        0x10736ffff org.qt-project.QtWidgets (6.7) <90e2e205-f5ab-3ead-ad29-26a2fa16c576> /Applications/rkward.app/Contents/Frameworks/QtWidgets.framework/Versions/A/QtWidgets
+       0x106948000 -        0x1069dffff libKF6CoreAddons.6.4.0.dylib (*) <b126c3c4-ae7b-30cb-9c4f-186e9ee18fc0> /Applications/rkward.app/Contents/Frameworks/libKF6CoreAddons.6.4.0.dylib
+       0x106b9c000 -        0x106cc7fff org.qt-project.QtNetwork (6.7) <5680e915-c032-3523-a7f6-8ef5c38de6d1> /Applications/rkward.app/Contents/Frameworks/QtNetwork.framework/Versions/A/QtNetwork
+       0x1086e8000 -        0x1098c7fff libKF6BreezeIcons.6.4.0.dylib (*) <73e3d7b9-019c-3634-94f3-9b3718e28935> /Applications/rkward.app/Contents/Frameworks/libKF6BreezeIcons.6.4.0.dylib
+       0x107ae8000 -        0x107fcffff org.qt-project.QtGui (6.7) <ed8e21b4-eb9c-3bdc-a6e0-7dcc17749382> /Applications/rkward.app/Contents/Frameworks/QtGui.framework/Versions/A/QtGui
+       0x106a0c000 -        0x106a8bfff org.qt-project.QtDBus (6.7) <db7c54db-d8ce-3f88-9750-4a00258665e1> /Applications/rkward.app/Contents/Frameworks/QtDBus.framework/Versions/A/QtDBus
+       0x108100000 -        0x108553fff org.qt-project.QtCore (6.7) <1bfee4ac-07ec-390b-adf9-7b4dfdb2e456> /Applications/rkward.app/Contents/Frameworks/QtCore.framework/Versions/A/QtCore
+       0x105708000 -        0x10571bfff org.qt-project.QtQuickWidgets (6.7) <b7cf2f2d-2720-3bb9-8ac7-b8bc759b2d58> /Applications/rkward.app/Contents/Frameworks/QtQuickWidgets.framework/Versions/A/QtQuickWidgets
+       0x104a48000 -        0x104a53fff libbrotlidec.1.1.0.dylib (*) <7c7f3dd3-2488-3e54-a1c3-7a716a0ec8e1> /Applications/rkward.app/Contents/Frameworks/libbrotlidec.1.1.0.dylib
+       0x106ab0000 -        0x106b4bfff libzstd.1.5.5.dylib (*) <dd771691-6dba-328d-bf21-f49625e9c15b> /Applications/rkward.app/Contents/Frameworks/libzstd.1.5.5.dylib
+       0x105dbc000 -        0x105dcffff libz.1.3.1.dylib (*) <e894da38-447b-364b-99cd-376094bf1bbe> /Applications/rkward.app/Contents/Frameworks/libz.1.3.1.dylib
+       0x106d2c000 -        0x106dbbfff libssl.3.dylib (*) <5ceb4c33-2348-34ff-a267-23745a197fad> /Applications/rkward.app/Contents/Frameworks/libssl.3.dylib
+       0x1098f8000 -        0x109bf3fff libcrypto.3.dylib (*) <613eb163-b6a5-325e-9f96-cf28766fe2d0> /Applications/rkward.app/Contents/Frameworks/libcrypto.3.dylib
+       0x107780000 -        0x107957fff libicui18n.74.2.dylib (*) <7113413f-5190-384f-8c99-a63100d42377> /Applications/rkward.app/Contents/Frameworks/libicui18n.74.2.dylib
+       0x109ce4000 -        0x109e43fff libicuuc.74.2.dylib (*) <a9646621-7c50-3e5c-809f-bc33a78269a8> /Applications/rkward.app/Contents/Frameworks/libicuuc.74.2.dylib
+       0x10bc40000 -        0x10d99bfff libicudata.74.2.dylib (*) <6853aa17-3bf0-3197-b05d-352f05652142> /Applications/rkward.app/Contents/Frameworks/libicudata.74.2.dylib
+       0x107608000 -        0x107707fff libglib-2.0.0.dylib (*) <d93e891d-37e3-3f06-a749-94b5b8def137> /Applications/rkward.app/Contents/Frameworks/libglib-2.0.0.dylib
+       0x106628000 -        0x106673fff libpcre2-16.0.11.2.dylib (*) <1c1ae529-7290-3acd-ad7f-ed2e5e12f3f4> /Applications/rkward.app/Contents/Frameworks/libpcre2-16.0.11.2.dylib
+       0x1049f4000 -        0x1049f7fff libgthread-2.0.0.dylib (*) <88cc1d50-a7b1-3be9-976a-3f9a61db2d8b> /Applications/rkward.app/Contents/Frameworks/libgthread-2.0.0.dylib
+       0x106508000 -        0x10651ffff libintl.8.dylib (*) <b5184f72-2e5d-3e75-9933-e51205c64989> /Applications/rkward.app/Contents/Frameworks/libintl.8.dylib
+       0x106e00000 -        0x106e4ffff libpcre2-8.0.11.2.dylib (*) <ebfcccc5-b4a6-369d-8469-a38872f7d1a8> /Applications/rkward.app/Contents/Frameworks/libpcre2-8.0.11.2.dylib
+       0x1066b8000 -        0x1066dbfff libbrotlicommon.1.1.0.dylib (*) <99a26ead-832f-3c0d-aacc-c84426a384ff> /Applications/rkward.app/Contents/Frameworks/libbrotlicommon.1.1.0.dylib
+       0x106ea0000 -        0x106ecbfff libpng16.16.40.0.dylib (*) <9aa591c2-8903-38e3-a8d9-3fcfa322fe06> /Applications/rkward.app/Contents/Frameworks/libpng16.16.40.0.dylib
+       0x109ea4000 -        0x109f63fff libharfbuzz.dylib (*) <844f0264-13e6-3036-a753-ef76fcbf3f6d> /Applications/rkward.app/Contents/Frameworks/libharfbuzz.dylib
+       0x107a28000 -        0x107ab3fff libfreetype.6.dylib (*) <29c41b26-576c-3477-83cc-a3384b396ca1> /Applications/rkward.app/Contents/Frameworks/libfreetype.6.dylib
+       0x1064e0000 -        0x1064effff libbzip2.dylib (*) <73eb6189-176b-3c12-8d4d-7fb98e7eff78> /Applications/rkward.app/Contents/Frameworks/libbzip2.dylib
+       0x106684000 -        0x106693fff libKF6IconWidgets.6.4.0.dylib (*) <42cdb6b6-c755-366a-8856-90c572699113> /Applications/rkward.app/Contents/Frameworks/libKF6IconWidgets.6.4.0.dylib
+       0x1066ec000 -        0x1066fbfff libKF6BookmarksWidgets.6.4.0.dylib (*) <71be7d17-ef19-3675-9022-308e37d622a8> /Applications/rkward.app/Contents/Frameworks/libKF6BookmarksWidgets.6.4.0.dylib
+       0x1074d8000 -        0x1074fffff libKF6IconThemes.6.4.0.dylib (*) <90b8a924-bdc7-34e5-93d3-b15455fb1bef> /Applications/rkward.app/Contents/Frameworks/libKF6IconThemes.6.4.0.dylib
+       0x106e60000 -        0x106e7bfff libKF6GuiAddons.6.4.0.dylib (*) <a02d4881-63a1-3798-a2fd-86501e318370> /Applications/rkward.app/Contents/Frameworks/libKF6GuiAddons.6.4.0.dylib
+       0x104a64000 -        0x104a67fff org.qt-project.QtConcurrent (6.7) <eb112e8b-bed1-340f-9a98-91ea88fd7a36> /Applications/rkward.app/Contents/Frameworks/QtConcurrent.framework/Versions/A/QtConcurrent
+       0x106530000 -        0x10653ffff libKF6AuthCore.6.4.0.dylib (*) <1b409592-9c6c-35ab-8293-cc7536c39ac8> /Applications/rkward.app/Contents/Frameworks/libKF6AuthCore.6.4.0.dylib
+       0x107554000 -        0x10757bfff libKF6Codecs.6.4.0.dylib (*) <adb19d3b-07ee-3f72-b6df-95d921f4290e> /Applications/rkward.app/Contents/Frameworks/libKF6Codecs.6.4.0.dylib
+       0x108630000 -        0x108677fff org.qt-project.QtSvg (6.7) <ee4820cd-7aef-365f-a309-6190929a9310> /Applications/rkward.app/Contents/Frameworks/QtSvg.framework/Versions/A/QtSvg
+       0x106ee0000 -        0x106efffff liblzma.5.dylib (*) <dda40833-f4fd-3fcf-9d4f-bb85911a9193> /Applications/rkward.app/Contents/Frameworks/liblzma.5.dylib
+       0x109f7c000 -        0x109fa7fff libKF6TextWidgets.6.4.0.dylib (*) <8302db58-3b42-3e3e-895c-b1ddab25fe4f> /Applications/rkward.app/Contents/Frameworks/libKF6TextWidgets.6.4.0.dylib
+       0x104b98000 -        0x104b9bfff libeditorconfig.0.12.5.dylib (*) <68b863eb-4610-3817-9fd3-86e4e458c268> /Applications/rkward.app/Contents/Frameworks/libeditorconfig.0.12.5.dylib
+       0x107518000 -        0x10752bfff org.qt-project.QtTextToSpeech (6.7) <1ffe2e08-1b0c-3946-887d-3515a7049ed6> /Applications/rkward.app/Contents/Frameworks/QtTextToSpeech.framework/Versions/A/QtTextToSpeech
+       0x10a0a0000 -        0x10a12ffff org.qt-project.QtMultimedia (6.7) <0b926d78-6628-320f-84bb-8536df3ee157> /Applications/rkward.app/Contents/Frameworks/QtMultimedia.framework/Versions/A/QtMultimedia
+       0x107590000 -        0x1075a7fff libKF6SonnetUi.6.4.0.dylib (*) <394de4ec-b85c-3d0d-8703-68fea0752a7d> /Applications/rkward.app/Contents/Frameworks/libKF6SonnetUi.6.4.0.dylib
+       0x10a020000 -        0x10a05bfff libKF6SonnetCore.6.4.0.dylib (*) <19784552-3ccf-354e-8652-c7e546609369> /Applications/rkward.app/Contents/Frameworks/libKF6SonnetCore.6.4.0.dylib
+       0x107738000 -        0x107757fff com.apple.security.csparser (3.0) <af79a0fa-e8a1-3134-bee8-c9567ed1e971> /System/Library/Frameworks/Security.framework/Versions/A/PlugIns/csparser.bundle/Contents/MacOS/csparser
+       0x10a3e0000 -        0x10a47ffff libqcocoa.dylib (*) <63037555-2f33-3c43-a490-59147d0862ee> /Applications/rkward.app/Contents/PlugIns/platforms/libqcocoa.dylib
+       0x10a36c000 -        0x10a38ffff libqmacstyle.dylib (*) <b7020dc2-0d23-3523-b8bb-ee1101ec0257> /Applications/rkward.app/Contents/PlugIns/styles/libqmacstyle.dylib
+       0x10ba40000 -        0x10ba9ffff breeze6.so (*) <13286d5f-8ea9-334f-b72d-02f3a3486cf1> /Applications/rkward.app/Contents/PlugIns/styles/breeze6.so
+       0x10a4c0000 -        0x10a4dffff libKirigamiPlatform.6.4.0.dylib (*) <aabd254e-9406-361c-b529-b29770427c33> /Applications/rkward.app/Contents/Frameworks/libKirigamiPlatform.6.4.0.dylib
+       0x10a3ac000 -        0x10a3bffff org.qt-project.QtQuickControls2 (6.7) <1f211d13-b2aa-3996-8d75-b80d775adf4e> /Applications/rkward.app/Contents/Frameworks/QtQuickControls2.framework/Versions/A/QtQuickControls2
+       0x11bf08000 -        0x11c007fff org.qt-project.QtQuickTemplates2 (6.7) <b6e7259c-f00f-3c04-b8a6-3548ceb5a338> /Applications/rkward.app/Contents/Frameworks/QtQuickTemplates2.framework/Versions/A/QtQuickTemplates2
+       0x10f224000 -        0x10f263fff libdbus-1.3.dylib (*) <acc0b472-551a-3c71-bbdb-9a762348c1b8> /Applications/rkward.app/Contents/Frameworks/libdbus-1.3.dylib
+       0x10a344000 -        0x10a34bfff kimg_pcx.dylib (*) <0b48428a-2d24-3437-829a-b44946cc82f1> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_pcx.dylib
+       0x10a798000 -        0x10a7a7fff kimg_psd.dylib (*) <bda1d904-cea4-38ac-abd7-8c4374a72003> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_psd.dylib
+       0x10a778000 -        0x10a77ffff kimg_pfm.dylib (*) <3af8cc47-2287-32cd-8cef-40cb799c9b68> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_pfm.dylib
+       0x10a7b8000 -        0x10a7bffff libqgif.dylib (*) <2c3e963f-43ef-3387-8905-cf4f4cee9908> /Applications/rkward.app/Contents/PlugIns/imageformats/libqgif.dylib
+       0x10a7d0000 -        0x10a7d7fff libqwbmp.dylib (*) <74cb0ac9-7ab0-3c5f-a8c5-47423a321b30> /Applications/rkward.app/Contents/PlugIns/imageformats/libqwbmp.dylib
+       0x10a7e8000 -        0x10a7effff libqwebp.dylib (*) <605ce76d-5d84-3ca8-af7b-5e0ee58747e2> /Applications/rkward.app/Contents/PlugIns/imageformats/libqwebp.dylib
+       0x10bac4000 -        0x10bac7fff libwebpdemux.2.0.14.dylib (*) <3877bf6e-2b33-3cdb-842c-30e25e570022> /Applications/rkward.app/Contents/Frameworks/libwebpdemux.2.0.14.dylib
+       0x10bad8000 -        0x10badffff libwebpmux.3.0.13.dylib (*) <756f386c-c349-321d-b4fd-8b370da0f400> /Applications/rkward.app/Contents/Frameworks/libwebpmux.3.0.13.dylib
+       0x11bdc0000 -        0x11be1bfff libwebp.7.1.8.dylib (*) <2eaf9612-0b00-3e49-8b2d-e4dca50543d5> /Applications/rkward.app/Contents/Frameworks/libwebp.7.1.8.dylib
+       0x10bc00000 -        0x10bc03fff libsharpyuv.0.0.1.dylib (*) <e50126d0-08b8-3c02-be21-b94a248ec63a> /Applications/rkward.app/Contents/Frameworks/libsharpyuv.0.0.1.dylib
+       0x10bc14000 -        0x10bc1bfff kimg_avif.dylib (*) <8005f972-9177-3920-a3a7-8baf6ce05b6d> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_avif.dylib
+       0x10f2ac000 -        0x10f2cbfff libavif.16.0.4.dylib (*) <fa00b941-3df2-36e2-90cf-37a4fcf307b6> /Applications/rkward.app/Contents/Frameworks/libavif.16.0.4.dylib
+       0x11c19c000 -        0x11c26bfff libdav1d.7.dylib (*) <a5b32e46-d7d9-3ebf-999b-810f5dc85ebe> /Applications/rkward.app/Contents/Frameworks/libdav1d.7.dylib
+       0x11c7cc000 -        0x11ccbbfff libaom.3.9.1.dylib (*) <117c52a1-36e7-363a-be37-24e3eaa1a0b7> /Applications/rkward.app/Contents/Frameworks/libaom.3.9.1.dylib
+       0x11bd54000 -        0x11bd5ffff kimg_eps.dylib (*) <ea69d54b-55fb-3acd-a701-88a90f18ccf4> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_eps.dylib
+       0x11be2c000 -        0x11be4bfff kimg_xcf.dylib (*) <cc043127-1d37-3da9-a8be-d381b9fb3a0f> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_xcf.dylib
+       0x10f27c000 -        0x10f283fff libqico.dylib (*) <e3a64ab1-1fe6-35d9-976e-343ff193124d> /Applications/rkward.app/Contents/PlugIns/imageformats/libqico.dylib
+       0x10f294000 -        0x10f29bfff kimg_pic.dylib (*) <8783d6b4-7d93-382e-bbb7-6d3ed6b4ab7e> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_pic.dylib
+       0x11bd70000 -        0x11bd77fff kimg_rgb.dylib (*) <073f170b-d388-343c-a82f-4100579bccbf> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_rgb.dylib
+       0x11bd88000 -        0x11bd8ffff libqmacheif.dylib (*) <fd3b9676-f90e-3cf8-9217-e24bb77fe1ed> /Applications/rkward.app/Contents/PlugIns/imageformats/libqmacheif.dylib
+       0x11bda0000 -        0x11bda7fff kimg_kra.dylib (*) <62f77879-0d21-3a60-9e83-ca9c2057662a> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_kra.dylib
+       0x11be64000 -        0x11be6bfff kimg_pxr.dylib (*) <676cd4d3-ad96-3f4e-a2b1-7031aa3e6499> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_pxr.dylib
+       0x11be7c000 -        0x11be83fff kimg_ani.dylib (*) <d0c0099f-e576-352f-bc62-54da350e27bd> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_ani.dylib
+       0x11beb0000 -        0x11bebbfff libqjpeg.dylib (*) <d818f514-4a7a-306d-82d1-4e8e1990aec2> /Applications/rkward.app/Contents/PlugIns/imageformats/libqjpeg.dylib
+       0x11c124000 -        0x11c177fff libjpeg.62.3.0.dylib (*) <46020b85-f204-3cb4-8d14-da5fbeca0773> /Applications/rkward.app/Contents/Frameworks/libjpeg.62.3.0.dylib
+       0x11be94000 -        0x11be9bfff kimg_ora.dylib (*) <0a235901-7f9f-3da1-9b12-7896f90b7998> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_ora.dylib
+       0x11bee8000 -        0x11bef3fff kimg_jxl.dylib (*) <6dd50380-8adc-37e1-a707-0c8d44eaaa04> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_jxl.dylib
+       0x11c440000 -        0x11c5b7fff libjxl.0.9.3.dylib (*) <47eceefc-6ace-3a34-8415-3825fd271b6d> /Applications/rkward.app/Contents/Frameworks/libjxl.0.9.3.dylib
+       0x10bc2c000 -        0x10bc2ffff libjxl_threads.0.9.3.dylib (*) <fcd071cf-6fea-3467-8b3d-d62ba3cffb1e> /Applications/rkward.app/Contents/Frameworks/libjxl_threads.0.9.3.dylib
+       0x11c0e8000 -        0x11c103fff libjxl_cms.0.9.3.dylib (*) <c5e0a9c3-5503-3a6f-a6d0-8262a8c8cb58> /Applications/rkward.app/Contents/Frameworks/libjxl_cms.0.9.3.dylib
+       0x11becc000 -        0x11bed3fff libhwy.1.0.7.dylib (*) <651813c1-bb52-32f1-b4c8-5952eca50e0c> /Applications/rkward.app/Contents/Frameworks/libhwy.1.0.7.dylib
+       0x11c354000 -        0x11c3e3fff libbrotlienc.1.1.0.dylib (*) <4d3f51d2-44e1-3ca7-8094-b7c9b6a46627> /Applications/rkward.app/Contents/Frameworks/libbrotlienc.1.1.0.dylib
+       0x11c0bc000 -        0x11c0c3fff libqtiff.dylib (*) <b2e544f5-2739-3003-aa6c-7b83eef8ed39> /Applications/rkward.app/Contents/PlugIns/imageformats/libqtiff.dylib
+       0x11c5cc000 -        0x11c62ffff libtiff.5.8.0.dylib (*) <adbee35e-b298-3ddc-a935-d0312814eecf> /Applications/rkward.app/Contents/Frameworks/libtiff.5.8.0.dylib
+       0x11c2b4000 -        0x11c2bbfff libqsvg.dylib (*) <fc888d94-0b16-3140-9512-825e2e949fa5> /Applications/rkward.app/Contents/PlugIns/imageformats/libqsvg.dylib
+       0x11c2cc000 -        0x11c2d3fff kimg_tga.dylib (*) <89df202f-2d03-34f2-ad5b-9f43e4fb7c20> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_tga.dylib
+       0x11c2e4000 -        0x11c2ebfff kimg_hdr.dylib (*) <f8b74d6e-0e13-3328-8c35-94274e239f9b> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_hdr.dylib
+       0x11c2fc000 -        0x11c303fff kimg_ras.dylib (*) <25fe8ab3-b446-3beb-8223-0b04bb4671dd> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_ras.dylib
+       0x11c314000 -        0x11c31bfff libqpdf.dylib (*) <b55c697e-13cd-3751-96e8-9e6372a0a27e> /Applications/rkward.app/Contents/PlugIns/imageformats/libqpdf.dylib
+       0x11d548000 -        0x11dceffff org.qt-project.QtPdf (6.7) <ec50cf9b-d3b2-3585-a61a-0534653b67b7> /Applications/rkward.app/Contents/Frameworks/QtPdf.framework/Versions/A/QtPdf
+       0x11c32c000 -        0x11c333fff kimg_qoi.dylib (*) <e184ffac-77dd-3a1e-9807-7a8a8a4cc841> /Applications/rkward.app/Contents/PlugIns/imageformats/kimg_qoi.dylib
+       0x11c3f4000 -        0x11c3fbfff libqicns.dylib (*) <a7f7e75d-cd2b-3e06-86eb-9a22707ceafa> /Applications/rkward.app/Contents/PlugIns/imageformats/libqicns.dylib
+       0x11c40c000 -        0x11c413fff libqmacjp2.dylib (*) <2b25646f-abd3-31c4-9033-30a39492ebc9> /Applications/rkward.app/Contents/PlugIns/imageformats/libqmacjp2.dylib
+       0x11c644000 -        0x11c64ffff libqsvgicon.dylib (*) <736e405a-82e8-38e9-a75a-cd85465b3358> /Applications/rkward.app/Contents/PlugIns/iconengines/libqsvgicon.dylib
+       0x10a32c000 -        0x10a337fff libobjc-trampolines.dylib (*) <8e928412-9e96-32d4-b173-d99beb9fed0b> /usr/lib/libobjc-trampolines.dylib
+       0x11c758000 -        0x11c75ffff sonnet_nsspellchecker.so (*) <4c60e5c4-b3a4-30f0-9f63-77c16f070813> /Applications/rkward.app/Contents/PlugIns/kf6/sonnet/sonnet_nsspellchecker.so
+       0x11de90000 -        0x11df0ffff kateprojectplugin.so (*) <03616507-d3b1-38e7-b378-fc1c8691019a> /Applications/rkward.app/Contents/PlugIns/kf6/ktexteditor/kateprojectplugin.so
+       0x11e990000 -        0x11eab3fff libkateprivate.24.11.70.dylib (*) <c0ad3760-ed4a-384a-9146-2f0826ca99a2> /Applications/rkward.app/Contents/Frameworks/libkateprivate.24.11.70.dylib
+       0x11ddf4000 -        0x11ddfffff libKF6UserFeedbackWidgets.6.4.0.dylib (*) <1cc17864-ce2f-3233-9a46-c3105a97558b> /Applications/rkward.app/Contents/Frameworks/libKF6UserFeedbackWidgets.6.4.0.dylib
+       0x11df50000 -        0x11df7bfff libKF6UserFeedbackCore.6.4.0.dylib (*) <2b7ee3c3-5934-3746-a00e-2c62ba7f35b4> /Applications/rkward.app/Contents/Frameworks/libKF6UserFeedbackCore.6.4.0.dylib
+       0x11e8d0000 -        0x11e917fff katesearchplugin.so (*) <f5b0b281-3cd6-366f-ba2c-519b932603dd> /Applications/rkward.app/Contents/PlugIns/kf6/ktexteditor/katesearchplugin.so
+       0x11ec04000 -        0x11ec23fff katesnippetsplugin.so (*) <9c12ee6f-1c5c-31b7-a94d-24f472b25403> /Applications/rkward.app/Contents/PlugIns/kf6/ktexteditor/katesnippetsplugin.so
+       0x11ec44000 -        0x11ec53fff libKF6NewStuffWidgets.6.4.0.dylib (*) <22bcc483-cb47-3432-84af-78821eedd995> /Applications/rkward.app/Contents/Frameworks/libKF6NewStuffWidgets.6.4.0.dylib
+       0x11ed18000 -        0x11ed9bfff libKF6NewStuffCore.6.4.0.dylib (*) <3b1cb83e-db85-311d-8721-a81838038a97> /Applications/rkward.app/Contents/Frameworks/libKF6NewStuffCore.6.4.0.dylib
+       0x11fa00000 -        0x11fa6ffff libKF6Attica.6.4.0.dylib (*) <61a581b4-ca1d-388b-b52c-5c9791a26536> /Applications/rkward.app/Contents/Frameworks/libKF6Attica.6.4.0.dylib
+       0x11fab0000 -        0x11fb27fff libKF6Syndication.6.4.0.dylib (*) <ff4b5e30-dbad-3aee-afd8-77d75ab91c5c> /Applications/rkward.app/Contents/Frameworks/libKF6Syndication.6.4.0.dylib
+       0x11ec68000 -        0x11ec87fff libKF6Package.6.4.0.dylib (*) <fd40a49f-03d8-37f6-9c42-0ed69213b78d> /Applications/rkward.app/Contents/Frameworks/libKF6Package.6.4.0.dylib
+       0x14a764000 -        0x14a7cffff com.apple.AppleMetalOpenGLRenderer (1.0) <76243a19-d6d2-32ee-84d3-7bcfce93d66e> /System/Library/Extensions/AppleMetalOpenGLRenderer.bundle/Contents/MacOS/AppleMetalOpenGLRenderer
+       0x18636b000 -        0x1863a4ff7 libsystem_kernel.dylib (*) <08c5fe2a-b0bf-3ab6-bb42-460c18917d33> /usr/lib/system/libsystem_kernel.dylib
+       0x18b096000 -        0x18b4c1fff com.apple.SkyLight (1.600.0) <046a9ef4-9de4-34c4-a773-8b81523ec307> /System/Library/PrivateFrameworks/SkyLight.framework/Versions/A/SkyLight
+       0x189676000 -        0x18a585fff com.apple.AppKit (6.9) <ab4a163e-3a53-3fde-a88d-130759291adb> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+       0x18640b000 -        0x1868e4fff com.apple.CoreFoundation (6.9) <b3b2df49-2db8-370e-84ae-e0a2704515b8> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+       0x18fcaa000 -        0x18ffddfff com.apple.HIToolbox (2.1.1) <9bed5c79-f02f-3e0b-9fdb-57d955cc68ba> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+       0x18604e000 -        0x1860dc587 dyld (*) <e7a99595-e0f8-34af-be8b-9347d0d658a4> /usr/lib/dyld
+       0x1863a5000 -        0x1863b1fff libsystem_pthread.dylib (*) <1f30fb9a-bdf9-32db-a709-8417666a7e45> /usr/lib/system/libsystem_pthread.dylib
+       0x1873a5000 -        0x187d6afff com.apple.Foundation (6.9) <b7799cb6-0a3c-3c8b-a185-8cec55845b14> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+       0x1861f8000 -        0x18623ffff libdispatch.dylib (*) <9897030f-75d3-374b-8787-322d3d72e096> /usr/lib/system/libdispatch.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=1.7G resident=0K(0%) swapped_out_or_unallocated=1.7G(100%)
+Writable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               128K        1 
+Activity Tracing                   256K        1 
+CG backing stores                  512K        4 
+CG image                          4608K       60 
+CG raster data                    2576K       24 
+ColorSync                          576K       29 
+CoreAnimation                     3280K       10 
+CoreGraphics                        80K        5 
+CoreUI image data                  640K       10 
+Foundation                          48K        2 
+Kernel Alloc Once                   32K        1 
+MALLOC                           279.5M       62 
+MALLOC guard page                  192K       12 
+MALLOC_MEDIUM (reserved)         720.0M        6         reserved VM address space (unallocated)
+MALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)
+Memory Tag 253                    32.0G       42 
+Memory Tag 255                     1.1T       15 
+Memory Tag 255 (reserved)         1024K        1         reserved VM address space (unallocated)
+STACK GUARD                       56.6M       36 
+Stack                            191.3M       37 
+VM_ALLOCATE                        352K       15 
+__AUTH                            1755K      366 
+__AUTH_CONST                      28.2M      595 
+__CTF                               824        1 
+__DATA                            18.0M      732 
+__DATA_CONST                      38.6M      739 
+__DATA_DIRTY                      1972K      230 
+__FONT_DATA                        2352        1 
+__GLSLBUILTINS                    5174K        1 
+__INFO_FILTER                         8        1 
+__LINKEDIT                       823.8M      144 
+__OBJC_RO                         66.4M        1 
+__OBJC_RW                         2012K        1 
+__TEXT                           893.8M      760 
+dyld private memory                272K        2 
+mapped file                      219.5M       46 
+shared memory                      928K       19 
+===========                     =======  ======= 
+TOTAL                              1.1T     4013 
+TOTAL, minus reserved VM space     1.1T     4013 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"rkward","timestamp":"2024-08-15 17:28:05.00 -0600","app_version":"0.8.0z+0.8.1+devel2","slice_uuid":"7eace40c-16fb-330a-97df-fc695da082fb","build_version":"0.8.0z+0.8.1+devel2","platform":1,"bundleID":"org.kde.RKWard","share_with_app_devs":1,"is_first_party":0,"bug_type":"309","os_version":"macOS 13.5 (22G74)","roots_installed":0,"name":"rkward","incident_id":"E4451DF0-6EFC-48C2-B381-BCC7A7CF2B88"}
+{
+  "uptime" : 1500,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookAir10,1",
+  "coalitionID" : 1127,
+  "osVersion" : {
+    "train" : "macOS 13.5",
+    "build" : "22G74",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2024-08-15 17:28:04.4299 -0600",
+  "incident" : "E4451DF0-6EFC-48C2-B381-BCC7A7CF2B88",
+  "pid" : 1426,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2024-08-15 17:27:56.2527 -0600",
+  "procStartAbsTime" : 36750069773,
+  "procExitAbsTime" : 36946292963,
+  "procName" : "rkward",
+  "procPath" : "\/Applications\/rkward.app\/Contents\/MacOS\/rkward",
+  "bundleInfo" : {"CFBundleShortVersionString":"0.8.0z+0.8.1+devel2","CFBundleVersion":"0.8.0z+0.8.1+devel2","CFBundleIdentifier":"org.kde.RKWard"},
+  "storeInfo" : {"deviceIdentifierForVendor":"3F8D714A-7F9A-5C5E-930C-3174D3F67CA7","thirdParty":true},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "org.kde.RKWard",
+  "crashReporterKey" : "C2E85FE5-BCFC-B828-8B33-35B37F4B31E6",
+  "codeSigningID" : "org.kde.RKWard",
+  "codeSigningTeamID" : "5433B4KXM8",
+  "codeSigningFlags" : 570503953,
+  "codeSigningValidationCategory" : 6,
+  "codeSigningTrustLevel" : 0,
+  "sip" : "enabled",
+  "exception" : {"codes":"0x0000000000000001, 0x00000001863acf08","rawCodes":[1,6546968328],"type":"EXC_BREAKPOINT","signal":"SIGTRAP"},
+  "termination" : {"flags":0,"code":5,"namespace":"SIGNAL","indicator":"Trace\/BPT trap: 5","byProc":"exc handler","byPid":1426},
+  "os_fault" : {"process":"rkward"},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 33,
+  "threads" : [{"id":22232,"name":"CrBrowserMain","queue":"com.apple.main-thread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":784096,"symbol":"SLSConnectionGetHeldWindowRights","symbolLocation":176,"imageIndex":144},{"imageOffset":10423720,"symbol":"-[NSCGSWindow initWithWindowID:]","symbolLocation":108,"imageIndex":145},{"imageOffset":376076,"symbol":"+[NSCGSWindow(NSCGSWindowCreation) windowWithWindowID:]","symbolLocation":96,"imageIndex":145},{"imageOffset":9178752,"symbol":"-[_NSCGSWindowOrdering _windowsWithOptions:onSpaces:xorSpacesMatching:forConnectionID:]","symbolLocation":460,"imageIndex":145},{"imageOffset":217072,"symbol":"-[NSApplication enumerateWindowsWithOptions:usingBlock:]","symbolLocation":324,"imageIndex":145},{"imageOffset":216684,"symbol":"-[NSApplication _findWindowWithOptions:passingTest:]","symbolLocation":160,"imageIndex":145},{"imageOffset":3165484,"symbol":"-[NSApplication _bestMainWindowCandidateOnScreen:]","symbolLocation":192,"imageIndex":145},{"imageOffset":8489652,"symbol":"-[NSWindow _orderOut:calculatingKeyWithOptions:documentWindow:]","symbolLocation":468,"imageIndex":145},{"imageOffset":512560,"symbol":"NSPerformVisuallyAtomicChange","symbolLocation":108,"imageIndex":145},{"imageOffset":8496016,"symbol":"-[NSWindow _reallyDoOrderWindowOutRelativeTo:]","symbolLocation":464,"imageIndex":145},{"imageOffset":8496936,"symbol":"-[NSWindow _reallyDoOrderWindow:]","symbolLocation":80,"imageIndex":145},{"imageOffset":8497528,"symbol":"-[NSWindow _doOrderWindow:]","symbolLocation":264,"imageIndex":145},{"imageOffset":249336,"imageIndex":78},{"imageOffset":857032,"symbol":"QWindowPrivate::setVisible(bool)","symbolLocation":752,"imageIndex":40},{"imageOffset":457356,"imageIndex":36},{"imageOffset":853280,"symbol":"QWindowPrivate::destroy()","symbolLocation":120,"imageIndex":40},{"imageOffset":852896,"symbol":"QWindow::~QWindow()","symbolLocation":60,"imageIndex":40},{"imageOffset":441960,"imageIndex":36},{"imageOffset":298012,"symbol":"QWidget::destroy(bool, bool)","symbolLocation":624,"imageIndex":36},{"imageOffset":285596,"symbol":"QWidget::setParent(QWidget*, QFlags<Qt::WindowType>)","symbolLocation":2096,"imageIndex":36},{"imageOffset":228412,"symbol":"QLayout::addChildWidget(QWidget*)","symbolLocation":240,"imageIndex":36},{"imageOffset":228088,"symbol":"QLayout::addWidget(QWidget*)","symbolLocation":28,"imageIndex":36},{"imageOffset":48316,"imageIndex":1},{"imageOffset":67280,"imageIndex":1},{"imageOffset":709928,"imageIndex":2},{"imageOffset":661336,"symbol":"QtWebEngineCore::WebContentsAdapter::initialize(content::SiteInstance*)","symbolLocation":624,"imageIndex":2},{"imageOffset":665720,"symbol":"QtWebEngineCore::WebContentsAdapter::load(QWebEngineHttpRequest const&)","symbolLocation":1344,"imageIndex":2},{"imageOffset":664352,"symbol":"QtWebEngineCore::WebContentsAdapter::load(QUrl const&)","symbolLocation":48,"imageIndex":2},{"imageOffset":307408,"imageIndex":0},{"imageOffset":338696,"imageIndex":0},{"imageOffset":360292,"symbol":"QWidget::event(QEvent*)","symbolLocation":132,"imageIndex":36},{"imageOffset":875672,"symbol":"QFrame::event(QEvent*)","symbolLocation":56,"imageIndex":36},{"imageOffset":53532,"symbol":"QApplicationPrivate::notify_helper(QObject*, QEvent*)","symbolLocation":272,"imageIndex":36},{"imageOffset":59956,"symbol":"QApplication::notify(QObject*, QEvent*)","symbolLocation":3160,"imageIndex":36},{"imageOffset":542264,"symbol":"QCoreApplication::notifyInternal2(QObject*, QEvent*)","symbolLocation":212,"imageIndex":42},{"imageOffset":352204,"symbol":"QWidgetPrivate::show_helper()","symbolLocation":128,"imageIndex":36},{"imageOffset":359028,"symbol":"QWidgetPrivate::setVisible(bool)","symbolLocation":1368,"imageIndex":36},{"imageOffset":357108,"symbol":"QWidget::setVisible(bool)","symbolLocation":676,"imageIndex":36},{"imageOffset":259324,"symbol":"QStackedLayout::setCurrentIndex(int)","symbolLocation":384,"imageIndex":36},{"imageOffset":261264,"symbol":"QStackedLayout::insertWidget(int, QWidget*)","symbolLocation":228,"imageIndex":36},{"imageOffset":2047496,"symbol":"QTabWidget::addTab(QWidget*, QIcon const&, QString const&)","symbolLocation":56,"imageIndex":36},{"imageOffset":418812,"imageIndex":0},{"imageOffset":435768,"imageIndex":0},{"imageOffset":438500,"imageIndex":0},{"imageOffset":447556,"imageIndex":0},{"imageOffset":2220124,"imageIndex":0},{"imageOffset":2220680,"imageIndex":0},{"imageOffset":2223476,"imageIndex":0},{"imageOffset":1796504,"imageIndex":0},{"imageOffset":1794144,"imageIndex":0},{"imageOffset":821020,"symbol":"QObject::event(QEvent*)","symbolLocation":88,"imageIndex":42},{"imageOffset":53532,"symbol":"QApplicationPrivate::notify_helper(QObject*, QEvent*)","symbolLocation":272,"imageIndex":36},{"imageOffset":57260,"symbol":"QApplication::notify(QObject*, QEvent*)","symbolLocation":464,"imageIndex":36},{"imageOffset":542264,"symbol":"QCoreApplication::notifyInternal2(QObject*, QEvent*)","symbolLocation":212,"imageIndex":42},{"imageOffset":546384,"symbol":"QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*)","symbolLocation":504,"imageIndex":42},{"imageOffset":93344,"imageIndex":78},{"imageOffset":97748,"imageIndex":78},{"imageOffset":521788,"symbol":"__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__","symbolLocation":28,"imageIndex":146},{"imageOffset":521680,"symbol":"__CFRunLoopDoSource0","symbolLocation":176,"imageIndex":146},{"imageOffset":521024,"symbol":"__CFRunLoopDoSources0","symbolLocation":244,"imageIndex":146},{"imageOffset":515912,"symbol":"__CFRunLoopRun","symbolLocation":828,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":200176,"symbol":"RunCurrentEventLoopInMode","symbolLocation":292,"imageIndex":147},{"imageOffset":199724,"symbol":"ReceiveNextEventCommon","symbolLocation":648,"imageIndex":147},{"imageOffset":199044,"symbol":"_BlockUntilNextEventMatchingListInModeWithFilter","symbolLocation":76,"imageIndex":147},{"imageOffset":235900,"symbol":"_DPSNextEvent","symbolLocation":636,"imageIndex":145},{"imageOffset":232216,"symbol":"-[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]","symbolLocation":716,"imageIndex":145},{"imageOffset":88276,"imageIndex":78},{"imageOffset":581508,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":540,"imageIndex":42},{"imageOffset":2244628,"symbol":"QDialog::exec()","symbolLocation":476,"imageIndex":36},{"imageOffset":802176,"imageIndex":0},{"imageOffset":102080,"imageIndex":0},{"imageOffset":821548,"symbol":"QObject::event(QEvent*)","symbolLocation":616,"imageIndex":42},{"imageOffset":363376,"symbol":"QWidget::event(QEvent*)","symbolLocation":3216,"imageIndex":36},{"imageOffset":1515284,"symbol":"QMainWindow::event(QEvent*)","symbolLocation":716,"imageIndex":36},{"imageOffset":231624,"symbol":"KMainWindow::event(QEvent*)","symbolLocation":788,"imageIndex":26},{"imageOffset":53532,"symbol":"QApplicationPrivate::notify_helper(QObject*, QEvent*)","symbolLocation":272,"imageIndex":36},{"imageOffset":59956,"symbol":"QApplication::notify(QObject*, QEvent*)","symbolLocation":3160,"imageIndex":36},{"imageOffset":542264,"symbol":"QCoreApplication::notifyInternal2(QObject*, QEvent*)","symbolLocation":212,"imageIndex":42},{"imageOffset":546384,"symbol":"QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*)","symbolLocation":504,"imageIndex":42},{"imageOffset":93344,"imageIndex":78},{"imageOffset":97748,"imageIndex":78},{"imageOffset":521788,"symbol":"__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__","symbolLocation":28,"imageIndex":146},{"imageOffset":521680,"symbol":"__CFRunLoopDoSource0","symbolLocation":176,"imageIndex":146},{"imageOffset":521120,"symbol":"__CFRunLoopDoSources0","symbolLocation":340,"imageIndex":146},{"imageOffset":515912,"symbol":"__CFRunLoopRun","symbolLocation":828,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":200176,"symbol":"RunCurrentEventLoopInMode","symbolLocation":292,"imageIndex":147},{"imageOffset":199296,"symbol":"ReceiveNextEventCommon","symbolLocation":220,"imageIndex":147},{"imageOffset":199044,"symbol":"_BlockUntilNextEventMatchingListInModeWithFilter","symbolLocation":76,"imageIndex":147},{"imageOffset":235900,"symbol":"_DPSNextEvent","symbolLocation":636,"imageIndex":145},{"imageOffset":232216,"symbol":"-[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]","symbolLocation":716,"imageIndex":145},{"imageOffset":184188,"symbol":"-[NSApplication run]","symbolLocation":464,"imageIndex":145},{"imageOffset":88372,"imageIndex":78},{"imageOffset":581508,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":540,"imageIndex":42},{"imageOffset":544100,"symbol":"QCoreApplication::exec()","symbolLocation":112,"imageIndex":42},{"imageOffset":75652,"imageIndex":0},{"imageOffset":24360,"symbol":"start","symbolLocation":2236,"imageIndex":148}]},{"id":22237,"frames":[{"imageOffset":7564,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":149}]},{"id":22248,"name":"com.apple.CFSocket.private","frames":[{"imageOffset":49200,"symbol":"__select","symbolLocation":8,"imageIndex":143},{"imageOffset":692588,"symbol":"__CFSocketManager","symbolLocation":636,"imageIndex":146},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22249,"name":"QDBusConnectionManager","frames":[{"imageOffset":39028,"symbol":"poll","symbolLocation":8,"imageIndex":143},{"imageOffset":2053620,"symbol":"qt_safe_poll(pollfd*, unsigned int, QDeadlineTimer)","symbolLocation":60,"imageIndex":42},{"imageOffset":2070652,"symbol":"QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":904,"imageIndex":42},{"imageOffset":581508,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":540,"imageIndex":42},{"imageOffset":1469888,"symbol":"QThread::exec()","symbolLocation":284,"imageIndex":42},{"imageOffset":112860,"imageIndex":41},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22253,"queue":"com.apple.root.user-interactive-qos","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":522212,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":146},{"imageOffset":516292,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":380860,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":150},{"imageOffset":3865240,"symbol":"-[NSAnimation _runBlocking]","symbolLocation":312,"imageIndex":145},{"imageOffset":3866032,"symbol":"__30-[NSAnimation _runInNewThread]_block_invoke","symbolLocation":124,"imageIndex":145},{"imageOffset":10356,"symbol":"_dispatch_call_block_and_release","symbolLocation":32,"imageIndex":151},{"imageOffset":17408,"symbol":"_dispatch_client_callout","symbolLocation":20,"imageIndex":151},{"imageOffset":90040,"symbol":"_dispatch_root_queue_drain","symbolLocation":684,"imageIndex":151},{"imageOffset":91840,"symbol":"_dispatch_worker_thread2","symbolLocation":164,"imageIndex":151},{"imageOffset":12344,"symbol":"_pthread_wqthread","symbolLocation":228,"imageIndex":149},{"imageOffset":7572,"symbol":"start_wqthread","symbolLocation":8,"imageIndex":149}]},{"id":22254,"queue":"com.apple.root.user-interactive-qos","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":522212,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":146},{"imageOffset":516292,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":380860,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":150},{"imageOffset":3865240,"symbol":"-[NSAnimation _runBlocking]","symbolLocation":312,"imageIndex":145},{"imageOffset":3866032,"symbol":"__30-[NSAnimation _runInNewThread]_block_invoke","symbolLocation":124,"imageIndex":145},{"imageOffset":10356,"symbol":"_dispatch_call_block_and_release","symbolLocation":32,"imageIndex":151},{"imageOffset":17408,"symbol":"_dispatch_client_callout","symbolLocation":20,"imageIndex":151},{"imageOffset":90040,"symbol":"_dispatch_root_queue_drain","symbolLocation":684,"imageIndex":151},{"imageOffset":91840,"symbol":"_dispatch_worker_thread2","symbolLocation":164,"imageIndex":151},{"imageOffset":12344,"symbol":"_pthread_wqthread","symbolLocation":228,"imageIndex":149},{"imageOffset":7572,"symbol":"start_wqthread","symbolLocation":8,"imageIndex":149}]},{"id":22255,"frames":[{"imageOffset":7564,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":149}]},{"id":22257,"name":"RKFrontendTransmitter","frames":[{"imageOffset":39028,"symbol":"poll","symbolLocation":8,"imageIndex":143},{"imageOffset":2053620,"symbol":"qt_safe_poll(pollfd*, unsigned int, QDeadlineTimer)","symbolLocation":60,"imageIndex":42},{"imageOffset":2070652,"symbol":"QEventDispatcherUNIX::processEvents(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":904,"imageIndex":42},{"imageOffset":581508,"symbol":"QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)","symbolLocation":540,"imageIndex":42},{"imageOffset":1469888,"symbol":"QThread::exec()","symbolLocation":284,"imageIndex":42},{"imageOffset":1870760,"imageIndex":0},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22280,"name":"Thread (pooled)","frames":[{"imageOffset":18256,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":143},{"imageOffset":30068,"symbol":"_pthread_cond_wait","symbolLocation":1232,"imageIndex":149},{"imageOffset":2117096,"imageIndex":42},{"imageOffset":2116764,"symbol":"QWaitCondition::wait(QMutex*, QDeadlineTimer)","symbolLocation":108,"imageIndex":42},{"imageOffset":2093388,"imageIndex":42},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22281,"name":"Thread (pooled)","frames":[{"imageOffset":18256,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":143},{"imageOffset":30068,"symbol":"_pthread_cond_wait","symbolLocation":1232,"imageIndex":149},{"imageOffset":2117096,"imageIndex":42},{"imageOffset":2116764,"symbol":"QWaitCondition::wait(QMutex*, QDeadlineTimer)","symbolLocation":108,"imageIndex":42},{"imageOffset":2093388,"imageIndex":42},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22282,"name":"Thread (pooled)","frames":[{"imageOffset":18256,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":143},{"imageOffset":30068,"symbol":"_pthread_cond_wait","symbolLocation":1232,"imageIndex":149},{"imageOffset":2117096,"imageIndex":42},{"imageOffset":2116764,"symbol":"QWaitCondition::wait(QMutex*, QDeadlineTimer)","symbolLocation":108,"imageIndex":42},{"imageOffset":2093388,"imageIndex":42},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22283,"name":"Thread (pooled)","frames":[{"imageOffset":18256,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":143},{"imageOffset":30068,"symbol":"_pthread_cond_wait","symbolLocation":1232,"imageIndex":149},{"imageOffset":2117096,"imageIndex":42},{"imageOffset":2116764,"symbol":"QWaitCondition::wait(QMutex*, QDeadlineTimer)","symbolLocation":108,"imageIndex":42},{"imageOffset":2093388,"imageIndex":42},{"imageOffset":2062172,"imageIndex":42},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22560,"frames":[{"imageOffset":7564,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":149}]},{"id":22561,"name":"com.apple.NSEventThread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":522212,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":146},{"imageOffset":516292,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":1458004,"symbol":"_NSEventThread","symbolLocation":172,"imageIndex":145},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22567,"name":"ThreadPoolServiceThread","frames":[{"imageOffset":52776,"symbol":"kevent64","symbolLocation":8,"imageIndex":143},{"imageOffset":70649952,"imageIndex":2},{"imageOffset":70649432,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70326912,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22568,"name":"ThreadPoolForegroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70367140,"imageIndex":2},{"imageOffset":70366236,"imageIndex":2},{"imageOffset":70365964,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22569,"name":"ThreadPoolBackgroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70366604,"imageIndex":2},{"imageOffset":70366104,"imageIndex":2},{"imageOffset":70366012,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22570,"name":"Chrome_IOThread","frames":[{"imageOffset":52776,"symbol":"kevent64","symbolLocation":8,"imageIndex":143},{"imageOffset":70649952,"imageIndex":2},{"imageOffset":70649432,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":45607524,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22571,"name":"NetworkConfigWatcher","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":69817444,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22572,"name":"ThreadPoolForegroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70367140,"imageIndex":2},{"imageOffset":70366236,"imageIndex":2},{"imageOffset":70365964,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22573,"name":"ThreadPoolForegroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70367140,"imageIndex":2},{"imageOffset":70366236,"imageIndex":2},{"imageOffset":70365964,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22574,"name":"ThreadPoolForegroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70367140,"imageIndex":2},{"imageOffset":70366236,"imageIndex":2},{"imageOffset":70365964,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22575,"name":"Chrome_InProcGpuThread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70146444,"imageIndex":2},{"imageOffset":69817412,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22576,"name":"Chrome_ChildIOThread","frames":[{"imageOffset":52776,"symbol":"kevent64","symbolLocation":8,"imageIndex":143},{"imageOffset":70649952,"imageIndex":2},{"imageOffset":70649432,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":108596364,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22577,"name":"CompositorTileWorker1","frames":[{"imageOffset":18256,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":143},{"imageOffset":30068,"symbol":"_pthread_cond_wait","symbolLocation":1232,"imageIndex":149},{"imageOffset":70521676,"imageIndex":2},{"imageOffset":99488500,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22578,"name":"AudioThread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70146444,"imageIndex":2},{"imageOffset":69817412,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22579,"name":"ThreadPoolSingleThreadSharedForeground0","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70366604,"imageIndex":2},{"imageOffset":70366280,"imageIndex":2},{"imageOffset":70366036,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22580,"name":"NetworkConfigWatcher","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":69817444,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22581,"name":"VizCompositorThread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70146444,"imageIndex":2},{"imageOffset":69817412,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22582,"name":"ThreadPoolForegroundWorker","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70364180,"imageIndex":2},{"imageOffset":70366604,"imageIndex":2},{"imageOffset":70366236,"imageIndex":2},{"imageOffset":70365964,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22583,"name":"NetworkService","frames":[{"imageOffset":52776,"symbol":"kevent64","symbolLocation":8,"imageIndex":143},{"imageOffset":70649952,"imageIndex":2},{"imageOffset":70649432,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22584,"name":"NetworkNotificationThreadMac","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":522212,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":146},{"imageOffset":516292,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":146},{"imageOffset":513208,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":146},{"imageOffset":380860,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":150},{"imageOffset":70854672,"imageIndex":2},{"imageOffset":70849016,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22585,"name":"NetworkConfigWatcher","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":69817444,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"triggered":true,"id":22586,"name":"Chrome_InProcRendererThread","threadState":{"x":[{"value":2310346747088470016},{"value":68719460624},{"value":0},{"value":105553181274712},{"value":6},{"value":12880},{"value":105553181274704},{"value":1},{"value":68719460620},{"value":2310346747088470016},{"value":2310346747086372864},{"value":105553181274704},{"value":2313},{"value":2095104},{"value":2043},{"value":2416030502},{"value":6546967812,"symbolLocation":0,"symbol":"pthread_jit_write_protect_np"},{"value":4815996416},{"value":0},{"value":4815996736},{"value":4723195904,"symbolLocation":114016,"symbol":"QtWebEngineCore::FindTextHelper::m_findRequestIdCounter"},{"value":4723682536},{"value":4724969472,"symbolLocation":69564,"symbol":"QtWebEngineCore::PdfiumDocumentWrapperQt::m_libraryUsers"},{"value":4723195904,"symbolLocation":114016,"symbol":"QtWebEngineCore::FindTextHelper::m_findRequestIdCounter"},{"value":4724741632},{"value":4724584448},{"value":105553175694464},{"value":0},{"value":6274919728}],"flavor":"ARM_THREAD_STATE64","lr":{"value":3344204202943703020},"cpsr":{"value":536875008},"fp":{"value":6274918096},"sp":{"value":6274918096},"esr":{"value":4060086273,"description":"(Breakpoint) brk 1"},"pc":{"value":6546968328,"matchesCrashFrame":1},"far":{"value":4564625076}},"frames":[{"imageOffset":32520,"symbol":"pthread_jit_write_protect_np","symbolLocation":516,"imageIndex":149},{"imageOffset":94775276,"imageIndex":2},{"imageOffset":15001352,"imageIndex":2},{"imageOffset":16686364,"imageIndex":2},{"imageOffset":12133908,"imageIndex":2},{"imageOffset":94674492,"imageIndex":2},{"imageOffset":94661900,"imageIndex":2},{"imageOffset":111192872,"imageIndex":2},{"imageOffset":110704204,"imageIndex":2},{"imageOffset":109468048,"imageIndex":2},{"imageOffset":109462988,"imageIndex":2},{"imageOffset":109465736,"imageIndex":2},{"imageOffset":109206248,"imageIndex":2},{"imageOffset":70421864,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22587,"name":"Chrome_ChildIOThread","frames":[{"imageOffset":52776,"symbol":"kevent64","symbolLocation":8,"imageIndex":143},{"imageOffset":70649952,"imageIndex":2},{"imageOffset":70649432,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":108596364,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]},{"id":22588,"name":"GpuMemoryThread","frames":[{"imageOffset":3924,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":143},{"imageOffset":78464,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":143},{"imageOffset":39864,"symbol":"mach_msg_overwrite","symbolLocation":604,"imageIndex":143},{"imageOffset":4816,"symbol":"mach_msg","symbolLocation":24,"imageIndex":143},{"imageOffset":70625036,"imageIndex":2},{"imageOffset":70146584,"imageIndex":2},{"imageOffset":70146444,"imageIndex":2},{"imageOffset":69817412,"imageIndex":2},{"imageOffset":70270600,"imageIndex":2},{"imageOffset":70021536,"imageIndex":2},{"imageOffset":70421564,"imageIndex":2},{"imageOffset":70421948,"imageIndex":2},{"imageOffset":70524492,"imageIndex":2},{"imageOffset":28584,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":149},{"imageOffset":7584,"symbol":"thread_start","symbolLocation":8,"imageIndex":149}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4368400384,
+    "CFBundleShortVersionString" : "0.8.0z+0.8.1+devel2",
+    "CFBundleIdentifier" : "org.kde.RKWard",
+    "size" : 2605056,
+    "uuid" : "7eace40c-16fb-330a-97df-fc695da082fb",
+    "path" : "\/Applications\/rkward.app\/Contents\/MacOS\/rkward",
+    "name" : "rkward",
+    "CFBundleVersion" : "0.8.0z+0.8.1+devel2"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372103168,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtWebEngineWidgets",
+    "size" : 98304,
+    "uuid" : "8e9b9b95-73e7-38c3-b6ad-439ab146fd7d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtWebEngineWidgets.framework\/Versions\/A\/QtWebEngineWidgets",
+    "name" : "QtWebEngineWidgets",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4549623808,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtWebEngineCore",
+    "size" : 167231488,
+    "uuid" : "11f382d0-c793-3a1e-bb92-e83bf148483d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtWebEngineCore.framework\/Versions\/A\/QtWebEngineCore",
+    "name" : "QtWebEngineCore",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4377919488,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQuick",
+    "size" : 4030464,
+    "uuid" : "20f5d6fe-410b-3685-8f25-97b4e27ee3e0",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQuick.framework\/Versions\/A\/QtQuick",
+    "name" : "QtQuick",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4373053440,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQmlModels",
+    "size" : 524288,
+    "uuid" : "95a88ca8-68e5-307d-88ec-5844779b5ce0",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQmlModels.framework\/Versions\/A\/QtQmlModels",
+    "name" : "QtQmlModels",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372594688,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtWebChannel",
+    "size" : 163840,
+    "uuid" : "6d559530-f806-3e92-9d92-d497430c24dd",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtWebChannel.framework\/Versions\/A\/QtWebChannel",
+    "name" : "QtWebChannel",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4374331392,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtPositioning",
+    "size" : 409600,
+    "uuid" : "ede3ebf1-6bc2-3bb0-aa92-3355a9d21c11",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtPositioning.framework\/Versions\/A\/QtPositioning",
+    "name" : "QtPositioning",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4375969792,
+    "size" : 720896,
+    "uuid" : "75088da3-783e-3ae7-a911-5607e4f0d4f7",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6KIOFileWidgets.6.4.0.dylib",
+    "name" : "libKF6KIOFileWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372332544,
+    "size" : 81920,
+    "uuid" : "4aa422e8-32e1-3214-94a5-f670cc540f62",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Bookmarks.6.4.0.dylib",
+    "name" : "libKF6Bookmarks.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4374888448,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtCore5Compat",
+    "size" : 262144,
+    "uuid" : "c0facdc5-05df-3999-abef-b7136425ca0e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtCore5Compat.framework\/Versions\/A\/QtCore5Compat",
+    "name" : "QtCore5Compat",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386865152,
+    "size" : 2654208,
+    "uuid" : "19633e94-1ca8-3cce-b44d-d26b46030437",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6TextEditor.6.4.0.dylib",
+    "name" : "libKF6TextEditor.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4394844160,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQml",
+    "size" : 3784704,
+    "uuid" : "5af10918-288b-30ee-b672-e45b906103f7",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQml.framework\/Versions\/A\/QtQml",
+    "name" : "QtQml",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4390223872,
+    "size" : 1818624,
+    "uuid" : "faf6c332-4247-326b-b6e6-02514b09760e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6SyntaxHighlighting.6.4.0.dylib",
+    "name" : "libKF6SyntaxHighlighting.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4375265280,
+    "size" : 163840,
+    "uuid" : "6879540d-a140-3549-9fc8-b757a027b143",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Parts.6.4.0.dylib",
+    "name" : "libKF6Parts.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4384555008,
+    "size" : 671744,
+    "uuid" : "379e4654-7cd9-3906-9f3e-1af3d4fafb28",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6KIOWidgets.6.4.0.dylib",
+    "name" : "libKF6KIOWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4375560192,
+    "size" : 147456,
+    "uuid" : "5349033d-c96c-3585-9ae8-7e0008dfd28c",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Completion.6.4.0.dylib",
+    "name" : "libKF6Completion.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4377051136,
+    "size" : 196608,
+    "uuid" : "db1e7e6a-5a61-3401-bda4-1832dec31419",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6KIOGui.6.4.0.dylib",
+    "name" : "libKF6KIOGui.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4393451520,
+    "size" : 983040,
+    "uuid" : "747e7f67-d561-3fe5-a461-acffc212f435",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6KIOCore.6.4.0.dylib",
+    "name" : "libKF6KIOCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4371988480,
+    "size" : 49152,
+    "uuid" : "ef4790d7-72c9-3769-b2ab-d46636f6224d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Crash.6.4.0.dylib",
+    "name" : "libKF6Crash.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4385603584,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtOpenGL",
+    "size" : 409600,
+    "uuid" : "985b44ed-38dd-3705-bbab-a3d8068f434a",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtOpenGL.framework\/Versions\/A\/QtOpenGL",
+    "name" : "QtOpenGL",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4377395200,
+    "size" : 311296,
+    "uuid" : "494ce3d1-66ca-3e44-bbb5-2e31598272fe",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Service.6.4.0.dylib",
+    "name" : "libKF6Service.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4383506432,
+    "size" : 327680,
+    "uuid" : "6e790b4a-edb4-3627-9ea4-87438c4b1cc6",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Solid.6.4.0.dylib",
+    "name" : "libKF6Solid.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4373774336,
+    "size" : 81920,
+    "uuid" : "75dc0397-1f78-3509-a831-54ef2ccc00f8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6JobWidgets.6.4.0.dylib",
+    "name" : "libKF6JobWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4383997952,
+    "size" : 114688,
+    "uuid" : "91e9a6e7-4f6f-3ce4-af68-11e88d5d907c",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Notifications.6.4.0.dylib",
+    "name" : "libKF6Notifications.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4384210944,
+    "size" : 196608,
+    "uuid" : "819aec62-a5aa-33f0-9195-1de1314d8944",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Archive.6.4.0.dylib",
+    "name" : "libKF6Archive.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4373954560,
+    "size" : 49152,
+    "uuid" : "405054e4-6ea4-388f-8b8a-4f9891650910",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6WindowSystem.6.4.0.dylib",
+    "name" : "libKF6WindowSystem.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4399464448,
+    "size" : 573440,
+    "uuid" : "741b1a30-051b-3f36-a7ec-67cae920775c",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6XmlGui.6.4.0.dylib",
+    "name" : "libKF6XmlGui.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4392173568,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtPrintSupport",
+    "size" : 278528,
+    "uuid" : "10d611e5-e643-3979-b9df-f72dec24aa1b",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtPrintSupport.framework\/Versions\/A\/QtPrintSupport",
+    "name" : "QtPrintSupport",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4392648704,
+    "size" : 212992,
+    "uuid" : "24411329-0cc6-3291-a296-c6aa2c44ed99",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6ConfigWidgets.6.4.0.dylib",
+    "name" : "libKF6ConfigWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4374085632,
+    "size" : 65536,
+    "uuid" : "04077cc1-83bd-3f2a-9a2a-3dae40baee11",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6ColorScheme.6.4.0.dylib",
+    "name" : "libKF6ColorScheme.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4400316416,
+    "size" : 327680,
+    "uuid" : "4aabdeaf-39ce-3322-889f-dbcacb9da643",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6I18n.6.4.0.dylib",
+    "name" : "libKF6I18n.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386471936,
+    "size" : 131072,
+    "uuid" : "2e5bb944-1488-364d-a387-82ad7f50192e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6ConfigGui.6.4.0.dylib",
+    "name" : "libKF6ConfigGui.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4403052544,
+    "size" : 1736704,
+    "uuid" : "0ad9f95a-aad4-3f02-a255-e7763a643c71",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6WidgetsAddons.6.4.0.dylib",
+    "name" : "libKF6WidgetsAddons.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4393041920,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtXml",
+    "size" : 114688,
+    "uuid" : "989ebcaf-1d67-3ecc-a0d9-bfbfd4f0dda0",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtXml.framework\/Versions\/A\/QtXml",
+    "name" : "QtXml",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4401250304,
+    "size" : 327680,
+    "uuid" : "89dc0c31-40ba-3117-a08b-4807b46d049e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6ConfigCore.6.4.0.dylib",
+    "name" : "libKF6ConfigCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4401758208,
+    "size" : 180224,
+    "uuid" : "126ae094-fb4a-361f-b041-b91a83c46d11",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6ItemViews.6.4.0.dylib",
+    "name" : "libKF6ItemViews.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4411424768,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtWidgets",
+    "size" : 4587520,
+    "uuid" : "90e2e205-f5ab-3ead-ad29-26a2fa16c576",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtWidgets.framework\/Versions\/A\/QtWidgets",
+    "name" : "QtWidgets",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4405362688,
+    "size" : 622592,
+    "uuid" : "b126c3c4-ae7b-30cb-9c4f-186e9ee18fc0",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6CoreAddons.6.4.0.dylib",
+    "name" : "libKF6CoreAddons.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4407803904,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtNetwork",
+    "size" : 1228800,
+    "uuid" : "5680e915-c032-3523-a7f6-8ef5c38de6d1",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtNetwork.framework\/Versions\/A\/QtNetwork",
+    "name" : "QtNetwork",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4436426752,
+    "size" : 18743296,
+    "uuid" : "73e3d7b9-019c-3634-94f3-9b3718e28935",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6BreezeIcons.6.4.0.dylib",
+    "name" : "libKF6BreezeIcons.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4423843840,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtGui",
+    "size" : 5144576,
+    "uuid" : "ed8e21b4-eb9c-3bdc-a6e0-7dcc17749382",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtGui.framework\/Versions\/A\/QtGui",
+    "name" : "QtGui",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4406165504,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtDBus",
+    "size" : 524288,
+    "uuid" : "db7c54db-d8ce-3f88-9750-4a00258665e1",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtDBus.framework\/Versions\/A\/QtDBus",
+    "name" : "QtDBus",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4430233600,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtCore",
+    "size" : 4538368,
+    "uuid" : "1bfee4ac-07ec-390b-adf9-7b4dfdb2e456",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtCore.framework\/Versions\/A\/QtCore",
+    "name" : "QtCore",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4386226176,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQuickWidgets",
+    "size" : 81920,
+    "uuid" : "b7cf2f2d-2720-3bb9-8ac7-b8bc759b2d58",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQuickWidgets.framework\/Versions\/A\/QtQuickWidgets",
+    "name" : "QtQuickWidgets",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372856832,
+    "size" : 49152,
+    "uuid" : "7c7f3dd3-2488-3e54-a1c3-7a716a0ec8e1",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libbrotlidec.1.1.0.dylib",
+    "name" : "libbrotlidec.1.1.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4406837248,
+    "size" : 638976,
+    "uuid" : "dd771691-6dba-328d-bf21-f49625e9c15b",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libzstd.1.5.5.dylib",
+    "name" : "libzstd.1.5.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4393254912,
+    "size" : 81920,
+    "uuid" : "e894da38-447b-364b-99cd-376094bf1bbe",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libz.1.3.1.dylib",
+    "name" : "libz.1.3.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4409442304,
+    "size" : 589824,
+    "uuid" : "5ceb4c33-2348-34ff-a267-23745a197fad",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libssl.3.dylib",
+    "name" : "libssl.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4455366656,
+    "size" : 3129344,
+    "uuid" : "613eb163-b6a5-325e-9f96-cf28766fe2d0",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libcrypto.3.dylib",
+    "name" : "libcrypto.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4420272128,
+    "size" : 1933312,
+    "uuid" : "7113413f-5190-384f-8c99-a63100d42377",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libicui18n.74.2.dylib",
+    "name" : "libicui18n.74.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4459479040,
+    "size" : 1441792,
+    "uuid" : "a9646621-7c50-3e5c-809f-bc33a78269a8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libicuuc.74.2.dylib",
+    "name" : "libicuuc.74.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4492361728,
+    "size" : 30785536,
+    "uuid" : "6853aa17-3bf0-3197-b05d-352f05652142",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libicudata.74.2.dylib",
+    "name" : "libicudata.74.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4418732032,
+    "size" : 1048576,
+    "uuid" : "d93e891d-37e3-3f06-a749-94b5b8def137",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libglib-2.0.0.dylib",
+    "name" : "libglib-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4402085888,
+    "size" : 311296,
+    "uuid" : "1c1ae529-7290-3acd-ad7f-ed2e5e12f3f4",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libpcre2-16.0.11.2.dylib",
+    "name" : "libpcre2-16.0.11.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372512768,
+    "size" : 16384,
+    "uuid" : "88cc1d50-a7b1-3be9-976a-3f9a61db2d8b",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libgthread-2.0.0.dylib",
+    "name" : "libgthread-2.0.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4400906240,
+    "size" : 98304,
+    "uuid" : "b5184f72-2e5d-3e75-9933-e51205c64989",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libintl.8.dylib",
+    "name" : "libintl.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4410310656,
+    "size" : 327680,
+    "uuid" : "ebfcccc5-b4a6-369d-8469-a38872f7d1a8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libpcre2-8.0.11.2.dylib",
+    "name" : "libpcre2-8.0.11.2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4402675712,
+    "size" : 147456,
+    "uuid" : "99a26ead-832f-3c0d-aacc-c84426a384ff",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libbrotlicommon.1.1.0.dylib",
+    "name" : "libbrotlicommon.1.1.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4410966016,
+    "size" : 180224,
+    "uuid" : "9aa591c2-8903-38e3-a8d9-3fcfa322fe06",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libpng16.16.40.0.dylib",
+    "name" : "libpng16.16.40.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4461314048,
+    "size" : 786432,
+    "uuid" : "844f0264-13e6-3036-a753-ef76fcbf3f6d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libharfbuzz.dylib",
+    "name" : "libharfbuzz.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4423057408,
+    "size" : 573440,
+    "uuid" : "29c41b26-576c-3477-83cc-a3384b396ca1",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libfreetype.6.dylib",
+    "name" : "libfreetype.6.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4400742400,
+    "size" : 65536,
+    "uuid" : "73eb6189-176b-3c12-8d4d-7fb98e7eff78",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libbzip2.dylib",
+    "name" : "libbzip2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4402462720,
+    "size" : 65536,
+    "uuid" : "42cdb6b6-c755-366a-8856-90c572699113",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6IconWidgets.6.4.0.dylib",
+    "name" : "libKF6IconWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4402888704,
+    "size" : 65536,
+    "uuid" : "71be7d17-ef19-3675-9022-308e37d622a8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6BookmarksWidgets.6.4.0.dylib",
+    "name" : "libKF6BookmarksWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4417486848,
+    "size" : 163840,
+    "uuid" : "90b8a924-bdc7-34e5-93d3-b15455fb1bef",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6IconThemes.6.4.0.dylib",
+    "name" : "libKF6IconThemes.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4410703872,
+    "size" : 114688,
+    "uuid" : "a02d4881-63a1-3798-a2fd-86501e318370",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6GuiAddons.6.4.0.dylib",
+    "name" : "libKF6GuiAddons.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4372971520,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtConcurrent",
+    "size" : 16384,
+    "uuid" : "eb112e8b-bed1-340f-9a98-91ea88fd7a36",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtConcurrent.framework\/Versions\/A\/QtConcurrent",
+    "name" : "QtConcurrent",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4401070080,
+    "size" : 65536,
+    "uuid" : "1b409592-9c6c-35ab-8293-cc7536c39ac8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6AuthCore.6.4.0.dylib",
+    "name" : "libKF6AuthCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4417994752,
+    "size" : 163840,
+    "uuid" : "adb19d3b-07ee-3f72-b6df-95d921f4290e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Codecs.6.4.0.dylib",
+    "name" : "libKF6Codecs.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4435673088,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtSvg",
+    "size" : 294912,
+    "uuid" : "ee4820cd-7aef-365f-a309-6190929a9310",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtSvg.framework\/Versions\/A\/QtSvg",
+    "name" : "QtSvg",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4411228160,
+    "size" : 131072,
+    "uuid" : "dda40833-f4fd-3fcf-9d4f-bb85911a9193",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/liblzma.5.dylib",
+    "name" : "liblzma.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4462198784,
+    "size" : 180224,
+    "uuid" : "8302db58-3b42-3e3e-895c-b1ddab25fe4f",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6TextWidgets.6.4.0.dylib",
+    "name" : "libKF6TextWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4374233088,
+    "size" : 16384,
+    "uuid" : "68b863eb-4610-3817-9fd3-86e4e458c268",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libeditorconfig.0.12.5.dylib",
+    "name" : "libeditorconfig.0.12.5.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4417748992,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtTextToSpeech",
+    "size" : 81920,
+    "uuid" : "1ffe2e08-1b0c-3946-887d-3515a7049ed6",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtTextToSpeech.framework\/Versions\/A\/QtTextToSpeech",
+    "name" : "QtTextToSpeech",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4463394816,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtMultimedia",
+    "size" : 589824,
+    "uuid" : "0b926d78-6628-320f-84bb-8536df3ee157",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtMultimedia.framework\/Versions\/A\/QtMultimedia",
+    "name" : "QtMultimedia",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4418240512,
+    "size" : 98304,
+    "uuid" : "394de4ec-b85c-3d0d-8703-68fea0752a7d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6SonnetUi.6.4.0.dylib",
+    "name" : "libKF6SonnetUi.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4462870528,
+    "size" : 245760,
+    "uuid" : "19784552-3ccf-354e-8652-c7e546609369",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6SonnetCore.6.4.0.dylib",
+    "name" : "libKF6SonnetCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4419977216,
+    "CFBundleShortVersionString" : "3.0",
+    "CFBundleIdentifier" : "com.apple.security.csparser",
+    "size" : 131072,
+    "uuid" : "af79a0fa-e8a1-3134-bee8-c9567ed1e971",
+    "path" : "\/System\/Library\/Frameworks\/Security.framework\/Versions\/A\/PlugIns\/csparser.bundle\/Contents\/MacOS\/csparser",
+    "name" : "csparser",
+    "CFBundleVersion" : "60420.140.26"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4466802688,
+    "size" : 655360,
+    "uuid" : "63037555-2f33-3c43-a490-59147d0862ee",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/platforms\/libqcocoa.dylib",
+    "name" : "libqcocoa.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4466327552,
+    "size" : 147456,
+    "uuid" : "b7020dc2-0d23-3523-b8bb-ee1101ec0257",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/styles\/libqmacstyle.dylib",
+    "name" : "libqmacstyle.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4490264576,
+    "size" : 393216,
+    "uuid" : "13286d5f-8ea9-334f-b72d-02f3a3486cf1",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/styles\/breeze6.so",
+    "name" : "breeze6.so"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4467720192,
+    "size" : 131072,
+    "uuid" : "aabd254e-9406-361c-b529-b29770427c33",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKirigamiPlatform.6.4.0.dylib",
+    "name" : "libKirigamiPlatform.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4466589696,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQuickControls2",
+    "size" : 81920,
+    "uuid" : "1f211d13-b2aa-3996-8d75-b80d775adf4e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQuickControls2.framework\/Versions\/A\/QtQuickControls2",
+    "name" : "QtQuickControls2",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763713536,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtQuickTemplates2",
+    "size" : 1048576,
+    "uuid" : "b6e7259c-f00f-3c04-b8a6-3548ceb5a338",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtQuickTemplates2.framework\/Versions\/A\/QtQuickTemplates2",
+    "name" : "QtQuickTemplates2",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4548870144,
+    "size" : 262144,
+    "uuid" : "acc0b472-551a-3c71-bbdb-9a762348c1b8",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libdbus-1.3.dylib",
+    "name" : "libdbus-1.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4466163712,
+    "size" : 32768,
+    "uuid" : "0b48428a-2d24-3437-829a-b44946cc82f1",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_pcx.dylib",
+    "name" : "kimg_pcx.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4470702080,
+    "size" : 65536,
+    "uuid" : "bda1d904-cea4-38ac-abd7-8c4374a72003",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_psd.dylib",
+    "name" : "kimg_psd.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4470571008,
+    "size" : 32768,
+    "uuid" : "3af8cc47-2287-32cd-8cef-40cb799c9b68",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_pfm.dylib",
+    "name" : "kimg_pfm.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4470833152,
+    "size" : 32768,
+    "uuid" : "2c3e963f-43ef-3387-8905-cf4f4cee9908",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqgif.dylib",
+    "name" : "libqgif.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4470931456,
+    "size" : 32768,
+    "uuid" : "74cb0ac9-7ab0-3c5f-a8c5-47423a321b30",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqwbmp.dylib",
+    "name" : "libqwbmp.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4471029760,
+    "size" : 32768,
+    "uuid" : "605ce76d-5d84-3ca8-af7b-5e0ee58747e2",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqwebp.dylib",
+    "name" : "libqwebp.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4490805248,
+    "size" : 16384,
+    "uuid" : "3877bf6e-2b33-3cdb-842c-30e25e570022",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libwebpdemux.2.0.14.dylib",
+    "name" : "libwebpdemux.2.0.14.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4490887168,
+    "size" : 32768,
+    "uuid" : "756f386c-c349-321d-b4fd-8b370da0f400",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libwebpmux.3.0.13.dylib",
+    "name" : "libwebpmux.3.0.13.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4762370048,
+    "size" : 376832,
+    "uuid" : "2eaf9612-0b00-3e49-8b2d-e4dca50543d5",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libwebp.7.1.8.dylib",
+    "name" : "libwebp.7.1.8.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4492099584,
+    "size" : 16384,
+    "uuid" : "e50126d0-08b8-3c02-be21-b94a248ec63a",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libsharpyuv.0.0.1.dylib",
+    "name" : "libsharpyuv.0.0.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4492181504,
+    "size" : 32768,
+    "uuid" : "8005f972-9177-3920-a3a7-8baf6ce05b6d",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_avif.dylib",
+    "name" : "kimg_avif.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4549427200,
+    "size" : 131072,
+    "uuid" : "fa00b941-3df2-36e2-90cf-37a4fcf307b6",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libavif.16.0.4.dylib",
+    "name" : "libavif.16.0.4.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4766416896,
+    "size" : 851968,
+    "uuid" : "a5b32e46-d7d9-3ebf-999b-810f5dc85ebe",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libdav1d.7.dylib",
+    "name" : "libdav1d.7.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4772904960,
+    "size" : 5177344,
+    "uuid" : "117c52a1-36e7-363a-be37-24e3eaa1a0b7",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libaom.3.9.1.dylib",
+    "name" : "libaom.3.9.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4761927680,
+    "size" : 49152,
+    "uuid" : "ea69d54b-55fb-3acd-a701-88a90f18ccf4",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_eps.dylib",
+    "name" : "kimg_eps.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4762812416,
+    "size" : 131072,
+    "uuid" : "cc043127-1d37-3da9-a8be-d381b9fb3a0f",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_xcf.dylib",
+    "name" : "kimg_xcf.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4549230592,
+    "size" : 32768,
+    "uuid" : "e3a64ab1-1fe6-35d9-976e-343ff193124d",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqico.dylib",
+    "name" : "libqico.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4549328896,
+    "size" : 32768,
+    "uuid" : "8783d6b4-7d93-382e-bbb7-6d3ed6b4ab7e",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_pic.dylib",
+    "name" : "kimg_pic.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4762042368,
+    "size" : 32768,
+    "uuid" : "073f170b-d388-343c-a82f-4100579bccbf",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_rgb.dylib",
+    "name" : "kimg_rgb.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4762140672,
+    "size" : 32768,
+    "uuid" : "fd3b9676-f90e-3cf8-9217-e24bb77fe1ed",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqmacheif.dylib",
+    "name" : "libqmacheif.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4762238976,
+    "size" : 32768,
+    "uuid" : "62f77879-0d21-3a60-9e83-ca9c2057662a",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_kra.dylib",
+    "name" : "kimg_kra.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763041792,
+    "size" : 32768,
+    "uuid" : "676cd4d3-ad96-3f4e-a2b1-7031aa3e6499",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_pxr.dylib",
+    "name" : "kimg_pxr.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763140096,
+    "size" : 32768,
+    "uuid" : "d0c0099f-e576-352f-bc62-54da350e27bd",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_ani.dylib",
+    "name" : "kimg_ani.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763353088,
+    "size" : 49152,
+    "uuid" : "d818f514-4a7a-306d-82d1-4e8e1990aec2",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqjpeg.dylib",
+    "name" : "libqjpeg.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4765925376,
+    "size" : 344064,
+    "uuid" : "46020b85-f204-3cb4-8d14-da5fbeca0773",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libjpeg.62.3.0.dylib",
+    "name" : "libjpeg.62.3.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763238400,
+    "size" : 32768,
+    "uuid" : "0a235901-7f9f-3da1-9b12-7896f90b7998",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_ora.dylib",
+    "name" : "kimg_ora.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763582464,
+    "size" : 49152,
+    "uuid" : "6dd50380-8adc-37e1-a707-0c8d44eaaa04",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_jxl.dylib",
+    "name" : "kimg_jxl.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4769185792,
+    "size" : 1540096,
+    "uuid" : "47eceefc-6ace-3a34-8415-3825fd271b6d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libjxl.0.9.3.dylib",
+    "name" : "libjxl.0.9.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4492279808,
+    "size" : 16384,
+    "uuid" : "fcd071cf-6fea-3467-8b3d-d62ba3cffb1e",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libjxl_threads.0.9.3.dylib",
+    "name" : "libjxl_threads.0.9.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4765679616,
+    "size" : 114688,
+    "uuid" : "c5e0a9c3-5503-3a6f-a6d0-8262a8c8cb58",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libjxl_cms.0.9.3.dylib",
+    "name" : "libjxl_cms.0.9.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4763467776,
+    "size" : 32768,
+    "uuid" : "651813c1-bb52-32f1-b4c8-5952eca50e0c",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libhwy.1.0.7.dylib",
+    "name" : "libhwy.1.0.7.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4768219136,
+    "size" : 589824,
+    "uuid" : "4d3f51d2-44e1-3ca7-8094-b7c9b6a46627",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libbrotlienc.1.1.0.dylib",
+    "name" : "libbrotlienc.1.1.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4765499392,
+    "size" : 32768,
+    "uuid" : "b2e544f5-2739-3003-aa6c-7b83eef8ed39",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqtiff.dylib",
+    "name" : "libqtiff.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4770807808,
+    "size" : 409600,
+    "uuid" : "adbee35e-b298-3ddc-a935-d0312814eecf",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libtiff.5.8.0.dylib",
+    "name" : "libtiff.5.8.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4767563776,
+    "size" : 32768,
+    "uuid" : "fc888d94-0b16-3140-9512-825e2e949fa5",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqsvg.dylib",
+    "name" : "libqsvg.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4767662080,
+    "size" : 32768,
+    "uuid" : "89df202f-2d03-34f2-ad5b-9f43e4fb7c20",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_tga.dylib",
+    "name" : "kimg_tga.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4767760384,
+    "size" : 32768,
+    "uuid" : "f8b74d6e-0e13-3328-8c35-94274e239f9b",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_hdr.dylib",
+    "name" : "kimg_hdr.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4767858688,
+    "size" : 32768,
+    "uuid" : "25fe8ab3-b446-3beb-8223-0b04bb4671dd",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_ras.dylib",
+    "name" : "kimg_ras.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4767956992,
+    "size" : 32768,
+    "uuid" : "b55c697e-13cd-3751-96e8-9e6372a0a27e",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqpdf.dylib",
+    "name" : "libqpdf.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4787044352,
+    "CFBundleShortVersionString" : "6.7",
+    "CFBundleIdentifier" : "org.qt-project.QtPdf",
+    "size" : 8028160,
+    "uuid" : "ec50cf9b-d3b2-3585-a61a-0534653b67b7",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/QtPdf.framework\/Versions\/A\/QtPdf",
+    "name" : "QtPdf",
+    "CFBundleVersion" : "6.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4768055296,
+    "size" : 32768,
+    "uuid" : "e184ffac-77dd-3a1e-9807-7a8a8a4cc841",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/kimg_qoi.dylib",
+    "name" : "kimg_qoi.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4768874496,
+    "size" : 32768,
+    "uuid" : "a7f7e75d-cd2b-3e06-86eb-9a22707ceafa",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqicns.dylib",
+    "name" : "libqicns.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4768972800,
+    "size" : 32768,
+    "uuid" : "2b25646f-abd3-31c4-9033-30a39492ebc9",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/imageformats\/libqmacjp2.dylib",
+    "name" : "libqmacjp2.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4771299328,
+    "size" : 49152,
+    "uuid" : "736e405a-82e8-38e9-a75a-cd85465b3358",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/iconengines\/libqsvgicon.dylib",
+    "name" : "libqsvgicon.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4466065408,
+    "size" : 49152,
+    "uuid" : "8e928412-9e96-32d4-b173-d99beb9fed0b",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4772429824,
+    "size" : 32768,
+    "uuid" : "4c60e5c4-b3a4-30f0-9f63-77c16f070813",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/kf6\/sonnet\/sonnet_nsspellchecker.so",
+    "name" : "sonnet_nsspellchecker.so"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4796776448,
+    "size" : 524288,
+    "uuid" : "03616507-d3b1-38e7-b378-fc1c8691019a",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/kf6\/ktexteditor\/kateprojectplugin.so",
+    "name" : "kateprojectplugin.so"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4808310784,
+    "size" : 1196032,
+    "uuid" : "c0ad3760-ed4a-384a-9146-2f0826ca99a2",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libkateprivate.24.11.70.dylib",
+    "name" : "libkateprivate.24.11.70.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4796137472,
+    "size" : 49152,
+    "uuid" : "1cc17864-ce2f-3233-9a46-c3105a97558b",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6UserFeedbackWidgets.6.4.0.dylib",
+    "name" : "libKF6UserFeedbackWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4797562880,
+    "size" : 180224,
+    "uuid" : "2b7ee3c3-5934-3746-a00e-2c62ba7f35b4",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6UserFeedbackCore.6.4.0.dylib",
+    "name" : "libKF6UserFeedbackCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4807524352,
+    "size" : 294912,
+    "uuid" : "f5b0b281-3cd6-366f-ba2c-519b932603dd",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/kf6\/ktexteditor\/katesearchplugin.so",
+    "name" : "katesearchplugin.so"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4810883072,
+    "size" : 131072,
+    "uuid" : "9c12ee6f-1c5c-31b7-a94d-24f472b25403",
+    "path" : "\/Applications\/rkward.app\/Contents\/PlugIns\/kf6\/ktexteditor\/katesnippetsplugin.so",
+    "name" : "katesnippetsplugin.so"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4811145216,
+    "size" : 65536,
+    "uuid" : "22bcc483-cb47-3432-84af-78821eedd995",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6NewStuffWidgets.6.4.0.dylib",
+    "name" : "libKF6NewStuffWidgets.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4812013568,
+    "size" : 540672,
+    "uuid" : "3b1cb83e-db85-311d-8721-a81838038a97",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6NewStuffCore.6.4.0.dylib",
+    "name" : "libKF6NewStuffCore.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4825546752,
+    "size" : 458752,
+    "uuid" : "61a581b4-ca1d-388b-b52c-5c9791a26536",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Attica.6.4.0.dylib",
+    "name" : "libKF6Attica.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4826267648,
+    "size" : 491520,
+    "uuid" : "ff4b5e30-dbad-3aee-afd8-77d75ab91c5c",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Syndication.6.4.0.dylib",
+    "name" : "libKF6Syndication.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4811292672,
+    "size" : 131072,
+    "uuid" : "fd40a49f-03d8-37f6-9c42-0ed69213b78d",
+    "path" : "\/Applications\/rkward.app\/Contents\/Frameworks\/libKF6Package.6.4.0.dylib",
+    "name" : "libKF6Package.6.4.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 5544230912,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.AppleMetalOpenGLRenderer",
+    "size" : 442368,
+    "uuid" : "76243a19-d6d2-32ee-84d3-7bcfce93d66e",
+    "path" : "\/System\/Library\/Extensions\/AppleMetalOpenGLRenderer.bundle\/Contents\/MacOS\/AppleMetalOpenGLRenderer",
+    "name" : "AppleMetalOpenGLRenderer",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6546698240,
+    "size" : 237560,
+    "uuid" : "08c5fe2a-b0bf-3ab6-bb42-460c18917d33",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6627614720,
+    "CFBundleShortVersionString" : "1.600.0",
+    "CFBundleIdentifier" : "com.apple.SkyLight",
+    "size" : 4374528,
+    "uuid" : "046a9ef4-9de4-34c4-a773-8b81523ec307",
+    "path" : "\/System\/Library\/PrivateFrameworks\/SkyLight.framework\/Versions\/A\/SkyLight",
+    "name" : "SkyLight"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6600220672,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 15794176,
+    "uuid" : "ab4a163e-3a53-3fde-a88d-130759291adb",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2299.70.136"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6547353600,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5087232,
+    "uuid" : "b3b2df49-2db8-370e-84ae-e0a2704515b8",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1979"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6707388416,
+    "CFBundleShortVersionString" : "2.1.1",
+    "CFBundleIdentifier" : "com.apple.HIToolbox",
+    "size" : 3358720,
+    "uuid" : "9bed5c79-f02f-3e0b-9fdb-57d955cc68ba",
+    "path" : "\/System\/Library\/Frameworks\/Carbon.framework\/Versions\/A\/Frameworks\/HIToolbox.framework\/Versions\/A\/HIToolbox",
+    "name" : "HIToolbox"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6543433728,
+    "size" : 583048,
+    "uuid" : "e7a99595-e0f8-34af-be8b-9347d0d658a4",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6546935808,
+    "size" : 53248,
+    "uuid" : "1f30fb9a-bdf9-32db-a709-8417666a7e45",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6563713024,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 10248192,
+    "uuid" : "b7799cb6-0a3c-3c8b-a185-8cec55845b14",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Versions\/C\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "1979"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6545178624,
+    "size" : 294912,
+    "uuid" : "9897030f-75d3-374b-8787-322d3d72e096",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 6542770176,
+  "size" : 3553361920,
+  "uuid" : "9c875b0a-d532-3933-b1f0-f1ea72cedde2"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.7G resident=0K(0%) swapped_out_or_unallocated=1.7G(100%)\nWritable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               128K        1 \nActivity Tracing                   256K        1 \nCG backing stores                  512K        4 \nCG image                          4608K       60 \nCG raster data                    2576K       24 \nColorSync                          576K       29 \nCoreAnimation                     3280K       10 \nCoreGraphics                        80K        5 \nCoreUI image data                  640K       10 \nFoundation                          48K        2 \nKernel Alloc Once                   32K        1 \nMALLOC                           279.5M       62 \nMALLOC guard page                  192K       12 \nMALLOC_MEDIUM (reserved)         720.0M        6         reserved VM address space (unallocated)\nMALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)\nMemory Tag 253                    32.0G       42 \nMemory Tag 255                     1.1T       15 \nMemory Tag 255 (reserved)         1024K        1         reserved VM address space (unallocated)\nSTACK GUARD                       56.6M       36 \nStack                            191.3M       37 \nVM_ALLOCATE                        352K       15 \n__AUTH                            1755K      366 \n__AUTH_CONST                      28.2M      595 \n__CTF                               824        1 \n__DATA                            18.0M      732 \n__DATA_CONST                      38.6M      739 \n__DATA_DIRTY                      1972K      230 \n__FONT_DATA                        2352        1 \n__GLSLBUILTINS                    5174K        1 \n__INFO_FILTER                         8        1 \n__LINKEDIT                       823.8M      144 \n__OBJC_RO                         66.4M        1 \n__OBJC_RW                         2012K        1 \n__TEXT                           893.8M      760 \ndyld private memory                272K        2 \nmapped file                      219.5M       46 \nshared memory                      928K       19 \n===========                     =======  ======= \nTOTAL                              1.1T     4013 \nTOTAL, minus reserved VM space     1.1T     4013 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "name" : "Chrome_InProcRendererThread"
+  }
+},
+  "logWritingSignature" : "26c706a96ae607806a83e6bc615c637f31c4966f",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "6425c75e4327780c10cc4252",
+      "factorPackIds" : {
+        "SIRI_HOME_AUTOMATION_INTENT_SELECTION_CACHE" : "642600a457e7664b1698eb32"
+      },
+      "deploymentId" : 240000004
+    },
+    {
+      "rolloutId" : "6112d17137f5d11121dcd4e2",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000568
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "c47ab4cc-c9c3-4b5d-a87c-e2433ce02597",
+      "experimentId" : "6639bc6ba73d460582162323",
+      "deploymentId" : 400000006
+    },
+    {
+      "treatmentId" : "45f4e2a5-551b-4bc2-a2dc-19c244dda8f8",
+      "experimentId" : "6643969b3099cf28e049862f",
+      "deploymentId" : 400000007
+    }
+  ]
+}
+}
+
+Model: MacBookAir10,1, BootROM 8422.141.2, proc 8:4:4 processors, 8 GB, SMC 
+Graphics: Apple M1, Apple M1, Built-In
+Display: BenQ PJ, 1280 x 720, Main, MirrorOn, Online
+Display: Color LCD, 2560 x 1600 Retina, MirrorOn, Online
+Memory Module: LPDDR4, Hynix
+AirPort: spairport_wireless_card_type_wifi (0x14E4, 0x4378), wl0: May 13 2023 07:20:48 version 18.20.383.15.7.8.150 FWID 01-b37727a5
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: USB 10/100 LAN, Ethernet, en5
+USB Device: USB31Bus
+USB Device: USB3.0 Hub
+USB Device: USB2.0 Hub
+USB Device: USB 2.0 Hub
+USB Device: USB 10/100 LAN
+USB Device: USB Billboard Device
+USB Device: USB31Bus
+USB Device: USB 10/100/1000 LAN
+Thunderbolt Bus: MacBook Air, Apple Inc.
+Thunderbolt Bus: MacBook Air, Apple Inc.
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: rkward.frontend
+Type: application/octet-stream
+Size: 540 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/8b99ca28/attachment-0001.obj>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Imagen 15-08-24 a las 19.31.jpeg
+Type: image/jpeg
+Size: 98721 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/8b99ca28/attachment-0001.jpeg>
+
+From alfonsociologo at gmail.com  Fri Aug 16 17:16:24 2024
+From: alfonsociologo at gmail.com (DES Alfonso Cano Robles)
+Date: Fri, 16 Aug 2024 10:16:24 -0600
+Subject: Fwd: Archivo de Error RKWard Mac
+In-Reply-To: <F7A9B641-6C9D-4220-9714-BE5732267A03@viep.com.mx>
+References: <843FB285-DD18-43F5-91CB-A53F06ABA022@viep.com.mx>
+ <F7A9B641-6C9D-4220-9714-BE5732267A03@viep.com.mx>
+Message-ID: <CAMqnA+ji7UG57NXaW0K+ybcbCy0-Mbjx01_kgtgP4kwJiYnHGg@mail.gmail.com>
+
+Hello,
+This is the second computer  with arm architecture, it is a M2 chip,
+I hope this helps.
+Thankful for all you all have done,
+Regards
+Alfonso
+
+
+
+
+                      ORCID ID:
+https://orcid.org/0000-0002-9496-2301
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/0bc104e2/attachment-0001.htm>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: error mac.rtf
+Type: application/rtf
+Size: 193854 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/0bc104e2/attachment-0001.rtf>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: rkward.frontend.1
+Type: application/octet-stream
+Size: 849 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/0bc104e2/attachment-0001.obj>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Captura de pantalla 2024-08-15 a la(s) 6.09.25 p.m..png
+Type: image/png
+Size: 336381 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240816/0bc104e2/attachment-0001.png>
+
+From thomas.friedrichsmeier at kdemail.net  Sat Aug 17 09:08:01 2024
+From: thomas.friedrichsmeier at kdemail.net (Thomas Friedrichsmeier)
+Date: Sat, 17 Aug 2024 10:08:01 +0200
+Subject: rkward Mac
+In-Reply-To: <CAMqnA+j0SGGk_8io92-9FCSTmHCA0-s2B36jbsAHj6YYzKdifg@mail.gmail.com>
+References: <CADDCMra1QSHttDsJrTKbpa1Dct4A0F2k5N7karZi74QQfLoLLA@mail.gmail.com>
+ <CAMqnA+j0SGGk_8io92-9FCSTmHCA0-s2B36jbsAHj6YYzKdifg@mail.gmail.com>
+Message-ID: <20240817100801.364b1bff@booklife>
+
+Hi,
+
+On Fri, 16 Aug 2024 10:11:40 -0600
+DES Alfonso Cano Robles <alfonsociologo at gmail.com> wrote:
+> I've been trying out to install RKWard on two  arm computers.
+
+thanks. Both crash at the same point:
+
+Crashed Thread:        33  Chrome_InProcRendererThread
+
+Exception Type:        EXC_BREAKPOINT (SIGTRAP)
+Exception Codes:       0x0000000000000001, 0x00000001863acf08
+
+Termination Reason:    Namespace SIGNAL, Code 5 Trace/BPT trap: 5
+Terminating Process:   exc handler [1426]
+
+where the backtrace of Thread 33 is:
+
+Thread 33 Crashed:: Chrome_InProcRendererThread
+0 libsystem_pthread.dylib  0x1863acf08 pthread_jit_write_protect_np
+1 QtWebEngineCore 0x114d3e7ec 0x10f2dc000 + 94775276
+
+So, yes, this is a problem with QWebEngine, again. More specifically it
+seems to be related to the JIT-compiler, which makes me think of a
+permissions/entitlements problem, immediately.
+
+I'll try something, but this may take some time.
+
+Merely out of curiosity: If, instead, you install the x86 version of
+RKWard on that machine, do you see anything different? (Note that you
+will not be able to start the R backend, then, but you should be able
+to skip over that with "Cancel". The interesting part, here, is whether
+the welcome screen gets rendered.)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 833 bytes
+Desc: OpenPGP digital signature
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20240817/518ba5f2/attachment.sig>
+

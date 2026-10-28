@@ -1,0 +1,185 @@
+From kapatp at gmail.com  Sun Feb  8 08:24:21 2009
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Sun, 8 Feb 2009 03:24:21 -0500
+Subject: [rkward-users] rkward on planetkde
+Message-ID: <de8c7cb40902080024s271fc84fp8c8c2229f9f75840@mail.gmail.com>
+
+Now, I don't know anything about this author, but came across this on
+planetkde.org, which was a pleasant surprise.
+
+http://www.dennogumi.org/2009/02/science-and-kde-rkward
+
+-- 
+Prasenjit
+
+
+
+From noreply at sourceforge.net  Thu Feb 12 21:39:50 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Thu, 12 Feb 2009 21:39:50 +0000
+Subject: [rkward-users] [rkward - Help] Doesn't save workspace layout
+Message-ID: <6412450.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6412450
+By: derc
+
+Hey,
+my RKWard doesn't save the workspace layout I set up.
+For example the height and adjustment of the R Console Window is set to default
+after every restart. I already tried the options "save/restore with R workspace"
+and "save/restore independet of R workspace". Both options didn't work.
+
+I hope somebody can help me.
+Best regards
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sat Feb 14 19:14:44 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sat, 14 Feb 2009 19:14:44 +0000
+Subject: [rkward-users] [rkward - Help] RE: Doesn't save workspace layout
+In-Reply-To: <6412450.165574@sourceforge.net>
+Message-ID: <6426318.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6426318
+By: kapatp
+
+Hi,
+
+I am guessing that you are using the 0.4.9* version (KDE3's version). It is
+a known issue which has been fixed in the 0.5 (KDE4's) version. And if IRC,
+it was difficult to backport this "fix" under KDE3. Unfortunately the released
+0.5.0 version has a lot of other issues with new KDE 4 APIs and new R. But the
+trunk from svn, which many of us are using, is pretty stable.
+
+So, if you have the luxury to opt for a KDE4 environment try it out. If not,
+well, as I have to on a RedHat machine, live with the 0.4.9 version. Even in
+that case, the svn release branch of 0.4.9 has some welcome updates on top of
+the actual released version.
+
+If you need help in trying out either of the svn versions, feel free to ask.
+
+Best
+PK
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Fri Feb 20 08:51:47 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Fri, 20 Feb 2009 08:51:47 +0000
+Subject: [rkward-users] [rkward - Help] Location of R Binary
+Message-ID: <6472835.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6472835
+By: edden84
+
+Hello everybody,
+
+I am actually using R 2.81 and R 2.7 in parallel. I installed rkward after I
+installed R 2.7. Now I would like to use the 2.8.1 binary with rkward. Is there
+any way to do this without recompiling? I can change the path for the libraries
+but I haven't found the path to the binary.
+Thanks a lot for you help.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Feb 22 13:57:05 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 22 Feb 2009 13:57:05 +0000
+Subject: [rkward-users] [rkward - Help] RE: Doesn't save workspace layout
+In-Reply-To: <6412450.165574@sourceforge.net>
+Message-ID: <6490701.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6490701
+By: derc
+
+Hi,
+
+I finally installed the 0.5.0 version and it works fine, including the restoration
+of workspace.
+Thank you for your advice.
+
+Best regards
+
+
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+
+From noreply at sourceforge.net  Sun Feb 22 20:08:41 2009
+From: noreply at sourceforge.net (SourceForge.net)
+Date: Sun, 22 Feb 2009 20:08:41 +0000
+Subject: [rkward-users] [rkward - Help] RE: Location of R Binary
+In-Reply-To: <6472835.165574@sourceforge.net>
+Message-ID: <6493696.165574@sourceforge.net>
+
+
+Read and respond to this message at: 
+https://sourceforge.net/forum/message.php?msg_id=6493696
+By: kapatp
+
+I am not sure how rkward searches for R binary, still there are some things
+you could try out:
+
+If you are using the 0.5.0 version (ie for KDE4) then there are these cmake
+variables,
+-DR_EXECUTABLE:   
+   path to the R executable. You may want to set this, if you have multiple
+versions of R installed, or R is not in your path. Example
+-DR_EXECUTABLE=/usr/bin/R
+-DR_HOME
+    R home directory. Almost certainly this option is not needed.
+-DR_INCLUDE
+    path to R include files. Almost certainly this option is not needed.
+
+If you are using 0.4.9 version (ie for KDE3) then try setting these configure
+variables:
+  --with-r-home=DIR       specify location of R_HOME directory            
+  --with-r-includes=DIR   specify location of R include files             
+
+As you must've already seen, there is no "--with-r-executable" here. If r-home
+does not work, then you may need to try and play around by switching the actual
+R binaries in /usr/bin or /usr/local/bin  to their names (eg R2.7, R2.8) and
+then keep the default as a symlink to R2.8 and then compile rkward.
+
+Warning: the 'released" versions of rkward do not play well with R 2.8.x, so
+you'll need to get the rkward from svn, which can be either for the KDE3/KDE4.
+See here:
+http://rkward.sourceforge.net/wiki/index.php?title=RKWard_SVN
+
+Let us know if you need more help.
+
+______________________________________________________________________
+You are receiving this email because you elected to monitor this forum.
+To stop monitoring this forum, login to SourceForge.net and visit: 
+https://sourceforge.net/forum/unmonitor.php?forum_id=165574
+
+
+

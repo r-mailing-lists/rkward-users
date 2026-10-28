@@ -1,0 +1,668 @@
+From carlos.bessa at gmail.com  Fri Apr 20 13:24:37 2012
+From: carlos.bessa at gmail.com (Carlos Bessa)
+Date: Fri, 20 Apr 2012 14:24:37 +0100
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+Message-ID: <CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+
+Hi,
+I'm using rkward to analyse some experimental data and I'm hitting a
+problem when plotting a box plot (haven't tryed other plot type yet).
+I have many "samples", and because the x labels are horizontal... some are
+missing due to lack of space (see pic 1).
+I've also tryed a vertical box plot, expecting the x labels to remain
+horizontal... but no. They change to vertical... and so there's not enough
+space this way either (see pic2).
+Is there a way to change the x label position to vertical, or 45?? I also
+haven't found a way to change font/size.. but perhaps there isn't any?
+
+Let me finish by complementing the authors on such a great program. It's
+definately the most user-friendly, good looking, R GUI I've tryed so far.
+with best regards,
+Carlos
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/6e01e411/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: rkward_boxplot_xlabel1.jpg.tar.gz
+Type: application/x-gzip
+Size: 39048 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/6e01e411/attachment.gz>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Fri Apr 20 16:02:21 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 20 Apr 2012 18:02:21 +0200
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+Message-ID: <201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Friday 20 April 2012, Carlos Bessa wrote:
+> I'm using rkward to analyse some experimental data and I'm hitting a
+> problem when plotting a box plot (haven't tryed other plot type yet).
+> I have many "samples", and because the x labels are horizontal... some are
+> missing due to lack of space (see pic 1).
+> I've also tryed a vertical box plot, expecting the x labels to remain
+> horizontal... but no. They change to vertical... and so there's not enough
+> space this way either (see pic2).
+> Is there a way to change the x label position to vertical, or 45?? I also
+> haven't found a way to change font/size.. but perhaps there isn't any?
+
+well, sadly, we simply don't have any of this covered, so far. You'll have to 
+make some adjustments by hand:
+- Prepare all other aspects of the plot using the GUI.
+- Copy the generated code from the bottom of the boxplot GUI, and paste it to 
+a blank script file.
+- Modify the call to boxplot() by hand. The parameter to control label 
+orientation is "las" (0, 1, 2, or 3; see ?par). The parameters to control 
+scale and font are called "cex.lab" and "font.lab".
+
+In fact, we should probably provide support for at least orientation and scale 
+in the plot options GUI. In case you (or somebody else) would like to look 
+into contributing that, take a look at the "plot_options"-plugin.
+
+ > Let me finish by complementing the authors on such a great program. It's
+> definately the most user-friendly, good looking, R GUI I've tryed so far.
+> with best regards,
+
+Thanks!
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120420/eba13371/attachment.sig>
+
+From jacquescanonge at yahoo.fr  Sat Apr 21 12:10:54 2012
+From: jacquescanonge at yahoo.fr (jacques canonge)
+Date: Sat, 21 Apr 2012 13:10:54 +0100 (BST)
+Subject: [rkward-users] Uninstall
+Message-ID: <1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>
+
+Hi everyone,
+
+
+I would like to remove rkward from my systems.
+
+I have windows 7.I installed rkward first then KDE. My user experience has been quite unpleasant.
+
+I would like to remove both. But I cant find any solution on windows to do it.
+
+Please could you you help.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120421/737b24c6/attachment.html>
+
+From lferreira75.1 at gmail.com  Sun Apr 22 00:43:53 2012
+From: lferreira75.1 at gmail.com (Luis Ferreira)
+Date: Sun, 22 Apr 2012 01:43:53 +0100
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+Message-ID: <1335055433.3293.9.camel@leopardo>
+
+Hi.
+
+I'm a relative newbie with R and RKward and I was starting to write an
+analogous e-mail when read this.
+I'm with a similar problem, with axis labels being cut by margins; I
+tried to change the parameters
+
+las = 2
+or
+mar = c(5, 200, 4, 2) + 0.1
+or
+mai = c(0.5, 2, 0.5, 0.5)
+
+and paste the code on R Console, but no joy.
+I'm getting this results:
+
+http://dl.dropbox.com/u/5076546/boxplot_grouped_0.png
+
+with las = 2
+http://dl.dropbox.com/u/5076546/boxplot_grouped.png
+
+Changing mar or mai doesn? t   appear to make changes on output.
+Any ideas?
+
+Cheers.
+Lu?s
+
+On Sex, 2012-04-20 at 14:24 +0100, Carlos Bessa wrote:
+> Hi,
+> I'm using rkward to analyse some experimental data and I'm hitting a
+> problem when plotting a box plot (haven't tryed other plot type yet).
+> I have many "samples", and because the x labels are horizontal... some
+> are missing due to lack of space (see pic 1). 
+> I've also tryed a vertical box plot, expecting the x labels to remain
+> horizontal... but no. They change to vertical... and so there's not
+> enough space this way either (see pic2).
+> Is there a way to change the x label position to vertical, or 45?? I
+> also haven't found a way to change font/size.. but perhaps there isn't
+> any?
+> 
+> Let me finish by complementing the authors on such a great program.
+> It's definately the most user-friendly, good looking, R GUI I've tryed
+> so far.
+> with best regards,
+> Carlos
+> 
+> 
+> 
+> 
+> ------------------------------------------------------------------------------
+> For Developers, A Lot Can Happen In A Second.
+> Boundary is the first to Know...and Tell You.
+> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!
+> http://p.sf.net/sfu/Boundary-d2dvs2
+> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/6f2b2405/attachment.html>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Apr 22 14:16:43 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 22 Apr 2012 16:16:43 +0200
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <1335055433.3293.9.camel@leopardo>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+	<1335055433.3293.9.camel@leopardo>
+Message-ID: <201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 22 April 2012, Luis Ferreira wrote:
+> Changing mar or mai doesn? t   appear to make changes on output.
+> Any ideas?
+
+for some reason or another, mar, and mai cannot be set as parameters in the 
+boxplot()-call. Instead, set them separately, before the actual boxplot():
+
+  par (mar=c (5, 20, 4, 2))
+  boxplot (...)
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/17511826/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Sun Apr 22 14:25:15 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 22 Apr 2012 16:25:15 +0200
+Subject: [rkward-users] Uninstall
+In-Reply-To: <1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>
+References: <1335010254.84287.YahooMailNeo@web171604.mail.ir2.yahoo.com>
+Message-ID: <201204221625.15591.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Saturday 21 April 2012, jacques canonge wrote:
+> I would like to remove rkward from my systems.
+> 
+> I have windows 7.I installed rkward first then KDE. My user experience has
+> been quite unpleasant.
+
+sorry to hear that.
+ 
+> I would like to remove both. But I cant find any solution on windows to do
+> it.
+
+It seems somewhat unlikely that you really "installed rkward first then KDE".
+Assuming you installed KDE to C:\KDE, simply remove C:\KDE. This will also get 
+rid of RKWard. Assuming you used the installation bundle, remove whichever 
+folder you unpacked that to.
+
+Naturally, this will also remove anything else that you may have written into 
+this folder, and that you might want to keep.
+
+You may have to reboot before being able to remove the folders, as some KDE 
+helper applications may still be running. You will also have to remove any 
+icons placed in the start-menu or on your desktop, manually. Nothing is 
+written to the registry, however.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/fb5f3af9/attachment.sig>
+
+From carlos.bessa at gmail.com  Sun Apr 22 21:25:44 2012
+From: carlos.bessa at gmail.com (Carlos Bessa)
+Date: Sun, 22 Apr 2012 22:25:44 +0100
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+	<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>
+
+Thanks all!
+I followed your instructions and now have the charts as i wanted. I did hit
+another bump though... i use the preview window from the GUI to export the
+plot to pdf/svg. But if i use the script file or just type it on the
+console the plot shows up on the output window... and i haven't found a way
+to export it. I'm guessing there's some command that i can add to the
+script to export it to some desired format, but i haven't found that yet.
+Can you help me with that?
+
+best regards,
+Carlos
+
+On Fri, Apr 20, 2012 at 5:02 PM, Thomas Friedrichsmeier <
+thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+
+> Hi,
+>
+> On Friday 20 April 2012, Carlos Bessa wrote:
+> > I'm using rkward to analyse some experimental data and I'm hitting a
+> > problem when plotting a box plot (haven't tryed other plot type yet).
+> > I have many "samples", and because the x labels are horizontal... some
+> are
+> > missing due to lack of space (see pic 1).
+> > I've also tryed a vertical box plot, expecting the x labels to remain
+> > horizontal... but no. They change to vertical... and so there's not
+> enough
+> > space this way either (see pic2).
+> > Is there a way to change the x label position to vertical, or 45?? I also
+> > haven't found a way to change font/size.. but perhaps there isn't any?
+>
+> well, sadly, we simply don't have any of this covered, so far. You'll have
+> to
+> make some adjustments by hand:
+> - Prepare all other aspects of the plot using the GUI.
+> - Copy the generated code from the bottom of the boxplot GUI, and paste it
+> to
+> a blank script file.
+> - Modify the call to boxplot() by hand. The parameter to control label
+> orientation is "las" (0, 1, 2, or 3; see ?par). The parameters to control
+> scale and font are called "cex.lab" and "font.lab".
+>
+> In fact, we should probably provide support for at least orientation and
+> scale
+> in the plot options GUI. In case you (or somebody else) would like to look
+> into contributing that, take a look at the "plot_options"-plugin.
+>
+>  > Let me finish by complementing the authors on such a great program. It's
+> > definately the most user-friendly, good looking, R GUI I've tryed so far.
+> > with best regards,
+>
+> Thanks!
+>
+> Regards
+> Thomas
+>
+>
+> ------------------------------------------------------------------------------
+> For Developers, A Lot Can Happen In A Second.
+> Boundary is the first to Know...and Tell You.
+> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!
+> http://p.sf.net/sfu/Boundary-d2dvs2
+> _______________________________________________
+> RKWard-users mailing list
+> RKWard-users at lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/rkward-users
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/d958a3f0/attachment.html>
+
+From lferreira75.1 at gmail.com  Sun Apr 22 21:42:05 2012
+From: lferreira75.1 at gmail.com (Luis Ferreira)
+Date: Sun, 22 Apr 2012 22:42:05 +0100
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+	<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>
+Message-ID: <1335130925.3310.19.camel@leopardo>
+
+
+I'm not sure if this is the fastest/eficient way, but you can (1)
+copy/paste the images in output html, (2) export the html and open with
+a browser or (3) you can copy the temporary images on RKward
+temporary/workspace (here is /home/lf/.rkward) directory.
+
+Cheers.
+
+Lu?s
+
+On Dom, 2012-04-22 at 22:25 +0100, Carlos Bessa wrote:
+> Thanks all!
+> I followed your instructions and now have the charts as i wanted. I
+> did hit another bump though... i use the preview window from the GUI
+> to export the plot to pdf/svg. But if i use the script file or just
+> type it on the console the plot shows up on the output window... and i
+> haven't found a way to export it. I'm guessing there's some command
+> that i can add to the script to export it to some desired format, but
+> i haven't found that yet. Can you help me with that?
+> 
+> best regards,
+> Carlos
+> 
+> 
+> On Fri, Apr 20, 2012 at 5:02 PM, Thomas Friedrichsmeier
+> <thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> 
+>         Hi,
+>         
+>         
+>         On Friday 20 April 2012, Carlos Bessa wrote:
+>         > I'm using rkward to analyse some experimental data and I'm
+>         hitting a
+>         > problem when plotting a box plot (haven't tryed other plot
+>         type yet).
+>         > I have many "samples", and because the x labels are
+>         horizontal... some are
+>         > missing due to lack of space (see pic 1).
+>         > I've also tryed a vertical box plot, expecting the x labels
+>         to remain
+>         > horizontal... but no. They change to vertical... and so
+>         there's not enough
+>         > space this way either (see pic2).
+>         > Is there a way to change the x label position to vertical,
+>         or 45?? I also
+>         > haven't found a way to change font/size.. but perhaps there
+>         isn't any?
+>         
+>         
+>         
+>         well, sadly, we simply don't have any of this covered, so far.
+>         You'll have to
+>         make some adjustments by hand:
+>         - Prepare all other aspects of the plot using the GUI.
+>         - Copy the generated code from the bottom of the boxplot GUI,
+>         and paste it to
+>         a blank script file.
+>         - Modify the call to boxplot() by hand. The parameter to
+>         control label
+>         orientation is "las" (0, 1, 2, or 3; see ?par). The parameters
+>         to control
+>         scale and font are called "cex.lab" and "font.lab".
+>         
+>         In fact, we should probably provide support for at least
+>         orientation and scale
+>         in the plot options GUI. In case you (or somebody else) would
+>         like to look
+>         into contributing that, take a look at the
+>         "plot_options"-plugin.
+>         
+>         
+>          > Let me finish by complementing the authors on such a great
+>         program. It's
+>         > definately the most user-friendly, good looking, R GUI I've
+>         tryed so far.
+>         > with best regards,
+>         
+>         
+>         
+>         Thanks!
+>         
+>         Regards
+>         Thomas
+>         
+>         ------------------------------------------------------------------------------
+>         For Developers, A Lot Can Happen In A Second.
+>         Boundary is the first to Know...and Tell You.
+>         Monitor Your Applications in Ultra-Fine Resolution. Try it
+>         FREE!
+>         http://p.sf.net/sfu/Boundary-d2dvs2
+>         _______________________________________________
+>         RKWard-users mailing list
+>         RKWard-users at lists.sourceforge.net
+>         https://lists.sourceforge.net/lists/listinfo/rkward-users
+>         
+> 
+> 
+> 
+> 
+> ------------------------------------------------------------------------------
+> For Developers, A Lot Can Happen In A Second.
+> Boundary is the first to Know...and Tell You.
+> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!
+> http://p.sf.net/sfu/Boundary-d2dvs2
+> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/ad8077d5/attachment.html>
+
+From kapatp at gmail.com  Mon Apr 23 04:38:38 2012
+From: kapatp at gmail.com (Prasenjit Kapat)
+Date: Mon, 23 Apr 2012 00:38:38 -0400
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+	<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>
+
+On Fri, Apr 20, 2012 at 12:02 PM, Thomas Friedrichsmeier
+<thomas.friedrichsmeier at ruhr-uni-bochum.de> wrote:
+> Hi,
+>
+> On Friday 20 April 2012, Carlos Bessa wrote:
+>> I'm using rkward to analyse some experimental data and I'm hitting a
+>> problem when plotting a box plot (haven't tryed other plot type yet).
+>> I have many "samples", and because the x labels are horizontal... some are
+>> missing due to lack of space (see pic 1).
+>> I've also tryed a vertical box plot, expecting the x labels to remain
+>> horizontal... but no. They change to vertical... and so there's not enough
+>> space this way either (see pic2).
+>> Is there a way to change the x label position to vertical, or 45?? I also
+>> haven't found a way to change font/size.. but perhaps there isn't any?
+>
+> well, sadly, we simply don't have any of this covered, so far. You'll have to
+> make some adjustments by hand:
+> - Prepare all other aspects of the plot using the GUI.
+> - Copy the generated code from the bottom of the boxplot GUI, and paste it to
+> a blank script file.
+> - Modify the call to boxplot() by hand. The parameter to control label
+> orientation is "las" (0, 1, 2, or 3; see ?par). The parameters to control
+> scale and font are called "cex.lab" and "font.lab".
+>
+> In fact, we should probably provide support for at least orientation and scale
+> in the plot options GUI. In case you (or somebody else) would like to look
+> into contributing that, take a look at the "plot_options"-plugin.
+
+I have started to implement these (las, cex.axis are included in an
+additional "Annotations" tab under Plot Options). This will go through
+many iterations before we settle on an acceptable placement of options
+on the GUI. Once I get some more of these par attributes in there, you
+can let me know your opinion.
+
+-- 
+Prasenjit
+
+
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Apr 23 07:37:33 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 23 Apr 2012 09:37:33 +0200
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAOTMMJohGcFeC_fYTdrfia-NPY45=4ydDXmt3449GzkXVg3WgA@mail.gmail.com>
+Message-ID: <201204230937.38245.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Sunday 22 April 2012, Carlos Bessa wrote:
+> I followed your instructions and now have the charts as i wanted. I did hit
+> another bump though... i use the preview window from the GUI to export the
+> plot to pdf/svg. But if i use the script file or just type it on the
+> console the plot shows up on the output window... and i haven't found a way
+> to export it. I'm guessing there's some command that i can add to the
+> script to export it to some desired format, but i haven't found that yet.
+> Can you help me with that?
+
+remove the calls to
+   rk.graph.on()
+and
+   rk.graph.off()
+to plot to an on-screen window (just like the preview window), instead of to 
+the output file.
+
+Alternatively, you can replace those calls with e.g.
+   postscript(...)
+and
+   dev.off()
+to make writing to a file part of your script.
+
+If you rely on the output file (as suggested by Luis), you may want to adjust 
+the default format of the images in the output file to suit your needs. 
+Settings->Configure RKWard->Output->Graphics.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120423/a58a070c/attachment.sig>
+
+From thomas.friedrichsmeier at ruhr-uni-bochum.de  Mon Apr 23 07:48:15 2012
+From: thomas.friedrichsmeier at ruhr-uni-bochum.de (Thomas Friedrichsmeier)
+Date: 23 Apr 2012 09:48:15 +0200
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<201204201802.24587.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+	<CAEmosuLFQ7c1EaVSEybSn7Kh3K437XBJaqiMTbQ-xtm+0+ToHQ@mail.gmail.com>
+Message-ID: <201204230948.19122.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+
+Hi,
+
+On Monday 23 April 2012, Prasenjit Kapat wrote:
+> I have started to implement these (las, cex.axis are included in an
+> additional "Annotations" tab under Plot Options). This will go through
+> many iterations before we settle on an acceptable placement of options
+> on the GUI. Once I get some more of these par attributes in there, you
+> can let me know your opinion.
+
+great!
+
+One very quick comment on option placement: I would suggest to place "las" on 
+the "Axes" tab. That's where I would look first, at least. For cex.xyz and 
+margins, it probably really makes sense to put all of those on a separate tab.
+
+Regards
+Thomas
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 198 bytes
+Desc: This is a digitally signed message part.
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120423/3981f034/attachment.sig>
+
+From lferreira75.1 at gmail.com  Sun Apr 22 18:07:43 2012
+From: lferreira75.1 at gmail.com (Luis Ferreira)
+Date: Sun, 22 Apr 2012 19:07:43 +0100
+Subject: [rkward-users] Boxplot label
+In-Reply-To: <201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+References: <CAOTMMJqzk2BP8vEt0S971w4FAf4kjoX76svBfCOOOKfG3zCTaw@mail.gmail.com>
+	<CAOTMMJo+rG0c2udbrhSK+PTL7PYp+0-ALSsO8N14OUk+8BhYgg@mail.gmail.com>
+	<1335055433.3293.9.camel@leopardo>
+	<201204221616.47767.thomas.friedrichsmeier@ruhr-uni-bochum.de>
+Message-ID: <1335118063.3310.15.camel@leopardo>
+
+It solved. Thank You.
+
+First I reordered the factor by  the median of the attribute. I can't
+find the GUI capability to do this graphically, probably is a neat
+addiction.
+
+freguesias.reorder.altimetria <- with(covilha at data, reorder(Freguesia,
+Altimetria, median))
+
+I also changed the default orientation of the x and y axis. Inside
+boxplot function, I turned perpendicular the y axis labels and
+deactivated the x axis:
+
+horizontal = TRUE, las = 2, xaxt="n"
+
+After  boxplot, writing x axis labels aligned with axis:
+try (par (axis(1, las = 1)))
+
+Also, RKWard is a great piece of software. I'm working with geospatial
+data, having 11962152 cells * 1 factor * 5 attributes, and RKWard
+processes all with no problems. I experimented directly from R command
+line, from Rcmdr and from latticiste package gui, and it filled all my
+12GB RAM on Ubuntu 11.10 64-bit.
+
+Cheers.
+Lu?s
+
+
+
+On Dom, 2012-04-22 at 16:16 +0200, Thomas Friedrichsmeier wrote:
+
+> Hi,
+> 
+> On Sunday 22 April 2012, Luis Ferreira wrote:
+> > Changing mar or mai doesn? t   appear to make changes on output.
+> > Any ideas?
+> 
+> for some reason or another, mar, and mai cannot be set as parameters in the 
+> boxplot()-call. Instead, set them separately, before the actual boxplot():
+> 
+>   par (mar=c (5, 20, 4, 2))
+>   boxplot (...)
+> 
+> Regards
+> Thomas
+> ------------------------------------------------------------------------------
+> For Developers, A Lot Can Happen In A Second.
+> Boundary is the first to Know...and Tell You.
+> Monitor Your Applications in Ultra-Fine Resolution. Try it FREE!
+> http://p.sf.net/sfu/Boundary-d2dvs2
+> _______________________________________________ RKWard-users mailing list RKWard-users at lists.sourceforge.net https://lists.sourceforge.net/lists/listinfo/rkward-users
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: rk_out.html.tar.gz
+Type: application/x-compressed-tar
+Size: 1101 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.tar.gz>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: boxplot_grouped_label_margins_solved.png
+Type: image/png
+Size: 54111 bytes
+Desc: not available
+URL: <http://mail.kde.org/pipermail/rkward-users/attachments/20120422/86eb3a65/attachment.png>
+
